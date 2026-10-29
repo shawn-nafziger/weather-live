@@ -19,6 +19,7 @@ happened. The run fails only if every city fails.
 
 import csv
 import json
+import re
 import sys
 import time
 from datetime import datetime, timedelta, timezone
@@ -27,12 +28,15 @@ from zoneinfo import ZoneInfo
 
 import requests
 
+import ranks
+
 REPO = Path(__file__).resolve().parents[1]
 CITIES_FILE = REPO / "config" / "cities.json"
 ARCHIVE_DIR = REPO / "archive"
 FORECAST_DIR = ARCHIVE_DIR / "forecasts"
 OBSERVATION_DIR = ARCHIVE_DIR / "observations"
 LIVE_DIR = REPO / "live"
+HISTORY_DIR = REPO / "history"     # official daily records, kept by station_update.py
 
 API = "https://api.weather.gov"
 # NWS asks every caller to identify itself. A site address, no personal email.
@@ -52,7 +56,11 @@ OBSERVATION_COLUMNS = [
     "City", "Station", "TimestampUTC", "TempC", "TempQC", "DewpointC", "RelativeHumidityPct",
     "WindDirectionDeg", "WindSpeedKmh", "WindGustKmh", "PressurePa", "PrecipLastHourMM",
     "Max24hC", "Min24hC", "Description", "RetrievedUTC",
+    "ReportType", "Precise", "RawMessage",
 ]
+# A METAR temperature group like "T02060089" (20.6 °C, 8.9 °C) means tenths of a degree.
+# Stations also send 5-minute readings with no METAR, rounded to whole °C.
+T_GROUP = re.compile(r"\bT[01]\d{3}(?:[01]\d{3})?\b")
 
 
 # =====================================================
@@ -133,8 +141,13 @@ def append_rows(path, columns, rows):
         return 0
     path.parent.mkdir(parents=True, exist_ok=True)
     new_file = not path.exists()
+    if not new_file:
+        # Keep an existing file's own columns: a day file started before a
+        # column was added stays consistent; the new column starts next day.
+        with path.open(newline="", encoding="utf-8") as f:
+            columns = next(csv.reader(f))
     with path.open("a", newline="", encoding="utf-8") as f:
-        w = csv.DictWriter(f, fieldnames=columns)
+        w = csv.DictWriter(f, fieldnames=columns, extrasaction="ignore")
         if new_file:
             w.writeheader()
         w.writerows(rows)
@@ -225,6 +238,7 @@ def pull_observations(session, city, now):
     for feat in data.get("features", []):
         p = feat["properties"]
         ts = parse_time(p["timestamp"])
+        raw = (p.get("rawMessage") or "").strip()
         rows.append({
             "City": city["slug"], "Station": city["station"], "TimestampUTC": iso_utc(ts),
             "TempC": qv(p, "temperature", "c"),
@@ -239,6 +253,9 @@ def pull_observations(session, city, now):
             "Min24hC": qv(p, "minTemperatureLast24Hours", "c"),
             "Description": p.get("textDescription") or "",
             "RetrievedUTC": iso_utc(now),
+            "ReportType": "METAR" if raw else "5-minute",
+            "Precise": bool(T_GROUP.search(raw)),
+            "RawMessage": raw,
         })
     rows.sort(key=lambda r: r["TimestampUTC"])
     return rows
@@ -262,31 +279,104 @@ def save_observations(rows):
 # LIVE SUMMARY
 # =====================================================
 
+def usable(r):
+    return r["TempC"] is not None and r["TempQC"] not in ("X", "Q")
+
+
 def today_so_far(rows, tz, now):
-    """High and low among today's readings, in the city's local day."""
+    """Today's high and low so far, in the city's local day.
+
+    Uses the station's hourly reports (METARs, tenths of a degree). The
+    5-minute readings are rounded to whole °C, so they're used only to flag a
+    peak that certainly happened between hourly reports. Stations with no
+    hourly reports (e.g. some small airports) fall back to the 5-minute
+    readings, marked approximate.
+    """
     local_today = now.astimezone(tz).date()
-    today = [r for r in rows
-             if r["TempC"] is not None and r["TempQC"] not in ("X", "Q")
+    today = [r for r in rows if usable(r)
              and parse_time(r["TimestampUTC"]).astimezone(tz).date() == local_today]
-    summary = {"date_local": local_today.isoformat(), "readings": len(today),
-               "note": "So far, from hourly readings. The official high and low are posted the next morning and can differ by a degree or two."}
-    if today:
-        hi = max(today, key=lambda r: r["TempC"])
-        lo = min(today, key=lambda r: r["TempC"])
-        summary.update({
-            "high_c": hi["TempC"], "high_f": c_to_f(hi["TempC"]), "high_time_utc": hi["TimestampUTC"],
-            "low_c": lo["TempC"], "low_f": c_to_f(lo["TempC"]), "low_time_utc": lo["TimestampUTC"],
-        })
+    precise = [r for r in today if r["Precise"]]
+    rounded = [r for r in today if not r["Precise"]]
+    base = precise or today
+    summary = {
+        "date_local": local_today.isoformat(),
+        "readings": len(base),
+        "basis": "hourly reports (tenths of a degree)" if precise else "5-minute readings (whole °C, approximate)",
+        "approximate": not precise,
+        "note": "So far today. The official high and low, posted the next morning, come from "
+                "continuous readings and can differ by a degree or two.",
+    }
+    if not base:
+        return summary
+    hi = max(base, key=lambda r: r["TempC"])
+    lo = min(base, key=lambda r: r["TempC"])
+    summary.update({
+        "high_c": hi["TempC"], "high_f": c_to_f(hi["TempC"]), "high_time_utc": hi["TimestampUTC"],
+        "low_c": lo["TempC"], "low_f": c_to_f(lo["TempC"]), "low_time_utc": lo["TimestampUTC"],
+    })
+    if precise and rounded:
+        # A whole-degree reading X means somewhere from X-0.5 to X+0.5 °C.
+        top = max(rounded, key=lambda r: r["TempC"])
+        if top["TempC"] - 0.5 > hi["TempC"]:
+            summary["peak_between_reports"] = {
+                "at_least_f": c_to_f(top["TempC"] - 0.5), "about_f": c_to_f(top["TempC"]),
+                "time_utc": top["TimestampUTC"]}
+        bottom = min(rounded, key=lambda r: r["TempC"])
+        if bottom["TempC"] + 0.5 < lo["TempC"]:
+            summary["dip_between_reports"] = {
+                "at_most_f": c_to_f(bottom["TempC"] + 0.5), "about_f": c_to_f(bottom["TempC"]),
+                "time_utc": bottom["TimestampUTC"]}
     return summary
 
 
 def latest_reading(rows):
     for r in reversed(rows):
-        if r["TempC"] is not None and r["TempQC"] not in ("X", "Q"):
+        if usable(r):
             return {"time_utc": r["TimestampUTC"], "temp_c": r["TempC"], "temp_f": c_to_f(r["TempC"]),
+                    "precision": "tenths of a degree" if r["Precise"] else "nearest whole °C",
                     "dewpoint_c": r["DewpointC"], "humidity_pct": r["RelativeHumidityPct"],
                     "wind_kmh": r["WindSpeedKmh"], "description": r["Description"]}
     return None
+
+
+def ranked(history, day, value_f, field, kind):
+    r = ranks.rank(history, day, value_f, field)
+    return None if r is None else {**r, "phrase": ranks.phrase(r, day, kind)}
+
+
+def record_context(city, history, so_far, forecast_rows, tz, now):
+    """Yesterday's official values, and today/forecast highs against the record."""
+    out = {"series": city["record_name"], "acis_id": city["record_sid"], "available": bool(history),
+           "rank_today": city["rank_today"]}
+    if not history:
+        return out
+    local_today = now.astimezone(tz).date()
+    final_days = sorted(d for d, r in history.items() if r.get("MaxTempF") not in ("", None))
+    if final_days:
+        d = final_days[-1]
+        row = history[d]
+        out["latest_final"] = {
+            "date": d.isoformat(), "is_yesterday": d == local_today - timedelta(days=1),
+            "high_f": ranks.whole_f(row["MaxTempF"]),
+            "low_f": ranks.whole_f(row["MinTempF"]) if row.get("MinTempF") not in ("", None) else None,
+            "high_rank": ranked(history, d, row["MaxTempF"], "MaxTempF", "high"),
+            "low_rank": ranked(history, d, row["MinTempF"], "MinTempF", "low")
+            if row.get("MinTempF") not in ("", None) else None,
+        }
+    if not city["rank_today"]:
+        out["note"] = ("Today's readings come from a different station than this record, "
+                       "so today and the forecast aren't ranked against it.")
+        return out
+    if so_far.get("high_f") is not None:
+        out["today_high_so_far"] = ranked(history, local_today, so_far["high_f"], "MaxTempF", "high")
+    out["forecast_highs"] = []
+    for r in forecast_rows:
+        start = datetime.fromisoformat(r["StartLocal"]).date()
+        if r["IsDaytime"] and r["TempF"] is not None and start >= local_today:
+            out["forecast_highs"].append({"period": r["PeriodName"], "date": start.isoformat(),
+                                          "high_f": r["TempF"],
+                                          "would_rank": ranked(history, start, r["TempF"], "MaxTempF", "high")})
+    return out
 
 
 def run_city(session, city, now):
@@ -296,6 +386,9 @@ def run_city(session, city, now):
     obs = pull_observations(session, city, now)
     new_obs = save_observations(obs)
     hourly = pull_hourly(session, where, now)
+    tz = ZoneInfo(city["time_zone"])
+    so_far = today_so_far(obs, tz, now)
+    history = ranks.load_history(HISTORY_DIR / f"{city['slug']}.csv")
 
     live = {
         "city": city["name"], "state": city["state"], "slug": city["slug"],
@@ -304,7 +397,8 @@ def run_city(session, city, now):
                     "lat": where["lat"], "lon": where["lon"], "history": city["history"]},
         "as_of_utc": iso_utc(now),
         "now": latest_reading(obs),
-        "today_so_far": today_so_far(obs, ZoneInfo(city["time_zone"]), now),
+        "today_so_far": so_far,
+        "record": record_context(city, history, so_far, forecast_rows, tz, now),
         "forecast": {
             "issued_utc": iso_utc(issued), "grid": where["grid"],
             "periods": [{"name": r["PeriodName"], "start": r["StartLocal"], "is_daytime": r["IsDaytime"],
@@ -313,7 +407,7 @@ def run_city(session, city, now):
                         for r in forecast_rows],
         },
         "hourly": hourly,
-        "source": "National Weather Service (api.weather.gov), public domain",
+        "source": "National Weather Service (api.weather.gov); official records from NOAA via RCC-ACIS. Public domain.",
     }
     LIVE_DIR.mkdir(parents=True, exist_ok=True)
     (LIVE_DIR / f"{city['slug']}.json").write_text(json.dumps(live, indent=1), encoding="utf-8")
