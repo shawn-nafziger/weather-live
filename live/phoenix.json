@@ -11,19 +11,19 @@
   "lon": -112.0035,
   "history": "Same station as the official Phoenix record (Sky Harbor since 1933)"
  },
- "as_of_utc": "2026-10-29T21:59:34Z",
+ "as_of_utc": "2026-10-30T01:58:57Z",
  "now": {
-  "time_utc": "2026-10-29T21:40:00Z",
-  "temp_c": 28,
-  "temp_f": 82.4,
-  "dewpoint_c": 9,
-  "humidity_pct": 30.38,
-  "wind_kmh": null,
-  "description": ""
+  "time_utc": "2026-10-30T01:20:00Z",
+  "temp_c": 27,
+  "temp_f": 80.6,
+  "dewpoint_c": 8,
+  "humidity_pct": 30.1,
+  "wind_kmh": 12.96,
+  "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-10-29",
-  "readings": 72,
+  "readings": 94,
   "note": "So far, from hourly readings. The official high and low are posted the next morning and can differ by a degree or two.",
   "high_c": 29,
   "high_f": 84.2,
@@ -33,18 +33,9 @@
   "low_time_utc": "2026-10-29T13:51:00Z"
  },
  "forecast": {
-  "issued_utc": "2026-10-29T18:32:50Z",
+  "issued_utc": "2026-10-29T22:46:51Z",
   "grid": "PSR/161,57",
   "periods": [
-   {
-    "name": "Today",
-    "start": "2026-10-29T11:00:00-07:00",
-    "is_daytime": true,
-    "temp_f": 87,
-    "temp_c": 30.56,
-    "precip_chance_pct": 1,
-    "short_forecast": "Partly Sunny"
-   },
    {
     "name": "Tonight",
     "start": "2026-10-29T18:00:00-07:00",
@@ -161,40 +152,21 @@
     "temp_c": 13.33,
     "precip_chance_pct": 3,
     "short_forecast": "Mostly Clear"
+   },
+   {
+    "name": "Thursday",
+    "start": "2026-11-05T06:00:00-07:00",
+    "is_daytime": true,
+    "temp_f": 79,
+    "temp_c": 26.11,
+    "precip_chance_pct": 3,
+    "short_forecast": "Sunny"
    }
   ]
  },
  "hourly": {
-  "issued_utc": "2026-10-29T18:32:50Z",
+  "issued_utc": "2026-10-29T22:46:51Z",
   "hours": [
-   {
-    "start": "2026-10-29T14:00:00-07:00",
-    "temp_f": 85,
-    "temp_c": 29.44,
-    "precip_chance_pct": 0,
-    "short_forecast": "Partly Sunny"
-   },
-   {
-    "start": "2026-10-29T15:00:00-07:00",
-    "temp_f": 85,
-    "temp_c": 29.44,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Cloudy"
-   },
-   {
-    "start": "2026-10-29T16:00:00-07:00",
-    "temp_f": 86,
-    "temp_c": 30.0,
-    "precip_chance_pct": 0,
-    "short_forecast": "Partly Sunny"
-   },
-   {
-    "start": "2026-10-29T17:00:00-07:00",
-    "temp_f": 84,
-    "temp_c": 28.89,
-    "precip_chance_pct": 1,
-    "short_forecast": "Partly Sunny"
-   },
    {
     "start": "2026-10-29T18:00:00-07:00",
     "temp_f": 82,
@@ -502,6 +474,34 @@
     "temp_c": 25.56,
     "precip_chance_pct": 3,
     "short_forecast": "Partly Sunny"
+   },
+   {
+    "start": "2026-10-31T14:00:00-07:00",
+    "temp_f": 78,
+    "temp_c": 25.56,
+    "precip_chance_pct": 3,
+    "short_forecast": "Partly Sunny"
+   },
+   {
+    "start": "2026-10-31T15:00:00-07:00",
+    "temp_f": 78,
+    "temp_c": 25.56,
+    "precip_chance_pct": 3,
+    "short_forecast": "Partly Sunny"
+   },
+   {
+    "start": "2026-10-31T16:00:00-07:00",
+    "temp_f": 77,
+    "temp_c": 25.0,
+    "precip_chance_pct": 3,
+    "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "start": "2026-10-31T17:00:00-07:00",
+    "temp_f": 76,
+    "temp_c": 24.44,
+    "precip_chance_pct": 64,
+    "short_forecast": "Rain Showers Likely"
    }
   ]
  },
