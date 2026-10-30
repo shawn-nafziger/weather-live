@@ -11,20 +11,20 @@
   "lon": -80.3164,
   "history": "Same station as the official Miami record"
  },
- "as_of_utc": "2026-10-30T22:13:56Z",
+ "as_of_utc": "2026-10-30T23:07:30Z",
  "now": {
-  "time_utc": "2026-10-30T21:55:00Z",
+  "time_utc": "2026-10-30T22:40:00Z",
   "temp_c": 28,
   "temp_f": 82.4,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 22,
   "humidity_pct": 69.92,
-  "wind_kmh": null,
+  "wind_kmh": 22.21,
   "description": "Mostly Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-10-30",
-  "readings": 19,
+  "readings": 20,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -112,34 +112,6 @@
    "phrase": "already the 22nd warmest October 30 high (tied) of 131 since 1895, warmest since 2024"
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-10-30",
-    "high_f": 86,
-    "would_rank": {
-     "value_f": 86,
-     "warm_rank": 22,
-     "cool_rank": 101,
-     "years": 131,
-     "first_year": 1895,
-     "tied_years": [
-      1898,
-      1925,
-      1930,
-      1949,
-      1951,
-      1959,
-      1992,
-      2014,
-      2024
-     ],
-     "standing": "warm",
-     "notable": true,
-     "since": 2024,
-     "record": false,
-     "phrase": "22nd warmest October 30 high (tied) of 131 since 1895, warmest since 2024"
-    }
-   },
    {
     "period": "Saturday",
     "date": "2026-10-31",
@@ -321,6 +293,38 @@
      "record": false,
      "phrase": "11th warmest November 5 high (tied) of 131 since 1895, warmest since 2023"
     }
+   },
+   {
+    "period": "Friday",
+    "date": "2026-11-06",
+    "high_f": 84,
+    "would_rank": {
+     "value_f": 84,
+     "warm_rank": 29,
+     "cool_rank": 89,
+     "years": 130,
+     "first_year": 1895,
+     "tied_years": [
+      1898,
+      1928,
+      1942,
+      1951,
+      1959,
+      1961,
+      1963,
+      1973,
+      1994,
+      2006,
+      2014,
+      2020,
+      2025
+     ],
+     "standing": "warm",
+     "notable": false,
+     "since": 2025,
+     "record": false,
+     "phrase": "typical for November 6"
+    }
    }
   ]
  },
@@ -328,15 +332,6 @@
   "issued_utc": "2026-10-30T20:47:35Z",
   "grid": "MFL/105,51",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-10-30T16:00:00-04:00",
-    "is_daytime": true,
-    "temp_f": 86,
-    "temp_c": 30.0,
-    "precip_chance_pct": 26,
-    "short_forecast": "Slight Chance Showers And Thunderstorms"
-   },
    {
     "name": "Tonight",
     "start": "2026-10-30T18:00:00-04:00",
@@ -453,19 +448,21 @@
     "temp_c": 21.67,
     "precip_chance_pct": 18,
     "short_forecast": "Slight Chance Showers And Thunderstorms then Partly Cloudy"
+   },
+   {
+    "name": "Friday",
+    "start": "2026-11-06T06:00:00-05:00",
+    "is_daytime": true,
+    "temp_f": 84,
+    "temp_c": 28.89,
+    "precip_chance_pct": 15,
+    "short_forecast": "Sunny then Slight Chance Rain Showers"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-10-30T20:47:35Z",
   "hours": [
-   {
-    "start": "2026-10-30T18:00:00-04:00",
-    "temp_f": 83,
-    "temp_c": 28.33,
-    "precip_chance_pct": 28,
-    "short_forecast": "Chance Showers And Thunderstorms"
-   },
    {
     "start": "2026-10-30T19:00:00-04:00",
     "temp_f": 82,
@@ -792,6 +789,13 @@
     "start": "2026-11-01T16:00:00-05:00",
     "temp_f": 80,
     "temp_c": 26.67,
+    "precip_chance_pct": 85,
+    "short_forecast": "Showers And Thunderstorms"
+   },
+   {
+    "start": "2026-11-01T17:00:00-05:00",
+    "temp_f": 79,
+    "temp_c": 26.11,
     "precip_chance_pct": 85,
     "short_forecast": "Showers And Thunderstorms"
    }
