@@ -1,12 +1,12 @@
 name: Daily official records
 
-# Twice a day: 11:37 and 17:37 UTC (morning and early afternoon in the US).
+# Four times a day, 11:37 to 17:37 UTC (US morning to early afternoon).
 # Stations post yesterday's official values in the morning and sometimes
-# correct them later; each run re-reads the last 21 days. Also runnable by hand.
+# correct them later; each run re-reads the last 21 days. Several slots because
+# GitHub sometimes skips scheduled runs. Also runnable by hand.
 on:
   schedule:
-    - cron: "37 11 * * *"
-    - cron: "37 17 * * *"
+    - cron: "37 11,13,15,17 * * *"
   workflow_dispatch:
 
 permissions:

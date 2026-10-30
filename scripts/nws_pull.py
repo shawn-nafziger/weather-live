@@ -368,7 +368,14 @@ def record_context(city, history, so_far, forecast_rows, tz, now):
                        "so today and the forecast aren't ranked against it.")
         return out
     if so_far.get("high_f") is not None:
-        out["today_high_so_far"] = ranked(history, local_today, so_far["high_f"], "MaxTempF", "high")
+        # A high "so far" can only go up as the day goes on, so the only fair
+        # claim before the day ends is on the warm side ("already the 4th
+        # warmest"). Early in the day it would otherwise read "17th coolest".
+        r = ranked(history, local_today, so_far["high_f"], "MaxTempF", "high")
+        if r and r["standing"] == "warm" and r["notable"]:
+            out["today_high_so_far"] = {**r, "phrase": "already the " + r["phrase"]
+                                        if not r["phrase"].startswith(("the ", "ties ")) else
+                                        "already " + r["phrase"]}
     out["forecast_highs"] = []
     for r in forecast_rows:
         start = datetime.fromisoformat(r["StartLocal"]).date()

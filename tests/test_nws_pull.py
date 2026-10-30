@@ -136,6 +136,20 @@ class Test(unittest.TestCase):
         n.get_json = FakeAPI(fail_station="/stations/K")
         self.assertEqual(n.main(), 1)
 
+    def test_today_so_far_rank_is_warm_side_only(self):
+        h = self.tmp / "history"; h.mkdir()
+        def write(base):
+            lines = ["Date,MaxTempF,MinTempF"] + [f"{y}-10-29,{base + i},30" for i, y in enumerate(range(1996, 2026))]
+            (h / "chicago.csv").write_text("\n".join(lines) + "\n")
+        write(80)                     # every year 80-109 F: today's 70 F so far would be "coolest"
+        n.get_json = FakeAPI(); n.main()
+        rec = json.loads((self.tmp / "live/chicago.json").read_text())["record"]
+        self.assertNotIn("today_high_so_far", rec)
+        write(40)                     # every year 40-69 F: 70 F is already a record
+        n.main()
+        th = json.loads((self.tmp / "live/chicago.json").read_text())["record"]["today_high_so_far"]
+        self.assertEqual(th["phrase"], "already the warmest October 29 high on record (31 years since 1996)")
+
     def test_old_day_file_keeps_its_columns(self):
         # A file started before ReportType existed keeps its header; no ragged rows.
         old = self.tmp / "archive/observations/2026/10/2026-10-29.csv"
@@ -165,9 +179,8 @@ class Test(unittest.TestCase):
         self.assertEqual(lf["high_rank"]["tied_years"], [2024])
         self.assertEqual(lf["high_rank"]["phrase"], "2nd warmest October 28 high (tied) of 31 since 1996, warmest since 2025")  # 2025 (79 F) was warmer
         # Today's high so far, 21.1 C = 70.0 F -> 70 F: 2017..2025 (71..79) are warmer; 2016 ties.
-        th = rec["today_high_so_far"]
-        self.assertEqual((th["value_f"], th["warm_rank"], th["years"]), (70, 10, 31))
-        self.assertEqual(th["phrase"], "typical for October 29")
+        # 70 F is typical, so no claim yet.
+        self.assertNotIn("today_high_so_far", rec)
         # Forecast daytime periods would-rank; the 2 daytime fixture periods start Oct 29.
         self.assertEqual([f["high_f"] for f in rec["forecast_highs"]], [65, 55])
         self.assertEqual(rec["forecast_highs"][1]["would_rank"]["phrase"],

@@ -1,10 +1,12 @@
 name: Hourly weather pull
 
-# Every hour at :17 (GitHub's busiest minute is :00, and runs scheduled then
-# can start late or be dropped). Also runnable by hand: Actions tab > Run workflow.
+# Asks every 15 minutes (:07, :22, :37, :52). GitHub starts scheduled runs late
+# or skips them when busy (on Oct 29-30 only 2 of ~11 hourly runs happened), so
+# asking more often keeps at least one run an hour. Extra runs are harmless:
+# forecasts and readings are saved once each. Also runnable by hand.
 on:
   schedule:
-    - cron: "17 * * * *"
+    - cron: "7,22,37,52 * * * *"
   workflow_dispatch:
 
 permissions:
