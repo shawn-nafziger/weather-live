@@ -13,5 +13,7 @@ Live data for Shawn Nafziger's Weather Intelligence project. Read `shawn-nafzige
 - No personal email in the NWS User-Agent; it identifies the site and this repo.
 - All paths and cities come from the top of `scripts/nws_pull.py` and `config/cities.json`.
 
+- **Runs are started by a Cloudflare Worker** (`cloudflare/worker.js`, crons `7 * * * *` and `37 11,15 * * *` UTC); GitHub's schedule is only a backup. The Worker's token expires Oct 29, 2027 (see README).
+
 ## Next
 - The live page itself (design playbook: `tallorderdigital-site/docs/design-system-and-dataviz-playbook.md`).

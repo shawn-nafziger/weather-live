@@ -28,6 +28,15 @@ Archive files are one CSV per day (`archive/<kind>/YYYY/MM/YYYY-MM-DD.csv`); pas
 
 Chicago, Phoenix, Miami, Seattle, Goshen IN and Los Olivos CA. Forecasts are pulled for each observation station's exact location, so they can be checked against what that station records. Goshen and Los Olivos use airport stations for now; their long official records come from different, once-a-day stations.
 
+## What starts the jobs
+
+GitHub's own schedule skips many runs (on Oct 29-30, 2026 it ran 2 of about 11 hourly slots and then stopped), so a **Cloudflare Worker** starts the jobs on time:
+
+- Worker `weather-live-trigger` in Shawn's Cloudflare account. Its code is copied in `cloudflare/worker.js` (edit it in the Cloudflare dashboard, then update this copy by PR).
+- Cron triggers (UTC): `7 * * * *` starts **Hourly weather pull**; `37 11,15 * * *` starts **Daily official records**.
+- It uses the secret `GITHUB_TOKEN`: a GitHub fine-grained token, "weather-live trigger", that can only start Actions in this repo. **It expires Oct 29, 2027**; a reminder is scheduled for Oct 15, 2027. To renew: regenerate the token on GitHub, then replace the secret in the Worker's Settings > Variables and secrets.
+- GitHub's own schedules stay on as a backup. Extra runs are harmless.
+
 ## Run it by hand
 
 On GitHub: **Actions → Hourly weather pull → Run workflow**.
