@@ -11,33 +11,33 @@
   "lon": -122.3136,
   "history": "Same station as the official Seattle record (Sea-Tac)"
  },
- "as_of_utc": "2026-10-31T20:07:30Z",
+ "as_of_utc": "2026-10-31T21:07:29Z",
  "now": {
-  "time_utc": "2026-10-31T19:45:00Z",
-  "temp_c": 9,
-  "temp_f": 48.2,
+  "time_utc": "2026-10-31T20:35:00Z",
+  "temp_c": 10,
+  "temp_f": 50.0,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 8,
-  "humidity_pct": 93.45,
+  "dewpoint_c": 7,
+  "humidity_pct": 81.62,
   "wind_kmh": 9.25,
-  "description": "Mostly Cloudy"
+  "description": "Partly Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-10-31",
-  "readings": 17,
+  "readings": 18,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 7.8,
-  "high_f": 46.0,
-  "high_time_utc": "2026-10-31T18:53:00Z",
+  "high_c": 8.9,
+  "high_f": 48.0,
+  "high_time_utc": "2026-10-31T19:53:00Z",
   "low_c": 1.1,
   "low_f": 34.0,
   "low_time_utc": "2026-10-31T14:41:00Z",
   "peak_between_reports": {
-   "at_least_f": 47.3,
-   "about_f": 48.2,
-   "time_utc": "2026-10-31T19:45:00Z"
+   "at_least_f": 49.1,
+   "about_f": 50.0,
+   "time_utc": "2026-10-31T20:00:00Z"
   }
  },
  "record": {
@@ -91,7 +91,7 @@
   },
   "forecast_highs": [
    {
-    "period": "Today",
+    "period": "This Afternoon",
     "date": "2026-10-31",
     "high_f": 55,
     "would_rank": {
@@ -263,8 +263,8 @@
   "grid": "SEW/124,60",
   "periods": [
    {
-    "name": "Today",
-    "start": "2026-10-31T11:00:00-07:00",
+    "name": "This Afternoon",
+    "start": "2026-10-31T12:00:00-07:00",
     "is_daytime": true,
     "temp_f": 55,
     "temp_c": 12.78,
@@ -393,13 +393,6 @@
  "hourly": {
   "issued_utc": "2026-10-31T18:26:52Z",
   "hours": [
-   {
-    "start": "2026-10-31T13:00:00-07:00",
-    "temp_f": 51,
-    "temp_c": 10.56,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Sunny"
-   },
    {
     "start": "2026-10-31T14:00:00-07:00",
     "temp_f": 53,
@@ -726,6 +719,13 @@
     "start": "2026-11-02T11:00:00-08:00",
     "temp_f": 48,
     "temp_c": 8.89,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "start": "2026-11-02T12:00:00-08:00",
+    "temp_f": 52,
+    "temp_c": 11.11,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Cloudy"
    }
