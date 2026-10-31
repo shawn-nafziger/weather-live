@@ -11,7 +11,7 @@
   "lon": -87.9044,
   "history": "Same station as the official Chicago record (ThreadEx, O'Hare since 1980)"
  },
- "as_of_utc": "2026-10-31T04:07:30Z",
+ "as_of_utc": "2026-10-31T05:07:29Z",
  "now": {
   "time_utc": "2026-10-31T03:05:00Z",
   "temp_c": 12,
@@ -23,22 +23,11 @@
   "description": "Cloudy"
  },
  "today_so_far": {
-  "date_local": "2026-10-30",
-  "readings": 18,
-  "basis": "hourly reports (tenths of a degree)",
-  "approximate": false,
-  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 14.4,
-  "high_f": 57.9,
-  "high_time_utc": "2026-10-30T16:51:00Z",
-  "low_c": 7.8,
-  "low_f": 46.0,
-  "low_time_utc": "2026-10-30T10:51:00Z",
-  "dip_between_reports": {
-   "at_most_f": 45.5,
-   "about_f": 44.6,
-   "time_utc": "2026-10-30T11:25:00Z"
-  }
+  "date_local": "2026-10-31",
+  "readings": 0,
+  "basis": "5-minute readings (whole \u00b0C, approximate)",
+  "approximate": true,
+  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two."
  },
  "record": {
   "series": "Chicago area (ThreadEx, O'Hare since 1980)",
@@ -47,7 +36,7 @@
   "rank_today": true,
   "latest_final": {
    "date": "2026-10-29",
-   "is_yesterday": true,
+   "is_yesterday": false,
    "high_f": 69,
    "low_f": 50,
    "high_rank": {
@@ -372,13 +361,6 @@
  "hourly": {
   "issued_utc": "2026-10-31T02:51:11Z",
   "hours": [
-   {
-    "start": "2026-10-30T23:00:00-05:00",
-    "temp_f": 53,
-    "temp_c": 11.67,
-    "precip_chance_pct": 15,
-    "short_forecast": "Slight Chance Rain Showers"
-   },
    {
     "start": "2026-10-31T00:00:00-05:00",
     "temp_f": 52,
@@ -705,6 +687,13 @@
     "start": "2026-11-01T21:00:00-06:00",
     "temp_f": 57,
     "temp_c": 13.89,
+    "precip_chance_pct": 11,
+    "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "start": "2026-11-01T22:00:00-06:00",
+    "temp_f": 56,
+    "temp_c": 13.33,
     "precip_chance_pct": 11,
     "short_forecast": "Mostly Cloudy"
    }
