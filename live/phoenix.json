@@ -11,33 +11,33 @@
   "lon": -112.0035,
   "history": "Same station as the official Phoenix record (Sky Harbor since 1933)"
  },
- "as_of_utc": "2026-10-31T16:07:30Z",
+ "as_of_utc": "2026-10-31T17:07:30Z",
  "now": {
-  "time_utc": "2026-10-31T15:40:00Z",
-  "temp_c": 20,
-  "temp_f": 68.0,
+  "time_utc": "2026-10-31T16:55:00Z",
+  "temp_c": 23,
+  "temp_f": 73.4,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 15,
-  "humidity_pct": 72.94,
-  "wind_kmh": 12.96,
-  "description": "Mostly Clear"
+  "dewpoint_c": 16,
+  "humidity_pct": 64.72,
+  "wind_kmh": 16.67,
+  "description": "Mostly Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-10-31",
-  "readings": 8,
+  "readings": 9,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 18.9,
-  "high_f": 66.0,
-  "high_time_utc": "2026-10-31T08:51:00Z",
+  "high_c": 20,
+  "high_f": 68.0,
+  "high_time_utc": "2026-10-31T15:51:00Z",
   "low_c": 18.3,
   "low_f": 64.9,
   "low_time_utc": "2026-10-31T07:51:00Z",
   "peak_between_reports": {
-   "at_least_f": 67.1,
-   "about_f": 68.0,
-   "time_utc": "2026-10-31T15:35:00Z"
+   "at_least_f": 72.5,
+   "about_f": 73.4,
+   "time_utc": "2026-10-31T16:55:00Z"
   }
  },
  "record": {
@@ -256,12 +256,12 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-10-31T11:37:01Z",
+  "issued_utc": "2026-10-31T15:57:34Z",
   "grid": "PSR/161,57",
   "periods": [
    {
     "name": "Today",
-    "start": "2026-10-31T06:00:00-07:00",
+    "start": "2026-10-31T09:00:00-07:00",
     "is_daytime": true,
     "temp_f": 79,
     "temp_c": 26.11,
@@ -388,15 +388,8 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-10-31T11:37:01Z",
+  "issued_utc": "2026-10-31T15:57:34Z",
   "hours": [
-   {
-    "start": "2026-10-31T09:00:00-07:00",
-    "temp_f": 70,
-    "temp_c": 21.11,
-    "precip_chance_pct": 9,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "start": "2026-10-31T10:00:00-07:00",
     "temp_f": 72,
@@ -723,6 +716,13 @@
     "start": "2026-11-02T08:00:00-07:00",
     "temp_f": 65,
     "temp_c": 18.33,
+    "precip_chance_pct": 10,
+    "short_forecast": "Mostly Sunny"
+   },
+   {
+    "start": "2026-11-02T09:00:00-07:00",
+    "temp_f": 67,
+    "temp_c": 19.44,
     "precip_chance_pct": 10,
     "short_forecast": "Mostly Sunny"
    }
