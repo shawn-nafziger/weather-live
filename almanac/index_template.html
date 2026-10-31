@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Almanac · Tall Order Digital</title>
-<meta name="description" content="Every city's official weather record in context: yesterday, the year so far, the record book, and how the climate has changed.">
+<meta name="description" content="{{LEDE}} Every place's official daily weather record in context: yesterday, the record book, and how the climate has changed.">
 <meta name="robots" content="noindex">
 <link rel="icon" href="{{MAIN}}favicon.ico" sizes="48x48">
 <link rel="icon" href="{{MAIN}}assets/brand/tod-app-icon.svg" type="image/svg+xml">
@@ -13,37 +13,132 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <script>try{var t=localStorage.getItem("tod-theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
 <style>
-/* One column of city cards; each card leads with that city's own finding.
-   Tokens: the site's shared set (tallorderdigital-site/assets/site.css). */
-:root { --bg: #f3f4ef; --surface: #ffffff; --ink: #201914; --ink-2: #4a403a; --ink-3: #6e645d; --rule: #dddad3; --amber: #b36000;
+/* Layout: search first (most visitors want one place), then the country as a map,
+   then every place as a sortable table. One 860px column.
+   Tokens: the site's shared set (tallorderdigital-site/assets/site.css) and the
+   playbook's data roles: --amber signal, --edge at the edge, --ghost noise, --navy comparison. */
+:root {
+  --bg: #f3f4ef; --surface: #ffffff; --ink: #201914; --ink-2: #4a403a; --ink-3: #6e645d;
+  --rule: #dddad3; --ghost: #cdc9c1; --navy: #0a3746; --amber: #b36000; --edge: #e3b88a;
+  --land: #e8e6e0; --land-line: #f3f4ef;
   --logo-2: #0a3746; --logo-3: #366f80; --logo-4: #62a8bb; --logo-ink: #201914; --logo-sub: #4a403a;
-  --font-display: "Barlow Semi Condensed", "Arial Narrow", sans-serif; --font-body: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
-  --font-data: "IBM Plex Mono", ui-monospace, Consolas, monospace; }
-@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg: #03222c; --surface: #0a3746; --ink: #f3f4ef; --ink-2: #dddad3; --ink-3: #9fb1b8; --rule: #1e3a44; --amber: #f99a2b;
-  --logo-2: #7fc4d6; --logo-3: #4f8d9e; --logo-4: #2e6272; --logo-ink: #f3f4ef; --logo-sub: #dddad3; color-scheme: dark; } }
-:root[data-theme="dark"] { --bg: #03222c; --surface: #0a3746; --ink: #f3f4ef; --ink-2: #dddad3; --ink-3: #9fb1b8; --rule: #1e3a44; --amber: #f99a2b;
-  --logo-2: #7fc4d6; --logo-3: #4f8d9e; --logo-4: #2e6272; --logo-ink: #f3f4ef; --logo-sub: #dddad3; color-scheme: dark; }
+  --font-display: "Barlow Semi Condensed", "Arial Narrow", "Roboto Condensed", sans-serif;
+  --font-body: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  --font-data: "IBM Plex Mono", ui-monospace, "Cascadia Mono", Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #03222c; --surface: #0a3746; --ink: #f3f4ef; --ink-2: #dddad3; --ink-3: #9fb1b8; --rule: #1e3a44;
+    --ghost: #3a5762; --navy: #7fc4d6; --amber: #f99a2b; --edge: #8f6230; --land: #0c3341; --land-line: #03222c;
+    --logo-2: #7fc4d6; --logo-3: #4f8d9e; --logo-4: #2e6272; --logo-ink: #f3f4ef; --logo-sub: #dddad3; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #03222c; --surface: #0a3746; --ink: #f3f4ef; --ink-2: #dddad3; --ink-3: #9fb1b8; --rule: #1e3a44;
+  --ghost: #3a5762; --navy: #7fc4d6; --amber: #f99a2b; --edge: #8f6230; --land: #0c3341; --land-line: #03222c;
+  --logo-2: #7fc4d6; --logo-3: #4f8d9e; --logo-4: #2e6272; --logo-ink: #f3f4ef; --logo-sub: #dddad3; color-scheme: dark;
+}
 * { box-sizing: border-box; }
 body { margin: 0; background: var(--bg); color: var(--ink); font: 400 17px/1.55 var(--font-body);
   padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
-main { max-width: 860px; margin: 0 auto; padding-block: 44px 64px; display: grid; gap: 28px; }
+main { max-width: 860px; margin: 0 auto; padding-block: 40px 72px; display: grid; gap: 40px; }
+p { margin: 0; }
 .kicker { font: 500 12px/1.2 var(--font-data); letter-spacing: .14em; text-transform: uppercase; color: var(--ink-3); margin: 0; }
 h1 { font: 700 clamp(48px, 10vw, 92px)/.95 var(--font-display); text-transform: uppercase; margin: 10px 0 0; text-wrap: balance; }
-.dek { font-size: 20px; line-height: 1.45; color: var(--ink-2); margin: 16px 0 0; max-width: 34em; }
-.grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
-@media (max-width: 640px) { .grid { grid-template-columns: 1fr; } }
-.card { display: grid; gap: 8px; align-content: start; background: var(--surface); border: 1px solid var(--rule); border-radius: 6px; padding: 18px 20px; text-decoration: none; color: inherit; }
-.card:hover { border-color: var(--amber); }
-.card:hover b { color: var(--amber); }
-.card:focus-visible { outline: 2px solid var(--amber); outline-offset: 2px; }
-.card .meta { font: 500 11px/1.3 var(--font-data); letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); }
-.card b { font: 700 26px/1.02 var(--font-display); text-transform: uppercase; text-wrap: balance; }
-.card .sub { font-size: 14px; line-height: 1.4; color: var(--ink-2); }
+.lede { font: 600 clamp(22px, 3.4vw, 28px)/1.25 var(--font-body); margin: 18px 0 0; max-width: 28em; text-wrap: balance; }
+.lede .sig { color: var(--amber); }
+.dek { font-size: 17px; line-height: 1.5; color: var(--ink-2); margin: 10px 0 0; max-width: 38em; }
+
+/* search */
+.find { display: grid; gap: 8px; position: relative; max-width: 520px; }
+.find label { font: 500 12px/1 var(--font-data); letter-spacing: .12em; text-transform: uppercase; color: var(--ink-3); }
+.find input { font: 400 18px/1.3 var(--font-body); color: var(--ink); background: var(--surface); border: 1px solid var(--ghost);
+  border-radius: 8px; padding: 12px 14px 12px 42px; min-height: 48px; width: 100%; }
+.find .field { position: relative; }
+.find .field svg { position: absolute; left: 14px; top: 50%; width: 18px; height: 18px; transform: translateY(-50%); color: var(--ink-3); pointer-events: none; }
+.find input:focus { outline: 2px solid var(--amber); outline-offset: 1px; border-color: transparent; }
+.find .hint { font-size: 13px; color: var(--ink-3); }
+.results { list-style: none; margin: 0; padding: 4px; position: absolute; top: 76px; left: 0; right: 0; z-index: 4;
+  background: var(--surface); border: 1px solid var(--rule); border-radius: 8px; box-shadow: 0 8px 28px rgba(0,0,0,.14); }
+.results a { display: flex; justify-content: space-between; gap: 12px; padding: 10px 12px; min-height: 44px; align-items: center;
+  border-radius: 6px; text-decoration: none; color: var(--ink); }
+.results a span { font: 400 12px/1.2 var(--font-data); color: var(--ink-3); }
+.results a:hover, .results a.on { background: var(--bg); }
+.results .none { padding: 10px 12px; color: var(--ink-3); font-size: 15px; }
+
+/* figures */
+.figure { background: var(--surface); border: 1px solid var(--rule); border-radius: 6px; padding: 20px 20px 16px; display: grid; gap: 12px; min-width: 0; margin: 0; }
+.fig-title { font: 600 16px/1.35 var(--font-body); }
+.fig-sub { font-size: 13px; color: var(--ink-3); margin-top: 2px; }
+.keys { display: grid; gap: 3px; font-size: 13px; line-height: 1.45; color: var(--ink-2); }
+.keys span::before { content: ""; display: inline-block; width: 12px; height: 12px; border-radius: 50%; margin-right: 8px; vertical-align: -2px; background: var(--k); }
+.keys b { font-weight: 600; }
+.k-sig { --k: var(--amber); } .k-sig b { color: var(--amber); }
+.k-edge { --k: var(--edge); }
+.k-noise { --k: var(--ghost); }
+.k-navy { --k: var(--navy); } .k-navy b { color: var(--navy); }
+.map { position: relative; }
+.map svg { display: block; width: 100%; height: auto; }
+.map .land path { fill: var(--land); stroke: var(--land-line); stroke-width: 1; }
+.map .dot { cursor: pointer; }
+.map .dot circle.mark { stroke: var(--surface); stroke-width: 1.5; }
+.map .dot:focus { outline: none; }
+.map .dot:focus circle.mark, .map .dot:hover circle.mark { stroke: var(--ink); stroke-width: 2; }
+.map text { font-family: var(--font-data); font-size: 12px; fill: var(--ink-2); pointer-events: none; paint-order: stroke; stroke: var(--surface); stroke-width: 3px; stroke-linejoin: round; }
+.tip { position: absolute; pointer-events: none; background: var(--ink); color: var(--bg); font: 400 13px/1.45 var(--font-body); padding: 8px 10px;
+  border-radius: 6px; max-width: 260px; opacity: 0; transition: opacity .12s; z-index: 3; }
+.tip b { font-weight: 600; }
+.tip.on { opacity: 1; }
+.source { font: 400 12px/1.4 var(--font-data); color: var(--ink-3); }
+
+/* table */
+.controls { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; font-size: 14px; color: var(--ink-2); }
+.controls select { font: 400 15px var(--font-body); color: var(--ink); background: var(--surface); border: 1px solid var(--ghost); border-radius: 6px; padding: 8px 10px; min-height: 40px; }
+.controls select:focus-visible { outline: 2px solid var(--amber); outline-offset: 1px; }
+.tablewrap { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font: 400 14px/1.4 var(--font-body); font-variant-numeric: tabular-nums; }
+th, td { text-align: right; padding: 10px 10px; border-bottom: 1px solid var(--rule); white-space: nowrap; vertical-align: top; }
+th:first-child, td:first-child { text-align: left; white-space: normal; min-width: 150px; }
+th { font: 500 11px/1.3 var(--font-data); letter-spacing: .08em; text-transform: uppercase; color: var(--ink-3); vertical-align: bottom; }
+th button { all: unset; cursor: pointer; display: inline-flex; gap: 4px; align-items: center; min-height: 32px; }
+th button:focus-visible { outline: 2px solid var(--amber); outline-offset: 2px; border-radius: 2px; }
+th button::after { content: "↕"; opacity: .35; }
+th[aria-sort="ascending"] button::after { content: "↑"; opacity: 1; }
+th[aria-sort="descending"] button::after { content: "↓"; opacity: 1; }
+td a { color: var(--ink); font-weight: 600; text-decoration-color: var(--amber); text-underline-offset: 3px; }
+td .sub { display: block; font-size: 13px; color: var(--ink-3); font-weight: 400; margin-top: 2px; white-space: normal; max-width: 34ch; }
+td .num { font: 500 14px var(--font-data); }
+td .of { font: 400 12px var(--font-data); color: var(--ink-3); }
+td .cls { display: block; font: 400 11px/1.3 var(--font-data); letter-spacing: .04em; color: var(--ink-3); margin-top: 2px; }
+td .cls.signal { color: var(--amber); font-weight: 500; }
+.chipdot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 6px; vertical-align: 0; }
+tr.hidden { display: none; }
+@media (max-width: 600px) {
+  .tablewrap { overflow: visible; }
+  #tbl thead { display: none; }
+  #tbl tr { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px 10px; padding: 12px 0; border-bottom: 1px solid var(--rule); }
+  #tbl tr.hidden { display: none; }
+  #tbl td { border: 0; padding: 0; text-align: left; white-space: normal; min-width: 0; }
+  #tbl td:first-child { grid-column: 1 / -1; }
+  #tbl td:last-child { display: none; }
+  #tbl td[data-l]::before { content: attr(data-l); display: block; font: 500 10px/1.3 var(--font-data); letter-spacing: .08em; text-transform: uppercase; color: var(--ink-3); margin-bottom: 2px; }
+  .controls .sortbar { display: flex; }
+}
+.sortbar { display: none; gap: 8px; align-items: center; font-size: 14px; color: var(--ink-2); flex-wrap: wrap; }
+.note { font-size: 13px; color: var(--ink-3); }
+
+details { border-top: 1px solid var(--rule); padding-top: 12px; font-size: 15px; color: var(--ink-2); max-width: 680px; }
+summary { cursor: pointer; font: 500 13px/1.4 var(--font-data); color: var(--ink-2); min-height: 32px; display: flex; align-items: center; }
+summary:focus-visible, a:focus-visible, .theme-toggle:focus-visible { outline: 2px solid var(--amber); outline-offset: 2px; border-radius: 4px; }
+details ul { margin: 10px 0 0; padding-left: 20px; display: grid; gap: 6px; }
+@media (prefers-reduced-motion: reduce) { .tip { transition: none; } }
+
+/* site chrome: shared with tallorderdigital.com */
 .site-bar, .site-foot { max-width: 860px; margin: 0 auto; }
 .site-bar { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 18px 0 14px; border-bottom: 1px solid var(--rule); }
 .site-bar a { color: inherit; text-decoration: none; }
 .site-bar a:hover { color: var(--amber); }
-.site-nav { display: flex; gap: 18px; font: 500 12px/1 var(--font-data); letter-spacing: .12em; text-transform: uppercase; color: var(--ink-2); }
+.site-nav { display: flex; gap: 18px; align-items: center; font: 500 12px/1 var(--font-data); letter-spacing: .12em; text-transform: uppercase; color: var(--ink-2); }
 @media (max-width: 420px) { .site-bar { flex-wrap: wrap; gap: 4px 8px; } .site-nav { gap: 12px; letter-spacing: .08em; margin-left: auto; } }
 .brand { display: inline-flex; align-items: center; gap: 10px; color: var(--ink); }
 .brand .mark { width: 42px; height: 42px; flex: none; }
@@ -51,6 +146,12 @@ h1 { font: 700 clamp(48px, 10vw, 92px)/.95 var(--font-display); text-transform: 
 .wm { display: grid; line-height: 1; font-family: var(--font-display); text-transform: uppercase; }
 .wm-1 { color: var(--logo-ink); font-weight: 700; font-size: 23px; letter-spacing: .01em; white-space: nowrap; }
 .wm-2 { font-weight: 600; font-size: 8.4px; letter-spacing: .52em; color: var(--logo-sub); margin: 3px 0 0 2px; }
+.theme-toggle { display: inline-grid; place-items: center; width: 44px; height: 44px; margin: -12px -12px -12px -6px; padding: 0; border: 0; border-radius: 50%; background: transparent; color: var(--ink-2); cursor: pointer; }
+.theme-toggle:hover { color: var(--amber); }
+.theme-toggle svg { width: 20px; height: 20px; }
+.theme-toggle .i-sun { display: none; }
+.theme-toggle[data-showing="dark"] .i-sun { display: block; }
+.theme-toggle[data-showing="dark"] .i-moon { display: none; }
 .site-foot { border-top: 1px solid var(--rule); padding: 20px 0 40px; display: grid; gap: 6px; font: 400 12px/1.5 var(--font-data); color: var(--ink-3); }
 .site-foot a { color: var(--ink-2); }
 </style>
@@ -58,18 +159,218 @@ h1 { font: 700 clamp(48px, 10vw, 92px)/.95 var(--font-display); text-transform: 
 <body>
 <header class="site-bar">
   <a class="brand" href="{{MAIN}}" aria-label="Tall Order Digital, home"><svg class="mark" viewBox="0 0 100 100" aria-hidden="true"><rect x="6" y="6" width="18" height="88" rx="3" class="m-o"/><rect x="30" y="50" width="18" height="44" rx="3" class="m-2"/><rect x="54" y="60" width="18" height="34" rx="3" class="m-3"/><rect x="78" y="70" width="18" height="24" rx="3" class="m-4"/></svg><span class="wm"><span class="wm-1">Tall Order</span><span class="wm-2">Digital</span></span></a>
-  <nav class="site-nav" aria-label="Site"><a href="{{MAIN}}#stories">Stories</a><a href="{{MAIN}}about/">About</a></nav>
+  <nav class="site-nav" aria-label="Site"><a href="{{MAIN}}#stories">Stories</a><a href="{{MAIN}}about/">About</a>
+    <button class="theme-toggle" type="button" aria-label="Switch theme"><svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button></nav>
 </header>
+
 <main>
   <header>
     <p class="kicker">Almanac · {{COUNT}} places · Official values through {{ASOF_WORDS}}</p>
     <h1>The Almanac</h1>
-    <p class="dek">Every page is built from one place's official daily weather record. The headline on each card is that place's own finding, chosen by the data.</p>
+    <p class="lede" id="lede">{{LEDE}}</p>
+    <p class="dek">Each place has a page built from its own official daily weather record: yesterday in context, the year so far, the record book, and how its climate has changed.</p>
   </header>
-  <div class="grid">{{CARDS}}</div>
+
+  <div class="find" role="search">
+    <label for="q">Find a place</label>
+    <div class="field"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5L21 21"/></svg>
+    <input id="q" type="search" autocomplete="off" placeholder="Town, city or state" aria-controls="results" aria-autocomplete="list" aria-expanded="false"></div>
+    <ul class="results" id="results" role="listbox" hidden></ul>
+    <p class="hint" id="hint"></p>
+  </div>
+
+  <figure class="figure">
+    <div>
+      <p class="fig-title">Is the record book still setting record lows?</p>
+      <p class="fig-sub">Daily record lows set since 2000 that still stand, compared with what chance alone would give. Hover or tap a place; click to open its page.</p>
+    </div>
+    <div class="keys">
+      <span class="k-sig"><b>Orange</b> far fewer than chance, and the gap is real</span>
+      <span class="k-edge"><b>Light orange</b> fewer, close to a real gap</span>
+      <span class="k-noise"><b>Gray</b> about what chance would give</span>
+      <span class="k-navy"><b>Teal</b> more record lows than chance</span>
+    </div>
+    <div class="map" id="map">
+      <svg viewBox="0 0 975 610" role="img" aria-labelledby="map-label">
+        <title id="map-label">Map of the United States with one dot per place, colored by record lows since 2000 compared with chance. The table below lists the same values.</title>
+        <g class="land" aria-hidden="true">{{STATES}}</g>
+        <g id="labels" aria-hidden="true"></g>
+        <g id="dots"></g>
+      </svg>
+      <div class="tip" id="tip" role="status"></div>
+    </div>
+    <p class="source">Data: NOAA official daily records via RCC-ACIS. State outlines: US Census Bureau.</p>
+  </figure>
+
+  <figure class="figure">
+    <div>
+      <p class="fig-title">Every place</p>
+      <p class="fig-sub">Trends are per decade across each full record. Sort by any column.</p>
+    </div>
+    <div class="controls">
+      <label for="state">State</label>
+      <select id="state"><option value="">All states</option></select>
+      <span id="shown" class="note"></span>
+      <span class="sortbar"><label for="sortsel">Sort</label><select id="sortsel">
+        <option value="name">Place</option><option value="lowsratio">Fewest record lows vs chance</option>
+        <option value="nights">Nights warming most</option><option value="days">Days warming most</option></select></span>
+    </div>
+    <div class="tablewrap">
+      <table id="tbl">
+        <thead><tr>
+          <th scope="col" data-k="name" aria-sort="ascending"><button type="button">Place</button></th>
+          <th scope="col" data-k="lowsratio"><button type="button">Record lows since 2000</button></th>
+          <th scope="col" data-k="nights"><button type="button">Nights</button></th>
+          <th scope="col" data-k="days"><button type="button">Days</button></th>
+          <th scope="col" data-k="since"><button type="button">Record since</button></th>
+        </tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <p class="note" id="mixednote"></p>
+  </figure>
+
+  <details>
+    <summary>How to read this</summary>
+    <ul>
+      <li><strong>Record lows since 2000:</strong> every calendar date has one record low. If the climate weren't changing, each year would have the same chance of holding it, so the years since 2000 would hold their fair share. Far fewer means the cold extremes have stopped coming.</li>
+      <li><strong>Is the gap real?</strong> We pick the same number of years at random from the place's record, 20,000 times, and see how often they hold as few record lows. Whole years are drawn, so a cold snap that set several records at once stays together. Orange means that happened less than 2.5% of the time.</li>
+      <li><strong>Nights and days:</strong> the trend in the yearly average low and high, in °F per decade, across every complete year. "Signal" means its 95% range clears zero.</li>
+      <li><strong>Volunteer stations</strong> are read once a day by local observers; official city records are the long records NOAA keeps for cities, often joining several sites over the years. Neither is adjusted for station moves or new instruments.</li>
+    </ul>
+  </details>
 </main>
+
 <footer class="site-foot">
   <span>Data: NOAA official daily records via <a href="https://www.rcc-acis.org/">RCC-ACIS</a> (public domain). Analysis and design: Shawn Nafziger, Tall Order Digital.</span>
 </footer>
+
+<script>
+const P = {{DATA}};
+const $ = id => document.getElementById(id);
+const esc = s => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/"/g, "&quot;");
+const sgn = v => (v > 0 ? "+" : v < 0 ? "−" : "") + Math.abs(v).toFixed(2);
+const word = { signal: "signal", edge: "at the edge", noise: "noise" };
+const kindWord = k => k === "threadex" ? "official city record" : "volunteer station";
+function dotClass(p) {
+  if (p.side === "fewer") return p.test === "signal" ? (p.far ? "sig" : "edge") : p.test === "edge" ? "edge" : "noise";
+  return p.test === "signal" ? "navy" : "noise";
+}
+const fill = { sig: "var(--amber)", edge: "var(--edge)", noise: "var(--ghost)", navy: "var(--navy)" };
+const tipText = p => `<b>${esc(p.name)}, ${p.st}</b><br>${p.lows} record lows since 2000; chance would give about ${p.lows_exp}<br><span style="opacity:.8">${esc(p.headline)}</span>`;
+
+/* ---------- map ---------- */
+const svg = document.querySelector("#map svg"), tip = $("tip");
+function drawMap() {
+  const scale = svg.getBoundingClientRect().width / 975 || 1;
+  const r = 6.5 / Math.min(1, Math.max(scale, .4));          // ~6.5px on screen at any width
+  const hit = Math.max(r * 2.2, 22 / scale);                   // a tap target bigger than the dot
+  const order = P.slice().sort((a, b) => ({ noise: 0, navy: 1, edge: 2, sig: 3 }[dotClass(a)] - { noise: 0, navy: 1, edge: 2, sig: 3 }[dotClass(b)]));
+  $("dots").innerHTML = order.map(p => `<a class="dot" href="${p.slug}/" data-s="${p.slug}" aria-label="${esc(p.name)}, ${p.st}: ${p.lows} record lows since 2000, about ${p.lows_exp} by chance">` +
+    `<circle cx="${p.x}" cy="${p.y}" r="${hit}" fill="transparent"/><circle class="mark" cx="${p.x}" cy="${p.y}" r="${r}" fill="${fill[dotClass(p)]}"/></a>`).join("");
+  // labels: only while the map is uncrowded; try right, left, above, below; skip a label that would collide
+  const boxes = [], fs = 12 / Math.min(1, Math.max(scale, .55)), out = [];
+  if (P.length <= 40 && scale >= .6) {
+    P.slice().sort((a, b) => b.lows_exp - a.lows_exp).forEach(p => {
+      const w = p.name.length * fs * .62, h = fs;
+      const tries = [[p.x + r + 4, p.y + h * .35, "start"], [p.x - r - 4, p.y + h * .35, "end"], [p.x, p.y - r - 5, "middle"], [p.x, p.y + r + h, "middle"],
+        [p.x - r, p.y - r - 5, "end"], [p.x + r, p.y - r - 5, "start"], [p.x - r, p.y + r + h, "end"], [p.x + r, p.y + r + h, "start"]];
+      for (const [x, y, a] of tries) {
+        const x0 = a === "start" ? x : a === "end" ? x - w : x - w / 2, b = [x0 - 2, y - h, x0 + w + 2, y + 3];
+        const hitsDot = P.some(q => q !== p && q.x > b[0] - r && q.x < b[2] + r && q.y > b[1] - r && q.y < b[3] + r);
+        if (b[0] < 0 || b[2] > 975 || hitsDot || boxes.some(o => b[0] < o[2] && b[2] > o[0] && b[1] < o[3] && b[3] > o[1])) continue;
+        boxes.push(b); out.push(`<text x="${x}" y="${y}" text-anchor="${a}" style="font-size:${fs}px">${esc(p.name)}</text>`); break;
+      }
+    });
+  }
+  $("labels").innerHTML = out.join("");
+}
+function showTip(el, cx, cy) {
+  const p = P.find(q => q.slug === el.dataset.s); if (!p) return;
+  tip.innerHTML = tipText(p); tip.classList.add("on");
+  const box = $("map").getBoundingClientRect(), tw = tip.offsetWidth, th = tip.offsetHeight;
+  tip.style.left = Math.min(Math.max(0, cx - box.left - tw / 2), box.width - tw) + "px";
+  tip.style.top = (cy - box.top - th - 14 < 0 ? cy - box.top + 18 : cy - box.top - th - 14) + "px";
+}
+svg.addEventListener("pointermove", e => { const a = e.target.closest(".dot"); a ? showTip(a, e.clientX, e.clientY) : tip.classList.remove("on"); });
+svg.addEventListener("pointerleave", () => tip.classList.remove("on"));
+svg.addEventListener("focusin", e => { const a = e.target.closest(".dot"); if (!a) return; const b = a.querySelector(".mark").getBoundingClientRect(); showTip(a, b.left + b.width / 2, b.top); });
+svg.addEventListener("focusout", () => tip.classList.remove("on"));
+
+/* ---------- table ---------- */
+const states = [...new Set(P.map(p => p.state))].sort();
+$("state").innerHTML += states.map(s => `<option>${esc(s)}</option>`).join("");
+let sortKey = "name", sortDir = 1, query = "";
+const val = (p, k) => k === "lowsratio" ? p.lows / Math.max(p.lows_exp, 1) : k === "nights" ? p.nights.v : k === "days" ? p.days.v : p[k];
+function trendCell(t, mixed) {
+  return `<span class="num">${sgn(t.v)}°</span><span class="cls ${t.c}">${word[t.c]}${mixed ? " *" : ""}</span>`;
+}
+// a place matches when its name, state or state code starts with what was typed, or any word in them does
+const hit = (p, q) => [p.name, p.state, p.st].some(t => { t = t.toLowerCase(); return t.startsWith(q) || t.split(/[\s-]+/).some(w => w.startsWith(q)); });
+function matches(p) {
+  const st = $("state").value, q = query.trim().toLowerCase();
+  return (!st || p.state === st) && (!q || hit(p, q));
+}
+function drawTable() {
+  const rows = P.slice().sort((a, b) => { const x = val(a, sortKey), y = val(b, sortKey); return (x < y ? -1 : x > y ? 1 : 0) * sortDir; });
+  let n = 0;
+  document.querySelector("#tbl tbody").innerHTML = rows.map(p => {
+    const show = matches(p); if (show) n++;
+    return `<tr class="${show ? "" : "hidden"}"><td><a href="${p.slug}/">${esc(p.name)}, ${p.st}</a><span class="sub">${esc(p.headline)}</span></td>` +
+      `<td data-l="Record lows"><span class="chipdot" style="background:${fill[dotClass(p)]}"></span><span class="num">${p.lows}</span> <span class="of">of ~${p.lows_exp}</span></td>` +
+      `<td data-l="Nights">${trendCell(p.nights, p.mixed)}</td><td data-l="Days">${trendCell(p.days, p.mixed)}</td>` +
+      `<td><span class="num">${p.since}</span><span class="cls">${kindWord(p.kind)}</span></td></tr>`;
+  }).join("");
+  $("shown").textContent = n === P.length ? `${P.length} places` : `${n} of ${P.length} places`;
+  document.querySelectorAll("#tbl th").forEach(th => th.setAttribute("aria-sort", th.dataset.k === sortKey ? (sortDir > 0 ? "ascending" : "descending") : "none"));
+  $("mixednote").textContent = P.some(p => p.mixed) ? "* The full record and the last 40 years disagree for this place, often because the station moved. Its page explains." : "";
+}
+document.querySelectorAll("#tbl th button").forEach(b => b.addEventListener("click", () => {
+  const k = b.parentElement.dataset.k;
+  sortDir = k === sortKey ? -sortDir : (k === "name" || k === "lowsratio" ? 1 : -1); sortKey = k; drawTable();
+}));
+$("state").addEventListener("change", drawTable);
+$("sortsel").addEventListener("change", e => { sortKey = e.target.value; sortDir = (sortKey === "name" || sortKey === "lowsratio") ? 1 : -1; drawTable(); });
+
+/* ---------- search ---------- */
+const input = $("q"), list = $("results");
+let active = -1;
+function search() {
+  query = input.value; drawTable();
+  const q = query.trim().toLowerCase();
+  if (!q) { list.hidden = true; input.setAttribute("aria-expanded", "false"); $("hint").textContent = ""; return; }
+  const hits = P.filter(p => hit(p, q))
+    .sort((a, b) => (b.name.toLowerCase().startsWith(q) - a.name.toLowerCase().startsWith(q)) || a.name.localeCompare(b.name)).slice(0, 8);
+  active = hits.length ? 0 : -1;
+  list.innerHTML = hits.length
+    ? hits.map((p, i) => `<li role="option" aria-selected="${i === 0}"><a href="${p.slug}/" class="${i === 0 ? "on" : ""}">${esc(p.name)}, ${p.st}<span>${kindWord(p.kind)} since ${p.since}</span></a></li>`).join("")
+    : `<li class="none">No place by that name yet. ${P.length} places so far; more are coming.</li>`;
+  list.hidden = false; input.setAttribute("aria-expanded", "true");
+  $("hint").textContent = hits.length ? "Press Enter to open the first match." : "";
+}
+input.addEventListener("input", search);
+input.addEventListener("keydown", e => {
+  const links = [...list.querySelectorAll("a")];
+  if (e.key === "ArrowDown" || e.key === "ArrowUp") {
+    if (!links.length) return; e.preventDefault();
+    active = (active + (e.key === "ArrowDown" ? 1 : -1) + links.length) % links.length;
+    links.forEach((a, i) => { a.classList.toggle("on", i === active); a.parentElement.setAttribute("aria-selected", i === active); });
+  } else if (e.key === "Enter" && links[active]) { e.preventDefault(); location.href = links[active].getAttribute("href"); }
+  else if (e.key === "Escape") { list.hidden = true; input.setAttribute("aria-expanded", "false"); }
+});
+document.addEventListener("click", e => { if (!e.target.closest(".find")) list.hidden = true; });
+
+drawMap(); drawTable();
+let rt; addEventListener("resize", () => { clearTimeout(rt); rt = setTimeout(drawMap, 120); });
+
+/* theme toggle (same behavior as tallorderdigital.com) */
+(function () {
+  const root = document.documentElement;
+  const cur = () => root.dataset.theme || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+  const sync = () => document.querySelectorAll(".theme-toggle").forEach(b => { b.setAttribute("aria-label", "Switch to " + (cur() === "dark" ? "light" : "dark") + " mode"); b.dataset.showing = cur(); });
+  document.addEventListener("click", e => { const b = e.target.closest(".theme-toggle"); if (!b) return; root.dataset.theme = cur() === "dark" ? "light" : "dark"; try { localStorage.setItem("tod-theme", root.dataset.theme); } catch (err) {} sync(); });
+  sync();
+})();
+</script>
 </body>
 </html>
