@@ -11,9 +11,9 @@
   "lon": -85.7867,
   "history": "Provisional: Goshen Municipal Airport. The long record (GOSHEN 3SW) is a once-a-day volunteer station, so today's readings and the record come from different stations (question D2)"
  },
- "as_of_utc": "2026-10-31T03:07:27Z",
+ "as_of_utc": "2026-10-31T04:07:30Z",
  "now": {
-  "time_utc": "2026-10-31T02:30:00Z",
+  "time_utc": "2026-10-31T03:00:00Z",
   "temp_c": 11,
   "temp_f": 51.8,
   "precision": "nearest whole \u00b0C",
@@ -23,17 +23,11 @@
   "description": "Cloudy"
  },
  "today_so_far": {
-  "date_local": "2026-10-30",
-  "readings": 46,
-  "basis": "hourly reports (tenths of a degree)",
-  "approximate": false,
-  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 13.9,
-  "high_f": 57.0,
-  "high_time_utc": "2026-10-30T19:53:00Z",
-  "low_c": 3.3,
-  "low_f": 37.9,
-  "low_time_utc": "2026-10-30T12:09:00Z"
+  "date_local": "2026-10-31",
+  "readings": 0,
+  "basis": "5-minute readings (whole \u00b0C, approximate)",
+  "approximate": true,
+  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two."
  },
  "record": {
   "series": "GOSHEN 3SW (COOP 123418)",
@@ -42,7 +36,7 @@
   "rank_today": false,
   "latest_final": {
    "date": "2026-10-29",
-   "is_yesterday": true,
+   "is_yesterday": false,
    "high_f": 75,
    "low_f": 53,
    "high_rank": {
@@ -86,8 +80,8 @@
   "grid": "IWX/45,57",
   "periods": [
    {
-    "name": "Tonight",
-    "start": "2026-10-30T22:00:00-04:00",
+    "name": "Overnight",
+    "start": "2026-10-31T00:00:00-04:00",
     "is_daytime": false,
     "temp_f": 47,
     "temp_c": 8.33,
@@ -216,13 +210,6 @@
  "hourly": {
   "issued_utc": "2026-10-31T01:15:17Z",
   "hours": [
-   {
-    "start": "2026-10-30T23:00:00-04:00",
-    "temp_f": 51,
-    "temp_c": 10.56,
-    "precip_chance_pct": 8,
-    "short_forecast": "Cloudy"
-   },
    {
     "start": "2026-10-31T00:00:00-04:00",
     "temp_f": 50,
@@ -549,6 +536,13 @@
     "start": "2026-11-01T21:00:00-05:00",
     "temp_f": 56,
     "temp_c": 13.33,
+    "precip_chance_pct": 14,
+    "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "start": "2026-11-01T22:00:00-05:00",
+    "temp_f": 55,
+    "temp_c": 12.78,
     "precip_chance_pct": 14,
     "short_forecast": "Mostly Cloudy"
    }
