@@ -11,20 +11,20 @@
   "lon": -112.0035,
   "history": "Same station as the official Phoenix record (Sky Harbor since 1933)"
  },
- "as_of_utc": "2026-10-31T01:40:21Z",
+ "as_of_utc": "2026-10-31T02:07:31Z",
  "now": {
-  "time_utc": "2026-10-31T01:15:00Z",
-  "temp_c": 20,
-  "temp_f": 68.0,
+  "time_utc": "2026-10-31T01:45:00Z",
+  "temp_c": 19,
+  "temp_f": 66.2,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 17,
-  "humidity_pct": 82.87,
+  "dewpoint_c": 16,
+  "humidity_pct": 82.75,
   "wind_kmh": 12.96,
-  "description": "Light Rain"
+  "description": "Mostly Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-10-30",
-  "readings": 19,
+  "readings": 21,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -87,29 +87,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-10-30",
-    "high_f": 76,
-    "would_rank": {
-     "value_f": 76,
-     "warm_rank": 93,
-     "cool_rank": 36,
-     "years": 132,
-     "first_year": 1895,
-     "tied_years": [
-      1909,
-      1920,
-      1924,
-      1941
-     ],
-     "standing": "cool",
-     "notable": false,
-     "since": 2019,
-     "record": false,
-     "phrase": "typical for October 30"
-    }
-   },
    {
     "period": "Saturday",
     "date": "2026-10-31",
@@ -250,22 +227,37 @@
      "record": false,
      "phrase": "typical for November 5"
     }
+   },
+   {
+    "period": "Friday",
+    "date": "2026-11-06",
+    "high_f": 75,
+    "would_rank": {
+     "value_f": 75,
+     "warm_rank": 99,
+     "cool_rank": 29,
+     "years": 132,
+     "first_year": 1895,
+     "tied_years": [
+      1915,
+      1972,
+      1974,
+      1990,
+      1996
+     ],
+     "standing": "cool",
+     "notable": false,
+     "since": 2024,
+     "record": false,
+     "phrase": "typical for November 6"
+    }
    }
   ]
  },
  "forecast": {
-  "issued_utc": "2026-10-30T22:43:05Z",
+  "issued_utc": "2026-10-31T01:42:30Z",
   "grid": "PSR/161,57",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-10-30T16:00:00-07:00",
-    "is_daytime": true,
-    "temp_f": 76,
-    "temp_c": 24.44,
-    "precip_chance_pct": 56,
-    "short_forecast": "Showers And Thunderstorms Likely"
-   },
    {
     "name": "Tonight",
     "start": "2026-10-30T18:00:00-07:00",
@@ -382,19 +374,21 @@
     "temp_c": 14.44,
     "precip_chance_pct": 15,
     "short_forecast": "Partly Cloudy then Slight Chance Rain Showers"
+   },
+   {
+    "name": "Friday",
+    "start": "2026-11-06T06:00:00-07:00",
+    "is_daytime": true,
+    "temp_f": 75,
+    "temp_c": 23.89,
+    "precip_chance_pct": 24,
+    "short_forecast": "Slight Chance Rain Showers"
    }
   ]
  },
  "hourly": {
-  "issued_utc": "2026-10-30T22:43:05Z",
+  "issued_utc": "2026-10-31T01:02:37Z",
   "hours": [
-   {
-    "start": "2026-10-30T18:00:00-07:00",
-    "temp_f": 67,
-    "temp_c": 19.44,
-    "precip_chance_pct": 53,
-    "short_forecast": "Chance Showers And Thunderstorms"
-   },
    {
     "start": "2026-10-30T19:00:00-07:00",
     "temp_f": 67,
@@ -719,6 +713,13 @@
    },
    {
     "start": "2026-11-01T17:00:00-07:00",
+    "temp_f": 68,
+    "temp_c": 20.0,
+    "precip_chance_pct": 90,
+    "short_forecast": "Showers And Thunderstorms"
+   },
+   {
+    "start": "2026-11-01T18:00:00-07:00",
     "temp_f": 68,
     "temp_c": 20.0,
     "precip_chance_pct": 90,
