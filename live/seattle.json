@@ -11,14 +11,14 @@
   "lon": -122.3136,
   "history": "Same station as the official Seattle record (Sea-Tac)"
  },
- "as_of_utc": "2026-10-31T01:07:32Z",
+ "as_of_utc": "2026-10-31T01:40:21Z",
  "now": {
-  "time_utc": "2026-10-31T00:55:00Z",
-  "temp_c": 9,
-  "temp_f": 48.2,
+  "time_utc": "2026-10-31T01:15:00Z",
+  "temp_c": 8,
+  "temp_f": 46.4,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 7,
-  "humidity_pct": 87.29,
+  "humidity_pct": 93.4,
   "wind_kmh": 9.25,
   "description": "Mostly Cloudy"
  },
@@ -86,27 +86,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-10-30",
-    "high_f": 50,
-    "would_rank": {
-     "value_f": 50,
-     "warm_rank": 66,
-     "cool_rank": 15,
-     "years": 82,
-     "first_year": 1945,
-     "tied_years": [
-      1947,
-      2002
-     ],
-     "standing": "cool",
-     "notable": true,
-     "since": 2006,
-     "record": false,
-     "phrase": "15th coolest October 30 high (tied) of 82 since 1945, coolest since 2006"
-    }
-   },
    {
     "period": "Saturday",
     "date": "2026-10-31",
@@ -252,6 +231,27 @@
      "record": false,
      "phrase": "typical for November 5"
     }
+   },
+   {
+    "period": "Friday",
+    "date": "2026-11-06",
+    "high_f": 58,
+    "would_rank": {
+     "value_f": 58,
+     "warm_rank": 12,
+     "cool_rank": 69,
+     "years": 82,
+     "first_year": 1945,
+     "tied_years": [
+      1967,
+      1997
+     ],
+     "standing": "warm",
+     "notable": true,
+     "since": 2016,
+     "record": false,
+     "phrase": "12th warmest November 6 high (tied) of 82 since 1945, warmest since 2016"
+    }
    }
   ]
  },
@@ -259,15 +259,6 @@
   "issued_utc": "2026-10-30T18:26:50Z",
   "grid": "SEW/124,60",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-10-30T12:00:00-07:00",
-    "is_daytime": true,
-    "temp_f": 50,
-    "temp_c": 10.0,
-    "precip_chance_pct": 63,
-    "short_forecast": "Light Rain Likely"
-   },
    {
     "name": "Tonight",
     "start": "2026-10-30T18:00:00-07:00",
@@ -383,6 +374,15 @@
     "temp_f": 45,
     "temp_c": 7.22,
     "precip_chance_pct": 39,
+    "short_forecast": "Chance Light Rain"
+   },
+   {
+    "name": "Friday",
+    "start": "2026-11-06T06:00:00-08:00",
+    "is_daytime": true,
+    "temp_f": 58,
+    "temp_c": 14.44,
+    "precip_chance_pct": 53,
     "short_forecast": "Chance Light Rain"
    }
   ]
