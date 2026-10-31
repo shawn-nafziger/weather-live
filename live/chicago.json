@@ -11,34 +11,29 @@
   "lon": -87.9044,
   "history": "Same station as the official Chicago record (ThreadEx, O'Hare since 1980)"
  },
- "as_of_utc": "2026-10-31T08:07:28Z",
+ "as_of_utc": "2026-10-31T09:07:32Z",
  "now": {
-  "time_utc": "2026-10-31T07:45:00Z",
-  "temp_c": 11,
-  "temp_f": 51.8,
+  "time_utc": "2026-10-31T08:50:00Z",
+  "temp_c": 12,
+  "temp_f": 53.6,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 7,
-  "humidity_pct": 76.36,
-  "wind_kmh": 0,
-  "description": "Partly Cloudy"
+  "dewpoint_c": 8,
+  "humidity_pct": 76.52,
+  "wind_kmh": 5.54,
+  "description": "Mostly Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-10-31",
-  "readings": 2,
+  "readings": 3,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
   "high_c": 12.8,
   "high_f": 55.0,
   "high_time_utc": "2026-10-31T05:51:00Z",
-  "low_c": 11.7,
-  "low_f": 53.1,
-  "low_time_utc": "2026-10-31T06:51:00Z",
-  "dip_between_reports": {
-   "at_most_f": 52.7,
-   "about_f": 51.8,
-   "time_utc": "2026-10-31T07:45:00Z"
-  }
+  "low_c": 11.1,
+  "low_f": 52.0,
+  "low_time_utc": "2026-10-31T07:51:00Z"
  },
  "record": {
   "series": "Chicago area (ThreadEx, O'Hare since 1980)",
@@ -237,12 +232,12 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-10-31T07:01:05Z",
+  "issued_utc": "2026-10-31T07:51:11Z",
   "grid": "LOT/66,77",
   "periods": [
    {
     "name": "Overnight",
-    "start": "2026-10-31T02:00:00-05:00",
+    "start": "2026-10-31T03:00:00-05:00",
     "is_daytime": false,
     "temp_f": 51,
     "temp_c": 10.56,
@@ -369,15 +364,8 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-10-31T07:51:11Z",
+  "issued_utc": "2026-10-31T08:46:15Z",
   "hours": [
-   {
-    "start": "2026-10-31T03:00:00-05:00",
-    "temp_f": 53,
-    "temp_c": 11.67,
-    "precip_chance_pct": 21,
-    "short_forecast": "Isolated Rain Showers"
-   },
    {
     "start": "2026-10-31T04:00:00-05:00",
     "temp_f": 53,
@@ -704,6 +692,13 @@
     "start": "2026-11-02T01:00:00-06:00",
     "temp_f": 56,
     "temp_c": 13.33,
+    "precip_chance_pct": 3,
+    "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "start": "2026-11-02T02:00:00-06:00",
+    "temp_f": 55,
+    "temp_c": 12.78,
     "precip_chance_pct": 3,
     "short_forecast": "Mostly Cloudy"
    }
