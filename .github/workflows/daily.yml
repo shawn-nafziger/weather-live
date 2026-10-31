@@ -11,6 +11,8 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 # Never let two runs write at the same time.
 concurrency:
@@ -49,3 +51,42 @@ jobs:
             sleep 10
           done
           echo "Push failed three times." && exit 1
+
+  # Rebuild the Almanac pages from the records just saved and publish them to
+  # weather.tallorderdigital.com (GitHub Pages). A separate job, so a website
+  # problem shows up on its own and never stops the records from being saved.
+  almanac:
+    needs: pull
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: main          # the records the job above just pushed
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: almanac/requirements.txt
+
+      - run: pip install -r almanac/requirements.txt
+
+      - name: Build the Almanac pages
+        run: python almanac/build.py --all --out site
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+      - id: deploy
+        uses: actions/deploy-pages@v4

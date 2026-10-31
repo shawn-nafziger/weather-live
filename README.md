@@ -14,6 +14,22 @@ A GitHub Actions job (`.github/workflows/hourly.yml`) runs at about :17 past eac
 
 `.github/workflows/daily.yml` (11:37 and 17:37 UTC) keeps `history/<city>.csv`: each city's official daily record (high, low, rain, snow) from NOAA via RCC-ACIS, using the ThreadEx "official city record" where one exists. The first run downloads each full record; after that it re-reads the last 21 days, because stations post late and correct values. No day is ever dropped. The hourly job ranks against these files.
 
+## The Almanac (weather.tallorderdigital.com)
+
+After each records update, the daily workflow's second job, **Publish Almanac**, rebuilds one page per city from `history/` and publishes them with GitHub Pages:
+
+- `weather.tallorderdigital.com/almanac/` lists every city, each card led by that city's own headline.
+- `weather.tallorderdigital.com/almanac/<city>/` is the city's page: yesterday in context, the year so far, the record book, how the climate has changed, rain and snow.
+- The site's front page sends visitors to the Almanac until the live page takes its place.
+
+The pages are built fresh each run and are **not committed** (`site/` is ignored), so the repo doesn't fill up with copies.
+
+Every sentence on a page is chosen from that city's numbers, and `almanac/build.py` checks each claim before writing a page (ranks recounted; each change claim checked two ways and against the last 40 years, because a station move can hide a trend). If a check fails for one city, that page is skipped and the others still publish. The run log says which.
+
+**Goshen and South Bend** are a pair: Goshen's long record is a volunteer station in town, South Bend's is the official city record about 27 miles away. Each page has a switch to the other. Each page uses only its own station.
+
+Build locally (needs `pip install -r almanac/requirements.txt`): `python almanac/build.py --all`, then open `site/almanac/index.html`.
+
 ## How ranks work
 
 Same rules as the Weather Intelligence methods: compare whole °F; rank = years strictly warmer + 1, so ties share a rank; always say how many years it's out of. Only the warmest or coolest fifth of the record gets ranked wording ("4th warmest October 28 high of 155 since 1872"); anything else reads "typical for October 28" (`scripts/ranks.py`). Today's values and forecasts are ranked only where today's station is the same as the record's (not yet Goshen or Los Olivos).
@@ -26,7 +42,7 @@ Archive files are one CSV per day (`archive/<kind>/YYYY/MM/YYYY-MM-DD.csv`); pas
 
 ## Cities
 
-Chicago, Phoenix, Miami, Seattle, Goshen IN and Los Olivos CA. Forecasts are pulled for each observation station's exact location, so they can be checked against what that station records. Goshen and Los Olivos use airport stations for now; their long official records come from different, once-a-day stations.
+Chicago, Phoenix, Miami, Seattle, Goshen IN, Los Olivos CA and South Bend IN (added Oct 31, 2026; its full record downloads on the first daily run after it was added). Forecasts are pulled for each observation station's exact location, so they can be checked against what that station records. Goshen and Los Olivos use airport stations for now; their long official records come from different, once-a-day stations.
 
 ## What starts the jobs
 
