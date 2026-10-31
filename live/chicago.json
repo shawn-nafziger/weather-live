@@ -11,20 +11,20 @@
   "lon": -87.9044,
   "history": "Same station as the official Chicago record (ThreadEx, O'Hare since 1980)"
  },
- "as_of_utc": "2026-10-31T11:07:30Z",
+ "as_of_utc": "2026-10-31T12:07:29Z",
  "now": {
-  "time_utc": "2026-10-31T10:50:00Z",
+  "time_utc": "2026-10-31T11:10:00Z",
   "temp_c": 12,
   "temp_f": 53.6,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 8,
   "humidity_pct": 76.52,
-  "wind_kmh": 11.12,
+  "wind_kmh": 7.42,
   "description": "Light Rain"
  },
  "today_so_far": {
   "date_local": "2026-10-31",
-  "readings": 5,
+  "readings": 6,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -41,48 +41,54 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-10-29",
-   "is_yesterday": false,
-   "high_f": 69,
-   "low_f": 50,
+   "date": "2026-10-30",
+   "is_yesterday": true,
+   "high_f": 58,
+   "low_f": 44,
    "high_rank": {
-    "value_f": 69,
-    "warm_rank": 20,
-    "cool_rank": 133,
+    "value_f": 58,
+    "warm_rank": 69,
+    "cool_rank": 80,
     "years": 155,
     "first_year": 1872,
     "tied_years": [
-     1915,
-     1948,
-     1979
+     1881,
+     1884,
+     1920,
+     1957,
+     1962,
+     1973,
+     1996
     ],
     "standing": "warm",
-    "notable": true,
+    "notable": false,
     "since": 2024,
     "record": false,
-    "phrase": "20th warmest October 29 high (tied) of 155 since 1872, warmest since 2024"
+    "phrase": "typical for October 30"
    },
    "low_rank": {
-    "value_f": 50,
-    "warm_rank": 20,
-    "cool_rank": 133,
+    "value_f": 44,
+    "warm_rank": 51,
+    "cool_rank": 100,
     "years": 155,
     "first_year": 1872,
     "tied_years": [
+     1904,
      1942,
-     1960,
-     1971
+     1959,
+     1965,
+     1970
     ],
     "standing": "warm",
-    "notable": true,
+    "notable": false,
     "since": 2024,
     "record": false,
-    "phrase": "20th warmest October 29 low (tied) of 155 since 1872, warmest since 2024"
+    "phrase": "typical for October 30"
    }
   },
   "forecast_highs": [
    {
-    "period": "Saturday",
+    "period": "Today",
     "date": "2026-10-31",
     "high_f": 63,
     "would_rank": {
@@ -232,29 +238,20 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-10-31T09:56:09Z",
+  "issued_utc": "2026-10-31T10:46:05Z",
   "grid": "LOT/66,77",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-10-31T05:00:00-05:00",
-    "is_daytime": false,
-    "temp_f": 52,
-    "temp_c": 11.11,
-    "precip_chance_pct": 21,
-    "short_forecast": "Isolated Rain Showers"
-   },
-   {
-    "name": "Saturday",
+    "name": "Today",
     "start": "2026-10-31T06:00:00-05:00",
     "is_daytime": true,
     "temp_f": 63,
     "temp_c": 17.22,
-    "precip_chance_pct": 32,
+    "precip_chance_pct": 52,
     "short_forecast": "Scattered Rain Showers"
    },
    {
-    "name": "Saturday Night",
+    "name": "Tonight",
     "start": "2026-10-31T18:00:00-05:00",
     "is_daytime": false,
     "temp_f": 53,
@@ -360,19 +357,21 @@
     "temp_c": 16.67,
     "precip_chance_pct": 24,
     "short_forecast": "Slight Chance Rain Showers"
+   },
+   {
+    "name": "Friday Night",
+    "start": "2026-11-06T18:00:00-06:00",
+    "is_daytime": false,
+    "temp_f": 46,
+    "temp_c": 7.78,
+    "precip_chance_pct": 12,
+    "short_forecast": "Mostly Cloudy"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-10-31T10:46:05Z",
   "hours": [
-   {
-    "start": "2026-10-31T06:00:00-05:00",
-    "temp_f": 52,
-    "temp_c": 11.11,
-    "precip_chance_pct": 34,
-    "short_forecast": "Scattered Rain Showers"
-   },
    {
     "start": "2026-10-31T07:00:00-05:00",
     "temp_f": 53,
@@ -701,6 +700,13 @@
     "temp_c": 12.22,
     "precip_chance_pct": 3,
     "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "start": "2026-11-02T05:00:00-06:00",
+    "temp_f": 54,
+    "temp_c": 12.22,
+    "precip_chance_pct": 3,
+    "short_forecast": "Cloudy"
    }
   ]
  },
