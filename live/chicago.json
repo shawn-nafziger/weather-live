@@ -11,20 +11,20 @@
   "lon": -87.9044,
   "history": "Same station as the official Chicago record (ThreadEx, O'Hare since 1980)"
  },
- "as_of_utc": "2026-10-31T15:07:30Z",
+ "as_of_utc": "2026-10-31T16:07:30Z",
  "now": {
-  "time_utc": "2026-10-31T14:40:00Z",
+  "time_utc": "2026-10-31T15:40:00Z",
   "temp_c": 13,
   "temp_f": 55.4,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 9,
   "humidity_pct": 76.68,
   "wind_kmh": 9.25,
-  "description": "Light Rain"
+  "description": "Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-10-31",
-  "readings": 9,
+  "readings": 10,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -90,14 +90,20 @@
    {
     "period": "Today",
     "date": "2026-10-31",
-    "high_f": 63,
+    "high_f": 61,
     "would_rank": {
-     "value_f": 63,
-     "warm_rank": 44,
-     "cool_rank": 112,
+     "value_f": 61,
+     "warm_rank": 49,
+     "cool_rank": 102,
      "years": 155,
      "first_year": 1872,
-     "tied_years": [],
+     "tied_years": [
+      1948,
+      1980,
+      1984,
+      2016,
+      2018
+     ],
      "standing": "warm",
      "notable": false,
      "since": 2024,
@@ -238,16 +244,16 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-10-31T10:46:05Z",
+  "issued_utc": "2026-10-31T15:07:44Z",
   "grid": "LOT/66,77",
   "periods": [
    {
     "name": "Today",
-    "start": "2026-10-31T07:00:00-05:00",
+    "start": "2026-10-31T10:00:00-05:00",
     "is_daytime": true,
-    "temp_f": 63,
-    "temp_c": 17.22,
-    "precip_chance_pct": 52,
+    "temp_f": 61,
+    "temp_c": 16.11,
+    "precip_chance_pct": 35,
     "short_forecast": "Scattered Rain Showers"
    },
    {
@@ -372,13 +378,6 @@
  "hourly": {
   "issued_utc": "2026-10-31T10:46:05Z",
   "hours": [
-   {
-    "start": "2026-10-31T10:00:00-05:00",
-    "temp_f": 57,
-    "temp_c": 13.89,
-    "precip_chance_pct": 35,
-    "short_forecast": "Scattered Rain Showers"
-   },
    {
     "start": "2026-10-31T11:00:00-05:00",
     "temp_f": 59,
@@ -705,6 +704,13 @@
     "start": "2026-11-02T08:00:00-06:00",
     "temp_f": 58,
     "temp_c": 14.44,
+    "precip_chance_pct": 15,
+    "short_forecast": "Slight Chance Rain Showers"
+   },
+   {
+    "start": "2026-11-02T09:00:00-06:00",
+    "temp_f": 61,
+    "temp_c": 16.11,
     "precip_chance_pct": 15,
     "short_forecast": "Slight Chance Rain Showers"
    }
