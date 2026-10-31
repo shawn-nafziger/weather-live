@@ -11,23 +11,34 @@
   "lon": -85.7867,
   "history": "Provisional: Goshen Municipal Airport. The long record (GOSHEN 3SW) is a once-a-day volunteer station, so today's readings and the record come from different stations (question D2)"
  },
- "as_of_utc": "2026-10-31T05:07:29Z",
+ "as_of_utc": "2026-10-31T06:07:28Z",
  "now": {
-  "time_utc": "2026-10-31T03:00:00Z",
-  "temp_c": 11,
-  "temp_f": 51.8,
+  "time_utc": "2026-10-31T05:45:00Z",
+  "temp_c": 10,
+  "temp_f": 50.0,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 6,
-  "humidity_pct": 71.28,
-  "wind_kmh": 9.25,
+  "humidity_pct": 76.19,
+  "wind_kmh": 11.12,
   "description": "Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-10-31",
-  "readings": 0,
-  "basis": "5-minute readings (whole \u00b0C, approximate)",
-  "approximate": true,
-  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two."
+  "readings": 1,
+  "basis": "hourly reports (tenths of a degree)",
+  "approximate": false,
+  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
+  "high_c": 11.1,
+  "high_f": 52.0,
+  "high_time_utc": "2026-10-31T04:53:00Z",
+  "low_c": 11.1,
+  "low_f": 52.0,
+  "low_time_utc": "2026-10-31T04:53:00Z",
+  "dip_between_reports": {
+   "at_most_f": 50.9,
+   "about_f": 50.0,
+   "time_utc": "2026-10-31T05:45:00Z"
+  }
  },
  "record": {
   "series": "GOSHEN 3SW (COOP 123418)",
@@ -210,13 +221,6 @@
  "hourly": {
   "issued_utc": "2026-10-31T04:45:25Z",
   "hours": [
-   {
-    "start": "2026-10-31T01:00:00-04:00",
-    "temp_f": 50,
-    "temp_c": 10.0,
-    "precip_chance_pct": 10,
-    "short_forecast": "Cloudy"
-   },
    {
     "start": "2026-10-31T02:00:00-04:00",
     "temp_f": 50,
@@ -541,6 +545,13 @@
    },
    {
     "start": "2026-11-01T23:00:00-05:00",
+    "temp_f": 54,
+    "temp_c": 12.22,
+    "precip_chance_pct": 14,
+    "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "start": "2026-11-02T00:00:00-05:00",
     "temp_f": 54,
     "temp_c": 12.22,
     "precip_chance_pct": 14,
