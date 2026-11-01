@@ -11,29 +11,23 @@
   "lon": -85.7867,
   "history": "Provisional: Goshen Municipal Airport. The long record (GOSHEN 3SW) is a once-a-day volunteer station, so today's readings and the record come from different stations (question D2)"
  },
- "as_of_utc": "2026-11-01T03:07:29Z",
+ "as_of_utc": "2026-11-01T04:07:29Z",
  "now": {
-  "time_utc": "2026-11-01T02:25:00Z",
+  "time_utc": "2026-11-01T03:40:00Z",
   "temp_c": 12,
   "temp_f": 53.6,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 6,
   "humidity_pct": 66.72,
-  "wind_kmh": 11.12,
-  "description": "Mostly Cloudy"
+  "wind_kmh": 7.42,
+  "description": "Clear"
  },
  "today_so_far": {
-  "date_local": "2026-10-31",
-  "readings": 20,
-  "basis": "hourly reports (tenths of a degree)",
-  "approximate": false,
-  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 14.4,
-  "high_f": 57.9,
-  "high_time_utc": "2026-10-31T17:53:00Z",
-  "low_c": 10,
-  "low_f": 50.0,
-  "low_time_utc": "2026-10-31T07:53:00Z"
+  "date_local": "2026-11-01",
+  "readings": 0,
+  "basis": "5-minute readings (whole \u00b0C, approximate)",
+  "approximate": true,
+  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two."
  },
  "record": {
   "series": "GOSHEN 3SW (COOP 123418)",
@@ -42,7 +36,7 @@
   "rank_today": false,
   "latest_final": {
    "date": "2026-10-30",
-   "is_yesterday": true,
+   "is_yesterday": false,
    "high_f": 57,
    "low_f": 41,
    "high_rank": {
@@ -89,8 +83,8 @@
   "grid": "IWX/45,57",
   "periods": [
    {
-    "name": "Tonight",
-    "start": "2026-10-31T23:00:00-04:00",
+    "name": "Overnight",
+    "start": "2026-11-01T00:00:00-04:00",
     "is_daytime": false,
     "temp_f": 49,
     "temp_c": 9.44,
@@ -219,13 +213,6 @@
  "hourly": {
   "issued_utc": "2026-11-01T01:30:37Z",
   "hours": [
-   {
-    "start": "2026-10-31T23:00:00-04:00",
-    "temp_f": 51,
-    "temp_c": 10.56,
-    "precip_chance_pct": 11,
-    "short_forecast": "Isolated Rain Showers"
-   },
    {
     "start": "2026-11-01T00:00:00-04:00",
     "temp_f": 51,
@@ -552,6 +539,13 @@
     "start": "2026-11-02T21:00:00-05:00",
     "temp_f": 59,
     "temp_c": 15.0,
+    "precip_chance_pct": 17,
+    "short_forecast": "Slight Chance Rain Showers"
+   },
+   {
+    "start": "2026-11-02T22:00:00-05:00",
+    "temp_f": 58,
+    "temp_c": 14.44,
     "precip_chance_pct": 17,
     "short_forecast": "Slight Chance Rain Showers"
    }
