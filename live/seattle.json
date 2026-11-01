@@ -11,15 +11,15 @@
   "lon": -122.3136,
   "history": "Same station as the official Seattle record (Sea-Tac)"
  },
- "as_of_utc": "2026-11-01T01:07:29Z",
+ "as_of_utc": "2026-11-01T02:07:31Z",
  "now": {
-  "time_utc": "2026-11-01T00:25:00Z",
-  "temp_c": 9,
-  "temp_f": 48.2,
+  "time_utc": "2026-11-01T01:15:00Z",
+  "temp_c": 8,
+  "temp_f": 46.4,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 6,
-  "humidity_pct": 81.49,
-  "wind_kmh": 16.67,
+  "humidity_pct": 87.19,
+  "wind_kmh": 18.5,
   "description": "Clear"
  },
  "today_so_far": {
@@ -85,31 +85,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-10-31",
-    "high_f": 55,
-    "would_rank": {
-     "value_f": 55,
-     "warm_rank": 36,
-     "cool_rank": 41,
-     "years": 82,
-     "first_year": 1945,
-     "tied_years": [
-      1953,
-      1979,
-      1994,
-      1999,
-      2002,
-      2014
-     ],
-     "standing": "warm",
-     "notable": false,
-     "since": 2025,
-     "record": false,
-     "phrase": "typical for October 31"
-    }
-   },
    {
     "period": "Sunday",
     "date": "2026-11-01",
@@ -250,6 +225,28 @@
      "record": false,
      "phrase": "14th warmest November 6 high (tied) of 82 since 1945, warmest since 2016"
     }
+   },
+   {
+    "period": "Saturday",
+    "date": "2026-11-07",
+    "high_f": 58,
+    "would_rank": {
+     "value_f": 58,
+     "warm_rank": 15,
+     "cool_rank": 65,
+     "years": 82,
+     "first_year": 1945,
+     "tied_years": [
+      1979,
+      2014,
+      2019
+     ],
+     "standing": "warm",
+     "notable": true,
+     "since": 2024,
+     "record": false,
+     "phrase": "15th warmest November 7 high (tied) of 82 since 1945, warmest since 2024"
+    }
    }
   ]
  },
@@ -257,15 +254,6 @@
   "issued_utc": "2026-10-31T18:26:52Z",
   "grid": "SEW/124,60",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-10-31T12:00:00-07:00",
-    "is_daytime": true,
-    "temp_f": 55,
-    "temp_c": 12.78,
-    "precip_chance_pct": 1,
-    "short_forecast": "Mostly Sunny"
-   },
    {
     "name": "Tonight",
     "start": "2026-10-31T18:00:00-07:00",
@@ -382,19 +370,21 @@
     "temp_c": 7.22,
     "precip_chance_pct": 34,
     "short_forecast": "Chance Light Rain"
+   },
+   {
+    "name": "Saturday",
+    "start": "2026-11-07T06:00:00-08:00",
+    "is_daytime": true,
+    "temp_f": 58,
+    "temp_c": 14.44,
+    "precip_chance_pct": 42,
+    "short_forecast": "Chance Light Rain"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-10-31T18:26:52Z",
   "hours": [
-   {
-    "start": "2026-10-31T18:00:00-07:00",
-    "temp_f": 50,
-    "temp_c": 10.0,
-    "precip_chance_pct": 1,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "start": "2026-10-31T19:00:00-07:00",
     "temp_f": 49,
@@ -721,6 +711,13 @@
     "start": "2026-11-02T16:00:00-08:00",
     "temp_f": 53,
     "temp_c": 11.67,
+    "precip_chance_pct": 0,
+    "short_forecast": "Cloudy"
+   },
+   {
+    "start": "2026-11-02T17:00:00-08:00",
+    "temp_f": 52,
+    "temp_c": 11.11,
     "precip_chance_pct": 0,
     "short_forecast": "Cloudy"
    }
