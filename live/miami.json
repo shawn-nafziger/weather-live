@@ -11,29 +11,29 @@
   "lon": -80.3164,
   "history": "Same station as the official Miami record"
  },
- "as_of_utc": "2026-11-01T05:07:29Z",
+ "as_of_utc": "2026-11-01T06:07:30Z",
  "now": {
-  "time_utc": "2026-11-01T04:30:00Z",
+  "time_utc": "2026-11-01T05:30:00Z",
   "temp_c": 27,
   "temp_f": 80.6,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 23,
   "humidity_pct": 78.78,
-  "wind_kmh": null,
-  "description": "Partly Cloudy"
+  "wind_kmh": 20.38,
+  "description": "Mostly Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-01",
-  "readings": 7,
-  "basis": "5-minute readings (whole \u00b0C, approximate)",
-  "approximate": true,
+  "readings": 1,
+  "basis": "hourly reports (tenths of a degree)",
+  "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 27,
-  "high_f": 80.6,
-  "high_time_utc": "2026-11-01T04:00:00Z",
-  "low_c": 27,
-  "low_f": 80.6,
-  "low_time_utc": "2026-11-01T04:00:00Z"
+  "high_c": 26.7,
+  "high_f": 80.1,
+  "high_time_utc": "2026-11-01T04:53:00Z",
+  "low_c": 26.7,
+  "low_f": 80.1,
+  "low_time_utc": "2026-11-01T04:53:00Z"
  },
  "record": {
   "series": "Miami area (ThreadEx)",
@@ -303,17 +303,17 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-10-31T20:31:51Z",
+  "issued_utc": "2026-11-01T04:47:23Z",
   "grid": "MFL/105,51",
   "periods": [
    {
-    "name": "Tonight",
-    "start": "2026-10-31T18:00:00-04:00",
+    "name": "Overnight",
+    "start": "2026-11-01T01:00:00-04:00",
     "is_daytime": false,
     "temp_f": 76,
     "temp_c": 24.44,
     "precip_chance_pct": 65,
-    "short_forecast": "Chance Showers And Thunderstorms then Showers And Thunderstorms Likely"
+    "short_forecast": "Showers And Thunderstorms Likely"
    },
    {
     "name": "Sunday",
@@ -435,15 +435,8 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-10-31T20:31:51Z",
+  "issued_utc": "2026-11-01T04:47:23Z",
   "hours": [
-   {
-    "start": "2026-11-01T01:00:00-04:00",
-    "temp_f": 78,
-    "temp_c": 25.56,
-    "precip_chance_pct": 65,
-    "short_forecast": "Showers And Thunderstorms Likely"
-   },
    {
     "start": "2026-11-01T01:00:00-05:00",
     "temp_f": 78,
@@ -770,6 +763,13 @@
     "start": "2026-11-02T23:00:00-05:00",
     "temp_f": 77,
     "temp_c": 25.0,
+    "precip_chance_pct": 45,
+    "short_forecast": "Chance Showers And Thunderstorms"
+   },
+   {
+    "start": "2026-11-03T00:00:00-05:00",
+    "temp_f": 76,
+    "temp_c": 24.44,
     "precip_chance_pct": 45,
     "short_forecast": "Chance Showers And Thunderstorms"
    }
