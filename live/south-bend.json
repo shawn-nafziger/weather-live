@@ -11,20 +11,20 @@
   "lon": -86.3186,
   "history": "Same station as the official South Bend record (South Bend airport). Also the nearest official city record to Goshen, about 27 miles; a candidate for Goshen's hourly readings (question D2)"
  },
- "as_of_utc": "2026-11-01T20:07:32Z",
+ "as_of_utc": "2026-11-01T21:07:36Z",
  "now": {
-  "time_utc": "2026-11-01T18:54:00Z",
-  "temp_c": 16.1,
-  "temp_f": 61.0,
-  "precision": "tenths of a degree",
-  "dewpoint_c": 9.4,
-  "humidity_pct": 64.49,
-  "wind_kmh": 9.36,
-  "description": "Partly Cloudy"
+  "time_utc": "2026-11-01T20:45:00Z",
+  "temp_c": 16,
+  "temp_f": 60.8,
+  "precision": "nearest whole \u00b0C",
+  "dewpoint_c": 11,
+  "humidity_pct": 72.22,
+  "wind_kmh": 0,
+  "description": "Light Rain"
  },
  "today_so_far": {
   "date_local": "2026-11-01",
-  "readings": 12,
+  "readings": 13,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -241,16 +241,16 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-01T20:01:15Z",
+  "issued_utc": "2026-11-01T20:45:13Z",
   "grid": "IWX/27,64",
   "periods": [
    {
     "name": "This Afternoon",
-    "start": "2026-11-01T15:00:00-05:00",
+    "start": "2026-11-01T16:00:00-05:00",
     "is_daytime": true,
     "temp_f": 65,
     "temp_c": 18.33,
-    "precip_chance_pct": 19,
+    "precip_chance_pct": 18,
     "short_forecast": "Slight Chance Rain Showers"
    },
    {
@@ -373,15 +373,8 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-01T20:01:15Z",
+  "issued_utc": "2026-11-01T20:45:13Z",
   "hours": [
-   {
-    "start": "2026-11-01T15:00:00-05:00",
-    "temp_f": 63,
-    "temp_c": 17.22,
-    "precip_chance_pct": 19,
-    "short_forecast": "Slight Chance Rain Showers"
-   },
    {
     "start": "2026-11-01T16:00:00-05:00",
     "temp_f": 62,
@@ -706,6 +699,13 @@
    },
    {
     "start": "2026-11-03T14:00:00-05:00",
+    "temp_f": 73,
+    "temp_c": 22.78,
+    "precip_chance_pct": 10,
+    "short_forecast": "Partly Sunny"
+   },
+   {
+    "start": "2026-11-03T15:00:00-05:00",
     "temp_f": 73,
     "temp_c": 22.78,
     "precip_chance_pct": 10,

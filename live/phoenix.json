@@ -11,20 +11,20 @@
   "lon": -112.0035,
   "history": "Same station as the official Phoenix record (Sky Harbor since 1933)"
  },
- "as_of_utc": "2026-11-01T20:07:32Z",
+ "as_of_utc": "2026-11-01T21:07:36Z",
  "now": {
-  "time_utc": "2026-11-01T19:32:00Z",
-  "temp_c": 20.6,
-  "temp_f": 69.1,
-  "precision": "tenths of a degree",
-  "dewpoint_c": 17.2,
-  "humidity_pct": 80.87,
-  "wind_kmh": null,
-  "description": "Cloudy"
+  "time_utc": "2026-11-01T20:40:00Z",
+  "temp_c": 21,
+  "temp_f": 69.8,
+  "precision": "nearest whole \u00b0C",
+  "dewpoint_c": 17,
+  "humidity_pct": 77.92,
+  "wind_kmh": 16.67,
+  "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-01",
-  "readings": 25,
+  "readings": 27,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -84,7 +84,7 @@
   },
   "forecast_highs": [
    {
-    "period": "Today",
+    "period": "This Afternoon",
     "date": "2026-11-01",
     "high_f": 71,
     "would_rank": {
@@ -257,12 +257,12 @@
   "grid": "PSR/161,57",
   "periods": [
    {
-    "name": "Today",
-    "start": "2026-11-01T11:00:00-07:00",
+    "name": "This Afternoon",
+    "start": "2026-11-01T12:00:00-07:00",
     "is_daytime": true,
     "temp_f": 71,
     "temp_c": 21.67,
-    "precip_chance_pct": 95,
+    "precip_chance_pct": 93,
     "short_forecast": "Showers And Thunderstorms"
    },
    {
@@ -387,13 +387,6 @@
  "hourly": {
   "issued_utc": "2026-11-01T18:32:58Z",
   "hours": [
-   {
-    "start": "2026-11-01T13:00:00-07:00",
-    "temp_f": 70,
-    "temp_c": 21.11,
-    "precip_chance_pct": 74,
-    "short_forecast": "Showers And Thunderstorms Likely"
-   },
    {
     "start": "2026-11-01T14:00:00-07:00",
     "temp_f": 69,
@@ -720,6 +713,13 @@
     "start": "2026-11-03T12:00:00-07:00",
     "temp_f": 68,
     "temp_c": 20.0,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
+   },
+   {
+    "start": "2026-11-03T13:00:00-07:00",
+    "temp_f": 70,
+    "temp_c": 21.11,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
    }
