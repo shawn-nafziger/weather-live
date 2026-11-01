@@ -11,7 +11,7 @@
   "lon": -86.3186,
   "history": "Same station as the official South Bend record (South Bend airport). Also the nearest official city record to Goshen, about 27 miles; a candidate for Goshen's hourly readings (question D2)"
  },
- "as_of_utc": "2026-11-01T22:29:19Z",
+ "as_of_utc": "2026-11-01T23:07:29Z",
  "now": {
   "time_utc": "2026-11-01T21:55:00Z",
   "temp_c": 16,
@@ -84,26 +84,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-01",
-    "high_f": 65,
-    "would_rank": {
-     "value_f": 65,
-     "warm_rank": 34,
-     "cool_rank": 96,
-     "years": 130,
-     "first_year": 1894,
-     "tied_years": [
-      2015
-     ],
-     "standing": "warm",
-     "notable": false,
-     "since": 2022,
-     "record": false,
-     "phrase": "typical for November 1"
-    }
-   },
    {
     "period": "Monday",
     "date": "2026-11-02",
@@ -237,6 +217,29 @@
      "record": false,
      "phrase": "typical for November 7"
     }
+   },
+   {
+    "period": "Sunday",
+    "date": "2026-11-08",
+    "high_f": 57,
+    "would_rank": {
+     "value_f": 57,
+     "warm_rank": 37,
+     "cool_rank": 91,
+     "years": 131,
+     "first_year": 1894,
+     "tied_years": [
+      1930,
+      1935,
+      1987,
+      2016
+     ],
+     "standing": "warm",
+     "notable": false,
+     "since": 2024,
+     "record": false,
+     "phrase": "typical for November 8"
+    }
    }
   ]
  },
@@ -244,15 +247,6 @@
   "issued_utc": "2026-11-01T20:45:13Z",
   "grid": "IWX/27,64",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-01T17:00:00-05:00",
-    "is_daytime": true,
-    "temp_f": 65,
-    "temp_c": 18.33,
-    "precip_chance_pct": 18,
-    "short_forecast": "Slight Chance Rain Showers"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-01T18:00:00-05:00",
@@ -369,19 +363,21 @@
     "temp_c": 2.78,
     "precip_chance_pct": 6,
     "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "name": "Sunday",
+    "start": "2026-11-08T06:00:00-05:00",
+    "is_daytime": true,
+    "temp_f": 57,
+    "temp_c": 13.89,
+    "precip_chance_pct": 17,
+    "short_forecast": "Partly Sunny then Slight Chance Rain Showers"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-01T20:45:13Z",
   "hours": [
-   {
-    "start": "2026-11-01T17:00:00-05:00",
-    "temp_f": 61,
-    "temp_c": 16.11,
-    "precip_chance_pct": 18,
-    "short_forecast": "Slight Chance Rain Showers"
-   },
    {
     "start": "2026-11-01T18:00:00-05:00",
     "temp_f": 59,
@@ -708,6 +704,13 @@
     "start": "2026-11-03T16:00:00-05:00",
     "temp_f": 74,
     "temp_c": 23.33,
+    "precip_chance_pct": 10,
+    "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "start": "2026-11-03T17:00:00-05:00",
+    "temp_f": 72,
+    "temp_c": 22.22,
     "precip_chance_pct": 10,
     "short_forecast": "Mostly Cloudy"
    }
