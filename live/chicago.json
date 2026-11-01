@@ -11,20 +11,20 @@
   "lon": -87.9044,
   "history": "Same station as the official Chicago record (ThreadEx, O'Hare since 1980)"
  },
- "as_of_utc": "2026-11-01T15:07:29Z",
+ "as_of_utc": "2026-11-01T16:07:29Z",
  "now": {
-  "time_utc": "2026-11-01T13:55:00Z",
-  "temp_c": 13,
-  "temp_f": 55.4,
+  "time_utc": "2026-11-01T15:40:00Z",
+  "temp_c": 15,
+  "temp_f": 59.0,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 10,
-  "humidity_pct": 82.01,
-  "wind_kmh": 0,
-  "description": "Partly Cloudy"
+  "humidity_pct": 72.03,
+  "wind_kmh": 7.42,
+  "description": "Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-01",
-  "readings": 9,
+  "readings": 10,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -33,7 +33,12 @@
   "high_time_utc": "2026-11-01T08:51:00Z",
   "low_c": 11.1,
   "low_f": 52.0,
-  "low_time_utc": "2026-11-01T10:51:00Z"
+  "low_time_utc": "2026-11-01T10:51:00Z",
+  "peak_between_reports": {
+   "at_least_f": 58.1,
+   "about_f": 59.0,
+   "time_utc": "2026-11-01T15:40:00Z"
+  }
  },
  "record": {
   "series": "Chicago area (ThreadEx, O'Hare since 1980)",
@@ -249,12 +254,12 @@
   "periods": [
    {
     "name": "Today",
-    "start": "2026-11-01T08:00:00-06:00",
+    "start": "2026-11-01T09:00:00-06:00",
     "is_daytime": true,
     "temp_f": 65,
     "temp_c": 18.33,
-    "precip_chance_pct": 26,
-    "short_forecast": "Scattered Rain Showers"
+    "precip_chance_pct": 24,
+    "short_forecast": "Slight Chance Rain Showers"
    },
    {
     "name": "Tonight",
@@ -376,21 +381,14 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-01T10:55:56Z",
+  "issued_utc": "2026-11-01T14:17:06Z",
   "hours": [
-   {
-    "start": "2026-11-01T09:00:00-06:00",
-    "temp_f": 59,
-    "temp_c": 15.0,
-    "precip_chance_pct": 15,
-    "short_forecast": "Slight Chance Rain Showers"
-   },
    {
     "start": "2026-11-01T10:00:00-06:00",
     "temp_f": 61,
     "temp_c": 16.11,
     "precip_chance_pct": 15,
-    "short_forecast": "Slight Chance Rain Showers"
+    "short_forecast": "Isolated Rain Showers"
    },
    {
     "start": "2026-11-01T11:00:00-06:00",
@@ -711,6 +709,13 @@
     "start": "2026-11-03T08:00:00-06:00",
     "temp_f": 63,
     "temp_c": 17.22,
+    "precip_chance_pct": 24,
+    "short_forecast": "Slight Chance Rain"
+   },
+   {
+    "start": "2026-11-03T09:00:00-06:00",
+    "temp_f": 65,
+    "temp_c": 18.33,
     "precip_chance_pct": 24,
     "short_forecast": "Slight Chance Rain"
    }

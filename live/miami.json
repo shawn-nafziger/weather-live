@@ -11,33 +11,38 @@
   "lon": -80.3164,
   "history": "Same station as the official Miami record"
  },
- "as_of_utc": "2026-11-01T15:07:29Z",
+ "as_of_utc": "2026-11-01T16:07:29Z",
  "now": {
-  "time_utc": "2026-11-01T14:23:00Z",
-  "temp_c": 25.6,
-  "temp_f": 78.1,
-  "precision": "tenths of a degree",
-  "dewpoint_c": 22.8,
-  "humidity_pct": 84.54,
-  "wind_kmh": null,
-  "description": "Thunderstorms and Rain"
+  "time_utc": "2026-11-01T15:55:00Z",
+  "temp_c": 24,
+  "temp_f": 75.2,
+  "precision": "nearest whole \u00b0C",
+  "dewpoint_c": 23,
+  "humidity_pct": 94.15,
+  "wind_kmh": 16.67,
+  "description": "Heavy Rain and Fog/Mist"
  },
  "today_so_far": {
   "date_local": "2026-11-01",
-  "readings": 11,
+  "readings": 12,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
   "high_c": 27.2,
   "high_f": 81.0,
   "high_time_utc": "2026-11-01T05:53:00Z",
-  "low_c": 25.6,
-  "low_f": 78.1,
-  "low_time_utc": "2026-11-01T10:53:00Z",
+  "low_c": 25,
+  "low_f": 77.0,
+  "low_time_utc": "2026-11-01T14:53:00Z",
   "peak_between_reports": {
    "at_least_f": 81.5,
    "about_f": 82.4,
    "time_utc": "2026-11-01T14:00:00Z"
+  },
+  "dip_between_reports": {
+   "at_most_f": 76.1,
+   "about_f": 75.2,
+   "time_utc": "2026-11-01T15:40:00Z"
   }
  },
  "record": {
@@ -430,13 +435,6 @@
   "issued_utc": "2026-11-01T08:47:43Z",
   "hours": [
    {
-    "start": "2026-11-01T10:00:00-05:00",
-    "temp_f": 81,
-    "temp_c": 27.22,
-    "precip_chance_pct": 63,
-    "short_forecast": "Showers And Thunderstorms Likely"
-   },
-   {
     "start": "2026-11-01T11:00:00-05:00",
     "temp_f": 81,
     "temp_c": 27.22,
@@ -762,6 +760,13 @@
     "start": "2026-11-03T09:00:00-05:00",
     "temp_f": 79,
     "temp_c": 26.11,
+    "precip_chance_pct": 46,
+    "short_forecast": "Chance Showers And Thunderstorms"
+   },
+   {
+    "start": "2026-11-03T10:00:00-05:00",
+    "temp_f": 81,
+    "temp_c": 27.22,
     "precip_chance_pct": 46,
     "short_forecast": "Chance Showers And Thunderstorms"
    }
