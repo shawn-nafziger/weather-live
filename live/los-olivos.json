@@ -11,20 +11,20 @@
   "lon": -120.0756,
   "history": "Provisional: Santa Ynez Airport. The long record (CACHUMA LAKE) is a different, once-a-day station"
  },
- "as_of_utc": "2026-11-01T11:07:30Z",
+ "as_of_utc": "2026-11-01T12:07:29Z",
  "now": {
-  "time_utc": "2026-11-01T10:35:00Z",
+  "time_utc": "2026-11-01T11:35:00Z",
   "temp_c": 14,
   "temp_f": 57.2,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 14,
   "humidity_pct": 100,
-  "wind_kmh": 11.16,
-  "description": "Light Rain and Fog/Mist"
+  "wind_kmh": 0,
+  "description": "Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-01",
-  "readings": 10,
+  "readings": 13,
   "basis": "5-minute readings (whole \u00b0C, approximate)",
   "approximate": true,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -88,12 +88,12 @@
   "periods": [
    {
     "name": "Overnight",
-    "start": "2026-11-01T03:00:00-08:00",
+    "start": "2026-11-01T04:00:00-08:00",
     "is_daytime": false,
     "temp_f": 50,
     "temp_c": 10.0,
-    "precip_chance_pct": 71,
-    "short_forecast": "Light Rain Likely"
+    "precip_chance_pct": 36,
+    "short_forecast": "Chance Light Rain"
    },
    {
     "name": "Sunday",
@@ -217,13 +217,6 @@
  "hourly": {
   "issued_utc": "2026-11-01T06:26:40Z",
   "hours": [
-   {
-    "start": "2026-11-01T03:00:00-08:00",
-    "temp_f": 53,
-    "temp_c": 11.67,
-    "precip_chance_pct": 71,
-    "short_forecast": "Light Rain Likely"
-   },
    {
     "start": "2026-11-01T04:00:00-08:00",
     "temp_f": 50,
@@ -550,6 +543,13 @@
     "start": "2026-11-03T02:00:00-08:00",
     "temp_f": 52,
     "temp_c": 11.11,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "start": "2026-11-03T03:00:00-08:00",
+    "temp_f": 50,
+    "temp_c": 10.0,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Cloudy"
    }
