@@ -11,20 +11,20 @@
   "lon": -120.0756,
   "history": "Provisional: Santa Ynez Airport. The long record (CACHUMA LAKE) is a different, once-a-day station"
  },
- "as_of_utc": "2026-11-01T21:07:36Z",
+ "as_of_utc": "2026-11-01T22:07:32Z",
  "now": {
-  "time_utc": "2026-11-01T20:35:00Z",
+  "time_utc": "2026-11-01T21:15:00Z",
   "temp_c": 18,
   "temp_f": 64.4,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 7,
   "humidity_pct": 48.58,
-  "wind_kmh": 20.52,
+  "wind_kmh": 18.36,
   "description": "Mostly Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-01",
-  "readings": 36,
+  "readings": 38,
   "basis": "5-minute readings (whole \u00b0C, approximate)",
   "approximate": true,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -41,54 +41,54 @@
   "available": true,
   "rank_today": false,
   "latest_final": {
-   "date": "2026-10-31",
-   "is_yesterday": true,
-   "high_f": 74,
-   "low_f": 51,
+   "date": "2026-11-01",
+   "is_yesterday": false,
+   "high_f": 68,
+   "low_f": 52,
    "high_rank": {
-    "value_f": 74,
-    "warm_rank": 45,
-    "cool_rank": 25,
-    "years": 74,
+    "value_f": 68,
+    "warm_rank": 67,
+    "cool_rank": 6,
+    "years": 75,
     "first_year": 1952,
     "tied_years": [
-     1998,
-     2002,
-     2004,
-     2013,
-     2017
+     1968,
+     1978,
+     2000
     ],
     "standing": "cool",
-    "notable": false,
-    "since": 2017,
+    "notable": true,
+    "since": 2003,
     "record": false,
-    "phrase": "typical for October 31"
+    "phrase": "6th coolest November 1 high (tied) of 75 since 1952, coolest since 2003"
    },
    "low_rank": {
-    "value_f": 51,
-    "warm_rank": 14,
-    "cool_rank": 59,
-    "years": 73,
+    "value_f": 52,
+    "warm_rank": 12,
+    "cool_rank": 61,
+    "years": 75,
     "first_year": 1952,
     "tied_years": [
-     1993
+     1963,
+     1988,
+     1995
     ],
     "standing": "warm",
     "notable": true,
-    "since": 2016,
+    "since": 2008,
     "record": false,
-    "phrase": "14th warmest October 31 low (tied) of 73 since 1952, warmest since 2016"
+    "phrase": "12th warmest November 1 low (tied) of 75 since 1952, warmest since 2008"
    }
   },
   "note": "Today's readings come from a different station than this record, so today and the forecast aren't ranked against it."
  },
  "forecast": {
-  "issued_utc": "2026-11-01T18:26:34Z",
+  "issued_utc": "2026-11-01T21:21:22Z",
   "grid": "LOX/93,81",
   "periods": [
    {
     "name": "This Afternoon",
-    "start": "2026-11-01T13:00:00-08:00",
+    "start": "2026-11-01T14:00:00-08:00",
     "is_daytime": true,
     "temp_f": 68,
     "temp_c": 20.0,
@@ -215,15 +215,8 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-01T18:26:34Z",
+  "issued_utc": "2026-11-01T21:21:22Z",
   "hours": [
-   {
-    "start": "2026-11-01T13:00:00-08:00",
-    "temp_f": 68,
-    "temp_c": 20.0,
-    "precip_chance_pct": 5,
-    "short_forecast": "Partly Sunny"
-   },
    {
     "start": "2026-11-01T14:00:00-08:00",
     "temp_f": 66,
@@ -548,6 +541,13 @@
    },
    {
     "start": "2026-11-03T12:00:00-08:00",
+    "temp_f": 72,
+    "temp_c": 22.22,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Sunny"
+   },
+   {
+    "start": "2026-11-03T13:00:00-08:00",
     "temp_f": 72,
     "temp_c": 22.22,
     "precip_chance_pct": 0,
