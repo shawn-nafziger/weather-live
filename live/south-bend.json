@@ -11,20 +11,20 @@
   "lon": -86.3186,
   "history": "Same station as the official South Bend record (South Bend airport). Also the nearest official city record to Goshen, about 27 miles; a candidate for Goshen's hourly readings (question D2)"
  },
- "as_of_utc": "2026-11-01T06:07:30Z",
+ "as_of_utc": "2026-11-01T06:46:12Z",
  "now": {
-  "time_utc": "2026-11-01T05:45:00Z",
+  "time_utc": "2026-11-01T06:20:00Z",
   "temp_c": 12,
   "temp_f": 53.6,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 6,
   "humidity_pct": 66.72,
-  "wind_kmh": 11.12,
-  "description": "Mostly Clear"
+  "wind_kmh": 9.25,
+  "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-01",
-  "readings": 1,
+  "readings": 2,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -33,7 +33,12 @@
   "high_time_utc": "2026-11-01T04:54:00Z",
   "low_c": 11.7,
   "low_f": 53.1,
-  "low_time_utc": "2026-11-01T04:54:00Z"
+  "low_time_utc": "2026-11-01T04:54:00Z",
+  "dip_between_reports": {
+   "at_most_f": 52.7,
+   "about_f": 51.8,
+   "time_utc": "2026-11-01T06:10:00Z"
+  }
  },
  "record": {
   "series": "South Bend area (ThreadEx, South Bend airport)",
@@ -175,73 +180,74 @@
    {
     "period": "Thursday",
     "date": "2026-11-05",
-    "high_f": 65,
+    "high_f": 64,
     "would_rank": {
-     "value_f": 65,
-     "warm_rank": 18,
+     "value_f": 64,
+     "warm_rank": 20,
      "cool_rank": 111,
      "years": 130,
      "first_year": 1894,
-     "tied_years": [
-      1952,
-      2016
-     ],
+     "tied_years": [],
      "standing": "warm",
      "notable": true,
      "since": 2024,
      "record": false,
-     "phrase": "18th warmest November 5 high (tied) of 130 since 1894, warmest since 2024"
+     "phrase": "20th warmest November 5 high of 130 since 1894, warmest since 2024"
     }
    },
    {
     "period": "Friday",
     "date": "2026-11-06",
-    "high_f": 61,
+    "high_f": 60,
     "would_rank": {
-     "value_f": 61,
-     "warm_rank": 23,
-     "cool_rank": 105,
+     "value_f": 60,
+     "warm_rank": 27,
+     "cool_rank": 100,
      "years": 131,
      "first_year": 1894,
      "tied_years": [
-      1909,
-      1946,
-      1994,
-      2001
+      1915,
+      1926,
+      1950,
+      1964,
+      2024
      ],
      "standing": "warm",
-     "notable": true,
-     "since": 2023,
+     "notable": false,
+     "since": 2024,
      "record": false,
-     "phrase": "23rd warmest November 6 high (tied) of 131 since 1894, warmest since 2023"
+     "phrase": "typical for November 6"
     }
    },
    {
     "period": "Saturday",
     "date": "2026-11-07",
-    "high_f": 61,
+    "high_f": 60,
     "would_rank": {
-     "value_f": 61,
-     "warm_rank": 22,
-     "cool_rank": 107,
+     "value_f": 60,
+     "warm_rank": 25,
+     "cool_rank": 101,
      "years": 131,
      "first_year": 1894,
      "tied_years": [
-      1965,
-      2000,
-      2025
+      1908,
+      1918,
+      1943,
+      1982,
+      1996,
+      2005
      ],
      "standing": "warm",
      "notable": true,
      "since": 2025,
      "record": false,
-     "phrase": "22nd warmest November 7 high (tied) of 131 since 1894, warmest since 2025"
+     "phrase": "25th warmest November 7 high (tied) of 131 since 1894, warmest since 2025"
     }
    }
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-01T05:30:21Z",
+  "issued_utc": "2026-11-01T06:29:57Z",
   "grid": "IWX/27,64",
   "periods": [
    {
@@ -329,9 +335,9 @@
     "name": "Thursday",
     "start": "2026-11-05T06:00:00-05:00",
     "is_daytime": true,
-    "temp_f": 65,
-    "temp_c": 18.33,
-    "precip_chance_pct": 44,
+    "temp_f": 64,
+    "temp_c": 17.78,
+    "precip_chance_pct": 43,
     "short_forecast": "Chance Rain Showers"
    },
    {
@@ -340,15 +346,15 @@
     "is_daytime": false,
     "temp_f": 48,
     "temp_c": 8.89,
-    "precip_chance_pct": 39,
+    "precip_chance_pct": 38,
     "short_forecast": "Chance Rain Showers"
    },
    {
     "name": "Friday",
     "start": "2026-11-06T06:00:00-05:00",
     "is_daytime": true,
-    "temp_f": 61,
-    "temp_c": 16.11,
+    "temp_f": 60,
+    "temp_c": 15.56,
     "precip_chance_pct": 30,
     "short_forecast": "Chance Rain Showers"
    },
@@ -358,22 +364,22 @@
     "is_daytime": false,
     "temp_f": 43,
     "temp_c": 6.11,
-    "precip_chance_pct": 23,
+    "precip_chance_pct": 22,
     "short_forecast": "Slight Chance Rain Showers"
    },
    {
     "name": "Saturday",
     "start": "2026-11-07T06:00:00-05:00",
     "is_daytime": true,
-    "temp_f": 61,
-    "temp_c": 16.11,
+    "temp_f": 60,
+    "temp_c": 15.56,
     "precip_chance_pct": 13,
-    "short_forecast": "Partly Sunny"
+    "short_forecast": "Mostly Cloudy"
    }
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-01T05:30:21Z",
+  "issued_utc": "2026-11-01T06:29:57Z",
   "hours": [
    {
     "start": "2026-11-01T01:00:00-05:00",
