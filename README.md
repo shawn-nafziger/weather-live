@@ -18,13 +18,17 @@ A GitHub Actions job (`.github/workflows/hourly.yml`) runs at about :17 past eac
 
 After each records update, the daily workflow's second job, **Publish Almanac**, rebuilds one page per city from `history/` and publishes them with GitHub Pages:
 
-- `weather.tallorderdigital.com/almanac/` lists every city, each card led by that city's own headline.
+- `weather.tallorderdigital.com/almanac/` is the front page: a "find a place" search, a US map with one dot per place (colored by record lows set since 2000 compared with chance), and a sortable table of every place. Built to hold hundreds of places.
 - `weather.tallorderdigital.com/almanac/<city>/` is the city's page: yesterday in context, the year so far, the record book, how the climate has changed, rain and snow.
 - The site's front page sends visitors to the Almanac until the live page takes its place.
 
 The pages are built fresh each run and are **not committed** (`site/` is ignored), so the repo doesn't fill up with copies.
 
 Every sentence on a page is chosen from that city's numbers, and `almanac/build.py` checks each claim before writing a page (ranks recounted; each change claim checked two ways and against the last 40 years, because a station move can hide a trend). If a check fails for one city, that page is skipped and the others still publish. The run log says which.
+
+**Record lows vs chance** (the map's colors): each calendar date has one record low; if the climate weren't changing, the years since 2000 would hold their fair share. To tell a real gap from luck, the build picks the same number of years at random from the place's record 20,000 times (whole years, so a cold snap that set several records stays together). Orange means fewer than 2.5% of random picks did as well.
+
+The map outlines (`almanac/us_states.json`, US Census Bureau, public domain) were made once by `almanac/make_us_map.py`; `almanac/albers.py` places each dot with the same projection.
 
 **Goshen and South Bend** are a pair: Goshen's long record is a volunteer station in town, South Bend's is the official city record about 27 miles away. Each page has a switch to the other. Each page uses only its own station.
 

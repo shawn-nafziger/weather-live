@@ -28,6 +28,8 @@ import numpy as np
 import pandas as pd
 from scipy import stats
 
+from albers import project
+
 HERE = Path(__file__).resolve().parent
 REPO = HERE.parent
 HISTORY_DIR = REPO / "history"
@@ -49,33 +51,33 @@ THREADEX_CAVEAT = ("This is the official city record as kept, without adjustment
 
 # Cities the Almanac covers. Record details match weather-live/config/cities.json.
 CITIES = {
-    "goshen": {"name": "Goshen", "state": "Indiana", "st": "IN",
+    "goshen": {"lat": 41.5575, "lon": -85.8825, "name": "Goshen", "state": "Indiana", "st": "IN",
                # The nearest official city record; the page offers a switch to it.
                "pair": {"slug": "south-bend", "name": "South Bend", "miles": 27},
                "record_name": "GOSHEN 3SW (NOAA cooperative station 123418)",
                "record_kind": "a volunteer cooperative station read once a day, about 3 miles southwest of town",
                "caveat": COOP_CAVEAT, "kind": "coop"},
-    "chicago": {"name": "Chicago", "state": "Illinois", "st": "IL",
+    "chicago": {"lat": 41.995, "lon": -87.934, "name": "Chicago", "state": "Illinois", "st": "IL",
                 "record_name": "Chicago area official record (ThreadEx; O'Hare since 1980)",
                 "record_kind": "the official long-term record NOAA keeps for the city, joining several sites over the years",
                 "caveat": THREADEX_CAVEAT, "kind": "threadex"},
-    "phoenix": {"name": "Phoenix", "state": "Arizona", "st": "AZ",
+    "phoenix": {"lat": 33.428, "lon": -112.004, "name": "Phoenix", "state": "Arizona", "st": "AZ",
                 "record_name": "Phoenix area official record (ThreadEx; Sky Harbor since 1933)",
                 "record_kind": "the official long-term record NOAA keeps for the city, joining several sites over the years",
                 "caveat": THREADEX_CAVEAT, "kind": "threadex"},
-    "miami": {"name": "Miami", "state": "Florida", "st": "FL",
+    "miami": {"lat": 25.788, "lon": -80.317, "name": "Miami", "state": "Florida", "st": "FL",
               "record_name": "Miami area official record (ThreadEx)",
               "record_kind": "the official long-term record NOAA keeps for the city, joining several sites over the years",
               "caveat": THREADEX_CAVEAT, "kind": "threadex"},
-    "seattle": {"name": "Seattle", "state": "Washington", "st": "WA",
+    "seattle": {"lat": 47.444, "lon": -122.314, "name": "Seattle", "state": "Washington", "st": "WA",
                 "record_name": "Seattle area official record (ThreadEx; Sea-Tac)",
                 "record_kind": "the official long-term record NOAA keeps for the city, joining several sites over the years",
                 "caveat": THREADEX_CAVEAT, "kind": "threadex"},
-    "south-bend": {"name": "South Bend", "state": "Indiana", "st": "IN",
+    "south-bend": {"lat": 41.708, "lon": -86.316, "name": "South Bend", "state": "Indiana", "st": "IN",
                    "record_name": "South Bend area official record (ThreadEx; South Bend airport)",
                    "record_kind": "the official long-term record NOAA keeps for the city, joining several sites over the years",
                    "caveat": THREADEX_CAVEAT, "kind": "threadex"},
-    "los-olivos": {"name": "Los Olivos", "state": "California", "st": "CA",
+    "los-olivos": {"lat": 34.58223, "lon": -119.98159, "name": "Los Olivos", "state": "California", "st": "CA",
                    "record_name": "CACHUMA LAKE (NOAA cooperative station 041253)",
                    "record_kind": "a volunteer cooperative station read once a day, about 10 miles southeast of town",
                    "caveat": COOP_CAVEAT, "kind": "coop"},
@@ -174,7 +176,7 @@ def load(slug, path=None):
 
 
 # ------------------------------------------------------------------ the numbers
-def build(slug, path):
+def build(slug, path=None):
     city = CITIES[slug]
     h = load(slug, path)
     have = h.dropna(subset=["Hi", "Lo"])
@@ -259,20 +261,47 @@ def build(slug, path):
     # standing daily records by the decade that set them (ties split equally),
     # with the count expected if every year had the same chance
     def standing(col, fn):
-        got, exp = {}, {}
+        """Standing daily records held by each year (ties shared), and the share each year
+        would hold if every year had the same chance."""
+        got_y, exp_y = {}, {}
         for d, g in h.dropna(subset=[col]).groupby("MD"):
             if d == "02-29":
                 continue
             v = fn(g[col])
             yrs = g.loc[g[col] == v, "Y"].tolist()
             for y in yrs:
-                got[y // 10 * 10] = got.get(y // 10 * 10, 0) + 1 / len(yrs)
+                got_y[y] = got_y.get(y, 0) + 1 / len(yrs)
             for y in g["Y"]:
-                exp[y // 10 * 10] = exp.get(y // 10 * 10, 0) + 1 / len(g)
-        return got, exp
+                exp_y[y] = exp_y.get(y, 0) + 1 / len(g)
+        got = {y // 10 * 10: 0.0 for y in exp_y}
+        exp = dict(got)
+        for y, v in got_y.items():
+            got[y // 10 * 10] += v
+        for y, v in exp_y.items():
+            exp[y // 10 * 10] += v
+        return got, exp, got_y
 
-    sh, eh = standing("Hi", max)
-    sl, el = standing("Lo", min)
+    def chance_test(got_y, since=2000):
+        """How unusual is the count of standing records held by the years since 2000?
+        Draw that many years at random from the whole record, 20,000 times, and see how
+        often they hold as few (or as many). Whole years are drawn, so a cold snap that set
+        several records at once stays together. Years with under 300 days are left out of
+        the draw (the current year is in the count, as it is on the page)."""
+        days = h.groupby("Y")["Lo"].count()
+        pool = np.array([got_y.get(y, 0.0) for y in days.index if days[y] >= 300])
+        recent = [y for y in days.index if y >= since]
+        obs = sum(got_y.get(y, 0.0) for y in recent)
+        rng = np.random.default_rng(2026)
+        draws = np.array([pool[rng.choice(len(pool), len(recent), replace=False)].sum() for _ in range(20000)])
+        p_fewer, p_more = float((draws <= obs).mean()), float((draws >= obs).mean())
+        side, p = ("fewer", p_fewer) if p_fewer < p_more else ("more", p_more)
+        cls = "signal" if p < 0.025 else "edge" if p < 0.06 else "noise"
+        return {"side": side, "p": round(p, 4), "class": cls, "years": len(recent),
+                "typical": [round(float(np.percentile(draws, 2.5))), round(float(np.percentile(draws, 97.5)))]}
+
+    sh, eh, sh_y = standing("Hi", max)
+    sl, el, sl_y = standing("Lo", min)
+    test_lo, test_hi = chance_test(sl_y), chance_test(sh_y)
     decades = sorted(set(eh) | set(el))
     rec_dec = [{"d": d, "yrs": int(h[h["Y"] // 10 * 10 == d]["Y"].nunique()),
                 "hi": round(sh.get(d, 0), 1), "lo": round(sl.get(d, 0), 1),
@@ -441,9 +470,11 @@ def build(slug, path):
     def count_words(n, what):
         return f"no {what}s at all" if n == 0 else f"{n} {what}{'' if n == 1 else 's'}"
 
-    lows_far, highs_far = ratio_lo <= 0.5, ratio_hi >= 1.5
+    # "far fewer / far more" needs both: a big gap (half or double) and a real one (the test)
+    lows_far = ratio_lo <= 0.5 and test_lo["class"] == "signal" and test_lo["side"] == "fewer"
+    highs_far = ratio_hi >= 1.5 and test_hi["class"] == "signal" and test_hi["side"] == "more"
     SIG = ' class="sig"'
-    if lows_far and ratio_hi >= 1.25:
+    if lows_far and highs_far:
         t_rec = "Record highs keep coming. Record lows have nearly stopped."
     elif lows_far:
         t_rec = f"{C} has nearly stopped setting record lows"
@@ -473,10 +504,26 @@ def build(slug, path):
     d_hi40, d_lo40 = direction(t_hi40), direction(t_lo40)
     conflict = [w for w, d, d40 in (("low", d_lo, d_lo40), ("high", d_hi, d_hi40))
                 if d40 is not None and d40 != d]
+    since40 = t_lo40["first"]
+
+    def period_phrase(d, d40):
+        """How one measure changed, naming the period when the full record and the last 40
+        years disagree. Only signals count as change."""
+        return {
+            ("up", "up"): "have warmed", ("down", "down"): "have cooled",
+            ("up", None): "warmed over the long run", ("down", None): "cooled over the long run",
+            (None, "up"): f"have warmed since {since40}", (None, "down"): f"have cooled since {since40}",
+            ("up", "down"): f"warmed over the long run but have cooled since {since40}",
+            ("down", "up"): f"cooled over the long run but have warmed since {since40}",
+            (None, None): "show no clear change",
+        }[(d, d40)]
+
     if conflict:
-        both_up40 = d_hi40 == "up" and d_lo40 == "up"
-        t_chg = (f"{C} has warmed, most clearly in the last {RECENT} years" if both_up40
-                 else f"How {Cs} highs and lows have changed")
+        lo_p, hi_p = period_phrase(d_lo, d_lo40), period_phrase(d_hi, d_hi40)
+        if lo_p == hi_p:
+            t_chg = f"{Cs} days and nights {lo_p}"
+        else:
+            t_chg = f"{Cs} nights {lo_p}. Its days {hi_p}."
     elif d_lo == "up" and d_hi is None:
         t_chg = f"{Cs} nights got warmer. Its days didn't."
     elif d_hi == "up" and d_lo is None:
@@ -493,7 +540,7 @@ def build(slug, path):
     elif d_hi is None and d_lo is None:
         t_chg = f"No clear change in {Cs} highs or lows"
     else:
-        t_chg = f"How {Cs} highs and lows have changed"
+        t_chg = f"{Cs} nights {period_phrase(d_lo, d_lo40)}. Its days {period_phrase(d_hi, d_hi40)}."
 
     def trend_sentence(t, what):
         d = direction(t)
@@ -583,6 +630,11 @@ def build(slug, path):
         "Precipitation change claim holds two ways": d_pr is None or period_check(ann_pr, t_pr),
         "All-time high in the record book is the record's maximum": hot0["v"] == int(have["Hi"].max()),
         "No 'didn't warm' headline when the last 40 years disagree": not (conflict and "didn't" in t_chg),
+        "No placeholder headline": "How " not in t_chg[:4],
+        "'Far fewer record lows' only when the resampling test agrees":
+            not lows_far or (test_lo["class"] == "signal" and test_lo["side"] == "fewer"),
+        "'Far more record highs' only when the resampling test agrees":
+            not highs_far or (test_hi["class"] == "signal" and test_hi["side"] == "more"),
     }
     broken = [k for k, ok in claims.items() if not ok]
     if broken:
@@ -607,7 +659,7 @@ def build(slug, path):
             "pct_above": pct_above, "counted": counted,
             "ytd_pr": ytd_total, "ytd_missing": ytd_missing, "norm_ytd_pr": norm_ytd,
         },
-        "records": {"hot": top_hot, "cold": top_cold, "decades": rec_dec,
+        "records": {"hot": top_hot, "cold": top_cold, "decades": rec_dec, "test_lo": test_lo, "test_hi": test_hi,
                     "lows_since_2000": lows_since_2000, "lows_expected_since_2000": lows_expected_since_2000,
                     "highs_since_2000": highs_since_2000, "highs_expected_since_2000": highs_expected_since_2000},
         "change": {
@@ -679,20 +731,43 @@ def write_city(slug, out_dir, history=None):
     return data
 
 
+def index_row(d):
+    """One place's line on the front page (map dot + table row)."""
+    c, r, g, t = d["city"], d["records"], d["change"], d["text"]
+    x, y = project(c["lon"], c["lat"])
+    trend = lambda tr: {"v": tr["per_decade"], "c": tr["class"]}  # noqa: E731
+    return {"slug": d["slug"], "name": c["name"], "st": c["st"], "state": c["state"],
+            "kind": c["kind"], "since": d["first_year"], "x": round(x, 1), "y": round(y, 1),
+            "lows": r["lows_since_2000"], "lows_exp": r["lows_expected_since_2000"],
+            "test": r["test_lo"]["class"], "side": r["test_lo"]["side"], "far": t["sig_bars"]["lo"],
+            "nights": trend(g["t_lo"]), "days": trend(g["t_hi"]), "mixed": bool(g["conflict"]),
+            "headline": t["t_chg"], "yhi": d["yesterday"]["hi"], "yhi_words": d["yesterday"]["hi_words"]}
+
+
 def write_index(built, out_dir):
-    """The Almanac's front page: one card per city, led by that city's own headline."""
-    tpl = (HERE / "index_template.html").read_text(encoding="utf-8")
-    cards = []
-    for d in sorted(built, key=lambda d: d["city"]["name"]):
-        c, t = d["city"], d["text"]
-        kind = "Official city record" if c["kind"] == "threadex" else "Volunteer station"
-        lede = re.sub("<[^>]+>", "", t["lede"])
-        cards.append(f'<a class="card" href="{d["slug"]}/"><span class="meta">{html.escape(c["name"])}, {c["st"]} · '
-                     f'{kind} since {d["first_year"]}</span><b>{html.escape(t["t_chg"])}</b>'
-                     f'<span class="sub">{html.escape(t["t_rec"])}</span><span class="sub">{html.escape(lede)}</span></a>')
+    """The Almanac's front page: search, a US map (one dot per place) and a sortable table."""
+    rows = sorted((index_row(d) for d in built), key=lambda r: r["name"])
+    n, k = len(rows), sum(1 for r in rows if r["far"])
+    places = "place" if n == 1 else "places"
+    if k == n:
+        lede = f"Every one of these {n} {places} has nearly stopped setting record lows."
+    elif k:
+        lede = f"{k} of these {n} {places} have nearly stopped setting record lows."
+    else:
+        lede = f"None of these {n} {places} has clearly stopped setting record lows."
+    # check: the lede's count is the number of orange dots
+    if k != sum(1 for r in rows if r["test"] == "signal" and r["side"] == "fewer" and r["far"]):
+        raise ClaimError("front-page lede count does not match the map")
+    states = json.loads((HERE / "us_states.json").read_text(encoding="utf-8"))
+    paths = "".join(f'<path d="{d}"><title>{html.escape(name)}</title></path>' for name, d in states["states"].items())
     asof = max(date.fromisoformat(d["asof"]) for d in built)
-    page = (tpl.replace("{{CARDS}}", "".join(cards)).replace("{{COUNT}}", str(len(built)))
+    tpl = (HERE / "index_template.html").read_text(encoding="utf-8")
+    page = (tpl.replace("{{STATES}}", paths).replace("{{DATA}}", json.dumps(rows, separators=(",", ":")))
+               .replace("{{COUNT}}", str(n)).replace("{{LEDE}}", lede)
                .replace("{{ASOF_WORDS}}", f"{asof:%B} {asof.day}, {asof.year}").replace("{{MAIN}}", MAIN_SITE))
+    left = [p for p in page.split("{{")[1:] if "}}" in p[:40]]
+    if left:
+        raise RuntimeError(f"Unfilled placeholders on the index: {[p.split('}}')[0] for p in left]}")
     (out_dir / "almanac").mkdir(parents=True, exist_ok=True)
     (out_dir / "almanac" / "index.html").write_text(page, encoding="utf-8")
     # The site's front page points to the Almanac until the live page takes its place.

@@ -38,11 +38,26 @@ class Test(unittest.TestCase):
             self.assertNotIn("../../../", page)          # links to the main site are absolute
             self.assertIn('href="../"', page)            # back to the Almanac index
         index = (self.out / "almanac" / "index.html").read_text(encoding="utf-8")
-        self.assertEqual(index.count('class="card"'), len(slugs))
+        self.assertNotIn("{{", index)
+        for s in slugs:
+            self.assertIn(f'"slug":"{s}"', index)            # one map dot / table row per place
         self.assertTrue((self.out / "index.html").exists())
 
+    def test_no_placeholder_headlines_and_dots_are_on_the_map(self):
+        a.HISTORY_DIR = REAL_HISTORY
+        for s in [s for s in a.CITIES if (REAL_HISTORY / f"{s}.csv").exists()]:
+            d = a.build(s)
+            self.assertFalse(d["text"]["t_chg"].startswith("How "), s)
+            row = a.index_row(d)
+            self.assertTrue(0 < row["x"] < 975 and 0 < row["y"] < 610, s)
+
+    def test_projection_matches_the_standard_us_map(self):
+        # d3.geoAlbersUsa().scale(1300).translate([487.5, 305]) puts Chicago near (638, 227)
+        x, y = a.project(-87.65, 41.85)
+        self.assertAlmostEqual(x, 637.9, delta=1); self.assertAlmostEqual(y, 226.8, delta=1)
+
     def test_switch_links_goshen_and_south_bend_both_ways(self):
-        # No South Bend record yet in this repo: stand one in with Goshen's file.
+        # Stand in a copy of Goshen as South Bend, so the test needs only one file.
         shutil.copy(REAL_HISTORY / "goshen.csv", self.hist / "goshen.csv")
         shutil.copy(REAL_HISTORY / "goshen.csv", self.hist / "south-bend.csv")
         self.assertEqual(self.run_all(), 0)
@@ -70,7 +85,8 @@ class Test(unittest.TestCase):
         self.assertTrue((self.out / "almanac" / "chicago" / "index.html").exists())
         self.assertFalse((self.out / "almanac" / "phoenix" / "index.html").exists())
         index = (self.out / "almanac" / "index.html").read_text(encoding="utf-8")
-        self.assertEqual(index.count('class="card"'), 1)
+        self.assertIn('"slug":"chicago"', index)
+        self.assertNotIn('"slug":"phoenix"', index)
 
     def test_rank_is_years_strictly_warmer_plus_one_with_ties_shared(self):
         r = a.same_date_rank({2000: 80, 2001: 85, 2002: 80, 2003: 70, 2026: 80}, 2026, 80)
