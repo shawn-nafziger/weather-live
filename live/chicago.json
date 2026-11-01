@@ -11,20 +11,20 @@
   "lon": -87.9044,
   "history": "Same station as the official Chicago record (ThreadEx, O'Hare since 1980)"
  },
- "as_of_utc": "2026-10-31T23:07:28Z",
+ "as_of_utc": "2026-11-01T00:07:30Z",
  "now": {
-  "time_utc": "2026-10-31T22:50:00Z",
+  "time_utc": "2026-10-31T23:40:00Z",
   "temp_c": 14,
   "temp_f": 57.2,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 8,
-  "humidity_pct": 67.15,
-  "wind_kmh": 11.12,
-  "description": "Mostly Cloudy"
+  "dewpoint_c": 7,
+  "humidity_pct": 62.72,
+  "wind_kmh": 7.42,
+  "description": "Mostly Clear"
  },
  "today_so_far": {
   "date_local": "2026-10-31",
-  "readings": 16,
+  "readings": 17,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -87,30 +87,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-10-31",
-    "high_f": 61,
-    "would_rank": {
-     "value_f": 61,
-     "warm_rank": 49,
-     "cool_rank": 102,
-     "years": 155,
-     "first_year": 1872,
-     "tied_years": [
-      1948,
-      1980,
-      1984,
-      2016,
-      2018
-     ],
-     "standing": "warm",
-     "notable": false,
-     "since": 2024,
-     "record": false,
-     "phrase": "typical for October 31"
-    }
-   },
    {
     "period": "Sunday",
     "date": "2026-11-01",
@@ -242,6 +218,24 @@
      "record": false,
      "phrase": "20th warmest November 6 high (tied) of 155 since 1872, warmest since 2023"
     }
+   },
+   {
+    "period": "Saturday",
+    "date": "2026-11-07",
+    "high_f": 61,
+    "would_rank": {
+     "value_f": 61,
+     "warm_rank": 30,
+     "cool_rank": 126,
+     "years": 155,
+     "first_year": 1872,
+     "tied_years": [],
+     "standing": "warm",
+     "notable": true,
+     "since": 2025,
+     "record": false,
+     "phrase": "30th warmest November 7 high of 155 since 1872, warmest since 2025"
+    }
    }
   ]
  },
@@ -249,15 +243,6 @@
   "issued_utc": "2026-10-31T20:51:12Z",
   "grid": "LOT/66,77",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-10-31T16:00:00-05:00",
-    "is_daytime": true,
-    "temp_f": 61,
-    "temp_c": 16.11,
-    "precip_chance_pct": 22,
-    "short_forecast": "Isolated Rain Showers"
-   },
    {
     "name": "Tonight",
     "start": "2026-10-31T18:00:00-05:00",
@@ -374,19 +359,21 @@
     "temp_c": 7.78,
     "precip_chance_pct": 13,
     "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "name": "Saturday",
+    "start": "2026-11-07T06:00:00-06:00",
+    "is_daytime": true,
+    "temp_f": 61,
+    "temp_c": 16.11,
+    "precip_chance_pct": 18,
+    "short_forecast": "Slight Chance Rain Showers"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-10-31T20:51:12Z",
   "hours": [
-   {
-    "start": "2026-10-31T18:00:00-05:00",
-    "temp_f": 58,
-    "temp_c": 14.44,
-    "precip_chance_pct": 15,
-    "short_forecast": "Isolated Rain Showers"
-   },
    {
     "start": "2026-10-31T19:00:00-05:00",
     "temp_f": 56,
@@ -713,6 +700,13 @@
     "start": "2026-11-02T16:00:00-06:00",
     "temp_f": 66,
     "temp_c": 18.89,
+    "precip_chance_pct": 23,
+    "short_forecast": "Slight Chance Rain Showers"
+   },
+   {
+    "start": "2026-11-02T17:00:00-06:00",
+    "temp_f": 64,
+    "temp_c": 17.78,
     "precip_chance_pct": 23,
     "short_forecast": "Slight Chance Rain Showers"
    }

@@ -11,20 +11,20 @@
   "lon": -112.0035,
   "history": "Same station as the official Phoenix record (Sky Harbor since 1933)"
  },
- "as_of_utc": "2026-10-31T23:07:28Z",
+ "as_of_utc": "2026-11-01T00:07:30Z",
  "now": {
-  "time_utc": "2026-10-31T22:55:00Z",
-  "temp_c": 25,
-  "temp_f": 77.0,
+  "time_utc": "2026-10-31T23:40:00Z",
+  "temp_c": 24,
+  "temp_f": 75.2,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 16,
-  "humidity_pct": 57.39,
-  "wind_kmh": 18.5,
-  "description": "Cloudy"
+  "dewpoint_c": 17,
+  "humidity_pct": 64.93,
+  "wind_kmh": 14.83,
+  "description": "Light Rain"
  },
  "today_so_far": {
   "date_local": "2026-10-31",
-  "readings": 13,
+  "readings": 14,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -251,17 +251,17 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-10-31T18:53:12Z",
+  "issued_utc": "2026-10-31T23:03:27Z",
   "grid": "PSR/161,57",
   "periods": [
    {
     "name": "This Afternoon",
-    "start": "2026-10-31T12:00:00-07:00",
+    "start": "2026-10-31T16:00:00-07:00",
     "is_daytime": true,
     "temp_f": 79,
     "temp_c": 26.11,
     "precip_chance_pct": 49,
-    "short_forecast": "Slight Chance Showers And Thunderstorms"
+    "short_forecast": "Chance Showers And Thunderstorms"
    },
    {
     "name": "Tonight",
@@ -383,15 +383,8 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-10-31T18:53:12Z",
+  "issued_utc": "2026-10-31T23:03:27Z",
   "hours": [
-   {
-    "start": "2026-10-31T16:00:00-07:00",
-    "temp_f": 77,
-    "temp_c": 25.0,
-    "precip_chance_pct": 27,
-    "short_forecast": "Chance Showers And Thunderstorms"
-   },
    {
     "start": "2026-10-31T17:00:00-07:00",
     "temp_f": 75,
@@ -718,6 +711,13 @@
     "start": "2026-11-02T15:00:00-07:00",
     "temp_f": 73,
     "temp_c": 22.78,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
+   },
+   {
+    "start": "2026-11-02T16:00:00-07:00",
+    "temp_f": 72,
+    "temp_c": 22.22,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
    }
