@@ -11,20 +11,20 @@
   "lon": -80.3164,
   "history": "Same station as the official Miami record"
  },
- "as_of_utc": "2026-11-01T23:07:29Z",
+ "as_of_utc": "2026-11-02T00:07:30Z",
  "now": {
-  "time_utc": "2026-11-01T22:55:00Z",
+  "time_utc": "2026-11-01T23:40:00Z",
   "temp_c": 25,
   "temp_f": 77.0,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 23,
   "humidity_pct": 88.68,
-  "wind_kmh": 7.42,
+  "wind_kmh": 5.54,
   "description": "Partly Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-01",
-  "readings": 17,
+  "readings": 18,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -91,41 +91,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-01",
-    "high_f": 83,
-    "would_rank": {
-     "value_f": 83,
-     "warm_rank": 52,
-     "cool_rank": 64,
-     "years": 131,
-     "first_year": 1895,
-     "tied_years": [
-      1909,
-      1922,
-      1927,
-      1937,
-      1948,
-      1950,
-      1952,
-      1981,
-      1984,
-      1990,
-      1991,
-      1996,
-      2001,
-      2008,
-      2011,
-      2021
-     ],
-     "standing": "warm",
-     "notable": false,
-     "since": 2024,
-     "record": false,
-     "phrase": "typical for November 1"
-    }
-   },
    {
     "period": "Monday",
     "date": "2026-11-02",
@@ -295,6 +260,35 @@
      "record": false,
      "phrase": "15th warmest November 7 high (tied) of 131 since 1895, warmest since 2025"
     }
+   },
+   {
+    "period": "Sunday",
+    "date": "2026-11-08",
+    "high_f": 84,
+    "would_rank": {
+     "value_f": 84,
+     "warm_rank": 28,
+     "cool_rank": 94,
+     "years": 131,
+     "first_year": 1895,
+     "tied_years": [
+      1895,
+      1897,
+      1948,
+      1955,
+      1957,
+      1961,
+      1977,
+      1979,
+      2002,
+      2013
+     ],
+     "standing": "warm",
+     "notable": false,
+     "since": 2025,
+     "record": false,
+     "phrase": "typical for November 8"
+    }
    }
   ]
  },
@@ -302,15 +296,6 @@
   "issued_utc": "2026-11-01T20:31:56Z",
   "grid": "MFL/105,51",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-01T16:00:00-05:00",
-    "is_daytime": true,
-    "temp_f": 83,
-    "temp_c": 28.33,
-    "precip_chance_pct": 66,
-    "short_forecast": "Showers And Thunderstorms Likely"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-01T18:00:00-05:00",
@@ -427,19 +412,21 @@
     "temp_c": 21.67,
     "precip_chance_pct": 6,
     "short_forecast": "Mostly Clear"
+   },
+   {
+    "name": "Sunday",
+    "start": "2026-11-08T06:00:00-05:00",
+    "is_daytime": true,
+    "temp_f": 84,
+    "temp_c": 28.89,
+    "precip_chance_pct": 8,
+    "short_forecast": "Sunny"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-01T20:31:56Z",
   "hours": [
-   {
-    "start": "2026-11-01T18:00:00-05:00",
-    "temp_f": 77,
-    "temp_c": 25.0,
-    "precip_chance_pct": 53,
-    "short_forecast": "Chance Showers And Thunderstorms"
-   },
    {
     "start": "2026-11-01T19:00:00-05:00",
     "temp_f": 77,
@@ -766,6 +753,13 @@
     "start": "2026-11-03T17:00:00-05:00",
     "temp_f": 81,
     "temp_c": 27.22,
+    "precip_chance_pct": 61,
+    "short_forecast": "Showers And Thunderstorms Likely"
+   },
+   {
+    "start": "2026-11-03T18:00:00-05:00",
+    "temp_f": 80,
+    "temp_c": 26.67,
     "precip_chance_pct": 61,
     "short_forecast": "Showers And Thunderstorms Likely"
    }

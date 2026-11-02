@@ -11,9 +11,9 @@
   "lon": -122.3136,
   "history": "Same station as the official Seattle record (Sea-Tac)"
  },
- "as_of_utc": "2026-11-01T23:07:29Z",
+ "as_of_utc": "2026-11-02T00:07:30Z",
  "now": {
-  "time_utc": "2026-11-01T22:55:00Z",
+  "time_utc": "2026-11-01T23:40:00Z",
   "temp_c": 9,
   "temp_f": 48.2,
   "precision": "nearest whole \u00b0C",
@@ -24,21 +24,16 @@
  },
  "today_so_far": {
   "date_local": "2026-11-01",
-  "readings": 12,
+  "readings": 13,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 8.3,
-  "high_f": 46.9,
-  "high_time_utc": "2026-11-01T07:53:00Z",
+  "high_c": 8.9,
+  "high_f": 48.0,
+  "high_time_utc": "2026-11-01T22:53:00Z",
   "low_c": 7.2,
   "low_f": 45.0,
-  "low_time_utc": "2026-11-01T13:53:00Z",
-  "peak_between_reports": {
-   "at_least_f": 47.3,
-   "about_f": 48.2,
-   "time_utc": "2026-11-01T20:35:00Z"
-  }
+  "low_time_utc": "2026-11-01T13:53:00Z"
  },
  "record": {
   "series": "Seattle area (ThreadEx, Sea-Tac)",
@@ -87,7 +82,7 @@
   },
   "forecast_highs": [
    {
-    "period": "Today",
+    "period": "This Afternoon",
     "date": "2026-11-01",
     "high_f": 55,
     "would_rank": {
@@ -262,8 +257,8 @@
   "grid": "SEW/124,60",
   "periods": [
    {
-    "name": "Today",
-    "start": "2026-11-01T10:00:00-08:00",
+    "name": "This Afternoon",
+    "start": "2026-11-01T12:00:00-08:00",
     "is_daytime": true,
     "temp_f": 55,
     "temp_c": 12.78,
@@ -392,13 +387,6 @@
  "hourly": {
   "issued_utc": "2026-11-01T18:26:45Z",
   "hours": [
-   {
-    "start": "2026-11-01T15:00:00-08:00",
-    "temp_f": 54,
-    "temp_c": 12.22,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Sunny"
-   },
    {
     "start": "2026-11-01T16:00:00-08:00",
     "temp_f": 53,
@@ -723,6 +711,13 @@
    },
    {
     "start": "2026-11-03T14:00:00-08:00",
+    "temp_f": 57,
+    "temp_c": 13.89,
+    "precip_chance_pct": 1,
+    "short_forecast": "Partly Sunny"
+   },
+   {
+    "start": "2026-11-03T15:00:00-08:00",
     "temp_f": 57,
     "temp_c": 13.89,
     "precip_chance_pct": 1,
