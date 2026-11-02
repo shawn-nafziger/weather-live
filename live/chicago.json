@@ -11,9 +11,9 @@
   "lon": -87.9044,
   "history": "Same station as the official Chicago record (ThreadEx, O'Hare since 1980)"
  },
- "as_of_utc": "2026-11-02T00:07:30Z",
+ "as_of_utc": "2026-11-02T01:07:29Z",
  "now": {
-  "time_utc": "2026-11-01T23:55:00Z",
+  "time_utc": "2026-11-02T00:50:00Z",
   "temp_c": 15,
   "temp_f": 59.0,
   "precision": "nearest whole \u00b0C",
@@ -24,7 +24,7 @@
  },
  "today_so_far": {
   "date_local": "2026-11-01",
-  "readings": 16,
+  "readings": 17,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -85,27 +85,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-01",
-    "high_f": 64,
-    "would_rank": {
-     "value_f": 64,
-     "warm_rank": 37,
-     "cool_rank": 116,
-     "years": 154,
-     "first_year": 1872,
-     "tied_years": [
-      1876,
-      1981
-     ],
-     "standing": "warm",
-     "notable": false,
-     "since": 2022,
-     "record": false,
-     "phrase": "typical for November 1"
-    }
-   },
    {
     "period": "Monday",
     "date": "2026-11-02",
@@ -241,6 +220,31 @@
      "record": false,
      "phrase": "typical for November 7"
     }
+   },
+   {
+    "period": "Sunday",
+    "date": "2026-11-08",
+    "high_f": 58,
+    "would_rank": {
+     "value_f": 58,
+     "warm_rank": 42,
+     "cool_rank": 108,
+     "years": 155,
+     "first_year": 1872,
+     "tied_years": [
+      1918,
+      1926,
+      1935,
+      1944,
+      1952,
+      1978
+     ],
+     "standing": "warm",
+     "notable": false,
+     "since": 2024,
+     "record": false,
+     "phrase": "typical for November 8"
+    }
    }
   ]
  },
@@ -248,15 +252,6 @@
   "issued_utc": "2026-11-01T22:01:01Z",
   "grid": "LOT/66,77",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-01T16:00:00-06:00",
-    "is_daytime": true,
-    "temp_f": 64,
-    "temp_c": 17.78,
-    "precip_chance_pct": 16,
-    "short_forecast": "Slight Chance Rain Showers"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-01T18:00:00-06:00",
@@ -373,19 +368,21 @@
     "temp_c": 5.56,
     "precip_chance_pct": 5,
     "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "name": "Sunday",
+    "start": "2026-11-08T06:00:00-06:00",
+    "is_daytime": true,
+    "temp_f": 58,
+    "temp_c": 14.44,
+    "precip_chance_pct": 19,
+    "short_forecast": "Slight Chance Rain"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-01T22:01:01Z",
   "hours": [
-   {
-    "start": "2026-11-01T18:00:00-06:00",
-    "temp_f": 59,
-    "temp_c": 15.0,
-    "precip_chance_pct": 10,
-    "short_forecast": "Chance Rain Showers"
-   },
    {
     "start": "2026-11-01T19:00:00-06:00",
     "temp_f": 59,
@@ -714,6 +711,13 @@
     "temp_c": 21.11,
     "precip_chance_pct": 64,
     "short_forecast": "Rain Showers Likely"
+   },
+   {
+    "start": "2026-11-03T18:00:00-06:00",
+    "temp_f": 69,
+    "temp_c": 20.56,
+    "precip_chance_pct": 90,
+    "short_forecast": "Rain Showers"
    }
   ]
  },
