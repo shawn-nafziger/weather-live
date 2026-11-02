@@ -75,6 +75,43 @@ class Test(unittest.TestCase):
         self.assertEqual((self.tmp / "chicago.csv").read_text(), before)   # file untouched
 
 
+class Batch(unittest.TestCase):
+    """main(): both city lists, paced first downloads, and the status file."""
+    def setUp(self):
+        self.tmp = Path(tempfile.mkdtemp())
+        s.HISTORY_DIR = self.tmp / "history"
+        s.time.sleep = lambda *_: None
+        (self.tmp / "cities.json").write_text(json.dumps({"cities": [
+            {"slug": "chicago", "name": "Chicago", "record_sid": "ORDthr 9"}]}))
+        (self.tmp / "almanac.json").write_text(json.dumps({"cities": [
+            {"slug": f"c{i}", "name": f"C{i}", "record_sid": f"X{i}thr 9"} for i in range(4)] +
+            [{"slug": "chicago", "name": "Chicago again", "record_sid": "ORDthr 9"}]}))
+        s.CITIES_FILE, s.ALMANAC_CITIES_FILE = self.tmp / "cities.json", self.tmp / "almanac.json"
+        self.real_session = s.requests.Session
+        s.requests.Session = lambda: FakeSession()
+
+    def tearDown(self):
+        s.requests.Session = self.real_session
+
+    def test_lists_are_merged_without_duplicates(self):
+        self.assertEqual([c["slug"] for c in s.load_cities()], ["chicago", "c0", "c1", "c2", "c3"])
+
+    def test_first_downloads_are_paced_and_status_is_written(self):
+        s.MAX_FULL_DOWNLOADS_PER_RUN = 2
+        try:
+            s.main()
+            st = json.loads((s.HISTORY_DIR / "status.json").read_text())
+            self.assertEqual(st["summary"], {"cities": 5, "updated": 2, "failed": 0, "waiting": 3})
+            self.assertTrue(st["cities"]["c2"]["waiting"])
+            s.main()                                   # next run: two more
+            s.main()                                   # and the last one
+            st = json.loads((s.HISTORY_DIR / "status.json").read_text())
+        finally:
+            s.MAX_FULL_DOWNLOADS_PER_RUN = 15
+        self.assertEqual(st["summary"]["waiting"], 0)
+        self.assertEqual(sorted(p.stem for p in s.HISTORY_DIR.glob("*.csv")), ["c0", "c1", "c2", "c3", "chicago"])
+
+
 class RankRules(unittest.TestCase):
     def hist(self, values, md="10-28"):
         return {date(1990 + i, int(md[:2]), int(md[3:])): {"MaxTempF": str(v)} for i, v in enumerate(values)}

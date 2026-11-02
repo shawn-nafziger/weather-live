@@ -5,14 +5,18 @@ DAILY (run by GitHub Actions, see .github/workflows/daily.yml).
 
 Keeps history/<city>.csv: each city's official daily record (high, low,
 precipitation, snowfall) from NOAA via RCC-ACIS, using the ThreadEx "official
-city record" where one exists (config/cities.json, record_sid).
+city record" where one exists. Cities come from config/cities.json (the ones
+the hourly job also follows) and config/almanac_cities.json (Almanac only).
 
-- First run for a city: downloads its whole record.
+- First run for a city: downloads its whole record. At most
+  MAX_FULL_DOWNLOADS_PER_RUN cities are downloaded in full per run, so a batch of
+  new cities arrives over a few runs instead of one long one.
 - After that: re-downloads the last REFRESH_DAYS days (stations post late and
   correct values) and replaces just those days. Older history is untouched,
   and no day is ever dropped.
 
-Ends by printing each city's latest official high and how it ranks among every
+Writes history/status.json (what happened to each city this run, including
+cities still waiting for their first download), and ends by printing each city's latest official high and how it ranks among every
 same calendar date, to compare with the NWS daily climate report.
 
 This is the same job as weather-intelligence/pipeline/12, moved here so it
@@ -34,7 +38,9 @@ import ranks
 
 REPO = Path(__file__).resolve().parents[1]
 CITIES_FILE = REPO / "config" / "cities.json"
+ALMANAC_CITIES_FILE = REPO / "config" / "almanac_cities.json"
 HISTORY_DIR = REPO / "history"
+STATUS_FILE_NAME = "status.json"
 
 ACIS_DATA_URL = "https://data.rcc-acis.org/StnData"
 USER_AGENT = "(tallorderdigital.com weather-live, https://github.com/shawn-nafziger/weather-live)"
@@ -42,6 +48,7 @@ TIMEOUT_SECONDS = 120          # a full record is one large response
 REFRESH_DAYS = 21
 RETRIES = 3
 PAUSE_SECONDS = 1
+MAX_FULL_DOWNLOADS_PER_RUN = 15  # first-time downloads are large; spread a new batch over runs
 
 COLUMNS = ["Date", "MaxTempF", "MinTempF", "PrecipIn", "SnowIn", "PrecipTrace", "SnowTrace",
            "MaxTempC", "MinTempC", "PrecipMM", "SnowCM"]
@@ -154,25 +161,50 @@ def latest_high_line(city):
     return f"{day}: high {ranks.whole_f(history[day]['MaxTempF'])}°F, {ranks.phrase(r, day)}"
 
 
-def main():
+def load_cities():
+    """Every city the daily job keeps: cities.json first, then Almanac-only places (no duplicates)."""
     cities = json.loads(CITIES_FILE.read_text(encoding="utf-8"))["cities"]
+    if ALMANAC_CITIES_FILE.exists():
+        seen = {c["slug"] for c in cities}
+        cities += [c for c in json.loads(ALMANAC_CITIES_FILE.read_text(encoding="utf-8"))["cities"]
+                   if c["slug"] not in seen]
+    return cities
+
+
+def main():
+    cities = load_cities()
     session = requests.Session()
     session.headers.update({"User-Agent": USER_AGENT})
     today = date.today()
-    failures = 0
+    failures = full = 0
+    status = {"run_utc": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()), "cities": {}}
     for city in cities:
+        new = not (HISTORY_DIR / f"{city['slug']}.csv").exists()
+        if new and full >= MAX_FULL_DOWNLOADS_PER_RUN:
+            status["cities"][city["slug"]] = {"ok": False, "waiting": True,
+                                              "note": "first download waits for a later run"}
+            continue
+        full += new
         try:
             res = update_city(session, city, today)
             how = "full record downloaded" if res["full_download"] else f"last {REFRESH_DAYS} days refreshed"
-            print(f"{city['name']:<11} OK   {how}: {res['rows_before']:,} -> {res['rows_after']:,} days"
+            print(f"{city['name']:<14} OK   {how}: {res['rows_before']:,} -> {res['rows_after']:,} days"
                   f" ({res['first']} to {res['last']})")
-            print(f"{'':<16}{latest_high_line(city)}")
+            print(f"{'':<19}{latest_high_line(city)}")
+            status["cities"][city["slug"]] = {"ok": True, **res}
         except Exception as e:
             failures += 1
-            print(f"{city['name']:<11} FAIL {e}")
+            print(f"{city['name']:<14} FAIL {e}")
+            status["cities"][city["slug"]] = {"ok": False, "error": str(e)[:300], "sid": city["record_sid"]}
         time.sleep(PAUSE_SECONDS)
-    print(f"{len(cities) - failures} of {len(cities)} cities updated.")
-    return 1 if failures == len(cities) else 0
+    waiting = sum(1 for v in status["cities"].values() if v.get("waiting"))
+    attempted = len(cities) - waiting
+    status["summary"] = {"cities": len(cities), "updated": attempted - failures, "failed": failures, "waiting": waiting}
+    HISTORY_DIR.mkdir(parents=True, exist_ok=True)
+    (HISTORY_DIR / STATUS_FILE_NAME).write_text(json.dumps(status, indent=1), encoding="utf-8")
+    print(f"{attempted - failures} of {attempted} cities updated"
+          + (f"; {waiting} waiting for their first download." if waiting else "."))
+    return 1 if attempted and failures == attempted else 0
 
 
 if __name__ == "__main__":

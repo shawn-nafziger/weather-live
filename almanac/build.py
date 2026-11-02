@@ -40,7 +40,6 @@ MAIN_SITE = "https://tallorderdigital.com/"
 class ClaimError(Exception):
     """A sentence the page would print is not true for this city's data."""
 
-# Cities the Almanac covers. Record details match weather-live/config/cities.json.
 COOP_CAVEAT = ("This is one volunteer station's raw record. Over a century, changes in observing time, instruments "
                "and exact location can shift readings by a degree or more; NOAA's adjusted climate datasets correct "
                "for these. Treat it as one station's record, and any single number as approximate.")
@@ -49,7 +48,8 @@ THREADEX_CAVEAT = ("This is the official city record as kept, without adjustment
                    "readings (city growth mostly warms nights); NOAA's adjusted climate datasets correct for these. "
                    "Treat any single number as approximate.")
 
-# Cities the Almanac covers. Record details match weather-live/config/cities.json.
+# The first seven places, with hand-written record descriptions. Every other place comes
+# from config/almanac_cities.json (see load_config_cities below).
 CITIES = {
     "goshen": {"lat": 41.5575, "lon": -85.8825, "name": "Goshen", "state": "Indiana", "st": "IN",
                # The nearest official city record; the page offers a switch to it.
@@ -82,6 +82,37 @@ CITIES = {
                    "record_kind": "a volunteer cooperative station read once a day, about 10 miles southeast of town",
                    "caveat": COOP_CAVEAT, "kind": "coop"},
 }
+
+THREADEX_KIND = "the official long-term record NOAA keeps for the city, joining several sites over the years"
+
+
+def load_config_cities():
+    """Add every place in config/almanac_cities.json that isn't already described above."""
+    path = REPO / "config" / "almanac_cities.json"
+    if not path.exists():
+        return
+    for c in json.loads(path.read_text(encoding="utf-8"))["cities"]:
+        if c["slug"] in CITIES:
+            continue
+        threadex = "thr" in c["record_sid"]
+        CITIES[c["slug"]] = {
+            "lat": c["lat"], "lon": c["lon"], "name": c["name"], "state": c["state"], "st": c["st"],
+            "record_name": c.get("record_name", c["name"]),
+            "record_kind": THREADEX_KIND if threadex else "a volunteer cooperative station read once a day",
+            "caveat": THREADEX_CAVEAT if threadex else COOP_CAVEAT, "kind": "threadex" if threadex else "coop"}
+
+
+load_config_cities()
+
+# Quality screen: a place is left off (and listed in the run log) if its record fails any of these.
+STALE_DAYS = 10            # the latest final day must be at most this many days old
+MAX_HIGH_F, MIN_LOW_F = 134, -80   # beyond the US all-time records (134 °F Death Valley; -80 °F Alaska)
+MAX_LOW_ABOVE_HIGH = 0.005  # share of days whose low is above their high (data-entry errors)
+
+
+class QualityError(ClaimError):
+    """The record itself looks wrong or out of date; the page is not built."""
+
 
 NORMALS = (1991, 2020)      # NOAA's current climate normals period
 MAX_MISSING_PER_MONTH = 9   # a month counts if no more than 9 days are missing
@@ -180,7 +211,20 @@ def build(slug, path=None):
     city = CITIES[slug]
     h = load(slug, path)
     have = h.dropna(subset=["Hi", "Lo"])
+    if have.empty:
+        raise QualityError("no days with both a high and a low")
     asof = have["D"].max().date()
+    # ---- quality screen ----
+    problems = []
+    if (date.today() - asof).days > STALE_DAYS:
+        problems.append(f"latest day is {asof}, more than {STALE_DAYS} days old")
+    if have["Hi"].max() > MAX_HIGH_F or have["Lo"].min() < MIN_LOW_F:
+        problems.append(f"impossible values (high {have['Hi'].max():.0f}°F, low {have['Lo'].min():.0f}°F)")
+    flipped = float((have["Lo"] > have["Hi"]).mean())
+    if flipped > MAX_LOW_ABOVE_HIGH:
+        problems.append(f"{flipped:.1%} of days have a low above the high")
+    if problems:
+        raise QualityError("; ".join(problems))
     yr = asof.year
     first_year = int(h["Y"].min())
     month_done = lambda y, m: (y, m) < (asof.year, asof.month) or asof == date(asof.year, asof.month,
@@ -799,13 +843,16 @@ def main():
         try:
             data = write_city(slug, out_dir, None if a.all else a.history)
             built.append(data)
-            print(f"{CITIES[slug]['name']:<11} OK   data through {data['asof']}: {summary(data)}")
+            print(f"{CITIES[slug]['name']:<14} OK   data through {data['asof']}: {summary(data)}")
+        except QualityError as e:
+            failed.append(slug)
+            print(f"{CITIES[slug]['name']:<14} REVIEW the record looks wrong, page not written: {e}")
         except ClaimError as e:
             failed.append(slug)
-            print(f"{CITIES[slug]['name']:<11} SKIP a claim isn't true for this city, page not written: {e}")
+            print(f"{CITIES[slug]['name']:<14} SKIP a claim isn't true for this city, page not written: {e}")
         except Exception as e:
             failed.append(slug)
-            print(f"{CITIES[slug]['name']:<11} FAIL {type(e).__name__}: {e}")
+            print(f"{CITIES[slug]['name']:<14} FAIL {type(e).__name__}: {e}")
     if a.all and built:
         write_index(built, out_dir)
     print(f"{len(built)} of {len(slugs)} Almanac pages written to {out_dir}.")

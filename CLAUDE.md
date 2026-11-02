@@ -12,10 +12,10 @@ Live data for Shawn Nafziger's Weather Intelligence project. Read `shawn-nafzige
 - **Ranks** (`scripts/ranks.py`): one official station series only, whole °F, "years strictly warmer + 1", always with the count ("of 155 since 1872"). Today and forecasts are ranked only where `rank_today` is true. "Typical" cutoff (warmest/coolest fifth) is Shawn's editorial call.
 - Claude's cloud workspace **can't reach api.weather.gov or ACIS**; test with the offline fixtures in `tests/` and say so. The real test is a manual **Run workflow** on GitHub.
 - No personal email in the NWS User-Agent; it identifies the site and this repo.
-- All paths and cities come from the top of `scripts/nws_pull.py` and `config/cities.json`.
+- All paths and cities come from the top of `scripts/nws_pull.py`, `config/cities.json` (hourly + daily) and `config/almanac_cities.json` (daily and Almanac only). After a daily run, read `history/status.json` to see which places updated, failed or are waiting; Claude can read it from git even when the Actions log server is unreachable.
 
 - **Runs are started by a Cloudflare Worker** (`cloudflare/worker.js`, crons `7 * * * *` and `37 11,15 * * *` UTC); GitHub's schedule is only a backup. The Worker's token expires Oct 29, 2027 (see README).
 
 ## Next
-- Almanac: the ~300 official-record cities (records will need storage outside git at that size; see the plan doc).
+- Almanac: from the first 50 metro areas to the ~300 official-record cities (records will likely need storage outside git at that size; see the plan doc).
 - The live page itself (design playbook: `tallorderdigital-site/docs/design-system-and-dataviz-playbook.md`).

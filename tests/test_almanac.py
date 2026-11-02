@@ -2,7 +2,7 @@
 
     python -m unittest discover tests
 """
-import shutil, sys, tempfile, unittest
+import json, shutil, sys, tempfile, unittest
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[1]
@@ -87,6 +87,40 @@ class Test(unittest.TestCase):
         index = (self.out / "almanac" / "index.html").read_text(encoding="utf-8")
         self.assertIn('"slug":"chicago"', index)
         self.assertNotIn('"slug":"phoenix"', index)
+
+    def test_every_place_on_the_list_lands_inside_its_state(self):
+        # catches a typo in a latitude/longitude: each dot must fall inside (or within ~20 km of)
+        # its own state's outline on the map. Cincinnati's and Washington's records sit just across a border.
+        states = json.loads((REPO / "almanac" / "us_states.json").read_text())["states"]
+        def polys(d):
+            out = []
+            for part in d.split("Z"):
+                pts = [tuple(map(float, xy.split(","))) for xy in part.lstrip("M").split("L") if xy]
+                if len(pts) > 2: out.append(pts)
+            return out
+        def inside(x, y, poly):
+            n, c = len(poly), False
+            for i in range(n):
+                (x1, y1), (x2, y2) = poly[i], poly[i - 1]
+                if (y1 > y) != (y2 > y) and x < (x2 - x1) * (y - y1) / (y2 - y1) + x1: c = not c
+            return c
+        def near(x, y, d, tol=4):
+            return any(inside(x + dx, y + dy, p) for p in polys(d) for dx in (-tol, 0, tol) for dy in (-tol, 0, tol))
+        for slug, c in a.CITIES.items():
+            x, y = a.project(c["lon"], c["lat"])
+            self.assertTrue(near(x, y, states[c["state"]]), f"{slug} is not inside {c['state']}")
+
+    def test_a_record_that_looks_wrong_goes_to_review_not_the_site(self):
+        lines = (REAL_HISTORY / "chicago.csv").read_text(encoding="utf-8").splitlines()
+        head = lines[0].split(","); i = head.index("MaxTempF")
+        row = lines[-1].split(","); row[i] = "151.0"                 # an impossible high
+        (self.hist / "chicago.csv").write_text("\n".join(lines[:-1] + [",".join(row)]) + "\n", encoding="utf-8")
+        shutil.copy(REAL_HISTORY / "miami.csv", self.hist / "miami.csv")
+        self.assertEqual(self.run_all(), 0)
+        self.assertFalse((self.out / "almanac" / "chicago" / "index.html").exists())
+        self.assertTrue((self.out / "almanac" / "miami" / "index.html").exists())
+        with self.assertRaises(a.QualityError):
+            a.build("chicago")
 
     def test_rank_is_years_strictly_warmer_plus_one_with_ties_shared(self):
         r = a.same_date_rank({2000: 80, 2001: 85, 2002: 80, 2003: 70, 2026: 80}, 2026, 80)
