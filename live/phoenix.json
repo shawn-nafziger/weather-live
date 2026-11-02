@@ -11,7 +11,7 @@
   "lon": -112.0035,
   "history": "Same station as the official Phoenix record (Sky Harbor since 1933)"
  },
- "as_of_utc": "2026-11-02T01:07:29Z",
+ "as_of_utc": "2026-11-02T01:46:32Z",
  "now": {
   "time_utc": "2026-11-02T00:55:00Z",
   "temp_c": 22,
@@ -83,29 +83,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-01",
-    "high_f": 71,
-    "would_rank": {
-     "value_f": 71,
-     "warm_rank": 120,
-     "cool_rank": 9,
-     "years": 132,
-     "first_year": 1895,
-     "tied_years": [
-      1906,
-      1920,
-      1957,
-      2003
-     ],
-     "standing": "cool",
-     "notable": true,
-     "since": 2004,
-     "record": false,
-     "phrase": "9th coolest November 1 high (tied) of 132 since 1895, coolest since 2004"
-    }
-   },
    {
     "period": "Monday",
     "date": "2026-11-02",
@@ -249,6 +226,29 @@
      "record": false,
      "phrase": "typical for November 7"
     }
+   },
+   {
+    "period": "Sunday",
+    "date": "2026-11-08",
+    "high_f": 78,
+    "would_rank": {
+     "value_f": 78,
+     "warm_rank": 73,
+     "cool_rank": 56,
+     "years": 132,
+     "first_year": 1895,
+     "tied_years": [
+      1917,
+      1926,
+      1974,
+      2003
+     ],
+     "standing": "cool",
+     "notable": false,
+     "since": 2024,
+     "record": false,
+     "phrase": "typical for November 8"
+    }
    }
   ]
  },
@@ -256,15 +256,6 @@
   "issued_utc": "2026-11-01T22:57:22Z",
   "grid": "PSR/161,57",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-01T16:00:00-07:00",
-    "is_daytime": true,
-    "temp_f": 71,
-    "temp_c": 21.67,
-    "precip_chance_pct": 81,
-    "short_forecast": "Showers And Thunderstorms"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-01T18:00:00-07:00",
@@ -381,6 +372,15 @@
     "temp_c": 13.89,
     "precip_chance_pct": 2,
     "short_forecast": "Mostly Clear"
+   },
+   {
+    "name": "Sunday",
+    "start": "2026-11-08T06:00:00-07:00",
+    "is_daytime": true,
+    "temp_f": 78,
+    "temp_c": 25.56,
+    "precip_chance_pct": 1,
+    "short_forecast": "Sunny"
    }
   ]
  },
