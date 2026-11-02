@@ -11,20 +11,20 @@
   "lon": -85.7867,
   "history": "Provisional: Goshen Municipal Airport. The long record (GOSHEN 3SW) is a once-a-day volunteer station, so today's readings and the record come from different stations (question D2)"
  },
- "as_of_utc": "2026-11-02T17:07:59Z",
+ "as_of_utc": "2026-11-02T18:07:51Z",
  "now": {
-  "time_utc": "2026-11-02T16:35:00Z",
+  "time_utc": "2026-11-02T17:30:00Z",
   "temp_c": 14,
   "temp_f": 57.2,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 12,
   "humidity_pct": 87.75,
-  "wind_kmh": 18.5,
+  "wind_kmh": null,
   "description": "Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-02",
-  "readings": 8,
+  "readings": 10,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -94,13 +94,13 @@
   "grid": "IWX/45,57",
   "periods": [
    {
-    "name": "Today",
-    "start": "2026-11-02T11:00:00-05:00",
+    "name": "This Afternoon",
+    "start": "2026-11-02T13:00:00-05:00",
     "is_daytime": true,
     "temp_f": 65,
     "temp_c": 18.33,
     "precip_chance_pct": 18,
-    "short_forecast": "Patchy Drizzle then Slight Chance Rain Showers"
+    "short_forecast": "Slight Chance Rain Showers"
    },
    {
     "name": "Tonight",
@@ -224,13 +224,6 @@
  "hourly": {
   "issued_utc": "2026-11-02T16:15:09Z",
   "hours": [
-   {
-    "start": "2026-11-02T12:00:00-05:00",
-    "temp_f": 60,
-    "temp_c": 15.56,
-    "precip_chance_pct": 15,
-    "short_forecast": "Patchy Drizzle"
-   },
    {
     "start": "2026-11-02T13:00:00-05:00",
     "temp_f": 59,
@@ -557,6 +550,13 @@
     "start": "2026-11-04T11:00:00-05:00",
     "temp_f": 64,
     "temp_c": 17.78,
+    "precip_chance_pct": 90,
+    "short_forecast": "Rain Showers"
+   },
+   {
+    "start": "2026-11-04T12:00:00-05:00",
+    "temp_f": 65,
+    "temp_c": 18.33,
     "precip_chance_pct": 90,
     "short_forecast": "Rain Showers"
    }
