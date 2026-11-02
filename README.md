@@ -34,11 +34,19 @@ The map outlines (`almanac/us_states.json`, US Census Bureau, public domain) wer
 
 Build locally (needs `pip install -r almanac/requirements.txt`): `python almanac/build.py --all`, then open `site/almanac/index.html`.
 
+### How the records are stored
+
+Each place's record is split by decade: `history/<place>/1870s.csv` ... `history/<place>/2020s.csv` (`scripts/history_store.py`). A normal daily run only changes each place's current-decade file, so the repository stays small even with hundreds of places. Older single-file records (`history/<place>.csv`) are still read and are converted to decade files on the next daily run.
+
+### Finding every official city record
+
+**Actions → Find official city records → Run workflow** (one-time, about 15 minutes) asks NOAA which official city records exist: it tries "<airport code>thr" for every US airport with a 3-letter code (public OurAirports list) and keeps the ones with current data. The list is saved to the `discovery` branch as `discovery/official_records.json`; Claude turns it into `config/almanac_cities.json` by pull request.
+
 ### Adding places
 
 Almanac-only places live in `config/almanac_cities.json` (name, state, ACIS id of the official record, and the record site's latitude/longitude for the map dot). The hourly job doesn't follow them; only the daily job does. The first wave is the 50 biggest US metro areas that have an official city record (added Nov 1, 2026).
 
-- **New places download over a few runs:** at most 15 full records per run, so 46 new places take about a day.
+- **New places download over a few runs:** at most 25 full records per run (the daily job runs several times a day).
 - **`history/status.json`** shows what happened to every place on the last run: updated, failed (with the error, for example a wrong ACIS id), or waiting for its first download.
 - **Quality screen:** a place whose record looks wrong (latest day more than 10 days old, values beyond US all-time records, or lows above highs on more than 0.5% of days) is left off the site and shows as `REVIEW` in the run log. A place whose page would say something untrue shows as `SKIP`.
 

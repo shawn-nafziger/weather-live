@@ -8,8 +8,14 @@ from pathlib import Path
 REPO = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(REPO / "almanac"))
 import build as a  # noqa: E402
+import history_store as store  # noqa: E402  (build.py put scripts/ on the path)
 
 REAL_HISTORY = REPO / "history"
+
+
+def real(slug):
+    """A place's real record (works with the old single files and the new decade files)."""
+    return store.read_rows(REAL_HISTORY, slug)
 
 
 class Test(unittest.TestCase):
@@ -31,7 +37,7 @@ class Test(unittest.TestCase):
     def test_every_real_city_builds_with_all_claims_true(self):
         a.HISTORY_DIR = REAL_HISTORY
         self.assertEqual(self.run_all(), 0)
-        slugs = [s for s in a.CITIES if (REAL_HISTORY / f"{s}.csv").exists()]
+        slugs = [s for s in a.CITIES if store.exists(REAL_HISTORY, s)]
         for s in slugs:
             page = (self.out / "almanac" / s / "index.html").read_text(encoding="utf-8")
             self.assertNotIn("{{", page)
@@ -45,7 +51,7 @@ class Test(unittest.TestCase):
 
     def test_no_placeholder_headlines_and_dots_are_on_the_map(self):
         a.HISTORY_DIR = REAL_HISTORY
-        for s in [s for s in a.CITIES if (REAL_HISTORY / f"{s}.csv").exists()]:
+        for s in [s for s in a.CITIES if store.exists(REAL_HISTORY, s)]:
             d = a.build(s)
             self.assertFalse(d["text"]["t_chg"].startswith("How "), s)
             row = a.index_row(d)
@@ -58,8 +64,8 @@ class Test(unittest.TestCase):
 
     def test_switch_links_goshen_and_south_bend_both_ways(self):
         # Stand in a copy of Goshen as South Bend, so the test needs only one file.
-        shutil.copy(REAL_HISTORY / "goshen.csv", self.hist / "goshen.csv")
-        shutil.copy(REAL_HISTORY / "goshen.csv", self.hist / "south-bend.csv")
+        store.write_rows(self.hist, "goshen", real("goshen"))
+        store.write_rows(self.hist, "south-bend", real("goshen"))
         self.assertEqual(self.run_all(), 0)
         g = (self.out / "almanac" / "goshen" / "index.html").read_text(encoding="utf-8")
         sb = (self.out / "almanac" / "south-bend" / "index.html").read_text(encoding="utf-8")
@@ -70,17 +76,15 @@ class Test(unittest.TestCase):
         self.assertIn('href="../goshen/"', sb)
 
     def test_no_switch_until_both_records_exist(self):
-        shutil.copy(REAL_HISTORY / "goshen.csv", self.hist / "goshen.csv")
+        store.write_rows(self.hist, "goshen", real("goshen"))
         self.assertEqual(self.run_all(), 0)
         g = (self.out / "almanac" / "goshen" / "index.html").read_text(encoding="utf-8")
         self.assertNotIn('class="switch"', g)
 
     def test_a_city_that_fails_a_check_is_skipped_and_the_rest_still_build(self):
-        shutil.copy(REAL_HISTORY / "chicago.csv", self.hist / "chicago.csv")
+        store.write_rows(self.hist, "chicago", real("chicago"))
         # Phoenix cut to its last 20 years: too short for trends (needs 30), so its page is skipped.
-        lines = (REAL_HISTORY / "phoenix.csv").read_text(encoding="utf-8").splitlines()
-        short = [lines[0]] + [l for l in lines[1:] if l[:4] >= "2006"]
-        (self.hist / "phoenix.csv").write_text("\n".join(short) + "\n", encoding="utf-8")
+        store.write_rows(self.hist, "phoenix", [r for r in real("phoenix") if r["Date"] >= "2006"])
         self.assertEqual(self.run_all(), 0)
         self.assertTrue((self.out / "almanac" / "chicago" / "index.html").exists())
         self.assertFalse((self.out / "almanac" / "phoenix" / "index.html").exists())
@@ -111,16 +115,25 @@ class Test(unittest.TestCase):
             self.assertTrue(near(x, y, states[c["state"]]), f"{slug} is not inside {c['state']}")
 
     def test_a_record_that_looks_wrong_goes_to_review_not_the_site(self):
-        lines = (REAL_HISTORY / "chicago.csv").read_text(encoding="utf-8").splitlines()
-        head = lines[0].split(","); i = head.index("MaxTempF")
-        row = lines[-1].split(","); row[i] = "151.0"                 # an impossible high
-        (self.hist / "chicago.csv").write_text("\n".join(lines[:-1] + [",".join(row)]) + "\n", encoding="utf-8")
-        shutil.copy(REAL_HISTORY / "miami.csv", self.hist / "miami.csv")
+        rows = real("chicago"); rows[-1] = {**rows[-1], "MaxTempF": "151.0"}   # an impossible high
+        store.write_rows(self.hist, "chicago", rows)
+        store.write_rows(self.hist, "miami", real("miami"))
         self.assertEqual(self.run_all(), 0)
         self.assertFalse((self.out / "almanac" / "chicago" / "index.html").exists())
         self.assertTrue((self.out / "almanac" / "miami" / "index.html").exists())
         with self.assertRaises(a.QualityError):
             a.build("chicago")
+
+    def test_old_single_files_and_decade_files_build_the_same_page(self):
+        rows = real("seattle")
+        old = self.tmp / "old"; old.mkdir()
+        with (old / "seattle.csv").open("w", newline="", encoding="utf-8") as f:
+            import csv
+            w = csv.DictWriter(f, fieldnames=store.COLUMNS); w.writeheader(); w.writerows(rows)
+        store.write_rows(self.hist, "seattle", rows)
+        a.HISTORY_DIR = old; d_old = a.build("seattle")
+        a.HISTORY_DIR = self.hist; d_new = a.build("seattle")
+        self.assertEqual(json.dumps(d_old, sort_keys=True), json.dumps(d_new, sort_keys=True))
 
     def test_rank_is_years_strictly_warmer_plus_one_with_ties_shared(self):
         r = a.same_date_rank({2000: 80, 2001: 85, 2002: 80, 2003: 70, 2026: 80}, 2026, 80)

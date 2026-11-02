@@ -4,7 +4,7 @@ Almanac: one page per city, built from the city's official daily record.
     python almanac/build.py goshen            one city, to site/almanac/goshen/
     python almanac/build.py --all             every city with a record, plus the index
 
-Reads history/<city>.csv (kept current by scripts/station_update.py: NOAA via
+Reads history/<city>/<decade>.csv (kept current by scripts/station_update.py: NOAA via
 RCC-ACIS, whole °F) and writes the pages into site/, which the daily workflow
 publishes to weather.tallorderdigital.com (GitHub Pages). site/ is not committed.
 
@@ -29,6 +29,9 @@ import pandas as pd
 from scipy import stats
 
 from albers import project
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
+import history_store as store  # noqa: E402
 
 HERE = Path(__file__).resolve().parent
 REPO = HERE.parent
@@ -194,7 +197,10 @@ def trend(series):
 
 
 def load(slug, path=None):
-    h = pd.read_csv(path or HISTORY_DIR / f"{slug}.csv", dtype={"Date": str}, encoding="utf-8-sig")
+    paths = [path] if path else store.files(HISTORY_DIR, slug)
+    if not paths:
+        raise FileNotFoundError(f"no record for {slug} yet")
+    h = pd.concat([pd.read_csv(p, dtype={"Date": str}, encoding="utf-8-sig") for p in paths], ignore_index=True)
     h["D"] = pd.to_datetime(h["Date"])
     h["Y"] = h["D"].dt.year
     h["M"] = h["D"].dt.month
@@ -336,7 +342,9 @@ def build(slug, path=None):
         recent = [y for y in days.index if y >= since]
         obs = sum(got_y.get(y, 0.0) for y in recent)
         rng = np.random.default_rng(2026)
-        draws = np.array([pool[rng.choice(len(pool), len(recent), replace=False)].sum() for _ in range(20000)])
+        # 20,000 random sets of len(recent) different years at once: shuffle each row, keep the first k
+        idx = np.argsort(rng.random((20000, len(pool))), axis=1)[:, :len(recent)]
+        draws = pool[idx].sum(axis=1)
         p_fewer, p_more = float((draws <= obs).mean()), float((draws >= obs).mean())
         side, p = ("fewer", p_fewer) if p_fewer < p_more else ("more", p_more)
         cls = "signal" if p < 0.025 else "edge" if p < 0.06 else "noise"
@@ -737,7 +745,7 @@ def switch_html(slug):
         local, official, miles = partner, slug, CITIES[partner]["pair"]["miles"]
     else:
         return ""
-    if not (HISTORY_DIR / f"{official}.csv").exists() or not (HISTORY_DIR / f"{local}.csv").exists():
+    if not store.exists(HISTORY_DIR, official) or not store.exists(HISTORY_DIR, local):
         return ""
     opts = [(local, f"{CITIES[local]['name']} volunteer station", "the town's own record"),
             (official, f"{CITIES[official]['name']} official record", f"about {miles} miles away")]
@@ -837,7 +845,7 @@ def main():
     out_dir = Path(a.out)
     if not a.all and not a.city:
         ap.error("name a city or use --all")
-    slugs = [s for s in CITIES if (HISTORY_DIR / f"{s}.csv").exists()] if a.all else [a.city]
+    slugs = [s for s in CITIES if store.exists(HISTORY_DIR, s)] if a.all else [a.city]
     built, failed = [], []
     for slug in slugs:
         try:

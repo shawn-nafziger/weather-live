@@ -3,7 +3,7 @@ station_update.py
 
 DAILY (run by GitHub Actions, see .github/workflows/daily.yml).
 
-Keeps history/<city>.csv: each city's official daily record (high, low,
+Keeps history/<city>/<decade>.csv (see history_store.py): each city's official daily record (high, low,
 precipitation, snowfall) from NOAA via RCC-ACIS, using the ThreadEx "official
 city record" where one exists. Cities come from config/cities.json (the ones
 the hourly job also follows) and config/almanac_cities.json (Almanac only).
@@ -34,6 +34,7 @@ from pathlib import Path
 
 import requests
 
+import history_store as store
 import ranks
 
 REPO = Path(__file__).resolve().parents[1]
@@ -48,10 +49,9 @@ TIMEOUT_SECONDS = 120          # a full record is one large response
 REFRESH_DAYS = 21
 RETRIES = 3
 PAUSE_SECONDS = 1
-MAX_FULL_DOWNLOADS_PER_RUN = 15  # first-time downloads are large; spread a new batch over runs
+MAX_FULL_DOWNLOADS_PER_RUN = 25  # first-time downloads are large; spread a new batch over runs
 
-COLUMNS = ["Date", "MaxTempF", "MinTempF", "PrecipIn", "SnowIn", "PrecipTrace", "SnowTrace",
-           "MaxTempC", "MinTempC", "PrecipMM", "SnowCM"]
+COLUMNS = store.COLUMNS
 
 
 def acis_data(session, sid, start, end):
@@ -104,26 +104,8 @@ def to_row(day, maxt, mint, pcpn, snow):
     }
 
 
-def read_history(path):
-    if not path.exists():
-        return []
-    with path.open(newline="", encoding="utf-8") as f:
-        return list(csv.DictReader(f))
-
-
-def write_history(path, rows):
-    path.parent.mkdir(parents=True, exist_ok=True)
-    tmp = path.with_suffix(".tmp")
-    with tmp.open("w", newline="", encoding="utf-8") as f:
-        w = csv.DictWriter(f, fieldnames=COLUMNS)
-        w.writeheader()
-        w.writerows(rows)
-    tmp.replace(path)
-
-
 def update_city(session, city, today):
-    path = HISTORY_DIR / f"{city['slug']}.csv"
-    old = read_history(path)
+    old = store.read_rows(HISTORY_DIR, city["slug"])
     if not old:
         data = acis_data(session, city["record_sid"], "por", "por")
         start = None
@@ -145,14 +127,14 @@ def update_city(session, city, today):
     if old and not fresh:
         raise RuntimeError("ACIS returned no recent days; file not written")
 
-    write_history(path, rows)
+    store.write_rows(HISTORY_DIR, city["slug"], rows)
     return {"rows_before": len(old), "rows_after": len(rows),
             "first": dates[0] if dates else None, "last": dates[-1] if dates else None,
             "full_download": not old}
 
 
 def latest_high_line(city):
-    history = ranks.load_history(HISTORY_DIR / f"{city['slug']}.csv")
+    history = ranks.load_history(HISTORY_DIR, city["slug"])
     days = sorted(d for d, r in history.items() if r["MaxTempF"] not in ("", None))
     if not days:
         return "no highs yet"
@@ -179,7 +161,7 @@ def main():
     failures = full = 0
     status = {"run_utc": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()), "cities": {}}
     for city in cities:
-        new = not (HISTORY_DIR / f"{city['slug']}.csv").exists()
+        new = not store.exists(HISTORY_DIR, city["slug"])
         if new and full >= MAX_FULL_DOWNLOADS_PER_RUN:
             status["cities"][city["slug"]] = {"ok": False, "waiting": True,
                                               "note": "first download waits for a later run"}
