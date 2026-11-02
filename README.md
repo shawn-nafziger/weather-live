@@ -34,6 +34,14 @@ The map outlines (`almanac/us_states.json`, US Census Bureau, public domain) wer
 
 Build locally (needs `pip install -r almanac/requirements.txt`): `python almanac/build.py --all`, then open `site/almanac/index.html`.
 
+### Adding places
+
+Almanac-only places live in `config/almanac_cities.json` (name, state, ACIS id of the official record, and the record site's latitude/longitude for the map dot). The hourly job doesn't follow them; only the daily job does. The first wave is the 50 biggest US metro areas that have an official city record (added Nov 1, 2026).
+
+- **New places download over a few runs:** at most 15 full records per run, so 46 new places take about a day.
+- **`history/status.json`** shows what happened to every place on the last run: updated, failed (with the error, for example a wrong ACIS id), or waiting for its first download.
+- **Quality screen:** a place whose record looks wrong (latest day more than 10 days old, values beyond US all-time records, or lows above highs on more than 0.5% of days) is left off the site and shows as `REVIEW` in the run log. A place whose page would say something untrue shows as `SKIP`.
+
 ## How ranks work
 
 Same rules as the Weather Intelligence methods: compare whole °F; rank = years strictly warmer + 1, so ties share a rank; always say how many years it's out of. Only the warmest or coolest fifth of the record gets ranked wording ("4th warmest October 28 high of 155 since 1872"); anything else reads "typical for October 28" (`scripts/ranks.py`). Today's values and forecasts are ranked only where today's station is the same as the record's (not yet Goshen or Los Olivos).
