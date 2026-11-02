@@ -22,7 +22,7 @@ concurrency:
 jobs:
   pull:
     runs-on: ubuntu-24.04
-    timeout-minutes: 30
+    timeout-minutes: 60
     steps:
       - uses: actions/checkout@v5
 
@@ -58,7 +58,7 @@ jobs:
   almanac:
     needs: pull
     runs-on: ubuntu-24.04
-    timeout-minutes: 20
+    timeout-minutes: 45
     permissions:
       contents: read
       pages: write

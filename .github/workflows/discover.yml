@@ -1,0 +1,46 @@
+name: Find official city records
+
+# One-time, by hand (Actions → Find official city records → Run workflow).
+# Asks NOAA (RCC-ACIS) which official long-term city records exist, and saves
+# the list to the "discovery" branch (not main) as discovery/official_records.json.
+# Claude reads it from there and turns it into the Almanac's city list by PR.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  discover:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          sparse-checkout: |
+            scripts
+            requirements.txt
+            .github
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Ask NOAA which city records exist
+        run: python scripts/discover_records.py
+
+      - name: Save the list to the discovery branch
+        run: |
+          git config user.name "weather-live bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          mv discovery/official_records.json "$RUNNER_TEMP/"
+          git switch --orphan discovery
+          git rm -rq --cached . 2>/dev/null || true
+          mkdir -p discovery
+          mv "$RUNNER_TEMP/official_records.json" discovery/
+          git add discovery/official_records.json
+          git commit -q -m "Official city records found by ACIS ($(date -u +'%Y-%m-%d'))"
+          git push -q -f origin HEAD:discovery

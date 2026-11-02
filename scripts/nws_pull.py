@@ -395,7 +395,7 @@ def run_city(session, city, now):
     hourly = pull_hourly(session, where, now)
     tz = ZoneInfo(city["time_zone"])
     so_far = today_so_far(obs, tz, now)
-    history = ranks.load_history(HISTORY_DIR / f"{city['slug']}.csv")
+    history = ranks.load_history(HISTORY_DIR, city["slug"])
 
     live = {
         "city": city["name"], "state": city["state"], "slug": city["slug"],

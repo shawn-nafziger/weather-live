@@ -1,7 +1,7 @@
 """
 ranks.py
 
-Same-date ranks against a city's official record (history/<city>.csv).
+Same-date ranks against a city's official record (history/<city>/, by decade).
 
 The rules (same as weather-intelligence/knowledge/reference/methods.md):
 - Compare whole °F, the units the official record is kept in.
@@ -16,6 +16,8 @@ import csv
 import math
 from datetime import date
 from pathlib import Path
+
+import history_store
 
 # A value is described by its rank only when it falls in the warmest or coolest
 # fifth of the record (at least the top/bottom 3, for short records). Otherwise
@@ -34,13 +36,10 @@ def ordinal(n):
     return f"{n}{suffix}"
 
 
-def load_history(path):
-    """{date: row} from history/<city>.csv, or {} if the file doesn't exist yet."""
-    path = Path(path)
-    if not path.exists():
-        return {}
-    with path.open(newline="", encoding="utf-8") as f:
-        return {date.fromisoformat(r["Date"]): r for r in csv.DictReader(f)}
+def load_history(history_dir, slug):
+    """{date: row} for a place's official record (history/<slug>/<decade>.csv, see
+    history_store.py), or {} if it hasn't been downloaded yet."""
+    return {date.fromisoformat(r["Date"]): r for r in history_store.read_rows(history_dir, slug)}
 
 
 def same_date_values(history, day, field):

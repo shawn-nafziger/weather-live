@@ -5,7 +5,7 @@ Live data for Shawn Nafziger's Weather Intelligence project. Read `shawn-nafzige
 ## Rules
 - **Code and config changes arrive as pull requests.** Only the two workflows commit straight to `main`: hourly touches `archive/` and `live/`; daily touches `history/`.
 - **The daily workflow also publishes the Almanac** (`almanac/build.py --all` → GitHub Pages at `weather.tallorderdigital.com/almanac/`). Pages are built per run and never committed. Every sentence is chosen from the city's numbers and checked; a city whose check fails is skipped, not published. Wording rules and decisions: the "Weather intelligence" Project doc `almanac-dashboards-plan.md`.
-- **`history/` is the official record**, refreshed for the last 21 days each run; days are replaced, never dropped.
+- **`history/` is the official record**, one folder per place split by decade (`history/<place>/<decade>.csv`, via `scripts/history_store.py`; never read or write the files directly), refreshed for the last 21 days each run; days are replaced, never dropped.
 - **The archive is permanent:** never edit, rewrite or delete files under `archive/`. Forecasts are kept per issue time. Fixes go forward only, with a note in the README.
 - **Store metric, keep what the source said:** forecasts keep the NWS °F value and a °C copy; observations are °C as received.
 - **Label honestly:** "so far" values come from hourly readings and can differ from the official next-morning high/low by a degree or two. Forecast-based statements say "forecast", "on pace for" or "would rank".
@@ -17,5 +17,5 @@ Live data for Shawn Nafziger's Weather Intelligence project. Read `shawn-nafzige
 - **Runs are started by a Cloudflare Worker** (`cloudflare/worker.js`, crons `7 * * * *` and `37 11,15 * * *` UTC); GitHub's schedule is only a backup. The Worker's token expires Oct 29, 2027 (see README).
 
 ## Next
-- Almanac: from the first 50 metro areas to the ~300 official-record cities (records will likely need storage outside git at that size; see the plan doc).
+- Almanac: from the first 50 metro areas to every official-record city. Records stay on GitHub, split by decade (Shawn chose this Nov 2, 2026: no paid storage). The full list comes from the one-time "Find official city records" workflow (`discovery` branch).
 - The live page itself (design playbook: `tallorderdigital-site/docs/design-system-and-dataviz-playbook.md`).

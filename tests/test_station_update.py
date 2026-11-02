@@ -42,8 +42,7 @@ class Test(unittest.TestCase):
         self.city = {"slug": "chicago", "name": "Chicago", "record_sid": "ORDthr 9"}
 
     def read(self):
-        with (self.tmp / "chicago.csv").open() as f:
-            return list(csv.DictReader(f))
+        return s.store.read_rows(self.tmp, "chicago")
 
     def test_first_run_downloads_whole_record(self):
         res = s.update_city(FakeSession(), self.city, date(2026, 10, 29))
@@ -69,10 +68,10 @@ class Test(unittest.TestCase):
 
     def test_stops_if_acis_returns_nothing_recent(self):
         s.update_city(FakeSession(), self.city, date(2026, 10, 29))
-        before = (self.tmp / "chicago.csv").read_text()
+        before = s.store.read_rows(self.tmp, "chicago")
         with self.assertRaises(RuntimeError):
             s.update_city(FakeSession([]), self.city, date(2026, 10, 29))
-        self.assertEqual((self.tmp / "chicago.csv").read_text(), before)   # file untouched
+        self.assertEqual(s.store.read_rows(self.tmp, "chicago"), before)   # record untouched
 
 
 class Batch(unittest.TestCase):
@@ -109,7 +108,34 @@ class Batch(unittest.TestCase):
         finally:
             s.MAX_FULL_DOWNLOADS_PER_RUN = 15
         self.assertEqual(st["summary"]["waiting"], 0)
-        self.assertEqual(sorted(p.stem for p in s.HISTORY_DIR.glob("*.csv")), ["c0", "c1", "c2", "c3", "chicago"])
+        self.assertEqual(sorted(p.name for p in s.HISTORY_DIR.iterdir() if p.is_dir()), ["c0", "c1", "c2", "c3", "chicago"])
+
+
+class DecadeFiles(unittest.TestCase):
+    """history_store: records split by decade; old single files still read and converted on write."""
+    def setUp(self):
+        self.tmp = Path(tempfile.mkdtemp())
+        self.rows = [{**{c: "" for c in s.store.COLUMNS}, "Date": d, "MaxTempF": "70.0"}
+                     for d in ("1899-12-31", "1900-01-01", "2019-12-31", "2026-10-30")]
+
+    def test_split_by_decade_and_read_back_identically(self):
+        s.store.write_rows(self.tmp, "x", self.rows)
+        self.assertEqual(sorted(p.name for p in (self.tmp / "x").iterdir()), ["1890s.csv", "1900s.csv", "2010s.csv", "2020s.csv"])
+        self.assertEqual(s.store.read_rows(self.tmp, "x"), self.rows)
+
+    def test_unchanged_decades_are_not_rewritten(self):
+        s.store.write_rows(self.tmp, "x", self.rows)
+        changed = self.rows[:-1] + [{**self.rows[-1], "MaxTempF": "71.0"}]
+        self.assertEqual(s.store.write_rows(self.tmp, "x", changed), 1)       # only the 2020s file
+
+    def test_old_single_file_is_read_then_converted(self):
+        legacy = self.tmp / "x.csv"
+        with legacy.open("w", newline="", encoding="utf-8") as f:
+            w = csv.DictWriter(f, fieldnames=s.store.COLUMNS); w.writeheader(); w.writerows(self.rows)
+        self.assertEqual(s.store.read_rows(self.tmp, "x"), self.rows)
+        s.store.write_rows(self.tmp, "x", s.store.read_rows(self.tmp, "x"))
+        self.assertFalse(legacy.exists())
+        self.assertEqual(s.store.read_rows(self.tmp, "x"), self.rows)
 
 
 class RankRules(unittest.TestCase):
