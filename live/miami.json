@@ -11,16 +11,16 @@
   "lon": -80.3164,
   "history": "Same station as the official Miami record"
  },
- "as_of_utc": "2026-11-02T18:48:06Z",
+ "as_of_utc": "2026-11-02T19:07:50Z",
  "now": {
-  "time_utc": "2026-11-02T18:30:00Z",
+  "time_utc": "2026-11-02T18:45:00Z",
   "temp_c": 29,
   "temp_f": 84.2,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 22,
   "humidity_pct": 65.98,
   "wind_kmh": null,
-  "description": "Mostly Cloudy"
+  "description": "Mostly Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-02",
@@ -125,7 +125,7 @@
   },
   "forecast_highs": [
    {
-    "period": "Today",
+    "period": "This Afternoon",
     "date": "2026-11-02",
     "high_f": 82,
     "would_rank": {
@@ -159,37 +159,32 @@
    {
     "period": "Tuesday",
     "date": "2026-11-03",
-    "high_f": 84,
+    "high_f": 85,
     "would_rank": {
-     "value_f": 84,
-     "warm_rank": 31,
-     "cool_rank": 84,
+     "value_f": 85,
+     "warm_rank": 19,
+     "cool_rank": 101,
      "years": 131,
      "first_year": 1895,
      "tied_years": [
-      1895,
-      1942,
-      1945,
-      1950,
-      1956,
-      1959,
-      1961,
-      1969,
-      1970,
-      1980,
-      1991,
-      2001,
-      2003,
-      2006,
-      2007,
-      2021,
-      2023
+      1909,
+      1926,
+      1947,
+      1952,
+      1977,
+      1982,
+      1984,
+      1994,
+      2002,
+      2004,
+      2008,
+      2024
      ],
      "standing": "warm",
-     "notable": false,
+     "notable": true,
      "since": 2025,
      "record": false,
-     "phrase": "typical for November 3"
+     "phrase": "19th warmest November 3 high (tied) of 131 since 1895, warmest since 2025"
     }
    },
    {
@@ -330,17 +325,17 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-02T15:16:59Z",
+  "issued_utc": "2026-11-02T18:32:04Z",
   "grid": "MFL/105,51",
   "periods": [
    {
-    "name": "Today",
-    "start": "2026-11-02T10:00:00-05:00",
+    "name": "This Afternoon",
+    "start": "2026-11-02T14:00:00-05:00",
     "is_daytime": true,
     "temp_f": 82,
     "temp_c": 27.78,
-    "precip_chance_pct": 86,
-    "short_forecast": "Showers And Thunderstorms"
+    "precip_chance_pct": 60,
+    "short_forecast": "Showers And Thunderstorms Likely"
    },
    {
     "name": "Tonight",
@@ -348,17 +343,17 @@
     "is_daytime": false,
     "temp_f": 76,
     "temp_c": 24.44,
-    "precip_chance_pct": 57,
-    "short_forecast": "Chance Showers And Thunderstorms"
+    "precip_chance_pct": 65,
+    "short_forecast": "Showers And Thunderstorms Likely then Chance Showers And Thunderstorms"
    },
    {
     "name": "Tuesday",
     "start": "2026-11-03T06:00:00-05:00",
     "is_daytime": true,
-    "temp_f": 84,
-    "temp_c": 28.89,
-    "precip_chance_pct": 69,
-    "short_forecast": "Chance Showers And Thunderstorms"
+    "temp_f": 85,
+    "temp_c": 29.44,
+    "precip_chance_pct": 67,
+    "short_forecast": "Chance Showers And Thunderstorms then Showers And Thunderstorms Likely"
    },
    {
     "name": "Tuesday Night",
@@ -366,8 +361,8 @@
     "is_daytime": false,
     "temp_f": 76,
     "temp_c": 24.44,
-    "precip_chance_pct": 50,
-    "short_forecast": "Chance Showers And Thunderstorms"
+    "precip_chance_pct": 59,
+    "short_forecast": "Showers And Thunderstorms Likely"
    },
    {
     "name": "Wednesday",
@@ -375,8 +370,8 @@
     "is_daytime": true,
     "temp_f": 85,
     "temp_c": 29.44,
-    "precip_chance_pct": 62,
-    "short_forecast": "Slight Chance Showers And Thunderstorms then Showers And Thunderstorms Likely"
+    "precip_chance_pct": 52,
+    "short_forecast": "Chance Showers And Thunderstorms"
    },
    {
     "name": "Wednesday Night",
@@ -384,8 +379,8 @@
     "is_daytime": false,
     "temp_f": 74,
     "temp_c": 23.33,
-    "precip_chance_pct": 62,
-    "short_forecast": "Showers And Thunderstorms Likely then Slight Chance Showers And Thunderstorms"
+    "precip_chance_pct": 52,
+    "short_forecast": "Chance Showers And Thunderstorms then Slight Chance Showers And Thunderstorms"
    },
    {
     "name": "Thursday",
@@ -393,7 +388,7 @@
     "is_daytime": true,
     "temp_f": 86,
     "temp_c": 30.0,
-    "precip_chance_pct": 19,
+    "precip_chance_pct": 20,
     "short_forecast": "Sunny then Slight Chance Showers And Thunderstorms"
    },
    {
@@ -402,7 +397,7 @@
     "is_daytime": false,
     "temp_f": 73,
     "temp_c": 22.78,
-    "precip_chance_pct": 19,
+    "precip_chance_pct": 20,
     "short_forecast": "Slight Chance Showers And Thunderstorms then Mostly Clear"
    },
    {
@@ -411,7 +406,7 @@
     "is_daytime": true,
     "temp_f": 86,
     "temp_c": 30.0,
-    "precip_chance_pct": 9,
+    "precip_chance_pct": 4,
     "short_forecast": "Sunny"
    },
    {
@@ -420,7 +415,7 @@
     "is_daytime": false,
     "temp_f": 72,
     "temp_c": 22.22,
-    "precip_chance_pct": 9,
+    "precip_chance_pct": 4,
     "short_forecast": "Mostly Clear"
    },
    {
@@ -429,16 +424,16 @@
     "is_daytime": true,
     "temp_f": 85,
     "temp_c": 29.44,
-    "precip_chance_pct": 11,
+    "precip_chance_pct": 5,
     "short_forecast": "Sunny"
    },
    {
     "name": "Saturday Night",
     "start": "2026-11-07T18:00:00-05:00",
     "is_daytime": false,
-    "temp_f": 71,
-    "temp_c": 21.67,
-    "precip_chance_pct": 11,
+    "temp_f": 72,
+    "temp_c": 22.22,
+    "precip_chance_pct": 5,
     "short_forecast": "Mostly Clear"
    },
    {
@@ -447,30 +442,23 @@
     "is_daytime": true,
     "temp_f": 84,
     "temp_c": 28.89,
-    "precip_chance_pct": 11,
-    "short_forecast": "Mostly Sunny"
+    "precip_chance_pct": 15,
+    "short_forecast": "Sunny then Slight Chance Rain Showers"
    },
    {
     "name": "Sunday Night",
     "start": "2026-11-08T18:00:00-05:00",
     "is_daytime": false,
-    "temp_f": 70,
-    "temp_c": 21.11,
-    "precip_chance_pct": 11,
-    "short_forecast": "Partly Cloudy"
+    "temp_f": 72,
+    "temp_c": 22.22,
+    "precip_chance_pct": 15,
+    "short_forecast": "Slight Chance Rain Showers then Partly Cloudy"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-02T15:16:59Z",
   "hours": [
-   {
-    "start": "2026-11-02T13:00:00-05:00",
-    "temp_f": 79,
-    "temp_c": 26.11,
-    "precip_chance_pct": 58,
-    "short_forecast": "Showers And Thunderstorms Likely"
-   },
    {
     "start": "2026-11-02T14:00:00-05:00",
     "temp_f": 80,
@@ -799,6 +787,13 @@
     "temp_c": 28.33,
     "precip_chance_pct": 30,
     "short_forecast": "Chance Showers And Thunderstorms"
+   },
+   {
+    "start": "2026-11-04T13:00:00-05:00",
+    "temp_f": 83,
+    "temp_c": 28.33,
+    "precip_chance_pct": 62,
+    "short_forecast": "Showers And Thunderstorms Likely"
    }
   ]
  },
