@@ -11,20 +11,20 @@
   "lon": -80.3164,
   "history": "Same station as the official Miami record"
  },
- "as_of_utc": "2026-11-03T22:07:49Z",
+ "as_of_utc": "2026-11-03T23:07:34Z",
  "now": {
-  "time_utc": "2026-11-03T21:50:00Z",
-  "temp_c": 28,
-  "temp_f": 82.4,
-  "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 23,
-  "humidity_pct": 74.3,
-  "wind_kmh": null,
-  "description": "Light Rain"
+  "time_utc": "2026-11-03T22:40:00Z",
+  "temp_c": 26.7,
+  "temp_f": 80.1,
+  "precision": "tenths of a degree",
+  "dewpoint_c": 23.3,
+  "humidity_pct": 81.65,
+  "wind_kmh": 33.48,
+  "description": "Mostly Cloudy and Windy"
  },
  "today_so_far": {
   "date_local": "2026-11-03",
-  "readings": 14,
+  "readings": 16,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -333,16 +333,16 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-03T20:11:59Z",
+  "issued_utc": "2026-11-03T22:01:48Z",
   "grid": "MFL/105,51",
   "periods": [
    {
     "name": "This Afternoon",
-    "start": "2026-11-03T15:00:00-05:00",
+    "start": "2026-11-03T17:00:00-05:00",
     "is_daytime": true,
     "temp_f": 85,
     "temp_c": 29.44,
-    "precip_chance_pct": 42,
+    "precip_chance_pct": 41,
     "short_forecast": "Chance Showers And Thunderstorms"
    },
    {
@@ -465,15 +465,8 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-03T21:36:41Z",
+  "issued_utc": "2026-11-03T22:01:48Z",
   "hours": [
-   {
-    "start": "2026-11-03T17:00:00-05:00",
-    "temp_f": 82,
-    "temp_c": 27.78,
-    "precip_chance_pct": 41,
-    "short_forecast": "Chance Showers And Thunderstorms"
-   },
    {
     "start": "2026-11-03T18:00:00-05:00",
     "temp_f": 80,
@@ -800,6 +793,13 @@
     "start": "2026-11-05T16:00:00-05:00",
     "temp_f": 83,
     "temp_c": 28.33,
+    "precip_chance_pct": 5,
+    "short_forecast": "Sunny"
+   },
+   {
+    "start": "2026-11-05T17:00:00-05:00",
+    "temp_f": 82,
+    "temp_c": 27.78,
     "precip_chance_pct": 5,
     "short_forecast": "Sunny"
    }
