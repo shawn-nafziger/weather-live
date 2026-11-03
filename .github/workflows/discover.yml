@@ -15,12 +15,8 @@ jobs:
     runs-on: ubuntu-24.04
     timeout-minutes: 45
     steps:
+      # Full checkout: a partial ("sparse") one refused to save the list in a folder outside it (run #1, Nov 3).
       - uses: actions/checkout@v5
-        with:
-          sparse-checkout: |
-            scripts
-            requirements.txt
-            .github
 
       - uses: actions/setup-python@v6
         with:
@@ -38,7 +34,7 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           mv discovery/official_records.json "$RUNNER_TEMP/"
           git switch --orphan discovery
-          git rm -rq --cached . 2>/dev/null || true
+          git clean -fdq                     # empty working folder: the branch holds only the list
           mkdir -p discovery
           mv "$RUNNER_TEMP/official_records.json" discovery/
           git add discovery/official_records.json
