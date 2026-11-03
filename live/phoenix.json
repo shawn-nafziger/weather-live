@@ -11,16 +11,16 @@
   "lon": -112.0035,
   "history": "Same station as the official Phoenix record (Sky Harbor since 1933)"
  },
- "as_of_utc": "2026-11-03T13:07:35Z",
+ "as_of_utc": "2026-11-03T14:07:33Z",
  "now": {
-  "time_utc": "2026-11-03T12:55:00Z",
+  "time_utc": "2026-11-03T13:40:00Z",
   "temp_c": 16,
   "temp_f": 60.8,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 13,
-  "humidity_pct": 82.39,
-  "wind_kmh": 5.54,
-  "description": "Clear"
+  "dewpoint_c": 12,
+  "humidity_pct": 77.16,
+  "wind_kmh": 0,
+  "description": ""
  },
  "today_so_far": {
   "date_local": "2026-11-03",
@@ -86,7 +86,7 @@
   },
   "forecast_highs": [
    {
-    "period": "Tuesday",
+    "period": "Today",
     "date": "2026-11-03",
     "high_f": 76,
     "would_rank": {
@@ -255,16 +255,7 @@
   "grid": "PSR/161,57",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-03T04:00:00-07:00",
-    "is_daytime": false,
-    "temp_f": 57,
-    "temp_c": 13.89,
-    "precip_chance_pct": 0,
-    "short_forecast": "Partly Cloudy"
-   },
-   {
-    "name": "Tuesday",
+    "name": "Today",
     "start": "2026-11-03T06:00:00-07:00",
     "is_daytime": true,
     "temp_f": 76,
@@ -273,7 +264,7 @@
     "short_forecast": "Sunny"
    },
    {
-    "name": "Tuesday Night",
+    "name": "Tonight",
     "start": "2026-11-03T18:00:00-07:00",
     "is_daytime": false,
     "temp_f": 56,
@@ -379,19 +370,21 @@
     "temp_c": 26.11,
     "precip_chance_pct": 4,
     "short_forecast": "Mostly Sunny"
+   },
+   {
+    "name": "Monday Night",
+    "start": "2026-11-09T18:00:00-07:00",
+    "is_daytime": false,
+    "temp_f": 58,
+    "temp_c": 14.44,
+    "precip_chance_pct": 2,
+    "short_forecast": "Partly Cloudy"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-03T11:21:52Z",
   "hours": [
-   {
-    "start": "2026-11-03T06:00:00-07:00",
-    "temp_f": 57,
-    "temp_c": 13.89,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Sunny"
-   },
    {
     "start": "2026-11-03T07:00:00-07:00",
     "temp_f": 57,
@@ -720,6 +713,13 @@
     "temp_c": 13.33,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear"
+   },
+   {
+    "start": "2026-11-05T06:00:00-07:00",
+    "temp_f": 56,
+    "temp_c": 13.33,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
    }
   ]
  },
