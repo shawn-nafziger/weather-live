@@ -44,9 +44,9 @@ Each place's record is split by decade: `history/<place>/1870s.csv` ... `history
 
 ### Adding places
 
-Almanac-only places live in `config/almanac_cities.json` (name, state, ACIS id of the official record, and the record site's latitude/longitude for the map dot). The hourly job doesn't follow them; only the daily job does. The first wave is the 50 biggest US metro areas that have an official city record (added Nov 1, 2026).
+Almanac-only places live in `config/almanac_cities.json` (name, state, ACIS id of the official record, and the record site's latitude/longitude for the map dot). The hourly job doesn't follow them; only the daily job does. The first wave was the 50 biggest US metro areas that have an official city record (Nov 1, 2026); the second wave (Nov 3, 2026) added the other 280 records found by the "Find official city records" workflow, for 333 places in all.
 
-- **New places download over a few runs:** at most 25 full records per run (the daily job runs several times a day).
+- **New places download over a few runs:** at most 50 full records per run (the daily job runs at least twice a day).
 - **`history/status.json`** shows what happened to every place on the last run: updated, failed (with the error, for example a wrong ACIS id), or waiting for its first download.
 - **Quality screen:** a place whose record looks wrong (latest day more than 10 days old, values beyond US all-time records, or lows above highs on more than 0.5% of days) is left off the site and shows as `REVIEW` in the run log. A place whose page would say something untrue shows as `SKIP`.
 
