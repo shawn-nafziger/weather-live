@@ -82,10 +82,15 @@ def write_rows(base, slug, rows):
     for decade, part in by_decade.items():
         path = folder / f"{decade}.csv"
         text = _csv_text(part)
-        if path.exists() and path.read_text(encoding="utf-8", newline="") == text:
-            continue
+        # open(..., newline="") rather than Path.read_text(newline=...), which needs Python 3.13
+        # (GitHub's runner uses 3.12; this broke the Nov 3 runs).
+        if path.exists():
+            with path.open(encoding="utf-8", newline="") as f:
+                if f.read() == text:
+                    continue
         tmp = path.with_suffix(".tmp")
-        tmp.write_text(text, encoding="utf-8", newline="")
+        with tmp.open("w", encoding="utf-8", newline="") as f:
+            f.write(text)
         tmp.replace(path)
         written += 1
     # A decade file with no rows left (shouldn't happen: days are never dropped) is kept, not deleted.

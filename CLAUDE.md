@@ -10,6 +10,7 @@ Live data for Shawn Nafziger's Weather Intelligence project. Read `shawn-nafzige
 - **Store metric, keep what the source said:** forecasts keep the NWS °F value and a °C copy; observations are °C as received.
 - **Label honestly:** "so far" values come from hourly readings and can differ from the official next-morning high/low by a degree or two. Forecast-based statements say "forecast", "on pace for" or "would rank".
 - **Ranks** (`scripts/ranks.py`): one official station series only, whole °F, "years strictly warmer + 1", always with the count ("of 155 since 1872"). Today and forecasts are ranked only where `rank_today` is true. "Typical" cutoff (warmest/coolest fifth) is Shawn's editorial call.
+- **GitHub's runner uses Python 3.12; Claude's workspace defaults to 3.13.** Don't use 3.13-only features (e.g. `Path.read_text(newline=...)` broke the Nov 3, 2026 records runs). `/usr/bin/python3.12` is available locally, and the Tests workflow runs every PR on 3.12.
 - Claude's cloud workspace **can't reach api.weather.gov or ACIS**; test with the offline fixtures in `tests/` and say so. The real test is a manual **Run workflow** on GitHub.
 - No personal email in the NWS User-Agent; it identifies the site and this repo.
 - All paths and cities come from the top of `scripts/nws_pull.py`, `config/cities.json` (hourly + daily) and `config/almanac_cities.json` (daily and Almanac only). After a daily run, read `history/status.json` to see which places updated, failed or are waiting; Claude can read it from git even when the Actions log server is unreachable.
