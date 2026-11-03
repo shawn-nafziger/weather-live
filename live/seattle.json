@@ -11,9 +11,9 @@
   "lon": -122.3136,
   "history": "Same station as the official Seattle record (Sea-Tac)"
  },
- "as_of_utc": "2026-11-03T08:07:34Z",
+ "as_of_utc": "2026-11-03T09:07:34Z",
  "now": {
-  "time_utc": "2026-11-03T07:40:00Z",
+  "time_utc": "2026-11-03T08:50:00Z",
   "temp_c": 7,
   "temp_f": 44.6,
   "precision": "nearest whole \u00b0C",
@@ -24,10 +24,16 @@
  },
  "today_so_far": {
   "date_local": "2026-11-03",
-  "readings": 0,
+  "readings": 6,
   "basis": "5-minute readings (whole \u00b0C, approximate)",
   "approximate": true,
-  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two."
+  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
+  "high_c": 7,
+  "high_f": 44.6,
+  "high_time_utc": "2026-11-03T08:20:00Z",
+  "low_c": 7,
+  "low_f": 44.6,
+  "low_time_utc": "2026-11-03T08:20:00Z"
  },
  "record": {
   "series": "Seattle area (ThreadEx, Sea-Tac)",
@@ -252,12 +258,12 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-03T06:26:46Z",
+  "issued_utc": "2026-11-03T07:50:52Z",
   "grid": "SEW/124,60",
   "periods": [
    {
-    "name": "Tonight",
-    "start": "2026-11-02T22:00:00-08:00",
+    "name": "Overnight",
+    "start": "2026-11-03T00:00:00-08:00",
     "is_daytime": false,
     "temp_f": 46,
     "temp_c": 7.78,
@@ -384,15 +390,8 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-03T06:26:46Z",
+  "issued_utc": "2026-11-03T07:50:52Z",
   "hours": [
-   {
-    "start": "2026-11-03T00:00:00-08:00",
-    "temp_f": 46,
-    "temp_c": 7.78,
-    "precip_chance_pct": 5,
-    "short_forecast": "Cloudy"
-   },
    {
     "start": "2026-11-03T01:00:00-08:00",
     "temp_f": 46,
@@ -717,6 +716,13 @@
    },
    {
     "start": "2026-11-04T23:00:00-08:00",
+    "temp_f": 51,
+    "temp_c": 10.56,
+    "precip_chance_pct": 96,
+    "short_forecast": "Light Rain"
+   },
+   {
+    "start": "2026-11-05T00:00:00-08:00",
     "temp_f": 51,
     "temp_c": 10.56,
     "precip_chance_pct": 96,
