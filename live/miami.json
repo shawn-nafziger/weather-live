@@ -11,29 +11,23 @@
   "lon": -80.3164,
   "history": "Same station as the official Miami record"
  },
- "as_of_utc": "2026-11-03T04:07:39Z",
+ "as_of_utc": "2026-11-03T05:07:34Z",
  "now": {
-  "time_utc": "2026-11-03T03:55:00Z",
+  "time_utc": "2026-11-03T04:40:00Z",
   "temp_c": 24,
   "temp_f": 75.2,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 23,
   "humidity_pct": 94.15,
-  "wind_kmh": 11.12,
+  "wind_kmh": 9.25,
   "description": "Mostly Cloudy"
  },
  "today_so_far": {
-  "date_local": "2026-11-02",
-  "readings": 28,
-  "basis": "hourly reports (tenths of a degree)",
-  "approximate": false,
-  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 29.4,
-  "high_f": 84.9,
-  "high_time_utc": "2026-11-02T16:53:00Z",
-  "low_c": 22.2,
-  "low_f": 72.0,
-  "low_time_utc": "2026-11-02T21:53:00Z"
+  "date_local": "2026-11-03",
+  "readings": 0,
+  "basis": "5-minute readings (whole \u00b0C, approximate)",
+  "approximate": true,
+  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two."
  },
  "record": {
   "series": "Miami area (ThreadEx)",
@@ -42,7 +36,7 @@
   "rank_today": true,
   "latest_final": {
    "date": "2026-11-01",
-   "is_yesterday": true,
+   "is_yesterday": false,
    "high_f": 82,
    "low_f": 72,
    "high_rank": {
@@ -96,32 +90,6 @@
     "record": false,
     "phrase": "typical for November 1"
    }
-  },
-  "today_high_so_far": {
-   "value_f": 85,
-   "warm_rank": 24,
-   "cool_rank": 96,
-   "years": 131,
-   "first_year": 1895,
-   "tied_years": [
-    1899,
-    1919,
-    1942,
-    1959,
-    1979,
-    2002,
-    2004,
-    2007,
-    2010,
-    2016,
-    2017,
-    2024
-   ],
-   "standing": "warm",
-   "notable": true,
-   "since": 2024,
-   "record": false,
-   "phrase": "already the 24th warmest November 2 high (tied) of 131 since 1895, warmest since 2024"
   },
   "forecast_highs": [
    {
@@ -324,12 +292,12 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-03T00:17:01Z",
+  "issued_utc": "2026-11-03T04:02:08Z",
   "grid": "MFL/105,51",
   "periods": [
    {
     "name": "Tonight",
-    "start": "2026-11-02T21:00:00-05:00",
+    "start": "2026-11-02T23:00:00-05:00",
     "is_daytime": false,
     "temp_f": 76,
     "temp_c": 24.44,
@@ -456,15 +424,8 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-03T00:17:01Z",
+  "issued_utc": "2026-11-03T04:02:08Z",
   "hours": [
-   {
-    "start": "2026-11-02T23:00:00-05:00",
-    "temp_f": 78,
-    "temp_c": 25.56,
-    "precip_chance_pct": 55,
-    "short_forecast": "Showers And Thunderstorms Likely"
-   },
    {
     "start": "2026-11-03T00:00:00-05:00",
     "temp_f": 77,
@@ -789,6 +750,13 @@
    },
    {
     "start": "2026-11-04T22:00:00-05:00",
+    "temp_f": 77,
+    "temp_c": 25.0,
+    "precip_chance_pct": 17,
+    "short_forecast": "Slight Chance Showers And Thunderstorms"
+   },
+   {
+    "start": "2026-11-04T23:00:00-05:00",
     "temp_f": 77,
     "temp_c": 25.0,
     "precip_chance_pct": 17,
