@@ -49,7 +49,7 @@ TIMEOUT_SECONDS = 120          # a full record is one large response
 REFRESH_DAYS = 21
 RETRIES = 3
 PAUSE_SECONDS = 1
-MAX_FULL_DOWNLOADS_PER_RUN = 25  # first-time downloads are large; spread a new batch over runs
+MAX_FULL_DOWNLOADS_PER_RUN = 50  # first-time downloads are large; spread a new batch over runs
 
 COLUMNS = store.COLUMNS
 
