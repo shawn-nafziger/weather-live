@@ -11,20 +11,20 @@
   "lon": -80.3164,
   "history": "Same station as the official Miami record"
  },
- "as_of_utc": "2026-11-03T16:07:43Z",
+ "as_of_utc": "2026-11-03T17:07:49Z",
  "now": {
-  "time_utc": "2026-11-03T15:55:00Z",
+  "time_utc": "2026-11-03T16:50:00Z",
   "temp_c": 28,
   "temp_f": 82.4,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 23,
-  "humidity_pct": 74.3,
-  "wind_kmh": null,
-  "description": "Mostly Cloudy"
+  "dewpoint_c": 24,
+  "humidity_pct": 78.92,
+  "wind_kmh": 25.92,
+  "description": "Light Rain"
  },
  "today_so_far": {
   "date_local": "2026-11-03",
-  "readings": 10,
+  "readings": 11,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -41,60 +41,61 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-01",
-   "is_yesterday": false,
-   "high_f": 82,
-   "low_f": 72,
+   "date": "2026-11-02",
+   "is_yesterday": true,
+   "high_f": 85,
+   "low_f": 71,
    "high_rank": {
-    "value_f": 82,
-    "warm_rank": 68,
-    "cool_rank": 50,
+    "value_f": 85,
+    "warm_rank": 24,
+    "cool_rank": 96,
     "years": 131,
     "first_year": 1895,
     "tied_years": [
      1899,
-     1905,
-     1934,
-     1935,
-     1945,
-     1961,
-     1964,
-     1972,
-     1974,
-     1980,
-     1987,
+     1919,
+     1942,
+     1959,
+     1979,
+     2002,
+     2004,
+     2007,
+     2010,
      2016,
      2017,
-     2025
+     2024
     ],
-    "standing": "cool",
-    "notable": false,
-    "since": 2025,
+    "standing": "warm",
+    "notable": true,
+    "since": 2024,
     "record": false,
-    "phrase": "typical for November 1"
+    "phrase": "24th warmest November 2 high (tied) of 131 since 1895, warmest since 2024"
    },
    "low_rank": {
-    "value_f": 72,
-    "warm_rank": 52,
-    "cool_rank": 71,
+    "value_f": 71,
+    "warm_rank": 58,
+    "cool_rank": 62,
     "years": 131,
     "first_year": 1895,
     "tied_years": [
-     1912,
-     1926,
-     1958,
-     1960,
-     1965,
-     1978,
+     1923,
+     1927,
+     1930,
+     1968,
+     1989,
+     1990,
+     1994,
+     1999,
      2003,
-     2016,
-     2023
+     2005,
+     2017,
+     2018
     ],
     "standing": "warm",
     "notable": false,
     "since": 2024,
     "record": false,
-    "phrase": "typical for November 1"
+    "phrase": "typical for November 2"
    }
   },
   "forecast_highs": [
@@ -430,13 +431,6 @@
   "issued_utc": "2026-11-03T10:36:04Z",
   "hours": [
    {
-    "start": "2026-11-03T11:00:00-05:00",
-    "temp_f": 83,
-    "temp_c": 28.33,
-    "precip_chance_pct": 34,
-    "short_forecast": "Chance Showers And Thunderstorms"
-   },
-   {
     "start": "2026-11-03T12:00:00-05:00",
     "temp_f": 84,
     "temp_c": 28.89,
@@ -762,6 +756,13 @@
     "start": "2026-11-05T10:00:00-05:00",
     "temp_f": 82,
     "temp_c": 27.78,
+    "precip_chance_pct": 9,
+    "short_forecast": "Sunny"
+   },
+   {
+    "start": "2026-11-05T11:00:00-05:00",
+    "temp_f": 83,
+    "temp_c": 28.33,
     "precip_chance_pct": 9,
     "short_forecast": "Sunny"
    }
