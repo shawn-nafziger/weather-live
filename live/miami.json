@@ -11,20 +11,20 @@
   "lon": -80.3164,
   "history": "Same station as the official Miami record"
  },
- "as_of_utc": "2026-11-04T11:07:34Z",
+ "as_of_utc": "2026-11-04T12:07:38Z",
  "now": {
-  "time_utc": "2026-11-04T10:45:00Z",
-  "temp_c": 25,
-  "temp_f": 77.0,
+  "time_utc": "2026-11-04T11:55:00Z",
+  "temp_c": 26,
+  "temp_f": 78.8,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 23,
-  "humidity_pct": 88.68,
-  "wind_kmh": 7.42,
-  "description": "Partly Cloudy"
+  "humidity_pct": 83.57,
+  "wind_kmh": 5.54,
+  "description": "Mostly Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-04",
-  "readings": 5,
+  "readings": 7,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -46,66 +46,58 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-02",
-   "is_yesterday": false,
-   "high_f": 85,
-   "low_f": 71,
+   "date": "2026-11-03",
+   "is_yesterday": true,
+   "high_f": 87,
+   "low_f": 75,
    "high_rank": {
-    "value_f": 85,
-    "warm_rank": 24,
-    "cool_rank": 96,
+    "value_f": 87,
+    "warm_rank": 4,
+    "cool_rank": 120,
     "years": 131,
     "first_year": 1895,
     "tied_years": [
-     1899,
-     1919,
-     1942,
-     1959,
-     1979,
-     2002,
-     2004,
-     2007,
-     2010,
-     2016,
-     2017,
-     2024
+     1896,
+     1946,
+     1973,
+     1985,
+     1992,
+     1995,
+     2015,
+     2025
     ],
     "standing": "warm",
     "notable": true,
-    "since": 2024,
+    "since": 2025,
     "record": false,
-    "phrase": "24th warmest November 2 high (tied) of 131 since 1895, warmest since 2024"
+    "phrase": "4th warmest November 3 high (tied) of 131 since 1895, warmest since 2025"
    },
    "low_rank": {
-    "value_f": 71,
-    "warm_rank": 58,
-    "cool_rank": 62,
+    "value_f": 75,
+    "warm_rank": 13,
+    "cool_rank": 111,
     "years": 131,
     "first_year": 1895,
     "tied_years": [
-     1923,
-     1927,
-     1930,
-     1968,
-     1989,
-     1990,
-     1994,
-     1999,
-     2003,
-     2005,
-     2017,
-     2018
+     1903,
+     1904,
+     1928,
+     1973,
+     1975,
+     1981,
+     2015,
+     2019
     ],
     "standing": "warm",
-    "notable": false,
-    "since": 2024,
+    "notable": true,
+    "since": 2023,
     "record": false,
-    "phrase": "typical for November 2"
+    "phrase": "13th warmest November 3 low (tied) of 131 since 1895, warmest since 2023"
    }
   },
   "forecast_highs": [
    {
-    "period": "Wednesday",
+    "period": "Today",
     "date": "2026-11-04",
     "high_f": 84,
     "would_rank": {
@@ -310,16 +302,7 @@
   "grid": "MFL/105,51",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-04T05:00:00-05:00",
-    "is_daytime": false,
-    "temp_f": 77,
-    "temp_c": 25.0,
-    "precip_chance_pct": 55,
-    "short_forecast": "Showers And Thunderstorms Likely"
-   },
-   {
-    "name": "Wednesday",
+    "name": "Today",
     "start": "2026-11-04T06:00:00-05:00",
     "is_daytime": true,
     "temp_f": 84,
@@ -328,7 +311,7 @@
     "short_forecast": "Showers And Thunderstorms Likely"
    },
    {
-    "name": "Wednesday Night",
+    "name": "Tonight",
     "start": "2026-11-04T18:00:00-05:00",
     "is_daytime": false,
     "temp_f": 75,
@@ -434,19 +417,21 @@
     "temp_c": 27.22,
     "precip_chance_pct": 20,
     "short_forecast": "Mostly Sunny then Slight Chance Rain Showers"
+   },
+   {
+    "name": "Tuesday Night",
+    "start": "2026-11-10T18:00:00-05:00",
+    "is_daytime": false,
+    "temp_f": 70,
+    "temp_c": 21.11,
+    "precip_chance_pct": 20,
+    "short_forecast": "Slight Chance Rain Showers"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-04T09:31:58Z",
   "hours": [
-   {
-    "start": "2026-11-04T06:00:00-05:00",
-    "temp_f": 77,
-    "temp_c": 25.0,
-    "precip_chance_pct": 55,
-    "short_forecast": "Showers And Thunderstorms Likely"
-   },
    {
     "start": "2026-11-04T07:00:00-05:00",
     "temp_f": 77,
@@ -775,6 +760,13 @@
     "temp_c": 23.33,
     "precip_chance_pct": 2,
     "short_forecast": "Mostly Clear"
+   },
+   {
+    "start": "2026-11-06T06:00:00-05:00",
+    "temp_f": 74,
+    "temp_c": 23.33,
+    "precip_chance_pct": 2,
+    "short_forecast": "Sunny"
    }
   ]
  },
