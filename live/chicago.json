@@ -11,29 +11,23 @@
   "lon": -87.9044,
   "history": "Same station as the official Chicago record (ThreadEx, O'Hare since 1980)"
  },
- "as_of_utc": "2026-11-04T05:07:37Z",
+ "as_of_utc": "2026-11-04T06:07:35Z",
  "now": {
-  "time_utc": "2026-11-04T04:50:00Z",
-  "temp_c": 19,
-  "temp_f": 66.2,
+  "time_utc": "2026-11-04T05:35:00Z",
+  "temp_c": 18,
+  "temp_f": 64.4,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 17,
-  "humidity_pct": 88.19,
-  "wind_kmh": 18.5,
-  "description": "Light Rain"
+  "dewpoint_c": 16,
+  "humidity_pct": 88.1,
+  "wind_kmh": 20.38,
+  "description": "Cloudy"
  },
  "today_so_far": {
-  "date_local": "2026-11-03",
-  "readings": 20,
-  "basis": "hourly reports (tenths of a degree)",
-  "approximate": false,
-  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 22.2,
-  "high_f": 72.0,
-  "high_time_utc": "2026-11-03T18:42:00Z",
-  "low_c": 16.1,
-  "low_f": 61.0,
-  "low_time_utc": "2026-11-03T07:51:00Z"
+  "date_local": "2026-11-04",
+  "readings": 0,
+  "basis": "5-minute readings (whole \u00b0C, approximate)",
+  "approximate": true,
+  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two."
  },
  "record": {
   "series": "Chicago area (ThreadEx, O'Hare since 1980)",
@@ -42,7 +36,7 @@
   "rank_today": true,
   "latest_final": {
    "date": "2026-11-02",
-   "is_yesterday": true,
+   "is_yesterday": false,
    "high_f": 61,
    "low_f": 56,
    "high_rank": {
@@ -77,21 +71,6 @@
     "record": false,
     "phrase": "8th warmest November 2 low (tied) of 155 since 1872, warmest since 1990"
    }
-  },
-  "today_high_so_far": {
-   "value_f": 72,
-   "warm_rank": 8,
-   "cool_rank": 147,
-   "years": 155,
-   "first_year": 1872,
-   "tied_years": [
-    1977
-   ],
-   "standing": "warm",
-   "notable": true,
-   "since": 2022,
-   "record": false,
-   "phrase": "already the 8th warmest November 3 high (tied) of 155 since 1872, warmest since 2022"
   },
   "forecast_highs": [
    {
@@ -394,13 +373,6 @@
  "hourly": {
   "issued_utc": "2026-11-04T02:46:22Z",
   "hours": [
-   {
-    "start": "2026-11-03T23:00:00-06:00",
-    "temp_f": 66,
-    "temp_c": 18.89,
-    "precip_chance_pct": 53,
-    "short_forecast": "Chance Rain"
-   },
    {
     "start": "2026-11-04T00:00:00-06:00",
     "temp_f": 66,
@@ -727,6 +699,13 @@
     "start": "2026-11-05T22:00:00-06:00",
     "temp_f": 50,
     "temp_c": 10.0,
+    "precip_chance_pct": 37,
+    "short_forecast": "Chance Rain Showers"
+   },
+   {
+    "start": "2026-11-05T23:00:00-06:00",
+    "temp_f": 49,
+    "temp_c": 9.44,
     "precip_chance_pct": 37,
     "short_forecast": "Chance Rain Showers"
    }
