@@ -11,20 +11,20 @@
   "lon": -112.0035,
   "history": "Same station as the official Phoenix record (Sky Harbor since 1933)"
  },
- "as_of_utc": "2026-11-05T01:07:43Z",
+ "as_of_utc": "2026-11-05T02:07:40Z",
  "now": {
-  "time_utc": "2026-11-05T00:30:00Z",
-  "temp_c": 23,
-  "temp_f": 73.4,
+  "time_utc": "2026-11-05T01:45:00Z",
+  "temp_c": 22,
+  "temp_f": 71.6,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 6,
-  "humidity_pct": 33.32,
-  "wind_kmh": 12.96,
+  "dewpoint_c": 8,
+  "humidity_pct": 40.6,
+  "wind_kmh": 7.42,
   "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-04",
-  "readings": 13,
+  "readings": 14,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -90,29 +90,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-04",
-    "high_f": 78,
-    "would_rank": {
-     "value_f": 78,
-     "warm_rank": 87,
-     "cool_rank": 42,
-     "years": 132,
-     "first_year": 1895,
-     "tied_years": [
-      1904,
-      1918,
-      1995,
-      2008
-     ],
-     "standing": "cool",
-     "notable": false,
-     "since": 2024,
-     "record": false,
-     "phrase": "typical for November 4"
-    }
-   },
    {
     "period": "Thursday",
     "date": "2026-11-05",
@@ -268,6 +245,30 @@
      "record": false,
      "phrase": "typical for November 10"
     }
+   },
+   {
+    "period": "Veterans Day",
+    "date": "2026-11-11",
+    "high_f": 79,
+    "would_rank": {
+     "value_f": 79,
+     "warm_rank": 55,
+     "cool_rank": 73,
+     "years": 132,
+     "first_year": 1895,
+     "tied_years": [
+      1908,
+      1958,
+      1965,
+      1970,
+      2007
+     ],
+     "standing": "warm",
+     "notable": false,
+     "since": 2025,
+     "record": false,
+     "phrase": "typical for November 11"
+    }
    }
   ]
  },
@@ -275,15 +276,6 @@
   "issued_utc": "2026-11-04T22:57:01Z",
   "grid": "PSR/161,57",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-04T16:00:00-07:00",
-    "is_daytime": true,
-    "temp_f": 78,
-    "temp_c": 25.56,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-04T18:00:00-07:00",
@@ -400,19 +392,21 @@
     "temp_c": 14.44,
     "precip_chance_pct": 3,
     "short_forecast": "Mostly Clear"
+   },
+   {
+    "name": "Veterans Day",
+    "start": "2026-11-11T06:00:00-07:00",
+    "is_daytime": true,
+    "temp_f": 79,
+    "temp_c": 26.11,
+    "precip_chance_pct": 4,
+    "short_forecast": "Sunny"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-04T22:57:01Z",
   "hours": [
-   {
-    "start": "2026-11-04T18:00:00-07:00",
-    "temp_f": 73,
-    "temp_c": 22.78,
-    "precip_chance_pct": 0,
-    "short_forecast": "Clear"
-   },
    {
     "start": "2026-11-04T19:00:00-07:00",
     "temp_f": 71,
@@ -741,6 +735,13 @@
     "temp_c": 25.0,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
+   },
+   {
+    "start": "2026-11-06T18:00:00-07:00",
+    "temp_f": 74,
+    "temp_c": 23.33,
+    "precip_chance_pct": 0,
+    "short_forecast": "Clear"
    }
   ]
  },
