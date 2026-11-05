@@ -11,20 +11,20 @@
   "lon": -87.9044,
   "history": "Same station as the official Chicago record (ThreadEx, O'Hare since 1980)"
  },
- "as_of_utc": "2026-11-05T12:07:54Z",
+ "as_of_utc": "2026-11-05T13:07:53Z",
  "now": {
-  "time_utc": "2026-11-05T11:45:00Z",
-  "temp_c": 11,
-  "temp_f": 51.8,
-  "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 8,
-  "humidity_pct": 81.75,
+  "time_utc": "2026-11-05T12:16:00Z",
+  "temp_c": 10,
+  "temp_f": 50.0,
+  "precision": "tenths of a degree",
+  "dewpoint_c": 7.8,
+  "humidity_pct": 86.2,
   "wind_kmh": 12.96,
   "description": "Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-05",
-  "readings": 10,
+  "readings": 12,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -83,7 +83,7 @@
   },
   "forecast_highs": [
    {
-    "period": "Thursday",
+    "period": "Today",
     "date": "2026-11-05",
     "high_f": 52,
     "would_rank": {
@@ -248,16 +248,7 @@
   "grid": "LOT/66,77",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-05T03:00:00-06:00",
-    "is_daytime": false,
-    "temp_f": 48,
-    "temp_c": 8.89,
-    "precip_chance_pct": 34,
-    "short_forecast": "Areas Of Drizzle"
-   },
-   {
-    "name": "Thursday",
+    "name": "Today",
     "start": "2026-11-05T06:00:00-06:00",
     "is_daytime": true,
     "temp_f": 52,
@@ -266,7 +257,7 @@
     "short_forecast": "Areas Of Drizzle"
    },
    {
-    "name": "Thursday Night",
+    "name": "Tonight",
     "start": "2026-11-05T18:00:00-06:00",
     "is_daytime": false,
     "temp_f": 40,
@@ -372,19 +363,21 @@
     "temp_c": 14.44,
     "precip_chance_pct": 6,
     "short_forecast": "Mostly Sunny"
+   },
+   {
+    "name": "Wednesday Night",
+    "start": "2026-11-11T18:00:00-06:00",
+    "is_daytime": false,
+    "temp_f": 42,
+    "temp_c": 5.56,
+    "precip_chance_pct": 8,
+    "short_forecast": "Partly Cloudy"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-05T09:11:03Z",
   "hours": [
-   {
-    "start": "2026-11-05T06:00:00-06:00",
-    "temp_f": 50,
-    "temp_c": 10.0,
-    "precip_chance_pct": 24,
-    "short_forecast": "Patchy Drizzle"
-   },
    {
     "start": "2026-11-05T07:00:00-06:00",
     "temp_f": 49,
@@ -713,6 +706,13 @@
     "temp_c": 1.67,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear"
+   },
+   {
+    "start": "2026-11-07T06:00:00-06:00",
+    "temp_f": 35,
+    "temp_c": 1.67,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
    }
   ]
  },
