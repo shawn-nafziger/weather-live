@@ -11,20 +11,20 @@
   "lon": -122.3136,
   "history": "Same station as the official Seattle record (Sea-Tac)"
  },
- "as_of_utc": "2026-11-05T14:07:53Z",
+ "as_of_utc": "2026-11-05T15:07:57Z",
  "now": {
-  "time_utc": "2026-11-05T13:17:00Z",
+  "time_utc": "2026-11-05T14:25:00Z",
   "temp_c": 10,
   "temp_f": 50.0,
-  "precision": "tenths of a degree",
-  "dewpoint_c": 8.3,
-  "humidity_pct": 89.18,
-  "wind_kmh": 11.16,
+  "precision": "nearest whole \u00b0C",
+  "dewpoint_c": 8,
+  "humidity_pct": 87.38,
+  "wind_kmh": 12.96,
   "description": "Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-05",
-  "readings": 6,
+  "readings": 7,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -91,7 +91,7 @@
   },
   "forecast_highs": [
    {
-    "period": "Thursday",
+    "period": "Today",
     "date": "2026-11-05",
     "high_f": 57,
     "would_rank": {
@@ -253,16 +253,7 @@
   "grid": "SEW/124,60",
   "periods": [
    {
-    "name": "Tonight",
-    "start": "2026-11-04T22:00:00-08:00",
-    "is_daytime": false,
-    "temp_f": 48,
-    "temp_c": 8.89,
-    "precip_chance_pct": 52,
-    "short_forecast": "Chance Light Rain"
-   },
-   {
-    "name": "Thursday",
+    "name": "Today",
     "start": "2026-11-05T06:00:00-08:00",
     "is_daytime": true,
     "temp_f": 57,
@@ -271,7 +262,7 @@
     "short_forecast": "Mostly Sunny"
    },
    {
-    "name": "Thursday Night",
+    "name": "Tonight",
     "start": "2026-11-05T18:00:00-08:00",
     "is_daytime": false,
     "temp_f": 45,
@@ -377,19 +368,21 @@
     "temp_c": 16.11,
     "precip_chance_pct": 54,
     "short_forecast": "Chance Light Rain"
+   },
+   {
+    "name": "Wednesday Night",
+    "start": "2026-11-11T18:00:00-08:00",
+    "is_daytime": false,
+    "temp_f": 49,
+    "temp_c": 9.44,
+    "precip_chance_pct": 54,
+    "short_forecast": "Chance Light Rain"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-05T06:26:51Z",
   "hours": [
-   {
-    "start": "2026-11-05T06:00:00-08:00",
-    "temp_f": 48,
-    "temp_c": 8.89,
-    "precip_chance_pct": 3,
-    "short_forecast": "Mostly Sunny"
-   },
    {
     "start": "2026-11-05T07:00:00-08:00",
     "temp_f": 48,
@@ -714,6 +707,13 @@
    },
    {
     "start": "2026-11-07T05:00:00-08:00",
+    "temp_f": 52,
+    "temp_c": 11.11,
+    "precip_chance_pct": 26,
+    "short_forecast": "Chance Light Rain"
+   },
+   {
+    "start": "2026-11-07T06:00:00-08:00",
     "temp_f": 52,
     "temp_c": 11.11,
     "precip_chance_pct": 26,
