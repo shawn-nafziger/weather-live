@@ -13,7 +13,7 @@ Live data for Shawn Nafziger's Weather Intelligence project. Read `shawn-nafzige
 - **GitHub's runner uses Python 3.12; Claude's workspace defaults to 3.13.** Don't use 3.13-only features (e.g. `Path.read_text(newline=...)` broke the Nov 3, 2026 records runs). `/usr/bin/python3.12` is available locally, and the Tests workflow runs every PR on 3.12.
 - Claude's cloud workspace **can't reach api.weather.gov or ACIS**; test with the offline fixtures in `tests/` and say so. The real test is a manual **Run workflow** on GitHub.
 - No personal email in the NWS User-Agent; it identifies the site and this repo.
-- All paths and cities come from the top of `scripts/nws_pull.py`, `config/cities.json` (hourly + daily) and `config/almanac_cities.json` (daily and Almanac only). After a daily run, read `history/status.json` to see which places updated, failed or are waiting; Claude can read it from git even when the Actions log server is unreachable.
+- All paths and cities come from the top of `scripts/nws_pull.py`, `config/cities.json` (hourly + daily), `config/hourly_metros.json` (hourly forecast archive for 46 more metro areas; slug + station only, the rest from the Almanac list; readings not archived) and `config/almanac_cities.json` (daily and Almanac only). After a daily run, read `history/status.json` to see which places updated, failed or are waiting; Claude can read it from git even when the Actions log server is unreachable.
 
 - **Runs are started by a Cloudflare Worker** (`cloudflare/worker.js`, crons `7 * * * *` and `37 11,15 * * *` UTC); GitHub's schedule is only a backup. The Worker's token expires Oct 29, 2027 (see README).
 

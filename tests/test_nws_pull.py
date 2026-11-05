@@ -64,7 +64,8 @@ class FakeAPI:
             return {"geometry": {"coordinates": [-87.9048, 41.9786]}, "properties": {"name": "Test Station"}}
         if "/points/" in url:
             return {"properties": {"gridId": "LOT", "gridX": 65, "gridY": 76,
-                                   "forecast": "F/forecast", "forecastHourly": "F/forecast/hourly"}}
+                                   "forecast": "F/forecast", "forecastHourly": "F/forecast/hourly",
+                                   "timeZone": "America/Chicago"}}
         if url.endswith("/hourly"):
             return hourly()
         if url.endswith("/forecast"):
@@ -83,6 +84,8 @@ class Test(unittest.TestCase):
              "record_sid": "MIAthr 9", "record_name": "Miami", "rank_today": False}]}
         (self.tmp / "cities.json").write_text(json.dumps(cfg))
         n.CITIES_FILE = self.tmp / "cities.json"
+        n.METROS_FILE = self.tmp / "no_metros.json"     # none unless a test writes one
+        n.ALMANAC_FILE = self.tmp / "almanac_cities.json"
         n.FORECAST_DIR = self.tmp / "archive/forecasts"
         n.OBSERVATION_DIR = self.tmp / "archive/observations"
         n.LIVE_DIR = self.tmp / "live"
@@ -149,6 +152,36 @@ class Test(unittest.TestCase):
         n.main()
         th = json.loads((self.tmp / "live/chicago.json").read_text())["record"]["today_high_so_far"]
         self.assertEqual(th["phrase"], "already the warmest October 29 high on record (31 years since 1996)")
+
+    def test_metro_areas_are_pulled_with_their_record(self):
+        # Two metros: one whose station sits at the record site (rank today), one about 14 km away (don't).
+        (self.tmp / "almanac_cities.json").write_text(json.dumps({"cities": [
+            {"slug": "dallas", "name": "Dallas", "state": "Texas", "st": "TX", "record_sid": "DFWthr 9",
+             "record_name": "Dallas area", "lat": 41.98, "lon": -87.90},
+            {"slug": "san-francisco", "name": "San Francisco", "state": "California", "st": "CA",
+             "record_sid": "SFOthr 9", "record_name": "San Francisco area", "lat": 41.85, "lon": -87.90},
+            {"slug": "chicago", "name": "Chicago", "state": "Illinois", "st": "IL", "record_sid": "ORDthr 9",
+             "record_name": "Chicago", "lat": 41.98, "lon": -87.90}]}))
+        (self.tmp / "metros.json").write_text(json.dumps({"cities": [
+            {"slug": "dallas", "station": "KDFW"}, {"slug": "san-francisco", "station": "KSFO"},
+            {"slug": "chicago", "station": "KORD"}]}))    # already in cities.json: not added twice
+        n.METROS_FILE = self.tmp / "metros.json"
+        n.get_json = FakeAPI()
+        self.assertEqual(n.main(), 0)
+        status = json.loads((self.tmp / "live/status.json").read_text())
+        self.assertEqual(sorted(status["cities"]), ["chicago", "dallas", "miami", "san-francisco"])
+        dal = json.loads((self.tmp / "live/dallas.json").read_text())
+        sfo = json.loads((self.tmp / "live/san-francisco.json").read_text())
+        self.assertEqual((dal["state"], dal["time_zone"]), ("TX", "America/Chicago"))   # zone from the NWS
+        self.assertTrue(dal["record"]["rank_today"])
+        self.assertFalse(sfo["record"]["rank_today"])
+        self.assertIn("About 14 km", sfo["station"]["history"])
+        # Forecasts archived for all four; readings only for the cities.json places.
+        f = self.rows(self.tmp / "archive/forecasts/2026/10/2026-10-29.csv")
+        self.assertEqual(sorted({r["City"] for r in f}), ["chicago", "dallas", "miami", "san-francisco"])
+        o = self.rows(self.tmp / "archive/observations/2026/10/2026-10-29.csv")
+        self.assertEqual(sorted({r["City"] for r in o}), ["chicago", "miami"])
+        self.assertIsNotNone(dal["today_so_far"].get("high_f"))                           # live file still has them
 
     def test_old_day_file_keeps_its_columns(self):
         # A file started before ReportType existed keeps its header; no ragged rows.

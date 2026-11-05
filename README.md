@@ -64,6 +64,11 @@ Archive files are one CSV per day (`archive/<kind>/YYYY/MM/YYYY-MM-DD.csv`); pas
 
 Chicago, Phoenix, Miami, Seattle, Goshen IN, Los Olivos CA and South Bend IN (added Oct 31, 2026; its full record downloads on the first daily run after it was added). Forecasts are pulled for each observation station's exact location, so they can be checked against what that station records. Goshen and Los Olivos use airport stations for now; their long official records come from different, once-a-day stations.
 
+**Forecast archive for the 50 biggest metro areas (added Nov 5, 2026).** `config/hourly_metros.json` adds 46 more places to the hourly pull (the first-wave Almanac metros not already listed above), so forecast accuracy can be measured across the country, not just for 7 cities. Each names only its slug and NWS station; its name and official record come from `config/almanac_cities.json`, its time zone from the NWS. For these places:
+- every forecast issue is archived, like the others;
+- hourly readings feed `live/<city>.json` (today so far) but **aren't archived**: forecasts will be checked against the official daily record in `history/`, and this keeps the archive about a third the size;
+- today and forecast highs are ranked only when the station is within 5 km of the record's site (worked out each run). New York (Central Park, KNYC) and Los Angeles (downtown/USC, KCQT) use the record's own site; San Francisco's and Sacramento's records are downtown, so their airport stations aren't ranked.
+
 ## What starts the jobs
 
 GitHub's own schedule skips many runs (on Oct 29-30, 2026 it ran 2 of about 11 hourly slots and then stopped), so a **Cloudflare Worker** starts the jobs on time:
