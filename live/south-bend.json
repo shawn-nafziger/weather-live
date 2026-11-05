@@ -11,9 +11,9 @@
   "lon": -86.3186,
   "history": "Same station as the official South Bend record (South Bend airport). Also the nearest official city record to Goshen, about 27 miles; a candidate for Goshen's hourly readings (question D2)"
  },
- "as_of_utc": "2026-11-05T02:07:40Z",
+ "as_of_utc": "2026-11-05T02:34:54Z",
  "now": {
-  "time_utc": "2026-11-05T01:50:00Z",
+  "time_utc": "2026-11-05T02:05:00Z",
   "temp_c": 13,
   "temp_f": 55.4,
   "precision": "nearest whole \u00b0C",
@@ -24,21 +24,16 @@
  },
  "today_so_far": {
   "date_local": "2026-11-04",
-  "readings": 29,
+  "readings": 30,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
   "high_c": 21.1,
   "high_f": 70.0,
   "high_time_utc": "2026-11-04T05:54:00Z",
-  "low_c": 13.9,
-  "low_f": 57.0,
-  "low_time_utc": "2026-11-05T00:54:00Z",
-  "dip_between_reports": {
-   "at_most_f": 56.3,
-   "about_f": 55.4,
-   "time_utc": "2026-11-05T01:15:00Z"
-  }
+  "low_c": 13.3,
+  "low_f": 55.9,
+  "low_time_utc": "2026-11-05T01:54:00Z"
  },
  "record": {
   "series": "South Bend area (ThreadEx, South Bend airport)",
@@ -255,7 +250,7 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-04T23:29:56Z",
+  "issued_utc": "2026-11-05T02:15:46Z",
   "grid": "IWX/27,64",
   "periods": [
    {
@@ -264,8 +259,8 @@
     "is_daytime": false,
     "temp_f": 47,
     "temp_c": 8.33,
-    "precip_chance_pct": 17,
-    "short_forecast": "Cloudy then Slight Chance Rain Showers"
+    "precip_chance_pct": 18,
+    "short_forecast": "Patchy Drizzle"
    },
    {
     "name": "Thursday",
@@ -274,7 +269,7 @@
     "temp_f": 55,
     "temp_c": 12.78,
     "precip_chance_pct": 40,
-    "short_forecast": "Chance Rain Showers"
+    "short_forecast": "Patchy Drizzle then Chance Rain Showers"
    },
    {
     "name": "Thursday Night",
@@ -387,97 +382,97 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-04T23:29:56Z",
+  "issued_utc": "2026-11-05T02:15:46Z",
   "hours": [
    {
     "start": "2026-11-04T21:00:00-05:00",
     "temp_f": 56,
     "temp_c": 13.33,
-    "precip_chance_pct": 5,
+    "precip_chance_pct": 14,
     "short_forecast": "Mostly Cloudy"
    },
    {
     "start": "2026-11-04T22:00:00-05:00",
     "temp_f": 55,
     "temp_c": 12.78,
-    "precip_chance_pct": 8,
-    "short_forecast": "Mostly Cloudy"
+    "precip_chance_pct": 15,
+    "short_forecast": "Patchy Drizzle"
    },
    {
     "start": "2026-11-04T23:00:00-05:00",
-    "temp_f": 53,
-    "temp_c": 11.67,
-    "precip_chance_pct": 10,
-    "short_forecast": "Cloudy"
+    "temp_f": 54,
+    "temp_c": 12.22,
+    "precip_chance_pct": 16,
+    "short_forecast": "Patchy Drizzle"
    },
    {
     "start": "2026-11-05T00:00:00-05:00",
-    "temp_f": 52,
-    "temp_c": 11.11,
-    "precip_chance_pct": 9,
-    "short_forecast": "Cloudy"
+    "temp_f": 54,
+    "temp_c": 12.22,
+    "precip_chance_pct": 16,
+    "short_forecast": "Patchy Drizzle"
    },
    {
     "start": "2026-11-05T01:00:00-05:00",
-    "temp_f": 51,
-    "temp_c": 10.56,
-    "precip_chance_pct": 8,
-    "short_forecast": "Cloudy"
+    "temp_f": 53,
+    "temp_c": 11.67,
+    "precip_chance_pct": 16,
+    "short_forecast": "Patchy Drizzle"
    },
    {
     "start": "2026-11-05T02:00:00-05:00",
-    "temp_f": 50,
-    "temp_c": 10.0,
-    "precip_chance_pct": 7,
-    "short_forecast": "Cloudy"
+    "temp_f": 52,
+    "temp_c": 11.11,
+    "precip_chance_pct": 17,
+    "short_forecast": "Patchy Drizzle"
    },
    {
     "start": "2026-11-05T03:00:00-05:00",
-    "temp_f": 50,
-    "temp_c": 10.0,
-    "precip_chance_pct": 9,
-    "short_forecast": "Cloudy"
+    "temp_f": 51,
+    "temp_c": 10.56,
+    "precip_chance_pct": 17,
+    "short_forecast": "Patchy Drizzle"
    },
    {
     "start": "2026-11-05T04:00:00-05:00",
     "temp_f": 50,
     "temp_c": 10.0,
-    "precip_chance_pct": 12,
-    "short_forecast": "Mostly Cloudy"
+    "precip_chance_pct": 18,
+    "short_forecast": "Patchy Drizzle"
    },
    {
     "start": "2026-11-05T05:00:00-05:00",
     "temp_f": 49,
     "temp_c": 9.44,
-    "precip_chance_pct": 17,
-    "short_forecast": "Slight Chance Rain Showers"
+    "precip_chance_pct": 18,
+    "short_forecast": "Patchy Drizzle"
    },
    {
     "start": "2026-11-05T06:00:00-05:00",
     "temp_f": 48,
     "temp_c": 8.89,
-    "precip_chance_pct": 20,
-    "short_forecast": "Slight Chance Rain Showers"
+    "precip_chance_pct": 16,
+    "short_forecast": "Patchy Drizzle"
    },
    {
     "start": "2026-11-05T07:00:00-05:00",
     "temp_f": 48,
     "temp_c": 8.89,
-    "precip_chance_pct": 11,
+    "precip_chance_pct": 14,
     "short_forecast": "Mostly Cloudy"
    },
    {
     "start": "2026-11-05T08:00:00-05:00",
     "temp_f": 47,
     "temp_c": 8.33,
-    "precip_chance_pct": 13,
+    "precip_chance_pct": 12,
     "short_forecast": "Cloudy"
    },
    {
     "start": "2026-11-05T09:00:00-05:00",
     "temp_f": 49,
     "temp_c": 9.44,
-    "precip_chance_pct": 11,
+    "precip_chance_pct": 10,
     "short_forecast": "Mostly Cloudy"
    },
    {
@@ -491,7 +486,7 @@
     "start": "2026-11-05T11:00:00-05:00",
     "temp_f": 52,
     "temp_c": 11.11,
-    "precip_chance_pct": 10,
+    "precip_chance_pct": 9,
     "short_forecast": "Partly Sunny"
    },
    {
