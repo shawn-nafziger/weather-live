@@ -11,9 +11,9 @@
   "lon": -80.3164,
   "history": "Same station as the official Miami record"
  },
- "as_of_utc": "2026-11-05T04:07:42Z",
+ "as_of_utc": "2026-11-05T05:07:42Z",
  "now": {
-  "time_utc": "2026-11-05T03:30:00Z",
+  "time_utc": "2026-11-05T04:45:00Z",
   "temp_c": 25,
   "temp_f": 77.0,
   "precision": "nearest whole \u00b0C",
@@ -23,27 +23,11 @@
   "description": "Mostly Clear"
  },
  "today_so_far": {
-  "date_local": "2026-11-04",
-  "readings": 26,
-  "basis": "hourly reports (tenths of a degree)",
-  "approximate": false,
-  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 28.3,
-  "high_f": 82.9,
-  "high_time_utc": "2026-11-04T18:53:00Z",
-  "low_c": 25,
-  "low_f": 77.0,
-  "low_time_utc": "2026-11-04T05:53:00Z",
-  "peak_between_reports": {
-   "at_least_f": 83.3,
-   "about_f": 84.2,
-   "time_utc": "2026-11-04T19:30:00Z"
-  },
-  "dip_between_reports": {
-   "at_most_f": 76.1,
-   "about_f": 75.2,
-   "time_utc": "2026-11-04T09:55:00Z"
-  }
+  "date_local": "2026-11-05",
+  "readings": 0,
+  "basis": "5-minute readings (whole \u00b0C, approximate)",
+  "approximate": true,
+  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two."
  },
  "record": {
   "series": "Miami area (ThreadEx)",
@@ -52,7 +36,7 @@
   "rank_today": true,
   "latest_final": {
    "date": "2026-11-03",
-   "is_yesterday": true,
+   "is_yesterday": false,
    "high_f": 87,
    "low_f": 75,
    "high_rank": {
@@ -437,13 +421,6 @@
   "issued_utc": "2026-11-04T21:02:29Z",
   "hours": [
    {
-    "start": "2026-11-04T23:00:00-05:00",
-    "temp_f": 77,
-    "temp_c": 25.0,
-    "precip_chance_pct": 21,
-    "short_forecast": "Slight Chance Rain Showers"
-   },
-   {
     "start": "2026-11-05T00:00:00-05:00",
     "temp_f": 77,
     "temp_c": 25.0,
@@ -769,6 +746,13 @@
     "start": "2026-11-06T22:00:00-05:00",
     "temp_f": 77,
     "temp_c": 25.0,
+    "precip_chance_pct": 2,
+    "short_forecast": "Mostly Clear"
+   },
+   {
+    "start": "2026-11-06T23:00:00-05:00",
+    "temp_f": 76,
+    "temp_c": 24.44,
     "precip_chance_pct": 2,
     "short_forecast": "Mostly Clear"
    }
