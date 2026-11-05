@@ -11,7 +11,7 @@
   "lon": -112.0035,
   "history": "Same station as the official Phoenix record (Sky Harbor since 1933)"
  },
- "as_of_utc": "2026-11-05T13:07:53Z",
+ "as_of_utc": "2026-11-05T14:07:53Z",
  "now": {
   "time_utc": "2026-11-05T11:51:00Z",
   "temp_c": 16.1,
@@ -87,7 +87,7 @@
   },
   "forecast_highs": [
    {
-    "period": "Thursday",
+    "period": "Today",
     "date": "2026-11-05",
     "high_f": 78,
     "would_rank": {
@@ -279,16 +279,7 @@
   "grid": "PSR/161,57",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-05T05:00:00-07:00",
-    "is_daytime": false,
-    "temp_f": 56,
-    "temp_c": 13.33,
-    "precip_chance_pct": 0,
-    "short_forecast": "Clear"
-   },
-   {
-    "name": "Thursday",
+    "name": "Today",
     "start": "2026-11-05T06:00:00-07:00",
     "is_daytime": true,
     "temp_f": 78,
@@ -297,7 +288,7 @@
     "short_forecast": "Sunny"
    },
    {
-    "name": "Thursday Night",
+    "name": "Tonight",
     "start": "2026-11-05T18:00:00-07:00",
     "is_daytime": false,
     "temp_f": 57,
@@ -403,19 +394,21 @@
     "temp_c": 26.11,
     "precip_chance_pct": 2,
     "short_forecast": "Sunny"
+   },
+   {
+    "name": "Wednesday Night",
+    "start": "2026-11-11T18:00:00-07:00",
+    "is_daytime": false,
+    "temp_f": 57,
+    "temp_c": 13.89,
+    "precip_chance_pct": 2,
+    "short_forecast": "Mostly Clear"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-05T11:02:58Z",
   "hours": [
-   {
-    "start": "2026-11-05T06:00:00-07:00",
-    "temp_f": 56,
-    "temp_c": 13.33,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "start": "2026-11-05T07:00:00-07:00",
     "temp_f": 56,
@@ -744,6 +737,13 @@
     "temp_c": 15.0,
     "precip_chance_pct": 0,
     "short_forecast": "Clear"
+   },
+   {
+    "start": "2026-11-07T06:00:00-07:00",
+    "temp_f": 60,
+    "temp_c": 15.56,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
    }
   ]
  },
