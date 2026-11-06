@@ -11,20 +11,20 @@
   "lon": -77.3233,
   "history": "Same site as the official Richmond record"
  },
- "as_of_utc": "2026-11-06T21:07:55Z",
+ "as_of_utc": "2026-11-06T22:07:53Z",
  "now": {
-  "time_utc": "2026-11-06T20:55:00Z",
-  "temp_c": 17,
-  "temp_f": 62.6,
+  "time_utc": "2026-11-06T21:55:00Z",
+  "temp_c": 16,
+  "temp_f": 60.8,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 16,
-  "humidity_pct": 93.84,
-  "wind_kmh": 11.12,
-  "description": "Light Rain"
+  "dewpoint_c": 15,
+  "humidity_pct": 93.79,
+  "wind_kmh": 5.54,
+  "description": "Rain and Fog/Mist"
  },
  "today_so_far": {
   "date_local": "2026-11-06",
-  "readings": 33,
+  "readings": 34,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -38,6 +38,11 @@
    "at_least_f": 70.7,
    "about_f": 71.6,
    "time_utc": "2026-11-06T05:00:00Z"
+  },
+  "dip_between_reports": {
+   "at_most_f": 61.7,
+   "about_f": 60.8,
+   "time_utc": "2026-11-06T21:55:00Z"
   }
  },
  "record": {
@@ -265,7 +270,7 @@
   "periods": [
    {
     "name": "This Afternoon",
-    "start": "2026-11-06T16:00:00-05:00",
+    "start": "2026-11-06T17:00:00-05:00",
     "is_daytime": true,
     "temp_f": 70,
     "temp_c": 21.11,
@@ -392,15 +397,8 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-06T19:51:52Z",
+  "issued_utc": "2026-11-06T20:19:23Z",
   "hours": [
-   {
-    "start": "2026-11-06T16:00:00-05:00",
-    "temp_f": 64,
-    "temp_c": 17.78,
-    "precip_chance_pct": 57,
-    "short_forecast": "Rain Showers Likely"
-   },
    {
     "start": "2026-11-06T17:00:00-05:00",
     "temp_f": 63,
@@ -725,6 +723,13 @@
    },
    {
     "start": "2026-11-08T15:00:00-05:00",
+    "temp_f": 63,
+    "temp_c": 17.22,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
+   },
+   {
+    "start": "2026-11-08T16:00:00-05:00",
     "temp_f": 63,
     "temp_c": 17.22,
     "precip_chance_pct": 0,
