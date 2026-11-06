@@ -11,9 +11,9 @@
   "lon": -85.7867,
   "history": "Provisional: Goshen Municipal Airport. The long record (GOSHEN 3SW) is a once-a-day volunteer station, so today's readings and the record come from different stations (question D2)"
  },
- "as_of_utc": "2026-11-06T11:25:52Z",
+ "as_of_utc": "2026-11-06T12:07:58Z",
  "now": {
-  "time_utc": "2026-11-06T11:05:00Z",
+  "time_utc": "2026-11-06T11:50:00Z",
   "temp_c": 6,
   "temp_f": 42.8,
   "precision": "nearest whole \u00b0C",
@@ -24,7 +24,7 @@
  },
  "today_so_far": {
   "date_local": "2026-11-06",
-  "readings": 4,
+  "readings": 5,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -41,52 +41,55 @@
   "available": true,
   "rank_today": false,
   "latest_final": {
-   "date": "2026-11-04",
-   "is_yesterday": false,
-   "high_f": 68,
-   "low_f": 58,
+   "date": "2026-11-05",
+   "is_yesterday": true,
+   "high_f": 58,
+   "low_f": 48,
    "high_rank": {
-    "value_f": 68,
-    "warm_rank": 12,
-    "cool_rank": 97,
-    "years": 111,
-    "first_year": 1914,
-    "tied_years": [
-     1975,
-     1977,
-     1994
-    ],
-    "standing": "warm",
-    "notable": true,
-    "since": 2022,
-    "record": false,
-    "phrase": "12th warmest November 4 high (tied) of 111 since 1914, warmest since 2022"
-   },
-   "low_rank": {
     "value_f": 58,
-    "warm_rank": 2,
-    "cool_rank": 107,
+    "warm_rank": 36,
+    "cool_rank": 70,
     "years": 109,
     "first_year": 1914,
     "tied_years": [
-     2024
+     1914,
+     1928,
+     1958,
+     1987
+    ],
+    "standing": "warm",
+    "notable": false,
+    "since": 2025,
+    "record": false,
+    "phrase": "typical for November 5"
+   },
+   "low_rank": {
+    "value_f": 48,
+    "warm_rank": 12,
+    "cool_rank": 96,
+    "years": 110,
+    "first_year": 1914,
+    "tied_years": [
+     1964,
+     1975,
+     1977
     ],
     "standing": "warm",
     "notable": true,
     "since": 2024,
     "record": false,
-    "phrase": "2nd warmest November 4 low (tied) of 109 since 1914, warmest since 2024"
+    "phrase": "12th warmest November 5 low (tied) of 110 since 1914, warmest since 2024"
    }
   },
   "note": "Today's readings come from a different station than this record, so today and the forecast aren't ranked against it."
  },
  "forecast": {
-  "issued_utc": "2026-11-06T09:30:00Z",
+  "issued_utc": "2026-11-06T11:45:03Z",
   "grid": "IWX/45,57",
   "periods": [
    {
     "name": "Today",
-    "start": "2026-11-06T06:00:00-05:00",
+    "start": "2026-11-06T07:00:00-05:00",
     "is_daytime": true,
     "temp_f": 49,
     "temp_c": 9.44,
@@ -213,26 +216,19 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-06T09:30:00Z",
+  "issued_utc": "2026-11-06T11:45:03Z",
   "hours": [
    {
-    "start": "2026-11-06T06:00:00-05:00",
+    "start": "2026-11-06T07:00:00-05:00",
     "temp_f": 43,
     "temp_c": 6.11,
-    "precip_chance_pct": 27,
-    "short_forecast": "Scattered Rain Showers"
-   },
-   {
-    "start": "2026-11-06T07:00:00-05:00",
-    "temp_f": 42,
-    "temp_c": 5.56,
     "precip_chance_pct": 39,
     "short_forecast": "Scattered Rain Showers"
    },
    {
     "start": "2026-11-06T08:00:00-05:00",
-    "temp_f": 42,
-    "temp_c": 5.56,
+    "temp_f": 43,
+    "temp_c": 6.11,
     "precip_chance_pct": 39,
     "short_forecast": "Scattered Rain Showers"
    },
@@ -550,6 +546,13 @@
     "temp_c": 0.56,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear"
+   },
+   {
+    "start": "2026-11-08T06:00:00-05:00",
+    "temp_f": 33,
+    "temp_c": 0.56,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
    }
   ]
  },
