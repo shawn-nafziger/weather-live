@@ -11,20 +11,20 @@
   "lon": -122.3656,
   "history": "About 18 km from the official San Francisco record's site, so today and the forecast aren't ranked against it"
  },
- "as_of_utc": "2026-11-06T14:07:52Z",
+ "as_of_utc": "2026-11-06T15:07:56Z",
  "now": {
-  "time_utc": "2026-11-06T13:45:00Z",
+  "time_utc": "2026-11-06T14:55:00Z",
   "temp_c": 12,
   "temp_f": 53.6,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 11,
   "humidity_pct": 93.6,
   "wind_kmh": null,
-  "description": "Clear"
+  "description": "Mostly Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-06",
-  "readings": 5,
+  "readings": 6,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -94,16 +94,7 @@
   "grid": "MTR/85,98",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-06T02:00:00-08:00",
-    "is_daytime": false,
-    "temp_f": 54,
-    "temp_c": 12.22,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Clear"
-   },
-   {
-    "name": "Friday",
+    "name": "Today",
     "start": "2026-11-06T06:00:00-08:00",
     "is_daytime": true,
     "temp_f": 69,
@@ -112,7 +103,7 @@
     "short_forecast": "Mostly Sunny"
    },
    {
-    "name": "Friday Night",
+    "name": "Tonight",
     "start": "2026-11-06T18:00:00-08:00",
     "is_daytime": false,
     "temp_f": 54,
@@ -218,19 +209,21 @@
     "temp_c": 18.89,
     "precip_chance_pct": 32,
     "short_forecast": "Chance Light Rain"
+   },
+   {
+    "name": "Thursday Night",
+    "start": "2026-11-12T18:00:00-08:00",
+    "is_daytime": false,
+    "temp_f": 56,
+    "temp_c": 13.33,
+    "precip_chance_pct": 37,
+    "short_forecast": "Chance Light Rain"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-06T08:26:15Z",
   "hours": [
-   {
-    "start": "2026-11-06T06:00:00-08:00",
-    "temp_f": 54,
-    "temp_c": 12.22,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Sunny"
-   },
    {
     "start": "2026-11-06T07:00:00-08:00",
     "temp_f": 54,
@@ -559,6 +552,13 @@
     "temp_c": 13.33,
     "precip_chance_pct": 0,
     "short_forecast": "Partly Cloudy"
+   },
+   {
+    "start": "2026-11-08T06:00:00-08:00",
+    "temp_f": 55,
+    "temp_c": 12.78,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Sunny"
    }
   ]
  },

@@ -11,33 +11,33 @@
   "lon": -121.9242,
   "history": "Same site as the official San Jose record"
  },
- "as_of_utc": "2026-11-06T14:07:52Z",
+ "as_of_utc": "2026-11-06T15:07:56Z",
  "now": {
-  "time_utc": "2026-11-06T13:45:00Z",
-  "temp_c": 9,
-  "temp_f": 48.2,
+  "time_utc": "2026-11-06T14:55:00Z",
+  "temp_c": 10,
+  "temp_f": 50.0,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 7,
-  "humidity_pct": 87.29,
-  "wind_kmh": 0,
-  "description": "Clear"
+  "humidity_pct": 81.62,
+  "wind_kmh": 5.54,
+  "description": "Partly Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-06",
-  "readings": 5,
+  "readings": 7,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
   "high_c": 11.7,
   "high_f": 53.1,
   "high_time_utc": "2026-11-06T08:53:00Z",
-  "low_c": 10,
-  "low_f": 50.0,
-  "low_time_utc": "2026-11-06T11:53:00Z",
+  "low_c": 9.4,
+  "low_f": 48.9,
+  "low_time_utc": "2026-11-06T13:53:00Z",
   "dip_between_reports": {
-   "at_most_f": 49.1,
-   "about_f": 48.2,
-   "time_utc": "2026-11-06T11:40:00Z"
+   "at_most_f": 47.3,
+   "about_f": 46.4,
+   "time_utc": "2026-11-06T14:35:00Z"
   }
  },
  "record": {
@@ -94,7 +94,7 @@
   },
   "forecast_highs": [
    {
-    "period": "Friday",
+    "period": "Today",
     "date": "2026-11-06",
     "high_f": 73,
     "would_rank": {
@@ -266,16 +266,7 @@
   "grid": "MTR/98,83",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-06T04:00:00-08:00",
-    "is_daytime": false,
-    "temp_f": 49,
-    "temp_c": 9.44,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Clear"
-   },
-   {
-    "name": "Friday",
+    "name": "Today",
     "start": "2026-11-06T06:00:00-08:00",
     "is_daytime": true,
     "temp_f": 73,
@@ -284,7 +275,7 @@
     "short_forecast": "Mostly Sunny"
    },
    {
-    "name": "Friday Night",
+    "name": "Tonight",
     "start": "2026-11-06T18:00:00-08:00",
     "is_daytime": false,
     "temp_f": 51,
@@ -390,19 +381,21 @@
     "temp_c": 21.67,
     "precip_chance_pct": 29,
     "short_forecast": "Chance Light Rain"
+   },
+   {
+    "name": "Thursday Night",
+    "start": "2026-11-12T18:00:00-08:00",
+    "is_daytime": false,
+    "temp_f": 50,
+    "temp_c": 10.0,
+    "precip_chance_pct": 30,
+    "short_forecast": "Chance Light Rain"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-06T08:26:15Z",
   "hours": [
-   {
-    "start": "2026-11-06T06:00:00-08:00",
-    "temp_f": 49,
-    "temp_c": 9.44,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Sunny"
-   },
    {
     "start": "2026-11-06T07:00:00-08:00",
     "temp_f": 49,
@@ -731,6 +724,13 @@
     "temp_c": 9.44,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "start": "2026-11-08T06:00:00-08:00",
+    "temp_f": 49,
+    "temp_c": 9.44,
+    "precip_chance_pct": 0,
+    "short_forecast": "Partly Sunny"
    }
   ]
  },
