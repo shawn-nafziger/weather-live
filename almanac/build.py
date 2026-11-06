@@ -430,9 +430,15 @@ def build(slug, path=None):
     # leaves no more than about 1.5 spells a year. 14 days is long in Goshen; ordinary in Phoenix.
     n_years = h["Y"].nunique()
     dry_min = next((t for t in (14, 30, 60, 90) if sum(1 for _, n in spells if n >= t) <= 1.5 * n_years), 120)
+    if spells and not any(n >= dry_min for _, n in spells):
+        # Wet places can have too many short spells and none long enough for the next step
+        # (Elizabeth City, NC: many 14-day spells, never 30). Show the longest step that has any.
+        dry_min = max(t for t in (14, 30, 60, 90) if any(n >= t for _, n in spells))
     spells = [(st, n) for st, n in spells if n >= dry_min]
     dry = [{"y": int(s.year), "doy": int(s.dayofyear), "n": int(n), "start": s.strftime("%Y-%m-%d")} for s, n in spells]
-    longest = max(spells, key=lambda t: t[1])
+    # A place that never went 14 days without measurable rain has no longest spell;
+    # the page then says so.
+    longest = max(spells, key=lambda t: t[1]) if spells else None
     pr_years = sorted(int(y) for y in h.dropna(subset=["Pr"])["Y"].unique())
 
     # seasonal snowfall (July-June); a season counts if Nov-Mar each have no more than 9 missing days
@@ -725,7 +731,7 @@ def build(slug, path=None):
             "wettest": [[int(y), float(v)] for y, v in wettest.items()],
             "driest": [[int(y), float(v)] for y, v in driest.items()],
             "dry": dry, "dry_min": dry_min, "dry_years": pr_years,
-            "longest": {"start": longest[0].strftime("%Y-%m-%d"), "n": int(longest[1])},
+            "longest": ({"start": longest[0].strftime("%Y-%m-%d"), "n": int(longest[1])} if longest else None),
             "snow": snow, "t_snow": t_sn, "snow_normal": sn_normal,
         },
         "titles": titles,

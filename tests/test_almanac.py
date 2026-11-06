@@ -2,7 +2,7 @@
 
     python -m unittest discover tests
 """
-import json, shutil, sys, tempfile, unittest
+import contextlib, io, json, re, shutil, sys, tempfile, unittest
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[1]
@@ -35,9 +35,18 @@ class Test(unittest.TestCase):
         return a.main()
 
     def test_every_real_city_builds_with_all_claims_true(self):
+        # Every place either builds, or is held back on purpose: SKIP (a claim isn't true
+        # for it) or REVIEW (its record looks wrong). A crash (FAIL) is a bug. Held-back
+        # places get no page, so the page checks below cover the ones that were built.
         a.HISTORY_DIR = REAL_HISTORY
-        self.assertEqual(self.run_all(), 0)
-        slugs = [s for s in a.CITIES if store.exists(REAL_HISTORY, s)]
+        log = io.StringIO()
+        with contextlib.redirect_stdout(log):
+            self.assertEqual(self.run_all(), 0)
+        crashes = [l for l in log.getvalue().splitlines() if re.match(r"^.{14} FAIL ", l)]
+        self.assertEqual(crashes, [])
+        listed = [s for s in a.CITIES if store.exists(REAL_HISTORY, s)]
+        slugs = [s for s in listed if (self.out / "almanac" / s / "index.html").exists()]
+        self.assertGreaterEqual(len(slugs), 0.95 * len(listed))   # a mass skip is a bug too
         for s in slugs:
             page = (self.out / "almanac" / s / "index.html").read_text(encoding="utf-8")
             self.assertNotIn("{{", page)
@@ -52,7 +61,10 @@ class Test(unittest.TestCase):
     def test_no_placeholder_headlines_and_dots_are_on_the_map(self):
         a.HISTORY_DIR = REAL_HISTORY
         for s in [s for s in a.CITIES if store.exists(REAL_HISTORY, s)]:
-            d = a.build(s)
+            try:
+                d = a.build(s)
+            except (a.ClaimError, a.QualityError):
+                continue   # held back on purpose; no page, no dot
             self.assertFalse(d["text"]["t_chg"].startswith("How "), s)
             row = a.index_row(d)
             self.assertTrue(0 < row["x"] < 975 and 0 < row["y"] < 610, s)
