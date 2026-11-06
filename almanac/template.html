@@ -641,10 +641,14 @@ function drawPr() {
 table("tb-pr", ["Year", "Inches"], P.ann.slice().reverse().map(([y, v]) => [y, v.toFixed(2)]));
 
 const L = P.longest;
-$("f-dry-title").textContent = `Dry spells of ${P.dry_min} days or more, every year since ${D.first_year}`;
-keys("k-dry", [
+$("f-dry-title").textContent = L
+  ? `Dry spells of ${P.dry_min} days or more, every year since ${D.first_year}`
+  : `No dry spell of ${P.dry_min} days or more since ${D.first_year}`;
+keys("k-dry", L ? [
   ["k-navy", "var(--navy)", ["Pills", `each dry spell of ${P.dry_min}+ days (the longer the pill, the longer the spell)`]],
   ["k-ink", "var(--ink)", ["Darkest pill", `the longest: ${L.n} days from ${longDate(L.start)}`]],
+] : [
+  ["k-navy", "var(--navy)", ["None", `in this record, it has never gone ${P.dry_min} days in a row without measurable rain`]],
 ]);
 function drawDry() {
   const el = $("c-dry"), w = width(el), m = { l: 38, r: 8, t: 6, b: 24 };
@@ -656,7 +660,7 @@ function drawDry() {
   P.dry.forEach(d => {
     // a spell that runs past December 31 continues at the start of the next year's row
     let y = d.y, start = d.doy, left = d.n;
-    const isL = d.start === L.start, tip = `<b>${d.n} dry days</b><br>from ${longDate(d.start)}`;
+    const isL = L && d.start === L.start, tip = `<b>${d.n} dry days</b><br>from ${longDate(d.start)}`;
     while (left > 0 && row[y] !== undefined) {
       const len = new Date(y, 1, 29).getDate() === 29 ? 366 : 365, seg = Math.min(left, len - start + 1);
       const cy = m.t + (row[y] + .5) * rowH, x0 = x(start), x1 = x(start + seg);
