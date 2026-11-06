@@ -11,20 +11,20 @@
   "lon": -80.2145,
   "history": "Same site as the official Pittsburgh record"
  },
- "as_of_utc": "2026-11-06T22:07:53Z",
+ "as_of_utc": "2026-11-06T23:07:51Z",
  "now": {
-  "time_utc": "2026-11-06T21:55:00Z",
-  "temp_c": 8,
-  "temp_f": 46.4,
-  "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 6,
-  "humidity_pct": 87.19,
-  "wind_kmh": 20.38,
-  "description": "Light Rain and Fog/Mist"
+  "time_utc": "2026-11-06T22:11:00Z",
+  "temp_c": 8.3,
+  "temp_f": 46.9,
+  "precision": "tenths of a degree",
+  "dewpoint_c": 6.1,
+  "humidity_pct": 86.03,
+  "wind_kmh": 18.36,
+  "description": "Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-06",
-  "readings": 15,
+  "readings": 16,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -83,28 +83,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-06",
-    "high_f": 56,
-    "would_rank": {
-     "value_f": 56,
-     "warm_rank": 56,
-     "cool_rank": 94,
-     "years": 152,
-     "first_year": 1875,
-     "tied_years": [
-      1900,
-      1920,
-      1926
-     ],
-     "standing": "warm",
-     "notable": false,
-     "since": 2024,
-     "record": false,
-     "phrase": "typical for November 6"
-    }
-   },
    {
     "period": "Saturday",
     "date": "2026-11-07",
@@ -251,30 +229,41 @@
      "record": false,
      "phrase": "typical for November 12"
     }
+   },
+   {
+    "period": "Friday",
+    "date": "2026-11-13",
+    "high_f": 48,
+    "would_rank": {
+     "value_f": 48,
+     "warm_rank": 92,
+     "cool_rank": 60,
+     "years": 152,
+     "first_year": 1875,
+     "tied_years": [
+      1878
+     ],
+     "standing": "cool",
+     "notable": false,
+     "since": 2022,
+     "record": false,
+     "phrase": "typical for November 13"
+    }
    }
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-06T21:21:31Z",
+  "issued_utc": "2026-11-06T22:21:48Z",
   "grid": "PBZ/70,67",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-06T16:00:00-05:00",
-    "is_daytime": true,
-    "temp_f": 56,
-    "temp_c": 13.33,
-    "precip_chance_pct": 32,
-    "short_forecast": "Chance Light Rain"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-06T18:00:00-05:00",
     "is_daytime": false,
     "temp_f": 34,
     "temp_c": 1.11,
-    "precip_chance_pct": 2,
-    "short_forecast": "Partly Cloudy"
+    "precip_chance_pct": 21,
+    "short_forecast": "Slight Chance Light Rain then Partly Cloudy"
    },
    {
     "name": "Saturday",
@@ -383,37 +372,39 @@
     "temp_c": 0.0,
     "precip_chance_pct": 20,
     "short_forecast": "Slight Chance Light Rain then Slight Chance Rain And Snow"
+   },
+   {
+    "name": "Friday",
+    "start": "2026-11-13T06:00:00-05:00",
+    "is_daytime": true,
+    "temp_f": 48,
+    "temp_c": 8.89,
+    "precip_chance_pct": 17,
+    "short_forecast": "Slight Chance Rain And Snow"
    }
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-06T20:21:42Z",
+  "issued_utc": "2026-11-06T21:21:31Z",
   "hours": [
    {
-    "start": "2026-11-06T17:00:00-05:00",
-    "temp_f": 48,
-    "temp_c": 8.89,
-    "precip_chance_pct": 18,
-    "short_forecast": "Slight Chance Light Rain"
-   },
-   {
     "start": "2026-11-06T18:00:00-05:00",
-    "temp_f": 47,
-    "temp_c": 8.33,
+    "temp_f": 44,
+    "temp_c": 6.67,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Cloudy"
    },
    {
     "start": "2026-11-06T19:00:00-05:00",
-    "temp_f": 45,
-    "temp_c": 7.22,
+    "temp_f": 42,
+    "temp_c": 5.56,
     "precip_chance_pct": 0,
     "short_forecast": "Partly Cloudy"
    },
    {
     "start": "2026-11-06T20:00:00-05:00",
-    "temp_f": 43,
-    "temp_c": 6.11,
+    "temp_f": 41,
+    "temp_c": 5.0,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear"
    },
@@ -722,6 +713,13 @@
     "start": "2026-11-08T16:00:00-05:00",
     "temp_f": 55,
     "temp_c": 12.78,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
+   },
+   {
+    "start": "2026-11-08T17:00:00-05:00",
+    "temp_f": 54,
+    "temp_c": 12.22,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
    }
