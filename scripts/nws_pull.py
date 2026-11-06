@@ -19,6 +19,7 @@ happened. The run fails only if every city fails.
 
 import csv
 import json
+import math
 import re
 import sys
 import time
@@ -32,6 +33,12 @@ import ranks
 
 REPO = Path(__file__).resolve().parents[1]
 CITIES_FILE = REPO / "config" / "cities.json"
+# Extra places pulled every hour for the forecast archive (added Nov 5, 2026: the
+# Almanac's first-wave metro areas). Each names only its slug and NWS station;
+# everything else comes from its entry in the Almanac list.
+METROS_FILE = REPO / "config" / "hourly_metros.json"
+ALMANAC_FILE = REPO / "config" / "almanac_cities.json"
+SAME_SITE_KM = 5   # a station this close to the record's site counts as the same place for ranking today
 ARCHIVE_DIR = REPO / "archive"
 FORECAST_DIR = ARCHIVE_DIR / "forecasts"
 OBSERVATION_DIR = ARCHIVE_DIR / "observations"
@@ -163,8 +170,19 @@ def day_file(folder, day):
 # PULLS
 # =====================================================
 
+def km_between(lat1, lon1, lat2, lon2):
+    """Great-circle distance in km."""
+    p1, p2 = math.radians(lat1), math.radians(lat2)
+    a = (math.sin((p2 - p1) / 2) ** 2
+         + math.cos(p1) * math.cos(p2) * math.sin(math.radians(lon2 - lon1) / 2) ** 2)
+    return 6371 * 2 * math.asin(math.sqrt(a))
+
+
 def resolve_city(session, city):
-    """The station's location, then the forecast grid for that exact spot."""
+    """The station's location, then the forecast grid for that exact spot.
+
+    The forecast is pulled for the station's own location, so it can later be
+    checked against what that station records."""
     station = get_json(session, f"{API}/stations/{city['station']}")
     lon, lat = station["geometry"]["coordinates"][:2]
     point = get_json(session, f"{API}/points/{lat:.4f},{lon:.4f}")["properties"]
@@ -174,7 +192,36 @@ def resolve_city(session, city):
         "grid": f"{point['gridId']}/{point['gridX']},{point['gridY']}",
         "forecast_url": point["forecast"],
         "hourly_url": point["forecastHourly"],
+        "time_zone": point.get("timeZone"),
     }
+
+
+def load_cities():
+    """The hourly places: cities.json, plus the metro areas in hourly_metros.json.
+
+    A metro entry names its slug and NWS station; its name, state and official
+    record come from the Almanac list. Its time zone comes from the NWS, and
+    whether today can be ranked is decided each run by how close the station
+    is to the record's site (see run_city). Its hourly readings feed the live
+    file but aren't archived: forecast accuracy is checked against the official
+    daily record instead."""
+    cities = json.loads(CITIES_FILE.read_text(encoding="utf-8"))["cities"]
+    if not METROS_FILE.exists():
+        return cities
+    have = {c["slug"] for c in cities}
+    almanac = {c["slug"]: c for c in json.loads(ALMANAC_FILE.read_text(encoding="utf-8"))["cities"]}
+    for m in json.loads(METROS_FILE.read_text(encoding="utf-8"))["cities"]:
+        if m["slug"] in have:
+            continue
+        a = almanac[m["slug"]]
+        cities.append({
+            "slug": m["slug"], "name": a["name"], "state": a["st"], "location_key": None,
+            "station": m["station"], "time_zone": None, "history": None,
+            "record_sid": a["record_sid"], "record_name": a["record_name"],
+            "record_lat": a["lat"], "record_lon": a["lon"],
+            "rank_today": None, "archive_observations": False,
+        })
+    return cities
 
 
 def pull_forecast(session, city, where, retrieved):
@@ -388,10 +435,19 @@ def record_context(city, history, so_far, forecast_rows, tz, now):
 
 def run_city(session, city, now):
     where = resolve_city(session, city)
+    city = dict(city)
+    city["time_zone"] = city.get("time_zone") or where["time_zone"]
+    if city.get("rank_today") is None:
+        # Metro areas: rank today only if the station is at the record's site.
+        km = km_between(where["lat"], where["lon"], city["record_lat"], city["record_lon"])
+        city["rank_today"] = km <= SAME_SITE_KM
+        city["history"] = (f"Same site as the official {city['name']} record" if city["rank_today"] else
+                           f"About {km:.0f} km from the official {city['name']} record's site, "
+                           "so today and the forecast aren't ranked against it")
     issued, forecast_rows = pull_forecast(session, city, where, now)
     new_forecast_rows = save_forecast(city, issued, forecast_rows, now)
     obs = pull_observations(session, city, now)
-    new_obs = save_observations(obs)
+    new_obs = save_observations(obs) if city.get("archive_observations", True) else 0
     hourly = pull_hourly(session, where, now)
     tz = ZoneInfo(city["time_zone"])
     so_far = today_so_far(obs, tz, now)
@@ -423,7 +479,7 @@ def run_city(session, city, now):
 
 
 def main():
-    cities = json.loads(CITIES_FILE.read_text(encoding="utf-8"))["cities"]
+    cities = load_cities()
     session = make_session()
     now = utc_now()
     status = {"run_utc": iso_utc(now), "cities": {}}
@@ -432,13 +488,13 @@ def main():
         try:
             result = run_city(session, city, now)
             status["cities"][city["slug"]] = {"ok": True, **result}
-            print(f"{city['name']:<11} OK   forecast issued {result['forecast_issued_utc']}"
+            print(f"{city['name']:<16} OK   forecast issued {result['forecast_issued_utc']}"
                   f" ({'saved' if result['new_forecast_rows'] else 'already saved'}),"
                   f" {result['new_observations']} new readings")
         except Exception as e:  # one city's failure shouldn't stop the rest
             failures += 1
             status["cities"][city["slug"]] = {"ok": False, "error": str(e)[:300]}
-            print(f"{city['name']:<11} FAIL {e}")
+            print(f"{city['name']:<16} FAIL {e}")
     LIVE_DIR.mkdir(parents=True, exist_ok=True)
     (LIVE_DIR / "status.json").write_text(json.dumps(status, indent=1), encoding="utf-8")
     print(f"{len(cities) - failures} of {len(cities)} cities updated.")
