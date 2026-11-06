@@ -11,16 +11,16 @@
   "lon": -78.736,
   "history": "Same site as the official Buffalo record"
  },
- "as_of_utc": "2026-11-06T18:07:54Z",
+ "as_of_utc": "2026-11-06T18:22:23Z",
  "now": {
-  "time_utc": "2026-11-06T17:33:00Z",
-  "temp_c": 12.2,
-  "temp_f": 54.0,
-  "precision": "tenths of a degree",
-  "dewpoint_c": 10.6,
-  "humidity_pct": 89.95,
-  "wind_kmh": 18.36,
-  "description": "Mostly Cloudy"
+  "time_utc": "2026-11-06T18:00:00Z",
+  "temp_c": 13,
+  "temp_f": 55.4,
+  "precision": "nearest whole \u00b0C",
+  "dewpoint_c": 9,
+  "humidity_pct": 76.68,
+  "wind_kmh": 20.38,
+  "description": "Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-06",
@@ -83,17 +83,19 @@
    {
     "period": "This Afternoon",
     "date": "2026-11-06",
-    "high_f": 56,
+    "high_f": 54,
     "would_rank": {
-     "value_f": 56,
-     "warm_rank": 43,
-     "cool_rank": 108,
+     "value_f": 54,
+     "warm_rank": 50,
+     "cool_rank": 99,
      "years": 153,
      "first_year": 1873,
      "tied_years": [
-      1926,
-      1950,
-      1979
+      1887,
+      1897,
+      1928,
+      1963,
+      1997
      ],
      "standing": "warm",
      "notable": false,
@@ -151,18 +153,19 @@
    {
     "period": "Monday",
     "date": "2026-11-09",
-    "high_f": 55,
+    "high_f": 54,
     "would_rank": {
-     "value_f": 55,
-     "warm_rank": 41,
-     "cool_rank": 109,
+     "value_f": 54,
+     "warm_rank": 45,
+     "cool_rank": 104,
      "years": 153,
      "first_year": 1873,
      "tied_years": [
-      1874,
-      1877,
-      1902,
-      1981
+      1880,
+      1882,
+      1932,
+      1964,
+      1978
      ],
      "standing": "warm",
      "notable": false,
@@ -197,17 +200,19 @@
    {
     "period": "Veterans Day",
     "date": "2026-11-11",
-    "high_f": 54,
+    "high_f": 53,
     "would_rank": {
-     "value_f": 54,
-     "warm_rank": 44,
-     "cool_rank": 107,
+     "value_f": 53,
+     "warm_rank": 47,
+     "cool_rank": 102,
      "years": 153,
      "first_year": 1873,
      "tied_years": [
-      1978,
-      1984,
-      1998
+      1917,
+      1930,
+      1970,
+      1992,
+      2003
      ],
      "standing": "warm",
      "notable": false,
@@ -219,18 +224,17 @@
    {
     "period": "Thursday",
     "date": "2026-11-12",
-    "high_f": 50,
+    "high_f": 47,
     "would_rank": {
-     "value_f": 50,
-     "warm_rank": 56,
-     "cool_rank": 95,
+     "value_f": 47,
+     "warm_rank": 71,
+     "cool_rank": 81,
      "years": 154,
      "first_year": 1873,
      "tied_years": [
-      1969,
-      1973,
-      1998,
-      2008
+      1888,
+      1960,
+      1999
      ],
      "standing": "warm",
      "notable": false,
@@ -242,25 +246,25 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-06T14:57:51Z",
+  "issued_utc": "2026-11-06T17:57:33Z",
   "grid": "BUF/40,50",
   "periods": [
    {
     "name": "This Afternoon",
-    "start": "2026-11-06T12:00:00-05:00",
+    "start": "2026-11-06T13:00:00-05:00",
     "is_daytime": true,
-    "temp_f": 56,
-    "temp_c": 13.33,
-    "precip_chance_pct": 42,
+    "temp_f": 54,
+    "temp_c": 12.22,
+    "precip_chance_pct": 51,
     "short_forecast": "Chance Rain Showers"
    },
    {
     "name": "Tonight",
     "start": "2026-11-06T18:00:00-05:00",
     "is_daytime": false,
-    "temp_f": 40,
-    "temp_c": 4.44,
-    "precip_chance_pct": 60,
+    "temp_f": 39,
+    "temp_c": 3.89,
+    "precip_chance_pct": 57,
     "short_forecast": "Rain Showers Likely"
    },
    {
@@ -287,34 +291,34 @@
     "is_daytime": true,
     "temp_f": 55,
     "temp_c": 12.78,
-    "precip_chance_pct": 31,
+    "precip_chance_pct": 28,
     "short_forecast": "Chance Rain Showers"
    },
    {
     "name": "Sunday Night",
     "start": "2026-11-08T18:00:00-05:00",
     "is_daytime": false,
-    "temp_f": 40,
-    "temp_c": 4.44,
-    "precip_chance_pct": 43,
+    "temp_f": 41,
+    "temp_c": 5.0,
+    "precip_chance_pct": 53,
     "short_forecast": "Chance Rain Showers"
    },
    {
     "name": "Monday",
     "start": "2026-11-09T06:00:00-05:00",
     "is_daytime": true,
-    "temp_f": 55,
-    "temp_c": 12.78,
-    "precip_chance_pct": 25,
+    "temp_f": 54,
+    "temp_c": 12.22,
+    "precip_chance_pct": 32,
     "short_forecast": "Chance Rain Showers then Partly Sunny"
    },
    {
     "name": "Monday Night",
     "start": "2026-11-09T18:00:00-05:00",
     "is_daytime": false,
-    "temp_f": 45,
-    "temp_c": 7.22,
-    "precip_chance_pct": 3,
+    "temp_f": 43,
+    "temp_c": 6.11,
+    "precip_chance_pct": 0,
     "short_forecast": "Mostly Cloudy"
    },
    {
@@ -323,8 +327,8 @@
     "is_daytime": true,
     "temp_f": 59,
     "temp_c": 15.0,
-    "precip_chance_pct": 15,
-    "short_forecast": "Slight Chance Rain Showers"
+    "precip_chance_pct": 8,
+    "short_forecast": "Partly Sunny"
    },
    {
     "name": "Tuesday Night",
@@ -332,44 +336,44 @@
     "is_daytime": false,
     "temp_f": 38,
     "temp_c": 3.33,
-    "precip_chance_pct": 9,
+    "precip_chance_pct": 8,
     "short_forecast": "Partly Cloudy"
    },
    {
     "name": "Veterans Day",
     "start": "2026-11-11T06:00:00-05:00",
     "is_daytime": true,
-    "temp_f": 54,
-    "temp_c": 12.22,
-    "precip_chance_pct": 19,
-    "short_forecast": "Slight Chance Rain Showers"
+    "temp_f": 53,
+    "temp_c": 11.67,
+    "precip_chance_pct": 16,
+    "short_forecast": "Partly Sunny then Slight Chance Rain Showers"
    },
    {
     "name": "Wednesday Night",
     "start": "2026-11-11T18:00:00-05:00",
     "is_daytime": false,
-    "temp_f": 34,
-    "temp_c": 1.11,
-    "precip_chance_pct": 19,
-    "short_forecast": "Slight Chance Rain Showers"
+    "temp_f": 33,
+    "temp_c": 0.56,
+    "precip_chance_pct": 16,
+    "short_forecast": "Slight Chance Rain Showers then Mostly Cloudy"
    },
    {
     "name": "Thursday",
     "start": "2026-11-12T06:00:00-05:00",
     "is_daytime": true,
-    "temp_f": 50,
-    "temp_c": 10.0,
-    "precip_chance_pct": 17,
-    "short_forecast": "Slight Chance Rain Showers then Mostly Cloudy"
+    "temp_f": 47,
+    "temp_c": 8.33,
+    "precip_chance_pct": 15,
+    "short_forecast": "Mostly Cloudy then Slight Chance Rain Showers"
    },
    {
     "name": "Thursday Night",
     "start": "2026-11-12T18:00:00-05:00",
     "is_daytime": false,
-    "temp_f": 32,
-    "temp_c": 0.0,
-    "precip_chance_pct": 20,
-    "short_forecast": "Slight Chance Rain And Snow Showers"
+    "temp_f": 31,
+    "temp_c": -0.56,
+    "precip_chance_pct": 21,
+    "short_forecast": "Slight Chance Rain Showers then Slight Chance Rain And Snow Showers"
    }
   ]
  },
