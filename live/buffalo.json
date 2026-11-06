@@ -11,7 +11,7 @@
   "lon": -78.736,
   "history": "Same site as the official Buffalo record"
  },
- "as_of_utc": "2026-11-06T23:07:51Z",
+ "as_of_utc": "2026-11-06T23:21:06Z",
  "now": {
   "time_utc": "2026-11-06T22:15:00Z",
   "temp_c": 9.4,
@@ -80,6 +80,29 @@
    }
   },
   "forecast_highs": [
+   {
+    "period": "This Afternoon",
+    "date": "2026-11-06",
+    "high_f": 55,
+    "would_rank": {
+     "value_f": 55,
+     "warm_rank": 46,
+     "cool_rank": 104,
+     "years": 153,
+     "first_year": 1873,
+     "tied_years": [
+      1893,
+      1911,
+      1946,
+      1981
+     ],
+     "standing": "warm",
+     "notable": false,
+     "since": 2024,
+     "record": false,
+     "phrase": "typical for November 6"
+    }
+   },
    {
     "period": "Saturday",
     "date": "2026-11-07",
@@ -224,30 +247,6 @@
      "record": false,
      "phrase": "typical for November 12"
     }
-   },
-   {
-    "period": "Friday",
-    "date": "2026-11-13",
-    "high_f": 46,
-    "would_rank": {
-     "value_f": 46,
-     "warm_rank": 78,
-     "cool_rank": 72,
-     "years": 154,
-     "first_year": 1873,
-     "tied_years": [
-      1881,
-      1892,
-      1900,
-      1975,
-      2002
-     ],
-     "standing": "cool",
-     "notable": false,
-     "since": 2025,
-     "record": false,
-     "phrase": "typical for November 13"
-    }
    }
   ]
  },
@@ -255,6 +254,15 @@
   "issued_utc": "2026-11-06T22:28:44Z",
   "grid": "BUF/40,50",
   "periods": [
+   {
+    "name": "This Afternoon",
+    "start": "2026-11-06T17:00:00-05:00",
+    "is_daytime": true,
+    "temp_f": 55,
+    "temp_c": 12.78,
+    "precip_chance_pct": 58,
+    "short_forecast": "Rain Showers Likely"
+   },
    {
     "name": "Tonight",
     "start": "2026-11-06T18:00:00-05:00",
@@ -371,15 +379,6 @@
     "temp_c": -1.11,
     "precip_chance_pct": 21,
     "short_forecast": "Slight Chance Rain Showers then Slight Chance Rain And Snow Showers"
-   },
-   {
-    "name": "Friday",
-    "start": "2026-11-13T06:00:00-05:00",
-    "is_daytime": true,
-    "temp_f": 46,
-    "temp_c": 7.78,
-    "precip_chance_pct": 21,
-    "short_forecast": "Slight Chance Rain And Snow Showers then Mostly Cloudy"
    }
   ]
  },

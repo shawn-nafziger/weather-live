@@ -11,9 +11,9 @@
   "lon": -82.8769,
   "history": "Same site as the official Columbus record"
  },
- "as_of_utc": "2026-11-06T23:07:51Z",
+ "as_of_utc": "2026-11-06T23:21:06Z",
  "now": {
-  "time_utc": "2026-11-06T22:45:00Z",
+  "time_utc": "2026-11-06T23:05:00Z",
   "temp_c": 10,
   "temp_f": 50.0,
   "precision": "nearest whole \u00b0C",
@@ -83,6 +83,27 @@
    }
   },
   "forecast_highs": [
+   {
+    "period": "This Afternoon",
+    "date": "2026-11-06",
+    "high_f": 53,
+    "would_rank": {
+     "value_f": 53,
+     "warm_rank": 84,
+     "cool_rank": 64,
+     "years": 149,
+     "first_year": 1878,
+     "tied_years": [
+      1937,
+      1971
+     ],
+     "standing": "cool",
+     "notable": false,
+     "since": 2019,
+     "record": false,
+     "phrase": "typical for November 6"
+    }
+   },
    {
     "period": "Saturday",
     "date": "2026-11-07",
@@ -234,31 +255,6 @@
      "record": false,
      "phrase": "typical for November 12"
     }
-   },
-   {
-    "period": "Friday",
-    "date": "2026-11-13",
-    "high_f": 51,
-    "would_rank": {
-     "value_f": 51,
-     "warm_rank": 75,
-     "cool_rank": 69,
-     "years": 149,
-     "first_year": 1878,
-     "tied_years": [
-      1883,
-      1899,
-      1900,
-      1925,
-      1936,
-      1956
-     ],
-     "standing": "cool",
-     "notable": false,
-     "since": 2022,
-     "record": false,
-     "phrase": "typical for November 13"
-    }
    }
   ]
  },
@@ -266,6 +262,15 @@
   "issued_utc": "2026-11-06T21:00:32Z",
   "grid": "ILN/89,83",
   "periods": [
+   {
+    "name": "This Afternoon",
+    "start": "2026-11-06T16:00:00-05:00",
+    "is_daytime": true,
+    "temp_f": 53,
+    "temp_c": 11.67,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Sunny"
+   },
    {
     "name": "Tonight",
     "start": "2026-11-06T18:00:00-05:00",
@@ -382,15 +387,6 @@
     "temp_c": 1.11,
     "precip_chance_pct": 14,
     "short_forecast": "Mostly Cloudy"
-   },
-   {
-    "name": "Friday",
-    "start": "2026-11-13T06:00:00-05:00",
-    "is_daytime": true,
-    "temp_f": 51,
-    "temp_c": 10.56,
-    "precip_chance_pct": 10,
-    "short_forecast": "Mostly Sunny"
    }
   ]
  },

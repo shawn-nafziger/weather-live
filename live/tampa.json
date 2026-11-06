@@ -11,9 +11,9 @@
   "lon": -82.5403,
   "history": "Same site as the official Tampa record"
  },
- "as_of_utc": "2026-11-06T23:07:51Z",
+ "as_of_utc": "2026-11-06T23:21:06Z",
  "now": {
-  "time_utc": "2026-11-06T22:45:00Z",
+  "time_utc": "2026-11-06T23:05:00Z",
   "temp_c": 26,
   "temp_f": 78.8,
   "precision": "nearest whole \u00b0C",
@@ -85,6 +85,37 @@
    }
   },
   "forecast_highs": [
+   {
+    "period": "This Afternoon",
+    "date": "2026-11-06",
+    "high_f": 84,
+    "would_rank": {
+     "value_f": 84,
+     "warm_rank": 21,
+     "cool_rank": 105,
+     "years": 137,
+     "first_year": 1890,
+     "tied_years": [
+      1920,
+      1928,
+      1938,
+      1942,
+      1947,
+      1975,
+      1994,
+      2000,
+      2005,
+      2016,
+      2018,
+      2023
+     ],
+     "standing": "warm",
+     "notable": true,
+     "since": 2024,
+     "record": false,
+     "phrase": "21st warmest November 6 high (tied) of 137 since 1890, warmest since 2024"
+    }
+   },
    {
     "period": "Saturday",
     "date": "2026-11-07",
@@ -269,30 +300,6 @@
      "record": false,
      "phrase": "typical for November 12"
     }
-   },
-   {
-    "period": "Friday",
-    "date": "2026-11-13",
-    "high_f": 73,
-    "would_rank": {
-     "value_f": 73,
-     "warm_rank": 103,
-     "cool_rank": 30,
-     "years": 137,
-     "first_year": 1890,
-     "tied_years": [
-      1943,
-      1981,
-      1991,
-      2002,
-      2009
-     ],
-     "standing": "cool",
-     "notable": false,
-     "since": 2019,
-     "record": false,
-     "phrase": "typical for November 13"
-    }
    }
   ]
  },
@@ -300,6 +307,15 @@
   "issued_utc": "2026-11-06T19:01:17Z",
   "grid": "TBW/68,98",
   "periods": [
+   {
+    "name": "This Afternoon",
+    "start": "2026-11-06T14:00:00-05:00",
+    "is_daytime": true,
+    "temp_f": 84,
+    "temp_c": 28.89,
+    "precip_chance_pct": 3,
+    "short_forecast": "Sunny"
+   },
    {
     "name": "Tonight",
     "start": "2026-11-06T18:00:00-05:00",
@@ -414,15 +430,6 @@
     "is_daytime": false,
     "temp_f": 63,
     "temp_c": 17.22,
-    "precip_chance_pct": 33,
-    "short_forecast": "Scattered Rain Showers"
-   },
-   {
-    "name": "Friday",
-    "start": "2026-11-13T06:00:00-05:00",
-    "is_daytime": true,
-    "temp_f": 73,
-    "temp_c": 22.78,
     "precip_chance_pct": 33,
     "short_forecast": "Scattered Rain Showers"
    }
