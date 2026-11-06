@@ -11,14 +11,14 @@
   "lon": -122.3656,
   "history": "About 18 km from the official San Francisco record's site, so today and the forecast aren't ranked against it"
  },
- "as_of_utc": "2026-11-06T19:07:52Z",
+ "as_of_utc": "2026-11-06T20:07:54Z",
  "now": {
-  "time_utc": "2026-11-06T18:50:00Z",
-  "temp_c": 16,
-  "temp_f": 60.8,
+  "time_utc": "2026-11-06T19:40:00Z",
+  "temp_c": 17,
+  "temp_f": 62.6,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 13,
-  "humidity_pct": 82.39,
+  "humidity_pct": 77.31,
   "wind_kmh": null,
   "description": ""
  },
@@ -34,6 +34,11 @@
   "low_c": 11.7,
   "low_f": 53.1,
   "low_time_utc": "2026-11-06T10:56:00Z",
+  "peak_between_reports": {
+   "at_least_f": 61.7,
+   "about_f": 62.6,
+   "time_utc": "2026-11-06T19:20:00Z"
+  },
   "dip_between_reports": {
    "at_most_f": 52.7,
    "about_f": 51.8,
@@ -90,7 +95,7 @@
   "note": "Today's readings come from a different station than this record, so today and the forecast aren't ranked against it."
  },
  "forecast": {
-  "issued_utc": "2026-11-06T18:26:42Z",
+  "issued_utc": "2026-11-06T18:41:07Z",
   "grid": "MTR/85,98",
   "periods": [
    {
@@ -169,8 +174,8 @@
     "name": "Tuesday",
     "start": "2026-11-10T06:00:00-08:00",
     "is_daytime": true,
-    "temp_f": 69,
-    "temp_c": 20.56,
+    "temp_f": 70,
+    "temp_c": 21.11,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
    },
@@ -181,16 +186,16 @@
     "temp_f": 57,
     "temp_c": 13.89,
     "precip_chance_pct": 0,
-    "short_forecast": "Mostly Clear then Patchy Fog"
+    "short_forecast": "Mostly Clear"
    },
    {
     "name": "Veterans Day",
     "start": "2026-11-11T06:00:00-08:00",
     "is_daytime": true,
-    "temp_f": 71,
-    "temp_c": 21.67,
+    "temp_f": 72,
+    "temp_c": 22.22,
     "precip_chance_pct": 1,
-    "short_forecast": "Patchy Fog then Mostly Sunny"
+    "short_forecast": "Mostly Sunny"
    },
    {
     "name": "Wednesday Night",
@@ -222,15 +227,8 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-06T18:26:42Z",
+  "issued_utc": "2026-11-06T18:41:07Z",
   "hours": [
-   {
-    "start": "2026-11-06T11:00:00-08:00",
-    "temp_f": 64,
-    "temp_c": 17.78,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Sunny"
-   },
    {
     "start": "2026-11-06T12:00:00-08:00",
     "temp_f": 67,
@@ -376,7 +374,7 @@
     "temp_f": 56,
     "temp_c": 13.33,
     "precip_chance_pct": 0,
-    "short_forecast": "Mostly Sunny"
+    "short_forecast": "Sunny"
    },
    {
     "start": "2026-11-07T09:00:00-08:00",
@@ -390,7 +388,7 @@
     "temp_f": 62,
     "temp_c": 16.67,
     "precip_chance_pct": 0,
-    "short_forecast": "Mostly Sunny"
+    "short_forecast": "Sunny"
    },
    {
     "start": "2026-11-07T11:00:00-08:00",
@@ -404,7 +402,7 @@
     "temp_f": 68,
     "temp_c": 20.0,
     "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
+    "short_forecast": "Mostly Sunny"
    },
    {
     "start": "2026-11-07T13:00:00-08:00",
@@ -453,7 +451,7 @@
     "temp_f": 62,
     "temp_c": 16.67,
     "precip_chance_pct": 0,
-    "short_forecast": "Partly Cloudy"
+    "short_forecast": "Mostly Cloudy"
    },
    {
     "start": "2026-11-07T20:00:00-08:00",
@@ -557,6 +555,13 @@
     "start": "2026-11-08T10:00:00-08:00",
     "temp_f": 61,
     "temp_c": 16.11,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Sunny"
+   },
+   {
+    "start": "2026-11-08T11:00:00-08:00",
+    "temp_f": 64,
+    "temp_c": 17.78,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Sunny"
    }

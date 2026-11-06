@@ -11,16 +11,16 @@
   "lon": -71.4277,
   "history": "Same site as the official Providence record"
  },
- "as_of_utc": "2026-11-06T19:07:52Z",
+ "as_of_utc": "2026-11-06T20:07:54Z",
  "now": {
-  "time_utc": "2026-11-06T18:55:00Z",
-  "temp_c": 17,
-  "temp_f": 62.6,
+  "time_utc": "2026-11-06T19:40:00Z",
+  "temp_c": 16,
+  "temp_f": 60.8,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 16,
-  "humidity_pct": 93.84,
-  "wind_kmh": 16.67,
-  "description": "Rain and Fog/Mist"
+  "humidity_pct": 100,
+  "wind_kmh": 12.96,
+  "description": "Fog/Mist"
  },
  "today_so_far": {
   "date_local": "2026-11-06",
@@ -33,7 +33,12 @@
   "high_time_utc": "2026-11-06T06:10:00Z",
   "low_c": 17.2,
   "low_f": 63.0,
-  "low_time_utc": "2026-11-06T17:51:00Z"
+  "low_time_utc": "2026-11-06T17:51:00Z",
+  "dip_between_reports": {
+   "at_most_f": 61.7,
+   "about_f": 60.8,
+   "time_utc": "2026-11-06T19:10:00Z"
+  }
  },
  "record": {
   "series": "Providence area (ThreadEx; T. F. Green airport)",
@@ -90,7 +95,7 @@
   },
   "forecast_highs": [
    {
-    "period": "This Afternoon",
+    "period": "Today",
     "date": "2026-11-06",
     "high_f": 68,
     "would_rank": {
@@ -244,13 +249,13 @@
   "grid": "BOX/64,70",
   "periods": [
    {
-    "name": "This Afternoon",
-    "start": "2026-11-06T13:00:00-05:00",
+    "name": "Today",
+    "start": "2026-11-06T11:00:00-05:00",
     "is_daytime": true,
     "temp_f": 68,
     "temp_c": 20.0,
     "precip_chance_pct": 100,
-    "short_forecast": "Rain"
+    "short_forecast": "Heavy Rain"
    },
    {
     "name": "Tonight",
@@ -374,13 +379,6 @@
  "hourly": {
   "issued_utc": "2026-11-06T15:13:18Z",
   "hours": [
-   {
-    "start": "2026-11-06T14:00:00-05:00",
-    "temp_f": 67,
-    "temp_c": 19.44,
-    "precip_chance_pct": 100,
-    "short_forecast": "Rain"
-   },
    {
     "start": "2026-11-06T15:00:00-05:00",
     "temp_f": 67,
@@ -708,6 +706,13 @@
     "temp_f": 57,
     "temp_c": 13.89,
     "precip_chance_pct": 4,
+    "short_forecast": "Mostly Sunny"
+   },
+   {
+    "start": "2026-11-08T14:00:00-05:00",
+    "temp_f": 57,
+    "temp_c": 13.89,
+    "precip_chance_pct": 2,
     "short_forecast": "Mostly Sunny"
    }
   ]
