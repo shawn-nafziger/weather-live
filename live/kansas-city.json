@@ -11,7 +11,7 @@
   "lon": -94.7306,
   "history": "Same site as the official Kansas City record"
  },
- "as_of_utc": "2026-11-07T00:07:53Z",
+ "as_of_utc": "2026-11-07T01:07:50Z",
  "now": {
   "time_utc": "2026-11-06T22:53:00Z",
   "temp_c": 7.2,
@@ -82,28 +82,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-06",
-    "high_f": 48,
-    "would_rank": {
-     "value_f": 48,
-     "warm_rank": 111,
-     "cool_rank": 25,
-     "years": 138,
-     "first_year": 1888,
-     "tied_years": [
-      1896,
-      1929,
-      1960
-     ],
-     "standing": "cool",
-     "notable": true,
-     "since": 2017,
-     "record": false,
-     "phrase": "25th coolest November 6 high (tied) of 138 since 1888, coolest since 2017"
-    }
-   },
    {
     "period": "Saturday",
     "date": "2026-11-07",
@@ -242,6 +220,27 @@
      "record": false,
      "phrase": "typical for November 12"
     }
+   },
+   {
+    "period": "Friday",
+    "date": "2026-11-13",
+    "high_f": 63,
+    "would_rank": {
+     "value_f": 63,
+     "warm_rank": 41,
+     "cool_rank": 97,
+     "years": 139,
+     "first_year": 1888,
+     "tied_years": [
+      1923,
+      1978
+     ],
+     "standing": "warm",
+     "notable": false,
+     "since": 2025,
+     "record": false,
+     "phrase": "typical for November 13"
+    }
    }
   ]
  },
@@ -250,21 +249,12 @@
   "grid": "EAX/38,60",
   "periods": [
    {
-    "name": "This Afternoon",
-    "start": "2026-11-06T17:00:00-06:00",
-    "is_daytime": true,
-    "temp_f": 48,
-    "temp_c": 8.89,
-    "precip_chance_pct": 0,
-    "short_forecast": "Cloudy"
-   },
-   {
     "name": "Tonight",
-    "start": "2026-11-06T18:00:00-06:00",
+    "start": "2026-11-06T19:00:00-06:00",
     "is_daytime": false,
     "temp_f": 35,
     "temp_c": 1.67,
-    "precip_chance_pct": 1,
+    "precip_chance_pct": 0,
     "short_forecast": "Mostly Cloudy then Patchy Frost"
    },
    {
@@ -374,19 +364,21 @@
     "temp_c": 4.44,
     "precip_chance_pct": 2,
     "short_forecast": "Mostly Clear"
+   },
+   {
+    "name": "Friday",
+    "start": "2026-11-13T06:00:00-06:00",
+    "is_daytime": true,
+    "temp_f": 63,
+    "temp_c": 17.22,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-06T23:11:28Z",
   "hours": [
-   {
-    "start": "2026-11-06T18:00:00-06:00",
-    "temp_f": 44,
-    "temp_c": 6.67,
-    "precip_chance_pct": 1,
-    "short_forecast": "Cloudy"
-   },
    {
     "start": "2026-11-06T19:00:00-06:00",
     "temp_f": 42,
@@ -715,6 +707,13 @@
     "temp_c": 15.56,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
+   },
+   {
+    "start": "2026-11-08T18:00:00-06:00",
+    "temp_f": 57,
+    "temp_c": 13.89,
+    "precip_chance_pct": 0,
+    "short_forecast": "Clear"
    }
   ]
  },

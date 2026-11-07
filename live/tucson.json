@@ -11,16 +11,16 @@
   "lon": -110.9564,
   "history": "Same site as the official Tucson record"
  },
- "as_of_utc": "2026-11-07T00:07:53Z",
+ "as_of_utc": "2026-11-07T01:07:50Z",
  "now": {
-  "time_utc": "2026-11-06T23:45:00Z",
-  "temp_c": 22,
-  "temp_f": 71.6,
+  "time_utc": "2026-11-07T00:55:00Z",
+  "temp_c": 20,
+  "temp_f": 68.0,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 9,
-  "humidity_pct": 43.45,
-  "wind_kmh": 24.08,
-  "description": "Mostly Cloudy"
+  "humidity_pct": 49.13,
+  "wind_kmh": 11.12,
+  "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-06",
@@ -92,29 +92,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-06",
-    "high_f": 73,
-    "would_rank": {
-     "value_f": 73,
-     "warm_rank": 104,
-     "cool_rank": 25,
-     "years": 132,
-     "first_year": 1894,
-     "tied_years": [
-      1920,
-      1968,
-      1987,
-      1992
-     ],
-     "standing": "cool",
-     "notable": true,
-     "since": 2024,
-     "record": false,
-     "phrase": "25th coolest November 6 high (tied) of 132 since 1894, coolest since 2024"
-    }
-   },
    {
     "period": "Saturday",
     "date": "2026-11-07",
@@ -263,6 +240,30 @@
      "record": false,
      "phrase": "typical for November 12"
     }
+   },
+   {
+    "period": "Friday",
+    "date": "2026-11-13",
+    "high_f": 78,
+    "would_rank": {
+     "value_f": 78,
+     "warm_rank": 51,
+     "cool_rank": 77,
+     "years": 132,
+     "first_year": 1894,
+     "tied_years": [
+      1919,
+      1936,
+      1946,
+      1948,
+      2019
+     ],
+     "standing": "warm",
+     "notable": false,
+     "since": 2025,
+     "record": false,
+     "phrase": "typical for November 13"
+    }
    }
   ]
  },
@@ -270,15 +271,6 @@
   "issued_utc": "2026-11-06T18:33:02Z",
   "grid": "TWC/91,45",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-06T14:00:00-07:00",
-    "is_daytime": true,
-    "temp_f": 73,
-    "temp_c": 22.78,
-    "precip_chance_pct": 13,
-    "short_forecast": "Slight Chance Showers And Thunderstorms"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-06T18:00:00-07:00",
@@ -395,19 +387,21 @@
     "temp_c": 12.78,
     "precip_chance_pct": 3,
     "short_forecast": "Mostly Clear"
+   },
+   {
+    "name": "Friday",
+    "start": "2026-11-13T06:00:00-07:00",
+    "is_daytime": true,
+    "temp_f": 78,
+    "temp_c": 25.56,
+    "precip_chance_pct": 13,
+    "short_forecast": "Sunny"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-06T18:33:02Z",
   "hours": [
-   {
-    "start": "2026-11-06T17:00:00-07:00",
-    "temp_f": 71,
-    "temp_c": 21.67,
-    "precip_chance_pct": 6,
-    "short_forecast": "Sunny"
-   },
    {
     "start": "2026-11-06T18:00:00-07:00",
     "temp_f": 68,
@@ -734,6 +728,13 @@
     "start": "2026-11-08T16:00:00-07:00",
     "temp_f": 75,
     "temp_c": 23.89,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
+   },
+   {
+    "start": "2026-11-08T17:00:00-07:00",
+    "temp_f": 73,
+    "temp_c": 22.78,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
    }

@@ -11,14 +11,14 @@
   "lon": -86.6892,
   "history": "Same site as the official Nashville record"
  },
- "as_of_utc": "2026-11-07T00:07:53Z",
+ "as_of_utc": "2026-11-07T01:07:50Z",
  "now": {
-  "time_utc": "2026-11-06T23:45:00Z",
-  "temp_c": 13,
-  "temp_f": 55.4,
+  "time_utc": "2026-11-07T00:55:00Z",
+  "temp_c": 12,
+  "temp_f": 53.6,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 6,
-  "humidity_pct": 62.48,
+  "dewpoint_c": 7,
+  "humidity_pct": 71.47,
   "wind_kmh": 14.83,
   "description": "Cloudy"
  },
@@ -92,31 +92,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-06",
-    "high_f": 63,
-    "would_rank": {
-     "value_f": 63,
-     "warm_rank": 75,
-     "cool_rank": 73,
-     "years": 153,
-     "first_year": 1874,
-     "tied_years": [
-      1876,
-      1879,
-      1896,
-      1936,
-      2000,
-      2021
-     ],
-     "standing": "cool",
-     "notable": false,
-     "since": 2021,
-     "record": false,
-     "phrase": "typical for November 6"
-    }
-   },
    {
     "period": "Saturday",
     "date": "2026-11-07",
@@ -265,6 +240,27 @@
      "record": false,
      "phrase": "typical for November 12"
     }
+   },
+   {
+    "period": "Friday",
+    "date": "2026-11-13",
+    "high_f": 59,
+    "would_rank": {
+     "value_f": 59,
+     "warm_rank": 91,
+     "cool_rank": 61,
+     "years": 153,
+     "first_year": 1874,
+     "tied_years": [
+      1894,
+      2002
+     ],
+     "standing": "cool",
+     "notable": false,
+     "since": 2022,
+     "record": false,
+     "phrase": "typical for November 13"
+    }
    }
   ]
  },
@@ -272,15 +268,6 @@
   "issued_utc": "2026-11-06T23:06:37Z",
   "grid": "OHX/54,55",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-06T17:00:00-06:00",
-    "is_daytime": true,
-    "temp_f": 63,
-    "temp_c": 17.22,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-06T18:00:00-06:00",
@@ -397,19 +384,21 @@
     "temp_c": 2.22,
     "precip_chance_pct": 5,
     "short_forecast": "Partly Cloudy"
+   },
+   {
+    "name": "Friday",
+    "start": "2026-11-13T06:00:00-06:00",
+    "is_daytime": true,
+    "temp_f": 59,
+    "temp_c": 15.0,
+    "precip_chance_pct": 1,
+    "short_forecast": "Sunny"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-06T23:06:37Z",
   "hours": [
-   {
-    "start": "2026-11-06T18:00:00-06:00",
-    "temp_f": 56,
-    "temp_c": 13.33,
-    "precip_chance_pct": 0,
-    "short_forecast": "Cloudy"
-   },
    {
     "start": "2026-11-06T19:00:00-06:00",
     "temp_f": 54,
@@ -738,6 +727,13 @@
     "temp_c": 13.33,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
+   },
+   {
+    "start": "2026-11-08T18:00:00-06:00",
+    "temp_f": 53,
+    "temp_c": 11.67,
+    "precip_chance_pct": 0,
+    "short_forecast": "Clear"
    }
   ]
  },
