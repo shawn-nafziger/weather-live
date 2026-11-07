@@ -11,34 +11,23 @@
   "lon": -81.6937,
   "history": "Same site as the official Jacksonville record"
  },
- "as_of_utc": "2026-11-07T04:07:54Z",
+ "as_of_utc": "2026-11-07T05:07:51Z",
  "now": {
-  "time_utc": "2026-11-07T02:56:00Z",
+  "time_utc": "2026-11-07T03:56:00Z",
   "temp_c": 20.6,
   "temp_f": 69.1,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 19.4,
   "humidity_pct": 92.84,
-  "wind_kmh": 0,
+  "wind_kmh": 7.56,
   "description": ""
  },
  "today_so_far": {
-  "date_local": "2026-11-06",
-  "readings": 14,
-  "basis": "hourly reports (tenths of a degree)",
-  "approximate": false,
-  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 28.3,
-  "high_f": 82.9,
-  "high_time_utc": "2026-11-06T17:56:00Z",
-  "low_c": 20,
-  "low_f": 68.0,
-  "low_time_utc": "2026-11-06T07:56:00Z",
-  "peak_between_reports": {
-   "at_least_f": 85.1,
-   "about_f": 86.0,
-   "time_utc": "2026-11-06T19:00:00Z"
-  }
+  "date_local": "2026-11-07",
+  "readings": 0,
+  "basis": "5-minute readings (whole \u00b0C, approximate)",
+  "approximate": true,
+  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two."
  },
  "record": {
   "series": "Jacksonville area (ThreadEx; airport)",
@@ -47,7 +36,7 @@
   "rank_today": true,
   "latest_final": {
    "date": "2026-11-05",
-   "is_yesterday": true,
+   "is_yesterday": false,
    "high_f": 86,
    "low_f": 68,
    "high_rank": {
@@ -84,21 +73,6 @@
     "record": false,
     "phrase": "7th warmest November 5 low (tied) of 156 since 1871, warmest since 2015"
    }
-  },
-  "today_high_so_far": {
-   "value_f": 83,
-   "warm_rank": 12,
-   "cool_rank": 144,
-   "years": 156,
-   "first_year": 1871,
-   "tied_years": [
-    1994
-   ],
-   "standing": "warm",
-   "notable": true,
-   "since": 2024,
-   "record": false,
-   "phrase": "already the 12th warmest November 6 high (tied) of 156 since 1871, warmest since 2024"
   },
   "forecast_highs": [
    {
@@ -437,13 +411,6 @@
   "issued_utc": "2026-11-07T01:51:29Z",
   "hours": [
    {
-    "start": "2026-11-06T23:00:00-05:00",
-    "temp_f": 69,
-    "temp_c": 20.56,
-    "precip_chance_pct": 2,
-    "short_forecast": "Mostly Cloudy"
-   },
-   {
     "start": "2026-11-07T00:00:00-05:00",
     "temp_f": 68,
     "temp_c": 20.0,
@@ -769,6 +736,13 @@
     "start": "2026-11-08T22:00:00-05:00",
     "temp_f": 60,
     "temp_c": 15.56,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Clear"
+   },
+   {
+    "start": "2026-11-08T23:00:00-05:00",
+    "temp_f": 59,
+    "temp_c": 15.0,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear"
    }

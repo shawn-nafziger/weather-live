@@ -11,39 +11,23 @@
   "lon": -72.6825,
   "history": "Same site as the official Hartford record"
  },
- "as_of_utc": "2026-11-07T04:07:54Z",
+ "as_of_utc": "2026-11-07T05:07:51Z",
  "now": {
-  "time_utc": "2026-11-07T03:55:00Z",
+  "time_utc": "2026-11-07T04:40:00Z",
   "temp_c": 15,
   "temp_f": 59.0,
-  "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 14,
-  "humidity_pct": 93.75,
-  "wind_kmh": 7.42,
+  "precision": "tenths of a degree",
+  "dewpoint_c": 15,
+  "humidity_pct": 100,
+  "wind_kmh": 5.4,
   "description": "Fog/Mist"
  },
  "today_so_far": {
-  "date_local": "2026-11-06",
-  "readings": 29,
-  "basis": "hourly reports (tenths of a degree)",
-  "approximate": false,
-  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 18.3,
-  "high_f": 64.9,
-  "high_time_utc": "2026-11-06T05:51:00Z",
-  "low_c": 15,
-  "low_f": 59.0,
-  "low_time_utc": "2026-11-07T01:51:00Z",
-  "peak_between_reports": {
-   "at_least_f": 65.3,
-   "about_f": 66.2,
-   "time_utc": "2026-11-06T11:05:00Z"
-  },
-  "dip_between_reports": {
-   "at_most_f": 58.1,
-   "about_f": 57.2,
-   "time_utc": "2026-11-07T03:50:00Z"
-  }
+  "date_local": "2026-11-07",
+  "readings": 0,
+  "basis": "5-minute readings (whole \u00b0C, approximate)",
+  "approximate": true,
+  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two."
  },
  "record": {
   "series": "Hartford area (ThreadEx; Bradley airport)",
@@ -52,7 +36,7 @@
   "rank_today": true,
   "latest_final": {
    "date": "2026-11-05",
-   "is_yesterday": true,
+   "is_yesterday": false,
    "high_f": 70,
    "low_f": 56,
    "high_rank": {
@@ -83,23 +67,6 @@
     "record": false,
     "phrase": "4th warmest November 5 low of 122 since 1905, warmest since 1961"
    }
-  },
-  "today_high_so_far": {
-   "value_f": 65,
-   "warm_rank": 14,
-   "cool_rank": 106,
-   "years": 122,
-   "first_year": 1905,
-   "tied_years": [
-    1912,
-    1958,
-    1994
-   ],
-   "standing": "warm",
-   "notable": true,
-   "since": 2024,
-   "record": false,
-   "phrase": "already the 14th warmest November 6 high (tied) of 122 since 1905, warmest since 2024"
   },
   "forecast_highs": [
    {
@@ -266,12 +233,12 @@
   "grid": "BOX/20,72",
   "periods": [
    {
-    "name": "Tonight",
-    "start": "2026-11-06T23:00:00-05:00",
+    "name": "Overnight",
+    "start": "2026-11-07T00:00:00-05:00",
     "is_daytime": false,
     "temp_f": 53,
     "temp_c": 11.67,
-    "precip_chance_pct": 31,
+    "precip_chance_pct": 26,
     "short_forecast": "Chance Light Rain"
    },
    {
@@ -396,13 +363,6 @@
  "hourly": {
   "issued_utc": "2026-11-07T03:13:39Z",
   "hours": [
-   {
-    "start": "2026-11-06T23:00:00-05:00",
-    "temp_f": 60,
-    "temp_c": 15.56,
-    "precip_chance_pct": 31,
-    "short_forecast": "Chance Light Rain"
-   },
    {
     "start": "2026-11-07T00:00:00-05:00",
     "temp_f": 59,
@@ -729,6 +689,13 @@
     "start": "2026-11-08T22:00:00-05:00",
     "temp_f": 45,
     "temp_c": 7.22,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Clear"
+   },
+   {
+    "start": "2026-11-08T23:00:00-05:00",
+    "temp_f": 44,
+    "temp_c": 6.67,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear"
    }
