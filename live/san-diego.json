@@ -11,20 +11,20 @@
   "lon": -117.1831,
   "history": "Same site as the official San Diego record"
  },
- "as_of_utc": "2026-11-07T02:07:53Z",
+ "as_of_utc": "2026-11-07T02:57:19Z",
  "now": {
-  "time_utc": "2026-11-07T01:30:00Z",
-  "temp_c": 23,
-  "temp_f": 73.4,
-  "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 17,
-  "humidity_pct": 68.97,
-  "wind_kmh": 11.12,
-  "description": "Clear"
+  "time_utc": "2026-11-07T01:51:00Z",
+  "temp_c": 22.8,
+  "temp_f": 73.0,
+  "precision": "tenths of a degree",
+  "dewpoint_c": 16.7,
+  "humidity_pct": 68.49,
+  "wind_kmh": 12.96,
+  "description": "Mostly Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-06",
-  "readings": 11,
+  "readings": 12,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -107,26 +107,6 @@
    "phrase": "already the 14th warmest November 6 high (tied) of 153 since 1874, warmest since 2024"
   },
   "forecast_highs": [
-   {
-    "period": "Today",
-    "date": "2026-11-06",
-    "high_f": 81,
-    "would_rank": {
-     "value_f": 81,
-     "warm_rank": 10,
-     "cool_rank": 143,
-     "years": 153,
-     "first_year": 1874,
-     "tied_years": [
-      1941
-     ],
-     "standing": "warm",
-     "notable": true,
-     "since": 2014,
-     "record": false,
-     "phrase": "10th warmest November 6 high (tied) of 153 since 1874, warmest since 2014"
-    }
-   },
    {
     "period": "Saturday",
     "date": "2026-11-07",
@@ -249,6 +229,29 @@
      "record": false,
      "phrase": "8th warmest November 12 high (tied) of 153 since 1874, warmest since 2021"
     }
+   },
+   {
+    "period": "Friday",
+    "date": "2026-11-13",
+    "high_f": 78,
+    "would_rank": {
+     "value_f": 78,
+     "warm_rank": 17,
+     "cool_rank": 133,
+     "years": 153,
+     "first_year": 1874,
+     "tied_years": [
+      1893,
+      1979,
+      2024,
+      2025
+     ],
+     "standing": "warm",
+     "notable": true,
+     "since": 2025,
+     "record": false,
+     "phrase": "17th warmest November 13 high (tied) of 153 since 1874, warmest since 2025"
+    }
    }
   ]
  },
@@ -256,15 +259,6 @@
   "issued_utc": "2026-11-06T18:29:59Z",
   "grid": "SGX/56,15",
   "periods": [
-   {
-    "name": "Today",
-    "start": "2026-11-06T10:00:00-08:00",
-    "is_daytime": true,
-    "temp_f": 81,
-    "temp_c": 27.22,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-06T18:00:00-08:00",
@@ -381,6 +375,15 @@
     "temp_c": 17.22,
     "precip_chance_pct": 15,
     "short_forecast": "Partly Cloudy then Slight Chance Rain Showers"
+   },
+   {
+    "name": "Friday",
+    "start": "2026-11-13T06:00:00-08:00",
+    "is_daytime": true,
+    "temp_f": 78,
+    "temp_c": 25.56,
+    "precip_chance_pct": 24,
+    "short_forecast": "Slight Chance Rain Showers"
    }
   ]
  },

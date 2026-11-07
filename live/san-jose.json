@@ -11,20 +11,20 @@
   "lon": -121.9242,
   "history": "Same site as the official San Jose record"
  },
- "as_of_utc": "2026-11-07T02:07:53Z",
+ "as_of_utc": "2026-11-07T02:57:19Z",
  "now": {
-  "time_utc": "2026-11-07T01:30:00Z",
-  "temp_c": 19,
-  "temp_f": 66.2,
-  "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 11,
-  "humidity_pct": 59.76,
-  "wind_kmh": 14.83,
-  "description": "Clear"
+  "time_utc": "2026-11-07T01:53:00Z",
+  "temp_c": 18.3,
+  "temp_f": 64.9,
+  "precision": "tenths of a degree",
+  "dewpoint_c": 11.7,
+  "humidity_pct": 65.4,
+  "wind_kmh": 14.76,
+  "description": "Mostly Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-06",
-  "readings": 13,
+  "readings": 14,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -93,27 +93,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-06",
-    "high_f": 73,
-    "would_rank": {
-     "value_f": 73,
-     "warm_rank": 31,
-     "cool_rank": 95,
-     "years": 127,
-     "first_year": 1893,
-     "tied_years": [
-      1962,
-      1967
-     ],
-     "standing": "warm",
-     "notable": false,
-     "since": 2024,
-     "record": false,
-     "phrase": "typical for November 6"
-    }
-   },
    {
     "period": "Saturday",
     "date": "2026-11-07",
@@ -249,6 +228,30 @@
      "record": false,
      "phrase": "19th warmest November 12 high (tied) of 127 since 1893, warmest since 2023"
     }
+   },
+   {
+    "period": "Friday",
+    "date": "2026-11-13",
+    "high_f": 70,
+    "would_rank": {
+     "value_f": 70,
+     "warm_rank": 24,
+     "cool_rank": 99,
+     "years": 127,
+     "first_year": 1893,
+     "tied_years": [
+      1894,
+      1904,
+      1908,
+      1932,
+      1986
+     ],
+     "standing": "warm",
+     "notable": true,
+     "since": 2023,
+     "record": false,
+     "phrase": "24th warmest November 13 high (tied) of 127 since 1893, warmest since 2023"
+    }
    }
   ]
  },
@@ -256,15 +259,6 @@
   "issued_utc": "2026-11-06T20:26:24Z",
   "grid": "MTR/98,83",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-06T12:00:00-08:00",
-    "is_daytime": true,
-    "temp_f": 73,
-    "temp_c": 22.78,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-06T18:00:00-08:00",
@@ -381,6 +375,15 @@
     "temp_c": 10.56,
     "precip_chance_pct": 18,
     "short_forecast": "Mostly Cloudy then Slight Chance Light Rain"
+   },
+   {
+    "name": "Friday",
+    "start": "2026-11-13T06:00:00-08:00",
+    "is_daytime": true,
+    "temp_f": 70,
+    "temp_c": 21.11,
+    "precip_chance_pct": 42,
+    "short_forecast": "Chance Light Rain"
    }
   ]
  },
