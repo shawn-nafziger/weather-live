@@ -11,29 +11,29 @@
   "lon": -111.965,
   "history": "Same site as the official Salt Lake City record"
  },
- "as_of_utc": "2026-11-07T13:07:53Z",
+ "as_of_utc": "2026-11-07T14:07:56Z",
  "now": {
-  "time_utc": "2026-11-07T12:55:00Z",
+  "time_utc": "2026-11-07T13:50:00Z",
   "temp_c": 3,
   "temp_f": 37.4,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 1,
-  "humidity_pct": 86.7,
-  "wind_kmh": 12.96,
-  "description": "Clear"
+  "dewpoint_c": 0,
+  "humidity_pct": 80.66,
+  "wind_kmh": 11.12,
+  "description": ""
  },
  "today_so_far": {
   "date_local": "2026-11-07",
-  "readings": 4,
+  "readings": 5,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
   "high_c": 4.4,
   "high_f": 39.9,
   "high_time_utc": "2026-11-07T07:54:00Z",
-  "low_c": 3.3,
-  "low_f": 37.9,
-  "low_time_utc": "2026-11-07T10:54:00Z",
+  "low_c": 2.8,
+  "low_f": 37.0,
+  "low_time_utc": "2026-11-07T12:54:00Z",
   "peak_between_reports": {
    "at_least_f": 40.1,
    "about_f": 41.0,
@@ -93,7 +93,7 @@
   },
   "forecast_highs": [
    {
-    "period": "Saturday",
+    "period": "Today",
     "date": "2026-11-07",
     "high_f": 55,
     "would_rank": {
@@ -273,17 +273,8 @@
   "grid": "SLC/98,176",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-07T03:00:00-07:00",
-    "is_daytime": false,
-    "temp_f": 37,
-    "temp_c": 2.78,
-    "precip_chance_pct": 0,
-    "short_forecast": "Partly Cloudy"
-   },
-   {
-    "name": "Saturday",
-    "start": "2026-11-07T06:00:00-07:00",
+    "name": "Today",
+    "start": "2026-11-07T07:00:00-07:00",
     "is_daytime": true,
     "temp_f": 55,
     "temp_c": 12.78,
@@ -291,7 +282,7 @@
     "short_forecast": "Mostly Sunny"
    },
    {
-    "name": "Saturday Night",
+    "name": "Tonight",
     "start": "2026-11-07T18:00:00-07:00",
     "is_daytime": false,
     "temp_f": 38,
@@ -397,19 +388,21 @@
     "temp_c": 15.56,
     "precip_chance_pct": 3,
     "short_forecast": "Mostly Sunny"
+   },
+   {
+    "name": "Friday Night",
+    "start": "2026-11-13T18:00:00-07:00",
+    "is_daytime": false,
+    "temp_f": 44,
+    "temp_c": 6.67,
+    "precip_chance_pct": 21,
+    "short_forecast": "Partly Cloudy then Slight Chance Light Rain"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-07T06:31:24Z",
   "hours": [
-   {
-    "start": "2026-11-07T06:00:00-07:00",
-    "temp_f": 37,
-    "temp_c": 2.78,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Sunny"
-   },
    {
     "start": "2026-11-07T07:00:00-07:00",
     "temp_f": 38,
@@ -738,6 +731,13 @@
     "temp_c": 5.0,
     "precip_chance_pct": 0,
     "short_forecast": "Partly Cloudy"
+   },
+   {
+    "start": "2026-11-09T06:00:00-07:00",
+    "temp_f": 41,
+    "temp_c": 5.0,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Sunny"
    }
   ]
  },
