@@ -11,34 +11,23 @@
   "lon": -86.6892,
   "history": "Same site as the official Nashville record"
  },
- "as_of_utc": "2026-11-07T05:07:51Z",
+ "as_of_utc": "2026-11-07T06:07:53Z",
  "now": {
-  "time_utc": "2026-11-07T03:53:00Z",
-  "temp_c": 10,
-  "temp_f": 50.0,
-  "precision": "tenths of a degree",
-  "dewpoint_c": 2.8,
-  "humidity_pct": 60.91,
-  "wind_kmh": 18.36,
+  "time_utc": "2026-11-07T05:50:00Z",
+  "temp_c": 8,
+  "temp_f": 46.4,
+  "precision": "nearest whole \u00b0C",
+  "dewpoint_c": 1,
+  "humidity_pct": 61.3,
+  "wind_kmh": 20.38,
   "description": "Cloudy"
  },
  "today_so_far": {
-  "date_local": "2026-11-06",
-  "readings": 17,
-  "basis": "hourly reports (tenths of a degree)",
-  "approximate": false,
-  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 13.9,
-  "high_f": 57.0,
-  "high_time_utc": "2026-11-06T19:53:00Z",
-  "low_c": 10,
-  "low_f": 50.0,
-  "low_time_utc": "2026-11-07T03:53:00Z",
-  "dip_between_reports": {
-   "at_most_f": 49.1,
-   "about_f": 48.2,
-   "time_utc": "2026-11-06T11:40:00Z"
-  }
+  "date_local": "2026-11-07",
+  "readings": 0,
+  "basis": "5-minute readings (whole \u00b0C, approximate)",
+  "approximate": true,
+  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two."
  },
  "record": {
   "series": "Nashville area (ThreadEx; airport)",
@@ -47,7 +36,7 @@
   "rank_today": true,
   "latest_final": {
    "date": "2026-11-05",
-   "is_yesterday": true,
+   "is_yesterday": false,
    "high_f": 74,
    "low_f": 48,
    "high_rank": {
@@ -189,19 +178,20 @@
    {
     "period": "Veterans Day",
     "date": "2026-11-11",
-    "high_f": 69,
+    "high_f": 70,
     "would_rank": {
-     "value_f": 69,
-     "warm_rank": 39,
-     "cool_rank": 110,
+     "value_f": 70,
+     "warm_rank": 33,
+     "cool_rank": 115,
      "years": 153,
      "first_year": 1874,
      "tied_years": [
-      1893,
-      1896,
-      1954,
-      1958,
-      1962
+      1885,
+      1922,
+      1924,
+      1971,
+      2013,
+      2020
      ],
      "standing": "warm",
      "notable": false,
@@ -241,16 +231,18 @@
    {
     "period": "Friday",
     "date": "2026-11-13",
-    "high_f": 59,
+    "high_f": 55,
     "would_rank": {
-     "value_f": 59,
-     "warm_rank": 91,
-     "cool_rank": 61,
+     "value_f": 55,
+     "warm_rank": 103,
+     "cool_rank": 47,
      "years": 153,
      "first_year": 1874,
      "tied_years": [
-      1894,
-      2002
+      1898,
+      1970,
+      1992,
+      2000
      ],
      "standing": "cool",
      "notable": false,
@@ -262,12 +254,12 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-07T03:46:37Z",
+  "issued_utc": "2026-11-07T04:26:14Z",
   "grid": "OHX/54,55",
   "periods": [
    {
     "name": "Tonight",
-    "start": "2026-11-06T22:00:00-06:00",
+    "start": "2026-11-06T23:00:00-06:00",
     "is_daytime": false,
     "temp_f": 40,
     "temp_c": 4.44,
@@ -341,28 +333,28 @@
     "name": "Tuesday Night",
     "start": "2026-11-10T18:00:00-06:00",
     "is_daytime": false,
-    "temp_f": 42,
-    "temp_c": 5.56,
-    "precip_chance_pct": 2,
-    "short_forecast": "Mostly Clear"
+    "temp_f": 43,
+    "temp_c": 6.11,
+    "precip_chance_pct": 0,
+    "short_forecast": "Partly Cloudy"
    },
    {
     "name": "Veterans Day",
     "start": "2026-11-11T06:00:00-06:00",
     "is_daytime": true,
-    "temp_f": 69,
-    "temp_c": 20.56,
-    "precip_chance_pct": 3,
-    "short_forecast": "Sunny"
+    "temp_f": 70,
+    "temp_c": 21.11,
+    "precip_chance_pct": 9,
+    "short_forecast": "Mostly Sunny"
    },
    {
     "name": "Wednesday Night",
     "start": "2026-11-11T18:00:00-06:00",
     "is_daytime": false,
-    "temp_f": 41,
-    "temp_c": 5.0,
-    "precip_chance_pct": 14,
-    "short_forecast": "Mostly Cloudy"
+    "temp_f": 45,
+    "temp_c": 7.22,
+    "precip_chance_pct": 27,
+    "short_forecast": "Chance Rain Showers"
    },
    {
     "name": "Thursday",
@@ -370,39 +362,32 @@
     "is_daytime": true,
     "temp_f": 62,
     "temp_c": 16.67,
-    "precip_chance_pct": 9,
+    "precip_chance_pct": 13,
     "short_forecast": "Mostly Sunny"
    },
    {
     "name": "Thursday Night",
     "start": "2026-11-12T18:00:00-06:00",
     "is_daytime": false,
-    "temp_f": 36,
-    "temp_c": 2.22,
-    "precip_chance_pct": 5,
+    "temp_f": 37,
+    "temp_c": 2.78,
+    "precip_chance_pct": 9,
     "short_forecast": "Partly Cloudy"
    },
    {
     "name": "Friday",
     "start": "2026-11-13T06:00:00-06:00",
     "is_daytime": true,
-    "temp_f": 59,
-    "temp_c": 15.0,
-    "precip_chance_pct": 1,
-    "short_forecast": "Sunny"
+    "temp_f": 55,
+    "temp_c": 12.78,
+    "precip_chance_pct": 5,
+    "short_forecast": "Mostly Sunny"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-07T04:26:14Z",
   "hours": [
-   {
-    "start": "2026-11-06T23:00:00-06:00",
-    "temp_f": 49,
-    "temp_c": 9.44,
-    "precip_chance_pct": 0,
-    "short_forecast": "Cloudy"
-   },
    {
     "start": "2026-11-07T00:00:00-06:00",
     "temp_f": 48,
@@ -729,6 +714,13 @@
     "start": "2026-11-08T22:00:00-06:00",
     "temp_f": 44,
     "temp_c": 6.67,
+    "precip_chance_pct": 0,
+    "short_forecast": "Clear"
+   },
+   {
+    "start": "2026-11-08T23:00:00-06:00",
+    "temp_f": 42,
+    "temp_c": 5.56,
     "precip_chance_pct": 0,
     "short_forecast": "Clear"
    }
