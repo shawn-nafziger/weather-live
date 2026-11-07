@@ -11,29 +11,29 @@
   "lon": -72.6825,
   "history": "Same site as the official Hartford record"
  },
- "as_of_utc": "2026-11-07T22:07:51Z",
+ "as_of_utc": "2026-11-07T23:07:54Z",
  "now": {
-  "time_utc": "2026-11-07T21:24:00Z",
-  "temp_c": 12.2,
-  "temp_f": 54.0,
+  "time_utc": "2026-11-07T22:07:00Z",
+  "temp_c": 10.6,
+  "temp_f": 51.1,
   "precision": "tenths of a degree",
-  "dewpoint_c": 7.8,
-  "humidity_pct": 74.5,
-  "wind_kmh": null,
+  "dewpoint_c": 6.7,
+  "humidity_pct": 76.82,
+  "wind_kmh": 22.32,
   "description": "Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-07",
-  "readings": 24,
+  "readings": 26,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
   "high_c": 17.8,
   "high_f": 64.0,
   "high_time_utc": "2026-11-07T17:51:00Z",
-  "low_c": 12.2,
-  "low_f": 54.0,
-  "low_time_utc": "2026-11-07T21:24:00Z"
+  "low_c": 10.6,
+  "low_f": 51.1,
+  "low_time_utc": "2026-11-07T22:07:00Z"
  },
  "record": {
   "series": "Hartford area (ThreadEx; Bradley airport)",
@@ -100,30 +100,6 @@
    "phrase": "already the 16th warmest November 7 high (tied) of 122 since 1905, warmest since 2024"
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-07",
-    "high_f": 63,
-    "would_rank": {
-     "value_f": 63,
-     "warm_rank": 20,
-     "cool_rank": 98,
-     "years": 122,
-     "first_year": 1905,
-     "tied_years": [
-      1911,
-      1941,
-      1946,
-      1951,
-      2008
-     ],
-     "standing": "warm",
-     "notable": true,
-     "since": 2024,
-     "record": false,
-     "phrase": "20th warmest November 7 high (tied) of 122 since 1905, warmest since 2024"
-    }
-   },
    {
     "period": "Sunday",
     "date": "2026-11-08",
@@ -255,22 +231,36 @@
      "record": false,
      "phrase": "typical for November 13"
     }
+   },
+   {
+    "period": "Saturday",
+    "date": "2026-11-14",
+    "high_f": 49,
+    "would_rank": {
+     "value_f": 49,
+     "warm_rank": 68,
+     "cool_rank": 51,
+     "years": 122,
+     "first_year": 1905,
+     "tied_years": [
+      1918,
+      1935,
+      2000,
+      2023
+     ],
+     "standing": "cool",
+     "notable": false,
+     "since": 2023,
+     "record": false,
+     "phrase": "typical for November 14"
+    }
    }
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-07T21:15:26Z",
+  "issued_utc": "2026-11-07T22:28:54Z",
   "grid": "BOX/20,72",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-07T17:00:00-05:00",
-    "is_daytime": true,
-    "temp_f": 63,
-    "temp_c": 17.22,
-    "precip_chance_pct": 43,
-    "short_forecast": "Chance Light Rain"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-07T18:00:00-05:00",
@@ -387,19 +377,21 @@
     "temp_c": -3.33,
     "precip_chance_pct": 34,
     "short_forecast": "Chance Rain And Snow"
+   },
+   {
+    "name": "Saturday",
+    "start": "2026-11-14T06:00:00-05:00",
+    "is_daytime": true,
+    "temp_f": 49,
+    "temp_c": 9.44,
+    "precip_chance_pct": 26,
+    "short_forecast": "Chance Rain And Snow"
    }
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-07T21:15:26Z",
+  "issued_utc": "2026-11-07T22:28:54Z",
   "hours": [
-   {
-    "start": "2026-11-07T17:00:00-05:00",
-    "temp_f": 55,
-    "temp_c": 12.78,
-    "precip_chance_pct": 43,
-    "short_forecast": "Chance Light Rain"
-   },
    {
     "start": "2026-11-07T18:00:00-05:00",
     "temp_f": 52,
@@ -728,6 +720,13 @@
     "temp_c": 12.78,
     "precip_chance_pct": 1,
     "short_forecast": "Mostly Sunny"
+   },
+   {
+    "start": "2026-11-09T17:00:00-05:00",
+    "temp_f": 52,
+    "temp_c": 11.11,
+    "precip_chance_pct": 1,
+    "short_forecast": "Sunny"
    }
   ]
  },

@@ -11,20 +11,20 @@
   "lon": -77.3233,
   "history": "Same site as the official Richmond record"
  },
- "as_of_utc": "2026-11-07T22:07:51Z",
+ "as_of_utc": "2026-11-07T23:07:54Z",
  "now": {
-  "time_utc": "2026-11-07T21:20:00Z",
-  "temp_c": 16,
-  "temp_f": 60.8,
-  "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 2,
-  "humidity_pct": 38.88,
-  "wind_kmh": 16.67,
+  "time_utc": "2026-11-07T21:54:00Z",
+  "temp_c": 15.6,
+  "temp_f": 60.1,
+  "precision": "tenths of a degree",
+  "dewpoint_c": 2.2,
+  "humidity_pct": 40.46,
+  "wind_kmh": 9.36,
   "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-07",
-  "readings": 19,
+  "readings": 20,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -86,31 +86,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-07",
-    "high_f": 61,
-    "would_rank": {
-     "value_f": 61,
-     "warm_rank": 68,
-     "cool_rank": 57,
-     "years": 130,
-     "first_year": 1897,
-     "tied_years": [
-      1906,
-      1908,
-      1929,
-      1939,
-      1990,
-      2017
-     ],
-     "standing": "cool",
-     "notable": false,
-     "since": 2021,
-     "record": false,
-     "phrase": "typical for November 7"
-    }
-   },
    {
     "period": "Sunday",
     "date": "2026-11-08",
@@ -248,6 +223,29 @@
      "record": false,
      "phrase": "typical for November 13"
     }
+   },
+   {
+    "period": "Saturday",
+    "date": "2026-11-14",
+    "high_f": 53,
+    "would_rank": {
+     "value_f": 53,
+     "warm_rank": 86,
+     "cool_rank": 41,
+     "years": 130,
+     "first_year": 1897,
+     "tied_years": [
+      1898,
+      1935,
+      1967,
+      1977
+     ],
+     "standing": "cool",
+     "notable": false,
+     "since": 2024,
+     "record": false,
+     "phrase": "typical for November 14"
+    }
    }
   ]
  },
@@ -255,15 +253,6 @@
   "issued_utc": "2026-11-07T19:14:23Z",
   "grid": "AKQ/50,76",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-07T17:00:00-05:00",
-    "is_daytime": true,
-    "temp_f": 61,
-    "temp_c": 16.11,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-07T18:00:00-05:00",
@@ -380,19 +369,21 @@
     "temp_c": 0.56,
     "precip_chance_pct": 24,
     "short_forecast": "Slight Chance Rain Showers"
+   },
+   {
+    "name": "Saturday",
+    "start": "2026-11-14T06:00:00-05:00",
+    "is_daytime": true,
+    "temp_f": 53,
+    "temp_c": 11.67,
+    "precip_chance_pct": 12,
+    "short_forecast": "Mostly Sunny"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-07T19:14:23Z",
   "hours": [
-   {
-    "start": "2026-11-07T17:00:00-05:00",
-    "temp_f": 57,
-    "temp_c": 13.89,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "start": "2026-11-07T18:00:00-05:00",
     "temp_f": 53,
@@ -719,6 +710,13 @@
     "start": "2026-11-09T16:00:00-05:00",
     "temp_f": 63,
     "temp_c": 17.22,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
+   },
+   {
+    "start": "2026-11-09T17:00:00-05:00",
+    "temp_f": 59,
+    "temp_c": 15.0,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
    }

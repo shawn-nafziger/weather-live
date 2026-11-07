@@ -11,26 +11,26 @@
   "lon": -122.3136,
   "history": "Same station as the official Seattle record (Sea-Tac)"
  },
- "as_of_utc": "2026-11-07T22:07:51Z",
+ "as_of_utc": "2026-11-07T23:07:54Z",
  "now": {
-  "time_utc": "2026-11-07T21:25:00Z",
-  "temp_c": 14,
-  "temp_f": 57.2,
-  "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 9,
-  "humidity_pct": 71.85,
-  "wind_kmh": 9.25,
-  "description": "Mostly Cloudy"
+  "time_utc": "2026-11-07T21:53:00Z",
+  "temp_c": 14.4,
+  "temp_f": 57.9,
+  "precision": "tenths of a degree",
+  "dewpoint_c": 10,
+  "humidity_pct": 74.88,
+  "wind_kmh": 7.56,
+  "description": "Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-07",
-  "readings": 13,
+  "readings": 14,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 13.9,
-  "high_f": 57.0,
-  "high_time_utc": "2026-11-07T20:53:00Z",
+  "high_c": 14.4,
+  "high_f": 57.9,
+  "high_time_utc": "2026-11-07T21:53:00Z",
   "low_c": 8.9,
   "low_f": 48.0,
   "low_time_utc": "2026-11-07T13:53:00Z"
@@ -81,6 +81,23 @@
     "record": false,
     "phrase": "8th warmest November 6 low (tied) of 82 since 1945, warmest since 2025"
    }
+  },
+  "today_high_so_far": {
+   "value_f": 58,
+   "warm_rank": 15,
+   "cool_rank": 65,
+   "years": 82,
+   "first_year": 1945,
+   "tied_years": [
+    1979,
+    2014,
+    2019
+   ],
+   "standing": "warm",
+   "notable": true,
+   "since": 2024,
+   "record": false,
+   "phrase": "already the 15th warmest November 7 high (tied) of 82 since 1945, warmest since 2024"
   },
   "forecast_highs": [
    {
@@ -371,13 +388,6 @@
  "hourly": {
   "issued_utc": "2026-11-07T21:05:52Z",
   "hours": [
-   {
-    "start": "2026-11-07T14:00:00-08:00",
-    "temp_f": 60,
-    "temp_c": 15.56,
-    "precip_chance_pct": 3,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "start": "2026-11-07T15:00:00-08:00",
     "temp_f": 61,
@@ -702,6 +712,13 @@
    },
    {
     "start": "2026-11-09T13:00:00-08:00",
+    "temp_f": 54,
+    "temp_c": 12.22,
+    "precip_chance_pct": 61,
+    "short_forecast": "Light Rain Likely"
+   },
+   {
+    "start": "2026-11-09T14:00:00-08:00",
     "temp_f": 54,
     "temp_c": 12.22,
     "precip_chance_pct": 61,
