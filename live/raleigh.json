@@ -11,16 +11,16 @@
   "lon": -78.7819,
   "history": "Same site as the official Raleigh record"
  },
- "as_of_utc": "2026-11-06T23:21:06Z",
+ "as_of_utc": "2026-11-07T00:07:53Z",
  "now": {
-  "time_utc": "2026-11-06T22:51:00Z",
-  "temp_c": 15.6,
-  "temp_f": 60.1,
-  "precision": "tenths of a degree",
-  "dewpoint_c": 15,
-  "humidity_pct": 96.22,
+  "time_utc": "2026-11-06T23:45:00Z",
+  "temp_c": 15,
+  "temp_f": 59.0,
+  "precision": "nearest whole \u00b0C",
+  "dewpoint_c": 14,
+  "humidity_pct": 93.75,
   "wind_kmh": 0,
-  "description": "Partly Cloudy"
+  "description": "Mostly Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-06",
@@ -33,7 +33,12 @@
   "high_time_utc": "2026-11-06T05:51:00Z",
   "low_c": 15.6,
   "low_f": 60.1,
-  "low_time_utc": "2026-11-06T17:51:00Z"
+  "low_time_utc": "2026-11-06T17:51:00Z",
+  "dip_between_reports": {
+   "at_most_f": 59.9,
+   "about_f": 59.0,
+   "time_utc": "2026-11-06T23:30:00Z"
+  }
  },
  "record": {
   "series": "Raleigh area (ThreadEx; Raleigh-Durham airport)",
@@ -78,31 +83,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-06",
-    "high_f": 70,
-    "would_rank": {
-     "value_f": 70,
-     "warm_rank": 36,
-     "cool_rank": 99,
-     "years": 140,
-     "first_year": 1887,
-     "tied_years": [
-      1895,
-      1928,
-      1943,
-      1952,
-      1958,
-      1965
-     ],
-     "standing": "warm",
-     "notable": false,
-     "since": 2024,
-     "record": false,
-     "phrase": "typical for November 6"
-    }
-   },
    {
     "period": "Saturday",
     "date": "2026-11-07",
@@ -243,25 +223,40 @@
      "record": false,
      "phrase": "typical for November 12"
     }
+   },
+   {
+    "period": "Friday",
+    "date": "2026-11-13",
+    "high_f": 59,
+    "would_rank": {
+     "value_f": 59,
+     "warm_rank": 83,
+     "cool_rank": 53,
+     "years": 140,
+     "first_year": 1887,
+     "tied_years": [
+      1939,
+      1967,
+      1975,
+      1991,
+      2014
+     ],
+     "standing": "cool",
+     "notable": false,
+     "since": 2019,
+     "record": false,
+     "phrase": "typical for November 13"
+    }
    }
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-06T19:21:50Z",
+  "issued_utc": "2026-11-06T22:52:04Z",
   "grid": "RAH/69,62",
   "periods": [
    {
-    "name": "This Afternoon",
-    "start": "2026-11-06T15:00:00-05:00",
-    "is_daytime": true,
-    "temp_f": 70,
-    "temp_c": 21.11,
-    "precip_chance_pct": 16,
-    "short_forecast": "Slight Chance Showers And Thunderstorms"
-   },
-   {
     "name": "Tonight",
-    "start": "2026-11-06T18:00:00-05:00",
+    "start": "2026-11-06T19:00:00-05:00",
     "is_daytime": false,
     "temp_f": 48,
     "temp_c": 8.89,
@@ -375,19 +370,21 @@
     "temp_c": 4.44,
     "precip_chance_pct": 21,
     "short_forecast": "Slight Chance Rain Showers"
+   },
+   {
+    "name": "Friday",
+    "start": "2026-11-13T06:00:00-05:00",
+    "is_daytime": true,
+    "temp_f": 59,
+    "temp_c": 15.0,
+    "precip_chance_pct": 21,
+    "short_forecast": "Slight Chance Rain Showers"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-06T22:52:04Z",
   "hours": [
-   {
-    "start": "2026-11-06T18:00:00-05:00",
-    "temp_f": 61,
-    "temp_c": 16.11,
-    "precip_chance_pct": 0,
-    "short_forecast": "Partly Cloudy"
-   },
    {
     "start": "2026-11-06T19:00:00-05:00",
     "temp_f": 59,
@@ -716,6 +713,13 @@
     "temp_c": 15.56,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
+   },
+   {
+    "start": "2026-11-08T18:00:00-05:00",
+    "temp_f": 56,
+    "temp_c": 13.33,
+    "precip_chance_pct": 0,
+    "short_forecast": "Clear"
    }
   ]
  },
