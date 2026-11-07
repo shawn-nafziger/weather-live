@@ -11,29 +11,23 @@
   "lon": -122.3136,
   "history": "Same station as the official Seattle record (Sea-Tac)"
  },
- "as_of_utc": "2026-11-07T07:07:52Z",
+ "as_of_utc": "2026-11-07T08:07:50Z",
  "now": {
-  "time_utc": "2026-11-07T06:35:00Z",
+  "time_utc": "2026-11-07T07:55:00Z",
   "temp_c": 11,
   "temp_f": 51.8,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 10,
   "humidity_pct": 93.55,
-  "wind_kmh": 9.25,
+  "wind_kmh": 5.54,
   "description": "Mostly Cloudy"
  },
  "today_so_far": {
-  "date_local": "2026-11-06",
-  "readings": 22,
-  "basis": "hourly reports (tenths of a degree)",
-  "approximate": false,
-  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 13.3,
-  "high_f": 55.9,
-  "high_time_utc": "2026-11-07T01:53:00Z",
-  "low_c": 9.4,
-  "low_f": 48.9,
-  "low_time_utc": "2026-11-06T12:53:00Z"
+  "date_local": "2026-11-07",
+  "readings": 0,
+  "basis": "5-minute readings (whole \u00b0C, approximate)",
+  "approximate": true,
+  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two."
  },
  "record": {
   "series": "Seattle area (ThreadEx, Sea-Tac)",
@@ -42,7 +36,7 @@
   "rank_today": true,
   "latest_final": {
    "date": "2026-11-05",
-   "is_yesterday": true,
+   "is_yesterday": false,
    "high_f": 58,
    "low_f": 49,
    "high_rank": {
@@ -80,25 +74,6 @@
     "record": false,
     "phrase": "7th warmest November 5 low (tied) of 82 since 1945, warmest since 2025"
    }
-  },
-  "today_high_so_far": {
-   "value_f": 56,
-   "warm_rank": 15,
-   "cool_rank": 63,
-   "years": 82,
-   "first_year": 1945,
-   "tied_years": [
-    1954,
-    1978,
-    1981,
-    2018,
-    2025
-   ],
-   "standing": "warm",
-   "notable": true,
-   "since": 2025,
-   "record": false,
-   "phrase": "already the 15th warmest November 6 high (tied) of 82 since 1945, warmest since 2025"
   },
   "forecast_highs": [
    {
@@ -259,11 +234,11 @@
   "periods": [
    {
     "name": "Tonight",
-    "start": "2026-11-06T22:00:00-08:00",
+    "start": "2026-11-06T23:00:00-08:00",
     "is_daytime": false,
     "temp_f": 49,
     "temp_c": 9.44,
-    "precip_chance_pct": 3,
+    "precip_chance_pct": 2,
     "short_forecast": "Mostly Cloudy"
    },
    {
@@ -388,13 +363,6 @@
  "hourly": {
   "issued_utc": "2026-11-07T06:26:55Z",
   "hours": [
-   {
-    "start": "2026-11-06T23:00:00-08:00",
-    "temp_f": 53,
-    "temp_c": 11.67,
-    "precip_chance_pct": 2,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "start": "2026-11-07T00:00:00-08:00",
     "temp_f": 52,
@@ -721,6 +689,13 @@
     "start": "2026-11-08T22:00:00-08:00",
     "temp_f": 47,
     "temp_c": 8.33,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "start": "2026-11-08T23:00:00-08:00",
+    "temp_f": 46,
+    "temp_c": 7.78,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Cloudy"
    }
