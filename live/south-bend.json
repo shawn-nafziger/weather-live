@@ -11,15 +11,15 @@
   "lon": -86.3186,
   "history": "Same station as the official South Bend record (South Bend airport). Also the nearest official city record to Goshen, about 27 miles; a candidate for Goshen's hourly readings (question D2)"
  },
- "as_of_utc": "2026-11-07T16:20:15Z",
+ "as_of_utc": "2026-11-07T17:07:50Z",
  "now": {
-  "time_utc": "2026-11-07T16:00:00Z",
+  "time_utc": "2026-11-07T16:55:00Z",
   "temp_c": 9,
   "temp_f": 48.2,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 2,
   "humidity_pct": 61.54,
-  "wind_kmh": null,
+  "wind_kmh": 22.21,
   "description": "Cloudy"
  },
  "today_so_far": {
@@ -93,7 +93,7 @@
   },
   "forecast_highs": [
    {
-    "period": "Today",
+    "period": "This Afternoon",
     "date": "2026-11-07",
     "high_f": 50,
     "would_rank": {
@@ -247,16 +247,16 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-07T14:00:56Z",
+  "issued_utc": "2026-11-07T16:45:03Z",
   "grid": "IWX/27,64",
   "periods": [
    {
-    "name": "Today",
-    "start": "2026-11-07T11:00:00-05:00",
+    "name": "This Afternoon",
+    "start": "2026-11-07T12:00:00-05:00",
     "is_daytime": true,
     "temp_f": 50,
     "temp_c": 10.0,
-    "precip_chance_pct": 2,
+    "precip_chance_pct": 0,
     "short_forecast": "Partly Sunny"
    },
    {
@@ -266,7 +266,7 @@
     "temp_f": 33,
     "temp_c": 0.56,
     "precip_chance_pct": 0,
-    "short_forecast": "Partly Cloudy"
+    "short_forecast": "Mostly Clear"
    },
    {
     "name": "Sunday",
@@ -274,15 +274,15 @@
     "is_daytime": true,
     "temp_f": 55,
     "temp_c": 12.78,
-    "precip_chance_pct": 0,
+    "precip_chance_pct": 1,
     "short_forecast": "Mostly Sunny"
    },
    {
     "name": "Sunday Night",
     "start": "2026-11-08T18:00:00-05:00",
     "is_daytime": false,
-    "temp_f": 38,
-    "temp_c": 3.33,
+    "temp_f": 37,
+    "temp_c": 2.78,
     "precip_chance_pct": 0,
     "short_forecast": "Partly Cloudy"
    },
@@ -381,13 +381,6 @@
  "hourly": {
   "issued_utc": "2026-11-07T14:00:56Z",
   "hours": [
-   {
-    "start": "2026-11-07T11:00:00-05:00",
-    "temp_f": 48,
-    "temp_c": 8.89,
-    "precip_chance_pct": 2,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "start": "2026-11-07T12:00:00-05:00",
     "temp_f": 48,
@@ -714,6 +707,13 @@
     "start": "2026-11-09T10:00:00-05:00",
     "temp_f": 50,
     "temp_c": 10.0,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Sunny"
+   },
+   {
+    "start": "2026-11-09T11:00:00-05:00",
+    "temp_f": 53,
+    "temp_c": 11.67,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Sunny"
    }
