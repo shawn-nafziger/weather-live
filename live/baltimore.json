@@ -11,15 +11,15 @@
   "lon": -76.684,
   "history": "Same site as the official Baltimore record"
  },
- "as_of_utc": "2026-11-07T23:07:54Z",
+ "as_of_utc": "2026-11-07T23:43:11Z",
  "now": {
-  "time_utc": "2026-11-07T22:45:00Z",
-  "temp_c": 12,
-  "temp_f": 53.6,
+  "time_utc": "2026-11-07T23:30:00Z",
+  "temp_c": 11,
+  "temp_f": 51.8,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 2,
-  "humidity_pct": 50.39,
-  "wind_kmh": 20.38,
+  "humidity_pct": 53.83,
+  "wind_kmh": null,
   "description": "Partly Cloudy"
  },
  "today_so_far": {
@@ -89,30 +89,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-07",
-    "high_f": 58,
-    "would_rank": {
-     "value_f": 58,
-     "warm_rank": 79,
-     "cool_rank": 72,
-     "years": 155,
-     "first_year": 1872,
-     "tied_years": [
-      1918,
-      1944,
-      1979,
-      1983,
-      1989
-     ],
-     "standing": "cool",
-     "notable": false,
-     "since": 2017,
-     "record": false,
-     "phrase": "typical for November 7"
-    }
-   },
    {
     "period": "Sunday",
     "date": "2026-11-08",
@@ -262,6 +238,34 @@
      "record": false,
      "phrase": "typical for November 13"
     }
+   },
+   {
+    "period": "Saturday",
+    "date": "2026-11-14",
+    "high_f": 52,
+    "would_rank": {
+     "value_f": 52,
+     "warm_rank": 95,
+     "cool_rank": 52,
+     "years": 155,
+     "first_year": 1872,
+     "tied_years": [
+      1883,
+      1885,
+      1893,
+      1935,
+      1950,
+      1963,
+      1968,
+      1976,
+      2004
+     ],
+     "standing": "cool",
+     "notable": false,
+     "since": 2024,
+     "record": false,
+     "phrase": "typical for November 14"
+    }
    }
   ]
  },
@@ -269,15 +273,6 @@
   "issued_utc": "2026-11-07T20:53:04Z",
   "grid": "LWX/107,85",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-07T17:00:00-05:00",
-    "is_daytime": true,
-    "temp_f": 58,
-    "temp_c": 14.44,
-    "precip_chance_pct": 1,
-    "short_forecast": "Mostly Sunny"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-07T18:00:00-05:00",
@@ -394,6 +389,15 @@
     "temp_c": -1.11,
     "precip_chance_pct": 38,
     "short_forecast": "Chance Light Rain"
+   },
+   {
+    "name": "Saturday",
+    "start": "2026-11-14T06:00:00-05:00",
+    "is_daytime": true,
+    "temp_f": 52,
+    "temp_c": 11.11,
+    "precip_chance_pct": 24,
+    "short_forecast": "Slight Chance Light Rain"
    }
   ]
  },

@@ -11,20 +11,20 @@
   "lon": -83.3308,
   "history": "Same site as the official Detroit record"
  },
- "as_of_utc": "2026-11-07T23:07:54Z",
+ "as_of_utc": "2026-11-07T23:43:11Z",
  "now": {
-  "time_utc": "2026-11-07T22:55:00Z",
+  "time_utc": "2026-11-07T23:30:00Z",
   "temp_c": 7,
   "temp_f": 44.6,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 3,
-  "humidity_pct": 75.69,
-  "wind_kmh": 16.67,
+  "dewpoint_c": 2,
+  "humidity_pct": 70.5,
+  "wind_kmh": 14.83,
   "description": "Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-07",
-  "readings": 11,
+  "readings": 12,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -93,31 +93,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-07",
-    "high_f": 52,
-    "would_rank": {
-     "value_f": 52,
-     "warm_rank": 66,
-     "cool_rank": 82,
-     "years": 153,
-     "first_year": 1874,
-     "tied_years": [
-      1920,
-      1926,
-      1954,
-      1995,
-      1997,
-      2006
-     ],
-     "standing": "warm",
-     "notable": false,
-     "since": 2025,
-     "record": false,
-     "phrase": "typical for November 7"
-    }
-   },
    {
     "period": "Sunday",
     "date": "2026-11-08",
@@ -255,6 +230,30 @@
      "record": false,
      "phrase": "typical for November 13"
     }
+   },
+   {
+    "period": "Saturday",
+    "date": "2026-11-14",
+    "high_f": 50,
+    "would_rank": {
+     "value_f": 50,
+     "warm_rank": 59,
+     "cool_rank": 90,
+     "years": 153,
+     "first_year": 1874,
+     "tied_years": [
+      1881,
+      1886,
+      1914,
+      2004,
+      2013
+     ],
+     "standing": "warm",
+     "notable": false,
+     "since": 2025,
+     "record": false,
+     "phrase": "typical for November 14"
+    }
    }
   ]
  },
@@ -262,15 +261,6 @@
   "issued_utc": "2026-11-07T21:13:15Z",
   "grid": "DTX/57,28",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-07T16:00:00-05:00",
-    "is_daytime": true,
-    "temp_f": 52,
-    "temp_c": 11.11,
-    "precip_chance_pct": 0,
-    "short_forecast": "Partly Sunny"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-07T18:00:00-05:00",
@@ -387,6 +377,15 @@
     "temp_c": -1.11,
     "precip_chance_pct": 10,
     "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "name": "Saturday",
+    "start": "2026-11-14T06:00:00-05:00",
+    "is_daytime": true,
+    "temp_f": 50,
+    "temp_c": 10.0,
+    "precip_chance_pct": 7,
+    "short_forecast": "Mostly Sunny"
    }
   ]
  },

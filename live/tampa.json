@@ -11,20 +11,20 @@
   "lon": -82.5403,
   "history": "Same site as the official Tampa record"
  },
- "as_of_utc": "2026-11-07T23:07:54Z",
+ "as_of_utc": "2026-11-07T23:43:11Z",
  "now": {
-  "time_utc": "2026-11-07T22:55:00Z",
-  "temp_c": 24,
-  "temp_f": 75.2,
+  "time_utc": "2026-11-07T23:30:00Z",
+  "temp_c": 23,
+  "temp_f": 73.4,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 14,
-  "humidity_pct": 53.58,
-  "wind_kmh": 14.83,
+  "humidity_pct": 56.91,
+  "wind_kmh": 12.96,
   "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-07",
-  "readings": 12,
+  "readings": 13,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -91,40 +91,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-07",
-    "high_f": 82,
-    "would_rank": {
-     "value_f": 82,
-     "warm_rank": 39,
-     "cool_rank": 84,
-     "years": 137,
-     "first_year": 1890,
-     "tied_years": [
-      1890,
-      1895,
-      1919,
-      1920,
-      1922,
-      1935,
-      1947,
-      1957,
-      1958,
-      1965,
-      1966,
-      1974,
-      1990,
-      2009,
-      2016
-     ],
-     "standing": "warm",
-     "notable": false,
-     "since": 2025,
-     "record": false,
-     "phrase": "typical for November 7"
-    }
-   },
    {
     "period": "Sunday",
     "date": "2026-11-08",
@@ -300,6 +266,28 @@
      "record": false,
      "phrase": "26th coolest November 13 high (tied) of 137 since 1890, coolest since 2019"
     }
+   },
+   {
+    "period": "Saturday",
+    "date": "2026-11-14",
+    "high_f": 67,
+    "would_rank": {
+     "value_f": 67,
+     "warm_rank": 131,
+     "cool_rank": 4,
+     "years": 137,
+     "first_year": 1890,
+     "tied_years": [
+      1923,
+      1933,
+      1995
+     ],
+     "standing": "cool",
+     "notable": true,
+     "since": 1995,
+     "record": false,
+     "phrase": "4th coolest November 14 high (tied) of 137 since 1890, coolest since 1995"
+    }
    }
   ]
  },
@@ -307,15 +295,6 @@
   "issued_utc": "2026-11-07T19:31:56Z",
   "grid": "TBW/68,98",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-07T14:00:00-05:00",
-    "is_daytime": true,
-    "temp_f": 82,
-    "temp_c": 27.78,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-07T18:00:00-05:00",
@@ -432,6 +411,15 @@
     "temp_c": 12.22,
     "precip_chance_pct": 9,
     "short_forecast": "Partly Cloudy"
+   },
+   {
+    "name": "Saturday",
+    "start": "2026-11-14T06:00:00-05:00",
+    "is_daytime": true,
+    "temp_f": 67,
+    "temp_c": 19.44,
+    "precip_chance_pct": 6,
+    "short_forecast": "Mostly Sunny"
    }
   ]
  },

@@ -11,16 +11,16 @@
   "lon": -75.2268,
   "history": "Same site as the official Philadelphia record"
  },
- "as_of_utc": "2026-11-07T23:07:54Z",
+ "as_of_utc": "2026-11-07T23:43:11Z",
  "now": {
-  "time_utc": "2026-11-07T21:54:00Z",
-  "temp_c": 13.3,
-  "temp_f": 55.9,
-  "precision": "tenths of a degree",
-  "dewpoint_c": 1.1,
-  "humidity_pct": 43.39,
-  "wind_kmh": 22.32,
-  "description": "Partly Cloudy"
+  "time_utc": "2026-11-07T23:30:00Z",
+  "temp_c": 13,
+  "temp_f": 55.4,
+  "precision": "nearest whole \u00b0C",
+  "dewpoint_c": 2,
+  "humidity_pct": 47.19,
+  "wind_kmh": 16.67,
+  "description": "Mostly Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-07",
@@ -79,32 +79,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-07",
-    "high_f": 58,
-    "would_rank": {
-     "value_f": 58,
-     "warm_rank": 66,
-     "cool_rank": 81,
-     "years": 153,
-     "first_year": 1874,
-     "tied_years": [
-      1887,
-      1916,
-      1936,
-      1957,
-      1974,
-      1976,
-      1983
-     ],
-     "standing": "warm",
-     "notable": false,
-     "since": 2025,
-     "record": false,
-     "phrase": "typical for November 7"
-    }
-   },
    {
     "period": "Sunday",
     "date": "2026-11-08",
@@ -249,6 +223,34 @@
      "record": false,
      "phrase": "typical for November 13"
     }
+   },
+   {
+    "period": "Saturday",
+    "date": "2026-11-14",
+    "high_f": 50,
+    "would_rank": {
+     "value_f": 50,
+     "warm_rank": 94,
+     "cool_rank": 51,
+     "years": 153,
+     "first_year": 1874,
+     "tied_years": [
+      1895,
+      1921,
+      1950,
+      1963,
+      1972,
+      1995,
+      2004,
+      2012,
+      2017
+     ],
+     "standing": "cool",
+     "notable": false,
+     "since": 2022,
+     "record": false,
+     "phrase": "typical for November 14"
+    }
    }
   ]
  },
@@ -256,15 +258,6 @@
   "issued_utc": "2026-11-07T21:07:32Z",
   "grid": "PHI/48,75",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-07T16:00:00-05:00",
-    "is_daytime": true,
-    "temp_f": 58,
-    "temp_c": 14.44,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-07T18:00:00-05:00",
@@ -380,6 +373,15 @@
     "temp_f": 33,
     "temp_c": 0.56,
     "precip_chance_pct": 47,
+    "short_forecast": "Chance Light Rain"
+   },
+   {
+    "name": "Saturday",
+    "start": "2026-11-14T06:00:00-05:00",
+    "is_daytime": true,
+    "temp_f": 50,
+    "temp_c": 10.0,
+    "precip_chance_pct": 29,
     "short_forecast": "Chance Light Rain"
    }
   ]
