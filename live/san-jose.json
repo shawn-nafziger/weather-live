@@ -11,23 +11,29 @@
   "lon": -121.9242,
   "history": "Same site as the official San Jose record"
  },
- "as_of_utc": "2026-11-07T08:07:50Z",
+ "as_of_utc": "2026-11-07T09:07:55Z",
  "now": {
-  "time_utc": "2026-11-07T07:55:00Z",
-  "temp_c": 13,
-  "temp_f": 55.4,
+  "time_utc": "2026-11-07T08:20:00Z",
+  "temp_c": 12,
+  "temp_f": 53.6,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 7,
-  "humidity_pct": 66.93,
+  "humidity_pct": 71.47,
   "wind_kmh": 7.42,
   "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-07",
-  "readings": 0,
+  "readings": 1,
   "basis": "5-minute readings (whole \u00b0C, approximate)",
   "approximate": true,
-  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two."
+  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
+  "high_c": 12,
+  "high_f": 53.6,
+  "high_time_utc": "2026-11-07T08:20:00Z",
+  "low_c": 12,
+  "low_f": 53.6,
+  "low_time_utc": "2026-11-07T08:20:00Z"
  },
  "record": {
   "series": "San Jose area (ThreadEx; airport)",
@@ -250,7 +256,7 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-07T06:26:44Z",
+  "issued_utc": "2026-11-07T08:26:06Z",
   "grid": "MTR/98,83",
   "periods": [
    {
@@ -382,15 +388,8 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-07T06:26:44Z",
+  "issued_utc": "2026-11-07T08:26:06Z",
   "hours": [
-   {
-    "start": "2026-11-07T00:00:00-08:00",
-    "temp_f": 54,
-    "temp_c": 12.22,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Clear"
-   },
    {
     "start": "2026-11-07T01:00:00-08:00",
     "temp_f": 53,
@@ -717,6 +716,13 @@
     "start": "2026-11-08T23:00:00-08:00",
     "temp_f": 55,
     "temp_c": 12.78,
+    "precip_chance_pct": 0,
+    "short_forecast": "Partly Cloudy"
+   },
+   {
+    "start": "2026-11-09T00:00:00-08:00",
+    "temp_f": 54,
+    "temp_c": 12.22,
     "precip_chance_pct": 0,
     "short_forecast": "Partly Cloudy"
    }
