@@ -11,33 +11,33 @@
   "lon": -84.6723,
   "history": "Same site as the official Cincinnati record"
  },
- "as_of_utc": "2026-11-07T11:07:50Z",
+ "as_of_utc": "2026-11-07T12:07:53Z",
  "now": {
-  "time_utc": "2026-11-07T10:50:00Z",
-  "temp_c": 3,
-  "temp_f": 37.4,
+  "time_utc": "2026-11-07T11:50:00Z",
+  "temp_c": 2,
+  "temp_f": 35.6,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 1,
-  "humidity_pct": 86.7,
-  "wind_kmh": 9.25,
-  "description": "Partly Cloudy"
+  "humidity_pct": 93.09,
+  "wind_kmh": 12.96,
+  "description": "Mostly Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-07",
-  "readings": 5,
+  "readings": 6,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
   "high_c": 7.2,
   "high_f": 45.0,
   "high_time_utc": "2026-11-07T05:52:00Z",
-  "low_c": 4.4,
-  "low_f": 39.9,
-  "low_time_utc": "2026-11-07T08:52:00Z",
+  "low_c": 2.8,
+  "low_f": 37.0,
+  "low_time_utc": "2026-11-07T10:52:00Z",
   "dip_between_reports": {
-   "at_most_f": 38.3,
-   "about_f": 37.4,
-   "time_utc": "2026-11-07T09:25:00Z"
+   "at_most_f": 36.5,
+   "about_f": 35.6,
+   "time_utc": "2026-11-07T11:15:00Z"
   }
  },
  "record": {
@@ -46,47 +46,53 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-05",
-   "is_yesterday": false,
-   "high_f": 67,
-   "low_f": 51,
+   "date": "2026-11-06",
+   "is_yesterday": true,
+   "high_f": 57,
+   "low_f": 42,
    "high_rank": {
-    "value_f": 67,
-    "warm_rank": 27,
-    "cool_rank": 127,
+    "value_f": 57,
+    "warm_rank": 76,
+    "cool_rank": 76,
     "years": 155,
     "first_year": 1872,
     "tied_years": [
-     1885,
-     1989
+     1893,
+     1934,
+     1947,
+     1983
     ],
     "standing": "warm",
-    "notable": true,
+    "notable": false,
     "since": 2025,
     "record": false,
-    "phrase": "27th warmest November 5 high (tied) of 155 since 1872, warmest since 2025"
+    "phrase": "typical for November 6"
    },
    "low_rank": {
-    "value_f": 51,
-    "warm_rank": 13,
-    "cool_rank": 140,
+    "value_f": 42,
+    "warm_rank": 47,
+    "cool_rank": 102,
     "years": 155,
     "first_year": 1872,
     "tied_years": [
-     1932,
-     1956,
-     1981
+     1881,
+     1915,
+     1928,
+     1989,
+     2005,
+     2014,
+     2020
     ],
     "standing": "warm",
-    "notable": true,
+    "notable": false,
     "since": 2024,
     "record": false,
-    "phrase": "13th warmest November 5 low (tied) of 155 since 1872, warmest since 2024"
+    "phrase": "typical for November 6"
    }
   },
   "forecast_highs": [
    {
-    "period": "Saturday",
+    "period": "Today",
     "date": "2026-11-07",
     "high_f": 54,
     "would_rank": {
@@ -258,16 +264,7 @@
   "grid": "ILN/30,35",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-07T05:00:00-05:00",
-    "is_daytime": false,
-    "temp_f": 37,
-    "temp_c": 2.78,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Clear"
-   },
-   {
-    "name": "Saturday",
+    "name": "Today",
     "start": "2026-11-07T06:00:00-05:00",
     "is_daytime": true,
     "temp_f": 54,
@@ -276,7 +273,7 @@
     "short_forecast": "Sunny"
    },
    {
-    "name": "Saturday Night",
+    "name": "Tonight",
     "start": "2026-11-07T18:00:00-05:00",
     "is_daytime": false,
     "temp_f": 33,
@@ -382,19 +379,21 @@
     "temp_c": 8.33,
     "precip_chance_pct": 21,
     "short_forecast": "Slight Chance Rain And Snow then Partly Sunny"
+   },
+   {
+    "name": "Friday Night",
+    "start": "2026-11-13T18:00:00-05:00",
+    "is_daytime": false,
+    "temp_f": 32,
+    "temp_c": 0.0,
+    "precip_chance_pct": 4,
+    "short_forecast": "Partly Cloudy"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-07T09:00:35Z",
   "hours": [
-   {
-    "start": "2026-11-07T06:00:00-05:00",
-    "temp_f": 38,
-    "temp_c": 3.33,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "start": "2026-11-07T07:00:00-05:00",
     "temp_f": 38,
@@ -719,6 +718,13 @@
    },
    {
     "start": "2026-11-09T05:00:00-05:00",
+    "temp_f": 39,
+    "temp_c": 3.89,
+    "precip_chance_pct": 0,
+    "short_forecast": "Patchy Frost"
+   },
+   {
+    "start": "2026-11-09T06:00:00-05:00",
     "temp_f": 39,
     "temp_c": 3.89,
     "precip_chance_pct": 0,

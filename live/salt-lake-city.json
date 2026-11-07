@@ -11,38 +11,33 @@
   "lon": -111.965,
   "history": "Same site as the official Salt Lake City record"
  },
- "as_of_utc": "2026-11-07T11:07:50Z",
+ "as_of_utc": "2026-11-07T12:07:53Z",
  "now": {
-  "time_utc": "2026-11-07T10:45:00Z",
+  "time_utc": "2026-11-07T11:50:00Z",
   "temp_c": 3,
   "temp_f": 37.4,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 1,
   "humidity_pct": 86.7,
-  "wind_kmh": 5.54,
+  "wind_kmh": 12.96,
   "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-07",
-  "readings": 2,
+  "readings": 3,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
   "high_c": 4.4,
   "high_f": 39.9,
   "high_time_utc": "2026-11-07T07:54:00Z",
-  "low_c": 3.9,
-  "low_f": 39.0,
-  "low_time_utc": "2026-11-07T08:54:00Z",
+  "low_c": 3.3,
+  "low_f": 37.9,
+  "low_time_utc": "2026-11-07T10:54:00Z",
   "peak_between_reports": {
    "at_least_f": 40.1,
    "about_f": 41.0,
    "time_utc": "2026-11-07T07:00:00Z"
-  },
-  "dip_between_reports": {
-   "at_most_f": 38.3,
-   "about_f": 37.4,
-   "time_utc": "2026-11-07T10:35:00Z"
   }
  },
  "record": {
@@ -51,44 +46,49 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-05",
-   "is_yesterday": false,
-   "high_f": 57,
-   "low_f": 43,
+   "date": "2026-11-06",
+   "is_yesterday": true,
+   "high_f": 54,
+   "low_f": 39,
    "high_rank": {
-    "value_f": 57,
-    "warm_rank": 69,
-    "cool_rank": 80,
+    "value_f": 54,
+    "warm_rank": 84,
+    "cool_rank": 62,
     "years": 153,
     "first_year": 1874,
     "tied_years": [
-     1874,
-     1908,
-     1930,
-     1984,
-     2004
+     1891,
+     1893,
+     1923,
+     1935,
+     1940,
+     1962,
+     1974,
+     1985
+    ],
+    "standing": "cool",
+    "notable": false,
+    "since": 2024,
+    "record": false,
+    "phrase": "typical for November 6"
+   },
+   "low_rank": {
+    "value_f": 39,
+    "warm_rank": 43,
+    "cool_rank": 107,
+    "years": 153,
+    "first_year": 1874,
+    "tied_years": [
+     1877,
+     1901,
+     1941,
+     1981
     ],
     "standing": "warm",
     "notable": false,
     "since": 2025,
     "record": false,
-    "phrase": "typical for November 5"
-   },
-   "low_rank": {
-    "value_f": 43,
-    "warm_rank": 19,
-    "cool_rank": 133,
-    "years": 153,
-    "first_year": 1874,
-    "tied_years": [
-     1913,
-     1977
-    ],
-    "standing": "warm",
-    "notable": true,
-    "since": 2025,
-    "record": false,
-    "phrase": "19th warmest November 5 low (tied) of 153 since 1874, warmest since 2025"
+    "phrase": "typical for November 6"
    }
   },
   "forecast_highs": [
@@ -274,12 +274,12 @@
   "periods": [
    {
     "name": "Overnight",
-    "start": "2026-11-07T03:00:00-07:00",
+    "start": "2026-11-07T01:00:00-07:00",
     "is_daytime": false,
     "temp_f": 37,
     "temp_c": 2.78,
     "precip_chance_pct": 0,
-    "short_forecast": "Partly Cloudy"
+    "short_forecast": "Mostly Clear"
    },
    {
     "name": "Saturday",
@@ -403,13 +403,6 @@
  "hourly": {
   "issued_utc": "2026-11-07T06:31:24Z",
   "hours": [
-   {
-    "start": "2026-11-07T04:00:00-07:00",
-    "temp_f": 37,
-    "temp_c": 2.78,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Clear"
-   },
    {
     "start": "2026-11-07T05:00:00-07:00",
     "temp_f": 37,
@@ -734,6 +727,13 @@
    },
    {
     "start": "2026-11-09T03:00:00-07:00",
+    "temp_f": 42,
+    "temp_c": 5.56,
+    "precip_chance_pct": 0,
+    "short_forecast": "Partly Cloudy"
+   },
+   {
+    "start": "2026-11-09T04:00:00-07:00",
     "temp_f": 42,
     "temp_c": 5.56,
     "precip_chance_pct": 0,

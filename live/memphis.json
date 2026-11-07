@@ -11,38 +11,38 @@
   "lon": -89.9863,
   "history": "Same site as the official Memphis record"
  },
- "as_of_utc": "2026-11-07T11:07:50Z",
+ "as_of_utc": "2026-11-07T12:07:53Z",
  "now": {
-  "time_utc": "2026-11-07T10:50:00Z",
-  "temp_c": 8,
-  "temp_f": 46.4,
+  "time_utc": "2026-11-07T11:50:00Z",
+  "temp_c": 7,
+  "temp_f": 44.6,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 4,
-  "humidity_pct": 75.86,
-  "wind_kmh": 14.83,
-  "description": "Clear"
+  "humidity_pct": 81.22,
+  "wind_kmh": 12.96,
+  "description": ""
  },
  "today_so_far": {
   "date_local": "2026-11-07",
-  "readings": 2,
+  "readings": 3,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
   "high_c": 9.4,
   "high_f": 48.9,
   "high_time_utc": "2026-11-07T07:54:00Z",
-  "low_c": 8.9,
-  "low_f": 48.0,
-  "low_time_utc": "2026-11-07T08:54:00Z",
+  "low_c": 7.8,
+  "low_f": 46.0,
+  "low_time_utc": "2026-11-07T10:54:00Z",
   "peak_between_reports": {
    "at_least_f": 50.9,
    "about_f": 51.8,
    "time_utc": "2026-11-07T06:10:00Z"
   },
   "dip_between_reports": {
-   "at_most_f": 47.3,
-   "about_f": 46.4,
-   "time_utc": "2026-11-07T10:25:00Z"
+   "at_most_f": 45.5,
+   "about_f": 44.6,
+   "time_utc": "2026-11-07T11:25:00Z"
   }
  },
  "record": {
@@ -51,44 +51,47 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-05",
-   "is_yesterday": false,
-   "high_f": 76,
+   "date": "2026-11-06",
+   "is_yesterday": true,
+   "high_f": 66,
    "low_f": 50,
    "high_rank": {
-    "value_f": 76,
-    "warm_rank": 15,
-    "cool_rank": 135,
+    "value_f": 66,
+    "warm_rank": 71,
+    "cool_rank": 77,
     "years": 152,
     "first_year": 1875,
     "tied_years": [
-     1883,
-     1989,
-     2008
-    ],
-    "standing": "warm",
-    "notable": true,
-    "since": 2023,
-    "record": false,
-    "phrase": "15th warmest November 5 high (tied) of 152 since 1875, warmest since 2023"
-   },
-   "low_rank": {
-    "value_f": 50,
-    "warm_rank": 56,
-    "cool_rank": 93,
-    "years": 152,
-    "first_year": 1875,
-    "tied_years": [
-     1878,
-     1881,
-     1907,
-     2022
+     1882,
+     1954,
+     1970,
+     1976,
+     1987
     ],
     "standing": "warm",
     "notable": false,
-    "since": 2024,
+    "since": 2025,
     "record": false,
-    "phrase": "typical for November 5"
+    "phrase": "typical for November 6"
+   },
+   "low_rank": {
+    "value_f": 50,
+    "warm_rank": 48,
+    "cool_rank": 100,
+    "years": 152,
+    "first_year": 1875,
+    "tied_years": [
+     1879,
+     1906,
+     1999,
+     2011,
+     2016
+    ],
+    "standing": "warm",
+    "notable": false,
+    "since": 2025,
+    "record": false,
+    "phrase": "typical for November 6"
    }
   },
   "forecast_highs": [
@@ -269,12 +272,12 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-07T09:05:31Z",
+  "issued_utc": "2026-11-07T11:15:39Z",
   "grid": "MEG/45,63",
   "periods": [
    {
     "name": "Overnight",
-    "start": "2026-11-07T04:00:00-06:00",
+    "start": "2026-11-07T05:00:00-06:00",
     "is_daytime": false,
     "temp_f": 43,
     "temp_c": 6.11,
@@ -401,15 +404,8 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-07T09:05:31Z",
+  "issued_utc": "2026-11-07T11:15:39Z",
   "hours": [
-   {
-    "start": "2026-11-07T05:00:00-06:00",
-    "temp_f": 46,
-    "temp_c": 7.78,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Clear"
-   },
    {
     "start": "2026-11-07T06:00:00-06:00",
     "temp_f": 45,
@@ -736,6 +732,13 @@
     "start": "2026-11-09T04:00:00-06:00",
     "temp_f": 40,
     "temp_c": 4.44,
+    "precip_chance_pct": 0,
+    "short_forecast": "Areas Of Fog"
+   },
+   {
+    "start": "2026-11-09T05:00:00-06:00",
+    "temp_f": 39,
+    "temp_c": 3.89,
     "precip_chance_pct": 0,
     "short_forecast": "Areas Of Fog"
    }

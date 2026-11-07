@@ -11,20 +11,20 @@
   "lon": -104.6562,
   "history": "Same site as the official Denver record"
  },
- "as_of_utc": "2026-11-07T11:07:50Z",
+ "as_of_utc": "2026-11-07T12:07:53Z",
  "now": {
-  "time_utc": "2026-11-07T10:45:00Z",
+  "time_utc": "2026-11-07T11:50:00Z",
   "temp_c": 3,
   "temp_f": 37.4,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": -3,
   "humidity_pct": 64.71,
-  "wind_kmh": 9.25,
+  "wind_kmh": 14.83,
   "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-07",
-  "readings": 2,
+  "readings": 3,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -41,47 +41,46 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-05",
-   "is_yesterday": false,
-   "high_f": 58,
+   "date": "2026-11-06",
+   "is_yesterday": true,
+   "high_f": 60,
    "low_f": 35,
    "high_rank": {
-    "value_f": 58,
-    "warm_rank": 76,
-    "cool_rank": 77,
+    "value_f": 60,
+    "warm_rank": 68,
+    "cool_rank": 83,
     "years": 155,
     "first_year": 1872,
     "tied_years": [
-     1884,
-     1982,
+     1878,
+     1950,
+     1976,
+     2002,
      2019
     ],
     "standing": "warm",
     "notable": false,
     "since": 2025,
     "record": false,
-    "phrase": "typical for November 5"
+    "phrase": "typical for November 6"
    },
    "low_rank": {
     "value_f": 35,
-    "warm_rank": 35,
-    "cool_rank": 114,
+    "warm_rank": 44,
+    "cool_rank": 108,
     "years": 155,
     "first_year": 1872,
     "tied_years": [
-     1892,
-     1907,
-     1924,
-     1943,
-     1948,
-     2010,
-     2012
+     1900,
+     1913,
+     1917,
+     1950
     ],
     "standing": "warm",
     "notable": false,
     "since": 2023,
     "record": false,
-    "phrase": "typical for November 5"
+    "phrase": "typical for November 6"
    }
   },
   "forecast_highs": [
@@ -264,8 +263,8 @@
   "grid": "BOU/75,66",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-07T00:00:00-07:00",
+    "name": "Tonight",
+    "start": "2026-11-06T23:00:00-07:00",
     "is_daytime": false,
     "temp_f": 35,
     "temp_c": 1.67,
@@ -394,13 +393,6 @@
  "hourly": {
   "issued_utc": "2026-11-07T06:46:38Z",
   "hours": [
-   {
-    "start": "2026-11-07T04:00:00-07:00",
-    "temp_f": 36,
-    "temp_c": 2.22,
-    "precip_chance_pct": 0,
-    "short_forecast": "Clear"
-   },
    {
     "start": "2026-11-07T05:00:00-07:00",
     "temp_f": 35,
@@ -727,6 +719,13 @@
     "start": "2026-11-09T03:00:00-07:00",
     "temp_f": 41,
     "temp_c": 5.0,
+    "precip_chance_pct": 0,
+    "short_forecast": "Clear"
+   },
+   {
+    "start": "2026-11-09T04:00:00-07:00",
+    "temp_f": 40,
+    "temp_c": 4.44,
     "precip_chance_pct": 0,
     "short_forecast": "Clear"
    }

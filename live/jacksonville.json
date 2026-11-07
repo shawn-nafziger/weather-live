@@ -11,9 +11,9 @@
   "lon": -81.6937,
   "history": "Same site as the official Jacksonville record"
  },
- "as_of_utc": "2026-11-07T11:07:50Z",
+ "as_of_utc": "2026-11-07T12:07:53Z",
  "now": {
-  "time_utc": "2026-11-07T10:50:00Z",
+  "time_utc": "2026-11-07T11:50:00Z",
   "temp_c": 14,
   "temp_f": 57.2,
   "precision": "nearest whole \u00b0C",
@@ -24,16 +24,16 @@
  },
  "today_so_far": {
   "date_local": "2026-11-07",
-  "readings": 3,
+  "readings": 4,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
   "high_c": 18.9,
   "high_f": 66.0,
   "high_time_utc": "2026-11-07T05:56:00Z",
-  "low_c": 16.7,
-  "low_f": 62.1,
-  "low_time_utc": "2026-11-07T08:56:00Z",
+  "low_c": 15,
+  "low_f": 59.0,
+  "low_time_utc": "2026-11-07T10:56:00Z",
   "dip_between_reports": {
    "at_most_f": 58.1,
    "about_f": 57.2,
@@ -46,48 +46,48 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-05",
-   "is_yesterday": false,
+   "date": "2026-11-06",
+   "is_yesterday": true,
    "high_f": 86,
-   "low_f": 68,
+   "low_f": 67,
    "high_rank": {
     "value_f": 86,
     "warm_rank": 2,
-    "cool_rank": 154,
+    "cool_rank": 153,
     "years": 156,
     "first_year": 1871,
     "tied_years": [
-     2024
+     1935,
+     2003
+    ],
+    "standing": "warm",
+    "notable": true,
+    "since": 2018,
+    "record": false,
+    "phrase": "2nd warmest November 6 high (tied) of 156 since 1871, warmest since 2018"
+   },
+   "low_rank": {
+    "value_f": 67,
+    "warm_rank": 15,
+    "cool_rank": 138,
+    "years": 156,
+    "first_year": 1871,
+    "tied_years": [
+     1885,
+     1902,
+     2019,
+     2022
     ],
     "standing": "warm",
     "notable": true,
     "since": 2024,
     "record": false,
-    "phrase": "2nd warmest November 5 high (tied) of 156 since 1871, warmest since 2024"
-   },
-   "low_rank": {
-    "value_f": 68,
-    "warm_rank": 7,
-    "cool_rank": 145,
-    "years": 156,
-    "first_year": 1871,
-    "tied_years": [
-     1873,
-     1880,
-     1902,
-     1932,
-     1961
-    ],
-    "standing": "warm",
-    "notable": true,
-    "since": 2015,
-    "record": false,
-    "phrase": "7th warmest November 5 low (tied) of 156 since 1871, warmest since 2015"
+    "phrase": "15th warmest November 6 low (tied) of 156 since 1871, warmest since 2024"
    }
   },
   "forecast_highs": [
    {
-    "period": "Saturday",
+    "period": "Today",
     "date": "2026-11-07",
     "high_f": 78,
     "would_rank": {
@@ -268,21 +268,12 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-07T06:20:54Z",
+  "issued_utc": "2026-11-07T11:51:42Z",
   "grid": "JAX/64,72",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-07T05:00:00-05:00",
-    "is_daytime": false,
-    "temp_f": 60,
-    "temp_c": 15.56,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Clear"
-   },
-   {
-    "name": "Saturday",
-    "start": "2026-11-07T06:00:00-05:00",
+    "name": "Today",
+    "start": "2026-11-07T07:00:00-05:00",
     "is_daytime": true,
     "temp_f": 78,
     "temp_c": 25.56,
@@ -290,7 +281,7 @@
     "short_forecast": "Mostly Sunny"
    },
    {
-    "name": "Saturday Night",
+    "name": "Tonight",
     "start": "2026-11-07T18:00:00-05:00",
     "is_daytime": false,
     "temp_f": 55,
@@ -396,19 +387,21 @@
     "temp_c": 20.56,
     "precip_chance_pct": 14,
     "short_forecast": "Partly Sunny"
+   },
+   {
+    "name": "Friday Night",
+    "start": "2026-11-13T18:00:00-05:00",
+    "is_daytime": false,
+    "temp_f": 45,
+    "temp_c": 7.22,
+    "precip_chance_pct": 6,
+    "short_forecast": "Partly Cloudy"
    }
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-07T06:20:54Z",
+  "issued_utc": "2026-11-07T11:51:42Z",
   "hours": [
-   {
-    "start": "2026-11-07T06:00:00-05:00",
-    "temp_f": 61,
-    "temp_c": 16.11,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "start": "2026-11-07T07:00:00-05:00",
     "temp_f": 60,
@@ -737,6 +730,13 @@
     "temp_c": 12.78,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear"
+   },
+   {
+    "start": "2026-11-09T06:00:00-05:00",
+    "temp_f": 54,
+    "temp_c": 12.22,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
    }
   ]
  },

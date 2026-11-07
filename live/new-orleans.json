@@ -11,38 +11,38 @@
   "lon": -90.2508,
   "history": "Same site as the official New Orleans record"
  },
- "as_of_utc": "2026-11-07T11:07:50Z",
+ "as_of_utc": "2026-11-07T12:07:53Z",
  "now": {
-  "time_utc": "2026-11-07T10:50:00Z",
-  "temp_c": 18,
-  "temp_f": 64.4,
+  "time_utc": "2026-11-07T11:50:00Z",
+  "temp_c": 17,
+  "temp_f": 62.6,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 12,
-  "humidity_pct": 67.97,
+  "humidity_pct": 72.4,
   "wind_kmh": 14.83,
-  "description": "Clear"
+  "description": ""
  },
  "today_so_far": {
   "date_local": "2026-11-07",
-  "readings": 2,
+  "readings": 3,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
   "high_c": 19.4,
   "high_f": 66.9,
   "high_time_utc": "2026-11-07T07:53:00Z",
-  "low_c": 18.9,
-  "low_f": 66.0,
-  "low_time_utc": "2026-11-07T08:53:00Z",
+  "low_c": 18.3,
+  "low_f": 64.9,
+  "low_time_utc": "2026-11-07T10:53:00Z",
   "peak_between_reports": {
    "at_least_f": 68.9,
    "about_f": 69.8,
    "time_utc": "2026-11-07T06:30:00Z"
   },
   "dip_between_reports": {
-   "at_most_f": 65.3,
-   "about_f": 64.4,
-   "time_utc": "2026-11-07T09:30:00Z"
+   "at_most_f": 63.5,
+   "about_f": 62.6,
+   "time_utc": "2026-11-07T11:50:00Z"
   }
  },
  "record": {
@@ -51,40 +51,46 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-05",
-   "is_yesterday": false,
-   "high_f": 78,
-   "low_f": 64,
+   "date": "2026-11-06",
+   "is_yesterday": true,
+   "high_f": 77,
+   "low_f": 61,
    "high_rank": {
-    "value_f": 78,
-    "warm_rank": 24,
-    "cool_rank": 56,
+    "value_f": 77,
+    "warm_rank": 29,
+    "cool_rank": 48,
     "years": 81,
     "first_year": 1946,
     "tied_years": [
+     1947,
+     1965,
+     1971,
      1975,
-     2008
+     2019
     ],
     "standing": "warm",
     "notable": false,
     "since": 2025,
     "record": false,
-    "phrase": "typical for November 5"
+    "phrase": "typical for November 6"
    },
    "low_rank": {
-    "value_f": 64,
-    "warm_rank": 14,
-    "cool_rank": 67,
+    "value_f": 61,
+    "warm_rank": 22,
+    "cool_rank": 56,
     "years": 81,
     "first_year": 1946,
     "tied_years": [
-     2018
+     1958,
+     2011,
+     2014,
+     2019
     ],
     "standing": "warm",
-    "notable": true,
+    "notable": false,
     "since": 2024,
     "record": false,
-    "phrase": "14th warmest November 5 low (tied) of 81 since 1946, warmest since 2024"
+    "phrase": "typical for November 6"
    }
   },
   "forecast_highs": [
@@ -382,13 +388,6 @@
  "hourly": {
   "issued_utc": "2026-11-07T06:57:28Z",
   "hours": [
-   {
-    "start": "2026-11-07T05:00:00-06:00",
-    "temp_f": 63,
-    "temp_c": 17.22,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "start": "2026-11-07T06:00:00-06:00",
     "temp_f": 62,
@@ -715,6 +714,13 @@
     "start": "2026-11-09T04:00:00-06:00",
     "temp_f": 57,
     "temp_c": 13.89,
+    "precip_chance_pct": 0,
+    "short_forecast": "Partly Cloudy"
+   },
+   {
+    "start": "2026-11-09T05:00:00-06:00",
+    "temp_f": 56,
+    "temp_c": 13.33,
     "precip_chance_pct": 0,
     "short_forecast": "Partly Cloudy"
    }

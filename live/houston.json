@@ -11,20 +11,20 @@
   "lon": -95.3607,
   "history": "Same site as the official Houston record"
  },
- "as_of_utc": "2026-11-07T11:07:50Z",
+ "as_of_utc": "2026-11-07T12:07:53Z",
  "now": {
-  "time_utc": "2026-11-07T10:50:00Z",
+  "time_utc": "2026-11-07T11:50:00Z",
   "temp_c": 18,
   "temp_f": 64.4,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 17,
   "humidity_pct": 93.88,
-  "wind_kmh": 5.54,
-  "description": "Mostly Cloudy"
+  "wind_kmh": 9.25,
+  "description": "Partly Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-07",
-  "readings": 2,
+  "readings": 3,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -46,50 +46,48 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-05",
-   "is_yesterday": false,
+   "date": "2026-11-06",
+   "is_yesterday": true,
    "high_f": 83,
-   "low_f": 55,
+   "low_f": 60,
    "high_rank": {
     "value_f": 83,
-    "warm_rank": 13,
-    "cool_rank": 115,
+    "warm_rank": 17,
+    "cool_rank": 116,
     "years": 136,
     "first_year": 1889,
     "tied_years": [
      1909,
-     1927,
-     1931,
-     1989,
+     1924,
      2015,
-     2016,
-     2019,
-     2023,
-     2025
+     2023
     ],
     "standing": "warm",
     "notable": true,
-    "since": 2025,
+    "since": 2024,
     "record": false,
-    "phrase": "13th warmest November 5 high (tied) of 136 since 1889, warmest since 2025"
+    "phrase": "17th warmest November 6 high (tied) of 136 since 1889, warmest since 2024"
    },
    "low_rank": {
-    "value_f": 55,
-    "warm_rank": 70,
-    "cool_rank": 63,
+    "value_f": 60,
+    "warm_rank": 36,
+    "cool_rank": 94,
     "years": 136,
     "first_year": 1889,
     "tied_years": [
-     1930,
-     1961,
-     1978,
-     1981
+     1892,
+     1912,
+     1931,
+     1944,
+     1962,
+     1964,
+     2007
     ],
-    "standing": "cool",
+    "standing": "warm",
     "notable": false,
-    "since": 2025,
+    "since": 2024,
     "record": false,
-    "phrase": "typical for November 5"
+    "phrase": "typical for November 6"
    }
   },
   "forecast_highs": [
@@ -268,7 +266,7 @@
   "periods": [
    {
     "name": "Overnight",
-    "start": "2026-11-07T04:00:00-06:00",
+    "start": "2026-11-07T00:00:00-06:00",
     "is_daytime": false,
     "temp_f": 64,
     "temp_c": 17.78,
@@ -395,15 +393,8 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-07T06:21:26Z",
+  "issued_utc": "2026-11-07T11:16:20Z",
   "hours": [
-   {
-    "start": "2026-11-07T05:00:00-06:00",
-    "temp_f": 66,
-    "temp_c": 18.89,
-    "precip_chance_pct": 2,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "start": "2026-11-07T06:00:00-06:00",
     "temp_f": 65,
@@ -730,6 +721,13 @@
     "start": "2026-11-09T04:00:00-06:00",
     "temp_f": 56,
     "temp_c": 13.33,
+    "precip_chance_pct": 20,
+    "short_forecast": "Slight Chance Rain Showers"
+   },
+   {
+    "start": "2026-11-09T05:00:00-06:00",
+    "temp_f": 55,
+    "temp_c": 12.78,
     "precip_chance_pct": 20,
     "short_forecast": "Slight Chance Rain Showers"
    }

@@ -11,20 +11,20 @@
   "lon": -80.2145,
   "history": "Same site as the official Pittsburgh record"
  },
- "as_of_utc": "2026-11-07T11:07:50Z",
+ "as_of_utc": "2026-11-07T12:07:53Z",
  "now": {
-  "time_utc": "2026-11-07T10:40:00Z",
-  "temp_c": 5.6,
-  "temp_f": 42.1,
-  "precision": "tenths of a degree",
-  "dewpoint_c": 0,
-  "humidity_pct": 67.24,
-  "wind_kmh": 12.96,
+  "time_utc": "2026-11-07T11:50:00Z",
+  "temp_c": 6,
+  "temp_f": 42.8,
+  "precision": "nearest whole \u00b0C",
+  "dewpoint_c": 1,
+  "humidity_pct": 70.3,
+  "wind_kmh": 11.12,
   "description": "Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-07",
-  "readings": 3,
+  "readings": 4,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -41,50 +41,50 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-05",
-   "is_yesterday": false,
-   "high_f": 69,
-   "low_f": 51,
+   "date": "2026-11-06",
+   "is_yesterday": true,
+   "high_f": 56,
+   "low_f": 41,
    "high_rank": {
-    "value_f": 69,
-    "warm_rank": 16,
-    "cool_rank": 131,
+    "value_f": 56,
+    "warm_rank": 56,
+    "cool_rank": 94,
     "years": 152,
     "first_year": 1875,
     "tied_years": [
-     1895,
-     1897,
-     1898,
-     1978,
-     2008,
-     2020
+     1900,
+     1920,
+     1926
     ],
     "standing": "warm",
-    "notable": true,
+    "notable": false,
     "since": 2024,
     "record": false,
-    "phrase": "16th warmest November 5 high (tied) of 152 since 1875, warmest since 2024"
+    "phrase": "typical for November 6"
    },
    "low_rank": {
-    "value_f": 51,
-    "warm_rank": 12,
-    "cool_rank": 140,
+    "value_f": 41,
+    "warm_rank": 43,
+    "cool_rank": 106,
     "years": 153,
     "first_year": 1874,
     "tied_years": [
-     1975,
-     2003
+     1880,
+     1932,
+     1970,
+     2013,
+     2016
     ],
     "standing": "warm",
-    "notable": true,
+    "notable": false,
     "since": 2024,
     "record": false,
-    "phrase": "12th warmest November 5 low (tied) of 153 since 1874, warmest since 2024"
+    "phrase": "typical for November 6"
    }
   },
   "forecast_highs": [
    {
-    "period": "Saturday",
+    "period": "Today",
     "date": "2026-11-07",
     "high_f": 49,
     "would_rank": {
@@ -260,16 +260,7 @@
   "grid": "PBZ/70,67",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-07T05:00:00-05:00",
-    "is_daytime": false,
-    "temp_f": 34,
-    "temp_c": 1.11,
-    "precip_chance_pct": 0,
-    "short_forecast": "Partly Cloudy"
-   },
-   {
-    "name": "Saturday",
+    "name": "Today",
     "start": "2026-11-07T06:00:00-05:00",
     "is_daytime": true,
     "temp_f": 49,
@@ -278,7 +269,7 @@
     "short_forecast": "Mostly Cloudy then Chance Rain Showers"
    },
    {
-    "name": "Saturday Night",
+    "name": "Tonight",
     "start": "2026-11-07T18:00:00-05:00",
     "is_daytime": false,
     "temp_f": 36,
@@ -384,19 +375,21 @@
     "temp_c": 7.78,
     "precip_chance_pct": 33,
     "short_forecast": "Chance Rain And Snow"
+   },
+   {
+    "name": "Friday Night",
+    "start": "2026-11-13T18:00:00-05:00",
+    "is_daytime": false,
+    "temp_f": 31,
+    "temp_c": -0.56,
+    "precip_chance_pct": 21,
+    "short_forecast": "Slight Chance Light Rain then Mostly Cloudy"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-07T10:21:24Z",
   "hours": [
-   {
-    "start": "2026-11-07T06:00:00-05:00",
-    "temp_f": 41,
-    "temp_c": 5.0,
-    "precip_chance_pct": 1,
-    "short_forecast": "Partly Sunny"
-   },
    {
     "start": "2026-11-07T07:00:00-05:00",
     "temp_f": 41,
@@ -725,6 +718,13 @@
     "temp_c": 5.56,
     "precip_chance_pct": 1,
     "short_forecast": "Partly Cloudy"
+   },
+   {
+    "start": "2026-11-09T06:00:00-05:00",
+    "temp_f": 41,
+    "temp_c": 5.0,
+    "precip_chance_pct": 1,
+    "short_forecast": "Mostly Sunny"
    }
   ]
  },
