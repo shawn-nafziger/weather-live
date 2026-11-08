@@ -11,9 +11,9 @@
   "lon": -85.7867,
   "history": "Provisional: Goshen Municipal Airport. The long record (GOSHEN 3SW) is a once-a-day volunteer station, so today's readings and the record come from different stations (question D2)"
  },
- "as_of_utc": "2026-11-08T10:07:51Z",
+ "as_of_utc": "2026-11-08T11:07:50Z",
  "now": {
-  "time_utc": "2026-11-08T09:50:00Z",
+  "time_utc": "2026-11-08T10:45:00Z",
   "temp_c": 2,
   "temp_f": 35.6,
   "precision": "nearest whole \u00b0C",
@@ -24,13 +24,13 @@
  },
  "today_so_far": {
   "date_local": "2026-11-08",
-  "readings": 2,
+  "readings": 3,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 1.7,
-  "high_f": 35.1,
-  "high_time_utc": "2026-11-08T05:53:00Z",
+  "high_c": 2.2,
+  "high_f": 36.0,
+  "high_time_utc": "2026-11-08T09:53:00Z",
   "low_c": 1.7,
   "low_f": 35.1,
   "low_time_utc": "2026-11-08T05:53:00Z",
@@ -91,16 +91,7 @@
   "grid": "IWX/45,57",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-08T04:00:00-05:00",
-    "is_daytime": false,
-    "temp_f": 32,
-    "temp_c": 0.0,
-    "precip_chance_pct": 0,
-    "short_forecast": "Partly Cloudy"
-   },
-   {
-    "name": "Sunday",
+    "name": "Today",
     "start": "2026-11-08T06:00:00-05:00",
     "is_daytime": true,
     "temp_f": 55,
@@ -109,7 +100,7 @@
     "short_forecast": "Mostly Sunny"
    },
    {
-    "name": "Sunday Night",
+    "name": "Tonight",
     "start": "2026-11-08T18:00:00-05:00",
     "is_daytime": false,
     "temp_f": 36,
@@ -215,19 +206,21 @@
     "temp_c": 9.44,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Sunny"
+   },
+   {
+    "name": "Saturday Night",
+    "start": "2026-11-14T18:00:00-05:00",
+    "is_daytime": false,
+    "temp_f": 34,
+    "temp_c": 1.11,
+    "precip_chance_pct": 0,
+    "short_forecast": "Partly Cloudy"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-08T08:16:07Z",
   "hours": [
-   {
-    "start": "2026-11-08T05:00:00-05:00",
-    "temp_f": 34,
-    "temp_c": 1.11,
-    "precip_chance_pct": 0,
-    "short_forecast": "Partly Cloudy"
-   },
    {
     "start": "2026-11-08T06:00:00-05:00",
     "temp_f": 35,
@@ -554,6 +547,13 @@
     "start": "2026-11-10T04:00:00-05:00",
     "temp_f": 42,
     "temp_c": 5.56,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Clear"
+   },
+   {
+    "start": "2026-11-10T05:00:00-05:00",
+    "temp_f": 41,
+    "temp_c": 5.0,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear"
    }
