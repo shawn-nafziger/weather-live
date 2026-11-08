@@ -11,15 +11,15 @@
   "lon": -77.0342,
   "history": "Same site as the official Washington record"
  },
- "as_of_utc": "2026-11-07T23:43:11Z",
+ "as_of_utc": "2026-11-08T00:07:51Z",
  "now": {
-  "time_utc": "2026-11-07T23:30:00Z",
+  "time_utc": "2026-11-07T23:55:00Z",
   "temp_c": 11,
   "temp_f": 51.8,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 2,
   "humidity_pct": 53.83,
-  "wind_kmh": null,
+  "wind_kmh": 18.5,
   "description": "Clear"
  },
  "today_so_far": {
@@ -81,30 +81,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-07",
-    "high_f": 61,
-    "would_rank": {
-     "value_f": 61,
-     "warm_rank": 64,
-     "cool_rank": 87,
-     "years": 155,
-     "first_year": 1872,
-     "tied_years": [
-      1906,
-      1932,
-      1939,
-      2016,
-      2019
-     ],
-     "standing": "warm",
-     "notable": false,
-     "since": 2025,
-     "record": false,
-     "phrase": "typical for November 7"
-    }
-   },
    {
     "period": "Sunday",
     "date": "2026-11-08",
@@ -243,29 +219,42 @@
      "record": false,
      "phrase": "typical for November 13"
     }
+   },
+   {
+    "period": "Saturday",
+    "date": "2026-11-14",
+    "high_f": 52,
+    "would_rank": {
+     "value_f": 52,
+     "warm_rank": 99,
+     "cool_rank": 54,
+     "years": 155,
+     "first_year": 1872,
+     "tied_years": [
+      1872,
+      1903,
+      1979
+     ],
+     "standing": "cool",
+     "notable": false,
+     "since": 2022,
+     "record": false,
+     "phrase": "typical for November 14"
+    }
    }
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-07T20:53:04Z",
+  "issued_utc": "2026-11-07T23:53:13Z",
   "grid": "LWX/97,69",
   "periods": [
    {
-    "name": "This Afternoon",
-    "start": "2026-11-07T16:00:00-05:00",
-    "is_daytime": true,
-    "temp_f": 61,
-    "temp_c": 16.11,
-    "precip_chance_pct": 2,
-    "short_forecast": "Partly Sunny"
-   },
-   {
     "name": "Tonight",
-    "start": "2026-11-07T18:00:00-05:00",
+    "start": "2026-11-07T19:00:00-05:00",
     "is_daytime": false,
     "temp_f": 44,
     "temp_c": 6.67,
-    "precip_chance_pct": 1,
+    "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear"
    },
    {
@@ -375,19 +364,21 @@
     "temp_c": 2.22,
     "precip_chance_pct": 37,
     "short_forecast": "Chance Light Rain"
+   },
+   {
+    "name": "Saturday",
+    "start": "2026-11-14T06:00:00-05:00",
+    "is_daytime": true,
+    "temp_f": 52,
+    "temp_c": 11.11,
+    "precip_chance_pct": 20,
+    "short_forecast": "Slight Chance Light Rain"
    }
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-07T20:53:04Z",
+  "issued_utc": "2026-11-07T23:53:13Z",
   "hours": [
-   {
-    "start": "2026-11-07T18:00:00-05:00",
-    "temp_f": 53,
-    "temp_c": 11.67,
-    "precip_chance_pct": 1,
-    "short_forecast": "Mostly Clear"
-   },
    {
     "start": "2026-11-07T19:00:00-05:00",
     "temp_f": 51,
@@ -716,6 +707,13 @@
     "temp_c": 16.11,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
+   },
+   {
+    "start": "2026-11-09T18:00:00-05:00",
+    "temp_f": 58,
+    "temp_c": 14.44,
+    "precip_chance_pct": 0,
+    "short_forecast": "Clear"
    }
   ]
  },
