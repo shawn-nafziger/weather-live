@@ -11,20 +11,20 @@
   "lon": -97.7605,
   "history": "Same site as the official Austin record"
  },
- "as_of_utc": "2026-11-08T11:07:50Z",
+ "as_of_utc": "2026-11-08T12:07:50Z",
  "now": {
-  "time_utc": "2026-11-08T10:08:00Z",
+  "time_utc": "2026-11-08T11:43:00Z",
   "temp_c": 15,
   "temp_f": 59.0,
   "precision": "tenths of a degree",
   "dewpoint_c": 14.4,
   "humidity_pct": 96.2,
-  "wind_kmh": 12.96,
-  "description": "Rain and Fog/Mist"
+  "wind_kmh": 7.56,
+  "description": "Heavy Rain and Fog/Mist"
  },
  "today_so_far": {
   "date_local": "2026-11-08",
-  "readings": 10,
+  "readings": 12,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -41,57 +41,48 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-06",
-   "is_yesterday": false,
-   "high_f": 74,
-   "low_f": 54,
+   "date": "2026-11-07",
+   "is_yesterday": true,
+   "high_f": 70,
+   "low_f": 57,
    "high_rank": {
-    "value_f": 74,
-    "warm_rank": 62,
-    "cool_rank": 59,
-    "years": 130,
-    "first_year": 1897,
-    "tied_years": [
-     1897,
-     1902,
-     1912,
-     1942,
-     1954,
-     1962,
-     1965,
-     1976,
-     1994,
-     2000
-    ],
-    "standing": "cool",
-    "notable": false,
-    "since": 2021,
-    "record": false,
-    "phrase": "typical for November 6"
-   },
-   "low_rank": {
-    "value_f": 54,
-    "warm_rank": 51,
-    "cool_rank": 74,
+    "value_f": 70,
+    "warm_rank": 91,
+    "cool_rank": 34,
     "years": 129,
     "first_year": 1897,
     "tied_years": [
-     1940,
-     1971,
-     1975,
-     1977,
-     1987
+     1955,
+     1957,
+     1960,
+     1972,
+     1985
+    ],
+    "standing": "cool",
+    "notable": false,
+    "since": 2019,
+    "record": false,
+    "phrase": "typical for November 7"
+   },
+   "low_rank": {
+    "value_f": 57,
+    "warm_rank": 41,
+    "cool_rank": 87,
+    "years": 128,
+    "first_year": 1898,
+    "tied_years": [
+     1935
     ],
     "standing": "warm",
     "notable": false,
     "since": 2025,
     "record": false,
-    "phrase": "typical for November 6"
+    "phrase": "typical for November 7"
    }
   },
   "forecast_highs": [
    {
-    "period": "Sunday",
+    "period": "Today",
     "date": "2026-11-08",
     "high_f": 63,
     "would_rank": {
@@ -253,20 +244,11 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-08T07:44:24Z",
+  "issued_utc": "2026-11-08T11:44:46Z",
   "grid": "EWX/155,93",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-08T02:00:00-06:00",
-    "is_daytime": false,
-    "temp_f": 56,
-    "temp_c": 13.33,
-    "precip_chance_pct": 70,
-    "short_forecast": "Rain Showers Likely"
-   },
-   {
-    "name": "Sunday",
+    "name": "Today",
     "start": "2026-11-08T06:00:00-06:00",
     "is_daytime": true,
     "temp_f": 63,
@@ -275,7 +257,7 @@
     "short_forecast": "Rain Showers"
    },
    {
-    "name": "Sunday Night",
+    "name": "Tonight",
     "start": "2026-11-08T18:00:00-06:00",
     "is_daytime": false,
     "temp_f": 54,
@@ -381,19 +363,21 @@
     "temp_c": 22.22,
     "precip_chance_pct": 4,
     "short_forecast": "Sunny"
+   },
+   {
+    "name": "Saturday Night",
+    "start": "2026-11-14T18:00:00-06:00",
+    "is_daytime": false,
+    "temp_f": 51,
+    "temp_c": 10.56,
+    "precip_chance_pct": 7,
+    "short_forecast": "Mostly Clear"
    }
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-08T07:44:24Z",
+  "issued_utc": "2026-11-08T10:32:30Z",
   "hours": [
-   {
-    "start": "2026-11-08T05:00:00-06:00",
-    "temp_f": 57,
-    "temp_c": 13.89,
-    "precip_chance_pct": 70,
-    "short_forecast": "Rain Showers Likely"
-   },
    {
     "start": "2026-11-08T06:00:00-06:00",
     "temp_f": 57,
@@ -720,6 +704,13 @@
     "start": "2026-11-10T04:00:00-06:00",
     "temp_f": 56,
     "temp_c": 13.33,
+    "precip_chance_pct": 9,
+    "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "start": "2026-11-10T05:00:00-06:00",
+    "temp_f": 55,
+    "temp_c": 12.78,
     "precip_chance_pct": 9,
     "short_forecast": "Mostly Cloudy"
    }

@@ -11,29 +11,29 @@
   "lon": -90.2508,
   "history": "Same site as the official New Orleans record"
  },
- "as_of_utc": "2026-11-08T11:07:50Z",
+ "as_of_utc": "2026-11-08T12:07:50Z",
  "now": {
-  "time_utc": "2026-11-08T10:50:00Z",
+  "time_utc": "2026-11-08T11:25:00Z",
   "temp_c": 14,
   "temp_f": 57.2,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 7,
   "humidity_pct": 62.72,
-  "wind_kmh": 14.83,
+  "wind_kmh": 12.96,
   "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-08",
-  "readings": 3,
+  "readings": 4,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
   "high_c": 15.6,
   "high_f": 60.1,
   "high_time_utc": "2026-11-08T07:53:00Z",
-  "low_c": 14.4,
-  "low_f": 57.9,
-  "low_time_utc": "2026-11-08T09:53:00Z",
+  "low_c": 13.9,
+  "low_f": 57.0,
+  "low_time_utc": "2026-11-08T10:53:00Z",
   "peak_between_reports": {
    "at_least_f": 61.7,
    "about_f": 62.6,
@@ -46,46 +46,42 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-06",
-   "is_yesterday": false,
-   "high_f": 77,
+   "date": "2026-11-07",
+   "is_yesterday": true,
+   "high_f": 73,
    "low_f": 61,
    "high_rank": {
-    "value_f": 77,
-    "warm_rank": 29,
-    "cool_rank": 48,
+    "value_f": 73,
+    "warm_rank": 43,
+    "cool_rank": 37,
     "years": 81,
     "first_year": 1946,
     "tied_years": [
-     1947,
-     1965,
-     1971,
-     1975,
-     2019
+     1952,
+     2003
+    ],
+    "standing": "cool",
+    "notable": false,
+    "since": 2021,
+    "record": false,
+    "phrase": "typical for November 7"
+   },
+   "low_rank": {
+    "value_f": 61,
+    "warm_rank": 21,
+    "cool_rank": 58,
+    "years": 81,
+    "first_year": 1946,
+    "tied_years": [
+     1983,
+     1996,
+     2023
     ],
     "standing": "warm",
     "notable": false,
     "since": 2025,
     "record": false,
-    "phrase": "typical for November 6"
-   },
-   "low_rank": {
-    "value_f": 61,
-    "warm_rank": 22,
-    "cool_rank": 56,
-    "years": 81,
-    "first_year": 1946,
-    "tied_years": [
-     1958,
-     2011,
-     2014,
-     2019
-    ],
-    "standing": "warm",
-    "notable": false,
-    "since": 2024,
-    "record": false,
-    "phrase": "typical for November 6"
+    "phrase": "typical for November 7"
    }
   },
   "forecast_highs": [
@@ -392,15 +388,8 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-08T06:57:22Z",
+  "issued_utc": "2026-11-08T11:23:50Z",
   "hours": [
-   {
-    "start": "2026-11-08T05:00:00-06:00",
-    "temp_f": 56,
-    "temp_c": 13.33,
-    "precip_chance_pct": 0,
-    "short_forecast": "Partly Cloudy"
-   },
    {
     "start": "2026-11-08T06:00:00-06:00",
     "temp_f": 55,
@@ -727,6 +716,13 @@
     "start": "2026-11-10T04:00:00-06:00",
     "temp_f": 59,
     "temp_c": 15.0,
+    "precip_chance_pct": 0,
+    "short_forecast": "Partly Cloudy"
+   },
+   {
+    "start": "2026-11-10T05:00:00-06:00",
+    "temp_f": 58,
+    "temp_c": 14.44,
     "precip_chance_pct": 0,
     "short_forecast": "Partly Cloudy"
    }

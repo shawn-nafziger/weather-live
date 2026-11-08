@@ -11,20 +11,20 @@
   "lon": -83.3308,
   "history": "Same site as the official Detroit record"
  },
- "as_of_utc": "2026-11-08T11:07:50Z",
+ "as_of_utc": "2026-11-08T12:07:50Z",
  "now": {
-  "time_utc": "2026-11-08T10:50:00Z",
+  "time_utc": "2026-11-08T11:35:00Z",
   "temp_c": 2,
   "temp_f": 35.6,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 0,
   "humidity_pct": 86.6,
-  "wind_kmh": 18.5,
+  "wind_kmh": 14.83,
   "description": ""
  },
  "today_so_far": {
   "date_local": "2026-11-08",
-  "readings": 3,
+  "readings": 4,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -41,55 +41,56 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-06",
-   "is_yesterday": false,
-   "high_f": 50,
-   "low_f": 40,
+   "date": "2026-11-07",
+   "is_yesterday": true,
+   "high_f": 47,
+   "low_f": 37,
    "high_rank": {
-    "value_f": 50,
-    "warm_rank": 77,
-    "cool_rank": 68,
+    "value_f": 47,
+    "warm_rank": 97,
+    "cool_rank": 50,
     "years": 153,
     "first_year": 1874,
     "tied_years": [
-     1892,
-     1905,
-     1906,
-     1934,
-     1942,
-     1949,
+     1888,
+     1896,
+     1908,
+     1911,
      1968,
-     1981,
-     2014
+     2002,
+     2018
     ],
     "standing": "cool",
     "notable": false,
     "since": 2019,
     "record": false,
-    "phrase": "typical for November 6"
+    "phrase": "typical for November 7"
    },
    "low_rank": {
-    "value_f": 40,
-    "warm_rank": 46,
-    "cool_rank": 104,
+    "value_f": 37,
+    "warm_rank": 67,
+    "cool_rank": 80,
     "years": 153,
     "first_year": 1874,
     "tied_years": [
-     1893,
-     1911,
-     1934,
-     2017
+     1883,
+     1902,
+     1908,
+     1919,
+     1931,
+     1957,
+     2005
     ],
     "standing": "warm",
     "notable": false,
-    "since": 2024,
+    "since": 2025,
     "record": false,
-    "phrase": "typical for November 6"
+    "phrase": "typical for November 7"
    }
   },
   "forecast_highs": [
    {
-    "period": "Sunday",
+    "period": "Today",
     "date": "2026-11-08",
     "high_f": 57,
     "would_rank": {
@@ -260,16 +261,7 @@
   "grid": "DTX/57,28",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-08T04:00:00-05:00",
-    "is_daytime": false,
-    "temp_f": 34,
-    "temp_c": 1.11,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Clear"
-   },
-   {
-    "name": "Sunday",
+    "name": "Today",
     "start": "2026-11-08T06:00:00-05:00",
     "is_daytime": true,
     "temp_f": 57,
@@ -278,7 +270,7 @@
     "short_forecast": "Mostly Sunny"
    },
    {
-    "name": "Sunday Night",
+    "name": "Tonight",
     "start": "2026-11-08T18:00:00-05:00",
     "is_daytime": false,
     "temp_f": 39,
@@ -384,19 +376,21 @@
     "temp_c": 9.44,
     "precip_chance_pct": 5,
     "short_forecast": "Mostly Sunny"
+   },
+   {
+    "name": "Saturday Night",
+    "start": "2026-11-14T18:00:00-05:00",
+    "is_daytime": false,
+    "temp_f": 34,
+    "temp_c": 1.11,
+    "precip_chance_pct": 2,
+    "short_forecast": "Partly Cloudy"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-08T08:35:14Z",
   "hours": [
-   {
-    "start": "2026-11-08T06:00:00-05:00",
-    "temp_f": 36,
-    "temp_c": 2.22,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Sunny"
-   },
    {
     "start": "2026-11-08T07:00:00-05:00",
     "temp_f": 37,
@@ -725,6 +719,13 @@
     "temp_c": 6.11,
     "precip_chance_pct": 0,
     "short_forecast": "Partly Cloudy"
+   },
+   {
+    "start": "2026-11-10T06:00:00-05:00",
+    "temp_f": 43,
+    "temp_c": 6.11,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Sunny"
    }
   ]
  },

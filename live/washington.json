@@ -11,20 +11,20 @@
   "lon": -77.0342,
   "history": "Same site as the official Washington record"
  },
- "as_of_utc": "2026-11-08T11:07:50Z",
+ "as_of_utc": "2026-11-08T12:07:50Z",
  "now": {
-  "time_utc": "2026-11-08T10:50:00Z",
+  "time_utc": "2026-11-08T11:30:00Z",
   "temp_c": 9,
   "temp_f": 48.2,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 3,
   "humidity_pct": 66.07,
-  "wind_kmh": 14.83,
-  "description": "Mostly Clear"
+  "wind_kmh": 11.12,
+  "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-08",
-  "readings": 4,
+  "readings": 5,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -41,48 +41,54 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-06",
-   "is_yesterday": false,
-   "high_f": 68,
-   "low_f": 59,
+   "date": "2026-11-07",
+   "is_yesterday": true,
+   "high_f": 62,
+   "low_f": 47,
    "high_rank": {
-    "value_f": 68,
-    "warm_rank": 28,
-    "cool_rank": 123,
+    "value_f": 62,
+    "warm_rank": 57,
+    "cool_rank": 92,
     "years": 155,
     "first_year": 1872,
     "tied_years": [
-     1917,
-     1924,
-     1928,
-     2003,
-     2013
+     1872,
+     1929,
+     1957,
+     1963,
+     1971,
+     1976,
+     1987
     ],
     "standing": "warm",
-    "notable": true,
-    "since": 2024,
+    "notable": false,
+    "since": 2025,
     "record": false,
-    "phrase": "28th warmest November 6 high (tied) of 155 since 1872, warmest since 2024"
+    "phrase": "typical for November 7"
    },
    "low_rank": {
-    "value_f": 59,
-    "warm_rank": 8,
-    "cool_rank": 147,
+    "value_f": 47,
+    "warm_rank": 30,
+    "cool_rank": 121,
     "years": 155,
     "first_year": 1872,
     "tied_years": [
-     1880
+     1911,
+     1941,
+     1980,
+     2005,
+     2020
     ],
     "standing": "warm",
     "notable": true,
     "since": 2024,
     "record": false,
-    "phrase": "8th warmest November 6 low (tied) of 155 since 1872, warmest since 2024"
+    "phrase": "30th warmest November 7 low (tied) of 155 since 1872, warmest since 2024"
    }
   },
   "forecast_highs": [
    {
-    "period": "Sunday",
+    "period": "Today",
     "date": "2026-11-08",
     "high_f": 63,
     "would_rank": {
@@ -262,16 +268,7 @@
   "grid": "LWX/97,69",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-08T04:00:00-05:00",
-    "is_daytime": false,
-    "temp_f": 44,
-    "temp_c": 6.67,
-    "precip_chance_pct": 0,
-    "short_forecast": "Clear"
-   },
-   {
-    "name": "Sunday",
+    "name": "Today",
     "start": "2026-11-08T06:00:00-05:00",
     "is_daytime": true,
     "temp_f": 63,
@@ -280,7 +277,7 @@
     "short_forecast": "Sunny"
    },
    {
-    "name": "Sunday Night",
+    "name": "Tonight",
     "start": "2026-11-08T18:00:00-05:00",
     "is_daytime": false,
     "temp_f": 48,
@@ -386,19 +383,21 @@
     "temp_c": 10.56,
     "precip_chance_pct": 10,
     "short_forecast": "Partly Sunny"
+   },
+   {
+    "name": "Saturday Night",
+    "start": "2026-11-14T18:00:00-05:00",
+    "is_daytime": false,
+    "temp_f": 37,
+    "temp_c": 2.78,
+    "precip_chance_pct": 3,
+    "short_forecast": "Partly Cloudy"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-08T08:52:52Z",
   "hours": [
-   {
-    "start": "2026-11-08T06:00:00-05:00",
-    "temp_f": 44,
-    "temp_c": 6.67,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "start": "2026-11-08T07:00:00-05:00",
     "temp_f": 44,
@@ -727,6 +726,13 @@
     "temp_c": 5.56,
     "precip_chance_pct": 0,
     "short_forecast": "Clear"
+   },
+   {
+    "start": "2026-11-10T06:00:00-05:00",
+    "temp_f": 41,
+    "temp_c": 5.0,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
    }
   ]
  },

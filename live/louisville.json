@@ -11,20 +11,20 @@
   "lon": -85.7365,
   "history": "Same site as the official Louisville record"
  },
- "as_of_utc": "2026-11-08T11:07:50Z",
+ "as_of_utc": "2026-11-08T12:07:50Z",
  "now": {
-  "time_utc": "2026-11-08T10:50:00Z",
+  "time_utc": "2026-11-08T11:35:00Z",
   "temp_c": 2,
   "temp_f": 35.6,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 1,
   "humidity_pct": 93.09,
-  "wind_kmh": 5.54,
+  "wind_kmh": 0,
   "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-08",
-  "readings": 3,
+  "readings": 4,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -46,57 +46,48 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-06",
-   "is_yesterday": false,
-   "high_f": 58,
-   "low_f": 41,
+   "date": "2026-11-07",
+   "is_yesterday": true,
+   "high_f": 57,
+   "low_f": 37,
    "high_rank": {
-    "value_f": 58,
-    "warm_rank": 80,
-    "cool_rank": 67,
+    "value_f": 57,
+    "warm_rank": 94,
+    "cool_rank": 60,
     "years": 155,
     "first_year": 1872,
     "tied_years": [
      1873,
-     1876,
-     1882,
-     1901,
-     1939,
-     1941,
-     1979,
-     1987,
-     2019
+     1981
     ],
     "standing": "cool",
     "notable": false,
     "since": 2019,
     "record": false,
-    "phrase": "typical for November 6"
+    "phrase": "typical for November 7"
    },
    "low_rank": {
-    "value_f": 41,
-    "warm_rank": 69,
-    "cool_rank": 81,
+    "value_f": 37,
+    "warm_rank": 94,
+    "cool_rank": 58,
     "years": 155,
     "first_year": 1872,
     "tied_years": [
-     1913,
-     1946,
-     1979,
-     2000,
-     2004,
-     2011
+     1884,
+     1891,
+     1944,
+     1947
     ],
-    "standing": "warm",
+    "standing": "cool",
     "notable": false,
-    "since": 2024,
+    "since": 2021,
     "record": false,
-    "phrase": "typical for November 6"
+    "phrase": "typical for November 7"
    }
   },
   "forecast_highs": [
    {
-    "period": "Sunday",
+    "period": "Today",
     "date": "2026-11-08",
     "high_f": 60,
     "would_rank": {
@@ -267,16 +258,7 @@
   "grid": "LMK/51,74",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-08T04:00:00-05:00",
-    "is_daytime": false,
-    "temp_f": 34,
-    "temp_c": 1.11,
-    "precip_chance_pct": 0,
-    "short_forecast": "Patchy Frost"
-   },
-   {
-    "name": "Sunday",
+    "name": "Today",
     "start": "2026-11-08T06:00:00-05:00",
     "is_daytime": true,
     "temp_f": 60,
@@ -285,7 +267,7 @@
     "short_forecast": "Areas Of Frost then Sunny"
    },
    {
-    "name": "Sunday Night",
+    "name": "Tonight",
     "start": "2026-11-08T18:00:00-05:00",
     "is_daytime": false,
     "temp_f": 39,
@@ -391,19 +373,21 @@
     "temp_c": 11.67,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Sunny"
+   },
+   {
+    "name": "Saturday Night",
+    "start": "2026-11-14T18:00:00-05:00",
+    "is_daytime": false,
+    "temp_f": 35,
+    "temp_c": 1.67,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Clear"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-08T09:26:03Z",
   "hours": [
-   {
-    "start": "2026-11-08T06:00:00-05:00",
-    "temp_f": 35,
-    "temp_c": 1.67,
-    "precip_chance_pct": 0,
-    "short_forecast": "Patchy Frost"
-   },
    {
     "start": "2026-11-08T07:00:00-05:00",
     "temp_f": 34,
@@ -732,6 +716,13 @@
     "temp_c": 5.56,
     "precip_chance_pct": 0,
     "short_forecast": "Clear"
+   },
+   {
+    "start": "2026-11-10T06:00:00-05:00",
+    "temp_f": 41,
+    "temp_c": 5.0,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
    }
   ]
  },

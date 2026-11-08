@@ -11,29 +11,29 @@
   "lon": -86.2816,
   "history": "Same site as the official Indianapolis record"
  },
- "as_of_utc": "2026-11-08T11:07:50Z",
+ "as_of_utc": "2026-11-08T12:07:50Z",
  "now": {
-  "time_utc": "2026-11-08T10:50:00Z",
+  "time_utc": "2026-11-08T11:35:00Z",
   "temp_c": 1,
   "temp_f": 33.8,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": -2,
-  "humidity_pct": 80.38,
-  "wind_kmh": 11.12,
+  "dewpoint_c": -1,
+  "humidity_pct": 86.5,
+  "wind_kmh": 9.25,
   "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-08",
-  "readings": 3,
+  "readings": 4,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
   "high_c": 2.2,
   "high_f": 36.0,
   "high_time_utc": "2026-11-08T05:54:00Z",
-  "low_c": 1.1,
-  "low_f": 34.0,
-  "low_time_utc": "2026-11-08T09:54:00Z",
+  "low_c": 0.6,
+  "low_f": 33.1,
+  "low_time_utc": "2026-11-08T10:54:00Z",
   "peak_between_reports": {
    "at_least_f": 36.5,
    "about_f": 37.4,
@@ -46,54 +46,52 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-06",
-   "is_yesterday": false,
+   "date": "2026-11-07",
+   "is_yesterday": true,
    "high_f": 53,
-   "low_f": 38,
+   "low_f": 34,
    "high_rank": {
     "value_f": 53,
-    "warm_rank": 85,
-    "cool_rank": 65,
+    "warm_rank": 96,
+    "cool_rank": 58,
     "years": 156,
     "first_year": 1871,
     "tied_years": [
-     1876,
-     1891,
-     1968,
-     1976,
-     1981,
-     2017,
-     2019
+     1921,
+     1957,
+     1987
     ],
     "standing": "cool",
     "notable": false,
     "since": 2019,
     "record": false,
-    "phrase": "typical for November 6"
+    "phrase": "typical for November 7"
    },
    "low_rank": {
-    "value_f": 38,
-    "warm_rank": 63,
-    "cool_rank": 89,
+    "value_f": 34,
+    "warm_rank": 92,
+    "cool_rank": 58,
     "years": 156,
     "first_year": 1871,
     "tied_years": [
-     1921,
-     1929,
+     1876,
+     1901,
      1941,
-     1942,
-     2004
+     1948,
+     1949,
+     1956,
+     1985
     ],
-    "standing": "warm",
+    "standing": "cool",
     "notable": false,
-    "since": 2024,
+    "since": 2021,
     "record": false,
-    "phrase": "typical for November 6"
+    "phrase": "typical for November 7"
    }
   },
   "forecast_highs": [
    {
-    "period": "Sunday",
+    "period": "Today",
     "date": "2026-11-08",
     "high_f": 60,
     "would_rank": {
@@ -251,20 +249,11 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-08T10:15:26Z",
+  "issued_utc": "2026-11-08T11:16:15Z",
   "grid": "IND/54,67",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-08T05:00:00-05:00",
-    "is_daytime": false,
-    "temp_f": 32,
-    "temp_c": 0.0,
-    "precip_chance_pct": 0,
-    "short_forecast": "Clear"
-   },
-   {
-    "name": "Sunday",
+    "name": "Today",
     "start": "2026-11-08T06:00:00-05:00",
     "is_daytime": true,
     "temp_f": 60,
@@ -273,7 +262,7 @@
     "short_forecast": "Sunny"
    },
    {
-    "name": "Sunday Night",
+    "name": "Tonight",
     "start": "2026-11-08T18:00:00-05:00",
     "is_daytime": false,
     "temp_f": 36,
@@ -379,19 +368,21 @@
     "temp_c": 11.11,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
+   },
+   {
+    "name": "Saturday Night",
+    "start": "2026-11-14T18:00:00-05:00",
+    "is_daytime": false,
+    "temp_f": 35,
+    "temp_c": 1.67,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Clear"
    }
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-08T10:15:26Z",
+  "issued_utc": "2026-11-08T11:16:15Z",
   "hours": [
-   {
-    "start": "2026-11-08T06:00:00-05:00",
-    "temp_f": 34,
-    "temp_c": 1.11,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "start": "2026-11-08T07:00:00-05:00",
     "temp_f": 33,
@@ -720,6 +711,13 @@
     "temp_c": 6.11,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear"
+   },
+   {
+    "start": "2026-11-10T06:00:00-05:00",
+    "temp_f": 41,
+    "temp_c": 5.0,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
    }
   ]
  },

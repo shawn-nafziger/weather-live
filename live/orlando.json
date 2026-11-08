@@ -11,20 +11,20 @@
   "lon": -81.3241,
   "history": "Same site as the official Orlando record"
  },
- "as_of_utc": "2026-11-08T11:07:50Z",
+ "as_of_utc": "2026-11-08T12:07:50Z",
  "now": {
-  "time_utc": "2026-11-08T09:53:00Z",
+  "time_utc": "2026-11-08T10:53:00Z",
   "temp_c": 17,
   "temp_f": 62.6,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 16,
   "humidity_pct": 93.84,
-  "wind_kmh": 5.4,
+  "wind_kmh": 7.56,
   "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-08",
-  "readings": 3,
+  "readings": 4,
   "basis": "5-minute readings (whole \u00b0C, approximate)",
   "approximate": true,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -41,50 +41,54 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-06",
-   "is_yesterday": false,
-   "high_f": 87,
-   "low_f": 69,
+   "date": "2026-11-07",
+   "is_yesterday": true,
+   "high_f": 83,
+   "low_f": 66,
    "high_rank": {
-    "value_f": 87,
-    "warm_rank": 9,
-    "cool_rank": 119,
+    "value_f": 83,
+    "warm_rank": 32,
+    "cool_rank": 92,
     "years": 131,
     "first_year": 1894,
     "tied_years": [
-     1922,
-     1947,
-     1996,
-     2019
+     1895,
+     1916,
+     1921,
+     1924,
+     1927,
+     1932,
+     1968,
+     1978
     ],
     "standing": "warm",
-    "notable": true,
-    "since": 2022,
+    "notable": false,
+    "since": 2025,
     "record": false,
-    "phrase": "9th warmest November 6 high (tied) of 131 since 1894, warmest since 2022"
+    "phrase": "typical for November 7"
    },
    "low_rank": {
-    "value_f": 69,
-    "warm_rank": 8,
-    "cool_rank": 120,
+    "value_f": 66,
+    "warm_rank": 21,
+    "cool_rank": 107,
     "years": 131,
     "first_year": 1894,
     "tied_years": [
-     1961,
-     1975,
-     2017,
-     2018
+     1935,
+     1965,
+     1971,
+     2006
     ],
     "standing": "warm",
     "notable": true,
     "since": 2024,
     "record": false,
-    "phrase": "8th warmest November 6 low (tied) of 131 since 1894, warmest since 2024"
+    "phrase": "21st warmest November 7 low (tied) of 131 since 1894, warmest since 2024"
    }
   },
   "forecast_highs": [
    {
-    "period": "Sunday",
+    "period": "Today",
     "date": "2026-11-08",
     "high_f": 82,
     "would_rank": {
@@ -260,20 +264,11 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-08T10:14:50Z",
+  "issued_utc": "2026-11-08T11:14:47Z",
   "grid": "MLB/29,63",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-08T05:00:00-05:00",
-    "is_daytime": false,
-    "temp_f": 61,
-    "temp_c": 16.11,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Clear"
-   },
-   {
-    "name": "Sunday",
+    "name": "Today",
     "start": "2026-11-08T06:00:00-05:00",
     "is_daytime": true,
     "temp_f": 82,
@@ -282,7 +277,7 @@
     "short_forecast": "Sunny"
    },
    {
-    "name": "Sunday Night",
+    "name": "Tonight",
     "start": "2026-11-08T18:00:00-05:00",
     "is_daytime": false,
     "temp_f": 64,
@@ -388,19 +383,21 @@
     "temp_c": 18.33,
     "precip_chance_pct": 1,
     "short_forecast": "Sunny"
+   },
+   {
+    "name": "Saturday Night",
+    "start": "2026-11-14T18:00:00-05:00",
+    "is_daytime": false,
+    "temp_f": 49,
+    "temp_c": 9.44,
+    "precip_chance_pct": 2,
+    "short_forecast": "Mostly Clear"
    }
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-08T10:14:50Z",
+  "issued_utc": "2026-11-08T11:29:45Z",
   "hours": [
-   {
-    "start": "2026-11-08T06:00:00-05:00",
-    "temp_f": 61,
-    "temp_c": 16.11,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "start": "2026-11-08T07:00:00-05:00",
     "temp_f": 61,
@@ -729,6 +726,13 @@
     "temp_c": 17.22,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear"
+   },
+   {
+    "start": "2026-11-10T06:00:00-05:00",
+    "temp_f": 62,
+    "temp_c": 16.67,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
    }
   ]
  },

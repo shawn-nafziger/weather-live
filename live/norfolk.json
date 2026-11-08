@@ -11,9 +11,9 @@
   "lon": -76.1919,
   "history": "Same site as the official Norfolk record"
  },
- "as_of_utc": "2026-11-08T11:07:50Z",
+ "as_of_utc": "2026-11-08T12:07:50Z",
  "now": {
-  "time_utc": "2026-11-08T10:50:00Z",
+  "time_utc": "2026-11-08T11:30:00Z",
   "temp_c": 9,
   "temp_f": 48.2,
   "precision": "nearest whole \u00b0C",
@@ -24,7 +24,7 @@
  },
  "today_so_far": {
   "date_local": "2026-11-08",
-  "readings": 4,
+  "readings": 5,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -46,41 +46,44 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-06",
-   "is_yesterday": false,
-   "high_f": 74,
-   "low_f": 59,
+   "date": "2026-11-07",
+   "is_yesterday": true,
+   "high_f": 61,
+   "low_f": 51,
    "high_rank": {
-    "value_f": 74,
-    "warm_rank": 19,
-    "cool_rank": 132,
+    "value_f": 61,
+    "warm_rank": 91,
+    "cool_rank": 59,
     "years": 153,
     "first_year": 1874,
     "tied_years": [
-     1978,
-     1996,
-     1999
+     1874,
+     1913,
+     1935,
+     2014
     ],
-    "standing": "warm",
-    "notable": true,
-    "since": 2024,
+    "standing": "cool",
+    "notable": false,
+    "since": 2021,
     "record": false,
-    "phrase": "19th warmest November 6 high (tied) of 153 since 1874, warmest since 2024"
+    "phrase": "typical for November 7"
    },
    "low_rank": {
-    "value_f": 59,
-    "warm_rank": 14,
-    "cool_rank": 139,
+    "value_f": 51,
+    "warm_rank": 39,
+    "cool_rank": 112,
     "years": 153,
     "first_year": 1874,
     "tied_years": [
-     1902
+     1929,
+     2021,
+     2023
     ],
     "standing": "warm",
-    "notable": true,
-    "since": 2022,
+    "notable": false,
+    "since": 2024,
     "record": false,
-    "phrase": "14th warmest November 6 low (tied) of 153 since 1874, warmest since 2022"
+    "phrase": "typical for November 7"
    }
   },
   "forecast_highs": [
@@ -269,7 +272,7 @@
   "periods": [
    {
     "name": "Today",
-    "start": "2026-11-08T06:00:00-05:00",
+    "start": "2026-11-08T07:00:00-05:00",
     "is_daytime": true,
     "temp_f": 63,
     "temp_c": 17.22,
@@ -398,13 +401,6 @@
  "hourly": {
   "issued_utc": "2026-11-08T08:26:22Z",
   "hours": [
-   {
-    "start": "2026-11-08T06:00:00-05:00",
-    "temp_f": 49,
-    "temp_c": 9.44,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Sunny"
-   },
    {
     "start": "2026-11-08T07:00:00-05:00",
     "temp_f": 49,
@@ -733,6 +729,13 @@
     "temp_c": 10.0,
     "precip_chance_pct": 0,
     "short_forecast": "Clear"
+   },
+   {
+    "start": "2026-11-10T06:00:00-05:00",
+    "temp_f": 49,
+    "temp_c": 9.44,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
    }
   ]
  },

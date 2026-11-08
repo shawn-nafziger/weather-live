@@ -11,20 +11,20 @@
   "lon": -89.9863,
   "history": "Same site as the official Memphis record"
  },
- "as_of_utc": "2026-11-08T11:07:50Z",
+ "as_of_utc": "2026-11-08T12:07:50Z",
  "now": {
-  "time_utc": "2026-11-08T10:50:00Z",
+  "time_utc": "2026-11-08T11:25:00Z",
   "temp_c": 4,
   "temp_f": 39.2,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 3,
   "humidity_pct": 93.2,
   "wind_kmh": 0,
-  "description": ""
+  "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-08",
-  "readings": 3,
+  "readings": 4,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -46,52 +46,54 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-06",
-   "is_yesterday": false,
-   "high_f": 66,
-   "low_f": 50,
+   "date": "2026-11-07",
+   "is_yesterday": true,
+   "high_f": 59,
+   "low_f": 44,
    "high_rank": {
-    "value_f": 66,
-    "warm_rank": 71,
-    "cool_rank": 77,
+    "value_f": 59,
+    "warm_rank": 114,
+    "cool_rank": 37,
     "years": 152,
     "first_year": 1875,
     "tied_years": [
-     1882,
-     1954,
-     1970,
-     1976,
-     1987
+     1896,
+     1930
     ],
-    "standing": "warm",
+    "standing": "cool",
     "notable": false,
-    "since": 2025,
+    "since": 2014,
     "record": false,
-    "phrase": "typical for November 6"
+    "phrase": "typical for November 7"
    },
    "low_rank": {
-    "value_f": 50,
-    "warm_rank": 48,
-    "cool_rank": 100,
+    "value_f": 44,
+    "warm_rank": 85,
+    "cool_rank": 58,
     "years": 152,
     "first_year": 1875,
     "tied_years": [
-     1879,
-     1906,
-     1999,
-     2011,
-     2016
+     1883,
+     1893,
+     1899,
+     1905,
+     1962,
+     1963,
+     1972,
+     1978,
+     2003,
+     2008
     ],
-    "standing": "warm",
+    "standing": "cool",
     "notable": false,
-    "since": 2025,
+    "since": 2021,
     "record": false,
-    "phrase": "typical for November 6"
+    "phrase": "typical for November 7"
    }
   },
   "forecast_highs": [
    {
-    "period": "Sunday",
+    "period": "Today",
     "date": "2026-11-08",
     "high_f": 63,
     "would_rank": {
@@ -265,20 +267,11 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-08T09:05:35Z",
+  "issued_utc": "2026-11-08T11:15:41Z",
   "grid": "MEG/45,63",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-08T05:00:00-06:00",
-    "is_daytime": false,
-    "temp_f": 38,
-    "temp_c": 3.33,
-    "precip_chance_pct": 0,
-    "short_forecast": "Partly Cloudy"
-   },
-   {
-    "name": "Sunday",
+    "name": "Today",
     "start": "2026-11-08T06:00:00-06:00",
     "is_daytime": true,
     "temp_f": 63,
@@ -287,7 +280,7 @@
     "short_forecast": "Sunny"
    },
    {
-    "name": "Sunday Night",
+    "name": "Tonight",
     "start": "2026-11-08T18:00:00-06:00",
     "is_daytime": false,
     "temp_f": 41,
@@ -393,19 +386,21 @@
     "temp_c": 13.89,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
+   },
+   {
+    "name": "Saturday Night",
+    "start": "2026-11-14T18:00:00-06:00",
+    "is_daytime": false,
+    "temp_f": 39,
+    "temp_c": 3.89,
+    "precip_chance_pct": 0,
+    "short_forecast": "Clear"
    }
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-08T09:05:35Z",
+  "issued_utc": "2026-11-08T11:15:41Z",
   "hours": [
-   {
-    "start": "2026-11-08T05:00:00-06:00",
-    "temp_f": 39,
-    "temp_c": 3.89,
-    "precip_chance_pct": 0,
-    "short_forecast": "Partly Cloudy"
-   },
    {
     "start": "2026-11-08T06:00:00-06:00",
     "temp_f": 38,
@@ -732,6 +727,13 @@
     "start": "2026-11-10T04:00:00-06:00",
     "temp_f": 46,
     "temp_c": 7.78,
+    "precip_chance_pct": 0,
+    "short_forecast": "Areas Of Fog"
+   },
+   {
+    "start": "2026-11-10T05:00:00-06:00",
+    "temp_f": 45,
+    "temp_c": 7.22,
     "precip_chance_pct": 0,
     "short_forecast": "Areas Of Fog"
    }

@@ -11,38 +11,33 @@
   "lon": -86.6892,
   "history": "Same site as the official Nashville record"
  },
- "as_of_utc": "2026-11-08T11:07:50Z",
+ "as_of_utc": "2026-11-08T12:07:50Z",
  "now": {
-  "time_utc": "2026-11-08T10:50:00Z",
+  "time_utc": "2026-11-08T11:35:00Z",
   "temp_c": 2,
   "temp_f": 35.6,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 0,
-  "humidity_pct": 86.6,
+  "dewpoint_c": 1,
+  "humidity_pct": 93.09,
   "wind_kmh": 0,
   "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-08",
-  "readings": 2,
+  "readings": 3,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
   "high_c": 2.8,
   "high_f": 37.0,
   "high_time_utc": "2026-11-08T08:53:00Z",
-  "low_c": 2.8,
-  "low_f": 37.0,
-  "low_time_utc": "2026-11-08T08:53:00Z",
+  "low_c": 2.2,
+  "low_f": 36.0,
+  "low_time_utc": "2026-11-08T10:53:00Z",
   "peak_between_reports": {
    "at_least_f": 43.7,
    "about_f": 44.6,
    "time_utc": "2026-11-08T06:00:00Z"
-  },
-  "dip_between_reports": {
-   "at_most_f": 36.5,
-   "about_f": 35.6,
-   "time_utc": "2026-11-08T09:30:00Z"
   }
  },
  "record": {
@@ -51,42 +46,44 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-06",
-   "is_yesterday": false,
-   "high_f": 58,
-   "low_f": 46,
+   "date": "2026-11-07",
+   "is_yesterday": true,
+   "high_f": 60,
+   "low_f": 39,
    "high_rank": {
-    "value_f": 58,
-    "warm_rank": 105,
-    "cool_rank": 45,
+    "value_f": 60,
+    "warm_rank": 99,
+    "cool_rank": 51,
     "years": 153,
     "first_year": 1874,
     "tied_years": [
-     1897,
-     1935,
-     1954,
-     2003
+     1907,
+     1936,
+     2015,
+     2017
     ],
     "standing": "cool",
     "notable": false,
-    "since": 2012,
+    "since": 2019,
     "record": false,
-    "phrase": "typical for November 6"
+    "phrase": "typical for November 7"
    },
    "low_rank": {
-    "value_f": 46,
-    "warm_rank": 46,
-    "cool_rank": 107,
+    "value_f": 39,
+    "warm_rank": 92,
+    "cool_rank": 59,
     "years": 153,
     "first_year": 1874,
     "tied_years": [
-     1905
+     1891,
+     1948,
+     2019
     ],
-    "standing": "warm",
+    "standing": "cool",
     "notable": false,
-    "since": 2025,
+    "since": 2021,
     "record": false,
-    "phrase": "typical for November 6"
+    "phrase": "typical for November 7"
    }
   },
   "forecast_highs": [
@@ -394,13 +391,6 @@
  "hourly": {
   "issued_utc": "2026-11-08T06:31:21Z",
   "hours": [
-   {
-    "start": "2026-11-08T05:00:00-06:00",
-    "temp_f": 36,
-    "temp_c": 2.22,
-    "precip_chance_pct": 0,
-    "short_forecast": "Areas Of Frost"
-   },
    {
     "start": "2026-11-08T06:00:00-06:00",
     "temp_f": 35,
@@ -725,6 +715,13 @@
    },
    {
     "start": "2026-11-10T04:00:00-06:00",
+    "temp_f": 38,
+    "temp_c": 3.33,
+    "precip_chance_pct": 0,
+    "short_forecast": "Areas Of Fog"
+   },
+   {
+    "start": "2026-11-10T05:00:00-06:00",
     "temp_f": 38,
     "temp_c": 3.33,
     "precip_chance_pct": 0,

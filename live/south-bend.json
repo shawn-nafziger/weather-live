@@ -11,20 +11,20 @@
   "lon": -86.3186,
   "history": "Same station as the official South Bend record (South Bend airport). Also the nearest official city record to Goshen, about 27 miles; a candidate for Goshen's hourly readings (question D2)"
  },
- "as_of_utc": "2026-11-08T11:07:50Z",
+ "as_of_utc": "2026-11-08T12:07:50Z",
  "now": {
-  "time_utc": "2026-11-08T10:50:00Z",
+  "time_utc": "2026-11-08T11:35:00Z",
   "temp_c": 2,
   "temp_f": 35.6,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": -1,
-  "humidity_pct": 80.52,
-  "wind_kmh": 18.5,
+  "dewpoint_c": 0,
+  "humidity_pct": 86.6,
+  "wind_kmh": 16.67,
   "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-08",
-  "readings": 3,
+  "readings": 4,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -46,49 +46,48 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-06",
-   "is_yesterday": false,
-   "high_f": 47,
-   "low_f": 40,
+   "date": "2026-11-07",
+   "is_yesterday": true,
+   "high_f": 50,
+   "low_f": 34,
    "high_rank": {
-    "value_f": 47,
-    "warm_rank": 91,
-    "cool_rank": 36,
+    "value_f": 50,
+    "warm_rank": 79,
+    "cool_rank": 50,
     "years": 131,
     "first_year": 1894,
     "tied_years": [
-     1923,
-     1966,
-     1981,
-     2003,
+     1896,
+     1978,
      2012
     ],
     "standing": "cool",
     "notable": false,
-    "since": 2012,
+    "since": 2019,
     "record": false,
-    "phrase": "typical for November 6"
+    "phrase": "typical for November 7"
    },
    "low_rank": {
-    "value_f": 40,
-    "warm_rank": 30,
-    "cool_rank": 94,
+    "value_f": 34,
+    "warm_rank": 69,
+    "cool_rank": 54,
     "years": 130,
     "first_year": 1894,
     "tied_years": [
-     1911,
-     1928,
-     1932,
-     1978,
-     1979,
-     1989,
-     2016
+     1912,
+     1942,
+     1950,
+     1988,
+     2002,
+     2014,
+     2015,
+     2018
     ],
-    "standing": "warm",
+    "standing": "cool",
     "notable": false,
-    "since": 2024,
+    "since": 2019,
     "record": false,
-    "phrase": "typical for November 6"
+    "phrase": "typical for November 7"
    }
   },
   "forecast_highs": [
@@ -253,12 +252,12 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-08T08:16:07Z",
+  "issued_utc": "2026-11-08T11:30:06Z",
   "grid": "IWX/27,64",
   "periods": [
    {
     "name": "Today",
-    "start": "2026-11-08T06:00:00-05:00",
+    "start": "2026-11-08T07:00:00-05:00",
     "is_daytime": true,
     "temp_f": 55,
     "temp_c": 12.78,
@@ -385,15 +384,8 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-08T08:16:07Z",
+  "issued_utc": "2026-11-08T11:30:06Z",
   "hours": [
-   {
-    "start": "2026-11-08T06:00:00-05:00",
-    "temp_f": 36,
-    "temp_c": 2.22,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Sunny"
-   },
    {
     "start": "2026-11-08T07:00:00-05:00",
     "temp_f": 36,
@@ -722,6 +714,13 @@
     "temp_c": 5.0,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear"
+   },
+   {
+    "start": "2026-11-10T06:00:00-05:00",
+    "temp_f": 40,
+    "temp_c": 4.44,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
    }
   ]
  },

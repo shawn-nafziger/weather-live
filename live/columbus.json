@@ -11,20 +11,20 @@
   "lon": -82.8769,
   "history": "Same site as the official Columbus record"
  },
- "as_of_utc": "2026-11-08T11:07:50Z",
+ "as_of_utc": "2026-11-08T12:07:50Z",
  "now": {
-  "time_utc": "2026-11-08T10:50:00Z",
+  "time_utc": "2026-11-08T11:35:00Z",
   "temp_c": 1,
   "temp_f": 33.8,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 1,
-  "humidity_pct": 100,
-  "wind_kmh": 5.54,
+  "dewpoint_c": 0,
+  "humidity_pct": 93.03,
+  "wind_kmh": 7.42,
   "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-08",
-  "readings": 3,
+  "readings": 4,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -41,55 +41,58 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-06",
-   "is_yesterday": false,
-   "high_f": 56,
-   "low_f": 46,
+   "date": "2026-11-07",
+   "is_yesterday": true,
+   "high_f": 47,
+   "low_f": 39,
    "high_rank": {
-    "value_f": 56,
-    "warm_rank": 65,
-    "cool_rank": 77,
+    "value_f": 47,
+    "warm_rank": 112,
+    "cool_rank": 28,
     "years": 149,
     "first_year": 1878,
     "tied_years": [
-     1900,
-     1921,
-     1929,
-     1943,
-     1980,
-     1983,
-     2021,
-     2025
+     1888,
+     1896,
+     1907,
+     1919,
+     1923,
+     1952,
+     1978,
+     1985,
+     1990,
+     1998
+    ],
+    "standing": "cool",
+    "notable": true,
+    "since": 2014,
+    "record": false,
+    "phrase": "28th coolest November 7 high (tied) of 149 since 1878, coolest since 2014"
+   },
+   "low_rank": {
+    "value_f": 39,
+    "warm_rank": 59,
+    "cool_rank": 85,
+    "years": 149,
+    "first_year": 1878,
+    "tied_years": [
+     1917,
+     1987,
+     2002,
+     2005,
+     2016,
+     2017
     ],
     "standing": "warm",
     "notable": false,
     "since": 2025,
     "record": false,
-    "phrase": "typical for November 6"
-   },
-   "low_rank": {
-    "value_f": 46,
-    "warm_rank": 24,
-    "cool_rank": 121,
-    "years": 149,
-    "first_year": 1878,
-    "tied_years": [
-     1882,
-     1928,
-     1932,
-     1986,
-     1999
-    ],
-    "standing": "warm",
-    "notable": true,
-    "since": 2024,
-    "record": false,
-    "phrase": "24th warmest November 6 low (tied) of 149 since 1878, warmest since 2024"
+    "phrase": "typical for November 7"
    }
   },
   "forecast_highs": [
    {
-    "period": "Sunday",
+    "period": "Today",
     "date": "2026-11-08",
     "high_f": 57,
     "would_rank": {
@@ -260,17 +263,8 @@
   "grid": "ILN/89,83",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-08T04:00:00-05:00",
-    "is_daytime": false,
-    "temp_f": 33,
-    "temp_c": 0.56,
-    "precip_chance_pct": 0,
-    "short_forecast": "Patchy Frost"
-   },
-   {
-    "name": "Sunday",
-    "start": "2026-11-08T06:00:00-05:00",
+    "name": "Today",
+    "start": "2026-11-08T07:00:00-05:00",
     "is_daytime": true,
     "temp_f": 57,
     "temp_c": 13.89,
@@ -278,7 +272,7 @@
     "short_forecast": "Areas Of Frost then Sunny"
    },
    {
-    "name": "Sunday Night",
+    "name": "Tonight",
     "start": "2026-11-08T18:00:00-05:00",
     "is_daytime": false,
     "temp_f": 39,
@@ -384,19 +378,21 @@
     "temp_c": 9.44,
     "precip_chance_pct": 3,
     "short_forecast": "Mostly Sunny"
+   },
+   {
+    "name": "Saturday Night",
+    "start": "2026-11-14T18:00:00-05:00",
+    "is_daytime": false,
+    "temp_f": 33,
+    "temp_c": 0.56,
+    "precip_chance_pct": 1,
+    "short_forecast": "Partly Cloudy"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-08T09:00:28Z",
   "hours": [
-   {
-    "start": "2026-11-08T06:00:00-05:00",
-    "temp_f": 34,
-    "temp_c": 1.11,
-    "precip_chance_pct": 0,
-    "short_forecast": "Areas Of Frost"
-   },
    {
     "start": "2026-11-08T07:00:00-05:00",
     "temp_f": 33,
@@ -725,6 +721,13 @@
     "temp_c": 3.33,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear"
+   },
+   {
+    "start": "2026-11-10T06:00:00-05:00",
+    "temp_f": 38,
+    "temp_c": 3.33,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
    }
   ]
  },
