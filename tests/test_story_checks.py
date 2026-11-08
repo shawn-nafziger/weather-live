@@ -6,6 +6,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 import story_checks as s  # noqa: E402
 
 LISTING = '<a href="climdiv-tmnst-v1.0.0-20261005">x</a> <a href="climdiv-tmnst-v1.0.0-20261105">y</a> climdiv-tmxst-v1.0.0-20261105'
+NOAA_LISTING = 'climdiv-tminst-v1.0.0-20261005 climdiv-tminst-v1.0.0-20261105 climdiv-tmaxst-v1.0.0-20261105 climdiv-pcpnst-v1.0.0-20261105'
 
 
 def line(state, year, vals):
@@ -17,6 +18,15 @@ class TestParse(unittest.TestCase):
         self.assertEqual(s.latest_file(LISTING, "tmn"), "climdiv-tmnst-v1.0.0-20261105")
         with self.assertRaises(ValueError):
             s.latest_file(LISTING, "pcp")
+
+    def test_latest_file_noaa_names(self):
+        self.assertEqual(s.latest_file(NOAA_LISTING, "tmn"), "climdiv-tminst-v1.0.0-20261105")
+        self.assertEqual(s.latest_file(NOAA_LISTING, "tmx"), "climdiv-tmaxst-v1.0.0-20261105")
+
+    def test_missing_file_names_what_it_saw(self):
+        with self.assertRaises(ValueError) as e:
+            s.latest_file("climdiv-pcpnst-v1.0.0-20261105", "tmn")
+        self.assertIn("pcpnst", str(e.exception))
 
     def test_parse_keeps_states_and_conus_and_missing(self):
         text = "\n".join([line(1, 1895, [30.0] * 12), line(110, 1895, [31.0] * 12),

@@ -61,12 +61,19 @@ STATE_NAMES = ("Alabama Arizona Arkansas California Colorado Connecticut Delawar
 
 # ---------------------------------------------------------------- nClimDiv
 
+# NOAA's names for the statewide files: climdiv-tminst-..., climdiv-tmaxst-... (run #1, Nov 8, 2026,
+# looked for "tmn"/"tmx" and found nothing). Both spellings are tried.
+ELEMENT_NAMES = {"tmn": ("tmin", "tmn"), "tmx": ("tmax", "tmx")}
+
+
 def latest_file(listing_html, element):
     """Newest 'climdiv-<element>st-v1.0.0-YYYYMMDD' named in the folder listing."""
-    names = re.findall(rf"(climdiv-{element}st-v1\.0\.0-\d{{8}})", listing_html)
-    if not names:
-        raise ValueError(f"no climdiv-{element}st file in the NOAA folder listing")
-    return max(names)
+    for name in ELEMENT_NAMES.get(element, (element,)):
+        names = re.findall(rf"(climdiv-{name}st-v1\.0\.0-\d{{8}})", listing_html)
+        if names:
+            return max(names)
+    seen = sorted(set(re.findall(r"climdiv-[a-z]+st-v[\d.]+-\d{8}", listing_html)))
+    raise ValueError(f"no statewide {element} file in the NOAA folder listing; it lists: {seen[:20]}")
 
 
 def parse_climdiv(text):
