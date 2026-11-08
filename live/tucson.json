@@ -11,29 +11,29 @@
   "lon": -110.9564,
   "history": "Same site as the official Tucson record"
  },
- "as_of_utc": "2026-11-08T13:07:52Z",
+ "as_of_utc": "2026-11-08T14:07:48Z",
  "now": {
-  "time_utc": "2026-11-08T12:40:00Z",
-  "temp_c": 13,
-  "temp_f": 55.4,
+  "time_utc": "2026-11-08T13:45:00Z",
+  "temp_c": 16,
+  "temp_f": 60.8,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 7,
-  "humidity_pct": 66.93,
-  "wind_kmh": 5.54,
+  "dewpoint_c": 6,
+  "humidity_pct": 51.48,
+  "wind_kmh": 18.5,
   "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-08",
-  "readings": 3,
+  "readings": 4,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
   "high_c": 16.1,
   "high_f": 61.0,
   "high_time_utc": "2026-11-08T09:53:00Z",
-  "low_c": 15.6,
-  "low_f": 60.1,
-  "low_time_utc": "2026-11-08T07:53:00Z",
+  "low_c": 13.9,
+  "low_f": 57.0,
+  "low_time_utc": "2026-11-08T12:53:00Z",
   "dip_between_reports": {
    "at_most_f": 56.3,
    "about_f": 55.4,
@@ -90,7 +90,7 @@
   },
   "forecast_highs": [
    {
-    "period": "Sunday",
+    "period": "Today",
     "date": "2026-11-08",
     "high_f": 76,
     "would_rank": {
@@ -271,16 +271,7 @@
   "grid": "TWC/91,45",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-08T01:00:00-07:00",
-    "is_daytime": false,
-    "temp_f": 51,
-    "temp_c": 10.56,
-    "precip_chance_pct": 0,
-    "short_forecast": "Clear"
-   },
-   {
-    "name": "Sunday",
+    "name": "Today",
     "start": "2026-11-08T06:00:00-07:00",
     "is_daytime": true,
     "temp_f": 76,
@@ -289,7 +280,7 @@
     "short_forecast": "Sunny"
    },
    {
-    "name": "Sunday Night",
+    "name": "Tonight",
     "start": "2026-11-08T18:00:00-07:00",
     "is_daytime": false,
     "temp_f": 52,
@@ -395,19 +386,21 @@
     "temp_c": 23.33,
     "precip_chance_pct": 33,
     "short_forecast": "Chance Rain Showers"
+   },
+   {
+    "name": "Saturday Night",
+    "start": "2026-11-14T18:00:00-07:00",
+    "is_daytime": false,
+    "temp_f": 53,
+    "temp_c": 11.67,
+    "precip_chance_pct": 33,
+    "short_forecast": "Chance Rain Showers"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-08T06:32:47Z",
   "hours": [
-   {
-    "start": "2026-11-08T06:00:00-07:00",
-    "temp_f": 52,
-    "temp_c": 11.11,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "start": "2026-11-08T07:00:00-07:00",
     "temp_f": 52,
@@ -736,6 +729,13 @@
     "temp_c": 12.22,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear"
+   },
+   {
+    "start": "2026-11-10T06:00:00-07:00",
+    "temp_f": 54,
+    "temp_c": 12.22,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
    }
   ]
  },

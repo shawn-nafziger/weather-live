@@ -11,20 +11,20 @@
   "lon": -118.2417,
   "history": "About 7 km from the official Los Angeles record's site, so today and the forecast aren't ranked against it"
  },
- "as_of_utc": "2026-11-08T13:07:52Z",
+ "as_of_utc": "2026-11-08T14:07:48Z",
  "now": {
-  "time_utc": "2026-11-08T12:40:00Z",
-  "temp_c": 17.12,
-  "temp_f": 62.8,
+  "time_utc": "2026-11-08T13:40:00Z",
+  "temp_c": 19.13,
+  "temp_f": 66.4,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 2.24,
-  "humidity_pct": 36.83,
-  "wind_kmh": 6.91,
+  "dewpoint_c": 1.45,
+  "humidity_pct": 30.68,
+  "wind_kmh": 6.8,
   "description": ""
  },
  "today_so_far": {
   "date_local": "2026-11-08",
-  "readings": 49,
+  "readings": 61,
   "basis": "5-minute readings (whole \u00b0C, approximate)",
   "approximate": true,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -88,16 +88,7 @@
   "grid": "LOX/155,46",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-08T04:00:00-08:00",
-    "is_daytime": false,
-    "temp_f": 58,
-    "temp_c": 14.44,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Clear"
-   },
-   {
-    "name": "Sunday",
+    "name": "Today",
     "start": "2026-11-08T06:00:00-08:00",
     "is_daytime": true,
     "temp_f": 85,
@@ -106,7 +97,7 @@
     "short_forecast": "Sunny"
    },
    {
-    "name": "Sunday Night",
+    "name": "Tonight",
     "start": "2026-11-08T18:00:00-08:00",
     "is_daytime": false,
     "temp_f": 59,
@@ -212,19 +203,21 @@
     "temp_c": 23.89,
     "precip_chance_pct": 20,
     "short_forecast": "Slight Chance Light Rain"
+   },
+   {
+    "name": "Saturday Night",
+    "start": "2026-11-14T18:00:00-08:00",
+    "is_daytime": false,
+    "temp_f": 58,
+    "temp_c": 14.44,
+    "precip_chance_pct": 35,
+    "short_forecast": "Chance Light Rain"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-08T09:41:42Z",
   "hours": [
-   {
-    "start": "2026-11-08T05:00:00-08:00",
-    "temp_f": 58,
-    "temp_c": 14.44,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Clear"
-   },
    {
     "start": "2026-11-08T06:00:00-08:00",
     "temp_f": 58,
@@ -551,6 +544,13 @@
     "start": "2026-11-10T04:00:00-08:00",
     "temp_f": 61,
     "temp_c": 16.11,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Clear"
+   },
+   {
+    "start": "2026-11-10T05:00:00-08:00",
+    "temp_f": 60,
+    "temp_c": 15.56,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear"
    }
