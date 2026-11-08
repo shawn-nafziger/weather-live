@@ -11,20 +11,20 @@
   "lon": -115.1634,
   "history": "Same site as the official Las Vegas record"
  },
- "as_of_utc": "2026-11-08T02:07:52Z",
+ "as_of_utc": "2026-11-08T02:46:12Z",
  "now": {
-  "time_utc": "2026-11-08T01:30:00Z",
-  "temp_c": 21,
-  "temp_f": 69.8,
+  "time_utc": "2026-11-08T02:25:00Z",
+  "temp_c": 19,
+  "temp_f": 66.2,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 0,
-  "humidity_pct": 24.62,
-  "wind_kmh": 7.42,
+  "dewpoint_c": 1,
+  "humidity_pct": 29.95,
+  "wind_kmh": 0,
   "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-07",
-  "readings": 12,
+  "readings": 13,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -81,33 +81,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "Today",
-    "date": "2026-11-07",
-    "high_f": 74,
-    "would_rank": {
-     "value_f": 74,
-     "warm_rank": 31,
-     "cool_rank": 52,
-     "years": 90,
-     "first_year": 1937,
-     "tied_years": [
-      1942,
-      1962,
-      1967,
-      1985,
-      1989,
-      1995,
-      2018,
-      2023
-     ],
-     "standing": "warm",
-     "notable": false,
-     "since": 2025,
-     "record": false,
-     "phrase": "typical for November 7"
-    }
-   },
    {
     "period": "Sunday",
     "date": "2026-11-08",
@@ -253,6 +226,29 @@
      "record": false,
      "phrase": "typical for November 13"
     }
+   },
+   {
+    "period": "Saturday",
+    "date": "2026-11-14",
+    "high_f": 72,
+    "would_rank": {
+     "value_f": 72,
+     "warm_rank": 28,
+     "cool_rank": 59,
+     "years": 90,
+     "first_year": 1937,
+     "tied_years": [
+      1937,
+      2002,
+      2006,
+      2014
+     ],
+     "standing": "warm",
+     "notable": false,
+     "since": 2025,
+     "record": false,
+     "phrase": "typical for November 14"
+    }
    }
   ]
  },
@@ -260,15 +256,6 @@
   "issued_utc": "2026-11-07T18:33:02Z",
   "grid": "VEF/121,94",
   "periods": [
-   {
-    "name": "Today",
-    "start": "2026-11-07T11:00:00-08:00",
-    "is_daytime": true,
-    "temp_f": 74,
-    "temp_c": 23.33,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-07T18:00:00-08:00",
@@ -385,6 +372,15 @@
     "temp_c": 13.33,
     "precip_chance_pct": 8,
     "short_forecast": "Partly Cloudy"
+   },
+   {
+    "name": "Saturday",
+    "start": "2026-11-14T06:00:00-08:00",
+    "is_daytime": true,
+    "temp_f": 72,
+    "temp_c": 22.22,
+    "precip_chance_pct": 8,
+    "short_forecast": "Mostly Sunny"
    }
   ]
  },

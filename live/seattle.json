@@ -11,26 +11,26 @@
   "lon": -122.3136,
   "history": "Same station as the official Seattle record (Sea-Tac)"
  },
- "as_of_utc": "2026-11-08T02:07:52Z",
+ "as_of_utc": "2026-11-08T02:46:12Z",
  "now": {
-  "time_utc": "2026-11-08T01:35:00Z",
-  "temp_c": 14,
-  "temp_f": 57.2,
+  "time_utc": "2026-11-08T02:30:00Z",
+  "temp_c": 16,
+  "temp_f": 60.8,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 10,
-  "humidity_pct": 76.84,
-  "wind_kmh": 18.5,
-  "description": "Mostly Cloudy"
+  "dewpoint_c": 9,
+  "humidity_pct": 63.17,
+  "wind_kmh": 27.79,
+  "description": "Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-07",
-  "readings": 16,
+  "readings": 17,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 14.4,
-  "high_f": 57.9,
-  "high_time_utc": "2026-11-07T21:53:00Z",
+  "high_c": 16.7,
+  "high_f": 62.1,
+  "high_time_utc": "2026-11-08T01:53:00Z",
   "low_c": 8.9,
   "low_f": 48.0,
   "low_time_utc": "2026-11-07T13:53:00Z"
@@ -83,43 +83,21 @@
    }
   },
   "today_high_so_far": {
-   "value_f": 58,
-   "warm_rank": 15,
-   "cool_rank": 65,
+   "value_f": 62,
+   "warm_rank": 2,
+   "cool_rank": 80,
    "years": 82,
    "first_year": 1945,
    "tied_years": [
-    1979,
-    2014,
-    2019
+    2008
    ],
    "standing": "warm",
    "notable": true,
-   "since": 2024,
+   "since": 2016,
    "record": false,
-   "phrase": "already the 15th warmest November 7 high (tied) of 82 since 1945, warmest since 2024"
+   "phrase": "already the 2nd warmest November 7 high (tied) of 82 since 1945, warmest since 2016"
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-07",
-    "high_f": 62,
-    "would_rank": {
-     "value_f": 62,
-     "warm_rank": 2,
-     "cool_rank": 80,
-     "years": 82,
-     "first_year": 1945,
-     "tied_years": [
-      2008
-     ],
-     "standing": "warm",
-     "notable": true,
-     "since": 2016,
-     "record": false,
-     "phrase": "2nd warmest November 7 high (tied) of 82 since 1945, warmest since 2016"
-    }
-   },
    {
     "period": "Sunday",
     "date": "2026-11-08",
@@ -250,6 +228,28 @@
      "record": false,
      "phrase": "7th warmest November 13 high (tied) of 82 since 1945, warmest since 2025"
     }
+   },
+   {
+    "period": "Saturday",
+    "date": "2026-11-14",
+    "high_f": 56,
+    "would_rank": {
+     "value_f": 56,
+     "warm_rank": 13,
+     "cool_rank": 67,
+     "years": 82,
+     "first_year": 1945,
+     "tied_years": [
+      1949,
+      1981,
+      1997
+     ],
+     "standing": "warm",
+     "notable": true,
+     "since": 2021,
+     "record": false,
+     "phrase": "13th warmest November 14 high (tied) of 82 since 1945, warmest since 2021"
+    }
    }
   ]
  },
@@ -257,15 +257,6 @@
   "issued_utc": "2026-11-07T21:05:52Z",
   "grid": "SEW/124,60",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-07T13:00:00-08:00",
-    "is_daytime": true,
-    "temp_f": 62,
-    "temp_c": 16.67,
-    "precip_chance_pct": 6,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-07T18:00:00-08:00",
@@ -381,6 +372,15 @@
     "temp_f": 48,
     "temp_c": 8.89,
     "precip_chance_pct": 78,
+    "short_forecast": "Light Rain"
+   },
+   {
+    "name": "Saturday",
+    "start": "2026-11-14T06:00:00-08:00",
+    "is_daytime": true,
+    "temp_f": 56,
+    "temp_c": 13.33,
+    "precip_chance_pct": 77,
     "short_forecast": "Light Rain"
    }
   ]
