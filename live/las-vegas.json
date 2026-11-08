@@ -11,16 +11,16 @@
   "lon": -115.1634,
   "history": "Same site as the official Las Vegas record"
  },
- "as_of_utc": "2026-11-08T21:07:51Z",
+ "as_of_utc": "2026-11-08T22:07:50Z",
  "now": {
-  "time_utc": "2026-11-08T19:20:00Z",
-  "temp_c": 21,
-  "temp_f": 69.8,
+  "time_utc": "2026-11-08T21:50:00Z",
+  "temp_c": 22,
+  "temp_f": 71.6,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 0,
-  "humidity_pct": 24.62,
-  "wind_kmh": 0,
-  "description": "Clear"
+  "dewpoint_c": 1,
+  "humidity_pct": 24.89,
+  "wind_kmh": 5.54,
+  "description": ""
  },
  "today_so_far": {
   "date_local": "2026-11-08",
@@ -35,9 +35,9 @@
   "low_f": 53.1,
   "low_time_utc": "2026-11-08T12:56:00Z",
   "peak_between_reports": {
-   "at_least_f": 68.9,
-   "about_f": 69.8,
-   "time_utc": "2026-11-08T19:00:00Z"
+   "at_least_f": 72.5,
+   "about_f": 73.4,
+   "time_utc": "2026-11-08T21:05:00Z"
   },
   "dip_between_reports": {
    "at_most_f": 52.7,
@@ -97,7 +97,7 @@
   },
   "forecast_highs": [
    {
-    "period": "Today",
+    "period": "This Afternoon",
     "date": "2026-11-08",
     "high_f": 74,
     "would_rank": {
@@ -274,8 +274,8 @@
   "grid": "VEF/121,94",
   "periods": [
    {
-    "name": "Today",
-    "start": "2026-11-08T11:00:00-08:00",
+    "name": "This Afternoon",
+    "start": "2026-11-08T13:00:00-08:00",
     "is_daytime": true,
     "temp_f": 74,
     "temp_c": 23.33,
@@ -404,13 +404,6 @@
  "hourly": {
   "issued_utc": "2026-11-08T18:33:07Z",
   "hours": [
-   {
-    "start": "2026-11-08T13:00:00-08:00",
-    "temp_f": 72,
-    "temp_c": 22.22,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "start": "2026-11-08T14:00:00-08:00",
     "temp_f": 73,
@@ -737,6 +730,13 @@
     "start": "2026-11-10T12:00:00-08:00",
     "temp_f": 74,
     "temp_c": 23.33,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
+   },
+   {
+    "start": "2026-11-10T13:00:00-08:00",
+    "temp_f": 75,
+    "temp_c": 23.89,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
    }
