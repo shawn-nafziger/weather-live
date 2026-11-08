@@ -11,15 +11,15 @@
   "lon": -121.9242,
   "history": "Same site as the official San Jose record"
  },
- "as_of_utc": "2026-11-08T01:07:50Z",
+ "as_of_utc": "2026-11-08T02:07:52Z",
  "now": {
-  "time_utc": "2026-11-08T00:55:00Z",
-  "temp_c": 20,
-  "temp_f": 68.0,
+  "time_utc": "2026-11-08T01:35:00Z",
+  "temp_c": 19,
+  "temp_f": 66.2,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 11,
-  "humidity_pct": 56.16,
-  "wind_kmh": 11.12,
+  "dewpoint_c": 12,
+  "humidity_pct": 63.85,
+  "wind_kmh": 9.25,
   "description": "Clear"
  },
  "today_so_far": {
@@ -110,30 +110,6 @@
    "phrase": "already the 25th warmest November 7 high (tied) of 127 since 1893, warmest since 2024"
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-07",
-    "high_f": 76,
-    "would_rank": {
-     "value_f": 76,
-     "warm_rank": 13,
-     "cool_rank": 110,
-     "years": 127,
-     "first_year": 1893,
-     "tied_years": [
-      1894,
-      1908,
-      1921,
-      1959,
-      1961
-     ],
-     "standing": "warm",
-     "notable": true,
-     "since": 2024,
-     "record": false,
-     "phrase": "13th warmest November 7 high (tied) of 127 since 1893, warmest since 2024"
-    }
-   },
    {
     "period": "Sunday",
     "date": "2026-11-08",
@@ -270,6 +246,29 @@
      "record": false,
      "phrase": "21st warmest November 13 high (tied) of 127 since 1893, warmest since 2023"
     }
+   },
+   {
+    "period": "Saturday",
+    "date": "2026-11-14",
+    "high_f": 69,
+    "would_rank": {
+     "value_f": 69,
+     "warm_rank": 26,
+     "cool_rank": 96,
+     "years": 125,
+     "first_year": 1893,
+     "tied_years": [
+      1912,
+      1949,
+      2001,
+      2016
+     ],
+     "standing": "warm",
+     "notable": false,
+     "since": 2023,
+     "record": false,
+     "phrase": "typical for November 14"
+    }
    }
   ]
  },
@@ -277,15 +276,6 @@
   "issued_utc": "2026-11-07T20:26:20Z",
   "grid": "MTR/98,83",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-07T13:00:00-08:00",
-    "is_daytime": true,
-    "temp_f": 76,
-    "temp_c": 24.44,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Sunny"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-07T18:00:00-08:00",
@@ -402,19 +392,21 @@
     "temp_c": 10.56,
     "precip_chance_pct": 26,
     "short_forecast": "Chance Light Rain"
+   },
+   {
+    "name": "Saturday",
+    "start": "2026-11-14T06:00:00-08:00",
+    "is_daytime": true,
+    "temp_f": 69,
+    "temp_c": 20.56,
+    "precip_chance_pct": 38,
+    "short_forecast": "Chance Light Rain"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-07T20:26:20Z",
   "hours": [
-   {
-    "start": "2026-11-07T17:00:00-08:00",
-    "temp_f": 70,
-    "temp_c": 21.11,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Sunny"
-   },
    {
     "start": "2026-11-07T18:00:00-08:00",
     "temp_f": 65,
@@ -741,6 +733,13 @@
     "start": "2026-11-09T16:00:00-08:00",
     "temp_f": 72,
     "temp_c": 22.22,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
+   },
+   {
+    "start": "2026-11-09T17:00:00-08:00",
+    "temp_f": 69,
+    "temp_c": 20.56,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
    }

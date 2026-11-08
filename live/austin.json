@@ -11,20 +11,20 @@
   "lon": -97.7605,
   "history": "Same site as the official Austin record"
  },
- "as_of_utc": "2026-11-08T01:07:50Z",
+ "as_of_utc": "2026-11-08T02:07:52Z",
  "now": {
-  "time_utc": "2026-11-07T23:51:00Z",
+  "time_utc": "2026-11-08T00:51:00Z",
   "temp_c": 20,
   "temp_f": 68.0,
   "precision": "tenths of a degree",
   "dewpoint_c": 13.9,
   "humidity_pct": 67.93,
-  "wind_kmh": 0,
+  "wind_kmh": 7.56,
   "description": "Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-07",
-  "readings": 11,
+  "readings": 12,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -93,21 +93,24 @@
    {
     "period": "Sunday",
     "date": "2026-11-08",
-    "high_f": 64,
+    "high_f": 63,
     "would_rank": {
-     "value_f": 64,
-     "warm_rank": 102,
-     "cool_rank": 28,
+     "value_f": 63,
+     "warm_rank": 103,
+     "cool_rank": 24,
      "years": 130,
      "first_year": 1897,
      "tied_years": [
-      1961
+      1943,
+      1959,
+      1971,
+      2018
      ],
      "standing": "cool",
-     "notable": false,
+     "notable": true,
      "since": 2019,
      "record": false,
-     "phrase": "typical for November 8"
+     "phrase": "24th coolest November 8 high (tied) of 130 since 1897, coolest since 2019"
     }
    },
    {
@@ -253,24 +256,24 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-07T23:42:24Z",
+  "issued_utc": "2026-11-08T01:14:30Z",
   "grid": "EWX/155,93",
   "periods": [
    {
     "name": "Tonight",
-    "start": "2026-11-07T18:00:00-06:00",
+    "start": "2026-11-07T19:00:00-06:00",
     "is_daytime": false,
     "temp_f": 56,
     "temp_c": 13.33,
-    "precip_chance_pct": 71,
+    "precip_chance_pct": 70,
     "short_forecast": "Showers And Thunderstorms Likely"
    },
    {
     "name": "Sunday",
     "start": "2026-11-08T06:00:00-06:00",
     "is_daytime": true,
-    "temp_f": 64,
-    "temp_c": 17.78,
+    "temp_f": 63,
+    "temp_c": 17.22,
     "precip_chance_pct": 92,
     "short_forecast": "Rain Showers"
    },
@@ -387,13 +390,6 @@
  "hourly": {
   "issued_utc": "2026-11-07T23:42:24Z",
   "hours": [
-   {
-    "start": "2026-11-07T19:00:00-06:00",
-    "temp_f": 64,
-    "temp_c": 17.78,
-    "precip_chance_pct": 55,
-    "short_forecast": "Showers And Thunderstorms Likely"
-   },
    {
     "start": "2026-11-07T20:00:00-06:00",
     "temp_f": 63,
@@ -720,6 +716,13 @@
     "start": "2026-11-09T18:00:00-06:00",
     "temp_f": 64,
     "temp_c": 17.78,
+    "precip_chance_pct": 17,
+    "short_forecast": "Slight Chance Rain Showers"
+   },
+   {
+    "start": "2026-11-09T19:00:00-06:00",
+    "temp_f": 62,
+    "temp_c": 16.67,
     "precip_chance_pct": 17,
     "short_forecast": "Slight Chance Rain Showers"
    }
