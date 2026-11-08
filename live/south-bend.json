@@ -11,34 +11,29 @@
   "lon": -86.3186,
   "history": "Same station as the official South Bend record (South Bend airport). Also the nearest official city record to Goshen, about 27 miles; a candidate for Goshen's hourly readings (question D2)"
  },
- "as_of_utc": "2026-11-08T18:07:51Z",
+ "as_of_utc": "2026-11-08T19:07:53Z",
  "now": {
-  "time_utc": "2026-11-08T17:55:00Z",
+  "time_utc": "2026-11-08T18:45:00Z",
   "temp_c": 13,
   "temp_f": 55.4,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 6,
   "humidity_pct": 62.48,
-  "wind_kmh": 20.38,
+  "wind_kmh": 18.5,
   "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-08",
-  "readings": 8,
+  "readings": 9,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 8.9,
-  "high_f": 48.0,
-  "high_time_utc": "2026-11-08T15:54:00Z",
+  "high_c": 12.8,
+  "high_f": 55.0,
+  "high_time_utc": "2026-11-08T17:54:00Z",
   "low_c": 1.7,
   "low_f": 35.1,
-  "low_time_utc": "2026-11-08T05:54:00Z",
-  "peak_between_reports": {
-   "at_least_f": 54.5,
-   "about_f": 55.4,
-   "time_utc": "2026-11-08T17:50:00Z"
-  }
+  "low_time_utc": "2026-11-08T05:54:00Z"
  },
  "record": {
   "series": "South Bend area (ThreadEx, South Bend airport)",
@@ -186,18 +181,19 @@
    {
     "period": "Thursday",
     "date": "2026-11-12",
-    "high_f": 47,
+    "high_f": 45,
     "would_rank": {
-     "value_f": 47,
-     "warm_rank": 72,
-     "cool_rank": 55,
+     "value_f": 45,
+     "warm_rank": 80,
+     "cool_rank": 46,
      "years": 130,
      "first_year": 1894,
      "tied_years": [
-      1969,
-      1972,
-      1978,
-      1993
+      1895,
+      1898,
+      1917,
+      1962,
+      1979
      ],
      "standing": "cool",
      "notable": false,
@@ -209,18 +205,21 @@
    {
     "period": "Friday",
     "date": "2026-11-13",
-    "high_f": 44,
+    "high_f": 42,
     "would_rank": {
-     "value_f": 44,
-     "warm_rank": 76,
-     "cool_rank": 51,
+     "value_f": 42,
+     "warm_rank": 84,
+     "cool_rank": 40,
      "years": 130,
      "first_year": 1894,
      "tied_years": [
-      1924,
-      1942,
-      1948,
-      2017
+      1895,
+      1904,
+      1950,
+      1963,
+      1968,
+      1975,
+      2000
      ],
      "standing": "cool",
      "notable": false,
@@ -232,22 +231,21 @@
    {
     "period": "Saturday",
     "date": "2026-11-14",
-    "high_f": 50,
+    "high_f": 44,
     "would_rank": {
-     "value_f": 50,
-     "warm_rank": 60,
-     "cool_rank": 67,
+     "value_f": 44,
+     "warm_rank": 82,
+     "cool_rank": 46,
      "years": 130,
      "first_year": 1894,
      "tied_years": [
-      1923,
-      1983,
-      2004,
-      2005
+      1924,
+      1963,
+      2006
      ],
-     "standing": "warm",
+     "standing": "cool",
      "notable": false,
-     "since": 2025,
+     "since": 2022,
      "record": false,
      "phrase": "typical for November 14"
     }
@@ -255,12 +253,12 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-08T17:30:07Z",
+  "issued_utc": "2026-11-08T18:29:53Z",
   "grid": "IWX/27,64",
   "periods": [
    {
     "name": "This Afternoon",
-    "start": "2026-11-08T13:00:00-05:00",
+    "start": "2026-11-08T14:00:00-05:00",
     "is_daytime": true,
     "temp_f": 56,
     "temp_c": 13.33,
@@ -334,9 +332,9 @@
     "name": "Thursday",
     "start": "2026-11-12T06:00:00-05:00",
     "is_daytime": true,
-    "temp_f": 47,
-    "temp_c": 8.33,
-    "precip_chance_pct": 27,
+    "temp_f": 45,
+    "temp_c": 7.22,
+    "precip_chance_pct": 36,
     "short_forecast": "Chance Rain Showers"
    },
    {
@@ -345,16 +343,16 @@
     "is_daytime": false,
     "temp_f": 29,
     "temp_c": -1.67,
-    "precip_chance_pct": 13,
-    "short_forecast": "Partly Cloudy"
+    "precip_chance_pct": 32,
+    "short_forecast": "Chance Rain Showers then Mostly Cloudy"
    },
    {
     "name": "Friday",
     "start": "2026-11-13T06:00:00-05:00",
     "is_daytime": true,
-    "temp_f": 44,
-    "temp_c": 6.67,
-    "precip_chance_pct": 4,
+    "temp_f": 42,
+    "temp_c": 5.56,
+    "precip_chance_pct": 14,
     "short_forecast": "Mostly Sunny"
    },
    {
@@ -363,39 +361,32 @@
     "is_daytime": false,
     "temp_f": 30,
     "temp_c": -1.11,
-    "precip_chance_pct": 4,
+    "precip_chance_pct": 14,
     "short_forecast": "Partly Cloudy"
    },
    {
     "name": "Saturday",
     "start": "2026-11-14T06:00:00-05:00",
     "is_daytime": true,
-    "temp_f": 50,
-    "temp_c": 10.0,
-    "precip_chance_pct": 2,
+    "temp_f": 44,
+    "temp_c": 6.67,
+    "precip_chance_pct": 12,
     "short_forecast": "Mostly Sunny"
    },
    {
     "name": "Saturday Night",
     "start": "2026-11-14T18:00:00-05:00",
     "is_daytime": false,
-    "temp_f": 35,
-    "temp_c": 1.67,
-    "precip_chance_pct": 3,
+    "temp_f": 33,
+    "temp_c": 0.56,
+    "precip_chance_pct": 11,
     "short_forecast": "Partly Cloudy"
    }
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-08T17:30:07Z",
+  "issued_utc": "2026-11-08T18:29:53Z",
   "hours": [
-   {
-    "start": "2026-11-08T13:00:00-05:00",
-    "temp_f": 53,
-    "temp_c": 11.67,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "start": "2026-11-08T14:00:00-05:00",
     "temp_f": 55,
@@ -722,6 +713,13 @@
     "start": "2026-11-10T12:00:00-05:00",
     "temp_f": 57,
     "temp_c": 13.89,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
+   },
+   {
+    "start": "2026-11-10T13:00:00-05:00",
+    "temp_f": 59,
+    "temp_c": 15.0,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
    }

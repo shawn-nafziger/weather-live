@@ -11,33 +11,33 @@
   "lon": -121.9242,
   "history": "Same site as the official San Jose record"
  },
- "as_of_utc": "2026-11-08T18:07:51Z",
+ "as_of_utc": "2026-11-08T19:07:53Z",
  "now": {
-  "time_utc": "2026-11-08T17:55:00Z",
-  "temp_c": 17,
-  "temp_f": 62.6,
+  "time_utc": "2026-11-08T18:40:00Z",
+  "temp_c": 18,
+  "temp_f": 64.4,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 12,
-  "humidity_pct": 72.4,
+  "humidity_pct": 67.97,
   "wind_kmh": 0,
   "description": "Mostly Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-08",
-  "readings": 8,
+  "readings": 9,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 16.1,
-  "high_f": 61.0,
-  "high_time_utc": "2026-11-08T17:33:00Z",
+  "high_c": 16.7,
+  "high_f": 62.1,
+  "high_time_utc": "2026-11-08T17:53:00Z",
   "low_c": 12.8,
   "low_f": 55.0,
   "low_time_utc": "2026-11-08T09:53:00Z",
   "peak_between_reports": {
-   "at_least_f": 61.7,
-   "about_f": 62.6,
-   "time_utc": "2026-11-08T17:55:00Z"
+   "at_least_f": 63.5,
+   "about_f": 64.4,
+   "time_utc": "2026-11-08T18:40:00Z"
   },
   "dip_between_reports": {
    "at_most_f": 54.5,
@@ -184,19 +184,21 @@
    {
     "period": "Veterans Day",
     "date": "2026-11-11",
-    "high_f": 79,
+    "high_f": 78,
     "would_rank": {
-     "value_f": 79,
+     "value_f": 78,
      "warm_rank": 3,
-     "cool_rank": 124,
+     "cool_rank": 123,
      "years": 126,
      "first_year": 1893,
-     "tied_years": [],
+     "tied_years": [
+      2019
+     ],
      "standing": "warm",
      "notable": true,
-     "since": 1930,
+     "since": 2019,
      "record": false,
-     "phrase": "3rd warmest November 11 high of 126 since 1893, warmest since 1930"
+     "phrase": "3rd warmest November 11 high (tied) of 126 since 1893, warmest since 2019"
     }
    },
    {
@@ -226,59 +228,58 @@
    {
     "period": "Friday",
     "date": "2026-11-13",
-    "high_f": 71,
+    "high_f": 72,
     "would_rank": {
-     "value_f": 71,
-     "warm_rank": 21,
-     "cool_rank": 104,
+     "value_f": 72,
+     "warm_rank": 18,
+     "cool_rank": 107,
      "years": 127,
      "first_year": 1893,
      "tied_years": [
-      1919,
-      1974,
-      1990
+      1923,
+      1949,
+      1969
      ],
      "standing": "warm",
      "notable": true,
      "since": 2023,
      "record": false,
-     "phrase": "21st warmest November 13 high (tied) of 127 since 1893, warmest since 2023"
+     "phrase": "18th warmest November 13 high (tied) of 127 since 1893, warmest since 2023"
     }
    },
    {
     "period": "Saturday",
     "date": "2026-11-14",
-    "high_f": 70,
+    "high_f": 71,
     "would_rank": {
-     "value_f": 70,
-     "warm_rank": 20,
-     "cool_rank": 100,
+     "value_f": 71,
+     "warm_rank": 15,
+     "cool_rank": 106,
      "years": 125,
      "first_year": 1893,
      "tied_years": [
-      1893,
-      1969,
-      1979,
-      1989,
-      2002,
-      2012
+      1923,
+      1941,
+      1967,
+      1992,
+      2005
      ],
      "standing": "warm",
      "notable": true,
      "since": 2023,
      "record": false,
-     "phrase": "20th warmest November 14 high (tied) of 125 since 1893, warmest since 2023"
+     "phrase": "15th warmest November 14 high (tied) of 125 since 1893, warmest since 2023"
     }
    }
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-08T16:42:15Z",
+  "issued_utc": "2026-11-08T18:26:52Z",
   "grid": "MTR/98,83",
   "periods": [
    {
     "name": "Today",
-    "start": "2026-11-08T09:00:00-08:00",
+    "start": "2026-11-08T10:00:00-08:00",
     "is_daytime": true,
     "temp_f": 73,
     "temp_c": 22.78,
@@ -307,8 +308,8 @@
     "name": "Monday Night",
     "start": "2026-11-09T18:00:00-08:00",
     "is_daytime": false,
-    "temp_f": 50,
-    "temp_c": 10.0,
+    "temp_f": 52,
+    "temp_c": 11.11,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear"
    },
@@ -334,8 +335,8 @@
     "name": "Veterans Day",
     "start": "2026-11-11T06:00:00-08:00",
     "is_daytime": true,
-    "temp_f": 79,
-    "temp_c": 26.11,
+    "temp_f": 78,
+    "temp_c": 25.56,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
    },
@@ -343,8 +344,8 @@
     "name": "Wednesday Night",
     "start": "2026-11-11T18:00:00-08:00",
     "is_daytime": false,
-    "temp_f": 52,
-    "temp_c": 11.11,
+    "temp_f": 50,
+    "temp_c": 10.0,
     "precip_chance_pct": 3,
     "short_forecast": "Mostly Clear"
    },
@@ -361,37 +362,37 @@
     "name": "Thursday Night",
     "start": "2026-11-12T18:00:00-08:00",
     "is_daytime": false,
-    "temp_f": 51,
-    "temp_c": 10.56,
+    "temp_f": 49,
+    "temp_c": 9.44,
     "precip_chance_pct": 15,
-    "short_forecast": "Partly Cloudy then Slight Chance Light Rain"
+    "short_forecast": "Partly Cloudy"
    },
    {
     "name": "Friday",
     "start": "2026-11-13T06:00:00-08:00",
     "is_daytime": true,
-    "temp_f": 71,
-    "temp_c": 21.67,
+    "temp_f": 72,
+    "temp_c": 22.22,
     "precip_chance_pct": 19,
-    "short_forecast": "Slight Chance Light Rain"
+    "short_forecast": "Mostly Sunny"
    },
    {
     "name": "Friday Night",
     "start": "2026-11-13T18:00:00-08:00",
     "is_daytime": false,
-    "temp_f": 51,
-    "temp_c": 10.56,
+    "temp_f": 50,
+    "temp_c": 10.0,
     "precip_chance_pct": 20,
-    "short_forecast": "Slight Chance Light Rain"
+    "short_forecast": "Partly Cloudy"
    },
    {
     "name": "Saturday",
     "start": "2026-11-14T06:00:00-08:00",
     "is_daytime": true,
-    "temp_f": 70,
-    "temp_c": 21.11,
+    "temp_f": 71,
+    "temp_c": 21.67,
     "precip_chance_pct": 38,
-    "short_forecast": "Chance Light Rain"
+    "short_forecast": "Slight Chance Light Rain"
    },
    {
     "name": "Saturday Night",
@@ -407,13 +408,6 @@
  "hourly": {
   "issued_utc": "2026-11-08T16:42:15Z",
   "hours": [
-   {
-    "start": "2026-11-08T10:00:00-08:00",
-    "temp_f": 63,
-    "temp_c": 17.22,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Sunny"
-   },
    {
     "start": "2026-11-08T11:00:00-08:00",
     "temp_f": 68,
@@ -742,6 +736,13 @@
     "temp_c": 16.11,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Sunny"
+   },
+   {
+    "start": "2026-11-10T10:00:00-08:00",
+    "temp_f": 66,
+    "temp_c": 18.89,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
    }
   ]
  },

@@ -11,20 +11,20 @@
   "lon": -122.3656,
   "history": "About 18 km from the official San Francisco record's site, so today and the forecast aren't ranked against it"
  },
- "as_of_utc": "2026-11-08T18:07:51Z",
+ "as_of_utc": "2026-11-08T19:07:53Z",
  "now": {
-  "time_utc": "2026-11-08T17:55:00Z",
-  "temp_c": 16,
-  "temp_f": 60.8,
+  "time_utc": "2026-11-08T18:40:00Z",
+  "temp_c": 17,
+  "temp_f": 62.6,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 13,
-  "humidity_pct": 82.39,
+  "humidity_pct": 77.31,
   "wind_kmh": null,
-  "description": "Partly Cloudy"
+  "description": "Mostly Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-08",
-  "readings": 6,
+  "readings": 7,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -34,6 +34,11 @@
   "low_c": 12.8,
   "low_f": 55.0,
   "low_time_utc": "2026-11-08T12:56:00Z",
+  "peak_between_reports": {
+   "at_least_f": 61.7,
+   "about_f": 62.6,
+   "time_utc": "2026-11-08T18:40:00Z"
+  },
   "dip_between_reports": {
    "at_most_f": 54.5,
    "about_f": 53.6,
@@ -96,17 +101,17 @@
   "note": "Today's readings come from a different station than this record, so today and the forecast aren't ranked against it."
  },
  "forecast": {
-  "issued_utc": "2026-11-08T16:42:15Z",
+  "issued_utc": "2026-11-08T18:26:52Z",
   "grid": "MTR/85,98",
   "periods": [
    {
     "name": "Today",
-    "start": "2026-11-08T09:00:00-08:00",
+    "start": "2026-11-08T10:00:00-08:00",
     "is_daytime": true,
     "temp_f": 70,
     "temp_c": 21.11,
     "precip_chance_pct": 0,
-    "short_forecast": "Partly Sunny"
+    "short_forecast": "Mostly Sunny"
    },
    {
     "name": "Tonight",
@@ -121,8 +126,8 @@
     "name": "Monday",
     "start": "2026-11-09T06:00:00-08:00",
     "is_daytime": true,
-    "temp_f": 71,
-    "temp_c": 21.67,
+    "temp_f": 70,
+    "temp_c": 21.11,
     "precip_chance_pct": 0,
     "short_forecast": "Partly Sunny"
    },
@@ -139,8 +144,8 @@
     "name": "Tuesday",
     "start": "2026-11-10T06:00:00-08:00",
     "is_daytime": true,
-    "temp_f": 73,
-    "temp_c": 22.78,
+    "temp_f": 72,
+    "temp_c": 22.22,
     "precip_chance_pct": 0,
     "short_forecast": "Patchy Fog then Sunny"
    },
@@ -157,8 +162,8 @@
     "name": "Veterans Day",
     "start": "2026-11-11T06:00:00-08:00",
     "is_daytime": true,
-    "temp_f": 76,
-    "temp_c": 24.44,
+    "temp_f": 74,
+    "temp_c": 23.33,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
    },
@@ -187,14 +192,14 @@
     "temp_f": 57,
     "temp_c": 13.89,
     "precip_chance_pct": 20,
-    "short_forecast": "Slight Chance Light Rain"
+    "short_forecast": "Partly Cloudy"
    },
    {
     "name": "Friday",
     "start": "2026-11-13T06:00:00-08:00",
     "is_daytime": true,
-    "temp_f": 67,
-    "temp_c": 19.44,
+    "temp_f": 68,
+    "temp_c": 20.0,
     "precip_chance_pct": 22,
     "short_forecast": "Slight Chance Light Rain"
    },
@@ -205,7 +210,7 @@
     "temp_f": 57,
     "temp_c": 13.89,
     "precip_chance_pct": 25,
-    "short_forecast": "Chance Light Rain"
+    "short_forecast": "Slight Chance Light Rain then Partly Cloudy"
    },
    {
     "name": "Saturday",
@@ -220,23 +225,16 @@
     "name": "Saturday Night",
     "start": "2026-11-14T18:00:00-08:00",
     "is_daytime": false,
-    "temp_f": 57,
-    "temp_c": 13.89,
+    "temp_f": 56,
+    "temp_c": 13.33,
     "precip_chance_pct": 77,
-    "short_forecast": "Light Rain"
+    "short_forecast": "Light Rain Likely"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-08T16:42:15Z",
   "hours": [
-   {
-    "start": "2026-11-08T10:00:00-08:00",
-    "temp_f": 61,
-    "temp_c": 16.11,
-    "precip_chance_pct": 0,
-    "short_forecast": "Partly Sunny"
-   },
    {
     "start": "2026-11-08T11:00:00-08:00",
     "temp_f": 64,
@@ -565,6 +563,13 @@
     "temp_c": 15.56,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Sunny"
+   },
+   {
+    "start": "2026-11-10T10:00:00-08:00",
+    "temp_f": 63,
+    "temp_c": 17.22,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
    }
   ]
  },

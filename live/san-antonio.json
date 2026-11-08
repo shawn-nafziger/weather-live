@@ -11,20 +11,20 @@
   "lon": -98.4636,
   "history": "Same site as the official San Antonio record"
  },
- "as_of_utc": "2026-11-08T18:07:51Z",
+ "as_of_utc": "2026-11-08T19:07:53Z",
  "now": {
-  "time_utc": "2026-11-08T17:50:00Z",
+  "time_utc": "2026-11-08T18:45:00Z",
   "temp_c": 16,
   "temp_f": 60.8,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 15,
   "humidity_pct": 93.79,
-  "wind_kmh": 22.21,
+  "wind_kmh": 16.67,
   "description": "Light Rain"
  },
  "today_so_far": {
   "date_local": "2026-11-08",
-  "readings": 11,
+  "readings": 12,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -153,21 +153,18 @@
    {
     "period": "Veterans Day",
     "date": "2026-11-11",
-    "high_f": 75,
+    "high_f": 77,
     "would_rank": {
-     "value_f": 75,
-     "warm_rank": 64,
-     "cool_rank": 72,
+     "value_f": 77,
+     "warm_rank": 56,
+     "cool_rank": 83,
      "years": 142,
      "first_year": 1885,
      "tied_years": [
-      1913,
-      1961,
-      1967,
-      1985,
-      2016,
-      2017,
-      2019
+      1916,
+      1933,
+      2001,
+      2021
      ],
      "standing": "warm",
      "notable": false,
@@ -201,20 +198,21 @@
    {
     "period": "Friday",
     "date": "2026-11-13",
-    "high_f": 72,
+    "high_f": 71,
     "would_rank": {
-     "value_f": 72,
-     "warm_rank": 75,
-     "cool_rank": 62,
+     "value_f": 71,
+     "warm_rank": 81,
+     "cool_rank": 55,
      "years": 142,
      "first_year": 1885,
      "tied_years": [
-      1915,
-      1950,
-      1952,
-      1957,
-      1974,
-      1984
+      1889,
+      1894,
+      1936,
+      1941,
+      1953,
+      1961,
+      2021
      ],
      "standing": "cool",
      "notable": false,
@@ -226,17 +224,19 @@
    {
     "period": "Saturday",
     "date": "2026-11-14",
-    "high_f": 71,
+    "high_f": 70,
     "would_rank": {
-     "value_f": 71,
-     "warm_rank": 89,
-     "cool_rank": 51,
+     "value_f": 70,
+     "warm_rank": 92,
+     "cool_rank": 46,
      "years": 142,
      "first_year": 1885,
      "tied_years": [
-      1892,
-      1911,
-      1953
+      1904,
+      1909,
+      1915,
+      1975,
+      1997
      ],
      "standing": "cool",
      "notable": false,
@@ -248,7 +248,7 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-08T17:46:22Z",
+  "issued_utc": "2026-11-08T18:02:20Z",
   "grid": "EWX/128,59",
   "periods": [
    {
@@ -282,10 +282,10 @@
     "name": "Monday Night",
     "start": "2026-11-09T18:00:00-06:00",
     "is_daytime": false,
-    "temp_f": 54,
-    "temp_c": 12.22,
+    "temp_f": 57,
+    "temp_c": 13.89,
     "precip_chance_pct": 36,
-    "short_forecast": "Chance Light Rain then Mostly Cloudy"
+    "short_forecast": "Chance Light Rain"
    },
    {
     "name": "Tuesday",
@@ -293,25 +293,25 @@
     "is_daytime": true,
     "temp_f": 70,
     "temp_c": 21.11,
-    "precip_chance_pct": 26,
-    "short_forecast": "Chance Rain Showers"
+    "precip_chance_pct": 27,
+    "short_forecast": "Chance Light Rain"
    },
    {
     "name": "Tuesday Night",
     "start": "2026-11-10T18:00:00-06:00",
     "is_daytime": false,
-    "temp_f": 58,
-    "temp_c": 14.44,
-    "precip_chance_pct": 15,
-    "short_forecast": "Slight Chance Rain Showers then Mostly Cloudy"
+    "temp_f": 59,
+    "temp_c": 15.0,
+    "precip_chance_pct": 20,
+    "short_forecast": "Slight Chance Light Rain"
    },
    {
     "name": "Veterans Day",
     "start": "2026-11-11T06:00:00-06:00",
     "is_daytime": true,
-    "temp_f": 75,
-    "temp_c": 23.89,
-    "precip_chance_pct": 10,
+    "temp_f": 77,
+    "temp_c": 25.0,
+    "precip_chance_pct": 6,
     "short_forecast": "Mostly Cloudy"
    },
    {
@@ -320,8 +320,8 @@
     "is_daytime": false,
     "temp_f": 57,
     "temp_c": 13.89,
-    "precip_chance_pct": 1,
-    "short_forecast": "Mostly Cloudy"
+    "precip_chance_pct": 0,
+    "short_forecast": "Partly Cloudy"
    },
    {
     "name": "Thursday",
@@ -329,8 +329,8 @@
     "is_daytime": true,
     "temp_f": 75,
     "temp_c": 23.89,
-    "precip_chance_pct": 1,
-    "short_forecast": "Mostly Sunny"
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
    },
    {
     "name": "Thursday Night",
@@ -345,8 +345,8 @@
     "name": "Friday",
     "start": "2026-11-13T06:00:00-06:00",
     "is_daytime": true,
-    "temp_f": 72,
-    "temp_c": 22.22,
+    "temp_f": 71,
+    "temp_c": 21.67,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
    },
@@ -354,18 +354,18 @@
     "name": "Friday Night",
     "start": "2026-11-13T18:00:00-06:00",
     "is_daytime": false,
-    "temp_f": 49,
-    "temp_c": 9.44,
-    "precip_chance_pct": 0,
-    "short_forecast": "Clear"
+    "temp_f": 48,
+    "temp_c": 8.89,
+    "precip_chance_pct": 1,
+    "short_forecast": "Mostly Clear"
    },
    {
     "name": "Saturday",
     "start": "2026-11-14T06:00:00-06:00",
     "is_daytime": true,
-    "temp_f": 71,
-    "temp_c": 21.67,
-    "precip_chance_pct": 6,
+    "temp_f": 70,
+    "temp_c": 21.11,
+    "precip_chance_pct": 5,
     "short_forecast": "Sunny"
    },
    {
@@ -374,25 +374,18 @@
     "is_daytime": false,
     "temp_f": 53,
     "temp_c": 11.67,
-    "precip_chance_pct": 8,
+    "precip_chance_pct": 14,
     "short_forecast": "Partly Cloudy"
    }
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-08T17:46:22Z",
+  "issued_utc": "2026-11-08T18:44:18Z",
   "hours": [
    {
-    "start": "2026-11-08T12:00:00-06:00",
+    "start": "2026-11-08T13:00:00-06:00",
     "temp_f": 62,
     "temp_c": 16.67,
-    "precip_chance_pct": 100,
-    "short_forecast": "Showers And Thunderstorms"
-   },
-   {
-    "start": "2026-11-08T13:00:00-06:00",
-    "temp_f": 63,
-    "temp_c": 17.22,
     "precip_chance_pct": 100,
     "short_forecast": "Showers And Thunderstorms"
    },
@@ -405,8 +398,8 @@
    },
    {
     "start": "2026-11-08T15:00:00-06:00",
-    "temp_f": 63,
-    "temp_c": 17.22,
+    "temp_f": 62,
+    "temp_c": 16.67,
     "precip_chance_pct": 93,
     "short_forecast": "Showers And Thunderstorms"
    },
@@ -419,8 +412,8 @@
    },
    {
     "start": "2026-11-08T17:00:00-06:00",
-    "temp_f": 63,
-    "temp_c": 17.22,
+    "temp_f": 62,
+    "temp_c": 16.67,
     "precip_chance_pct": 93,
     "short_forecast": "Showers And Thunderstorms"
    },
@@ -433,92 +426,92 @@
    },
    {
     "start": "2026-11-08T19:00:00-06:00",
+    "temp_f": 61,
+    "temp_c": 16.11,
+    "precip_chance_pct": 91,
+    "short_forecast": "Showers And Thunderstorms"
+   },
+   {
+    "start": "2026-11-08T20:00:00-06:00",
     "temp_f": 60,
     "temp_c": 15.56,
     "precip_chance_pct": 91,
     "short_forecast": "Showers And Thunderstorms"
    },
    {
-    "start": "2026-11-08T20:00:00-06:00",
-    "temp_f": 59,
-    "temp_c": 15.0,
-    "precip_chance_pct": 91,
-    "short_forecast": "Showers And Thunderstorms"
-   },
-   {
     "start": "2026-11-08T21:00:00-06:00",
-    "temp_f": 59,
-    "temp_c": 15.0,
+    "temp_f": 60,
+    "temp_c": 15.56,
     "precip_chance_pct": 53,
     "short_forecast": "Chance Light Rain"
    },
    {
     "start": "2026-11-08T22:00:00-06:00",
-    "temp_f": 58,
-    "temp_c": 14.44,
+    "temp_f": 60,
+    "temp_c": 15.56,
     "precip_chance_pct": 53,
     "short_forecast": "Chance Light Rain"
    },
    {
     "start": "2026-11-08T23:00:00-06:00",
-    "temp_f": 58,
-    "temp_c": 14.44,
+    "temp_f": 60,
+    "temp_c": 15.56,
     "precip_chance_pct": 53,
     "short_forecast": "Chance Light Rain"
    },
    {
     "start": "2026-11-09T00:00:00-06:00",
-    "temp_f": 58,
-    "temp_c": 14.44,
+    "temp_f": 60,
+    "temp_c": 15.56,
     "precip_chance_pct": 84,
     "short_forecast": "Rain"
    },
    {
     "start": "2026-11-09T01:00:00-06:00",
-    "temp_f": 58,
-    "temp_c": 14.44,
+    "temp_f": 59,
+    "temp_c": 15.0,
     "precip_chance_pct": 84,
     "short_forecast": "Rain"
    },
    {
     "start": "2026-11-09T02:00:00-06:00",
-    "temp_f": 58,
-    "temp_c": 14.44,
+    "temp_f": 59,
+    "temp_c": 15.0,
     "precip_chance_pct": 84,
     "short_forecast": "Rain"
    },
    {
     "start": "2026-11-09T03:00:00-06:00",
-    "temp_f": 57,
-    "temp_c": 13.89,
+    "temp_f": 58,
+    "temp_c": 14.44,
     "precip_chance_pct": 94,
     "short_forecast": "Rain"
    },
    {
     "start": "2026-11-09T04:00:00-06:00",
-    "temp_f": 57,
-    "temp_c": 13.89,
+    "temp_f": 58,
+    "temp_c": 14.44,
     "precip_chance_pct": 94,
     "short_forecast": "Rain"
    },
    {
     "start": "2026-11-09T05:00:00-06:00",
-    "temp_f": 56,
-    "temp_c": 13.33,
+    "temp_f": 58,
+    "temp_c": 14.44,
     "precip_chance_pct": 94,
     "short_forecast": "Rain"
    },
    {
     "start": "2026-11-09T06:00:00-06:00",
-    "temp_f": 56,
-    "temp_c": 13.33,
+    "temp_f": 57,
+    "temp_c": 13.89,
     "precip_chance_pct": 86,
     "short_forecast": "Showers And Thunderstorms"
    },
    {
     "start": "2026-11-09T07:00:00-06:00",
-    "temp_f": 56,
-    "temp_c": 13.33,
+    "temp_f": 57,
+    "temp_c": 13.89,
     "precip_chance_pct": 86,
     "short_forecast": "Showers And Thunderstorms"
    },
@@ -531,36 +524,36 @@
    },
    {
     "start": "2026-11-09T09:00:00-06:00",
-    "temp_f": 60,
-    "temp_c": 15.56,
+    "temp_f": 62,
+    "temp_c": 16.67,
     "precip_chance_pct": 90,
     "short_forecast": "Light Rain"
    },
    {
     "start": "2026-11-09T10:00:00-06:00",
-    "temp_f": 62,
-    "temp_c": 16.67,
+    "temp_f": 63,
+    "temp_c": 17.22,
     "precip_chance_pct": 90,
     "short_forecast": "Light Rain"
    },
    {
     "start": "2026-11-09T11:00:00-06:00",
-    "temp_f": 62,
-    "temp_c": 16.67,
+    "temp_f": 64,
+    "temp_c": 17.78,
     "precip_chance_pct": 90,
     "short_forecast": "Light Rain"
    },
    {
     "start": "2026-11-09T12:00:00-06:00",
-    "temp_f": 63,
-    "temp_c": 17.22,
+    "temp_f": 64,
+    "temp_c": 17.78,
     "precip_chance_pct": 80,
     "short_forecast": "Light Rain"
    },
    {
     "start": "2026-11-09T13:00:00-06:00",
-    "temp_f": 63,
-    "temp_c": 17.22,
+    "temp_f": 64,
+    "temp_c": 17.78,
     "precip_chance_pct": 80,
     "short_forecast": "Light Rain"
    },
@@ -573,150 +566,157 @@
    },
    {
     "start": "2026-11-09T15:00:00-06:00",
+    "temp_f": 64,
+    "temp_c": 17.78,
+    "precip_chance_pct": 68,
+    "short_forecast": "Light Rain Likely"
+   },
+   {
+    "start": "2026-11-09T16:00:00-06:00",
     "temp_f": 65,
     "temp_c": 18.33,
     "precip_chance_pct": 68,
     "short_forecast": "Light Rain Likely"
    },
    {
-    "start": "2026-11-09T16:00:00-06:00",
-    "temp_f": 64,
-    "temp_c": 17.78,
-    "precip_chance_pct": 68,
-    "short_forecast": "Light Rain Likely"
-   },
-   {
     "start": "2026-11-09T17:00:00-06:00",
-    "temp_f": 64,
-    "temp_c": 17.78,
+    "temp_f": 65,
+    "temp_c": 18.33,
     "precip_chance_pct": 68,
     "short_forecast": "Light Rain Likely"
    },
    {
     "start": "2026-11-09T18:00:00-06:00",
+    "temp_f": 64,
+    "temp_c": 17.78,
+    "precip_chance_pct": 31,
+    "short_forecast": "Chance Light Rain"
+   },
+   {
+    "start": "2026-11-09T19:00:00-06:00",
     "temp_f": 63,
     "temp_c": 17.22,
     "precip_chance_pct": 31,
     "short_forecast": "Chance Light Rain"
    },
    {
-    "start": "2026-11-09T19:00:00-06:00",
+    "start": "2026-11-09T20:00:00-06:00",
     "temp_f": 62,
     "temp_c": 16.67,
     "precip_chance_pct": 31,
     "short_forecast": "Chance Light Rain"
    },
    {
-    "start": "2026-11-09T20:00:00-06:00",
+    "start": "2026-11-09T21:00:00-06:00",
     "temp_f": 61,
     "temp_c": 16.11,
-    "precip_chance_pct": 31,
-    "short_forecast": "Chance Light Rain"
-   },
-   {
-    "start": "2026-11-09T21:00:00-06:00",
-    "temp_f": 60,
-    "temp_c": 15.56,
     "precip_chance_pct": 36,
     "short_forecast": "Chance Light Rain"
    },
    {
     "start": "2026-11-09T22:00:00-06:00",
-    "temp_f": 60,
-    "temp_c": 15.56,
+    "temp_f": 61,
+    "temp_c": 16.11,
     "precip_chance_pct": 36,
     "short_forecast": "Chance Light Rain"
    },
    {
     "start": "2026-11-09T23:00:00-06:00",
-    "temp_f": 59,
-    "temp_c": 15.0,
+    "temp_f": 61,
+    "temp_c": 16.11,
     "precip_chance_pct": 36,
     "short_forecast": "Chance Light Rain"
    },
    {
     "start": "2026-11-10T00:00:00-06:00",
-    "temp_f": 59,
-    "temp_c": 15.0,
-    "precip_chance_pct": 14,
-    "short_forecast": "Mostly Cloudy"
+    "temp_f": 61,
+    "temp_c": 16.11,
+    "precip_chance_pct": 21,
+    "short_forecast": "Slight Chance Light Rain"
    },
    {
     "start": "2026-11-10T01:00:00-06:00",
-    "temp_f": 58,
-    "temp_c": 14.44,
-    "precip_chance_pct": 14,
-    "short_forecast": "Mostly Cloudy"
+    "temp_f": 61,
+    "temp_c": 16.11,
+    "precip_chance_pct": 21,
+    "short_forecast": "Slight Chance Light Rain"
    },
    {
     "start": "2026-11-10T02:00:00-06:00",
-    "temp_f": 58,
-    "temp_c": 14.44,
-    "precip_chance_pct": 14,
-    "short_forecast": "Mostly Cloudy"
+    "temp_f": 60,
+    "temp_c": 15.56,
+    "precip_chance_pct": 21,
+    "short_forecast": "Slight Chance Light Rain"
    },
    {
     "start": "2026-11-10T03:00:00-06:00",
-    "temp_f": 57,
-    "temp_c": 13.89,
-    "precip_chance_pct": 14,
-    "short_forecast": "Mostly Cloudy"
+    "temp_f": 59,
+    "temp_c": 15.0,
+    "precip_chance_pct": 21,
+    "short_forecast": "Slight Chance Light Rain"
    },
    {
     "start": "2026-11-10T04:00:00-06:00",
-    "temp_f": 56,
-    "temp_c": 13.33,
-    "precip_chance_pct": 14,
-    "short_forecast": "Mostly Cloudy"
+    "temp_f": 58,
+    "temp_c": 14.44,
+    "precip_chance_pct": 21,
+    "short_forecast": "Slight Chance Light Rain"
    },
    {
     "start": "2026-11-10T05:00:00-06:00",
-    "temp_f": 55,
-    "temp_c": 12.78,
-    "precip_chance_pct": 14,
-    "short_forecast": "Mostly Cloudy"
+    "temp_f": 58,
+    "temp_c": 14.44,
+    "precip_chance_pct": 21,
+    "short_forecast": "Slight Chance Light Rain"
    },
    {
     "start": "2026-11-10T06:00:00-06:00",
-    "temp_f": 55,
-    "temp_c": 12.78,
-    "precip_chance_pct": 23,
-    "short_forecast": "Slight Chance Rain Showers"
+    "temp_f": 58,
+    "temp_c": 14.44,
+    "precip_chance_pct": 18,
+    "short_forecast": "Slight Chance Light Rain"
    },
    {
     "start": "2026-11-10T07:00:00-06:00",
     "temp_f": 57,
     "temp_c": 13.89,
-    "precip_chance_pct": 23,
-    "short_forecast": "Slight Chance Rain Showers"
+    "precip_chance_pct": 18,
+    "short_forecast": "Slight Chance Light Rain"
    },
    {
     "start": "2026-11-10T08:00:00-06:00",
     "temp_f": 60,
     "temp_c": 15.56,
-    "precip_chance_pct": 23,
-    "short_forecast": "Slight Chance Rain Showers"
+    "precip_chance_pct": 18,
+    "short_forecast": "Slight Chance Light Rain"
    },
    {
     "start": "2026-11-10T09:00:00-06:00",
     "temp_f": 63,
     "temp_c": 17.22,
-    "precip_chance_pct": 23,
-    "short_forecast": "Slight Chance Rain Showers"
+    "precip_chance_pct": 18,
+    "short_forecast": "Slight Chance Light Rain"
    },
    {
     "start": "2026-11-10T10:00:00-06:00",
     "temp_f": 65,
     "temp_c": 18.33,
-    "precip_chance_pct": 23,
-    "short_forecast": "Slight Chance Rain Showers"
+    "precip_chance_pct": 18,
+    "short_forecast": "Slight Chance Light Rain"
    },
    {
     "start": "2026-11-10T11:00:00-06:00",
     "temp_f": 66,
     "temp_c": 18.89,
-    "precip_chance_pct": 23,
-    "short_forecast": "Slight Chance Rain Showers"
+    "precip_chance_pct": 18,
+    "short_forecast": "Slight Chance Light Rain"
+   },
+   {
+    "start": "2026-11-10T12:00:00-06:00",
+    "temp_f": 67,
+    "temp_c": 19.44,
+    "precip_chance_pct": 27,
+    "short_forecast": "Chance Light Rain"
    }
   ]
  },

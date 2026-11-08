@@ -11,33 +11,33 @@
   "lon": -90.3736,
   "history": "Same site as the official St. Louis record"
  },
- "as_of_utc": "2026-11-08T18:07:51Z",
+ "as_of_utc": "2026-11-08T19:07:53Z",
  "now": {
-  "time_utc": "2026-11-08T17:50:00Z",
-  "temp_c": 15,
-  "temp_f": 59.0,
+  "time_utc": "2026-11-08T18:45:00Z",
+  "temp_c": 17,
+  "temp_f": 62.6,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 7,
-  "humidity_pct": 58.79,
+  "humidity_pct": 51.75,
   "wind_kmh": 16.67,
   "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-08",
-  "readings": 7,
+  "readings": 8,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 5.6,
-  "high_f": 42.1,
-  "high_time_utc": "2026-11-08T13:51:00Z",
+  "high_c": 15,
+  "high_f": 59.0,
+  "high_time_utc": "2026-11-08T17:51:00Z",
   "low_c": 2.8,
   "low_f": 37.0,
   "low_time_utc": "2026-11-08T10:51:00Z",
   "peak_between_reports": {
-   "at_least_f": 58.1,
-   "about_f": 59.0,
-   "time_utc": "2026-11-08T17:50:00Z"
+   "at_least_f": 61.7,
+   "about_f": 62.6,
+   "time_utc": "2026-11-08T18:45:00Z"
   }
  },
  "record": {
@@ -88,7 +88,7 @@
   },
   "forecast_highs": [
    {
-    "period": "Today",
+    "period": "This Afternoon",
     "date": "2026-11-08",
     "high_f": 63,
     "would_rank": {
@@ -256,12 +256,12 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-08T16:36:09Z",
+  "issued_utc": "2026-11-08T17:36:02Z",
   "grid": "LSX/89,80",
   "periods": [
    {
-    "name": "Today",
-    "start": "2026-11-08T11:00:00-06:00",
+    "name": "This Afternoon",
+    "start": "2026-11-08T12:00:00-06:00",
     "is_daytime": true,
     "temp_f": 63,
     "temp_c": 17.22,
@@ -388,19 +388,12 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-08T16:36:09Z",
+  "issued_utc": "2026-11-08T18:26:01Z",
   "hours": [
    {
-    "start": "2026-11-08T12:00:00-06:00",
-    "temp_f": 58,
-    "temp_c": 14.44,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
-   {
     "start": "2026-11-08T13:00:00-06:00",
-    "temp_f": 61,
-    "temp_c": 16.11,
+    "temp_f": 59,
+    "temp_c": 15.0,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
    },
@@ -644,50 +637,50 @@
    },
    {
     "start": "2026-11-10T00:00:00-06:00",
+    "temp_f": 51,
+    "temp_c": 10.56,
+    "precip_chance_pct": 0,
+    "short_forecast": "Clear"
+   },
+   {
+    "start": "2026-11-10T01:00:00-06:00",
+    "temp_f": 51,
+    "temp_c": 10.56,
+    "precip_chance_pct": 0,
+    "short_forecast": "Clear"
+   },
+   {
+    "start": "2026-11-10T02:00:00-06:00",
+    "temp_f": 50,
+    "temp_c": 10.0,
+    "precip_chance_pct": 0,
+    "short_forecast": "Clear"
+   },
+   {
+    "start": "2026-11-10T03:00:00-06:00",
+    "temp_f": 50,
+    "temp_c": 10.0,
+    "precip_chance_pct": 0,
+    "short_forecast": "Clear"
+   },
+   {
+    "start": "2026-11-10T04:00:00-06:00",
     "temp_f": 49,
     "temp_c": 9.44,
     "precip_chance_pct": 0,
     "short_forecast": "Clear"
    },
    {
-    "start": "2026-11-10T01:00:00-06:00",
-    "temp_f": 48,
-    "temp_c": 8.89,
-    "precip_chance_pct": 0,
-    "short_forecast": "Clear"
-   },
-   {
-    "start": "2026-11-10T02:00:00-06:00",
-    "temp_f": 48,
-    "temp_c": 8.89,
-    "precip_chance_pct": 0,
-    "short_forecast": "Clear"
-   },
-   {
-    "start": "2026-11-10T03:00:00-06:00",
-    "temp_f": 47,
-    "temp_c": 8.33,
-    "precip_chance_pct": 0,
-    "short_forecast": "Clear"
-   },
-   {
-    "start": "2026-11-10T04:00:00-06:00",
-    "temp_f": 46,
-    "temp_c": 7.78,
-    "precip_chance_pct": 0,
-    "short_forecast": "Clear"
-   },
-   {
     "start": "2026-11-10T05:00:00-06:00",
-    "temp_f": 45,
-    "temp_c": 7.22,
+    "temp_f": 49,
+    "temp_c": 9.44,
     "precip_chance_pct": 0,
     "short_forecast": "Clear"
    },
    {
     "start": "2026-11-10T06:00:00-06:00",
-    "temp_f": 46,
-    "temp_c": 7.78,
+    "temp_f": 48,
+    "temp_c": 8.89,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
    },
@@ -723,6 +716,13 @@
     "start": "2026-11-10T11:00:00-06:00",
     "temp_f": 62,
     "temp_c": 16.67,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
+   },
+   {
+    "start": "2026-11-10T12:00:00-06:00",
+    "temp_f": 65,
+    "temp_c": 18.33,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
    }
