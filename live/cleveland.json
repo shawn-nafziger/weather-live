@@ -11,33 +11,33 @@
   "lon": -81.8519,
   "history": "Same site as the official Cleveland record"
  },
- "as_of_utc": "2026-11-08T16:18:11Z",
+ "as_of_utc": "2026-11-08T17:07:49Z",
  "now": {
-  "time_utc": "2026-11-08T15:55:00Z",
-  "temp_c": 9,
-  "temp_f": 48.2,
+  "time_utc": "2026-11-08T16:55:00Z",
+  "temp_c": 12,
+  "temp_f": 53.6,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 2,
-  "humidity_pct": 61.54,
+  "dewpoint_c": 1,
+  "humidity_pct": 46.9,
   "wind_kmh": null,
   "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-08",
-  "readings": 7,
+  "readings": 8,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 7.2,
-  "high_f": 45.0,
-  "high_time_utc": "2026-11-08T14:51:00Z",
+  "high_c": 9.4,
+  "high_f": 48.9,
+  "high_time_utc": "2026-11-08T15:51:00Z",
   "low_c": 2.8,
   "low_f": 37.0,
   "low_time_utc": "2026-11-08T09:51:00Z",
   "peak_between_reports": {
-   "at_least_f": 47.3,
-   "about_f": 48.2,
-   "time_utc": "2026-11-08T15:50:00Z"
+   "at_least_f": 52.7,
+   "about_f": 53.6,
+   "time_utc": "2026-11-08T16:55:00Z"
   }
  },
  "record": {
@@ -95,22 +95,21 @@
   },
   "forecast_highs": [
    {
-    "period": "Today",
+    "period": "This Afternoon",
     "date": "2026-11-08",
-    "high_f": 57,
+    "high_f": 56,
     "would_rank": {
-     "value_f": 57,
-     "warm_rank": 51,
-     "cool_rank": 98,
+     "value_f": 56,
+     "warm_rank": 57,
+     "cool_rank": 93,
      "years": 154,
      "first_year": 1871,
      "tied_years": [
-      1877,
-      1887,
-      1888,
-      1913,
-      1989,
-      2005
+      1873,
+      1880,
+      1898,
+      1970,
+      1985
      ],
      "standing": "warm",
      "notable": false,
@@ -176,21 +175,20 @@
    {
     "period": "Veterans Day",
     "date": "2026-11-11",
-    "high_f": 56,
+    "high_f": 59,
     "would_rank": {
-     "value_f": 56,
-     "warm_rank": 51,
-     "cool_rank": 103,
+     "value_f": 59,
+     "warm_rank": 35,
+     "cool_rank": 120,
      "years": 156,
      "first_year": 1871,
      "tied_years": [
-      1929,
-      1947,
-      2024
+      1946,
+      1995
      ],
      "standing": "warm",
      "notable": false,
-     "since": 2024,
+     "since": 2022,
      "record": false,
      "phrase": "typical for November 11"
     }
@@ -273,16 +271,16 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-08T11:19:53Z",
+  "issued_utc": "2026-11-08T17:01:49Z",
   "grid": "CLE/78,60",
   "periods": [
    {
-    "name": "Today",
-    "start": "2026-11-08T11:00:00-05:00",
+    "name": "This Afternoon",
+    "start": "2026-11-08T12:00:00-05:00",
     "is_daytime": true,
-    "temp_f": 57,
-    "temp_c": 13.89,
-    "precip_chance_pct": 3,
+    "temp_f": 56,
+    "temp_c": 13.33,
+    "precip_chance_pct": 2,
     "short_forecast": "Sunny"
    },
    {
@@ -291,8 +289,8 @@
     "is_daytime": false,
     "temp_f": 42,
     "temp_c": 5.56,
-    "precip_chance_pct": 6,
-    "short_forecast": "Mostly Cloudy"
+    "precip_chance_pct": 3,
+    "short_forecast": "Partly Cloudy"
    },
    {
     "name": "Monday",
@@ -301,7 +299,7 @@
     "temp_f": 53,
     "temp_c": 11.67,
     "precip_chance_pct": 1,
-    "short_forecast": "Mostly Cloudy"
+    "short_forecast": "Partly Sunny"
    },
    {
     "name": "Monday Night",
@@ -328,15 +326,15 @@
     "temp_f": 38,
     "temp_c": 3.33,
     "precip_chance_pct": 0,
-    "short_forecast": "Partly Cloudy"
+    "short_forecast": "Mostly Clear"
    },
    {
     "name": "Veterans Day",
     "start": "2026-11-11T06:00:00-05:00",
     "is_daytime": true,
-    "temp_f": 56,
-    "temp_c": 13.33,
-    "precip_chance_pct": 3,
+    "temp_f": 59,
+    "temp_c": 15.0,
+    "precip_chance_pct": 4,
     "short_forecast": "Partly Sunny"
    },
    {
@@ -407,13 +405,6 @@
  "hourly": {
   "issued_utc": "2026-11-08T11:19:53Z",
   "hours": [
-   {
-    "start": "2026-11-08T11:00:00-05:00",
-    "temp_f": 50,
-    "temp_c": 10.0,
-    "precip_chance_pct": 1,
-    "short_forecast": "Sunny"
-   },
    {
     "start": "2026-11-08T12:00:00-05:00",
     "temp_f": 54,
@@ -742,6 +733,13 @@
     "temp_c": 11.67,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Sunny"
+   },
+   {
+    "start": "2026-11-10T11:00:00-05:00",
+    "temp_f": 56,
+    "temp_c": 13.33,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
    }
   ]
  },

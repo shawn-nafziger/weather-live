@@ -11,29 +11,34 @@
   "lon": -110.9564,
   "history": "Same site as the official Tucson record"
  },
- "as_of_utc": "2026-11-08T16:18:11Z",
+ "as_of_utc": "2026-11-08T17:07:49Z",
  "now": {
-  "time_utc": "2026-11-08T15:55:00Z",
-  "temp_c": 19,
-  "temp_f": 66.2,
+  "time_utc": "2026-11-08T16:55:00Z",
+  "temp_c": 20,
+  "temp_f": 68.0,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 6,
-  "humidity_pct": 42.6,
-  "wind_kmh": 22.21,
+  "humidity_pct": 40.03,
+  "wind_kmh": null,
   "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-08",
-  "readings": 7,
+  "readings": 6,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 18.9,
-  "high_f": 66.0,
-  "high_time_utc": "2026-11-08T15:53:00Z",
+  "high_c": 16.7,
+  "high_f": 62.1,
+  "high_time_utc": "2026-11-08T14:53:00Z",
   "low_c": 13.9,
   "low_f": 57.0,
   "low_time_utc": "2026-11-08T12:53:00Z",
+  "peak_between_reports": {
+   "at_least_f": 67.1,
+   "about_f": 68.0,
+   "time_utc": "2026-11-08T16:55:00Z"
+  },
   "dip_between_reports": {
    "at_most_f": 56.3,
    "about_f": 55.4,
@@ -272,7 +277,7 @@
   "periods": [
    {
     "name": "Today",
-    "start": "2026-11-08T09:00:00-07:00",
+    "start": "2026-11-08T06:00:00-07:00",
     "is_daytime": true,
     "temp_f": 76,
     "temp_c": 24.44,
@@ -401,13 +406,6 @@
  "hourly": {
   "issued_utc": "2026-11-08T06:32:47Z",
   "hours": [
-   {
-    "start": "2026-11-08T09:00:00-07:00",
-    "temp_f": 62,
-    "temp_c": 16.67,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "start": "2026-11-08T10:00:00-07:00",
     "temp_f": 66,
@@ -734,6 +732,13 @@
     "start": "2026-11-10T08:00:00-07:00",
     "temp_f": 57,
     "temp_c": 13.89,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
+   },
+   {
+    "start": "2026-11-10T09:00:00-07:00",
+    "temp_f": 62,
+    "temp_c": 16.67,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
    }
