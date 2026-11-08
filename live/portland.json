@@ -11,23 +11,29 @@
   "lon": -122.6092,
   "history": "Same site as the official Portland record"
  },
- "as_of_utc": "2026-11-08T08:07:54Z",
+ "as_of_utc": "2026-11-08T09:07:50Z",
  "now": {
-  "time_utc": "2026-11-08T07:25:00Z",
+  "time_utc": "2026-11-08T08:45:00Z",
   "temp_c": 12,
   "temp_f": 53.6,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 11,
-  "humidity_pct": 93.6,
+  "dewpoint_c": 10,
+  "humidity_pct": 87.57,
   "wind_kmh": null,
-  "description": "Light Rain and Fog/Mist"
+  "description": "Light Rain"
  },
  "today_so_far": {
   "date_local": "2026-11-08",
-  "readings": 0,
+  "readings": 1,
   "basis": "5-minute readings (whole \u00b0C, approximate)",
   "approximate": true,
-  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two."
+  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
+  "high_c": 12,
+  "high_f": 53.6,
+  "high_time_utc": "2026-11-08T08:45:00Z",
+  "low_c": 12,
+  "low_f": 53.6,
+  "low_time_utc": "2026-11-08T08:45:00Z"
  },
  "record": {
   "series": "Portland area (ThreadEx; airport)",
@@ -228,17 +234,17 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-08T06:41:13Z",
+  "issued_utc": "2026-11-08T07:41:19Z",
   "grid": "PQR/116,107",
   "periods": [
    {
-    "name": "Tonight",
-    "start": "2026-11-07T23:00:00-08:00",
+    "name": "Overnight",
+    "start": "2026-11-08T00:00:00-08:00",
     "is_daytime": false,
     "temp_f": 52,
     "temp_c": 11.11,
-    "precip_chance_pct": 74,
-    "short_forecast": "Light Rain Likely"
+    "precip_chance_pct": 46,
+    "short_forecast": "Chance Light Rain"
    },
    {
     "name": "Sunday",
@@ -360,15 +366,8 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-08T06:41:13Z",
+  "issued_utc": "2026-11-08T07:41:19Z",
   "hours": [
-   {
-    "start": "2026-11-08T00:00:00-08:00",
-    "temp_f": 57,
-    "temp_c": 13.89,
-    "precip_chance_pct": 46,
-    "short_forecast": "Chance Light Rain"
-   },
    {
     "start": "2026-11-08T01:00:00-08:00",
     "temp_f": 56,
@@ -695,6 +694,13 @@
     "start": "2026-11-09T23:00:00-08:00",
     "temp_f": 55,
     "temp_c": 12.78,
+    "precip_chance_pct": 41,
+    "short_forecast": "Chance Rain Showers"
+   },
+   {
+    "start": "2026-11-10T00:00:00-08:00",
+    "temp_f": 54,
+    "temp_c": 12.22,
     "precip_chance_pct": 41,
     "short_forecast": "Chance Rain Showers"
    }
