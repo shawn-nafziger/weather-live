@@ -183,10 +183,20 @@ def resolve_city(session, city):
 
     The forecast is pulled for the station's own location, so it can later be
     checked against what that station records."""
-    station = get_json(session, f"{API}/stations/{city['station']}")
+    try:
+        station = get_json(session, f"{API}/stations/{city['station']}")
+    except requests.HTTPError as e:
+        # A metro area whose listed station the NWS doesn't have (Los Angeles' KCQT,
+        # Nov 6, 2026): use the NWS's own nearest station to the record's site instead.
+        if getattr(e.response, "status_code", None) != 404 or "record_lat" not in city:
+            raise
+        near = get_json(session, f"{API}/points/{city['record_lat']:.4f},{city['record_lon']:.4f}")["properties"]
+        first = get_json(session, near["observationStations"])["features"][0]
+        station = get_json(session, f"{API}/stations/{first['properties']['stationIdentifier']}")
     lon, lat = station["geometry"]["coordinates"][:2]
     point = get_json(session, f"{API}/points/{lat:.4f},{lon:.4f}")["properties"]
     return {
+        "station_id": station["properties"].get("stationIdentifier", city["station"]),
         "station_name": station["properties"].get("name"),
         "lat": round(lat, 4), "lon": round(lon, 4),
         "grid": f"{point['gridId']}/{point['gridX']},{point['gridY']}",
@@ -436,6 +446,7 @@ def record_context(city, history, so_far, forecast_rows, tz, now):
 def run_city(session, city, now):
     where = resolve_city(session, city)
     city = dict(city)
+    city["station"] = where["station_id"]      # differs only when the listed station was missing
     city["time_zone"] = city.get("time_zone") or where["time_zone"]
     if city.get("rank_today") is None:
         # Metro areas: rank today only if the station is at the record's site.

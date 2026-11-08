@@ -8,6 +8,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 import nws_pull as n  # noqa: E402
+import requests  # noqa: E402
 
 def forecast(update):
     periods = []
@@ -60,11 +61,19 @@ class FakeAPI:
             raise RuntimeError("HTTP 503 from " + url)
         if url.endswith("/observations"):
             return obs(READINGS)
+        if url.endswith("/stations/KGONE"):
+            resp = requests.Response(); resp.status_code = 404
+            raise requests.HTTPError("404 Client Error: Not Found", response=resp)
+        if url.endswith("/observation-stations"):
+            return {"features": [{"properties": {"stationIdentifier": "KNEAR"}}]}
         if "/stations/" in url:
-            return {"geometry": {"coordinates": [-87.9048, 41.9786]}, "properties": {"name": "Test Station"}}
+            sid = url.rsplit("/", 1)[1]
+            return {"geometry": {"coordinates": [-87.9048, 41.9786]},
+                    "properties": {"name": "Test Station", "stationIdentifier": sid}}
         if "/points/" in url:
             return {"properties": {"gridId": "LOT", "gridX": 65, "gridY": 76,
                                    "forecast": "F/forecast", "forecastHourly": "F/forecast/hourly",
+                                   "observationStations": "F/observation-stations",
                                    "timeZone": "America/Chicago"}}
         if url.endswith("/hourly"):
             return hourly()
@@ -182,6 +191,30 @@ class Test(unittest.TestCase):
         o = self.rows(self.tmp / "archive/observations/2026/10/2026-10-29.csv")
         self.assertEqual(sorted({r["City"] for r in o}), ["chicago", "miami"])
         self.assertIsNotNone(dal["today_so_far"].get("high_f"))                           # live file still has them
+
+    def test_missing_metro_station_falls_back_to_the_nearest_nws_station(self):
+        (self.tmp / "almanac_cities.json").write_text(json.dumps({"cities": [
+            {"slug": "los-angeles", "name": "Los Angeles", "state": "California", "st": "CA",
+             "record_sid": "LAXthr 9", "record_name": "Los Angeles area", "lat": 41.98, "lon": -87.90}]}))
+        (self.tmp / "metros.json").write_text(json.dumps({"cities": [{"slug": "los-angeles", "station": "KGONE"}]}))
+        n.METROS_FILE = self.tmp / "metros.json"
+        n.get_json = FakeAPI()
+        self.assertEqual(n.main(), 0)
+        status = json.loads((self.tmp / "live/status.json").read_text())
+        self.assertTrue(status["cities"]["los-angeles"]["ok"])
+        la = json.loads((self.tmp / "live/los-angeles.json").read_text())
+        self.assertEqual(la["station"]["id"], "KNEAR")
+        f = self.rows(self.tmp / "archive/forecasts/2026/10/2026-10-29.csv")
+        self.assertEqual({r["Station"] for r in f if r["City"] == "los-angeles"}, {"KNEAR"})
+
+    def test_a_missing_station_for_a_listed_city_still_fails(self):
+        # Only metro areas (which know their record's site) fall back; a cities.json typo should show up.
+        n.get_json = FakeAPI()
+        cfg = json.loads(n.CITIES_FILE.read_text()); cfg["cities"][0]["station"] = "KGONE"
+        n.CITIES_FILE.write_text(json.dumps(cfg))
+        n.main()
+        status = json.loads((self.tmp / "live/status.json").read_text())
+        self.assertFalse(status["cities"]["chicago"]["ok"])
 
     def test_old_day_file_keeps_its_columns(self):
         # A file started before ReportType existed keeps its header; no ragged rows.

@@ -67,7 +67,7 @@ Chicago, Phoenix, Miami, Seattle, Goshen IN, Los Olivos CA and South Bend IN (ad
 **Forecast archive for the 50 biggest metro areas (added Nov 5, 2026).** `config/hourly_metros.json` adds 46 more places to the hourly pull (the first-wave Almanac metros not already listed above), so forecast accuracy can be measured across the country, not just for 7 cities. Each names only its slug and NWS station; its name and official record come from `config/almanac_cities.json`, its time zone from the NWS. For these places:
 - every forecast issue is archived, like the others;
 - hourly readings feed `live/<city>.json` (today so far) but **aren't archived**: forecasts will be checked against the official daily record in `history/`, and this keeps the archive about a third the size;
-- today and forecast highs are ranked only when the station is within 5 km of the record's site (worked out each run). New York (Central Park, KNYC) and Los Angeles (downtown/USC, KCQT) use the record's own site; San Francisco's and Sacramento's records are downtown, so their airport stations aren't ranked.
+- today and forecast highs are ranked only when the station is within 5 km of the record's site (worked out each run). New York (Central Park, KNYC) uses the record's own site. San Francisco's and Sacramento's records are downtown, so their airport stations aren't ranked. If the NWS doesn't serve a listed station (Los Angeles' downtown KCQT, Nov 6, 2026), the job uses the NWS's nearest station to the record's site instead, and ranks today only if that is within 5 km.
 
 ## What starts the jobs
 
