@@ -11,7 +11,7 @@
   "lon": -97.6003,
   "history": "Same site as the official Oklahoma City record"
  },
- "as_of_utc": "2026-11-08T12:07:50Z",
+ "as_of_utc": "2026-11-08T13:07:52Z",
  "now": {
   "time_utc": "2026-11-08T11:25:00Z",
   "temp_c": 3,
@@ -81,7 +81,7 @@
   },
   "forecast_highs": [
    {
-    "period": "Sunday",
+    "period": "Today",
     "date": "2026-11-08",
     "high_f": 68,
     "would_rank": {
@@ -250,16 +250,7 @@
   "grid": "OUN/94,90",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-08T02:00:00-06:00",
-    "is_daytime": false,
-    "temp_f": 39,
-    "temp_c": 3.89,
-    "precip_chance_pct": 0,
-    "short_forecast": "Areas Of Fog"
-   },
-   {
-    "name": "Sunday",
+    "name": "Today",
     "start": "2026-11-08T06:00:00-06:00",
     "is_daytime": true,
     "temp_f": 68,
@@ -268,7 +259,7 @@
     "short_forecast": "Areas Of Fog then Sunny"
    },
    {
-    "name": "Sunday Night",
+    "name": "Tonight",
     "start": "2026-11-08T18:00:00-06:00",
     "is_daytime": false,
     "temp_f": 45,
@@ -374,19 +365,21 @@
     "temp_c": 20.56,
     "precip_chance_pct": 1,
     "short_forecast": "Sunny"
+   },
+   {
+    "name": "Saturday Night",
+    "start": "2026-11-14T18:00:00-06:00",
+    "is_daytime": false,
+    "temp_f": 50,
+    "temp_c": 10.0,
+    "precip_chance_pct": 3,
+    "short_forecast": "Mostly Clear"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-08T08:42:11Z",
   "hours": [
-   {
-    "start": "2026-11-08T06:00:00-06:00",
-    "temp_f": 41,
-    "temp_c": 5.0,
-    "precip_chance_pct": 0,
-    "short_forecast": "Areas Of Fog"
-   },
    {
     "start": "2026-11-08T07:00:00-06:00",
     "temp_f": 40,
@@ -715,6 +708,13 @@
     "temp_c": 11.11,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear"
+   },
+   {
+    "start": "2026-11-10T06:00:00-06:00",
+    "temp_f": 52,
+    "temp_c": 11.11,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
    }
   ]
  },

@@ -11,14 +11,14 @@
   "lon": -122.3656,
   "history": "About 18 km from the official San Francisco record's site, so today and the forecast aren't ranked against it"
  },
- "as_of_utc": "2026-11-08T12:07:50Z",
+ "as_of_utc": "2026-11-08T13:07:52Z",
  "now": {
-  "time_utc": "2026-11-08T11:35:00Z",
-  "temp_c": 15,
-  "temp_f": 59.0,
+  "time_utc": "2026-11-08T12:40:00Z",
+  "temp_c": 13,
+  "temp_f": 55.4,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 13,
-  "humidity_pct": 87.84,
+  "dewpoint_c": 12,
+  "humidity_pct": 93.65,
   "wind_kmh": null,
   "description": "Mostly Clear"
  },
@@ -33,7 +33,12 @@
   "high_time_utc": "2026-11-08T08:56:00Z",
   "low_c": 15,
   "low_f": 59.0,
-  "low_time_utc": "2026-11-08T10:56:00Z"
+  "low_time_utc": "2026-11-08T10:56:00Z",
+  "dip_between_reports": {
+   "at_most_f": 56.3,
+   "about_f": 55.4,
+   "time_utc": "2026-11-08T12:40:00Z"
+  }
  },
  "record": {
   "series": "San Francisco area (ThreadEx; downtown)",
@@ -96,7 +101,7 @@
   "periods": [
    {
     "name": "Overnight",
-    "start": "2026-11-08T00:00:00-08:00",
+    "start": "2026-11-08T01:00:00-08:00",
     "is_daytime": false,
     "temp_f": 56,
     "temp_c": 13.33,
@@ -225,13 +230,6 @@
  "hourly": {
   "issued_utc": "2026-11-08T08:26:34Z",
   "hours": [
-   {
-    "start": "2026-11-08T04:00:00-08:00",
-    "temp_f": 57,
-    "temp_c": 13.89,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "start": "2026-11-08T05:00:00-08:00",
     "temp_f": 56,
@@ -560,6 +558,13 @@
     "temp_c": 13.89,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear"
+   },
+   {
+    "start": "2026-11-10T04:00:00-08:00",
+    "temp_f": 57,
+    "temp_c": 13.89,
+    "precip_chance_pct": 0,
+    "short_forecast": "Partly Cloudy"
    }
   ]
  },
