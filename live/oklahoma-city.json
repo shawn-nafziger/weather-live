@@ -11,20 +11,20 @@
   "lon": -97.6003,
   "history": "Same site as the official Oklahoma City record"
  },
- "as_of_utc": "2026-11-08T00:07:51Z",
+ "as_of_utc": "2026-11-08T01:07:50Z",
  "now": {
-  "time_utc": "2026-11-07T23:50:00Z",
-  "temp_c": 12,
-  "temp_f": 53.6,
+  "time_utc": "2026-11-08T00:50:00Z",
+  "temp_c": 11,
+  "temp_f": 51.8,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": null,
   "humidity_pct": null,
   "wind_kmh": 0,
-  "description": ""
+  "description": "Haze"
  },
  "today_so_far": {
   "date_local": "2026-11-07",
-  "readings": 15,
+  "readings": 16,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -92,28 +92,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-07",
-    "high_f": 59,
-    "would_rank": {
-     "value_f": 59,
-     "warm_rank": 98,
-     "cool_rank": 37,
-     "years": 137,
-     "first_year": 1890,
-     "tied_years": [
-      1902,
-      1976,
-      2018
-     ],
-     "standing": "cool",
-     "notable": false,
-     "since": 2019,
-     "record": false,
-     "phrase": "typical for November 7"
-    }
-   },
    {
     "period": "Sunday",
     "date": "2026-11-08",
@@ -247,6 +225,30 @@
      "record": false,
      "phrase": "typical for November 13"
     }
+   },
+   {
+    "period": "Saturday",
+    "date": "2026-11-14",
+    "high_f": 68,
+    "would_rank": {
+     "value_f": 68,
+     "warm_rank": 45,
+     "cool_rank": 88,
+     "years": 137,
+     "first_year": 1890,
+     "tied_years": [
+      1911,
+      1913,
+      1949,
+      2007,
+      2024
+     ],
+     "standing": "warm",
+     "notable": false,
+     "since": 2025,
+     "record": false,
+     "phrase": "typical for November 14"
+    }
    }
   ]
  },
@@ -254,15 +256,6 @@
   "issued_utc": "2026-11-07T18:27:08Z",
   "grid": "OUN/94,90",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-07T12:00:00-06:00",
-    "is_daytime": true,
-    "temp_f": 59,
-    "temp_c": 15.0,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Sunny"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-07T18:00:00-06:00",
@@ -379,19 +372,21 @@
     "temp_c": 7.22,
     "precip_chance_pct": 0,
     "short_forecast": "Clear"
+   },
+   {
+    "name": "Saturday",
+    "start": "2026-11-14T06:00:00-06:00",
+    "is_daytime": true,
+    "temp_f": 68,
+    "temp_c": 20.0,
+    "precip_chance_pct": 1,
+    "short_forecast": "Sunny"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-07T18:27:08Z",
   "hours": [
-   {
-    "start": "2026-11-07T18:00:00-06:00",
-    "temp_f": 54,
-    "temp_c": 12.22,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "start": "2026-11-07T19:00:00-06:00",
     "temp_f": 51,
@@ -720,6 +715,13 @@
     "temp_c": 18.89,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
+   },
+   {
+    "start": "2026-11-09T18:00:00-06:00",
+    "temp_f": 64,
+    "temp_c": 17.78,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Clear"
    }
   ]
  },
