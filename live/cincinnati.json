@@ -11,29 +11,34 @@
   "lon": -84.6723,
   "history": "Same site as the official Cincinnati record"
  },
- "as_of_utc": "2026-11-08T06:07:51Z",
+ "as_of_utc": "2026-11-08T07:07:53Z",
  "now": {
-  "time_utc": "2026-11-08T05:25:00Z",
-  "temp_c": 3,
-  "temp_f": 37.4,
+  "time_utc": "2026-11-08T06:00:00Z",
+  "temp_c": 2,
+  "temp_f": 35.6,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 0,
-  "humidity_pct": 80.66,
-  "wind_kmh": 0,
+  "dewpoint_c": 1,
+  "humidity_pct": 93.09,
+  "wind_kmh": 7.42,
   "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-08",
   "readings": 1,
-  "basis": "5-minute readings (whole \u00b0C, approximate)",
-  "approximate": true,
+  "basis": "hourly reports (tenths of a degree)",
+  "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 3,
-  "high_f": 37.4,
-  "high_time_utc": "2026-11-08T05:25:00Z",
-  "low_c": 3,
-  "low_f": 37.4,
-  "low_time_utc": "2026-11-08T05:25:00Z"
+  "high_c": 1.7,
+  "high_f": 35.1,
+  "high_time_utc": "2026-11-08T05:52:00Z",
+  "low_c": 1.7,
+  "low_f": 35.1,
+  "low_time_utc": "2026-11-08T05:52:00Z",
+  "peak_between_reports": {
+   "at_least_f": 36.5,
+   "about_f": 37.4,
+   "time_utc": "2026-11-08T05:25:00Z"
+  }
  },
  "record": {
   "series": "Cincinnati area (ThreadEx; airport (in Kentucky))",
@@ -242,17 +247,17 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-07T23:24:20Z",
+  "issued_utc": "2026-11-08T06:07:37Z",
   "grid": "ILN/30,35",
   "periods": [
    {
-    "name": "Tonight",
-    "start": "2026-11-07T23:00:00-05:00",
+    "name": "Overnight",
+    "start": "2026-11-08T01:00:00-05:00",
     "is_daytime": false,
     "temp_f": 33,
     "temp_c": 0.56,
     "precip_chance_pct": 0,
-    "short_forecast": "Mostly Clear then Areas Of Frost"
+    "short_forecast": "Areas Of Frost"
    },
    {
     "name": "Sunday",
@@ -270,7 +275,7 @@
     "temp_f": 39,
     "temp_c": 3.89,
     "precip_chance_pct": 0,
-    "short_forecast": "Mostly Clear then Patchy Frost"
+    "short_forecast": "Clear then Patchy Frost"
    },
    {
     "name": "Monday",
@@ -376,13 +381,6 @@
  "hourly": {
   "issued_utc": "2026-11-07T23:24:20Z",
   "hours": [
-   {
-    "start": "2026-11-08T01:00:00-05:00",
-    "temp_f": 37,
-    "temp_c": 2.78,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Clear"
-   },
    {
     "start": "2026-11-08T02:00:00-05:00",
     "temp_f": 36,
@@ -709,6 +707,13 @@
     "start": "2026-11-10T00:00:00-05:00",
     "temp_f": 44,
     "temp_c": 6.67,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Clear"
+   },
+   {
+    "start": "2026-11-10T01:00:00-05:00",
+    "temp_f": 43,
+    "temp_c": 6.11,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear"
    }
