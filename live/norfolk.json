@@ -11,34 +11,23 @@
   "lon": -76.1919,
   "history": "Same site as the official Norfolk record"
  },
- "as_of_utc": "2026-11-08T04:07:51Z",
+ "as_of_utc": "2026-11-08T05:07:54Z",
  "now": {
-  "time_utc": "2026-11-08T02:51:00Z",
-  "temp_c": 12.8,
-  "temp_f": 55.0,
-  "precision": "tenths of a degree",
-  "dewpoint_c": 3.9,
-  "humidity_pct": 54.69,
-  "wind_kmh": 20.52,
+  "time_utc": "2026-11-08T04:55:00Z",
+  "temp_c": 11,
+  "temp_f": 51.8,
+  "precision": "nearest whole \u00b0C",
+  "dewpoint_c": 3,
+  "humidity_pct": 57.8,
+  "wind_kmh": 18.5,
   "description": "Clear"
  },
  "today_so_far": {
-  "date_local": "2026-11-07",
-  "readings": 16,
-  "basis": "hourly reports (tenths of a degree)",
-  "approximate": false,
-  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 16.1,
-  "high_f": 61.0,
-  "high_time_utc": "2026-11-07T19:51:00Z",
-  "low_c": 12.8,
-  "low_f": 55.0,
-  "low_time_utc": "2026-11-07T23:51:00Z",
-  "dip_between_reports": {
-   "at_most_f": 52.7,
-   "about_f": 51.8,
-   "time_utc": "2026-11-08T00:40:00Z"
-  }
+  "date_local": "2026-11-08",
+  "readings": 0,
+  "basis": "5-minute readings (whole \u00b0C, approximate)",
+  "approximate": true,
+  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two."
  },
  "record": {
   "series": "Norfolk area (ThreadEx; airport)",
@@ -47,7 +36,7 @@
   "rank_today": true,
   "latest_final": {
    "date": "2026-11-06",
-   "is_yesterday": true,
+   "is_yesterday": false,
    "high_f": 74,
    "low_f": 59,
    "high_rank": {
@@ -253,15 +242,15 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-08T00:33:34Z",
+  "issued_utc": "2026-11-08T05:02:58Z",
   "grid": "AKQ/93,55",
   "periods": [
    {
-    "name": "Tonight",
-    "start": "2026-11-07T23:00:00-05:00",
+    "name": "Overnight",
+    "start": "2026-11-08T00:00:00-05:00",
     "is_daytime": false,
-    "temp_f": 47,
-    "temp_c": 8.33,
+    "temp_f": 48,
+    "temp_c": 8.89,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear"
    },
@@ -387,13 +376,6 @@
  "hourly": {
   "issued_utc": "2026-11-08T00:33:34Z",
   "hours": [
-   {
-    "start": "2026-11-07T23:00:00-05:00",
-    "temp_f": 51,
-    "temp_c": 10.56,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Clear"
-   },
    {
     "start": "2026-11-08T00:00:00-05:00",
     "temp_f": 51,
@@ -718,6 +700,13 @@
    },
    {
     "start": "2026-11-09T22:00:00-05:00",
+    "temp_f": 53,
+    "temp_c": 11.67,
+    "precip_chance_pct": 0,
+    "short_forecast": "Clear"
+   },
+   {
+    "start": "2026-11-09T23:00:00-05:00",
     "temp_f": 53,
     "temp_c": 11.67,
     "precip_chance_pct": 0,

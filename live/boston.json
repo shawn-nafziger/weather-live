@@ -11,29 +11,23 @@
   "lon": -71.0106,
   "history": "Same site as the official Boston record"
  },
- "as_of_utc": "2026-11-08T04:07:51Z",
+ "as_of_utc": "2026-11-08T05:07:54Z",
  "now": {
-  "time_utc": "2026-11-08T03:29:00Z",
-  "temp_c": 11.1,
-  "temp_f": 52.0,
-  "precision": "tenths of a degree",
-  "dewpoint_c": 10,
-  "humidity_pct": 92.93,
-  "wind_kmh": 7.56,
-  "description": "Light Rain and Fog/Mist"
+  "time_utc": "2026-11-08T04:55:00Z",
+  "temp_c": 9,
+  "temp_f": 48.2,
+  "precision": "nearest whole \u00b0C",
+  "dewpoint_c": 8,
+  "humidity_pct": 93.45,
+  "wind_kmh": 16.67,
+  "description": "Cloudy"
  },
  "today_so_far": {
-  "date_local": "2026-11-07",
-  "readings": 38,
-  "basis": "hourly reports (tenths of a degree)",
-  "approximate": false,
-  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 16.7,
-  "high_f": 62.1,
-  "high_time_utc": "2026-11-07T05:19:00Z",
-  "low_c": 11.1,
-  "low_f": 52.0,
-  "low_time_utc": "2026-11-08T03:29:00Z"
+  "date_local": "2026-11-08",
+  "readings": 0,
+  "basis": "5-minute readings (whole \u00b0C, approximate)",
+  "approximate": true,
+  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two."
  },
  "record": {
   "series": "Boston area (ThreadEx; Logan airport)",
@@ -42,7 +36,7 @@
   "rank_today": true,
   "latest_final": {
    "date": "2026-11-06",
-   "is_yesterday": true,
+   "is_yesterday": false,
    "high_f": 67,
    "low_f": 62,
    "high_rank": {
@@ -77,22 +71,6 @@
     "record": false,
     "phrase": "2nd warmest November 6 low (tied) of 155 since 1872, warmest since 2022"
    }
-  },
-  "today_high_so_far": {
-   "value_f": 62,
-   "warm_rank": 29,
-   "cool_rank": 125,
-   "years": 155,
-   "first_year": 1872,
-   "tied_years": [
-    1945,
-    1980
-   ],
-   "standing": "warm",
-   "notable": true,
-   "since": 2024,
-   "record": false,
-   "phrase": "already the 29th warmest November 7 high (tied) of 155 since 1872, warmest since 2024"
   },
   "forecast_highs": [
    {
@@ -405,13 +383,6 @@
  "hourly": {
   "issued_utc": "2026-11-08T03:12:08Z",
   "hours": [
-   {
-    "start": "2026-11-07T23:00:00-05:00",
-    "temp_f": 53,
-    "temp_c": 11.67,
-    "precip_chance_pct": 44,
-    "short_forecast": "Chance Light Rain"
-   },
    {
     "start": "2026-11-08T00:00:00-05:00",
     "temp_f": 52,
@@ -738,6 +709,13 @@
     "start": "2026-11-09T22:00:00-05:00",
     "temp_f": 49,
     "temp_c": 9.44,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Clear"
+   },
+   {
+    "start": "2026-11-09T23:00:00-05:00",
+    "temp_f": 48,
+    "temp_c": 8.89,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear"
    }
