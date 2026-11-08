@@ -1,0 +1,42 @@
+name: Story fact checks
+
+# One-time, by hand (Actions → Story fact checks → Run workflow).
+# Outside checks for the story "Record Lows Are Disappearing": NOAA's adjusted
+# statewide data, and station histories for the six places that set more
+# record lows than chance. Saves the results to the "checks" branch (not main)
+# as checks/story_checks.json. Claude reads them from there.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  checks:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Run the checks
+        run: python scripts/story_checks.py
+
+      - name: Save the results to the checks branch
+        run: |
+          git config user.name "weather-live bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          mv checks/story_checks.json "$RUNNER_TEMP/"
+          git switch --orphan checks
+          git clean -fdq                     # empty working folder: the branch holds only the results
+          mkdir -p checks
+          mv "$RUNNER_TEMP/story_checks.json" checks/
+          git add checks/story_checks.json
+          git commit -q -m "Story fact checks ($(date -u +'%Y-%m-%d'))"
+          git push -q -f origin HEAD:checks
