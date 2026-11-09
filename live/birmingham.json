@@ -11,29 +11,29 @@
   "lon": -86.745,
   "history": "Same site as the official Birmingham record"
  },
- "as_of_utc": "2026-11-09T12:07:52Z",
+ "as_of_utc": "2026-11-09T13:07:53Z",
  "now": {
-  "time_utc": "2026-11-09T11:30:00Z",
+  "time_utc": "2026-11-09T12:20:00Z",
   "temp_c": 3,
   "temp_f": 37.4,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 2,
-  "humidity_pct": 93.14,
+  "dewpoint_c": 3,
+  "humidity_pct": 100,
   "wind_kmh": 0,
   "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-09",
-  "readings": 4,
+  "readings": 5,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
   "high_c": 5,
   "high_f": 41.0,
   "high_time_utc": "2026-11-09T06:53:00Z",
-  "low_c": 3.3,
-  "low_f": 37.9,
-  "low_time_utc": "2026-11-09T10:53:00Z",
+  "low_c": 2.8,
+  "low_f": 37.0,
+  "low_time_utc": "2026-11-09T11:53:00Z",
   "peak_between_reports": {
    "at_least_f": 41.9,
    "about_f": 42.8,
@@ -91,7 +91,7 @@
   },
   "forecast_highs": [
    {
-    "period": "Monday",
+    "period": "Today",
     "date": "2026-11-09",
     "high_f": 74,
     "would_rank": {
@@ -246,21 +246,12 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-09T06:26:27Z",
+  "issued_utc": "2026-11-09T11:06:32Z",
   "grid": "BMX/61,87",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-09T05:00:00-06:00",
-    "is_daytime": false,
-    "temp_f": 39,
-    "temp_c": 3.89,
-    "precip_chance_pct": 0,
-    "short_forecast": "Partly Cloudy"
-   },
-   {
-    "name": "Monday",
-    "start": "2026-11-09T06:00:00-06:00",
+    "name": "Today",
+    "start": "2026-11-09T07:00:00-06:00",
     "is_daytime": true,
     "temp_f": 74,
     "temp_c": 23.33,
@@ -268,7 +259,7 @@
     "short_forecast": "Sunny"
    },
    {
-    "name": "Monday Night",
+    "name": "Tonight",
     "start": "2026-11-09T18:00:00-06:00",
     "is_daytime": false,
     "temp_f": 44,
@@ -374,19 +365,21 @@
     "temp_c": 16.11,
     "precip_chance_pct": 1,
     "short_forecast": "Widespread Frost then Sunny"
+   },
+   {
+    "name": "Sunday Night",
+    "start": "2026-11-15T18:00:00-06:00",
+    "is_daytime": false,
+    "temp_f": 37,
+    "temp_c": 2.78,
+    "precip_chance_pct": 2,
+    "short_forecast": "Mostly Clear then Areas Of Frost"
    }
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-09T06:26:27Z",
+  "issued_utc": "2026-11-09T11:06:32Z",
   "hours": [
-   {
-    "start": "2026-11-09T06:00:00-06:00",
-    "temp_f": 39,
-    "temp_c": 3.89,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Sunny"
-   },
    {
     "start": "2026-11-09T07:00:00-06:00",
     "temp_f": 41,
@@ -715,6 +708,13 @@
     "temp_c": 7.78,
     "precip_chance_pct": 1,
     "short_forecast": "Partly Cloudy"
+   },
+   {
+    "start": "2026-11-11T06:00:00-06:00",
+    "temp_f": 45,
+    "temp_c": 7.22,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Sunny"
    }
   ]
  },

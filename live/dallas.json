@@ -11,20 +11,20 @@
   "lon": -97.022,
   "history": "Same site as the official Dallas record"
  },
- "as_of_utc": "2026-11-09T12:07:52Z",
+ "as_of_utc": "2026-11-09T13:07:53Z",
  "now": {
-  "time_utc": "2026-11-09T11:30:00Z",
-  "temp_c": 14,
-  "temp_f": 57.2,
+  "time_utc": "2026-11-09T12:20:00Z",
+  "temp_c": 13,
+  "temp_f": 55.4,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 12,
-  "humidity_pct": 87.75,
+  "humidity_pct": 93.65,
   "wind_kmh": 7.42,
   "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-09",
-  "readings": 4,
+  "readings": 5,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -89,7 +89,7 @@
   },
   "forecast_highs": [
    {
-    "period": "Monday",
+    "period": "Today",
     "date": "2026-11-09",
     "high_f": 74,
     "would_rank": {
@@ -260,16 +260,7 @@
   "grid": "FWD/81,109",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-09T05:00:00-06:00",
-    "is_daytime": false,
-    "temp_f": 54,
-    "temp_c": 12.22,
-    "precip_chance_pct": 7,
-    "short_forecast": "Mostly Clear"
-   },
-   {
-    "name": "Monday",
+    "name": "Today",
     "start": "2026-11-09T06:00:00-06:00",
     "is_daytime": true,
     "temp_f": 74,
@@ -278,7 +269,7 @@
     "short_forecast": "Partly Sunny"
    },
    {
-    "name": "Monday Night",
+    "name": "Tonight",
     "start": "2026-11-09T18:00:00-06:00",
     "is_daytime": false,
     "temp_f": 57,
@@ -384,19 +375,21 @@
     "temp_c": 21.11,
     "precip_chance_pct": 15,
     "short_forecast": "Mostly Sunny then Slight Chance Rain Showers"
+   },
+   {
+    "name": "Sunday Night",
+    "start": "2026-11-15T18:00:00-06:00",
+    "is_daytime": false,
+    "temp_f": 53,
+    "temp_c": 11.67,
+    "precip_chance_pct": 18,
+    "short_forecast": "Slight Chance Rain Showers"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-09T11:06:24Z",
   "hours": [
-   {
-    "start": "2026-11-09T06:00:00-06:00",
-    "temp_f": 55,
-    "temp_c": 12.78,
-    "precip_chance_pct": 6,
-    "short_forecast": "Sunny"
-   },
    {
     "start": "2026-11-09T07:00:00-06:00",
     "temp_f": 54,
@@ -725,6 +718,13 @@
     "temp_c": 15.56,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear"
+   },
+   {
+    "start": "2026-11-11T06:00:00-06:00",
+    "temp_f": 59,
+    "temp_c": 15.0,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
    }
   ]
  },
