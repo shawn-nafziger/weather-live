@@ -11,20 +11,20 @@
   "lon": -81.3241,
   "history": "Same site as the official Orlando record"
  },
- "as_of_utc": "2026-11-09T22:07:53Z",
+ "as_of_utc": "2026-11-09T23:07:51Z",
  "now": {
-  "time_utc": "2026-11-09T20:53:00Z",
+  "time_utc": "2026-11-09T21:53:00Z",
   "temp_c": 27,
   "temp_f": 80.6,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 14,
-  "humidity_pct": 44.83,
-  "wind_kmh": 5.4,
-  "description": "Mostly Cloudy"
+  "dewpoint_c": 13,
+  "humidity_pct": 42.01,
+  "wind_kmh": 0,
+  "description": "Partly Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-09",
-  "readings": 13,
+  "readings": 14,
   "basis": "5-minute readings (whole \u00b0C, approximate)",
   "approximate": true,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -91,34 +91,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-09",
-    "high_f": 83,
-    "would_rank": {
-     "value_f": 83,
-     "warm_rank": 34,
-     "cool_rank": 89,
-     "years": 131,
-     "first_year": 1894,
-     "tied_years": [
-      1898,
-      1916,
-      1938,
-      1942,
-      1944,
-      1960,
-      2002,
-      2005,
-      2017
-     ],
-     "standing": "warm",
-     "notable": false,
-     "since": 2025,
-     "record": false,
-     "phrase": "typical for November 9"
-    }
-   },
    {
     "period": "Tuesday",
     "date": "2026-11-10",
@@ -264,22 +236,40 @@
      "record": false,
      "phrase": "15th coolest November 15 high (tied) of 132 since 1893, coolest since 2012"
     }
+   },
+   {
+    "period": "Monday",
+    "date": "2026-11-16",
+    "high_f": 75,
+    "would_rank": {
+     "value_f": 75,
+     "warm_rank": 88,
+     "cool_rank": 37,
+     "years": 132,
+     "first_year": 1893,
+     "tied_years": [
+      1919,
+      1920,
+      1945,
+      1959,
+      1972,
+      1975,
+      1992,
+      2017
+     ],
+     "standing": "cool",
+     "notable": false,
+     "since": 2023,
+     "record": false,
+     "phrase": "typical for November 16"
+    }
    }
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-09T19:55:52Z",
+  "issued_utc": "2026-11-09T22:14:51Z",
   "grid": "MLB/29,63",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-09T17:00:00-05:00",
-    "is_daytime": true,
-    "temp_f": 83,
-    "temp_c": 28.33,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-09T18:00:00-05:00",
@@ -396,19 +386,21 @@
     "temp_c": 13.33,
     "precip_chance_pct": 1,
     "short_forecast": "Mostly Clear"
+   },
+   {
+    "name": "Monday",
+    "start": "2026-11-16T06:00:00-05:00",
+    "is_daytime": true,
+    "temp_f": 75,
+    "temp_c": 23.89,
+    "precip_chance_pct": 15,
+    "short_forecast": "Mostly Sunny then Slight Chance Rain Showers"
    }
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-09T19:55:52Z",
+  "issued_utc": "2026-11-09T22:14:51Z",
   "hours": [
-   {
-    "start": "2026-11-09T17:00:00-05:00",
-    "temp_f": 79,
-    "temp_c": 26.11,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "start": "2026-11-09T18:00:00-05:00",
     "temp_f": 76,
@@ -735,6 +727,13 @@
     "start": "2026-11-11T16:00:00-05:00",
     "temp_f": 81,
     "temp_c": 27.22,
+    "precip_chance_pct": 45,
+    "short_forecast": "Chance Showers And Thunderstorms"
+   },
+   {
+    "start": "2026-11-11T17:00:00-05:00",
+    "temp_f": 79,
+    "temp_c": 26.11,
     "precip_chance_pct": 45,
     "short_forecast": "Chance Showers And Thunderstorms"
    }
