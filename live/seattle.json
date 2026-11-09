@@ -11,20 +11,20 @@
   "lon": -122.3136,
   "history": "Same station as the official Seattle record (Sea-Tac)"
  },
- "as_of_utc": "2026-11-09T13:07:53Z",
+ "as_of_utc": "2026-11-09T14:07:50Z",
  "now": {
-  "time_utc": "2026-11-09T12:20:00Z",
+  "time_utc": "2026-11-09T13:55:00Z",
   "temp_c": 7,
   "temp_f": 44.6,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 4,
   "humidity_pct": 81.22,
-  "wind_kmh": 5.54,
-  "description": "Cloudy"
+  "wind_kmh": 0,
+  "description": "Mostly Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-09",
-  "readings": 3,
+  "readings": 4,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -84,7 +84,7 @@
   },
   "forecast_highs": [
    {
-    "period": "Monday",
+    "period": "Today",
     "date": "2026-11-09",
     "high_f": 57,
     "would_rank": {
@@ -238,16 +238,7 @@
   "grid": "SEW/124,60",
   "periods": [
    {
-    "name": "Tonight",
-    "start": "2026-11-08T23:00:00-08:00",
-    "is_daytime": false,
-    "temp_f": 43,
-    "temp_c": 6.11,
-    "precip_chance_pct": 4,
-    "short_forecast": "Cloudy"
-   },
-   {
-    "name": "Monday",
+    "name": "Today",
     "start": "2026-11-09T06:00:00-08:00",
     "is_daytime": true,
     "temp_f": 57,
@@ -256,7 +247,7 @@
     "short_forecast": "Cloudy then Light Rain"
    },
    {
-    "name": "Monday Night",
+    "name": "Tonight",
     "start": "2026-11-09T18:00:00-08:00",
     "is_daytime": false,
     "temp_f": 48,
@@ -362,19 +353,21 @@
     "temp_c": 11.67,
     "precip_chance_pct": 66,
     "short_forecast": "Light Rain Likely"
+   },
+   {
+    "name": "Sunday Night",
+    "start": "2026-11-15T18:00:00-08:00",
+    "is_daytime": false,
+    "temp_f": 42,
+    "temp_c": 5.56,
+    "precip_chance_pct": 39,
+    "short_forecast": "Chance Light Rain"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-09T07:25:40Z",
   "hours": [
-   {
-    "start": "2026-11-09T05:00:00-08:00",
-    "temp_f": 44,
-    "temp_c": 6.67,
-    "precip_chance_pct": 4,
-    "short_forecast": "Cloudy"
-   },
    {
     "start": "2026-11-09T06:00:00-08:00",
     "temp_f": 45,
@@ -699,6 +692,13 @@
    },
    {
     "start": "2026-11-11T04:00:00-08:00",
+    "temp_f": 54,
+    "temp_c": 12.22,
+    "precip_chance_pct": 8,
+    "short_forecast": "Cloudy"
+   },
+   {
+    "start": "2026-11-11T05:00:00-08:00",
     "temp_f": 54,
     "temp_c": 12.22,
     "precip_chance_pct": 8,
