@@ -11,20 +11,20 @@
   "lon": -98.4636,
   "history": "Same site as the official San Antonio record"
  },
- "as_of_utc": "2026-11-09T00:07:49Z",
+ "as_of_utc": "2026-11-09T01:07:51Z",
  "now": {
-  "time_utc": "2026-11-08T23:50:00Z",
+  "time_utc": "2026-11-09T00:35:00Z",
   "temp_c": 16,
   "temp_f": 60.8,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 15,
   "humidity_pct": 93.79,
-  "wind_kmh": 12.96,
-  "description": "Light Rain"
+  "wind_kmh": 16.67,
+  "description": "Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-08",
-  "readings": 18,
+  "readings": 20,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -83,26 +83,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-08",
-    "high_f": 63,
-    "would_rank": {
-     "value_f": 63,
-     "warm_rank": 119,
-     "cool_rank": 23,
-     "years": 142,
-     "first_year": 1885,
-     "tied_years": [
-      1959
-     ],
-     "standing": "cool",
-     "notable": true,
-     "since": 2019,
-     "record": false,
-     "phrase": "23rd coolest November 8 high (tied) of 142 since 1885, coolest since 2019"
-    }
-   },
    {
     "period": "Monday",
     "date": "2026-11-09",
@@ -244,30 +224,42 @@
      "record": false,
      "phrase": "typical for November 14"
     }
+   },
+   {
+    "period": "Sunday",
+    "date": "2026-11-15",
+    "high_f": 71,
+    "would_rank": {
+     "value_f": 71,
+     "warm_rank": 86,
+     "cool_rank": 55,
+     "years": 142,
+     "first_year": 1885,
+     "tied_years": [
+      1983,
+      2001
+     ],
+     "standing": "cool",
+     "notable": false,
+     "since": 2022,
+     "record": false,
+     "phrase": "typical for November 15"
+    }
    }
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-08T22:32:25Z",
+  "issued_utc": "2026-11-09T00:52:21Z",
   "grid": "EWX/128,59",
   "periods": [
    {
-    "name": "This Afternoon",
-    "start": "2026-11-08T17:00:00-06:00",
-    "is_daytime": true,
-    "temp_f": 63,
-    "temp_c": 17.22,
-    "precip_chance_pct": 93,
-    "short_forecast": "Showers And Thunderstorms"
-   },
-   {
     "name": "Tonight",
-    "start": "2026-11-08T18:00:00-06:00",
+    "start": "2026-11-08T19:00:00-06:00",
     "is_daytime": false,
-    "temp_f": 56,
-    "temp_c": 13.33,
+    "temp_f": 58,
+    "temp_c": 14.44,
     "precip_chance_pct": 94,
-    "short_forecast": "Showers And Thunderstorms then Rain"
+    "short_forecast": "Rain Showers"
    },
    {
     "name": "Monday",
@@ -275,8 +267,8 @@
     "is_daytime": true,
     "temp_f": 65,
     "temp_c": 18.33,
-    "precip_chance_pct": 90,
-    "short_forecast": "Showers And Thunderstorms then Light Rain"
+    "precip_chance_pct": 88,
+    "short_forecast": "Rain Showers"
    },
    {
     "name": "Monday Night",
@@ -284,8 +276,8 @@
     "is_daytime": false,
     "temp_f": 57,
     "temp_c": 13.89,
-    "precip_chance_pct": 36,
-    "short_forecast": "Chance Light Rain"
+    "precip_chance_pct": 30,
+    "short_forecast": "Chance Rain Showers"
    },
    {
     "name": "Tuesday",
@@ -293,8 +285,8 @@
     "is_daytime": true,
     "temp_f": 70,
     "temp_c": 21.11,
-    "precip_chance_pct": 27,
-    "short_forecast": "Chance Light Rain"
+    "precip_chance_pct": 21,
+    "short_forecast": "Slight Chance Rain Showers"
    },
    {
     "name": "Tuesday Night",
@@ -302,8 +294,8 @@
     "is_daytime": false,
     "temp_f": 59,
     "temp_c": 15.0,
-    "precip_chance_pct": 20,
-    "short_forecast": "Slight Chance Light Rain"
+    "precip_chance_pct": 17,
+    "short_forecast": "Mostly Cloudy then Slight Chance Light Rain"
    },
    {
     "name": "Veterans Day",
@@ -376,19 +368,21 @@
     "temp_c": 11.67,
     "precip_chance_pct": 15,
     "short_forecast": "Slight Chance Rain Showers"
+   },
+   {
+    "name": "Sunday",
+    "start": "2026-11-15T06:00:00-06:00",
+    "is_daytime": true,
+    "temp_f": 71,
+    "temp_c": 21.67,
+    "precip_chance_pct": 27,
+    "short_forecast": "Chance Rain Showers"
    }
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-08T22:32:25Z",
+  "issued_utc": "2026-11-08T23:42:23Z",
   "hours": [
-   {
-    "start": "2026-11-08T18:00:00-06:00",
-    "temp_f": 62,
-    "temp_c": 16.67,
-    "precip_chance_pct": 91,
-    "short_forecast": "Showers And Thunderstorms"
-   },
    {
     "start": "2026-11-08T19:00:00-06:00",
     "temp_f": 61,
@@ -717,6 +711,13 @@
     "temp_c": 20.0,
     "precip_chance_pct": 27,
     "short_forecast": "Chance Light Rain"
+   },
+   {
+    "start": "2026-11-10T18:00:00-06:00",
+    "temp_f": 67,
+    "temp_c": 19.44,
+    "precip_chance_pct": 20,
+    "short_forecast": "Slight Chance Light Rain"
    }
   ]
  },

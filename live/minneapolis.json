@@ -11,20 +11,20 @@
   "lon": -93.2289,
   "history": "Same site as the official Minneapolis record"
  },
- "as_of_utc": "2026-11-09T00:07:49Z",
+ "as_of_utc": "2026-11-09T01:07:51Z",
  "now": {
-  "time_utc": "2026-11-08T23:50:00Z",
+  "time_utc": "2026-11-09T00:35:00Z",
   "temp_c": 11,
   "temp_f": 51.8,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 3,
   "humidity_pct": 57.8,
-  "wind_kmh": 9.25,
+  "wind_kmh": 11.12,
   "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-08",
-  "readings": 12,
+  "readings": 13,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -117,30 +117,6 @@
    "phrase": "already the 23rd warmest November 8 high (tied) of 155 since 1872, warmest since 2024"
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-08",
-    "high_f": 56,
-    "would_rank": {
-     "value_f": 56,
-     "warm_rank": 23,
-     "cool_rank": 128,
-     "years": 155,
-     "first_year": 1872,
-     "tied_years": [
-      1918,
-      1949,
-      1954,
-      1986,
-      2021
-     ],
-     "standing": "warm",
-     "notable": true,
-     "since": 2024,
-     "record": false,
-     "phrase": "23rd warmest November 8 high (tied) of 155 since 1872, warmest since 2024"
-    }
-   },
    {
     "period": "Monday",
     "date": "2026-11-09",
@@ -283,22 +259,36 @@
      "record": false,
      "phrase": "typical for November 14"
     }
+   },
+   {
+    "period": "Sunday",
+    "date": "2026-11-15",
+    "high_f": 48,
+    "would_rank": {
+     "value_f": 48,
+     "warm_rank": 43,
+     "cool_rank": 109,
+     "years": 155,
+     "first_year": 1872,
+     "tied_years": [
+      1873,
+      1879,
+      1894,
+      1988
+     ],
+     "standing": "warm",
+     "notable": false,
+     "since": 2025,
+     "record": false,
+     "phrase": "typical for November 15"
+    }
    }
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-08T22:31:37Z",
+  "issued_utc": "2026-11-09T00:01:35Z",
   "grid": "MPX/110,68",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-08T16:00:00-06:00",
-    "is_daytime": true,
-    "temp_f": 56,
-    "temp_c": 13.33,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-08T18:00:00-06:00",
@@ -415,19 +405,21 @@
     "temp_c": 2.22,
     "precip_chance_pct": 1,
     "short_forecast": "Partly Cloudy"
+   },
+   {
+    "name": "Sunday",
+    "start": "2026-11-15T06:00:00-06:00",
+    "is_daytime": true,
+    "temp_f": 48,
+    "temp_c": 8.89,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
    }
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-08T22:31:37Z",
+  "issued_utc": "2026-11-09T00:01:35Z",
   "hours": [
-   {
-    "start": "2026-11-08T18:00:00-06:00",
-    "temp_f": 47,
-    "temp_c": 8.33,
-    "precip_chance_pct": 0,
-    "short_forecast": "Clear"
-   },
    {
     "start": "2026-11-08T19:00:00-06:00",
     "temp_f": 46,
@@ -626,8 +618,8 @@
    },
    {
     "start": "2026-11-09T23:00:00-06:00",
-    "temp_f": 45,
-    "temp_c": 7.22,
+    "temp_f": 46,
+    "temp_c": 7.78,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear"
    },
@@ -756,6 +748,13 @@
     "temp_c": 10.56,
     "precip_chance_pct": 0,
     "short_forecast": "Partly Sunny"
+   },
+   {
+    "start": "2026-11-10T18:00:00-06:00",
+    "temp_f": 49,
+    "temp_c": 9.44,
+    "precip_chance_pct": 6,
+    "short_forecast": "Mostly Cloudy"
    }
   ]
  },
