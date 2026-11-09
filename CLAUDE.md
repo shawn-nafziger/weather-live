@@ -15,6 +15,7 @@ Live data for Shawn Nafziger's Weather Intelligence project. Read `shawn-nafzige
 - No personal email in the NWS User-Agent; it identifies the site and this repo.
 - All paths and cities come from the top of `scripts/nws_pull.py`, `config/cities.json` (hourly + daily), `config/hourly_metros.json` (hourly forecast archive for 46 more metro areas; slug + station only, the rest from the Almanac list; readings not archived) and `config/almanac_cities.json` (daily and Almanac only). After a daily run, read `history/status.json` to see which places updated, failed or are waiting; Claude can read it from git even when the Actions log server is unreachable.
 
+- **Site header on Almanac pages** (menu, search, Subscribe, light/dark button, pinned header) is the website's, copied in by `python3 almanac/apply_site_header.py <path to tallorderdigital-site>`, which runs the site's own `tools/apply-header.py` on both templates and marks "Weather" as current. Re-run it whenever the website's header changes (Nov 9, 2026: the Almanac had kept the old Stories · Dashboards · About menu for a day). Don't hand-edit the `site-header` / `theme-toggle` blocks.
 - **Runs are started by a Cloudflare Worker** (`cloudflare/worker.js`, crons `7 * * * *` and `37 11,15 * * *` UTC); GitHub's schedule is only a backup. The Worker's token expires Oct 29, 2027 (see README).
 
 ## Next
