@@ -11,20 +11,20 @@
   "lon": -117.1831,
   "history": "Same site as the official San Diego record"
  },
- "as_of_utc": "2026-11-09T04:07:49Z",
+ "as_of_utc": "2026-11-09T05:07:49Z",
  "now": {
-  "time_utc": "2026-11-09T03:45:00Z",
+  "time_utc": "2026-11-09T04:40:00Z",
   "temp_c": 21,
   "temp_f": 69.8,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 15,
   "humidity_pct": 68.58,
-  "wind_kmh": 0,
+  "wind_kmh": 5.54,
   "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-08",
-  "readings": 13,
+  "readings": 14,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -222,54 +222,59 @@
    {
     "period": "Saturday",
     "date": "2026-11-14",
-    "high_f": 76,
+    "high_f": 77,
     "would_rank": {
-     "value_f": 76,
-     "warm_rank": 19,
-     "cool_rank": 130,
+     "value_f": 77,
+     "warm_rank": 16,
+     "cool_rank": 135,
      "years": 153,
      "first_year": 1874,
      "tied_years": [
-      1900,
-      1905,
-      1941,
-      1961,
-      2015
+      1948,
+      1970,
+      2018
      ],
      "standing": "warm",
      "notable": true,
      "since": 2021,
      "record": false,
-     "phrase": "19th warmest November 14 high (tied) of 153 since 1874, warmest since 2021"
+     "phrase": "16th warmest November 14 high (tied) of 153 since 1874, warmest since 2021"
     }
    },
    {
     "period": "Sunday",
     "date": "2026-11-15",
-    "high_f": 74,
+    "high_f": 73,
     "would_rank": {
-     "value_f": 74,
+     "value_f": 73,
      "warm_rank": 29,
-     "cool_rank": 125,
+     "cool_rank": 119,
      "years": 153,
      "first_year": 1874,
-     "tied_years": [],
+     "tied_years": [
+      1913,
+      1941,
+      1956,
+      1967,
+      1976,
+      2006
+     ],
      "standing": "warm",
      "notable": true,
      "since": 2021,
      "record": false,
-     "phrase": "29th warmest November 15 high of 153 since 1874, warmest since 2021"
+     "phrase": "29th warmest November 15 high (tied) of 153 since 1874, warmest since 2021"
     }
    }
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-08T20:08:56Z",
+  "issued_utc": "2026-11-09T03:32:28Z",
   "grid": "SGX/56,15",
   "periods": [
    {
     "name": "Tonight",
-    "start": "2026-11-08T18:00:00-08:00",
+    "start": "2026-11-08T19:00:00-08:00",
     "is_daytime": false,
     "temp_f": 64,
     "temp_c": 17.78,
@@ -292,7 +297,7 @@
     "temp_f": 63,
     "temp_c": 17.22,
     "precip_chance_pct": 0,
-    "short_forecast": "Partly Cloudy"
+    "short_forecast": "Mostly Cloudy"
    },
    {
     "name": "Tuesday",
@@ -301,7 +306,7 @@
     "temp_f": 84,
     "temp_c": 28.89,
     "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
+    "short_forecast": "Mostly Sunny"
    },
    {
     "name": "Tuesday Night",
@@ -336,7 +341,7 @@
     "is_daytime": true,
     "temp_f": 81,
     "temp_c": 27.22,
-    "precip_chance_pct": 1,
+    "precip_chance_pct": 0,
     "short_forecast": "Sunny"
    },
    {
@@ -345,8 +350,8 @@
     "is_daytime": false,
     "temp_f": 63,
     "temp_c": 17.22,
-    "precip_chance_pct": 13,
-    "short_forecast": "Mostly Clear"
+    "precip_chance_pct": 10,
+    "short_forecast": "Partly Cloudy"
    },
    {
     "name": "Friday",
@@ -354,8 +359,8 @@
     "is_daytime": true,
     "temp_f": 79,
     "temp_c": 26.11,
-    "precip_chance_pct": 25,
-    "short_forecast": "Chance Rain Showers"
+    "precip_chance_pct": 12,
+    "short_forecast": "Partly Sunny"
    },
    {
     "name": "Friday Night",
@@ -363,17 +368,17 @@
     "is_daytime": false,
     "temp_f": 62,
     "temp_c": 16.67,
-    "precip_chance_pct": 28,
-    "short_forecast": "Chance Rain Showers"
+    "precip_chance_pct": 21,
+    "short_forecast": "Slight Chance Rain Showers"
    },
    {
     "name": "Saturday",
     "start": "2026-11-14T06:00:00-08:00",
     "is_daytime": true,
-    "temp_f": 76,
-    "temp_c": 24.44,
-    "precip_chance_pct": 28,
-    "short_forecast": "Chance Rain Showers"
+    "temp_f": 77,
+    "temp_c": 25.0,
+    "precip_chance_pct": 21,
+    "short_forecast": "Slight Chance Rain Showers"
    },
    {
     "name": "Saturday Night",
@@ -381,16 +386,16 @@
     "is_daytime": false,
     "temp_f": 62,
     "temp_c": 16.67,
-    "precip_chance_pct": 34,
+    "precip_chance_pct": 36,
     "short_forecast": "Chance Rain Showers"
    },
    {
     "name": "Sunday",
     "start": "2026-11-15T06:00:00-08:00",
     "is_daytime": true,
-    "temp_f": 74,
-    "temp_c": 23.33,
-    "precip_chance_pct": 68,
+    "temp_f": 73,
+    "temp_c": 22.78,
+    "precip_chance_pct": 55,
     "short_forecast": "Rain Showers Likely"
    }
   ]
@@ -398,13 +403,6 @@
  "hourly": {
   "issued_utc": "2026-11-09T03:32:28Z",
   "hours": [
-   {
-    "start": "2026-11-08T20:00:00-08:00",
-    "temp_f": 73,
-    "temp_c": 22.78,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Clear"
-   },
    {
     "start": "2026-11-08T21:00:00-08:00",
     "temp_f": 71,
@@ -731,6 +729,13 @@
     "start": "2026-11-10T19:00:00-08:00",
     "temp_f": 74,
     "temp_c": 23.33,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Clear"
+   },
+   {
+    "start": "2026-11-10T20:00:00-08:00",
+    "temp_f": 72,
+    "temp_c": 22.22,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear"
    }

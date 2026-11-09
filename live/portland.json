@@ -11,38 +11,33 @@
   "lon": -122.6092,
   "history": "Same site as the official Portland record"
  },
- "as_of_utc": "2026-11-09T04:07:49Z",
+ "as_of_utc": "2026-11-09T05:07:49Z",
  "now": {
-  "time_utc": "2026-11-09T03:45:00Z",
+  "time_utc": "2026-11-09T04:45:00Z",
   "temp_c": 11,
   "temp_f": 51.8,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 11,
-  "humidity_pct": 100,
-  "wind_kmh": 5.54,
+  "dewpoint_c": 9,
+  "humidity_pct": 87.48,
+  "wind_kmh": 0,
   "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-08",
-  "readings": 14,
+  "readings": 15,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
   "high_c": 14.4,
   "high_f": 57.9,
   "high_time_utc": "2026-11-08T17:53:00Z",
-  "low_c": 11.7,
-  "low_f": 53.1,
-  "low_time_utc": "2026-11-08T09:53:00Z",
+  "low_c": 11.1,
+  "low_f": 52.0,
+  "low_time_utc": "2026-11-09T03:53:00Z",
   "peak_between_reports": {
    "at_least_f": 59.9,
    "about_f": 60.8,
    "time_utc": "2026-11-08T19:05:00Z"
-  },
-  "dip_between_reports": {
-   "at_most_f": 52.7,
-   "about_f": 51.8,
-   "time_utc": "2026-11-09T03:45:00Z"
   }
  },
  "record": {
@@ -245,7 +240,7 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-09T03:41:19Z",
+  "issued_utc": "2026-11-09T04:41:19Z",
   "grid": "PQR/116,107",
   "periods": [
    {
@@ -254,8 +249,8 @@
     "is_daytime": false,
     "temp_f": 47,
     "temp_c": 8.33,
-    "precip_chance_pct": 9,
-    "short_forecast": "Cloudy then Patchy Fog"
+    "precip_chance_pct": 5,
+    "short_forecast": "Cloudy"
    },
    {
     "name": "Monday",
@@ -263,8 +258,8 @@
     "is_daytime": true,
     "temp_f": 58,
     "temp_c": 14.44,
-    "precip_chance_pct": 88,
-    "short_forecast": "Light Rain"
+    "precip_chance_pct": 95,
+    "short_forecast": "Slight Chance Light Rain then Showers And Thunderstorms"
    },
    {
     "name": "Monday Night",
@@ -272,8 +267,8 @@
     "is_daytime": false,
     "temp_f": 51,
     "temp_c": 10.56,
-    "precip_chance_pct": 53,
-    "short_forecast": "Chance Light Rain"
+    "precip_chance_pct": 54,
+    "short_forecast": "Chance Showers And Thunderstorms"
    },
    {
     "name": "Tuesday",
@@ -281,7 +276,7 @@
     "is_daytime": true,
     "temp_f": 62,
     "temp_c": 16.67,
-    "precip_chance_pct": 53,
+    "precip_chance_pct": 52,
     "short_forecast": "Chance Light Rain"
    },
    {
@@ -290,8 +285,8 @@
     "is_daytime": false,
     "temp_f": 51,
     "temp_c": 10.56,
-    "precip_chance_pct": 8,
-    "short_forecast": "Mostly Cloudy"
+    "precip_chance_pct": 16,
+    "short_forecast": "Slight Chance Light Rain then Mostly Cloudy"
    },
    {
     "name": "Veterans Day",
@@ -379,13 +374,6 @@
  "hourly": {
   "issued_utc": "2026-11-09T03:41:19Z",
   "hours": [
-   {
-    "start": "2026-11-08T20:00:00-08:00",
-    "temp_f": 51,
-    "temp_c": 10.56,
-    "precip_chance_pct": 3,
-    "short_forecast": "Cloudy"
-   },
    {
     "start": "2026-11-08T21:00:00-08:00",
     "temp_f": 50,
@@ -712,6 +700,13 @@
     "start": "2026-11-10T19:00:00-08:00",
     "temp_f": 58,
     "temp_c": 14.44,
+    "precip_chance_pct": 8,
+    "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "start": "2026-11-10T20:00:00-08:00",
+    "temp_f": 57,
+    "temp_c": 13.89,
     "precip_chance_pct": 8,
     "short_forecast": "Mostly Cloudy"
    }

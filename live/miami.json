@@ -11,34 +11,23 @@
   "lon": -80.3164,
   "history": "Same station as the official Miami record"
  },
- "as_of_utc": "2026-11-09T04:07:49Z",
+ "as_of_utc": "2026-11-09T05:07:49Z",
  "now": {
-  "time_utc": "2026-11-09T03:45:00Z",
-  "temp_c": 26,
-  "temp_f": 78.8,
+  "time_utc": "2026-11-09T04:40:00Z",
+  "temp_c": 25,
+  "temp_f": 77.0,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 21,
-  "humidity_pct": 73.97,
+  "humidity_pct": 78.5,
   "wind_kmh": 0,
-  "description": "Mostly Cloudy"
+  "description": "Mostly Clear"
  },
  "today_so_far": {
-  "date_local": "2026-11-08",
-  "readings": 17,
-  "basis": "hourly reports (tenths of a degree)",
-  "approximate": false,
-  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 28.9,
-  "high_f": 84.0,
-  "high_time_utc": "2026-11-08T15:53:00Z",
-  "low_c": 25,
-  "low_f": 77.0,
-  "low_time_utc": "2026-11-08T08:53:00Z",
-  "dip_between_reports": {
-   "at_most_f": 76.1,
-   "about_f": 75.2,
-   "time_utc": "2026-11-08T11:25:00Z"
-  }
+  "date_local": "2026-11-09",
+  "readings": 0,
+  "basis": "5-minute readings (whole \u00b0C, approximate)",
+  "approximate": true,
+  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two."
  },
  "record": {
   "series": "Miami area (ThreadEx)",
@@ -47,7 +36,7 @@
   "rank_today": true,
   "latest_final": {
    "date": "2026-11-07",
-   "is_yesterday": true,
+   "is_yesterday": false,
    "high_f": 87,
    "low_f": 74,
    "high_rank": {
@@ -289,12 +278,12 @@
   "periods": [
    {
     "name": "Tonight",
-    "start": "2026-11-08T19:00:00-05:00",
+    "start": "2026-11-08T22:00:00-05:00",
     "is_daytime": false,
     "temp_f": 73,
     "temp_c": 22.78,
-    "precip_chance_pct": 22,
-    "short_forecast": "Slight Chance Rain Showers then Partly Cloudy"
+    "precip_chance_pct": 11,
+    "short_forecast": "Partly Cloudy"
    },
    {
     "name": "Monday",
@@ -418,13 +407,6 @@
  "hourly": {
   "issued_utc": "2026-11-08T20:47:50Z",
   "hours": [
-   {
-    "start": "2026-11-08T23:00:00-05:00",
-    "temp_f": 76,
-    "temp_c": 24.44,
-    "precip_chance_pct": 10,
-    "short_forecast": "Mostly Clear"
-   },
    {
     "start": "2026-11-09T00:00:00-05:00",
     "temp_f": 75,
@@ -749,6 +731,13 @@
    },
    {
     "start": "2026-11-10T22:00:00-05:00",
+    "temp_f": 76,
+    "temp_c": 24.44,
+    "precip_chance_pct": 2,
+    "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "start": "2026-11-10T23:00:00-05:00",
     "temp_f": 76,
     "temp_c": 24.44,
     "precip_chance_pct": 2,
