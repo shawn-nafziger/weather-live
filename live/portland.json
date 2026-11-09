@@ -11,20 +11,20 @@
   "lon": -122.6092,
   "history": "Same site as the official Portland record"
  },
- "as_of_utc": "2026-11-09T03:07:47Z",
+ "as_of_utc": "2026-11-09T04:07:49Z",
  "now": {
-  "time_utc": "2026-11-09T02:25:00Z",
-  "temp_c": 12,
-  "temp_f": 53.6,
+  "time_utc": "2026-11-09T03:45:00Z",
+  "temp_c": 11,
+  "temp_f": 51.8,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 10,
-  "humidity_pct": 87.57,
-  "wind_kmh": 12.96,
+  "dewpoint_c": 11,
+  "humidity_pct": 100,
+  "wind_kmh": 5.54,
   "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-08",
-  "readings": 13,
+  "readings": 14,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -38,6 +38,11 @@
    "at_least_f": 59.9,
    "about_f": 60.8,
    "time_utc": "2026-11-08T19:05:00Z"
+  },
+  "dip_between_reports": {
+   "at_most_f": 52.7,
+   "about_f": 51.8,
+   "time_utc": "2026-11-09T03:45:00Z"
   }
  },
  "record": {
@@ -240,12 +245,12 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-09T01:41:19Z",
+  "issued_utc": "2026-11-09T03:41:19Z",
   "grid": "PQR/116,107",
   "periods": [
    {
     "name": "Tonight",
-    "start": "2026-11-08T18:00:00-08:00",
+    "start": "2026-11-08T20:00:00-08:00",
     "is_daytime": false,
     "temp_f": 47,
     "temp_c": 8.33,
@@ -372,15 +377,8 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-09T01:41:19Z",
+  "issued_utc": "2026-11-09T03:41:19Z",
   "hours": [
-   {
-    "start": "2026-11-08T19:00:00-08:00",
-    "temp_f": 52,
-    "temp_c": 11.11,
-    "precip_chance_pct": 2,
-    "short_forecast": "Cloudy"
-   },
    {
     "start": "2026-11-08T20:00:00-08:00",
     "temp_f": 51,
@@ -707,6 +705,13 @@
     "start": "2026-11-10T18:00:00-08:00",
     "temp_f": 59,
     "temp_c": 15.0,
+    "precip_chance_pct": 8,
+    "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "start": "2026-11-10T19:00:00-08:00",
+    "temp_f": 58,
+    "temp_c": 14.44,
     "precip_chance_pct": 8,
     "short_forecast": "Mostly Cloudy"
    }
