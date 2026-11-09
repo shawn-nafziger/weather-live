@@ -11,20 +11,20 @@
   "lon": -104.6562,
   "history": "Same site as the official Denver record"
  },
- "as_of_utc": "2026-11-09T01:07:51Z",
+ "as_of_utc": "2026-11-09T02:07:51Z",
  "now": {
-  "time_utc": "2026-11-09T00:35:00Z",
-  "temp_c": 16,
-  "temp_f": 60.8,
+  "time_utc": "2026-11-09T01:55:00Z",
+  "temp_c": 12,
+  "temp_f": 53.6,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": -5,
-  "humidity_pct": 23.25,
-  "wind_kmh": 7.42,
-  "description": ""
+  "dewpoint_c": -4,
+  "humidity_pct": 32.49,
+  "wind_kmh": 16.67,
+  "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-08",
-  "readings": 11,
+  "readings": 12,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -104,30 +104,6 @@
    "phrase": "already the 22nd warmest November 8 high (tied) of 155 since 1872, warmest since 2022"
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-08",
-    "high_f": 68,
-    "would_rank": {
-     "value_f": 68,
-     "warm_rank": 22,
-     "cool_rank": 129,
-     "years": 155,
-     "first_year": 1872,
-     "tied_years": [
-      1873,
-      1906,
-      1939,
-      1958,
-      2015
-     ],
-     "standing": "warm",
-     "notable": true,
-     "since": 2022,
-     "record": false,
-     "phrase": "22nd warmest November 8 high (tied) of 155 since 1872, warmest since 2022"
-    }
-   },
    {
     "period": "Monday",
     "date": "2026-11-09",
@@ -270,6 +246,28 @@
      "record": false,
      "phrase": "typical for November 14"
     }
+   },
+   {
+    "period": "Sunday",
+    "date": "2026-11-15",
+    "high_f": 65,
+    "would_rank": {
+     "value_f": 65,
+     "warm_rank": 31,
+     "cool_rank": 122,
+     "years": 155,
+     "first_year": 1872,
+     "tied_years": [
+      1903,
+      1986,
+      2007
+     ],
+     "standing": "warm",
+     "notable": true,
+     "since": 2025,
+     "record": false,
+     "phrase": "31st warmest November 15 high (tied) of 155 since 1872, warmest since 2025"
+    }
    }
   ]
  },
@@ -277,15 +275,6 @@
   "issued_utc": "2026-11-08T18:46:54Z",
   "grid": "BOU/75,66",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-08T12:00:00-07:00",
-    "is_daytime": true,
-    "temp_f": 68,
-    "temp_c": 20.0,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-08T18:00:00-07:00",
@@ -402,19 +391,21 @@
     "temp_c": 5.0,
     "precip_chance_pct": 1,
     "short_forecast": "Partly Cloudy"
+   },
+   {
+    "name": "Sunday",
+    "start": "2026-11-15T06:00:00-07:00",
+    "is_daytime": true,
+    "temp_f": 65,
+    "temp_c": 18.33,
+    "precip_chance_pct": 1,
+    "short_forecast": "Mostly Sunny"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-08T18:46:54Z",
   "hours": [
-   {
-    "start": "2026-11-08T18:00:00-07:00",
-    "temp_f": 57,
-    "temp_c": 13.89,
-    "precip_chance_pct": 0,
-    "short_forecast": "Clear"
-   },
    {
     "start": "2026-11-08T19:00:00-07:00",
     "temp_f": 51,
@@ -743,6 +734,13 @@
     "temp_c": 16.67,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Sunny"
+   },
+   {
+    "start": "2026-11-10T18:00:00-07:00",
+    "temp_f": 59,
+    "temp_c": 15.0,
+    "precip_chance_pct": 0,
+    "short_forecast": "Partly Cloudy"
    }
   ]
  },
