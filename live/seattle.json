@@ -11,29 +11,34 @@
   "lon": -122.3136,
   "history": "Same station as the official Seattle record (Sea-Tac)"
  },
- "as_of_utc": "2026-11-09T21:08:00Z",
+ "as_of_utc": "2026-11-09T22:07:53Z",
  "now": {
-  "time_utc": "2026-11-09T20:25:00Z",
-  "temp_c": 11,
-  "temp_f": 51.8,
+  "time_utc": "2026-11-09T21:10:00Z",
+  "temp_c": 12,
+  "temp_f": 53.6,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 6,
-  "humidity_pct": 71.28,
-  "wind_kmh": 0,
-  "description": "Light Rain"
+  "dewpoint_c": 7,
+  "humidity_pct": 71.47,
+  "wind_kmh": 5.54,
+  "description": "Mostly Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-09",
-  "readings": 9,
+  "readings": 10,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 10.6,
-  "high_f": 51.1,
-  "high_time_utc": "2026-11-09T17:53:00Z",
+  "high_c": 11.1,
+  "high_f": 52.0,
+  "high_time_utc": "2026-11-09T20:53:00Z",
   "low_c": 6.7,
   "low_f": 44.1,
   "low_time_utc": "2026-11-09T13:53:00Z",
+  "peak_between_reports": {
+   "at_least_f": 52.7,
+   "about_f": 53.6,
+   "time_utc": "2026-11-09T21:05:00Z"
+  },
   "dip_between_reports": {
    "at_most_f": 43.7,
    "about_f": 42.8,
@@ -89,7 +94,7 @@
   },
   "forecast_highs": [
    {
-    "period": "Today",
+    "period": "This Afternoon",
     "date": "2026-11-09",
     "high_f": 57,
     "would_rank": {
@@ -239,12 +244,12 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-09T18:26:37Z",
+  "issued_utc": "2026-11-09T21:05:52Z",
   "grid": "SEW/124,60",
   "periods": [
    {
-    "name": "Today",
-    "start": "2026-11-09T11:00:00-08:00",
+    "name": "This Afternoon",
+    "start": "2026-11-09T13:00:00-08:00",
     "is_daytime": true,
     "temp_f": 57,
     "temp_c": 13.89,
@@ -371,15 +376,8 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-09T18:26:37Z",
+  "issued_utc": "2026-11-09T21:05:52Z",
   "hours": [
-   {
-    "start": "2026-11-09T13:00:00-08:00",
-    "temp_f": 54,
-    "temp_c": 12.22,
-    "precip_chance_pct": 61,
-    "short_forecast": "Light Rain Likely"
-   },
    {
     "start": "2026-11-09T14:00:00-08:00",
     "temp_f": 54,
@@ -706,6 +704,13 @@
     "start": "2026-11-11T12:00:00-08:00",
     "temp_f": 63,
     "temp_c": 17.22,
+    "precip_chance_pct": 17,
+    "short_forecast": "Slight Chance Light Rain"
+   },
+   {
+    "start": "2026-11-11T13:00:00-08:00",
+    "temp_f": 64,
+    "temp_c": 17.78,
     "precip_chance_pct": 17,
     "short_forecast": "Slight Chance Light Rain"
    }
