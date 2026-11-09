@@ -11,29 +11,34 @@
   "lon": -121.496,
   "history": "About 9 km from the official Sacramento record's site, so today and the forecast aren't ranked against it"
  },
- "as_of_utc": "2026-11-09T16:07:53Z",
+ "as_of_utc": "2026-11-09T17:07:55Z",
  "now": {
-  "time_utc": "2026-11-09T15:45:00Z",
-  "temp_c": 9,
-  "temp_f": 48.2,
+  "time_utc": "2026-11-09T16:40:00Z",
+  "temp_c": 13,
+  "temp_f": 55.4,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 8,
-  "humidity_pct": 93.45,
+  "dewpoint_c": 9,
+  "humidity_pct": 76.68,
   "wind_kmh": 0,
-  "description": "Mostly Clear"
+  "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-09",
-  "readings": 8,
+  "readings": 10,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 8.9,
-  "high_f": 48.0,
-  "high_time_utc": "2026-11-09T08:53:00Z",
+  "high_c": 10.6,
+  "high_f": 51.1,
+  "high_time_utc": "2026-11-09T15:53:00Z",
   "low_c": 6.7,
   "low_f": 44.1,
-  "low_time_utc": "2026-11-09T14:38:00Z"
+  "low_time_utc": "2026-11-09T14:38:00Z",
+  "peak_between_reports": {
+   "at_least_f": 54.5,
+   "about_f": 55.4,
+   "time_utc": "2026-11-09T16:40:00Z"
+  }
  },
  "record": {
   "series": "Sacramento area (ThreadEx; downtown)",
@@ -98,7 +103,7 @@
   "periods": [
    {
     "name": "Today",
-    "start": "2026-11-09T08:00:00-08:00",
+    "start": "2026-11-09T09:00:00-08:00",
     "is_daytime": true,
     "temp_f": 72,
     "temp_c": 22.22,
@@ -227,13 +232,6 @@
  "hourly": {
   "issued_utc": "2026-11-09T09:00:57Z",
   "hours": [
-   {
-    "start": "2026-11-09T08:00:00-08:00",
-    "temp_f": 50,
-    "temp_c": 10.0,
-    "precip_chance_pct": 0,
-    "short_forecast": "Haze"
-   },
    {
     "start": "2026-11-09T09:00:00-08:00",
     "temp_f": 55,
@@ -560,6 +558,13 @@
     "start": "2026-11-11T07:00:00-08:00",
     "temp_f": 47,
     "temp_c": 8.33,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
+   },
+   {
+    "start": "2026-11-11T08:00:00-08:00",
+    "temp_f": 50,
+    "temp_c": 10.0,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
    }

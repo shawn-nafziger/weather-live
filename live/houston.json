@@ -11,29 +11,34 @@
   "lon": -95.3607,
   "history": "Same site as the official Houston record"
  },
- "as_of_utc": "2026-11-09T16:07:53Z",
+ "as_of_utc": "2026-11-09T17:07:55Z",
  "now": {
-  "time_utc": "2026-11-09T15:40:00Z",
+  "time_utc": "2026-11-09T16:40:00Z",
   "temp_c": 18,
   "temp_f": 64.4,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 11,
-  "humidity_pct": 63.62,
-  "wind_kmh": 11.12,
-  "description": "Clear"
+  "dewpoint_c": 10,
+  "humidity_pct": 59.52,
+  "wind_kmh": 14.83,
+  "description": "Mostly Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-09",
-  "readings": 8,
+  "readings": 9,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 17.8,
-  "high_f": 64.0,
-  "high_time_utc": "2026-11-09T14:53:00Z",
+  "high_c": 18.3,
+  "high_f": 64.9,
+  "high_time_utc": "2026-11-09T15:53:00Z",
   "low_c": 13.9,
   "low_f": 57.0,
   "low_time_utc": "2026-11-09T10:53:00Z",
+  "peak_between_reports": {
+   "at_least_f": 65.3,
+   "about_f": 66.2,
+   "time_utc": "2026-11-09T16:05:00Z"
+  },
   "dip_between_reports": {
    "at_most_f": 56.3,
    "about_f": 55.4,
@@ -409,13 +414,6 @@
   "issued_utc": "2026-11-09T12:20:23Z",
   "hours": [
    {
-    "start": "2026-11-09T10:00:00-06:00",
-    "temp_f": 65,
-    "temp_c": 18.33,
-    "precip_chance_pct": 39,
-    "short_forecast": "Chance Rain Showers"
-   },
-   {
     "start": "2026-11-09T11:00:00-06:00",
     "temp_f": 65,
     "temp_c": 18.33,
@@ -741,6 +739,13 @@
     "start": "2026-11-11T09:00:00-06:00",
     "temp_f": 66,
     "temp_c": 18.89,
+    "precip_chance_pct": 15,
+    "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "start": "2026-11-11T10:00:00-06:00",
+    "temp_f": 70,
+    "temp_c": 21.11,
     "precip_chance_pct": 15,
     "short_forecast": "Mostly Cloudy"
    }
