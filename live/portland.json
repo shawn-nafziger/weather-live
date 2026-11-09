@@ -11,39 +11,23 @@
   "lon": -122.6092,
   "history": "Same site as the official Portland record"
  },
- "as_of_utc": "2026-11-09T07:07:51Z",
+ "as_of_utc": "2026-11-09T08:07:54Z",
  "now": {
-  "time_utc": "2026-11-09T06:55:00Z",
-  "temp_c": 11,
-  "temp_f": 51.8,
+  "time_utc": "2026-11-09T07:50:00Z",
+  "temp_c": 10,
+  "temp_f": 50.0,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 9,
-  "humidity_pct": 87.48,
-  "wind_kmh": 0,
-  "description": "Partly Cloudy"
+  "humidity_pct": 93.5,
+  "wind_kmh": 5.54,
+  "description": "Mostly Clear"
  },
  "today_so_far": {
-  "date_local": "2026-11-08",
-  "readings": 17,
-  "basis": "hourly reports (tenths of a degree)",
-  "approximate": false,
-  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 14.4,
-  "high_f": 57.9,
-  "high_time_utc": "2026-11-08T17:53:00Z",
-  "low_c": 10.6,
-  "low_f": 51.1,
-  "low_time_utc": "2026-11-09T05:53:00Z",
-  "peak_between_reports": {
-   "at_least_f": 59.9,
-   "about_f": 60.8,
-   "time_utc": "2026-11-08T19:05:00Z"
-  },
-  "dip_between_reports": {
-   "at_most_f": 50.9,
-   "about_f": 50.0,
-   "time_utc": "2026-11-09T06:05:00Z"
-  }
+  "date_local": "2026-11-09",
+  "readings": 0,
+  "basis": "5-minute readings (whole \u00b0C, approximate)",
+  "approximate": true,
+  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two."
  },
  "record": {
   "series": "Portland area (ThreadEx; airport)",
@@ -52,7 +36,7 @@
   "rank_today": true,
   "latest_final": {
    "date": "2026-11-07",
-   "is_yesterday": true,
+   "is_yesterday": false,
    "high_f": 63,
    "low_f": 54,
    "high_rank": {
@@ -259,12 +243,12 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-09T06:41:13Z",
+  "issued_utc": "2026-11-09T07:41:28Z",
   "grid": "PQR/116,107",
   "periods": [
    {
-    "name": "Tonight",
-    "start": "2026-11-08T23:00:00-08:00",
+    "name": "Overnight",
+    "start": "2026-11-09T00:00:00-08:00",
     "is_daytime": false,
     "temp_f": 47,
     "temp_c": 8.33,
@@ -391,15 +375,8 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-09T05:41:16Z",
+  "issued_utc": "2026-11-09T07:41:28Z",
   "hours": [
-   {
-    "start": "2026-11-08T23:00:00-08:00",
-    "temp_f": 50,
-    "temp_c": 10.0,
-    "precip_chance_pct": 4,
-    "short_forecast": "Cloudy"
-   },
    {
     "start": "2026-11-09T00:00:00-08:00",
     "temp_f": 50,
@@ -724,6 +701,13 @@
    },
    {
     "start": "2026-11-10T22:00:00-08:00",
+    "temp_f": 56,
+    "temp_c": 13.33,
+    "precip_chance_pct": 1,
+    "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "start": "2026-11-10T23:00:00-08:00",
     "temp_f": 56,
     "temp_c": 13.33,
     "precip_chance_pct": 1,

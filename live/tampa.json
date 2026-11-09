@@ -11,34 +11,29 @@
   "lon": -82.5403,
   "history": "Same site as the official Tampa record"
  },
- "as_of_utc": "2026-11-09T07:07:51Z",
+ "as_of_utc": "2026-11-09T08:07:54Z",
  "now": {
-  "time_utc": "2026-11-09T06:50:00Z",
+  "time_utc": "2026-11-09T07:50:00Z",
   "temp_c": 18,
   "temp_f": 64.4,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 14,
-  "humidity_pct": 77.46,
+  "dewpoint_c": 15,
+  "humidity_pct": 82.63,
   "wind_kmh": 7.42,
-  "description": "Clear"
+  "description": ""
  },
  "today_so_far": {
   "date_local": "2026-11-09",
-  "readings": 1,
+  "readings": 2,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
   "high_c": 19.4,
   "high_f": 66.9,
   "high_time_utc": "2026-11-09T05:53:00Z",
-  "low_c": 19.4,
-  "low_f": 66.9,
-  "low_time_utc": "2026-11-09T05:53:00Z",
-  "dip_between_reports": {
-   "at_most_f": 65.3,
-   "about_f": 64.4,
-   "time_utc": "2026-11-09T06:50:00Z"
-  }
+  "low_c": 18.3,
+  "low_f": 64.9,
+  "low_time_utc": "2026-11-09T06:53:00Z"
  },
  "record": {
   "series": "Tampa area (ThreadEx; airport)",
@@ -160,24 +155,25 @@
    {
     "period": "Veterans Day",
     "date": "2026-11-11",
-    "high_f": 81,
+    "high_f": 82,
     "would_rank": {
-     "value_f": 81,
-     "warm_rank": 42,
-     "cool_rank": 86,
+     "value_f": 82,
+     "warm_rank": 31,
+     "cool_rank": 96,
      "years": 137,
      "first_year": 1890,
      "tied_years": [
-      1918,
-      1919,
-      1949,
-      1958,
-      1961,
-      1964,
-      1982,
-      2005,
-      2010,
-      2012
+      1908,
+      1936,
+      1939,
+      1940,
+      1945,
+      1947,
+      1989,
+      1999,
+      2004,
+      2008,
+      2021
      ],
      "standing": "warm",
      "notable": false,
@@ -215,23 +211,22 @@
    {
     "period": "Friday",
     "date": "2026-11-13",
-    "high_f": 70,
+    "high_f": 69,
     "would_rank": {
-     "value_f": 70,
-     "warm_rank": 115,
-     "cool_rank": 20,
+     "value_f": 69,
+     "warm_rank": 118,
+     "cool_rank": 18,
      "years": 137,
      "first_year": 1890,
      "tied_years": [
-      1894,
-      1977,
-      1983
+      1936,
+      2019
      ],
      "standing": "cool",
      "notable": true,
      "since": 2019,
      "record": false,
-     "phrase": "20th coolest November 13 high (tied) of 137 since 1890, coolest since 2019"
+     "phrase": "18th coolest November 13 high (tied) of 137 since 1890, coolest since 2019"
     }
    },
    {
@@ -276,17 +271,17 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-08T19:01:32Z",
+  "issued_utc": "2026-11-09T07:01:22Z",
   "grid": "TBW/68,98",
   "periods": [
    {
-    "name": "Tonight",
-    "start": "2026-11-08T18:00:00-05:00",
+    "name": "Overnight",
+    "start": "2026-11-09T02:00:00-05:00",
     "is_daytime": false,
     "temp_f": 62,
     "temp_c": 16.67,
     "precip_chance_pct": 0,
-    "short_forecast": "Mostly Cloudy"
+    "short_forecast": "Partly Cloudy"
    },
    {
     "name": "Monday",
@@ -301,8 +296,8 @@
     "name": "Monday Night",
     "start": "2026-11-09T18:00:00-05:00",
     "is_daytime": false,
-    "temp_f": 65,
-    "temp_c": 18.33,
+    "temp_f": 66,
+    "temp_c": 18.89,
     "precip_chance_pct": 0,
     "short_forecast": "Partly Cloudy"
    },
@@ -319,28 +314,28 @@
     "name": "Tuesday Night",
     "start": "2026-11-10T18:00:00-05:00",
     "is_daytime": false,
-    "temp_f": 68,
-    "temp_c": 20.0,
-    "precip_chance_pct": 0,
+    "temp_f": 69,
+    "temp_c": 20.56,
+    "precip_chance_pct": 1,
     "short_forecast": "Mostly Cloudy"
    },
    {
     "name": "Veterans Day",
     "start": "2026-11-11T06:00:00-05:00",
     "is_daytime": true,
-    "temp_f": 81,
-    "temp_c": 27.22,
-    "precip_chance_pct": 19,
-    "short_forecast": "Mostly Cloudy then Isolated Showers And Thunderstorms"
+    "temp_f": 82,
+    "temp_c": 27.78,
+    "precip_chance_pct": 20,
+    "short_forecast": "Mostly Cloudy then Slight Chance Rain Showers"
    },
    {
     "name": "Wednesday Night",
     "start": "2026-11-11T18:00:00-05:00",
     "is_daytime": false,
-    "temp_f": 68,
-    "temp_c": 20.0,
-    "precip_chance_pct": 19,
-    "short_forecast": "Isolated Showers And Thunderstorms"
+    "temp_f": 69,
+    "temp_c": 20.56,
+    "precip_chance_pct": 20,
+    "short_forecast": "Slight Chance Rain Showers"
    },
    {
     "name": "Thursday",
@@ -348,8 +343,8 @@
     "is_daytime": true,
     "temp_f": 78,
     "temp_c": 25.56,
-    "precip_chance_pct": 23,
-    "short_forecast": "Isolated Showers And Thunderstorms"
+    "precip_chance_pct": 28,
+    "short_forecast": "Chance Rain Showers"
    },
    {
     "name": "Thursday Night",
@@ -357,17 +352,17 @@
     "is_daytime": false,
     "temp_f": 63,
     "temp_c": 17.22,
-    "precip_chance_pct": 30,
-    "short_forecast": "Scattered Rain Showers"
+    "precip_chance_pct": 28,
+    "short_forecast": "Chance Rain Showers"
    },
    {
     "name": "Friday",
     "start": "2026-11-13T06:00:00-05:00",
     "is_daytime": true,
-    "temp_f": 70,
-    "temp_c": 21.11,
-    "precip_chance_pct": 20,
-    "short_forecast": "Isolated Rain Showers then Partly Sunny"
+    "temp_f": 69,
+    "temp_c": 20.56,
+    "precip_chance_pct": 12,
+    "short_forecast": "Partly Sunny"
    },
    {
     "name": "Friday Night",
@@ -375,7 +370,7 @@
     "is_daytime": false,
     "temp_f": 51,
     "temp_c": 10.56,
-    "precip_chance_pct": 3,
+    "precip_chance_pct": 0,
     "short_forecast": "Partly Cloudy"
    },
    {
@@ -408,15 +403,8 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-09T06:21:40Z",
+  "issued_utc": "2026-11-09T07:01:22Z",
   "hours": [
-   {
-    "start": "2026-11-09T02:00:00-05:00",
-    "temp_f": 64,
-    "temp_c": 17.78,
-    "precip_chance_pct": 0,
-    "short_forecast": "Partly Cloudy"
-   },
    {
     "start": "2026-11-09T03:00:00-05:00",
     "temp_f": 63,
@@ -743,6 +731,13 @@
     "start": "2026-11-11T01:00:00-05:00",
     "temp_f": 71,
     "temp_c": 21.67,
+    "precip_chance_pct": 1,
+    "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "start": "2026-11-11T02:00:00-05:00",
+    "temp_f": 70,
+    "temp_c": 21.11,
     "precip_chance_pct": 1,
     "short_forecast": "Mostly Cloudy"
    }
