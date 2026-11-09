@@ -11,20 +11,20 @@
   "lon": -80.3164,
   "history": "Same station as the official Miami record"
  },
- "as_of_utc": "2026-11-09T11:07:57Z",
+ "as_of_utc": "2026-11-09T12:07:52Z",
  "now": {
-  "time_utc": "2026-11-09T10:55:00Z",
+  "time_utc": "2026-11-09T11:30:00Z",
   "temp_c": 24,
   "temp_f": 75.2,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 21,
   "humidity_pct": 83.34,
-  "wind_kmh": 0,
-  "description": ""
+  "wind_kmh": 5.54,
+  "description": "Mostly Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-09",
-  "readings": 3,
+  "readings": 4,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -41,50 +41,52 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-07",
-   "is_yesterday": false,
-   "high_f": 87,
-   "low_f": 74,
+   "date": "2026-11-08",
+   "is_yesterday": true,
+   "high_f": 85,
+   "low_f": 75,
    "high_rank": {
-    "value_f": 87,
-    "warm_rank": 3,
-    "cool_rank": 124,
-    "years": 131,
-    "first_year": 1895,
-    "tied_years": [
-     1911,
-     1951,
-     2015,
-     2023,
-     2025
-    ],
-    "standing": "warm",
-    "notable": true,
-    "since": 2025,
-    "record": false,
-    "phrase": "3rd warmest November 7 high (tied) of 131 since 1895, warmest since 2025"
-   },
-   "low_rank": {
-    "value_f": 74,
-    "warm_rank": 20,
+    "value_f": 85,
+    "warm_rank": 18,
     "cool_rank": 104,
     "years": 131,
     "first_year": 1895,
     "tied_years": [
-     1942,
-     1946,
-     1978,
-     1987,
-     1995,
+     1896,
+     1898,
+     1972,
+     1986,
+     1989,
+     1990,
+     1996,
+     2005,
      2006,
-     2022,
-     2025
+     2009
     ],
     "standing": "warm",
     "notable": true,
     "since": 2025,
     "record": false,
-    "phrase": "20th warmest November 7 low (tied) of 131 since 1895, warmest since 2025"
+    "phrase": "18th warmest November 8 high (tied) of 131 since 1895, warmest since 2025"
+   },
+   "low_rank": {
+    "value_f": 75,
+    "warm_rank": 11,
+    "cool_rank": 116,
+    "years": 131,
+    "first_year": 1895,
+    "tied_years": [
+     1915,
+     1924,
+     1943,
+     1994,
+     2018
+    ],
+    "standing": "warm",
+    "notable": true,
+    "since": 2024,
+    "record": false,
+    "phrase": "11th warmest November 8 low (tied) of 131 since 1895, warmest since 2024"
    }
   },
   "forecast_highs": [
@@ -414,13 +416,6 @@
   "issued_utc": "2026-11-09T08:47:18Z",
   "hours": [
    {
-    "start": "2026-11-09T06:00:00-05:00",
-    "temp_f": 73,
-    "temp_c": 22.78,
-    "precip_chance_pct": 11,
-    "short_forecast": "Sunny"
-   },
-   {
     "start": "2026-11-09T07:00:00-05:00",
     "temp_f": 74,
     "temp_c": 23.33,
@@ -748,6 +743,13 @@
     "temp_c": 23.89,
     "precip_chance_pct": 3,
     "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "start": "2026-11-11T06:00:00-05:00",
+    "temp_f": 75,
+    "temp_c": 23.89,
+    "precip_chance_pct": 3,
+    "short_forecast": "Partly Sunny"
    }
   ]
  },

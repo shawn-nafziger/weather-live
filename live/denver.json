@@ -11,33 +11,33 @@
   "lon": -104.6562,
   "history": "Same site as the official Denver record"
  },
- "as_of_utc": "2026-11-09T11:07:57Z",
+ "as_of_utc": "2026-11-09T12:07:52Z",
  "now": {
-  "time_utc": "2026-11-09T10:50:00Z",
-  "temp_c": 8,
-  "temp_f": 46.4,
+  "time_utc": "2026-11-09T11:30:00Z",
+  "temp_c": 7,
+  "temp_f": 44.6,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": -6,
-  "humidity_pct": 36.5,
+  "humidity_pct": 39.08,
   "wind_kmh": 18.5,
-  "description": ""
+  "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-09",
-  "readings": 2,
+  "readings": 3,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
   "high_c": 9.4,
   "high_f": 48.9,
   "high_time_utc": "2026-11-09T08:53:00Z",
-  "low_c": 8.9,
-  "low_f": 48.0,
-  "low_time_utc": "2026-11-09T07:53:00Z",
+  "low_c": 7.8,
+  "low_f": 46.0,
+  "low_time_utc": "2026-11-09T10:53:00Z",
   "dip_between_reports": {
-   "at_most_f": 47.3,
-   "about_f": 46.4,
-   "time_utc": "2026-11-09T10:45:00Z"
+   "at_most_f": 45.5,
+   "about_f": 44.6,
+   "time_utc": "2026-11-09T11:15:00Z"
   }
  },
  "record": {
@@ -46,47 +46,45 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-07",
-   "is_yesterday": false,
-   "high_f": 65,
-   "low_f": 36,
+   "date": "2026-11-08",
+   "is_yesterday": true,
+   "high_f": 68,
+   "low_f": 37,
    "high_rank": {
-    "value_f": 65,
-    "warm_rank": 43,
-    "cool_rank": 109,
+    "value_f": 68,
+    "warm_rank": 22,
+    "cool_rank": 129,
     "years": 155,
     "first_year": 1872,
     "tied_years": [
-     1917,
-     1927,
-     1965,
-     2002
+     1873,
+     1906,
+     1939,
+     1958,
+     2015
     ],
     "standing": "warm",
-    "notable": false,
-    "since": 2023,
+    "notable": true,
+    "since": 2022,
     "record": false,
-    "phrase": "typical for November 7"
+    "phrase": "22nd warmest November 8 high (tied) of 155 since 1872, warmest since 2022"
    },
    "low_rank": {
-    "value_f": 36,
-    "warm_rank": 34,
-    "cool_rank": 116,
+    "value_f": 37,
+    "warm_rank": 20,
+    "cool_rank": 133,
     "years": 155,
     "first_year": 1872,
     "tied_years": [
-     1893,
-     1912,
-     1950,
-     1983,
-     1994,
-     1997
+     1976,
+     2004,
+     2007
     ],
     "standing": "warm",
-    "notable": false,
-    "since": 2023,
+    "notable": true,
+    "since": 2022,
     "record": false,
-    "phrase": "typical for November 7"
+    "phrase": "20th warmest November 8 low (tied) of 155 since 1872, warmest since 2022"
    }
   },
   "forecast_highs": [
@@ -387,13 +385,6 @@
  "hourly": {
   "issued_utc": "2026-11-09T06:46:31Z",
   "hours": [
-   {
-    "start": "2026-11-09T04:00:00-07:00",
-    "temp_f": 43,
-    "temp_c": 6.11,
-    "precip_chance_pct": 0,
-    "short_forecast": "Clear"
-   },
    {
     "start": "2026-11-09T05:00:00-07:00",
     "temp_f": 43,
@@ -720,6 +711,13 @@
     "start": "2026-11-11T03:00:00-07:00",
     "temp_f": 39,
     "temp_c": 3.89,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Clear"
+   },
+   {
+    "start": "2026-11-11T04:00:00-07:00",
+    "temp_f": 38,
+    "temp_c": 3.33,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear"
    }

@@ -11,20 +11,20 @@
   "lon": -76.1919,
   "history": "Same site as the official Norfolk record"
  },
- "as_of_utc": "2026-11-09T11:07:57Z",
+ "as_of_utc": "2026-11-09T12:07:52Z",
  "now": {
-  "time_utc": "2026-11-09T10:55:00Z",
-  "temp_c": 10,
-  "temp_f": 50.0,
+  "time_utc": "2026-11-09T11:55:00Z",
+  "temp_c": 9,
+  "temp_f": 48.2,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 7,
-  "humidity_pct": 81.62,
-  "wind_kmh": 11.12,
+  "dewpoint_c": 6,
+  "humidity_pct": 81.49,
+  "wind_kmh": 7.42,
   "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-09",
-  "readings": 3,
+  "readings": 4,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -46,44 +46,50 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-07",
-   "is_yesterday": false,
-   "high_f": 61,
-   "low_f": 51,
+   "date": "2026-11-08",
+   "is_yesterday": true,
+   "high_f": 64,
+   "low_f": 49,
    "high_rank": {
-    "value_f": 61,
-    "warm_rank": 91,
-    "cool_rank": 59,
+    "value_f": 64,
+    "warm_rank": 70,
+    "cool_rank": 77,
     "years": 153,
     "first_year": 1874,
     "tied_years": [
-     1874,
-     1913,
-     1935,
-     2014
-    ],
-    "standing": "cool",
-    "notable": false,
-    "since": 2021,
-    "record": false,
-    "phrase": "typical for November 7"
-   },
-   "low_rank": {
-    "value_f": 51,
-    "warm_rank": 39,
-    "cool_rank": 112,
-    "years": 153,
-    "first_year": 1874,
-    "tied_years": [
-     1929,
-     2021,
-     2023
+     1898,
+     1900,
+     1912,
+     1966,
+     1978,
+     1983,
+     2018
     ],
     "standing": "warm",
     "notable": false,
-    "since": 2024,
+    "since": 2025,
     "record": false,
-    "phrase": "typical for November 7"
+    "phrase": "typical for November 8"
+   },
+   "low_rank": {
+    "value_f": 49,
+    "warm_rank": 54,
+    "cool_rank": 94,
+    "years": 153,
+    "first_year": 1874,
+    "tied_years": [
+     1887,
+     1889,
+     1919,
+     1928,
+     1997,
+     2004
+    ],
+    "standing": "warm",
+    "notable": false,
+    "since": 2025,
+    "record": false,
+    "phrase": "typical for November 8"
    }
   },
   "forecast_highs": [
@@ -388,13 +394,6 @@
  "hourly": {
   "issued_utc": "2026-11-09T07:36:14Z",
   "hours": [
-   {
-    "start": "2026-11-09T06:00:00-05:00",
-    "temp_f": 50,
-    "temp_c": 10.0,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "start": "2026-11-09T07:00:00-05:00",
     "temp_f": 49,
@@ -723,6 +722,13 @@
     "temp_c": 11.11,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear"
+   },
+   {
+    "start": "2026-11-11T06:00:00-05:00",
+    "temp_f": 51,
+    "temp_c": 10.56,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
    }
   ]
  },

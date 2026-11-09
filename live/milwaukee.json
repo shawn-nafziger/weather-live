@@ -11,20 +11,20 @@
   "lon": -87.9044,
   "history": "Same site as the official Milwaukee record"
  },
- "as_of_utc": "2026-11-09T11:07:57Z",
+ "as_of_utc": "2026-11-09T12:07:52Z",
  "now": {
-  "time_utc": "2026-11-09T10:55:00Z",
-  "temp_c": 4,
-  "temp_f": 39.2,
+  "time_utc": "2026-11-09T11:30:00Z",
+  "temp_c": 3,
+  "temp_f": 37.4,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 2,
-  "humidity_pct": 86.8,
-  "wind_kmh": 5.54,
+  "humidity_pct": 93.14,
+  "wind_kmh": 0,
   "description": ""
  },
  "today_so_far": {
   "date_local": "2026-11-09",
-  "readings": 3,
+  "readings": 4,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -46,50 +46,51 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-07",
-   "is_yesterday": false,
-   "high_f": 52,
-   "low_f": 32,
+   "date": "2026-11-08",
+   "is_yesterday": true,
+   "high_f": 60,
+   "low_f": 41,
    "high_rank": {
-    "value_f": 52,
-    "warm_rank": 55,
-    "cool_rank": 96,
+    "value_f": 60,
+    "warm_rank": 22,
+    "cool_rank": 128,
     "years": 156,
     "first_year": 1871,
     "tied_years": [
-     1891,
-     1904,
-     1926,
-     1972,
-     1996,
-     2023
+     1902,
+     1906,
+     1966,
+     1983,
+     1984,
+     1986,
+     1994
     ],
     "standing": "warm",
-    "notable": false,
-    "since": 2025,
+    "notable": true,
+    "since": 2024,
     "record": false,
-    "phrase": "typical for November 7"
+    "phrase": "22nd warmest November 8 high (tied) of 156 since 1871, warmest since 2024"
    },
    "low_rank": {
-    "value_f": 32,
-    "warm_rank": 101,
-    "cool_rank": 49,
+    "value_f": 41,
+    "warm_rank": 30,
+    "cool_rank": 120,
     "years": 156,
     "first_year": 1871,
     "tied_years": [
-     1901,
-     1907,
-     1908,
-     1929,
-     1947,
-     1963,
-     1987
+     1889,
+     1909,
+     1915,
+     1916,
+     1966,
+     1982,
+     1999
     ],
-    "standing": "cool",
-    "notable": false,
-    "since": 2019,
+    "standing": "warm",
+    "notable": true,
+    "since": 2024,
     "record": false,
-    "phrase": "typical for November 7"
+    "phrase": "30th warmest November 8 low (tied) of 156 since 1871, warmest since 2024"
    }
   },
   "forecast_highs": [
@@ -258,15 +259,15 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-09T08:21:31Z",
+  "issued_utc": "2026-11-09T11:21:42Z",
   "grid": "MKX/89,61",
   "periods": [
    {
     "name": "Overnight",
-    "start": "2026-11-09T02:00:00-06:00",
+    "start": "2026-11-09T05:00:00-06:00",
     "is_daytime": false,
-    "temp_f": 38,
-    "temp_c": 3.33,
+    "temp_f": 37,
+    "temp_c": 2.78,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear"
    },
@@ -392,13 +393,6 @@
  "hourly": {
   "issued_utc": "2026-11-09T08:21:31Z",
   "hours": [
-   {
-    "start": "2026-11-09T05:00:00-06:00",
-    "temp_f": 38,
-    "temp_c": 3.33,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Clear"
-   },
    {
     "start": "2026-11-09T06:00:00-06:00",
     "temp_f": 38,
@@ -723,6 +717,13 @@
    },
    {
     "start": "2026-11-11T04:00:00-06:00",
+    "temp_f": 40,
+    "temp_c": 4.44,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "start": "2026-11-11T05:00:00-06:00",
     "temp_f": 40,
     "temp_c": 4.44,
     "precip_chance_pct": 0,

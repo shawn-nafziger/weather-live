@@ -11,29 +11,29 @@
   "lon": -77.3233,
   "history": "Same site as the official Richmond record"
  },
- "as_of_utc": "2026-11-09T11:07:57Z",
+ "as_of_utc": "2026-11-09T12:07:52Z",
  "now": {
-  "time_utc": "2026-11-09T10:55:00Z",
-  "temp_c": 8,
-  "temp_f": 46.4,
+  "time_utc": "2026-11-09T11:55:00Z",
+  "temp_c": 7,
+  "temp_f": 44.6,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 3,
-  "humidity_pct": 70.7,
-  "wind_kmh": 7.42,
+  "humidity_pct": 75.69,
+  "wind_kmh": 0,
   "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-09",
-  "readings": 3,
+  "readings": 4,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
   "high_c": 11.1,
   "high_f": 52.0,
   "high_time_utc": "2026-11-09T05:54:00Z",
-  "low_c": 10.6,
-  "low_f": 51.1,
-  "low_time_utc": "2026-11-09T06:54:00Z",
+  "low_c": 7.8,
+  "low_f": 46.0,
+  "low_time_utc": "2026-11-09T10:54:00Z",
   "peak_between_reports": {
    "at_least_f": 52.7,
    "about_f": 53.6,
@@ -51,45 +51,47 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-07",
-   "is_yesterday": false,
-   "high_f": 63,
-   "low_f": 44,
+   "date": "2026-11-08",
+   "is_yesterday": true,
+   "high_f": 65,
+   "low_f": 39,
    "high_rank": {
-    "value_f": 63,
-    "warm_rank": 56,
-    "cool_rank": 70,
+    "value_f": 65,
+    "warm_rank": 52,
+    "cool_rank": 71,
     "years": 130,
     "first_year": 1897,
     "tied_years": [
-     1928,
-     1942,
-     1999,
-     2000,
-     2014
+     1947,
+     1963,
+     1968,
+     1972,
+     1973,
+     2002,
+     2010,
+     2022
     ],
     "standing": "warm",
     "notable": false,
     "since": 2025,
     "record": false,
-    "phrase": "typical for November 7"
+    "phrase": "typical for November 8"
    },
    "low_rank": {
-    "value_f": 44,
-    "warm_rank": 32,
-    "cool_rank": 96,
+    "value_f": 39,
+    "warm_rank": 66,
+    "cool_rank": 63,
     "years": 130,
     "first_year": 1897,
     "tied_years": [
-     1921,
-     1923,
-     1946
+     1907,
+     1970
     ],
-    "standing": "warm",
+    "standing": "cool",
     "notable": false,
-    "since": 2024,
+    "since": 2019,
     "record": false,
-    "phrase": "typical for November 7"
+    "phrase": "typical for November 8"
    }
   },
   "forecast_highs": [
@@ -399,13 +401,6 @@
  "hourly": {
   "issued_utc": "2026-11-09T07:36:14Z",
   "hours": [
-   {
-    "start": "2026-11-09T06:00:00-05:00",
-    "temp_f": 45,
-    "temp_c": 7.22,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "start": "2026-11-09T07:00:00-05:00",
     "temp_f": 46,
@@ -734,6 +729,13 @@
     "temp_c": 6.11,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear"
+   },
+   {
+    "start": "2026-11-11T06:00:00-05:00",
+    "temp_f": 42,
+    "temp_c": 5.56,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
    }
   ]
  },

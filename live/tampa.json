@@ -11,20 +11,20 @@
   "lon": -82.5403,
   "history": "Same site as the official Tampa record"
  },
- "as_of_utc": "2026-11-09T11:07:57Z",
+ "as_of_utc": "2026-11-09T12:07:52Z",
  "now": {
-  "time_utc": "2026-11-09T10:55:00Z",
-  "temp_c": 18,
-  "temp_f": 64.4,
+  "time_utc": "2026-11-09T11:55:00Z",
+  "temp_c": 19,
+  "temp_f": 66.2,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 17,
-  "humidity_pct": 93.88,
+  "humidity_pct": 88.19,
   "wind_kmh": 5.54,
   "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-09",
-  "readings": 4,
+  "readings": 5,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -41,57 +41,57 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-07",
-   "is_yesterday": false,
-   "high_f": 84,
-   "low_f": 67,
+   "date": "2026-11-08",
+   "is_yesterday": true,
+   "high_f": 80,
+   "low_f": 63,
    "high_rank": {
-    "value_f": 84,
-    "warm_rank": 17,
-    "cool_rank": 109,
+    "value_f": 80,
+    "warm_rank": 62,
+    "cool_rank": 65,
     "years": 137,
     "first_year": 1890,
     "tied_years": [
-     1892,
-     1911,
-     1928,
-     1929,
-     1936,
+     1897,
+     1909,
+     1937,
      1943,
-     1971,
-     1972,
-     1989,
-     2005,
-     2013,
-     2025
+     1957,
+     1964,
+     1985,
+     1998,
+     2004,
+     2008,
+     2013
     ],
     "standing": "warm",
-    "notable": true,
+    "notable": false,
     "since": 2025,
     "record": false,
-    "phrase": "17th warmest November 7 high (tied) of 137 since 1890, warmest since 2025"
+    "phrase": "typical for November 8"
    },
    "low_rank": {
-    "value_f": 67,
-    "warm_rank": 27,
-    "cool_rank": 108,
+    "value_f": 63,
+    "warm_rank": 46,
+    "cool_rank": 88,
     "years": 137,
     "first_year": 1890,
     "tied_years": [
-     1905,
-     2006,
-     2016
+     1909,
+     1978,
+     1985,
+     2023
     ],
     "standing": "warm",
-    "notable": true,
+    "notable": false,
     "since": 2025,
     "record": false,
-    "phrase": "27th warmest November 7 low (tied) of 137 since 1890, warmest since 2025"
+    "phrase": "typical for November 8"
    }
   },
   "forecast_highs": [
    {
-    "period": "Monday",
+    "period": "Today",
     "date": "2026-11-09",
     "high_f": 83,
     "would_rank": {
@@ -271,20 +271,11 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-09T07:01:22Z",
+  "issued_utc": "2026-11-09T10:52:16Z",
   "grid": "TBW/68,98",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-09T02:00:00-05:00",
-    "is_daytime": false,
-    "temp_f": 62,
-    "temp_c": 16.67,
-    "precip_chance_pct": 0,
-    "short_forecast": "Partly Cloudy"
-   },
-   {
-    "name": "Monday",
+    "name": "Today",
     "start": "2026-11-09T06:00:00-05:00",
     "is_daytime": true,
     "temp_f": 83,
@@ -293,7 +284,7 @@
     "short_forecast": "Mostly Sunny"
    },
    {
-    "name": "Monday Night",
+    "name": "Tonight",
     "start": "2026-11-09T18:00:00-05:00",
     "is_daytime": false,
     "temp_f": 66,
@@ -399,19 +390,21 @@
     "temp_c": 20.56,
     "precip_chance_pct": 1,
     "short_forecast": "Sunny"
+   },
+   {
+    "name": "Sunday Night",
+    "start": "2026-11-15T18:00:00-05:00",
+    "is_daytime": false,
+    "temp_f": 53,
+    "temp_c": 11.67,
+    "precip_chance_pct": 3,
+    "short_forecast": "Mostly Clear"
    }
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-09T07:01:22Z",
+  "issued_utc": "2026-11-09T10:52:16Z",
   "hours": [
-   {
-    "start": "2026-11-09T06:00:00-05:00",
-    "temp_f": 63,
-    "temp_c": 17.22,
-    "precip_chance_pct": 0,
-    "short_forecast": "Partly Sunny"
-   },
    {
     "start": "2026-11-09T07:00:00-05:00",
     "temp_f": 63,
@@ -736,6 +729,13 @@
    },
    {
     "start": "2026-11-11T05:00:00-05:00",
+    "temp_f": 69,
+    "temp_c": 20.56,
+    "precip_chance_pct": 1,
+    "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "start": "2026-11-11T06:00:00-05:00",
     "temp_f": 69,
     "temp_c": 20.56,
     "precip_chance_pct": 1,

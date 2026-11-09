@@ -11,20 +11,20 @@
   "lon": -78.736,
   "history": "Same site as the official Buffalo record"
  },
- "as_of_utc": "2026-11-09T11:07:57Z",
+ "as_of_utc": "2026-11-09T12:07:52Z",
  "now": {
-  "time_utc": "2026-11-09T10:55:00Z",
+  "time_utc": "2026-11-09T11:30:00Z",
   "temp_c": 8,
   "temp_f": 46.4,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 4,
   "humidity_pct": 75.86,
-  "wind_kmh": 25.92,
+  "wind_kmh": 24.08,
   "description": "Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-09",
-  "readings": 7,
+  "readings": 8,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -41,49 +41,45 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-07",
-   "is_yesterday": false,
-   "high_f": 51,
+   "date": "2026-11-08",
+   "is_yesterday": true,
+   "high_f": 54,
    "low_f": 41,
    "high_rank": {
-    "value_f": 51,
-    "warm_rank": 64,
-    "cool_rank": 83,
+    "value_f": 54,
+    "warm_rank": 52,
+    "cool_rank": 95,
     "years": 153,
     "first_year": 1873,
     "tied_years": [
-     1877,
-     1928,
-     1935,
-     1957,
-     1962,
-     1968,
-     1994
-    ],
-    "standing": "warm",
-    "notable": false,
-    "since": 2025,
-    "record": false,
-    "phrase": "typical for November 7"
-   },
-   "low_rank": {
-    "value_f": 41,
-    "warm_rank": 37,
-    "cool_rank": 112,
-    "years": 153,
-    "first_year": 1873,
-    "tied_years": [
-     1876,
-     1899,
-     1912,
-     1965,
-     1985
+     1888,
+     1909,
+     1954,
+     1970,
+     1974,
+     1982,
+     2005
     ],
     "standing": "warm",
     "notable": false,
     "since": 2024,
     "record": false,
-    "phrase": "typical for November 7"
+    "phrase": "typical for November 8"
+   },
+   "low_rank": {
+    "value_f": 41,
+    "warm_rank": 36,
+    "cool_rank": 117,
+    "years": 153,
+    "first_year": 1873,
+    "tied_years": [
+     1909
+    ],
+    "standing": "warm",
+    "notable": false,
+    "since": 2020,
+    "record": false,
+    "phrase": "typical for November 8"
    }
   },
   "forecast_highs": [
@@ -388,15 +384,8 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-09T10:29:02Z",
+  "issued_utc": "2026-11-09T11:57:27Z",
   "hours": [
-   {
-    "start": "2026-11-09T06:00:00-05:00",
-    "temp_f": 45,
-    "temp_c": 7.22,
-    "precip_chance_pct": 25,
-    "short_forecast": "Chance Rain Showers"
-   },
    {
     "start": "2026-11-09T07:00:00-05:00",
     "temp_f": 45,
@@ -725,6 +714,13 @@
     "temp_c": 3.89,
     "precip_chance_pct": 0,
     "short_forecast": "Partly Cloudy"
+   },
+   {
+    "start": "2026-11-11T06:00:00-05:00",
+    "temp_f": 39,
+    "temp_c": 3.89,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Sunny"
    }
   ]
  },
