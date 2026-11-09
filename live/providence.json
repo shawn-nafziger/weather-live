@@ -11,15 +11,15 @@
   "lon": -71.4277,
   "history": "Same site as the official Providence record"
  },
- "as_of_utc": "2026-11-09T19:08:00Z",
+ "as_of_utc": "2026-11-09T20:07:54Z",
  "now": {
-  "time_utc": "2026-11-09T18:55:00Z",
-  "temp_c": 13,
-  "temp_f": 55.4,
+  "time_utc": "2026-11-09T19:35:00Z",
+  "temp_c": 14,
+  "temp_f": 57.2,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 3,
-  "humidity_pct": 50.66,
-  "wind_kmh": 22.21,
+  "dewpoint_c": 4,
+  "humidity_pct": 50.94,
+  "wind_kmh": 18.5,
   "description": "Mostly Cloudy"
  },
  "today_so_far": {
@@ -33,7 +33,12 @@
   "high_time_utc": "2026-11-09T16:51:00Z",
   "low_c": 8.3,
   "low_f": 46.9,
-  "low_time_utc": "2026-11-09T11:51:00Z"
+  "low_time_utc": "2026-11-09T11:51:00Z",
+  "peak_between_reports": {
+   "at_least_f": 56.3,
+   "about_f": 57.2,
+   "time_utc": "2026-11-09T19:30:00Z"
+  }
  },
  "record": {
   "series": "Providence area (ThreadEx; T. F. Green airport)",
@@ -159,17 +164,19 @@
    {
     "period": "Thursday",
     "date": "2026-11-12",
-    "high_f": 56,
+    "high_f": 57,
     "would_rank": {
-     "value_f": 56,
-     "warm_rank": 41,
-     "cool_rank": 80,
+     "value_f": 57,
+     "warm_rank": 36,
+     "cool_rank": 83,
      "years": 123,
      "first_year": 1904,
      "tied_years": [
-      1957,
-      1966,
-      2003
+      1905,
+      1954,
+      1989,
+      1993,
+      2000
      ],
      "standing": "warm",
      "notable": false,
@@ -181,23 +188,22 @@
    {
     "period": "Friday",
     "date": "2026-11-13",
-    "high_f": 53,
+    "high_f": 48,
     "would_rank": {
-     "value_f": 53,
-     "warm_rank": 52,
-     "cool_rank": 67,
+     "value_f": 48,
+     "warm_rank": 77,
+     "cool_rank": 43,
      "years": 123,
      "first_year": 1904,
      "tied_years": [
-      1942,
-      1944,
-      1960,
-      1963,
-      1972
+      1922,
+      1926,
+      2002,
+      2025
      ],
-     "standing": "warm",
+     "standing": "cool",
      "notable": false,
-     "since": 2022,
+     "since": 2025,
      "record": false,
      "phrase": "typical for November 13"
     }
@@ -205,25 +211,26 @@
    {
     "period": "Saturday",
     "date": "2026-11-14",
-    "high_f": 51,
+    "high_f": 48,
     "would_rank": {
-     "value_f": 51,
-     "warm_rank": 59,
-     "cool_rank": 58,
+     "value_f": 48,
+     "warm_rank": 72,
+     "cool_rank": 44,
      "years": 123,
      "first_year": 1904,
      "tied_years": [
-      1948,
-      1965,
-      1969,
-      1975,
-      1981,
-      1998,
-      2000
+      1918,
+      1923,
+      1963,
+      1966,
+      1982,
+      1995,
+      2012,
+      2015
      ],
      "standing": "cool",
      "notable": false,
-     "since": 2025,
+     "since": 2024,
      "record": false,
      "phrase": "typical for November 14"
     }
@@ -231,23 +238,22 @@
    {
     "period": "Sunday",
     "date": "2026-11-15",
-    "high_f": 52,
+    "high_f": 51,
     "would_rank": {
-     "value_f": 52,
-     "warm_rank": 59,
-     "cool_rank": 60,
+     "value_f": 51,
+     "warm_rank": 64,
+     "cool_rank": 56,
      "years": 123,
      "first_year": 1904,
      "tied_years": [
-      1940,
-      1955,
-      1969,
-      1987,
-      2021
+      1904,
+      1915,
+      1977,
+      2023
      ],
-     "standing": "warm",
+     "standing": "cool",
      "notable": false,
-     "since": 2024,
+     "since": 2025,
      "record": false,
      "phrase": "typical for November 15"
     }
@@ -255,17 +261,17 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-09T18:01:33Z",
+  "issued_utc": "2026-11-09T20:01:49Z",
   "grid": "BOX/64,70",
   "periods": [
    {
     "name": "This Afternoon",
-    "start": "2026-11-09T13:00:00-05:00",
+    "start": "2026-11-09T15:00:00-05:00",
     "is_daytime": true,
     "temp_f": 57,
     "temp_c": 13.89,
-    "precip_chance_pct": 33,
-    "short_forecast": "Scattered Rain Showers"
+    "precip_chance_pct": 24,
+    "short_forecast": "Isolated Rain Showers"
    },
    {
     "name": "Tonight",
@@ -316,71 +322,71 @@
     "name": "Thursday",
     "start": "2026-11-12T06:00:00-05:00",
     "is_daytime": true,
-    "temp_f": 56,
-    "temp_c": 13.33,
-    "precip_chance_pct": 11,
-    "short_forecast": "Mostly Cloudy"
+    "temp_f": 57,
+    "temp_c": 13.89,
+    "precip_chance_pct": 22,
+    "short_forecast": "Slight Chance Light Rain"
    },
    {
     "name": "Thursday Night",
     "start": "2026-11-12T18:00:00-05:00",
     "is_daytime": false,
-    "temp_f": 43,
-    "temp_c": 6.11,
-    "precip_chance_pct": 74,
+    "temp_f": 40,
+    "temp_c": 4.44,
+    "precip_chance_pct": 65,
     "short_forecast": "Light Rain Likely"
    },
    {
     "name": "Friday",
     "start": "2026-11-13T06:00:00-05:00",
     "is_daytime": true,
-    "temp_f": 53,
-    "temp_c": 11.67,
-    "precip_chance_pct": 74,
+    "temp_f": 48,
+    "temp_c": 8.89,
+    "precip_chance_pct": 68,
     "short_forecast": "Light Rain Likely"
    },
    {
     "name": "Friday Night",
     "start": "2026-11-13T18:00:00-05:00",
     "is_daytime": false,
-    "temp_f": 36,
-    "temp_c": 2.22,
-    "precip_chance_pct": 63,
-    "short_forecast": "Light Rain Likely"
+    "temp_f": 33,
+    "temp_c": 0.56,
+    "precip_chance_pct": 52,
+    "short_forecast": "Chance Light Rain"
    },
    {
     "name": "Saturday",
     "start": "2026-11-14T06:00:00-05:00",
     "is_daytime": true,
-    "temp_f": 51,
-    "temp_c": 10.56,
-    "precip_chance_pct": 44,
+    "temp_f": 48,
+    "temp_c": 8.89,
+    "precip_chance_pct": 35,
     "short_forecast": "Chance Light Rain"
    },
    {
     "name": "Saturday Night",
     "start": "2026-11-14T18:00:00-05:00",
     "is_daytime": false,
-    "temp_f": 34,
-    "temp_c": 1.11,
-    "precip_chance_pct": 27,
-    "short_forecast": "Chance Light Rain"
+    "temp_f": 32,
+    "temp_c": 0.0,
+    "precip_chance_pct": 20,
+    "short_forecast": "Slight Chance Light Rain then Mostly Cloudy"
    },
    {
     "name": "Sunday",
     "start": "2026-11-15T06:00:00-05:00",
     "is_daytime": true,
-    "temp_f": 52,
-    "temp_c": 11.11,
-    "precip_chance_pct": 11,
+    "temp_f": 51,
+    "temp_c": 10.56,
+    "precip_chance_pct": 2,
     "short_forecast": "Mostly Sunny"
    },
    {
     "name": "Sunday Night",
     "start": "2026-11-15T18:00:00-05:00",
     "is_daytime": false,
-    "temp_f": 34,
-    "temp_c": 1.11,
+    "temp_f": 32,
+    "temp_c": 0.0,
     "precip_chance_pct": 2,
     "short_forecast": "Partly Cloudy"
    }
@@ -389,13 +395,6 @@
  "hourly": {
   "issued_utc": "2026-11-09T18:29:43Z",
   "hours": [
-   {
-    "start": "2026-11-09T14:00:00-05:00",
-    "temp_f": 56,
-    "temp_c": 13.33,
-    "precip_chance_pct": 29,
-    "short_forecast": "Scattered Rain Showers"
-   },
    {
     "start": "2026-11-09T15:00:00-05:00",
     "temp_f": 55,
@@ -720,6 +719,13 @@
    },
    {
     "start": "2026-11-11T13:00:00-05:00",
+    "temp_f": 57,
+    "temp_c": 13.89,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
+   },
+   {
+    "start": "2026-11-11T14:00:00-05:00",
     "temp_f": 57,
     "temp_c": 13.89,
     "precip_chance_pct": 0,
