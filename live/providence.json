@@ -11,20 +11,20 @@
   "lon": -71.4277,
   "history": "Same site as the official Providence record"
  },
- "as_of_utc": "2026-11-09T18:08:45Z",
+ "as_of_utc": "2026-11-09T19:08:00Z",
  "now": {
-  "time_utc": "2026-11-09T17:55:00Z",
+  "time_utc": "2026-11-09T18:55:00Z",
   "temp_c": 13,
   "temp_f": 55.4,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 3,
   "humidity_pct": 50.66,
-  "wind_kmh": null,
+  "wind_kmh": 22.21,
   "description": "Mostly Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-09",
-  "readings": 10,
+  "readings": 11,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -255,17 +255,17 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-09T16:03:22Z",
+  "issued_utc": "2026-11-09T18:01:33Z",
   "grid": "BOX/64,70",
   "periods": [
    {
     "name": "This Afternoon",
-    "start": "2026-11-09T12:00:00-05:00",
+    "start": "2026-11-09T13:00:00-05:00",
     "is_daytime": true,
     "temp_f": 57,
     "temp_c": 13.89,
     "precip_chance_pct": 33,
-    "short_forecast": "Chance Light Rain"
+    "short_forecast": "Scattered Rain Showers"
    },
    {
     "name": "Tonight",
@@ -387,42 +387,35 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-09T16:03:22Z",
+  "issued_utc": "2026-11-09T18:29:43Z",
   "hours": [
-   {
-    "start": "2026-11-09T13:00:00-05:00",
-    "temp_f": 56,
-    "temp_c": 13.33,
-    "precip_chance_pct": 33,
-    "short_forecast": "Chance Light Rain"
-   },
    {
     "start": "2026-11-09T14:00:00-05:00",
     "temp_f": 56,
     "temp_c": 13.33,
     "precip_chance_pct": 29,
-    "short_forecast": "Chance Light Rain"
+    "short_forecast": "Scattered Rain Showers"
    },
    {
     "start": "2026-11-09T15:00:00-05:00",
     "temp_f": 55,
     "temp_c": 12.78,
     "precip_chance_pct": 24,
-    "short_forecast": "Slight Chance Light Rain"
+    "short_forecast": "Isolated Rain Showers"
    },
    {
     "start": "2026-11-09T16:00:00-05:00",
     "temp_f": 54,
     "temp_c": 12.22,
     "precip_chance_pct": 20,
-    "short_forecast": "Slight Chance Light Rain"
+    "short_forecast": "Isolated Rain Showers"
    },
    {
     "start": "2026-11-09T17:00:00-05:00",
     "temp_f": 53,
     "temp_c": 11.67,
     "precip_chance_pct": 17,
-    "short_forecast": "Slight Chance Light Rain"
+    "short_forecast": "Isolated Rain Showers"
    },
    {
     "start": "2026-11-09T18:00:00-05:00",
@@ -722,6 +715,13 @@
     "start": "2026-11-11T12:00:00-05:00",
     "temp_f": 56,
     "temp_c": 13.33,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
+   },
+   {
+    "start": "2026-11-11T13:00:00-05:00",
+    "temp_f": 57,
+    "temp_c": 13.89,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
    }
