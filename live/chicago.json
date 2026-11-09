@@ -11,9 +11,9 @@
   "lon": -87.9044,
   "history": "Same station as the official Chicago record (ThreadEx, O'Hare since 1980)"
  },
- "as_of_utc": "2026-11-09T05:07:49Z",
+ "as_of_utc": "2026-11-09T06:06:01Z",
  "now": {
-  "time_utc": "2026-11-09T04:45:00Z",
+  "time_utc": "2026-11-09T05:40:00Z",
   "temp_c": 9,
   "temp_f": 48.2,
   "precision": "nearest whole \u00b0C",
@@ -23,17 +23,11 @@
   "description": "Clear"
  },
  "today_so_far": {
-  "date_local": "2026-11-08",
-  "readings": 16,
-  "basis": "hourly reports (tenths of a degree)",
-  "approximate": false,
-  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 16.1,
-  "high_f": 61.0,
-  "high_time_utc": "2026-11-08T20:51:00Z",
-  "low_c": 4.4,
-  "low_f": 39.9,
-  "low_time_utc": "2026-11-08T10:51:00Z"
+  "date_local": "2026-11-09",
+  "readings": 0,
+  "basis": "5-minute readings (whole \u00b0C, approximate)",
+  "approximate": true,
+  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two."
  },
  "record": {
   "series": "Chicago area (ThreadEx, O'Hare since 1980)",
@@ -42,7 +36,7 @@
   "rank_today": true,
   "latest_final": {
    "date": "2026-11-07",
-   "is_yesterday": true,
+   "is_yesterday": false,
    "high_f": 51,
    "low_f": 33,
    "high_rank": {
@@ -81,26 +75,6 @@
     "record": false,
     "phrase": "typical for November 7"
    }
-  },
-  "today_high_so_far": {
-   "value_f": 61,
-   "warm_rank": 27,
-   "cool_rank": 123,
-   "years": 155,
-   "first_year": 1872,
-   "tied_years": [
-    1906,
-    1930,
-    1963,
-    1980,
-    1986,
-    1994
-   ],
-   "standing": "warm",
-   "notable": true,
-   "since": 2024,
-   "record": false,
-   "phrase": "already the 27th warmest November 8 high (tied) of 155 since 1872, warmest since 2024"
   },
   "forecast_highs": [
    {
@@ -405,13 +379,6 @@
  "hourly": {
   "issued_utc": "2026-11-09T03:01:03Z",
   "hours": [
-   {
-    "start": "2026-11-08T23:00:00-06:00",
-    "temp_f": 48,
-    "temp_c": 8.89,
-    "precip_chance_pct": 0,
-    "short_forecast": "Clear"
-   },
    {
     "start": "2026-11-09T00:00:00-06:00",
     "temp_f": 47,
@@ -738,6 +705,13 @@
     "start": "2026-11-10T22:00:00-06:00",
     "temp_f": 44,
     "temp_c": 6.67,
+    "precip_chance_pct": 0,
+    "short_forecast": "Partly Cloudy"
+   },
+   {
+    "start": "2026-11-10T23:00:00-06:00",
+    "temp_f": 43,
+    "temp_c": 6.11,
     "precip_chance_pct": 0,
     "short_forecast": "Partly Cloudy"
    }

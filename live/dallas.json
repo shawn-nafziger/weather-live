@@ -11,29 +11,23 @@
   "lon": -97.022,
   "history": "Same site as the official Dallas record"
  },
- "as_of_utc": "2026-11-09T05:07:49Z",
+ "as_of_utc": "2026-11-09T06:06:01Z",
  "now": {
-  "time_utc": "2026-11-09T04:45:00Z",
+  "time_utc": "2026-11-09T05:30:00Z",
   "temp_c": 16,
   "temp_f": 60.8,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 13,
   "humidity_pct": 82.39,
   "wind_kmh": 12.96,
-  "description": ""
+  "description": "Clear"
  },
  "today_so_far": {
-  "date_local": "2026-11-08",
-  "readings": 15,
-  "basis": "hourly reports (tenths of a degree)",
-  "approximate": false,
-  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 21.1,
-  "high_f": 70.0,
-  "high_time_utc": "2026-11-08T20:53:00Z",
-  "low_c": 13.9,
-  "low_f": 57.0,
-  "low_time_utc": "2026-11-08T12:53:00Z"
+  "date_local": "2026-11-09",
+  "readings": 0,
+  "basis": "5-minute readings (whole \u00b0C, approximate)",
+  "approximate": true,
+  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two."
  },
  "record": {
   "series": "Dallas area (ThreadEx; DFW airport)",
@@ -42,7 +36,7 @@
   "rank_today": true,
   "latest_final": {
    "date": "2026-11-07",
-   "is_yesterday": true,
+   "is_yesterday": false,
    "high_f": 69,
    "low_f": 50,
    "high_rank": {
@@ -392,13 +386,6 @@
   "issued_utc": "2026-11-09T01:36:29Z",
   "hours": [
    {
-    "start": "2026-11-08T23:00:00-06:00",
-    "temp_f": 58,
-    "temp_c": 14.44,
-    "precip_chance_pct": 1,
-    "short_forecast": "Mostly Cloudy"
-   },
-   {
     "start": "2026-11-09T00:00:00-06:00",
     "temp_f": 57,
     "temp_c": 13.89,
@@ -724,6 +711,13 @@
     "start": "2026-11-10T22:00:00-06:00",
     "temp_f": 65,
     "temp_c": 18.33,
+    "precip_chance_pct": 15,
+    "short_forecast": "Slight Chance Light Rain"
+   },
+   {
+    "start": "2026-11-10T23:00:00-06:00",
+    "temp_f": 64,
+    "temp_c": 17.78,
     "precip_chance_pct": 15,
     "short_forecast": "Slight Chance Light Rain"
    }
