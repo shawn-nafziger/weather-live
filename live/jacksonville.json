@@ -11,9 +11,9 @@
   "lon": -81.6937,
   "history": "Same site as the official Jacksonville record"
  },
- "as_of_utc": "2026-11-10T04:07:57Z",
+ "as_of_utc": "2026-11-10T05:07:55Z",
  "now": {
-  "time_utc": "2026-11-10T03:25:00Z",
+  "time_utc": "2026-11-10T04:55:00Z",
   "temp_c": 14,
   "temp_f": 57.2,
   "precision": "nearest whole \u00b0C",
@@ -23,27 +23,11 @@
   "description": "Clear"
  },
  "today_so_far": {
-  "date_local": "2026-11-09",
-  "readings": 15,
-  "basis": "hourly reports (tenths of a degree)",
-  "approximate": false,
-  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 25,
-  "high_f": 77.0,
-  "high_time_utc": "2026-11-09T20:56:00Z",
-  "low_c": 11.7,
-  "low_f": 53.1,
-  "low_time_utc": "2026-11-09T10:56:00Z",
-  "peak_between_reports": {
-   "at_least_f": 77.9,
-   "about_f": 78.8,
-   "time_utc": "2026-11-09T19:55:00Z"
-  },
-  "dip_between_reports": {
-   "at_most_f": 52.7,
-   "about_f": 51.8,
-   "time_utc": "2026-11-09T11:00:00Z"
-  }
+  "date_local": "2026-11-10",
+  "readings": 0,
+  "basis": "5-minute readings (whole \u00b0C, approximate)",
+  "approximate": true,
+  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two."
  },
  "record": {
   "series": "Jacksonville area (ThreadEx; airport)",
@@ -52,7 +36,7 @@
   "rank_today": true,
   "latest_final": {
    "date": "2026-11-08",
-   "is_yesterday": true,
+   "is_yesterday": false,
    "high_f": 78,
    "low_f": 52,
    "high_rank": {
@@ -292,7 +276,7 @@
   "periods": [
    {
     "name": "Tonight",
-    "start": "2026-11-09T22:00:00-05:00",
+    "start": "2026-11-09T23:00:00-05:00",
     "is_daytime": false,
     "temp_f": 53,
     "temp_c": 11.67,
@@ -421,13 +405,6 @@
  "hourly": {
   "issued_utc": "2026-11-10T03:11:28Z",
   "hours": [
-   {
-    "start": "2026-11-09T23:00:00-05:00",
-    "temp_f": 61,
-    "temp_c": 16.11,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Clear"
-   },
    {
     "start": "2026-11-10T00:00:00-05:00",
     "temp_f": 60,
@@ -756,6 +733,13 @@
     "temp_c": 17.22,
     "precip_chance_pct": 7,
     "short_forecast": "Partly Cloudy"
+   },
+   {
+    "start": "2026-11-11T23:00:00-05:00",
+    "temp_f": 62,
+    "temp_c": 16.67,
+    "precip_chance_pct": 7,
+    "short_forecast": "Mostly Cloudy"
    }
   ]
  },
