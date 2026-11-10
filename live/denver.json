@@ -11,29 +11,23 @@
   "lon": -104.6562,
   "history": "Same site as the official Denver record"
  },
- "as_of_utc": "2026-11-10T06:07:53Z",
+ "as_of_utc": "2026-11-10T07:07:55Z",
  "now": {
-  "time_utc": "2026-11-10T05:50:00Z",
-  "temp_c": 9,
-  "temp_f": 48.2,
+  "time_utc": "2026-11-10T06:50:00Z",
+  "temp_c": 7,
+  "temp_f": 44.6,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": -3,
-  "humidity_pct": 42.76,
+  "humidity_pct": 48.98,
   "wind_kmh": 16.67,
   "description": "Clear"
  },
  "today_so_far": {
-  "date_local": "2026-11-09",
-  "readings": 15,
-  "basis": "hourly reports (tenths of a degree)",
-  "approximate": false,
-  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 22.2,
-  "high_f": 72.0,
-  "high_time_utc": "2026-11-09T21:53:00Z",
-  "low_c": 7.2,
-  "low_f": 45.0,
-  "low_time_utc": "2026-11-09T12:53:00Z"
+  "date_local": "2026-11-10",
+  "readings": 0,
+  "basis": "5-minute readings (whole \u00b0C, approximate)",
+  "approximate": true,
+  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two."
  },
  "record": {
   "series": "Denver area (ThreadEx; airport)",
@@ -42,7 +36,7 @@
   "rank_today": true,
   "latest_final": {
    "date": "2026-11-08",
-   "is_yesterday": true,
+   "is_yesterday": false,
    "high_f": 68,
    "low_f": 37,
    "high_rank": {
@@ -81,21 +75,6 @@
     "record": false,
     "phrase": "20th warmest November 8 low (tied) of 155 since 1872, warmest since 2022"
    }
-  },
-  "today_high_so_far": {
-   "value_f": 72,
-   "warm_rank": 6,
-   "cool_rank": 149,
-   "years": 155,
-   "first_year": 1872,
-   "tied_years": [
-    1978
-   ],
-   "standing": "warm",
-   "notable": true,
-   "since": 2019,
-   "record": false,
-   "phrase": "already the 6th warmest November 9 high (tied) of 155 since 1872, warmest since 2019"
   },
   "forecast_highs": [
    {
@@ -395,13 +374,6 @@
  "hourly": {
   "issued_utc": "2026-11-09T18:46:18Z",
   "hours": [
-   {
-    "start": "2026-11-09T23:00:00-07:00",
-    "temp_f": 46,
-    "temp_c": 7.78,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Clear"
-   },
    {
     "start": "2026-11-10T00:00:00-07:00",
     "temp_f": 45,
@@ -728,6 +700,13 @@
     "start": "2026-11-11T22:00:00-07:00",
     "temp_f": 45,
     "temp_c": 7.22,
+    "precip_chance_pct": 0,
+    "short_forecast": "Clear"
+   },
+   {
+    "start": "2026-11-11T23:00:00-07:00",
+    "temp_f": 44,
+    "temp_c": 6.67,
     "precip_chance_pct": 0,
     "short_forecast": "Clear"
    }
