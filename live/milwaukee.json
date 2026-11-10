@@ -11,7 +11,7 @@
   "lon": -87.9044,
   "history": "Same site as the official Milwaukee record"
  },
- "as_of_utc": "2026-11-10T00:07:54Z",
+ "as_of_utc": "2026-11-10T00:13:35Z",
  "now": {
   "time_utc": "2026-11-09T23:50:00Z",
   "temp_c": 11,
@@ -109,24 +109,6 @@
    "phrase": "already the 22nd warmest November 9 high (tied) of 156 since 1871, warmest since 2022"
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-09",
-    "high_f": 60,
-    "would_rank": {
-     "value_f": 60,
-     "warm_rank": 22,
-     "cool_rank": 135,
-     "years": 156,
-     "first_year": 1871,
-     "tied_years": [],
-     "standing": "warm",
-     "notable": true,
-     "since": 2022,
-     "record": false,
-     "phrase": "22nd warmest November 9 high of 156 since 1871, warmest since 2022"
-    }
-   },
    {
     "period": "Tuesday",
     "date": "2026-11-10",
@@ -272,6 +254,28 @@
      "record": false,
      "phrase": "typical for November 15"
     }
+   },
+   {
+    "period": "Monday",
+    "date": "2026-11-16",
+    "high_f": 53,
+    "would_rank": {
+     "value_f": 53,
+     "warm_rank": 33,
+     "cool_rank": 121,
+     "years": 156,
+     "first_year": 1871,
+     "tied_years": [
+      1945,
+      1952,
+      1981
+     ],
+     "standing": "warm",
+     "notable": false,
+     "since": 2023,
+     "record": false,
+     "phrase": "typical for November 16"
+    }
    }
   ]
  },
@@ -279,15 +283,6 @@
   "issued_utc": "2026-11-09T23:11:48Z",
   "grid": "MKX/89,61",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-09T17:00:00-06:00",
-    "is_daytime": true,
-    "temp_f": 60,
-    "temp_c": 15.56,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-09T18:00:00-06:00",
@@ -404,11 +399,20 @@
     "temp_c": 3.89,
     "precip_chance_pct": 6,
     "short_forecast": "Partly Cloudy"
+   },
+   {
+    "name": "Monday",
+    "start": "2026-11-16T06:00:00-06:00",
+    "is_daytime": true,
+    "temp_f": 53,
+    "temp_c": 11.67,
+    "precip_chance_pct": 6,
+    "short_forecast": "Mostly Sunny"
    }
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-09T19:41:39Z",
+  "issued_utc": "2026-11-09T23:11:48Z",
   "hours": [
    {
     "start": "2026-11-09T18:00:00-06:00",
@@ -422,7 +426,7 @@
     "temp_f": 51,
     "temp_c": 10.56,
     "precip_chance_pct": 1,
-    "short_forecast": "Partly Cloudy"
+    "short_forecast": "Mostly Cloudy"
    },
    {
     "start": "2026-11-09T20:00:00-06:00",

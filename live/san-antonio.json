@@ -11,7 +11,7 @@
   "lon": -98.4636,
   "history": "Same site as the official San Antonio record"
  },
- "as_of_utc": "2026-11-10T00:07:54Z",
+ "as_of_utc": "2026-11-10T00:13:35Z",
  "now": {
   "time_utc": "2026-11-09T23:55:00Z",
   "temp_c": 17,
@@ -80,6 +80,27 @@
    }
   },
   "forecast_highs": [
+   {
+    "period": "This Afternoon",
+    "date": "2026-11-09",
+    "high_f": 66,
+    "would_rank": {
+     "value_f": 66,
+     "warm_rank": 108,
+     "cool_rank": 33,
+     "years": 142,
+     "first_year": 1885,
+     "tied_years": [
+      1950,
+      1961
+     ],
+     "standing": "cool",
+     "notable": false,
+     "since": 2018,
+     "record": false,
+     "phrase": "typical for November 9"
+    }
+   },
    {
     "period": "Tuesday",
     "date": "2026-11-10",
@@ -216,28 +237,6 @@
      "record": false,
      "phrase": "typical for November 15"
     }
-   },
-   {
-    "period": "Monday",
-    "date": "2026-11-16",
-    "high_f": 74,
-    "would_rank": {
-     "value_f": 74,
-     "warm_rank": 63,
-     "cool_rank": 77,
-     "years": 142,
-     "first_year": 1885,
-     "tied_years": [
-      1966,
-      1968,
-      1979
-     ],
-     "standing": "warm",
-     "notable": false,
-     "since": 2025,
-     "record": false,
-     "phrase": "typical for November 16"
-    }
    }
   ]
  },
@@ -245,6 +244,15 @@
   "issued_utc": "2026-11-09T23:42:24Z",
   "grid": "EWX/128,59",
   "periods": [
+   {
+    "name": "This Afternoon",
+    "start": "2026-11-09T17:00:00-06:00",
+    "is_daytime": true,
+    "temp_f": 66,
+    "temp_c": 18.89,
+    "precip_chance_pct": 58,
+    "short_forecast": "Rain Showers Likely"
+   },
    {
     "name": "Tonight",
     "start": "2026-11-09T18:00:00-06:00",
@@ -361,15 +369,6 @@
     "temp_c": 13.89,
     "precip_chance_pct": 24,
     "short_forecast": "Slight Chance Rain Showers then Slight Chance Showers And Thunderstorms"
-   },
-   {
-    "name": "Monday",
-    "start": "2026-11-16T06:00:00-06:00",
-    "is_daytime": true,
-    "temp_f": 74,
-    "temp_c": 23.33,
-    "precip_chance_pct": 15,
-    "short_forecast": "Slight Chance Rain Showers then Mostly Sunny"
    }
   ]
  },
