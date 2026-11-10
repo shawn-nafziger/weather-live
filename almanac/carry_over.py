@@ -4,7 +4,7 @@ pages are handed to the main site:
 
     python almanac/carry_over.py site/almanac prev
 
-site/almanac is today's build; prev is the last published build (the almanac-site branch), if there is one.
+site/almanac is today's build; prev is the last published build (the almanac-build branch), if there is one.
 
 - A place whose checks fail today (build.py skips it rather than publish a wrong sentence) keeps its last good
   page, and its sitemap entry keeps that page's date. Search engines never see a page flicker to "not found",

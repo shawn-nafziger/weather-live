@@ -22,13 +22,13 @@ After each records update, the daily workflow's second job, **Publish Almanac**,
 - `tallorderdigital.com/weather/almanac/<city>/` is the city's page: yesterday in context, the year so far, the record book, how the climate has changed, rain and snow.
 - `tallorderdigital.com/weather/almanac/sitemap.xml` lists every page for search engines (the main site's `robots.txt` points to it).
 
-**How it gets there (Nov 10, 2026).** The job pushes the built pages to this repo's **`almanac-site` branch** (a single commit, replaced every run, so the repo doesn't grow), then asks `tallorderdigital-site` to republish. That repo's **Publish site** workflow copies the branch into `weather/almanac/` and publishes the whole site with GitHub Pages, so the Almanac is an ordinary folder of tallorderdigital.com: same certificate, same hosting, nothing in between. If a build fails, the site keeps the last good Almanac.
+**How it gets there (Nov 10, 2026).** The job pushes the built pages to this repo's **`almanac-build` branch** (a single commit, replaced every run, so the repo doesn't grow), then asks `tallorderdigital-site` to republish. That repo's **Publish site** workflow copies the branch into `weather/almanac/` and publishes the whole site with GitHub Pages, so the Almanac is an ordinary folder of tallorderdigital.com: same certificate, same hosting, nothing in between. If a build fails, the site keeps the last good Almanac.
 
 Until Nov 10, 2026 the Almanac lived at `weather.tallorderdigital.com`; it moved so links and mentions build one domain (decision: `tallorderdigital-site/docs/seo-plan.md`). The old addresses redirect permanently (301), page for page.
 
 **One-time setup, in this order** (no step takes anything offline: until step 5 the old address keeps serving its last build):
 1. **Token:** on GitHub, create a fine-grained token "weather-live → site deploy" with access to `tallorderdigital-site` only, permission **Contents: Read and write** (that's what lets it ask for a republish). Add it to this repo as the Actions secret **`SITE_DEPLOY_TOKEN`**. Set a reminder to renew it before it expires.
-2. **This repo:** merge the PR, then run **Daily official records** once by hand. It creates the `almanac-site` branch.
+2. **This repo:** merge the PR, then run **Daily official records** once by hand. It creates the `almanac-build` branch.
 3. **Main site:** merge tallorderdigital-site's PR. In that repo's Settings → Pages, set Source to **GitHub Actions** (the custom domain and certificate stay as they are), then run its **Publish site** workflow once by hand. Check `https://tallorderdigital.com/weather/almanac/chicago/` and that the rest of the site looks normal.
 4. **Old address, in Cloudflare.** First check SSL/TLS → Edge Certificates: the Universal certificate is **Active** and covers `*.tallorderdigital.com` (if not, wait until it is, or readers following old links could see a certificate error). Then edit the `weather` DNS record: type **AAAA**, content **`100::`**, **Proxied** (orange cloud). That's Cloudflare's standard placeholder for a name that only redirects, and it means the name no longer points at GitHub, so nobody else can claim it. This affects only `weather.tallorderdigital.com`. Add two Rules → Redirect Rules, 301, preserving the query string, in this order:
    - Wildcard pattern: request URL `https://weather.tallorderdigital.com/almanac/*` → `https://tallorderdigital.com/weather/almanac/${1}`
@@ -37,11 +37,11 @@ Until Nov 10, 2026 the Almanac lived at `weather.tallorderdigital.com`; it moved
 5. **This repo:** Settings → Pages → remove the custom domain and unpublish (the Almanac no longer publishes here).
 6. **GitHub account:** Settings → Pages → **Verified domains** → add `tallorderdigital.com` (a DNS TXT record in Cloudflare). This stops anyone else's GitHub Pages site from claiming your domain or its subdomains.
 
-**On Shawn's PC:** the `almanac-site` branch is a full build (about 15 MB compressed) replaced every run. To keep `git pull` in this repo from downloading it each time, run once in the repo folder: `git config remote.origin.fetch "+refs/heads/main:refs/remotes/origin/main"`.
+**On Shawn's PC:** the `almanac-build` branch is a full build (about 15 MB compressed) replaced every run. To keep `git pull` in this repo from downloading it each time, run once in the repo folder: `git config remote.origin.fetch "+refs/heads/main:refs/remotes/origin/main"`.
 
 **Safeguards (`almanac/carry_over.py`):** a place whose checks fail on a given day keeps its last good page (which says the day its numbers are through), so search engines never see an Almanac page vanish and come back. If a run builds under 90% of the previous run's pages, nothing is handed over and the site keeps the last good Almanac.
 
-**Size:** each place is about 180 KB (page plus `data.json`). GitHub Pages publishes sites up to 1 GB, so the main site (Almanac included) has room for roughly 4,000–5,000 places. Before that, drop `data.json` (about 30% of each place) or move hosting.
+**Size:** each place is about 180 KB (page plus `data.json`). The plan tops out around 1,000 places, US and beyond (Shawn, Nov 10, 2026): about 180 MB, well inside GitHub Pages' 1 GB site limit.
 
 The pages are built fresh each run and are **not committed** (`site/` is ignored), so the repo doesn't fill up with copies.
 

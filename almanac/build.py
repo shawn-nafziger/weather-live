@@ -6,7 +6,7 @@ Almanac: one page per city, built from the city's official daily record.
 
 Reads history/<city>/<decade>.csv (kept current by scripts/station_update.py: NOAA via
 RCC-ACIS, whole °F) and writes the pages into site/. The daily workflow pushes
-site/almanac/ to the almanac-site branch, and tallorderdigital-site's publish workflow
+site/almanac/ to the almanac-build branch, and tallorderdigital-site's publish workflow
 copies it into weather/almanac/, so the Almanac is part of tallorderdigital.com itself
 (Nov 10, 2026; it was weather.tallorderdigital.com, which now redirects). site/ is not
 committed to main.
@@ -966,7 +966,7 @@ def write_index(built, out_dir):
         raise RuntimeError(f"Unfilled placeholders on the index: {[p.split('}}')[0] for p in left]}")
     (out_dir / "almanac").mkdir(parents=True, exist_ok=True)
     (out_dir / "almanac" / "index.html").write_text(page, encoding="utf-8")
-    # Only site/almanac/ is published (to the almanac-site branch); this root page is for local previews.
+    # Only site/almanac/ is published (to the almanac-build branch); this root page is for local previews.
     (out_dir / "index.html").write_text(
         '<!doctype html><meta charset="utf-8"><title>Weather · Tall Order Digital</title>'
         '<meta name="robots" content="noindex"><meta http-equiv="refresh" content="0; url=almanac/">'

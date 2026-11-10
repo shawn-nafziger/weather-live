@@ -54,7 +54,7 @@ jobs:
           echo "Push failed three times." && exit 1
 
   # Rebuild the Almanac pages from the records just saved and hand them to the
-  # main site (Nov 10, 2026): they're pushed to the almanac-site branch (one
+  # main site (Nov 10, 2026): they're pushed to the almanac-build branch (one
   # commit, replaced each run, so the repo doesn't grow), then tallorderdigital-site
   # is asked to republish. Its workflow copies the branch into weather/almanac/,
   # so the Almanac is part of tallorderdigital.com itself. A separate job, so a
@@ -64,7 +64,7 @@ jobs:
     runs-on: ubuntu-24.04
     timeout-minutes: 45
     permissions:
-      contents: write        # to replace the almanac-site branch
+      contents: write        # to replace the almanac-build branch
     steps:
       - uses: actions/checkout@v5
         with:
@@ -83,22 +83,22 @@ jobs:
 
       - name: Keep last good pages for places that didn't pass today
         run: |
-          git clone -q --depth 1 --branch almanac-site "https://github.com/${GITHUB_REPOSITORY}.git" prev \
+          git clone -q --depth 1 --branch almanac-build "https://github.com/${GITHUB_REPOSITORY}.git" prev \
             || echo "No earlier build yet."
           python almanac/carry_over.py site/almanac prev
 
-      - name: Replace the almanac-site branch with this build
+      - name: Replace the almanac-build branch with this build
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           test -f site/almanac/index.html && test -f site/almanac/sitemap.xml
           cd site/almanac
-          git init -q -b almanac-site
+          git init -q -b almanac-build
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A
           git commit -q -m "Almanac build $(date -u '+%Y-%m-%d %H:%M') UTC"
-          git push -q -f "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" almanac-site
+          git push -q -f "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" almanac-build
 
       - name: Ask tallorderdigital.com to republish
         env:
