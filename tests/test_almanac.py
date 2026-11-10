@@ -52,6 +52,10 @@ class Test(unittest.TestCase):
             self.assertNotIn("{{", page)
             self.assertNotIn("../../../", page)          # links to the main site are absolute
             self.assertIn('href="../"', page)            # back to the Almanac index
+            self.assertNotIn("noindex", page)              # open to search engines (Nov 9, 2026)
+            ld = re.search(r'<script type="application/ld\+json">(.*?)</script>', page, re.S)
+            self.assertIsNotNone(ld, s)
+            json.loads(ld.group(1))                        # the structured data parses on every page
         index = (self.out / "almanac" / "index.html").read_text(encoding="utf-8")
         self.assertNotIn("{{", index)
         for s in slugs:
@@ -86,6 +90,33 @@ class Test(unittest.TestCase):
             self.assertIn(f'href="../{here}/" aria-current="page"', page)
         self.assertIn('href="../south-bend/"', g)
         self.assertIn('href="../goshen/"', sb)
+
+    def test_pages_are_ready_for_search(self):
+        # Nov 9, 2026: canonical address, structured data, the section text in plain HTML, and a sitemap.
+        store.write_rows(self.hist, "chicago", real("chicago"))
+        store.write_rows(self.hist, "goshen", real("goshen"))
+        self.assertEqual(self.run_all(), 0)
+        page = (self.out / "almanac" / "chicago" / "index.html").read_text(encoding="utf-8")
+        head = page.split("</head>")[0]
+        self.assertIn('<link rel="canonical" href="https://weather.tallorderdigital.com/almanac/chicago/">', head)
+        self.assertIn("<title>Chicago, IL Weather Almanac", head)
+        self.assertNotIn("noindex", page)
+        graph = json.loads(re.search(r'<script type="application/ld\+json">(.*?)</script>', head, re.S).group(1))["@graph"]
+        types = {n["@type"]: n for n in graph}
+        self.assertEqual(set(types), {"WebPage", "Dataset", "Place", "BreadcrumbList"})
+        d = a.build("chicago")
+        self.assertTrue(types["Dataset"]["temporalCoverage"].endswith(d["asof"]))
+        self.assertEqual(types["Dataset"]["distribution"]["contentUrl"], a.ALMANAC + "chicago/data.json")
+        # Headings and sentences are in the HTML, not only drawn by the page script.
+        self.assertIn(f'<h2 id="t-rec">{a.html.escape(d["text"]["t_rec"])}</h2>', page)
+        self.assertIn(f'<p id="p-chg">{d["text"]["p_chg"]}</p>', page)
+        index = (self.out / "almanac" / "index.html").read_text(encoding="utf-8")
+        self.assertNotIn("noindex", index)
+        self.assertIn("<title>Weather Almanac: 2 US Cities", index)
+        sitemap = (self.out / "sitemap.xml").read_text(encoding="utf-8")
+        for u in ("almanac/", "almanac/chicago/", "almanac/goshen/"):
+            self.assertIn(f"<loc>https://weather.tallorderdigital.com/{u}</loc>", sitemap)
+        self.assertIn("Sitemap: https://weather.tallorderdigital.com/sitemap.xml", (self.out / "robots.txt").read_text())
 
     def test_no_switch_until_both_records_exist(self):
         store.write_rows(self.hist, "goshen", real("goshen"))

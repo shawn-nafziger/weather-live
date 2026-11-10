@@ -38,6 +38,9 @@ REPO = HERE.parent
 HISTORY_DIR = REPO / "history"
 SITE_DIR = REPO / "site"
 MAIN_SITE = "https://tallorderdigital.com/"
+ALMANAC = "https://weather.tallorderdigital.com/almanac/"
+# The main site's share image until the Almanac has its own (Nov 9, 2026).
+SHARE_IMAGE = MAIN_SITE + "assets/share-home.png"
 
 
 class ClaimError(Exception):
@@ -740,6 +743,92 @@ def build(slug, path=None):
     return data
 
 
+# ------------------------------------------------------------------ search (Nov 9, 2026)
+# What search engines and AI search tools read: the page's own address (canonical), link-preview tags, and a
+# schema.org JSON-LD block. The ids for the site and its publisher match the ones tallorderdigital-site's
+# tools/structured-data.js writes, so search engines see one organization across both addresses.
+ORG = {"@id": MAIN_SITE + "#organization"}
+NOAA = {"@type": "Organization", "name": "NOAA Regional Climate Centers (RCC-ACIS)", "url": "https://www.rcc-acis.org/"}
+
+
+def head_seo(url, title, description, graph):
+    """Canonical link, share tags and JSON-LD for one page's <head>. title/description are plain text."""
+    a = lambda v: html.escape(v, quote=True)  # noqa: E731
+    ld = json.dumps({"@context": "https://schema.org", "@graph": graph}, separators=(",", ":"), ensure_ascii=False)
+    ld = ld.replace("</", "<\\/")  # never let "</" in the data close the script tag
+    return "\n".join([
+        f'<link rel="canonical" href="{a(url)}">',
+        '<meta property="og:type" content="website">',
+        '<meta property="og:site_name" content="Tall Order Digital">',
+        f'<meta property="og:title" content="{a(title)}">',
+        f'<meta property="og:description" content="{a(description)}">',
+        f'<meta property="og:url" content="{a(url)}">',
+        f'<meta property="og:image" content="{SHARE_IMAGE}">',
+        '<meta property="og:image:width" content="1200">',
+        '<meta property="og:image:height" content="630">',
+        '<meta name="twitter:card" content="summary_large_image">',
+        f'<script type="application/ld+json">{ld}</script>',
+    ])
+
+
+def crumbs(url, trail):
+    """A breadcrumb trail: Home > Weather > Almanac > (city)."""
+    items = [("Home", MAIN_SITE), ("Weather", MAIN_SITE + "weather/"), ("Weather Almanac", ALMANAC)] + trail
+    return {"@type": "BreadcrumbList", "@id": url + "#breadcrumb",
+            "itemListElement": [{"@type": "ListItem", "position": i + 1, "name": n, "item": u}
+                                for i, (n, u) in enumerate(items)]}
+
+
+def city_seo(data, description):
+    c, slug = data["city"], data["slug"]
+    url = f"{ALMANAC}{slug}/"
+    place_name = f"{c['name']}, {c['state']}"
+    asof = data["asof"]
+    place = {"@type": "Place", "@id": url + "#place", "name": place_name,
+             "address": {"@type": "PostalAddress", "addressLocality": c["name"], "addressRegion": c["st"], "addressCountry": "US"},
+             "geo": {"@type": "GeoCoordinates", "latitude": c["lat"], "longitude": c["lon"]}}
+    dataset = {
+        "@type": "Dataset", "@id": url + "#dataset",
+        "name": f"{place_name} daily weather record, {data['first_year']} to {asof[:4]}",
+        "description": (f"Daily high and low temperature, precipitation and snowfall for {place_name} from "
+                        f"{data['first_year']}, from {c['record_name']}, with each day ranked against every same date "
+                        f"on record, record highs and lows, and long-term trends. Updated daily."),
+        "url": url, "temporalCoverage": f"{data['first_year']}-01-01/{asof}",
+        "spatialCoverage": {"@id": url + "#place"}, "variableMeasured": [
+            "Daily maximum temperature (°F)", "Daily minimum temperature (°F)", "Daily precipitation (inches)", "Daily snowfall (inches)"],
+        "isBasedOn": NOAA, "creator": ORG, "publisher": ORG, "isAccessibleForFree": True, "dateModified": asof,
+        "distribution": {"@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": url + "data.json"},
+    }
+    title = f"{c['name']}, {c['st']} Weather Almanac"
+    page = {"@type": "WebPage", "@id": url + "#webpage", "url": url, "name": title, "description": description,
+            "inLanguage": "en-US", "isPartOf": {"@id": MAIN_SITE + "#website"}, "publisher": ORG,
+            "about": {"@id": url + "#place"}, "mainEntity": {"@id": url + "#dataset"}, "dateModified": asof,
+            "breadcrumb": {"@id": url + "#breadcrumb"}}
+    return head_seo(url, title, description, [page, dataset, place, crumbs(url, [(place_name, url)])])
+
+
+def index_seo(n, description, asof):
+    url = ALMANAC
+    page = {"@type": "CollectionPage", "@id": url + "#webpage", "url": url, "name": "Weather Almanac",
+            "description": description, "inLanguage": "en-US", "isPartOf": {"@id": MAIN_SITE + "#website"},
+            "publisher": ORG, "dateModified": asof, "breadcrumb": {"@id": url + "#breadcrumb"}}
+    trail = crumbs(url, [])
+    return head_seo(url, f"Weather Almanac: {n} US Cities and Their Records", description, [page, trail])
+
+
+def write_search_files(built, out_dir):
+    """robots.txt and sitemap.xml at the root of weather.tallorderdigital.com: the Almanac's front page and each city."""
+    asof = max(d["asof"] for d in built)
+    rows = [(ALMANAC, asof)] + sorted((f"{ALMANAC}{d['slug']}/", d["asof"]) for d in built)
+    xml = "\n".join(['<?xml version="1.0" encoding="UTF-8"?>',
+                      '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
+                      *(f"  <url><loc>{u}</loc><lastmod>{m}</lastmod></url>" for u, m in rows),
+                      "</urlset>", ""])
+    (out_dir / "sitemap.xml").write_text(xml, encoding="utf-8")
+    (out_dir / "robots.txt").write_text(
+        "User-agent: *\nAllow: /\n\nSitemap: https://weather.tallorderdigital.com/sitemap.xml\n", encoding="utf-8")
+
+
 def switch_html(slug):
     """The record switch for a volunteer-station town and its official city (both directions).
     Each choice is a separate page built entirely from one station."""
@@ -765,7 +854,18 @@ def render(data):
     tpl = (HERE / "template.html").read_text(encoding="utf-8")
     c, y = data["city"], data["yesterday"]
     asof = date.fromisoformat(data["asof"])
+    t = data["text"]
+    # The template's meta description, filled the same way, so the share tags and JSON-LD say what it says.
+    description = (f"{y['lede']} {c['name']}'s official weather record since {data['first_year']}: yesterday in context, "
+                   "the year so far, the record book, how the climate has changed, and rain and snow.")
     fill = {
+        # Section headings and sentences are written into the HTML too (the page script rewrites them with the same
+        # text), so search engines and AI tools that don't run scripts still read them. Headings are plain text;
+        # the p_ sentences are the same HTML the script inserts.
+        "HEAD_SEO": city_seo(data, description),
+        "T_YEST": html.escape(t["t_yest"]), "P_YEST": t["p_yest"], "T_YEAR": html.escape(t["t_year"]),
+        "T_REC": html.escape(t["t_rec"]), "P_REC": t["p_rec"], "T_CHG": html.escape(t["t_chg"]), "P_CHG": t["p_chg"],
+        "T_RAIN": html.escape(t["t_rain"]), "P_RAIN": t["p_rain"],
         "CITY": c["name"], "STATE": c["state"], "ST": c["st"], "FIRST_YEAR": str(data["first_year"]),
         "ASOF_WORDS": f"{asof:%B} {asof.day}, {asof.year}", "LEDE": y["lede"],
         "RECORD_NAME": c["record_name"], "RECORD_KIND": c["record_kind"],
@@ -820,7 +920,9 @@ def write_index(built, out_dir):
     paths = "".join(f'<path d="{d}"><title>{html.escape(name)}</title></path>' for name, d in states["states"].items())
     asof = max(date.fromisoformat(d["asof"]) for d in built)
     tpl = (HERE / "index_template.html").read_text(encoding="utf-8")
-    page = (tpl.replace("{{STATES}}", paths).replace("{{DATA}}", json.dumps(rows, separators=(",", ":")))
+    description = (f"{lede} Every place's official daily weather record in context: yesterday, the record book, "
+                   "and how the climate has changed.")
+    page = (tpl.replace("{{HEAD_SEO}}", index_seo(n, description, asof.isoformat())).replace("{{STATES}}", paths).replace("{{DATA}}", json.dumps(rows, separators=(",", ":")))
                .replace("{{COUNT}}", str(n)).replace("{{LEDE}}", lede)
                .replace("{{ASOF_WORDS}}", f"{asof:%B} {asof.day}, {asof.year}").replace("{{MAIN}}", MAIN_SITE))
     left = [p for p in page.split("{{")[1:] if "}}" in p[:40]]
@@ -869,6 +971,7 @@ def main():
             print(f"{CITIES[slug]['name']:<14} FAIL {type(e).__name__}: {e}")
     if a.all and built:
         write_index(built, out_dir)
+        write_search_files(built, out_dir)
     print(f"{len(built)} of {len(slugs)} Almanac pages written to {out_dir}.")
     return 1 if not built else 0
 

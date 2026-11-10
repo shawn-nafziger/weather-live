@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>{{CITY}} Almanac · Tall Order Digital</title>
+<title>{{CITY}}, {{ST}} Weather Almanac · Tall Order Digital</title>
 <meta name="description" content="{{LEDE}} {{CITY}}'s official weather record since {{FIRST_YEAR}}: yesterday in context, the year so far, the record book, how the climate has changed, and rain and snow.">
-<meta name="robots" content="noindex">
+{{HEAD_SEO}}
 <link rel="icon" href="{{MAIN}}favicon.ico" sizes="48x48">
 <link rel="icon" href="{{MAIN}}assets/brand/tod-app-icon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -292,8 +292,8 @@ html { scroll-padding-top: calc(var(--header-h) + 12px); }
   <section id="yesterday">
     <p class="sec-num">1 · Yesterday</p>
     <div class="prose">
-      <h2 id="t-yest"></h2>
-      <p id="p-yest"></p>
+      <h2 id="t-yest">{{T_YEST}}</h2>
+      <p id="p-yest">{{P_YEST}}</p>
     </div>
     <figure class="figure" style="margin:0">
       <div>
@@ -311,7 +311,7 @@ html { scroll-padding-top: calc(var(--header-h) + 12px); }
   <section id="year">
     <p class="sec-num">2 · The year so far</p>
     <div class="prose">
-      <h2 id="t-year"></h2>
+      <h2 id="t-year">{{T_YEAR}}</h2>
       <p id="p-year"></p>
     </div>
     <figure class="figure" style="margin:0">
@@ -330,8 +330,8 @@ html { scroll-padding-top: calc(var(--header-h) + 12px); }
   <section id="records">
     <p class="sec-num">3 · The record book</p>
     <div class="prose">
-      <h2 id="t-rec"></h2>
-      <p id="p-rec"></p>
+      <h2 id="t-rec">{{T_REC}}</h2>
+      <p id="p-rec">{{P_REC}}</p>
     </div>
     <div class="figure book" id="book"></div>
     <figure class="figure" style="margin:0">
@@ -349,8 +349,8 @@ html { scroll-padding-top: calc(var(--header-h) + 12px); }
   <section id="change">
     <p class="sec-num">4 · How it's changed</p>
     <div class="prose">
-      <h2 id="t-chg"></h2>
-      <p id="p-chg"></p>
+      <h2 id="t-chg">{{T_CHG}}</h2>
+      <p id="p-chg">{{P_CHG}}</p>
     </div>
     <figure class="figure" style="margin:0">
       <div>
@@ -392,8 +392,8 @@ html { scroll-padding-top: calc(var(--header-h) + 12px); }
   <section id="rain">
     <p class="sec-num">5 · Rain and snow</p>
     <div class="prose">
-      <h2 id="t-rain"></h2>
-      <p id="p-rain"></p>
+      <h2 id="t-rain">{{T_RAIN}}</h2>
+      <p id="p-rain">{{P_RAIN}}</p>
     </div>
     <figure class="figure" style="margin:0">
       <div>
