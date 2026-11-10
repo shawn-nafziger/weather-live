@@ -322,7 +322,7 @@ html { scroll-padding-top: calc(var(--header-h) + 12px); }
     <figure class="figure" style="margin:0">
       <div>
         <p class="fig-title">Each month, by decade, compared with its 1991–2020 normal</p>
-        <p class="fig-sub">Average of the daily high and low. Months with more than 9 missing days are left out.</p>
+        <p class="fig-sub" id="s-heat">Average of the daily high and low. Months with more than 9 missing days are left out.</p>
       </div>
       <div class="keys" id="k-heat"></div>
       <div class="chart" id="c-heat"></div>
@@ -499,13 +499,14 @@ $("t-year").textContent = D.text.t_year;
   const diff = S.ytd_pr - S.norm_ytd_pr;
   $("p-year").innerHTML = `${S.pct_above}% of days in ${D.year} so far have averaged warmer than normal. ` +
     (nRH ? `${C} has set or tied <strong class="sig">${nRH} daily record high${nRH === 1 ? "" : "s"}</strong>: ${list.join(", ")}. ` : "") +
-    (nRL ? `It has also set or tied ${nRL} daily record low${nRL === 1 ? "" : "s"}. ` : `It hasn't set a single daily record low. `) +
+    (nRL ? `It has also set or tied ${nRL} daily record low${nRL === 1 ? "" : "s"}: ${S.rec_lo_days.map(r => `${mdDate(r.md)} (${r.v}°F${r.tie ? ", tied" : ""})`).join(", ")}. ` : `It hasn't set a single daily record low. `) +
     `Precipitation so far: <strong>${S.ytd_pr.toFixed(2)} inches</strong>, ${Math.abs(diff).toFixed(2)} ${diff >= 0 ? "above" : "below"} the 1991–2020 average to this date (${S.norm_ytd_pr.toFixed(2)}).`;
 }
 $("f-year-title").textContent = `${C} in ${D.year}: daily highs and lows against normal and record, °F`;
 keys("k-year", [
   ["k-ink", "var(--ink-2)", ["Bars", `each day of ${D.year}, from its low to its high`]],
   ["k-sig dot", "var(--amber)", ["Orange dots", "days that set or tied a daily record high"]],
+  ...(nRL ? [["k-navy dot", "var(--navy)", [nRL === 1 ? "Blue dot" : "Blue dots", `${nRL === 1 ? "the day" : "days"} that set or tied a daily record low`]]] : []),
   ["k-band", "var(--ink-2)", ["Blue band", "the normal range: average low to average high, 1991–2020"]],
   ["k-rec", "var(--ink-2)", ["Light band", `the record range: coldest low to warmest high, ${D.first_year}–${D.year - 1}`]],
 ]);
@@ -553,7 +554,7 @@ keys("k-rec", [
   ["k-navy", "var(--navy)", ["Bars", "records standing today, set in that decade"]],
   ...(D.text.sig_bars.lo ? [["k-sig", "var(--amber)", ["Orange bars", "record lows since 2000: far fewer than chance would give"]]] : []),
   ...(D.text.sig_bars.hi ? [["k-sig", "var(--amber)", ["Orange bars", "record highs since 2000: far more than chance would give"]]] : []),
-  ["k-ink line", "var(--ink-2)", ["Dark tick", "the count expected if every year had the same chance"]],
+  ["k-ink line", "var(--ink-2)", ["Short line", "the count expected if every year had the same chance"]],
 ]);
 function drawRec(id, field, efield, title) {
   const el = $(id), w = width(el), m = { l: 30, r: 6, t: 22, b: 24 }, h = 220;
@@ -641,6 +642,10 @@ keys("k-heat", [
   ["k-sig", "var(--amber)", ["Orange", "warmer than the 1991–2020 normal for that month"]],
   ["k-navy", "var(--navy)", ["Teal", "cooler than normal; pale cells are close to normal"]],
 ]);
+{ // the current decade isn't over yet: say so (Nov 9, 2026)
+  const last = Math.max(...G.heat.map(c => c.d));
+  if (last + 9 >= D.year) $("s-heat").textContent += ` The ${last}s column covers ${last}–${D.year} so far.`;
+}
 function drawHeat() {
   const el = $("c-heat"), w = width(el), m = { l: 40, r: 6, t: 8, b: 40 };
   const decs = [...new Set(G.heat.map(c => c.d))].sort((a, b) => a - b), cw = (w - m.l - m.r) / decs.length, ch = 22, h = m.t + 12 * ch + m.b;
@@ -697,7 +702,7 @@ $("f-dry-title").textContent = L
   : `No dry spell of ${P.dry_min} days or more since ${D.first_year}`;
 keys("k-dry", L ? [
   ["k-navy", "var(--navy)", ["Pills", `each dry spell of ${P.dry_min}+ days (the longer the pill, the longer the spell)`]],
-  ["k-ink", "var(--ink)", ["Darkest pill", `the longest: ${L.n} days from ${longDate(L.start)}`]],
+  ["k-ink", "var(--ink)", ["Highlighted pill", `the longest: ${L.n} days from ${longDate(L.start)}`]],
 ] : [
   ["k-navy", "var(--navy)", ["None", `in this record, it has never gone ${P.dry_min} days in a row without measurable rain`]],
 ]);

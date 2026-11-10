@@ -82,6 +82,9 @@ h1 { font: 700 clamp(48px, 10vw, 92px)/.95 var(--font-display); text-transform: 
 .map .land path { fill: var(--land); stroke: var(--land-line); stroke-width: 1; }
 .map .dot { cursor: pointer; }
 .map .dot circle.mark { stroke: var(--surface); stroke-width: 1.5; }
+/* Light mode (Nov 9, 2026): a thin dark rim so pale dots (gray, light orange) stand out on the pale land. */
+:root:not([data-theme="dark"]) .map .dot circle.mark { stroke: rgb(32 25 20 / .45); stroke-width: 1; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .map .dot circle.mark { stroke: var(--surface); stroke-width: 1.5; } }
 .map .dot:focus { outline: none; }
 .map .dot:focus circle.mark, .map .dot:hover circle.mark { stroke: var(--ink); stroke-width: 2; }
 .map text { font-family: var(--font-data); font-size: 12px; fill: var(--ink-2); pointer-events: none; paint-order: stroke; stroke: var(--surface); stroke-width: 3px; stroke-linejoin: round; }
