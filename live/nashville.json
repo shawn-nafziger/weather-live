@@ -11,34 +11,29 @@
   "lon": -86.6892,
   "history": "Same site as the official Nashville record"
  },
- "as_of_utc": "2026-11-10T20:07:52Z",
+ "as_of_utc": "2026-11-10T21:07:54Z",
  "now": {
-  "time_utc": "2026-11-10T19:50:00Z",
+  "time_utc": "2026-11-10T20:45:00Z",
   "temp_c": 23,
   "temp_f": 73.4,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 3,
-  "humidity_pct": 27.01,
+  "dewpoint_c": null,
+  "humidity_pct": null,
   "wind_kmh": 9.25,
-  "description": "Mostly Clear"
+  "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-10",
-  "readings": 9,
+  "readings": 10,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 21.7,
-  "high_f": 71.1,
-  "high_time_utc": "2026-11-10T18:53:00Z",
+  "high_c": 22.8,
+  "high_f": 73.0,
+  "high_time_utc": "2026-11-10T19:53:00Z",
   "low_c": 5.6,
   "low_f": 42.1,
   "low_time_utc": "2026-11-10T12:08:00Z",
-  "peak_between_reports": {
-   "at_least_f": 72.5,
-   "about_f": 73.4,
-   "time_utc": "2026-11-10T19:50:00Z"
-  },
   "dip_between_reports": {
    "at_most_f": 41.9,
    "about_f": 41.0,
@@ -106,22 +101,21 @@
    }
   },
   "today_high_so_far": {
-   "value_f": 71,
-   "warm_rank": 25,
-   "cool_rank": 125,
+   "value_f": 73,
+   "warm_rank": 22,
+   "cool_rank": 129,
    "years": 153,
    "first_year": 1874,
    "tied_years": [
-    1917,
-    1924,
-    1975,
-    1980
+    1963,
+    2012,
+    2021
    ],
    "standing": "warm",
    "notable": true,
    "since": 2022,
    "record": false,
-   "phrase": "already the 25th warmest November 10 high (tied) of 153 since 1874, warmest since 2022"
+   "phrase": "already the 22nd warmest November 10 high (tied) of 153 since 1874, warmest since 2022"
   },
   "forecast_highs": [
    {
@@ -302,7 +296,7 @@
   "periods": [
    {
     "name": "This Afternoon",
-    "start": "2026-11-10T13:00:00-06:00",
+    "start": "2026-11-10T14:00:00-06:00",
     "is_daytime": true,
     "temp_f": 70,
     "temp_c": 21.11,
@@ -431,13 +425,6 @@
  "hourly": {
   "issued_utc": "2026-11-10T18:31:18Z",
   "hours": [
-   {
-    "start": "2026-11-10T14:00:00-06:00",
-    "temp_f": 70,
-    "temp_c": 21.11,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Sunny"
-   },
    {
     "start": "2026-11-10T15:00:00-06:00",
     "temp_f": 70,
@@ -764,6 +751,13 @@
     "start": "2026-11-12T13:00:00-06:00",
     "temp_f": 55,
     "temp_c": 12.78,
+    "precip_chance_pct": 2,
+    "short_forecast": "Mostly Sunny"
+   },
+   {
+    "start": "2026-11-12T14:00:00-06:00",
+    "temp_f": 56,
+    "temp_c": 13.33,
     "precip_chance_pct": 2,
     "short_forecast": "Mostly Sunny"
    }
