@@ -6,7 +6,10 @@ Almanac: one page per city, built from the city's official daily record.
 
 Reads history/<city>/<decade>.csv (kept current by scripts/station_update.py: NOAA via
 RCC-ACIS, whole °F) and writes the pages into site/, which the daily workflow
-publishes to weather.tallorderdigital.com (GitHub Pages). site/ is not committed.
+publishes to GitHub Pages (shawn-nafziger.github.io/weather-live/). Readers and search
+engines see them at tallorderdigital.com/weather/almanac/, served there by the Cloudflare
+Worker in cloudflare/almanac-proxy.js (Nov 10, 2026; it was weather.tallorderdigital.com,
+which now redirects). site/ is not committed.
 
 Every sentence on a page is chosen from that city's own numbers. Before a page is
 written, its claims are checked (ranks recounted, each change claim checked two
@@ -38,7 +41,8 @@ REPO = HERE.parent
 HISTORY_DIR = REPO / "history"
 SITE_DIR = REPO / "site"
 MAIN_SITE = "https://tallorderdigital.com/"
-ALMANAC = "https://weather.tallorderdigital.com/almanac/"
+# The Almanac's public address: a folder on the main site, so links and mentions build one domain (Nov 10, 2026).
+ALMANAC = MAIN_SITE + "weather/almanac/"
 # The main site's share image until the Almanac has its own (Nov 9, 2026).
 SHARE_IMAGE = MAIN_SITE + "assets/share-home.png"
 
@@ -817,16 +821,16 @@ def index_seo(n, description, asof):
 
 
 def write_search_files(built, out_dir):
-    """robots.txt and sitemap.xml at the root of weather.tallorderdigital.com: the Almanac's front page and each city."""
+    """sitemap.xml in the Almanac folder (tallorderdigital.com/weather/almanac/sitemap.xml), listed in the main
+    site's robots.txt: the Almanac's front page and each city."""
     asof = max(d["asof"] for d in built)
     rows = [(ALMANAC, asof)] + sorted((f"{ALMANAC}{d['slug']}/", d["asof"]) for d in built)
     xml = "\n".join(['<?xml version="1.0" encoding="UTF-8"?>',
                       '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
                       *(f"  <url><loc>{u}</loc><lastmod>{m}</lastmod></url>" for u, m in rows),
                       "</urlset>", ""])
-    (out_dir / "sitemap.xml").write_text(xml, encoding="utf-8")
-    (out_dir / "robots.txt").write_text(
-        "User-agent: *\nAllow: /\n\nSitemap: https://weather.tallorderdigital.com/sitemap.xml\n", encoding="utf-8")
+    (out_dir / "almanac").mkdir(parents=True, exist_ok=True)
+    (out_dir / "almanac" / "sitemap.xml").write_text(xml, encoding="utf-8")
 
 
 def switch_html(slug):
@@ -930,7 +934,7 @@ def write_index(built, out_dir):
         raise RuntimeError(f"Unfilled placeholders on the index: {[p.split('}}')[0] for p in left]}")
     (out_dir / "almanac").mkdir(parents=True, exist_ok=True)
     (out_dir / "almanac" / "index.html").write_text(page, encoding="utf-8")
-    # The site's front page points to the Almanac until the live page takes its place.
+    # The GitHub Pages front page points to the Almanac (readers never land here; the Worker serves only almanac/).
     (out_dir / "index.html").write_text(
         '<!doctype html><meta charset="utf-8"><title>Weather · Tall Order Digital</title>'
         '<meta name="robots" content="noindex"><meta http-equiv="refresh" content="0; url=almanac/">'

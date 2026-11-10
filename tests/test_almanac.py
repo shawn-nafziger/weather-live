@@ -98,7 +98,7 @@ class Test(unittest.TestCase):
         self.assertEqual(self.run_all(), 0)
         page = (self.out / "almanac" / "chicago" / "index.html").read_text(encoding="utf-8")
         head = page.split("</head>")[0]
-        self.assertIn('<link rel="canonical" href="https://weather.tallorderdigital.com/almanac/chicago/">', head)
+        self.assertIn('<link rel="canonical" href="https://tallorderdigital.com/weather/almanac/chicago/">', head)
         self.assertIn("<title>Chicago, IL Weather Almanac", head)
         self.assertNotIn("noindex", page)
         graph = json.loads(re.search(r'<script type="application/ld\+json">(.*?)</script>', head, re.S).group(1))["@graph"]
@@ -113,10 +113,10 @@ class Test(unittest.TestCase):
         index = (self.out / "almanac" / "index.html").read_text(encoding="utf-8")
         self.assertNotIn("noindex", index)
         self.assertIn("<title>Weather Almanac: 2 US Cities", index)
-        sitemap = (self.out / "sitemap.xml").read_text(encoding="utf-8")
-        for u in ("almanac/", "almanac/chicago/", "almanac/goshen/"):
-            self.assertIn(f"<loc>https://weather.tallorderdigital.com/{u}</loc>", sitemap)
-        self.assertIn("Sitemap: https://weather.tallorderdigital.com/sitemap.xml", (self.out / "robots.txt").read_text())
+        sitemap = (self.out / "almanac" / "sitemap.xml").read_text(encoding="utf-8")
+        for u in ("", "chicago/", "goshen/"):
+            self.assertIn(f"<loc>https://tallorderdigital.com/weather/almanac/{u}</loc>", sitemap)
+        self.assertNotIn("weather.tallorderdigital.com", page + index + sitemap)   # the old address is gone
 
     def test_no_switch_until_both_records_exist(self):
         store.write_rows(self.hist, "goshen", real("goshen"))

@@ -1,6 +1,6 @@
 # weather-live
 
-The live data behind `weather.tallorderdigital.com` (page not built yet). Part of Tall Order Digital's Weather Intelligence project; the analysis, history and Power BI model live in the private `weather-intelligence` repo.
+The live data behind the Weather Almanac at `tallorderdigital.com/weather/almanac/`. Part of Tall Order Digital's Weather Intelligence project; the analysis, history and Power BI model live in the private `weather-intelligence` repo.
 
 ## What happens every hour
 
@@ -14,13 +14,23 @@ A GitHub Actions job (`.github/workflows/hourly.yml`) runs at about :17 past eac
 
 `.github/workflows/daily.yml` (11:37 and 17:37 UTC) keeps `history/<city>.csv`: each city's official daily record (high, low, rain, snow) from NOAA via RCC-ACIS, using the ThreadEx "official city record" where one exists. The first run downloads each full record; after that it re-reads the last 21 days, because stations post late and correct values. No day is ever dropped. The hourly job ranks against these files.
 
-## The Almanac (weather.tallorderdigital.com)
+## The Almanac (tallorderdigital.com/weather/almanac/)
 
-After each records update, the daily workflow's second job, **Publish Almanac**, rebuilds one page per city from `history/` and publishes them with GitHub Pages:
+After each records update, the daily workflow's second job, **Publish Almanac**, rebuilds one page per city from `history/` and publishes them with GitHub Pages (`shawn-nafziger.github.io/weather-live/`). Readers and search engines see them as a folder of the main site:
 
-- `weather.tallorderdigital.com/almanac/` is the front page: a "find a place" search, a US map with one dot per place (colored by record lows set since 2000 compared with chance), and a sortable table of every place. Built to hold hundreds of places.
-- `weather.tallorderdigital.com/almanac/<city>/` is the city's page: yesterday in context, the year so far, the record book, how the climate has changed, rain and snow.
-- The site's front page sends visitors to the Almanac until the live page takes its place.
+- `tallorderdigital.com/weather/almanac/` is the front page: a "find a place" search, a US map with one dot per place (colored by record lows set since 2000 compared with chance), and a sortable table of every place. Built to hold hundreds of places.
+- `tallorderdigital.com/weather/almanac/<city>/` is the city's page: yesterday in context, the year so far, the record book, how the climate has changed, rain and snow.
+- `tallorderdigital.com/weather/almanac/sitemap.xml` lists every page for search engines (the main site's `robots.txt` points to it).
+
+**How the address works (Nov 10, 2026).** Until then the Almanac lived at `weather.tallorderdigital.com`. It moved into a folder of the main site so that links and mentions build one domain (decision: `tallorderdigital-site/docs/seo-plan.md`). A second Cloudflare Worker, **`almanac-proxy`** (code: `cloudflare/almanac-proxy.js`; edit by PR, then paste into the dashboard), answers `tallorderdigital.com/weather/almanac/...` by fetching the same path from GitHub Pages. One-time setup in Cloudflare:
+
+1. **DNS:** the `tallorderdigital.com` records (and `www`) are **Proxied** (orange cloud). SSL/TLS mode is **Full** (not Flexible).
+2. **Worker:** Workers & Pages → Create → Worker named `almanac-proxy`, code from `cloudflare/almanac-proxy.js`, deployed. Then Settings → Domains & Routes → Add route `tallorderdigital.com/weather/almanac*`, zone `tallorderdigital.com`.
+3. **GitHub:** this repo's Settings → Pages → remove the custom domain `weather.tallorderdigital.com`, so the pages are served at `shawn-nafziger.github.io/weather-live/` (where the Worker fetches them).
+4. **Old address:** keep a `weather` DNS record, Proxied (it can stay pointed at `shawn-nafziger.github.io`), and add two Rules → Redirect Rules, both 301 and preserving the query string, in this order:
+   - Wildcard pattern: request URL `https://weather.tallorderdigital.com/almanac/*` → `https://tallorderdigital.com/weather/almanac/${1}`
+   - Wildcard pattern: request URL `https://weather.tallorderdigital.com/*` → `https://tallorderdigital.com/weather/almanac/`
+5. **Check:** `https://tallorderdigital.com/weather/almanac/chicago/` shows Chicago; `https://weather.tallorderdigital.com/almanac/chicago/` lands there.
 
 The pages are built fresh each run and are **not committed** (`site/` is ignored), so the repo doesn't fill up with copies.
 

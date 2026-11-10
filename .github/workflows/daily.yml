@@ -56,7 +56,8 @@ jobs:
           echo "Push failed three times." && exit 1
 
   # Rebuild the Almanac pages from the records just saved and publish them to
-  # weather.tallorderdigital.com (GitHub Pages). A separate job, so a website
+  # GitHub Pages, which tallorderdigital.com/weather/almanac/ serves through the
+  # Cloudflare Worker in cloudflare/almanac-proxy.js. A separate job, so a website
   # problem shows up on its own and never stops the records from being saved.
   almanac:
     needs: pull
