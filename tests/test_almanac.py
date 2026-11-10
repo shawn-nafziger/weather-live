@@ -118,6 +118,45 @@ class Test(unittest.TestCase):
             self.assertIn(f"<loc>https://tallorderdigital.com/weather/almanac/{u}</loc>", sitemap)
         self.assertNotIn("weather.tallorderdigital.com", page + index + sitemap)   # the old address is gone
 
+    def test_every_city_page_is_reachable_without_scripts(self):
+        # Nov 10, 2026: the front page lists every place as a plain link, and each city links to its neighbors.
+        for slug in ("chicago", "goshen", "phoenix"):
+            store.write_rows(self.hist, slug, real(slug))
+        self.assertEqual(self.run_all(), 0)
+        strip = lambda h: re.sub(r"<script.*?</script>", "", h, flags=re.S)  # noqa: E731
+        index = strip((self.out / "almanac" / "index.html").read_text(encoding="utf-8"))
+        for slug in ("chicago", "goshen", "phoenix"):
+            self.assertIn(f'href="{slug}/"', index)
+        chicago = strip((self.out / "almanac" / "chicago" / "index.html").read_text(encoding="utf-8"))
+        self.assertIn('href="../goshen/"', chicago)           # the nearest place with a record
+        self.assertIn('href="../phoenix/"', chicago)
+        self.assertNotIn('href="../chicago/"', chicago)       # never links to itself
+
+    def test_a_place_that_fails_today_keeps_its_last_good_page(self):
+        import carry_over as co
+        prev, new = self.tmp / "prev", self.tmp / "new"
+        for d, slugs, day in ((prev, [f"p{i}" for i in range(20)], "2026-11-09"),
+                              (new, [f"p{i}" for i in range(19)], "2026-11-10")):
+            for sl in slugs:
+                (d / sl).mkdir(parents=True)
+                (d / sl / "index.html").write_text(f"{sl} {day}")
+            (d / "index.html").write_text("front")
+            (d / "sitemap.xml").write_text("<urlset>\n" + "\n".join(
+                f"  <url><loc>https://x/weather/almanac/{sl}/</loc><lastmod>{day}</lastmod></url>" for sl in slugs)
+                + "\n</urlset>\n")
+        cities = {f"p{i}": {} for i in range(20)}
+        self.assertEqual(co.carry_over(new, prev, cities), ["p19"])
+        self.assertEqual((new / "p19" / "index.html").read_text(), "p19 2026-11-09")
+        self.assertIn("almanac/p19/</loc><lastmod>2026-11-09", (new / "sitemap.xml").read_text())
+        # A place taken off the list is not carried over.
+        shutil.rmtree(new / "p19")
+        self.assertEqual(co.carry_over(new, prev, {f"p{i}": {} for i in range(19)}), [])
+        # A build with far fewer pages than last time stops instead of publishing.
+        for i in range(5):
+            shutil.rmtree(new / f"p{i}")
+        with self.assertRaises(SystemExit):
+            co.carry_over(new, prev, cities)
+
     def test_no_switch_until_both_records_exist(self):
         store.write_rows(self.hist, "goshen", real("goshen"))
         self.assertEqual(self.run_all(), 0)

@@ -81,6 +81,12 @@ jobs:
       - name: Build the Almanac pages
         run: python almanac/build.py --all --out site
 
+      - name: Keep last good pages for places that didn't pass today
+        run: |
+          git clone -q --depth 1 --branch almanac-site "https://github.com/${GITHUB_REPOSITORY}.git" prev \
+            || echo "No earlier build yet."
+          python almanac/carry_over.py site/almanac prev
+
       - name: Replace the almanac-site branch with this build
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

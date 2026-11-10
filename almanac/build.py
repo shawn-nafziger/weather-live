@@ -833,6 +833,37 @@ def write_search_files(built, out_dir):
     (out_dir / "almanac" / "sitemap.xml").write_text(xml, encoding="utf-8")
 
 
+def miles_between(a, b):
+    """Great-circle distance in miles between two places' coordinates."""
+    from math import asin, cos, radians, sin, sqrt
+    la1, lo1, la2, lo2 = map(radians, (a["lat"], a["lon"], b["lat"], b["lon"]))
+    h = sin((la2 - la1) / 2) ** 2 + cos(la1) * cos(la2) * sin((lo2 - lo1) / 2) ** 2
+    return 3958.8 * 2 * asin(sqrt(h))
+
+
+def nearby_html(slug, n=6):
+    """Links to the nearest other places with a record (Nov 10, 2026), so every city page links to its neighbors
+    in plain HTML. A place whose checks fail on a given day keeps its last good page, so these links don't break."""
+    here = CITIES[slug]
+    others = sorted((miles_between(here, c), s) for s, c in CITIES.items()
+                    if s != slug and store.exists(HISTORY_DIR, s))[:n]
+    return "".join(f'<li><a href="../{s}/">{html.escape(CITIES[s]["name"])}, {CITIES[s]["st"]}</a> · {d:,.0f} miles</li>'
+                   for d, s in others)
+
+
+def places_html(built):
+    """Every built place as a plain link, grouped by state, for the Almanac front page."""
+    by_state = {}
+    for d in built:
+        c = d["city"]
+        by_state.setdefault(c["state"], []).append((c["name"], d["slug"]))
+    return "".join(
+        f'<div class="st-group"><h3>{html.escape(st)}</h3><ul>'
+        + "".join(f'<li><a href="{slug}/">{html.escape(name)}</a></li>' for name, slug in sorted(places))
+        + "</ul></div>"
+        for st, places in sorted(by_state.items()))
+
+
 def switch_html(slug):
     """The record switch for a volunteer-station town and its official city (both directions).
     Each choice is a separate page built entirely from one station."""
@@ -867,6 +898,7 @@ def render(data):
         # text), so search engines and AI tools that don't run scripts still read them. Headings are plain text;
         # the p_ sentences are the same HTML the script inserts.
         "HEAD_SEO": city_seo(data, description),
+        "NEARBY": nearby_html(data["slug"]),
         "T_YEST": html.escape(t["t_yest"]), "P_YEST": t["p_yest"], "T_YEAR": html.escape(t["t_year"]),
         "T_REC": html.escape(t["t_rec"]), "P_REC": t["p_rec"], "T_CHG": html.escape(t["t_chg"]), "P_CHG": t["p_chg"],
         "T_RAIN": html.escape(t["t_rain"]), "P_RAIN": t["p_rain"],
@@ -926,7 +958,7 @@ def write_index(built, out_dir):
     tpl = (HERE / "index_template.html").read_text(encoding="utf-8")
     description = (f"{lede} Every place's official daily weather record in context: yesterday, the record book, "
                    "and how the climate has changed.")
-    page = (tpl.replace("{{HEAD_SEO}}", index_seo(n, description, asof.isoformat())).replace("{{STATES}}", paths).replace("{{DATA}}", json.dumps(rows, separators=(",", ":")))
+    page = (tpl.replace("{{HEAD_SEO}}", index_seo(n, description, asof.isoformat())).replace("{{STATES}}", paths).replace("{{PLACES}}", places_html(built)).replace("{{DATA}}", json.dumps(rows, separators=(",", ":")))
                .replace("{{COUNT}}", str(n)).replace("{{LEDE}}", lede)
                .replace("{{ASOF_WORDS}}", f"{asof:%B} {asof.day}, {asof.year}").replace("{{MAIN}}", MAIN_SITE))
     left = [p for p in page.split("{{")[1:] if "}}" in p[:40]]
