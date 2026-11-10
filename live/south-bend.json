@@ -11,20 +11,20 @@
   "lon": -86.3186,
   "history": "Same station as the official South Bend record (South Bend airport). Also the nearest official city record to Goshen, about 27 miles; a candidate for Goshen's hourly readings (question D2)"
  },
- "as_of_utc": "2026-11-10T02:08:20Z",
+ "as_of_utc": "2026-11-10T03:08:03Z",
  "now": {
-  "time_utc": "2026-11-10T01:37:00Z",
-  "temp_c": 6.7,
-  "temp_f": 44.1,
-  "precision": "tenths of a degree",
-  "dewpoint_c": 3.3,
-  "humidity_pct": 78.92,
-  "wind_kmh": 5.4,
+  "time_utc": "2026-11-10T02:50:00Z",
+  "temp_c": 8,
+  "temp_f": 46.4,
+  "precision": "nearest whole \u00b0C",
+  "dewpoint_c": 3,
+  "humidity_pct": 70.7,
+  "wind_kmh": 11.12,
   "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-09",
-  "readings": 18,
+  "readings": 19,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -250,12 +250,12 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-10T00:00:33Z",
+  "issued_utc": "2026-11-10T02:30:20Z",
   "grid": "IWX/27,64",
   "periods": [
    {
     "name": "Tonight",
-    "start": "2026-11-09T20:00:00-05:00",
+    "start": "2026-11-09T22:00:00-05:00",
     "is_daytime": false,
     "temp_f": 42,
     "temp_c": 5.56,
@@ -382,19 +382,12 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-10T00:00:33Z",
+  "issued_utc": "2026-11-10T02:30:20Z",
   "hours": [
    {
-    "start": "2026-11-09T21:00:00-05:00",
-    "temp_f": 46,
-    "temp_c": 7.78,
-    "precip_chance_pct": 0,
-    "short_forecast": "Partly Cloudy"
-   },
-   {
     "start": "2026-11-09T22:00:00-05:00",
-    "temp_f": 45,
-    "temp_c": 7.22,
+    "temp_f": 44,
+    "temp_c": 6.67,
     "precip_chance_pct": 1,
     "short_forecast": "Partly Cloudy"
    },
@@ -717,6 +710,13 @@
     "start": "2026-11-11T20:00:00-05:00",
     "temp_f": 47,
     "temp_c": 8.33,
+    "precip_chance_pct": 48,
+    "short_forecast": "Chance Rain Showers"
+   },
+   {
+    "start": "2026-11-11T21:00:00-05:00",
+    "temp_f": 46,
+    "temp_c": 7.78,
     "precip_chance_pct": 48,
     "short_forecast": "Chance Rain Showers"
    }
