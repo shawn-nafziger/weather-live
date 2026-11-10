@@ -11,8 +11,6 @@ on:
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
 
 # Never let two runs write at the same time.
 concurrency:
@@ -55,21 +53,18 @@ jobs:
           done
           echo "Push failed three times." && exit 1
 
-  # Rebuild the Almanac pages from the records just saved and publish them to
-  # GitHub Pages, which tallorderdigital.com/weather/almanac/ serves through the
-  # Cloudflare Worker in cloudflare/almanac-proxy.js. A separate job, so a website
-  # problem shows up on its own and never stops the records from being saved.
+  # Rebuild the Almanac pages from the records just saved and hand them to the
+  # main site (Nov 10, 2026): they're pushed to the almanac-site branch (one
+  # commit, replaced each run, so the repo doesn't grow), then tallorderdigital-site
+  # is asked to republish. Its workflow copies the branch into weather/almanac/,
+  # so the Almanac is part of tallorderdigital.com itself. A separate job, so a
+  # website problem shows up on its own and never stops the records from being saved.
   almanac:
     needs: pull
     runs-on: ubuntu-24.04
     timeout-minutes: 45
     permissions:
-      contents: read
-      pages: write
-      id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deploy.outputs.page_url }}
+      contents: write        # to replace the almanac-site branch
     steps:
       - uses: actions/checkout@v5
         with:
@@ -86,11 +81,25 @@ jobs:
       - name: Build the Almanac pages
         run: python almanac/build.py --all --out site
 
-      - uses: actions/configure-pages@v5
+      - name: Replace the almanac-site branch with this build
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          test -f site/almanac/index.html && test -f site/almanac/sitemap.xml
+          cd site/almanac
+          git init -q -b almanac-site
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -q -m "Almanac build $(date -u '+%Y-%m-%d %H:%M') UTC"
+          git push -q -f "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" almanac-site
 
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: site
-
-      - id: deploy
-        uses: actions/deploy-pages@v4
+      - name: Ask tallorderdigital.com to republish
+        env:
+          GH_TOKEN: ${{ secrets.SITE_DEPLOY_TOKEN }}
+        run: |
+          if [ -z "$GH_TOKEN" ]; then
+            echo "::warning::SITE_DEPLOY_TOKEN isn't set, so the main site wasn't asked to republish (see README)."
+            exit 0
+          fi
+          gh api repos/shawn-nafziger/tallorderdigital-site/dispatches -f event_type=almanac-updated

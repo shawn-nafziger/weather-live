@@ -5,11 +5,11 @@ Almanac: one page per city, built from the city's official daily record.
     python almanac/build.py --all             every city with a record, plus the index
 
 Reads history/<city>/<decade>.csv (kept current by scripts/station_update.py: NOAA via
-RCC-ACIS, whole °F) and writes the pages into site/, which the daily workflow
-publishes to GitHub Pages (shawn-nafziger.github.io/weather-live/). Readers and search
-engines see them at tallorderdigital.com/weather/almanac/, served there by the Cloudflare
-Worker in cloudflare/almanac-proxy.js (Nov 10, 2026; it was weather.tallorderdigital.com,
-which now redirects). site/ is not committed.
+RCC-ACIS, whole °F) and writes the pages into site/. The daily workflow pushes
+site/almanac/ to the almanac-site branch, and tallorderdigital-site's publish workflow
+copies it into weather/almanac/, so the Almanac is part of tallorderdigital.com itself
+(Nov 10, 2026; it was weather.tallorderdigital.com, which now redirects). site/ is not
+committed to main.
 
 Every sentence on a page is chosen from that city's own numbers. Before a page is
 written, its claims are checked (ranks recounted, each change claim checked two
@@ -934,7 +934,7 @@ def write_index(built, out_dir):
         raise RuntimeError(f"Unfilled placeholders on the index: {[p.split('}}')[0] for p in left]}")
     (out_dir / "almanac").mkdir(parents=True, exist_ok=True)
     (out_dir / "almanac" / "index.html").write_text(page, encoding="utf-8")
-    # The GitHub Pages front page points to the Almanac (readers never land here; the Worker serves only almanac/).
+    # Only site/almanac/ is published (to the almanac-site branch); this root page is for local previews.
     (out_dir / "index.html").write_text(
         '<!doctype html><meta charset="utf-8"><title>Weather · Tall Order Digital</title>'
         '<meta name="robots" content="noindex"><meta http-equiv="refresh" content="0; url=almanac/">'

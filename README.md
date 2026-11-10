@@ -16,21 +16,25 @@ A GitHub Actions job (`.github/workflows/hourly.yml`) runs at about :17 past eac
 
 ## The Almanac (tallorderdigital.com/weather/almanac/)
 
-After each records update, the daily workflow's second job, **Publish Almanac**, rebuilds one page per city from `history/` and publishes them with GitHub Pages (`shawn-nafziger.github.io/weather-live/`). Readers and search engines see them as a folder of the main site:
+After each records update, the daily workflow's second job, **Publish Almanac**, rebuilds one page per city from `history/` and hands them to the main site:
 
 - `tallorderdigital.com/weather/almanac/` is the front page: a "find a place" search, a US map with one dot per place (colored by record lows set since 2000 compared with chance), and a sortable table of every place. Built to hold hundreds of places.
 - `tallorderdigital.com/weather/almanac/<city>/` is the city's page: yesterday in context, the year so far, the record book, how the climate has changed, rain and snow.
 - `tallorderdigital.com/weather/almanac/sitemap.xml` lists every page for search engines (the main site's `robots.txt` points to it).
 
-**How the address works (Nov 10, 2026).** Until then the Almanac lived at `weather.tallorderdigital.com`. It moved into a folder of the main site so that links and mentions build one domain (decision: `tallorderdigital-site/docs/seo-plan.md`). A second Cloudflare Worker, **`almanac-proxy`** (code: `cloudflare/almanac-proxy.js`; edit by PR, then paste into the dashboard), answers `tallorderdigital.com/weather/almanac/...` by fetching the same path from GitHub Pages. One-time setup in Cloudflare:
+**How it gets there (Nov 10, 2026).** The job pushes the built pages to this repo's **`almanac-site` branch** (a single commit, replaced every run, so the repo doesn't grow), then asks `tallorderdigital-site` to republish. That repo's **Publish site** workflow copies the branch into `weather/almanac/` and publishes the whole site with GitHub Pages, so the Almanac is an ordinary folder of tallorderdigital.com: same certificate, same hosting, nothing in between. If a build fails, the site keeps the last good Almanac.
 
-1. **DNS:** the `tallorderdigital.com` records (and `www`) are **Proxied** (orange cloud). SSL/TLS mode is **Full** (not Flexible).
-2. **Worker:** Workers & Pages → Create → Worker named `almanac-proxy`, code from `cloudflare/almanac-proxy.js`, deployed. Then Settings → Domains & Routes → Add route `tallorderdigital.com/weather/almanac*`, zone `tallorderdigital.com`.
-3. **GitHub:** this repo's Settings → Pages → remove the custom domain `weather.tallorderdigital.com`, so the pages are served at `shawn-nafziger.github.io/weather-live/` (where the Worker fetches them).
-4. **Old address:** keep a `weather` DNS record, Proxied (it can stay pointed at `shawn-nafziger.github.io`), and add two Rules → Redirect Rules, both 301 and preserving the query string, in this order:
+Until Nov 10, 2026 the Almanac lived at `weather.tallorderdigital.com`; it moved so links and mentions build one domain (decision: `tallorderdigital-site/docs/seo-plan.md`). The old addresses redirect permanently (301), page for page.
+
+**One-time setup, in this order** (no step takes anything offline: until step 5 the old address keeps serving its last build):
+1. **Token:** on GitHub, create a fine-grained token "weather-live → site deploy" with access to `tallorderdigital-site` only, permission **Contents: Read and write** (that's what lets it ask for a republish). Add it to this repo as the Actions secret **`SITE_DEPLOY_TOKEN`**. Set a reminder to renew it before it expires.
+2. **This repo:** merge the PR, then run **Daily official records** once by hand. It creates the `almanac-site` branch.
+3. **Main site:** merge tallorderdigital-site's PR. In that repo's Settings → Pages, set Source to **GitHub Actions** (the custom domain and certificate stay as they are), then run its **Publish site** workflow once by hand. Check `https://tallorderdigital.com/weather/almanac/chicago/` and that the rest of the site looks normal.
+4. **Old address, in Cloudflare:** set the `weather` DNS record to **Proxied** (orange cloud; this affects only `weather.tallorderdigital.com`). Add two Rules → Redirect Rules, 301, preserving the query string, in this order:
    - Wildcard pattern: request URL `https://weather.tallorderdigital.com/almanac/*` → `https://tallorderdigital.com/weather/almanac/${1}`
    - Wildcard pattern: request URL `https://weather.tallorderdigital.com/*` → `https://tallorderdigital.com/weather/almanac/`
-5. **Check:** `https://tallorderdigital.com/weather/almanac/chicago/` shows Chicago; `https://weather.tallorderdigital.com/almanac/chicago/` lands there.
+   Check that `https://weather.tallorderdigital.com/almanac/chicago/` lands on the new page. Keep these rules permanently.
+5. **This repo:** Settings → Pages → remove the custom domain and unpublish (the Almanac no longer publishes here).
 
 The pages are built fresh each run and are **not committed** (`site/` is ignored), so the repo doesn't fill up with copies.
 
@@ -85,7 +89,7 @@ GitHub's own schedule skips many runs (on Oct 29-30, 2026 it ran 2 of about 11 h
 
 - Worker `weather-live-trigger` in Shawn's Cloudflare account. Its code is copied in `cloudflare/worker.js` (edit it in the Cloudflare dashboard, then update this copy by PR).
 - Cron triggers (UTC): `7 * * * *` starts **Hourly weather pull**; `37 11,15 * * *` starts **Daily official records**.
-- It uses the secret `GITHUB_TOKEN`: a GitHub fine-grained token, "weather-live trigger", that can only start Actions in this repo. **It expires Oct 29, 2027**; a reminder is scheduled for Oct 15, 2027. To renew: regenerate the token on GitHub, then replace the secret in the Worker's Settings > Variables and secrets.
+- It uses the secret `GITHUB_TOKEN`: a GitHub fine-grained token, "weather-live trigger", that can only start Actions in this repo. **It expires Oct 29, 2027**; a reminder is scheduled for Oct 15, 2027. (The Almanac's `SITE_DEPLOY_TOKEN`, below, is a separate token with its own expiry.) To renew: regenerate the token on GitHub, then replace the secret in the Worker's Settings > Variables and secrets.
 - GitHub's own schedules stay on as a backup. Extra runs are harmless.
 
 ## Run it by hand
