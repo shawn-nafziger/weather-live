@@ -11,26 +11,26 @@
   "lon": -82.5403,
   "history": "Same site as the official Tampa record"
  },
- "as_of_utc": "2026-11-10T10:07:55Z",
+ "as_of_utc": "2026-11-10T11:07:53Z",
  "now": {
-  "time_utc": "2026-11-10T09:40:00Z",
+  "time_utc": "2026-11-10T10:50:00Z",
   "temp_c": 20,
   "temp_f": 68.0,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 17,
   "humidity_pct": 82.87,
-  "wind_kmh": 7.42,
-  "description": "Mostly Cloudy"
+  "wind_kmh": 5.54,
+  "description": "Partly Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-10",
-  "readings": 2,
+  "readings": 3,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 19.4,
-  "high_f": 66.9,
-  "high_time_utc": "2026-11-10T07:53:00Z",
+  "high_c": 20,
+  "high_f": 68.0,
+  "high_time_utc": "2026-11-10T09:53:00Z",
   "low_c": 19.4,
   "low_f": 66.9,
   "low_time_utc": "2026-11-10T07:53:00Z",
@@ -96,7 +96,7 @@
   },
   "forecast_highs": [
    {
-    "period": "Tuesday",
+    "period": "Today",
     "date": "2026-11-10",
     "high_f": 83,
     "would_rank": {
@@ -281,16 +281,7 @@
   "grid": "TBW/68,98",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-10T01:00:00-05:00",
-    "is_daytime": false,
-    "temp_f": 66,
-    "temp_c": 18.89,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Cloudy"
-   },
-   {
-    "name": "Tuesday",
+    "name": "Today",
     "start": "2026-11-10T06:00:00-05:00",
     "is_daytime": true,
     "temp_f": 83,
@@ -299,7 +290,7 @@
     "short_forecast": "Partly Sunny"
    },
    {
-    "name": "Tuesday Night",
+    "name": "Tonight",
     "start": "2026-11-10T18:00:00-05:00",
     "is_daytime": false,
     "temp_f": 70,
@@ -405,19 +396,21 @@
     "temp_c": 23.89,
     "precip_chance_pct": 13,
     "short_forecast": "Mostly Sunny"
+   },
+   {
+    "name": "Monday Night",
+    "start": "2026-11-16T18:00:00-05:00",
+    "is_daytime": false,
+    "temp_f": 62,
+    "temp_c": 16.67,
+    "precip_chance_pct": 14,
+    "short_forecast": "Partly Cloudy"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-10T06:26:39Z",
   "hours": [
-   {
-    "start": "2026-11-10T05:00:00-05:00",
-    "temp_f": 67,
-    "temp_c": 19.44,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "start": "2026-11-10T06:00:00-05:00",
     "temp_f": 67,
@@ -742,6 +735,13 @@
    },
    {
     "start": "2026-11-12T04:00:00-05:00",
+    "temp_f": 68,
+    "temp_c": 20.0,
+    "precip_chance_pct": 6,
+    "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "start": "2026-11-12T05:00:00-05:00",
     "temp_f": 68,
     "temp_c": 20.0,
     "precip_chance_pct": 6,
