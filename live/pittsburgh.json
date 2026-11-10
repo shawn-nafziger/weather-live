@@ -11,33 +11,33 @@
   "lon": -80.2145,
   "history": "Same site as the official Pittsburgh record"
  },
- "as_of_utc": "2026-11-10T19:07:52Z",
+ "as_of_utc": "2026-11-10T20:07:52Z",
  "now": {
-  "time_utc": "2026-11-10T18:20:00Z",
-  "temp_c": 17,
-  "temp_f": 62.6,
+  "time_utc": "2026-11-10T19:55:00Z",
+  "temp_c": 18,
+  "temp_f": 64.4,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 4,
-  "humidity_pct": 42.03,
-  "wind_kmh": 12.96,
-  "description": ""
+  "dewpoint_c": 5,
+  "humidity_pct": 42.31,
+  "wind_kmh": 24.08,
+  "description": "Mostly Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-10",
-  "readings": 6,
+  "readings": 7,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 15,
-  "high_f": 59.0,
-  "high_time_utc": "2026-11-10T16:51:00Z",
+  "high_c": 17.2,
+  "high_f": 63.0,
+  "high_time_utc": "2026-11-10T18:51:00Z",
   "low_c": 2.8,
   "low_f": 37.0,
   "low_time_utc": "2026-11-10T09:51:00Z",
   "peak_between_reports": {
-   "at_least_f": 61.7,
-   "about_f": 62.6,
-   "time_utc": "2026-11-10T18:20:00Z"
+   "at_least_f": 63.5,
+   "about_f": 64.4,
+   "time_utc": "2026-11-10T19:35:00Z"
   },
   "dip_between_reports": {
    "at_most_f": 36.5,
@@ -94,32 +94,52 @@
     "phrase": "typical for November 9"
    }
   },
+  "today_high_so_far": {
+   "value_f": 63,
+   "warm_rank": 22,
+   "cool_rank": 124,
+   "years": 152,
+   "first_year": 1875,
+   "tied_years": [
+    1898,
+    1899,
+    1911,
+    1919,
+    1937,
+    1946,
+    2006
+   ],
+   "standing": "warm",
+   "notable": true,
+   "since": 2022,
+   "record": false,
+   "phrase": "already the 22nd warmest November 10 high (tied) of 152 since 1875, warmest since 2022"
+  },
   "forecast_highs": [
    {
     "period": "This Afternoon",
     "date": "2026-11-10",
-    "high_f": 61,
+    "high_f": 62,
     "would_rank": {
-     "value_f": 61,
-     "warm_rank": 36,
-     "cool_rank": 109,
+     "value_f": 62,
+     "warm_rank": 29,
+     "cool_rank": 117,
      "years": 152,
      "first_year": 1875,
      "tied_years": [
-      1879,
-      1903,
-      1935,
-      1947,
-      1963,
-      1977,
-      2010,
-      2024
+      1880,
+      1883,
+      1909,
+      1917,
+      1927,
+      1938,
+      2021
      ],
      "standing": "warm",
-     "notable": false,
-     "since": 2024,
+     "notable": true,
+     "since": 2022,
      "record": false,
-     "phrase": "typical for November 10"
+     "phrase": "29th warmest November 10 high (tied) of 152 since 1875, warmest since 2022"
     }
    },
    {
@@ -268,15 +288,15 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-10T18:21:47Z",
+  "issued_utc": "2026-11-10T18:41:35Z",
   "grid": "PBZ/70,67",
   "periods": [
    {
     "name": "This Afternoon",
-    "start": "2026-11-10T13:00:00-05:00",
+    "start": "2026-11-10T14:00:00-05:00",
     "is_daytime": true,
-    "temp_f": 61,
-    "temp_c": 16.11,
+    "temp_f": 62,
+    "temp_c": 16.67,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
    },
@@ -400,15 +420,8 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-10T18:21:47Z",
+  "issued_utc": "2026-11-10T18:41:35Z",
   "hours": [
-   {
-    "start": "2026-11-10T14:00:00-05:00",
-    "temp_f": 60,
-    "temp_c": 15.56,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "start": "2026-11-10T15:00:00-05:00",
     "temp_f": 61,
@@ -735,6 +748,13 @@
     "start": "2026-11-12T13:00:00-05:00",
     "temp_f": 49,
     "temp_c": 9.44,
+    "precip_chance_pct": 62,
+    "short_forecast": "Light Rain Likely"
+   },
+   {
+    "start": "2026-11-12T14:00:00-05:00",
+    "temp_f": 48,
+    "temp_c": 8.89,
     "precip_chance_pct": 62,
     "short_forecast": "Light Rain Likely"
    }

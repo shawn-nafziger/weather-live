@@ -11,33 +11,33 @@
   "lon": -104.6562,
   "history": "Same site as the official Denver record"
  },
- "as_of_utc": "2026-11-10T19:07:52Z",
+ "as_of_utc": "2026-11-10T20:07:52Z",
  "now": {
-  "time_utc": "2026-11-10T18:20:00Z",
-  "temp_c": 16,
-  "temp_f": 60.8,
+  "time_utc": "2026-11-10T19:50:00Z",
+  "temp_c": 19,
+  "temp_f": 66.2,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": -3,
-  "humidity_pct": 27.01,
-  "wind_kmh": 9.25,
+  "dewpoint_c": -5,
+  "humidity_pct": 19.24,
+  "wind_kmh": 5.54,
   "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-10",
-  "readings": 7,
+  "readings": 8,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 12.8,
-  "high_f": 55.0,
-  "high_time_utc": "2026-11-10T16:53:00Z",
+  "high_c": 17.2,
+  "high_f": 63.0,
+  "high_time_utc": "2026-11-10T18:53:00Z",
   "low_c": 1.1,
   "low_f": 34.0,
   "low_time_utc": "2026-11-10T13:53:00Z",
   "peak_between_reports": {
-   "at_least_f": 59.9,
-   "about_f": 60.8,
-   "time_utc": "2026-11-10T18:20:00Z"
+   "at_least_f": 65.3,
+   "about_f": 66.2,
+   "time_utc": "2026-11-10T19:35:00Z"
   }
  },
  "record": {
@@ -84,26 +84,27 @@
   },
   "forecast_highs": [
    {
-    "period": "Today",
+    "period": "This Afternoon",
     "date": "2026-11-10",
-    "high_f": 67,
+    "high_f": 68,
     "would_rank": {
-     "value_f": 67,
-     "warm_rank": 28,
-     "cool_rank": 124,
+     "value_f": 68,
+     "warm_rank": 23,
+     "cool_rank": 128,
      "years": 155,
      "first_year": 1872,
      "tied_years": [
-      1892,
-      1906,
-      1993,
-      2015
+      1873,
+      1910,
+      1970,
+      1980,
+      2013
      ],
      "standing": "warm",
      "notable": true,
      "since": 2025,
      "record": false,
-     "phrase": "28th warmest November 10 high (tied) of 155 since 1872, warmest since 2025"
+     "phrase": "23rd warmest November 10 high (tied) of 155 since 1872, warmest since 2025"
     }
    },
    {
@@ -181,16 +182,18 @@
    {
     "period": "Saturday",
     "date": "2026-11-14",
-    "high_f": 62,
+    "high_f": 60,
     "would_rank": {
-     "value_f": 62,
-     "warm_rank": 49,
-     "cool_rank": 105,
+     "value_f": 60,
+     "warm_rank": 55,
+     "cool_rank": 97,
      "years": 155,
      "first_year": 1872,
      "tied_years": [
-      1960,
-      2001
+      1932,
+      1957,
+      1966,
+      1973
      ],
      "standing": "warm",
      "notable": false,
@@ -202,19 +205,25 @@
    {
     "period": "Sunday",
     "date": "2026-11-15",
-    "high_f": 61,
+    "high_f": 59,
     "would_rank": {
-     "value_f": 61,
-     "warm_rank": 44,
-     "cool_rank": 107,
+     "value_f": 59,
+     "warm_rank": 51,
+     "cool_rank": 94,
      "years": 155,
      "first_year": 1872,
      "tied_years": [
-      1904,
-      1936,
-      1939,
-      1949,
-      1979
+      1884,
+      1895,
+      1899,
+      1901,
+      1911,
+      1940,
+      1973,
+      1977,
+      2017,
+      2018,
+      2020
      ],
      "standing": "warm",
      "notable": false,
@@ -251,15 +260,15 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-10T06:46:14Z",
+  "issued_utc": "2026-11-10T18:45:48Z",
   "grid": "BOU/75,66",
   "periods": [
    {
-    "name": "Today",
-    "start": "2026-11-10T06:00:00-07:00",
+    "name": "This Afternoon",
+    "start": "2026-11-10T12:00:00-07:00",
     "is_daytime": true,
-    "temp_f": 67,
-    "temp_c": 19.44,
+    "temp_f": 68,
+    "temp_c": 20.0,
     "precip_chance_pct": 0,
     "short_forecast": "Partly Sunny"
    },
@@ -303,8 +312,8 @@
     "name": "Thursday Night",
     "start": "2026-11-12T18:00:00-07:00",
     "is_daytime": false,
-    "temp_f": 39,
-    "temp_c": 3.89,
+    "temp_f": 41,
+    "temp_c": 5.0,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear"
    },
@@ -323,17 +332,17 @@
     "is_daytime": false,
     "temp_f": 38,
     "temp_c": 3.33,
-    "precip_chance_pct": 0,
-    "short_forecast": "Partly Cloudy"
+    "precip_chance_pct": 1,
+    "short_forecast": "Mostly Cloudy"
    },
    {
     "name": "Saturday",
     "start": "2026-11-14T06:00:00-07:00",
     "is_daytime": true,
-    "temp_f": 62,
-    "temp_c": 16.67,
+    "temp_f": 60,
+    "temp_c": 15.56,
     "precip_chance_pct": 15,
-    "short_forecast": "Mostly Sunny then Slight Chance Rain Showers"
+    "short_forecast": "Partly Sunny then Slight Chance Rain Showers"
    },
    {
     "name": "Saturday Night",
@@ -341,25 +350,25 @@
     "is_daytime": false,
     "temp_f": 38,
     "temp_c": 3.33,
-    "precip_chance_pct": 15,
+    "precip_chance_pct": 20,
     "short_forecast": "Slight Chance Rain Showers"
    },
    {
     "name": "Sunday",
     "start": "2026-11-15T06:00:00-07:00",
     "is_daytime": true,
-    "temp_f": 61,
-    "temp_c": 16.11,
-    "precip_chance_pct": 3,
+    "temp_f": 59,
+    "temp_c": 15.0,
+    "precip_chance_pct": 14,
     "short_forecast": "Mostly Sunny"
    },
    {
     "name": "Sunday Night",
     "start": "2026-11-15T18:00:00-07:00",
     "is_daytime": false,
-    "temp_f": 37,
-    "temp_c": 2.78,
-    "precip_chance_pct": 0,
+    "temp_f": 36,
+    "temp_c": 2.22,
+    "precip_chance_pct": 1,
     "short_forecast": "Mostly Clear"
    },
    {
@@ -377,7 +386,7 @@
     "is_daytime": false,
     "temp_f": 38,
     "temp_c": 3.33,
-    "precip_chance_pct": 4,
+    "precip_chance_pct": 1,
     "short_forecast": "Partly Cloudy"
    }
   ]
@@ -385,13 +394,6 @@
  "hourly": {
   "issued_utc": "2026-11-10T18:45:48Z",
   "hours": [
-   {
-    "start": "2026-11-10T12:00:00-07:00",
-    "temp_f": 64,
-    "temp_c": 17.78,
-    "precip_chance_pct": 0,
-    "short_forecast": "Partly Sunny"
-   },
    {
     "start": "2026-11-10T13:00:00-07:00",
     "temp_f": 66,
@@ -718,6 +720,13 @@
     "start": "2026-11-12T11:00:00-07:00",
     "temp_f": 62,
     "temp_c": 16.67,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
+   },
+   {
+    "start": "2026-11-12T12:00:00-07:00",
+    "temp_f": 65,
+    "temp_c": 18.33,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
    }
