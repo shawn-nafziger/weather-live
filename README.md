@@ -1,6 +1,6 @@
 # weather-live
 
-The live data behind `weather.tallorderdigital.com` (page not built yet). Part of Tall Order Digital's Weather Intelligence project; the analysis, history and Power BI model live in the private `weather-intelligence` repo.
+The live data behind the Weather Almanac at `tallorderdigital.com/weather/almanac/`. Part of Tall Order Digital's Weather Intelligence project; the analysis, history and Power BI model live in the private `weather-intelligence` repo.
 
 ## What happens every hour
 
@@ -14,13 +14,34 @@ A GitHub Actions job (`.github/workflows/hourly.yml`) runs at about :17 past eac
 
 `.github/workflows/daily.yml` (11:37 and 17:37 UTC) keeps `history/<city>.csv`: each city's official daily record (high, low, rain, snow) from NOAA via RCC-ACIS, using the ThreadEx "official city record" where one exists. The first run downloads each full record; after that it re-reads the last 21 days, because stations post late and correct values. No day is ever dropped. The hourly job ranks against these files.
 
-## The Almanac (weather.tallorderdigital.com)
+## The Almanac (tallorderdigital.com/weather/almanac/)
 
-After each records update, the daily workflow's second job, **Publish Almanac**, rebuilds one page per city from `history/` and publishes them with GitHub Pages:
+After each records update, the daily workflow's second job, **Publish Almanac**, rebuilds one page per city from `history/` and hands them to the main site:
 
-- `weather.tallorderdigital.com/almanac/` is the front page: a "find a place" search, a US map with one dot per place (colored by record lows set since 2000 compared with chance), and a sortable table of every place. Built to hold hundreds of places.
-- `weather.tallorderdigital.com/almanac/<city>/` is the city's page: yesterday in context, the year so far, the record book, how the climate has changed, rain and snow.
-- The site's front page sends visitors to the Almanac until the live page takes its place.
+- `tallorderdigital.com/weather/almanac/` is the front page: a "find a place" search, a US map with one dot per place (colored by record lows set since 2000 compared with chance), and a sortable table of every place. Built to hold hundreds of places.
+- `tallorderdigital.com/weather/almanac/<city>/` is the city's page: yesterday in context, the year so far, the record book, how the climate has changed, rain and snow.
+- `tallorderdigital.com/weather/almanac/sitemap.xml` lists every page for search engines (the main site's `robots.txt` points to it).
+
+**How it gets there (Nov 10, 2026).** The job pushes the built pages to this repo's **`almanac-build` branch** (a single commit, replaced every run, so the repo doesn't grow), then asks `tallorderdigital-site` to republish. That repo's **Publish site** workflow copies the branch into `weather/almanac/` and publishes the whole site with GitHub Pages, so the Almanac is an ordinary folder of tallorderdigital.com: same certificate, same hosting, nothing in between. If a build fails, the site keeps the last good Almanac.
+
+Until Nov 10, 2026 the Almanac lived at `weather.tallorderdigital.com`; it moved so links and mentions build one domain (decision: `tallorderdigital-site/docs/seo-plan.md`). The old addresses redirect permanently (301), page for page.
+
+**One-time setup, in this order** (no step takes anything offline: until step 5 the old address keeps serving its last build):
+1. **Token:** on GitHub, create a fine-grained token "weather-live → site deploy" with access to `tallorderdigital-site` only, permission **Contents: Read and write** (that's what lets it ask for a republish). Add it to this repo as the Actions secret **`SITE_DEPLOY_TOKEN`**. Set a reminder to renew it before it expires.
+2. **This repo:** merge the PR, then run **Daily official records** once by hand. It creates the `almanac-build` branch.
+3. **Main site:** merge tallorderdigital-site's PR. In that repo's Settings → Pages, set Source to **GitHub Actions** (the custom domain and certificate stay as they are), then run its **Publish site** workflow once by hand. Check `https://tallorderdigital.com/weather/almanac/chicago/` and that the rest of the site looks normal.
+4. **Old address, in Cloudflare.** First check SSL/TLS → Edge Certificates: the Universal certificate is **Active** and covers `*.tallorderdigital.com` (if not, wait until it is, or readers following old links could see a certificate error). Then edit the `weather` DNS record: type **AAAA**, content **`100::`**, **Proxied** (orange cloud). That's Cloudflare's standard placeholder for a name that only redirects, and it means the name no longer points at GitHub, so nobody else can claim it. This affects only `weather.tallorderdigital.com`. Add two Rules → Redirect Rules, 301, preserving the query string, in this order:
+   - Wildcard pattern: request URL `https://weather.tallorderdigital.com/almanac/*` → `https://tallorderdigital.com/weather/almanac/${1}`
+   - Wildcard pattern: request URL `https://weather.tallorderdigital.com/*` → `https://tallorderdigital.com/weather/almanac/`
+   Check that `https://weather.tallorderdigital.com/almanac/chicago/` lands on the new page. Keep these rules permanently.
+5. **This repo:** Settings → Pages → remove the custom domain and unpublish (the Almanac no longer publishes here).
+6. **GitHub account:** Settings → Pages → **Verified domains** → add `tallorderdigital.com` (a DNS TXT record in Cloudflare). This stops anyone else's GitHub Pages site from claiming your domain or its subdomains.
+
+**On Shawn's PC:** the `almanac-build` branch is a full build (about 15 MB compressed) replaced every run. To keep `git pull` in this repo from downloading it each time, run once in the repo folder: `git config remote.origin.fetch "+refs/heads/main:refs/remotes/origin/main"`.
+
+**Safeguards (`almanac/carry_over.py`):** a place whose checks fail on a given day keeps its last good page (which says the day its numbers are through), so search engines never see an Almanac page vanish and come back. If a run builds under 90% of the previous run's pages, nothing is handed over and the site keeps the last good Almanac.
+
+**Size:** each place is about 180 KB (page plus `data.json`). The plan tops out around 1,000 places, US and beyond (Shawn, Nov 10, 2026): about 180 MB, well inside GitHub Pages' 1 GB site limit.
 
 The pages are built fresh each run and are **not committed** (`site/` is ignored), so the repo doesn't fill up with copies.
 
@@ -75,7 +96,7 @@ GitHub's own schedule skips many runs (on Oct 29-30, 2026 it ran 2 of about 11 h
 
 - Worker `weather-live-trigger` in Shawn's Cloudflare account. Its code is copied in `cloudflare/worker.js` (edit it in the Cloudflare dashboard, then update this copy by PR).
 - Cron triggers (UTC): `7 * * * *` starts **Hourly weather pull**; `37 11,15 * * *` starts **Daily official records**.
-- It uses the secret `GITHUB_TOKEN`: a GitHub fine-grained token, "weather-live trigger", that can only start Actions in this repo. **It expires Oct 29, 2027**; a reminder is scheduled for Oct 15, 2027. To renew: regenerate the token on GitHub, then replace the secret in the Worker's Settings > Variables and secrets.
+- It uses the secret `GITHUB_TOKEN`: a GitHub fine-grained token, "weather-live trigger", that can only start Actions in this repo. **It expires Oct 29, 2027**; a reminder is scheduled for Oct 15, 2027. (The Almanac's `SITE_DEPLOY_TOKEN`, below, is a separate token with its own expiry.) To renew: regenerate the token on GitHub, then replace the secret in the Worker's Settings > Variables and secrets.
 - GitHub's own schedules stay on as a backup. Extra runs are harmless.
 
 ## Run it by hand

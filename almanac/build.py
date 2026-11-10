@@ -5,8 +5,11 @@ Almanac: one page per city, built from the city's official daily record.
     python almanac/build.py --all             every city with a record, plus the index
 
 Reads history/<city>/<decade>.csv (kept current by scripts/station_update.py: NOAA via
-RCC-ACIS, whole °F) and writes the pages into site/, which the daily workflow
-publishes to weather.tallorderdigital.com (GitHub Pages). site/ is not committed.
+RCC-ACIS, whole °F) and writes the pages into site/. The daily workflow pushes
+site/almanac/ to the almanac-build branch, and tallorderdigital-site's publish workflow
+copies it into weather/almanac/, so the Almanac is part of tallorderdigital.com itself
+(Nov 10, 2026; it was weather.tallorderdigital.com, which now redirects). site/ is not
+committed to main.
 
 Every sentence on a page is chosen from that city's own numbers. Before a page is
 written, its claims are checked (ranks recounted, each change claim checked two
@@ -38,7 +41,8 @@ REPO = HERE.parent
 HISTORY_DIR = REPO / "history"
 SITE_DIR = REPO / "site"
 MAIN_SITE = "https://tallorderdigital.com/"
-ALMANAC = "https://weather.tallorderdigital.com/almanac/"
+# The Almanac's public address: a folder on the main site, so links and mentions build one domain (Nov 10, 2026).
+ALMANAC = MAIN_SITE + "weather/almanac/"
 # The main site's share image until the Almanac has its own (Nov 9, 2026).
 SHARE_IMAGE = MAIN_SITE + "assets/share-home.png"
 
@@ -817,16 +821,47 @@ def index_seo(n, description, asof):
 
 
 def write_search_files(built, out_dir):
-    """robots.txt and sitemap.xml at the root of weather.tallorderdigital.com: the Almanac's front page and each city."""
+    """sitemap.xml in the Almanac folder (tallorderdigital.com/weather/almanac/sitemap.xml), listed in the main
+    site's robots.txt: the Almanac's front page and each city."""
     asof = max(d["asof"] for d in built)
     rows = [(ALMANAC, asof)] + sorted((f"{ALMANAC}{d['slug']}/", d["asof"]) for d in built)
     xml = "\n".join(['<?xml version="1.0" encoding="UTF-8"?>',
                       '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
                       *(f"  <url><loc>{u}</loc><lastmod>{m}</lastmod></url>" for u, m in rows),
                       "</urlset>", ""])
-    (out_dir / "sitemap.xml").write_text(xml, encoding="utf-8")
-    (out_dir / "robots.txt").write_text(
-        "User-agent: *\nAllow: /\n\nSitemap: https://weather.tallorderdigital.com/sitemap.xml\n", encoding="utf-8")
+    (out_dir / "almanac").mkdir(parents=True, exist_ok=True)
+    (out_dir / "almanac" / "sitemap.xml").write_text(xml, encoding="utf-8")
+
+
+def miles_between(a, b):
+    """Great-circle distance in miles between two places' coordinates."""
+    from math import asin, cos, radians, sin, sqrt
+    la1, lo1, la2, lo2 = map(radians, (a["lat"], a["lon"], b["lat"], b["lon"]))
+    h = sin((la2 - la1) / 2) ** 2 + cos(la1) * cos(la2) * sin((lo2 - lo1) / 2) ** 2
+    return 3958.8 * 2 * asin(sqrt(h))
+
+
+def nearby_html(slug, n=6):
+    """Links to the nearest other places with a record (Nov 10, 2026), so every city page links to its neighbors
+    in plain HTML. A place whose checks fail on a given day keeps its last good page, so these links don't break."""
+    here = CITIES[slug]
+    others = sorted((miles_between(here, c), s) for s, c in CITIES.items()
+                    if s != slug and store.exists(HISTORY_DIR, s))[:n]
+    return "".join(f'<li><a href="../{s}/">{html.escape(CITIES[s]["name"])}, {CITIES[s]["st"]}</a> · {d:,.0f} miles</li>'
+                   for d, s in others)
+
+
+def places_html(built):
+    """Every built place as a plain link, grouped by state, for the Almanac front page."""
+    by_state = {}
+    for d in built:
+        c = d["city"]
+        by_state.setdefault(c["state"], []).append((c["name"], d["slug"]))
+    return "".join(
+        f'<div class="st-group"><h3>{html.escape(st)}</h3><ul>'
+        + "".join(f'<li><a href="{slug}/">{html.escape(name)}</a></li>' for name, slug in sorted(places))
+        + "</ul></div>"
+        for st, places in sorted(by_state.items()))
 
 
 def switch_html(slug):
@@ -863,6 +898,7 @@ def render(data):
         # text), so search engines and AI tools that don't run scripts still read them. Headings are plain text;
         # the p_ sentences are the same HTML the script inserts.
         "HEAD_SEO": city_seo(data, description),
+        "NEARBY": nearby_html(data["slug"]),
         "T_YEST": html.escape(t["t_yest"]), "P_YEST": t["p_yest"], "T_YEAR": html.escape(t["t_year"]),
         "T_REC": html.escape(t["t_rec"]), "P_REC": t["p_rec"], "T_CHG": html.escape(t["t_chg"]), "P_CHG": t["p_chg"],
         "T_RAIN": html.escape(t["t_rain"]), "P_RAIN": t["p_rain"],
@@ -922,7 +958,7 @@ def write_index(built, out_dir):
     tpl = (HERE / "index_template.html").read_text(encoding="utf-8")
     description = (f"{lede} Every place's official daily weather record in context: yesterday, the record book, "
                    "and how the climate has changed.")
-    page = (tpl.replace("{{HEAD_SEO}}", index_seo(n, description, asof.isoformat())).replace("{{STATES}}", paths).replace("{{DATA}}", json.dumps(rows, separators=(",", ":")))
+    page = (tpl.replace("{{HEAD_SEO}}", index_seo(n, description, asof.isoformat())).replace("{{STATES}}", paths).replace("{{PLACES}}", places_html(built)).replace("{{DATA}}", json.dumps(rows, separators=(",", ":")))
                .replace("{{COUNT}}", str(n)).replace("{{LEDE}}", lede)
                .replace("{{ASOF_WORDS}}", f"{asof:%B} {asof.day}, {asof.year}").replace("{{MAIN}}", MAIN_SITE))
     left = [p for p in page.split("{{")[1:] if "}}" in p[:40]]
@@ -930,7 +966,7 @@ def write_index(built, out_dir):
         raise RuntimeError(f"Unfilled placeholders on the index: {[p.split('}}')[0] for p in left]}")
     (out_dir / "almanac").mkdir(parents=True, exist_ok=True)
     (out_dir / "almanac" / "index.html").write_text(page, encoding="utf-8")
-    # The site's front page points to the Almanac until the live page takes its place.
+    # Only site/almanac/ is published (to the almanac-build branch); this root page is for local previews.
     (out_dir / "index.html").write_text(
         '<!doctype html><meta charset="utf-8"><title>Weather · Tall Order Digital</title>'
         '<meta name="robots" content="noindex"><meta http-equiv="refresh" content="0; url=almanac/">'

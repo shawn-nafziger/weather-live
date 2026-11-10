@@ -209,6 +209,15 @@ html { scroll-padding-top: calc(var(--header-h) + 12px); }
   .site-bar .site-nav .nav-about::before { left: -8px; }
 }
 /* site-header:end */
+/* Every place as a plain link, grouped by state (Nov 10, 2026): readers can browse it, and search engines and AI
+   tools that don't run scripts can reach every city page from here. */
+.places .st { columns: 13em; column-gap: 28px; margin-top: 12px; }
+.places .st-group { break-inside: avoid; margin: 0 0 14px; }
+.places h3 { font: 600 12px/1.3 var(--font-data); letter-spacing: .12em; text-transform: uppercase; color: var(--ink-3); margin: 0 0 4px; }
+.places ul { list-style: none; margin: 0; padding: 0; }
+.places li { margin: 2px 0; }
+.places a { color: var(--ink); text-decoration-color: var(--rule); text-underline-offset: 3px; }
+.places a:hover { text-decoration-color: var(--amber); }
 /* subscribe:start */
 /* Weekly-email signup (Buttondown). Same markup on the home page, subscribe/ and, later, the end of each story.
    White card, ink button (orange is reserved for data meaning; the button turns Burnt/Orange on hover only). */
@@ -333,6 +342,11 @@ html { scroll-padding-top: calc(var(--header-h) + 12px); }
     </div>
     <p class="note" id="mixednote"></p>
   </figure>
+
+  <details class="places">
+    <summary>Every place, by state</summary>
+    <div class="st">{{PLACES}}</div>
+  </details>
 
   <details>
     <summary>How to read this</summary>
