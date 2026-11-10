@@ -11,26 +11,26 @@
   "lon": -71.4277,
   "history": "Same site as the official Providence record"
  },
- "as_of_utc": "2026-11-10T17:07:55Z",
+ "as_of_utc": "2026-11-10T18:08:03Z",
  "now": {
-  "time_utc": "2026-11-10T15:55:00Z",
-  "temp_c": 12,
-  "temp_f": 53.6,
-  "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 3,
-  "humidity_pct": 54.1,
-  "wind_kmh": null,
-  "description": "Partly Cloudy"
+  "time_utc": "2026-11-10T16:51:00Z",
+  "temp_c": 13.3,
+  "temp_f": 55.9,
+  "precision": "tenths of a degree",
+  "dewpoint_c": 2.8,
+  "humidity_pct": 48.98,
+  "wind_kmh": 16.56,
+  "description": "Mostly Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-10",
-  "readings": 4,
+  "readings": 5,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 12.2,
-  "high_f": 54.0,
-  "high_time_utc": "2026-11-10T15:51:00Z",
+  "high_c": 13.3,
+  "high_f": 55.9,
+  "high_time_utc": "2026-11-10T16:51:00Z",
   "low_c": 3.9,
   "low_f": 39.0,
   "low_time_utc": "2026-11-10T11:51:00Z"
@@ -82,7 +82,7 @@
   },
   "forecast_highs": [
    {
-    "period": "Today",
+    "period": "This Afternoon",
     "date": "2026-11-10",
     "high_f": 57,
     "would_rank": {
@@ -259,16 +259,16 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-10T15:11:20Z",
+  "issued_utc": "2026-11-10T17:30:29Z",
   "grid": "BOX/64,70",
   "periods": [
    {
-    "name": "Today",
-    "start": "2026-11-10T11:00:00-05:00",
+    "name": "This Afternoon",
+    "start": "2026-11-10T13:00:00-05:00",
     "is_daytime": true,
     "temp_f": 57,
     "temp_c": 13.89,
-    "precip_chance_pct": 2,
+    "precip_chance_pct": 0,
     "short_forecast": "Mostly Sunny"
    },
    {
@@ -287,7 +287,7 @@
     "temp_f": 58,
     "temp_c": 14.44,
     "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
+    "short_forecast": "Mostly Sunny"
    },
    {
     "name": "Wednesday Night",
@@ -295,7 +295,7 @@
     "is_daytime": false,
     "temp_f": 39,
     "temp_c": 3.89,
-    "precip_chance_pct": 3,
+    "precip_chance_pct": 1,
     "short_forecast": "Mostly Cloudy"
    },
    {
@@ -305,7 +305,7 @@
     "temp_f": 56,
     "temp_c": 13.33,
     "precip_chance_pct": 29,
-    "short_forecast": "Mostly Cloudy then Chance Light Rain"
+    "short_forecast": "Chance Light Rain"
    },
    {
     "name": "Thursday Night",
@@ -393,13 +393,6 @@
  "hourly": {
   "issued_utc": "2026-11-10T15:11:20Z",
   "hours": [
-   {
-    "start": "2026-11-10T12:00:00-05:00",
-    "temp_f": 57,
-    "temp_c": 13.89,
-    "precip_chance_pct": 1,
-    "short_forecast": "Mostly Sunny"
-   },
    {
     "start": "2026-11-10T13:00:00-05:00",
     "temp_f": 57,
@@ -727,6 +720,13 @@
     "temp_f": 54,
     "temp_c": 12.22,
     "precip_chance_pct": 6,
+    "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "start": "2026-11-12T12:00:00-05:00",
+    "temp_f": 55,
+    "temp_c": 12.78,
+    "precip_chance_pct": 8,
     "short_forecast": "Mostly Cloudy"
    }
   ]
