@@ -11,16 +11,16 @@
   "lon": -97.022,
   "history": "Same site as the official Dallas record"
  },
- "as_of_utc": "2026-11-10T00:13:35Z",
+ "as_of_utc": "2026-11-10T01:07:52Z",
  "now": {
-  "time_utc": "2026-11-09T23:55:00Z",
-  "temp_c": 20,
-  "temp_f": 68.0,
+  "time_utc": "2026-11-10T00:40:00Z",
+  "temp_c": 19,
+  "temp_f": 66.2,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 13,
-  "humidity_pct": 64.07,
+  "humidity_pct": 68.18,
   "wind_kmh": 7.42,
-  "description": "Partly Cloudy"
+  "description": "Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-09",
@@ -88,29 +88,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-09",
-    "high_f": 73,
-    "would_rank": {
-     "value_f": 73,
-     "warm_rank": 52,
-     "cool_rank": 74,
-     "years": 129,
-     "first_year": 1898,
-     "tied_years": [
-      1932,
-      2014,
-      2023,
-      2024
-     ],
-     "standing": "warm",
-     "notable": false,
-     "since": 2024,
-     "record": false,
-     "phrase": "typical for November 9"
-    }
-   },
    {
     "period": "Tuesday",
     "date": "2026-11-10",
@@ -246,6 +223,28 @@
      "record": false,
      "phrase": "typical for November 15"
     }
+   },
+   {
+    "period": "Monday",
+    "date": "2026-11-16",
+    "high_f": 71,
+    "would_rank": {
+     "value_f": 71,
+     "warm_rank": 52,
+     "cool_rank": 75,
+     "years": 129,
+     "first_year": 1898,
+     "tied_years": [
+      1919,
+      1998,
+      2008
+     ],
+     "standing": "warm",
+     "notable": false,
+     "since": 2025,
+     "record": false,
+     "phrase": "typical for November 16"
+    }
    }
   ]
  },
@@ -253,15 +252,6 @@
   "issued_utc": "2026-11-09T23:21:21Z",
   "grid": "FWD/81,109",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-09T17:00:00-06:00",
-    "is_daytime": true,
-    "temp_f": 73,
-    "temp_c": 22.78,
-    "precip_chance_pct": 2,
-    "short_forecast": "Slight Chance Rain Showers"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-09T18:00:00-06:00",
@@ -378,19 +368,21 @@
     "temp_c": 11.67,
     "precip_chance_pct": 15,
     "short_forecast": "Slight Chance Rain Showers then Partly Cloudy"
+   },
+   {
+    "name": "Monday",
+    "start": "2026-11-16T06:00:00-06:00",
+    "is_daytime": true,
+    "temp_f": 71,
+    "temp_c": 21.67,
+    "precip_chance_pct": 15,
+    "short_forecast": "Slight Chance Rain Showers then Partly Sunny"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-09T23:21:21Z",
   "hours": [
-   {
-    "start": "2026-11-09T18:00:00-06:00",
-    "temp_f": 67,
-    "temp_c": 19.44,
-    "precip_chance_pct": 5,
-    "short_forecast": "Slight Chance Rain Showers"
-   },
    {
     "start": "2026-11-09T19:00:00-06:00",
     "temp_f": 65,
@@ -719,6 +711,13 @@
     "temp_c": 24.44,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
+   },
+   {
+    "start": "2026-11-11T18:00:00-06:00",
+    "temp_f": 74,
+    "temp_c": 23.33,
+    "precip_chance_pct": 0,
+    "short_forecast": "Clear"
    }
   ]
  },
