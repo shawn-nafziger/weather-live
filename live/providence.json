@@ -11,15 +11,15 @@
   "lon": -71.4277,
   "history": "Same site as the official Providence record"
  },
- "as_of_utc": "2026-11-10T11:07:53Z",
+ "as_of_utc": "2026-11-10T12:07:51Z",
  "now": {
-  "time_utc": "2026-11-10T10:50:00Z",
+  "time_utc": "2026-11-10T11:35:00Z",
   "temp_c": 5,
   "temp_f": 41.0,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 2,
   "humidity_pct": 80.94,
-  "wind_kmh": 5.54,
+  "wind_kmh": 9.25,
   "description": "Mostly Clear"
  },
  "today_so_far": {
@@ -40,9 +40,9 @@
    "time_utc": "2026-11-10T05:50:00Z"
   },
   "dip_between_reports": {
-   "at_most_f": 41.9,
-   "about_f": 41.0,
-   "time_utc": "2026-11-10T10:50:00Z"
+   "at_most_f": 40.1,
+   "about_f": 39.2,
+   "time_utc": "2026-11-10T11:15:00Z"
   }
  },
  "record": {
@@ -51,46 +51,43 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-08",
-   "is_yesterday": false,
-   "high_f": 61,
-   "low_f": 44,
+   "date": "2026-11-09",
+   "is_yesterday": true,
+   "high_f": 57,
+   "low_f": 46,
    "high_rank": {
-    "value_f": 61,
-    "warm_rank": 25,
-    "cool_rank": 92,
+    "value_f": 57,
+    "warm_rank": 43,
+    "cool_rank": 78,
     "years": 123,
     "first_year": 1904,
     "tied_years": [
-     1916,
-     1950,
-     1956,
-     1957,
-     1969,
-     1980,
-     2005
+     1974,
+     1988,
+     2014
     ],
     "standing": "warm",
-    "notable": true,
+    "notable": false,
     "since": 2025,
     "record": false,
-    "phrase": "25th warmest November 8 high (tied) of 123 since 1904, warmest since 2025"
+    "phrase": "typical for November 9"
    },
    "low_rank": {
-    "value_f": 44,
-    "warm_rank": 22,
-    "cool_rank": 100,
+    "value_f": 46,
+    "warm_rank": 17,
+    "cool_rank": 104,
     "years": 123,
     "first_year": 1904,
     "tied_years": [
-     1913,
-     1974
+     1937,
+     1963,
+     1969
     ],
     "standing": "warm",
     "notable": true,
-    "since": 2011,
+    "since": 2010,
     "record": false,
-    "phrase": "22nd warmest November 8 low (tied) of 123 since 1904, warmest since 2011"
+    "phrase": "17th warmest November 9 low (tied) of 123 since 1904, warmest since 2010"
    }
   },
   "forecast_highs": [
@@ -406,13 +403,6 @@
  "hourly": {
   "issued_utc": "2026-11-10T09:13:41Z",
   "hours": [
-   {
-    "start": "2026-11-10T06:00:00-05:00",
-    "temp_f": 43,
-    "temp_c": 6.11,
-    "precip_chance_pct": 1,
-    "short_forecast": "Sunny"
-   },
    {
     "start": "2026-11-10T07:00:00-05:00",
     "temp_f": 43,
@@ -740,6 +730,13 @@
     "temp_f": 40,
     "temp_c": 4.44,
     "precip_chance_pct": 3,
+    "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "start": "2026-11-12T06:00:00-05:00",
+    "temp_f": 40,
+    "temp_c": 4.44,
+    "precip_chance_pct": 4,
     "short_forecast": "Mostly Cloudy"
    }
   ]

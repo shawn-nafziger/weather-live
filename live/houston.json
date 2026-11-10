@@ -11,16 +11,16 @@
   "lon": -95.3607,
   "history": "Same site as the official Houston record"
  },
- "as_of_utc": "2026-11-10T11:07:53Z",
+ "as_of_utc": "2026-11-10T12:07:51Z",
  "now": {
-  "time_utc": "2026-11-10T10:50:00Z",
+  "time_utc": "2026-11-10T11:40:00Z",
   "temp_c": 16,
   "temp_f": 60.8,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 15,
-  "humidity_pct": 93.79,
-  "wind_kmh": 0,
-  "description": "Mostly Cloudy"
+  "dewpoint_c": 14,
+  "humidity_pct": 87.93,
+  "wind_kmh": 7.42,
+  "description": "Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-10",
@@ -46,46 +46,43 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-08",
-   "is_yesterday": false,
+   "date": "2026-11-09",
+   "is_yesterday": true,
    "high_f": 66,
-   "low_f": 58,
+   "low_f": 56,
    "high_rank": {
     "value_f": 66,
-    "warm_rank": 105,
-    "cool_rank": 26,
-    "years": 136,
-    "first_year": 1889,
-    "tied_years": [
-     1896,
-     1913,
-     1929,
-     1932,
-     1951,
-     1992
-    ],
-    "standing": "cool",
-    "notable": true,
-    "since": 2019,
-    "record": false,
-    "phrase": "26th coolest November 8 high (tied) of 136 since 1889, coolest since 2019"
-   },
-   "low_rank": {
-    "value_f": 58,
-    "warm_rank": 49,
-    "cool_rank": 84,
+    "warm_rank": 111,
+    "cool_rank": 22,
     "years": 135,
     "first_year": 1889,
     "tied_years": [
-     1902,
-     1924,
-     1964
+     1959,
+     1974,
+     2017
+    ],
+    "standing": "cool",
+    "notable": true,
+    "since": 2018,
+    "record": false,
+    "phrase": "22nd coolest November 9 high (tied) of 135 since 1889, coolest since 2018"
+   },
+   "low_rank": {
+    "value_f": 56,
+    "warm_rank": 58,
+    "cool_rank": 76,
+    "years": 136,
+    "first_year": 1889,
+    "tied_years": [
+     1893,
+     1940,
+     2003
     ],
     "standing": "warm",
     "notable": false,
-    "since": 2025,
+    "since": 2024,
     "record": false,
-    "phrase": "typical for November 8"
+    "phrase": "typical for November 9"
    }
   },
   "forecast_highs": [
@@ -403,13 +400,6 @@
  "hourly": {
   "issued_utc": "2026-11-10T05:16:21Z",
   "hours": [
-   {
-    "start": "2026-11-10T05:00:00-06:00",
-    "temp_f": 54,
-    "temp_c": 12.22,
-    "precip_chance_pct": 2,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "start": "2026-11-10T06:00:00-06:00",
     "temp_f": 54,
@@ -736,6 +726,13 @@
     "start": "2026-11-12T04:00:00-06:00",
     "temp_f": 62,
     "temp_c": 16.67,
+    "precip_chance_pct": 0,
+    "short_forecast": "Partly Cloudy"
+   },
+   {
+    "start": "2026-11-12T05:00:00-06:00",
+    "temp_f": 61,
+    "temp_c": 16.11,
     "precip_chance_pct": 0,
     "short_forecast": "Partly Cloudy"
    }

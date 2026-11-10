@@ -11,15 +11,15 @@
   "lon": -75.2268,
   "history": "Same site as the official Philadelphia record"
  },
- "as_of_utc": "2026-11-10T11:07:53Z",
+ "as_of_utc": "2026-11-10T12:07:51Z",
  "now": {
-  "time_utc": "2026-11-10T10:50:00Z",
+  "time_utc": "2026-11-10T11:35:00Z",
   "temp_c": 8,
   "temp_f": 46.4,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 3,
-  "humidity_pct": 70.7,
-  "wind_kmh": 16.67,
+  "dewpoint_c": 4,
+  "humidity_pct": 75.86,
+  "wind_kmh": 12.96,
   "description": "Mostly Clear"
  },
  "today_so_far": {
@@ -46,54 +46,51 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-08",
-   "is_yesterday": false,
-   "high_f": 61,
-   "low_f": 47,
+   "date": "2026-11-09",
+   "is_yesterday": true,
+   "high_f": 62,
+   "low_f": 48,
    "high_rank": {
-    "value_f": 61,
-    "warm_rank": 49,
-    "cool_rank": 97,
+    "value_f": 62,
+    "warm_rank": 45,
+    "cool_rank": 103,
     "years": 153,
     "first_year": 1874,
     "tied_years": [
-     1916,
-     1970,
-     1972,
-     1974,
-     1981,
-     2000,
-     2002,
-     2022
+     1897,
+     1920,
+     1931,
+     1977,
+     1978,
+     1980
     ],
     "standing": "warm",
     "notable": false,
     "since": 2025,
     "record": false,
-    "phrase": "typical for November 8"
+    "phrase": "typical for November 9"
    },
    "low_rank": {
-    "value_f": 47,
-    "warm_rank": 27,
-    "cool_rank": 123,
+    "value_f": 48,
+    "warm_rank": 20,
+    "cool_rank": 131,
     "years": 153,
     "first_year": 1874,
     "tied_years": [
-     1888,
-     1897,
-     1929,
-     1997
+     1932,
+     1979,
+     1986
     ],
     "standing": "warm",
     "notable": true,
-    "since": 2025,
+    "since": 2006,
     "record": false,
-    "phrase": "27th warmest November 8 low (tied) of 153 since 1874, warmest since 2025"
+    "phrase": "20th warmest November 9 low (tied) of 153 since 1874, warmest since 2006"
    }
   },
   "forecast_highs": [
    {
-    "period": "Tuesday",
+    "period": "Today",
     "date": "2026-11-10",
     "high_f": 65,
     "would_rank": {
@@ -270,16 +267,7 @@
   "grid": "PHI/48,75",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-10T04:00:00-05:00",
-    "is_daytime": false,
-    "temp_f": 41,
-    "temp_c": 5.0,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Cloudy"
-   },
-   {
-    "name": "Tuesday",
+    "name": "Today",
     "start": "2026-11-10T06:00:00-05:00",
     "is_daytime": true,
     "temp_f": 65,
@@ -288,7 +276,7 @@
     "short_forecast": "Sunny"
    },
    {
-    "name": "Tuesday Night",
+    "name": "Tonight",
     "start": "2026-11-10T18:00:00-05:00",
     "is_daytime": false,
     "temp_f": 44,
@@ -394,19 +382,21 @@
     "temp_c": 11.11,
     "precip_chance_pct": 1,
     "short_forecast": "Sunny"
+   },
+   {
+    "name": "Monday Night",
+    "start": "2026-11-16T18:00:00-05:00",
+    "is_daytime": false,
+    "temp_f": 34,
+    "temp_c": 1.11,
+    "precip_chance_pct": 1,
+    "short_forecast": "Partly Cloudy"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-10T09:07:25Z",
   "hours": [
-   {
-    "start": "2026-11-10T06:00:00-05:00",
-    "temp_f": 42,
-    "temp_c": 5.56,
-    "precip_chance_pct": 0,
-    "short_forecast": "Partly Sunny"
-   },
    {
     "start": "2026-11-10T07:00:00-05:00",
     "temp_f": 43,
@@ -731,6 +721,13 @@
    },
    {
     "start": "2026-11-12T05:00:00-05:00",
+    "temp_f": 49,
+    "temp_c": 9.44,
+    "precip_chance_pct": 22,
+    "short_forecast": "Slight Chance Light Rain"
+   },
+   {
+    "start": "2026-11-12T06:00:00-05:00",
     "temp_f": 49,
     "temp_c": 9.44,
     "precip_chance_pct": 22,

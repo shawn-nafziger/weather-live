@@ -11,16 +11,16 @@
   "lon": -122.3136,
   "history": "Same station as the official Seattle record (Sea-Tac)"
  },
- "as_of_utc": "2026-11-10T11:07:53Z",
+ "as_of_utc": "2026-11-10T12:07:51Z",
  "now": {
-  "time_utc": "2026-11-10T10:50:00Z",
+  "time_utc": "2026-11-10T11:35:00Z",
   "temp_c": 10,
   "temp_f": 50.0,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 8,
   "humidity_pct": 87.38,
-  "wind_kmh": 11.12,
-  "description": "Mostly Cloudy"
+  "wind_kmh": 9.25,
+  "description": "Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-10",
@@ -46,45 +46,46 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-08",
-   "is_yesterday": false,
-   "high_f": 57,
-   "low_f": 46,
+   "date": "2026-11-09",
+   "is_yesterday": true,
+   "high_f": 55,
+   "low_f": 43,
    "high_rank": {
-    "value_f": 57,
-    "warm_rank": 16,
-    "cool_rank": 62,
+    "value_f": 55,
+    "warm_rank": 20,
+    "cool_rank": 60,
     "years": 82,
     "first_year": 1945,
     "tied_years": [
-     1956,
-     1995,
-     1997,
-     2003,
-     2007
-    ],
-    "standing": "warm",
-    "notable": true,
-    "since": 2025,
-    "record": false,
-    "phrase": "16th warmest November 8 high (tied) of 82 since 1945, warmest since 2025"
-   },
-   "low_rank": {
-    "value_f": 46,
-    "warm_rank": 19,
-    "cool_rank": 61,
-    "years": 82,
-    "first_year": 1945,
-    "tied_years": [
-     1958,
-     1980,
-     2015
+     1970,
+     1971,
+     2001
     ],
     "standing": "warm",
     "notable": false,
-    "since": 2016,
+    "since": 2025,
     "record": false,
-    "phrase": "typical for November 8"
+    "phrase": "typical for November 9"
+   },
+   "low_rank": {
+    "value_f": 43,
+    "warm_rank": 30,
+    "cool_rank": 47,
+    "years": 82,
+    "first_year": 1945,
+    "tied_years": [
+     1961,
+     1997,
+     2003,
+     2006,
+     2017,
+     2021
+    ],
+    "standing": "warm",
+    "notable": false,
+    "since": 2025,
+    "record": false,
+    "phrase": "typical for November 9"
    }
   },
   "forecast_highs": [
@@ -247,7 +248,7 @@
   "periods": [
    {
     "name": "Tonight",
-    "start": "2026-11-09T22:00:00-08:00",
+    "start": "2026-11-09T23:00:00-08:00",
     "is_daytime": false,
     "temp_f": 48,
     "temp_c": 8.89,
@@ -376,13 +377,6 @@
  "hourly": {
   "issued_utc": "2026-11-10T06:26:48Z",
   "hours": [
-   {
-    "start": "2026-11-10T03:00:00-08:00",
-    "temp_f": 50,
-    "temp_c": 10.0,
-    "precip_chance_pct": 19,
-    "short_forecast": "Slight Chance Light Rain"
-   },
    {
     "start": "2026-11-10T04:00:00-08:00",
     "temp_f": 50,
@@ -709,6 +703,13 @@
     "start": "2026-11-12T02:00:00-08:00",
     "temp_f": 53,
     "temp_c": 11.67,
+    "precip_chance_pct": 0,
+    "short_forecast": "Cloudy"
+   },
+   {
+    "start": "2026-11-12T03:00:00-08:00",
+    "temp_f": 52,
+    "temp_c": 11.11,
     "precip_chance_pct": 0,
     "short_forecast": "Cloudy"
    }
