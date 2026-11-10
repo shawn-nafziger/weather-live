@@ -95,6 +95,7 @@ strong { font-weight: 600; color: var(--ink); }
 .keys span::before { content: ""; display: inline-block; width: 12px; height: 12px; border-radius: 2px; margin-right: 8px; vertical-align: -2px; background: var(--k); }
 .keys span.dot::before { border-radius: 50%; }
 .keys span.line::before { height: 3px; vertical-align: 3px; }
+.keys span.bar::before { height: 6px; vertical-align: 1px; border-radius: 3px; opacity: .55; }
 .keys b { font-weight: 600; }
 .k-sig { --k: var(--amber); } .k-sig b { color: var(--amber); }
 .k-edge { --k: var(--edge); }
@@ -528,7 +529,7 @@ keys("k-yest", [
     ? ["k-sig dot", "var(--amber)", [String(D.year), "yesterday, orange where it ranks in the warmest or coolest fifth"]]
     : ["k-navy dot", "var(--navy)", [String(D.year), "yesterday"]],
   ["k-noise dot", "var(--ink-3)", ["Gray dots", "every earlier year"]],
-  ["k-band", "var(--ink-2)", ["Blue band", "the typical range (middle 60% of years)"]],
+  ["k-navy bar", "var(--ink-2)", ["Blue bar", "under the dots: the typical range (middle 60% of years)"]],
 ]);
 function drawYest() {
   const el = $("c-yest"), w = width(el), m = { l: 44, r: 12, t: 8, b: 26 };
@@ -542,7 +543,8 @@ function drawYest() {
   let s = "", top = m.t;
   rows.forEach(([name, vals, band, r, today], i) => {
     const base = top + rowH[i] - 6;
-    s += `<rect x="${x(band[0])}" y="${top + 16}" width="${x(band[1]) - x(band[0])}" height="${base - top - 16 + 4}" fill="var(--funnel)" rx="3"/>`;
+    // typical range as a bar just under the dots (Nov 9, 2026): a band drawn behind the dots hid the gray dots inside it
+    s += `<rect x="${x(band[0])}" y="${base + 3}" width="${x(band[1]) - x(band[0])}" height="6" fill="var(--navy)" opacity=".55" rx="3"/>`;
     s += `<text x="${m.l}" y="${top + 10}" class="lbl-strong">${name}</text>`;
     const cnt = {};
     vals.slice().sort((a, b) => (a[0] === D.year) - (b[0] === D.year) || a[0] - b[0]).forEach(([yr, v]) => {
