@@ -11,16 +11,16 @@
   "lon": -80.9614,
   "history": "Same site as the official Charlotte record"
  },
- "as_of_utc": "2026-11-10T18:08:03Z",
+ "as_of_utc": "2026-11-10T19:07:52Z",
  "now": {
-  "time_utc": "2026-11-10T16:52:00Z",
-  "temp_c": 20.6,
-  "temp_f": 69.1,
-  "precision": "tenths of a degree",
-  "dewpoint_c": 5.6,
-  "humidity_pct": 37.52,
-  "wind_kmh": 7.56,
-  "description": "Mostly Clear"
+  "time_utc": "2026-11-10T18:20:00Z",
+  "temp_c": 22,
+  "temp_f": 71.6,
+  "precision": "nearest whole \u00b0C",
+  "dewpoint_c": 7,
+  "humidity_pct": 37.92,
+  "wind_kmh": 11.12,
+  "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-10",
@@ -34,6 +34,11 @@
   "low_c": 6.7,
   "low_f": 44.1,
   "low_time_utc": "2026-11-10T09:52:00Z",
+  "peak_between_reports": {
+   "at_least_f": 70.7,
+   "about_f": 71.6,
+   "time_utc": "2026-11-10T18:20:00Z"
+  },
   "dip_between_reports": {
    "at_most_f": 43.7,
    "about_f": 42.8,
@@ -95,7 +100,7 @@
   },
   "forecast_highs": [
    {
-    "period": "Today",
+    "period": "This Afternoon",
     "date": "2026-11-10",
     "high_f": 74,
     "would_rank": {
@@ -264,13 +269,13 @@
   "grid": "GSP/115,64",
   "periods": [
    {
-    "name": "Today",
-    "start": "2026-11-10T06:00:00-05:00",
+    "name": "This Afternoon",
+    "start": "2026-11-10T13:00:00-05:00",
     "is_daytime": true,
     "temp_f": 74,
     "temp_c": 23.33,
     "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
+    "short_forecast": "Mostly Sunny"
    },
    {
     "name": "Tonight",
@@ -394,13 +399,6 @@
  "hourly": {
   "issued_utc": "2026-11-10T11:18:44Z",
   "hours": [
-   {
-    "start": "2026-11-10T13:00:00-05:00",
-    "temp_f": 73,
-    "temp_c": 22.78,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "start": "2026-11-10T14:00:00-05:00",
     "temp_f": 74,
@@ -728,6 +726,13 @@
     "temp_f": 67,
     "temp_c": 19.44,
     "precip_chance_pct": 10,
+    "short_forecast": "Mostly Sunny"
+   },
+   {
+    "start": "2026-11-12T13:00:00-05:00",
+    "temp_f": 68,
+    "temp_c": 20.0,
+    "precip_chance_pct": 13,
     "short_forecast": "Mostly Sunny"
    }
   ]
