@@ -11,29 +11,34 @@
   "lon": -86.2816,
   "history": "Same site as the official Indianapolis record"
  },
- "as_of_utc": "2026-11-10T08:07:52Z",
+ "as_of_utc": "2026-11-10T09:07:53Z",
  "now": {
-  "time_utc": "2026-11-10T07:55:00Z",
+  "time_utc": "2026-11-10T08:15:00Z",
   "temp_c": 8,
   "temp_f": 46.4,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 2,
-  "humidity_pct": 65.85,
+  "dewpoint_c": 3,
+  "humidity_pct": 70.7,
   "wind_kmh": 11.12,
   "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-10",
-  "readings": 10,
-  "basis": "5-minute readings (whole \u00b0C, approximate)",
-  "approximate": true,
+  "readings": 1,
+  "basis": "hourly reports (tenths of a degree)",
+  "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 8,
-  "high_f": 46.4,
-  "high_time_utc": "2026-11-10T05:50:00Z",
-  "low_c": 7,
-  "low_f": 44.6,
-  "low_time_utc": "2026-11-10T07:20:00Z"
+  "high_c": 7.8,
+  "high_f": 46.0,
+  "high_time_utc": "2026-11-10T07:54:00Z",
+  "low_c": 7.8,
+  "low_f": 46.0,
+  "low_time_utc": "2026-11-10T07:54:00Z",
+  "dip_between_reports": {
+   "at_most_f": 45.5,
+   "about_f": 44.6,
+   "time_utc": "2026-11-10T07:20:00Z"
+  }
  },
  "record": {
   "series": "Indianapolis area (ThreadEx; airport)",
@@ -251,12 +256,12 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-10T07:45:36Z",
+  "issued_utc": "2026-11-10T08:45:27Z",
   "grid": "IND/54,67",
   "periods": [
    {
     "name": "Overnight",
-    "start": "2026-11-10T02:00:00-05:00",
+    "start": "2026-11-10T03:00:00-05:00",
     "is_daytime": false,
     "temp_f": 42,
     "temp_c": 5.56,
@@ -383,15 +388,8 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-10T06:45:22Z",
+  "issued_utc": "2026-11-10T07:45:36Z",
   "hours": [
-   {
-    "start": "2026-11-10T03:00:00-05:00",
-    "temp_f": 44,
-    "temp_c": 6.67,
-    "precip_chance_pct": 0,
-    "short_forecast": "Clear"
-   },
    {
     "start": "2026-11-10T04:00:00-05:00",
     "temp_f": 43,
@@ -718,6 +716,13 @@
     "start": "2026-11-12T02:00:00-05:00",
     "temp_f": 47,
     "temp_c": 8.33,
+    "precip_chance_pct": 12,
+    "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "start": "2026-11-12T03:00:00-05:00",
+    "temp_f": 46,
+    "temp_c": 7.78,
     "precip_chance_pct": 12,
     "short_forecast": "Mostly Cloudy"
    }
