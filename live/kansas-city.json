@@ -11,7 +11,7 @@
   "lon": -94.7306,
   "history": "Same site as the official Kansas City record"
  },
- "as_of_utc": "2026-11-09T23:07:51Z",
+ "as_of_utc": "2026-11-10T00:07:54Z",
  "now": {
   "time_utc": "2026-11-09T21:53:00Z",
   "temp_c": 21.1,
@@ -98,28 +98,6 @@
    "phrase": "already the 17th warmest November 9 high (tied) of 139 since 1888, warmest since 2022"
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-09",
-    "high_f": 70,
-    "would_rank": {
-     "value_f": 70,
-     "warm_rank": 18,
-     "cool_rank": 119,
-     "years": 139,
-     "first_year": 1888,
-     "tied_years": [
-      1975,
-      1978,
-      1984
-     ],
-     "standing": "warm",
-     "notable": true,
-     "since": 2022,
-     "record": false,
-     "phrase": "18th warmest November 9 high (tied) of 139 since 1888, warmest since 2022"
-    }
-   },
    {
     "period": "Tuesday",
     "date": "2026-11-10",
@@ -252,6 +230,28 @@
      "record": false,
      "phrase": "typical for November 15"
     }
+   },
+   {
+    "period": "Monday",
+    "date": "2026-11-16",
+    "high_f": 61,
+    "would_rank": {
+     "value_f": 61,
+     "warm_rank": 42,
+     "cool_rank": 93,
+     "years": 137,
+     "first_year": 1888,
+     "tied_years": [
+      1948,
+      1987,
+      2023
+     ],
+     "standing": "warm",
+     "notable": false,
+     "since": 2024,
+     "record": false,
+     "phrase": "typical for November 16"
+    }
    }
   ]
  },
@@ -259,15 +259,6 @@
   "issued_utc": "2026-11-09T18:26:38Z",
   "grid": "EAX/38,60",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-09T13:00:00-06:00",
-    "is_daytime": true,
-    "temp_f": 70,
-    "temp_c": 21.11,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-09T18:00:00-06:00",
@@ -384,19 +375,21 @@
     "temp_c": 8.33,
     "precip_chance_pct": 10,
     "short_forecast": "Partly Cloudy"
+   },
+   {
+    "name": "Monday",
+    "start": "2026-11-16T06:00:00-06:00",
+    "is_daytime": true,
+    "temp_f": 61,
+    "temp_c": 16.11,
+    "precip_chance_pct": 5,
+    "short_forecast": "Mostly Sunny"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-09T18:26:38Z",
   "hours": [
-   {
-    "start": "2026-11-09T17:00:00-06:00",
-    "temp_f": 66,
-    "temp_c": 18.89,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "start": "2026-11-09T18:00:00-06:00",
     "temp_f": 62,
@@ -723,6 +716,13 @@
     "start": "2026-11-11T16:00:00-06:00",
     "temp_f": 59,
     "temp_c": 15.0,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
+   },
+   {
+    "start": "2026-11-11T17:00:00-06:00",
+    "temp_f": 57,
+    "temp_c": 13.89,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
    }

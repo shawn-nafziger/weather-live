@@ -11,20 +11,20 @@
   "lon": -83.3308,
   "history": "Same site as the official Detroit record"
  },
- "as_of_utc": "2026-11-09T23:07:51Z",
+ "as_of_utc": "2026-11-10T00:07:54Z",
  "now": {
-  "time_utc": "2026-11-09T22:45:00Z",
-  "temp_c": 11,
-  "temp_f": 51.8,
+  "time_utc": "2026-11-09T23:50:00Z",
+  "temp_c": 10,
+  "temp_f": 50.0,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 2,
-  "humidity_pct": 53.83,
+  "humidity_pct": 57.54,
   "wind_kmh": 11.12,
   "description": ""
  },
  "today_so_far": {
   "date_local": "2026-11-09",
-  "readings": 14,
+  "readings": 15,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -85,27 +85,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-09",
-    "high_f": 57,
-    "would_rank": {
-     "value_f": 57,
-     "warm_rank": 45,
-     "cool_rank": 107,
-     "years": 153,
-     "first_year": 1874,
-     "tied_years": [
-      1899,
-      1944
-     ],
-     "standing": "warm",
-     "notable": false,
-     "since": 2022,
-     "record": false,
-     "phrase": "typical for November 9"
-    }
-   },
    {
     "period": "Tuesday",
     "date": "2026-11-10",
@@ -249,6 +228,31 @@
      "record": false,
      "phrase": "typical for November 15"
     }
+   },
+   {
+    "period": "Monday",
+    "date": "2026-11-16",
+    "high_f": 52,
+    "would_rank": {
+     "value_f": 52,
+     "warm_rank": 45,
+     "cool_rank": 103,
+     "years": 153,
+     "first_year": 1874,
+     "tied_years": [
+      1877,
+      1882,
+      1890,
+      1945,
+      1958,
+      1994
+     ],
+     "standing": "warm",
+     "notable": false,
+     "since": 2023,
+     "record": false,
+     "phrase": "typical for November 16"
+    }
    }
   ]
  },
@@ -256,15 +260,6 @@
   "issued_utc": "2026-11-09T21:13:17Z",
   "grid": "DTX/57,28",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-09T16:00:00-05:00",
-    "is_daytime": true,
-    "temp_f": 57,
-    "temp_c": 13.89,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-09T18:00:00-05:00",
@@ -381,19 +376,21 @@
     "temp_c": 1.11,
     "precip_chance_pct": 5,
     "short_forecast": "Partly Cloudy"
+   },
+   {
+    "name": "Monday",
+    "start": "2026-11-16T06:00:00-05:00",
+    "is_daytime": true,
+    "temp_f": 52,
+    "temp_c": 11.11,
+    "precip_chance_pct": 4,
+    "short_forecast": "Mostly Sunny"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-09T21:13:17Z",
   "hours": [
-   {
-    "start": "2026-11-09T18:00:00-05:00",
-    "temp_f": 51,
-    "temp_c": 10.56,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "start": "2026-11-09T19:00:00-05:00",
     "temp_f": 50,
@@ -718,6 +715,13 @@
    },
    {
     "start": "2026-11-11T17:00:00-05:00",
+    "temp_f": 50,
+    "temp_c": 10.0,
+    "precip_chance_pct": 25,
+    "short_forecast": "Chance Light Rain"
+   },
+   {
+    "start": "2026-11-11T18:00:00-05:00",
     "temp_f": 50,
     "temp_c": 10.0,
     "precip_chance_pct": 25,
