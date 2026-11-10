@@ -11,9 +11,9 @@
   "lon": -97.7605,
   "history": "Same site as the official Austin record"
  },
- "as_of_utc": "2026-11-10T12:07:51Z",
+ "as_of_utc": "2026-11-10T13:07:50Z",
  "now": {
-  "time_utc": "2026-11-10T09:51:00Z",
+  "time_utc": "2026-11-10T11:51:00Z",
   "temp_c": 15,
   "temp_f": 59.0,
   "precision": "tenths of a degree",
@@ -24,7 +24,7 @@
  },
  "today_so_far": {
   "date_local": "2026-11-10",
-  "readings": 4,
+  "readings": 5,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -85,7 +85,7 @@
   },
   "forecast_highs": [
    {
-    "period": "Tuesday",
+    "period": "Today",
     "date": "2026-11-10",
     "high_f": 70,
     "would_rank": {
@@ -257,20 +257,11 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-10T10:32:30Z",
+  "issued_utc": "2026-11-10T11:46:21Z",
   "grid": "EWX/155,93",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-10T05:00:00-06:00",
-    "is_daytime": false,
-    "temp_f": 58,
-    "temp_c": 14.44,
-    "precip_chance_pct": 15,
-    "short_forecast": "Slight Chance Rain Showers"
-   },
-   {
-    "name": "Tuesday",
+    "name": "Today",
     "start": "2026-11-10T06:00:00-06:00",
     "is_daytime": true,
     "temp_f": 70,
@@ -279,7 +270,7 @@
     "short_forecast": "Mostly Cloudy"
    },
    {
-    "name": "Tuesday Night",
+    "name": "Tonight",
     "start": "2026-11-10T18:00:00-06:00",
     "is_daytime": false,
     "temp_f": 57,
@@ -385,19 +376,21 @@
     "temp_c": 21.11,
     "precip_chance_pct": 9,
     "short_forecast": "Mostly Sunny"
+   },
+   {
+    "name": "Monday Night",
+    "start": "2026-11-16T18:00:00-06:00",
+    "is_daytime": false,
+    "temp_f": 52,
+    "temp_c": 11.11,
+    "precip_chance_pct": 10,
+    "short_forecast": "Partly Cloudy"
    }
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-10T10:32:30Z",
+  "issued_utc": "2026-11-10T11:46:21Z",
   "hours": [
-   {
-    "start": "2026-11-10T06:00:00-06:00",
-    "temp_f": 59,
-    "temp_c": 15.0,
-    "precip_chance_pct": 13,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "start": "2026-11-10T07:00:00-06:00",
     "temp_f": 60,
@@ -726,6 +719,13 @@
     "temp_c": 13.33,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear"
+   },
+   {
+    "start": "2026-11-12T06:00:00-06:00",
+    "temp_f": 56,
+    "temp_c": 13.33,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
    }
   ]
  },
