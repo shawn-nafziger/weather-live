@@ -11,33 +11,33 @@
   "lon": -97.022,
   "history": "Same site as the official Dallas record"
  },
- "as_of_utc": "2026-11-11T16:21:01Z",
+ "as_of_utc": "2026-11-11T17:07:57Z",
  "now": {
-  "time_utc": "2026-11-11T15:35:00Z",
-  "temp_c": 21,
-  "temp_f": 69.8,
+  "time_utc": "2026-11-11T16:45:00Z",
+  "temp_c": 23,
+  "temp_f": 73.4,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 15,
-  "humidity_pct": 68.58,
+  "dewpoint_c": 14,
+  "humidity_pct": 56.91,
   "wind_kmh": 5.54,
-  "description": "Clear"
+  "description": "Mostly Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-11",
-  "readings": 6,
+  "readings": 7,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 17.8,
-  "high_f": 64.0,
-  "high_time_utc": "2026-11-11T06:53:00Z",
+  "high_c": 22.2,
+  "high_f": 72.0,
+  "high_time_utc": "2026-11-11T15:53:00Z",
   "low_c": 16.1,
   "low_f": 61.0,
   "low_time_utc": "2026-11-11T09:53:00Z",
   "peak_between_reports": {
-   "at_least_f": 68.9,
-   "about_f": 69.8,
-   "time_utc": "2026-11-11T15:15:00Z"
+   "at_least_f": 72.5,
+   "about_f": 73.4,
+   "time_utc": "2026-11-11T16:15:00Z"
   }
  },
  "record": {
@@ -110,38 +110,48 @@
    {
     "period": "Thursday",
     "date": "2026-11-12",
-    "high_f": 76,
+    "high_f": 77,
     "would_rank": {
-     "value_f": 76,
-     "warm_rank": 32,
-     "cool_rank": 96,
+     "value_f": 77,
+     "warm_rank": 26,
+     "cool_rank": 98,
      "years": 129,
      "first_year": 1898,
      "tied_years": [
-      1956,
-      2011
+      1902,
+      1909,
+      1925,
+      1931,
+      1958,
+      2025
      ],
      "standing": "warm",
-     "notable": false,
+     "notable": true,
      "since": 2025,
      "record": false,
-     "phrase": "typical for November 12"
+     "phrase": "26th warmest November 12 high (tied) of 129 since 1898, warmest since 2025"
     }
    },
    {
     "period": "Friday",
     "date": "2026-11-13",
-    "high_f": 71,
+    "high_f": 70,
     "would_rank": {
-     "value_f": 71,
-     "warm_rank": 56,
-     "cool_rank": 71,
+     "value_f": 70,
+     "warm_rank": 59,
+     "cool_rank": 62,
      "years": 129,
      "first_year": 1898,
      "tied_years": [
-      1927,
-      1928,
-      1962
+      1917,
+      1923,
+      1932,
+      1938,
+      1941,
+      1949,
+      1953,
+      1984,
+      1987
      ],
      "standing": "warm",
      "notable": false,
@@ -237,24 +247,24 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-11T11:06:33Z",
+  "issued_utc": "2026-11-11T16:31:29Z",
   "grid": "FWD/81,109",
   "periods": [
    {
     "name": "Veterans Day",
-    "start": "2026-11-11T06:00:00-06:00",
+    "start": "2026-11-11T10:00:00-06:00",
     "is_daytime": true,
     "temp_f": 79,
     "temp_c": 26.11,
-    "precip_chance_pct": 1,
-    "short_forecast": "Patchy Fog then Sunny"
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
    },
    {
     "name": "Tonight",
     "start": "2026-11-11T18:00:00-06:00",
     "is_daytime": false,
-    "temp_f": 55,
-    "temp_c": 12.78,
+    "temp_f": 53,
+    "temp_c": 11.67,
     "precip_chance_pct": 0,
     "short_forecast": "Clear"
    },
@@ -262,8 +272,8 @@
     "name": "Thursday",
     "start": "2026-11-12T06:00:00-06:00",
     "is_daytime": true,
-    "temp_f": 76,
-    "temp_c": 24.44,
+    "temp_f": 77,
+    "temp_c": 25.0,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
    },
@@ -271,8 +281,8 @@
     "name": "Thursday Night",
     "start": "2026-11-12T18:00:00-06:00",
     "is_daytime": false,
-    "temp_f": 52,
-    "temp_c": 11.11,
+    "temp_f": 51,
+    "temp_c": 10.56,
     "precip_chance_pct": 0,
     "short_forecast": "Clear"
    },
@@ -280,8 +290,8 @@
     "name": "Friday",
     "start": "2026-11-13T06:00:00-06:00",
     "is_daytime": true,
-    "temp_f": 71,
-    "temp_c": 21.67,
+    "temp_f": 70,
+    "temp_c": 21.11,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
    },
@@ -289,8 +299,8 @@
     "name": "Friday Night",
     "start": "2026-11-13T18:00:00-06:00",
     "is_daytime": false,
-    "temp_f": 51,
-    "temp_c": 10.56,
+    "temp_f": 49,
+    "temp_c": 9.44,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear"
    },
@@ -371,13 +381,6 @@
  "hourly": {
   "issued_utc": "2026-11-11T11:06:33Z",
   "hours": [
-   {
-    "start": "2026-11-11T10:00:00-06:00",
-    "temp_f": 68,
-    "temp_c": 20.0,
-    "precip_chance_pct": 1,
-    "short_forecast": "Sunny"
-   },
    {
     "start": "2026-11-11T11:00:00-06:00",
     "temp_f": 72,
@@ -704,6 +707,13 @@
     "start": "2026-11-13T09:00:00-06:00",
     "temp_f": 57,
     "temp_c": 13.89,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
+   },
+   {
+    "start": "2026-11-13T10:00:00-06:00",
+    "temp_f": 60,
+    "temp_c": 15.56,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
    }
