@@ -11,15 +11,15 @@
   "lon": -85.7365,
   "history": "Same site as the official Louisville record"
  },
- "as_of_utc": "2026-11-11T09:07:59Z",
+ "as_of_utc": "2026-11-11T10:07:51Z",
  "now": {
-  "time_utc": "2026-11-11T08:50:00Z",
-  "temp_c": 10,
-  "temp_f": 50.0,
+  "time_utc": "2026-11-11T09:55:00Z",
+  "temp_c": 9,
+  "temp_f": 48.2,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 5,
-  "humidity_pct": 71.09,
-  "wind_kmh": 0,
+  "dewpoint_c": 4,
+  "humidity_pct": 70.89,
+  "wind_kmh": 7.42,
   "description": "Clear"
  },
  "today_so_far": {
@@ -38,6 +38,11 @@
    "at_least_f": 56.3,
    "about_f": 57.2,
    "time_utc": "2026-11-11T05:25:00Z"
+  },
+  "dip_between_reports": {
+   "at_most_f": 49.1,
+   "about_f": 48.2,
+   "time_utc": "2026-11-11T09:00:00Z"
   }
  },
  "record": {
@@ -255,12 +260,12 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-11T06:26:00Z",
+  "issued_utc": "2026-11-11T08:36:53Z",
   "grid": "LMK/51,74",
   "periods": [
    {
     "name": "Overnight",
-    "start": "2026-11-11T01:00:00-05:00",
+    "start": "2026-11-11T04:00:00-05:00",
     "is_daytime": false,
     "temp_f": 43,
     "temp_c": 6.11,
@@ -389,13 +394,6 @@
  "hourly": {
   "issued_utc": "2026-11-11T08:36:53Z",
   "hours": [
-   {
-    "start": "2026-11-11T04:00:00-05:00",
-    "temp_f": 44,
-    "temp_c": 6.67,
-    "precip_chance_pct": 0,
-    "short_forecast": "Clear"
-   },
    {
     "start": "2026-11-11T05:00:00-05:00",
     "temp_f": 43,
@@ -724,6 +722,13 @@
     "temp_c": 3.33,
     "precip_chance_pct": 1,
     "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "start": "2026-11-13T04:00:00-05:00",
+    "temp_f": 38,
+    "temp_c": 3.33,
+    "precip_chance_pct": 1,
+    "short_forecast": "Partly Cloudy"
    }
   ]
  },
