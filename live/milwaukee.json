@@ -11,29 +11,29 @@
   "lon": -87.9044,
   "history": "Same site as the official Milwaukee record"
  },
- "as_of_utc": "2026-11-11T11:07:50Z",
+ "as_of_utc": "2026-11-11T12:07:50Z",
  "now": {
-  "time_utc": "2026-11-11T10:50:00Z",
+  "time_utc": "2026-11-11T11:35:00Z",
   "temp_c": 6,
   "temp_f": 42.8,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 2,
   "humidity_pct": 75.52,
   "wind_kmh": 0,
-  "description": ""
+  "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-11",
-  "readings": 2,
+  "readings": 3,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
   "high_c": 7.8,
   "high_f": 46.0,
   "high_time_utc": "2026-11-11T07:52:00Z",
-  "low_c": 6.1,
-  "low_f": 43.0,
-  "low_time_utc": "2026-11-11T06:52:00Z",
+  "low_c": 5.6,
+  "low_f": 42.1,
+  "low_time_utc": "2026-11-11T10:52:00Z",
   "peak_between_reports": {
    "at_least_f": 47.3,
    "about_f": 48.2,
@@ -51,44 +51,44 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-09",
-   "is_yesterday": false,
-   "high_f": 60,
-   "low_f": 33,
+   "date": "2026-11-10",
+   "is_yesterday": true,
+   "high_f": 64,
+   "low_f": 39,
    "high_rank": {
-    "value_f": 60,
-    "warm_rank": 22,
-    "cool_rank": 135,
+    "value_f": 64,
+    "warm_rank": 6,
+    "cool_rank": 149,
     "years": 156,
     "first_year": 1871,
-    "tied_years": [],
+    "tied_years": [
+     1931,
+     1949
+    ],
     "standing": "warm",
     "notable": true,
     "since": 2022,
     "record": false,
-    "phrase": "22nd warmest November 9 high of 156 since 1871, warmest since 2022"
+    "phrase": "6th warmest November 10 high (tied) of 156 since 1871, warmest since 2022"
    },
    "low_rank": {
-    "value_f": 33,
-    "warm_rank": 88,
-    "cool_rank": 61,
+    "value_f": 39,
+    "warm_rank": 37,
+    "cool_rank": 115,
     "years": 156,
     "first_year": 1871,
     "tied_years": [
-     1872,
-     1881,
-     1885,
-     1928,
-     1929,
-     1952,
-     1989,
-     1990
+     1883,
+     1884,
+     1922,
+     2013,
+     2014
     ],
-    "standing": "cool",
+    "standing": "warm",
     "notable": false,
-    "since": 2025,
+    "since": 2024,
     "record": false,
-    "phrase": "typical for November 9"
+    "phrase": "typical for November 10"
    }
   },
   "forecast_highs": [
@@ -260,16 +260,16 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-11T10:41:48Z",
+  "issued_utc": "2026-11-11T11:32:10Z",
   "grid": "MKX/89,61",
   "periods": [
    {
     "name": "Overnight",
     "start": "2026-11-11T05:00:00-06:00",
     "is_daytime": false,
-    "temp_f": 41,
-    "temp_c": 5.0,
-    "precip_chance_pct": 14,
+    "temp_f": 40,
+    "temp_c": 4.44,
+    "precip_chance_pct": 6,
     "short_forecast": "Cloudy"
    },
    {
@@ -278,7 +278,7 @@
     "is_daytime": true,
     "temp_f": 52,
     "temp_c": 11.11,
-    "precip_chance_pct": 59,
+    "precip_chance_pct": 65,
     "short_forecast": "Light Rain Likely"
    },
    {
@@ -392,82 +392,75 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-11T10:41:48Z",
+  "issued_utc": "2026-11-11T11:12:09Z",
   "hours": [
-   {
-    "start": "2026-11-11T05:00:00-06:00",
-    "temp_f": 44,
-    "temp_c": 6.67,
-    "precip_chance_pct": 14,
-    "short_forecast": "Cloudy"
-   },
    {
     "start": "2026-11-11T06:00:00-06:00",
     "temp_f": 44,
     "temp_c": 6.67,
-    "precip_chance_pct": 22,
-    "short_forecast": "Slight Chance Light Rain"
+    "precip_chance_pct": 6,
+    "short_forecast": "Cloudy"
    },
    {
     "start": "2026-11-11T07:00:00-06:00",
     "temp_f": 45,
     "temp_c": 7.22,
-    "precip_chance_pct": 32,
-    "short_forecast": "Chance Light Rain"
+    "precip_chance_pct": 13,
+    "short_forecast": "Cloudy"
    },
    {
     "start": "2026-11-11T08:00:00-06:00",
     "temp_f": 47,
     "temp_c": 8.33,
-    "precip_chance_pct": 34,
-    "short_forecast": "Chance Light Rain"
+    "precip_chance_pct": 20,
+    "short_forecast": "Slight Chance Light Rain"
    },
    {
     "start": "2026-11-11T09:00:00-06:00",
     "temp_f": 49,
     "temp_c": 9.44,
-    "precip_chance_pct": 39,
+    "precip_chance_pct": 28,
     "short_forecast": "Chance Light Rain"
    },
    {
     "start": "2026-11-11T10:00:00-06:00",
-    "temp_f": 49,
-    "temp_c": 9.44,
-    "precip_chance_pct": 48,
+    "temp_f": 51,
+    "temp_c": 10.56,
+    "precip_chance_pct": 49,
     "short_forecast": "Chance Light Rain"
    },
    {
     "start": "2026-11-11T11:00:00-06:00",
-    "temp_f": 50,
-    "temp_c": 10.0,
-    "precip_chance_pct": 48,
-    "short_forecast": "Chance Light Rain"
+    "temp_f": 51,
+    "temp_c": 10.56,
+    "precip_chance_pct": 65,
+    "short_forecast": "Light Rain Likely"
    },
    {
     "start": "2026-11-11T12:00:00-06:00",
     "temp_f": 51,
     "temp_c": 10.56,
-    "precip_chance_pct": 59,
+    "precip_chance_pct": 60,
     "short_forecast": "Light Rain Likely"
    },
    {
     "start": "2026-11-11T13:00:00-06:00",
-    "temp_f": 51,
-    "temp_c": 10.56,
-    "precip_chance_pct": 45,
+    "temp_f": 50,
+    "temp_c": 10.0,
+    "precip_chance_pct": 46,
     "short_forecast": "Chance Light Rain"
    },
    {
     "start": "2026-11-11T14:00:00-06:00",
-    "temp_f": 50,
-    "temp_c": 10.0,
-    "precip_chance_pct": 26,
+    "temp_f": 49,
+    "temp_c": 9.44,
+    "precip_chance_pct": 29,
     "short_forecast": "Chance Light Rain"
    },
    {
     "start": "2026-11-11T15:00:00-06:00",
-    "temp_f": 50,
-    "temp_c": 10.0,
+    "temp_f": 49,
+    "temp_c": 9.44,
     "precip_chance_pct": 15,
     "short_forecast": "Slight Chance Light Rain"
    },
@@ -487,8 +480,8 @@
    },
    {
     "start": "2026-11-11T18:00:00-06:00",
-    "temp_f": 48,
-    "temp_c": 8.89,
+    "temp_f": 47,
+    "temp_c": 8.33,
     "precip_chance_pct": 15,
     "short_forecast": "Slight Chance Light Rain"
    },
@@ -727,6 +720,13 @@
     "start": "2026-11-13T04:00:00-06:00",
     "temp_f": 31,
     "temp_c": -0.56,
+    "precip_chance_pct": 1,
+    "short_forecast": "Partly Cloudy"
+   },
+   {
+    "start": "2026-11-13T05:00:00-06:00",
+    "temp_f": 30,
+    "temp_c": -1.11,
     "precip_chance_pct": 1,
     "short_forecast": "Partly Cloudy"
    }

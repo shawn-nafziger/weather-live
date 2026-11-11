@@ -11,29 +11,29 @@
   "lon": -93.2289,
   "history": "Same site as the official Minneapolis record"
  },
- "as_of_utc": "2026-11-11T11:07:50Z",
+ "as_of_utc": "2026-11-11T12:07:50Z",
  "now": {
-  "time_utc": "2026-11-11T10:50:00Z",
+  "time_utc": "2026-11-11T11:35:00Z",
   "temp_c": 9,
   "temp_f": 48.2,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 3,
-  "humidity_pct": 66.07,
-  "wind_kmh": 11.12,
+  "dewpoint_c": 2,
+  "humidity_pct": 61.54,
+  "wind_kmh": 12.96,
   "description": "Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-11",
-  "readings": 3,
+  "readings": 4,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
   "high_c": 10,
   "high_f": 50.0,
   "high_time_utc": "2026-11-11T06:53:00Z",
-  "low_c": 9.4,
-  "low_f": 48.9,
-  "low_time_utc": "2026-11-11T09:53:00Z"
+  "low_c": 8.9,
+  "low_f": 48.0,
+  "low_time_utc": "2026-11-11T10:53:00Z"
  },
  "record": {
   "series": "Minneapolis area (ThreadEx; airport)",
@@ -41,25 +41,27 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-09",
-   "is_yesterday": false,
+   "date": "2026-11-10",
+   "is_yesterday": true,
    "high_f": 61,
    "low_f": 38,
    "high_rank": {
     "value_f": 61,
-    "warm_rank": 10,
-    "cool_rank": 144,
+    "warm_rank": 9,
+    "cool_rank": 143,
     "years": 155,
     "first_year": 1872,
     "tied_years": [
-     1930,
-     2009
+     1912,
+     1915,
+     2009,
+     2015
     ],
     "standing": "warm",
     "notable": true,
     "since": 2022,
     "record": false,
-    "phrase": "10th warmest November 9 high (tied) of 155 since 1872, warmest since 2022"
+    "phrase": "9th warmest November 10 high (tied) of 155 since 1872, warmest since 2022"
    },
    "low_rank": {
     "value_f": 38,
@@ -68,17 +70,17 @@
     "years": 155,
     "first_year": 1872,
     "tied_years": [
-     1919,
-     1922,
-     1944,
-     1972,
-     1988
+     1915,
+     1923,
+     1978,
+     1999,
+     2015
     ],
     "standing": "warm",
     "notable": true,
     "since": 2024,
     "record": false,
-    "phrase": "19th warmest November 9 low (tied) of 155 since 1872, warmest since 2024"
+    "phrase": "19th warmest November 10 low (tied) of 155 since 1872, warmest since 2024"
    }
   },
   "forecast_highs": [
@@ -254,17 +256,17 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-11T07:21:00Z",
+  "issued_utc": "2026-11-11T11:06:57Z",
   "grid": "MPX/110,68",
   "periods": [
    {
     "name": "Overnight",
-    "start": "2026-11-11T02:00:00-06:00",
+    "start": "2026-11-11T05:00:00-06:00",
     "is_daytime": false,
-    "temp_f": 46,
-    "temp_c": 7.78,
-    "precip_chance_pct": 18,
-    "short_forecast": "Slight Chance Rain Showers"
+    "temp_f": 47,
+    "temp_c": 8.33,
+    "precip_chance_pct": 13,
+    "short_forecast": "Cloudy"
    },
    {
     "name": "Veterans Day",
@@ -386,26 +388,19 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-11T07:21:00Z",
+  "issued_utc": "2026-11-11T11:06:57Z",
   "hours": [
    {
-    "start": "2026-11-11T05:00:00-06:00",
-    "temp_f": 46,
-    "temp_c": 7.78,
-    "precip_chance_pct": 13,
-    "short_forecast": "Cloudy"
-   },
-   {
     "start": "2026-11-11T06:00:00-06:00",
-    "temp_f": 46,
-    "temp_c": 7.78,
+    "temp_f": 48,
+    "temp_c": 8.89,
     "precip_chance_pct": 10,
     "short_forecast": "Cloudy"
    },
    {
     "start": "2026-11-11T07:00:00-06:00",
-    "temp_f": 46,
-    "temp_c": 7.78,
+    "temp_f": 47,
+    "temp_c": 8.33,
     "precip_chance_pct": 9,
     "short_forecast": "Cloudy"
    },
@@ -721,6 +716,13 @@
     "start": "2026-11-13T04:00:00-06:00",
     "temp_f": 24,
     "temp_c": -4.44,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Clear"
+   },
+   {
+    "start": "2026-11-13T05:00:00-06:00",
+    "temp_f": 23,
+    "temp_c": -5.0,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear"
    }

@@ -11,29 +11,29 @@
   "lon": -77.0342,
   "history": "Same site as the official Washington record"
  },
- "as_of_utc": "2026-11-11T11:07:50Z",
+ "as_of_utc": "2026-11-11T12:07:50Z",
  "now": {
-  "time_utc": "2026-11-11T09:55:00Z",
-  "temp_c": 9,
-  "temp_f": 48.2,
+  "time_utc": "2026-11-11T11:35:00Z",
+  "temp_c": 10,
+  "temp_f": 50.0,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 7,
-  "humidity_pct": 87.29,
+  "humidity_pct": 81.62,
   "wind_kmh": 5.54,
-  "description": "Clear"
+  "description": "Mostly Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-11",
-  "readings": 4,
+  "readings": 5,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
   "high_c": 10,
   "high_f": 50.0,
   "high_time_utc": "2026-11-11T06:52:00Z",
-  "low_c": 9.4,
-  "low_f": 48.9,
-  "low_time_utc": "2026-11-11T08:52:00Z",
+  "low_c": 8.9,
+  "low_f": 48.0,
+  "low_time_utc": "2026-11-11T10:52:00Z",
   "peak_between_reports": {
    "at_least_f": 52.7,
    "about_f": 53.6,
@@ -46,52 +46,47 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-09",
-   "is_yesterday": false,
-   "high_f": 66,
-   "low_f": 48,
+   "date": "2026-11-10",
+   "is_yesterday": true,
+   "high_f": 67,
+   "low_f": 42,
    "high_rank": {
-    "value_f": 66,
-    "warm_rank": 34,
-    "cool_rank": 112,
+    "value_f": 67,
+    "warm_rank": 28,
+    "cool_rank": 126,
     "years": 155,
     "first_year": 1872,
     "tied_years": [
-     1874,
-     1877,
-     1891,
-     1897,
-     1964,
-     1979,
-     1981,
-     1989,
-     2000,
-     2016
-    ],
-    "standing": "warm",
-    "notable": false,
-    "since": 2023,
-    "record": false,
-    "phrase": "typical for November 9"
-   },
-   "low_rank": {
-    "value_f": 48,
-    "warm_rank": 29,
-    "cool_rank": 122,
-    "years": 155,
-    "first_year": 1872,
-    "tied_years": [
-     1890,
-     1916,
-     1918,
-     1989,
-     1997
+     1935,
+     2000
     ],
     "standing": "warm",
     "notable": true,
-    "since": 2025,
+    "since": 2022,
     "record": false,
-    "phrase": "29th warmest November 9 low (tied) of 155 since 1872, warmest since 2025"
+    "phrase": "28th warmest November 10 high (tied) of 155 since 1872, warmest since 2022"
+   },
+   "low_rank": {
+    "value_f": 42,
+    "warm_rank": 58,
+    "cool_rank": 90,
+    "years": 155,
+    "first_year": 1872,
+    "tied_years": [
+     1885,
+     1891,
+     1931,
+     1937,
+     1958,
+     2005,
+     2014,
+     2023
+    ],
+    "standing": "warm",
+    "notable": false,
+    "since": 2024,
+    "record": false,
+    "phrase": "typical for November 10"
    }
   },
   "forecast_highs": [
@@ -268,12 +263,12 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-11T08:53:12Z",
+  "issued_utc": "2026-11-11T11:52:50Z",
   "grid": "LWX/97,69",
   "periods": [
    {
     "name": "Veterans Day",
-    "start": "2026-11-11T06:00:00-05:00",
+    "start": "2026-11-11T07:00:00-05:00",
     "is_daytime": true,
     "temp_f": 68,
     "temp_c": 20.0,
@@ -402,13 +397,6 @@
  "hourly": {
   "issued_utc": "2026-11-11T08:53:12Z",
   "hours": [
-   {
-    "start": "2026-11-11T06:00:00-05:00",
-    "temp_f": 46,
-    "temp_c": 7.78,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "start": "2026-11-11T07:00:00-05:00",
     "temp_f": 45,
@@ -735,6 +723,13 @@
     "start": "2026-11-13T05:00:00-05:00",
     "temp_f": 43,
     "temp_c": 6.11,
+    "precip_chance_pct": 23,
+    "short_forecast": "Slight Chance Rain Showers"
+   },
+   {
+    "start": "2026-11-13T06:00:00-05:00",
+    "temp_f": 42,
+    "temp_c": 5.56,
     "precip_chance_pct": 23,
     "short_forecast": "Slight Chance Rain Showers"
    }

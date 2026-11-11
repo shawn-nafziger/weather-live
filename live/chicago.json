@@ -11,20 +11,20 @@
   "lon": -87.9044,
   "history": "Same station as the official Chicago record (ThreadEx, O'Hare since 1980)"
  },
- "as_of_utc": "2026-11-11T11:07:50Z",
+ "as_of_utc": "2026-11-11T12:07:50Z",
  "now": {
-  "time_utc": "2026-11-11T10:50:00Z",
-  "temp_c": 6,
-  "temp_f": 42.8,
+  "time_utc": "2026-11-11T11:35:00Z",
+  "temp_c": 7,
+  "temp_f": 44.6,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 3,
-  "humidity_pct": 81.08,
+  "humidity_pct": 75.69,
   "wind_kmh": 0,
-  "description": ""
+  "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-11",
-  "readings": 2,
+  "readings": 3,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -46,45 +46,44 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-09",
-   "is_yesterday": false,
-   "high_f": 60,
-   "low_f": 39,
+   "date": "2026-11-10",
+   "is_yesterday": true,
+   "high_f": 66,
+   "low_f": 45,
    "high_rank": {
-    "value_f": 60,
-    "warm_rank": 30,
-    "cool_rank": 121,
+    "value_f": 66,
+    "warm_rank": 7,
+    "cool_rank": 147,
     "years": 155,
     "first_year": 1872,
     "tied_years": [
-     1879,
-     1880,
-     1919,
-     1939,
-     1974
+     1909,
+     2012
     ],
     "standing": "warm",
     "notable": true,
     "since": 2022,
     "record": false,
-    "phrase": "30th warmest November 9 high (tied) of 155 since 1872, warmest since 2022"
+    "phrase": "7th warmest November 10 high (tied) of 155 since 1872, warmest since 2022"
    },
    "low_rank": {
-    "value_f": 39,
-    "warm_rank": 59,
-    "cool_rank": 94,
+    "value_f": 45,
+    "warm_rank": 17,
+    "cool_rank": 134,
     "years": 155,
     "first_year": 1872,
     "tied_years": [
-     1906,
+     1883,
      1915,
-     1937
+     1930,
+     1964,
+     1967
     ],
     "standing": "warm",
-    "notable": false,
+    "notable": true,
     "since": 2024,
     "record": false,
-    "phrase": "typical for November 9"
+    "phrase": "17th warmest November 10 low (tied) of 155 since 1872, warmest since 2024"
    }
   },
   "forecast_highs": [
@@ -398,13 +397,6 @@
  "hourly": {
   "issued_utc": "2026-11-11T09:46:08Z",
   "hours": [
-   {
-    "start": "2026-11-11T05:00:00-06:00",
-    "temp_f": 43,
-    "temp_c": 6.11,
-    "precip_chance_pct": 4,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "start": "2026-11-11T06:00:00-06:00",
     "temp_f": 44,
@@ -731,6 +723,13 @@
     "start": "2026-11-13T04:00:00-06:00",
     "temp_f": 34,
     "temp_c": 1.11,
+    "precip_chance_pct": 15,
+    "short_forecast": "Slight Chance Snow Showers"
+   },
+   {
+    "start": "2026-11-13T05:00:00-06:00",
+    "temp_f": 33,
+    "temp_c": 0.56,
     "precip_chance_pct": 15,
     "short_forecast": "Slight Chance Snow Showers"
    }

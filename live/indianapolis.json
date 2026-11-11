@@ -11,29 +11,29 @@
   "lon": -86.2816,
   "history": "Same site as the official Indianapolis record"
  },
- "as_of_utc": "2026-11-11T11:07:50Z",
+ "as_of_utc": "2026-11-11T12:07:50Z",
  "now": {
-  "time_utc": "2026-11-11T10:50:00Z",
-  "temp_c": 7,
-  "temp_f": 44.6,
+  "time_utc": "2026-11-11T11:35:00Z",
+  "temp_c": 6,
+  "temp_f": 42.8,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 6,
-  "humidity_pct": 93.35,
-  "wind_kmh": 5.54,
+  "dewpoint_c": 4,
+  "humidity_pct": 87.0,
+  "wind_kmh": 0,
   "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-11",
-  "readings": 2,
+  "readings": 3,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
   "high_c": 7.2,
   "high_f": 45.0,
   "high_time_utc": "2026-11-11T06:54:00Z",
-  "low_c": 6.7,
-  "low_f": 44.1,
-  "low_time_utc": "2026-11-11T07:54:00Z",
+  "low_c": 6.1,
+  "low_f": 43.0,
+  "low_time_utc": "2026-11-11T10:54:00Z",
   "peak_between_reports": {
    "at_least_f": 45.5,
    "about_f": 46.4,
@@ -51,48 +51,47 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-09",
-   "is_yesterday": false,
-   "high_f": 63,
-   "low_f": 38,
+   "date": "2026-11-10",
+   "is_yesterday": true,
+   "high_f": 69,
+   "low_f": 45,
    "high_rank": {
-    "value_f": 63,
-    "warm_rank": 37,
-    "cool_rank": 112,
+    "value_f": 69,
+    "warm_rank": 12,
+    "cool_rank": 143,
     "years": 156,
     "first_year": 1871,
     "tied_years": [
-     1884,
-     1890,
-     1903,
-     1906,
-     1920,
-     1937,
-     1988,
-     2012
+     1899,
+     1942
     ],
     "standing": "warm",
-    "notable": false,
-    "since": 2023,
+    "notable": true,
+    "since": 2022,
     "record": false,
-    "phrase": "typical for November 9"
+    "phrase": "12th warmest November 10 high (tied) of 156 since 1871, warmest since 2022"
    },
    "low_rank": {
-    "value_f": 38,
-    "warm_rank": 68,
-    "cool_rank": 86,
+    "value_f": 45,
+    "warm_rank": 26,
+    "cool_rank": 123,
     "years": 156,
     "first_year": 1871,
     "tied_years": [
-     1949,
-     1954,
-     2011
+     1879,
+     1880,
+     1917,
+     1930,
+     1946,
+     1970,
+     1984,
+     1995
     ],
     "standing": "warm",
-    "notable": false,
+    "notable": true,
     "since": 2024,
     "record": false,
-    "phrase": "typical for November 9"
+    "phrase": "26th warmest November 10 low (tied) of 156 since 1871, warmest since 2024"
    }
   },
   "forecast_highs": [
@@ -258,18 +257,9 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-11T10:16:21Z",
+  "issued_utc": "2026-11-11T11:45:22Z",
   "grid": "IND/54,67",
   "periods": [
-   {
-    "name": "Overnight",
-    "start": "2026-11-11T05:00:00-05:00",
-    "is_daytime": false,
-    "temp_f": 43,
-    "temp_c": 6.11,
-    "precip_chance_pct": 0,
-    "short_forecast": "Patchy Fog"
-   },
    {
     "name": "Veterans Day",
     "start": "2026-11-11T06:00:00-05:00",
@@ -280,7 +270,7 @@
     "short_forecast": "Patchy Fog then Scattered Showers And Thunderstorms"
    },
    {
-    "name": "Wednesday Night",
+    "name": "Tonight",
     "start": "2026-11-11T18:00:00-05:00",
     "is_daytime": false,
     "temp_f": 41,
@@ -386,23 +376,25 @@
     "temp_c": 10.56,
     "precip_chance_pct": 2,
     "short_forecast": "Sunny"
+   },
+   {
+    "name": "Tuesday Night",
+    "start": "2026-11-17T18:00:00-05:00",
+    "is_daytime": false,
+    "temp_f": 29,
+    "temp_c": -1.67,
+    "precip_chance_pct": 2,
+    "short_forecast": "Mostly Clear"
    }
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-11T10:16:21Z",
+  "issued_utc": "2026-11-11T11:15:20Z",
   "hours": [
    {
-    "start": "2026-11-11T06:00:00-05:00",
-    "temp_f": 43,
-    "temp_c": 6.11,
-    "precip_chance_pct": 0,
-    "short_forecast": "Patchy Fog"
-   },
-   {
     "start": "2026-11-11T07:00:00-05:00",
-    "temp_f": 43,
-    "temp_c": 6.11,
+    "temp_f": 44,
+    "temp_c": 6.67,
     "precip_chance_pct": 0,
     "short_forecast": "Patchy Fog"
    },
@@ -723,6 +715,13 @@
    },
    {
     "start": "2026-11-13T05:00:00-05:00",
+    "temp_f": 35,
+    "temp_c": 1.67,
+    "precip_chance_pct": 4,
+    "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "start": "2026-11-13T06:00:00-05:00",
     "temp_f": 35,
     "temp_c": 1.67,
     "precip_chance_pct": 4,

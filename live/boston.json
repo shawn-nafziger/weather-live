@@ -11,20 +11,20 @@
   "lon": -71.0106,
   "history": "Same site as the official Boston record"
  },
- "as_of_utc": "2026-11-11T11:07:50Z",
+ "as_of_utc": "2026-11-11T12:07:50Z",
  "now": {
-  "time_utc": "2026-11-11T09:55:00Z",
-  "temp_c": 9,
-  "temp_f": 48.2,
+  "time_utc": "2026-11-11T11:35:00Z",
+  "temp_c": 10,
+  "temp_f": 50.0,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 3,
-  "humidity_pct": 66.07,
-  "wind_kmh": 16.67,
+  "dewpoint_c": 2,
+  "humidity_pct": 57.54,
+  "wind_kmh": 18.5,
   "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-11",
-  "readings": 3,
+  "readings": 4,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -46,43 +46,49 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-09",
-   "is_yesterday": false,
-   "high_f": 58,
-   "low_f": 48,
+   "date": "2026-11-10",
+   "is_yesterday": true,
+   "high_f": 56,
+   "low_f": 46,
    "high_rank": {
-    "value_f": 58,
-    "warm_rank": 51,
-    "cool_rank": 102,
-    "years": 155,
-    "first_year": 1872,
-    "tied_years": [
-     1946,
-     1949,
-     1977
-    ],
-    "standing": "warm",
-    "notable": false,
-    "since": 2021,
-    "record": false,
-    "phrase": "typical for November 9"
-   },
-   "low_rank": {
-    "value_f": 48,
-    "warm_rank": 16,
-    "cool_rank": 136,
+    "value_f": 56,
+    "warm_rank": 49,
+    "cool_rank": 100,
     "years": 154,
     "first_year": 1872,
     "tied_years": [
-     1915,
-     1946,
-     2008
+     1937,
+     1951,
+     1978,
+     1983,
+     1996,
+     2025
+    ],
+    "standing": "warm",
+    "notable": false,
+    "since": 2025,
+    "record": false,
+    "phrase": "typical for November 10"
+   },
+   "low_rank": {
+    "value_f": 46,
+    "warm_rank": 20,
+    "cool_rank": 130,
+    "years": 155,
+    "first_year": 1872,
+    "tied_years": [
+     1935,
+     1944,
+     1970,
+     1978,
+     1999,
+     2006
     ],
     "standing": "warm",
     "notable": true,
-    "since": 2008,
+    "since": 2021,
     "record": false,
-    "phrase": "16th warmest November 9 low (tied) of 154 since 1872, warmest since 2008"
+    "phrase": "20th warmest November 10 low (tied) of 155 since 1872, warmest since 2021"
    }
   },
   "forecast_highs": [
@@ -273,15 +279,6 @@
   "grid": "BOX/73,101",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-11T05:00:00-05:00",
-    "is_daytime": false,
-    "temp_f": 46,
-    "temp_c": 7.78,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Clear"
-   },
-   {
     "name": "Veterans Day",
     "start": "2026-11-11T06:00:00-05:00",
     "is_daytime": true,
@@ -291,7 +288,7 @@
     "short_forecast": "Sunny"
    },
    {
-    "name": "Wednesday Night",
+    "name": "Tonight",
     "start": "2026-11-11T18:00:00-05:00",
     "is_daytime": false,
     "temp_f": 45,
@@ -397,19 +394,21 @@
     "temp_c": 10.56,
     "precip_chance_pct": 1,
     "short_forecast": "Sunny"
+   },
+   {
+    "name": "Tuesday Night",
+    "start": "2026-11-17T18:00:00-05:00",
+    "is_daytime": false,
+    "temp_f": 36,
+    "temp_c": 2.22,
+    "precip_chance_pct": 1,
+    "short_forecast": "Mostly Clear"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-11T09:14:46Z",
   "hours": [
-   {
-    "start": "2026-11-11T06:00:00-05:00",
-    "temp_f": 47,
-    "temp_c": 8.33,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "start": "2026-11-11T07:00:00-05:00",
     "temp_f": 46,
@@ -736,6 +735,13 @@
     "start": "2026-11-13T05:00:00-05:00",
     "temp_f": 43,
     "temp_c": 6.11,
+    "precip_chance_pct": 98,
+    "short_forecast": "Light Rain"
+   },
+   {
+    "start": "2026-11-13T06:00:00-05:00",
+    "temp_f": 45,
+    "temp_c": 7.22,
     "precip_chance_pct": 98,
     "short_forecast": "Light Rain"
    }

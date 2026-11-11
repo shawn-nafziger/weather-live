@@ -11,20 +11,20 @@
   "lon": -97.6003,
   "history": "Same site as the official Oklahoma City record"
  },
- "as_of_utc": "2026-11-11T11:07:50Z",
+ "as_of_utc": "2026-11-11T12:07:50Z",
  "now": {
-  "time_utc": "2026-11-11T10:50:00Z",
+  "time_utc": "2026-11-11T11:35:00Z",
   "temp_c": 11,
   "temp_f": 51.8,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": null,
   "humidity_pct": null,
-  "wind_kmh": 7.42,
-  "description": "Clear"
+  "wind_kmh": 5.54,
+  "description": "Fog/Mist"
  },
  "today_so_far": {
   "date_local": "2026-11-11",
-  "readings": 4,
+  "readings": 5,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -46,41 +46,44 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-09",
-   "is_yesterday": false,
-   "high_f": 71,
-   "low_f": 41,
+   "date": "2026-11-10",
+   "is_yesterday": true,
+   "high_f": 73,
+   "low_f": 50,
    "high_rank": {
-    "value_f": 71,
-    "warm_rank": 34,
-    "cool_rank": 101,
+    "value_f": 73,
+    "warm_rank": 25,
+    "cool_rank": 109,
     "years": 137,
     "first_year": 1890,
     "tied_years": [
-     1954,
-     1982,
-     2020
+     1912,
+     1914,
+     1964,
+     2019
     ],
     "standing": "warm",
-    "notable": false,
-    "since": 2022,
+    "notable": true,
+    "since": 2019,
     "record": false,
-    "phrase": "typical for November 9"
+    "phrase": "25th warmest November 10 high (tied) of 137 since 1890, warmest since 2019"
    },
    "low_rank": {
-    "value_f": 41,
-    "warm_rank": 67,
-    "cool_rank": 70,
+    "value_f": 50,
+    "warm_rank": 21,
+    "cool_rank": 114,
     "years": 137,
     "first_year": 1890,
     "tied_years": [
-     1976
+     1917,
+     1967,
+     1999
     ],
     "standing": "warm",
-    "notable": false,
-    "since": 2023,
+    "notable": true,
+    "since": 2021,
     "record": false,
-    "phrase": "typical for November 9"
+    "phrase": "21st warmest November 10 low (tied) of 137 since 1890, warmest since 2021"
    }
   },
   "forecast_highs": [
@@ -248,7 +251,7 @@
   "periods": [
    {
     "name": "Overnight",
-    "start": "2026-11-11T00:00:00-06:00",
+    "start": "2026-11-11T01:00:00-06:00",
     "is_daytime": false,
     "temp_f": 54,
     "temp_c": 12.22,
@@ -377,13 +380,6 @@
  "hourly": {
   "issued_utc": "2026-11-11T06:26:50Z",
   "hours": [
-   {
-    "start": "2026-11-11T05:00:00-06:00",
-    "temp_f": 54,
-    "temp_c": 12.22,
-    "precip_chance_pct": 0,
-    "short_forecast": "Patchy Fog"
-   },
    {
     "start": "2026-11-11T06:00:00-06:00",
     "temp_f": 54,
@@ -710,6 +706,13 @@
     "start": "2026-11-13T04:00:00-06:00",
     "temp_f": 43,
     "temp_c": 6.11,
+    "precip_chance_pct": 0,
+    "short_forecast": "Clear"
+   },
+   {
+    "start": "2026-11-13T05:00:00-06:00",
+    "temp_f": 42,
+    "temp_c": 5.56,
     "precip_chance_pct": 0,
     "short_forecast": "Clear"
    }

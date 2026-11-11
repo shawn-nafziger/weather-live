@@ -11,20 +11,20 @@
   "lon": -95.3607,
   "history": "Same site as the official Houston record"
  },
- "as_of_utc": "2026-11-11T11:07:50Z",
+ "as_of_utc": "2026-11-11T12:07:50Z",
  "now": {
-  "time_utc": "2026-11-11T10:50:00Z",
+  "time_utc": "2026-11-11T11:35:00Z",
   "temp_c": 16,
   "temp_f": 60.8,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 15,
   "humidity_pct": 93.79,
-  "wind_kmh": 7.42,
-  "description": "Light Rain and Fog/Mist"
+  "wind_kmh": 9.25,
+  "description": "Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-11",
-  "readings": 4,
+  "readings": 5,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -41,43 +41,46 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-09",
-   "is_yesterday": false,
-   "high_f": 66,
-   "low_f": 56,
+   "date": "2026-11-10",
+   "is_yesterday": true,
+   "high_f": 77,
+   "low_f": 58,
    "high_rank": {
-    "value_f": 66,
-    "warm_rank": 111,
-    "cool_rank": 22,
-    "years": 135,
-    "first_year": 1889,
-    "tied_years": [
-     1959,
-     1974,
-     2017
-    ],
-    "standing": "cool",
-    "notable": true,
-    "since": 2018,
-    "record": false,
-    "phrase": "22nd coolest November 9 high (tied) of 135 since 1889, coolest since 2018"
-   },
-   "low_rank": {
-    "value_f": 56,
-    "warm_rank": 58,
-    "cool_rank": 76,
+    "value_f": 77,
+    "warm_rank": 47,
+    "cool_rank": 86,
     "years": 136,
     "first_year": 1889,
     "tied_years": [
-     1893,
-     1940,
-     2003
+     1922,
+     1964,
+     1975,
+     1986
     ],
     "standing": "warm",
     "notable": false,
     "since": 2024,
     "record": false,
-    "phrase": "typical for November 9"
+    "phrase": "typical for November 10"
+   },
+   "low_rank": {
+    "value_f": 58,
+    "warm_rank": 43,
+    "cool_rank": 88,
+    "years": 135,
+    "first_year": 1889,
+    "tied_years": [
+     1962,
+     1963,
+     1980,
+     2012,
+     2021
+    ],
+    "standing": "warm",
+    "notable": false,
+    "since": 2024,
+    "record": false,
+    "phrase": "typical for November 10"
    }
   },
   "forecast_highs": [
@@ -256,15 +259,6 @@
   "grid": "HGX/63,104",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-11T01:00:00-06:00",
-    "is_daytime": false,
-    "temp_f": 59,
-    "temp_c": 15.0,
-    "precip_chance_pct": 72,
-    "short_forecast": "Showers And Thunderstorms Likely"
-   },
-   {
     "name": "Veterans Day",
     "start": "2026-11-11T06:00:00-06:00",
     "is_daytime": true,
@@ -274,7 +268,7 @@
     "short_forecast": "Showers And Thunderstorms Likely"
    },
    {
-    "name": "Wednesday Night",
+    "name": "Tonight",
     "start": "2026-11-11T18:00:00-06:00",
     "is_daytime": false,
     "temp_f": 60,
@@ -380,19 +374,21 @@
     "temp_c": 21.11,
     "precip_chance_pct": 2,
     "short_forecast": "Mostly Sunny"
+   },
+   {
+    "name": "Tuesday Night",
+    "start": "2026-11-17T18:00:00-06:00",
+    "is_daytime": false,
+    "temp_f": 52,
+    "temp_c": 11.11,
+    "precip_chance_pct": 0,
+    "short_forecast": "Partly Cloudy"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-11T06:21:02Z",
   "hours": [
-   {
-    "start": "2026-11-11T05:00:00-06:00",
-    "temp_f": 59,
-    "temp_c": 15.0,
-    "precip_chance_pct": 72,
-    "short_forecast": "Showers And Thunderstorms Likely"
-   },
    {
     "start": "2026-11-11T06:00:00-06:00",
     "temp_f": 59,
@@ -719,6 +715,13 @@
     "start": "2026-11-13T04:00:00-06:00",
     "temp_f": 54,
     "temp_c": 12.22,
+    "precip_chance_pct": 0,
+    "short_forecast": "Clear"
+   },
+   {
+    "start": "2026-11-13T05:00:00-06:00",
+    "temp_f": 52,
+    "temp_c": 11.11,
     "precip_chance_pct": 0,
     "short_forecast": "Clear"
    }
