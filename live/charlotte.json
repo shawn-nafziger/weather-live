@@ -11,16 +11,16 @@
   "lon": -80.9614,
   "history": "Same site as the official Charlotte record"
  },
- "as_of_utc": "2026-11-11T22:51:36Z",
+ "as_of_utc": "2026-11-11T23:07:52Z",
  "now": {
-  "time_utc": "2026-11-11T22:20:00Z",
-  "temp_c": 19,
-  "temp_f": 66.2,
+  "time_utc": "2026-11-11T22:50:00Z",
+  "temp_c": 18,
+  "temp_f": 64.4,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 8,
-  "humidity_pct": 48.86,
+  "humidity_pct": 52.01,
   "wind_kmh": 9.25,
-  "description": "Clear"
+  "description": "Partly Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-11",
@@ -111,30 +111,6 @@
    "phrase": "already the 22nd warmest November 11 high (tied) of 149 since 1878, warmest since 2022"
   },
   "forecast_highs": [
-   {
-    "period": "Veterans Day",
-    "date": "2026-11-11",
-    "high_f": 72,
-    "would_rank": {
-     "value_f": 72,
-     "warm_rank": 22,
-     "cool_rank": 123,
-     "years": 149,
-     "first_year": 1878,
-     "tied_years": [
-      1908,
-      1939,
-      2012,
-      2016,
-      2021
-     ],
-     "standing": "warm",
-     "notable": true,
-     "since": 2022,
-     "record": false,
-     "phrase": "22nd warmest November 11 high (tied) of 149 since 1878, warmest since 2022"
-    }
-   },
    {
     "period": "Thursday",
     "date": "2026-11-12",
@@ -286,22 +262,37 @@
      "record": false,
      "phrase": "27th coolest November 17 high (tied) of 149 since 1878, coolest since 2022"
     }
+   },
+   {
+    "period": "Wednesday",
+    "date": "2026-11-18",
+    "high_f": 59,
+    "would_rank": {
+     "value_f": 59,
+     "warm_rank": 90,
+     "cool_rank": 55,
+     "years": 149,
+     "first_year": 1878,
+     "tied_years": [
+      1879,
+      1904,
+      1950,
+      1955,
+      1995
+     ],
+     "standing": "cool",
+     "notable": false,
+     "since": 2022,
+     "record": false,
+     "phrase": "typical for November 18"
+    }
    }
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-11T18:23:40Z",
+  "issued_utc": "2026-11-11T22:39:11Z",
   "grid": "GSP/115,64",
   "periods": [
-   {
-    "name": "Veterans Day",
-    "start": "2026-11-11T14:00:00-05:00",
-    "is_daytime": true,
-    "temp_f": 72,
-    "temp_c": 22.22,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Sunny"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-11T18:00:00-05:00",
@@ -418,19 +409,21 @@
     "temp_c": 1.11,
     "precip_chance_pct": 10,
     "short_forecast": "Mostly Clear"
+   },
+   {
+    "name": "Wednesday",
+    "start": "2026-11-18T06:00:00-05:00",
+    "is_daytime": true,
+    "temp_f": 59,
+    "temp_c": 15.0,
+    "precip_chance_pct": 5,
+    "short_forecast": "Sunny"
    }
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-11T18:23:40Z",
+  "issued_utc": "2026-11-11T22:39:11Z",
   "hours": [
-   {
-    "start": "2026-11-11T17:00:00-05:00",
-    "temp_f": 69,
-    "temp_c": 20.56,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Sunny"
-   },
    {
     "start": "2026-11-11T18:00:00-05:00",
     "temp_f": 63,
@@ -759,6 +752,13 @@
     "temp_c": 13.33,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Sunny"
+   },
+   {
+    "start": "2026-11-13T17:00:00-05:00",
+    "temp_f": 54,
+    "temp_c": 12.22,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
    }
   ]
  },

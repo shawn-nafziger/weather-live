@@ -11,9 +11,9 @@
   "lon": -78.7819,
   "history": "Same site as the official Raleigh record"
  },
- "as_of_utc": "2026-11-11T22:51:36Z",
+ "as_of_utc": "2026-11-11T23:07:52Z",
  "now": {
-  "time_utc": "2026-11-11T22:20:00Z",
+  "time_utc": "2026-11-11T22:50:00Z",
   "temp_c": 18,
   "temp_f": 64.4,
   "precision": "nearest whole \u00b0C",
@@ -101,27 +101,6 @@
    "phrase": "already the 18th warmest November 11 high (tied) of 140 since 1887, warmest since 2024"
   },
   "forecast_highs": [
-   {
-    "period": "Veterans Day",
-    "date": "2026-11-11",
-    "high_f": 74,
-    "would_rank": {
-     "value_f": 74,
-     "warm_rank": 18,
-     "cool_rank": 121,
-     "years": 140,
-     "first_year": 1887,
-     "tied_years": [
-      1899,
-      1927
-     ],
-     "standing": "warm",
-     "notable": true,
-     "since": 2024,
-     "record": false,
-     "phrase": "18th warmest November 11 high (tied) of 140 since 1887, warmest since 2024"
-    }
-   },
    {
     "period": "Thursday",
     "date": "2026-11-12",
@@ -267,6 +246,30 @@
      "record": false,
      "phrase": "23rd coolest November 17 high (tied) of 140 since 1887, coolest since 2022"
     }
+   },
+   {
+    "period": "Wednesday",
+    "date": "2026-11-18",
+    "high_f": 57,
+    "would_rank": {
+     "value_f": 57,
+     "warm_rank": 88,
+     "cool_rank": 47,
+     "years": 139,
+     "first_year": 1887,
+     "tied_years": [
+      1889,
+      1912,
+      1950,
+      1984,
+      1988
+     ],
+     "standing": "cool",
+     "notable": false,
+     "since": 2022,
+     "record": false,
+     "phrase": "typical for November 18"
+    }
    }
   ]
  },
@@ -274,15 +277,6 @@
   "issued_utc": "2026-11-11T18:11:52Z",
   "grid": "RAH/69,62",
   "periods": [
-   {
-    "name": "Veterans Day",
-    "start": "2026-11-11T17:00:00-05:00",
-    "is_daytime": true,
-    "temp_f": 74,
-    "temp_c": 23.33,
-    "precip_chance_pct": 0,
-    "short_forecast": "Partly Sunny"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-11T18:00:00-05:00",
@@ -399,19 +393,21 @@
     "temp_c": 0.56,
     "precip_chance_pct": 12,
     "short_forecast": "Mostly Clear"
+   },
+   {
+    "name": "Wednesday",
+    "start": "2026-11-18T06:00:00-05:00",
+    "is_daytime": true,
+    "temp_f": 57,
+    "temp_c": 13.89,
+    "precip_chance_pct": 9,
+    "short_forecast": "Sunny"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-11T18:11:52Z",
   "hours": [
-   {
-    "start": "2026-11-11T17:00:00-05:00",
-    "temp_f": 67,
-    "temp_c": 19.44,
-    "precip_chance_pct": 0,
-    "short_forecast": "Partly Sunny"
-   },
    {
     "start": "2026-11-11T18:00:00-05:00",
     "temp_f": 63,
@@ -738,6 +734,13 @@
     "start": "2026-11-13T16:00:00-05:00",
     "temp_f": 56,
     "temp_c": 13.33,
+    "precip_chance_pct": 6,
+    "short_forecast": "Mostly Sunny"
+   },
+   {
+    "start": "2026-11-13T17:00:00-05:00",
+    "temp_f": 54,
+    "temp_c": 12.22,
     "precip_chance_pct": 6,
     "short_forecast": "Mostly Sunny"
    }
