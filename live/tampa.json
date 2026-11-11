@@ -11,16 +11,16 @@
   "lon": -82.5403,
   "history": "Same site as the official Tampa record"
  },
- "as_of_utc": "2026-11-11T10:07:51Z",
+ "as_of_utc": "2026-11-11T11:07:50Z",
  "now": {
-  "time_utc": "2026-11-11T09:55:00Z",
+  "time_utc": "2026-11-11T10:50:00Z",
   "temp_c": 22,
   "temp_f": 71.6,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 20,
   "humidity_pct": 88.44,
-  "wind_kmh": 5.54,
-  "description": "Clear"
+  "wind_kmh": 0,
+  "description": "Partly Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-11",
@@ -284,29 +284,20 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-11T06:56:37Z",
+  "issued_utc": "2026-11-11T10:07:03Z",
   "grid": "TBW/68,98",
   "periods": [
-   {
-    "name": "Overnight",
-    "start": "2026-11-11T03:00:00-05:00",
-    "is_daytime": false,
-    "temp_f": 68,
-    "temp_c": 20.0,
-    "precip_chance_pct": 2,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "name": "Veterans Day",
     "start": "2026-11-11T06:00:00-05:00",
     "is_daytime": true,
     "temp_f": 82,
     "temp_c": 27.78,
-    "precip_chance_pct": 10,
+    "precip_chance_pct": 11,
     "short_forecast": "Mostly Cloudy"
    },
    {
-    "name": "Wednesday Night",
+    "name": "Tonight",
     "start": "2026-11-11T18:00:00-05:00",
     "is_daytime": false,
     "temp_f": 66,
@@ -412,19 +403,21 @@
     "temp_c": 25.56,
     "precip_chance_pct": 27,
     "short_forecast": "Chance Rain Showers"
+   },
+   {
+    "name": "Tuesday Night",
+    "start": "2026-11-17T18:00:00-05:00",
+    "is_daytime": false,
+    "temp_f": 62,
+    "temp_c": 16.67,
+    "precip_chance_pct": 25,
+    "short_forecast": "Chance Rain Showers"
    }
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-11T06:56:37Z",
+  "issued_utc": "2026-11-11T10:07:03Z",
   "hours": [
-   {
-    "start": "2026-11-11T05:00:00-05:00",
-    "temp_f": 69,
-    "temp_c": 20.56,
-    "precip_chance_pct": 2,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "start": "2026-11-11T06:00:00-05:00",
     "temp_f": 69,
@@ -443,14 +436,14 @@
     "start": "2026-11-11T08:00:00-05:00",
     "temp_f": 70,
     "temp_c": 21.11,
-    "precip_chance_pct": 6,
+    "precip_chance_pct": 11,
     "short_forecast": "Mostly Cloudy"
    },
    {
     "start": "2026-11-11T09:00:00-05:00",
     "temp_f": 74,
     "temp_c": 23.33,
-    "precip_chance_pct": 5,
+    "precip_chance_pct": 6,
     "short_forecast": "Mostly Cloudy"
    },
    {
@@ -751,6 +744,13 @@
     "start": "2026-11-13T04:00:00-05:00",
     "temp_f": 66,
     "temp_c": 18.89,
+    "precip_chance_pct": 2,
+    "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "start": "2026-11-13T05:00:00-05:00",
+    "temp_f": 64,
+    "temp_c": 17.78,
     "precip_chance_pct": 2,
     "short_forecast": "Mostly Cloudy"
    }

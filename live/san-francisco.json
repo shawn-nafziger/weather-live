@@ -11,29 +11,34 @@
   "lon": -122.3656,
   "history": "About 18 km from the official San Francisco record's site, so today and the forecast aren't ranked against it"
  },
- "as_of_utc": "2026-11-11T10:07:51Z",
+ "as_of_utc": "2026-11-11T11:07:50Z",
  "now": {
-  "time_utc": "2026-11-11T09:55:00Z",
-  "temp_c": 12,
-  "temp_f": 53.6,
+  "time_utc": "2026-11-11T10:50:00Z",
+  "temp_c": 13,
+  "temp_f": 55.4,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 11,
-  "humidity_pct": 93.6,
+  "humidity_pct": 87.66,
   "wind_kmh": null,
-  "description": "Mostly Clear"
+  "description": "Mostly Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-11",
-  "readings": 7,
-  "basis": "5-minute readings (whole \u00b0C, approximate)",
-  "approximate": true,
+  "readings": 2,
+  "basis": "hourly reports (tenths of a degree)",
+  "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 14,
-  "high_f": 57.2,
-  "high_time_utc": "2026-11-11T08:00:00Z",
-  "low_c": 12,
-  "low_f": 53.6,
-  "low_time_utc": "2026-11-11T09:50:00Z"
+  "high_c": 12.8,
+  "high_f": 55.0,
+  "high_time_utc": "2026-11-11T10:42:00Z",
+  "low_c": 12.2,
+  "low_f": 54.0,
+  "low_time_utc": "2026-11-11T09:56:00Z",
+  "peak_between_reports": {
+   "at_least_f": 56.3,
+   "about_f": 57.2,
+   "time_utc": "2026-11-11T08:00:00Z"
+  }
  },
  "record": {
   "series": "San Francisco area (ThreadEx; downtown)",
@@ -85,12 +90,12 @@
   "note": "Today's readings come from a different station than this record, so today and the forecast aren't ranked against it."
  },
  "forecast": {
-  "issued_utc": "2026-11-11T08:26:25Z",
+  "issued_utc": "2026-11-11T10:22:00Z",
   "grid": "MTR/85,98",
   "periods": [
    {
     "name": "Overnight",
-    "start": "2026-11-11T00:00:00-08:00",
+    "start": "2026-11-11T02:00:00-08:00",
     "is_daytime": false,
     "temp_f": 55,
     "temp_c": 12.78,
@@ -217,15 +222,8 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-11T08:26:25Z",
+  "issued_utc": "2026-11-11T10:22:00Z",
   "hours": [
-   {
-    "start": "2026-11-11T02:00:00-08:00",
-    "temp_f": 57,
-    "temp_c": 13.89,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Clear"
-   },
    {
     "start": "2026-11-11T03:00:00-08:00",
     "temp_f": 56,
@@ -552,6 +550,13 @@
     "start": "2026-11-13T01:00:00-08:00",
     "temp_f": 61,
     "temp_c": 16.11,
+    "precip_chance_pct": 27,
+    "short_forecast": "Chance Light Rain"
+   },
+   {
+    "start": "2026-11-13T02:00:00-08:00",
+    "temp_f": 60,
+    "temp_c": 15.56,
     "precip_chance_pct": 27,
     "short_forecast": "Chance Light Rain"
    }

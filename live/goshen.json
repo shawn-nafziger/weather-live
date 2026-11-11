@@ -11,9 +11,9 @@
   "lon": -85.7867,
   "history": "Provisional: Goshen Municipal Airport. The long record (GOSHEN 3SW) is a once-a-day volunteer station, so today's readings and the record come from different stations (question D2)"
  },
- "as_of_utc": "2026-11-11T10:07:51Z",
+ "as_of_utc": "2026-11-11T11:07:50Z",
  "now": {
-  "time_utc": "2026-11-11T09:50:00Z",
+  "time_utc": "2026-11-11T10:45:00Z",
   "temp_c": 2,
   "temp_f": 35.6,
   "precision": "nearest whole \u00b0C",
@@ -33,7 +33,12 @@
   "high_time_utc": "2026-11-11T05:53:00Z",
   "low_c": 2.2,
   "low_f": 36.0,
-  "low_time_utc": "2026-11-11T07:53:00Z"
+  "low_time_utc": "2026-11-11T07:53:00Z",
+  "dip_between_reports": {
+   "at_most_f": 34.7,
+   "about_f": 33.8,
+   "time_utc": "2026-11-11T10:05:00Z"
+  }
  },
  "record": {
   "series": "GOSHEN 3SW (COOP 123418)",
@@ -84,18 +89,9 @@
   "note": "Today's readings come from a different station than this record, so today and the forecast aren't ranked against it."
  },
  "forecast": {
-  "issued_utc": "2026-11-11T08:29:53Z",
+  "issued_utc": "2026-11-11T10:45:17Z",
   "grid": "IWX/45,57",
   "periods": [
-   {
-    "name": "Overnight",
-    "start": "2026-11-11T05:00:00-05:00",
-    "is_daytime": false,
-    "temp_f": 36,
-    "temp_c": 2.22,
-    "precip_chance_pct": 0,
-    "short_forecast": "Patchy Fog"
-   },
    {
     "name": "Veterans Day",
     "start": "2026-11-11T06:00:00-05:00",
@@ -106,7 +102,7 @@
     "short_forecast": "Patchy Fog then Chance Rain Showers"
    },
    {
-    "name": "Wednesday Night",
+    "name": "Tonight",
     "start": "2026-11-11T18:00:00-05:00",
     "is_daytime": false,
     "temp_f": 37,
@@ -212,19 +208,21 @@
     "temp_c": 9.44,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Sunny"
+   },
+   {
+    "name": "Tuesday Night",
+    "start": "2026-11-17T18:00:00-05:00",
+    "is_daytime": false,
+    "temp_f": 27,
+    "temp_c": -2.78,
+    "precip_chance_pct": 1,
+    "short_forecast": "Mostly Clear"
    }
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-11T08:29:53Z",
+  "issued_utc": "2026-11-11T10:45:17Z",
   "hours": [
-   {
-    "start": "2026-11-11T05:00:00-05:00",
-    "temp_f": 37,
-    "temp_c": 2.78,
-    "precip_chance_pct": 0,
-    "short_forecast": "Patchy Fog"
-   },
    {
     "start": "2026-11-11T06:00:00-05:00",
     "temp_f": 36,
@@ -549,6 +547,13 @@
    },
    {
     "start": "2026-11-13T04:00:00-05:00",
+    "temp_f": 29,
+    "temp_c": -1.67,
+    "precip_chance_pct": 2,
+    "short_forecast": "Partly Cloudy"
+   },
+   {
+    "start": "2026-11-13T05:00:00-05:00",
     "temp_f": 29,
     "temp_c": -1.67,
     "precip_chance_pct": 2,

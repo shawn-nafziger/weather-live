@@ -11,7 +11,7 @@
   "lon": -77.0342,
   "history": "Same site as the official Washington record"
  },
- "as_of_utc": "2026-11-11T10:07:51Z",
+ "as_of_utc": "2026-11-11T11:07:50Z",
  "now": {
   "time_utc": "2026-11-11T09:55:00Z",
   "temp_c": 9,
@@ -24,7 +24,7 @@
  },
  "today_so_far": {
   "date_local": "2026-11-11",
-  "readings": 3,
+  "readings": 4,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -272,15 +272,6 @@
   "grid": "LWX/97,69",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-11T04:00:00-05:00",
-    "is_daytime": false,
-    "temp_f": 45,
-    "temp_c": 7.22,
-    "precip_chance_pct": 0,
-    "short_forecast": "Clear"
-   },
-   {
     "name": "Veterans Day",
     "start": "2026-11-11T06:00:00-05:00",
     "is_daytime": true,
@@ -290,7 +281,7 @@
     "short_forecast": "Sunny"
    },
    {
-    "name": "Wednesday Night",
+    "name": "Tonight",
     "start": "2026-11-11T18:00:00-05:00",
     "is_daytime": false,
     "temp_f": 50,
@@ -396,19 +387,21 @@
     "temp_c": 12.22,
     "precip_chance_pct": 2,
     "short_forecast": "Mostly Sunny"
+   },
+   {
+    "name": "Tuesday Night",
+    "start": "2026-11-17T18:00:00-05:00",
+    "is_daytime": false,
+    "temp_f": 34,
+    "temp_c": 1.11,
+    "precip_chance_pct": 1,
+    "short_forecast": "Partly Cloudy"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-11T08:53:12Z",
   "hours": [
-   {
-    "start": "2026-11-11T05:00:00-05:00",
-    "temp_f": 46,
-    "temp_c": 7.78,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Clear"
-   },
    {
     "start": "2026-11-11T06:00:00-05:00",
     "temp_f": 46,
@@ -735,6 +728,13 @@
     "start": "2026-11-13T04:00:00-05:00",
     "temp_f": 44,
     "temp_c": 6.67,
+    "precip_chance_pct": 23,
+    "short_forecast": "Slight Chance Rain Showers"
+   },
+   {
+    "start": "2026-11-13T05:00:00-05:00",
+    "temp_f": 43,
+    "temp_c": 6.11,
     "precip_chance_pct": 23,
     "short_forecast": "Slight Chance Rain Showers"
    }
