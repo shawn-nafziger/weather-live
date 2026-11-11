@@ -11,14 +11,14 @@
   "lon": -112.0035,
   "history": "Same station as the official Phoenix record (Sky Harbor since 1933)"
  },
- "as_of_utc": "2026-11-11T01:27:54Z",
+ "as_of_utc": "2026-11-11T02:07:51Z",
  "now": {
-  "time_utc": "2026-11-11T00:55:00Z",
+  "time_utc": "2026-11-11T01:15:00Z",
   "temp_c": 26,
   "temp_f": 78.8,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 9,
-  "humidity_pct": 34.17,
+  "dewpoint_c": 8,
+  "humidity_pct": 31.93,
   "wind_kmh": 9.25,
   "description": "Clear"
  },
@@ -83,34 +83,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-10",
-    "high_f": 84,
-    "would_rank": {
-     "value_f": 84,
-     "warm_rank": 19,
-     "cool_rank": 105,
-     "years": 132,
-     "first_year": 1895,
-     "tied_years": [
-      1900,
-      1906,
-      1921,
-      1928,
-      1941,
-      1958,
-      1981,
-      2006,
-      2014
-     ],
-     "standing": "warm",
-     "notable": true,
-     "since": 2025,
-     "record": false,
-     "phrase": "19th warmest November 10 high (tied) of 132 since 1895, warmest since 2025"
-    }
-   },
    {
     "period": "Veterans Day",
     "date": "2026-11-11",
@@ -256,6 +228,33 @@
      "record": false,
      "phrase": "typical for November 16"
     }
+   },
+   {
+    "period": "Tuesday",
+    "date": "2026-11-17",
+    "high_f": 72,
+    "would_rank": {
+     "value_f": 72,
+     "warm_rank": 76,
+     "cool_rank": 49,
+     "years": 132,
+     "first_year": 1895,
+     "tied_years": [
+      1923,
+      1945,
+      1984,
+      1989,
+      1993,
+      1997,
+      2004,
+      2016
+     ],
+     "standing": "cool",
+     "notable": false,
+     "since": 2024,
+     "record": false,
+     "phrase": "typical for November 17"
+    }
    }
   ]
  },
@@ -263,15 +262,6 @@
   "issued_utc": "2026-11-10T23:17:35Z",
   "grid": "PSR/161,57",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-10T16:00:00-07:00",
-    "is_daytime": true,
-    "temp_f": 84,
-    "temp_c": 28.89,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-10T18:00:00-07:00",
@@ -388,19 +378,21 @@
     "temp_c": 15.56,
     "precip_chance_pct": 58,
     "short_forecast": "Showers And Thunderstorms Likely"
+   },
+   {
+    "name": "Tuesday",
+    "start": "2026-11-17T06:00:00-07:00",
+    "is_daytime": true,
+    "temp_f": 72,
+    "temp_c": 22.22,
+    "precip_chance_pct": 58,
+    "short_forecast": "Showers And Thunderstorms Likely"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-10T23:17:35Z",
   "hours": [
-   {
-    "start": "2026-11-10T18:00:00-07:00",
-    "temp_f": 79,
-    "temp_c": 26.11,
-    "precip_chance_pct": 0,
-    "short_forecast": "Clear"
-   },
    {
     "start": "2026-11-10T19:00:00-07:00",
     "temp_f": 76,
@@ -729,6 +721,13 @@
     "temp_c": 28.33,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
+   },
+   {
+    "start": "2026-11-12T18:00:00-07:00",
+    "temp_f": 80,
+    "temp_c": 26.67,
+    "precip_chance_pct": 0,
+    "short_forecast": "Clear"
    }
   ]
  },
