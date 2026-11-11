@@ -11,20 +11,20 @@
   "lon": -97.022,
   "history": "Same site as the official Dallas record"
  },
- "as_of_utc": "2026-11-11T12:07:50Z",
+ "as_of_utc": "2026-11-11T13:07:50Z",
  "now": {
-  "time_utc": "2026-11-11T11:35:00Z",
+  "time_utc": "2026-11-11T12:45:00Z",
   "temp_c": 16,
   "temp_f": 60.8,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 14,
   "humidity_pct": 87.93,
-  "wind_kmh": 11.12,
-  "description": "Clear"
+  "wind_kmh": 12.96,
+  "description": "Partly Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-11",
-  "readings": 4,
+  "readings": 5,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -236,15 +236,6 @@
   "grid": "FWD/81,109",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-11T05:00:00-06:00",
-    "is_daytime": false,
-    "temp_f": 58,
-    "temp_c": 14.44,
-    "precip_chance_pct": 1,
-    "short_forecast": "Patchy Fog"
-   },
-   {
     "name": "Veterans Day",
     "start": "2026-11-11T06:00:00-06:00",
     "is_daytime": true,
@@ -254,7 +245,7 @@
     "short_forecast": "Patchy Fog then Sunny"
    },
    {
-    "name": "Wednesday Night",
+    "name": "Tonight",
     "start": "2026-11-11T18:00:00-06:00",
     "is_daytime": false,
     "temp_f": 55,
@@ -360,19 +351,21 @@
     "temp_c": 17.22,
     "precip_chance_pct": 1,
     "short_forecast": "Mostly Sunny"
+   },
+   {
+    "name": "Tuesday Night",
+    "start": "2026-11-17T18:00:00-06:00",
+    "is_daytime": false,
+    "temp_f": 48,
+    "temp_c": 8.89,
+    "precip_chance_pct": 2,
+    "short_forecast": "Partly Cloudy"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-11T11:06:33Z",
   "hours": [
-   {
-    "start": "2026-11-11T06:00:00-06:00",
-    "temp_f": 59,
-    "temp_c": 15.0,
-    "precip_chance_pct": 1,
-    "short_forecast": "Patchy Fog"
-   },
    {
     "start": "2026-11-11T07:00:00-06:00",
     "temp_f": 58,
@@ -701,6 +694,13 @@
     "temp_c": 11.11,
     "precip_chance_pct": 0,
     "short_forecast": "Clear"
+   },
+   {
+    "start": "2026-11-13T06:00:00-06:00",
+    "temp_f": 52,
+    "temp_c": 11.11,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
    }
   ]
  },

@@ -11,16 +11,16 @@
   "lon": -76.684,
   "history": "Same site as the official Baltimore record"
  },
- "as_of_utc": "2026-11-11T12:07:50Z",
+ "as_of_utc": "2026-11-11T13:07:50Z",
  "now": {
-  "time_utc": "2026-11-11T11:35:00Z",
-  "temp_c": 4,
-  "temp_f": 39.2,
+  "time_utc": "2026-11-11T12:45:00Z",
+  "temp_c": 8,
+  "temp_f": 46.4,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 4,
-  "humidity_pct": 100,
-  "wind_kmh": 5.54,
-  "description": "Clear"
+  "dewpoint_c": 5,
+  "humidity_pct": 81.35,
+  "wind_kmh": 0,
+  "description": "Mostly Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-11",
@@ -33,7 +33,12 @@
   "high_time_utc": "2026-11-11T06:54:00Z",
   "low_c": 4.4,
   "low_f": 39.9,
-  "low_time_utc": "2026-11-11T07:54:00Z"
+  "low_time_utc": "2026-11-11T07:54:00Z",
+  "peak_between_reports": {
+   "at_least_f": 45.5,
+   "about_f": 46.4,
+   "time_utc": "2026-11-11T12:45:00Z"
+  }
  },
  "record": {
   "series": "Baltimore area (ThreadEx; BWI airport)",
@@ -263,12 +268,12 @@
   "periods": [
    {
     "name": "Veterans Day",
-    "start": "2026-11-11T07:00:00-05:00",
+    "start": "2026-11-11T06:00:00-05:00",
     "is_daytime": true,
     "temp_f": 65,
     "temp_c": 18.33,
     "precip_chance_pct": 0,
-    "short_forecast": "Mostly Sunny"
+    "short_forecast": "Sunny"
    },
    {
     "name": "Tonight",
@@ -390,15 +395,8 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-11T08:53:12Z",
+  "issued_utc": "2026-11-11T11:52:50Z",
   "hours": [
-   {
-    "start": "2026-11-11T07:00:00-05:00",
-    "temp_f": 40,
-    "temp_c": 4.44,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "start": "2026-11-11T08:00:00-05:00",
     "temp_f": 45,
@@ -727,6 +725,13 @@
     "temp_c": 2.22,
     "precip_chance_pct": 30,
     "short_forecast": "Chance Rain Showers"
+   },
+   {
+    "start": "2026-11-13T07:00:00-05:00",
+    "temp_f": 36,
+    "temp_c": 2.22,
+    "precip_chance_pct": 11,
+    "short_forecast": "Partly Sunny"
    }
   ]
  },

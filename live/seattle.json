@@ -11,20 +11,20 @@
   "lon": -122.3136,
   "history": "Same station as the official Seattle record (Sea-Tac)"
  },
- "as_of_utc": "2026-11-11T12:07:50Z",
+ "as_of_utc": "2026-11-11T13:07:50Z",
  "now": {
-  "time_utc": "2026-11-11T11:35:00Z",
-  "temp_c": 12,
-  "temp_f": 53.6,
+  "time_utc": "2026-11-11T12:40:00Z",
+  "temp_c": 11,
+  "temp_f": 51.8,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 9,
-  "humidity_pct": 81.88,
-  "wind_kmh": 14.83,
-  "description": "Mostly Clear"
+  "humidity_pct": 87.48,
+  "wind_kmh": 16.67,
+  "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-11",
-  "readings": 2,
+  "readings": 3,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -38,6 +38,11 @@
    "at_least_f": 56.3,
    "about_f": 57.2,
    "time_utc": "2026-11-11T08:50:00Z"
+  },
+  "dip_between_reports": {
+   "at_most_f": 52.7,
+   "about_f": 51.8,
+   "time_utc": "2026-11-11T12:40:00Z"
   }
  },
  "record": {
@@ -373,13 +378,6 @@
   "issued_utc": "2026-11-11T06:26:43Z",
   "hours": [
    {
-    "start": "2026-11-11T04:00:00-08:00",
-    "temp_f": 54,
-    "temp_c": 12.22,
-    "precip_chance_pct": 4,
-    "short_forecast": "Mostly Cloudy"
-   },
-   {
     "start": "2026-11-11T05:00:00-08:00",
     "temp_f": 53,
     "temp_c": 11.67,
@@ -707,6 +705,13 @@
     "temp_c": 11.11,
     "precip_chance_pct": 3,
     "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "start": "2026-11-13T04:00:00-08:00",
+    "temp_f": 53,
+    "temp_c": 11.67,
+    "precip_chance_pct": 36,
+    "short_forecast": "Chance Light Rain"
    }
   ]
  },
