@@ -11,20 +11,20 @@
   "lon": -71.4277,
   "history": "Same site as the official Providence record"
  },
- "as_of_utc": "2026-11-10T23:07:54Z",
+ "as_of_utc": "2026-11-11T00:07:53Z",
  "now": {
-  "time_utc": "2026-11-10T22:50:00Z",
-  "temp_c": 11,
-  "temp_f": 51.8,
+  "time_utc": "2026-11-10T23:50:00Z",
+  "temp_c": 8,
+  "temp_f": 46.4,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 3,
-  "humidity_pct": 57.8,
-  "wind_kmh": 7.42,
-  "description": "Mostly Clear"
+  "humidity_pct": 70.7,
+  "wind_kmh": 11.12,
+  "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-10",
-  "readings": 9,
+  "readings": 10,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -81,31 +81,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-10",
-    "high_f": 57,
-    "would_rank": {
-     "value_f": 57,
-     "warm_rank": 42,
-     "cool_rank": 76,
-     "years": 123,
-     "first_year": 1904,
-     "tied_years": [
-      1937,
-      1946,
-      1989,
-      2012,
-      2015,
-      2025
-     ],
-     "standing": "warm",
-     "notable": false,
-     "since": 2025,
-     "record": false,
-     "phrase": "typical for November 10"
-    }
-   },
    {
     "period": "Veterans Day",
     "date": "2026-11-11",
@@ -254,6 +229,30 @@
      "record": false,
      "phrase": "typical for November 16"
     }
+   },
+   {
+    "period": "Tuesday",
+    "date": "2026-11-17",
+    "high_f": 52,
+    "would_rank": {
+     "value_f": 52,
+     "warm_rank": 53,
+     "cool_rank": 66,
+     "years": 123,
+     "first_year": 1904,
+     "tied_years": [
+      1906,
+      1939,
+      1958,
+      1964,
+      2009
+     ],
+     "standing": "warm",
+     "notable": false,
+     "since": 2024,
+     "record": false,
+     "phrase": "typical for November 17"
+    }
    }
   ]
  },
@@ -261,15 +260,6 @@
   "issued_utc": "2026-11-10T21:14:48Z",
   "grid": "BOX/64,70",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-10T17:00:00-05:00",
-    "is_daytime": true,
-    "temp_f": 57,
-    "temp_c": 13.89,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-10T18:00:00-05:00",
@@ -386,19 +376,21 @@
     "temp_c": -0.56,
     "precip_chance_pct": 2,
     "short_forecast": "Partly Cloudy"
+   },
+   {
+    "name": "Tuesday",
+    "start": "2026-11-17T06:00:00-05:00",
+    "is_daytime": true,
+    "temp_f": 52,
+    "temp_c": 11.11,
+    "precip_chance_pct": 2,
+    "short_forecast": "Sunny"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-10T21:14:48Z",
   "hours": [
-   {
-    "start": "2026-11-10T18:00:00-05:00",
-    "temp_f": 51,
-    "temp_c": 10.56,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Clear"
-   },
    {
     "start": "2026-11-10T19:00:00-05:00",
     "temp_f": 50,
@@ -726,6 +718,13 @@
     "temp_f": 52,
     "temp_c": 11.11,
     "precip_chance_pct": 72,
+    "short_forecast": "Light Rain Likely"
+   },
+   {
+    "start": "2026-11-12T18:00:00-05:00",
+    "temp_f": 51,
+    "temp_c": 10.56,
+    "precip_chance_pct": 74,
     "short_forecast": "Light Rain Likely"
    }
   ]

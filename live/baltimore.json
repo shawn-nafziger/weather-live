@@ -11,20 +11,20 @@
   "lon": -76.684,
   "history": "Same site as the official Baltimore record"
  },
- "as_of_utc": "2026-11-10T23:07:54Z",
+ "as_of_utc": "2026-11-11T00:07:53Z",
  "now": {
-  "time_utc": "2026-11-10T22:50:00Z",
-  "temp_c": 17,
-  "temp_f": 62.6,
+  "time_utc": "2026-11-10T23:50:00Z",
+  "temp_c": 14,
+  "temp_f": 57.2,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 3,
-  "humidity_pct": 39.17,
-  "wind_kmh": 0,
+  "dewpoint_c": 4,
+  "humidity_pct": 50.94,
+  "wind_kmh": 7.42,
   "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-10",
-  "readings": 8,
+  "readings": 9,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -114,27 +114,6 @@
    "phrase": "already the 19th warmest November 10 high (tied) of 154 since 1872, warmest since 2022"
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-10",
-    "high_f": 67,
-    "would_rank": {
-     "value_f": 67,
-     "warm_rank": 24,
-     "cool_rank": 129,
-     "years": 154,
-     "first_year": 1872,
-     "tied_years": [
-      1890,
-      1898
-     ],
-     "standing": "warm",
-     "notable": true,
-     "since": 2022,
-     "record": false,
-     "phrase": "24th warmest November 10 high (tied) of 154 since 1872, warmest since 2022"
-    }
-   },
    {
     "period": "Veterans Day",
     "date": "2026-11-11",
@@ -275,6 +254,31 @@
      "record": false,
      "phrase": "typical for November 16"
     }
+   },
+   {
+    "period": "Tuesday",
+    "date": "2026-11-17",
+    "high_f": 53,
+    "would_rank": {
+     "value_f": 53,
+     "warm_rank": 87,
+     "cool_rank": 63,
+     "years": 155,
+     "first_year": 1872,
+     "tied_years": [
+      1907,
+      1940,
+      1959,
+      2011,
+      2012,
+      2017
+     ],
+     "standing": "cool",
+     "notable": false,
+     "since": 2025,
+     "record": false,
+     "phrase": "typical for November 17"
+    }
    }
   ]
  },
@@ -282,15 +286,6 @@
   "issued_utc": "2026-11-10T20:53:18Z",
   "grid": "LWX/107,85",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-10T17:00:00-05:00",
-    "is_daytime": true,
-    "temp_f": 67,
-    "temp_c": 19.44,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-10T18:00:00-05:00",
@@ -407,19 +402,21 @@
     "temp_c": 0.0,
     "precip_chance_pct": 3,
     "short_forecast": "Partly Cloudy"
+   },
+   {
+    "name": "Tuesday",
+    "start": "2026-11-17T06:00:00-05:00",
+    "is_daytime": true,
+    "temp_f": 53,
+    "temp_c": 11.67,
+    "precip_chance_pct": 5,
+    "short_forecast": "Mostly Sunny"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-10T20:53:18Z",
   "hours": [
-   {
-    "start": "2026-11-10T18:00:00-05:00",
-    "temp_f": 61,
-    "temp_c": 16.11,
-    "precip_chance_pct": 0,
-    "short_forecast": "Clear"
-   },
    {
     "start": "2026-11-10T19:00:00-05:00",
     "temp_f": 56,
@@ -746,6 +743,13 @@
     "start": "2026-11-12T17:00:00-05:00",
     "temp_f": 58,
     "temp_c": 14.44,
+    "precip_chance_pct": 42,
+    "short_forecast": "Chance Light Rain"
+   },
+   {
+    "start": "2026-11-12T18:00:00-05:00",
+    "temp_f": 55,
+    "temp_c": 12.78,
     "precip_chance_pct": 42,
     "short_forecast": "Chance Light Rain"
    }

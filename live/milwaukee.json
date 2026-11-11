@@ -11,20 +11,20 @@
   "lon": -87.9044,
   "history": "Same site as the official Milwaukee record"
  },
- "as_of_utc": "2026-11-10T23:07:54Z",
+ "as_of_utc": "2026-11-11T00:07:53Z",
  "now": {
-  "time_utc": "2026-11-10T22:20:00Z",
-  "temp_c": 16,
-  "temp_f": 60.8,
+  "time_utc": "2026-11-10T23:50:00Z",
+  "temp_c": 12,
+  "temp_f": 53.6,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 1,
-  "humidity_pct": 36.19,
-  "wind_kmh": 9.25,
+  "dewpoint_c": 2,
+  "humidity_pct": 50.39,
+  "wind_kmh": 5.54,
   "description": ""
  },
  "today_so_far": {
   "date_local": "2026-11-10",
-  "readings": 11,
+  "readings": 12,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -150,24 +150,19 @@
    {
     "period": "Thursday",
     "date": "2026-11-12",
-    "high_f": 45,
+    "high_f": 44,
     "would_rank": {
-     "value_f": 45,
-     "warm_rank": 83,
-     "cool_rank": 64,
+     "value_f": 44,
+     "warm_rank": 93,
+     "cool_rank": 59,
      "years": 156,
      "first_year": 1871,
      "tied_years": [
-      1898,
-      1939,
-      1946,
-      1955,
-      1962,
-      1969,
-      1972,
-      1981,
-      1989,
-      1990
+      1881,
+      1899,
+      1985,
+      1988,
+      1998
      ],
      "standing": "cool",
      "notable": false,
@@ -276,12 +271,12 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-10T20:31:29Z",
+  "issued_utc": "2026-11-10T23:26:15Z",
   "grid": "MKX/89,61",
   "periods": [
    {
     "name": "This Afternoon",
-    "start": "2026-11-10T14:00:00-06:00",
+    "start": "2026-11-10T17:00:00-06:00",
     "is_daytime": true,
     "temp_f": 64,
     "temp_c": 17.78,
@@ -292,9 +287,9 @@
     "name": "Tonight",
     "start": "2026-11-10T18:00:00-06:00",
     "is_daytime": false,
-    "temp_f": 42,
-    "temp_c": 5.56,
-    "precip_chance_pct": 1,
+    "temp_f": 43,
+    "temp_c": 6.11,
+    "precip_chance_pct": 3,
     "short_forecast": "Mostly Cloudy"
    },
    {
@@ -303,26 +298,26 @@
     "is_daytime": true,
     "temp_f": 53,
     "temp_c": 11.67,
-    "precip_chance_pct": 35,
+    "precip_chance_pct": 43,
     "short_forecast": "Chance Light Rain"
    },
    {
     "name": "Wednesday Night",
     "start": "2026-11-11T18:00:00-06:00",
     "is_daytime": false,
-    "temp_f": 34,
-    "temp_c": 1.11,
-    "precip_chance_pct": 31,
+    "temp_f": 36,
+    "temp_c": 2.22,
+    "precip_chance_pct": 33,
     "short_forecast": "Chance Light Rain"
    },
    {
     "name": "Thursday",
     "start": "2026-11-12T06:00:00-06:00",
     "is_daytime": true,
-    "temp_f": 45,
-    "temp_c": 7.22,
-    "precip_chance_pct": 21,
-    "short_forecast": "Slight Chance Light Rain then Partly Sunny"
+    "temp_f": 44,
+    "temp_c": 6.67,
+    "precip_chance_pct": 27,
+    "short_forecast": "Chance Light Rain"
    },
    {
     "name": "Thursday Night",
@@ -410,13 +405,6 @@
  "hourly": {
   "issued_utc": "2026-11-10T20:31:29Z",
   "hours": [
-   {
-    "start": "2026-11-10T17:00:00-06:00",
-    "temp_f": 57,
-    "temp_c": 13.89,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "start": "2026-11-10T18:00:00-06:00",
     "temp_f": 53,
@@ -743,6 +731,13 @@
     "start": "2026-11-12T16:00:00-06:00",
     "temp_f": 42,
     "temp_c": 5.56,
+    "precip_chance_pct": 7,
+    "short_forecast": "Partly Sunny"
+   },
+   {
+    "start": "2026-11-12T17:00:00-06:00",
+    "temp_f": 40,
+    "temp_c": 4.44,
     "precip_chance_pct": 7,
     "short_forecast": "Partly Sunny"
    }
