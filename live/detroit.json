@@ -11,20 +11,20 @@
   "lon": -83.3308,
   "history": "Same site as the official Detroit record"
  },
- "as_of_utc": "2026-11-11T03:07:52Z",
+ "as_of_utc": "2026-11-11T04:07:53Z",
  "now": {
-  "time_utc": "2026-11-11T02:50:00Z",
+  "time_utc": "2026-11-11T03:40:00Z",
   "temp_c": 9,
   "temp_f": 48.2,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 0,
   "humidity_pct": 53.29,
-  "wind_kmh": 9.25,
-  "description": ""
+  "wind_kmh": 5.54,
+  "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-10",
-  "readings": 12,
+  "readings": 13,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -273,12 +273,12 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-10T21:13:13Z",
+  "issued_utc": "2026-11-11T03:13:09Z",
   "grid": "DTX/57,28",
   "periods": [
    {
     "name": "Tonight",
-    "start": "2026-11-10T18:00:00-05:00",
+    "start": "2026-11-10T22:00:00-05:00",
     "is_daytime": false,
     "temp_f": 39,
     "temp_c": 3.89,
@@ -405,15 +405,8 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-10T21:13:13Z",
+  "issued_utc": "2026-11-11T03:13:09Z",
   "hours": [
-   {
-    "start": "2026-11-10T22:00:00-05:00",
-    "temp_f": 47,
-    "temp_c": 8.33,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Clear"
-   },
    {
     "start": "2026-11-10T23:00:00-05:00",
     "temp_f": 46,
@@ -742,6 +735,13 @@
     "temp_c": 3.89,
     "precip_chance_pct": 27,
     "short_forecast": "Chance Light Rain"
+   },
+   {
+    "start": "2026-11-12T22:00:00-05:00",
+    "temp_f": 38,
+    "temp_c": 3.33,
+    "precip_chance_pct": 27,
+    "short_forecast": "Chance Rain And Snow"
    }
   ]
  },
