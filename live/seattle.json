@@ -11,9 +11,9 @@
   "lon": -122.3136,
   "history": "Same station as the official Seattle record (Sea-Tac)"
  },
- "as_of_utc": "2026-11-11T07:07:51Z",
+ "as_of_utc": "2026-11-11T08:07:53Z",
  "now": {
-  "time_utc": "2026-11-11T06:50:00Z",
+  "time_utc": "2026-11-11T07:45:00Z",
   "temp_c": 12,
   "temp_f": 53.6,
   "precision": "nearest whole \u00b0C",
@@ -23,27 +23,11 @@
   "description": "Mostly Cloudy"
  },
  "today_so_far": {
-  "date_local": "2026-11-10",
-  "readings": 20,
-  "basis": "hourly reports (tenths of a degree)",
-  "approximate": false,
-  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 13.9,
-  "high_f": 57.0,
-  "high_time_utc": "2026-11-11T04:53:00Z",
-  "low_c": 10,
-  "low_f": 50.0,
-  "low_time_utc": "2026-11-10T09:53:00Z",
-  "peak_between_reports": {
-   "at_least_f": 58.1,
-   "about_f": 59.0,
-   "time_utc": "2026-11-11T03:15:00Z"
-  },
-  "dip_between_reports": {
-   "at_most_f": 49.1,
-   "about_f": 48.2,
-   "time_utc": "2026-11-10T13:00:00Z"
-  }
+  "date_local": "2026-11-11",
+  "readings": 0,
+  "basis": "5-minute readings (whole \u00b0C, approximate)",
+  "approximate": true,
+  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two."
  },
  "record": {
   "series": "Seattle area (ThreadEx, Sea-Tac)",
@@ -52,7 +36,7 @@
   "rank_today": true,
   "latest_final": {
    "date": "2026-11-09",
-   "is_yesterday": true,
+   "is_yesterday": false,
    "high_f": 55,
    "low_f": 43,
    "high_rank": {
@@ -92,21 +76,6 @@
     "record": false,
     "phrase": "typical for November 9"
    }
-  },
-  "today_high_so_far": {
-   "value_f": 57,
-   "warm_rank": 13,
-   "cool_rank": 69,
-   "years": 82,
-   "first_year": 1945,
-   "tied_years": [
-    1977
-   ],
-   "standing": "warm",
-   "notable": true,
-   "since": 2025,
-   "record": false,
-   "phrase": "already the 13th warmest November 10 high (tied) of 82 since 1945, warmest since 2025"
   },
   "forecast_highs": [
    {
@@ -395,13 +364,6 @@
  "hourly": {
   "issued_utc": "2026-11-11T06:26:43Z",
   "hours": [
-   {
-    "start": "2026-11-10T23:00:00-08:00",
-    "temp_f": 54,
-    "temp_c": 12.22,
-    "precip_chance_pct": 4,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "start": "2026-11-11T00:00:00-08:00",
     "temp_f": 54,
@@ -728,6 +690,13 @@
     "start": "2026-11-12T22:00:00-08:00",
     "temp_f": 55,
     "temp_c": 12.78,
+    "precip_chance_pct": 3,
+    "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "start": "2026-11-12T23:00:00-08:00",
+    "temp_f": 54,
+    "temp_c": 12.22,
     "precip_chance_pct": 3,
     "short_forecast": "Mostly Cloudy"
    }
