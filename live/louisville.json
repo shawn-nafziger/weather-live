@@ -11,29 +11,23 @@
   "lon": -85.7365,
   "history": "Same site as the official Louisville record"
  },
- "as_of_utc": "2026-11-11T04:07:53Z",
+ "as_of_utc": "2026-11-11T05:07:53Z",
  "now": {
-  "time_utc": "2026-11-11T03:40:00Z",
+  "time_utc": "2026-11-11T04:25:00Z",
   "temp_c": 12,
   "temp_f": 53.6,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 6,
   "humidity_pct": 66.72,
-  "wind_kmh": 5.54,
+  "wind_kmh": 0,
   "description": "Clear"
  },
  "today_so_far": {
-  "date_local": "2026-11-10",
-  "readings": 12,
-  "basis": "hourly reports (tenths of a degree)",
-  "approximate": false,
-  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 22.8,
-  "high_f": 73.0,
-  "high_time_utc": "2026-11-10T19:56:00Z",
-  "low_c": 6.1,
-  "low_f": 43.0,
-  "low_time_utc": "2026-11-10T07:56:00Z"
+  "date_local": "2026-11-11",
+  "readings": 0,
+  "basis": "5-minute readings (whole \u00b0C, approximate)",
+  "approximate": true,
+  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two."
  },
  "record": {
   "series": "Louisville area (ThreadEx; airport)",
@@ -42,7 +36,7 @@
   "rank_today": true,
   "latest_final": {
    "date": "2026-11-09",
-   "is_yesterday": true,
+   "is_yesterday": false,
    "high_f": 67,
    "low_f": 44,
    "high_rank": {
@@ -85,22 +79,6 @@
     "record": false,
     "phrase": "typical for November 9"
    }
-  },
-  "today_high_so_far": {
-   "value_f": 73,
-   "warm_rank": 11,
-   "cool_rank": 143,
-   "years": 155,
-   "first_year": 1872,
-   "tied_years": [
-    1912,
-    1985
-   ],
-   "standing": "warm",
-   "notable": true,
-   "since": 2022,
-   "record": false,
-   "phrase": "already the 11th warmest November 10 high (tied) of 155 since 1872, warmest since 2022"
   },
   "forecast_highs": [
    {
@@ -402,13 +380,6 @@
  "hourly": {
   "issued_utc": "2026-11-10T18:41:29Z",
   "hours": [
-   {
-    "start": "2026-11-10T23:00:00-05:00",
-    "temp_f": 50,
-    "temp_c": 10.0,
-    "precip_chance_pct": 0,
-    "short_forecast": "Clear"
-   },
    {
     "start": "2026-11-11T00:00:00-05:00",
     "temp_f": 48,
@@ -735,6 +706,13 @@
     "start": "2026-11-12T22:00:00-05:00",
     "temp_f": 42,
     "temp_c": 5.56,
+    "precip_chance_pct": 10,
+    "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "start": "2026-11-12T23:00:00-05:00",
+    "temp_f": 41,
+    "temp_c": 5.0,
     "precip_chance_pct": 10,
     "short_forecast": "Mostly Cloudy"
    }

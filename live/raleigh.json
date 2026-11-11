@@ -11,29 +11,23 @@
   "lon": -78.7819,
   "history": "Same site as the official Raleigh record"
  },
- "as_of_utc": "2026-11-11T04:07:53Z",
+ "as_of_utc": "2026-11-11T05:07:53Z",
  "now": {
-  "time_utc": "2026-11-11T03:40:00Z",
-  "temp_c": 10,
-  "temp_f": 50.0,
+  "time_utc": "2026-11-11T04:55:00Z",
+  "temp_c": 9,
+  "temp_f": 48.2,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 8,
-  "humidity_pct": 87.38,
+  "humidity_pct": 93.45,
   "wind_kmh": 0,
   "description": ""
  },
  "today_so_far": {
-  "date_local": "2026-11-10",
-  "readings": 12,
-  "basis": "hourly reports (tenths of a degree)",
-  "approximate": false,
-  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 22.2,
-  "high_f": 72.0,
-  "high_time_utc": "2026-11-10T19:51:00Z",
-  "low_c": 5,
-  "low_f": 41.0,
-  "low_time_utc": "2026-11-10T09:51:00Z"
+  "date_local": "2026-11-11",
+  "readings": 0,
+  "basis": "5-minute readings (whole \u00b0C, approximate)",
+  "approximate": true,
+  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two."
  },
  "record": {
   "series": "Raleigh area (ThreadEx; Raleigh-Durham airport)",
@@ -42,7 +36,7 @@
   "rank_today": true,
   "latest_final": {
    "date": "2026-11-09",
-   "is_yesterday": true,
+   "is_yesterday": false,
    "high_f": 71,
    "low_f": 42,
    "high_rank": {
@@ -80,24 +74,6 @@
     "record": false,
     "phrase": "typical for November 9"
    }
-  },
-  "today_high_so_far": {
-   "value_f": 72,
-   "warm_rank": 26,
-   "cool_rank": 110,
-   "years": 139,
-   "first_year": 1887,
-   "tied_years": [
-    1891,
-    1910,
-    1950,
-    2013
-   ],
-   "standing": "warm",
-   "notable": true,
-   "since": 2021,
-   "record": false,
-   "phrase": "already the 26th warmest November 10 high (tied) of 139 since 1887, warmest since 2021"
   },
   "forecast_highs": [
    {
@@ -280,7 +256,7 @@
   "periods": [
    {
     "name": "Tonight",
-    "start": "2026-11-10T21:00:00-05:00",
+    "start": "2026-11-10T23:00:00-05:00",
     "is_daytime": false,
     "temp_f": 44,
     "temp_c": 6.67,
@@ -409,13 +385,6 @@
  "hourly": {
   "issued_utc": "2026-11-11T01:00:32Z",
   "hours": [
-   {
-    "start": "2026-11-10T23:00:00-05:00",
-    "temp_f": 52,
-    "temp_c": 11.11,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Clear"
-   },
    {
     "start": "2026-11-11T00:00:00-05:00",
     "temp_f": 51,
@@ -742,6 +711,13 @@
     "start": "2026-11-12T22:00:00-05:00",
     "temp_f": 50,
     "temp_c": 10.0,
+    "precip_chance_pct": 3,
+    "short_forecast": "Partly Cloudy"
+   },
+   {
+    "start": "2026-11-12T23:00:00-05:00",
+    "temp_f": 49,
+    "temp_c": 9.44,
     "precip_chance_pct": 3,
     "short_forecast": "Partly Cloudy"
    }
