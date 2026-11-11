@@ -11,26 +11,26 @@
   "lon": -81.6937,
   "history": "Same site as the official Jacksonville record"
  },
- "as_of_utc": "2026-11-11T06:07:55Z",
+ "as_of_utc": "2026-11-11T07:07:51Z",
  "now": {
-  "time_utc": "2026-11-11T05:40:00Z",
-  "temp_c": 15,
-  "temp_f": 59.0,
+  "time_utc": "2026-11-11T06:55:00Z",
+  "temp_c": 16,
+  "temp_f": 60.8,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 13,
-  "humidity_pct": 87.84,
+  "dewpoint_c": 14,
+  "humidity_pct": 87.93,
   "wind_kmh": 0,
-  "description": ""
+  "description": "Mostly Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-11",
-  "readings": 4,
+  "readings": 11,
   "basis": "5-minute readings (whole \u00b0C, approximate)",
   "approximate": true,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 15,
-  "high_f": 59.0,
-  "high_time_utc": "2026-11-11T05:20:00Z",
+  "high_c": 16,
+  "high_f": 60.8,
+  "high_time_utc": "2026-11-11T06:15:00Z",
   "low_c": 15,
   "low_f": 59.0,
   "low_time_utc": "2026-11-11T05:20:00Z"
@@ -216,21 +216,20 @@
    {
     "period": "Monday",
     "date": "2026-11-16",
-    "high_f": 69,
+    "high_f": 68,
     "would_rank": {
-     "value_f": 69,
-     "warm_rank": 107,
-     "cool_rank": 43,
+     "value_f": 68,
+     "warm_rank": 114,
+     "cool_rank": 37,
      "years": 156,
      "first_year": 1871,
      "tied_years": [
-      1892,
-      1910,
-      1920,
-      1963,
-      1967,
-      1975,
-      1999
+      1885,
+      1917,
+      1919,
+      1945,
+      1949,
+      1972
      ],
      "standing": "cool",
      "notable": false,
@@ -242,18 +241,19 @@
    {
     "period": "Tuesday",
     "date": "2026-11-17",
-    "high_f": 68,
+    "high_f": 67,
     "would_rank": {
-     "value_f": 68,
-     "warm_rank": 109,
-     "cool_rank": 44,
+     "value_f": 67,
+     "warm_rank": 113,
+     "cool_rank": 39,
      "years": 156,
      "first_year": 1871,
      "tied_years": [
-      1876,
-      1944,
-      1947,
-      2005
+      1904,
+      1924,
+      1951,
+      1992,
+      2007
      ],
      "standing": "cool",
      "notable": false,
@@ -265,12 +265,12 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-11T04:55:56Z",
+  "issued_utc": "2026-11-11T06:21:21Z",
   "grid": "JAX/64,72",
   "periods": [
    {
     "name": "Overnight",
-    "start": "2026-11-11T01:00:00-05:00",
+    "start": "2026-11-11T02:00:00-05:00",
     "is_daytime": false,
     "temp_f": 55,
     "temp_c": 12.78,
@@ -362,8 +362,8 @@
     "name": "Sunday Night",
     "start": "2026-11-15T18:00:00-05:00",
     "is_daytime": false,
-    "temp_f": 48,
-    "temp_c": 8.89,
+    "temp_f": 49,
+    "temp_c": 9.44,
     "precip_chance_pct": 2,
     "short_forecast": "Partly Cloudy"
    },
@@ -371,8 +371,8 @@
     "name": "Monday",
     "start": "2026-11-16T06:00:00-05:00",
     "is_daytime": true,
-    "temp_f": 69,
-    "temp_c": 20.56,
+    "temp_f": 68,
+    "temp_c": 20.0,
     "precip_chance_pct": 15,
     "short_forecast": "Partly Sunny then Slight Chance Rain Showers"
    },
@@ -389,23 +389,16 @@
     "name": "Tuesday",
     "start": "2026-11-17T06:00:00-05:00",
     "is_daytime": true,
-    "temp_f": 68,
-    "temp_c": 20.0,
-    "precip_chance_pct": 37,
+    "temp_f": 67,
+    "temp_c": 19.44,
+    "precip_chance_pct": 36,
     "short_forecast": "Chance Rain Showers"
    }
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-11T04:55:56Z",
+  "issued_utc": "2026-11-11T06:21:21Z",
   "hours": [
-   {
-    "start": "2026-11-11T01:00:00-05:00",
-    "temp_f": 56,
-    "temp_c": 13.33,
-    "precip_chance_pct": 3,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "start": "2026-11-11T02:00:00-05:00",
     "temp_f": 55,
@@ -734,6 +727,13 @@
     "temp_c": 15.56,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "start": "2026-11-13T01:00:00-05:00",
+    "temp_f": 58,
+    "temp_c": 14.44,
+    "precip_chance_pct": 0,
+    "short_forecast": "Partly Cloudy"
    }
   ]
  },
