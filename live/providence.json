@@ -11,7 +11,7 @@
   "lon": -71.4277,
   "history": "Same site as the official Providence record"
  },
- "as_of_utc": "2026-11-12T11:46:02Z",
+ "as_of_utc": "2026-11-12T12:07:51Z",
  "now": {
   "time_utc": "2026-11-12T11:20:00Z",
   "temp_c": 7,
@@ -51,53 +51,45 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-10",
-   "is_yesterday": false,
-   "high_f": 58,
-   "low_f": 39,
+   "date": "2026-11-11",
+   "is_yesterday": true,
+   "high_f": 59,
+   "low_f": 42,
    "high_rank": {
-    "value_f": 58,
-    "warm_rank": 35,
-    "cool_rank": 82,
+    "value_f": 59,
+    "warm_rank": 28,
+    "cool_rank": 96,
     "years": 123,
     "first_year": 1904,
-    "tied_years": [
-     1910,
-     1920,
-     1951,
-     1960,
-     1993,
-     2014,
-     2024
-    ],
+    "tied_years": [],
     "standing": "warm",
     "notable": false,
     "since": 2024,
     "record": false,
-    "phrase": "typical for November 10"
+    "phrase": "typical for November 11"
    },
    "low_rank": {
-    "value_f": 39,
-    "warm_rank": 39,
-    "cool_rank": 81,
+    "value_f": 42,
+    "warm_rank": 22,
+    "cool_rank": 98,
     "years": 123,
     "first_year": 1904,
     "tied_years": [
-     1910,
-     1935,
-     1989,
-     1997
+     1938,
+     1940,
+     1963,
+     1978
     ],
     "standing": "warm",
-    "notable": false,
-    "since": 2021,
+    "notable": true,
+    "since": 2024,
     "record": false,
-    "phrase": "typical for November 10"
+    "phrase": "22nd warmest November 11 low (tied) of 123 since 1904, warmest since 2024"
    }
   },
   "forecast_highs": [
    {
-    "period": "Thursday",
+    "period": "Today",
     "date": "2026-11-12",
     "high_f": 57,
     "would_rank": {
@@ -270,16 +262,7 @@
   "grid": "BOX/64,70",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-12T04:00:00-05:00",
-    "is_daytime": false,
-    "temp_f": 41,
-    "temp_c": 5.0,
-    "precip_chance_pct": 4,
-    "short_forecast": "Mostly Cloudy"
-   },
-   {
-    "name": "Thursday",
+    "name": "Today",
     "start": "2026-11-12T06:00:00-05:00",
     "is_daytime": true,
     "temp_f": 57,
@@ -288,7 +271,7 @@
     "short_forecast": "Mostly Cloudy then Light Rain Likely"
    },
    {
-    "name": "Thursday Night",
+    "name": "Tonight",
     "start": "2026-11-12T18:00:00-05:00",
     "is_daytime": false,
     "temp_f": 38,
@@ -394,19 +377,21 @@
     "temp_c": 14.44,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
+   },
+   {
+    "name": "Wednesday Night",
+    "start": "2026-11-18T18:00:00-05:00",
+    "is_daytime": false,
+    "temp_f": 35,
+    "temp_c": 1.67,
+    "precip_chance_pct": 1,
+    "short_forecast": "Clear"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-12T09:14:35Z",
   "hours": [
-   {
-    "start": "2026-11-12T06:00:00-05:00",
-    "temp_f": 41,
-    "temp_c": 5.0,
-    "precip_chance_pct": 6,
-    "short_forecast": "Partly Sunny"
-   },
    {
     "start": "2026-11-12T07:00:00-05:00",
     "temp_f": 42,
@@ -733,6 +718,13 @@
     "start": "2026-11-14T05:00:00-05:00",
     "temp_f": 33,
     "temp_c": 0.56,
+    "precip_chance_pct": 7,
+    "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "start": "2026-11-14T06:00:00-05:00",
+    "temp_f": 32,
+    "temp_c": 0.0,
     "precip_chance_pct": 7,
     "short_forecast": "Mostly Cloudy"
    }

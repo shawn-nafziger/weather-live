@@ -11,7 +11,7 @@
   "lon": -97.6003,
   "history": "Same site as the official Oklahoma City record"
  },
- "as_of_utc": "2026-11-12T11:46:02Z",
+ "as_of_utc": "2026-11-12T12:07:51Z",
  "now": {
   "time_utc": "2026-11-12T11:35:00Z",
   "temp_c": 8,
@@ -46,49 +46,50 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-10",
-   "is_yesterday": false,
-   "high_f": 73,
-   "low_f": 50,
+   "date": "2026-11-11",
+   "is_yesterday": true,
+   "high_f": 72,
+   "low_f": 47,
    "high_rank": {
-    "value_f": 73,
-    "warm_rank": 25,
-    "cool_rank": 109,
+    "value_f": 72,
+    "warm_rank": 32,
+    "cool_rank": 102,
     "years": 137,
     "first_year": 1890,
     "tied_years": [
-     1912,
-     1914,
-     1964,
-     2019
+     1902,
+     1929,
+     1967,
+     2001
     ],
     "standing": "warm",
-    "notable": true,
-    "since": 2019,
+    "notable": false,
+    "since": 2025,
     "record": false,
-    "phrase": "25th warmest November 10 high (tied) of 137 since 1890, warmest since 2019"
+    "phrase": "typical for November 11"
    },
    "low_rank": {
-    "value_f": 50,
-    "warm_rank": 21,
-    "cool_rank": 114,
+    "value_f": 47,
+    "warm_rank": 26,
+    "cool_rank": 108,
     "years": 137,
     "first_year": 1890,
     "tied_years": [
-     1917,
-     1967,
-     1999
+     1929,
+     1930,
+     1945,
+     2016
     ],
     "standing": "warm",
     "notable": true,
-    "since": 2021,
+    "since": 2017,
     "record": false,
-    "phrase": "21st warmest November 10 low (tied) of 137 since 1890, warmest since 2021"
+    "phrase": "26th warmest November 11 low (tied) of 137 since 1890, warmest since 2017"
    }
   },
   "forecast_highs": [
    {
-    "period": "Thursday",
+    "period": "Today",
     "date": "2026-11-12",
     "high_f": 69,
     "would_rank": {
@@ -246,16 +247,7 @@
   "grid": "OUN/94,90",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-12T00:00:00-06:00",
-    "is_daytime": false,
-    "temp_f": 46,
-    "temp_c": 7.78,
-    "precip_chance_pct": 0,
-    "short_forecast": "Clear"
-   },
-   {
-    "name": "Thursday",
+    "name": "Today",
     "start": "2026-11-12T06:00:00-06:00",
     "is_daytime": true,
     "temp_f": 69,
@@ -264,7 +256,7 @@
     "short_forecast": "Sunny"
    },
    {
-    "name": "Thursday Night",
+    "name": "Tonight",
     "start": "2026-11-12T18:00:00-06:00",
     "is_daytime": false,
     "temp_f": 39,
@@ -370,19 +362,21 @@
     "temp_c": 15.56,
     "precip_chance_pct": 12,
     "short_forecast": "Mostly Sunny"
+   },
+   {
+    "name": "Wednesday Night",
+    "start": "2026-11-18T18:00:00-06:00",
+    "is_daytime": false,
+    "temp_f": 49,
+    "temp_c": 9.44,
+    "precip_chance_pct": 15,
+    "short_forecast": "Slight Chance Rain Showers then Mostly Cloudy"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-12T06:26:51Z",
   "hours": [
-   {
-    "start": "2026-11-12T05:00:00-06:00",
-    "temp_f": 47,
-    "temp_c": 8.33,
-    "precip_chance_pct": 0,
-    "short_forecast": "Clear"
-   },
    {
     "start": "2026-11-12T06:00:00-06:00",
     "temp_f": 46,
@@ -709,6 +703,13 @@
     "start": "2026-11-14T04:00:00-06:00",
     "temp_f": 38,
     "temp_c": 3.33,
+    "precip_chance_pct": 0,
+    "short_forecast": "Partly Cloudy"
+   },
+   {
+    "start": "2026-11-14T05:00:00-06:00",
+    "temp_f": 37,
+    "temp_c": 2.78,
     "precip_chance_pct": 0,
     "short_forecast": "Partly Cloudy"
    }

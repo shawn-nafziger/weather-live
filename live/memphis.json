@@ -11,7 +11,7 @@
   "lon": -89.9863,
   "history": "Same site as the official Memphis record"
  },
- "as_of_utc": "2026-11-12T11:46:02Z",
+ "as_of_utc": "2026-11-12T12:07:51Z",
  "now": {
   "time_utc": "2026-11-12T11:35:00Z",
   "temp_c": 11,
@@ -51,53 +51,49 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-10",
-   "is_yesterday": false,
-   "high_f": 73,
-   "low_f": 43,
+   "date": "2026-11-11",
+   "is_yesterday": true,
+   "high_f": 76,
+   "low_f": 53,
    "high_rank": {
-    "value_f": 73,
-    "warm_rank": 29,
-    "cool_rank": 120,
+    "value_f": 76,
+    "warm_rank": 12,
+    "cool_rank": 136,
+    "years": 151,
+    "first_year": 1875,
+    "tied_years": [
+     1909,
+     1927,
+     1956,
+     1962
+    ],
+    "standing": "warm",
+    "notable": true,
+    "since": 2015,
+    "record": false,
+    "phrase": "12th warmest November 11 high (tied) of 151 since 1875, warmest since 2015"
+   },
+   "low_rank": {
+    "value_f": 53,
+    "warm_rank": 23,
+    "cool_rank": 127,
     "years": 152,
     "first_year": 1875,
     "tied_years": [
-     1912,
-     1964,
-     1988,
-     2014
+     1922,
+     1969,
+     2024
     ],
     "standing": "warm",
     "notable": true,
     "since": 2024,
     "record": false,
-    "phrase": "29th warmest November 10 high (tied) of 152 since 1875, warmest since 2024"
-   },
-   "low_rank": {
-    "value_f": 43,
-    "warm_rank": 77,
-    "cool_rank": 68,
-    "years": 151,
-    "first_year": 1875,
-    "tied_years": [
-     1875,
-     1907,
-     1908,
-     1914,
-     1922,
-     1959,
-     1981
-    ],
-    "standing": "cool",
-    "notable": false,
-    "since": 2025,
-    "record": false,
-    "phrase": "typical for November 10"
+    "phrase": "23rd warmest November 11 low (tied) of 152 since 1875, warmest since 2024"
    }
   },
   "forecast_highs": [
    {
-    "period": "Thursday",
+    "period": "Today",
     "date": "2026-11-12",
     "high_f": 64,
     "would_rank": {
@@ -267,16 +263,7 @@
   "grid": "MEG/45,63",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-12T05:00:00-06:00",
-    "is_daytime": false,
-    "temp_f": 48,
-    "temp_c": 8.89,
-    "precip_chance_pct": 0,
-    "short_forecast": "Clear"
-   },
-   {
-    "name": "Thursday",
+    "name": "Today",
     "start": "2026-11-12T06:00:00-06:00",
     "is_daytime": true,
     "temp_f": 64,
@@ -285,7 +272,7 @@
     "short_forecast": "Sunny"
    },
    {
-    "name": "Thursday Night",
+    "name": "Tonight",
     "start": "2026-11-12T18:00:00-06:00",
     "is_daytime": false,
     "temp_f": 36,
@@ -391,19 +378,21 @@
     "temp_c": 16.67,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
+   },
+   {
+    "name": "Wednesday Night",
+    "start": "2026-11-18T18:00:00-06:00",
+    "is_daytime": false,
+    "temp_f": 40,
+    "temp_c": 4.44,
+    "precip_chance_pct": 1,
+    "short_forecast": "Mostly Clear"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-12T11:15:40Z",
   "hours": [
-   {
-    "start": "2026-11-12T05:00:00-06:00",
-    "temp_f": 50,
-    "temp_c": 10.0,
-    "precip_chance_pct": 0,
-    "short_forecast": "Clear"
-   },
    {
     "start": "2026-11-12T06:00:00-06:00",
     "temp_f": 49,
@@ -730,6 +719,13 @@
     "start": "2026-11-14T04:00:00-06:00",
     "temp_f": 33,
     "temp_c": 0.56,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Clear"
+   },
+   {
+    "start": "2026-11-14T05:00:00-06:00",
+    "temp_f": 32,
+    "temp_c": 0.0,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear"
    }

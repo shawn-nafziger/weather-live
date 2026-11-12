@@ -11,7 +11,7 @@
   "lon": -86.2816,
   "history": "Same site as the official Indianapolis record"
  },
- "as_of_utc": "2026-11-12T11:46:02Z",
+ "as_of_utc": "2026-11-12T12:07:51Z",
  "now": {
   "time_utc": "2026-11-12T11:30:00Z",
   "temp_c": 7,
@@ -46,52 +46,46 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-10",
-   "is_yesterday": false,
-   "high_f": 69,
-   "low_f": 45,
+   "date": "2026-11-11",
+   "is_yesterday": true,
+   "high_f": 70,
+   "low_f": 41,
    "high_rank": {
-    "value_f": 69,
-    "warm_rank": 12,
-    "cool_rank": 143,
+    "value_f": 70,
+    "warm_rank": 10,
+    "cool_rank": 145,
     "years": 156,
     "first_year": 1871,
     "tied_years": [
-     1899,
-     1942
+     1912,
+     1924
     ],
     "standing": "warm",
     "notable": true,
-    "since": 2022,
+    "since": 2010,
     "record": false,
-    "phrase": "12th warmest November 10 high (tied) of 156 since 1871, warmest since 2022"
+    "phrase": "10th warmest November 11 high (tied) of 156 since 1871, warmest since 2010"
    },
    "low_rank": {
-    "value_f": 45,
-    "warm_rank": 26,
-    "cool_rank": 123,
+    "value_f": 41,
+    "warm_rank": 38,
+    "cool_rank": 117,
     "years": 156,
     "first_year": 1871,
     "tied_years": [
-     1879,
-     1880,
-     1917,
-     1930,
-     1946,
-     1970,
-     1984,
-     1995
+     1927,
+     1965
     ],
     "standing": "warm",
-    "notable": true,
+    "notable": false,
     "since": 2024,
     "record": false,
-    "phrase": "26th warmest November 10 low (tied) of 156 since 1871, warmest since 2024"
+    "phrase": "typical for November 11"
    }
   },
   "forecast_highs": [
    {
-    "period": "Thursday",
+    "period": "Today",
     "date": "2026-11-12",
     "high_f": 50,
     "would_rank": {
@@ -260,20 +254,11 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-12T10:45:23Z",
+  "issued_utc": "2026-11-12T11:16:09Z",
   "grid": "IND/54,67",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-12T05:00:00-05:00",
-    "is_daytime": false,
-    "temp_f": 43,
-    "temp_c": 6.11,
-    "precip_chance_pct": 7,
-    "short_forecast": "Partly Cloudy"
-   },
-   {
-    "name": "Thursday",
+    "name": "Today",
     "start": "2026-11-12T06:00:00-05:00",
     "is_daytime": true,
     "temp_f": 50,
@@ -282,7 +267,7 @@
     "short_forecast": "Chance Rain Showers"
    },
    {
-    "name": "Thursday Night",
+    "name": "Tonight",
     "start": "2026-11-12T18:00:00-05:00",
     "is_daytime": false,
     "temp_f": 34,
@@ -388,30 +373,32 @@
     "temp_c": 12.78,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
+   },
+   {
+    "name": "Wednesday Night",
+    "start": "2026-11-18T18:00:00-05:00",
+    "is_daytime": false,
+    "temp_f": 32,
+    "temp_c": 0.0,
+    "precip_chance_pct": 2,
+    "short_forecast": "Mostly Clear"
    }
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-12T11:16:09Z",
+  "issued_utc": "2026-11-12T10:45:23Z",
   "hours": [
    {
-    "start": "2026-11-12T06:00:00-05:00",
-    "temp_f": 46,
-    "temp_c": 7.78,
-    "precip_chance_pct": 7,
-    "short_forecast": "Partly Sunny"
-   },
-   {
     "start": "2026-11-12T07:00:00-05:00",
-    "temp_f": 45,
-    "temp_c": 7.22,
+    "temp_f": 43,
+    "temp_c": 6.11,
     "precip_chance_pct": 7,
     "short_forecast": "Partly Sunny"
    },
    {
     "start": "2026-11-12T08:00:00-05:00",
-    "temp_f": 45,
-    "temp_c": 7.22,
+    "temp_f": 43,
+    "temp_c": 6.11,
     "precip_chance_pct": 8,
     "short_forecast": "Partly Sunny"
    },
@@ -729,6 +716,13 @@
     "temp_c": -1.11,
     "precip_chance_pct": 0,
     "short_forecast": "Partly Cloudy"
+   },
+   {
+    "start": "2026-11-14T06:00:00-05:00",
+    "temp_f": 29,
+    "temp_c": -1.67,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Sunny"
    }
   ]
  },
