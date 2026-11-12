@@ -11,20 +11,20 @@
   "lon": -98.4636,
   "history": "Same site as the official San Antonio record"
  },
- "as_of_utc": "2026-11-12T00:07:51Z",
+ "as_of_utc": "2026-11-12T01:07:53Z",
  "now": {
-  "time_utc": "2026-11-11T23:50:00Z",
-  "temp_c": 21,
-  "temp_f": 69.8,
+  "time_utc": "2026-11-12T00:15:00Z",
+  "temp_c": 20,
+  "temp_f": 68.0,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 16,
-  "humidity_pct": 73.11,
-  "wind_kmh": 5.54,
+  "humidity_pct": 77.77,
+  "wind_kmh": 7.42,
   "description": "Partly Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-11",
-  "readings": 19,
+  "readings": 20,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -84,29 +84,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "Veterans Day",
-    "date": "2026-11-11",
-    "high_f": 76,
-    "would_rank": {
-     "value_f": 76,
-     "warm_rank": 60,
-     "cool_rank": 79,
-     "years": 142,
-     "first_year": 1885,
-     "tied_years": [
-      1893,
-      1959,
-      1971,
-      1976
-     ],
-     "standing": "warm",
-     "notable": false,
-     "since": 2024,
-     "record": false,
-     "phrase": "typical for November 11"
-    }
-   },
    {
     "period": "Thursday",
     "date": "2026-11-12",
@@ -237,6 +214,29 @@
      "record": false,
      "phrase": "typical for November 17"
     }
+   },
+   {
+    "period": "Wednesday",
+    "date": "2026-11-18",
+    "high_f": 67,
+    "would_rank": {
+     "value_f": 67,
+     "warm_rank": 95,
+     "cool_rank": 44,
+     "years": 142,
+     "first_year": 1885,
+     "tied_years": [
+      1892,
+      1906,
+      1920,
+      1925
+     ],
+     "standing": "cool",
+     "notable": false,
+     "since": 2023,
+     "record": false,
+     "phrase": "typical for November 18"
+    }
    }
   ]
  },
@@ -244,15 +244,6 @@
   "issued_utc": "2026-11-11T23:44:25Z",
   "grid": "EWX/128,59",
   "periods": [
-   {
-    "name": "Veterans Day",
-    "start": "2026-11-11T17:00:00-06:00",
-    "is_daytime": true,
-    "temp_f": 76,
-    "temp_c": 24.44,
-    "precip_chance_pct": 0,
-    "short_forecast": "Partly Sunny"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-11T18:00:00-06:00",
@@ -369,19 +360,21 @@
     "temp_c": 11.11,
     "precip_chance_pct": 3,
     "short_forecast": "Partly Cloudy"
+   },
+   {
+    "name": "Wednesday",
+    "start": "2026-11-18T06:00:00-06:00",
+    "is_daytime": true,
+    "temp_f": 67,
+    "temp_c": 19.44,
+    "precip_chance_pct": 15,
+    "short_forecast": "Mostly Cloudy then Slight Chance Rain Showers"
    }
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-11T22:32:45Z",
+  "issued_utc": "2026-11-11T23:44:25Z",
   "hours": [
-   {
-    "start": "2026-11-11T18:00:00-06:00",
-    "temp_f": 71,
-    "temp_c": 21.67,
-    "precip_chance_pct": 2,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "start": "2026-11-11T19:00:00-06:00",
     "temp_f": 69,
@@ -710,6 +703,13 @@
     "temp_c": 21.67,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
+   },
+   {
+    "start": "2026-11-13T18:00:00-06:00",
+    "temp_f": 69,
+    "temp_c": 20.56,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Clear"
    }
   ]
  },
