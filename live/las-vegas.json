@@ -11,7 +11,7 @@
   "lon": -115.1634,
   "history": "Same site as the official Las Vegas record"
  },
- "as_of_utc": "2026-11-12T14:07:56Z",
+ "as_of_utc": "2026-11-12T15:07:53Z",
  "now": {
   "time_utc": "2026-11-12T13:45:00Z",
   "temp_c": 13,
@@ -83,7 +83,7 @@
   },
   "forecast_highs": [
    {
-    "period": "Thursday",
+    "period": "Today",
     "date": "2026-11-12",
     "high_f": 73,
     "would_rank": {
@@ -249,16 +249,7 @@
   "grid": "VEF/121,94",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-12T00:00:00-08:00",
-    "is_daytime": false,
-    "temp_f": 55,
-    "temp_c": 12.78,
-    "precip_chance_pct": 0,
-    "short_forecast": "Clear"
-   },
-   {
-    "name": "Thursday",
+    "name": "Today",
     "start": "2026-11-12T06:00:00-08:00",
     "is_daytime": true,
     "temp_f": 73,
@@ -267,7 +258,7 @@
     "short_forecast": "Sunny"
    },
    {
-    "name": "Thursday Night",
+    "name": "Tonight",
     "start": "2026-11-12T18:00:00-08:00",
     "is_daytime": false,
     "temp_f": 55,
@@ -373,19 +364,21 @@
     "temp_c": 16.67,
     "precip_chance_pct": 11,
     "short_forecast": "Mostly Sunny"
+   },
+   {
+    "name": "Wednesday Night",
+    "start": "2026-11-18T18:00:00-08:00",
+    "is_daytime": false,
+    "temp_f": 47,
+    "temp_c": 8.33,
+    "precip_chance_pct": 19,
+    "short_forecast": "Mostly Cloudy then Slight Chance Rain Showers"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-12T08:19:52Z",
   "hours": [
-   {
-    "start": "2026-11-12T06:00:00-08:00",
-    "temp_f": 55,
-    "temp_c": 12.78,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "start": "2026-11-12T07:00:00-08:00",
     "temp_f": 56,
@@ -714,6 +707,13 @@
     "temp_c": 13.89,
     "precip_chance_pct": 2,
     "short_forecast": "Partly Cloudy"
+   },
+   {
+    "start": "2026-11-14T06:00:00-08:00",
+    "temp_f": 56,
+    "temp_c": 13.33,
+    "precip_chance_pct": 2,
+    "short_forecast": "Mostly Sunny"
    }
   ]
  },

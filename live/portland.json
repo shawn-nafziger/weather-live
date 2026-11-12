@@ -11,9 +11,9 @@
   "lon": -122.6092,
   "history": "Same site as the official Portland record"
  },
- "as_of_utc": "2026-11-12T14:07:56Z",
+ "as_of_utc": "2026-11-12T15:07:53Z",
  "now": {
-  "time_utc": "2026-11-12T13:45:00Z",
+  "time_utc": "2026-11-12T14:35:00Z",
   "temp_c": 10,
   "temp_f": 50.0,
   "precision": "nearest whole \u00b0C",
@@ -88,7 +88,7 @@
   },
   "forecast_highs": [
    {
-    "period": "Thursday",
+    "period": "Today",
     "date": "2026-11-12",
     "high_f": 62,
     "would_rank": {
@@ -267,20 +267,11 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-12T12:41:14Z",
+  "issued_utc": "2026-11-12T13:41:25Z",
   "grid": "PQR/116,107",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-12T05:00:00-08:00",
-    "is_daytime": false,
-    "temp_f": 50,
-    "temp_c": 10.0,
-    "precip_chance_pct": 1,
-    "short_forecast": "Cloudy"
-   },
-   {
-    "name": "Thursday",
+    "name": "Today",
     "start": "2026-11-12T06:00:00-08:00",
     "is_daytime": true,
     "temp_f": 62,
@@ -289,7 +280,7 @@
     "short_forecast": "Mostly Cloudy"
    },
    {
-    "name": "Thursday Night",
+    "name": "Tonight",
     "start": "2026-11-12T18:00:00-08:00",
     "is_daytime": false,
     "temp_f": 50,
@@ -395,19 +386,21 @@
     "temp_c": 11.11,
     "precip_chance_pct": 36,
     "short_forecast": "Chance Light Rain"
+   },
+   {
+    "name": "Wednesday Night",
+    "start": "2026-11-18T18:00:00-08:00",
+    "is_daytime": false,
+    "temp_f": 42,
+    "temp_c": 5.56,
+    "precip_chance_pct": 31,
+    "short_forecast": "Chance Light Rain"
    }
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-12T12:41:14Z",
+  "issued_utc": "2026-11-12T14:41:22Z",
   "hours": [
-   {
-    "start": "2026-11-12T06:00:00-08:00",
-    "temp_f": 50,
-    "temp_c": 10.0,
-    "precip_chance_pct": 1,
-    "short_forecast": "Cloudy"
-   },
    {
     "start": "2026-11-12T07:00:00-08:00",
     "temp_f": 50,
@@ -732,6 +725,13 @@
    },
    {
     "start": "2026-11-14T05:00:00-08:00",
+    "temp_f": 50,
+    "temp_c": 10.0,
+    "precip_chance_pct": 72,
+    "short_forecast": "Light Rain Likely"
+   },
+   {
+    "start": "2026-11-14T06:00:00-08:00",
     "temp_f": 50,
     "temp_c": 10.0,
     "precip_chance_pct": 72,

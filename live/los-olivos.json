@@ -11,20 +11,20 @@
   "lon": -120.0756,
   "history": "Provisional: Santa Ynez Airport. The long record (CACHUMA LAKE) is a different, once-a-day station"
  },
- "as_of_utc": "2026-11-12T14:07:56Z",
+ "as_of_utc": "2026-11-12T15:07:53Z",
  "now": {
-  "time_utc": "2026-11-12T13:15:00Z",
+  "time_utc": "2026-11-12T14:35:00Z",
   "temp_c": 10,
   "temp_f": 50.0,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 7,
   "humidity_pct": 81.62,
-  "wind_kmh": 0,
+  "wind_kmh": 7.56,
   "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-12",
-  "readings": 9,
+  "readings": 11,
   "basis": "5-minute readings (whole \u00b0C, approximate)",
   "approximate": true,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -83,17 +83,8 @@
   "grid": "LOX/93,81",
   "periods": [
    {
-    "name": "Tonight",
-    "start": "2026-11-11T22:00:00-08:00",
-    "is_daytime": false,
-    "temp_f": 46,
-    "temp_c": 7.78,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Cloudy"
-   },
-   {
-    "name": "Thursday",
-    "start": "2026-11-12T06:00:00-08:00",
+    "name": "Today",
+    "start": "2026-11-12T07:00:00-08:00",
     "is_daytime": true,
     "temp_f": 77,
     "temp_c": 25.0,
@@ -101,7 +92,7 @@
     "short_forecast": "Partly Sunny then Slight Chance Light Rain"
    },
    {
-    "name": "Thursday Night",
+    "name": "Tonight",
     "start": "2026-11-12T18:00:00-08:00",
     "is_daytime": false,
     "temp_f": 49,
@@ -207,19 +198,21 @@
     "temp_c": 18.33,
     "precip_chance_pct": 51,
     "short_forecast": "Chance Light Rain"
+   },
+   {
+    "name": "Wednesday Night",
+    "start": "2026-11-18T18:00:00-08:00",
+    "is_daytime": false,
+    "temp_f": 43,
+    "temp_c": 6.11,
+    "precip_chance_pct": 51,
+    "short_forecast": "Chance Light Rain then Mostly Cloudy"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-12T06:16:46Z",
   "hours": [
-   {
-    "start": "2026-11-12T06:00:00-08:00",
-    "temp_f": 46,
-    "temp_c": 7.78,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "start": "2026-11-12T07:00:00-08:00",
     "temp_f": 47,
@@ -546,6 +539,13 @@
     "start": "2026-11-14T05:00:00-08:00",
     "temp_f": 46,
     "temp_c": 7.78,
+    "precip_chance_pct": 8,
+    "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "start": "2026-11-14T06:00:00-08:00",
+    "temp_f": 45,
+    "temp_c": 7.22,
     "precip_chance_pct": 8,
     "short_forecast": "Mostly Cloudy"
    }
