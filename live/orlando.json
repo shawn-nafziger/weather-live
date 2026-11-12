@@ -11,29 +11,23 @@
   "lon": -81.3241,
   "history": "Same site as the official Orlando record"
  },
- "as_of_utc": "2026-11-12T04:07:52Z",
+ "as_of_utc": "2026-11-12T05:07:53Z",
  "now": {
-  "time_utc": "2026-11-12T02:53:00Z",
-  "temp_c": 22,
-  "temp_f": 71.6,
+  "time_utc": "2026-11-12T03:53:00Z",
+  "temp_c": 21,
+  "temp_f": 69.8,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 13,
-  "humidity_pct": 56.66,
-  "wind_kmh": 7.56,
-  "description": "Partly Cloudy"
+  "dewpoint_c": 14,
+  "humidity_pct": 64.29,
+  "wind_kmh": 12.96,
+  "description": ""
  },
  "today_so_far": {
-  "date_local": "2026-11-11",
-  "readings": 13,
+  "date_local": "2026-11-12",
+  "readings": 0,
   "basis": "5-minute readings (whole \u00b0C, approximate)",
   "approximate": true,
-  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 28,
-  "high_f": 82.4,
-  "high_time_utc": "2026-11-11T15:53:00Z",
-  "low_c": 21,
-  "low_f": 69.8,
-  "low_time_utc": "2026-11-11T10:53:00Z"
+  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two."
  },
  "record": {
   "series": "Orlando area (ThreadEx; airport)",
@@ -42,7 +36,7 @@
   "rank_today": true,
   "latest_final": {
    "date": "2026-11-10",
-   "is_yesterday": true,
+   "is_yesterday": false,
    "high_f": 84,
    "low_f": 63,
    "high_rank": {
@@ -279,17 +273,17 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-12T03:14:51Z",
+  "issued_utc": "2026-11-12T04:55:57Z",
   "grid": "MLB/29,63",
   "periods": [
    {
-    "name": "Tonight",
-    "start": "2026-11-11T22:00:00-05:00",
+    "name": "Overnight",
+    "start": "2026-11-12T00:00:00-05:00",
     "is_daytime": false,
     "temp_f": 64,
     "temp_c": 17.78,
-    "precip_chance_pct": 16,
-    "short_forecast": "Slight Chance Rain Showers then Mostly Cloudy"
+    "precip_chance_pct": 10,
+    "short_forecast": "Mostly Cloudy"
    },
    {
     "name": "Thursday",
@@ -411,15 +405,8 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-12T03:14:51Z",
+  "issued_utc": "2026-11-12T04:55:57Z",
   "hours": [
-   {
-    "start": "2026-11-11T23:00:00-05:00",
-    "temp_f": 69,
-    "temp_c": 20.56,
-    "precip_chance_pct": 16,
-    "short_forecast": "Slight Chance Rain Showers"
-   },
    {
     "start": "2026-11-12T00:00:00-05:00",
     "temp_f": 68,
@@ -746,6 +733,13 @@
     "start": "2026-11-13T22:00:00-05:00",
     "temp_f": 57,
     "temp_c": 13.89,
+    "precip_chance_pct": 0,
+    "short_forecast": "Clear"
+   },
+   {
+    "start": "2026-11-13T23:00:00-05:00",
+    "temp_f": 56,
+    "temp_c": 13.33,
     "precip_chance_pct": 0,
     "short_forecast": "Clear"
    }

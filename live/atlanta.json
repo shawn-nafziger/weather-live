@@ -11,29 +11,23 @@
   "lon": -84.4269,
   "history": "Same site as the official Atlanta record"
  },
- "as_of_utc": "2026-11-12T04:07:52Z",
+ "as_of_utc": "2026-11-12T05:07:53Z",
  "now": {
-  "time_utc": "2026-11-12T03:25:00Z",
-  "temp_c": 15,
-  "temp_f": 59.0,
+  "time_utc": "2026-11-12T04:45:00Z",
+  "temp_c": 14,
+  "temp_f": 57.2,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 9,
-  "humidity_pct": 67.36,
-  "wind_kmh": 16.67,
+  "humidity_pct": 71.85,
+  "wind_kmh": 14.83,
   "description": "Mostly Clear"
  },
  "today_so_far": {
-  "date_local": "2026-11-11",
-  "readings": 12,
-  "basis": "hourly reports (tenths of a degree)",
-  "approximate": false,
-  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 20.6,
-  "high_f": 69.1,
-  "high_time_utc": "2026-11-11T19:52:00Z",
-  "low_c": 9.4,
-  "low_f": 48.9,
-  "low_time_utc": "2026-11-11T10:52:00Z"
+  "date_local": "2026-11-12",
+  "readings": 0,
+  "basis": "5-minute readings (whole \u00b0C, approximate)",
+  "approximate": true,
+  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two."
  },
  "record": {
   "series": "Atlanta area (ThreadEx; airport)",
@@ -42,7 +36,7 @@
   "rank_today": true,
   "latest_final": {
    "date": "2026-11-10",
-   "is_yesterday": true,
+   "is_yesterday": false,
    "high_f": 74,
    "low_f": 46,
    "high_rank": {
@@ -383,13 +377,6 @@
   "issued_utc": "2026-11-11T18:26:09Z",
   "hours": [
    {
-    "start": "2026-11-11T23:00:00-05:00",
-    "temp_f": 58,
-    "temp_c": 14.44,
-    "precip_chance_pct": 3,
-    "short_forecast": "Partly Cloudy"
-   },
-   {
     "start": "2026-11-12T00:00:00-05:00",
     "temp_f": 58,
     "temp_c": 14.44,
@@ -715,6 +702,13 @@
     "start": "2026-11-13T22:00:00-05:00",
     "temp_f": 43,
     "temp_c": 6.11,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Clear"
+   },
+   {
+    "start": "2026-11-13T23:00:00-05:00",
+    "temp_f": 41,
+    "temp_c": 5.0,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear"
    }
