@@ -11,34 +11,23 @@
   "lon": -97.022,
   "history": "Same site as the official Dallas record"
  },
- "as_of_utc": "2026-11-12T05:07:53Z",
+ "as_of_utc": "2026-11-12T06:07:52Z",
  "now": {
-  "time_utc": "2026-11-12T04:45:00Z",
-  "temp_c": 17,
-  "temp_f": 62.6,
+  "time_utc": "2026-11-12T05:35:00Z",
+  "temp_c": 16,
+  "temp_f": 60.8,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 9,
-  "humidity_pct": 59.28,
-  "wind_kmh": 16.67,
+  "humidity_pct": 63.17,
+  "wind_kmh": 14.83,
   "description": "Clear"
  },
  "today_so_far": {
-  "date_local": "2026-11-11",
-  "readings": 16,
-  "basis": "hourly reports (tenths of a degree)",
-  "approximate": false,
-  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 26.1,
-  "high_f": 79.0,
-  "high_time_utc": "2026-11-11T20:53:00Z",
-  "low_c": 16.1,
-  "low_f": 61.0,
-  "low_time_utc": "2026-11-11T09:53:00Z",
-  "peak_between_reports": {
-   "at_least_f": 79.7,
-   "about_f": 80.6,
-   "time_utc": "2026-11-11T20:30:00Z"
-  }
+  "date_local": "2026-11-12",
+  "readings": 0,
+  "basis": "5-minute readings (whole \u00b0C, approximate)",
+  "approximate": true,
+  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two."
  },
  "record": {
   "series": "Dallas area (ThreadEx; DFW airport)",
@@ -47,7 +36,7 @@
   "rank_today": true,
   "latest_final": {
    "date": "2026-11-10",
-   "is_yesterday": true,
+   "is_yesterday": false,
    "high_f": 78,
    "low_f": 59,
    "high_rank": {
@@ -82,24 +71,6 @@
     "record": false,
     "phrase": "16th warmest November 10 low (tied) of 129 since 1898, warmest since 2022"
    }
-  },
-  "today_high_so_far": {
-   "value_f": 79,
-   "warm_rank": 17,
-   "cool_rank": 109,
-   "years": 129,
-   "first_year": 1898,
-   "tied_years": [
-    1901,
-    1912,
-    1924,
-    1971
-   ],
-   "standing": "warm",
-   "notable": true,
-   "since": 2015,
-   "record": false,
-   "phrase": "already the 17th warmest November 11 high (tied) of 129 since 1898, warmest since 2015"
   },
   "forecast_highs": [
    {
@@ -396,13 +367,6 @@
  "hourly": {
   "issued_utc": "2026-11-11T23:06:28Z",
   "hours": [
-   {
-    "start": "2026-11-11T23:00:00-06:00",
-    "temp_f": 60,
-    "temp_c": 15.56,
-    "precip_chance_pct": 0,
-    "short_forecast": "Clear"
-   },
    {
     "start": "2026-11-12T00:00:00-06:00",
     "temp_f": 59,
@@ -729,6 +693,13 @@
     "start": "2026-11-13T22:00:00-06:00",
     "temp_f": 56,
     "temp_c": 13.33,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Clear"
+   },
+   {
+    "start": "2026-11-13T23:00:00-06:00",
+    "temp_f": 54,
+    "temp_c": 12.22,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear"
    }
