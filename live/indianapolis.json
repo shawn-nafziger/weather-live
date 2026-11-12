@@ -11,20 +11,20 @@
   "lon": -86.2816,
   "history": "Same site as the official Indianapolis record"
  },
- "as_of_utc": "2026-11-11T23:07:52Z",
+ "as_of_utc": "2026-11-12T00:07:51Z",
  "now": {
-  "time_utc": "2026-11-11T22:50:00Z",
-  "temp_c": 18,
-  "temp_f": 64.4,
+  "time_utc": "2026-11-11T23:30:00Z",
+  "temp_c": 16,
+  "temp_f": 60.8,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 8,
-  "humidity_pct": 52.01,
-  "wind_kmh": 12.96,
-  "description": "Mostly Cloudy"
+  "dewpoint_c": 10,
+  "humidity_pct": 67.56,
+  "wind_kmh": null,
+  "description": "Rain"
  },
  "today_so_far": {
   "date_local": "2026-11-11",
-  "readings": 11,
+  "readings": 12,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -106,27 +106,6 @@
    "phrase": "already the 10th warmest November 11 high (tied) of 156 since 1871, warmest since 2010"
   },
   "forecast_highs": [
-   {
-    "period": "Veterans Day",
-    "date": "2026-11-11",
-    "high_f": 70,
-    "would_rank": {
-     "value_f": 70,
-     "warm_rank": 10,
-     "cool_rank": 145,
-     "years": 156,
-     "first_year": 1871,
-     "tied_years": [
-      1912,
-      1924
-     ],
-     "standing": "warm",
-     "notable": true,
-     "since": 2010,
-     "record": false,
-     "phrase": "10th warmest November 11 high (tied) of 156 since 1871, warmest since 2010"
-    }
-   },
    {
     "period": "Thursday",
     "date": "2026-11-12",
@@ -264,22 +243,36 @@
      "record": false,
      "phrase": "typical for November 17"
     }
+   },
+   {
+    "period": "Wednesday",
+    "date": "2026-11-18",
+    "high_f": 55,
+    "would_rank": {
+     "value_f": 55,
+     "warm_rank": 52,
+     "cool_rank": 101,
+     "years": 156,
+     "first_year": 1871,
+     "tied_years": [
+      1898,
+      1912,
+      1960,
+      1981
+     ],
+     "standing": "warm",
+     "notable": false,
+     "since": 2024,
+     "record": false,
+     "phrase": "typical for November 18"
+    }
    }
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-11T22:46:15Z",
+  "issued_utc": "2026-11-11T23:15:20Z",
   "grid": "IND/54,67",
   "periods": [
-   {
-    "name": "Veterans Day",
-    "start": "2026-11-11T17:00:00-05:00",
-    "is_daytime": true,
-    "temp_f": 70,
-    "temp_c": 21.11,
-    "precip_chance_pct": 35,
-    "short_forecast": "Chance Showers And Thunderstorms"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-11T18:00:00-05:00",
@@ -287,7 +280,7 @@
     "temp_f": 43,
     "temp_c": 6.11,
     "precip_chance_pct": 76,
-    "short_forecast": "Showers And Thunderstorms then Mostly Cloudy"
+    "short_forecast": "Rain then Mostly Cloudy"
    },
    {
     "name": "Thursday",
@@ -396,46 +389,48 @@
     "temp_c": -2.22,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear"
+   },
+   {
+    "name": "Wednesday",
+    "start": "2026-11-18T06:00:00-05:00",
+    "is_daytime": true,
+    "temp_f": 55,
+    "temp_c": 12.78,
+    "precip_chance_pct": 1,
+    "short_forecast": "Sunny"
    }
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-11T22:15:29Z",
+  "issued_utc": "2026-11-11T23:46:34Z",
   "hours": [
    {
-    "start": "2026-11-11T18:00:00-05:00",
-    "temp_f": 61,
-    "temp_c": 16.11,
-    "precip_chance_pct": 66,
-    "short_forecast": "Showers And Thunderstorms Likely"
-   },
-   {
     "start": "2026-11-11T19:00:00-05:00",
-    "temp_f": 57,
-    "temp_c": 13.89,
+    "temp_f": 56,
+    "temp_c": 13.33,
     "precip_chance_pct": 76,
-    "short_forecast": "Showers And Thunderstorms"
+    "short_forecast": "Rain"
    },
    {
     "start": "2026-11-11T20:00:00-05:00",
     "temp_f": 55,
     "temp_c": 12.78,
     "precip_chance_pct": 54,
-    "short_forecast": "Chance Showers And Thunderstorms"
+    "short_forecast": "Chance Light Rain"
    },
    {
     "start": "2026-11-11T21:00:00-05:00",
     "temp_f": 54,
     "temp_c": 12.22,
     "precip_chance_pct": 37,
-    "short_forecast": "Chance Rain Showers"
+    "short_forecast": "Chance Light Rain"
    },
    {
     "start": "2026-11-11T22:00:00-05:00",
     "temp_f": 51,
     "temp_c": 10.56,
     "precip_chance_pct": 20,
-    "short_forecast": "Slight Chance Rain Showers"
+    "short_forecast": "Slight Chance Light Rain"
    },
    {
     "start": "2026-11-11T23:00:00-05:00",
@@ -737,6 +732,13 @@
     "temp_c": 5.56,
     "precip_chance_pct": 1,
     "short_forecast": "Partly Sunny"
+   },
+   {
+    "start": "2026-11-13T18:00:00-05:00",
+    "temp_f": 41,
+    "temp_c": 5.0,
+    "precip_chance_pct": 1,
+    "short_forecast": "Mostly Cloudy"
    }
   ]
  },

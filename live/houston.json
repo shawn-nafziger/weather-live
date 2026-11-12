@@ -11,20 +11,20 @@
   "lon": -95.3607,
   "history": "Same site as the official Houston record"
  },
- "as_of_utc": "2026-11-11T23:07:52Z",
+ "as_of_utc": "2026-11-12T00:07:51Z",
  "now": {
-  "time_utc": "2026-11-11T22:50:00Z",
-  "temp_c": 23,
-  "temp_f": 73.4,
+  "time_utc": "2026-11-11T23:50:00Z",
+  "temp_c": 21,
+  "temp_f": 69.8,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 17,
-  "humidity_pct": 68.97,
+  "dewpoint_c": 18,
+  "humidity_pct": 82.99,
   "wind_kmh": 0,
   "description": "Mostly Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-11",
-  "readings": 14,
+  "readings": 15,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -89,30 +89,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "Veterans Day",
-    "date": "2026-11-11",
-    "high_f": 74,
-    "would_rank": {
-     "value_f": 74,
-     "warm_rank": 67,
-     "cool_rank": 64,
-     "years": 135,
-     "first_year": 1889,
-     "tied_years": [
-      1897,
-      1933,
-      1954,
-      1990,
-      2021
-     ],
-     "standing": "cool",
-     "notable": false,
-     "since": 2025,
-     "record": false,
-     "phrase": "typical for November 11"
-    }
-   },
    {
     "period": "Thursday",
     "date": "2026-11-12",
@@ -255,6 +231,29 @@
      "record": false,
      "phrase": "typical for November 17"
     }
+   },
+   {
+    "period": "Wednesday",
+    "date": "2026-11-18",
+    "high_f": 74,
+    "would_rank": {
+     "value_f": 74,
+     "warm_rank": 50,
+     "cool_rank": 82,
+     "years": 135,
+     "first_year": 1889,
+     "tied_years": [
+      1904,
+      1919,
+      1965,
+      2019
+     ],
+     "standing": "warm",
+     "notable": false,
+     "since": 2025,
+     "record": false,
+     "phrase": "typical for November 18"
+    }
    }
   ]
  },
@@ -262,15 +261,6 @@
   "issued_utc": "2026-11-11T18:21:20Z",
   "grid": "HGX/63,104",
   "periods": [
-   {
-    "name": "Veterans Day",
-    "start": "2026-11-11T13:00:00-06:00",
-    "is_daytime": true,
-    "temp_f": 74,
-    "temp_c": 23.33,
-    "precip_chance_pct": 3,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-11T18:00:00-06:00",
@@ -387,19 +377,21 @@
     "temp_c": 11.11,
     "precip_chance_pct": 1,
     "short_forecast": "Partly Cloudy"
+   },
+   {
+    "name": "Wednesday",
+    "start": "2026-11-18T06:00:00-06:00",
+    "is_daytime": true,
+    "temp_f": 74,
+    "temp_c": 23.33,
+    "precip_chance_pct": 3,
+    "short_forecast": "Mostly Sunny"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-11T18:21:20Z",
   "hours": [
-   {
-    "start": "2026-11-11T17:00:00-06:00",
-    "temp_f": 69,
-    "temp_c": 20.56,
-    "precip_chance_pct": 2,
-    "short_forecast": "Partly Sunny"
-   },
    {
     "start": "2026-11-11T18:00:00-06:00",
     "temp_f": 68,
@@ -726,6 +718,13 @@
     "start": "2026-11-13T16:00:00-06:00",
     "temp_f": 73,
     "temp_c": 22.78,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
+   },
+   {
+    "start": "2026-11-13T17:00:00-06:00",
+    "temp_f": 70,
+    "temp_c": 21.11,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
    }

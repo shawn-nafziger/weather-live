@@ -11,20 +11,20 @@
   "lon": -86.745,
   "history": "Same site as the official Birmingham record"
  },
- "as_of_utc": "2026-11-11T23:07:52Z",
+ "as_of_utc": "2026-11-12T00:07:51Z",
  "now": {
-  "time_utc": "2026-11-11T22:50:00Z",
-  "temp_c": 21,
-  "temp_f": 69.8,
+  "time_utc": "2026-11-11T23:35:00Z",
+  "temp_c": 20,
+  "temp_f": 68.0,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 11,
-  "humidity_pct": 52.8,
+  "humidity_pct": 56.16,
   "wind_kmh": 11.12,
   "description": "Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-11",
-  "readings": 11,
+  "readings": 12,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -90,30 +90,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "Veterans Day",
-    "date": "2026-11-11",
-    "high_f": 74,
-    "would_rank": {
-     "value_f": 74,
-     "warm_rank": 24,
-     "cool_rank": 104,
-     "years": 132,
-     "first_year": 1895,
-     "tied_years": [
-      1899,
-      1901,
-      1909,
-      1916,
-      2021
-     ],
-     "standing": "warm",
-     "notable": true,
-     "since": 2024,
-     "record": false,
-     "phrase": "24th warmest November 11 high (tied) of 132 since 1895, warmest since 2024"
-    }
-   },
    {
     "period": "Thursday",
     "date": "2026-11-12",
@@ -243,22 +219,34 @@
      "record": false,
      "phrase": "typical for November 17"
     }
+   },
+   {
+    "period": "Wednesday",
+    "date": "2026-11-18",
+    "high_f": 64,
+    "would_rank": {
+     "value_f": 64,
+     "warm_rank": 75,
+     "cool_rank": 56,
+     "years": 132,
+     "first_year": 1895,
+     "tied_years": [
+      1950,
+      2012
+     ],
+     "standing": "cool",
+     "notable": false,
+     "since": 2022,
+     "record": false,
+     "phrase": "typical for November 18"
+    }
    }
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-11T19:31:31Z",
+  "issued_utc": "2026-11-11T23:06:31Z",
   "grid": "BMX/61,87",
   "periods": [
-   {
-    "name": "Veterans Day",
-    "start": "2026-11-11T14:00:00-06:00",
-    "is_daytime": true,
-    "temp_f": 74,
-    "temp_c": 23.33,
-    "precip_chance_pct": 9,
-    "short_forecast": "Sunny"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-11T18:00:00-06:00",
@@ -375,19 +363,21 @@
     "temp_c": 1.67,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear then Patchy Frost"
+   },
+   {
+    "name": "Wednesday",
+    "start": "2026-11-18T06:00:00-06:00",
+    "is_daytime": true,
+    "temp_f": 64,
+    "temp_c": 17.78,
+    "precip_chance_pct": 0,
+    "short_forecast": "Patchy Frost then Sunny"
    }
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-11T19:31:31Z",
+  "issued_utc": "2026-11-11T23:06:31Z",
   "hours": [
-   {
-    "start": "2026-11-11T17:00:00-06:00",
-    "temp_f": 69,
-    "temp_c": 20.56,
-    "precip_chance_pct": 9,
-    "short_forecast": "Sunny"
-   },
    {
     "start": "2026-11-11T18:00:00-06:00",
     "temp_f": 64,
@@ -714,6 +704,13 @@
     "start": "2026-11-13T16:00:00-06:00",
     "temp_f": 52,
     "temp_c": 11.11,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
+   },
+   {
+    "start": "2026-11-13T17:00:00-06:00",
+    "temp_f": 50,
+    "temp_c": 10.0,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
    }

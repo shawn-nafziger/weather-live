@@ -11,20 +11,20 @@
   "lon": -82.5403,
   "history": "Same site as the official Tampa record"
  },
- "as_of_utc": "2026-11-11T23:07:52Z",
+ "as_of_utc": "2026-11-12T00:07:51Z",
  "now": {
-  "time_utc": "2026-11-11T22:50:00Z",
+  "time_utc": "2026-11-11T23:35:00Z",
   "temp_c": 22,
   "temp_f": 71.6,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 17,
-  "humidity_pct": 73.29,
-  "wind_kmh": 12.96,
+  "dewpoint_c": 18,
+  "humidity_pct": 78.06,
+  "wind_kmh": 11.12,
   "description": "Mostly Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-11",
-  "readings": 10,
+  "readings": 11,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -91,36 +91,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "Veterans Day",
-    "date": "2026-11-11",
-    "high_f": 82,
-    "would_rank": {
-     "value_f": 82,
-     "warm_rank": 31,
-     "cool_rank": 96,
-     "years": 137,
-     "first_year": 1890,
-     "tied_years": [
-      1908,
-      1936,
-      1939,
-      1940,
-      1945,
-      1947,
-      1989,
-      1999,
-      2004,
-      2008,
-      2021
-     ],
-     "standing": "warm",
-     "notable": false,
-     "since": 2024,
-     "record": false,
-     "phrase": "typical for November 11"
-    }
-   },
    {
     "period": "Thursday",
     "date": "2026-11-12",
@@ -268,22 +238,39 @@
      "record": false,
      "phrase": "typical for November 17"
     }
+   },
+   {
+    "period": "Wednesday",
+    "date": "2026-11-18",
+    "high_f": 78,
+    "would_rank": {
+     "value_f": 78,
+     "warm_rank": 68,
+     "cool_rank": 63,
+     "years": 137,
+     "first_year": 1890,
+     "tied_years": [
+      1962,
+      1977,
+      1987,
+      1996,
+      2000,
+      2010,
+      2020
+     ],
+     "standing": "cool",
+     "notable": false,
+     "since": 2022,
+     "record": false,
+     "phrase": "typical for November 18"
+    }
    }
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-11T20:02:25Z",
+  "issued_utc": "2026-11-11T23:42:05Z",
   "grid": "TBW/68,98",
   "periods": [
-   {
-    "name": "Veterans Day",
-    "start": "2026-11-11T15:00:00-05:00",
-    "is_daytime": true,
-    "temp_f": 82,
-    "temp_c": 27.78,
-    "precip_chance_pct": 3,
-    "short_forecast": "Partly Sunny"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-11T18:00:00-05:00",
@@ -400,19 +387,21 @@
     "temp_c": 16.11,
     "precip_chance_pct": 23,
     "short_forecast": "Slight Chance Showers And Thunderstorms then Partly Cloudy"
+   },
+   {
+    "name": "Wednesday",
+    "start": "2026-11-18T06:00:00-05:00",
+    "is_daytime": true,
+    "temp_f": 78,
+    "temp_c": 25.56,
+    "precip_chance_pct": 11,
+    "short_forecast": "Mostly Sunny"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-11T20:02:25Z",
   "hours": [
-   {
-    "start": "2026-11-11T18:00:00-05:00",
-    "temp_f": 75,
-    "temp_c": 23.89,
-    "precip_chance_pct": 3,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "start": "2026-11-11T19:00:00-05:00",
     "temp_f": 73,
@@ -741,6 +730,13 @@
     "temp_c": 19.44,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
+   },
+   {
+    "start": "2026-11-13T18:00:00-05:00",
+    "temp_f": 65,
+    "temp_c": 18.33,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Clear"
    }
   ]
  },

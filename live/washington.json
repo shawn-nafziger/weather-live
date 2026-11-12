@@ -11,20 +11,20 @@
   "lon": -77.0342,
   "history": "Same site as the official Washington record"
  },
- "as_of_utc": "2026-11-11T23:07:52Z",
+ "as_of_utc": "2026-11-12T00:07:51Z",
  "now": {
-  "time_utc": "2026-11-11T22:50:00Z",
-  "temp_c": 16,
-  "temp_f": 60.8,
+  "time_utc": "2026-11-11T23:55:00Z",
+  "temp_c": 15,
+  "temp_f": 59.0,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 8,
-  "humidity_pct": 59.04,
+  "humidity_pct": 62.95,
   "wind_kmh": 7.42,
-  "description": "Mostly Clear"
+  "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-11",
-  "readings": 11,
+  "readings": 12,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -106,27 +106,6 @@
    "phrase": "already the 21st warmest November 11 high (tied) of 155 since 1872, warmest since 2024"
   },
   "forecast_highs": [
-   {
-    "period": "Veterans Day",
-    "date": "2026-11-11",
-    "high_f": 68,
-    "would_rank": {
-     "value_f": 68,
-     "warm_rank": 21,
-     "cool_rank": 133,
-     "years": 155,
-     "first_year": 1872,
-     "tied_years": [
-      1911,
-      1946
-     ],
-     "standing": "warm",
-     "notable": true,
-     "since": 2024,
-     "record": false,
-     "phrase": "21st warmest November 11 high (tied) of 155 since 1872, warmest since 2024"
-    }
-   },
    {
     "period": "Thursday",
     "date": "2026-11-12",
@@ -275,6 +254,27 @@
      "record": false,
      "phrase": "typical for November 17"
     }
+   },
+   {
+    "period": "Wednesday",
+    "date": "2026-11-18",
+    "high_f": 57,
+    "would_rank": {
+     "value_f": 57,
+     "warm_rank": 68,
+     "cool_rank": 86,
+     "years": 155,
+     "first_year": 1872,
+     "tied_years": [
+      1977,
+      1988
+     ],
+     "standing": "warm",
+     "notable": false,
+     "since": 2024,
+     "record": false,
+     "phrase": "typical for November 18"
+    }
    }
   ]
  },
@@ -282,15 +282,6 @@
   "issued_utc": "2026-11-11T20:53:05Z",
   "grid": "LWX/97,69",
   "periods": [
-   {
-    "name": "Veterans Day",
-    "start": "2026-11-11T16:00:00-05:00",
-    "is_daytime": true,
-    "temp_f": 68,
-    "temp_c": 20.0,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-11T18:00:00-05:00",
@@ -407,19 +398,21 @@
     "temp_c": 1.67,
     "precip_chance_pct": 2,
     "short_forecast": "Partly Cloudy"
+   },
+   {
+    "name": "Wednesday",
+    "start": "2026-11-18T06:00:00-05:00",
+    "is_daytime": true,
+    "temp_f": 57,
+    "temp_c": 13.89,
+    "precip_chance_pct": 2,
+    "short_forecast": "Sunny"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-11T20:53:05Z",
   "hours": [
-   {
-    "start": "2026-11-11T18:00:00-05:00",
-    "temp_f": 61,
-    "temp_c": 16.11,
-    "precip_chance_pct": 0,
-    "short_forecast": "Partly Cloudy"
-   },
    {
     "start": "2026-11-11T19:00:00-05:00",
     "temp_f": 59,
@@ -748,6 +741,13 @@
     "temp_c": 8.89,
     "precip_chance_pct": 6,
     "short_forecast": "Partly Sunny"
+   },
+   {
+    "start": "2026-11-13T18:00:00-05:00",
+    "temp_f": 47,
+    "temp_c": 8.33,
+    "precip_chance_pct": 6,
+    "short_forecast": "Mostly Cloudy"
    }
   ]
  },
