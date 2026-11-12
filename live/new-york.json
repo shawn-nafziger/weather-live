@@ -11,29 +11,29 @@
   "lon": -73.9667,
   "history": "Same site as the official New York record"
  },
- "as_of_utc": "2026-11-12T21:07:52Z",
+ "as_of_utc": "2026-11-12T22:07:56Z",
  "now": {
-  "time_utc": "2026-11-12T20:29:00Z",
-  "temp_c": 11.7,
-  "temp_f": 53.1,
+  "time_utc": "2026-11-12T21:31:00Z",
+  "temp_c": 10,
+  "temp_f": 50.0,
   "precision": "tenths of a degree",
-  "dewpoint_c": 11.1,
-  "humidity_pct": 96.11,
-  "wind_kmh": null,
+  "dewpoint_c": 8.9,
+  "humidity_pct": 92.88,
+  "wind_kmh": 14.76,
   "description": "Light Rain and Fog/Mist"
  },
  "today_so_far": {
   "date_local": "2026-11-12",
-  "readings": 17,
+  "readings": 20,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
   "high_c": 15.6,
   "high_f": 60.1,
   "high_time_utc": "2026-11-12T14:51:00Z",
-  "low_c": 11.7,
-  "low_f": 53.1,
-  "low_time_utc": "2026-11-12T18:51:00Z"
+  "low_c": 10,
+  "low_f": 50.0,
+  "low_time_utc": "2026-11-12T21:22:00Z"
  },
  "record": {
   "series": "New York area (ThreadEx; Central Park)",
@@ -253,17 +253,17 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-12T19:08:20Z",
+  "issued_utc": "2026-11-12T21:06:37Z",
   "grid": "OKX/34,45",
   "periods": [
    {
     "name": "This Afternoon",
-    "start": "2026-11-12T14:00:00-05:00",
+    "start": "2026-11-12T16:00:00-05:00",
     "is_daytime": true,
     "temp_f": 61,
     "temp_c": 16.11,
     "precip_chance_pct": 98,
-    "short_forecast": "Showers And Thunderstorms"
+    "short_forecast": "Rain Showers"
    },
    {
     "name": "Tonight",
@@ -385,15 +385,8 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-12T19:08:20Z",
+  "issued_utc": "2026-11-12T21:06:37Z",
   "hours": [
-   {
-    "start": "2026-11-12T16:00:00-05:00",
-    "temp_f": 55,
-    "temp_c": 12.78,
-    "precip_chance_pct": 98,
-    "short_forecast": "Rain Showers"
-   },
    {
     "start": "2026-11-12T17:00:00-05:00",
     "temp_f": 54,
@@ -722,6 +715,13 @@
     "temp_c": 7.78,
     "precip_chance_pct": 0,
     "short_forecast": "Partly Sunny"
+   },
+   {
+    "start": "2026-11-14T16:00:00-05:00",
+    "temp_f": 45,
+    "temp_c": 7.22,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Sunny"
    }
   ]
  },
