@@ -11,9 +11,9 @@
   "lon": -78.7819,
   "history": "Same site as the official Raleigh record"
  },
- "as_of_utc": "2026-11-12T10:07:59Z",
+ "as_of_utc": "2026-11-12T11:07:51Z",
  "now": {
-  "time_utc": "2026-11-12T09:55:00Z",
+  "time_utc": "2026-11-12T10:45:00Z",
   "temp_c": 11,
   "temp_f": 51.8,
   "precision": "nearest whole \u00b0C",
@@ -91,7 +91,7 @@
   },
   "forecast_highs": [
    {
-    "period": "Thursday",
+    "period": "Today",
     "date": "2026-11-12",
     "high_f": 71,
     "would_rank": {
@@ -261,16 +261,7 @@
   "grid": "RAH/69,62",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-12T04:00:00-05:00",
-    "is_daytime": false,
-    "temp_f": 48,
-    "temp_c": 8.89,
-    "precip_chance_pct": 1,
-    "short_forecast": "Mostly Clear"
-   },
-   {
-    "name": "Thursday",
+    "name": "Today",
     "start": "2026-11-12T06:00:00-05:00",
     "is_daytime": true,
     "temp_f": 71,
@@ -279,7 +270,7 @@
     "short_forecast": "Mostly Sunny"
    },
    {
-    "name": "Thursday Night",
+    "name": "Tonight",
     "start": "2026-11-12T18:00:00-05:00",
     "is_daytime": false,
     "temp_f": 42,
@@ -385,19 +376,21 @@
     "temp_c": 14.44,
     "precip_chance_pct": 2,
     "short_forecast": "Sunny"
+   },
+   {
+    "name": "Wednesday Night",
+    "start": "2026-11-18T18:00:00-05:00",
+    "is_daytime": false,
+    "temp_f": 34,
+    "temp_c": 1.11,
+    "precip_chance_pct": 3,
+    "short_forecast": "Mostly Clear"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-12T08:59:45Z",
   "hours": [
-   {
-    "start": "2026-11-12T05:00:00-05:00",
-    "temp_f": 49,
-    "temp_c": 9.44,
-    "precip_chance_pct": 1,
-    "short_forecast": "Partly Cloudy"
-   },
    {
     "start": "2026-11-12T06:00:00-05:00",
     "temp_f": 49,
@@ -724,6 +717,13 @@
     "start": "2026-11-14T04:00:00-05:00",
     "temp_f": 38,
     "temp_c": 3.33,
+    "precip_chance_pct": 6,
+    "short_forecast": "Partly Cloudy"
+   },
+   {
+    "start": "2026-11-14T05:00:00-05:00",
+    "temp_f": 37,
+    "temp_c": 2.78,
     "precip_chance_pct": 6,
     "short_forecast": "Partly Cloudy"
    }
