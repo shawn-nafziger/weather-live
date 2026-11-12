@@ -11,16 +11,16 @@
   "lon": -93.2289,
   "history": "Same site as the official Minneapolis record"
  },
- "as_of_utc": "2026-11-12T12:07:51Z",
+ "as_of_utc": "2026-11-12T13:07:52Z",
  "now": {
-  "time_utc": "2026-11-12T11:35:00Z",
+  "time_utc": "2026-11-12T12:55:00Z",
   "temp_c": 2,
   "temp_f": 35.6,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": -2,
-  "humidity_pct": 74.82,
-  "wind_kmh": 12.96,
-  "description": "Mostly Clear"
+  "dewpoint_c": -3,
+  "humidity_pct": 69.48,
+  "wind_kmh": 16.67,
+  "description": "Mostly Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-12",
@@ -88,7 +88,7 @@
   },
   "forecast_highs": [
    {
-    "period": "Thursday",
+    "period": "Today",
     "date": "2026-11-12",
     "high_f": 40,
     "would_rank": {
@@ -249,16 +249,7 @@
   "grid": "MPX/110,68",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-12T05:00:00-06:00",
-    "is_daytime": false,
-    "temp_f": 34,
-    "temp_c": 1.11,
-    "precip_chance_pct": 11,
-    "short_forecast": "Mostly Cloudy"
-   },
-   {
-    "name": "Thursday",
+    "name": "Today",
     "start": "2026-11-12T06:00:00-06:00",
     "is_daytime": true,
     "temp_f": 40,
@@ -267,7 +258,7 @@
     "short_forecast": "Scattered Snow Showers then Partly Sunny"
    },
    {
-    "name": "Thursday Night",
+    "name": "Tonight",
     "start": "2026-11-12T18:00:00-06:00",
     "is_daytime": false,
     "temp_f": 24,
@@ -373,23 +364,25 @@
     "temp_c": 12.78,
     "precip_chance_pct": 10,
     "short_forecast": "Partly Sunny"
+   },
+   {
+    "name": "Wednesday Night",
+    "start": "2026-11-18T18:00:00-06:00",
+    "is_daytime": false,
+    "temp_f": 44,
+    "temp_c": 6.67,
+    "precip_chance_pct": 33,
+    "short_forecast": "Chance Light Rain"
    }
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-12T10:41:53Z",
+  "issued_utc": "2026-11-12T11:26:28Z",
   "hours": [
    {
-    "start": "2026-11-12T06:00:00-06:00",
-    "temp_f": 36,
-    "temp_c": 2.22,
-    "precip_chance_pct": 11,
-    "short_forecast": "Scattered Snow Showers"
-   },
-   {
     "start": "2026-11-12T07:00:00-06:00",
-    "temp_f": 35,
-    "temp_c": 1.67,
+    "temp_f": 34,
+    "temp_c": 1.11,
     "precip_chance_pct": 10,
     "short_forecast": "Scattered Snow Showers"
    },
@@ -714,6 +707,13 @@
     "temp_c": -5.0,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear"
+   },
+   {
+    "start": "2026-11-14T06:00:00-06:00",
+    "temp_f": 23,
+    "temp_c": -5.0,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
    }
   ]
  },

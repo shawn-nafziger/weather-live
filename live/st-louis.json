@@ -11,16 +11,16 @@
   "lon": -90.3736,
   "history": "Same site as the official St. Louis record"
  },
- "as_of_utc": "2026-11-12T12:07:51Z",
+ "as_of_utc": "2026-11-12T13:07:52Z",
  "now": {
-  "time_utc": "2026-11-12T11:35:00Z",
+  "time_utc": "2026-11-12T12:55:00Z",
   "temp_c": 7,
   "temp_f": 44.6,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 6,
   "humidity_pct": 93.35,
-  "wind_kmh": 9.25,
-  "description": "Mostly Clear"
+  "wind_kmh": 12.96,
+  "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-12",
@@ -86,7 +86,7 @@
   },
   "forecast_highs": [
    {
-    "period": "Thursday",
+    "period": "Today",
     "date": "2026-11-12",
     "high_f": 50,
     "would_rank": {
@@ -258,16 +258,7 @@
   "grid": "LSX/89,80",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-12T05:00:00-06:00",
-    "is_daytime": false,
-    "temp_f": 45,
-    "temp_c": 7.22,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Cloudy"
-   },
-   {
-    "name": "Thursday",
+    "name": "Today",
     "start": "2026-11-12T06:00:00-06:00",
     "is_daytime": true,
     "temp_f": 50,
@@ -276,7 +267,7 @@
     "short_forecast": "Partly Sunny then Scattered Rain Showers"
    },
    {
-    "name": "Thursday Night",
+    "name": "Tonight",
     "start": "2026-11-12T18:00:00-06:00",
     "is_daytime": false,
     "temp_f": 33,
@@ -382,25 +373,27 @@
     "temp_c": 14.44,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
+   },
+   {
+    "name": "Wednesday Night",
+    "start": "2026-11-18T18:00:00-06:00",
+    "is_daytime": false,
+    "temp_f": 39,
+    "temp_c": 3.89,
+    "precip_chance_pct": 9,
+    "short_forecast": "Partly Cloudy"
    }
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-12T06:26:01Z",
+  "issued_utc": "2026-11-12T11:21:14Z",
   "hours": [
    {
-    "start": "2026-11-12T06:00:00-06:00",
+    "start": "2026-11-12T07:00:00-06:00",
     "temp_f": 45,
     "temp_c": 7.22,
-    "precip_chance_pct": 0,
-    "short_forecast": "Partly Sunny"
-   },
-   {
-    "start": "2026-11-12T07:00:00-06:00",
-    "temp_f": 44,
-    "temp_c": 6.67,
     "precip_chance_pct": 1,
-    "short_forecast": "Partly Sunny"
+    "short_forecast": "Mostly Sunny"
    },
    {
     "start": "2026-11-12T08:00:00-06:00",
@@ -723,6 +716,13 @@
     "temp_c": -2.22,
     "precip_chance_pct": 0,
     "short_forecast": "Clear"
+   },
+   {
+    "start": "2026-11-14T06:00:00-06:00",
+    "temp_f": 28,
+    "temp_c": -2.22,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
    }
   ]
  },
