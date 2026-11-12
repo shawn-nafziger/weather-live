@@ -11,20 +11,20 @@
   "lon": -73.9667,
   "history": "Same site as the official New York record"
  },
- "as_of_utc": "2026-11-12T16:08:03Z",
+ "as_of_utc": "2026-11-12T17:07:52Z",
  "now": {
-  "time_utc": "2026-11-12T14:51:00Z",
+  "time_utc": "2026-11-12T15:51:00Z",
   "temp_c": 15.6,
   "temp_f": 60.1,
   "precision": "tenths of a degree",
-  "dewpoint_c": 8.3,
-  "humidity_pct": 61.81,
-  "wind_kmh": 9.36,
+  "dewpoint_c": 9.4,
+  "humidity_pct": 66.58,
+  "wind_kmh": null,
   "description": "Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-12",
-  "readings": 4,
+  "readings": 6,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -258,12 +258,12 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-12T11:11:39Z",
+  "issued_utc": "2026-11-12T15:28:01Z",
   "grid": "OKX/34,45",
   "periods": [
    {
     "name": "Today",
-    "start": "2026-11-12T06:00:00-05:00",
+    "start": "2026-11-12T11:00:00-05:00",
     "is_daytime": true,
     "temp_f": 59,
     "temp_c": 15.0,
@@ -390,15 +390,8 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-12T11:11:39Z",
+  "issued_utc": "2026-11-12T15:28:01Z",
   "hours": [
-   {
-    "start": "2026-11-12T11:00:00-05:00",
-    "temp_f": 59,
-    "temp_c": 15.0,
-    "precip_chance_pct": 69,
-    "short_forecast": "Light Rain Likely"
-   },
    {
     "start": "2026-11-12T12:00:00-05:00",
     "temp_f": 58,
@@ -725,6 +718,13 @@
     "start": "2026-11-14T10:00:00-05:00",
     "temp_f": 43,
     "temp_c": 6.11,
+    "precip_chance_pct": 7,
+    "short_forecast": "Partly Sunny"
+   },
+   {
+    "start": "2026-11-14T11:00:00-05:00",
+    "temp_f": 44,
+    "temp_c": 6.67,
     "precip_chance_pct": 7,
     "short_forecast": "Partly Sunny"
    }
