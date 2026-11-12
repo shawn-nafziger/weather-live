@@ -11,29 +11,23 @@
   "lon": -121.9242,
   "history": "Same site as the official San Jose record"
  },
- "as_of_utc": "2026-11-12T07:07:52Z",
+ "as_of_utc": "2026-11-12T08:07:51Z",
  "now": {
-  "time_utc": "2026-11-12T06:50:00Z",
+  "time_utc": "2026-11-12T07:20:00Z",
   "temp_c": 14,
   "temp_f": 57.2,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 9,
-  "humidity_pct": 71.85,
-  "wind_kmh": 7.42,
+  "dewpoint_c": 10,
+  "humidity_pct": 76.84,
+  "wind_kmh": 0,
   "description": "Clear"
  },
  "today_so_far": {
-  "date_local": "2026-11-11",
-  "readings": 14,
-  "basis": "hourly reports (tenths of a degree)",
-  "approximate": false,
-  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 23.9,
-  "high_f": 75.0,
-  "high_time_utc": "2026-11-11T21:53:00Z",
-  "low_c": 10.6,
-  "low_f": 51.1,
-  "low_time_utc": "2026-11-11T14:31:00Z"
+  "date_local": "2026-11-12",
+  "readings": 0,
+  "basis": "5-minute readings (whole \u00b0C, approximate)",
+  "approximate": true,
+  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two."
  },
  "record": {
   "series": "San Jose area (ThreadEx; airport)",
@@ -42,7 +36,7 @@
   "rank_today": true,
   "latest_final": {
    "date": "2026-11-10",
-   "is_yesterday": true,
+   "is_yesterday": false,
    "high_f": 76,
    "low_f": 51,
    "high_rank": {
@@ -80,26 +74,6 @@
     "record": false,
     "phrase": "typical for November 10"
    }
-  },
-  "today_high_so_far": {
-   "value_f": 75,
-   "warm_rank": 6,
-   "cool_rank": 115,
-   "years": 126,
-   "first_year": 1893,
-   "tied_years": [
-    1906,
-    1921,
-    1932,
-    1933,
-    1939,
-    1999
-   ],
-   "standing": "warm",
-   "notable": true,
-   "since": 2019,
-   "record": false,
-   "phrase": "already the 6th warmest November 11 high (tied) of 126 since 1893, warmest since 2019"
   },
   "forecast_highs": [
    {
@@ -287,7 +261,7 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-12T03:41:44Z",
+  "issued_utc": "2026-11-12T06:26:15Z",
   "grid": "MTR/98,83",
   "periods": [
    {
@@ -324,7 +298,7 @@
     "temp_f": 64,
     "temp_c": 17.78,
     "precip_chance_pct": 90,
-    "short_forecast": "Rain"
+    "short_forecast": "Slight Chance Showers And Thunderstorms then Showers And Thunderstorms"
    },
    {
     "name": "Friday Night",
@@ -359,7 +333,7 @@
     "is_daytime": true,
     "temp_f": 65,
     "temp_c": 18.33,
-    "precip_chance_pct": 70,
+    "precip_chance_pct": 68,
     "short_forecast": "Light Rain Likely"
    },
    {
@@ -368,7 +342,7 @@
     "is_daytime": false,
     "temp_f": 48,
     "temp_c": 8.89,
-    "precip_chance_pct": 84,
+    "precip_chance_pct": 82,
     "short_forecast": "Light Rain"
    },
    {
@@ -384,9 +358,9 @@
     "name": "Monday Night",
     "start": "2026-11-16T18:00:00-08:00",
     "is_daytime": false,
-    "temp_f": 42,
-    "temp_c": 5.56,
-    "precip_chance_pct": 20,
+    "temp_f": 43,
+    "temp_c": 6.11,
+    "precip_chance_pct": 19,
     "short_forecast": "Slight Chance Light Rain then Partly Cloudy"
    },
    {
@@ -402,9 +376,9 @@
     "name": "Tuesday Night",
     "start": "2026-11-17T18:00:00-08:00",
     "is_daytime": false,
-    "temp_f": 44,
-    "temp_c": 6.67,
-    "precip_chance_pct": 45,
+    "temp_f": 45,
+    "temp_c": 7.22,
+    "precip_chance_pct": 44,
     "short_forecast": "Chance Light Rain"
    },
    {
@@ -413,21 +387,14 @@
     "is_daytime": true,
     "temp_f": 60,
     "temp_c": 15.56,
-    "precip_chance_pct": 73,
+    "precip_chance_pct": 72,
     "short_forecast": "Light Rain Likely"
    }
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-12T03:41:44Z",
+  "issued_utc": "2026-11-12T06:26:15Z",
   "hours": [
-   {
-    "start": "2026-11-11T23:00:00-08:00",
-    "temp_f": 56,
-    "temp_c": 13.33,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Clear"
-   },
    {
     "start": "2026-11-12T00:00:00-08:00",
     "temp_f": 55,
@@ -650,63 +617,63 @@
     "temp_f": 55,
     "temp_c": 12.78,
     "precip_chance_pct": 18,
-    "short_forecast": "Slight Chance Light Rain"
+    "short_forecast": "Slight Chance Showers And Thunderstorms"
    },
    {
     "start": "2026-11-13T08:00:00-08:00",
     "temp_f": 56,
     "temp_c": 13.33,
     "precip_chance_pct": 28,
-    "short_forecast": "Chance Light Rain"
+    "short_forecast": "Chance Showers And Thunderstorms"
    },
    {
     "start": "2026-11-13T09:00:00-08:00",
     "temp_f": 59,
     "temp_c": 15.0,
     "precip_chance_pct": 33,
-    "short_forecast": "Chance Light Rain"
+    "short_forecast": "Chance Showers And Thunderstorms"
    },
    {
     "start": "2026-11-13T10:00:00-08:00",
     "temp_f": 61,
     "temp_c": 16.11,
     "precip_chance_pct": 47,
-    "short_forecast": "Chance Light Rain"
+    "short_forecast": "Chance Showers And Thunderstorms"
    },
    {
     "start": "2026-11-13T11:00:00-08:00",
     "temp_f": 62,
     "temp_c": 16.67,
     "precip_chance_pct": 57,
-    "short_forecast": "Light Rain Likely"
+    "short_forecast": "Showers And Thunderstorms Likely"
    },
    {
     "start": "2026-11-13T12:00:00-08:00",
     "temp_f": 63,
     "temp_c": 17.22,
     "precip_chance_pct": 77,
-    "short_forecast": "Light Rain"
+    "short_forecast": "Showers And Thunderstorms"
    },
    {
     "start": "2026-11-13T13:00:00-08:00",
     "temp_f": 61,
     "temp_c": 16.11,
     "precip_chance_pct": 80,
-    "short_forecast": "Rain"
+    "short_forecast": "Showers And Thunderstorms"
    },
    {
     "start": "2026-11-13T14:00:00-08:00",
     "temp_f": 60,
     "temp_c": 15.56,
     "precip_chance_pct": 89,
-    "short_forecast": "Rain"
+    "short_forecast": "Showers And Thunderstorms"
    },
    {
     "start": "2026-11-13T15:00:00-08:00",
     "temp_f": 61,
     "temp_c": 16.11,
     "precip_chance_pct": 90,
-    "short_forecast": "Rain"
+    "short_forecast": "Showers And Thunderstorms"
    },
    {
     "start": "2026-11-13T16:00:00-08:00",
@@ -754,6 +721,13 @@
     "start": "2026-11-13T22:00:00-08:00",
     "temp_f": 52,
     "temp_c": 11.11,
+    "precip_chance_pct": 28,
+    "short_forecast": "Chance Light Rain"
+   },
+   {
+    "start": "2026-11-13T23:00:00-08:00",
+    "temp_f": 51,
+    "temp_c": 10.56,
     "precip_chance_pct": 28,
     "short_forecast": "Chance Light Rain"
    }
