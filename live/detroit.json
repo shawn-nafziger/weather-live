@@ -11,14 +11,14 @@
   "lon": -83.3308,
   "history": "Same site as the official Detroit record"
  },
- "as_of_utc": "2026-11-12T11:07:51Z",
+ "as_of_utc": "2026-11-12T11:46:02Z",
  "now": {
-  "time_utc": "2026-11-12T10:45:00Z",
-  "temp_c": 7,
-  "temp_f": 44.6,
+  "time_utc": "2026-11-12T11:30:00Z",
+  "temp_c": 8,
+  "temp_f": 46.4,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 4,
-  "humidity_pct": 81.22,
+  "humidity_pct": 75.86,
   "wind_kmh": 12.96,
   "description": "Cloudy"
  },
@@ -88,7 +88,7 @@
   },
   "forecast_highs": [
    {
-    "period": "Thursday",
+    "period": "Today",
     "date": "2026-11-12",
     "high_f": 49,
     "would_rank": {
@@ -264,16 +264,7 @@
   "grid": "DTX/57,28",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-12T03:00:00-05:00",
-    "is_daytime": false,
-    "temp_f": 42,
-    "temp_c": 5.56,
-    "precip_chance_pct": 10,
-    "short_forecast": "Mostly Cloudy"
-   },
-   {
-    "name": "Thursday",
+    "name": "Today",
     "start": "2026-11-12T06:00:00-05:00",
     "is_daytime": true,
     "temp_f": 49,
@@ -282,7 +273,7 @@
     "short_forecast": "Scattered Rain Showers"
    },
    {
-    "name": "Thursday Night",
+    "name": "Tonight",
     "start": "2026-11-12T18:00:00-05:00",
     "is_daytime": false,
     "temp_f": 35,
@@ -388,6 +379,15 @@
     "temp_c": 11.11,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
+   },
+   {
+    "name": "Wednesday Night",
+    "start": "2026-11-18T18:00:00-05:00",
+    "is_daytime": false,
+    "temp_f": 33,
+    "temp_c": 0.56,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Clear"
    }
   ]
  },

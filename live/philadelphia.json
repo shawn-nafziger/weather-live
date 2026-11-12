@@ -11,15 +11,15 @@
   "lon": -75.2268,
   "history": "Same site as the official Philadelphia record"
  },
- "as_of_utc": "2026-11-12T11:07:51Z",
+ "as_of_utc": "2026-11-12T11:46:02Z",
  "now": {
-  "time_utc": "2026-11-12T10:45:00Z",
+  "time_utc": "2026-11-12T11:20:00Z",
   "temp_c": 12,
   "temp_f": 53.6,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 9,
   "humidity_pct": 81.88,
-  "wind_kmh": 12.96,
+  "wind_kmh": 9.25,
   "description": "Mostly Cloudy"
  },
  "today_so_far": {
@@ -95,7 +95,7 @@
   },
   "forecast_highs": [
    {
-    "period": "Thursday",
+    "period": "Today",
     "date": "2026-11-12",
     "high_f": 64,
     "would_rank": {
@@ -268,16 +268,7 @@
   "grid": "PHI/48,75",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-12T04:00:00-05:00",
-    "is_daytime": false,
-    "temp_f": 51,
-    "temp_c": 10.56,
-    "precip_chance_pct": 3,
-    "short_forecast": "Cloudy"
-   },
-   {
-    "name": "Thursday",
+    "name": "Today",
     "start": "2026-11-12T06:00:00-05:00",
     "is_daytime": true,
     "temp_f": 64,
@@ -286,7 +277,7 @@
     "short_forecast": "Rain Showers"
    },
    {
-    "name": "Thursday Night",
+    "name": "Tonight",
     "start": "2026-11-12T18:00:00-05:00",
     "is_daytime": false,
     "temp_f": 42,
@@ -392,6 +383,15 @@
     "temp_c": 14.44,
     "precip_chance_pct": 1,
     "short_forecast": "Sunny"
+   },
+   {
+    "name": "Wednesday Night",
+    "start": "2026-11-18T18:00:00-05:00",
+    "is_daytime": false,
+    "temp_f": 34,
+    "temp_c": 1.11,
+    "precip_chance_pct": 1,
+    "short_forecast": "Clear"
    }
   ]
  },

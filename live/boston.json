@@ -11,16 +11,16 @@
   "lon": -71.0106,
   "history": "Same site as the official Boston record"
  },
- "as_of_utc": "2026-11-12T11:07:51Z",
+ "as_of_utc": "2026-11-12T11:46:02Z",
  "now": {
-  "time_utc": "2026-11-12T10:45:00Z",
-  "temp_c": 10,
-  "temp_f": 50.0,
+  "time_utc": "2026-11-12T11:15:00Z",
+  "temp_c": 11,
+  "temp_f": 51.8,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 8,
-  "humidity_pct": 87.38,
+  "humidity_pct": 81.75,
   "wind_kmh": 5.54,
-  "description": "Mostly Cloudy"
+  "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-12",
@@ -98,7 +98,7 @@
   },
   "forecast_highs": [
    {
-    "period": "Thursday",
+    "period": "Today",
     "date": "2026-11-12",
     "high_f": 53,
     "would_rank": {
@@ -289,16 +289,7 @@
   "grid": "BOX/73,101",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-12T04:00:00-05:00",
-    "is_daytime": false,
-    "temp_f": 44,
-    "temp_c": 6.67,
-    "precip_chance_pct": 5,
-    "short_forecast": "Mostly Cloudy"
-   },
-   {
-    "name": "Thursday",
+    "name": "Today",
     "start": "2026-11-12T06:00:00-05:00",
     "is_daytime": true,
     "temp_f": 53,
@@ -307,7 +298,7 @@
     "short_forecast": "Light Rain Likely"
    },
    {
-    "name": "Thursday Night",
+    "name": "Tonight",
     "start": "2026-11-12T18:00:00-05:00",
     "is_daytime": false,
     "temp_f": 40,
@@ -413,6 +404,15 @@
     "temp_c": 13.33,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
+   },
+   {
+    "name": "Wednesday Night",
+    "start": "2026-11-18T18:00:00-05:00",
+    "is_daytime": false,
+    "temp_f": 41,
+    "temp_c": 5.0,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Clear"
    }
   ]
  },
