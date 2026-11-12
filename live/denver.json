@@ -11,34 +11,29 @@
   "lon": -104.6562,
   "history": "Same site as the official Denver record"
  },
- "as_of_utc": "2026-11-12T13:07:52Z",
+ "as_of_utc": "2026-11-12T14:07:56Z",
  "now": {
-  "time_utc": "2026-11-12T11:53:00Z",
-  "temp_c": 6.1,
-  "temp_f": 43.0,
-  "precision": "tenths of a degree",
-  "dewpoint_c": -5.6,
-  "humidity_pct": 42.86,
-  "wind_kmh": 14.76,
+  "time_utc": "2026-11-12T13:35:00Z",
+  "temp_c": 6,
+  "temp_f": 42.8,
+  "precision": "nearest whole \u00b0C",
+  "dewpoint_c": -6,
+  "humidity_pct": 41.86,
+  "wind_kmh": 16.67,
   "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-12",
-  "readings": 3,
+  "readings": 4,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 6.1,
-  "high_f": 43.0,
-  "high_time_utc": "2026-11-12T08:53:00Z",
+  "high_c": 6.7,
+  "high_f": 44.1,
+  "high_time_utc": "2026-11-12T12:53:00Z",
   "low_c": 6.1,
   "low_f": 43.0,
   "low_time_utc": "2026-11-12T08:53:00Z",
-  "peak_between_reports": {
-   "at_least_f": 43.7,
-   "about_f": 44.6,
-   "time_utc": "2026-11-12T10:30:00Z"
-  },
   "dip_between_reports": {
    "at_most_f": 41.9,
    "about_f": 41.0,
@@ -93,7 +88,7 @@
   },
   "forecast_highs": [
    {
-    "period": "Thursday",
+    "period": "Today",
     "date": "2026-11-12",
     "high_f": 66,
     "would_rank": {
@@ -264,16 +259,7 @@
   "grid": "BOU/75,66",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-12T00:00:00-07:00",
-    "is_daytime": false,
-    "temp_f": 38,
-    "temp_c": 3.33,
-    "precip_chance_pct": 0,
-    "short_forecast": "Clear"
-   },
-   {
-    "name": "Thursday",
+    "name": "Today",
     "start": "2026-11-12T06:00:00-07:00",
     "is_daytime": true,
     "temp_f": 66,
@@ -282,7 +268,7 @@
     "short_forecast": "Sunny"
    },
    {
-    "name": "Thursday Night",
+    "name": "Tonight",
     "start": "2026-11-12T18:00:00-07:00",
     "is_daytime": false,
     "temp_f": 39,
@@ -388,19 +374,21 @@
     "temp_c": 12.22,
     "precip_chance_pct": 32,
     "short_forecast": "Chance Rain Showers"
+   },
+   {
+    "name": "Wednesday Night",
+    "start": "2026-11-18T18:00:00-07:00",
+    "is_daytime": false,
+    "temp_f": 36,
+    "temp_c": 2.22,
+    "precip_chance_pct": 21,
+    "short_forecast": "Slight Chance Rain Showers then Partly Cloudy"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-12T06:46:18Z",
   "hours": [
-   {
-    "start": "2026-11-12T06:00:00-07:00",
-    "temp_f": 41,
-    "temp_c": 5.0,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "start": "2026-11-12T07:00:00-07:00",
     "temp_f": 39,
@@ -729,6 +717,13 @@
     "temp_c": 3.33,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "start": "2026-11-14T06:00:00-07:00",
+    "temp_f": 38,
+    "temp_c": 3.33,
+    "precip_chance_pct": 0,
+    "short_forecast": "Partly Sunny"
    }
   ]
  },
