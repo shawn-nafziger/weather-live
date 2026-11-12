@@ -11,26 +11,26 @@
   "lon": -122.3136,
   "history": "Same station as the official Seattle record (Sea-Tac)"
  },
- "as_of_utc": "2026-11-12T22:07:56Z",
+ "as_of_utc": "2026-11-12T23:08:00Z",
  "now": {
-  "time_utc": "2026-11-12T21:55:00Z",
+  "time_utc": "2026-11-12T22:35:00Z",
   "temp_c": 14,
   "temp_f": 57.2,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 10,
-  "humidity_pct": 76.84,
-  "wind_kmh": 0,
+  "dewpoint_c": 9,
+  "humidity_pct": 71.85,
+  "wind_kmh": 7.42,
   "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-12",
-  "readings": 8,
+  "readings": 9,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 12.8,
-  "high_f": 55.0,
-  "high_time_utc": "2026-11-12T08:53:00Z",
+  "high_c": 14.4,
+  "high_f": 57.9,
+  "high_time_utc": "2026-11-12T21:53:00Z",
   "low_c": 10.6,
   "low_f": 51.1,
   "low_time_utc": "2026-11-12T12:53:00Z",
@@ -78,6 +78,27 @@
     "record": true,
     "phrase": "ties the record for warmest November 11 low on record (82 years since 1945)"
    }
+  },
+  "today_high_so_far": {
+   "value_f": 58,
+   "warm_rank": 4,
+   "cool_rank": 72,
+   "years": 82,
+   "first_year": 1945,
+   "tied_years": [
+    1984,
+    1987,
+    1991,
+    1996,
+    2008,
+    2016,
+    2021
+   ],
+   "standing": "warm",
+   "notable": true,
+   "since": 2021,
+   "record": false,
+   "phrase": "already the 4th warmest November 12 high (tied) of 82 since 1945, warmest since 2021"
   },
   "forecast_highs": [
    {
@@ -237,7 +258,7 @@
   "periods": [
    {
     "name": "Today",
-    "start": "2026-11-12T10:00:00-08:00",
+    "start": "2026-11-12T11:00:00-08:00",
     "is_daytime": true,
     "temp_f": 61,
     "temp_c": 16.11,
@@ -366,13 +387,6 @@
  "hourly": {
   "issued_utc": "2026-11-12T18:25:40Z",
   "hours": [
-   {
-    "start": "2026-11-12T14:00:00-08:00",
-    "temp_f": 60,
-    "temp_c": 15.56,
-    "precip_chance_pct": 2,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "start": "2026-11-12T15:00:00-08:00",
     "temp_f": 59,
@@ -699,6 +713,13 @@
     "start": "2026-11-14T13:00:00-08:00",
     "temp_f": 56,
     "temp_c": 13.33,
+    "precip_chance_pct": 41,
+    "short_forecast": "Chance Light Rain"
+   },
+   {
+    "start": "2026-11-14T14:00:00-08:00",
+    "temp_f": 57,
+    "temp_c": 13.89,
     "precip_chance_pct": 41,
     "short_forecast": "Chance Light Rain"
    }
