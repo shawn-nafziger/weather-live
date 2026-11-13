@@ -11,20 +11,20 @@
   "lon": -84.6723,
   "history": "Same site as the official Cincinnati record"
  },
- "as_of_utc": "2026-11-13T20:07:53Z",
+ "as_of_utc": "2026-11-13T21:08:07Z",
  "now": {
-  "time_utc": "2026-11-13T19:55:00Z",
+  "time_utc": "2026-11-13T20:55:00Z",
   "temp_c": 5,
   "temp_f": 41.0,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 3,
   "humidity_pct": 86.9,
-  "wind_kmh": 14.83,
-  "description": "Cloudy"
+  "wind_kmh": 24.08,
+  "description": "Light Rain"
  },
  "today_so_far": {
   "date_local": "2026-11-13",
-  "readings": 13,
+  "readings": 14,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -183,20 +183,19 @@
    {
     "period": "Tuesday",
     "date": "2026-11-17",
-    "high_f": 57,
+    "high_f": 56,
     "would_rank": {
-     "value_f": 57,
-     "warm_rank": 53,
-     "cool_rank": 97,
+     "value_f": 56,
+     "warm_rank": 59,
+     "cool_rank": 92,
      "years": 155,
      "first_year": 1872,
      "tied_years": [
-      1926,
-      1936,
-      1948,
-      1981,
-      1991,
-      1996
+      1878,
+      1962,
+      1985,
+      2004,
+      2007
      ],
      "standing": "warm",
      "notable": false,
@@ -226,40 +225,38 @@
    {
     "period": "Thursday",
     "date": "2026-11-19",
-    "high_f": 63,
+    "high_f": 64,
     "would_rank": {
-     "value_f": 63,
-     "warm_rank": 23,
-     "cool_rank": 129,
+     "value_f": 64,
+     "warm_rank": 21,
+     "cool_rank": 133,
      "years": 155,
      "first_year": 1872,
      "tied_years": [
-      1912,
-      1931,
-      1946,
-      1982
+      1981,
+      2020
      ],
      "standing": "warm",
      "notable": true,
      "since": 2024,
      "record": false,
-     "phrase": "23rd warmest November 19 high (tied) of 155 since 1872, warmest since 2024"
+     "phrase": "21st warmest November 19 high (tied) of 155 since 1872, warmest since 2024"
     }
    }
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-13T17:03:13Z",
+  "issued_utc": "2026-11-13T21:00:25Z",
   "grid": "ILN/30,35",
   "periods": [
    {
     "name": "This Afternoon",
-    "start": "2026-11-13T15:00:00-05:00",
+    "start": "2026-11-13T16:00:00-05:00",
     "is_daytime": true,
     "temp_f": 46,
     "temp_c": 7.78,
-    "precip_chance_pct": 26,
-    "short_forecast": "Chance Light Rain"
+    "precip_chance_pct": 4,
+    "short_forecast": "Partly Sunny"
    },
    {
     "name": "Tonight",
@@ -319,17 +316,17 @@
     "name": "Monday Night",
     "start": "2026-11-16T18:00:00-05:00",
     "is_daytime": false,
-    "temp_f": 30,
-    "temp_c": -1.11,
+    "temp_f": 29,
+    "temp_c": -1.67,
     "precip_chance_pct": 0,
-    "short_forecast": "Mostly Clear"
+    "short_forecast": "Clear"
    },
    {
     "name": "Tuesday",
     "start": "2026-11-17T06:00:00-05:00",
     "is_daytime": true,
-    "temp_f": 57,
-    "temp_c": 13.89,
+    "temp_f": 56,
+    "temp_c": 13.33,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
    },
@@ -364,8 +361,8 @@
     "name": "Thursday",
     "start": "2026-11-19T06:00:00-05:00",
     "is_daytime": true,
-    "temp_f": 63,
-    "temp_c": 17.22,
+    "temp_f": 64,
+    "temp_c": 17.78,
     "precip_chance_pct": 4,
     "short_forecast": "Mostly Sunny"
    },
@@ -383,13 +380,6 @@
  "hourly": {
   "issued_utc": "2026-11-13T17:03:13Z",
   "hours": [
-   {
-    "start": "2026-11-13T15:00:00-05:00",
-    "temp_f": 46,
-    "temp_c": 7.78,
-    "precip_chance_pct": 26,
-    "short_forecast": "Chance Light Rain"
-   },
    {
     "start": "2026-11-13T16:00:00-05:00",
     "temp_f": 45,
@@ -714,6 +704,13 @@
    },
    {
     "start": "2026-11-15T14:00:00-05:00",
+    "temp_f": 49,
+    "temp_c": 9.44,
+    "precip_chance_pct": 0,
+    "short_forecast": "Partly Sunny"
+   },
+   {
+    "start": "2026-11-15T15:00:00-05:00",
     "temp_f": 49,
     "temp_c": 9.44,
     "precip_chance_pct": 0,
