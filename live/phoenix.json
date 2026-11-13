@@ -11,29 +11,23 @@
   "lon": -112.0035,
   "history": "Same station as the official Phoenix record (Sky Harbor since 1933)"
  },
- "as_of_utc": "2026-11-13T06:08:04Z",
+ "as_of_utc": "2026-11-13T07:07:50Z",
  "now": {
-  "time_utc": "2026-11-13T05:45:00Z",
-  "temp_c": 20,
-  "temp_f": 68.0,
+  "time_utc": "2026-11-13T06:55:00Z",
+  "temp_c": 21,
+  "temp_f": 69.8,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 12,
-  "humidity_pct": 60.0,
-  "wind_kmh": 5.54,
-  "description": "Mostly Clear"
+  "dewpoint_c": 11,
+  "humidity_pct": 52.8,
+  "wind_kmh": 9.25,
+  "description": "Clear"
  },
  "today_so_far": {
-  "date_local": "2026-11-12",
-  "readings": 15,
-  "basis": "hourly reports (tenths of a degree)",
-  "approximate": false,
-  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 29.4,
-  "high_f": 84.9,
-  "high_time_utc": "2026-11-12T21:51:00Z",
-  "low_c": 17.2,
-  "low_f": 63.0,
-  "low_time_utc": "2026-11-12T11:51:00Z"
+  "date_local": "2026-11-13",
+  "readings": 0,
+  "basis": "5-minute readings (whole \u00b0C, approximate)",
+  "approximate": true,
+  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two."
  },
  "record": {
   "series": "Phoenix area (ThreadEx, Sky Harbor since 1933)",
@@ -42,7 +36,7 @@
   "rank_today": true,
   "latest_final": {
    "date": "2026-11-11",
-   "is_yesterday": true,
+   "is_yesterday": false,
    "high_f": 84,
    "low_f": 62,
    "high_rank": {
@@ -87,24 +81,6 @@
     "record": false,
     "phrase": "6th warmest November 11 low (tied) of 132 since 1895, warmest since 2025"
    }
-  },
-  "today_high_so_far": {
-   "value_f": 85,
-   "warm_rank": 16,
-   "cool_rank": 113,
-   "years": 132,
-   "first_year": 1895,
-   "tied_years": [
-    1900,
-    1936,
-    1943,
-    1986
-   ],
-   "standing": "warm",
-   "notable": true,
-   "since": 2025,
-   "record": false,
-   "phrase": "already the 16th warmest November 12 high (tied) of 132 since 1895, warmest since 2025"
   },
   "forecast_highs": [
    {
@@ -409,13 +385,6 @@
  "hourly": {
   "issued_utc": "2026-11-13T05:12:05Z",
   "hours": [
-   {
-    "start": "2026-11-12T23:00:00-07:00",
-    "temp_f": 69,
-    "temp_c": 20.56,
-    "precip_chance_pct": 0,
-    "short_forecast": "Partly Cloudy"
-   },
    {
     "start": "2026-11-13T00:00:00-07:00",
     "temp_f": 68,
@@ -742,6 +711,13 @@
     "start": "2026-11-14T22:00:00-07:00",
     "temp_f": 62,
     "temp_c": 16.67,
+    "precip_chance_pct": 0,
+    "short_forecast": "Partly Cloudy"
+   },
+   {
+    "start": "2026-11-14T23:00:00-07:00",
+    "temp_f": 61,
+    "temp_c": 16.11,
     "precip_chance_pct": 0,
     "short_forecast": "Partly Cloudy"
    }
