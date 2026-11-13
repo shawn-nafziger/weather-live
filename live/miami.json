@@ -11,20 +11,20 @@
   "lon": -80.3164,
   "history": "Same station as the official Miami record"
  },
- "as_of_utc": "2026-11-13T10:07:58Z",
+ "as_of_utc": "2026-11-13T11:07:59Z",
  "now": {
-  "time_utc": "2026-11-13T09:20:00Z",
+  "time_utc": "2026-11-13T10:55:00Z",
   "temp_c": 23,
   "temp_f": 73.4,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 19,
   "humidity_pct": 78.21,
-  "wind_kmh": 5.54,
+  "wind_kmh": 0,
   "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-13",
-  "readings": 2,
+  "readings": 3,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -332,7 +332,7 @@
   "periods": [
    {
     "name": "Overnight",
-    "start": "2026-11-13T03:00:00-05:00",
+    "start": "2026-11-13T04:00:00-05:00",
     "is_daytime": false,
     "temp_f": 72,
     "temp_c": 22.22,
@@ -461,13 +461,6 @@
  "hourly": {
   "issued_utc": "2026-11-13T08:21:04Z",
   "hours": [
-   {
-    "start": "2026-11-13T05:00:00-05:00",
-    "temp_f": 72,
-    "temp_c": 22.22,
-    "precip_chance_pct": 2,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "start": "2026-11-13T06:00:00-05:00",
     "temp_f": 72,
@@ -794,6 +787,13 @@
     "start": "2026-11-15T04:00:00-05:00",
     "temp_f": 61,
     "temp_c": 16.11,
+    "precip_chance_pct": 0,
+    "short_forecast": "Partly Cloudy"
+   },
+   {
+    "start": "2026-11-15T05:00:00-05:00",
+    "temp_f": 60,
+    "temp_c": 15.56,
     "precip_chance_pct": 0,
     "short_forecast": "Partly Cloudy"
    }

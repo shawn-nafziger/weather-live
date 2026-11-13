@@ -11,33 +11,33 @@
   "lon": -80.2145,
   "history": "Same site as the official Pittsburgh record"
  },
- "as_of_utc": "2026-11-13T10:07:58Z",
+ "as_of_utc": "2026-11-13T11:07:59Z",
  "now": {
-  "time_utc": "2026-11-13T09:20:00Z",
-  "temp_c": 3,
-  "temp_f": 37.4,
+  "time_utc": "2026-11-13T10:55:00Z",
+  "temp_c": 2,
+  "temp_f": 35.6,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 0,
-  "humidity_pct": 80.66,
-  "wind_kmh": 12.96,
-  "description": "Mostly Cloudy"
+  "dewpoint_c": -1,
+  "humidity_pct": 80.52,
+  "wind_kmh": 11.12,
+  "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-13",
-  "readings": 3,
+  "readings": 4,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
   "high_c": 4.4,
   "high_f": 39.9,
   "high_time_utc": "2026-11-13T05:51:00Z",
-  "low_c": 3.9,
-  "low_f": 39.0,
-  "low_time_utc": "2026-11-13T08:51:00Z",
+  "low_c": 3.3,
+  "low_f": 37.9,
+  "low_time_utc": "2026-11-13T09:51:00Z",
   "dip_between_reports": {
-   "at_most_f": 38.3,
-   "about_f": 37.4,
-   "time_utc": "2026-11-13T09:15:00Z"
+   "at_most_f": 36.5,
+   "about_f": 35.6,
+   "time_utc": "2026-11-13T10:55:00Z"
   }
  },
  "record": {
@@ -91,7 +91,7 @@
   },
   "forecast_highs": [
    {
-    "period": "Friday",
+    "period": "Today",
     "date": "2026-11-13",
     "high_f": 44,
     "would_rank": {
@@ -257,20 +257,11 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-13T07:36:26Z",
+  "issued_utc": "2026-11-13T10:26:35Z",
   "grid": "PBZ/70,67",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-13T03:00:00-05:00",
-    "is_daytime": false,
-    "temp_f": 35,
-    "temp_c": 1.67,
-    "precip_chance_pct": 4,
-    "short_forecast": "Mostly Cloudy"
-   },
-   {
-    "name": "Friday",
+    "name": "Today",
     "start": "2026-11-13T06:00:00-05:00",
     "is_daytime": true,
     "temp_f": 44,
@@ -279,7 +270,7 @@
     "short_forecast": "Mostly Cloudy"
    },
    {
-    "name": "Friday Night",
+    "name": "Tonight",
     "start": "2026-11-13T18:00:00-05:00",
     "is_daytime": false,
     "temp_f": 30,
@@ -385,19 +376,21 @@
     "temp_c": 15.0,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Sunny"
+   },
+   {
+    "name": "Thursday Night",
+    "start": "2026-11-19T18:00:00-05:00",
+    "is_daytime": false,
+    "temp_f": 33,
+    "temp_c": 0.56,
+    "precip_chance_pct": 1,
+    "short_forecast": "Partly Cloudy"
    }
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-13T07:36:26Z",
+  "issued_utc": "2026-11-13T10:26:35Z",
   "hours": [
-   {
-    "start": "2026-11-13T05:00:00-05:00",
-    "temp_f": 36,
-    "temp_c": 2.22,
-    "precip_chance_pct": 2,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "start": "2026-11-13T06:00:00-05:00",
     "temp_f": 35,
@@ -722,6 +715,13 @@
    },
    {
     "start": "2026-11-15T04:00:00-05:00",
+    "temp_f": 35,
+    "temp_c": 1.67,
+    "precip_chance_pct": 11,
+    "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "start": "2026-11-15T05:00:00-05:00",
     "temp_f": 35,
     "temp_c": 1.67,
     "precip_chance_pct": 11,

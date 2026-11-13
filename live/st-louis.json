@@ -11,34 +11,29 @@
   "lon": -90.3736,
   "history": "Same site as the official St. Louis record"
  },
- "as_of_utc": "2026-11-13T10:07:58Z",
+ "as_of_utc": "2026-11-13T11:07:59Z",
  "now": {
-  "time_utc": "2026-11-13T09:15:00Z",
-  "temp_c": 1,
-  "temp_f": 33.8,
+  "time_utc": "2026-11-13T10:50:00Z",
+  "temp_c": 2,
+  "temp_f": 35.6,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": -3,
-  "humidity_pct": 74.64,
-  "wind_kmh": 9.25,
+  "humidity_pct": 69.48,
+  "wind_kmh": 14.83,
   "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-13",
-  "readings": 2,
+  "readings": 3,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
   "high_c": 2.8,
   "high_f": 37.0,
   "high_time_utc": "2026-11-13T07:51:00Z",
-  "low_c": 2.2,
-  "low_f": 36.0,
-  "low_time_utc": "2026-11-13T08:51:00Z",
-  "dip_between_reports": {
-   "at_most_f": 34.7,
-   "about_f": 33.8,
-   "time_utc": "2026-11-13T09:15:00Z"
-  }
+  "low_c": 1.1,
+  "low_f": 34.0,
+  "low_time_utc": "2026-11-13T09:51:00Z"
  },
  "record": {
   "series": "St. Louis area (ThreadEx; Lambert airport)",
@@ -254,17 +249,17 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-13T06:25:47Z",
+  "issued_utc": "2026-11-13T10:06:19Z",
   "grid": "LSX/89,80",
   "periods": [
    {
     "name": "Overnight",
-    "start": "2026-11-13T01:00:00-06:00",
+    "start": "2026-11-13T04:00:00-06:00",
     "is_daytime": false,
     "temp_f": 34,
     "temp_c": 1.11,
     "precip_chance_pct": 0,
-    "short_forecast": "Mostly Clear"
+    "short_forecast": "Partly Cloudy"
    },
    {
     "name": "Friday",
@@ -386,15 +381,8 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-13T06:25:47Z",
+  "issued_utc": "2026-11-13T10:06:19Z",
   "hours": [
-   {
-    "start": "2026-11-13T04:00:00-06:00",
-    "temp_f": 36,
-    "temp_c": 2.22,
-    "precip_chance_pct": 0,
-    "short_forecast": "Partly Cloudy"
-   },
    {
     "start": "2026-11-13T05:00:00-06:00",
     "temp_f": 35,
@@ -723,6 +711,13 @@
     "temp_c": -1.11,
     "precip_chance_pct": 0,
     "short_forecast": "Clear"
+   },
+   {
+    "start": "2026-11-15T04:00:00-06:00",
+    "temp_f": 29,
+    "temp_c": -1.67,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Clear"
    }
   ]
  },
