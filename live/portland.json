@@ -11,38 +11,33 @@
   "lon": -122.6092,
   "history": "Same site as the official Portland record"
  },
- "as_of_utc": "2026-11-13T13:07:54Z",
+ "as_of_utc": "2026-11-13T14:07:51Z",
  "now": {
-  "time_utc": "2026-11-13T12:15:00Z",
+  "time_utc": "2026-11-13T13:45:00Z",
   "temp_c": 11,
   "temp_f": 51.8,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 8,
   "humidity_pct": 81.75,
-  "wind_kmh": 7.42,
-  "description": "Clear"
+  "wind_kmh": 12.96,
+  "description": "Mostly Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-13",
-  "readings": 3,
+  "readings": 4,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
   "high_c": 12.2,
   "high_f": 54.0,
   "high_time_utc": "2026-11-13T08:53:00Z",
-  "low_c": 12.2,
-  "low_f": 54.0,
-  "low_time_utc": "2026-11-13T08:53:00Z",
+  "low_c": 10,
+  "low_f": 50.0,
+  "low_time_utc": "2026-11-13T12:53:00Z",
   "peak_between_reports": {
    "at_least_f": 54.5,
    "about_f": 55.4,
    "time_utc": "2026-11-13T11:45:00Z"
-  },
-  "dip_between_reports": {
-   "at_most_f": 52.7,
-   "about_f": 51.8,
-   "time_utc": "2026-11-13T12:15:00Z"
   }
  },
  "record": {
@@ -97,7 +92,7 @@
   },
   "forecast_highs": [
    {
-    "period": "Friday",
+    "period": "Today",
     "date": "2026-11-13",
     "high_f": 57,
     "would_rank": {
@@ -269,20 +264,11 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-13T12:41:19Z",
+  "issued_utc": "2026-11-13T13:41:15Z",
   "grid": "PQR/116,107",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-13T05:00:00-08:00",
-    "is_daytime": false,
-    "temp_f": 50,
-    "temp_c": 10.0,
-    "precip_chance_pct": 41,
-    "short_forecast": "Chance Light Rain"
-   },
-   {
-    "name": "Friday",
+    "name": "Today",
     "start": "2026-11-13T06:00:00-08:00",
     "is_daytime": true,
     "temp_f": 57,
@@ -291,7 +277,7 @@
     "short_forecast": "Light Rain"
    },
    {
-    "name": "Friday Night",
+    "name": "Tonight",
     "start": "2026-11-13T18:00:00-08:00",
     "is_daytime": false,
     "temp_f": 49,
@@ -397,19 +383,21 @@
     "temp_c": 10.0,
     "precip_chance_pct": 17,
     "short_forecast": "Slight Chance Light Rain then Partly Sunny"
+   },
+   {
+    "name": "Thursday Night",
+    "start": "2026-11-19T18:00:00-08:00",
+    "is_daytime": false,
+    "temp_f": 40,
+    "temp_c": 4.44,
+    "precip_chance_pct": 11,
+    "short_forecast": "Partly Cloudy"
    }
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-13T12:41:19Z",
+  "issued_utc": "2026-11-13T13:41:15Z",
   "hours": [
-   {
-    "start": "2026-11-13T05:00:00-08:00",
-    "temp_f": 53,
-    "temp_c": 11.67,
-    "precip_chance_pct": 41,
-    "short_forecast": "Chance Light Rain"
-   },
    {
     "start": "2026-11-13T06:00:00-08:00",
     "temp_f": 51,
@@ -734,6 +722,13 @@
    },
    {
     "start": "2026-11-15T04:00:00-08:00",
+    "temp_f": 52,
+    "temp_c": 11.11,
+    "precip_chance_pct": 98,
+    "short_forecast": "Light Rain"
+   },
+   {
+    "start": "2026-11-15T05:00:00-08:00",
     "temp_f": 52,
     "temp_c": 11.11,
     "precip_chance_pct": 98,

@@ -11,38 +11,33 @@
   "lon": -112.0035,
   "history": "Same station as the official Phoenix record (Sky Harbor since 1933)"
  },
- "as_of_utc": "2026-11-13T13:07:54Z",
+ "as_of_utc": "2026-11-13T14:07:51Z",
  "now": {
-  "time_utc": "2026-11-13T12:35:00Z",
+  "time_utc": "2026-11-13T13:45:00Z",
   "temp_c": 17,
   "temp_f": 62.6,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 10,
-  "humidity_pct": 63.4,
-  "wind_kmh": 7.42,
+  "dewpoint_c": 9,
+  "humidity_pct": 59.28,
+  "wind_kmh": 14.83,
   "description": "Mostly Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-13",
-  "readings": 3,
+  "readings": 4,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
   "high_c": 19.4,
   "high_f": 66.9,
   "high_time_utc": "2026-11-13T08:51:00Z",
-  "low_c": 17.8,
-  "low_f": 64.0,
-  "low_time_utc": "2026-11-13T10:51:00Z",
+  "low_c": 17.2,
+  "low_f": 63.0,
+  "low_time_utc": "2026-11-13T12:51:00Z",
   "peak_between_reports": {
    "at_least_f": 68.9,
    "about_f": 69.8,
    "time_utc": "2026-11-13T07:00:00Z"
-  },
-  "dip_between_reports": {
-   "at_most_f": 63.5,
-   "about_f": 62.6,
-   "time_utc": "2026-11-13T11:35:00Z"
   }
  },
  "record": {
@@ -94,7 +89,7 @@
   },
   "forecast_highs": [
    {
-    "period": "Friday",
+    "period": "Today",
     "date": "2026-11-13",
     "high_f": 77,
     "would_rank": {
@@ -282,16 +277,7 @@
   "grid": "PSR/161,57",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-13T04:00:00-07:00",
-    "is_daytime": false,
-    "temp_f": 62,
-    "temp_c": 16.67,
-    "precip_chance_pct": 3,
-    "short_forecast": "Mostly Clear"
-   },
-   {
-    "name": "Friday",
+    "name": "Today",
     "start": "2026-11-13T06:00:00-07:00",
     "is_daytime": true,
     "temp_f": 77,
@@ -300,7 +286,7 @@
     "short_forecast": "Rain Showers Likely"
    },
    {
-    "name": "Friday Night",
+    "name": "Tonight",
     "start": "2026-11-13T18:00:00-07:00",
     "is_daytime": false,
     "temp_f": 59,
@@ -406,19 +392,21 @@
     "temp_c": 21.11,
     "precip_chance_pct": 15,
     "short_forecast": "Mostly Sunny then Slight Chance Rain Showers"
+   },
+   {
+    "name": "Thursday Night",
+    "start": "2026-11-19T18:00:00-07:00",
+    "is_daytime": false,
+    "temp_f": 51,
+    "temp_c": 10.56,
+    "precip_chance_pct": 19,
+    "short_forecast": "Slight Chance Rain Showers"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-13T10:56:25Z",
   "hours": [
-   {
-    "start": "2026-11-13T06:00:00-07:00",
-    "temp_f": 62,
-    "temp_c": 16.67,
-    "precip_chance_pct": 1,
-    "short_forecast": "Sunny"
-   },
    {
     "start": "2026-11-13T07:00:00-07:00",
     "temp_f": 62,
@@ -747,6 +735,13 @@
     "temp_c": 12.78,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear"
+   },
+   {
+    "start": "2026-11-15T06:00:00-07:00",
+    "temp_f": 55,
+    "temp_c": 12.78,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
    }
   ]
  },

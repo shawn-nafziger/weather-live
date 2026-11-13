@@ -11,29 +11,29 @@
   "lon": -77.0342,
   "history": "Same site as the official Washington record"
  },
- "as_of_utc": "2026-11-13T13:07:54Z",
+ "as_of_utc": "2026-11-13T14:07:51Z",
  "now": {
-  "time_utc": "2026-11-13T12:30:00Z",
+  "time_utc": "2026-11-13T13:45:00Z",
   "temp_c": 8,
   "temp_f": 46.4,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 1,
-  "humidity_pct": 61.3,
+  "dewpoint_c": 0,
+  "humidity_pct": 57.03,
   "wind_kmh": null,
   "description": "Mostly Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-13",
-  "readings": 4,
+  "readings": 5,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
   "high_c": 10,
   "high_f": 50.0,
   "high_time_utc": "2026-11-13T05:52:00Z",
-  "low_c": 8.3,
-  "low_f": 46.9,
-  "low_time_utc": "2026-11-13T09:52:00Z",
+  "low_c": 7.8,
+  "low_f": 46.0,
+  "low_time_utc": "2026-11-13T12:52:00Z",
   "peak_between_reports": {
    "at_least_f": 50.9,
    "about_f": 51.8,
@@ -262,12 +262,12 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-13T11:53:34Z",
+  "issued_utc": "2026-11-13T13:32:31Z",
   "grid": "LWX/97,69",
   "periods": [
    {
     "name": "Today",
-    "start": "2026-11-13T07:00:00-05:00",
+    "start": "2026-11-13T08:00:00-05:00",
     "is_daytime": true,
     "temp_f": 50,
     "temp_c": 10.0,
@@ -394,15 +394,8 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-13T11:53:34Z",
+  "issued_utc": "2026-11-13T13:32:31Z",
   "hours": [
-   {
-    "start": "2026-11-13T08:00:00-05:00",
-    "temp_f": 45,
-    "temp_c": 7.22,
-    "precip_chance_pct": 12,
-    "short_forecast": "Partly Sunny"
-   },
    {
     "start": "2026-11-13T09:00:00-05:00",
     "temp_f": 47,
@@ -729,6 +722,13 @@
     "start": "2026-11-15T07:00:00-05:00",
     "temp_f": 41,
     "temp_c": 5.0,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Sunny"
+   },
+   {
+    "start": "2026-11-15T08:00:00-05:00",
+    "temp_f": 44,
+    "temp_c": 6.67,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Sunny"
    }
