@@ -11,33 +11,33 @@
   "lon": -86.745,
   "history": "Same site as the official Birmingham record"
  },
- "as_of_utc": "2026-11-13T17:07:56Z",
+ "as_of_utc": "2026-11-13T18:07:51Z",
  "now": {
-  "time_utc": "2026-11-13T16:50:00Z",
-  "temp_c": 9,
-  "temp_f": 48.2,
+  "time_utc": "2026-11-13T17:25:00Z",
+  "temp_c": 11,
+  "temp_f": 51.8,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": -2,
-  "humidity_pct": 46.04,
-  "wind_kmh": 22.21,
+  "dewpoint_c": -1,
+  "humidity_pct": 43.34,
+  "wind_kmh": null,
   "description": "Mostly Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-13",
-  "readings": 6,
+  "readings": 7,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 7.2,
-  "high_f": 45.0,
-  "high_time_utc": "2026-11-13T07:53:00Z",
+  "high_c": 9.4,
+  "high_f": 48.9,
+  "high_time_utc": "2026-11-13T16:53:00Z",
   "low_c": 3.9,
   "low_f": 39.0,
   "low_time_utc": "2026-11-13T12:53:00Z",
   "peak_between_reports": {
-   "at_least_f": 47.3,
-   "about_f": 48.2,
-   "time_utc": "2026-11-13T15:55:00Z"
+   "at_least_f": 50.9,
+   "about_f": 51.8,
+   "time_utc": "2026-11-13T17:25:00Z"
   },
   "dip_between_reports": {
    "at_most_f": 38.3,
@@ -98,7 +98,7 @@
   },
   "forecast_highs": [
    {
-    "period": "Today",
+    "period": "This Afternoon",
     "date": "2026-11-13",
     "high_f": 55,
     "would_rank": {
@@ -120,38 +120,37 @@
    {
     "period": "Saturday",
     "date": "2026-11-14",
-    "high_f": 56,
+    "high_f": 57,
     "would_rank": {
-     "value_f": 56,
-     "warm_rank": 109,
-     "cool_rank": 22,
+     "value_f": 57,
+     "warm_rank": 106,
+     "cool_rank": 24,
      "years": 132,
      "first_year": 1895,
      "tied_years": [
-      1970,
-      2012
+      1900,
+      1934,
+      2022
      ],
      "standing": "cool",
      "notable": true,
-     "since": 2019,
+     "since": 2022,
      "record": false,
-     "phrase": "22nd coolest November 14 high (tied) of 132 since 1895, coolest since 2019"
+     "phrase": "24th coolest November 14 high (tied) of 132 since 1895, coolest since 2022"
     }
    },
    {
     "period": "Sunday",
     "date": "2026-11-15",
-    "high_f": 59,
+    "high_f": 61,
     "would_rank": {
-     "value_f": 59,
-     "warm_rank": 96,
-     "cool_rank": 34,
+     "value_f": 61,
+     "warm_rank": 90,
+     "cool_rank": 42,
      "years": 132,
      "first_year": 1895,
      "tied_years": [
-      1963,
-      1967,
-      1975
+      1904
      ],
      "standing": "cool",
      "notable": false,
@@ -163,17 +162,18 @@
    {
     "period": "Monday",
     "date": "2026-11-16",
-    "high_f": 59,
+    "high_f": 60,
     "would_rank": {
-     "value_f": 59,
-     "warm_rank": 97,
-     "cool_rank": 33,
+     "value_f": 60,
+     "warm_rank": 93,
+     "cool_rank": 36,
      "years": 132,
      "first_year": 1895,
      "tied_years": [
-      1907,
-      1959,
-      1974
+      1912,
+      1922,
+      1973,
+      2019
      ],
      "standing": "cool",
      "notable": false,
@@ -261,12 +261,12 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-13T15:36:36Z",
+  "issued_utc": "2026-11-13T16:56:13Z",
   "grid": "BMX/61,87",
   "periods": [
    {
-    "name": "Today",
-    "start": "2026-11-13T10:00:00-06:00",
+    "name": "This Afternoon",
+    "start": "2026-11-13T12:00:00-06:00",
     "is_daytime": true,
     "temp_f": 55,
     "temp_c": 12.78,
@@ -277,8 +277,8 @@
     "name": "Tonight",
     "start": "2026-11-13T18:00:00-06:00",
     "is_daytime": false,
-    "temp_f": 32,
-    "temp_c": 0.0,
+    "temp_f": 31,
+    "temp_c": -0.56,
     "precip_chance_pct": 0,
     "short_forecast": "Widespread Frost"
    },
@@ -286,8 +286,8 @@
     "name": "Saturday",
     "start": "2026-11-14T06:00:00-06:00",
     "is_daytime": true,
-    "temp_f": 56,
-    "temp_c": 13.33,
+    "temp_f": 57,
+    "temp_c": 13.89,
     "precip_chance_pct": 0,
     "short_forecast": "Widespread Frost then Sunny"
    },
@@ -304,8 +304,8 @@
     "name": "Sunday",
     "start": "2026-11-15T06:00:00-06:00",
     "is_daytime": true,
-    "temp_f": 59,
-    "temp_c": 15.0,
+    "temp_f": 61,
+    "temp_c": 16.11,
     "precip_chance_pct": 0,
     "short_forecast": "Widespread Frost then Mostly Sunny"
    },
@@ -313,8 +313,8 @@
     "name": "Sunday Night",
     "start": "2026-11-15T18:00:00-06:00",
     "is_daytime": false,
-    "temp_f": 35,
-    "temp_c": 1.67,
+    "temp_f": 36,
+    "temp_c": 2.22,
     "precip_chance_pct": 1,
     "short_forecast": "Partly Cloudy then Areas Of Frost"
    },
@@ -322,9 +322,9 @@
     "name": "Monday",
     "start": "2026-11-16T06:00:00-06:00",
     "is_daytime": true,
-    "temp_f": 59,
-    "temp_c": 15.0,
-    "precip_chance_pct": 3,
+    "temp_f": 60,
+    "temp_c": 15.56,
+    "precip_chance_pct": 4,
     "short_forecast": "Areas Of Frost then Partly Sunny"
    },
    {
@@ -395,13 +395,6 @@
  "hourly": {
   "issued_utc": "2026-11-13T16:56:13Z",
   "hours": [
-   {
-    "start": "2026-11-13T11:00:00-06:00",
-    "temp_f": 49,
-    "temp_c": 9.44,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "start": "2026-11-13T12:00:00-06:00",
     "temp_f": 52,
@@ -728,6 +721,13 @@
     "start": "2026-11-15T10:00:00-06:00",
     "temp_f": 48,
     "temp_c": 8.89,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Sunny"
+   },
+   {
+    "start": "2026-11-15T11:00:00-06:00",
+    "temp_f": 52,
+    "temp_c": 11.11,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Sunny"
    }
