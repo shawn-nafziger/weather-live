@@ -11,20 +11,20 @@
   "lon": -104.6562,
   "history": "Same site as the official Denver record"
  },
- "as_of_utc": "2026-11-13T11:07:59Z",
+ "as_of_utc": "2026-11-13T12:07:50Z",
  "now": {
-  "time_utc": "2026-11-13T10:55:00Z",
-  "temp_c": 6,
-  "temp_f": 42.8,
+  "time_utc": "2026-11-13T11:35:00Z",
+  "temp_c": 5,
+  "temp_f": 41.0,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": -3,
-  "humidity_pct": 52.47,
-  "wind_kmh": 16.67,
+  "dewpoint_c": -4,
+  "humidity_pct": 52.19,
+  "wind_kmh": 14.83,
   "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-13",
-  "readings": 2,
+  "readings": 3,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -46,44 +46,41 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-11",
-   "is_yesterday": false,
-   "high_f": 64,
-   "low_f": 26,
+   "date": "2026-11-12",
+   "is_yesterday": true,
+   "high_f": 66,
+   "low_f": 39,
    "high_rank": {
-    "value_f": 64,
-    "warm_rank": 34,
-    "cool_rank": 120,
+    "value_f": 66,
+    "warm_rank": 30,
+    "cool_rank": 125,
     "years": 155,
     "first_year": 1872,
     "tied_years": [
-     1926,
-     1960
+     2011
     ],
     "standing": "warm",
-    "notable": false,
+    "notable": true,
     "since": 2025,
     "record": false,
-    "phrase": "typical for November 11"
+    "phrase": "30th warmest November 12 high (tied) of 155 since 1872, warmest since 2025"
    },
    "low_rank": {
-    "value_f": 26,
-    "warm_rank": 88,
-    "cool_rank": 63,
+    "value_f": 39,
+    "warm_rank": 14,
+    "cool_rank": 139,
     "years": 155,
     "first_year": 1872,
     "tied_years": [
-     1948,
-     1963,
-     1966,
-     1992,
-     2016
+     1897,
+     1921,
+     1941
     ],
-    "standing": "cool",
-    "notable": false,
-    "since": 2023,
+    "standing": "warm",
+    "notable": true,
+    "since": 2009,
     "record": false,
-    "phrase": "typical for November 11"
+    "phrase": "14th warmest November 12 low (tied) of 155 since 1872, warmest since 2009"
    }
   },
   "forecast_highs": [
@@ -385,13 +382,6 @@
  "hourly": {
   "issued_utc": "2026-11-13T09:58:48Z",
   "hours": [
-   {
-    "start": "2026-11-13T04:00:00-07:00",
-    "temp_f": 42,
-    "temp_c": 5.56,
-    "precip_chance_pct": 0,
-    "short_forecast": "Partly Cloudy"
-   },
    {
     "start": "2026-11-13T05:00:00-07:00",
     "temp_f": 41,
@@ -716,6 +706,13 @@
    },
    {
     "start": "2026-11-15T03:00:00-07:00",
+    "temp_f": 38,
+    "temp_c": 3.33,
+    "precip_chance_pct": 6,
+    "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "start": "2026-11-15T04:00:00-07:00",
     "temp_f": 38,
     "temp_c": 3.33,
     "precip_chance_pct": 6,

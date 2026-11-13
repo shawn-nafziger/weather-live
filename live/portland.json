@@ -11,20 +11,20 @@
   "lon": -122.6092,
   "history": "Same site as the official Portland record"
  },
- "as_of_utc": "2026-11-13T11:07:59Z",
+ "as_of_utc": "2026-11-13T12:07:50Z",
  "now": {
-  "time_utc": "2026-11-13T10:55:00Z",
-  "temp_c": 12,
-  "temp_f": 53.6,
+  "time_utc": "2026-11-13T11:45:00Z",
+  "temp_c": 13,
+  "temp_f": 55.4,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 7,
-  "humidity_pct": 71.47,
-  "wind_kmh": 20.38,
+  "humidity_pct": 66.93,
+  "wind_kmh": 16.67,
   "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-13",
-  "readings": 2,
+  "readings": 3,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -33,7 +33,12 @@
   "high_time_utc": "2026-11-13T08:53:00Z",
   "low_c": 12.2,
   "low_f": 54.0,
-  "low_time_utc": "2026-11-13T08:53:00Z"
+  "low_time_utc": "2026-11-13T08:53:00Z",
+  "peak_between_reports": {
+   "at_least_f": 54.5,
+   "about_f": 55.4,
+   "time_utc": "2026-11-13T11:45:00Z"
+  }
  },
  "record": {
   "series": "Portland area (ThreadEx; airport)",
@@ -41,44 +46,48 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-11",
-   "is_yesterday": false,
-   "high_f": 62,
-   "low_f": 52,
+   "date": "2026-11-12",
+   "is_yesterday": true,
+   "high_f": 57,
+   "low_f": 49,
    "high_rank": {
-    "value_f": 62,
-    "warm_rank": 5,
-    "cool_rank": 78,
+    "value_f": 57,
+    "warm_rank": 22,
+    "cool_rank": 59,
     "years": 87,
     "first_year": 1940,
     "tied_years": [
-     1990,
+     1949,
+     1954,
+     1966,
      1996,
-     1999,
-     2019,
-     2021
+     2003,
+     2023,
+     2024
     ],
     "standing": "warm",
-    "notable": true,
-    "since": 2021,
+    "notable": false,
+    "since": 2025,
     "record": false,
-    "phrase": "5th warmest November 11 high (tied) of 87 since 1940, warmest since 2021"
+    "phrase": "typical for November 12"
    },
    "low_rank": {
-    "value_f": 52,
-    "warm_rank": 2,
-    "cool_rank": 84,
+    "value_f": 49,
+    "warm_rank": 10,
+    "cool_rank": 74,
     "years": 87,
     "first_year": 1940,
     "tied_years": [
-     1981,
-     1999
+     1983,
+     2013,
+     2016,
+     2024
     ],
     "standing": "warm",
     "notable": true,
-    "since": 1999,
+    "since": 2024,
     "record": false,
-    "phrase": "2nd warmest November 11 low (tied) of 87 since 1940, warmest since 1999"
+    "phrase": "10th warmest November 12 low (tied) of 87 since 1940, warmest since 2024"
    }
   },
   "forecast_highs": [
@@ -255,12 +264,12 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-13T09:41:14Z",
+  "issued_utc": "2026-11-13T11:41:09Z",
   "grid": "PQR/116,107",
   "periods": [
    {
     "name": "Overnight",
-    "start": "2026-11-13T02:00:00-08:00",
+    "start": "2026-11-13T04:00:00-08:00",
     "is_daytime": false,
     "temp_f": 50,
     "temp_c": 10.0,
@@ -387,15 +396,8 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-13T09:41:14Z",
+  "issued_utc": "2026-11-13T11:41:09Z",
   "hours": [
-   {
-    "start": "2026-11-13T03:00:00-08:00",
-    "temp_f": 52,
-    "temp_c": 11.11,
-    "precip_chance_pct": 6,
-    "short_forecast": "Cloudy"
-   },
    {
     "start": "2026-11-13T04:00:00-08:00",
     "temp_f": 53,
@@ -720,6 +722,13 @@
    },
    {
     "start": "2026-11-15T02:00:00-08:00",
+    "temp_f": 52,
+    "temp_c": 11.11,
+    "precip_chance_pct": 95,
+    "short_forecast": "Light Rain"
+   },
+   {
+    "start": "2026-11-15T03:00:00-08:00",
     "temp_f": 52,
     "temp_c": 11.11,
     "precip_chance_pct": 95,

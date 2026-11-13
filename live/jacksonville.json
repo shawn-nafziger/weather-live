@@ -11,38 +11,33 @@
   "lon": -81.6937,
   "history": "Same site as the official Jacksonville record"
  },
- "as_of_utc": "2026-11-13T11:07:59Z",
+ "as_of_utc": "2026-11-13T12:07:50Z",
  "now": {
-  "time_utc": "2026-11-13T10:55:00Z",
+  "time_utc": "2026-11-13T11:40:00Z",
   "temp_c": 8,
   "temp_f": 46.4,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 7,
   "humidity_pct": 93.4,
-  "wind_kmh": 5.54,
+  "wind_kmh": 7.42,
   "description": ""
  },
  "today_so_far": {
   "date_local": "2026-11-13",
-  "readings": 5,
+  "readings": 6,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
   "high_c": 14.4,
   "high_f": 57.9,
   "high_time_utc": "2026-11-13T05:56:00Z",
-  "low_c": 8.9,
-  "low_f": 48.0,
-  "low_time_utc": "2026-11-13T09:56:00Z",
+  "low_c": 8.3,
+  "low_f": 46.9,
+  "low_time_utc": "2026-11-13T10:56:00Z",
   "peak_between_reports": {
    "at_least_f": 61.7,
    "about_f": 62.6,
    "time_utc": "2026-11-13T05:00:00Z"
-  },
-  "dip_between_reports": {
-   "at_most_f": 47.3,
-   "about_f": 46.4,
-   "time_utc": "2026-11-13T10:10:00Z"
   }
  },
  "record": {
@@ -51,57 +46,57 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-11",
-   "is_yesterday": false,
-   "high_f": 80,
-   "low_f": 57,
+   "date": "2026-11-12",
+   "is_yesterday": true,
+   "high_f": 77,
+   "low_f": 54,
    "high_rank": {
-    "value_f": 80,
-    "warm_rank": 21,
-    "cool_rank": 129,
+    "value_f": 77,
+    "warm_rank": 51,
+    "cool_rank": 98,
     "years": 156,
     "first_year": 1871,
     "tied_years": [
-     1879,
-     1940,
-     1972,
-     1988,
-     1989,
-     2014,
-     2019
-    ],
-    "standing": "warm",
-    "notable": true,
-    "since": 2024,
-    "record": false,
-    "phrase": "21st warmest November 11 high (tied) of 156 since 1871, warmest since 2024"
-   },
-   "low_rank": {
-    "value_f": 57,
-    "warm_rank": 54,
-    "cool_rank": 95,
-    "years": 156,
-    "first_year": 1871,
-    "tied_years": [
+     1902,
      1909,
-     1924,
-     1939,
-     1954,
-     1960,
-     1963,
-     2009,
-     2015
+     1927,
+     1937,
+     1946,
+     1955,
+     2014,
+     2018
     ],
     "standing": "warm",
     "notable": false,
     "since": 2024,
     "record": false,
-    "phrase": "typical for November 11"
+    "phrase": "typical for November 12"
+   },
+   "low_rank": {
+    "value_f": 54,
+    "warm_rank": 71,
+    "cool_rank": 79,
+    "years": 156,
+    "first_year": 1871,
+    "tied_years": [
+     1873,
+     1898,
+     1899,
+     1914,
+     1949,
+     1967,
+     1969
+    ],
+    "standing": "warm",
+    "notable": false,
+    "since": 2024,
+    "record": false,
+    "phrase": "typical for November 12"
    }
   },
   "forecast_highs": [
    {
-    "period": "Friday",
+    "period": "Today",
     "date": "2026-11-13",
     "high_f": 69,
     "would_rank": {
@@ -276,16 +271,7 @@
   "grid": "JAX/64,72",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-13T05:00:00-05:00",
-    "is_daytime": false,
-    "temp_f": 50,
-    "temp_c": 10.0,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Clear"
-   },
-   {
-    "name": "Friday",
+    "name": "Today",
     "start": "2026-11-13T06:00:00-05:00",
     "is_daytime": true,
     "temp_f": 69,
@@ -294,7 +280,7 @@
     "short_forecast": "Sunny"
    },
    {
-    "name": "Friday Night",
+    "name": "Tonight",
     "start": "2026-11-13T18:00:00-05:00",
     "is_daytime": false,
     "temp_f": 41,
@@ -400,19 +386,21 @@
     "temp_c": 23.33,
     "precip_chance_pct": 15,
     "short_forecast": "Mostly Sunny then Slight Chance Rain Showers"
+   },
+   {
+    "name": "Thursday Night",
+    "start": "2026-11-19T18:00:00-05:00",
+    "is_daytime": false,
+    "temp_f": 58,
+    "temp_c": 14.44,
+    "precip_chance_pct": 15,
+    "short_forecast": "Slight Chance Rain Showers then Partly Cloudy"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-13T08:01:26Z",
   "hours": [
-   {
-    "start": "2026-11-13T06:00:00-05:00",
-    "temp_f": 50,
-    "temp_c": 10.0,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "start": "2026-11-13T07:00:00-05:00",
     "temp_f": 50,
@@ -741,6 +729,13 @@
     "temp_c": 5.56,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear"
+   },
+   {
+    "start": "2026-11-15T06:00:00-05:00",
+    "temp_f": 42,
+    "temp_c": 5.56,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
    }
   ]
  },

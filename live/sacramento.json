@@ -11,20 +11,20 @@
   "lon": -121.496,
   "history": "About 9 km from the official Sacramento record's site, so today and the forecast aren't ranked against it"
  },
- "as_of_utc": "2026-11-13T11:07:59Z",
+ "as_of_utc": "2026-11-13T12:07:50Z",
  "now": {
-  "time_utc": "2026-11-13T10:55:00Z",
-  "temp_c": 14,
-  "temp_f": 57.2,
+  "time_utc": "2026-11-13T11:45:00Z",
+  "temp_c": 13,
+  "temp_f": 55.4,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 11,
-  "humidity_pct": 82.14,
-  "wind_kmh": 0,
-  "description": "Cloudy"
+  "dewpoint_c": 10,
+  "humidity_pct": 82.01,
+  "wind_kmh": 5.54,
+  "description": "Mostly Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-13",
-  "readings": 2,
+  "readings": 3,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -41,8 +41,8 @@
   "available": true,
   "rank_today": false,
   "latest_final": {
-   "date": "2026-11-11",
-   "is_yesterday": false,
+   "date": "2026-11-12",
+   "is_yesterday": true,
    "high_f": 74,
    "low_f": 45,
    "high_rank": {
@@ -52,39 +52,44 @@
     "years": 150,
     "first_year": 1877,
     "tied_years": [
-     1892,
-     1906,
+     1894,
+     1921,
      1932,
+     1933,
      1986,
-     1989,
      1991
     ],
     "standing": "warm",
     "notable": true,
     "since": 2019,
     "record": false,
-    "phrase": "8th warmest November 11 high (tied) of 150 since 1877, warmest since 2019"
+    "phrase": "8th warmest November 12 high (tied) of 150 since 1877, warmest since 2019"
    },
    "low_rank": {
     "value_f": 45,
-    "warm_rank": 63,
+    "warm_rank": 58,
     "cool_rank": 81,
     "years": 150,
     "first_year": 1877,
     "tied_years": [
-     1879,
-     1902,
-     1914,
+     1877,
+     1892,
+     1912,
      1917,
-     1967,
-     1991,
+     1928,
+     1954,
+     1999,
+     2005,
+     2014,
+     2017,
+     2019,
      2021
     ],
     "standing": "warm",
     "notable": false,
     "since": 2025,
     "record": false,
-    "phrase": "typical for November 11"
+    "phrase": "typical for November 12"
    }
   },
   "note": "Today's readings come from a different station than this record, so today and the forecast aren't ranked against it."
@@ -95,7 +100,7 @@
   "periods": [
    {
     "name": "Overnight",
-    "start": "2026-11-13T03:00:00-08:00",
+    "start": "2026-11-13T02:00:00-08:00",
     "is_daytime": false,
     "temp_f": 51,
     "temp_c": 10.56,
@@ -224,13 +229,6 @@
  "hourly": {
   "issued_utc": "2026-11-13T09:01:10Z",
   "hours": [
-   {
-    "start": "2026-11-13T03:00:00-08:00",
-    "temp_f": 55,
-    "temp_c": 12.78,
-    "precip_chance_pct": 2,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "start": "2026-11-13T04:00:00-08:00",
     "temp_f": 54,
@@ -557,6 +555,13 @@
     "start": "2026-11-15T02:00:00-08:00",
     "temp_f": 48,
     "temp_c": 8.89,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "start": "2026-11-15T03:00:00-08:00",
+    "temp_f": 47,
+    "temp_c": 8.33,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Cloudy"
    }

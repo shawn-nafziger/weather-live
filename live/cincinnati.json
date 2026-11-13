@@ -11,26 +11,26 @@
   "lon": -84.6723,
   "history": "Same site as the official Cincinnati record"
  },
- "as_of_utc": "2026-11-13T11:07:59Z",
+ "as_of_utc": "2026-11-13T12:07:50Z",
  "now": {
-  "time_utc": "2026-11-13T10:55:00Z",
+  "time_utc": "2026-11-13T11:40:00Z",
   "temp_c": 5,
   "temp_f": 41.0,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 4,
-  "humidity_pct": 93.25,
-  "wind_kmh": 16.67,
-  "description": "Light Rain"
+  "dewpoint_c": 3,
+  "humidity_pct": 86.9,
+  "wind_kmh": 18.5,
+  "description": "Light Drizzle"
  },
  "today_so_far": {
   "date_local": "2026-11-13",
-  "readings": 4,
+  "readings": 6,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 4.4,
-  "high_f": 39.9,
-  "high_time_utc": "2026-11-13T05:52:00Z",
+  "high_c": 5,
+  "high_f": 41.0,
+  "high_time_utc": "2026-11-13T10:52:00Z",
   "low_c": 3.9,
   "low_f": 39.0,
   "low_time_utc": "2026-11-13T07:52:00Z",
@@ -46,47 +46,49 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-11",
-   "is_yesterday": false,
-   "high_f": 68,
-   "low_f": 41,
+   "date": "2026-11-12",
+   "is_yesterday": true,
+   "high_f": 52,
+   "low_f": 42,
    "high_rank": {
-    "value_f": 68,
-    "warm_rank": 16,
-    "cool_rank": 135,
+    "value_f": 52,
+    "warm_rank": 87,
+    "cool_rank": 62,
     "years": 155,
     "first_year": 1872,
     "tied_years": [
-     1885,
-     1982,
-     1989,
-     2012,
-     2020
+     1923,
+     1926,
+     1969,
+     1981,
+     1999,
+     2016,
+     2021
     ],
-    "standing": "warm",
-    "notable": true,
-    "since": 2020,
+    "standing": "cool",
+    "notable": false,
+    "since": 2022,
     "record": false,
-    "phrase": "16th warmest November 11 high (tied) of 155 since 1872, warmest since 2020"
+    "phrase": "typical for November 12"
    },
    "low_rank": {
-    "value_f": 41,
-    "warm_rank": 49,
-    "cool_rank": 102,
+    "value_f": 42,
+    "warm_rank": 34,
+    "cool_rank": 117,
     "years": 155,
     "first_year": 1872,
     "tied_years": [
-     1886,
-     1903,
-     1919,
-     1922,
-     2006
+     1875,
+     1917,
+     1972,
+     2003,
+     2011
     ],
     "standing": "warm",
     "notable": false,
-    "since": 2024,
+    "since": 2015,
     "record": false,
-    "phrase": "typical for November 11"
+    "phrase": "typical for November 12"
    }
   },
   "forecast_highs": [
@@ -256,12 +258,12 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-13T09:00:36Z",
+  "issued_utc": "2026-11-13T11:26:04Z",
   "grid": "ILN/30,35",
   "periods": [
    {
     "name": "Today",
-    "start": "2026-11-13T06:00:00-05:00",
+    "start": "2026-11-13T07:00:00-05:00",
     "is_daytime": true,
     "temp_f": 46,
     "temp_c": 7.78,
@@ -388,15 +390,8 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-13T09:00:36Z",
+  "issued_utc": "2026-11-13T11:26:04Z",
   "hours": [
-   {
-    "start": "2026-11-13T06:00:00-05:00",
-    "temp_f": 40,
-    "temp_c": 4.44,
-    "precip_chance_pct": 28,
-    "short_forecast": "Chance Light Rain"
-   },
    {
     "start": "2026-11-13T07:00:00-05:00",
     "temp_f": 40,
@@ -725,6 +720,13 @@
     "temp_c": 1.11,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "start": "2026-11-15T06:00:00-05:00",
+    "temp_f": 34,
+    "temp_c": 1.11,
+    "precip_chance_pct": 0,
+    "short_forecast": "Partly Sunny"
    }
   ]
  },

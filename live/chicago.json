@@ -11,20 +11,20 @@
   "lon": -87.9044,
   "history": "Same station as the official Chicago record (ThreadEx, O'Hare since 1980)"
  },
- "as_of_utc": "2026-11-13T11:07:59Z",
+ "as_of_utc": "2026-11-13T12:07:50Z",
  "now": {
-  "time_utc": "2026-11-13T10:55:00Z",
-  "temp_c": 3,
-  "temp_f": 37.4,
+  "time_utc": "2026-11-13T11:40:00Z",
+  "temp_c": 2,
+  "temp_f": 35.6,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": -3,
-  "humidity_pct": 64.71,
-  "wind_kmh": 25.92,
+  "humidity_pct": 69.48,
+  "wind_kmh": null,
   "description": "Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-13",
-  "readings": 5,
+  "readings": 6,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -38,6 +38,11 @@
    "at_least_f": 38.3,
    "about_f": 39.2,
    "time_utc": "2026-11-13T06:00:00Z"
+  },
+  "dip_between_reports": {
+   "at_most_f": 36.5,
+   "about_f": 35.6,
+   "time_utc": "2026-11-13T11:15:00Z"
   }
  },
  "record": {
@@ -46,50 +51,52 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-11",
-   "is_yesterday": false,
-   "high_f": 58,
-   "low_f": 42,
+   "date": "2026-11-12",
+   "is_yesterday": true,
+   "high_f": 47,
+   "low_f": 39,
    "high_rank": {
-    "value_f": 58,
-    "warm_rank": 31,
-    "cool_rank": 118,
+    "value_f": 47,
+    "warm_rank": 82,
+    "cool_rank": 64,
     "years": 155,
     "first_year": 1872,
     "tied_years": [
-     1905,
-     1955,
-     1967,
-     1975,
-     1993,
-     2014,
-     2024
+     1884,
+     1900,
+     1946,
+     1956,
+     1972,
+     1978,
+     1989,
+     1990,
+     1992,
+     2004
     ],
-    "standing": "warm",
-    "notable": true,
-    "since": 2024,
+    "standing": "cool",
+    "notable": false,
+    "since": 2022,
     "record": false,
-    "phrase": "31st warmest November 11 high (tied) of 155 since 1872, warmest since 2024"
+    "phrase": "typical for November 12"
    },
    "low_rank": {
-    "value_f": 42,
-    "warm_rank": 26,
-    "cool_rank": 124,
+    "value_f": 39,
+    "warm_rank": 43,
+    "cool_rank": 108,
     "years": 155,
     "first_year": 1872,
     "tied_years": [
-     1893,
-     1915,
-     1954,
-     1972,
-     2007,
-     2024
+     1885,
+     1918,
+     1928,
+     1935,
+     1944
     ],
     "standing": "warm",
-    "notable": true,
+    "notable": false,
     "since": 2024,
     "record": false,
-    "phrase": "26th warmest November 11 low (tied) of 155 since 1872, warmest since 2024"
+    "phrase": "typical for November 12"
    }
   },
   "forecast_highs": [
@@ -258,7 +265,7 @@
   "periods": [
    {
     "name": "Overnight",
-    "start": "2026-11-13T04:00:00-06:00",
+    "start": "2026-11-13T05:00:00-06:00",
     "is_daytime": false,
     "temp_f": 35,
     "temp_c": 1.67,
@@ -385,56 +392,49 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-13T10:06:02Z",
+  "issued_utc": "2026-11-13T10:46:04Z",
   "hours": [
-   {
-    "start": "2026-11-13T05:00:00-06:00",
-    "temp_f": 35,
-    "temp_c": 1.67,
-    "precip_chance_pct": 23,
-    "short_forecast": "Slight Chance Snow"
-   },
    {
     "start": "2026-11-13T06:00:00-06:00",
     "temp_f": 35,
     "temp_c": 1.67,
-    "precip_chance_pct": 58,
-    "short_forecast": "Snow Likely"
+    "precip_chance_pct": 31,
+    "short_forecast": "Chance Snow"
    },
    {
     "start": "2026-11-13T07:00:00-06:00",
     "temp_f": 35,
     "temp_c": 1.67,
-    "precip_chance_pct": 58,
-    "short_forecast": "Snow Likely"
+    "precip_chance_pct": 31,
+    "short_forecast": "Chance Snow"
    },
    {
     "start": "2026-11-13T08:00:00-06:00",
     "temp_f": 36,
     "temp_c": 2.22,
-    "precip_chance_pct": 58,
-    "short_forecast": "Snow Likely"
+    "precip_chance_pct": 31,
+    "short_forecast": "Chance Snow"
    },
    {
     "start": "2026-11-13T09:00:00-06:00",
     "temp_f": 37,
     "temp_c": 2.78,
-    "precip_chance_pct": 77,
-    "short_forecast": "Snow"
+    "precip_chance_pct": 34,
+    "short_forecast": "Chance Snow"
    },
    {
     "start": "2026-11-13T10:00:00-06:00",
     "temp_f": 38,
     "temp_c": 3.33,
-    "precip_chance_pct": 77,
-    "short_forecast": "Rain And Snow"
+    "precip_chance_pct": 34,
+    "short_forecast": "Chance Snow"
    },
    {
     "start": "2026-11-13T11:00:00-06:00",
     "temp_f": 39,
     "temp_c": 3.89,
-    "precip_chance_pct": 77,
-    "short_forecast": "Rain And Snow"
+    "precip_chance_pct": 34,
+    "short_forecast": "Chance Snow"
    },
    {
     "start": "2026-11-13T12:00:00-06:00",
@@ -720,6 +720,13 @@
     "start": "2026-11-15T04:00:00-06:00",
     "temp_f": 30,
     "temp_c": -1.11,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Clear"
+   },
+   {
+    "start": "2026-11-15T05:00:00-06:00",
+    "temp_f": 29,
+    "temp_c": -1.67,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear"
    }

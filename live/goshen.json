@@ -11,20 +11,20 @@
   "lon": -85.7867,
   "history": "Provisional: Goshen Municipal Airport. The long record (GOSHEN 3SW) is a once-a-day volunteer station, so today's readings and the record come from different stations (question D2)"
  },
- "as_of_utc": "2026-11-13T11:07:59Z",
+ "as_of_utc": "2026-11-13T12:07:50Z",
  "now": {
-  "time_utc": "2026-11-13T10:50:00Z",
+  "time_utc": "2026-11-13T11:35:00Z",
   "temp_c": 3,
   "temp_f": 37.4,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 1,
-  "humidity_pct": 86.7,
-  "wind_kmh": 14.83,
+  "dewpoint_c": 0,
+  "humidity_pct": 80.66,
+  "wind_kmh": 18.5,
   "description": "Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-13",
-  "readings": 6,
+  "readings": 8,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -46,72 +46,56 @@
   "available": true,
   "rank_today": false,
   "latest_final": {
-   "date": "2026-11-11",
-   "is_yesterday": false,
-   "high_f": 58,
-   "low_f": 36,
+   "date": "2026-11-12",
+   "is_yesterday": true,
+   "high_f": 48,
+   "low_f": 41,
    "high_rank": {
-    "value_f": 58,
-    "warm_rank": 22,
-    "cool_rank": 86,
-    "years": 110,
+    "value_f": 48,
+    "warm_rank": 65,
+    "cool_rank": 47,
+    "years": 111,
+    "first_year": 1914,
+    "tied_years": [],
+    "standing": "cool",
+    "notable": false,
+    "since": 2022,
+    "record": false,
+    "phrase": "typical for November 12"
+   },
+   "low_rank": {
+    "value_f": 41,
+    "warm_rank": 14,
+    "cool_rank": 97,
+    "years": 111,
     "first_year": 1914,
     "tied_years": [
-     1959,
-     1975,
-     1993
+     1973
     ],
     "standing": "warm",
     "notable": true,
-    "since": 2024,
+    "since": 2015,
     "record": false,
-    "phrase": "22nd warmest November 11 high (tied) of 110 since 1914, warmest since 2024"
-   },
-   "low_rank": {
-    "value_f": 36,
-    "warm_rank": 32,
-    "cool_rank": 74,
-    "years": 109,
-    "first_year": 1914,
-    "tied_years": [
-     1965,
-     2000,
-     2007,
-     2010
-    ],
-    "standing": "warm",
-    "notable": false,
-    "since": 2024,
-    "record": false,
-    "phrase": "typical for November 11"
+    "phrase": "14th warmest November 12 low (tied) of 111 since 1914, warmest since 2015"
    }
   },
   "note": "Today's readings come from a different station than this record, so today and the forecast aren't ranked against it."
  },
  "forecast": {
-  "issued_utc": "2026-11-13T09:44:47Z",
+  "issued_utc": "2026-11-13T11:44:32Z",
   "grid": "IWX/45,57",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-13T05:00:00-05:00",
-    "is_daytime": false,
-    "temp_f": 31,
-    "temp_c": -0.56,
-    "precip_chance_pct": 25,
-    "short_forecast": "Chance Rain Showers"
-   },
-   {
-    "name": "Friday",
-    "start": "2026-11-13T06:00:00-05:00",
+    "name": "Today",
+    "start": "2026-11-13T07:00:00-05:00",
     "is_daytime": true,
     "temp_f": 42,
     "temp_c": 5.56,
-    "precip_chance_pct": 18,
-    "short_forecast": "Slight Chance Rain Showers then Partly Sunny"
+    "precip_chance_pct": 13,
+    "short_forecast": "Partly Sunny"
    },
    {
-    "name": "Friday Night",
+    "name": "Tonight",
     "start": "2026-11-13T18:00:00-05:00",
     "is_daytime": false,
     "temp_f": 25,
@@ -217,31 +201,33 @@
     "temp_c": 14.44,
     "precip_chance_pct": 5,
     "short_forecast": "Partly Sunny"
+   },
+   {
+    "name": "Thursday Night",
+    "start": "2026-11-19T18:00:00-05:00",
+    "is_daytime": false,
+    "temp_f": 43,
+    "temp_c": 6.11,
+    "precip_chance_pct": 14,
+    "short_forecast": "Mostly Cloudy"
    }
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-13T10:45:04Z",
+  "issued_utc": "2026-11-13T11:44:32Z",
   "hours": [
    {
-    "start": "2026-11-13T06:00:00-05:00",
+    "start": "2026-11-13T07:00:00-05:00",
     "temp_f": 36,
     "temp_c": 2.22,
-    "precip_chance_pct": 19,
-    "short_forecast": "Slight Chance Rain Showers"
-   },
-   {
-    "start": "2026-11-13T07:00:00-05:00",
-    "temp_f": 34,
-    "temp_c": 1.11,
     "precip_chance_pct": 13,
     "short_forecast": "Mostly Cloudy"
    },
    {
     "start": "2026-11-13T08:00:00-05:00",
-    "temp_f": 34,
-    "temp_c": 1.11,
-    "precip_chance_pct": 6,
+    "temp_f": 35,
+    "temp_c": 1.67,
+    "precip_chance_pct": 9,
     "short_forecast": "Mostly Cloudy"
    },
    {
@@ -267,8 +253,8 @@
    },
    {
     "start": "2026-11-13T12:00:00-05:00",
-    "temp_f": 41,
-    "temp_c": 5.0,
+    "temp_f": 40,
+    "temp_c": 4.44,
     "precip_chance_pct": 4,
     "short_forecast": "Partly Sunny"
    },
@@ -554,6 +540,13 @@
    },
    {
     "start": "2026-11-15T05:00:00-05:00",
+    "temp_f": 35,
+    "temp_c": 1.67,
+    "precip_chance_pct": 2,
+    "short_forecast": "Cloudy"
+   },
+   {
+    "start": "2026-11-15T06:00:00-05:00",
     "temp_f": 35,
     "temp_c": 1.67,
     "precip_chance_pct": 2,

@@ -11,20 +11,20 @@
   "lon": -76.684,
   "history": "Same site as the official Baltimore record"
  },
- "as_of_utc": "2026-11-13T11:07:59Z",
+ "as_of_utc": "2026-11-13T12:07:50Z",
  "now": {
-  "time_utc": "2026-11-13T10:55:00Z",
+  "time_utc": "2026-11-13T11:40:00Z",
   "temp_c": 7,
   "temp_f": 44.6,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 2,
-  "humidity_pct": 70.5,
+  "dewpoint_c": 1,
+  "humidity_pct": 65.63,
   "wind_kmh": 12.96,
   "description": "Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-13",
-  "readings": 5,
+  "readings": 7,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -46,48 +46,47 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-11",
-   "is_yesterday": false,
-   "high_f": 67,
-   "low_f": 40,
+   "date": "2026-11-12",
+   "is_yesterday": true,
+   "high_f": 65,
+   "low_f": 46,
    "high_rank": {
-    "value_f": 67,
-    "warm_rank": 16,
-    "cool_rank": 136,
-    "years": 154,
-    "first_year": 1872,
-    "tied_years": [
-     1931,
-     1946,
-     1995
-    ],
-    "standing": "warm",
-    "notable": true,
-    "since": 2024,
-    "record": false,
-    "phrase": "16th warmest November 11 high (tied) of 154 since 1872, warmest since 2024"
-   },
-   "low_rank": {
-    "value_f": 40,
-    "warm_rank": 62,
-    "cool_rank": 86,
+    "value_f": 65,
+    "warm_rank": 27,
+    "cool_rank": 125,
     "years": 155,
     "first_year": 1872,
     "tied_years": [
-     1884,
-     1897,
-     1906,
      1915,
-     1928,
-     1934,
-     1948,
-     1983
+     1924,
+     1949,
+     2021
     ],
     "standing": "warm",
-    "notable": false,
-    "since": 2024,
+    "notable": true,
+    "since": 2022,
     "record": false,
-    "phrase": "typical for November 11"
+    "phrase": "27th warmest November 12 high (tied) of 155 since 1872, warmest since 2022"
+   },
+   "low_rank": {
+    "value_f": 46,
+    "warm_rank": 29,
+    "cool_rank": 121,
+    "years": 155,
+    "first_year": 1872,
+    "tied_years": [
+     1889,
+     1909,
+     1929,
+     1965,
+     1979,
+     2006
+    ],
+    "standing": "warm",
+    "notable": true,
+    "since": 2022,
+    "record": false,
+    "phrase": "29th warmest November 12 low (tied) of 155 since 1872, warmest since 2022"
    }
   },
   "forecast_highs": [
@@ -259,12 +258,12 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-13T08:53:07Z",
+  "issued_utc": "2026-11-13T11:53:34Z",
   "grid": "LWX/107,85",
   "periods": [
    {
     "name": "Today",
-    "start": "2026-11-13T06:00:00-05:00",
+    "start": "2026-11-13T07:00:00-05:00",
     "is_daytime": true,
     "temp_f": 48,
     "temp_c": 8.89,
@@ -391,15 +390,8 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-13T08:53:07Z",
+  "issued_utc": "2026-11-13T11:53:34Z",
   "hours": [
-   {
-    "start": "2026-11-13T06:00:00-05:00",
-    "temp_f": 44,
-    "temp_c": 6.67,
-    "precip_chance_pct": 13,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "start": "2026-11-13T07:00:00-05:00",
     "temp_f": 45,
@@ -728,6 +720,13 @@
     "temp_c": 1.67,
     "precip_chance_pct": 0,
     "short_forecast": "Partly Cloudy"
+   },
+   {
+    "start": "2026-11-15T06:00:00-05:00",
+    "temp_f": 34,
+    "temp_c": 1.11,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Sunny"
    }
   ]
  },

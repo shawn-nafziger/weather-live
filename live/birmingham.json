@@ -11,20 +11,20 @@
   "lon": -86.745,
   "history": "Same site as the official Birmingham record"
  },
- "as_of_utc": "2026-11-13T11:07:59Z",
+ "as_of_utc": "2026-11-13T12:07:50Z",
  "now": {
-  "time_utc": "2026-11-13T10:55:00Z",
-  "temp_c": 5,
-  "temp_f": 41.0,
+  "time_utc": "2026-11-13T11:40:00Z",
+  "temp_c": 4,
+  "temp_f": 39.2,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 1,
-  "humidity_pct": 75.35,
-  "wind_kmh": 12.96,
+  "humidity_pct": 80.8,
+  "wind_kmh": 16.67,
   "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-13",
-  "readings": 3,
+  "readings": 4,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -51,50 +51,54 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-11",
-   "is_yesterday": false,
-   "high_f": 74,
-   "low_f": 45,
+   "date": "2026-11-12",
+   "is_yesterday": true,
+   "high_f": 68,
+   "low_f": 47,
    "high_rank": {
-    "value_f": 74,
-    "warm_rank": 24,
-    "cool_rank": 104,
+    "value_f": 68,
+    "warm_rank": 54,
+    "cool_rank": 72,
     "years": 132,
     "first_year": 1895,
     "tied_years": [
-     1899,
      1901,
-     1909,
-     1916,
-     2021
+     1903,
+     1927,
+     1929,
+     1948,
+     1969,
+     1988
     ],
     "standing": "warm",
-    "notable": true,
-    "since": 2024,
+    "notable": false,
+    "since": 2025,
     "record": false,
-    "phrase": "24th warmest November 11 high (tied) of 132 since 1895, warmest since 2024"
+    "phrase": "typical for November 12"
    },
    "low_rank": {
-    "value_f": 45,
-    "warm_rank": 47,
-    "cool_rank": 82,
+    "value_f": 47,
+    "warm_rank": 40,
+    "cool_rank": 87,
     "years": 131,
     "first_year": 1896,
     "tied_years": [
-     1936,
-     1946,
-     1982
+     1914,
+     1919,
+     1944,
+     1988,
+     2021
     ],
     "standing": "warm",
     "notable": false,
     "since": 2024,
     "record": false,
-    "phrase": "typical for November 11"
+    "phrase": "typical for November 12"
    }
   },
   "forecast_highs": [
    {
-    "period": "Friday",
+    "period": "Today",
     "date": "2026-11-13",
     "high_f": 55,
     "would_rank": {
@@ -257,20 +261,11 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-13T07:46:23Z",
+  "issued_utc": "2026-11-13T11:06:29Z",
   "grid": "BMX/61,87",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-13T05:00:00-06:00",
-    "is_daytime": false,
-    "temp_f": 36,
-    "temp_c": 2.22,
-    "precip_chance_pct": 0,
-    "short_forecast": "Patchy Frost"
-   },
-   {
-    "name": "Friday",
+    "name": "Today",
     "start": "2026-11-13T06:00:00-06:00",
     "is_daytime": true,
     "temp_f": 55,
@@ -279,7 +274,7 @@
     "short_forecast": "Areas Of Frost then Sunny"
    },
    {
-    "name": "Friday Night",
+    "name": "Tonight",
     "start": "2026-11-13T18:00:00-06:00",
     "is_daytime": false,
     "temp_f": 32,
@@ -385,19 +380,21 @@
     "temp_c": 21.67,
     "precip_chance_pct": 1,
     "short_forecast": "Mostly Sunny"
+   },
+   {
+    "name": "Thursday Night",
+    "start": "2026-11-19T18:00:00-06:00",
+    "is_daytime": false,
+    "temp_f": 44,
+    "temp_c": 6.67,
+    "precip_chance_pct": 4,
+    "short_forecast": "Partly Cloudy"
    }
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-13T07:46:23Z",
+  "issued_utc": "2026-11-13T11:06:29Z",
   "hours": [
-   {
-    "start": "2026-11-13T05:00:00-06:00",
-    "temp_f": 37,
-    "temp_c": 2.78,
-    "precip_chance_pct": 0,
-    "short_forecast": "Patchy Frost"
-   },
    {
     "start": "2026-11-13T06:00:00-06:00",
     "temp_f": 36,
@@ -722,6 +719,13 @@
    },
    {
     "start": "2026-11-15T04:00:00-06:00",
+    "temp_f": 31,
+    "temp_c": -0.56,
+    "precip_chance_pct": 0,
+    "short_forecast": "Widespread Frost"
+   },
+   {
+    "start": "2026-11-15T05:00:00-06:00",
     "temp_f": 31,
     "temp_c": -0.56,
     "precip_chance_pct": 0,

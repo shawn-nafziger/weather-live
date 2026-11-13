@@ -11,33 +11,38 @@
   "lon": -112.0035,
   "history": "Same station as the official Phoenix record (Sky Harbor since 1933)"
  },
- "as_of_utc": "2026-11-13T11:07:59Z",
+ "as_of_utc": "2026-11-13T12:07:50Z",
  "now": {
-  "time_utc": "2026-11-13T10:55:00Z",
-  "temp_c": 18,
-  "temp_f": 64.4,
+  "time_utc": "2026-11-13T11:40:00Z",
+  "temp_c": 17,
+  "temp_f": 62.6,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 9,
-  "humidity_pct": 55.66,
-  "wind_kmh": 11.12,
-  "description": "Clear"
+  "humidity_pct": 59.28,
+  "wind_kmh": 9.25,
+  "description": "Mostly Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-13",
-  "readings": 2,
+  "readings": 3,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
   "high_c": 19.4,
   "high_f": 66.9,
   "high_time_utc": "2026-11-13T08:51:00Z",
-  "low_c": 18.3,
-  "low_f": 64.9,
-  "low_time_utc": "2026-11-13T09:51:00Z",
+  "low_c": 17.8,
+  "low_f": 64.0,
+  "low_time_utc": "2026-11-13T10:51:00Z",
   "peak_between_reports": {
    "at_least_f": 68.9,
    "about_f": 69.8,
    "time_utc": "2026-11-13T07:00:00Z"
+  },
+  "dip_between_reports": {
+   "at_most_f": 63.5,
+   "about_f": 62.6,
+   "time_utc": "2026-11-13T11:35:00Z"
   }
  },
  "record": {
@@ -46,51 +51,45 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-11",
-   "is_yesterday": false,
-   "high_f": 84,
+   "date": "2026-11-12",
+   "is_yesterday": true,
+   "high_f": 86,
    "low_f": 62,
    "high_rank": {
-    "value_f": 84,
-    "warm_rank": 23,
-    "cool_rank": 102,
+    "value_f": 86,
+    "warm_rank": 12,
+    "cool_rank": 117,
     "years": 132,
     "first_year": 1895,
     "tied_years": [
-     1921,
-     1928,
-     1968,
-     1981,
+     1934,
      1996,
-     2001,
-     2014,
-     2024
+     2017,
+     2025
     ],
     "standing": "warm",
     "notable": true,
     "since": 2025,
     "record": false,
-    "phrase": "23rd warmest November 11 high (tied) of 132 since 1895, warmest since 2025"
+    "phrase": "12th warmest November 12 high (tied) of 132 since 1895, warmest since 2025"
    },
    "low_rank": {
     "value_f": 62,
-    "warm_rank": 6,
-    "cool_rank": 121,
+    "warm_rank": 3,
+    "cool_rank": 126,
     "years": 132,
     "first_year": 1895,
     "tied_years": [
-     1958,
-     1985,
-     1988,
-     1997,
+     2001,
+     2003,
      2016,
      2019
     ],
     "standing": "warm",
     "notable": true,
-    "since": 2025,
+    "since": 2019,
     "record": false,
-    "phrase": "6th warmest November 11 low (tied) of 132 since 1895, warmest since 2025"
+    "phrase": "3rd warmest November 12 low (tied) of 132 since 1895, warmest since 2019"
    }
   },
   "forecast_highs": [
@@ -279,17 +278,17 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-13T06:32:50Z",
+  "issued_utc": "2026-11-13T10:56:25Z",
   "grid": "PSR/161,57",
   "periods": [
    {
     "name": "Overnight",
-    "start": "2026-11-13T00:00:00-07:00",
+    "start": "2026-11-13T04:00:00-07:00",
     "is_daytime": false,
     "temp_f": 62,
     "temp_c": 16.67,
     "precip_chance_pct": 3,
-    "short_forecast": "Partly Cloudy"
+    "short_forecast": "Mostly Clear"
    },
    {
     "name": "Friday",
@@ -411,15 +410,8 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-13T06:32:50Z",
+  "issued_utc": "2026-11-13T10:56:25Z",
   "hours": [
-   {
-    "start": "2026-11-13T04:00:00-07:00",
-    "temp_f": 63,
-    "temp_c": 17.22,
-    "precip_chance_pct": 1,
-    "short_forecast": "Mostly Clear"
-   },
    {
     "start": "2026-11-13T05:00:00-07:00",
     "temp_f": 63,
@@ -744,6 +736,13 @@
    },
    {
     "start": "2026-11-15T03:00:00-07:00",
+    "temp_f": 56,
+    "temp_c": 13.33,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Clear"
+   },
+   {
+    "start": "2026-11-15T04:00:00-07:00",
     "temp_f": 56,
     "temp_c": 13.33,
     "precip_chance_pct": 0,
