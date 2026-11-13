@@ -11,20 +11,20 @@
   "lon": -87.9044,
   "history": "Same site as the official Milwaukee record"
  },
- "as_of_utc": "2026-11-13T02:07:58Z",
+ "as_of_utc": "2026-11-13T03:07:52Z",
  "now": {
-  "time_utc": "2026-11-13T01:50:00Z",
+  "time_utc": "2026-11-13T02:45:00Z",
   "temp_c": 4,
   "temp_f": 39.2,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": -3,
   "humidity_pct": 60.31,
-  "wind_kmh": 22.21,
+  "wind_kmh": 20.38,
   "description": "Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-12",
-  "readings": 17,
+  "readings": 18,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -96,26 +96,24 @@
    {
     "period": "Friday",
     "date": "2026-11-13",
-    "high_f": 45,
+    "high_f": 43,
     "would_rank": {
-     "value_f": 45,
-     "warm_rank": 74,
-     "cool_rank": 75,
+     "value_f": 43,
+     "warm_rank": 88,
+     "cool_rank": 63,
      "years": 156,
      "first_year": 1871,
      "tied_years": [
-      1871,
-      1881,
-      1924,
-      1926,
-      1935,
-      1962,
-      1985,
-      2004
+      1872,
+      1883,
+      1897,
+      1966,
+      1968,
+      2015
      ],
-     "standing": "warm",
+     "standing": "cool",
      "notable": false,
-     "since": 2025,
+     "since": 2022,
      "record": false,
      "phrase": "typical for November 13"
     }
@@ -259,24 +257,24 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-12T23:36:13Z",
+  "issued_utc": "2026-11-13T02:51:43Z",
   "grid": "MKX/89,61",
   "periods": [
    {
     "name": "Tonight",
-    "start": "2026-11-12T18:00:00-06:00",
+    "start": "2026-11-12T21:00:00-06:00",
     "is_daytime": false,
     "temp_f": 32,
     "temp_c": 0.0,
-    "precip_chance_pct": 20,
-    "short_forecast": "Slight Chance Light Rain then Slight Chance Light Snow"
+    "precip_chance_pct": 19,
+    "short_forecast": "Chance Rain Showers then Chance Rain And Snow Showers"
    },
    {
     "name": "Friday",
     "start": "2026-11-13T06:00:00-06:00",
     "is_daytime": true,
-    "temp_f": 45,
-    "temp_c": 7.22,
+    "temp_f": 43,
+    "temp_c": 6.11,
     "precip_chance_pct": 39,
     "short_forecast": "Chance Light Snow then Chance Light Rain"
    },
@@ -302,8 +300,8 @@
     "name": "Saturday Night",
     "start": "2026-11-14T18:00:00-06:00",
     "is_daytime": false,
-    "temp_f": 31,
-    "temp_c": -0.56,
+    "temp_f": 30,
+    "temp_c": -1.11,
     "precip_chance_pct": 0,
     "short_forecast": "Partly Cloudy"
    },
@@ -391,15 +389,8 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-12T23:36:13Z",
+  "issued_utc": "2026-11-13T02:31:31Z",
   "hours": [
-   {
-    "start": "2026-11-12T20:00:00-06:00",
-    "temp_f": 39,
-    "temp_c": 3.89,
-    "precip_chance_pct": 13,
-    "short_forecast": "Chance Rain Showers"
-   },
    {
     "start": "2026-11-12T21:00:00-06:00",
     "temp_f": 38,
@@ -726,6 +717,13 @@
     "start": "2026-11-14T19:00:00-06:00",
     "temp_f": 39,
     "temp_c": 3.89,
+    "precip_chance_pct": 0,
+    "short_forecast": "Partly Cloudy"
+   },
+   {
+    "start": "2026-11-14T20:00:00-06:00",
+    "temp_f": 38,
+    "temp_c": 3.33,
     "precip_chance_pct": 0,
     "short_forecast": "Partly Cloudy"
    }
