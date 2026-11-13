@@ -11,16 +11,16 @@
   "lon": -87.9044,
   "history": "Same site as the official Milwaukee record"
  },
- "as_of_utc": "2026-11-13T15:30:50Z",
+ "as_of_utc": "2026-11-13T16:07:55Z",
  "now": {
-  "time_utc": "2026-11-13T15:10:00Z",
-  "temp_c": 2,
-  "temp_f": 35.6,
+  "time_utc": "2026-11-13T15:45:00Z",
+  "temp_c": 3,
+  "temp_f": 37.4,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": -3,
-  "humidity_pct": 69.48,
-  "wind_kmh": 22.21,
-  "description": "Partly Cloudy"
+  "humidity_pct": 64.71,
+  "wind_kmh": 16.67,
+  "description": "Mostly Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-13",
@@ -46,50 +46,55 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-11",
-   "is_yesterday": false,
-   "high_f": 51,
-   "low_f": 38,
+   "date": "2026-11-12",
+   "is_yesterday": true,
+   "high_f": 45,
+   "low_f": 35,
    "high_rank": {
-    "value_f": 51,
-    "warm_rank": 50,
-    "cool_rank": 102,
+    "value_f": 45,
+    "warm_rank": 83,
+    "cool_rank": 64,
     "years": 156,
     "first_year": 1871,
     "tied_years": [
-     1872,
-     1923,
-     1929,
-     1994,
-     2009
-    ],
-    "standing": "warm",
-    "notable": false,
-    "since": 2024,
-    "record": false,
-    "phrase": "typical for November 11"
-   },
-   "low_rank": {
-    "value_f": 38,
-    "warm_rank": 35,
-    "cool_rank": 114,
-    "years": 156,
-    "first_year": 1871,
-    "tied_years": [
-     1885,
-     1925,
-     1928,
-     1937,
+     1898,
+     1939,
+     1946,
+     1955,
      1962,
      1969,
      1972,
-     1993
+     1981,
+     1989,
+     1990
+    ],
+    "standing": "cool",
+    "notable": false,
+    "since": 2022,
+    "record": false,
+    "phrase": "typical for November 12"
+   },
+   "low_rank": {
+    "value_f": 35,
+    "warm_rank": 50,
+    "cool_rank": 99,
+    "years": 156,
+    "first_year": 1871,
+    "tied_years": [
+     1888,
+     1916,
+     1963,
+     1980,
+     1988,
+     2011,
+     2020,
+     2021
     ],
     "standing": "warm",
     "notable": false,
-    "since": 2024,
+    "since": 2025,
     "record": false,
-    "phrase": "typical for November 11"
+    "phrase": "typical for November 12"
    }
   },
   "forecast_highs": [
@@ -394,13 +399,6 @@
  "hourly": {
   "issued_utc": "2026-11-13T13:36:17Z",
   "hours": [
-   {
-    "start": "2026-11-13T09:00:00-06:00",
-    "temp_f": 37,
-    "temp_c": 2.78,
-    "precip_chance_pct": 8,
-    "short_forecast": "Partly Sunny"
-   },
    {
     "start": "2026-11-13T10:00:00-06:00",
     "temp_f": 39,
@@ -727,6 +725,13 @@
     "start": "2026-11-15T08:00:00-06:00",
     "temp_f": 36,
     "temp_c": 2.22,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
+   },
+   {
+    "start": "2026-11-15T09:00:00-06:00",
+    "temp_f": 39,
+    "temp_c": 3.89,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
    }

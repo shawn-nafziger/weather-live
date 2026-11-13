@@ -11,20 +11,20 @@
   "lon": -77.3233,
   "history": "Same site as the official Richmond record"
  },
- "as_of_utc": "2026-11-13T15:30:50Z",
+ "as_of_utc": "2026-11-13T16:07:55Z",
  "now": {
-  "time_utc": "2026-11-13T15:10:00Z",
+  "time_utc": "2026-11-13T15:45:00Z",
   "temp_c": 12,
   "temp_f": 53.6,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 1,
   "humidity_pct": 46.9,
-  "wind_kmh": null,
-  "description": "Partly Cloudy"
+  "wind_kmh": 24.08,
+  "description": "Mostly Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-13",
-  "readings": 6,
+  "readings": 7,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -258,7 +258,7 @@
   "periods": [
    {
     "name": "Today",
-    "start": "2026-11-13T10:00:00-05:00",
+    "start": "2026-11-13T07:00:00-05:00",
     "is_daytime": true,
     "temp_f": 54,
     "temp_c": 12.22,
@@ -387,13 +387,6 @@
  "hourly": {
   "issued_utc": "2026-11-13T12:00:30Z",
   "hours": [
-   {
-    "start": "2026-11-13T10:00:00-05:00",
-    "temp_f": 50,
-    "temp_c": 10.0,
-    "precip_chance_pct": 1,
-    "short_forecast": "Partly Sunny"
-   },
    {
     "start": "2026-11-13T11:00:00-05:00",
     "temp_f": 52,
@@ -720,6 +713,13 @@
     "start": "2026-11-15T09:00:00-05:00",
     "temp_f": 43,
     "temp_c": 6.11,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
+   },
+   {
+    "start": "2026-11-15T10:00:00-05:00",
+    "temp_f": 48,
+    "temp_c": 8.89,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
    }
