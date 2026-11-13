@@ -11,20 +11,20 @@
   "lon": -86.6892,
   "history": "Same site as the official Nashville record"
  },
- "as_of_utc": "2026-11-13T01:07:55Z",
+ "as_of_utc": "2026-11-13T02:07:58Z",
  "now": {
-  "time_utc": "2026-11-13T00:50:00Z",
-  "temp_c": 11,
-  "temp_f": 51.8,
+  "time_utc": "2026-11-13T01:50:00Z",
+  "temp_c": 10,
+  "temp_f": 50.0,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 2,
-  "humidity_pct": 53.83,
-  "wind_kmh": 22.21,
-  "description": "Mostly Cloudy"
+  "dewpoint_c": 0,
+  "humidity_pct": 49.83,
+  "wind_kmh": 16.67,
+  "description": "Mostly Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-12",
-  "readings": 13,
+  "readings": 14,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -38,6 +38,11 @@
    "at_least_f": 61.7,
    "about_f": 62.6,
    "time_utc": "2026-11-12T06:20:00Z"
+  },
+  "dip_between_reports": {
+   "at_most_f": 50.9,
+   "about_f": 50.0,
+   "time_utc": "2026-11-13T01:35:00Z"
   }
  },
  "record": {
@@ -272,7 +277,7 @@
   "periods": [
    {
     "name": "Tonight",
-    "start": "2026-11-12T19:00:00-06:00",
+    "start": "2026-11-12T20:00:00-06:00",
     "is_daytime": false,
     "temp_f": 34,
     "temp_c": 1.11,
@@ -401,13 +406,6 @@
  "hourly": {
   "issued_utc": "2026-11-13T00:51:45Z",
   "hours": [
-   {
-    "start": "2026-11-12T19:00:00-06:00",
-    "temp_f": 48,
-    "temp_c": 8.89,
-    "precip_chance_pct": 0,
-    "short_forecast": "Partly Cloudy"
-   },
    {
     "start": "2026-11-12T20:00:00-06:00",
     "temp_f": 46,
@@ -734,6 +732,13 @@
     "start": "2026-11-14T18:00:00-06:00",
     "temp_f": 45,
     "temp_c": 7.22,
+    "precip_chance_pct": 0,
+    "short_forecast": "Clear"
+   },
+   {
+    "start": "2026-11-14T19:00:00-06:00",
+    "temp_f": 42,
+    "temp_c": 5.56,
     "precip_chance_pct": 0,
     "short_forecast": "Clear"
    }

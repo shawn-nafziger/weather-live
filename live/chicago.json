@@ -11,20 +11,20 @@
   "lon": -87.9044,
   "history": "Same station as the official Chicago record (ThreadEx, O'Hare since 1980)"
  },
- "as_of_utc": "2026-11-13T01:07:55Z",
+ "as_of_utc": "2026-11-13T02:07:58Z",
  "now": {
-  "time_utc": "2026-11-13T00:50:00Z",
+  "time_utc": "2026-11-13T01:50:00Z",
   "temp_c": 4,
   "temp_f": 39.2,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": -3,
   "humidity_pct": 60.31,
-  "wind_kmh": 25.92,
+  "wind_kmh": 27.79,
   "description": "Mostly Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-12",
-  "readings": 16,
+  "readings": 17,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -91,22 +91,17 @@
    {
     "period": "Friday",
     "date": "2026-11-13",
-    "high_f": 42,
+    "high_f": 41,
     "would_rank": {
-     "value_f": 42,
-     "warm_rank": 104,
-     "cool_rank": 44,
+     "value_f": 41,
+     "warm_rank": 112,
+     "cool_rank": 41,
      "years": 155,
      "first_year": 1872,
      "tied_years": [
-      1885,
-      1895,
-      1917,
-      1942,
-      1969,
-      1977,
-      1979,
-      2006
+      1881,
+      1976,
+      2012
      ],
      "standing": "cool",
      "notable": false,
@@ -255,34 +250,34 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-12T22:41:06Z",
+  "issued_utc": "2026-11-13T01:31:18Z",
   "grid": "LOT/66,77",
   "periods": [
    {
     "name": "Tonight",
-    "start": "2026-11-12T18:00:00-06:00",
+    "start": "2026-11-12T19:00:00-06:00",
     "is_daytime": false,
     "temp_f": 34,
     "temp_c": 1.11,
-    "precip_chance_pct": 51,
-    "short_forecast": "Chance Rain And Snow"
+    "precip_chance_pct": 38,
+    "short_forecast": "Mostly Cloudy then Chance Snow"
    },
    {
     "name": "Friday",
     "start": "2026-11-13T06:00:00-06:00",
     "is_daytime": true,
-    "temp_f": 42,
-    "temp_c": 5.56,
-    "precip_chance_pct": 51,
+    "temp_f": 41,
+    "temp_c": 5.0,
+    "precip_chance_pct": 47,
     "short_forecast": "Chance Snow"
    },
    {
     "name": "Friday Night",
     "start": "2026-11-13T18:00:00-06:00",
     "is_daytime": false,
-    "temp_f": 32,
-    "temp_c": 0.0,
-    "precip_chance_pct": 20,
+    "temp_f": 31,
+    "temp_c": -0.56,
+    "precip_chance_pct": 19,
     "short_forecast": "Slight Chance Snow then Partly Cloudy"
    },
    {
@@ -389,13 +384,6 @@
  "hourly": {
   "issued_utc": "2026-11-12T22:41:06Z",
   "hours": [
-   {
-    "start": "2026-11-12T19:00:00-06:00",
-    "temp_f": 38,
-    "temp_c": 3.33,
-    "precip_chance_pct": 48,
-    "short_forecast": "Chance Rain And Snow"
-   },
    {
     "start": "2026-11-12T20:00:00-06:00",
     "temp_f": 38,
@@ -722,6 +710,13 @@
     "start": "2026-11-14T18:00:00-06:00",
     "temp_f": 39,
     "temp_c": 3.89,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Clear"
+   },
+   {
+    "start": "2026-11-14T19:00:00-06:00",
+    "temp_f": 37,
+    "temp_c": 2.78,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear"
    }
