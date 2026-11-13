@@ -11,20 +11,20 @@
   "lon": -82.8769,
   "history": "Same site as the official Columbus record"
  },
- "as_of_utc": "2026-11-12T23:08:00Z",
+ "as_of_utc": "2026-11-13T00:07:56Z",
  "now": {
-  "time_utc": "2026-11-12T22:55:00Z",
+  "time_utc": "2026-11-12T23:55:00Z",
   "temp_c": 8,
   "temp_f": 46.4,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 5,
   "humidity_pct": 81.35,
-  "wind_kmh": null,
+  "wind_kmh": 16.67,
   "description": "Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-12",
-  "readings": 21,
+  "readings": 24,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -91,31 +91,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-12",
-    "high_f": 51,
-    "would_rank": {
-     "value_f": 51,
-     "warm_rank": 77,
-     "cool_rank": 67,
-     "years": 149,
-     "first_year": 1878,
-     "tied_years": [
-      1878,
-      1896,
-      1903,
-      1942,
-      1960,
-      1970
-     ],
-     "standing": "cool",
-     "notable": false,
-     "since": 2022,
-     "record": false,
-     "phrase": "typical for November 12"
-    }
-   },
    {
     "period": "Friday",
     "date": "2026-11-13",
@@ -256,22 +231,36 @@
      "record": false,
      "phrase": "typical for November 18"
     }
+   },
+   {
+    "period": "Thursday",
+    "date": "2026-11-19",
+    "high_f": 59,
+    "would_rank": {
+     "value_f": 59,
+     "warm_rank": 35,
+     "cool_rank": 111,
+     "years": 149,
+     "first_year": 1878,
+     "tied_years": [
+      1883,
+      1904,
+      1946,
+      1952
+     ],
+     "standing": "warm",
+     "notable": false,
+     "since": 2024,
+     "record": false,
+     "phrase": "typical for November 19"
+    }
    }
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-12T21:00:30Z",
+  "issued_utc": "2026-11-12T22:20:06Z",
   "grid": "ILN/89,83",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-12T17:00:00-05:00",
-    "is_daytime": true,
-    "temp_f": 51,
-    "temp_c": 10.56,
-    "precip_chance_pct": 59,
-    "short_forecast": "Light Rain Likely"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-12T18:00:00-05:00",
@@ -388,19 +377,21 @@
     "temp_c": 0.0,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear"
+   },
+   {
+    "name": "Thursday",
+    "start": "2026-11-19T06:00:00-05:00",
+    "is_daytime": true,
+    "temp_f": 59,
+    "temp_c": 15.0,
+    "precip_chance_pct": 1,
+    "short_forecast": "Mostly Sunny"
    }
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-12T21:00:30Z",
+  "issued_utc": "2026-11-12T22:20:06Z",
   "hours": [
-   {
-    "start": "2026-11-12T18:00:00-05:00",
-    "temp_f": 47,
-    "temp_c": 8.33,
-    "precip_chance_pct": 60,
-    "short_forecast": "Light Rain Likely"
-   },
    {
     "start": "2026-11-12T19:00:00-05:00",
     "temp_f": 45,
@@ -727,6 +718,13 @@
     "start": "2026-11-14T17:00:00-05:00",
     "temp_f": 42,
     "temp_c": 5.56,
+    "precip_chance_pct": 1,
+    "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "start": "2026-11-14T18:00:00-05:00",
+    "temp_f": 41,
+    "temp_c": 5.0,
     "precip_chance_pct": 1,
     "short_forecast": "Mostly Cloudy"
    }

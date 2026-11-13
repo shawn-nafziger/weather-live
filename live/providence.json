@@ -11,15 +11,15 @@
   "lon": -71.4277,
   "history": "Same site as the official Providence record"
  },
- "as_of_utc": "2026-11-12T23:08:00Z",
+ "as_of_utc": "2026-11-13T00:07:56Z",
  "now": {
-  "time_utc": "2026-11-12T22:55:00Z",
-  "temp_c": 11,
-  "temp_f": 51.8,
+  "time_utc": "2026-11-12T23:50:00Z",
+  "temp_c": 9,
+  "temp_f": 48.2,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 6,
-  "humidity_pct": 71.28,
-  "wind_kmh": 18.5,
+  "dewpoint_c": 7,
+  "humidity_pct": 87.29,
+  "wind_kmh": 16.67,
   "description": "Light Rain"
  },
  "today_so_far": {
@@ -83,30 +83,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-12",
-    "high_f": 55,
-    "would_rank": {
-     "value_f": 55,
-     "warm_rank": 44,
-     "cool_rank": 75,
-     "years": 123,
-     "first_year": 1904,
-     "tied_years": [
-      1919,
-      1930,
-      1932,
-      1948,
-      1969
-     ],
-     "standing": "warm",
-     "notable": false,
-     "since": 2022,
-     "record": false,
-     "phrase": "typical for November 12"
-    }
-   },
    {
     "period": "Friday",
     "date": "2026-11-13",
@@ -241,6 +217,27 @@
      "record": false,
      "phrase": "22nd warmest November 18 high (tied) of 123 since 1904, warmest since 2024"
     }
+   },
+   {
+    "period": "Thursday",
+    "date": "2026-11-19",
+    "high_f": 61,
+    "would_rank": {
+     "value_f": 61,
+     "warm_rank": 16,
+     "cool_rank": 106,
+     "years": 123,
+     "first_year": 1904,
+     "tied_years": [
+      1926,
+      1931
+     ],
+     "standing": "warm",
+     "notable": true,
+     "since": 2017,
+     "record": false,
+     "phrase": "16th warmest November 19 high (tied) of 123 since 1904, warmest since 2017"
+    }
    }
   ]
  },
@@ -248,15 +245,6 @@
   "issued_utc": "2026-11-12T21:23:16Z",
   "grid": "BOX/64,70",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-12T16:00:00-05:00",
-    "is_daytime": true,
-    "temp_f": 55,
-    "temp_c": 12.78,
-    "precip_chance_pct": 62,
-    "short_forecast": "Light Rain Likely"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-12T18:00:00-05:00",
@@ -373,19 +361,21 @@
     "temp_c": 2.78,
     "precip_chance_pct": 0,
     "short_forecast": "Clear"
+   },
+   {
+    "name": "Thursday",
+    "start": "2026-11-19T06:00:00-05:00",
+    "is_daytime": true,
+    "temp_f": 61,
+    "temp_c": 16.11,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-12T21:23:16Z",
   "hours": [
-   {
-    "start": "2026-11-12T18:00:00-05:00",
-    "temp_f": 49,
-    "temp_c": 9.44,
-    "precip_chance_pct": 69,
-    "short_forecast": "Light Rain Likely"
-   },
    {
     "start": "2026-11-12T19:00:00-05:00",
     "temp_f": 48,
@@ -713,6 +703,13 @@
     "temp_f": 43,
     "temp_c": 6.11,
     "precip_chance_pct": 13,
+    "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "start": "2026-11-14T18:00:00-05:00",
+    "temp_f": 42,
+    "temp_c": 5.56,
+    "precip_chance_pct": 7,
     "short_forecast": "Mostly Cloudy"
    }
   ]
