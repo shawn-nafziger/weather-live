@@ -11,9 +11,9 @@
   "lon": -90.2508,
   "history": "Same site as the official New Orleans record"
  },
- "as_of_utc": "2026-11-13T12:07:50Z",
+ "as_of_utc": "2026-11-13T13:07:54Z",
  "now": {
-  "time_utc": "2026-11-13T11:40:00Z",
+  "time_utc": "2026-11-13T12:35:00Z",
   "temp_c": 16,
   "temp_f": 60.8,
   "precision": "nearest whole \u00b0C",
@@ -92,7 +92,7 @@
   },
   "forecast_highs": [
    {
-    "period": "Friday",
+    "period": "Today",
     "date": "2026-11-13",
     "high_f": 69,
     "would_rank": {
@@ -251,16 +251,7 @@
   "grid": "LIX/61,90",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-13T01:00:00-06:00",
-    "is_daytime": false,
-    "temp_f": 56,
-    "temp_c": 13.33,
-    "precip_chance_pct": 0,
-    "short_forecast": "Clear"
-   },
-   {
-    "name": "Friday",
+    "name": "Today",
     "start": "2026-11-13T06:00:00-06:00",
     "is_daytime": true,
     "temp_f": 69,
@@ -269,7 +260,7 @@
     "short_forecast": "Sunny"
    },
    {
-    "name": "Friday Night",
+    "name": "Tonight",
     "start": "2026-11-13T18:00:00-06:00",
     "is_daytime": false,
     "temp_f": 50,
@@ -375,19 +366,21 @@
     "temp_c": 22.78,
     "precip_chance_pct": 7,
     "short_forecast": "Mostly Sunny"
+   },
+   {
+    "name": "Thursday Night",
+    "start": "2026-11-19T18:00:00-06:00",
+    "is_daytime": false,
+    "temp_f": 61,
+    "temp_c": 16.11,
+    "precip_chance_pct": 8,
+    "short_forecast": "Partly Cloudy"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-13T07:27:11Z",
   "hours": [
-   {
-    "start": "2026-11-13T06:00:00-06:00",
-    "temp_f": 56,
-    "temp_c": 13.33,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "start": "2026-11-13T07:00:00-06:00",
     "temp_f": 56,
@@ -716,6 +709,13 @@
     "temp_c": 11.11,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear"
+   },
+   {
+    "start": "2026-11-15T06:00:00-06:00",
+    "temp_f": 52,
+    "temp_c": 11.11,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
    }
   ]
  },

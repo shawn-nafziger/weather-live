@@ -11,15 +11,15 @@
   "lon": -97.022,
   "history": "Same site as the official Dallas record"
  },
- "as_of_utc": "2026-11-13T12:07:50Z",
+ "as_of_utc": "2026-11-13T13:07:54Z",
  "now": {
-  "time_utc": "2026-11-13T11:40:00Z",
-  "temp_c": 11,
-  "temp_f": 51.8,
+  "time_utc": "2026-11-13T12:35:00Z",
+  "temp_c": 10,
+  "temp_f": 50.0,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 5,
-  "humidity_pct": 66.51,
-  "wind_kmh": 11.12,
+  "humidity_pct": 71.09,
+  "wind_kmh": 7.42,
   "description": "Clear"
  },
  "today_so_far": {
@@ -40,9 +40,9 @@
    "time_utc": "2026-11-13T06:00:00Z"
   },
   "dip_between_reports": {
-   "at_most_f": 50.9,
-   "about_f": 50.0,
-   "time_utc": "2026-11-13T11:30:00Z"
+   "at_most_f": 49.1,
+   "about_f": 48.2,
+   "time_utc": "2026-11-13T12:20:00Z"
   }
  },
  "record": {
@@ -96,7 +96,7 @@
   },
   "forecast_highs": [
    {
-    "period": "Friday",
+    "period": "Today",
     "date": "2026-11-13",
     "high_f": 68,
     "would_rank": {
@@ -265,16 +265,7 @@
   "grid": "FWD/81,109",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-13T05:00:00-06:00",
-    "is_daytime": false,
-    "temp_f": 50,
-    "temp_c": 10.0,
-    "precip_chance_pct": 0,
-    "short_forecast": "Clear"
-   },
-   {
-    "name": "Friday",
+    "name": "Today",
     "start": "2026-11-13T06:00:00-06:00",
     "is_daytime": true,
     "temp_f": 68,
@@ -283,7 +274,7 @@
     "short_forecast": "Sunny"
    },
    {
-    "name": "Friday Night",
+    "name": "Tonight",
     "start": "2026-11-13T18:00:00-06:00",
     "is_daytime": false,
     "temp_f": 48,
@@ -389,19 +380,21 @@
     "temp_c": 21.11,
     "precip_chance_pct": 25,
     "short_forecast": "Chance Showers And Thunderstorms"
+   },
+   {
+    "name": "Thursday Night",
+    "start": "2026-11-19T18:00:00-06:00",
+    "is_daytime": false,
+    "temp_f": 58,
+    "temp_c": 14.44,
+    "precip_chance_pct": 16,
+    "short_forecast": "Slight Chance Rain Showers"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-13T11:06:23Z",
   "hours": [
-   {
-    "start": "2026-11-13T06:00:00-06:00",
-    "temp_f": 50,
-    "temp_c": 10.0,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "start": "2026-11-13T07:00:00-06:00",
     "temp_f": 50,
@@ -730,6 +723,13 @@
     "temp_c": 8.89,
     "precip_chance_pct": 91,
     "short_forecast": "Showers And Thunderstorms"
+   },
+   {
+    "start": "2026-11-15T06:00:00-06:00",
+    "temp_f": 47,
+    "temp_c": 8.33,
+    "precip_chance_pct": 98,
+    "short_forecast": "Rain Showers"
    }
   ]
  },
