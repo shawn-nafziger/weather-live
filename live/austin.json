@@ -11,16 +11,16 @@
   "lon": -97.7605,
   "history": "Same site as the official Austin record"
  },
- "as_of_utc": "2026-11-13T16:07:55Z",
+ "as_of_utc": "2026-11-13T17:07:56Z",
  "now": {
-  "time_utc": "2026-11-13T13:51:00Z",
-  "temp_c": 13.3,
-  "temp_f": 55.9,
-  "precision": "tenths of a degree",
-  "dewpoint_c": 9.4,
-  "humidity_pct": 77.25,
-  "wind_kmh": 11.16,
-  "description": "Clear"
+  "time_utc": "2026-11-13T15:51:00Z",
+  "temp_c": 18.3,
+  "temp_f": 64.9,
+  "precision": "nearest whole \u00b0C",
+  "dewpoint_c": 10.6,
+  "humidity_pct": 60.8,
+  "wind_kmh": 14.76,
+  "description": ""
  },
  "today_so_far": {
   "date_local": "2026-11-13",
@@ -35,9 +35,9 @@
   "low_f": 54.0,
   "low_time_utc": "2026-11-13T12:51:00Z",
   "peak_between_reports": {
-   "at_least_f": 58.1,
-   "about_f": 59.0,
-   "time_utc": "2026-11-13T06:51:00Z"
+   "at_least_f": 64.0,
+   "about_f": 64.9,
+   "time_utc": "2026-11-13T15:51:00Z"
   }
  },
  "record": {
@@ -260,12 +260,12 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-13T14:14:52Z",
+  "issued_utc": "2026-11-13T15:46:20Z",
   "grid": "EWX/155,93",
   "periods": [
    {
     "name": "Today",
-    "start": "2026-11-13T09:00:00-06:00",
+    "start": "2026-11-13T10:00:00-06:00",
     "is_daytime": true,
     "temp_f": 77,
     "temp_c": 25.0,
@@ -392,15 +392,8 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-13T14:14:52Z",
+  "issued_utc": "2026-11-13T15:46:20Z",
   "hours": [
-   {
-    "start": "2026-11-13T10:00:00-06:00",
-    "temp_f": 65,
-    "temp_c": 18.33,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "start": "2026-11-13T11:00:00-06:00",
     "temp_f": 69,
@@ -727,6 +720,13 @@
     "start": "2026-11-15T09:00:00-06:00",
     "temp_f": 59,
     "temp_c": 15.0,
+    "precip_chance_pct": 94,
+    "short_forecast": "Showers And Thunderstorms"
+   },
+   {
+    "start": "2026-11-15T10:00:00-06:00",
+    "temp_f": 60,
+    "temp_c": 15.56,
     "precip_chance_pct": 94,
     "short_forecast": "Showers And Thunderstorms"
    }
