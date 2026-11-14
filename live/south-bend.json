@@ -11,33 +11,33 @@
   "lon": -86.3186,
   "history": "Same station as the official South Bend record (South Bend airport). Also the nearest official city record to Goshen, about 27 miles; a candidate for Goshen's hourly readings (question D2)"
  },
- "as_of_utc": "2026-11-14T09:08:03Z",
+ "as_of_utc": "2026-11-14T10:07:51Z",
  "now": {
-  "time_utc": "2026-11-14T08:45:00Z",
-  "temp_c": -1,
-  "temp_f": 30.2,
+  "time_utc": "2026-11-14T09:50:00Z",
+  "temp_c": 0,
+  "temp_f": 32.0,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": -3,
-  "humidity_pct": 86.29,
-  "wind_kmh": 0,
+  "dewpoint_c": -2,
+  "humidity_pct": 86.39,
+  "wind_kmh": 7.42,
   "description": "Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-14",
-  "readings": 2,
+  "readings": 3,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": -2.2,
-  "high_f": 28.0,
-  "high_time_utc": "2026-11-14T05:54:00Z",
+  "high_c": -1.1,
+  "high_f": 30.0,
+  "high_time_utc": "2026-11-14T08:54:00Z",
   "low_c": -2.2,
   "low_f": 28.0,
   "low_time_utc": "2026-11-14T05:54:00Z",
   "peak_between_reports": {
-   "at_least_f": 29.3,
-   "about_f": 30.2,
-   "time_utc": "2026-11-14T08:45:00Z"
+   "at_least_f": 31.1,
+   "about_f": 32.0,
+   "time_utc": "2026-11-14T09:50:00Z"
   },
   "dip_between_reports": {
    "at_most_f": 27.5,
@@ -250,17 +250,17 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-14T08:00:22Z",
+  "issued_utc": "2026-11-14T09:15:13Z",
   "grid": "IWX/27,64",
   "periods": [
    {
     "name": "Overnight",
-    "start": "2026-11-14T04:00:00-05:00",
+    "start": "2026-11-14T05:00:00-05:00",
     "is_daytime": false,
-    "temp_f": 28,
-    "temp_c": -2.22,
-    "precip_chance_pct": 23,
-    "short_forecast": "Slight Chance Snow Showers"
+    "temp_f": 27,
+    "temp_c": -2.78,
+    "precip_chance_pct": 33,
+    "short_forecast": "Chance Snow Showers"
    },
    {
     "name": "Saturday",
@@ -269,7 +269,7 @@
     "temp_f": 46,
     "temp_c": 7.78,
     "precip_chance_pct": 58,
-    "short_forecast": "Snow Showers Likely then Rain Showers Likely"
+    "short_forecast": "Snow Showers Likely then Rain And Snow Showers Likely"
    },
    {
     "name": "Saturday Night",
@@ -384,13 +384,6 @@
  "hourly": {
   "issued_utc": "2026-11-14T08:00:22Z",
   "hours": [
-   {
-    "start": "2026-11-14T04:00:00-05:00",
-    "temp_f": 31,
-    "temp_c": -0.56,
-    "precip_chance_pct": 8,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "start": "2026-11-14T05:00:00-05:00",
     "temp_f": 30,
@@ -717,6 +710,13 @@
     "start": "2026-11-16T03:00:00-05:00",
     "temp_f": 30,
     "temp_c": -1.11,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Clear"
+   },
+   {
+    "start": "2026-11-16T04:00:00-05:00",
+    "temp_f": 29,
+    "temp_c": -1.67,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear"
    }

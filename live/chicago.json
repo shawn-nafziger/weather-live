@@ -11,29 +11,29 @@
   "lon": -87.9044,
   "history": "Same station as the official Chicago record (ThreadEx, O'Hare since 1980)"
  },
- "as_of_utc": "2026-11-14T09:08:03Z",
+ "as_of_utc": "2026-11-14T10:07:51Z",
  "now": {
-  "time_utc": "2026-11-14T08:45:00Z",
-  "temp_c": 1,
-  "temp_f": 33.8,
+  "time_utc": "2026-11-14T09:50:00Z",
+  "temp_c": 0,
+  "temp_f": 32.0,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": -4,
-  "humidity_pct": 69.27,
+  "humidity_pct": 74.46,
   "wind_kmh": 16.67,
-  "description": "Clear"
+  "description": "Mostly Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-14",
-  "readings": 1,
+  "readings": 2,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
   "high_c": 0.6,
   "high_f": 33.1,
   "high_time_utc": "2026-11-14T07:51:00Z",
-  "low_c": 0.6,
-  "low_f": 33.1,
-  "low_time_utc": "2026-11-14T07:51:00Z",
+  "low_c": 0,
+  "low_f": 32.0,
+  "low_time_utc": "2026-11-14T08:51:00Z",
   "peak_between_reports": {
    "at_least_f": 33.1,
    "about_f": 34.0,
@@ -256,17 +256,17 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-14T07:36:01Z",
+  "issued_utc": "2026-11-14T09:01:09Z",
   "grid": "LOT/66,77",
   "periods": [
    {
     "name": "Overnight",
-    "start": "2026-11-14T01:00:00-06:00",
+    "start": "2026-11-14T03:00:00-06:00",
     "is_daytime": false,
     "temp_f": 30,
     "temp_c": -1.11,
-    "precip_chance_pct": 3,
-    "short_forecast": "Partly Cloudy"
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Clear"
    },
    {
     "name": "Saturday",
@@ -388,15 +388,8 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-14T07:36:01Z",
+  "issued_utc": "2026-11-14T09:01:09Z",
   "hours": [
-   {
-    "start": "2026-11-14T03:00:00-06:00",
-    "temp_f": 33,
-    "temp_c": 0.56,
-    "precip_chance_pct": 0,
-    "short_forecast": "Partly Cloudy"
-   },
    {
     "start": "2026-11-14T04:00:00-06:00",
     "temp_f": 32,
@@ -725,6 +718,13 @@
     "temp_c": 0.0,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear"
+   },
+   {
+    "start": "2026-11-16T03:00:00-06:00",
+    "temp_f": 31,
+    "temp_c": -0.56,
+    "precip_chance_pct": 0,
+    "short_forecast": "Clear"
    }
   ]
  },

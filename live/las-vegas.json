@@ -11,29 +11,39 @@
   "lon": -115.1634,
   "history": "Same site as the official Las Vegas record"
  },
- "as_of_utc": "2026-11-14T09:08:03Z",
+ "as_of_utc": "2026-11-14T10:07:51Z",
  "now": {
-  "time_utc": "2026-11-14T08:45:00Z",
-  "temp_c": 15,
-  "temp_f": 59.0,
+  "time_utc": "2026-11-14T09:50:00Z",
+  "temp_c": 14,
+  "temp_f": 57.2,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 7,
-  "humidity_pct": 58.79,
-  "wind_kmh": 16.67,
+  "humidity_pct": 62.72,
+  "wind_kmh": 29.63,
   "description": "Light Rain"
  },
  "today_so_far": {
   "date_local": "2026-11-14",
-  "readings": 2,
-  "basis": "5-minute readings (whole \u00b0C, approximate)",
-  "approximate": true,
+  "readings": 1,
+  "basis": "hourly reports (tenths of a degree)",
+  "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 16,
-  "high_f": 60.8,
-  "high_time_utc": "2026-11-14T08:20:00Z",
+  "high_c": 15,
+  "high_f": 59.0,
+  "high_time_utc": "2026-11-14T08:56:00Z",
   "low_c": 15,
   "low_f": 59.0,
-  "low_time_utc": "2026-11-14T08:45:00Z"
+  "low_time_utc": "2026-11-14T08:56:00Z",
+  "peak_between_reports": {
+   "at_least_f": 59.9,
+   "about_f": 60.8,
+   "time_utc": "2026-11-14T08:20:00Z"
+  },
+  "dip_between_reports": {
+   "at_most_f": 58.1,
+   "about_f": 57.2,
+   "time_utc": "2026-11-14T09:50:00Z"
+  }
  },
  "record": {
   "series": "Las Vegas area (ThreadEx; airport)",
@@ -251,17 +261,17 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-14T06:33:15Z",
+  "issued_utc": "2026-11-14T09:27:46Z",
   "grid": "VEF/121,94",
   "periods": [
    {
-    "name": "Tonight",
-    "start": "2026-11-13T22:00:00-08:00",
+    "name": "Overnight",
+    "start": "2026-11-14T01:00:00-08:00",
     "is_daytime": false,
     "temp_f": 54,
     "temp_c": 12.22,
-    "precip_chance_pct": 16,
-    "short_forecast": "Mostly Clear then Slight Chance Rain Showers"
+    "precip_chance_pct": 13,
+    "short_forecast": "Mostly Clear"
    },
    {
     "name": "Saturday",
@@ -385,13 +395,6 @@
  "hourly": {
   "issued_utc": "2026-11-14T06:33:15Z",
   "hours": [
-   {
-    "start": "2026-11-14T01:00:00-08:00",
-    "temp_f": 59,
-    "temp_c": 15.0,
-    "precip_chance_pct": 13,
-    "short_forecast": "Partly Cloudy"
-   },
    {
     "start": "2026-11-14T02:00:00-08:00",
     "temp_f": 58,
@@ -718,6 +721,13 @@
     "start": "2026-11-16T00:00:00-08:00",
     "temp_f": 56,
     "temp_c": 13.33,
+    "precip_chance_pct": 0,
+    "short_forecast": "Partly Cloudy"
+   },
+   {
+    "start": "2026-11-16T01:00:00-08:00",
+    "temp_f": 55,
+    "temp_c": 12.78,
     "precip_chance_pct": 0,
     "short_forecast": "Partly Cloudy"
    }
