@@ -11,29 +11,23 @@
   "lon": -115.1634,
   "history": "Same site as the official Las Vegas record"
  },
- "as_of_utc": "2026-11-14T07:07:51Z",
+ "as_of_utc": "2026-11-14T08:07:49Z",
  "now": {
-  "time_utc": "2026-11-14T06:30:00Z",
-  "temp_c": 17,
-  "temp_f": 62.6,
+  "time_utc": "2026-11-14T07:50:00Z",
+  "temp_c": 16,
+  "temp_f": 60.8,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 4,
-  "humidity_pct": 42.03,
-  "wind_kmh": 29.63,
-  "description": "Mostly Cloudy"
+  "dewpoint_c": 6,
+  "humidity_pct": 51.48,
+  "wind_kmh": 20.38,
+  "description": "Light Rain"
  },
  "today_so_far": {
-  "date_local": "2026-11-13",
-  "readings": 17,
-  "basis": "hourly reports (tenths of a degree)",
-  "approximate": false,
-  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 21.7,
-  "high_f": 71.1,
-  "high_time_utc": "2026-11-13T19:56:00Z",
-  "low_c": 13.3,
-  "low_f": 55.9,
-  "low_time_utc": "2026-11-13T09:56:00Z"
+  "date_local": "2026-11-14",
+  "readings": 0,
+  "basis": "5-minute readings (whole \u00b0C, approximate)",
+  "approximate": true,
+  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two."
  },
  "record": {
   "series": "Las Vegas area (ThreadEx; airport)",
@@ -42,7 +36,7 @@
   "rank_today": true,
   "latest_final": {
    "date": "2026-11-12",
-   "is_yesterday": true,
+   "is_yesterday": false,
    "high_f": 74,
    "low_f": 55,
    "high_rank": {
@@ -251,12 +245,12 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-14T05:21:26Z",
+  "issued_utc": "2026-11-14T06:33:15Z",
   "grid": "VEF/121,94",
   "periods": [
    {
     "name": "Tonight",
-    "start": "2026-11-13T22:00:00-08:00",
+    "start": "2026-11-13T23:00:00-08:00",
     "is_daytime": false,
     "temp_f": 54,
     "temp_c": 12.22,
@@ -332,8 +326,8 @@
     "is_daytime": false,
     "temp_f": 44,
     "temp_c": 6.67,
-    "precip_chance_pct": 7,
-    "short_forecast": "Mostly Clear"
+    "precip_chance_pct": 6,
+    "short_forecast": "Partly Cloudy"
    },
    {
     "name": "Wednesday",
@@ -341,7 +335,7 @@
     "is_daytime": true,
     "temp_f": 62,
     "temp_c": 16.67,
-    "precip_chance_pct": 1,
+    "precip_chance_pct": 2,
     "short_forecast": "Mostly Sunny"
    },
    {
@@ -359,16 +353,16 @@
     "is_daytime": true,
     "temp_f": 60,
     "temp_c": 15.56,
-    "precip_chance_pct": 38,
+    "precip_chance_pct": 37,
     "short_forecast": "Chance Rain Showers"
    },
    {
     "name": "Thursday Night",
     "start": "2026-11-19T18:00:00-08:00",
     "is_daytime": false,
-    "temp_f": 43,
-    "temp_c": 6.11,
-    "precip_chance_pct": 38,
+    "temp_f": 44,
+    "temp_c": 6.67,
+    "precip_chance_pct": 37,
     "short_forecast": "Chance Rain Showers"
    },
    {
@@ -377,21 +371,14 @@
     "is_daytime": true,
     "temp_f": 57,
     "temp_c": 13.89,
-    "precip_chance_pct": 14,
+    "precip_chance_pct": 13,
     "short_forecast": "Mostly Sunny"
    }
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-14T05:21:26Z",
+  "issued_utc": "2026-11-14T06:33:15Z",
   "hours": [
-   {
-    "start": "2026-11-13T23:00:00-08:00",
-    "temp_f": 61,
-    "temp_c": 16.11,
-    "precip_chance_pct": 13,
-    "short_forecast": "Partly Cloudy"
-   },
    {
     "start": "2026-11-14T00:00:00-08:00",
     "temp_f": 60,
@@ -718,6 +705,13 @@
     "start": "2026-11-15T22:00:00-08:00",
     "temp_f": 57,
     "temp_c": 13.89,
+    "precip_chance_pct": 0,
+    "short_forecast": "Partly Cloudy"
+   },
+   {
+    "start": "2026-11-15T23:00:00-08:00",
+    "temp_f": 56,
+    "temp_c": 13.33,
     "precip_chance_pct": 0,
     "short_forecast": "Partly Cloudy"
    }
