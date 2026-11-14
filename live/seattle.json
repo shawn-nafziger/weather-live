@@ -11,26 +11,26 @@
   "lon": -122.3136,
   "history": "Same station as the official Seattle record (Sea-Tac)"
  },
- "as_of_utc": "2026-11-14T20:07:53Z",
+ "as_of_utc": "2026-11-14T21:07:49Z",
  "now": {
-  "time_utc": "2026-11-14T19:45:00Z",
-  "temp_c": 13,
-  "temp_f": 55.4,
+  "time_utc": "2026-11-14T20:35:00Z",
+  "temp_c": 14,
+  "temp_f": 57.2,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 7,
-  "humidity_pct": 66.93,
-  "wind_kmh": 14.83,
+  "dewpoint_c": 8,
+  "humidity_pct": 67.15,
+  "wind_kmh": 11.12,
   "description": "Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-14",
-  "readings": 9,
+  "readings": 10,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 12.8,
-  "high_f": 55.0,
-  "high_time_utc": "2026-11-14T18:53:00Z",
+  "high_c": 13.9,
+  "high_f": 57.0,
+  "high_time_utc": "2026-11-14T19:53:00Z",
   "low_c": 8.3,
   "low_f": 46.9,
   "low_time_utc": "2026-11-14T14:53:00Z"
@@ -77,23 +77,24 @@
    }
   },
   "today_high_so_far": {
-   "value_f": 55,
-   "warm_rank": 16,
-   "cool_rank": 66,
+   "value_f": 57,
+   "warm_rank": 11,
+   "cool_rank": 70,
    "years": 82,
    "first_year": 1945,
    "tied_years": [
-    1954
+    2016,
+    2018
    ],
    "standing": "warm",
    "notable": true,
    "since": 2021,
    "record": false,
-   "phrase": "already the 16th warmest November 14 high (tied) of 82 since 1945, warmest since 2021"
+   "phrase": "already the 11th warmest November 14 high (tied) of 82 since 1945, warmest since 2021"
   },
   "forecast_highs": [
    {
-    "period": "Today",
+    "period": "This Afternoon",
     "date": "2026-11-14",
     "high_f": 57,
     "would_rank": {
@@ -259,12 +260,12 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-14T18:26:58Z",
+  "issued_utc": "2026-11-14T19:55:50Z",
   "grid": "SEW/124,60",
   "periods": [
    {
-    "name": "Today",
-    "start": "2026-11-14T10:00:00-08:00",
+    "name": "This Afternoon",
+    "start": "2026-11-14T12:00:00-08:00",
     "is_daytime": true,
     "temp_f": 57,
     "temp_c": 13.89,
@@ -391,15 +392,8 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-14T18:26:58Z",
+  "issued_utc": "2026-11-14T19:55:50Z",
   "hours": [
-   {
-    "start": "2026-11-14T12:00:00-08:00",
-    "temp_f": 54,
-    "temp_c": 12.22,
-    "precip_chance_pct": 40,
-    "short_forecast": "Chance Light Rain"
-   },
    {
     "start": "2026-11-14T13:00:00-08:00",
     "temp_f": 55,
@@ -726,6 +720,13 @@
     "start": "2026-11-16T11:00:00-08:00",
     "temp_f": 48,
     "temp_c": 8.89,
+    "precip_chance_pct": 50,
+    "short_forecast": "Chance Light Rain"
+   },
+   {
+    "start": "2026-11-16T12:00:00-08:00",
+    "temp_f": 49,
+    "temp_c": 9.44,
     "precip_chance_pct": 50,
     "short_forecast": "Chance Light Rain"
    }
