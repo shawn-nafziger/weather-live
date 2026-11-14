@@ -32,6 +32,7 @@ import pandas as pd
 from scipy import stats
 
 from albers import project
+import records  # noqa: E402
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 import history_store as store  # noqa: E402
@@ -220,9 +221,9 @@ def load(slug, path=None):
 
 
 # ------------------------------------------------------------------ the numbers
-def build(slug, path=None):
+def build(slug, path=None, h=None):
     city = CITIES[slug]
-    h = load(slug, path)
+    h = load(slug, path) if h is None else h
     have = h.dropna(subset=["Hi", "Lo"])
     if have.empty:
         raise QualityError("no days with both a high and a low")
@@ -803,7 +804,7 @@ def city_seo(data, description):
         "isBasedOn": NOAA, "creator": ORG, "publisher": ORG, "isAccessibleForFree": True, "dateModified": asof,
         "distribution": {"@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": url + "data.json"},
     }
-    title = f"{c['name']}, {c['st']} Weather Almanac"
+    title = f"{c['name']} Weather History"
     page = {"@type": "WebPage", "@id": url + "#webpage", "url": url, "name": title, "description": description,
             "inLanguage": "en-US", "isPartOf": {"@id": MAIN_SITE + "#website"}, "publisher": ORG,
             "about": {"@id": url + "#place"}, "mainEntity": {"@id": url + "#dataset"}, "dateModified": asof,
@@ -820,11 +821,12 @@ def index_seo(n, description, asof):
     return head_seo(url, f"Weather Almanac: {n} US Cities and Their Records", description, [page, trail])
 
 
-def write_search_files(built, out_dir):
+def write_search_files(built, out_dir, recs=()):
     """sitemap.xml in the Almanac folder (tallorderdigital.com/weather/almanac/sitemap.xml), listed in the main
-    site's robots.txt: the Almanac's front page and each city."""
+    site's robots.txt: the Almanac's front page, each city and each city's records page."""
     asof = max(d["asof"] for d in built)
-    rows = [(ALMANAC, asof)] + sorted((f"{ALMANAC}{d['slug']}/", d["asof"]) for d in built)
+    rows = [(ALMANAC, asof)] + sorted([(f"{ALMANAC}{d['slug']}/", d["asof"]) for d in built]
+                                      + [(f"{ALMANAC}{r['slug']}/records/", r["asof"]) for r in recs])
     xml = "\n".join(['<?xml version="1.0" encoding="UTF-8"?>',
                       '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
                       *(f"  <url><loc>{u}</loc><lastmod>{m}</lastmod></url>" for u, m in rows),
@@ -885,14 +887,14 @@ def switch_html(slug):
     return f'<nav class="switch" aria-label="Choose the record">{links}</nav>'
 
 
-def render(data):
+def render(data, has_records=False):
     tpl = (HERE / "template.html").read_text(encoding="utf-8")
     c, y = data["city"], data["yesterday"]
     asof = date.fromisoformat(data["asof"])
     t = data["text"]
     # The template's meta description, filled the same way, so the share tags and JSON-LD say what it says.
     description = (f"{y['lede']} {c['name']}'s official weather record since {data['first_year']}: yesterday in context, "
-                   "the year so far, the record book, how the climate has changed, and rain and snow.")
+                   "the year so far, how the climate has changed, and rain and snow.")
     fill = {
         # Section headings and sentences are written into the HTML too (the page script rewrites them with the same
         # text), so search engines and AI tools that don't run scripts still read them. Headings are plain text;
@@ -906,6 +908,10 @@ def render(data):
         "ASOF_WORDS": f"{asof:%B} {asof.day}, {asof.year}", "LEDE": y["lede"],
         "RECORD_NAME": c["record_name"], "RECORD_KIND": c["record_kind"],
         "SLUG": data["slug"], "SWITCH": switch_html(data["slug"]), "MAIN": MAIN_SITE,
+        # The city's pages as plain links, and a link from the record book to the records page (Nov 12, 2026)
+        "TABS": records.tabs_html(data["slug"], "", "").replace("{CITYNAME}", html.escape(c["name"])) if has_records else "",
+        "REC_LINK": (f'<p class="more"><a href="records/">Every date\'s record high and low in {html.escape(c["name"])} →</a></p>'
+                     if has_records else ""),
         "DATA": json.dumps(data, separators=(",", ":")),
     }
     for k, v in fill.items():
@@ -916,13 +922,63 @@ def render(data):
     return tpl
 
 
-def write_city(slug, out_dir, history=None):
-    data = build(slug, history)
+def write_city(slug, out_dir, history=None, today=None):
+    """Writes the overview page. Returns (overview data, records data or None). The records page is written by
+    write_records once every place has been tried, so its "nearby" links only point at pages that exist."""
+    h = load(slug, history)
+    data = build(slug, history, h=h)
+    rd, why = None, None
+    if records.has_branch_pages(slug, CITIES):
+        try:
+            rd = records.build_records(data, h, CITIES, today=today)
+        except records.RecordsError as e:
+            why = str(e)
     out = out_dir / "almanac" / slug
     out.mkdir(parents=True, exist_ok=True)
     (out / "data.json").write_text(json.dumps(data, separators=(",", ":")), encoding="utf-8")
-    (out / "index.html").write_text(render(data), encoding="utf-8")
-    return data
+    (out / "index.html").write_text(render(data, has_records=rd is not None), encoding="utf-8")
+    data["_records_skip"] = why
+    return data, rd
+
+
+def records_seo(rd):
+    c, slug = rd["city"], rd["slug"]
+    city_url, url = f"{ALMANAC}{slug}/", f"{ALMANAC}{slug}/records/"
+    place_name = f"{c['name']}, {c['state']}"
+    place = {"@type": "Place", "@id": city_url + "#place", "name": place_name,
+             "address": {"@type": "PostalAddress", "addressLocality": c["name"], "addressRegion": c["st"], "addressCountry": "US"},
+             "geo": {"@type": "GeoCoordinates", "latitude": c["lat"], "longitude": c["lon"]}}
+    dataset = {
+        "@type": "Dataset", "@id": url + "#dataset",
+        "name": f"{place_name} temperature records, {rd['first_year']} to {rd['asof'][:4]}",
+        "description": (f"Record high and low temperature for every date and month in {place_name}, with the years that set "
+                        f"them and the 1991-2020 normals, from {c['record_name']}. Updated daily."),
+        "url": url, "temporalCoverage": f"{rd['first_year']}-01-01/{rd['asof']}",
+        "spatialCoverage": {"@id": city_url + "#place"},
+        "variableMeasured": ["Record daily maximum temperature (°F)", "Record daily minimum temperature (°F)"],
+        "isBasedOn": NOAA, "creator": ORG, "publisher": ORG, "isAccessibleForFree": True, "dateModified": rd["asof"],
+    }
+    page = {"@type": "WebPage", "@id": url + "#webpage", "url": url, "name": rd["title"], "description": rd["description"],
+            "inLanguage": "en-US", "isPartOf": {"@id": MAIN_SITE + "#website"}, "publisher": ORG,
+            "about": {"@id": city_url + "#place"}, "mainEntity": {"@id": url + "#dataset"}, "dateModified": rd["asof"],
+            "breadcrumb": {"@id": url + "#breadcrumb"}}
+    return head_seo(url, rd["title"], rd["description"],
+                    [page, dataset, place, crumbs(url, [(place_name, city_url), ("Records", url)])])
+
+
+def records_nearby_html(slug, with_records, n=6):
+    """Links to the records pages of the nearest places that have one."""
+    here = CITIES[slug]
+    others = sorted((miles_between(here, CITIES[s]), s) for s in with_records if s != slug)[:n]
+    return "".join(f'<li><a href="../../{s}/records/">{html.escape(CITIES[s]["name"])}, {CITIES[s]["st"]} records</a> · {d:,.0f} miles</li>'
+                   for d, s in others)
+
+
+def write_records(rd, out_dir, with_records, today=None):
+    page = records.render_records(rd, records_seo(rd), records_nearby_html(rd["slug"], with_records), MAIN_SITE, today=today)
+    out = out_dir / "almanac" / rd["slug"] / "records"
+    out.mkdir(parents=True, exist_ok=True)
+    (out / "index.html").write_text(page, encoding="utf-8")
 
 
 def index_row(d):
@@ -990,12 +1046,17 @@ def main():
     if not a.all and not a.city:
         ap.error("name a city or use --all")
     slugs = [s for s in CITIES if store.exists(HISTORY_DIR, s)] if a.all else [a.city]
-    built, failed = [], []
+    built, failed, recs = [], [], []
     for slug in slugs:
         try:
-            data = write_city(slug, out_dir, None if a.all else a.history)
+            data, rd = write_city(slug, out_dir, None if a.all else a.history)
             built.append(data)
+            if rd:
+                recs.append(rd)
             print(f"{CITIES[slug]['name']:<14} OK   data through {data['asof']}: {summary(data)}")
+            why = data.pop("_records_skip", None)
+            if why:
+                print(f"{CITIES[slug]['name']:<14} SKIP records page not written, a claim isn't true for this place: {why}")
         except QualityError as e:
             failed.append(slug)
             print(f"{CITIES[slug]['name']:<14} REVIEW the record looks wrong, page not written: {e}")
@@ -1005,10 +1066,15 @@ def main():
         except Exception as e:
             failed.append(slug)
             print(f"{CITIES[slug]['name']:<14} FAIL {type(e).__name__}: {e}")
+    with_records = {r["slug"] for r in recs}
+    if not a.all:   # one place: link the neighbors that would have a records page
+        with_records |= {s for s in CITIES if store.exists(HISTORY_DIR, s) and records.has_branch_pages(s, CITIES)}
+    for rd in recs:
+        write_records(rd, out_dir, with_records)
     if a.all and built:
         write_index(built, out_dir)
-        write_search_files(built, out_dir)
-    print(f"{len(built)} of {len(slugs)} Almanac pages written to {out_dir}.")
+        write_search_files(built, out_dir, recs)
+    print(f"{len(built)} of {len(slugs)} Almanac pages written to {out_dir}, and {len(recs)} records pages.")
     return 1 if not built else 0
 
 

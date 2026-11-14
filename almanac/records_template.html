@@ -1,0 +1,718 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{{TITLE}} · Tall Order Digital</title>
+<meta name="description" content="{{DESCRIPTION}}">
+{{HEAD_SEO}}
+<link rel="icon" href="{{MAIN}}favicon.ico" sizes="48x48">
+<link rel="icon" href="{{MAIN}}assets/brand/tod-app-icon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<script>try{var t=localStorage.getItem("tod-theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
+<style>
+/* Tokens: the site's shared set (tallorderdigital-site/assets/site.css), plus the
+   playbook's data roles: --amber signal, --edge at the edge, --ghost noise,
+   --navy comparison, --funnel bands (Sky, translucent). */
+:root {
+  --bg: #f3f4ef; --surface: #ffffff; --ink: #201914; --ink-2: #4a403a; --ink-3: #6e645d;
+  --rule: #dddad3; --ghost: #cdc9c1; --navy: #0a3746; --amber: #b36000; --edge: #e3b88a;
+  --funnel: rgba(127, 196, 214, .3); --recband: rgba(74, 64, 58, .09);
+  --logo-2: #0a3746; --logo-3: #366f80; --logo-4: #62a8bb; --logo-ink: #201914; --logo-sub: #4a403a;
+  --chip-final: #d2f4e0;
+  --font-display: "Barlow Semi Condensed", "Arial Narrow", "Roboto Condensed", sans-serif;
+  --font-body: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  --font-data: "IBM Plex Mono", ui-monospace, "Cascadia Mono", Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #03222c; --surface: #0a3746; --ink: #f3f4ef; --ink-2: #dddad3; --ink-3: #9fb1b8; --rule: #1e3a44;
+    --ghost: #3a5762; --navy: #7fc4d6; --amber: #f99a2b; --edge: #8f6230; --funnel: rgba(127, 196, 214, .25);
+    --recband: rgba(243, 244, 239, .07);
+    --logo-2: #7fc4d6; --logo-3: #4f8d9e; --logo-4: #2e6272; --logo-ink: #f3f4ef; --logo-sub: #dddad3;
+    --chip-final: rgba(210, 244, 224, .15); color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #03222c; --surface: #0a3746; --ink: #f3f4ef; --ink-2: #dddad3; --ink-3: #9fb1b8; --rule: #1e3a44;
+  --ghost: #3a5762; --navy: #7fc4d6; --amber: #f99a2b; --edge: #8f6230; --funnel: rgba(127, 196, 214, .25);
+  --recband: rgba(243, 244, 239, .07);
+  --logo-2: #7fc4d6; --logo-3: #4f8d9e; --logo-4: #2e6272; --logo-ink: #f3f4ef; --logo-sub: #dddad3;
+  --chip-final: rgba(210, 244, 224, .15); color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 400 17px/1.6 var(--font-body);
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+main { max-width: 860px; margin: 0 auto; padding-block: 44px 72px; display: grid; gap: 64px; }
+.col { max-width: 680px; }
+h1, h2 { font-family: var(--font-display); font-weight: 700; text-wrap: balance; margin: 0; line-height: .95; text-transform: uppercase; }
+h1 { font-size: clamp(46px, 9.5vw, 88px); }
+h2 { font-size: clamp(26px, 4.6vw, 38px); }
+h3 { font: 600 16px/1.35 var(--font-body); margin: 0; }
+.kicker { font: 500 12px/1.2 var(--font-data); letter-spacing: .14em; text-transform: uppercase; color: var(--ink-3); margin: 0 0 14px; }
+.dek { font-size: 21px; line-height: 1.45; color: var(--ink-2); margin: 20px 0 0; max-width: 34em; }
+.byline { font: 400 13px/1.5 var(--font-data); color: var(--ink-3); margin: 22px 0 0; display: flex; flex-wrap: wrap; gap: 6px 12px; align-items: center; }
+.chip { display: inline-flex; align-items: center; gap: 6px; font: 500 11px/1 var(--font-data); letter-spacing: .1em; text-transform: uppercase;
+  color: var(--ink); background: var(--chip-final); padding: 6px 9px; border-radius: 999px; }
+.chip svg { width: 12px; height: 12px; }
+p { margin: 0; }
+section { display: grid; gap: 20px; }
+.sec-num { font: 500 12px/1 var(--font-data); letter-spacing: .14em; text-transform: uppercase; color: var(--ink-3); border-top: 2px solid var(--ink); padding-top: 12px; }
+.prose { display: grid; gap: 14px; max-width: 680px; }
+strong { font-weight: 600; color: var(--ink); }
+.sig { color: var(--amber); font-weight: 600; }
+
+.kicker .up { color: inherit; text-decoration-color: var(--amber); text-underline-offset: 3px; }
+.switch { display: grid; grid-template-columns: 1fr 1fr; border: 1px solid var(--rule); border-radius: 8px; overflow: hidden; background: var(--surface); }
+.switch a { display: grid; gap: 2px; padding: 12px 16px; min-height: 44px; text-decoration: none; color: var(--ink-2); }
+.switch a + a { border-left: 1px solid var(--rule); }
+.switch a b { font: 600 15px/1.3 var(--font-body); color: var(--ink); }
+.switch a span { font: 400 12px/1.3 var(--font-data); color: var(--ink-3); }
+.switch a[aria-current="page"] { background: var(--bg); box-shadow: inset 0 -3px 0 var(--amber); }
+.switch a:not([aria-current]):hover b { color: var(--amber); }
+.switch a:focus-visible { outline: 2px solid var(--amber); outline-offset: -2px; }
+@media (max-width: 480px) { .switch { grid-template-columns: 1fr; } .switch a + a { border-left: 0; border-top: 1px solid var(--rule); } }
+.toc { display: flex; flex-wrap: wrap; gap: 8px; }
+.toc a { font: 500 12px/1 var(--font-data); letter-spacing: .08em; text-transform: uppercase; color: var(--ink-2); text-decoration: none;
+  border: 1px solid var(--rule); border-radius: 999px; padding: 12px 14px; min-height: 44px; display: inline-flex; align-items: center; }
+.toc a:hover { color: var(--amber); border-color: var(--amber); }
+
+.stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-top: 2px solid var(--ink); border-bottom: 1px solid var(--rule); }
+.stat { padding: 16px 16px 16px 0; display: grid; gap: 6px; align-content: start; }
+.stat + .stat { padding-left: 16px; border-left: 1px solid var(--rule); }
+.stat .lab { font: 500 11px/1.2 var(--font-data); letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); }
+.stat b { font: 700 clamp(34px, 5.4vw, 48px)/.95 var(--font-display); font-variant-numeric: tabular-nums; }
+.stat b.sig { color: var(--amber); }
+.stat span { font-size: 14px; line-height: 1.4; color: var(--ink-2); }
+@media (max-width: 640px) { .stats { grid-template-columns: 1fr 1fr; } .stat:nth-child(3) { padding-left: 0; border-left: 0; } .stat:nth-child(n+3) { border-top: 1px solid var(--rule); } }
+
+.figure { background: var(--surface); border: 1px solid var(--rule); border-radius: 6px; padding: 20px 20px 14px; display: grid; gap: 12px; min-width: 0; }
+.fig-title { font: 600 15px/1.35 var(--font-body); margin: 0; }
+.fig-sub { font-size: 13px; color: var(--ink-3); margin: 2px 0 0; }
+.keys { display: grid; gap: 3px; font-size: 13px; line-height: 1.45; color: var(--ink-2); }
+.keys span::before { content: ""; display: inline-block; width: 12px; height: 12px; border-radius: 2px; margin-right: 8px; vertical-align: -2px; background: var(--k); }
+.keys span.dot::before { border-radius: 50%; }
+.keys span.line::before { height: 3px; vertical-align: 3px; }
+.keys span.bar::before { height: 6px; vertical-align: 1px; border-radius: 3px; opacity: .55; }
+.keys b { font-weight: 600; }
+.k-sig { --k: var(--amber); } .k-sig b { color: var(--amber); }
+.k-edge { --k: var(--edge); }
+.k-noise { --k: var(--ghost); }
+.k-navy { --k: var(--navy); } .k-navy b { color: var(--navy); }
+.k-band { --k: var(--funnel); }
+.k-rec { --k: var(--recband); }
+.k-ink { --k: var(--ink-2); }
+.chart { position: relative; width: 100%; min-width: 0; }
+.chart svg { display: block; width: 100%; height: auto; overflow: visible; }
+.chart text { font-family: var(--font-data); font-size: 11px; fill: var(--ink-3); }
+.chart .lbl { fill: var(--ink-2); font-size: 12px; }
+.chart .lbl-strong { fill: var(--ink); font-weight: 500; font-size: 12px; }
+.chart .grid { stroke: var(--rule); stroke-width: 1; }
+.chart .zero { stroke: var(--ink-3); stroke-width: 1; }
+.chart [data-tip] { cursor: default; }
+.two { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+@media (max-width: 640px) { .two { grid-template-columns: 1fr; } }
+.source { font: 400 12px/1.4 var(--font-data); color: var(--ink-3); }
+.tip { position: absolute; pointer-events: none; background: var(--ink); color: var(--bg); font: 400 12px/1.45 var(--font-body); padding: 8px 10px;
+  border-radius: 6px; max-width: 240px; opacity: 0; transition: opacity .12s; z-index: 3; white-space: nowrap; }
+.tip b { font-weight: 600; }
+.tip.on { opacity: 1; }
+.callout { border-left: 3px solid var(--amber); padding: 4px 0 4px 16px; font-size: 19px; line-height: 1.45; max-width: 640px; }
+details { border-top: 1px solid var(--rule); padding-top: 10px; }
+summary { cursor: pointer; font: 500 13px/1.4 var(--font-data); color: var(--ink-2); min-height: 32px; display: flex; align-items: center; }
+summary:focus-visible, .toc a:focus-visible, a:focus-visible, .theme-toggle:focus-visible { outline: 2px solid var(--amber); outline-offset: 2px; border-radius: 4px; }
+.tablewrap { overflow: auto; margin-top: 10px; max-height: 360px; }
+table { border-collapse: collapse; font: 400 13px/1.4 var(--font-data); font-variant-numeric: tabular-nums; width: 100%; }
+th, td { text-align: right; padding: 4px 10px; border-bottom: 1px solid var(--rule); white-space: nowrap; }
+th:first-child, td:first-child { text-align: left; }
+th { color: var(--ink-3); font-weight: 500; position: sticky; top: 0; background: var(--surface); }
+.book { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+@media (max-width: 560px) { .book { grid-template-columns: 1fr; } }
+.book table td:last-child { font-weight: 500; color: var(--ink); }
+.book h3 { margin-bottom: 6px; }
+.howto { font-size: 15px; color: var(--ink-2); max-width: 680px; }
+.howto summary { font-size: 13px; }
+.howto ul { margin: 10px 0 0; padding-left: 20px; display: grid; gap: 6px; }
+.method { display: grid; gap: 12px; font-size: 15px; color: var(--ink-2); max-width: 680px; }
+.method h3 { font: 600 13px/1.3 var(--font-data); letter-spacing: .12em; text-transform: uppercase; color: var(--ink-3); }
+.method ul { margin: 0; padding-left: 20px; display: grid; gap: 6px; }
+.method a, .prose a { color: inherit; text-decoration-color: var(--amber); text-underline-offset: 3px; }
+@media (prefers-reduced-motion: reduce) { .tip { transition: none; } }
+
+/* Site chrome: shared with the rest of tallorderdigital.com */
+.site-bar, .site-foot { max-width: 860px; margin: 0 auto; }
+.site-bar { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 18px 0 14px; border-bottom: 1px solid var(--rule); }
+.site-bar a { color: inherit; text-decoration: none; }
+.site-bar a:hover { color: var(--amber); }
+.site-nav a[aria-current="page"] { color: var(--ink); box-shadow: inset 0 -2px 0 var(--amber); padding-bottom: 4px; }
+.site-nav { display: flex; gap: 18px; align-items: center; font: 500 12px/1 var(--font-data); letter-spacing: .12em; text-transform: uppercase; color: var(--ink-2); }
+@media (max-width: 420px) { .site-bar { flex-wrap: wrap; gap: 4px 8px; } .site-nav { gap: 12px; letter-spacing: .08em; margin-left: auto; } }
+.brand { display: inline-flex; align-items: center; gap: 10px; color: var(--ink); }
+.brand .mark { width: 42px; height: 42px; flex: none; }
+.mark .m-o { fill: #f99a2b; } .mark .m-2 { fill: var(--logo-2); } .mark .m-3 { fill: var(--logo-3); } .mark .m-4 { fill: var(--logo-4); }
+.wm { display: grid; line-height: 1; font-family: var(--font-display); text-transform: uppercase; }
+.wm-1 { color: var(--logo-ink); font-weight: 700; font-size: 23px; letter-spacing: .01em; white-space: nowrap; }
+.wm-2 { font-weight: 600; font-size: 8.4px; letter-spacing: .52em; color: var(--logo-sub); margin: 3px 0 0 2px; }
+.theme-toggle { display: inline-grid; place-items: center; width: 44px; height: 44px; margin: -12px -12px -12px -6px; padding: 0; border: 0; border-radius: 50%;
+  background: transparent; color: var(--ink-2); cursor: pointer; }
+.theme-toggle:hover { color: var(--amber); }
+.theme-toggle svg { width: 20px; height: 20px; }
+.theme-toggle .i-sun { display: none; }
+.theme-toggle[data-showing="dark"] .i-sun { display: block; }
+.theme-toggle[data-showing="dark"] .i-moon { display: none; }
+.site-foot { border-top: 1px solid var(--rule); padding: 20px 0 40px; display: grid; gap: 6px; font: 400 12px/1.5 var(--font-data); color: var(--ink-3); }
+.site-foot a { color: var(--ink-2); }
+/* site-header:start */
+/* Site header (sitewide, Nov 2, 2026): pinned to the top while you scroll.
+   On phones (680px and narrower) it slides away while you scroll down and comes back as soon as you scroll up
+   (assets/site-header.js). Menu (Nov 8, 2026): NBA, Weather, More stories ("More" on narrow phones), About,
+   Subscribe (outlined; an envelope icon on phones), then the search icon and the light/dark button. The menu itself
+   is written by tools/apply-header.py.
+   Master copy: tallorderdigital-site/assets/site-header.css. Self-contained pages (stories, dashboards)
+   carry an inline copy written by tools/apply-header.py; edit this file, then re-run that tool. */
+:root { --header-h: 76px; }
+html { scroll-padding-top: calc(var(--header-h) + 12px); }
+.site-bar { position: sticky; top: 0; z-index: 40; background: var(--bg);
+  box-shadow: 0 0 0 100vmax var(--bg); clip-path: inset(0 -100vmax); transition: transform .2s ease; }
+.site-bar.is-away { transform: translateY(-100%); }
+@media (prefers-reduced-motion: reduce) { .site-bar { transition: none; } }
+.nav-search { display: inline-grid; place-items: center; width: 44px; height: 44px; margin: -12px -10px -12px -6px;
+  border-radius: 50%; color: var(--ink-2); }
+.nav-search svg { width: 20px; height: 20px; }
+.site-bar .nav-search:hover { color: var(--amber); }
+.site-nav .nav-search[aria-current="page"] { color: var(--ink); box-shadow: none; padding-bottom: 0; }
+.site-bar .nav-search:focus-visible { outline: 2px solid var(--amber); outline-offset: -4px; }
+/* Subscribe (Nov 4, 2026): the one outlined menu item, so the weekly email is easy to find. Ink, never orange
+   (orange is reserved for data meaning). Text on wider screens, an envelope icon on phones. */
+.site-nav .nav-sub { display: inline-flex; align-items: center; gap: 6px; padding: 7px 11px; margin: -8px 0;
+  border: 1px solid var(--ink-3); border-radius: 999px; color: var(--ink); }
+.nav-sub svg { display: none; width: 20px; height: 20px; }
+.site-bar .nav-sub:hover { color: var(--amber); border-color: var(--amber); }
+.site-nav .nav-sub[aria-current="page"] { box-shadow: none; padding-bottom: 7px; border-color: var(--ink); }
+.site-bar .nav-sub:focus-visible { outline: 2px solid var(--amber); outline-offset: 2px; }
+@media (max-width: 680px) {
+  .site-nav .nav-sub { width: 44px; height: 44px; padding: 0; margin: -12px -6px; justify-content: center; border: 0; color: var(--ink-2); }
+  .nav-sub .t { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .nav-sub svg { display: block; }
+  .site-nav .nav-sub[aria-current="page"] { color: var(--ink); padding-bottom: 0; }
+}
+/* "More stories" shortens to "More" where the menu would otherwise not fit on one line (its aria-label keeps the full name). */
+@media (max-width: 480px) { .nav-long { display: none; } }
+/* Thin divider before About (Nov 9, 2026): topics on the left, then About, Subscribe and the tools. */
+.site-nav .nav-about { position: relative; margin-left: 14px; }
+.site-nav .nav-about::before { content: ""; position: absolute; left: -17px; top: 50%; width: 1px; height: 16px; margin-top: -8px;
+  background: var(--ink-3); opacity: .55; pointer-events: none; }
+@media (max-width: 680px) {
+  .site-nav .nav-about { margin-left: 8px; }
+  .site-nav .nav-about::before { left: -11px; height: 14px; margin-top: -7px; }
+}
+/* Narrowest phones (360px and under): tighter menu so everything fits on one row with the divider. */
+@media (max-width: 360px) {
+  .site-bar .site-nav { gap: 8px; letter-spacing: .04em; }
+  .site-bar .site-nav .nav-about { margin-left: 6px; }
+  .site-bar .site-nav .nav-about::before { left: -8px; }
+}
+/* site-header:end */
+/* Records page (Nov 12, 2026): tabs, tiles, month tables. Record high wears the signal color and record low the
+   comparison color, in the intro, the strip and the chart (Shawn's call, Nov 10: hot = orange, cold = blue). */
+.tabs { display: flex; flex-wrap: wrap; border: 1px solid var(--rule); border-radius: 8px; overflow: hidden; background: var(--surface); }
+.tabs a { flex: 1 1 110px; display: grid; gap: 2px; padding: 12px 16px; min-height: 44px; text-decoration: none; color: var(--ink-2); border-right: 1px solid var(--rule); }
+.tabs a:last-child { border-right: 0; }
+.tabs a b { font: 600 15px/1.3 var(--font-body); color: var(--ink); }
+.tabs a span { font: 400 12px/1.3 var(--font-data); color: var(--ink-3); }
+.tabs a[aria-current="page"] { background: var(--bg); box-shadow: inset 0 -3px 0 var(--amber); }
+.tabs a:not([aria-current]):hover b { color: var(--amber); }
+.tabs a:focus-visible { outline: 2px solid var(--amber); outline-offset: -2px; }
+.dek strong.t-hi, .t-hi { color: var(--amber); }
+.dek strong.t-lo, .t-lo { color: var(--navy); }
+.tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; }
+.tile { background: var(--surface); border: 1px solid var(--rule); border-radius: 8px; padding: 16px 18px; display: grid; gap: 6px; align-content: start; }
+.tile .lab { font: 500 11px/1.3 var(--font-data); letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); }
+.tile .big { font: 700 46px/1 var(--font-display); font-variant-numeric: tabular-nums; }
+.tile .when { font: 400 13px/1.4 var(--font-data); color: var(--ink-2); }
+.strip { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 20px; background: var(--surface); border: 1px solid var(--rule); border-radius: 8px; padding: 12px 16px; font-size: 15px; color: var(--ink-2); }
+.strip b { font: 600 17px/1 var(--font-data); }
+.strip .lab { font: 500 11px/1.3 var(--font-data); letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); }
+.strip a { margin-left: auto; font-size: 14px; color: var(--ink); text-decoration-color: var(--amber); text-underline-offset: 3px; }
+.tbl { overflow-x: auto; border: 1px solid var(--rule); border-radius: 8px; background: var(--surface); }
+.tbl table { min-width: 560px; font: 400 14px/1.4 var(--font-body); }
+.tbl caption { text-align: left; padding: 12px 14px 4px; font: 600 15px/1.35 var(--font-body); }
+.tbl th, .tbl td { padding: 7px 14px; border-top: 1px solid var(--rule); border-bottom: 0; text-align: left; vertical-align: top; white-space: normal; }
+.tbl thead th { font: 500 11px/1.3 var(--font-data); letter-spacing: .08em; text-transform: uppercase; color: var(--ink-3); border-top: 0; position: static; }
+.tbl tbody th { font-weight: 600; white-space: nowrap; color: var(--ink); }
+.tbl .num { font: 500 15px/1.4 var(--font-data); white-space: nowrap; color: var(--ink); }
+.tbl .yr { font: 400 13px/1.4 var(--font-data); color: var(--ink-2); }
+.tbl tr.today > * { background: var(--bg); }
+.tbl tr.today > th { box-shadow: inset 3px 0 0 var(--amber); }
+.months { display: flex; flex-wrap: wrap; gap: 8px; }
+.months a { font: 500 12px/1 var(--font-data); letter-spacing: .08em; text-transform: uppercase; color: var(--ink-2); text-decoration: none;
+  border: 1px solid var(--rule); border-radius: 999px; padding: 0 12px; min-height: 44px; display: inline-flex; align-items: center; background: var(--surface); }
+.months a[aria-current] { border-color: var(--ink); color: var(--ink); }
+.months a:hover { color: var(--amber); border-color: var(--amber); }
+.mlist { display: grid; gap: 8px; }
+details.month { border: 1px solid var(--rule); border-radius: 8px; background: var(--surface); padding: 0; }
+details.month summary { padding: 12px 16px; min-height: 44px; font: 600 15px/1.3 var(--font-body); color: var(--ink); display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+details.month summary span { font: 400 12px/1.3 var(--font-data); color: var(--ink-3); }
+details.month .tbl { border: 0; border-top: 1px solid var(--rule); border-radius: 0 0 8px 8px; }
+.cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; }
+.cols ul { margin: 0; padding-left: 20px; display: grid; gap: 6px; }
+/* grid children may shrink below their content (the wide tables scroll inside their own box) */
+main > *, section > *, .mlist > *, details.month > * { min-width: 0; }
+.tbl { max-width: 100%; }
+/* subscribe:start */
+/* Weekly-email signup (Buttondown). Same markup on the home page, subscribe/ and, later, the end of each story.
+   White card, ink button (orange is reserved for data meaning; the button turns Burnt/Orange on hover only). */
+.subscribe { background: var(--surface); border: 1px solid var(--rule); border-radius: 10px; padding: 24px; display: grid; gap: 12px; max-width: 640px; }
+.subscribe .kicker { margin: 0; }
+.subscribe h2 { font-size: clamp(26px, 4vw, 32px); }
+.subscribe .sub-dek { color: var(--ink-2); max-width: 34em; }
+.sub-form { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 4px; }
+.sub-form input[type="email"] { flex: 1 1 220px; min-width: 0; min-height: 44px; padding: 10px 12px; font: 400 16px/1.2 var(--font-body);
+  color: var(--ink); background: var(--bg); border: 1px solid var(--ghost); border-radius: 6px; }
+.sub-form input[type="email"]::placeholder { color: var(--ink-3); }
+.sub-form button { min-height: 44px; padding: 10px 20px; font: 600 15px/1 var(--font-body); color: var(--bg); background: var(--ink);
+  border: 0; border-radius: 6px; cursor: pointer; }
+.sub-form button:hover { background: var(--amber); }
+.sub-form input:focus-visible, .sub-form button:focus-visible { outline: 2px solid var(--amber); outline-offset: 2px; }
+.subscribe .sub-note { font: 400 12px/1.5 var(--font-data); color: var(--ink-3); }
+.subscribe .sub-note a { color: var(--ink-2); }
+.subscribe .sub-done { font-weight: 600; }
+.subscribe .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.subscribe.sub-end { margin-top: 8px; width: 100%; }
+.subscribe, .subscribe * { box-sizing: border-box; }
+/* subscribe:end */
+/* share:start */
+/* Share row at the end of each story, just above the subscribe card. Outlined ink button, so it ranks below
+   Subscribe (filled ink); orange only on hover and focus, as with the other buttons. */
+/* Story pages space <main>'s children 40-56px apart; the negative bottom margin keeps the row close to the card. */
+.share-row { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; max-width: 640px; margin: 0 0 -28px; }
+.share-row.share-solo { margin: 0; }
+/* Stories whose sections carry their own side margins (the travel stories: sections with the class wrap and a 760px
+   column inside) leave the main element full width, so the tool wraps the share row and card in this matching column. */
+.story-end { box-sizing: border-box; max-width: 792px; margin: 0 auto; padding: 8px max(16px, env(safe-area-inset-right, 0px)) 40px max(16px, env(safe-area-inset-left, 0px)); }
+.story-end .share-row { margin: 0 0 20px; } /* pages with no subscribe card below (the weird stat of the day) */
+.share-row .share-ask { margin: 0; color: var(--ink-2); }
+.share-btn { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 10px 18px; font: 600 15px/1 var(--font-body);
+  color: var(--ink); background: transparent; border: 1.5px solid var(--ink); border-radius: 6px; cursor: pointer; }
+.share-btn svg { width: 18px; height: 18px; flex: none; }
+.share-btn:hover { border-color: var(--amber); color: var(--amber); }
+.share-btn:focus-visible { outline: 2px solid var(--amber); outline-offset: 2px; }
+.share-row .share-msg { flex-basis: 100%; margin: 0; font: 400 13px/1.5 var(--font-data); color: var(--ink-2); overflow-wrap: anywhere; }
+/* Small Share button under a story's intro: reads like the byline it sits under (mono, secondary ink, underlined),
+   with a share icon and a 32px-tall hit area. */
+.share-top { margin: 8px 0 0; }
+.intro .share-top { margin-top: -6px; } /* travel intros lay out in grids with a 14px gap of their own */
+.share-top .share-btn { min-height: 32px; padding: 4px 0; gap: 6px; border: 0; border-radius: 0; font: 400 13px/1.4 var(--font-data);
+  color: var(--ink-3); text-decoration: underline; text-underline-offset: 3px; }
+.share-top .share-btn svg { width: 15px; height: 15px; }
+.share-top .share-btn:hover { color: var(--ink); }
+.share-top .share-msg:not([hidden]) { display: block; margin-top: 2px; font: 400 12px/1.5 var(--font-data); color: var(--ink-2); overflow-wrap: anywhere; }
+/* share:end */
+</style>
+</head>
+<body>
+<header class="site-bar">
+  <a class="brand" href="{{MAIN}}" aria-label="Tall Order Digital, home"><svg class="mark" viewBox="0 0 100 100" aria-hidden="true"><rect x="6" y="6" width="18" height="88" rx="3" class="m-o"/><rect x="30" y="50" width="18" height="44" rx="3" class="m-2"/><rect x="54" y="60" width="18" height="34" rx="3" class="m-3"/><rect x="78" y="70" width="18" height="24" rx="3" class="m-4"/></svg><span class="wm"><span class="wm-1">Tall Order</span><span class="wm-2">Digital</span></span></a>
+  <nav class="site-nav" aria-label="Site"><a href="{{MAIN}}nba/">NBA</a><a href="{{MAIN}}weather/" aria-current="page">Weather</a><a href="{{MAIN}}stories/" aria-label="More stories">More<span class="nav-long"> stories</span></a><a class="nav-about" href="{{MAIN}}about/">About</a><a class="nav-sub" href="{{MAIN}}subscribe/"><span class="t">Subscribe</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5.5" width="18" height="13" rx="2"/><path d="m3.5 7 8.5 6.5L20.5 7"/></svg></a><a class="nav-search" href="{{MAIN}}search/" aria-label="Search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/></svg></a><button type="button" class="theme-toggle" aria-label="Switch theme"><svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg><svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.3 5.3l1.4 1.4M17.3 17.3l1.4 1.4M5.3 18.7l1.4-1.4M17.3 6.7l1.4-1.4"/></svg></button></nav>
+</header>
+
+<main>
+  <header class="col">
+    <p class="kicker"><a class="up" href="../../">Almanac</a> · <a class="up" href="../">{{CITY}}, {{STATE}}</a> · Records</p>
+    <h1>{{CITY}} Weather Records</h1>
+    <p class="dek">{{DEK}}</p>
+    <p class="byline"><span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L19 7"/></svg>Data through {{ASOF_WORDS}}</span><span>Updated daily</span><span>Source: NOAA RCC-ACIS</span></p>
+  <!-- share-top:start --><p class="share-top"><button type="button" class="share-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="M7 8l5-5 5 5"/><path d="M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg>Share</button><span class="share-msg" role="status" hidden></span></p><!-- share-top:end -->
+  </header>
+
+  {{TABS}}
+
+  <section id="year-in-records">
+    <p class="sec-num">The year in records</p>
+    <div class="prose">
+      <h2>{{T_YEAR}}</h2>
+      <p>{{P_YEAR}}</p>
+      <p id="p-today">{{P_TODAY}}</p>
+    </div>
+    <figure class="figure" style="margin:0">
+      <div class="chart" id="c-band" data-label="{{T_YEAR}}"></div>
+      <div class="keys" id="k-band">
+        <span class="k-sig line"><b>Orange line:</b> each day's record high</span>
+        <span class="k-navy line"><b>Blue line:</b> each day's record low; every reading on record for that date falls in the gray between them</span>
+        <span class="k-band"><b>Light blue band:</b> the normal low and high, 1991–2020</span>
+      </div>
+      <p class="source">Table view: the day tables below (record high, record low and normal for every date). Source: NOAA official record via RCC-ACIS. Station: {{RECORD_NAME}}. Whole °F, as recorded.</p>
+    </figure>
+    {{TODAY_STRIP}}
+  </section>
+
+  <section id="all-time">
+    <p class="sec-num">All-time records</p>
+    <div class="prose">
+      <h2>{{T_ALL}}</h2>
+      <p>{{P_ALL}}</p>
+    </div>
+    <div class="tiles">
+{{TILES}}
+    </div>
+  </section>
+
+  <section id="by-month">
+    <p class="sec-num">By month</p>
+    <div class="prose">
+      <h2>{{T_MON}}</h2>
+      <p>{{P_MON}}</p>
+    </div>
+    <div class="tbl">
+      <table>
+        <caption>{{CITY}} monthly temperature records, {{FIRST_YEAR}}–{{LAST_YEAR}}</caption>
+        <thead><tr><th scope="col">Month</th><th scope="col">Record high</th><th scope="col">Date</th><th scope="col">Record low</th><th scope="col">Date</th></tr></thead>
+        <tbody>
+{{MONTH_ROWS}}
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="by-date">
+    <p class="sec-num">By date</p>
+    <div class="prose">
+      <h2>{{T_DAY}}</h2>
+      <p>{{P_DAY}}</p>
+    </div>
+    <nav class="months" aria-label="Jump to a month">{{MONTH_LINKS}}</nav>
+    <div class="mlist">
+{{DAY_TABLES}}
+    </div>
+  </section>
+
+  <section class="method nearby">
+    <div class="cols">
+      <div><h3>More for {{CITY}}</h3>
+        <ul><li><a href="../">{{CITY}} weather history: yesterday, the year so far and how it has changed</a></li><li>Story: {{STORY}}</li></ul></div>
+      <div><h3>Records at nearby places</h3>
+        <ul>{{NEARBY}}</ul></div>
+    </div>
+  </section>
+
+  <section class="method">
+    <h3>How to read these records</h3>
+    <ul>
+      <li>Temperatures are whole degrees Fahrenheit, as NOAA records them. A record shared by several years lists every year. Records count every day through the latest final day, so a record set yesterday appears here today.</li>
+      <li>A date's record is shown only when at least 30 years have a value for it. Normals are 1991–2020 averages, smoothed over 15 days.</li>
+      <li><strong>Unadjusted readings.</strong> {{CAVEAT}}</li>
+    </ul>
+  </section>
+  <!-- share:start -->
+  <div class="share-row">
+    <p class="share-ask">Know someone who'd like this?</p>
+    <button type="button" class="share-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="M7 8l5-5 5 5"/><path d="M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg>Share this page</button>
+    <p class="share-msg" role="status" hidden></p>
+  </div>
+  <!-- share:end -->
+  <!-- subscribe:start -->
+  <section class="subscribe sub-end" id="subscribe" aria-labelledby="sub-h">
+    <p class="kicker">The weekly email</p>
+    <h2 id="sub-h">Get each new story by email</h2>
+    <p class="sub-dek">One email a week with the newest stories and what they found. Unsubscribe anytime.</p>
+    <form class="sub-form" action="https://buttondown.com/api/emails/embed-subscribe/tallorderdigital" method="post" target="_blank">
+      <label for="sub-email" class="sr-only">Email address</label>
+      <input id="sub-email" type="email" name="email" required autocomplete="email" placeholder="you@example.com">
+      <input type="hidden" name="embed" value="1">
+      <input type="hidden" name="metadata__signup-page" value="">
+      <button type="submit">Subscribe</button>
+    </form>
+    <p class="sub-done" role="status" hidden>Almost done: check your inbox for a confirmation email.</p>
+    <p class="sub-note">Sent with Buttondown. Your address is used only for this email (<a href="{{MAIN}}about/#privacy">privacy</a>).</p>
+  </section>
+  <!-- subscribe:end -->
+</main>
+
+<footer class="site-foot">
+  <span>Data: NOAA official daily records via <a href="https://www.rcc-acis.org/">RCC-ACIS</a> (public domain). Analysis and design: Shawn Nafziger, Tall Order Digital.</span>
+  <span>No cookies. Visits are counted anonymously (<a href="{{MAIN}}about/#privacy">privacy</a>).</span>
+  <span>© 2026 Tall Order Digital LLC. Charts and text may be shared with credit and a link.</span>
+  <p class="sub-foot"><a href="{{MAIN}}subscribe/">Get the weekly email</a></p>
+</footer>
+
+<script>
+const D = {{DATA}};
+const MON = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+const MONTH = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+const $ = id => document.getElementById(id);
+const esc = s => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/"/g, "&quot;");
+const deg = v => (v < 0 ? "−" + Math.abs(v) : String(v));
+const ord = n => n + (n % 100 >= 11 && n % 100 <= 13 ? "th" : ({1:"st",2:"nd",3:"rd"}[n % 10] || "th"));
+const andList = a => a.length <= 2 ? a.join(" and ") : a.slice(0, -1).join(", ") + ", and " + a[a.length - 1];
+const mdWords = md => { const [m, d] = md.split("-").map(Number); return MONTH[m - 1] + " " + d; };
+const BY = Object.fromEntries(D.daily.map(r => [r.md, r]));
+
+/* ---------- today, in the reader's own time zone ----------
+   The page is built twice a day; the HTML names the build day. If the reader's date differs (late evening or
+   early morning), switch "today" to their date, from the same table that's on the page. */
+(function () {
+  const now = new Date(), md = String(now.getMonth() + 1).padStart(2, "0") + "-" + String(now.getDate()).padStart(2, "0");
+  const built = D.built.slice(5);
+  if (md === built) return;
+  const r = BY[md], strip = $("today-strip"), p = $("p-today"), clause = $("day-today");
+  const ok = r && r.shown;
+  const mon = now.getMonth(), day = now.getDate();
+  if (!ok) { [strip, p, clause].forEach(el => el && (el.hidden = true)); return; }
+  const hiY = r.hi_y.join(", "), loY = r.lo_y.join(", ");
+  if (strip) strip.innerHTML = `<span class="lab">Today · ${MON[mon]} ${day}</span><span>Record high <b class="t-hi">${deg(r.hi)}°F</b> (${hiY})</span>` +
+    `<span>Record low <b class="t-lo">${deg(r.lo)}°F</b> (${loY})</span><a href="#m-${MONTH[mon].toLowerCase()}">All of ${MONTH[mon]} ↓</a>`;
+  if (p) p.innerHTML = `Today's records, ${MONTH[mon]} ${day}: a high of <strong>${deg(r.hi)}°F</strong> (${andList(r.hi_y.map(String))}) ` +
+    `and a low of <strong>${deg(r.lo)}°F</strong> (${andList(r.lo_y.map(String))}).`;
+  if (clause) clause.innerHTML = `; today, ${MONTH[mon]} ${day}, the record high is ${deg(r.hi)}°F (${andList(r.hi_y.map(String))}) ` +
+    `and the record low ${deg(r.lo)}°F (${andList(r.lo_y.map(String))})`;
+  document.querySelectorAll("tr.today").forEach(tr => tr.classList.remove("today"));
+  const row = $("d-" + md); if (row) row.classList.add("today");
+  document.querySelectorAll("details.month").forEach((d, i) => d.open = i === mon);
+  document.querySelectorAll(".months a").forEach((a, i) => i === mon ? a.setAttribute("aria-current", "true") : a.removeAttribute("aria-current"));
+})();
+
+/* ---------- tiny SVG helpers (as on the overview) ---------- */
+function scale(d0, d1, r0, r1) { return v => r0 + (v - d0) / (d1 - d0) * (r1 - r0); }
+function ticks(lo, hi, n) {
+  const step0 = (hi - lo) / n, mag = Math.pow(10, Math.floor(Math.log10(step0))), e = step0 / mag;
+  const step = (e >= 5 ? 10 : e >= 2 ? 5 : e >= 1 ? 2 : 1) * mag, out = [];
+  for (let v = Math.ceil(lo / step) * step; v <= hi + 1e-9; v += step) out.push(+v.toFixed(6));
+  return out;
+}
+function width(el) { return Math.max(280, Math.round(el.getBoundingClientRect().width)); }
+function mount(el, w, h, body) { el.innerHTML = `<svg viewBox="0 0 ${w} ${h}" role="img" aria-label="${esc(el.dataset.label || "")}">${body}</svg><div class="tip"></div>`; wireTips(el); }
+function wireTips(el) {
+  const tip = el.querySelector(".tip"), svg = el.querySelector("svg");
+  function show(t, evt) {
+    tip.innerHTML = t.getAttribute("data-tip"); tip.classList.add("on");
+    const box = el.getBoundingClientRect(), x = evt.clientX - box.left, y = evt.clientY - box.top;
+    const tw = tip.offsetWidth, th = tip.offsetHeight;
+    tip.style.left = Math.min(Math.max(0, x - tw / 2), box.width - tw) + "px";
+    tip.style.top = (y - th - 12 < 0 ? y + 16 : y - th - 12) + "px";
+  }
+  svg.addEventListener("pointermove", e => { const t = e.target.closest("[data-tip]"); t ? show(t, e) : tip.classList.remove("on"); });
+  svg.addEventListener("pointerleave", () => tip.classList.remove("on"));
+  svg.addEventListener("pointerdown", e => { const t = e.target.closest("[data-tip]"); if (t) show(t, e); });
+}
+
+/* ---------- the year in records ---------- */
+function drawBand() {
+  const el = $("c-band"), w = width(el), narrow = w < 500;
+  const m = { l: 36, r: 10, t: narrow ? 58 : 46, b: 24 }, h = narrow ? 340 : 400;
+  const days = D.chart.days, n = days.length, rows = days.map(d => BY[d]);
+  const hiS = rows.map(r => r.hi), loS = rows.map(r => r.lo);
+  const lo = Math.min(...loS) - 4, hi = Math.max(...hiS) + 4;
+  const x = scale(0, n, m.l, w - m.r), y = scale(lo, hi, h - m.b, m.t), xi = i => x(i + .5);
+  let s = "";
+  ticks(lo, hi, 8).forEach(t => s += `<line x1="${m.l}" x2="${w - m.r}" y1="${y(t)}" y2="${y(t)}" class="grid"/><text x="${m.l - 6}" y="${y(t) + 4}" text-anchor="end">${deg(t)}°</text>`);
+  if (lo < 32 && hi > 32) s += `<line x1="${m.l}" x2="${w - m.r}" y1="${y(32)}" y2="${y(32)}" stroke="var(--ink-3)" stroke-dasharray="2 3"/><text x="${w - m.r}" y="${y(32) - 5}" text-anchor="end">32°F</text>`;
+  const pts = (ser) => ser.map((v, i) => `${xi(i)},${y(v)}`).join(" ");
+  s += `<polygon points="${pts(hiS)} ${loS.map((v, i) => `${xi(n - 1 - i)},${y(loS[n - 1 - i])}`).join(" ")}" fill="var(--recband)"/>`;
+  const nh = rows.map(r => r.nhi), nl = rows.map(r => r.nlo);
+  s += `<polygon points="${pts(nh)} ${nl.map((v, i) => `${xi(n - 1 - i)},${y(nl[n - 1 - i])}`).join(" ")}" fill="var(--funnel)"/>`;
+  s += `<polyline points="${pts(hiS)}" fill="none" stroke="var(--amber)" stroke-width="1.5"/>`;
+  s += `<polyline points="${pts(loS)}" fill="none" stroke="var(--navy)" stroke-width="1.5"/>`;
+  let cum = 0;
+  MON.forEach((mo, i) => { const dim = new Date(2001, i + 1, 0).getDate(); s += `<text x="${x(cum + dim / 2)}" y="${h - 6}" text-anchor="middle">${narrow ? mo[0] : mo}</text>`; cum += dim; });
+  const idx = Object.fromEntries(days.map((d, i) => [d, i]));
+  // top-margin labels: two rows, so labels that would overlap move to the second row
+  const placed = [];
+  function label(i, text, cls) {
+    const cx = xi(i), tw = text.length * 7.6, anchor = cx < m.l + tw / 2 ? "start" : cx > w - m.r - tw / 2 ? "end" : "middle";
+    const x0 = anchor === "start" ? cx : anchor === "end" ? cx - tw : cx - tw / 2;
+    let row = 0;
+    while (placed.some(p => p.row === row && x0 < p.x1 + 14 && x0 + tw > p.x0 - 14)) row++;
+    placed.push({ row, x0, x1: x0 + tw });
+    const ty = 14 + row * 14;
+    s += `<line x1="${cx}" x2="${cx}" y1="${ty + 4}" y2="${m.t}" stroke="var(--ink-2)" stroke-width=".75"/>`;
+    s += `<text x="${cx}" y="${ty}" text-anchor="${anchor}" class="${cls || "lbl"}">${text}</text>`;
+  }
+  const [wmd, wv] = D.chart.widest, [nmd, nv] = D.chart.narrowest;
+  [[wmd, wv], [nmd, nv]].forEach(([md, v]) => {
+    const i = idx[md], r = BY[md];
+    s += `<line x1="${xi(i)}" x2="${xi(i)}" y1="${y(r.hi)}" y2="${y(r.lo)}" stroke="var(--ink-2)" stroke-dasharray="3 2"/>`;
+    s += `<line x1="${xi(i)}" x2="${xi(i)}" y1="${m.t}" y2="${y(r.hi)}" stroke="var(--ink-2)" stroke-width=".75"/>`;
+    label(i, `${v}°${narrow ? "" : " apart"} · ${MON[+md.slice(0, 2) - 1]} ${+md.slice(3)}`);
+  });
+  // today (the reader's date)
+  const now = new Date(), tmd = String(now.getMonth() + 1).padStart(2, "0") + "-" + String(now.getDate()).padStart(2, "0");
+  if (tmd in idx) {
+    const i = idx[tmd], r = BY[tmd];
+    s += `<line x1="${xi(i)}" x2="${xi(i)}" y1="${m.t}" y2="${h - m.b}" stroke="var(--ink)" stroke-width="1.5"/>`;
+    label(i, `${narrow ? "" : "Today, "}${MON[now.getMonth()]} ${now.getDate()}`, "lbl-strong");
+    const side = xi(i) > w - 60 ? -8 : 8, an = side < 0 ? "end" : "start";
+    s += `<text x="${xi(i) + side}" y="${y(r.hi) - 6}" text-anchor="${an}" class="lbl-strong" style="fill:var(--amber);paint-order:stroke;stroke:var(--surface);stroke-width:4px">${deg(r.hi)}°</text>`;
+    s += `<text x="${xi(i) + side}" y="${y(r.lo) + 16}" text-anchor="${an}" class="lbl-strong" style="fill:var(--navy);paint-order:stroke;stroke:var(--surface);stroke-width:4px">${deg(r.lo)}°</text>`;
+  }
+  D.chart.rec_hi_days.forEach(r => { if (r.md in idx) s += `<circle cx="${xi(idx[r.md])}" cy="${y(r.v)}" r="4.5" fill="var(--amber)" stroke="var(--ink)" stroke-width="1.5"/>`; });
+  D.chart.rec_lo_days.forEach(r => { if (r.md in idx) s += `<circle cx="${xi(idx[r.md])}" cy="${y(r.v)}" r="4.5" fill="var(--navy)" stroke="var(--ink)" stroke-width="1.5"/>`; });
+  // hover columns
+  const cw = (w - m.l - m.r) / n + .5;
+  rows.forEach((r, i) => {
+    const tip = `<b>${mdWords(r.md)}</b><br>Record high: ${deg(r.hi)}° (${r.hi_y.join(", ")})<br>Record low: ${deg(r.lo)}° (${r.lo_y.join(", ")})<br>Normal: ${r.nhi}° / ${r.nlo}°`;
+    s += `<rect x="${x(i)}" y="${m.t}" width="${cw}" height="${h - m.t - m.b}" fill="transparent" data-tip="${esc(tip)}"/>`;
+  });
+  mount(el, w, h, s);
+}
+(function keys() {
+  const k = $("k-band"), hi = D.chart.rec_hi_days.length, lo = D.chart.rec_lo_days.length;
+  if (hi) k.insertAdjacentHTML("beforeend", `<span class="k-sig dot"><b>Orange dots:</b> record highs set or tied in ${D.year}${lo ? "" : " (no record lows this year)"}</span>`);
+  if (lo) k.insertAdjacentHTML("beforeend", `<span class="k-navy dot"><b>Blue dots:</b> record lows set or tied in ${D.year}${hi ? "" : " (no record highs this year)"}</span>`);
+})();
+
+drawBand();
+let rt; addEventListener("resize", () => { clearTimeout(rt); rt = setTimeout(drawBand, 120); });
+new MutationObserver(drawBand).observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
+matchMedia("(prefers-color-scheme: dark)").addEventListener("change", drawBand);
+
+/* theme toggle (same behavior as assets/theme.js) */
+(function () {
+  const root = document.documentElement;
+  const cur = () => root.dataset.theme || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+  const sync = () => document.querySelectorAll(".theme-toggle").forEach(b => { const n = cur() === "dark" ? "light" : "dark"; b.setAttribute("aria-label", "Switch to " + n + " mode"); b.dataset.showing = cur(); });
+  document.addEventListener("click", e => { const b = e.target.closest(".theme-toggle"); if (!b) return; const n = cur() === "dark" ? "light" : "dark"; root.dataset.theme = n; try { localStorage.setItem("tod-theme", n); } catch (err) {} sync(); });
+  sync();
+})();
+</script>
+<script>
+/* site-header:start */
+/* Site header (sitewide, Nov 2, 2026): keeps --header-h current (for anchor links) and, on phones,
+   slides the pinned header away while the reader scrolls down and brings it back on any scroll up.
+   Master copy: tallorderdigital-site/assets/site-header.js; self-contained pages carry an inline copy
+   written by tools/apply-header.py. */
+(function () {
+  var bar = document.querySelector(".site-bar");
+  if (!bar) return;
+  var root = document.documentElement;
+  var phone = window.matchMedia ? window.matchMedia("(max-width: 680px)") : { matches: false };
+  var last = window.scrollY, away = false;
+  function measure() { root.style.setProperty("--header-h", bar.offsetHeight + "px"); }
+  function set(v) { if (v !== away) { away = v; bar.classList.toggle("is-away", v); } }
+  window.addEventListener("scroll", function () {
+    var y = window.scrollY, d = y - last;
+    if (!phone.matches || y < bar.offsetHeight) { set(false); last = y; return; }
+    if (Math.abs(d) < 8) return;
+    set(d > 0);
+    last = y;
+  }, { passive: true });
+  // Keyboard users tabbing into the header always see it.
+  bar.addEventListener("focusin", function () { set(false); });
+  window.addEventListener("resize", measure);
+  if (phone.addEventListener) phone.addEventListener("change", function () { set(false); measure(); });
+  measure();
+})();
+/* site-header:end */
+</script>
+<script>
+/* subscribe:start */
+/* Weekly-email signup: the form posts to Buttondown in a new tab (Buttondown shows its own
+   "check your inbox" page and may ask for a captcha). This script tags each signup with the page
+   it came from, counts it in GoatCounter as subscribe/<page>, and tells the reader what happens next. */
+(function () {
+  var parts = location.pathname.split("/").filter(Boolean);
+  var page = parts.length ? parts[parts.length - 1].replace(/\.html$/, "") : "home";
+  document.querySelectorAll("form.sub-form").forEach(function (form) {
+    var src = form.querySelector('input[name="metadata__signup-page"]');
+    if (src) src.value = page;
+    form.addEventListener("submit", function () {
+      var gc = window.goatcounter;
+      if (gc && gc.count) gc.count({ path: "subscribe/" + page, title: "subscribe/" + page, event: true });
+      var box = form.closest(".subscribe"), done = box && box.querySelector(".sub-done");
+      if (done) setTimeout(function () { done.hidden = false; form.reset(); }, 300);
+    });
+  });
+})();
+/* subscribe:end */
+</script>
+<script>
+/* share:start */
+/* Share button at the end of each story. Phones (and browsers with a share menu) open the device's share sheet;
+   others copy the link. The shared link is the page address plus ?ref=share, so visits from shares show up in
+   GoatCounter as their own referrer. A row marked data-keep-hash also keeps the address's #part (the weird stat of the
+   day uses it, so a share links to the night the reader is looking at). A finished share counts in GoatCounter as share/<page> (cancelling the share
+   sheet doesn't count). Uses the page's own address, not its canonical link, so a page whose canonical points to
+   another site still shares this one.
+   The small Share button under a story's intro (.share-top, added Nov 8, 2026) works the same way; the GoatCounter
+   title says which one was used: share/<page> (top, menu), (end, copy) and so on. */
+(function () {
+  var parts = location.pathname.split("/").filter(Boolean);
+  var page = parts.length ? parts[parts.length - 1].replace(/\.html$/, "") : "home";
+  var base = location.origin + location.pathname + "?ref=share";
+  var og = document.querySelector('meta[property="og:title"]');
+  var title = og ? og.getAttribute("content") : document.title;
+  document.querySelectorAll(".share-row, .share-top").forEach(function (row) {
+    var where = row.classList.contains("share-top") ? "top" : "end";
+    function count(how) {
+      var gc = window.goatcounter;
+      if (gc && gc.count) gc.count({ path: "share/" + page, title: "share/" + page + " (" + where + ", " + how + ")", event: true });
+    }
+    var btn = row.querySelector(".share-btn"), msg = row.querySelector(".share-msg"), url = base;
+    function say(text) { if (msg) { msg.textContent = text; msg.hidden = false; } }
+    function copy() {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(url).then(function () { say("Link copied. Paste it anywhere to share."); count("copy"); },
+          function () { say("Copy this link: " + url); });
+      } else {
+        say("Copy this link: " + url);
+      }
+    }
+    btn.addEventListener("click", function () {
+      url = base + (row.hasAttribute("data-keep-hash") ? location.hash : "");
+      if (navigator.share) {
+        navigator.share({ title: title, url: url }).then(function () { count("menu"); }, function (err) {
+          if (!err || err.name !== "AbortError") copy();
+        });
+      } else {
+        copy();
+      }
+    });
+  });
+})();
+/* share:end */
+</script>
+<!-- Analytics (both cookie-free): GoatCounter counts visits and reader actions; Cloudflare Web Analytics measures page speed. Same block on every page. -->
+<script data-goatcounter="https://tallorderdigital.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "5d3a617ba3ea4ca68113ec25a9a48b1b"}'></script>
+<script>
+(function () {
+  // Reader actions sent to GoatCounter as events, at most once per page view each:
+  //   glossary/<page>/<term>  a glossary pop-up was opened
+  //   read-to-end/<page>      the reader scrolled down to the footer
+  var parts = location.pathname.split("/").filter(Boolean);
+  var page = parts.length ? parts[parts.length - 1].replace(/\.html$/, "") : "home";
+  var sent = {};
+  function send(path, tries) {
+    if (sent[path] && tries === undefined) return;
+    sent[path] = true;
+    var gc = window.goatcounter;
+    if (gc && gc.count) { gc.count({ path: path, title: path, event: true }); return; }
+    if ((tries || 0) < 20) setTimeout(function () { send(path, (tries || 0) + 1); }, 500);
+  }
+  // A glossary pop-up counts once it has stayed open for 0.6 s (tap, click, keyboard or hover), so passing the mouse over a term doesn't count.
+  if ("MutationObserver" in window) {
+    new MutationObserver(function (ms) {
+      ms.forEach(function (m) {
+        var t = m.target;
+        if (t.getAttribute("aria-expanded") !== "true" || !t.getAttribute("data-term")) return;
+        setTimeout(function () {
+          if (t.getAttribute("aria-expanded") === "true") send("glossary/" + page + "/" + t.getAttribute("data-term"));
+        }, 600);
+      });
+    }).observe(document.body, { subtree: true, attributes: true, attributeFilter: ["aria-expanded"] });
+  }
+  window.addEventListener("load", function () {
+    var foot = document.querySelector("footer");
+    // Only long pages (stories): on short pages the footer is visible without scrolling.
+    if (!foot || !("IntersectionObserver" in window) ||
+        document.documentElement.scrollHeight < 2 * window.innerHeight) return;
+    var io = new IntersectionObserver(function (es) {
+      if (es.some(function (x) { return x.isIntersecting; })) { send("read-to-end/" + page); io.disconnect(); }
+    });
+    io.observe(foot);
+  });
+})();
+</script>
+</body>
+</html>

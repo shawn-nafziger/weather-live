@@ -99,7 +99,8 @@ class Test(unittest.TestCase):
         page = (self.out / "almanac" / "chicago" / "index.html").read_text(encoding="utf-8")
         head = page.split("</head>")[0]
         self.assertIn('<link rel="canonical" href="https://tallorderdigital.com/weather/almanac/chicago/">', head)
-        self.assertIn("<title>Chicago, IL Weather Almanac", head)
+        # The overview owns "[city] weather history"; "record" titles belong to the records page (Nov 12, 2026).
+        self.assertIn("<title>Chicago Weather History · Tall Order Digital</title>", head)
         self.assertNotIn("noindex", page)
         graph = json.loads(re.search(r'<script type="application/ld\+json">(.*?)</script>', head, re.S).group(1))["@graph"]
         types = {n["@type"]: n for n in graph}

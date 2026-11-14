@@ -12,6 +12,9 @@ site/almanac is today's build; prev is the last published build (the almanac-bui
 - If today's build has far fewer pages than the last one (under 90%), something is wrong with the run, not the
   weather: this stops with an error, nothing is handed over, and the site keeps yesterday's Almanac.
 - A place no longer in config/almanac_cities.json is not carried over (its page is retired on purpose).
+- Branch pages under each place (records/, Nov 12, 2026) follow the same rules on their own: a records page that
+  fails today's checks keeps its last good version even when the place's overview built, and the 90% guard counts
+  each kind of page separately.
 """
 import re
 import shutil
@@ -23,28 +26,50 @@ sys.path.insert(0, str(HERE))
 from build import CITIES  # noqa: E402
 
 MIN_SHARE = 0.9
+SUBPAGES = ("records",)       # branch pages under each place: <place>/<sub>/index.html
 
 
 def places(d):
     return {p.parent.name for p in d.glob("*/index.html")} if d.is_dir() else set()
 
 
+def subpages(d, sub):
+    return {p.parent.parent.name for p in d.glob(f"*/{sub}/index.html")} if d.is_dir() else set()
+
+
+def _sitemap_entries(prev, urls):
+    old_map = prev / "sitemap.xml"
+    old = old_map.read_text(encoding="utf-8") if old_map.exists() else ""
+    return [m.group(0) for u in urls for m in [re.search(rf"  <url><loc>[^<]*/{re.escape(u)}</loc>.*?</url>", old)] if m]
+
+
 def carry_over(new, prev, cities=None):
-    """Copy places missing from today's build back from the previous one. Returns the slugs carried over."""
+    """Copy pages missing from today's build back from the previous one. Returns the slugs carried over
+    (a branch page carried alone shows as "<place>/<sub>")."""
     cities = CITIES if cities is None else cities
     built, before = places(new), places(prev)
     if before and len(built) < MIN_SHARE * len(before):
         raise SystemExit(f"Only {len(built)} Almanac pages built, against {len(before)} last time. "
                          "Not publishing; the site keeps the last good Almanac.")
+    for sub in SUBPAGES:
+        b_sub, p_sub = subpages(new, sub), subpages(prev, sub)
+        if p_sub and len(b_sub) < MIN_SHARE * len(p_sub):
+            raise SystemExit(f"Only {len(b_sub)} Almanac {sub} pages built, against {len(p_sub)} last time. "
+                             "Not publishing; the site keeps the last good Almanac.")
     kept = sorted(s for s in before - built if s in cities)
-    if not kept:
-        return kept
+    urls = []
     for slug in kept:
         shutil.copytree(prev / slug, new / slug)
-    old_map, new_map = prev / "sitemap.xml", new / "sitemap.xml"
-    old = old_map.read_text(encoding="utf-8") if old_map.exists() else ""
-    entries = [m.group(0) for s in kept
-               for m in [re.search(rf"  <url><loc>[^<]*/{re.escape(s)}/</loc>.*?</url>", old)] if m]
+        urls.append(f"{slug}/")
+        urls += [f"{slug}/{sub}/" for sub in SUBPAGES if (prev / slug / sub / "index.html").exists()]
+    for sub in SUBPAGES:
+        for slug in sorted(subpages(prev, sub) - subpages(new, sub)):
+            if slug in cities and slug not in kept and (new / slug / "index.html").exists():
+                shutil.copytree(prev / slug / sub, new / slug / sub)
+                kept.append(f"{slug}/{sub}")
+                urls.append(f"{slug}/{sub}/")
+    entries = _sitemap_entries(prev, urls)
+    new_map = new / "sitemap.xml"
     if entries and new_map.exists():
         text = new_map.read_text(encoding="utf-8").replace("</urlset>", "\n".join(entries) + "\n</urlset>", 1)
         new_map.write_text(text, encoding="utf-8")
@@ -57,7 +82,9 @@ def main():
         raise SystemExit(f"No Almanac build in {new}.")
     kept = carry_over(new, prev)
     for s in kept:
-        print(f"{CITIES[s]['name']:<14} KEPT  today's checks didn't pass; last good page kept")
+        slug, _, sub = s.partition("/")
+        what = f"{sub} page" if sub else "page"
+        print(f"{CITIES[slug]['name']:<14} KEPT  today's checks didn't pass; last good {what} kept")
     print(f"{len(places(new))} Almanac pages ready ({len(kept)} kept from the last build).")
 
 
