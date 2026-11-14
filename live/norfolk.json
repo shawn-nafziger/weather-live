@@ -11,20 +11,20 @@
   "lon": -76.1919,
   "history": "Same site as the official Norfolk record"
  },
- "as_of_utc": "2026-11-14T16:07:52Z",
+ "as_of_utc": "2026-11-14T17:07:50Z",
  "now": {
-  "time_utc": "2026-11-14T15:30:00Z",
+  "time_utc": "2026-11-14T16:45:00Z",
   "temp_c": 9,
   "temp_f": 48.2,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": -3,
-  "humidity_pct": 42.76,
+  "dewpoint_c": -2,
+  "humidity_pct": 46.04,
   "wind_kmh": 16.67,
-  "description": "Mostly Cloudy"
+  "description": "Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-14",
-  "readings": 9,
+  "readings": 10,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -91,7 +91,7 @@
   },
   "forecast_highs": [
    {
-    "period": "Today",
+    "period": "This Afternoon",
     "date": "2026-11-14",
     "high_f": 54,
     "would_rank": {
@@ -270,8 +270,8 @@
   "grid": "AKQ/93,55",
   "periods": [
    {
-    "name": "Today",
-    "start": "2026-11-14T11:00:00-05:00",
+    "name": "This Afternoon",
+    "start": "2026-11-14T12:00:00-05:00",
     "is_daytime": true,
     "temp_f": 54,
     "temp_c": 12.22,
@@ -400,13 +400,6 @@
  "hourly": {
   "issued_utc": "2026-11-14T14:33:29Z",
   "hours": [
-   {
-    "start": "2026-11-14T11:00:00-05:00",
-    "temp_f": 48,
-    "temp_c": 8.89,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Sunny"
-   },
    {
     "start": "2026-11-14T12:00:00-05:00",
     "temp_f": 49,
@@ -733,6 +726,13 @@
     "start": "2026-11-16T10:00:00-05:00",
     "temp_f": 51,
     "temp_c": 10.56,
+    "precip_chance_pct": 1,
+    "short_forecast": "Mostly Sunny"
+   },
+   {
+    "start": "2026-11-16T11:00:00-05:00",
+    "temp_f": 52,
+    "temp_c": 11.11,
     "precip_chance_pct": 1,
     "short_forecast": "Mostly Sunny"
    }

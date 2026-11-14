@@ -11,33 +11,33 @@
   "lon": -77.3233,
   "history": "Same site as the official Richmond record"
  },
- "as_of_utc": "2026-11-14T16:07:52Z",
+ "as_of_utc": "2026-11-14T17:07:50Z",
  "now": {
-  "time_utc": "2026-11-14T15:30:00Z",
-  "temp_c": 8,
-  "temp_f": 46.4,
+  "time_utc": "2026-11-14T16:45:00Z",
+  "temp_c": 10,
+  "temp_f": 50.0,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": -1,
-  "humidity_pct": 53.02,
-  "wind_kmh": 12.96,
-  "description": "Cloudy"
+  "dewpoint_c": -2,
+  "humidity_pct": 43.05,
+  "wind_kmh": null,
+  "description": "Mostly Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-14",
-  "readings": 8,
+  "readings": 9,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 7.2,
-  "high_f": 45.0,
-  "high_time_utc": "2026-11-14T14:54:00Z",
+  "high_c": 8.9,
+  "high_f": 48.0,
+  "high_time_utc": "2026-11-14T15:54:00Z",
   "low_c": 2.2,
   "low_f": 36.0,
   "low_time_utc": "2026-11-14T08:54:00Z",
   "peak_between_reports": {
-   "at_least_f": 45.5,
-   "about_f": 46.4,
-   "time_utc": "2026-11-14T15:05:00Z"
+   "at_least_f": 49.1,
+   "about_f": 50.0,
+   "time_utc": "2026-11-14T16:45:00Z"
   }
  },
  "record": {
@@ -88,7 +88,7 @@
   },
   "forecast_highs": [
    {
-    "period": "Today",
+    "period": "This Afternoon",
     "date": "2026-11-14",
     "high_f": 54,
     "would_rank": {
@@ -255,8 +255,8 @@
   "grid": "AKQ/50,76",
   "periods": [
    {
-    "name": "Today",
-    "start": "2026-11-14T11:00:00-05:00",
+    "name": "This Afternoon",
+    "start": "2026-11-14T12:00:00-05:00",
     "is_daytime": true,
     "temp_f": 54,
     "temp_c": 12.22,
@@ -385,13 +385,6 @@
  "hourly": {
   "issued_utc": "2026-11-14T14:33:29Z",
   "hours": [
-   {
-    "start": "2026-11-14T11:00:00-05:00",
-    "temp_f": 43,
-    "temp_c": 6.11,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Sunny"
-   },
    {
     "start": "2026-11-14T12:00:00-05:00",
     "temp_f": 45,
@@ -718,6 +711,13 @@
     "start": "2026-11-16T10:00:00-05:00",
     "temp_f": 47,
     "temp_c": 8.33,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
+   },
+   {
+    "start": "2026-11-16T11:00:00-05:00",
+    "temp_f": 50,
+    "temp_c": 10.0,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
    }
