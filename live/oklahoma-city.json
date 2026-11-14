@@ -11,29 +11,29 @@
   "lon": -97.6003,
   "history": "Same site as the official Oklahoma City record"
  },
- "as_of_utc": "2026-11-14T12:07:56Z",
+ "as_of_utc": "2026-11-14T13:07:58Z",
  "now": {
-  "time_utc": "2026-11-14T11:50:00Z",
+  "time_utc": "2026-11-14T12:55:00Z",
   "temp_c": 3,
   "temp_f": 37.4,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": null,
   "humidity_pct": null,
-  "wind_kmh": 12.96,
-  "description": "Mostly Clear"
+  "wind_kmh": 14.83,
+  "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-14",
-  "readings": 4,
+  "readings": 5,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
   "high_c": 4.4,
   "high_f": 39.9,
   "high_time_utc": "2026-11-14T07:52:00Z",
-  "low_c": 3.3,
-  "low_f": 37.9,
-  "low_time_utc": "2026-11-14T09:52:00Z",
+  "low_c": 2.8,
+  "low_f": 37.0,
+  "low_time_utc": "2026-11-14T11:52:00Z",
   "peak_between_reports": {
    "at_least_f": 40.1,
    "about_f": 41.0,
@@ -98,7 +98,7 @@
   },
   "forecast_highs": [
    {
-    "period": "Saturday",
+    "period": "Today",
     "date": "2026-11-14",
     "high_f": 54,
     "would_rank": {
@@ -265,16 +265,7 @@
   "grid": "OUN/94,90",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-14T00:00:00-06:00",
-    "is_daytime": false,
-    "temp_f": 37,
-    "temp_c": 2.78,
-    "precip_chance_pct": 0,
-    "short_forecast": "Partly Cloudy"
-   },
-   {
-    "name": "Saturday",
+    "name": "Today",
     "start": "2026-11-14T06:00:00-06:00",
     "is_daytime": true,
     "temp_f": 54,
@@ -283,7 +274,7 @@
     "short_forecast": "Mostly Cloudy then Slight Chance Rain Showers"
    },
    {
-    "name": "Saturday Night",
+    "name": "Tonight",
     "start": "2026-11-14T18:00:00-06:00",
     "is_daytime": false,
     "temp_f": 40,
@@ -389,19 +380,21 @@
     "temp_c": 20.0,
     "precip_chance_pct": 38,
     "short_forecast": "Chance Rain Showers"
+   },
+   {
+    "name": "Friday Night",
+    "start": "2026-11-20T18:00:00-06:00",
+    "is_daytime": false,
+    "temp_f": 54,
+    "temp_c": 12.22,
+    "precip_chance_pct": 52,
+    "short_forecast": "Chance Rain Showers"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-14T06:26:54Z",
   "hours": [
-   {
-    "start": "2026-11-14T06:00:00-06:00",
-    "temp_f": 38,
-    "temp_c": 3.33,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Sunny"
-   },
    {
     "start": "2026-11-14T07:00:00-06:00",
     "temp_f": 37,
@@ -728,6 +721,13 @@
     "start": "2026-11-16T05:00:00-06:00",
     "temp_f": 40,
     "temp_c": 4.44,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "start": "2026-11-16T06:00:00-06:00",
+    "temp_f": 39,
+    "temp_c": 3.89,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Cloudy"
    }
