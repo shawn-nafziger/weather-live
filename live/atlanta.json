@@ -11,34 +11,29 @@
   "lon": -84.4269,
   "history": "Same site as the official Atlanta record"
  },
- "as_of_utc": "2026-11-14T17:07:50Z",
+ "as_of_utc": "2026-11-14T18:08:03Z",
  "now": {
-  "time_utc": "2026-11-14T16:50:00Z",
+  "time_utc": "2026-11-14T17:20:00Z",
   "temp_c": 11,
   "temp_f": 51.8,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": -2,
-  "humidity_pct": 40.28,
-  "wind_kmh": 24.08,
+  "dewpoint_c": -3,
+  "humidity_pct": 37.4,
+  "wind_kmh": null,
   "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-14",
-  "readings": 9,
+  "readings": 10,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 7.2,
-  "high_f": 45.0,
-  "high_time_utc": "2026-11-14T14:52:00Z",
+  "high_c": 10.6,
+  "high_f": 51.1,
+  "high_time_utc": "2026-11-14T16:52:00Z",
   "low_c": 2.2,
   "low_f": 36.0,
-  "low_time_utc": "2026-11-14T11:52:00Z",
-  "peak_between_reports": {
-   "at_least_f": 50.9,
-   "about_f": 51.8,
-   "time_utc": "2026-11-14T16:40:00Z"
-  }
+  "low_time_utc": "2026-11-14T11:52:00Z"
  },
  "record": {
   "series": "Atlanta area (ThreadEx; airport)",
@@ -91,7 +86,7 @@
   },
   "forecast_highs": [
    {
-    "period": "Today",
+    "period": "This Afternoon",
     "date": "2026-11-14",
     "high_f": 55,
     "would_rank": {
@@ -259,12 +254,12 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-14T14:26:42Z",
+  "issued_utc": "2026-11-14T16:36:40Z",
   "grid": "FFC/50,82",
   "periods": [
    {
-    "name": "Today",
-    "start": "2026-11-14T09:00:00-05:00",
+    "name": "This Afternoon",
+    "start": "2026-11-14T12:00:00-05:00",
     "is_daytime": true,
     "temp_f": 55,
     "temp_c": 12.78,
@@ -278,7 +273,7 @@
     "temp_f": 33,
     "temp_c": 0.56,
     "precip_chance_pct": 0,
-    "short_forecast": "Mostly Clear then Widespread Frost"
+    "short_forecast": "Clear then Widespread Frost"
    },
    {
     "name": "Sunday",
@@ -296,7 +291,7 @@
     "temp_f": 36,
     "temp_c": 2.22,
     "precip_chance_pct": 0,
-    "short_forecast": "Partly Cloudy"
+    "short_forecast": "Mostly Clear"
    },
    {
     "name": "Monday",
@@ -305,7 +300,7 @@
     "temp_f": 57,
     "temp_c": 13.89,
     "precip_chance_pct": 0,
-    "short_forecast": "Mostly Sunny"
+    "short_forecast": "Partly Sunny"
    },
    {
     "name": "Monday Night",
@@ -393,13 +388,6 @@
  "hourly": {
   "issued_utc": "2026-11-14T16:36:40Z",
   "hours": [
-   {
-    "start": "2026-11-14T12:00:00-05:00",
-    "temp_f": 52,
-    "temp_c": 11.11,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "start": "2026-11-14T13:00:00-05:00",
     "temp_f": 53,
@@ -726,6 +714,13 @@
     "start": "2026-11-16T11:00:00-05:00",
     "temp_f": 50,
     "temp_c": 10.0,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Sunny"
+   },
+   {
+    "start": "2026-11-16T12:00:00-05:00",
+    "temp_f": 53,
+    "temp_c": 11.67,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Sunny"
    }
