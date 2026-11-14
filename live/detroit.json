@@ -11,20 +11,20 @@
   "lon": -83.3308,
   "history": "Same site as the official Detroit record"
  },
- "as_of_utc": "2026-11-13T23:08:08Z",
+ "as_of_utc": "2026-11-14T00:08:01Z",
  "now": {
-  "time_utc": "2026-11-13T22:32:00Z",
-  "temp_c": 3.9,
-  "temp_f": 39.0,
-  "precision": "tenths of a degree",
-  "dewpoint_c": -0.6,
-  "humidity_pct": 72.47,
-  "wind_kmh": 18.36,
-  "description": "Cloudy"
+  "time_utc": "2026-11-13T23:45:00Z",
+  "temp_c": 3,
+  "temp_f": 37.4,
+  "precision": "nearest whole \u00b0C",
+  "dewpoint_c": -1,
+  "humidity_pct": 75.0,
+  "wind_kmh": 14.83,
+  "description": ""
  },
  "today_so_far": {
   "date_local": "2026-11-13",
-  "readings": 17,
+  "readings": 19,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -84,34 +84,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-13",
-    "high_f": 42,
-    "would_rank": {
-     "value_f": 42,
-     "warm_rank": 101,
-     "cool_rank": 44,
-     "years": 153,
-     "first_year": 1874,
-     "tied_years": [
-      1899,
-      1935,
-      1959,
-      1968,
-      1975,
-      1984,
-      1990,
-      2003,
-      2021
-     ],
-     "standing": "cool",
-     "notable": false,
-     "since": 2022,
-     "record": false,
-     "phrase": "typical for November 13"
-    }
-   },
    {
     "period": "Saturday",
     "date": "2026-11-14",
@@ -258,6 +230,24 @@
      "record": false,
      "phrase": "26th warmest November 19 high (tied) of 153 since 1874, warmest since 2024"
     }
+   },
+   {
+    "period": "Friday",
+    "date": "2026-11-20",
+    "high_f": 61,
+    "would_rank": {
+     "value_f": 61,
+     "warm_rank": 13,
+     "cool_rank": 141,
+     "years": 153,
+     "first_year": 1874,
+     "tied_years": [],
+     "standing": "warm",
+     "notable": true,
+     "since": 2020,
+     "record": false,
+     "phrase": "13th warmest November 20 high of 153 since 1874, warmest since 2020"
+    }
    }
   ]
  },
@@ -265,15 +255,6 @@
   "issued_utc": "2026-11-13T20:35:09Z",
   "grid": "DTX/57,28",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-13T16:00:00-05:00",
-    "is_daytime": true,
-    "temp_f": 42,
-    "temp_c": 5.56,
-    "precip_chance_pct": 17,
-    "short_forecast": "Isolated Rain Showers"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-13T18:00:00-05:00",
@@ -390,19 +371,21 @@
     "temp_c": 5.56,
     "precip_chance_pct": 10,
     "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "name": "Friday",
+    "start": "2026-11-20T06:00:00-05:00",
+    "is_daytime": true,
+    "temp_f": 61,
+    "temp_c": 16.11,
+    "precip_chance_pct": 10,
+    "short_forecast": "Partly Sunny"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-13T20:35:09Z",
   "hours": [
-   {
-    "start": "2026-11-13T18:00:00-05:00",
-    "temp_f": 40,
-    "temp_c": 4.44,
-    "precip_chance_pct": 5,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "start": "2026-11-13T19:00:00-05:00",
     "temp_f": 38,
@@ -731,6 +714,13 @@
     "temp_c": 7.22,
     "precip_chance_pct": 0,
     "short_forecast": "Partly Sunny"
+   },
+   {
+    "start": "2026-11-15T18:00:00-05:00",
+    "temp_f": 42,
+    "temp_c": 5.56,
+    "precip_chance_pct": 0,
+    "short_forecast": "Partly Cloudy"
    }
   ]
  },

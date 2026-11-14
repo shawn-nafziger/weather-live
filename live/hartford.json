@@ -11,20 +11,20 @@
   "lon": -72.6825,
   "history": "Same site as the official Hartford record"
  },
- "as_of_utc": "2026-11-13T23:08:08Z",
+ "as_of_utc": "2026-11-14T00:08:01Z",
  "now": {
-  "time_utc": "2026-11-13T21:51:00Z",
-  "temp_c": 5,
-  "temp_f": 41.0,
-  "precision": "tenths of a degree",
-  "dewpoint_c": 1.1,
-  "humidity_pct": 75.89,
-  "wind_kmh": 12.96,
-  "description": "Cloudy"
+  "time_utc": "2026-11-13T23:45:00Z",
+  "temp_c": 3,
+  "temp_f": 37.4,
+  "precision": "nearest whole \u00b0C",
+  "dewpoint_c": -1,
+  "humidity_pct": 75.0,
+  "wind_kmh": 18.5,
+  "description": ""
  },
  "today_so_far": {
   "date_local": "2026-11-13",
-  "readings": 17,
+  "readings": 18,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -88,32 +88,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-13",
-    "high_f": 41,
-    "would_rank": {
-     "value_f": 41,
-     "warm_rank": 102,
-     "cool_rank": 14,
-     "years": 122,
-     "first_year": 1905,
-     "tied_years": [
-      1908,
-      1920,
-      1932,
-      1939,
-      1962,
-      1996,
-      1997
-     ],
-     "standing": "cool",
-     "notable": true,
-     "since": 2019,
-     "record": false,
-     "phrase": "14th coolest November 13 high (tied) of 122 since 1905, coolest since 2019"
-    }
-   },
    {
     "period": "Saturday",
     "date": "2026-11-14",
@@ -245,29 +219,44 @@
      "record": false,
      "phrase": "14th warmest November 19 high (tied) of 122 since 1905, warmest since 2024"
     }
+   },
+   {
+    "period": "Friday",
+    "date": "2026-11-20",
+    "high_f": 63,
+    "would_rank": {
+     "value_f": 63,
+     "warm_rank": 13,
+     "cool_rank": 105,
+     "years": 122,
+     "first_year": 1905,
+     "tied_years": [
+      1921,
+      1950,
+      1954,
+      2009,
+      2024
+     ],
+     "standing": "warm",
+     "notable": true,
+     "since": 2024,
+     "record": false,
+     "phrase": "13th warmest November 20 high (tied) of 122 since 1905, warmest since 2024"
+    }
    }
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-13T21:16:35Z",
+  "issued_utc": "2026-11-13T23:55:41Z",
   "grid": "BOX/20,72",
   "periods": [
    {
-    "name": "This Afternoon",
-    "start": "2026-11-13T17:00:00-05:00",
-    "is_daytime": true,
-    "temp_f": 41,
-    "temp_c": 5.0,
-    "precip_chance_pct": 3,
-    "short_forecast": "Cloudy"
-   },
-   {
     "name": "Tonight",
-    "start": "2026-11-13T18:00:00-05:00",
+    "start": "2026-11-13T19:00:00-05:00",
     "is_daytime": false,
     "temp_f": 29,
     "temp_c": -1.67,
-    "precip_chance_pct": 3,
+    "precip_chance_pct": 2,
     "short_forecast": "Mostly Cloudy"
    },
    {
@@ -377,24 +366,26 @@
     "temp_c": 2.78,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear"
+   },
+   {
+    "name": "Friday",
+    "start": "2026-11-20T06:00:00-05:00",
+    "is_daytime": true,
+    "temp_f": 63,
+    "temp_c": 17.22,
+    "precip_chance_pct": 2,
+    "short_forecast": "Mostly Sunny"
    }
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-13T21:16:35Z",
+  "issued_utc": "2026-11-13T23:55:41Z",
   "hours": [
    {
-    "start": "2026-11-13T18:00:00-05:00",
+    "start": "2026-11-13T19:00:00-05:00",
     "temp_f": 38,
     "temp_c": 3.33,
-    "precip_chance_pct": 3,
-    "short_forecast": "Mostly Cloudy"
-   },
-   {
-    "start": "2026-11-13T19:00:00-05:00",
-    "temp_f": 36,
-    "temp_c": 2.22,
-    "precip_chance_pct": 2,
+    "precip_chance_pct": 0,
     "short_forecast": "Mostly Cloudy"
    },
    {
@@ -718,6 +709,13 @@
     "temp_c": 7.22,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Sunny"
+   },
+   {
+    "start": "2026-11-15T18:00:00-05:00",
+    "temp_f": 43,
+    "temp_c": 6.11,
+    "precip_chance_pct": 0,
+    "short_forecast": "Partly Cloudy"
    }
   ]
  },

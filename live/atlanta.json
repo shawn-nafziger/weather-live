@@ -11,20 +11,20 @@
   "lon": -84.4269,
   "history": "Same site as the official Atlanta record"
  },
- "as_of_utc": "2026-11-13T23:08:08Z",
+ "as_of_utc": "2026-11-14T00:08:01Z",
  "now": {
-  "time_utc": "2026-11-13T22:15:00Z",
-  "temp_c": 9,
-  "temp_f": 48.2,
+  "time_utc": "2026-11-13T23:45:00Z",
+  "temp_c": 7,
+  "temp_f": 44.6,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": -2,
-  "humidity_pct": 46.04,
-  "wind_kmh": 22.21,
-  "description": "Mostly Clear"
+  "dewpoint_c": -1,
+  "humidity_pct": 56.77,
+  "wind_kmh": 24.08,
+  "description": ""
  },
  "today_so_far": {
   "date_local": "2026-11-13",
-  "readings": 13,
+  "readings": 14,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -94,28 +94,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-13",
-    "high_f": 54,
-    "would_rank": {
-     "value_f": 54,
-     "warm_rank": 119,
-     "cool_rank": 28,
-     "years": 149,
-     "first_year": 1878,
-     "tied_years": [
-      1901,
-      1979,
-      1995
-     ],
-     "standing": "cool",
-     "notable": true,
-     "since": 2022,
-     "record": false,
-     "phrase": "28th coolest November 13 high (tied) of 149 since 1878, coolest since 2022"
-    }
-   },
    {
     "period": "Saturday",
     "date": "2026-11-14",
@@ -259,6 +237,31 @@
      "record": false,
      "phrase": "typical for November 19"
     }
+   },
+   {
+    "period": "Friday",
+    "date": "2026-11-20",
+    "high_f": 70,
+    "would_rank": {
+     "value_f": 70,
+     "warm_rank": 21,
+     "cool_rank": 123,
+     "years": 149,
+     "first_year": 1878,
+     "tied_years": [
+      1898,
+      1963,
+      1981,
+      1989,
+      2015,
+      2020
+     ],
+     "standing": "warm",
+     "notable": true,
+     "since": 2025,
+     "record": false,
+     "phrase": "21st warmest November 20 high (tied) of 149 since 1878, warmest since 2025"
+    }
    }
   ]
  },
@@ -266,15 +269,6 @@
   "issued_utc": "2026-11-13T18:50:35Z",
   "grid": "FFC/50,82",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-13T14:00:00-05:00",
-    "is_daytime": true,
-    "temp_f": 54,
-    "temp_c": 12.22,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-13T18:00:00-05:00",
@@ -391,19 +385,21 @@
     "temp_c": 8.89,
     "precip_chance_pct": 3,
     "short_forecast": "Partly Cloudy"
+   },
+   {
+    "name": "Friday",
+    "start": "2026-11-20T06:00:00-05:00",
+    "is_daytime": true,
+    "temp_f": 70,
+    "temp_c": 21.11,
+    "precip_chance_pct": 3,
+    "short_forecast": "Mostly Sunny"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-13T18:50:35Z",
   "hours": [
-   {
-    "start": "2026-11-13T18:00:00-05:00",
-    "temp_f": 50,
-    "temp_c": 10.0,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Clear"
-   },
    {
     "start": "2026-11-13T19:00:00-05:00",
     "temp_f": 46,
@@ -732,6 +728,13 @@
     "temp_c": 12.78,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
+   },
+   {
+    "start": "2026-11-15T18:00:00-05:00",
+    "temp_f": 52,
+    "temp_c": 11.11,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Clear"
    }
   ]
  },
