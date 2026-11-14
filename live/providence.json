@@ -11,20 +11,20 @@
   "lon": -71.4277,
   "history": "Same site as the official Providence record"
  },
- "as_of_utc": "2026-11-14T23:07:49Z",
+ "as_of_utc": "2026-11-14T23:50:41Z",
  "now": {
-  "time_utc": "2026-11-14T22:40:00Z",
-  "temp_c": 5,
-  "temp_f": 41.0,
+  "time_utc": "2026-11-14T23:35:00Z",
+  "temp_c": 4,
+  "temp_f": 39.2,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": -2,
-  "humidity_pct": 60.56,
-  "wind_kmh": 9.25,
+  "humidity_pct": 64.95,
+  "wind_kmh": 7.42,
   "description": "Mostly Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-14",
-  "readings": 14,
+  "readings": 15,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -90,30 +90,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-14",
-    "high_f": 47,
-    "would_rank": {
-     "value_f": 47,
-     "warm_rank": 80,
-     "cool_rank": 39,
-     "years": 123,
-     "first_year": 1904,
-     "tied_years": [
-      1912,
-      1926,
-      1950,
-      1979,
-      2024
-     ],
-     "standing": "cool",
-     "notable": false,
-     "since": 2024,
-     "record": false,
-     "phrase": "typical for November 14"
-    }
-   },
    {
     "period": "Sunday",
     "date": "2026-11-15",
@@ -242,6 +218,28 @@
      "record": false,
      "phrase": "15th warmest November 20 high (tied) of 123 since 1904, warmest since 2020"
     }
+   },
+   {
+    "period": "Saturday",
+    "date": "2026-11-21",
+    "high_f": 60,
+    "would_rank": {
+     "value_f": 60,
+     "warm_rank": 16,
+     "cool_rank": 105,
+     "years": 123,
+     "first_year": 1904,
+     "tied_years": [
+      1985,
+      1992,
+      1994
+     ],
+     "standing": "warm",
+     "notable": true,
+     "since": 2020,
+     "record": false,
+     "phrase": "16th warmest November 21 high (tied) of 123 since 1904, warmest since 2020"
+    }
    }
   ]
  },
@@ -249,15 +247,6 @@
   "issued_utc": "2026-11-14T21:16:13Z",
   "grid": "BOX/64,70",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-14T17:00:00-05:00",
-    "is_daytime": true,
-    "temp_f": 47,
-    "temp_c": 8.33,
-    "precip_chance_pct": 2,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-14T18:00:00-05:00",
@@ -374,6 +363,15 @@
     "temp_c": 4.44,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear"
+   },
+   {
+    "name": "Saturday",
+    "start": "2026-11-21T06:00:00-05:00",
+    "is_daytime": true,
+    "temp_f": 60,
+    "temp_c": 15.56,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
    }
   ]
  },

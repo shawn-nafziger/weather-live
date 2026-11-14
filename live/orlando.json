@@ -11,20 +11,20 @@
   "lon": -81.3241,
   "history": "Same site as the official Orlando record"
  },
- "as_of_utc": "2026-11-14T23:07:49Z",
+ "as_of_utc": "2026-11-14T23:50:41Z",
  "now": {
-  "time_utc": "2026-11-14T21:53:00Z",
-  "temp_c": 17,
-  "temp_f": 62.6,
+  "time_utc": "2026-11-14T22:53:00Z",
+  "temp_c": 14,
+  "temp_f": 57.2,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 3,
-  "humidity_pct": 39.17,
+  "dewpoint_c": 4,
+  "humidity_pct": 50.94,
   "wind_kmh": 12.96,
-  "description": "Mostly Cloudy"
+  "description": "Partly Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-14",
-  "readings": 17,
+  "readings": 18,
   "basis": "5-minute readings (whole \u00b0C, approximate)",
   "approximate": true,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -88,24 +88,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-14",
-    "high_f": 65,
-    "would_rank": {
-     "value_f": 65,
-     "warm_rank": 128,
-     "cool_rank": 5,
-     "years": 132,
-     "first_year": 1893,
-     "tied_years": [],
-     "standing": "cool",
-     "notable": true,
-     "since": 1975,
-     "record": false,
-     "phrase": "5th coolest November 14 high of 132 since 1893, coolest since 1975"
-    }
-   },
    {
     "period": "Sunday",
     "date": "2026-11-15",
@@ -266,22 +248,42 @@
      "record": false,
      "phrase": "typical for November 20"
     }
+   },
+   {
+    "period": "Saturday",
+    "date": "2026-11-21",
+    "high_f": 80,
+    "would_rank": {
+     "value_f": 80,
+     "warm_rank": 43,
+     "cool_rank": 79,
+     "years": 131,
+     "first_year": 1893,
+     "tied_years": [
+      1902,
+      1919,
+      1929,
+      1936,
+      1965,
+      1978,
+      1994,
+      2007,
+      2009,
+      2015
+     ],
+     "standing": "warm",
+     "notable": false,
+     "since": 2025,
+     "record": false,
+     "phrase": "typical for November 21"
+    }
    }
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-14T18:39:41Z",
+  "issued_utc": "2026-11-14T23:29:43Z",
   "grid": "MLB/29,63",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-14T14:00:00-05:00",
-    "is_daytime": true,
-    "temp_f": 65,
-    "temp_c": 18.33,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Sunny"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-14T18:00:00-05:00",
@@ -398,11 +400,20 @@
     "temp_c": 18.89,
     "precip_chance_pct": 24,
     "short_forecast": "Slight Chance Rain Showers then Partly Cloudy"
+   },
+   {
+    "name": "Saturday",
+    "start": "2026-11-21T06:00:00-05:00",
+    "is_daytime": true,
+    "temp_f": 80,
+    "temp_c": 26.67,
+    "precip_chance_pct": 25,
+    "short_forecast": "Chance Rain Showers"
    }
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-14T22:14:46Z",
+  "issued_utc": "2026-11-14T23:29:43Z",
   "hours": [
    {
     "start": "2026-11-14T18:00:00-05:00",

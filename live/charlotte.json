@@ -11,20 +11,20 @@
   "lon": -80.9614,
   "history": "Same site as the official Charlotte record"
  },
- "as_of_utc": "2026-11-14T23:07:49Z",
+ "as_of_utc": "2026-11-14T23:50:41Z",
  "now": {
-  "time_utc": "2026-11-14T22:40:00Z",
+  "time_utc": "2026-11-14T23:35:00Z",
   "temp_c": 7,
   "temp_f": 44.6,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": -4,
-  "humidity_pct": 45.46,
-  "wind_kmh": 9.25,
+  "dewpoint_c": -3,
+  "humidity_pct": 48.98,
+  "wind_kmh": 12.96,
   "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-14",
-  "readings": 14,
+  "readings": 15,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -88,30 +88,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-14",
-    "high_f": 54,
-    "would_rank": {
-     "value_f": 54,
-     "warm_rank": 116,
-     "cool_rank": 29,
-     "years": 149,
-     "first_year": 1878,
-     "tied_years": [
-      1882,
-      1886,
-      1895,
-      1983,
-      2004
-     ],
-     "standing": "cool",
-     "notable": true,
-     "since": 2024,
-     "record": false,
-     "phrase": "29th coolest November 14 high (tied) of 149 since 1878, coolest since 2024"
-    }
-   },
    {
     "period": "Sunday",
     "date": "2026-11-15",
@@ -246,6 +222,32 @@
      "record": false,
      "phrase": "13th warmest November 20 high (tied) of 149 since 1878, warmest since 2007"
     }
+   },
+   {
+    "period": "Saturday",
+    "date": "2026-11-21",
+    "high_f": 70,
+    "would_rank": {
+     "value_f": 70,
+     "warm_rank": 18,
+     "cool_rank": 125,
+     "years": 149,
+     "first_year": 1878,
+     "tied_years": [
+      1909,
+      1913,
+      1940,
+      1956,
+      2004,
+      2010,
+      2025
+     ],
+     "standing": "warm",
+     "notable": true,
+     "since": 2025,
+     "record": false,
+     "phrase": "18th warmest November 21 high (tied) of 149 since 1878, warmest since 2025"
+    }
    }
   ]
  },
@@ -253,15 +255,6 @@
   "issued_utc": "2026-11-14T18:23:33Z",
   "grid": "GSP/115,64",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-14T14:00:00-05:00",
-    "is_daytime": true,
-    "temp_f": 54,
-    "temp_c": 12.22,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-14T18:00:00-05:00",
@@ -378,6 +371,15 @@
     "temp_c": 5.0,
     "precip_chance_pct": 1,
     "short_forecast": "Mostly Clear"
+   },
+   {
+    "name": "Saturday",
+    "start": "2026-11-21T06:00:00-05:00",
+    "is_daytime": true,
+    "temp_f": 70,
+    "temp_c": 21.11,
+    "precip_chance_pct": 1,
+    "short_forecast": "Sunny"
    }
   ]
  },

@@ -11,20 +11,20 @@
   "lon": -77.0342,
   "history": "Same site as the official Washington record"
  },
- "as_of_utc": "2026-11-14T23:07:49Z",
+ "as_of_utc": "2026-11-14T23:50:41Z",
  "now": {
-  "time_utc": "2026-11-14T22:40:00Z",
+  "time_utc": "2026-11-14T23:35:00Z",
   "temp_c": 9,
   "temp_f": 48.2,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": -1,
   "humidity_pct": 49.55,
-  "wind_kmh": 24.08,
-  "description": "Cloudy"
+  "wind_kmh": 20.38,
+  "description": "Mostly Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-14",
-  "readings": 13,
+  "readings": 14,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -93,28 +93,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-14",
-    "high_f": 52,
-    "would_rank": {
-     "value_f": 52,
-     "warm_rank": 99,
-     "cool_rank": 54,
-     "years": 155,
-     "first_year": 1872,
-     "tied_years": [
-      1872,
-      1903,
-      1979
-     ],
-     "standing": "cool",
-     "notable": false,
-     "since": 2022,
-     "record": false,
-     "phrase": "typical for November 14"
-    }
-   },
    {
     "period": "Sunday",
     "date": "2026-11-15",
@@ -253,6 +231,29 @@
      "record": false,
      "phrase": "17th warmest November 20 high (tied) of 155 since 1872, warmest since 2024"
     }
+   },
+   {
+    "period": "Saturday",
+    "date": "2026-11-21",
+    "high_f": 66,
+    "would_rank": {
+     "value_f": 66,
+     "warm_rank": 16,
+     "cool_rank": 136,
+     "years": 155,
+     "first_year": 1872,
+     "tied_years": [
+      1883,
+      1940,
+      1956,
+      1992
+     ],
+     "standing": "warm",
+     "notable": true,
+     "since": 2007,
+     "record": false,
+     "phrase": "16th warmest November 21 high (tied) of 155 since 1872, warmest since 2007"
+    }
    }
   ]
  },
@@ -260,15 +261,6 @@
   "issued_utc": "2026-11-14T20:54:08Z",
   "grid": "LWX/97,69",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-14T15:00:00-05:00",
-    "is_daytime": true,
-    "temp_f": 52,
-    "temp_c": 11.11,
-    "precip_chance_pct": 4,
-    "short_forecast": "Scattered Rain Showers"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-14T18:00:00-05:00",
@@ -385,6 +377,15 @@
     "temp_c": 6.67,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear"
+   },
+   {
+    "name": "Saturday",
+    "start": "2026-11-21T06:00:00-05:00",
+    "is_daytime": true,
+    "temp_f": 66,
+    "temp_c": 18.89,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
    }
   ]
  },

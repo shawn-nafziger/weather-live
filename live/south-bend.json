@@ -11,20 +11,20 @@
   "lon": -86.3186,
   "history": "Same station as the official South Bend record (South Bend airport). Also the nearest official city record to Goshen, about 27 miles; a candidate for Goshen's hourly readings (question D2)"
  },
- "as_of_utc": "2026-11-14T23:07:49Z",
+ "as_of_utc": "2026-11-14T23:50:41Z",
  "now": {
-  "time_utc": "2026-11-14T22:40:00Z",
+  "time_utc": "2026-11-14T23:30:00Z",
   "temp_c": 6,
   "temp_f": 42.8,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 3,
-  "humidity_pct": 81.08,
-  "wind_kmh": 11.12,
+  "dewpoint_c": 2,
+  "humidity_pct": 75.52,
+  "wind_kmh": 16.67,
   "description": "Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-14",
-  "readings": 29,
+  "readings": 30,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -90,28 +90,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-14",
-    "high_f": 46,
-    "would_rank": {
-     "value_f": 46,
-     "warm_rank": 76,
-     "cool_rank": 52,
-     "years": 130,
-     "first_year": 1894,
-     "tied_years": [
-      1966,
-      2003,
-      2010
-     ],
-     "standing": "cool",
-     "notable": false,
-     "since": 2022,
-     "record": false,
-     "phrase": "typical for November 14"
-    }
-   },
    {
     "period": "Sunday",
     "date": "2026-11-15",
@@ -245,22 +223,33 @@
      "record": false,
      "phrase": "18th warmest November 20 high (tied) of 130 since 1894, warmest since 2020"
     }
+   },
+   {
+    "period": "Saturday",
+    "date": "2026-11-21",
+    "high_f": 64,
+    "would_rank": {
+     "value_f": 64,
+     "warm_rank": 6,
+     "cool_rank": 124,
+     "years": 130,
+     "first_year": 1894,
+     "tied_years": [
+      1902
+     ],
+     "standing": "warm",
+     "notable": true,
+     "since": 1990,
+     "record": false,
+     "phrase": "6th warmest November 21 high (tied) of 130 since 1894, warmest since 1990"
+    }
    }
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-14T21:44:38Z",
+  "issued_utc": "2026-11-14T23:00:09Z",
   "grid": "IWX/27,64",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-14T17:00:00-05:00",
-    "is_daytime": true,
-    "temp_f": 46,
-    "temp_c": 7.78,
-    "precip_chance_pct": 19,
-    "short_forecast": "Slight Chance Rain Showers"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-14T18:00:00-05:00",
@@ -377,6 +366,15 @@
     "temp_c": 7.22,
     "precip_chance_pct": 10,
     "short_forecast": "Partly Cloudy"
+   },
+   {
+    "name": "Saturday",
+    "start": "2026-11-21T06:00:00-05:00",
+    "is_daytime": true,
+    "temp_f": 64,
+    "temp_c": 17.78,
+    "precip_chance_pct": 24,
+    "short_forecast": "Partly Sunny then Slight Chance Rain Showers"
    }
   ]
  },
