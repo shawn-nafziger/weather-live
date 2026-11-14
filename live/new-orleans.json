@@ -11,15 +11,15 @@
   "lon": -90.2508,
   "history": "Same site as the official New Orleans record"
  },
- "as_of_utc": "2026-11-14T00:08:01Z",
+ "as_of_utc": "2026-11-14T01:08:10Z",
  "now": {
-  "time_utc": "2026-11-13T23:55:00Z",
+  "time_utc": "2026-11-14T00:50:00Z",
   "temp_c": 18,
   "temp_f": 64.4,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 5,
-  "humidity_pct": 42.31,
-  "wind_kmh": 9.25,
+  "dewpoint_c": null,
+  "humidity_pct": null,
+  "wind_kmh": 18.5,
   "description": "Clear"
  },
  "today_so_far": {
@@ -91,28 +91,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-13",
-    "high_f": 69,
-    "would_rank": {
-     "value_f": 69,
-     "warm_rank": 48,
-     "cool_rank": 31,
-     "years": 81,
-     "first_year": 1946,
-     "tied_years": [
-      1962,
-      1991,
-      2015
-     ],
-     "standing": "cool",
-     "notable": false,
-     "since": 2023,
-     "record": false,
-     "phrase": "typical for November 13"
-    }
-   },
    {
     "period": "Saturday",
     "date": "2026-11-14",
@@ -245,6 +223,28 @@
      "record": false,
      "phrase": "typical for November 19"
     }
+   },
+   {
+    "period": "Friday",
+    "date": "2026-11-20",
+    "high_f": 76,
+    "would_rank": {
+     "value_f": 76,
+     "warm_rank": 20,
+     "cool_rank": 59,
+     "years": 81,
+     "first_year": 1946,
+     "tied_years": [
+      1966,
+      1982,
+      1996
+     ],
+     "standing": "warm",
+     "notable": false,
+     "since": 2025,
+     "record": false,
+     "phrase": "typical for November 20"
+    }
    }
   ]
  },
@@ -252,15 +252,6 @@
   "issued_utc": "2026-11-13T19:27:23Z",
   "grid": "LIX/61,90",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-13T13:00:00-06:00",
-    "is_daytime": true,
-    "temp_f": 69,
-    "temp_c": 20.56,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-13T18:00:00-06:00",
@@ -377,19 +368,21 @@
     "temp_c": 16.67,
     "precip_chance_pct": 15,
     "short_forecast": "Slight Chance Rain Showers then Partly Cloudy"
+   },
+   {
+    "name": "Friday",
+    "start": "2026-11-20T06:00:00-06:00",
+    "is_daytime": true,
+    "temp_f": 76,
+    "temp_c": 24.44,
+    "precip_chance_pct": 9,
+    "short_forecast": "Mostly Sunny"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-13T19:27:23Z",
   "hours": [
-   {
-    "start": "2026-11-13T18:00:00-06:00",
-    "temp_f": 63,
-    "temp_c": 17.22,
-    "precip_chance_pct": 0,
-    "short_forecast": "Clear"
-   },
    {
     "start": "2026-11-13T19:00:00-06:00",
     "temp_f": 61,
@@ -718,6 +711,13 @@
     "temp_c": 17.78,
     "precip_chance_pct": 1,
     "short_forecast": "Partly Sunny"
+   },
+   {
+    "start": "2026-11-15T18:00:00-06:00",
+    "temp_f": 62,
+    "temp_c": 16.67,
+    "precip_chance_pct": 16,
+    "short_forecast": "Slight Chance Rain Showers"
    }
   ]
  },

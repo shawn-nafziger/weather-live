@@ -11,15 +11,15 @@
   "lon": -111.965,
   "history": "Same site as the official Salt Lake City record"
  },
- "as_of_utc": "2026-11-14T00:08:01Z",
+ "as_of_utc": "2026-11-14T01:08:10Z",
  "now": {
-  "time_utc": "2026-11-13T23:50:00Z",
-  "temp_c": 16,
-  "temp_f": 60.8,
+  "time_utc": "2026-11-14T00:50:00Z",
+  "temp_c": 14,
+  "temp_f": 57.2,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 1,
-  "humidity_pct": 36.19,
-  "wind_kmh": 16.67,
+  "dewpoint_c": 2,
+  "humidity_pct": 44.21,
+  "wind_kmh": 12.96,
   "description": "Mostly Cloudy"
  },
  "today_so_far": {
@@ -113,29 +113,6 @@
    "phrase": "already the 12th warmest November 13 high (tied) of 153 since 1874, warmest since 2025"
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-13",
-    "high_f": 62,
-    "would_rank": {
-     "value_f": 62,
-     "warm_rank": 20,
-     "cool_rank": 130,
-     "years": 153,
-     "first_year": 1874,
-     "tied_years": [
-      1906,
-      1914,
-      1966,
-      1974
-     ],
-     "standing": "warm",
-     "notable": true,
-     "since": 2025,
-     "record": false,
-     "phrase": "20th warmest November 13 high (tied) of 153 since 1874, warmest since 2025"
-    }
-   },
    {
     "period": "Saturday",
     "date": "2026-11-14",
@@ -281,6 +258,27 @@
      "record": false,
      "phrase": "typical for November 19"
     }
+   },
+   {
+    "period": "Friday",
+    "date": "2026-11-20",
+    "high_f": 42,
+    "would_rank": {
+     "value_f": 42,
+     "warm_rank": 112,
+     "cool_rank": 40,
+     "years": 153,
+     "first_year": 1874,
+     "tied_years": [
+      1902,
+      1988
+     ],
+     "standing": "cool",
+     "notable": false,
+     "since": 2022,
+     "record": false,
+     "phrase": "typical for November 20"
+    }
    }
   ]
  },
@@ -288,15 +286,6 @@
   "issued_utc": "2026-11-13T21:06:29Z",
   "grid": "SLC/98,176",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-13T17:00:00-07:00",
-    "is_daytime": true,
-    "temp_f": 62,
-    "temp_c": 16.67,
-    "precip_chance_pct": 48,
-    "short_forecast": "Chance Light Rain"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-13T18:00:00-07:00",
@@ -413,19 +402,21 @@
     "temp_c": -1.11,
     "precip_chance_pct": 72,
     "short_forecast": "Rain And Snow Likely"
+   },
+   {
+    "name": "Friday",
+    "start": "2026-11-20T06:00:00-07:00",
+    "is_daytime": true,
+    "temp_f": 42,
+    "temp_c": 5.56,
+    "precip_chance_pct": 55,
+    "short_forecast": "Light Snow Likely"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-13T21:06:29Z",
   "hours": [
-   {
-    "start": "2026-11-13T17:00:00-07:00",
-    "temp_f": 58,
-    "temp_c": 14.44,
-    "precip_chance_pct": 48,
-    "short_forecast": "Chance Light Rain"
-   },
    {
     "start": "2026-11-13T18:00:00-07:00",
     "temp_f": 55,
@@ -752,6 +743,13 @@
     "start": "2026-11-15T16:00:00-07:00",
     "temp_f": 53,
     "temp_c": 11.67,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Sunny"
+   },
+   {
+    "start": "2026-11-15T17:00:00-07:00",
+    "temp_f": 51,
+    "temp_c": 10.56,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Sunny"
    }

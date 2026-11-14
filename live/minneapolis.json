@@ -11,15 +11,15 @@
   "lon": -93.2289,
   "history": "Same site as the official Minneapolis record"
  },
- "as_of_utc": "2026-11-14T00:08:01Z",
+ "as_of_utc": "2026-11-14T01:08:10Z",
  "now": {
-  "time_utc": "2026-11-13T23:55:00Z",
+  "time_utc": "2026-11-14T00:10:00Z",
   "temp_c": 2,
   "temp_f": 35.6,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": -6,
   "humidity_pct": 55.43,
-  "wind_kmh": 9.25,
+  "wind_kmh": 11.12,
   "description": "Clear"
  },
  "today_so_far": {
@@ -96,32 +96,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-13",
-    "high_f": 40,
-    "would_rank": {
-     "value_f": 40,
-     "warm_rank": 77,
-     "cool_rank": 72,
-     "years": 155,
-     "first_year": 1872,
-     "tied_years": [
-      1875,
-      1929,
-      1962,
-      1966,
-      1967,
-      1980,
-      2006
-     ],
-     "standing": "cool",
-     "notable": false,
-     "since": 2022,
-     "record": false,
-     "phrase": "typical for November 13"
-    }
-   },
    {
     "period": "Saturday",
     "date": "2026-11-14",
@@ -260,22 +234,34 @@
      "record": false,
      "phrase": "7th warmest November 19 high (tied) of 155 since 1872, warmest since 2012"
     }
+   },
+   {
+    "period": "Friday",
+    "date": "2026-11-20",
+    "high_f": 54,
+    "would_rank": {
+     "value_f": 54,
+     "warm_rank": 18,
+     "cool_rank": 136,
+     "years": 155,
+     "first_year": 1872,
+     "tied_years": [
+      1912,
+      2012
+     ],
+     "standing": "warm",
+     "notable": true,
+     "since": 2012,
+     "record": false,
+     "phrase": "18th warmest November 20 high (tied) of 155 since 1872, warmest since 2012"
+    }
    }
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-13T20:41:46Z",
+  "issued_utc": "2026-11-14T00:01:41Z",
   "grid": "MPX/110,68",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-13T15:00:00-06:00",
-    "is_daytime": true,
-    "temp_f": 40,
-    "temp_c": 4.44,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-13T18:00:00-06:00",
@@ -392,23 +378,25 @@
     "temp_c": 6.11,
     "precip_chance_pct": 18,
     "short_forecast": "Slight Chance Light Rain then Partly Cloudy"
+   },
+   {
+    "name": "Friday",
+    "start": "2026-11-20T06:00:00-06:00",
+    "is_daytime": true,
+    "temp_f": 54,
+    "temp_c": 12.22,
+    "precip_chance_pct": 21,
+    "short_forecast": "Partly Sunny then Slight Chance Light Rain"
    }
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-13T20:41:46Z",
+  "issued_utc": "2026-11-14T00:01:41Z",
   "hours": [
    {
-    "start": "2026-11-13T18:00:00-06:00",
-    "temp_f": 34,
-    "temp_c": 1.11,
-    "precip_chance_pct": 0,
-    "short_forecast": "Clear"
-   },
-   {
     "start": "2026-11-13T19:00:00-06:00",
-    "temp_f": 30,
-    "temp_c": -1.11,
+    "temp_f": 31,
+    "temp_c": -0.56,
     "precip_chance_pct": 0,
     "short_forecast": "Clear"
    },
@@ -733,6 +721,13 @@
     "temp_c": 6.11,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
+   },
+   {
+    "start": "2026-11-15T18:00:00-06:00",
+    "temp_f": 41,
+    "temp_c": 5.0,
+    "precip_chance_pct": 0,
+    "short_forecast": "Clear"
    }
   ]
  },
