@@ -11,26 +11,26 @@
   "lon": -120.0756,
   "history": "Provisional: Santa Ynez Airport. The long record (CACHUMA LAKE) is a different, once-a-day station"
  },
- "as_of_utc": "2026-11-14T21:07:49Z",
+ "as_of_utc": "2026-11-14T22:07:54Z",
  "now": {
-  "time_utc": "2026-11-14T20:35:00Z",
-  "temp_c": 19,
-  "temp_f": 66.2,
+  "time_utc": "2026-11-14T21:35:00Z",
+  "temp_c": 20,
+  "temp_f": 68.0,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 12,
-  "humidity_pct": 63.85,
-  "wind_kmh": 5.4,
+  "dewpoint_c": 9,
+  "humidity_pct": 49.13,
+  "wind_kmh": 9.36,
   "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-14",
-  "readings": 33,
+  "readings": 36,
   "basis": "5-minute readings (whole \u00b0C, approximate)",
   "approximate": true,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 19,
-  "high_f": 66.2,
-  "high_time_utc": "2026-11-14T20:35:00Z",
+  "high_c": 20,
+  "high_f": 68.0,
+  "high_time_utc": "2026-11-14T21:15:00Z",
   "low_c": 7,
   "low_f": 44.6,
   "low_time_utc": "2026-11-14T12:55:00Z"
@@ -41,39 +41,41 @@
   "available": true,
   "rank_today": false,
   "latest_final": {
-   "date": "2026-11-13",
-   "is_yesterday": true,
-   "high_f": 75,
-   "low_f": 54,
+   "date": "2026-11-14",
+   "is_yesterday": false,
+   "high_f": 69,
+   "low_f": 44,
    "high_rank": {
-    "value_f": 75,
-    "warm_rank": 32,
-    "cool_rank": 43,
+    "value_f": 69,
+    "warm_rank": 48,
+    "cool_rank": 26,
     "years": 75,
     "first_year": 1952,
     "tied_years": [
-     1956
+     1957,
+     2003
+    ],
+    "standing": "cool",
+    "notable": false,
+    "since": 2022,
+    "record": false,
+    "phrase": "typical for November 14"
+   },
+   "low_rank": {
+    "value_f": 44,
+    "warm_rank": 34,
+    "cool_rank": 40,
+    "years": 75,
+    "first_year": 1952,
+    "tied_years": [
+     1979,
+     1986
     ],
     "standing": "warm",
     "notable": false,
-    "since": 2023,
+    "since": 2025,
     "record": false,
-    "phrase": "typical for November 13"
-   },
-   "low_rank": {
-    "value_f": 54,
-    "warm_rank": 4,
-    "cool_rank": 70,
-    "years": 74,
-    "first_year": 1952,
-    "tied_years": [
-     1987
-    ],
-    "standing": "warm",
-    "notable": true,
-    "since": 2016,
-    "record": false,
-    "phrase": "4th warmest November 13 low (tied) of 74 since 1952, warmest since 2016"
+    "phrase": "typical for November 14"
    }
   },
   "note": "Today's readings come from a different station than this record, so today and the forecast aren't ranked against it."
@@ -83,8 +85,8 @@
   "grid": "LOX/93,81",
   "periods": [
    {
-    "name": "Today",
-    "start": "2026-11-14T11:00:00-08:00",
+    "name": "This Afternoon",
+    "start": "2026-11-14T12:00:00-08:00",
     "is_daytime": true,
     "temp_f": 70,
     "temp_c": 21.11,
@@ -213,13 +215,6 @@
  "hourly": {
   "issued_utc": "2026-11-14T18:26:33Z",
   "hours": [
-   {
-    "start": "2026-11-14T13:00:00-08:00",
-    "temp_f": 70,
-    "temp_c": 21.11,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "start": "2026-11-14T14:00:00-08:00",
     "temp_f": 70,
@@ -546,6 +541,13 @@
     "start": "2026-11-16T12:00:00-08:00",
     "temp_f": 62,
     "temp_c": 16.67,
+    "precip_chance_pct": 22,
+    "short_forecast": "Slight Chance Light Rain"
+   },
+   {
+    "start": "2026-11-16T13:00:00-08:00",
+    "temp_f": 64,
+    "temp_c": 17.78,
     "precip_chance_pct": 22,
     "short_forecast": "Slight Chance Light Rain"
    }
