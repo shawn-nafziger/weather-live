@@ -11,29 +11,23 @@
   "lon": -72.6825,
   "history": "Same site as the official Hartford record"
  },
- "as_of_utc": "2026-11-14T04:07:58Z",
+ "as_of_utc": "2026-11-14T05:07:50Z",
  "now": {
-  "time_utc": "2026-11-14T03:15:00Z",
-  "temp_c": 3,
-  "temp_f": 37.4,
+  "time_utc": "2026-11-14T04:40:00Z",
+  "temp_c": 2,
+  "temp_f": 35.6,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": -1,
-  "humidity_pct": 75.0,
-  "wind_kmh": 9.25,
-  "description": "Partly Cloudy"
+  "dewpoint_c": -2,
+  "humidity_pct": 74.82,
+  "wind_kmh": 7.42,
+  "description": "Clear"
  },
  "today_so_far": {
-  "date_local": "2026-11-13",
-  "readings": 21,
-  "basis": "hourly reports (tenths of a degree)",
-  "approximate": false,
-  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 5,
-  "high_f": 41.0,
-  "high_time_utc": "2026-11-13T05:15:00Z",
-  "low_c": 2.2,
-  "low_f": 36.0,
-  "low_time_utc": "2026-11-13T11:51:00Z"
+  "date_local": "2026-11-14",
+  "readings": 0,
+  "basis": "5-minute readings (whole \u00b0C, approximate)",
+  "approximate": true,
+  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two."
  },
  "record": {
   "series": "Hartford area (ThreadEx; Bradley airport)",
@@ -42,7 +36,7 @@
   "rank_today": true,
   "latest_final": {
    "date": "2026-11-12",
-   "is_yesterday": true,
+   "is_yesterday": false,
    "high_f": 47,
    "low_f": 41,
    "high_rank": {
@@ -251,8 +245,8 @@
   "grid": "BOX/20,72",
   "periods": [
    {
-    "name": "Tonight",
-    "start": "2026-11-13T23:00:00-05:00",
+    "name": "Overnight",
+    "start": "2026-11-14T00:00:00-05:00",
     "is_daytime": false,
     "temp_f": 29,
     "temp_c": -1.67,
@@ -381,13 +375,6 @@
  "hourly": {
   "issued_utc": "2026-11-14T03:13:22Z",
   "hours": [
-   {
-    "start": "2026-11-13T23:00:00-05:00",
-    "temp_f": 34,
-    "temp_c": 1.11,
-    "precip_chance_pct": 2,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "start": "2026-11-14T00:00:00-05:00",
     "temp_f": 33,
@@ -714,6 +701,13 @@
     "start": "2026-11-15T22:00:00-05:00",
     "temp_f": 37,
     "temp_c": 2.78,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Clear"
+   },
+   {
+    "start": "2026-11-15T23:00:00-05:00",
+    "temp_f": 36,
+    "temp_c": 2.22,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear"
    }

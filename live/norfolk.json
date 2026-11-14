@@ -11,34 +11,23 @@
   "lon": -76.1919,
   "history": "Same site as the official Norfolk record"
  },
- "as_of_utc": "2026-11-14T04:07:58Z",
+ "as_of_utc": "2026-11-14T05:07:50Z",
  "now": {
-  "time_utc": "2026-11-14T03:35:00Z",
+  "time_utc": "2026-11-14T04:40:00Z",
   "temp_c": 9,
   "temp_f": 48.2,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 1,
-  "humidity_pct": 57.28,
-  "wind_kmh": 20.38,
-  "description": "Mostly Cloudy"
+  "dewpoint_c": 0,
+  "humidity_pct": 53.29,
+  "wind_kmh": null,
+  "description": "Cloudy"
  },
  "today_so_far": {
-  "date_local": "2026-11-13",
-  "readings": 15,
-  "basis": "hourly reports (tenths of a degree)",
-  "approximate": false,
-  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 12.8,
-  "high_f": 55.0,
-  "high_time_utc": "2026-11-13T05:51:00Z",
-  "low_c": 10,
-  "low_f": 50.0,
-  "low_time_utc": "2026-11-13T22:51:00Z",
-  "dip_between_reports": {
-   "at_most_f": 49.1,
-   "about_f": 48.2,
-   "time_utc": "2026-11-14T03:35:00Z"
-  }
+  "date_local": "2026-11-14",
+  "readings": 0,
+  "basis": "5-minute readings (whole \u00b0C, approximate)",
+  "approximate": true,
+  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two."
  },
  "record": {
   "series": "Norfolk area (ThreadEx; airport)",
@@ -47,7 +36,7 @@
   "rank_today": true,
   "latest_final": {
    "date": "2026-11-12",
-   "is_yesterday": true,
+   "is_yesterday": false,
    "high_f": 72,
    "low_f": 51,
    "high_rank": {
@@ -278,8 +267,8 @@
   "grid": "AKQ/93,55",
   "periods": [
    {
-    "name": "Tonight",
-    "start": "2026-11-13T23:00:00-05:00",
+    "name": "Overnight",
+    "start": "2026-11-14T00:00:00-05:00",
     "is_daytime": false,
     "temp_f": 42,
     "temp_c": 5.56,
@@ -408,13 +397,6 @@
  "hourly": {
   "issued_utc": "2026-11-14T02:48:06Z",
   "hours": [
-   {
-    "start": "2026-11-13T23:00:00-05:00",
-    "temp_f": 49,
-    "temp_c": 9.44,
-    "precip_chance_pct": 1,
-    "short_forecast": "Partly Cloudy"
-   },
    {
     "start": "2026-11-14T00:00:00-05:00",
     "temp_f": 48,
@@ -743,6 +725,13 @@
     "temp_c": 8.33,
     "precip_chance_pct": 0,
     "short_forecast": "Partly Cloudy"
+   },
+   {
+    "start": "2026-11-15T23:00:00-05:00",
+    "temp_f": 47,
+    "temp_c": 8.33,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Clear"
    }
   ]
  },
