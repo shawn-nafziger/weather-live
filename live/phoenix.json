@@ -11,20 +11,20 @@
   "lon": -112.0035,
   "history": "Same station as the official Phoenix record (Sky Harbor since 1933)"
  },
- "as_of_utc": "2026-11-14T13:07:58Z",
+ "as_of_utc": "2026-11-14T14:07:54Z",
  "now": {
-  "time_utc": "2026-11-14T12:55:00Z",
+  "time_utc": "2026-11-14T13:40:00Z",
   "temp_c": 16,
   "temp_f": 60.8,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 13,
   "humidity_pct": 82.39,
-  "wind_kmh": 11.12,
-  "description": "Mostly Cloudy"
+  "wind_kmh": 12.96,
+  "description": "Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-14",
-  "readings": 4,
+  "readings": 5,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -84,7 +84,7 @@
   },
   "forecast_highs": [
    {
-    "period": "Saturday",
+    "period": "Today",
     "date": "2026-11-14",
     "high_f": 73,
     "would_rank": {
@@ -259,16 +259,7 @@
   "grid": "PSR/161,57",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-14T04:00:00-07:00",
-    "is_daytime": false,
-    "temp_f": 58,
-    "temp_c": 14.44,
-    "precip_chance_pct": 4,
-    "short_forecast": "Mostly Clear"
-   },
-   {
-    "name": "Saturday",
+    "name": "Today",
     "start": "2026-11-14T06:00:00-07:00",
     "is_daytime": true,
     "temp_f": 73,
@@ -277,7 +268,7 @@
     "short_forecast": "Mostly Sunny"
    },
    {
-    "name": "Saturday Night",
+    "name": "Tonight",
     "start": "2026-11-14T18:00:00-07:00",
     "is_daytime": false,
     "temp_f": 56,
@@ -383,19 +374,21 @@
     "temp_c": 20.0,
     "precip_chance_pct": 19,
     "short_forecast": "Slight Chance Rain Showers then Mostly Sunny"
+   },
+   {
+    "name": "Friday Night",
+    "start": "2026-11-20T18:00:00-07:00",
+    "is_daytime": false,
+    "temp_f": 49,
+    "temp_c": 9.44,
+    "precip_chance_pct": 12,
+    "short_forecast": "Mostly Clear"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-14T10:53:20Z",
   "hours": [
-   {
-    "start": "2026-11-14T06:00:00-07:00",
-    "temp_f": 58,
-    "temp_c": 14.44,
-    "precip_chance_pct": 3,
-    "short_forecast": "Sunny"
-   },
    {
     "start": "2026-11-14T07:00:00-07:00",
     "temp_f": 58,
@@ -724,6 +717,13 @@
     "temp_c": 13.33,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear"
+   },
+   {
+    "start": "2026-11-16T06:00:00-07:00",
+    "temp_f": 56,
+    "temp_c": 13.33,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
    }
   ]
  },
