@@ -11,20 +11,20 @@
   "lon": -75.2268,
   "history": "Same site as the official Philadelphia record"
  },
- "as_of_utc": "2026-11-14T11:07:51Z",
+ "as_of_utc": "2026-11-14T12:07:56Z",
  "now": {
-  "time_utc": "2026-11-14T10:45:00Z",
+  "time_utc": "2026-11-14T11:50:00Z",
   "temp_c": 5,
   "temp_f": 41.0,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": -4,
-  "humidity_pct": 52.19,
-  "wind_kmh": 20.38,
+  "dewpoint_c": -3,
+  "humidity_pct": 56.24,
+  "wind_kmh": 18.5,
   "description": "Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-14",
-  "readings": 4,
+  "readings": 5,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -41,50 +41,57 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-12",
-   "is_yesterday": false,
-   "high_f": 65,
-   "low_f": 50,
+   "date": "2026-11-13",
+   "is_yesterday": true,
+   "high_f": 51,
+   "low_f": 41,
    "high_rank": {
-    "value_f": 65,
-    "warm_rank": 26,
-    "cool_rank": 127,
+    "value_f": 51,
+    "warm_rank": 98,
+    "cool_rank": 50,
     "years": 153,
     "first_year": 1874,
     "tied_years": [
-     1917
+     1887,
+     1898,
+     1926,
+     1946,
+     2002,
+     2024
     ],
-    "standing": "warm",
-    "notable": true,
-    "since": 2022,
+    "standing": "cool",
+    "notable": false,
+    "since": 2024,
     "record": false,
-    "phrase": "26th warmest November 12 high (tied) of 153 since 1874, warmest since 2022"
+    "phrase": "typical for November 13"
    },
    "low_rank": {
-    "value_f": 50,
-    "warm_rank": 10,
-    "cool_rank": 137,
+    "value_f": 41,
+    "warm_rank": 55,
+    "cool_rank": 90,
     "years": 153,
     "first_year": 1874,
     "tied_years": [
-     1915,
-     1924,
-     1927,
-     1945,
-     1967,
-     1982,
-     2002
+     1877,
+     1890,
+     1903,
+     1940,
+     1972,
+     1973,
+     2005,
+     2010,
+     2011
     ],
     "standing": "warm",
-    "notable": true,
-    "since": 2022,
+    "notable": false,
+    "since": 2025,
     "record": false,
-    "phrase": "10th warmest November 12 low (tied) of 153 since 1874, warmest since 2022"
+    "phrase": "typical for November 13"
    }
   },
   "forecast_highs": [
    {
-    "period": "Saturday",
+    "period": "Today",
     "date": "2026-11-14",
     "high_f": 48,
     "would_rank": {
@@ -255,20 +262,11 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-14T09:07:42Z",
+  "issued_utc": "2026-11-14T11:09:27Z",
   "grid": "PHI/48,75",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-14T04:00:00-05:00",
-    "is_daytime": false,
-    "temp_f": 35,
-    "temp_c": 1.67,
-    "precip_chance_pct": 1,
-    "short_forecast": "Partly Cloudy"
-   },
-   {
-    "name": "Saturday",
+    "name": "Today",
     "start": "2026-11-14T06:00:00-05:00",
     "is_daytime": true,
     "temp_f": 48,
@@ -277,7 +275,7 @@
     "short_forecast": "Partly Sunny"
    },
    {
-    "name": "Saturday Night",
+    "name": "Tonight",
     "start": "2026-11-14T18:00:00-05:00",
     "is_daytime": false,
     "temp_f": 37,
@@ -383,19 +381,21 @@
     "temp_c": 17.78,
     "precip_chance_pct": 1,
     "short_forecast": "Mostly Sunny"
+   },
+   {
+    "name": "Friday Night",
+    "start": "2026-11-20T18:00:00-05:00",
+    "is_daytime": false,
+    "temp_f": 40,
+    "temp_c": 4.44,
+    "precip_chance_pct": 1,
+    "short_forecast": "Partly Cloudy"
    }
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-14T09:07:42Z",
+  "issued_utc": "2026-11-14T11:09:27Z",
   "hours": [
-   {
-    "start": "2026-11-14T06:00:00-05:00",
-    "temp_f": 35,
-    "temp_c": 1.67,
-    "precip_chance_pct": 1,
-    "short_forecast": "Mostly Sunny"
-   },
    {
     "start": "2026-11-14T07:00:00-05:00",
     "temp_f": 35,
@@ -724,6 +724,13 @@
     "temp_c": 1.67,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear"
+   },
+   {
+    "start": "2026-11-16T06:00:00-05:00",
+    "temp_f": 34,
+    "temp_c": 1.11,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
    }
   ]
  },

@@ -11,20 +11,20 @@
   "lon": -72.6825,
   "history": "Same site as the official Hartford record"
  },
- "as_of_utc": "2026-11-14T11:07:51Z",
+ "as_of_utc": "2026-11-14T12:07:56Z",
  "now": {
-  "time_utc": "2026-11-14T10:45:00Z",
-  "temp_c": 2,
-  "temp_f": 35.6,
+  "time_utc": "2026-11-14T11:50:00Z",
+  "temp_c": 1,
+  "temp_f": 33.8,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": -2,
-  "humidity_pct": 74.82,
+  "humidity_pct": 80.38,
   "wind_kmh": 7.42,
-  "description": "Cloudy"
+  "description": "Mostly Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-14",
-  "readings": 4,
+  "readings": 5,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -41,50 +41,50 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-12",
-   "is_yesterday": false,
-   "high_f": 47,
-   "low_f": 41,
+   "date": "2026-11-13",
+   "is_yesterday": true,
+   "high_f": 41,
+   "low_f": 35,
    "high_rank": {
-    "value_f": 47,
-    "warm_rank": 76,
-    "cool_rank": 41,
+    "value_f": 41,
+    "warm_rank": 102,
+    "cool_rank": 14,
     "years": 122,
     "first_year": 1905,
     "tied_years": [
-     1937,
-     1965,
-     1978,
-     1986,
-     2008,
-     2025
+     1908,
+     1920,
+     1932,
+     1939,
+     1962,
+     1996,
+     1997
     ],
     "standing": "cool",
-    "notable": false,
-    "since": 2025,
+    "notable": true,
+    "since": 2019,
     "record": false,
-    "phrase": "typical for November 12"
+    "phrase": "14th coolest November 13 high (tied) of 122 since 1905, coolest since 2019"
    },
    "low_rank": {
-    "value_f": 41,
-    "warm_rank": 25,
-    "cool_rank": 91,
+    "value_f": 35,
+    "warm_rank": 42,
+    "cool_rank": 75,
     "years": 122,
     "first_year": 1905,
     "tied_years": [
-     1929,
-     1930,
-     1949,
-     1969,
-     1974,
-     2009,
-     2014
+     1923,
+     1936,
+     1943,
+     1967,
+     1991,
+     1994
     ],
     "standing": "warm",
     "notable": false,
-    "since": 2022,
+    "since": 2025,
     "record": false,
-    "phrase": "typical for November 12"
+    "phrase": "typical for November 13"
    }
   },
   "forecast_highs": [
@@ -252,7 +252,7 @@
   "periods": [
    {
     "name": "Today",
-    "start": "2026-11-14T06:00:00-05:00",
+    "start": "2026-11-14T07:00:00-05:00",
     "is_daytime": true,
     "temp_f": 46,
     "temp_c": 7.78,
@@ -381,13 +381,6 @@
  "hourly": {
   "issued_utc": "2026-11-14T09:16:02Z",
   "hours": [
-   {
-    "start": "2026-11-14T06:00:00-05:00",
-    "temp_f": 30,
-    "temp_c": -1.11,
-    "precip_chance_pct": 1,
-    "short_forecast": "Mostly Sunny"
-   },
    {
     "start": "2026-11-14T07:00:00-05:00",
     "temp_f": 31,
@@ -716,6 +709,13 @@
     "temp_c": -1.67,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear"
+   },
+   {
+    "start": "2026-11-16T06:00:00-05:00",
+    "temp_f": 28,
+    "temp_c": -2.22,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
    }
   ]
  },

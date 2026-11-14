@@ -11,20 +11,20 @@
   "lon": -71.0106,
   "history": "Same site as the official Boston record"
  },
- "as_of_utc": "2026-11-14T11:07:51Z",
+ "as_of_utc": "2026-11-14T12:07:56Z",
  "now": {
-  "time_utc": "2026-11-14T10:45:00Z",
+  "time_utc": "2026-11-14T11:50:00Z",
   "temp_c": 2,
   "temp_f": 35.6,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": -2,
-  "humidity_pct": 74.82,
-  "wind_kmh": 12.96,
-  "description": "Cloudy"
+  "dewpoint_c": -3,
+  "humidity_pct": 69.48,
+  "wind_kmh": 16.67,
+  "description": "Mostly Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-14",
-  "readings": 4,
+  "readings": 5,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -41,54 +41,57 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-12",
-   "is_yesterday": false,
-   "high_f": 53,
-   "low_f": 46,
+   "date": "2026-11-13",
+   "is_yesterday": true,
+   "high_f": 47,
+   "low_f": 36,
    "high_rank": {
-    "value_f": 53,
-    "warm_rank": 62,
-    "cool_rank": 89,
+    "value_f": 47,
+    "warm_rank": 100,
+    "cool_rank": 51,
     "years": 155,
     "first_year": 1872,
     "tied_years": [
-     1873,
-     1970,
-     1994,
-     1998,
-     2011
+     1896,
+     1897,
+     1917,
+     1971,
+     2000
     ],
-    "standing": "warm",
+    "standing": "cool",
     "notable": false,
     "since": 2024,
     "record": false,
-    "phrase": "typical for November 12"
+    "phrase": "typical for November 13"
    },
    "low_rank": {
-    "value_f": 46,
-    "warm_rank": 23,
-    "cool_rank": 126,
+    "value_f": 36,
+    "warm_rank": 80,
+    "cool_rank": 66,
     "years": 155,
     "first_year": 1872,
     "tied_years": [
-     1879,
-     1929,
-     1940,
-     1958,
+     1878,
+     1897,
+     1904,
+     1908,
+     1922,
+     1932,
+     1956,
+     1960,
      1967,
-     2014,
-     2015
+     1982
     ],
-    "standing": "warm",
-    "notable": true,
-    "since": 2022,
+    "standing": "cool",
+    "notable": false,
+    "since": 2024,
     "record": false,
-    "phrase": "23rd warmest November 12 low (tied) of 155 since 1872, warmest since 2022"
+    "phrase": "typical for November 13"
    }
   },
   "forecast_highs": [
    {
-    "period": "Saturday",
+    "period": "Today",
     "date": "2026-11-14",
     "high_f": 47,
     "would_rank": {
@@ -268,16 +271,7 @@
   "grid": "BOX/73,101",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-14T05:00:00-05:00",
-    "is_daytime": false,
-    "temp_f": 35,
-    "temp_c": 1.67,
-    "precip_chance_pct": 1,
-    "short_forecast": "Partly Cloudy"
-   },
-   {
-    "name": "Saturday",
+    "name": "Today",
     "start": "2026-11-14T06:00:00-05:00",
     "is_daytime": true,
     "temp_f": 47,
@@ -286,7 +280,7 @@
     "short_forecast": "Mostly Sunny"
    },
    {
-    "name": "Saturday Night",
+    "name": "Tonight",
     "start": "2026-11-14T18:00:00-05:00",
     "is_daytime": false,
     "temp_f": 36,
@@ -392,19 +386,21 @@
     "temp_c": 15.56,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Sunny"
+   },
+   {
+    "name": "Friday Night",
+    "start": "2026-11-20T18:00:00-05:00",
+    "is_daytime": false,
+    "temp_f": 46,
+    "temp_c": 7.78,
+    "precip_chance_pct": 2,
+    "short_forecast": "Partly Cloudy"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-14T09:16:02Z",
   "hours": [
-   {
-    "start": "2026-11-14T06:00:00-05:00",
-    "temp_f": 36,
-    "temp_c": 2.22,
-    "precip_chance_pct": 1,
-    "short_forecast": "Mostly Sunny"
-   },
    {
     "start": "2026-11-14T07:00:00-05:00",
     "temp_f": 35,
@@ -733,6 +729,13 @@
     "temp_c": 3.89,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear"
+   },
+   {
+    "start": "2026-11-16T06:00:00-05:00",
+    "temp_f": 38,
+    "temp_c": 3.33,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
    }
   ]
  },

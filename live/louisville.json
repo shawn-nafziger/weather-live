@@ -11,20 +11,20 @@
   "lon": -85.7365,
   "history": "Same site as the official Louisville record"
  },
- "as_of_utc": "2026-11-14T11:07:51Z",
+ "as_of_utc": "2026-11-14T12:07:56Z",
  "now": {
-  "time_utc": "2026-11-14T10:45:00Z",
+  "time_utc": "2026-11-14T11:50:00Z",
   "temp_c": 1,
   "temp_f": 33.8,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 0,
   "humidity_pct": 93.03,
   "wind_kmh": 11.12,
-  "description": "Clear"
+  "description": "Mostly Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-14",
-  "readings": 5,
+  "readings": 6,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -51,54 +51,51 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-12",
-   "is_yesterday": false,
-   "high_f": 58,
-   "low_f": 42,
+   "date": "2026-11-13",
+   "is_yesterday": true,
+   "high_f": 46,
+   "low_f": 38,
    "high_rank": {
-    "value_f": 58,
-    "warm_rank": 67,
-    "cool_rank": 79,
+    "value_f": 46,
+    "warm_rank": 119,
+    "cool_rank": 34,
     "years": 155,
     "first_year": 1872,
     "tied_years": [
-     1877,
-     1903,
-     1919,
-     1923,
-     1924,
-     1925,
-     1952,
-     1973,
-     2000,
-     2008
+     1896,
+     1935,
+     1983
     ],
-    "standing": "warm",
+    "standing": "cool",
     "notable": false,
-    "since": 2025,
+    "since": 2022,
     "record": false,
-    "phrase": "typical for November 12"
+    "phrase": "typical for November 13"
    },
    "low_rank": {
-    "value_f": 42,
-    "warm_rank": 47,
-    "cool_rank": 107,
+    "value_f": 38,
+    "warm_rank": 63,
+    "cool_rank": 87,
     "years": 155,
     "first_year": 1872,
     "tied_years": [
-     1917,
-     1948
+     1890,
+     1891,
+     1894,
+     1918,
+     1936,
+     1965
     ],
     "standing": "warm",
     "notable": false,
-    "since": 2025,
+    "since": 2024,
     "record": false,
-    "phrase": "typical for November 12"
+    "phrase": "typical for November 13"
    }
   },
   "forecast_highs": [
    {
-    "period": "Saturday",
+    "period": "Today",
     "date": "2026-11-14",
     "high_f": 51,
     "would_rank": {
@@ -261,16 +258,7 @@
   "grid": "LMK/51,74",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-14T03:00:00-05:00",
-    "is_daytime": false,
-    "temp_f": 32,
-    "temp_c": 0.0,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Clear"
-   },
-   {
-    "name": "Saturday",
+    "name": "Today",
     "start": "2026-11-14T06:00:00-05:00",
     "is_daytime": true,
     "temp_f": 51,
@@ -279,7 +267,7 @@
     "short_forecast": "Sunny"
    },
    {
-    "name": "Saturday Night",
+    "name": "Tonight",
     "start": "2026-11-14T18:00:00-05:00",
     "is_daytime": false,
     "temp_f": 31,
@@ -385,30 +373,32 @@
     "temp_c": 20.56,
     "precip_chance_pct": 2,
     "short_forecast": "Mostly Sunny"
+   },
+   {
+    "name": "Friday Night",
+    "start": "2026-11-20T18:00:00-05:00",
+    "is_daytime": false,
+    "temp_f": 44,
+    "temp_c": 6.67,
+    "precip_chance_pct": 2,
+    "short_forecast": "Partly Cloudy"
    }
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-14T08:01:07Z",
+  "issued_utc": "2026-11-14T11:30:51Z",
   "hours": [
    {
-    "start": "2026-11-14T06:00:00-05:00",
-    "temp_f": 32,
-    "temp_c": 0.0,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
-   {
     "start": "2026-11-14T07:00:00-05:00",
-    "temp_f": 32,
-    "temp_c": 0.0,
+    "temp_f": 35,
+    "temp_c": 1.67,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Sunny"
    },
    {
     "start": "2026-11-14T08:00:00-05:00",
-    "temp_f": 32,
-    "temp_c": 0.0,
+    "temp_f": 35,
+    "temp_c": 1.67,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Sunny"
    },
@@ -722,6 +712,13 @@
    },
    {
     "start": "2026-11-16T05:00:00-05:00",
+    "temp_f": 32,
+    "temp_c": 0.0,
+    "precip_chance_pct": 0,
+    "short_forecast": "Patchy Fog"
+   },
+   {
+    "start": "2026-11-16T06:00:00-05:00",
     "temp_f": 32,
     "temp_c": 0.0,
     "precip_chance_pct": 0,

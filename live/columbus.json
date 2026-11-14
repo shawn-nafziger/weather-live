@@ -11,20 +11,20 @@
   "lon": -82.8769,
   "history": "Same site as the official Columbus record"
  },
- "as_of_utc": "2026-11-14T11:07:51Z",
+ "as_of_utc": "2026-11-14T12:07:56Z",
  "now": {
-  "time_utc": "2026-11-14T10:45:00Z",
+  "time_utc": "2026-11-14T11:50:00Z",
   "temp_c": 0,
   "temp_f": 32.0,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": -2,
   "humidity_pct": 86.39,
-  "wind_kmh": 9.25,
+  "wind_kmh": 11.12,
   "description": "Mostly Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-14",
-  "readings": 6,
+  "readings": 7,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -46,52 +46,51 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-12",
-   "is_yesterday": false,
-   "high_f": 55,
-   "low_f": 41,
+   "date": "2026-11-13",
+   "is_yesterday": true,
+   "high_f": 44,
+   "low_f": 37,
    "high_rank": {
-    "value_f": 55,
-    "warm_rank": 53,
-    "cool_rank": 93,
+    "value_f": 44,
+    "warm_rank": 107,
+    "cool_rank": 38,
     "years": 149,
     "first_year": 1878,
     "tied_years": [
-     1956,
-     1978,
-     2020,
-     2021
+     1903,
+     1950,
+     1968,
+     2006,
+     2017
+    ],
+    "standing": "cool",
+    "notable": false,
+    "since": 2022,
+    "record": false,
+    "phrase": "typical for November 13"
+   },
+   "low_rank": {
+    "value_f": 37,
+    "warm_rank": 47,
+    "cool_rank": 99,
+    "years": 149,
+    "first_year": 1878,
+    "tied_years": [
+     1898,
+     1928,
+     1972,
+     2024
     ],
     "standing": "warm",
     "notable": false,
-    "since": 2023,
+    "since": 2024,
     "record": false,
-    "phrase": "typical for November 12"
-   },
-   "low_rank": {
-    "value_f": 41,
-    "warm_rank": 28,
-    "cool_rank": 116,
-    "years": 149,
-    "first_year": 1878,
-    "tied_years": [
-     1878,
-     1928,
-     1937,
-     1953,
-     1967,
-     1992
-    ],
-    "standing": "warm",
-    "notable": true,
-    "since": 2015,
-    "record": false,
-    "phrase": "28th warmest November 12 low (tied) of 149 since 1878, warmest since 2015"
+    "phrase": "typical for November 13"
    }
   },
   "forecast_highs": [
    {
-    "period": "Saturday",
+    "period": "Today",
     "date": "2026-11-14",
     "high_f": 44,
     "would_rank": {
@@ -252,29 +251,20 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-14T09:00:38Z",
+  "issued_utc": "2026-11-14T11:27:38Z",
   "grid": "ILN/89,83",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-14T04:00:00-05:00",
-    "is_daytime": false,
-    "temp_f": 30,
-    "temp_c": -1.11,
-    "precip_chance_pct": 7,
-    "short_forecast": "Partly Cloudy"
-   },
-   {
-    "name": "Saturday",
-    "start": "2026-11-14T06:00:00-05:00",
+    "name": "Today",
+    "start": "2026-11-14T07:00:00-05:00",
     "is_daytime": true,
     "temp_f": 44,
     "temp_c": 6.67,
-    "precip_chance_pct": 7,
+    "precip_chance_pct": 1,
     "short_forecast": "Partly Sunny"
    },
    {
-    "name": "Saturday Night",
+    "name": "Tonight",
     "start": "2026-11-14T18:00:00-05:00",
     "is_daytime": false,
     "temp_f": 34,
@@ -380,19 +370,21 @@
     "temp_c": 17.78,
     "precip_chance_pct": 3,
     "short_forecast": "Partly Sunny"
+   },
+   {
+    "name": "Friday Night",
+    "start": "2026-11-20T18:00:00-05:00",
+    "is_daytime": false,
+    "temp_f": 40,
+    "temp_c": 4.44,
+    "precip_chance_pct": 3,
+    "short_forecast": "Partly Cloudy"
    }
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-14T09:00:38Z",
+  "issued_utc": "2026-11-14T11:27:38Z",
   "hours": [
-   {
-    "start": "2026-11-14T06:00:00-05:00",
-    "temp_f": 30,
-    "temp_c": -1.11,
-    "precip_chance_pct": 7,
-    "short_forecast": "Sunny"
-   },
    {
     "start": "2026-11-14T07:00:00-05:00",
     "temp_f": 30,
@@ -721,6 +713,13 @@
     "temp_c": -1.11,
     "precip_chance_pct": 0,
     "short_forecast": "Partly Cloudy"
+   },
+   {
+    "start": "2026-11-16T06:00:00-05:00",
+    "temp_f": 29,
+    "temp_c": -1.67,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Sunny"
    }
   ]
  },

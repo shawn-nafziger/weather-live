@@ -11,20 +11,20 @@
   "lon": -83.3308,
   "history": "Same site as the official Detroit record"
  },
- "as_of_utc": "2026-11-14T11:07:51Z",
+ "as_of_utc": "2026-11-14T12:07:56Z",
  "now": {
-  "time_utc": "2026-11-14T10:45:00Z",
-  "temp_c": -1,
-  "temp_f": 30.2,
+  "time_utc": "2026-11-14T11:50:00Z",
+  "temp_c": 1,
+  "temp_f": 33.8,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": -2,
-  "humidity_pct": 92.92,
+  "dewpoint_c": -1,
+  "humidity_pct": 86.5,
   "wind_kmh": 11.12,
-  "description": "Clear"
+  "description": "Mostly Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-14",
-  "readings": 4,
+  "readings": 5,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -46,46 +46,52 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-12",
-   "is_yesterday": false,
-   "high_f": 49,
-   "low_f": 41,
+   "date": "2026-11-13",
+   "is_yesterday": true,
+   "high_f": 43,
+   "low_f": 33,
    "high_rank": {
-    "value_f": 49,
-    "warm_rank": 70,
-    "cool_rank": 78,
+    "value_f": 43,
+    "warm_rank": 96,
+    "cool_rank": 53,
     "years": 153,
     "first_year": 1874,
     "tied_years": [
-     1878,
-     1914,
-     1918,
-     1923,
-     1960,
-     1966
+     1893,
+     1905,
+     1942,
+     1963,
+     2004
     ],
-    "standing": "warm",
+    "standing": "cool",
+    "notable": false,
+    "since": 2022,
+    "record": false,
+    "phrase": "typical for November 13"
+   },
+   "low_rank": {
+    "value_f": 33,
+    "warm_rank": 75,
+    "cool_rank": 69,
+    "years": 153,
+    "first_year": 1874,
+    "tied_years": [
+     1877,
+     1883,
+     1904,
+     1944,
+     1948,
+     1952,
+     1972,
+     1974,
+     1975,
+     2024
+    ],
+    "standing": "cool",
     "notable": false,
     "since": 2025,
     "record": false,
-    "phrase": "typical for November 12"
-   },
-   "low_rank": {
-    "value_f": 41,
-    "warm_rank": 24,
-    "cool_rank": 127,
-    "years": 153,
-    "first_year": 1874,
-    "tied_years": [
-     1875,
-     1922,
-     1953
-    ],
-    "standing": "warm",
-    "notable": true,
-    "since": 2015,
-    "record": false,
-    "phrase": "24th warmest November 12 low (tied) of 153 since 1874, warmest since 2015"
+    "phrase": "typical for November 13"
    }
   },
   "forecast_highs": [
@@ -393,13 +399,6 @@
  "hourly": {
   "issued_utc": "2026-11-14T08:24:12Z",
   "hours": [
-   {
-    "start": "2026-11-14T06:00:00-05:00",
-    "temp_f": 31,
-    "temp_c": -0.56,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Sunny"
-   },
    {
     "start": "2026-11-14T07:00:00-05:00",
     "temp_f": 31,
@@ -728,6 +727,13 @@
     "temp_c": -1.11,
     "precip_chance_pct": 0,
     "short_forecast": "Partly Cloudy"
+   },
+   {
+    "start": "2026-11-16T06:00:00-05:00",
+    "temp_f": 30,
+    "temp_c": -1.11,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Sunny"
    }
   ]
  },

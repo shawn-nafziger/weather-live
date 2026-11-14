@@ -11,20 +11,20 @@
   "lon": -73.9667,
   "history": "Same site as the official New York record"
  },
- "as_of_utc": "2026-11-14T11:07:51Z",
+ "as_of_utc": "2026-11-14T12:07:56Z",
  "now": {
-  "time_utc": "2026-11-14T09:51:00Z",
+  "time_utc": "2026-11-14T10:51:00Z",
   "temp_c": 3.3,
   "temp_f": 37.9,
   "precision": "tenths of a degree",
-  "dewpoint_c": -1.7,
-  "humidity_pct": 69.75,
-  "wind_kmh": 9.36,
+  "dewpoint_c": -2.2,
+  "humidity_pct": 67.23,
+  "wind_kmh": null,
   "description": "Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-14",
-  "readings": 5,
+  "readings": 6,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -41,61 +41,57 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-12",
-   "is_yesterday": false,
-   "high_f": 61,
-   "low_f": 47,
+   "date": "2026-11-13",
+   "is_yesterday": true,
+   "high_f": 52,
+   "low_f": 38,
    "high_rank": {
-    "value_f": 61,
-    "warm_rank": 31,
-    "cool_rank": 122,
+    "value_f": 52,
+    "warm_rank": 80,
+    "cool_rank": 73,
     "years": 158,
     "first_year": 1869,
     "tied_years": [
+     1888,
+     1898,
      1946,
-     1949,
-     1958,
-     2002,
-     2006,
-     2015
+     1953,
+     1967,
+     1970
     ],
-    "standing": "warm",
-    "notable": true,
-    "since": 2022,
+    "standing": "cool",
+    "notable": false,
+    "since": 2025,
     "record": false,
-    "phrase": "31st warmest November 12 high (tied) of 158 since 1869, warmest since 2022"
+    "phrase": "typical for November 13"
    },
    "low_rank": {
-    "value_f": 47,
-    "warm_rank": 28,
-    "cool_rank": 118,
-    "years": 158,
+    "value_f": 38,
+    "warm_rank": 93,
+    "cool_rank": 56,
+    "years": 157,
     "first_year": 1869,
     "tied_years": [
-     1885,
-     1903,
-     1927,
-     1929,
-     1930,
-     1940,
-     1948,
-     1955,
-     1956,
-     1958,
-     1959,
-     1964,
-     2014
+     1880,
+     1890,
+     1908,
+     1922,
+     1933,
+     1941,
+     1946,
+     1966,
+     1991
     ],
-    "standing": "warm",
-    "notable": true,
-    "since": 2022,
+    "standing": "cool",
+    "notable": false,
+    "since": 2024,
     "record": false,
-    "phrase": "28th warmest November 12 low (tied) of 158 since 1869, warmest since 2022"
+    "phrase": "typical for November 13"
    }
   },
   "forecast_highs": [
    {
-    "period": "Saturday",
+    "period": "Today",
     "date": "2026-11-14",
     "high_f": 46,
     "would_rank": {
@@ -269,16 +265,7 @@
   "grid": "OKX/34,45",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-14T02:00:00-05:00",
-    "is_daytime": false,
-    "temp_f": 38,
-    "temp_c": 3.33,
-    "precip_chance_pct": 2,
-    "short_forecast": "Mostly Cloudy"
-   },
-   {
-    "name": "Saturday",
+    "name": "Today",
     "start": "2026-11-14T06:00:00-05:00",
     "is_daytime": true,
     "temp_f": 46,
@@ -287,7 +274,7 @@
     "short_forecast": "Mostly Sunny"
    },
    {
-    "name": "Saturday Night",
+    "name": "Tonight",
     "start": "2026-11-14T18:00:00-05:00",
     "is_daytime": false,
     "temp_f": 41,
@@ -393,19 +380,21 @@
     "temp_c": 17.78,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Sunny"
+   },
+   {
+    "name": "Friday Night",
+    "start": "2026-11-20T18:00:00-05:00",
+    "is_daytime": false,
+    "temp_f": 44,
+    "temp_c": 6.67,
+    "precip_chance_pct": 1,
+    "short_forecast": "Partly Cloudy"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-14T07:03:15Z",
   "hours": [
-   {
-    "start": "2026-11-14T06:00:00-05:00",
-    "temp_f": 38,
-    "temp_c": 3.33,
-    "precip_chance_pct": 1,
-    "short_forecast": "Mostly Sunny"
-   },
    {
     "start": "2026-11-14T07:00:00-05:00",
     "temp_f": 38,
@@ -734,6 +723,13 @@
     "temp_c": 3.89,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear"
+   },
+   {
+    "start": "2026-11-16T06:00:00-05:00",
+    "temp_f": 38,
+    "temp_c": 3.33,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
    }
   ]
  },

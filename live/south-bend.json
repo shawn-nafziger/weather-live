@@ -11,33 +11,33 @@
   "lon": -86.3186,
   "history": "Same station as the official South Bend record (South Bend airport). Also the nearest official city record to Goshen, about 27 miles; a candidate for Goshen's hourly readings (question D2)"
  },
- "as_of_utc": "2026-11-14T11:07:51Z",
+ "as_of_utc": "2026-11-14T12:07:56Z",
  "now": {
-  "time_utc": "2026-11-14T10:45:00Z",
-  "temp_c": 1,
-  "temp_f": 33.8,
+  "time_utc": "2026-11-14T11:50:00Z",
+  "temp_c": 2,
+  "temp_f": 35.6,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": -1,
-  "humidity_pct": 86.5,
-  "wind_kmh": 5.54,
-  "description": "Cloudy"
+  "dewpoint_c": 1,
+  "humidity_pct": 93.09,
+  "wind_kmh": 7.42,
+  "description": "Light Rain and Fog/Mist"
  },
  "today_so_far": {
   "date_local": "2026-11-14",
-  "readings": 4,
+  "readings": 6,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 0,
-  "high_f": 32.0,
-  "high_time_utc": "2026-11-14T09:54:00Z",
+  "high_c": 1.1,
+  "high_f": 34.0,
+  "high_time_utc": "2026-11-14T10:54:00Z",
   "low_c": -2.2,
   "low_f": 28.0,
   "low_time_utc": "2026-11-14T05:54:00Z",
   "peak_between_reports": {
-   "at_least_f": 32.9,
-   "about_f": 33.8,
-   "time_utc": "2026-11-14T10:45:00Z"
+   "at_least_f": 34.7,
+   "about_f": 35.6,
+   "time_utc": "2026-11-14T11:45:00Z"
   },
   "dip_between_reports": {
    "at_most_f": 27.5,
@@ -51,44 +51,47 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-12",
-   "is_yesterday": false,
-   "high_f": 49,
-   "low_f": 38,
+   "date": "2026-11-13",
+   "is_yesterday": true,
+   "high_f": 43,
+   "low_f": 27,
    "high_rank": {
-    "value_f": 49,
-    "warm_rank": 67,
-    "cool_rank": 62,
+    "value_f": 43,
+    "warm_rank": 80,
+    "cool_rank": 47,
     "years": 130,
     "first_year": 1894,
     "tied_years": [
-     1956,
-     2025
+     1972,
+     1979,
+     2015,
+     2020
     ],
     "standing": "cool",
     "notable": false,
-    "since": 2025,
+    "since": 2022,
     "record": false,
-    "phrase": "typical for November 12"
+    "phrase": "typical for November 13"
    },
    "low_rank": {
-    "value_f": 38,
-    "warm_rank": 28,
-    "cool_rank": 99,
-    "years": 131,
+    "value_f": 27,
+    "warm_rank": 91,
+    "cool_rank": 34,
+    "years": 130,
     "first_year": 1894,
     "tied_years": [
-     1929,
-     1930,
-     1969,
-     1985,
-     1992
+     1900,
+     1933,
+     1953,
+     1956,
+     1984,
+     2016
     ],
-    "standing": "warm",
+    "standing": "cool",
     "notable": false,
-    "since": 2015,
+    "since": 2020,
     "record": false,
-    "phrase": "typical for November 12"
+    "phrase": "typical for November 13"
    }
   },
   "forecast_highs": [
@@ -250,12 +253,12 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-14T11:00:05Z",
+  "issued_utc": "2026-11-14T11:14:46Z",
   "grid": "IWX/27,64",
   "periods": [
    {
     "name": "Today",
-    "start": "2026-11-14T06:00:00-05:00",
+    "start": "2026-11-14T07:00:00-05:00",
     "is_daytime": true,
     "temp_f": 46,
     "temp_c": 7.78,
@@ -382,15 +385,8 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-14T11:00:05Z",
+  "issued_utc": "2026-11-14T11:14:46Z",
   "hours": [
-   {
-    "start": "2026-11-14T06:00:00-05:00",
-    "temp_f": 31,
-    "temp_c": -0.56,
-    "precip_chance_pct": 56,
-    "short_forecast": "Snow Showers Likely"
-   },
    {
     "start": "2026-11-14T07:00:00-05:00",
     "temp_f": 31,
@@ -719,6 +715,13 @@
     "temp_c": -1.67,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear"
+   },
+   {
+    "start": "2026-11-16T06:00:00-05:00",
+    "temp_f": 28,
+    "temp_c": -2.22,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
    }
   ]
  },

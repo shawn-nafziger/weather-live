@@ -11,20 +11,20 @@
   "lon": -85.7867,
   "history": "Provisional: Goshen Municipal Airport. The long record (GOSHEN 3SW) is a once-a-day volunteer station, so today's readings and the record come from different stations (question D2)"
  },
- "as_of_utc": "2026-11-14T11:07:51Z",
+ "as_of_utc": "2026-11-14T12:07:56Z",
  "now": {
-  "time_utc": "2026-11-14T10:35:00Z",
-  "temp_c": -3,
-  "temp_f": 26.6,
+  "time_utc": "2026-11-14T11:40:00Z",
+  "temp_c": -2,
+  "temp_f": 28.4,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": -4,
-  "humidity_pct": 92.81,
-  "wind_kmh": 5.54,
-  "description": "Clear"
+  "dewpoint_c": -3,
+  "humidity_pct": 92.86,
+  "wind_kmh": 7.42,
+  "description": "Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-14",
-  "readings": 3,
+  "readings": 4,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -41,48 +41,58 @@
   "available": true,
   "rank_today": false,
   "latest_final": {
-   "date": "2026-11-12",
-   "is_yesterday": false,
-   "high_f": 48,
-   "low_f": 41,
+   "date": "2026-11-13",
+   "is_yesterday": true,
+   "high_f": 43,
+   "low_f": 32,
    "high_rank": {
-    "value_f": 48,
-    "warm_rank": 65,
-    "cool_rank": 47,
-    "years": 111,
+    "value_f": 43,
+    "warm_rank": 73,
+    "cool_rank": 34,
+    "years": 110,
     "first_year": 1914,
-    "tied_years": [],
+    "tied_years": [
+     1967,
+     1968,
+     1969,
+     1972
+    ],
     "standing": "cool",
     "notable": false,
     "since": 2022,
     "record": false,
-    "phrase": "typical for November 12"
+    "phrase": "typical for November 13"
    },
    "low_rank": {
-    "value_f": 41,
-    "warm_rank": 14,
-    "cool_rank": 97,
-    "years": 111,
-    "first_year": 1914,
+    "value_f": 32,
+    "warm_rank": 51,
+    "cool_rank": 53,
+    "years": 109,
+    "first_year": 1916,
     "tied_years": [
-     1973
+     1962,
+     1963,
+     1969,
+     1974,
+     2003,
+     2021
     ],
     "standing": "warm",
-    "notable": true,
-    "since": 2015,
+    "notable": false,
+    "since": 2025,
     "record": false,
-    "phrase": "14th warmest November 12 low (tied) of 111 since 1914, warmest since 2015"
+    "phrase": "typical for November 13"
    }
   },
   "note": "Today's readings come from a different station than this record, so today and the forecast aren't ranked against it."
  },
  "forecast": {
-  "issued_utc": "2026-11-14T11:00:05Z",
+  "issued_utc": "2026-11-14T11:14:46Z",
   "grid": "IWX/45,57",
   "periods": [
    {
     "name": "Today",
-    "start": "2026-11-14T06:00:00-05:00",
+    "start": "2026-11-14T07:00:00-05:00",
     "is_daytime": true,
     "temp_f": 46,
     "temp_c": 7.78,
@@ -209,15 +219,8 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-14T11:00:05Z",
+  "issued_utc": "2026-11-14T11:14:46Z",
   "hours": [
-   {
-    "start": "2026-11-14T06:00:00-05:00",
-    "temp_f": 28,
-    "temp_c": -2.22,
-    "precip_chance_pct": 9,
-    "short_forecast": "Sunny"
-   },
    {
     "start": "2026-11-14T07:00:00-05:00",
     "temp_f": 29,
@@ -546,6 +549,13 @@
     "temp_c": -2.22,
     "precip_chance_pct": 0,
     "short_forecast": "Partly Cloudy"
+   },
+   {
+    "start": "2026-11-16T06:00:00-05:00",
+    "temp_f": 27,
+    "temp_c": -2.78,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Sunny"
    }
   ]
  },
