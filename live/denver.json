@@ -11,20 +11,20 @@
   "lon": -104.6562,
   "history": "Same site as the official Denver record"
  },
- "as_of_utc": "2026-11-14T01:08:10Z",
+ "as_of_utc": "2026-11-14T01:43:45Z",
  "now": {
-  "time_utc": "2026-11-14T00:50:00Z",
-  "temp_c": 11,
-  "temp_f": 51.8,
+  "time_utc": "2026-11-14T01:25:00Z",
+  "temp_c": 9,
+  "temp_f": 48.2,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": -2,
-  "humidity_pct": 40.28,
-  "wind_kmh": 12.96,
-  "description": ""
+  "dewpoint_c": -3,
+  "humidity_pct": 42.76,
+  "wind_kmh": 7.42,
+  "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-13",
-  "readings": 11,
+  "readings": 12,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -84,28 +84,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-13",
-    "high_f": 64,
-    "would_rank": {
-     "value_f": 64,
-     "warm_rank": 41,
-     "cool_rank": 112,
-     "years": 155,
-     "first_year": 1872,
-     "tied_years": [
-      1949,
-      2001,
-      2020
-     ],
-     "standing": "warm",
-     "notable": false,
-     "since": 2025,
-     "record": false,
-     "phrase": "typical for November 13"
-    }
-   },
    {
     "period": "Saturday",
     "date": "2026-11-14",
@@ -241,6 +219,30 @@
      "record": false,
      "phrase": "typical for November 19"
     }
+   },
+   {
+    "period": "Friday",
+    "date": "2026-11-20",
+    "high_f": 48,
+    "would_rank": {
+     "value_f": 48,
+     "warm_rank": 104,
+     "cool_rank": 47,
+     "years": 155,
+     "first_year": 1872,
+     "tied_years": [
+      1886,
+      1889,
+      1949,
+      1988,
+      1994
+     ],
+     "standing": "cool",
+     "notable": false,
+     "since": 2025,
+     "record": false,
+     "phrase": "typical for November 20"
+    }
    }
   ]
  },
@@ -248,15 +250,6 @@
   "issued_utc": "2026-11-13T18:46:26Z",
   "grid": "BOU/75,66",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-13T12:00:00-07:00",
-    "is_daytime": true,
-    "temp_f": 64,
-    "temp_c": 17.78,
-    "precip_chance_pct": 0,
-    "short_forecast": "Partly Sunny"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-13T18:00:00-07:00",
@@ -373,6 +366,15 @@
     "temp_c": 0.0,
     "precip_chance_pct": 30,
     "short_forecast": "Chance Rain And Snow Showers"
+   },
+   {
+    "name": "Friday",
+    "start": "2026-11-20T06:00:00-07:00",
+    "is_daytime": true,
+    "temp_f": 48,
+    "temp_c": 8.89,
+    "precip_chance_pct": 64,
+    "short_forecast": "Rain And Snow Showers Likely"
    }
   ]
  },
