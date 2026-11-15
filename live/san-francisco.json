@@ -11,9 +11,9 @@
   "lon": -122.3656,
   "history": "About 18 km from the official San Francisco record's site, so today and the forecast aren't ranked against it"
  },
- "as_of_utc": "2026-11-15T07:07:52Z",
+ "as_of_utc": "2026-11-15T08:07:56Z",
  "now": {
-  "time_utc": "2026-11-15T06:45:00Z",
+  "time_utc": "2026-11-15T07:50:00Z",
   "temp_c": 14,
   "temp_f": 57.2,
   "precision": "nearest whole \u00b0C",
@@ -23,22 +23,11 @@
   "description": "Mostly Clear"
  },
  "today_so_far": {
-  "date_local": "2026-11-14",
-  "readings": 18,
-  "basis": "hourly reports (tenths of a degree)",
-  "approximate": false,
-  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 17.2,
-  "high_f": 63.0,
-  "high_time_utc": "2026-11-14T22:56:00Z",
-  "low_c": 11.1,
-  "low_f": 52.0,
-  "low_time_utc": "2026-11-14T12:56:00Z",
-  "peak_between_reports": {
-   "at_least_f": 63.5,
-   "about_f": 64.4,
-   "time_utc": "2026-11-14T23:10:00Z"
-  }
+  "date_local": "2026-11-15",
+  "readings": 0,
+  "basis": "5-minute readings (whole \u00b0C, approximate)",
+  "approximate": true,
+  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two."
  },
  "record": {
   "series": "San Francisco area (ThreadEx; downtown)",
@@ -47,7 +36,7 @@
   "rank_today": false,
   "latest_final": {
    "date": "2026-11-13",
-   "is_yesterday": true,
+   "is_yesterday": false,
    "high_f": 64,
    "low_f": 55,
    "high_rank": {
@@ -93,7 +82,7 @@
   "periods": [
    {
     "name": "Tonight",
-    "start": "2026-11-14T22:00:00-08:00",
+    "start": "2026-11-14T23:00:00-08:00",
     "is_daytime": false,
     "temp_f": 54,
     "temp_c": 12.22,
@@ -222,13 +211,6 @@
  "hourly": {
   "issued_utc": "2026-11-15T06:26:48Z",
   "hours": [
-   {
-    "start": "2026-11-14T23:00:00-08:00",
-    "temp_f": 56,
-    "temp_c": 13.33,
-    "precip_chance_pct": 1,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "start": "2026-11-15T00:00:00-08:00",
     "temp_f": 56,
@@ -555,6 +537,13 @@
     "start": "2026-11-16T22:00:00-08:00",
     "temp_f": 53,
     "temp_c": 11.67,
+    "precip_chance_pct": 7,
+    "short_forecast": "Mostly Clear"
+   },
+   {
+    "start": "2026-11-16T23:00:00-08:00",
+    "temp_f": 52,
+    "temp_c": 11.11,
     "precip_chance_pct": 7,
     "short_forecast": "Mostly Clear"
    }

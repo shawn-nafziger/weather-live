@@ -11,9 +11,9 @@
   "lon": -122.6092,
   "history": "Same site as the official Portland record"
  },
- "as_of_utc": "2026-11-15T07:07:52Z",
+ "as_of_utc": "2026-11-15T08:07:56Z",
  "now": {
-  "time_utc": "2026-11-15T06:45:00Z",
+  "time_utc": "2026-11-15T07:05:00Z",
   "temp_c": 12,
   "temp_f": 53.6,
   "precision": "nearest whole \u00b0C",
@@ -23,22 +23,11 @@
   "description": "Light Rain"
  },
  "today_so_far": {
-  "date_local": "2026-11-14",
-  "readings": 17,
-  "basis": "hourly reports (tenths of a degree)",
-  "approximate": false,
-  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 14.4,
-  "high_f": 57.9,
-  "high_time_utc": "2026-11-14T18:53:00Z",
-  "low_c": 10.6,
-  "low_f": 51.1,
-  "low_time_utc": "2026-11-14T13:53:00Z",
-  "peak_between_reports": {
-   "at_least_f": 58.1,
-   "about_f": 59.0,
-   "time_utc": "2026-11-14T20:35:00Z"
-  }
+  "date_local": "2026-11-15",
+  "readings": 0,
+  "basis": "5-minute readings (whole \u00b0C, approximate)",
+  "approximate": true,
+  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two."
  },
  "record": {
   "series": "Portland area (ThreadEx; airport)",
@@ -47,7 +36,7 @@
   "rank_today": true,
   "latest_final": {
    "date": "2026-11-13",
-   "is_yesterday": true,
+   "is_yesterday": false,
    "high_f": 55,
    "low_f": 50,
    "high_rank": {
@@ -84,23 +73,6 @@
     "record": false,
     "phrase": "7th warmest November 13 low (tied) of 87 since 1940, warmest since 2025"
    }
-  },
-  "today_high_so_far": {
-   "value_f": 58,
-   "warm_rank": 12,
-   "cool_rank": 73,
-   "years": 87,
-   "first_year": 1940,
-   "tied_years": [
-    1992,
-    2008,
-    2017
-   ],
-   "standing": "warm",
-   "notable": true,
-   "since": 2025,
-   "record": false,
-   "phrase": "already the 12th warmest November 14 high (tied) of 87 since 1940, warmest since 2025"
   },
   "forecast_highs": [
    {
@@ -279,16 +251,16 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-15T06:28:13Z",
+  "issued_utc": "2026-11-15T06:41:11Z",
   "grid": "PQR/116,107",
   "periods": [
    {
     "name": "Tonight",
-    "start": "2026-11-14T22:00:00-08:00",
+    "start": "2026-11-14T23:00:00-08:00",
     "is_daytime": false,
     "temp_f": 50,
     "temp_c": 10.0,
-    "precip_chance_pct": 99,
+    "precip_chance_pct": 92,
     "short_forecast": "Light Rain"
    },
    {
@@ -411,15 +383,8 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-15T06:28:13Z",
+  "issued_utc": "2026-11-15T06:41:11Z",
   "hours": [
-   {
-    "start": "2026-11-14T23:00:00-08:00",
-    "temp_f": 52,
-    "temp_c": 11.11,
-    "precip_chance_pct": 84,
-    "short_forecast": "Light Rain"
-   },
    {
     "start": "2026-11-15T00:00:00-08:00",
     "temp_f": 52,
@@ -746,6 +711,13 @@
     "start": "2026-11-16T22:00:00-08:00",
     "temp_f": 46,
     "temp_c": 7.78,
+    "precip_chance_pct": 16,
+    "short_forecast": "Slight Chance Light Rain"
+   },
+   {
+    "start": "2026-11-16T23:00:00-08:00",
+    "temp_f": 45,
+    "temp_c": 7.22,
     "precip_chance_pct": 16,
     "short_forecast": "Slight Chance Light Rain"
    }
