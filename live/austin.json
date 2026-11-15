@@ -11,20 +11,20 @@
   "lon": -97.7605,
   "history": "Same site as the official Austin record"
  },
- "as_of_utc": "2026-11-15T12:08:03Z",
+ "as_of_utc": "2026-11-15T13:07:53Z",
  "now": {
-  "time_utc": "2026-11-15T10:51:00Z",
+  "time_utc": "2026-11-15T11:51:00Z",
   "temp_c": 11.1,
   "temp_f": 52.0,
   "precision": "tenths of a degree",
-  "dewpoint_c": 10.6,
-  "humidity_pct": 96.73,
-  "wind_kmh": 9.36,
+  "dewpoint_c": 11.1,
+  "humidity_pct": 100,
+  "wind_kmh": 5.4,
   "description": "Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-15",
-  "readings": 5,
+  "readings": 6,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -80,7 +80,7 @@
   },
   "forecast_highs": [
    {
-    "period": "Sunday",
+    "period": "Today",
     "date": "2026-11-15",
     "high_f": 55,
     "would_rank": {
@@ -238,20 +238,11 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-15T10:32:30Z",
+  "issued_utc": "2026-11-15T11:42:27Z",
   "grid": "EWX/155,93",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-15T04:00:00-06:00",
-    "is_daytime": false,
-    "temp_f": 53,
-    "temp_c": 11.67,
-    "precip_chance_pct": 50,
-    "short_forecast": "Chance Showers And Thunderstorms"
-   },
-   {
-    "name": "Sunday",
+    "name": "Today",
     "start": "2026-11-15T06:00:00-06:00",
     "is_daytime": true,
     "temp_f": 55,
@@ -260,7 +251,7 @@
     "short_forecast": "Showers And Thunderstorms"
    },
    {
-    "name": "Sunday Night",
+    "name": "Tonight",
     "start": "2026-11-15T18:00:00-06:00",
     "is_daytime": false,
     "temp_f": 48,
@@ -366,19 +357,21 @@
     "temp_c": 23.89,
     "precip_chance_pct": 29,
     "short_forecast": "Mostly Cloudy then Chance Showers And Thunderstorms"
+   },
+   {
+    "name": "Saturday Night",
+    "start": "2026-11-21T18:00:00-06:00",
+    "is_daytime": false,
+    "temp_f": 60,
+    "temp_c": 15.56,
+    "precip_chance_pct": 46,
+    "short_forecast": "Chance Showers And Thunderstorms"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-15T11:42:27Z",
   "hours": [
-   {
-    "start": "2026-11-15T06:00:00-06:00",
-    "temp_f": 54,
-    "temp_c": 12.22,
-    "precip_chance_pct": 83,
-    "short_forecast": "Showers And Thunderstorms"
-   },
    {
     "start": "2026-11-15T07:00:00-06:00",
     "temp_f": 54,
@@ -707,6 +700,13 @@
     "temp_c": 8.89,
     "precip_chance_pct": 0,
     "short_forecast": "Partly Cloudy"
+   },
+   {
+    "start": "2026-11-17T06:00:00-06:00",
+    "temp_f": 48,
+    "temp_c": 8.89,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Sunny"
    }
   ]
  },

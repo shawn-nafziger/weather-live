@@ -11,20 +11,20 @@
   "lon": -78.7819,
   "history": "Same site as the official Raleigh record"
  },
- "as_of_utc": "2026-11-15T12:08:03Z",
+ "as_of_utc": "2026-11-15T13:07:53Z",
  "now": {
-  "time_utc": "2026-11-15T10:51:00Z",
-  "temp_c": -0.6,
-  "temp_f": 30.9,
-  "precision": "tenths of a degree",
-  "dewpoint_c": -1.7,
-  "humidity_pct": 92.26,
+  "time_utc": "2026-11-15T12:50:00Z",
+  "temp_c": 1,
+  "temp_f": 33.8,
+  "precision": "nearest whole \u00b0C",
+  "dewpoint_c": -1,
+  "humidity_pct": 86.5,
   "wind_kmh": 0,
   "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-15",
-  "readings": 2,
+  "readings": 3,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -246,12 +246,12 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-15T06:14:59Z",
+  "issued_utc": "2026-11-15T11:33:51Z",
   "grid": "RAH/69,62",
   "periods": [
    {
     "name": "Today",
-    "start": "2026-11-15T06:00:00-05:00",
+    "start": "2026-11-15T07:00:00-05:00",
     "is_daytime": true,
     "temp_f": 57,
     "temp_c": 13.89,
@@ -378,15 +378,8 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-15T11:33:51Z",
+  "issued_utc": "2026-11-15T12:50:43Z",
   "hours": [
-   {
-    "start": "2026-11-15T07:00:00-05:00",
-    "temp_f": 33,
-    "temp_c": 0.56,
-    "precip_chance_pct": 0,
-    "short_forecast": "Widespread Frost"
-   },
    {
     "start": "2026-11-15T08:00:00-05:00",
     "temp_f": 35,
@@ -713,6 +706,13 @@
     "start": "2026-11-17T06:00:00-05:00",
     "temp_f": 32,
     "temp_c": 0.0,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
+   },
+   {
+    "start": "2026-11-17T07:00:00-05:00",
+    "temp_f": 34,
+    "temp_c": 1.11,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
    }
