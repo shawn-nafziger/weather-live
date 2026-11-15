@@ -11,15 +11,15 @@
   "lon": -121.9242,
   "history": "Same site as the official San Jose record"
  },
- "as_of_utc": "2026-11-15T02:07:49Z",
+ "as_of_utc": "2026-11-15T03:07:53Z",
  "now": {
-  "time_utc": "2026-11-15T01:40:00Z",
-  "temp_c": 17,
-  "temp_f": 62.6,
+  "time_utc": "2026-11-15T02:55:00Z",
+  "temp_c": 16,
+  "temp_f": 60.8,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 10,
-  "humidity_pct": 63.4,
-  "wind_kmh": 9.25,
+  "humidity_pct": 67.56,
+  "wind_kmh": 5.54,
   "description": "Mostly Clear"
  },
  "today_so_far": {
@@ -88,33 +88,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-14",
-    "high_f": 65,
-    "would_rank": {
-     "value_f": 65,
-     "warm_rank": 56,
-     "cool_rank": 62,
-     "years": 125,
-     "first_year": 1893,
-     "tied_years": [
-      1901,
-      1913,
-      1925,
-      1927,
-      1932,
-      1951,
-      1976,
-      1980
-     ],
-     "standing": "warm",
-     "notable": false,
-     "since": 2025,
-     "record": false,
-     "phrase": "typical for November 14"
-    }
-   },
    {
     "period": "Sunday",
     "date": "2026-11-15",
@@ -271,6 +244,36 @@
      "record": false,
      "phrase": "typical for November 20"
     }
+   },
+   {
+    "period": "Saturday",
+    "date": "2026-11-21",
+    "high_f": 62,
+    "would_rank": {
+     "value_f": 62,
+     "warm_rank": 71,
+     "cool_rank": 46,
+     "years": 127,
+     "first_year": 1893,
+     "tied_years": [
+      1911,
+      1920,
+      1941,
+      1942,
+      1960,
+      1966,
+      1988,
+      1990,
+      1993,
+      2004,
+      2013
+     ],
+     "standing": "cool",
+     "notable": false,
+     "since": 2013,
+     "record": false,
+     "phrase": "typical for November 21"
+    }
    }
   ]
  },
@@ -278,15 +281,6 @@
   "issued_utc": "2026-11-14T20:46:53Z",
   "grid": "MTR/98,83",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-14T13:00:00-08:00",
-    "is_daytime": true,
-    "temp_f": 65,
-    "temp_c": 18.33,
-    "precip_chance_pct": 2,
-    "short_forecast": "Mostly Sunny"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-14T18:00:00-08:00",
@@ -403,19 +397,21 @@
     "temp_c": 5.0,
     "precip_chance_pct": 6,
     "short_forecast": "Partly Cloudy"
+   },
+   {
+    "name": "Saturday",
+    "start": "2026-11-21T06:00:00-08:00",
+    "is_daytime": true,
+    "temp_f": 62,
+    "temp_c": 16.67,
+    "precip_chance_pct": 33,
+    "short_forecast": "Partly Sunny then Chance Light Rain"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-14T20:46:53Z",
   "hours": [
-   {
-    "start": "2026-11-14T18:00:00-08:00",
-    "temp_f": 59,
-    "temp_c": 15.0,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "start": "2026-11-14T19:00:00-08:00",
     "temp_f": 57,
@@ -744,6 +740,13 @@
     "temp_c": 14.44,
     "precip_chance_pct": 2,
     "short_forecast": "Sunny"
+   },
+   {
+    "start": "2026-11-16T18:00:00-08:00",
+    "temp_f": 56,
+    "temp_c": 13.33,
+    "precip_chance_pct": 2,
+    "short_forecast": "Mostly Clear"
    }
   ]
  },

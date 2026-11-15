@@ -11,15 +11,15 @@
   "lon": -122.6092,
   "history": "Same site as the official Portland record"
  },
- "as_of_utc": "2026-11-15T02:07:49Z",
+ "as_of_utc": "2026-11-15T03:07:53Z",
  "now": {
-  "time_utc": "2026-11-15T01:40:00Z",
+  "time_utc": "2026-11-15T02:55:00Z",
   "temp_c": 13,
   "temp_f": 55.4,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 9,
   "humidity_pct": 76.68,
-  "wind_kmh": 16.67,
+  "wind_kmh": 22.21,
   "description": "Cloudy"
  },
  "today_so_far": {
@@ -103,28 +103,6 @@
    "phrase": "already the 12th warmest November 14 high (tied) of 87 since 1940, warmest since 2025"
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-14",
-    "high_f": 58,
-    "would_rank": {
-     "value_f": 58,
-     "warm_rank": 12,
-     "cool_rank": 73,
-     "years": 87,
-     "first_year": 1940,
-     "tied_years": [
-      1992,
-      2008,
-      2017
-     ],
-     "standing": "warm",
-     "notable": true,
-     "since": 2025,
-     "record": false,
-     "phrase": "12th warmest November 14 high (tied) of 87 since 1940, warmest since 2025"
-    }
-   },
    {
     "period": "Sunday",
     "date": "2026-11-15",
@@ -273,22 +251,42 @@
      "record": false,
      "phrase": "typical for November 20"
     }
+   },
+   {
+    "period": "Saturday",
+    "date": "2026-11-21",
+    "high_f": 50,
+    "would_rank": {
+     "value_f": 50,
+     "warm_rank": 43,
+     "cool_rank": 35,
+     "years": 87,
+     "first_year": 1940,
+     "tied_years": [
+      1940,
+      1945,
+      1956,
+      1962,
+      1969,
+      1975,
+      1990,
+      1999,
+      2012,
+      2025
+     ],
+     "standing": "cool",
+     "notable": false,
+     "since": 2025,
+     "record": false,
+     "phrase": "typical for November 21"
+    }
    }
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-15T00:41:12Z",
+  "issued_utc": "2026-11-15T01:41:28Z",
   "grid": "PQR/116,107",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-14T17:00:00-08:00",
-    "is_daytime": true,
-    "temp_f": 58,
-    "temp_c": 14.44,
-    "precip_chance_pct": 5,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-14T18:00:00-08:00",
@@ -405,19 +403,21 @@
     "temp_c": 3.89,
     "precip_chance_pct": 23,
     "short_forecast": "Slight Chance Light Rain"
+   },
+   {
+    "name": "Saturday",
+    "start": "2026-11-21T06:00:00-08:00",
+    "is_daytime": true,
+    "temp_f": 50,
+    "temp_c": 10.0,
+    "precip_chance_pct": 37,
+    "short_forecast": "Chance Light Rain"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-15T01:41:28Z",
   "hours": [
-   {
-    "start": "2026-11-14T18:00:00-08:00",
-    "temp_f": 55,
-    "temp_c": 12.78,
-    "precip_chance_pct": 7,
-    "short_forecast": "Cloudy"
-   },
    {
     "start": "2026-11-14T19:00:00-08:00",
     "temp_f": 54,
@@ -744,6 +744,13 @@
     "start": "2026-11-16T17:00:00-08:00",
     "temp_f": 49,
     "temp_c": 9.44,
+    "precip_chance_pct": 40,
+    "short_forecast": "Chance Rain Showers"
+   },
+   {
+    "start": "2026-11-16T18:00:00-08:00",
+    "temp_f": 48,
+    "temp_c": 8.89,
     "precip_chance_pct": 40,
     "short_forecast": "Chance Rain Showers"
    }
