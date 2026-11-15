@@ -11,20 +11,20 @@
   "lon": -111.965,
   "history": "Same site as the official Salt Lake City record"
  },
- "as_of_utc": "2026-11-15T10:07:57Z",
+ "as_of_utc": "2026-11-15T11:07:52Z",
  "now": {
-  "time_utc": "2026-11-15T09:20:00Z",
+  "time_utc": "2026-11-15T10:10:00Z",
   "temp_c": 3,
   "temp_f": 37.4,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 0,
-  "humidity_pct": 80.66,
+  "dewpoint_c": -1,
+  "humidity_pct": 75.0,
   "wind_kmh": 11.12,
   "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-15",
-  "readings": 1,
+  "readings": 2,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -266,12 +266,12 @@
   "periods": [
    {
     "name": "Overnight",
-    "start": "2026-11-15T00:00:00-07:00",
+    "start": "2026-11-15T02:00:00-07:00",
     "is_daytime": false,
     "temp_f": 34,
     "temp_c": 1.11,
     "precip_chance_pct": 0,
-    "short_forecast": "Partly Cloudy"
+    "short_forecast": "Mostly Cloudy"
    },
    {
     "name": "Sunday",
@@ -395,13 +395,6 @@
  "hourly": {
   "issued_utc": "2026-11-15T06:31:25Z",
   "hours": [
-   {
-    "start": "2026-11-15T03:00:00-07:00",
-    "temp_f": 34,
-    "temp_c": 1.11,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "start": "2026-11-15T04:00:00-07:00",
     "temp_f": 34,
@@ -728,6 +721,13 @@
     "start": "2026-11-17T02:00:00-07:00",
     "temp_f": 43,
     "temp_c": 6.11,
+    "precip_chance_pct": 14,
+    "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "start": "2026-11-17T03:00:00-07:00",
+    "temp_f": 42,
+    "temp_c": 5.56,
     "precip_chance_pct": 14,
     "short_forecast": "Mostly Cloudy"
    }

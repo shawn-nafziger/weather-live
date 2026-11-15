@@ -11,20 +11,20 @@
   "lon": -78.736,
   "history": "Same site as the official Buffalo record"
  },
- "as_of_utc": "2026-11-15T10:07:57Z",
+ "as_of_utc": "2026-11-15T11:07:52Z",
  "now": {
-  "time_utc": "2026-11-15T09:20:00Z",
-  "temp_c": 4,
-  "temp_f": 39.2,
-  "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 1,
-  "humidity_pct": 80.8,
-  "wind_kmh": 14.83,
-  "description": "Light Rain"
+  "time_utc": "2026-11-15T09:54:00Z",
+  "temp_c": 3.9,
+  "temp_f": 39.0,
+  "precision": "tenths of a degree",
+  "dewpoint_c": 0.6,
+  "humidity_pct": 79.06,
+  "wind_kmh": 14.76,
+  "description": "Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-15",
-  "readings": 4,
+  "readings": 5,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -94,7 +94,7 @@
   },
   "forecast_highs": [
    {
-    "period": "Sunday",
+    "period": "Today",
     "date": "2026-11-15",
     "high_f": 44,
     "would_rank": {
@@ -259,16 +259,7 @@
   "grid": "BUF/40,50",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-15T05:00:00-05:00",
-    "is_daytime": false,
-    "temp_f": 36,
-    "temp_c": 2.22,
-    "precip_chance_pct": 31,
-    "short_forecast": "Chance Very Light Rain"
-   },
-   {
-    "name": "Sunday",
+    "name": "Today",
     "start": "2026-11-15T06:00:00-05:00",
     "is_daytime": true,
     "temp_f": 44,
@@ -277,7 +268,7 @@
     "short_forecast": "Slight Chance Very Light Rain then Cloudy"
    },
    {
-    "name": "Sunday Night",
+    "name": "Tonight",
     "start": "2026-11-15T18:00:00-05:00",
     "is_daytime": false,
     "temp_f": 37,
@@ -383,19 +374,21 @@
     "temp_c": 16.11,
     "precip_chance_pct": 2,
     "short_forecast": "Partly Sunny"
+   },
+   {
+    "name": "Saturday Night",
+    "start": "2026-11-21T18:00:00-05:00",
+    "is_daytime": false,
+    "temp_f": 47,
+    "temp_c": 8.33,
+    "precip_chance_pct": 9,
+    "short_forecast": "Mostly Cloudy"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-15T08:57:17Z",
   "hours": [
-   {
-    "start": "2026-11-15T05:00:00-05:00",
-    "temp_f": 36,
-    "temp_c": 2.22,
-    "precip_chance_pct": 31,
-    "short_forecast": "Chance Very Light Rain"
-   },
    {
     "start": "2026-11-15T06:00:00-05:00",
     "temp_f": 36,
@@ -720,6 +713,13 @@
    },
    {
     "start": "2026-11-17T04:00:00-05:00",
+    "temp_f": 38,
+    "temp_c": 3.33,
+    "precip_chance_pct": 0,
+    "short_forecast": "Partly Cloudy"
+   },
+   {
+    "start": "2026-11-17T05:00:00-05:00",
     "temp_f": 38,
     "temp_c": 3.33,
     "precip_chance_pct": 0,
