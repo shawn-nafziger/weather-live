@@ -11,29 +11,34 @@
   "lon": -75.2268,
   "history": "Same site as the official Philadelphia record"
  },
- "as_of_utc": "2026-11-15T16:07:55Z",
+ "as_of_utc": "2026-11-15T17:07:54Z",
  "now": {
-  "time_utc": "2026-11-15T15:50:00Z",
-  "temp_c": 9,
-  "temp_f": 48.2,
+  "time_utc": "2026-11-15T16:50:00Z",
+  "temp_c": 10,
+  "temp_f": 50.0,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 0,
-  "humidity_pct": 53.29,
-  "wind_kmh": 24.08,
+  "dewpoint_c": -1,
+  "humidity_pct": 46.33,
+  "wind_kmh": 20.38,
   "description": "Mostly Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-15",
-  "readings": 6,
+  "readings": 7,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 8.9,
-  "high_f": 48.0,
-  "high_time_utc": "2026-11-15T14:54:00Z",
+  "high_c": 9.4,
+  "high_f": 48.9,
+  "high_time_utc": "2026-11-15T15:54:00Z",
   "low_c": 5.6,
   "low_f": 42.1,
   "low_time_utc": "2026-11-15T11:54:00Z",
+  "peak_between_reports": {
+   "at_least_f": 49.1,
+   "about_f": 50.0,
+   "time_utc": "2026-11-15T16:50:00Z"
+  },
   "dip_between_reports": {
    "at_most_f": 41.9,
    "about_f": 41.0,
@@ -397,13 +402,6 @@
   "issued_utc": "2026-11-15T11:14:43Z",
   "hours": [
    {
-    "start": "2026-11-15T11:00:00-05:00",
-    "temp_f": 52,
-    "temp_c": 11.11,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
-   {
     "start": "2026-11-15T12:00:00-05:00",
     "temp_f": 53,
     "temp_c": 11.67,
@@ -729,6 +727,13 @@
     "start": "2026-11-17T10:00:00-05:00",
     "temp_f": 51,
     "temp_c": 10.56,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
+   },
+   {
+    "start": "2026-11-17T11:00:00-05:00",
+    "temp_f": 54,
+    "temp_c": 12.22,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
    }
