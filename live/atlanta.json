@@ -11,20 +11,20 @@
   "lon": -84.4269,
   "history": "Same site as the official Atlanta record"
  },
- "as_of_utc": "2026-11-15T11:13:38Z",
+ "as_of_utc": "2026-11-15T12:08:03Z",
  "now": {
-  "time_utc": "2026-11-15T10:15:00Z",
-  "temp_c": 1,
-  "temp_f": 33.8,
-  "precision": "nearest whole \u00b0C",
-  "dewpoint_c": -2,
-  "humidity_pct": 80.38,
-  "wind_kmh": 7.42,
-  "description": "Clear"
+  "time_utc": "2026-11-15T10:52:00Z",
+  "temp_c": 0.6,
+  "temp_f": 33.1,
+  "precision": "tenths of a degree",
+  "dewpoint_c": -2.2,
+  "humidity_pct": 81.51,
+  "wind_kmh": 7.56,
+  "description": "Mostly Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-15",
-  "readings": 3,
+  "readings": 4,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -46,47 +46,43 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-13",
-   "is_yesterday": false,
-   "high_f": 53,
-   "low_f": 40,
+   "date": "2026-11-14",
+   "is_yesterday": true,
+   "high_f": 55,
+   "low_f": 36,
    "high_rank": {
-    "value_f": 53,
-    "warm_rank": 122,
-    "cool_rank": 25,
+    "value_f": 55,
+    "warm_rank": 114,
+    "cool_rank": 35,
     "years": 149,
     "first_year": 1878,
     "tied_years": [
-     1919,
-     1969,
-     1977
-    ],
-    "standing": "cool",
-    "notable": true,
-    "since": 2022,
-    "record": false,
-    "phrase": "25th coolest November 13 high (tied) of 149 since 1878, coolest since 2022"
-   },
-   "low_rank": {
-    "value_f": 40,
-    "warm_rank": 88,
-    "cool_rank": 55,
-    "years": 149,
-    "first_year": 1878,
-    "tied_years": [
-     1882,
-     1892,
-     1918,
-     1923,
-     1962,
-     1971,
-     1980
+     2022
     ],
     "standing": "cool",
     "notable": false,
     "since": 2022,
     "record": false,
-    "phrase": "typical for November 13"
+    "phrase": "typical for November 14"
+   },
+   "low_rank": {
+    "value_f": 36,
+    "warm_rank": 110,
+    "cool_rank": 35,
+    "years": 149,
+    "first_year": 1878,
+    "tied_years": [
+     1896,
+     1932,
+     1941,
+     1943,
+     1983
+    ],
+    "standing": "cool",
+    "notable": false,
+    "since": 2022,
+    "record": false,
+    "phrase": "typical for November 14"
    }
   },
   "forecast_highs": [
@@ -390,13 +386,6 @@
  "hourly": {
   "issued_utc": "2026-11-15T06:26:28Z",
   "hours": [
-   {
-    "start": "2026-11-15T06:00:00-05:00",
-    "temp_f": 34,
-    "temp_c": 1.11,
-    "precip_chance_pct": 0,
-    "short_forecast": "Areas Of Frost"
-   },
    {
     "start": "2026-11-15T07:00:00-05:00",
     "temp_f": 34,
@@ -725,6 +714,13 @@
     "temp_c": 3.33,
     "precip_chance_pct": 0,
     "short_forecast": "Clear"
+   },
+   {
+    "start": "2026-11-17T06:00:00-05:00",
+    "temp_f": 37,
+    "temp_c": 2.78,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
    }
   ]
  },

@@ -11,26 +11,26 @@
   "lon": -76.1919,
   "history": "Same site as the official Norfolk record"
  },
- "as_of_utc": "2026-11-15T11:13:38Z",
+ "as_of_utc": "2026-11-15T12:08:03Z",
  "now": {
-  "time_utc": "2026-11-15T09:51:00Z",
-  "temp_c": 6.1,
-  "temp_f": 43.0,
+  "time_utc": "2026-11-15T10:51:00Z",
+  "temp_c": 6.7,
+  "temp_f": 44.1,
   "precision": "tenths of a degree",
-  "dewpoint_c": 0.6,
-  "humidity_pct": 67.83,
-  "wind_kmh": 0,
+  "dewpoint_c": 0,
+  "humidity_pct": 62.32,
+  "wind_kmh": 5.4,
   "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-15",
-  "readings": 1,
+  "readings": 2,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 6.1,
-  "high_f": 43.0,
-  "high_time_utc": "2026-11-15T09:51:00Z",
+  "high_c": 6.7,
+  "high_f": 44.1,
+  "high_time_utc": "2026-11-15T10:51:00Z",
   "low_c": 6.1,
   "low_f": 43.0,
   "low_time_utc": "2026-11-15T09:51:00Z",
@@ -46,52 +46,55 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-13",
-   "is_yesterday": false,
-   "high_f": 56,
-   "low_f": 48,
+   "date": "2026-11-14",
+   "is_yesterday": true,
+   "high_f": 52,
+   "low_f": 41,
    "high_rank": {
-    "value_f": 56,
-    "warm_rank": 93,
-    "cool_rank": 51,
+    "value_f": 52,
+    "warm_rank": 115,
+    "cool_rank": 30,
     "years": 153,
     "first_year": 1874,
     "tied_years": [
-     1877,
-     1894,
-     1918,
-     1963,
-     1974,
+     1878,
+     1901,
+     1917,
+     1933,
+     1950,
      1979,
-     1997,
+     1981,
+     1983,
+     2019
+    ],
+    "standing": "cool",
+    "notable": true,
+    "since": 2022,
+    "record": false,
+    "phrase": "30th coolest November 14 high (tied) of 153 since 1874, coolest since 2022"
+   },
+   "low_rank": {
+    "value_f": 41,
+    "warm_rank": 85,
+    "cool_rank": 60,
+    "years": 153,
+    "first_year": 1874,
+    "tied_years": [
+     1883,
+     1900,
+     1918,
+     1939,
+     1953,
+     1995,
+     2001,
      2004,
-     2023,
-     2024
+     2015
     ],
     "standing": "cool",
     "notable": false,
-    "since": 2024,
+    "since": 2025,
     "record": false,
-    "phrase": "typical for November 13"
-   },
-   "low_rank": {
-    "value_f": 48,
-    "warm_rank": 46,
-    "cool_rank": 103,
-    "years": 153,
-    "first_year": 1874,
-    "tied_years": [
-     1927,
-     1955,
-     1958,
-     1988,
-     2008
-    ],
-    "standing": "warm",
-    "notable": false,
-    "since": 2024,
-    "record": false,
-    "phrase": "typical for November 13"
+    "phrase": "typical for November 14"
    }
   },
   "forecast_highs": [
@@ -413,13 +416,6 @@
  "hourly": {
   "issued_utc": "2026-11-15T10:49:23Z",
   "hours": [
-   {
-    "start": "2026-11-15T06:00:00-05:00",
-    "temp_f": 44,
-    "temp_c": 6.67,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "start": "2026-11-15T07:00:00-05:00",
     "temp_f": 42,
@@ -748,6 +744,13 @@
     "temp_c": 5.56,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear"
+   },
+   {
+    "start": "2026-11-17T06:00:00-05:00",
+    "temp_f": 42,
+    "temp_c": 5.56,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
    }
   ]
  },

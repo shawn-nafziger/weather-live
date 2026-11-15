@@ -11,20 +11,20 @@
   "lon": -104.6562,
   "history": "Same site as the official Denver record"
  },
- "as_of_utc": "2026-11-15T11:13:38Z",
+ "as_of_utc": "2026-11-15T12:08:03Z",
  "now": {
-  "time_utc": "2026-11-15T10:10:00Z",
-  "temp_c": 6,
-  "temp_f": 42.8,
-  "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 4,
-  "humidity_pct": 87.0,
-  "wind_kmh": 0,
-  "description": "Cloudy"
+  "time_utc": "2026-11-15T11:15:00Z",
+  "temp_c": 6.1,
+  "temp_f": 43.0,
+  "precision": "tenths of a degree",
+  "dewpoint_c": 4.4,
+  "humidity_pct": 88.86,
+  "wind_kmh": 7.56,
+  "description": "Fog/Mist"
  },
  "today_so_far": {
   "date_local": "2026-11-15",
-  "readings": 3,
+  "readings": 4,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -41,43 +41,51 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-13",
-   "is_yesterday": false,
-   "high_f": 63,
-   "low_f": 38,
+   "date": "2026-11-14",
+   "is_yesterday": true,
+   "high_f": 53,
+   "low_f": 35,
    "high_rank": {
-    "value_f": 63,
-    "warm_rank": 44,
-    "cool_rank": 108,
+    "value_f": 53,
+    "warm_rank": 81,
+    "cool_rank": 70,
     "years": 155,
     "first_year": 1872,
     "tied_years": [
-     1887,
-     1901,
-     1906,
-     1918
+     1923,
+     1924,
+     1952,
+     1976,
+     2024
     ],
-    "standing": "warm",
+    "standing": "cool",
     "notable": false,
-    "since": 2025,
+    "since": 2024,
     "record": false,
-    "phrase": "typical for November 13"
+    "phrase": "typical for November 14"
    },
    "low_rank": {
-    "value_f": 38,
-    "warm_rank": 15,
-    "cool_rank": 139,
+    "value_f": 35,
+    "warm_rank": 24,
+    "cool_rank": 123,
     "years": 155,
     "first_year": 1872,
     "tied_years": [
-     1939,
-     1967
+     1905,
+     1926,
+     1930,
+     1941,
+     1943,
+     1962,
+     1967,
+     1977,
+     2016
     ],
     "standing": "warm",
     "notable": true,
     "since": 2025,
     "record": false,
-    "phrase": "15th warmest November 13 low (tied) of 155 since 1872, warmest since 2025"
+    "phrase": "24th warmest November 14 low (tied) of 155 since 1872, warmest since 2025"
    }
   },
   "forecast_highs": [
@@ -380,13 +388,6 @@
  "hourly": {
   "issued_utc": "2026-11-15T06:46:23Z",
   "hours": [
-   {
-    "start": "2026-11-15T04:00:00-07:00",
-    "temp_f": 39,
-    "temp_c": 3.89,
-    "precip_chance_pct": 2,
-    "short_forecast": "Areas Of Fog"
-   },
    {
     "start": "2026-11-15T05:00:00-07:00",
     "temp_f": 40,
@@ -711,6 +712,13 @@
    },
    {
     "start": "2026-11-17T03:00:00-07:00",
+    "temp_f": 38,
+    "temp_c": 3.33,
+    "precip_chance_pct": 0,
+    "short_forecast": "Partly Cloudy"
+   },
+   {
+    "start": "2026-11-17T04:00:00-07:00",
     "temp_f": 38,
     "temp_c": 3.33,
     "precip_chance_pct": 0,

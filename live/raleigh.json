@@ -11,29 +11,29 @@
   "lon": -78.7819,
   "history": "Same site as the official Raleigh record"
  },
- "as_of_utc": "2026-11-15T11:13:38Z",
+ "as_of_utc": "2026-11-15T12:08:03Z",
  "now": {
-  "time_utc": "2026-11-15T09:51:00Z",
-  "temp_c": 0.6,
-  "temp_f": 33.1,
+  "time_utc": "2026-11-15T10:51:00Z",
+  "temp_c": -0.6,
+  "temp_f": 30.9,
   "precision": "tenths of a degree",
-  "dewpoint_c": -1.1,
-  "humidity_pct": 88.38,
+  "dewpoint_c": -1.7,
+  "humidity_pct": 92.26,
   "wind_kmh": 0,
   "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-15",
-  "readings": 1,
+  "readings": 2,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
   "high_c": 0.6,
   "high_f": 33.1,
   "high_time_utc": "2026-11-15T09:51:00Z",
-  "low_c": 0.6,
-  "low_f": 33.1,
-  "low_time_utc": "2026-11-15T09:51:00Z",
+  "low_c": -0.6,
+  "low_f": 30.9,
+  "low_time_utc": "2026-11-15T10:51:00Z",
   "peak_between_reports": {
    "at_least_f": 38.3,
    "about_f": 39.2,
@@ -46,45 +46,46 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-13",
-   "is_yesterday": false,
-   "high_f": 59,
-   "low_f": 41,
+   "date": "2026-11-14",
+   "is_yesterday": true,
+   "high_f": 55,
+   "low_f": 34,
    "high_rank": {
-    "value_f": 59,
-    "warm_rank": 83,
-    "cool_rank": 53,
+    "value_f": 55,
+    "warm_rank": 98,
+    "cool_rank": 39,
     "years": 140,
     "first_year": 1887,
     "tied_years": [
-     1939,
-     1967,
-     1975,
-     1991,
-     2014
+     1894,
+     1901,
+     1905,
+     1983
     ],
     "standing": "cool",
     "notable": false,
-    "since": 2019,
+    "since": 2024,
     "record": false,
-    "phrase": "typical for November 13"
+    "phrase": "typical for November 14"
    },
    "low_rank": {
-    "value_f": 41,
-    "warm_rank": 60,
-    "cool_rank": 78,
+    "value_f": 34,
+    "warm_rank": 91,
+    "cool_rank": 45,
     "years": 140,
     "first_year": 1887,
     "tied_years": [
-     1897,
-     1975,
-     2024
+     1941,
+     1960,
+     1962,
+     1967,
+     2015
     ],
-    "standing": "warm",
+    "standing": "cool",
     "notable": false,
-    "since": 2024,
+    "since": 2025,
     "record": false,
-    "phrase": "typical for November 13"
+    "phrase": "typical for November 14"
    }
   },
   "forecast_highs": [
@@ -377,15 +378,8 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-15T06:14:59Z",
+  "issued_utc": "2026-11-15T11:33:51Z",
   "hours": [
-   {
-    "start": "2026-11-15T06:00:00-05:00",
-    "temp_f": 32,
-    "temp_c": 0.0,
-    "precip_chance_pct": 0,
-    "short_forecast": "Widespread Frost"
-   },
    {
     "start": "2026-11-15T07:00:00-05:00",
     "temp_f": 33,
@@ -714,6 +708,13 @@
     "temp_c": 0.0,
     "precip_chance_pct": 0,
     "short_forecast": "Clear"
+   },
+   {
+    "start": "2026-11-17T06:00:00-05:00",
+    "temp_f": 32,
+    "temp_c": 0.0,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
    }
   ]
  },

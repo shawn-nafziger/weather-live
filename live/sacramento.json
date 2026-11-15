@@ -11,34 +11,29 @@
   "lon": -121.496,
   "history": "About 9 km from the official Sacramento record's site, so today and the forecast aren't ranked against it"
  },
- "as_of_utc": "2026-11-15T11:13:38Z",
+ "as_of_utc": "2026-11-15T12:08:03Z",
  "now": {
-  "time_utc": "2026-11-15T10:15:00Z",
-  "temp_c": 11,
-  "temp_f": 51.8,
-  "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 8,
-  "humidity_pct": 81.75,
-  "wind_kmh": 5.54,
-  "description": "Clear"
+  "time_utc": "2026-11-15T10:53:00Z",
+  "temp_c": 10.6,
+  "temp_f": 51.1,
+  "precision": "tenths of a degree",
+  "dewpoint_c": 8.3,
+  "humidity_pct": 85.68,
+  "wind_kmh": 0,
+  "description": "Mostly Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-15",
-  "readings": 1,
+  "readings": 2,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 10,
-  "high_f": 50.0,
-  "high_time_utc": "2026-11-15T09:53:00Z",
+  "high_c": 10.6,
+  "high_f": 51.1,
+  "high_time_utc": "2026-11-15T10:53:00Z",
   "low_c": 10,
   "low_f": 50.0,
-  "low_time_utc": "2026-11-15T09:53:00Z",
-  "peak_between_reports": {
-   "at_least_f": 50.9,
-   "about_f": 51.8,
-   "time_utc": "2026-11-15T08:20:00Z"
-  }
+  "low_time_utc": "2026-11-15T09:53:00Z"
  },
  "record": {
   "series": "Sacramento area (ThreadEx; downtown)",
@@ -46,50 +41,59 @@
   "available": true,
   "rank_today": false,
   "latest_final": {
-   "date": "2026-11-13",
-   "is_yesterday": false,
-   "high_f": 63,
-   "low_f": 50,
+   "date": "2026-11-14",
+   "is_yesterday": true,
+   "high_f": 65,
+   "low_f": 45,
    "high_rank": {
-    "value_f": 63,
-    "warm_rank": 88,
-    "cool_rank": 56,
+    "value_f": 65,
+    "warm_rank": 56,
+    "cool_rank": 83,
     "years": 150,
     "first_year": 1877,
     "tied_years": [
-     1895,
-     1957,
+     1910,
+     1911,
+     1929,
+     1949,
+     1963,
      1966,
-     1967,
-     1998,
-     2014,
-     2025
+     1975,
+     1991,
+     1997,
+     2006,
+     2015,
+     2017
     ],
-    "standing": "cool",
+    "standing": "warm",
+    "notable": false,
+    "since": 2023,
+    "record": false,
+    "phrase": "typical for November 14"
+   },
+   "low_rank": {
+    "value_f": 45,
+    "warm_rank": 59,
+    "cool_rank": 82,
+    "years": 150,
+    "first_year": 1877,
+    "tied_years": [
+     1881,
+     1888,
+     1962,
+     1969,
+     1984,
+     1993,
+     1996,
+     2004,
+     2016,
+     2023
+    ],
+    "standing": "warm",
     "notable": false,
     "since": 2025,
     "record": false,
-    "phrase": "typical for November 13"
-   },
-   "low_rank": {
-    "value_f": 50,
-    "warm_rank": 22,
-    "cool_rank": 123,
-    "years": 150,
-    "first_year": 1877,
-    "tied_years": [
-     1927,
-     1976,
-     1984,
-     1997,
-     2002,
-     2003
-    ],
-    "standing": "warm",
-    "notable": true,
-    "since": 2025,
-    "record": false,
-    "phrase": "22nd warmest November 13 low (tied) of 150 since 1877, warmest since 2025"
+    "phrase": "typical for November 14"
    }
   },
   "note": "Today's readings come from a different station than this record, so today and the forecast aren't ranked against it."
@@ -229,13 +233,6 @@
  "hourly": {
   "issued_utc": "2026-11-15T09:01:11Z",
   "hours": [
-   {
-    "start": "2026-11-15T03:00:00-08:00",
-    "temp_f": 49,
-    "temp_c": 9.44,
-    "precip_chance_pct": 1,
-    "short_forecast": "Cloudy"
-   },
    {
     "start": "2026-11-15T04:00:00-08:00",
     "temp_f": 48,
@@ -562,6 +559,13 @@
     "start": "2026-11-17T02:00:00-08:00",
     "temp_f": 44,
     "temp_c": 6.67,
+    "precip_chance_pct": 0,
+    "short_forecast": "Partly Cloudy"
+   },
+   {
+    "start": "2026-11-17T03:00:00-08:00",
+    "temp_f": 43,
+    "temp_c": 6.11,
     "precip_chance_pct": 0,
     "short_forecast": "Partly Cloudy"
    }
