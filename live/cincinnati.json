@@ -11,39 +11,23 @@
   "lon": -84.6723,
   "history": "Same site as the official Cincinnati record"
  },
- "as_of_utc": "2026-11-15T04:07:58Z",
+ "as_of_utc": "2026-11-15T05:08:00Z",
  "now": {
-  "time_utc": "2026-11-15T03:55:00Z",
+  "time_utc": "2026-11-15T04:35:00Z",
   "temp_c": 6,
   "temp_f": 42.8,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 0,
-  "humidity_pct": 65.4,
-  "wind_kmh": 11.12,
+  "dewpoint_c": 1,
+  "humidity_pct": 70.3,
+  "wind_kmh": 12.96,
   "description": "Cloudy"
  },
  "today_so_far": {
-  "date_local": "2026-11-14",
-  "readings": 19,
-  "basis": "hourly reports (tenths of a degree)",
-  "approximate": false,
-  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 7.2,
-  "high_f": 45.0,
-  "high_time_utc": "2026-11-14T17:52:00Z",
-  "low_c": 0.6,
-  "low_f": 33.1,
-  "low_time_utc": "2026-11-14T12:52:00Z",
-  "peak_between_reports": {
-   "at_least_f": 45.5,
-   "about_f": 46.4,
-   "time_utc": "2026-11-14T18:15:00Z"
-  },
-  "dip_between_reports": {
-   "at_most_f": 32.9,
-   "about_f": 32.0,
-   "time_utc": "2026-11-14T12:10:00Z"
-  }
+  "date_local": "2026-11-15",
+  "readings": 0,
+  "basis": "5-minute readings (whole \u00b0C, approximate)",
+  "approximate": true,
+  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two."
  },
  "record": {
   "series": "Cincinnati area (ThreadEx; airport (in Kentucky))",
@@ -52,7 +36,7 @@
   "rank_today": true,
   "latest_final": {
    "date": "2026-11-13",
-   "is_yesterday": true,
+   "is_yesterday": false,
    "high_f": 44,
    "low_f": 39,
    "high_rank": {
@@ -390,13 +374,6 @@
   "issued_utc": "2026-11-14T21:00:35Z",
   "hours": [
    {
-    "start": "2026-11-14T23:00:00-05:00",
-    "temp_f": 40,
-    "temp_c": 4.44,
-    "precip_chance_pct": 1,
-    "short_forecast": "Mostly Cloudy"
-   },
-   {
     "start": "2026-11-15T00:00:00-05:00",
     "temp_f": 40,
     "temp_c": 4.44,
@@ -722,6 +699,13 @@
     "start": "2026-11-16T22:00:00-05:00",
     "temp_f": 37,
     "temp_c": 2.78,
+    "precip_chance_pct": 0,
+    "short_forecast": "Clear"
+   },
+   {
+    "start": "2026-11-16T23:00:00-05:00",
+    "temp_f": 36,
+    "temp_c": 2.22,
     "precip_chance_pct": 0,
     "short_forecast": "Clear"
    }
