@@ -11,20 +11,20 @@
   "lon": -95.3607,
   "history": "Same site as the official Houston record"
  },
- "as_of_utc": "2026-11-15T00:07:53Z",
+ "as_of_utc": "2026-11-15T01:08:00Z",
  "now": {
-  "time_utc": "2026-11-14T23:35:00Z",
-  "temp_c": 17,
-  "temp_f": 62.6,
+  "time_utc": "2026-11-15T00:50:00Z",
+  "temp_c": 16,
+  "temp_f": 60.8,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 4,
-  "humidity_pct": 42.03,
+  "humidity_pct": 44.79,
   "wind_kmh": 22.21,
-  "description": "Clear"
+  "description": "Mostly Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-14",
-  "readings": 15,
+  "readings": 16,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -94,29 +94,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-14",
-    "high_f": 68,
-    "would_rank": {
-     "value_f": 68,
-     "warm_rank": 92,
-     "cool_rank": 39,
-     "years": 134,
-     "first_year": 1889,
-     "tied_years": [
-      1923,
-      1946,
-      1961,
-      1975
-     ],
-     "standing": "cool",
-     "notable": false,
-     "since": 2022,
-     "record": false,
-     "phrase": "typical for November 14"
-    }
-   },
    {
     "period": "Sunday",
     "date": "2026-11-15",
@@ -249,22 +226,38 @@
      "record": false,
      "phrase": "typical for November 20"
     }
+   },
+   {
+    "period": "Saturday",
+    "date": "2026-11-21",
+    "high_f": 79,
+    "would_rank": {
+     "value_f": 79,
+     "warm_rank": 28,
+     "cool_rank": 103,
+     "years": 136,
+     "first_year": 1889,
+     "tied_years": [
+      1897,
+      1908,
+      1913,
+      1921,
+      1927,
+      2003
+     ],
+     "standing": "warm",
+     "notable": false,
+     "since": 2025,
+     "record": false,
+     "phrase": "typical for November 21"
+    }
    }
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-14T19:36:09Z",
+  "issued_utc": "2026-11-15T00:20:34Z",
   "grid": "HGX/63,104",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-14T14:00:00-06:00",
-    "is_daytime": true,
-    "temp_f": 68,
-    "temp_c": 20.0,
-    "precip_chance_pct": 2,
-    "short_forecast": "Partly Sunny"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-14T18:00:00-06:00",
@@ -381,23 +374,25 @@
     "temp_c": 16.67,
     "precip_chance_pct": 6,
     "short_forecast": "Partly Cloudy"
+   },
+   {
+    "name": "Saturday",
+    "start": "2026-11-21T06:00:00-06:00",
+    "is_daytime": true,
+    "temp_f": 79,
+    "temp_c": 26.11,
+    "precip_chance_pct": 25,
+    "short_forecast": "Partly Sunny then Chance Rain Showers"
    }
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-14T19:36:09Z",
+  "issued_utc": "2026-11-15T00:36:16Z",
   "hours": [
    {
-    "start": "2026-11-14T18:00:00-06:00",
-    "temp_f": 62,
-    "temp_c": 16.67,
-    "precip_chance_pct": 2,
-    "short_forecast": "Mostly Cloudy"
-   },
-   {
     "start": "2026-11-14T19:00:00-06:00",
-    "temp_f": 60,
-    "temp_c": 15.56,
+    "temp_f": 61,
+    "temp_c": 16.11,
     "precip_chance_pct": 2,
     "short_forecast": "Mostly Cloudy"
    },
@@ -722,6 +717,13 @@
     "temp_c": 13.33,
     "precip_chance_pct": 9,
     "short_forecast": "Partly Sunny"
+   },
+   {
+    "start": "2026-11-16T18:00:00-06:00",
+    "temp_f": 55,
+    "temp_c": 12.78,
+    "precip_chance_pct": 2,
+    "short_forecast": "Mostly Cloudy"
    }
   ]
  },
