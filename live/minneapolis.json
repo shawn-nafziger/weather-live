@@ -11,33 +11,33 @@
   "lon": -93.2289,
   "history": "Same site as the official Minneapolis record"
  },
- "as_of_utc": "2026-11-15T17:07:54Z",
+ "as_of_utc": "2026-11-15T17:51:29Z",
  "now": {
-  "time_utc": "2026-11-15T16:55:00Z",
-  "temp_c": 6,
-  "temp_f": 42.8,
+  "time_utc": "2026-11-15T17:20:00Z",
+  "temp_c": 7,
+  "temp_f": 44.6,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": -3,
-  "humidity_pct": 52.47,
-  "wind_kmh": 11.12,
+  "humidity_pct": 48.98,
+  "wind_kmh": 9.25,
   "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-15",
-  "readings": 9,
+  "readings": 10,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 3.3,
-  "high_f": 37.9,
-  "high_time_utc": "2026-11-15T15:53:00Z",
+  "high_c": 6.1,
+  "high_f": 43.0,
+  "high_time_utc": "2026-11-15T16:53:00Z",
   "low_c": -2.2,
   "low_f": 28.0,
   "low_time_utc": "2026-11-15T12:53:00Z",
   "peak_between_reports": {
-   "at_least_f": 41.9,
-   "about_f": 42.8,
-   "time_utc": "2026-11-15T16:55:00Z"
+   "at_least_f": 43.7,
+   "about_f": 44.6,
+   "time_utc": "2026-11-15T17:20:00Z"
   },
   "dip_between_reports": {
    "at_most_f": 27.5,
@@ -101,18 +101,17 @@
    {
     "period": "Today",
     "date": "2026-11-15",
-    "high_f": 50,
+    "high_f": 49,
     "would_rank": {
-     "value_f": 50,
-     "warm_rank": 36,
-     "cool_rank": 116,
+     "value_f": 49,
+     "warm_rank": 40,
+     "cool_rank": 113,
      "years": 155,
      "first_year": 1872,
      "tied_years": [
-      1877,
-      1878,
-      1934,
-      1952
+      1929,
+      1958,
+      2009
      ],
      "standing": "warm",
      "notable": false,
@@ -124,21 +123,26 @@
    {
     "period": "Monday",
     "date": "2026-11-16",
-    "high_f": 55,
+    "high_f": 54,
     "would_rank": {
-     "value_f": 55,
-     "warm_rank": 19,
-     "cool_rank": 136,
+     "value_f": 54,
+     "warm_rank": 20,
+     "cool_rank": 130,
      "years": 155,
      "first_year": 1872,
      "tied_years": [
-      1952
+      1878,
+      1893,
+      1918,
+      1971,
+      1979,
+      2024
      ],
      "standing": "warm",
      "notable": true,
-     "since": 2023,
+     "since": 2024,
      "record": false,
-     "phrase": "19th warmest November 16 high (tied) of 155 since 1872, warmest since 2023"
+     "phrase": "20th warmest November 16 high (tied) of 155 since 1872, warmest since 2024"
     }
    },
    {
@@ -252,15 +256,15 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-15T15:16:51Z",
+  "issued_utc": "2026-11-15T16:31:32Z",
   "grid": "MPX/110,68",
   "periods": [
    {
     "name": "Today",
-    "start": "2026-11-15T09:00:00-06:00",
+    "start": "2026-11-15T11:00:00-06:00",
     "is_daytime": true,
-    "temp_f": 50,
-    "temp_c": 10.0,
+    "temp_f": 49,
+    "temp_c": 9.44,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
    },
@@ -268,8 +272,8 @@
     "name": "Tonight",
     "start": "2026-11-15T18:00:00-06:00",
     "is_daytime": false,
-    "temp_f": 36,
-    "temp_c": 2.22,
+    "temp_f": 34,
+    "temp_c": 1.11,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear"
    },
@@ -277,19 +281,19 @@
     "name": "Monday",
     "start": "2026-11-16T06:00:00-06:00",
     "is_daytime": true,
-    "temp_f": 55,
-    "temp_c": 12.78,
-    "precip_chance_pct": 3,
+    "temp_f": 54,
+    "temp_c": 12.22,
+    "precip_chance_pct": 0,
     "short_forecast": "Mostly Sunny"
    },
    {
     "name": "Monday Night",
     "start": "2026-11-16T18:00:00-06:00",
     "is_daytime": false,
-    "temp_f": 42,
-    "temp_c": 5.56,
+    "temp_f": 41,
+    "temp_c": 5.0,
     "precip_chance_pct": 0,
-    "short_forecast": "Mostly Clear"
+    "short_forecast": "Partly Cloudy"
    },
    {
     "name": "Tuesday",
