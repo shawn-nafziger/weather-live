@@ -11,20 +11,20 @@
   "lon": -71.0106,
   "history": "Same site as the official Boston record"
  },
- "as_of_utc": "2026-11-15T23:07:54Z",
+ "as_of_utc": "2026-11-16T00:08:09Z",
  "now": {
-  "time_utc": "2026-11-15T22:40:00Z",
+  "time_utc": "2026-11-15T23:45:00Z",
   "temp_c": 7,
   "temp_f": 44.6,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": -1,
   "humidity_pct": 56.77,
-  "wind_kmh": 16.67,
+  "wind_kmh": 18.5,
   "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-15",
-  "readings": 10,
+  "readings": 11,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -89,31 +89,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-15",
-    "high_f": 48,
-    "would_rank": {
-     "value_f": 48,
-     "warm_rank": 85,
-     "cool_rank": 65,
-     "years": 155,
-     "first_year": 1872,
-     "tied_years": [
-      1894,
-      1898,
-      1899,
-      1915,
-      1981,
-      1992
-     ],
-     "standing": "cool",
-     "notable": false,
-     "since": 2025,
-     "record": false,
-     "phrase": "typical for November 15"
-    }
-   },
    {
     "period": "Monday",
     "date": "2026-11-16",
@@ -260,6 +235,29 @@
      "record": false,
      "phrase": "28th warmest November 21 high (tied) of 154 since 1872, warmest since 2020"
     }
+   },
+   {
+    "period": "Sunday",
+    "date": "2026-11-22",
+    "high_f": 59,
+    "would_rank": {
+     "value_f": 59,
+     "warm_rank": 23,
+     "cool_rank": 129,
+     "years": 155,
+     "first_year": 1872,
+     "tied_years": [
+      1933,
+      1946,
+      1963,
+      1994
+     ],
+     "standing": "warm",
+     "notable": true,
+     "since": 2007,
+     "record": false,
+     "phrase": "23rd warmest November 22 high (tied) of 155 since 1872, warmest since 2007"
+    }
    }
   ]
  },
@@ -267,15 +265,6 @@
   "issued_utc": "2026-11-15T21:15:26Z",
   "grid": "BOX/73,101",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-15T16:00:00-05:00",
-    "is_daytime": true,
-    "temp_f": 48,
-    "temp_c": 8.89,
-    "precip_chance_pct": 1,
-    "short_forecast": "Partly Sunny"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-15T18:00:00-05:00",
@@ -392,19 +381,21 @@
     "temp_c": 8.89,
     "precip_chance_pct": 2,
     "short_forecast": "Partly Cloudy"
+   },
+   {
+    "name": "Sunday",
+    "start": "2026-11-22T06:00:00-05:00",
+    "is_daytime": true,
+    "temp_f": 59,
+    "temp_c": 15.0,
+    "precip_chance_pct": 8,
+    "short_forecast": "Mostly Sunny"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-15T21:15:26Z",
   "hours": [
-   {
-    "start": "2026-11-15T18:00:00-05:00",
-    "temp_f": 44,
-    "temp_c": 6.67,
-    "precip_chance_pct": 1,
-    "short_forecast": "Partly Cloudy"
-   },
    {
     "start": "2026-11-15T19:00:00-05:00",
     "temp_f": 45,
@@ -733,6 +724,13 @@
     "temp_c": 11.67,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
+   },
+   {
+    "start": "2026-11-17T18:00:00-05:00",
+    "temp_f": 52,
+    "temp_c": 11.11,
+    "precip_chance_pct": 0,
+    "short_forecast": "Clear"
    }
   ]
  },
