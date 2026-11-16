@@ -11,20 +11,20 @@
   "lon": -90.2508,
   "history": "Same site as the official New Orleans record"
  },
- "as_of_utc": "2026-11-16T12:39:12Z",
+ "as_of_utc": "2026-11-16T13:46:06Z",
  "now": {
-  "time_utc": "2026-11-16T12:20:00Z",
+  "time_utc": "2026-11-16T12:55:00Z",
   "temp_c": 13,
   "temp_f": 55.4,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 6,
   "humidity_pct": 62.48,
-  "wind_kmh": 18.5,
-  "description": "Mostly Cloudy"
+  "wind_kmh": 16.67,
+  "description": "Partly Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-16",
-  "readings": 5,
+  "readings": 7,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -246,17 +246,17 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-16T07:31:55Z",
+  "issued_utc": "2026-11-16T12:13:52Z",
   "grid": "LIX/61,90",
   "periods": [
    {
     "name": "Today",
-    "start": "2026-11-16T06:00:00-06:00",
+    "start": "2026-11-16T07:00:00-06:00",
     "is_daytime": true,
     "temp_f": 63,
     "temp_c": 17.22,
-    "precip_chance_pct": 32,
-    "short_forecast": "Chance Rain Showers"
+    "precip_chance_pct": 83,
+    "short_forecast": "Rain Showers"
    },
    {
     "name": "Tonight",
@@ -264,7 +264,7 @@
     "is_daytime": false,
     "temp_f": 53,
     "temp_c": 11.67,
-    "precip_chance_pct": 9,
+    "precip_chance_pct": 4,
     "short_forecast": "Mostly Clear"
    },
    {
@@ -273,7 +273,7 @@
     "is_daytime": true,
     "temp_f": 69,
     "temp_c": 20.56,
-    "precip_chance_pct": 1,
+    "precip_chance_pct": 0,
     "short_forecast": "Sunny"
    },
    {
@@ -380,13 +380,6 @@
  "hourly": {
   "issued_utc": "2026-11-16T12:13:52Z",
   "hours": [
-   {
-    "start": "2026-11-16T06:00:00-06:00",
-    "temp_f": 55,
-    "temp_c": 12.78,
-    "precip_chance_pct": 83,
-    "short_forecast": "Rain Showers"
-   },
    {
     "start": "2026-11-16T07:00:00-06:00",
     "temp_f": 54,
@@ -715,6 +708,13 @@
     "temp_c": 15.0,
     "precip_chance_pct": 1,
     "short_forecast": "Mostly Clear"
+   },
+   {
+    "start": "2026-11-18T06:00:00-06:00",
+    "temp_f": 59,
+    "temp_c": 15.0,
+    "precip_chance_pct": 2,
+    "short_forecast": "Sunny"
    }
   ]
  },

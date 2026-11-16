@@ -11,34 +11,29 @@
   "lon": -98.4636,
   "history": "Same site as the official San Antonio record"
  },
- "as_of_utc": "2026-11-16T12:39:12Z",
+ "as_of_utc": "2026-11-16T13:46:06Z",
  "now": {
-  "time_utc": "2026-11-16T12:20:00Z",
+  "time_utc": "2026-11-16T12:55:00Z",
   "temp_c": 10,
   "temp_f": 50.0,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 8,
   "humidity_pct": 87.38,
-  "wind_kmh": 20.38,
+  "wind_kmh": 14.83,
   "description": "Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-16",
-  "readings": 7,
+  "readings": 9,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
   "high_c": 12.2,
   "high_f": 54.0,
   "high_time_utc": "2026-11-16T06:51:00Z",
-  "low_c": 11.1,
-  "low_f": 52.0,
-  "low_time_utc": "2026-11-16T10:51:00Z",
-  "dip_between_reports": {
-   "at_most_f": 50.9,
-   "about_f": 50.0,
-   "time_utc": "2026-11-16T12:15:00Z"
-  }
+  "low_c": 10,
+  "low_f": 50.0,
+  "low_time_utc": "2026-11-16T12:51:00Z"
  },
  "record": {
   "series": "San Antonio area (ThreadEx; airport)",
@@ -89,7 +84,7 @@
   },
   "forecast_highs": [
    {
-    "period": "Monday",
+    "period": "Today",
     "date": "2026-11-16",
     "high_f": 57,
     "would_rank": {
@@ -257,16 +252,7 @@
   "grid": "EWX/128,59",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-16T05:00:00-06:00",
-    "is_daytime": false,
-    "temp_f": 49,
-    "temp_c": 9.44,
-    "precip_chance_pct": 7,
-    "short_forecast": "Patchy Drizzle"
-   },
-   {
-    "name": "Monday",
+    "name": "Today",
     "start": "2026-11-16T06:00:00-06:00",
     "is_daytime": true,
     "temp_f": 57,
@@ -275,7 +261,7 @@
     "short_forecast": "Mostly Cloudy"
    },
    {
-    "name": "Monday Night",
+    "name": "Tonight",
     "start": "2026-11-16T18:00:00-06:00",
     "is_daytime": false,
     "temp_f": 46,
@@ -381,19 +367,21 @@
     "temp_c": 21.11,
     "precip_chance_pct": 37,
     "short_forecast": "Chance Rain Showers"
+   },
+   {
+    "name": "Sunday Night",
+    "start": "2026-11-22T18:00:00-06:00",
+    "is_daytime": false,
+    "temp_f": 57,
+    "temp_c": 13.89,
+    "precip_chance_pct": 26,
+    "short_forecast": "Chance Rain Showers"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-16T11:46:20Z",
   "hours": [
-   {
-    "start": "2026-11-16T06:00:00-06:00",
-    "temp_f": 49,
-    "temp_c": 9.44,
-    "precip_chance_pct": 1,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "start": "2026-11-16T07:00:00-06:00",
     "temp_f": 49,
@@ -722,6 +710,13 @@
     "temp_c": 8.89,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "start": "2026-11-18T06:00:00-06:00",
+    "temp_f": 48,
+    "temp_c": 8.89,
+    "precip_chance_pct": 0,
+    "short_forecast": "Partly Sunny"
    }
   ]
  },
