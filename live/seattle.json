@@ -11,15 +11,15 @@
   "lon": -122.3136,
   "history": "Same station as the official Seattle record (Sea-Tac)"
  },
- "as_of_utc": "2026-11-16T02:15:17Z",
+ "as_of_utc": "2026-11-16T03:07:50Z",
  "now": {
-  "time_utc": "2026-11-16T01:55:00Z",
-  "temp_c": 8,
-  "temp_f": 46.4,
+  "time_utc": "2026-11-16T02:25:00Z",
+  "temp_c": 9,
+  "temp_f": 48.2,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 6,
-  "humidity_pct": 87.19,
-  "wind_kmh": 14.83,
+  "humidity_pct": 81.49,
+  "wind_kmh": 22.21,
   "description": "Mostly Cloudy"
  },
  "today_so_far": {
@@ -97,27 +97,6 @@
    "phrase": "already the 15th warmest November 15 high (tied) of 82 since 1945, warmest since 2025"
   },
   "forecast_highs": [
-   {
-    "period": "Today",
-    "date": "2026-11-15",
-    "high_f": 55,
-    "would_rank": {
-     "value_f": 55,
-     "warm_rank": 19,
-     "cool_rank": 62,
-     "years": 82,
-     "first_year": 1945,
-     "tied_years": [
-      2004,
-      2018
-     ],
-     "standing": "warm",
-     "notable": false,
-     "since": 2025,
-     "record": false,
-     "phrase": "typical for November 15"
-    }
-   },
    {
     "period": "Monday",
     "date": "2026-11-16",
@@ -264,6 +243,30 @@
      "record": false,
      "phrase": "typical for November 21"
     }
+   },
+   {
+    "period": "Sunday",
+    "date": "2026-11-22",
+    "high_f": 50,
+    "would_rank": {
+     "value_f": 50,
+     "warm_rank": 24,
+     "cool_rank": 54,
+     "years": 82,
+     "first_year": 1945,
+     "tied_years": [
+      1964,
+      1967,
+      1986,
+      1991,
+      2015
+     ],
+     "standing": "warm",
+     "notable": false,
+     "since": 2025,
+     "record": false,
+     "phrase": "typical for November 22"
+    }
    }
   ]
  },
@@ -271,15 +274,6 @@
   "issued_utc": "2026-11-15T19:45:55Z",
   "grid": "SEW/124,60",
   "periods": [
-   {
-    "name": "Today",
-    "start": "2026-11-15T11:00:00-08:00",
-    "is_daytime": true,
-    "temp_f": 55,
-    "temp_c": 12.78,
-    "precip_chance_pct": 63,
-    "short_forecast": "Light Rain Likely"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-15T18:00:00-08:00",
@@ -396,19 +390,21 @@
     "temp_c": 3.33,
     "precip_chance_pct": 36,
     "short_forecast": "Chance Light Rain"
+   },
+   {
+    "name": "Sunday",
+    "start": "2026-11-22T06:00:00-08:00",
+    "is_daytime": true,
+    "temp_f": 50,
+    "temp_c": 10.0,
+    "precip_chance_pct": 34,
+    "short_forecast": "Chance Light Rain"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-15T19:45:55Z",
   "hours": [
-   {
-    "start": "2026-11-15T18:00:00-08:00",
-    "temp_f": 48,
-    "temp_c": 8.89,
-    "precip_chance_pct": 32,
-    "short_forecast": "Chance Light Rain"
-   },
    {
     "start": "2026-11-15T19:00:00-08:00",
     "temp_f": 48,
@@ -737,6 +733,13 @@
     "temp_c": 8.33,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
+   },
+   {
+    "start": "2026-11-17T18:00:00-08:00",
+    "temp_f": 46,
+    "temp_c": 7.78,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Clear"
    }
   ]
  },

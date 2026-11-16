@@ -11,15 +11,15 @@
   "lon": -117.1831,
   "history": "Same site as the official San Diego record"
  },
- "as_of_utc": "2026-11-16T02:15:17Z",
+ "as_of_utc": "2026-11-16T03:07:50Z",
  "now": {
-  "time_utc": "2026-11-16T01:50:00Z",
-  "temp_c": 20,
-  "temp_f": 68.0,
+  "time_utc": "2026-11-16T02:30:00Z",
+  "temp_c": 19,
+  "temp_f": 66.2,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 14,
-  "humidity_pct": 68.38,
-  "wind_kmh": 5.54,
+  "humidity_pct": 72.76,
+  "wind_kmh": 0,
   "description": "Clear"
  },
  "today_so_far": {
@@ -105,31 +105,6 @@
    "phrase": "already the 29th warmest November 15 high (tied) of 153 since 1874, warmest since 2021"
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-15",
-    "high_f": 73,
-    "would_rank": {
-     "value_f": 73,
-     "warm_rank": 29,
-     "cool_rank": 119,
-     "years": 153,
-     "first_year": 1874,
-     "tied_years": [
-      1913,
-      1941,
-      1956,
-      1967,
-      1976,
-      2006
-     ],
-     "standing": "warm",
-     "notable": true,
-     "since": 2021,
-     "record": false,
-     "phrase": "29th warmest November 15 high (tied) of 153 since 1874, warmest since 2021"
-    }
-   },
    {
     "period": "Monday",
     "date": "2026-11-16",
@@ -304,6 +279,34 @@
      "record": false,
      "phrase": "typical for November 21"
     }
+   },
+   {
+    "period": "Sunday",
+    "date": "2026-11-22",
+    "high_f": 69,
+    "would_rank": {
+     "value_f": 69,
+     "warm_rank": 53,
+     "cool_rank": 92,
+     "years": 153,
+     "first_year": 1874,
+     "tied_years": [
+      1881,
+      1926,
+      1960,
+      1976,
+      1977,
+      1981,
+      1999,
+      2016,
+      2024
+     ],
+     "standing": "warm",
+     "notable": false,
+     "since": 2024,
+     "record": false,
+     "phrase": "typical for November 22"
+    }
    }
   ]
  },
@@ -311,15 +314,6 @@
   "issued_utc": "2026-11-15T20:01:34Z",
   "grid": "SGX/56,15",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-15T12:00:00-08:00",
-    "is_daytime": true,
-    "temp_f": 73,
-    "temp_c": 22.78,
-    "precip_chance_pct": 1,
-    "short_forecast": "Sunny"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-15T18:00:00-08:00",
@@ -436,19 +430,21 @@
     "temp_c": 11.11,
     "precip_chance_pct": 21,
     "short_forecast": "Partly Cloudy then Slight Chance Rain Showers"
+   },
+   {
+    "name": "Sunday",
+    "start": "2026-11-22T06:00:00-08:00",
+    "is_daytime": true,
+    "temp_f": 69,
+    "temp_c": 20.56,
+    "precip_chance_pct": 22,
+    "short_forecast": "Slight Chance Rain Showers"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-15T20:01:34Z",
   "hours": [
-   {
-    "start": "2026-11-15T18:00:00-08:00",
-    "temp_f": 67,
-    "temp_c": 19.44,
-    "precip_chance_pct": 1,
-    "short_forecast": "Mostly Clear"
-   },
    {
     "start": "2026-11-15T19:00:00-08:00",
     "temp_f": 66,
@@ -777,6 +773,13 @@
     "temp_c": 18.89,
     "precip_chance_pct": 3,
     "short_forecast": "Sunny"
+   },
+   {
+    "start": "2026-11-17T18:00:00-08:00",
+    "temp_f": 64,
+    "temp_c": 17.78,
+    "precip_chance_pct": 3,
+    "short_forecast": "Mostly Clear"
    }
   ]
  },
