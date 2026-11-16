@@ -11,29 +11,29 @@
   "lon": -72.6825,
   "history": "Same site as the official Hartford record"
  },
- "as_of_utc": "2026-11-16T10:07:50Z",
+ "as_of_utc": "2026-11-16T11:07:59Z",
  "now": {
-  "time_utc": "2026-11-16T09:40:00Z",
-  "temp_c": -1,
-  "temp_f": 30.2,
+  "time_utc": "2026-11-16T10:20:00Z",
+  "temp_c": -2,
+  "temp_f": 28.4,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": -2,
-  "humidity_pct": 92.92,
-  "wind_kmh": 7.42,
+  "dewpoint_c": -3,
+  "humidity_pct": 92.86,
+  "wind_kmh": 11.12,
   "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-16",
-  "readings": 2,
+  "readings": 3,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
   "high_c": 1.1,
   "high_f": 34.0,
   "high_time_utc": "2026-11-16T05:51:00Z",
-  "low_c": 0,
-  "low_f": 32.0,
-  "low_time_utc": "2026-11-16T08:51:00Z",
+  "low_c": -1.1,
+  "low_f": 30.0,
+  "low_time_utc": "2026-11-16T09:51:00Z",
   "peak_between_reports": {
    "at_least_f": 34.7,
    "about_f": 35.6,
@@ -100,7 +100,7 @@
   },
   "forecast_highs": [
    {
-    "period": "Monday",
+    "period": "Today",
     "date": "2026-11-16",
     "high_f": 50,
     "would_rank": {
@@ -261,16 +261,7 @@
   "grid": "BOX/20,72",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-16T05:00:00-05:00",
-    "is_daytime": false,
-    "temp_f": 32,
-    "temp_c": 0.0,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Clear"
-   },
-   {
-    "name": "Monday",
+    "name": "Today",
     "start": "2026-11-16T06:00:00-05:00",
     "is_daytime": true,
     "temp_f": 50,
@@ -279,7 +270,7 @@
     "short_forecast": "Mostly Sunny"
    },
    {
-    "name": "Monday Night",
+    "name": "Tonight",
     "start": "2026-11-16T18:00:00-05:00",
     "is_daytime": false,
     "temp_f": 27,
@@ -385,19 +376,21 @@
     "temp_c": 15.56,
     "precip_chance_pct": 13,
     "short_forecast": "Partly Sunny"
+   },
+   {
+    "name": "Sunday Night",
+    "start": "2026-11-22T18:00:00-05:00",
+    "is_daytime": false,
+    "temp_f": 42,
+    "temp_c": 5.56,
+    "precip_chance_pct": 14,
+    "short_forecast": "Partly Cloudy"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-16T09:14:18Z",
   "hours": [
-   {
-    "start": "2026-11-16T05:00:00-05:00",
-    "temp_f": 34,
-    "temp_c": 1.11,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Clear"
-   },
    {
     "start": "2026-11-16T06:00:00-05:00",
     "temp_f": 33,
@@ -724,6 +717,13 @@
     "start": "2026-11-18T04:00:00-05:00",
     "temp_f": 36,
     "temp_c": 2.22,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Clear"
+   },
+   {
+    "start": "2026-11-18T05:00:00-05:00",
+    "temp_f": 34,
+    "temp_c": 1.11,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear"
    }
