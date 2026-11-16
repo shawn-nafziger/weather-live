@@ -11,29 +11,23 @@
   "lon": -117.1831,
   "history": "Same site as the official San Diego record"
  },
- "as_of_utc": "2026-11-16T07:07:51Z",
+ "as_of_utc": "2026-11-16T08:08:12Z",
  "now": {
-  "time_utc": "2026-11-16T06:45:00Z",
-  "temp_c": 17,
-  "temp_f": 62.6,
+  "time_utc": "2026-11-16T07:55:00Z",
+  "temp_c": 18,
+  "temp_f": 64.4,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 13,
-  "humidity_pct": 77.31,
-  "wind_kmh": 0,
-  "description": "Mostly Cloudy"
+  "dewpoint_c": 14,
+  "humidity_pct": 77.46,
+  "wind_kmh": 5.54,
+  "description": "Cloudy"
  },
  "today_so_far": {
-  "date_local": "2026-11-15",
-  "readings": 12,
-  "basis": "hourly reports (tenths of a degree)",
-  "approximate": false,
-  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 22.8,
-  "high_f": 73.0,
-  "high_time_utc": "2026-11-15T21:51:00Z",
-  "low_c": 15.6,
-  "low_f": 60.1,
-  "low_time_utc": "2026-11-15T11:51:00Z"
+  "date_local": "2026-11-16",
+  "readings": 0,
+  "basis": "5-minute readings (whole \u00b0C, approximate)",
+  "approximate": true,
+  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two."
  },
  "record": {
   "series": "San Diego area (ThreadEx; Lindbergh Field)",
@@ -42,7 +36,7 @@
   "rank_today": true,
   "latest_final": {
    "date": "2026-11-14",
-   "is_yesterday": true,
+   "is_yesterday": false,
    "high_f": 72,
    "low_f": 61,
    "high_rank": {
@@ -83,26 +77,6 @@
     "record": false,
     "phrase": "3rd warmest November 14 low (tied) of 153 since 1874, warmest since 2025"
    }
-  },
-  "today_high_so_far": {
-   "value_f": 73,
-   "warm_rank": 29,
-   "cool_rank": 119,
-   "years": 153,
-   "first_year": 1874,
-   "tied_years": [
-    1913,
-    1941,
-    1956,
-    1967,
-    1976,
-    2006
-   ],
-   "standing": "warm",
-   "notable": true,
-   "since": 2021,
-   "record": false,
-   "phrase": "already the 29th warmest November 15 high (tied) of 153 since 1874, warmest since 2021"
   },
   "forecast_highs": [
    {
@@ -316,7 +290,7 @@
   "periods": [
    {
     "name": "Tonight",
-    "start": "2026-11-15T18:00:00-08:00",
+    "start": "2026-11-15T19:00:00-08:00",
     "is_daytime": false,
     "temp_f": 57,
     "temp_c": 13.89,
@@ -445,13 +419,6 @@
  "hourly": {
   "issued_utc": "2026-11-15T20:01:34Z",
   "hours": [
-   {
-    "start": "2026-11-15T23:00:00-08:00",
-    "temp_f": 62,
-    "temp_c": 16.67,
-    "precip_chance_pct": 15,
-    "short_forecast": "Slight Chance Rain Showers"
-   },
    {
     "start": "2026-11-16T00:00:00-08:00",
     "temp_f": 61,
@@ -778,6 +745,13 @@
     "start": "2026-11-17T22:00:00-08:00",
     "temp_f": 60,
     "temp_c": 15.56,
+    "precip_chance_pct": 2,
+    "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "start": "2026-11-17T23:00:00-08:00",
+    "temp_f": 59,
+    "temp_c": 15.0,
     "precip_chance_pct": 2,
     "short_forecast": "Mostly Cloudy"
    }

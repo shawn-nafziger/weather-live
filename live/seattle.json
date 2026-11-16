@@ -11,34 +11,23 @@
   "lon": -122.3136,
   "history": "Same station as the official Seattle record (Sea-Tac)"
  },
- "as_of_utc": "2026-11-16T07:07:51Z",
+ "as_of_utc": "2026-11-16T08:08:12Z",
  "now": {
-  "time_utc": "2026-11-16T06:45:00Z",
-  "temp_c": 7,
-  "temp_f": 44.6,
+  "time_utc": "2026-11-16T07:30:00Z",
+  "temp_c": 6,
+  "temp_f": 42.8,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 5,
-  "humidity_pct": 87.1,
-  "wind_kmh": 9.25,
-  "description": "Mostly Clear"
+  "humidity_pct": 93.3,
+  "wind_kmh": 5.54,
+  "description": "Cloudy"
  },
  "today_so_far": {
-  "date_local": "2026-11-15",
-  "readings": 17,
-  "basis": "hourly reports (tenths of a degree)",
-  "approximate": false,
-  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 13.3,
-  "high_f": 55.9,
-  "high_time_utc": "2026-11-15T11:53:00Z",
-  "low_c": 7.8,
-  "low_f": 46.0,
-  "low_time_utc": "2026-11-16T04:53:00Z",
-  "dip_between_reports": {
-   "at_most_f": 45.5,
-   "about_f": 44.6,
-   "time_utc": "2026-11-16T05:05:00Z"
-  }
+  "date_local": "2026-11-16",
+  "readings": 0,
+  "basis": "5-minute readings (whole \u00b0C, approximate)",
+  "approximate": true,
+  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two."
  },
  "record": {
   "series": "Seattle area (ThreadEx, Sea-Tac)",
@@ -47,7 +36,7 @@
   "rank_today": true,
   "latest_final": {
    "date": "2026-11-14",
-   "is_yesterday": true,
+   "is_yesterday": false,
    "high_f": 60,
    "low_f": 46,
    "high_rank": {
@@ -82,24 +71,6 @@
     "record": false,
     "phrase": "16th warmest November 14 low (tied) of 82 since 1945, warmest since 2025"
    }
-  },
-  "today_high_so_far": {
-   "value_f": 56,
-   "warm_rank": 15,
-   "cool_rank": 64,
-   "years": 82,
-   "first_year": 1945,
-   "tied_years": [
-    1976,
-    1995,
-    2006,
-    2010
-   ],
-   "standing": "warm",
-   "notable": true,
-   "since": 2025,
-   "record": false,
-   "phrase": "already the 15th warmest November 15 high (tied) of 82 since 1945, warmest since 2025"
   },
   "forecast_highs": [
    {
@@ -281,12 +252,12 @@
   "periods": [
    {
     "name": "Tonight",
-    "start": "2026-11-15T22:00:00-08:00",
+    "start": "2026-11-15T23:00:00-08:00",
     "is_daytime": false,
     "temp_f": 41,
     "temp_c": 5.0,
-    "precip_chance_pct": 25,
-    "short_forecast": "Chance Light Rain then Partly Cloudy"
+    "precip_chance_pct": 13,
+    "short_forecast": "Partly Cloudy"
    },
    {
     "name": "Monday",
@@ -410,13 +381,6 @@
  "hourly": {
   "issued_utc": "2026-11-16T06:26:58Z",
   "hours": [
-   {
-    "start": "2026-11-15T23:00:00-08:00",
-    "temp_f": 45,
-    "temp_c": 7.22,
-    "precip_chance_pct": 13,
-    "short_forecast": "Partly Cloudy"
-   },
    {
     "start": "2026-11-16T00:00:00-08:00",
     "temp_f": 45,
@@ -741,6 +705,13 @@
    },
    {
     "start": "2026-11-17T22:00:00-08:00",
+    "temp_f": 43,
+    "temp_c": 6.11,
+    "precip_chance_pct": 4,
+    "short_forecast": "Partly Cloudy"
+   },
+   {
+    "start": "2026-11-17T23:00:00-08:00",
     "temp_f": 43,
     "temp_c": 6.11,
     "precip_chance_pct": 4,
