@@ -11,20 +11,20 @@
   "lon": -81.3241,
   "history": "Same site as the official Orlando record"
  },
- "as_of_utc": "2026-11-16T21:08:01Z",
+ "as_of_utc": "2026-11-16T22:08:01Z",
  "now": {
-  "time_utc": "2026-11-16T19:53:00Z",
-  "temp_c": 23,
-  "temp_f": 73.4,
+  "time_utc": "2026-11-16T20:53:00Z",
+  "temp_c": 21,
+  "temp_f": 69.8,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 16,
-  "humidity_pct": 64.72,
-  "wind_kmh": 24.12,
-  "description": "Mostly Cloudy"
+  "humidity_pct": 73.11,
+  "wind_kmh": 27.72,
+  "description": "Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-16",
-  "readings": 14,
+  "readings": 15,
   "basis": "5-minute readings (whole \u00b0C, approximate)",
   "approximate": true,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -85,7 +85,7 @@
   },
   "forecast_highs": [
    {
-    "period": "Today",
+    "period": "This Afternoon",
     "date": "2026-11-16",
     "high_f": 75,
     "would_rank": {
@@ -273,12 +273,12 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-16T13:56:40Z",
+  "issued_utc": "2026-11-16T20:54:14Z",
   "grid": "MLB/29,63",
   "periods": [
    {
-    "name": "Today",
-    "start": "2026-11-16T09:00:00-05:00",
+    "name": "This Afternoon",
+    "start": "2026-11-16T16:00:00-05:00",
     "is_daytime": true,
     "temp_f": 75,
     "temp_c": 23.89,
@@ -354,8 +354,8 @@
     "is_daytime": true,
     "temp_f": 79,
     "temp_c": 26.11,
-    "precip_chance_pct": 39,
-    "short_forecast": "Chance Showers And Thunderstorms"
+    "precip_chance_pct": 65,
+    "short_forecast": "Rain Showers Likely"
    },
    {
     "name": "Friday Night",
@@ -363,8 +363,8 @@
     "is_daytime": false,
     "temp_f": 67,
     "temp_c": 19.44,
-    "precip_chance_pct": 39,
-    "short_forecast": "Chance Rain Showers"
+    "precip_chance_pct": 65,
+    "short_forecast": "Showers And Thunderstorms Likely"
    },
    {
     "name": "Saturday",
@@ -372,8 +372,8 @@
     "is_daytime": true,
     "temp_f": 80,
     "temp_c": 26.67,
-    "precip_chance_pct": 24,
-    "short_forecast": "Slight Chance Rain Showers"
+    "precip_chance_pct": 34,
+    "short_forecast": "Chance Rain Showers"
    },
    {
     "name": "Saturday Night",
@@ -381,8 +381,8 @@
     "is_daytime": false,
     "temp_f": 65,
     "temp_c": 18.33,
-    "precip_chance_pct": 24,
-    "short_forecast": "Slight Chance Rain Showers then Mostly Cloudy"
+    "precip_chance_pct": 34,
+    "short_forecast": "Chance Rain Showers then Partly Cloudy"
    },
    {
     "name": "Sunday",
@@ -390,7 +390,7 @@
     "is_daytime": true,
     "temp_f": 80,
     "temp_c": 26.67,
-    "precip_chance_pct": 13,
+    "precip_chance_pct": 6,
     "short_forecast": "Mostly Sunny"
    },
    {
@@ -399,21 +399,14 @@
     "is_daytime": false,
     "temp_f": 64,
     "temp_c": 17.78,
-    "precip_chance_pct": 13,
-    "short_forecast": "Mostly Clear"
+    "precip_chance_pct": 6,
+    "short_forecast": "Partly Cloudy"
    }
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-16T13:56:40Z",
+  "issued_utc": "2026-11-16T20:54:14Z",
   "hours": [
-   {
-    "start": "2026-11-16T16:00:00-05:00",
-    "temp_f": 73,
-    "temp_c": 22.78,
-    "precip_chance_pct": 5,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "start": "2026-11-16T17:00:00-05:00",
     "temp_f": 72,
@@ -738,6 +731,13 @@
    },
    {
     "start": "2026-11-18T15:00:00-05:00",
+    "temp_f": 74,
+    "temp_c": 23.33,
+    "precip_chance_pct": 77,
+    "short_forecast": "Rain Showers"
+   },
+   {
+    "start": "2026-11-18T16:00:00-05:00",
     "temp_f": 74,
     "temp_c": 23.33,
     "precip_chance_pct": 77,
