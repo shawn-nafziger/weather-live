@@ -11,20 +11,20 @@
   "lon": -118.2417,
   "history": "About 7 km from the official Los Angeles record's site, so today and the forecast aren't ranked against it"
  },
- "as_of_utc": "2026-11-16T13:46:06Z",
+ "as_of_utc": "2026-11-16T14:08:01Z",
  "now": {
-  "time_utc": "2026-11-16T13:10:00Z",
+  "time_utc": "2026-11-16T13:45:00Z",
   "temp_c": 16.22,
   "temp_f": 61.2,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 12.45,
-  "humidity_pct": 78.36,
-  "wind_kmh": 1.91,
+  "dewpoint_c": 12.64,
+  "humidity_pct": 79.35,
+  "wind_kmh": 0,
   "description": ""
  },
  "today_so_far": {
   "date_local": "2026-11-16",
-  "readings": 54,
+  "readings": 61,
   "basis": "5-minute readings (whole \u00b0C, approximate)",
   "approximate": true,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -89,20 +89,11 @@
   "note": "Today's readings come from a different station than this record, so today and the forecast aren't ranked against it."
  },
  "forecast": {
-  "issued_utc": "2026-11-16T11:16:20Z",
+  "issued_utc": "2026-11-16T14:01:42Z",
   "grid": "LOX/155,46",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-16T05:00:00-08:00",
-    "is_daytime": false,
-    "temp_f": 57,
-    "temp_c": 13.89,
-    "precip_chance_pct": 6,
-    "short_forecast": "Mostly Cloudy"
-   },
-   {
-    "name": "Monday",
+    "name": "Today",
     "start": "2026-11-16T06:00:00-08:00",
     "is_daytime": true,
     "temp_f": 71,
@@ -111,7 +102,7 @@
     "short_forecast": "Chance Light Rain"
    },
    {
-    "name": "Monday Night",
+    "name": "Tonight",
     "start": "2026-11-16T18:00:00-08:00",
     "is_daytime": false,
     "temp_f": 52,
@@ -217,19 +208,21 @@
     "temp_c": 19.44,
     "precip_chance_pct": 20,
     "short_forecast": "Mostly Sunny then Slight Chance Light Rain"
+   },
+   {
+    "name": "Sunday Night",
+    "start": "2026-11-22T18:00:00-08:00",
+    "is_daytime": false,
+    "temp_f": 50,
+    "temp_c": 10.0,
+    "precip_chance_pct": 22,
+    "short_forecast": "Slight Chance Light Rain"
    }
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-16T11:16:20Z",
+  "issued_utc": "2026-11-16T14:01:42Z",
   "hours": [
-   {
-    "start": "2026-11-16T05:00:00-08:00",
-    "temp_f": 59,
-    "temp_c": 15.0,
-    "precip_chance_pct": 6,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "start": "2026-11-16T06:00:00-08:00",
     "temp_f": 59,
@@ -556,6 +549,13 @@
     "start": "2026-11-18T04:00:00-08:00",
     "temp_f": 49,
     "temp_c": 9.44,
+    "precip_chance_pct": 0,
+    "short_forecast": "Partly Cloudy"
+   },
+   {
+    "start": "2026-11-18T05:00:00-08:00",
+    "temp_f": 48,
+    "temp_c": 8.89,
     "precip_chance_pct": 0,
     "short_forecast": "Partly Cloudy"
    }

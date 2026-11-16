@@ -11,14 +11,14 @@
   "lon": -72.6825,
   "history": "Same site as the official Hartford record"
  },
- "as_of_utc": "2026-11-16T13:46:06Z",
+ "as_of_utc": "2026-11-16T14:08:01Z",
  "now": {
-  "time_utc": "2026-11-16T13:05:00Z",
-  "temp_c": 2,
-  "temp_f": 35.6,
+  "time_utc": "2026-11-16T13:35:00Z",
+  "temp_c": 4,
+  "temp_f": 39.2,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": -1,
-  "humidity_pct": 80.52,
+  "dewpoint_c": 0,
+  "humidity_pct": 75.17,
   "wind_kmh": 0,
   "description": "Clear"
  },
@@ -34,6 +34,11 @@
   "low_c": -1.1,
   "low_f": 30.0,
   "low_time_utc": "2026-11-16T09:51:00Z",
+  "peak_between_reports": {
+   "at_least_f": 38.3,
+   "about_f": 39.2,
+   "time_utc": "2026-11-16T13:20:00Z"
+  },
   "dip_between_reports": {
    "at_most_f": 29.3,
    "about_f": 28.4,
@@ -253,7 +258,7 @@
   "periods": [
    {
     "name": "Today",
-    "start": "2026-11-16T07:00:00-05:00",
+    "start": "2026-11-16T09:00:00-05:00",
     "is_daytime": true,
     "temp_f": 50,
     "temp_c": 10.0,
@@ -382,13 +387,6 @@
  "hourly": {
   "issued_utc": "2026-11-16T09:14:18Z",
   "hours": [
-   {
-    "start": "2026-11-16T08:00:00-05:00",
-    "temp_f": 37,
-    "temp_c": 2.78,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "start": "2026-11-16T09:00:00-05:00",
     "temp_f": 42,
@@ -715,6 +713,13 @@
     "start": "2026-11-18T07:00:00-05:00",
     "temp_f": 35,
     "temp_c": 1.67,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
+   },
+   {
+    "start": "2026-11-18T08:00:00-05:00",
+    "temp_f": 39,
+    "temp_c": 3.89,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
    }
