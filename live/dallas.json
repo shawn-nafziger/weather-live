@@ -11,20 +11,20 @@
   "lon": -97.022,
   "history": "Same site as the official Dallas record"
  },
- "as_of_utc": "2026-11-16T00:08:09Z",
+ "as_of_utc": "2026-11-16T01:07:55Z",
  "now": {
-  "time_utc": "2026-11-15T23:45:00Z",
+  "time_utc": "2026-11-16T00:05:00Z",
   "temp_c": 9,
   "temp_f": 48.2,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 6,
   "humidity_pct": 81.49,
-  "wind_kmh": 14.83,
+  "wind_kmh": 18.5,
   "description": "Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-15",
-  "readings": 16,
+  "readings": 18,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -84,26 +84,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-15",
-    "high_f": 48,
-    "would_rank": {
-     "value_f": 48,
-     "warm_rank": 120,
-     "cool_rank": 9,
-     "years": 129,
-     "first_year": 1898,
-     "tied_years": [
-      1935
-     ],
-     "standing": "cool",
-     "notable": true,
-     "since": 2022,
-     "record": false,
-     "phrase": "9th coolest November 15 high (tied) of 129 since 1898, coolest since 2022"
-    }
-   },
    {
     "period": "Monday",
     "date": "2026-11-16",
@@ -237,6 +217,27 @@
      "record": false,
      "phrase": "25th warmest November 21 high (tied) of 129 since 1898, warmest since 2025"
     }
+   },
+   {
+    "period": "Sunday",
+    "date": "2026-11-22",
+    "high_f": 69,
+    "would_rank": {
+     "value_f": 69,
+     "warm_rank": 46,
+     "cool_rank": 82,
+     "years": 129,
+     "first_year": 1898,
+     "tied_years": [
+      1944,
+      1986
+     ],
+     "standing": "warm",
+     "notable": false,
+     "since": 2016,
+     "record": false,
+     "phrase": "typical for November 22"
+    }
    }
   ]
  },
@@ -244,15 +245,6 @@
   "issued_utc": "2026-11-15T23:06:35Z",
   "grid": "FWD/81,109",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-15T17:00:00-06:00",
-    "is_daytime": true,
-    "temp_f": 48,
-    "temp_c": 8.89,
-    "precip_chance_pct": 23,
-    "short_forecast": "Slight Chance Light Rain"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-15T18:00:00-06:00",
@@ -369,19 +361,21 @@
     "temp_c": 13.33,
     "precip_chance_pct": 35,
     "short_forecast": "Chance Showers And Thunderstorms"
+   },
+   {
+    "name": "Sunday",
+    "start": "2026-11-22T06:00:00-06:00",
+    "is_daytime": true,
+    "temp_f": 69,
+    "temp_c": 20.56,
+    "precip_chance_pct": 15,
+    "short_forecast": "Slight Chance Rain Showers"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-15T23:06:35Z",
   "hours": [
-   {
-    "start": "2026-11-15T18:00:00-06:00",
-    "temp_f": 46,
-    "temp_c": 7.78,
-    "precip_chance_pct": 27,
-    "short_forecast": "Chance Light Rain"
-   },
    {
     "start": "2026-11-15T19:00:00-06:00",
     "temp_f": 46,
@@ -710,6 +704,13 @@
     "temp_c": 15.56,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
+   },
+   {
+    "start": "2026-11-17T18:00:00-06:00",
+    "temp_f": 58,
+    "temp_c": 14.44,
+    "precip_chance_pct": 0,
+    "short_forecast": "Clear"
    }
   ]
  },
