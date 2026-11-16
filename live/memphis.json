@@ -11,29 +11,23 @@
   "lon": -89.9863,
   "history": "Same site as the official Memphis record"
  },
- "as_of_utc": "2026-11-16T05:08:10Z",
+ "as_of_utc": "2026-11-16T06:07:58Z",
  "now": {
-  "time_utc": "2026-11-16T04:45:00Z",
+  "time_utc": "2026-11-16T05:25:00Z",
   "temp_c": 8,
   "temp_f": 46.4,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 0,
   "humidity_pct": 57.03,
-  "wind_kmh": 11.12,
-  "description": "Clear"
+  "wind_kmh": 0,
+  "description": ""
  },
  "today_so_far": {
-  "date_local": "2026-11-15",
-  "readings": 18,
-  "basis": "hourly reports (tenths of a degree)",
-  "approximate": false,
-  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 14.4,
-  "high_f": 57.9,
-  "high_time_utc": "2026-11-15T20:54:00Z",
-  "low_c": 1.7,
-  "low_f": 35.1,
-  "low_time_utc": "2026-11-15T11:54:00Z"
+  "date_local": "2026-11-16",
+  "readings": 0,
+  "basis": "5-minute readings (whole \u00b0C, approximate)",
+  "approximate": true,
+  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two."
  },
  "record": {
   "series": "Memphis area (ThreadEx; airport)",
@@ -42,7 +36,7 @@
   "rank_today": true,
   "latest_final": {
    "date": "2026-11-14",
-   "is_yesterday": true,
+   "is_yesterday": false,
    "high_f": 54,
    "low_f": 34,
    "high_rank": {
@@ -251,17 +245,17 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-15T23:15:41Z",
+  "issued_utc": "2026-11-16T05:15:44Z",
   "grid": "MEG/45,63",
   "periods": [
    {
-    "name": "Tonight",
-    "start": "2026-11-15T18:00:00-06:00",
+    "name": "Overnight",
+    "start": "2026-11-16T00:00:00-06:00",
     "is_daytime": false,
     "temp_f": 37,
     "temp_c": 2.78,
     "precip_chance_pct": 0,
-    "short_forecast": "Mostly Clear then Areas Of Frost"
+    "short_forecast": "Areas Of Frost"
    },
    {
     "name": "Monday",
@@ -383,15 +377,8 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-15T23:15:41Z",
+  "issued_utc": "2026-11-16T05:15:44Z",
   "hours": [
-   {
-    "start": "2026-11-15T23:00:00-06:00",
-    "temp_f": 41,
-    "temp_c": 5.0,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Clear"
-   },
    {
     "start": "2026-11-16T00:00:00-06:00",
     "temp_f": 40,
@@ -718,6 +705,13 @@
     "start": "2026-11-17T22:00:00-06:00",
     "temp_f": 46,
     "temp_c": 7.78,
+    "precip_chance_pct": 0,
+    "short_forecast": "Clear"
+   },
+   {
+    "start": "2026-11-17T23:00:00-06:00",
+    "temp_f": 45,
+    "temp_c": 7.22,
     "precip_chance_pct": 0,
     "short_forecast": "Clear"
    }
