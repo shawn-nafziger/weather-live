@@ -11,20 +11,20 @@
   "lon": -80.2145,
   "history": "Same site as the official Pittsburgh record"
  },
- "as_of_utc": "2026-11-16T16:07:58Z",
+ "as_of_utc": "2026-11-16T17:08:26Z",
  "now": {
-  "time_utc": "2026-11-16T15:50:00Z",
-  "temp_c": 6,
-  "temp_f": 42.8,
+  "time_utc": "2026-11-16T16:35:00Z",
+  "temp_c": 7,
+  "temp_f": 44.6,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 3,
-  "humidity_pct": 81.08,
-  "wind_kmh": 9.25,
+  "humidity_pct": 75.69,
+  "wind_kmh": 0,
   "description": "Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-16",
-  "readings": 7,
+  "readings": 8,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -33,7 +33,12 @@
   "high_time_utc": "2026-11-16T14:51:00Z",
   "low_c": 5,
   "low_f": 41.0,
-  "low_time_utc": "2026-11-16T05:51:00Z"
+  "low_time_utc": "2026-11-16T05:51:00Z",
+  "peak_between_reports": {
+   "at_least_f": 43.7,
+   "about_f": 44.6,
+   "time_utc": "2026-11-16T16:35:00Z"
+  }
  },
  "record": {
   "series": "Pittsburgh area (ThreadEx; airport)",
@@ -245,12 +250,12 @@
   "periods": [
    {
     "name": "Today",
-    "start": "2026-11-16T07:00:00-05:00",
+    "start": "2026-11-16T08:00:00-05:00",
     "is_daytime": true,
     "temp_f": 49,
     "temp_c": 9.44,
     "precip_chance_pct": 0,
-    "short_forecast": "Mostly Cloudy"
+    "short_forecast": "Partly Sunny"
    },
    {
     "name": "Tonight",
@@ -374,13 +379,6 @@
  "hourly": {
   "issued_utc": "2026-11-16T10:26:39Z",
   "hours": [
-   {
-    "start": "2026-11-16T11:00:00-05:00",
-    "temp_f": 45,
-    "temp_c": 7.22,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "start": "2026-11-16T12:00:00-05:00",
     "temp_f": 46,
@@ -707,6 +705,13 @@
     "start": "2026-11-18T10:00:00-05:00",
     "temp_f": 43,
     "temp_c": 6.11,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
+   },
+   {
+    "start": "2026-11-18T11:00:00-05:00",
+    "temp_f": 48,
+    "temp_c": 8.89,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
    }
