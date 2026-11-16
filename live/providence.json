@@ -11,20 +11,20 @@
   "lon": -71.4277,
   "history": "Same site as the official Providence record"
  },
- "as_of_utc": "2026-11-16T11:07:59Z",
+ "as_of_utc": "2026-11-16T12:39:12Z",
  "now": {
-  "time_utc": "2026-11-16T10:20:00Z",
-  "temp_c": 2,
-  "temp_f": 35.6,
+  "time_utc": "2026-11-16T12:20:00Z",
+  "temp_c": 3,
+  "temp_f": 37.4,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": -2,
-  "humidity_pct": 74.82,
-  "wind_kmh": 7.42,
+  "dewpoint_c": -1,
+  "humidity_pct": 75.0,
+  "wind_kmh": 9.25,
   "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-16",
-  "readings": 3,
+  "readings": 4,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -41,55 +41,49 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-14",
-   "is_yesterday": false,
-   "high_f": 45,
-   "low_f": 34,
+   "date": "2026-11-15",
+   "is_yesterday": true,
+   "high_f": 52,
+   "low_f": 35,
    "high_rank": {
-    "value_f": 45,
-    "warm_rank": 92,
-    "cool_rank": 28,
-    "years": 123,
-    "first_year": 1904,
-    "tied_years": [
-     1953,
-     1983,
-     1990,
-     2014
-    ],
-    "standing": "cool",
-    "notable": false,
-    "since": 2019,
-    "record": false,
-    "phrase": "typical for November 14"
-   },
-   "low_rank": {
-    "value_f": 34,
-    "warm_rank": 55,
+    "value_f": 52,
+    "warm_rank": 59,
     "cool_rank": 60,
     "years": 123,
     "first_year": 1904,
     "tied_years": [
-     1917,
-     1926,
-     1944,
-     1957,
-     1967,
-     1972,
-     1991,
-     2003,
-     2025
+     1940,
+     1955,
+     1969,
+     1987,
+     2021
     ],
     "standing": "warm",
     "notable": false,
-    "since": 2025,
+    "since": 2024,
     "record": false,
-    "phrase": "typical for November 14"
+    "phrase": "typical for November 15"
+   },
+   "low_rank": {
+    "value_f": 35,
+    "warm_rank": 57,
+    "cool_rank": 65,
+    "years": 123,
+    "first_year": 1904,
+    "tied_years": [
+     1988,
+     2012
+    ],
+    "standing": "warm",
+    "notable": false,
+    "since": 2021,
+    "record": false,
+    "phrase": "typical for November 15"
    }
   },
   "forecast_highs": [
    {
-    "period": "Monday",
+    "period": "Today",
     "date": "2026-11-16",
     "high_f": 52,
     "would_rank": {
@@ -246,16 +240,7 @@
   "grid": "BOX/64,70",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-16T05:00:00-05:00",
-    "is_daytime": false,
-    "temp_f": 34,
-    "temp_c": 1.11,
-    "precip_chance_pct": 0,
-    "short_forecast": "Clear"
-   },
-   {
-    "name": "Monday",
+    "name": "Today",
     "start": "2026-11-16T06:00:00-05:00",
     "is_daytime": true,
     "temp_f": 52,
@@ -264,7 +249,7 @@
     "short_forecast": "Sunny"
    },
    {
-    "name": "Monday Night",
+    "name": "Tonight",
     "start": "2026-11-16T18:00:00-05:00",
     "is_daytime": false,
     "temp_f": 30,
@@ -370,19 +355,21 @@
     "temp_c": 16.67,
     "precip_chance_pct": 15,
     "short_forecast": "Partly Sunny then Slight Chance Light Rain"
+   },
+   {
+    "name": "Sunday Night",
+    "start": "2026-11-22T18:00:00-05:00",
+    "is_daytime": false,
+    "temp_f": 45,
+    "temp_c": 7.22,
+    "precip_chance_pct": 15,
+    "short_forecast": "Slight Chance Light Rain then Partly Cloudy"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-16T09:14:18Z",
   "hours": [
-   {
-    "start": "2026-11-16T06:00:00-05:00",
-    "temp_f": 35,
-    "temp_c": 1.67,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "start": "2026-11-16T07:00:00-05:00",
     "temp_f": 35,
@@ -711,6 +698,13 @@
     "temp_c": 4.44,
     "precip_chance_pct": 0,
     "short_forecast": "Clear"
+   },
+   {
+    "start": "2026-11-18T06:00:00-05:00",
+    "temp_f": 39,
+    "temp_c": 3.89,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
    }
   ]
  },

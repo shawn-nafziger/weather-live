@@ -11,20 +11,20 @@
   "lon": -97.7605,
   "history": "Same site as the official Austin record"
  },
- "as_of_utc": "2026-11-16T11:07:59Z",
+ "as_of_utc": "2026-11-16T12:39:12Z",
  "now": {
-  "time_utc": "2026-11-16T09:51:00Z",
+  "time_utc": "2026-11-16T10:51:00Z",
   "temp_c": 8.9,
   "temp_f": 48.0,
   "precision": "tenths of a degree",
   "dewpoint_c": 7.8,
   "humidity_pct": 92.82,
   "wind_kmh": 9.36,
-  "description": "Cloudy"
+  "description": "Light Rain and Fog/Mist"
  },
  "today_so_far": {
   "date_local": "2026-11-16",
-  "readings": 7,
+  "readings": 8,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -41,46 +41,51 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-14",
-   "is_yesterday": false,
-   "high_f": 68,
-   "low_f": 52,
+   "date": "2026-11-15",
+   "is_yesterday": true,
+   "high_f": 54,
+   "low_f": 50,
    "high_rank": {
-    "value_f": 68,
-    "warm_rank": 86,
-    "cool_rank": 42,
+    "value_f": 54,
+    "warm_rank": 117,
+    "cool_rank": 10,
     "years": 129,
     "first_year": 1897,
     "tied_years": [
-     1918,
-     2012
+     1915,
+     1935,
+     1970
     ],
     "standing": "cool",
-    "notable": false,
+    "notable": true,
     "since": 2022,
     "record": false,
-    "phrase": "typical for November 14"
+    "phrase": "10th coolest November 15 high (tied) of 129 since 1897, coolest since 2022"
    },
    "low_rank": {
-    "value_f": 52,
-    "warm_rank": 60,
-    "cool_rank": 67,
+    "value_f": 50,
+    "warm_rank": 66,
+    "cool_rank": 57,
     "years": 128,
     "first_year": 1898,
     "tied_years": [
-     1923,
-     1966
+     1911,
+     1927,
+     1958,
+     1993,
+     2002,
+     2005
     ],
-    "standing": "warm",
+    "standing": "cool",
     "notable": false,
-    "since": 2025,
+    "since": 2024,
     "record": false,
-    "phrase": "typical for November 14"
+    "phrase": "typical for November 15"
    }
   },
   "forecast_highs": [
    {
-    "period": "Monday",
+    "period": "Today",
     "date": "2026-11-16",
     "high_f": 58,
     "would_rank": {
@@ -244,20 +249,11 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-16T07:46:21Z",
+  "issued_utc": "2026-11-16T11:46:20Z",
   "grid": "EWX/155,93",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-16T03:00:00-06:00",
-    "is_daytime": false,
-    "temp_f": 48,
-    "temp_c": 8.89,
-    "precip_chance_pct": 16,
-    "short_forecast": "Patchy Drizzle"
-   },
-   {
-    "name": "Monday",
+    "name": "Today",
     "start": "2026-11-16T06:00:00-06:00",
     "is_daytime": true,
     "temp_f": 58,
@@ -266,7 +262,7 @@
     "short_forecast": "Slight Chance Rain Showers then Partly Sunny"
    },
    {
-    "name": "Monday Night",
+    "name": "Tonight",
     "start": "2026-11-16T18:00:00-06:00",
     "is_daytime": false,
     "temp_f": 45,
@@ -372,19 +368,21 @@
     "temp_c": 20.56,
     "precip_chance_pct": 34,
     "short_forecast": "Chance Rain Showers"
+   },
+   {
+    "name": "Sunday Night",
+    "start": "2026-11-22T18:00:00-06:00",
+    "is_daytime": false,
+    "temp_f": 55,
+    "temp_c": 12.78,
+    "precip_chance_pct": 20,
+    "short_forecast": "Slight Chance Rain Showers"
    }
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-16T10:32:49Z",
+  "issued_utc": "2026-11-16T11:46:20Z",
   "hours": [
-   {
-    "start": "2026-11-16T05:00:00-06:00",
-    "temp_f": 48,
-    "temp_c": 8.89,
-    "precip_chance_pct": 16,
-    "short_forecast": "Patchy Drizzle"
-   },
    {
     "start": "2026-11-16T06:00:00-06:00",
     "temp_f": 48,
@@ -713,6 +711,13 @@
     "temp_c": 7.78,
     "precip_chance_pct": 0,
     "short_forecast": "Partly Cloudy"
+   },
+   {
+    "start": "2026-11-18T05:00:00-06:00",
+    "temp_f": 45,
+    "temp_c": 7.22,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Cloudy"
    }
   ]
  },

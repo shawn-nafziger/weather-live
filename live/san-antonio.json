@@ -11,33 +11,33 @@
   "lon": -98.4636,
   "history": "Same site as the official San Antonio record"
  },
- "as_of_utc": "2026-11-16T11:07:59Z",
+ "as_of_utc": "2026-11-16T12:39:12Z",
  "now": {
-  "time_utc": "2026-11-16T10:55:00Z",
-  "temp_c": 11,
-  "temp_f": 51.8,
+  "time_utc": "2026-11-16T12:20:00Z",
+  "temp_c": 10,
+  "temp_f": 50.0,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 9,
-  "humidity_pct": 87.48,
-  "wind_kmh": 16.67,
+  "dewpoint_c": 8,
+  "humidity_pct": 87.38,
+  "wind_kmh": 20.38,
   "description": "Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-16",
-  "readings": 6,
+  "readings": 7,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
   "high_c": 12.2,
   "high_f": 54.0,
   "high_time_utc": "2026-11-16T06:51:00Z",
-  "low_c": 11.7,
-  "low_f": 53.1,
-  "low_time_utc": "2026-11-16T09:27:00Z",
+  "low_c": 11.1,
+  "low_f": 52.0,
+  "low_time_utc": "2026-11-16T10:51:00Z",
   "dip_between_reports": {
-   "at_most_f": 52.7,
-   "about_f": 51.8,
-   "time_utc": "2026-11-16T10:10:00Z"
+   "at_most_f": 50.9,
+   "about_f": 50.0,
+   "time_utc": "2026-11-16T12:15:00Z"
   }
  },
  "record": {
@@ -46,39 +46,45 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-14",
-   "is_yesterday": false,
-   "high_f": 69,
-   "low_f": 51,
+   "date": "2026-11-15",
+   "is_yesterday": true,
+   "high_f": 59,
+   "low_f": 52,
    "high_rank": {
-    "value_f": 69,
-    "warm_rank": 97,
-    "cool_rank": 46,
-    "years": 142,
-    "first_year": 1885,
-    "tied_years": [],
-    "standing": "cool",
-    "notable": false,
-    "since": 2022,
-    "record": false,
-    "phrase": "typical for November 14"
-   },
-   "low_rank": {
-    "value_f": 51,
-    "warm_rank": 69,
-    "cool_rank": 71,
+    "value_f": 59,
+    "warm_rank": 125,
+    "cool_rank": 17,
     "years": 142,
     "first_year": 1885,
     "tied_years": [
-     1887,
-     1895,
-     2024
+     1898
+    ],
+    "standing": "cool",
+    "notable": true,
+    "since": 2022,
+    "record": false,
+    "phrase": "17th coolest November 15 high (tied) of 142 since 1885, coolest since 2022"
+   },
+   "low_rank": {
+    "value_f": 52,
+    "warm_rank": 62,
+    "cool_rank": 74,
+    "years": 142,
+    "first_year": 1885,
+    "tied_years": [
+     1942,
+     1956,
+     1962,
+     1993,
+     1998,
+     2005,
+     2013
     ],
     "standing": "warm",
     "notable": false,
     "since": 2025,
     "record": false,
-    "phrase": "typical for November 14"
+    "phrase": "typical for November 15"
    }
   },
   "forecast_highs": [
@@ -247,7 +253,7 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-16T10:32:49Z",
+  "issued_utc": "2026-11-16T11:46:20Z",
   "grid": "EWX/128,59",
   "periods": [
    {
@@ -379,15 +385,8 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-16T10:32:49Z",
+  "issued_utc": "2026-11-16T11:46:20Z",
   "hours": [
-   {
-    "start": "2026-11-16T05:00:00-06:00",
-    "temp_f": 49,
-    "temp_c": 9.44,
-    "precip_chance_pct": 7,
-    "short_forecast": "Patchy Drizzle"
-   },
    {
     "start": "2026-11-16T06:00:00-06:00",
     "temp_f": 49,
@@ -712,6 +711,13 @@
    },
    {
     "start": "2026-11-18T04:00:00-06:00",
+    "temp_f": 48,
+    "temp_c": 8.89,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "start": "2026-11-18T05:00:00-06:00",
     "temp_f": 48,
     "temp_c": 8.89,
     "precip_chance_pct": 0,

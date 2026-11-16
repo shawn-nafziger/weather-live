@@ -11,20 +11,20 @@
   "lon": -80.3164,
   "history": "Same station as the official Miami record"
  },
- "as_of_utc": "2026-11-16T11:07:59Z",
+ "as_of_utc": "2026-11-16T12:39:12Z",
  "now": {
-  "time_utc": "2026-11-16T10:20:00Z",
+  "time_utc": "2026-11-16T12:20:00Z",
   "temp_c": 20,
   "temp_f": 68.0,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 14,
   "humidity_pct": 68.38,
-  "wind_kmh": 7.42,
+  "wind_kmh": 9.25,
   "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-16",
-  "readings": 3,
+  "readings": 4,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -41,44 +41,63 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-14",
-   "is_yesterday": false,
-   "high_f": 71,
-   "low_f": 64,
+   "date": "2026-11-15",
+   "is_yesterday": true,
+   "high_f": 80,
+   "low_f": 61,
    "high_rank": {
-    "value_f": 71,
-    "warm_rank": 127,
-    "cool_rank": 4,
-    "years": 130,
-    "first_year": 1895,
-    "tied_years": [],
-    "standing": "cool",
-    "notable": true,
-    "since": 1975,
-    "record": false,
-    "phrase": "4th coolest November 14 high of 130 since 1895, coolest since 1975"
-   },
-   "low_rank": {
-    "value_f": 64,
-    "warm_rank": 93,
-    "cool_rank": 35,
+    "value_f": 80,
+    "warm_rank": 65,
+    "cool_rank": 48,
     "years": 130,
     "first_year": 1895,
     "tied_years": [
-     1935,
-     1940,
-     1946
+     1905,
+     1906,
+     1907,
+     1908,
+     1920,
+     1921,
+     1922,
+     1924,
+     1927,
+     1930,
+     1943,
+     1944,
+     1960,
+     1980,
+     1990,
+     1992,
+     2003,
+     2010
     ],
     "standing": "cool",
     "notable": false,
-    "since": 2009,
+    "since": 2021,
     "record": false,
-    "phrase": "typical for November 14"
+    "phrase": "typical for November 15"
+   },
+   "low_rank": {
+    "value_f": 61,
+    "warm_rank": 106,
+    "cool_rank": 22,
+    "years": 130,
+    "first_year": 1895,
+    "tied_years": [
+     1946,
+     1979,
+     1983
+    ],
+    "standing": "cool",
+    "notable": true,
+    "since": 2021,
+    "record": false,
+    "phrase": "22nd coldest November 15 low (tied) of 130 since 1895, coldest since 2021"
    }
   },
   "forecast_highs": [
    {
-    "period": "Monday",
+    "period": "Today",
     "date": "2026-11-16",
     "high_f": 82,
     "would_rank": {
@@ -303,16 +322,7 @@
   "grid": "MFL/105,51",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-16T04:00:00-05:00",
-    "is_daytime": false,
-    "temp_f": 70,
-    "temp_c": 21.11,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Clear"
-   },
-   {
-    "name": "Monday",
+    "name": "Today",
     "start": "2026-11-16T06:00:00-05:00",
     "is_daytime": true,
     "temp_f": 82,
@@ -321,7 +331,7 @@
     "short_forecast": "Sunny"
    },
    {
-    "name": "Monday Night",
+    "name": "Tonight",
     "start": "2026-11-16T18:00:00-05:00",
     "is_daytime": false,
     "temp_f": 74,
@@ -427,19 +437,21 @@
     "temp_c": 28.89,
     "precip_chance_pct": 20,
     "short_forecast": "Mostly Sunny then Slight Chance Rain Showers"
+   },
+   {
+    "name": "Sunday Night",
+    "start": "2026-11-22T18:00:00-05:00",
+    "is_daytime": false,
+    "temp_f": 72,
+    "temp_c": 22.22,
+    "precip_chance_pct": 20,
+    "short_forecast": "Slight Chance Rain Showers then Partly Cloudy"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-16T08:32:07Z",
   "hours": [
-   {
-    "start": "2026-11-16T06:00:00-05:00",
-    "temp_f": 71,
-    "temp_c": 21.67,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "start": "2026-11-16T07:00:00-05:00",
     "temp_f": 71,
@@ -764,6 +776,13 @@
    },
    {
     "start": "2026-11-18T05:00:00-05:00",
+    "temp_f": 73,
+    "temp_c": 22.78,
+    "precip_chance_pct": 58,
+    "short_forecast": "Showers And Thunderstorms Likely"
+   },
+   {
+    "start": "2026-11-18T06:00:00-05:00",
     "temp_f": 73,
     "temp_c": 22.78,
     "precip_chance_pct": 58,

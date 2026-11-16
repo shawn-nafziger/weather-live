@@ -11,20 +11,20 @@
   "lon": -84.6723,
   "history": "Same site as the official Cincinnati record"
  },
- "as_of_utc": "2026-11-16T11:07:59Z",
+ "as_of_utc": "2026-11-16T12:39:12Z",
  "now": {
-  "time_utc": "2026-11-16T10:55:00Z",
+  "time_utc": "2026-11-16T12:20:00Z",
   "temp_c": 1,
   "temp_f": 33.8,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": -1,
-  "humidity_pct": 86.5,
-  "wind_kmh": 5.54,
+  "dewpoint_c": 0,
+  "humidity_pct": 93.03,
+  "wind_kmh": 0,
   "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-16",
-  "readings": 5,
+  "readings": 6,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -41,53 +41,50 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-14",
-   "is_yesterday": false,
-   "high_f": 47,
-   "low_f": 32,
+   "date": "2026-11-15",
+   "is_yesterday": true,
+   "high_f": 50,
+   "low_f": 37,
    "high_rank": {
-    "value_f": 47,
-    "warm_rank": 100,
-    "cool_rank": 52,
+    "value_f": 50,
+    "warm_rank": 89,
+    "cool_rank": 64,
     "years": 155,
     "first_year": 1872,
     "tied_years": [
-     1883,
-     1886,
-     1889,
-     1903
+     1882,
+     1985,
+     2017
     ],
     "standing": "cool",
     "notable": false,
     "since": 2022,
     "record": false,
-    "phrase": "typical for November 14"
+    "phrase": "typical for November 15"
    },
    "low_rank": {
-    "value_f": 32,
-    "warm_rank": 93,
-    "cool_rank": 56,
+    "value_f": 37,
+    "warm_rank": 69,
+    "cool_rank": 82,
     "years": 155,
     "first_year": 1872,
     "tied_years": [
-     1874,
-     1921,
-     1923,
-     1967,
-     1968,
-     1990,
-     2006
+     1941,
+     1943,
+     1947,
+     1954,
+     2008
     ],
-    "standing": "cool",
+    "standing": "warm",
     "notable": false,
-    "since": 2022,
+    "since": 2025,
     "record": false,
-    "phrase": "typical for November 14"
+    "phrase": "typical for November 15"
    }
   },
   "forecast_highs": [
    {
-    "period": "Monday",
+    "period": "Today",
     "date": "2026-11-16",
     "high_f": 53,
     "would_rank": {
@@ -262,16 +259,7 @@
   "grid": "ILN/30,35",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-16T05:00:00-05:00",
-    "is_daytime": false,
-    "temp_f": 34,
-    "temp_c": 1.11,
-    "precip_chance_pct": 0,
-    "short_forecast": "Partly Cloudy"
-   },
-   {
-    "name": "Monday",
+    "name": "Today",
     "start": "2026-11-16T06:00:00-05:00",
     "is_daytime": true,
     "temp_f": 53,
@@ -280,7 +268,7 @@
     "short_forecast": "Sunny"
    },
    {
-    "name": "Monday Night",
+    "name": "Tonight",
     "start": "2026-11-16T18:00:00-05:00",
     "is_daytime": false,
     "temp_f": 32,
@@ -386,19 +374,21 @@
     "temp_c": 15.56,
     "precip_chance_pct": 16,
     "short_forecast": "Slight Chance Light Rain"
+   },
+   {
+    "name": "Sunday Night",
+    "start": "2026-11-22T18:00:00-05:00",
+    "is_daytime": false,
+    "temp_f": 37,
+    "temp_c": 2.78,
+    "precip_chance_pct": 12,
+    "short_forecast": "Partly Cloudy"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-16T10:49:43Z",
   "hours": [
-   {
-    "start": "2026-11-16T06:00:00-05:00",
-    "temp_f": 34,
-    "temp_c": 1.11,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Sunny"
-   },
    {
     "start": "2026-11-16T07:00:00-05:00",
     "temp_f": 34,
@@ -727,6 +717,13 @@
     "temp_c": 1.11,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear"
+   },
+   {
+    "start": "2026-11-18T06:00:00-05:00",
+    "temp_f": 34,
+    "temp_c": 1.11,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
    }
   ]
  },

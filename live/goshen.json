@@ -11,33 +11,38 @@
   "lon": -85.7867,
   "history": "Provisional: Goshen Municipal Airport. The long record (GOSHEN 3SW) is a once-a-day volunteer station, so today's readings and the record come from different stations (question D2)"
  },
- "as_of_utc": "2026-11-16T11:07:59Z",
+ "as_of_utc": "2026-11-16T12:39:12Z",
  "now": {
-  "time_utc": "2026-11-16T10:45:00Z",
-  "temp_c": -3,
-  "temp_f": 26.6,
+  "time_utc": "2026-11-16T12:10:00Z",
+  "temp_c": -4,
+  "temp_f": 24.8,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": -4,
-  "humidity_pct": 92.81,
+  "humidity_pct": 100,
   "wind_kmh": 0,
   "description": "Freezing Fog"
  },
  "today_so_far": {
   "date_local": "2026-11-16",
-  "readings": 12,
+  "readings": 14,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
   "high_c": -1.7,
   "high_f": 28.9,
   "high_time_utc": "2026-11-16T05:37:00Z",
-  "low_c": -2.8,
-  "low_f": 27.0,
-  "low_time_utc": "2026-11-16T08:53:00Z",
+  "low_c": -3.3,
+  "low_f": 26.1,
+  "low_time_utc": "2026-11-16T10:53:00Z",
   "peak_between_reports": {
    "at_least_f": 29.3,
    "about_f": 30.2,
    "time_utc": "2026-11-16T05:10:00Z"
+  },
+  "dip_between_reports": {
+   "at_most_f": 25.7,
+   "about_f": 24.8,
+   "time_utc": "2026-11-16T11:50:00Z"
   }
  },
  "record": {
@@ -46,48 +51,53 @@
   "available": true,
   "rank_today": false,
   "latest_final": {
-   "date": "2026-11-14",
-   "is_yesterday": false,
-   "high_f": 45,
-   "low_f": 28,
+   "date": "2026-11-15",
+   "is_yesterday": true,
+   "high_f": 49,
+   "low_f": 31,
    "high_rank": {
-    "value_f": 45,
-    "warm_rank": 69,
-    "cool_rank": 41,
-    "years": 110,
-    "first_year": 1916,
+    "value_f": 49,
+    "warm_rank": 56,
+    "cool_rank": 54,
+    "years": 111,
+    "first_year": 1914,
     "tied_years": [
-     1975
+     1999,
+     2002
     ],
     "standing": "cool",
     "notable": false,
     "since": 2022,
     "record": false,
-    "phrase": "typical for November 14"
+    "phrase": "typical for November 15"
    },
    "low_rank": {
-    "value_f": 28,
-    "warm_rank": 72,
-    "cool_rank": 39,
-    "years": 110,
+    "value_f": 31,
+    "warm_rank": 63,
+    "cool_rank": 46,
+    "years": 111,
     "first_year": 1914,
-    "tied_years": [],
+    "tied_years": [
+     1929,
+     1939,
+     1951
+    ],
     "standing": "cool",
     "notable": false,
     "since": 2022,
     "record": false,
-    "phrase": "typical for November 14"
+    "phrase": "typical for November 15"
    }
   },
   "note": "Today's readings come from a different station than this record, so today and the forecast aren't ranked against it."
  },
  "forecast": {
-  "issued_utc": "2026-11-16T11:00:17Z",
+  "issued_utc": "2026-11-16T11:44:47Z",
   "grid": "IWX/45,57",
   "periods": [
    {
     "name": "Today",
-    "start": "2026-11-16T06:00:00-05:00",
+    "start": "2026-11-16T07:00:00-05:00",
     "is_daytime": true,
     "temp_f": 51,
     "temp_c": 10.56,
@@ -214,15 +224,8 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-16T11:00:17Z",
+  "issued_utc": "2026-11-16T11:44:47Z",
   "hours": [
-   {
-    "start": "2026-11-16T06:00:00-05:00",
-    "temp_f": 27,
-    "temp_c": -2.78,
-    "precip_chance_pct": 0,
-    "short_forecast": "Areas Of Fog"
-   },
    {
     "start": "2026-11-16T07:00:00-05:00",
     "temp_f": 29,
@@ -551,6 +554,13 @@
     "temp_c": 2.22,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear"
+   },
+   {
+    "start": "2026-11-18T06:00:00-05:00",
+    "temp_f": 35,
+    "temp_c": 1.67,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
    }
   ]
  },

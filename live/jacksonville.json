@@ -11,20 +11,20 @@
   "lon": -81.6937,
   "history": "Same site as the official Jacksonville record"
  },
- "as_of_utc": "2026-11-16T11:07:59Z",
+ "as_of_utc": "2026-11-16T12:39:12Z",
  "now": {
-  "time_utc": "2026-11-16T10:55:00Z",
-  "temp_c": 7,
-  "temp_f": 44.6,
+  "time_utc": "2026-11-16T12:20:00Z",
+  "temp_c": 8,
+  "temp_f": 46.4,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 4,
-  "humidity_pct": 81.22,
-  "wind_kmh": 12.96,
+  "dewpoint_c": 6,
+  "humidity_pct": 87.19,
+  "wind_kmh": 7.42,
   "description": ""
  },
  "today_so_far": {
   "date_local": "2026-11-16",
-  "readings": 4,
+  "readings": 5,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -41,40 +41,42 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-14",
-   "is_yesterday": false,
-   "high_f": 61,
+   "date": "2026-11-15",
+   "is_yesterday": true,
+   "high_f": 64,
    "low_f": 37,
    "high_rank": {
-    "value_f": 61,
-    "warm_rank": 143,
-    "cool_rank": 12,
+    "value_f": 64,
+    "warm_rank": 130,
+    "cool_rank": 21,
     "years": 156,
     "first_year": 1871,
     "tied_years": [
-     1932,
-     2014
+     1892,
+     1893,
+     1901,
+     1933,
+     1982,
+     1986
     ],
     "standing": "cool",
     "notable": true,
     "since": 2019,
     "record": false,
-    "phrase": "12th coolest November 14 high (tied) of 156 since 1871, coolest since 2019"
+    "phrase": "21st coolest November 15 high (tied) of 156 since 1871, coolest since 2019"
    },
    "low_rank": {
     "value_f": 37,
-    "warm_rank": 149,
-    "cool_rank": 7,
+    "warm_rank": 147,
+    "cool_rank": 10,
     "years": 156,
     "first_year": 1871,
-    "tied_years": [
-     2010
-    ],
+    "tied_years": [],
     "standing": "cool",
     "notable": true,
-    "since": 2010,
+    "since": 2000,
     "record": false,
-    "phrase": "7th coldest November 14 low (tied) of 156 since 1871, coldest since 2010"
+    "phrase": "10th coldest November 15 low of 156 since 1871, coldest since 2000"
    }
   },
   "forecast_highs": [
@@ -389,13 +391,6 @@
  "hourly": {
   "issued_utc": "2026-11-16T06:21:38Z",
   "hours": [
-   {
-    "start": "2026-11-16T06:00:00-05:00",
-    "temp_f": 49,
-    "temp_c": 9.44,
-    "precip_chance_pct": 0,
-    "short_forecast": "Partly Sunny"
-   },
    {
     "start": "2026-11-16T07:00:00-05:00",
     "temp_f": 50,
@@ -722,6 +717,13 @@
     "start": "2026-11-18T05:00:00-05:00",
     "temp_f": 59,
     "temp_c": 15.0,
+    "precip_chance_pct": 44,
+    "short_forecast": "Chance Rain Showers"
+   },
+   {
+    "start": "2026-11-18T06:00:00-05:00",
+    "temp_f": 60,
+    "temp_c": 15.56,
     "precip_chance_pct": 44,
     "short_forecast": "Chance Rain Showers"
    }

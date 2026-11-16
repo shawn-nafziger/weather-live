@@ -11,20 +11,20 @@
   "lon": -97.022,
   "history": "Same site as the official Dallas record"
  },
- "as_of_utc": "2026-11-16T11:07:59Z",
+ "as_of_utc": "2026-11-16T12:39:12Z",
  "now": {
-  "time_utc": "2026-11-16T10:55:00Z",
+  "time_utc": "2026-11-16T12:20:00Z",
   "temp_c": 9,
   "temp_f": 48.2,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 5,
-  "humidity_pct": 76.03,
-  "wind_kmh": 11.12,
+  "dewpoint_c": 4,
+  "humidity_pct": 70.89,
+  "wind_kmh": 9.25,
   "description": "Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-16",
-  "readings": 4,
+  "readings": 5,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -41,46 +41,44 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-14",
-   "is_yesterday": false,
-   "high_f": 64,
-   "low_f": 47,
+   "date": "2026-11-15",
+   "is_yesterday": true,
+   "high_f": 51,
+   "low_f": 45,
    "high_rank": {
-    "value_f": 64,
-    "warm_rank": 85,
-    "cool_rank": 43,
+    "value_f": 51,
+    "warm_rank": 117,
+    "cool_rank": 12,
     "years": 129,
     "first_year": 1898,
     "tied_years": [
-     1945,
-     1998
+     1940
+    ],
+    "standing": "cool",
+    "notable": true,
+    "since": 2022,
+    "record": false,
+    "phrase": "12th coolest November 15 high (tied) of 129 since 1898, coolest since 2022"
+   },
+   "low_rank": {
+    "value_f": 45,
+    "warm_rank": 68,
+    "cool_rank": 56,
+    "years": 129,
+    "first_year": 1898,
+    "tied_years": [
+     1906,
+     1922,
+     1983,
+     1995,
+     2005,
+     2006
     ],
     "standing": "cool",
     "notable": false,
-    "since": 2022,
+    "since": 2024,
     "record": false,
-    "phrase": "typical for November 14"
-   },
-   "low_rank": {
-    "value_f": 47,
-    "warm_rank": 61,
-    "cool_rank": 62,
-    "years": 129,
-    "first_year": 1898,
-    "tied_years": [
-     1924,
-     1949,
-     1951,
-     1953,
-     1990,
-     2006,
-     2015
-    ],
-    "standing": "warm",
-    "notable": false,
-    "since": 2025,
-    "record": false,
-    "phrase": "typical for November 14"
+    "phrase": "typical for November 15"
    }
   },
   "forecast_highs": [
@@ -242,16 +240,16 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-16T06:26:24Z",
+  "issued_utc": "2026-11-16T11:06:27Z",
   "grid": "FWD/81,109",
   "periods": [
    {
     "name": "Overnight",
-    "start": "2026-11-16T01:00:00-06:00",
+    "start": "2026-11-16T05:00:00-06:00",
     "is_daytime": false,
     "temp_f": 45,
     "temp_c": 7.22,
-    "precip_chance_pct": 40,
+    "precip_chance_pct": 14,
     "short_forecast": "Chance Rain Showers"
    },
    {
@@ -374,15 +372,8 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-16T06:26:24Z",
+  "issued_utc": "2026-11-16T11:06:27Z",
   "hours": [
-   {
-    "start": "2026-11-16T05:00:00-06:00",
-    "temp_f": 45,
-    "temp_c": 7.22,
-    "precip_chance_pct": 14,
-    "short_forecast": "Chance Rain Showers"
-   },
    {
     "start": "2026-11-16T06:00:00-06:00",
     "temp_f": 46,
@@ -707,6 +698,13 @@
    },
    {
     "start": "2026-11-18T04:00:00-06:00",
+    "temp_f": 46,
+    "temp_c": 7.78,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Clear"
+   },
+   {
+    "start": "2026-11-18T05:00:00-06:00",
     "temp_f": 46,
     "temp_c": 7.78,
     "precip_chance_pct": 0,

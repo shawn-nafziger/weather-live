@@ -11,20 +11,20 @@
   "lon": -75.2268,
   "history": "Same site as the official Philadelphia record"
  },
- "as_of_utc": "2026-11-16T11:07:59Z",
+ "as_of_utc": "2026-11-16T12:39:12Z",
  "now": {
-  "time_utc": "2026-11-16T10:20:00Z",
-  "temp_c": 3,
-  "temp_f": 37.4,
+  "time_utc": "2026-11-16T12:20:00Z",
+  "temp_c": 4,
+  "temp_f": 39.2,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": -2,
-  "humidity_pct": 69.69,
-  "wind_kmh": 14.83,
-  "description": "Clear"
+  "dewpoint_c": -1,
+  "humidity_pct": 69.89,
+  "wind_kmh": 12.96,
+  "description": "Mostly Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-16",
-  "readings": 3,
+  "readings": 4,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -51,59 +51,51 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-14",
-   "is_yesterday": false,
-   "high_f": 48,
-   "low_f": 40,
+   "date": "2026-11-15",
+   "is_yesterday": true,
+   "high_f": 51,
+   "low_f": 39,
    "high_rank": {
-    "value_f": 48,
-    "warm_rank": 106,
-    "cool_rank": 42,
+    "value_f": 51,
+    "warm_rank": 88,
+    "cool_rank": 62,
     "years": 153,
     "first_year": 1874,
     "tied_years": [
-     1901,
-     1971,
-     1976,
-     1979,
-     2003,
-     2022
+     1886,
+     1887,
+     1899,
+     1983
     ],
     "standing": "cool",
     "notable": false,
     "since": 2022,
     "record": false,
-    "phrase": "typical for November 14"
+    "phrase": "typical for November 15"
    },
    "low_rank": {
-    "value_f": 40,
-    "warm_rank": 55,
-    "cool_rank": 88,
+    "value_f": 39,
+    "warm_rank": 66,
+    "cool_rank": 83,
     "years": 153,
     "first_year": 1874,
     "tied_years": [
-     1881,
-     1887,
-     1891,
-     1894,
-     1895,
-     1940,
-     1945,
-     1969,
-     1972,
-     1991,
-     2015
+     1884,
+     1915,
+     1918,
+     1980,
+     2003
     ],
     "standing": "warm",
     "notable": false,
-    "since": 2015,
+    "since": 2025,
     "record": false,
-    "phrase": "typical for November 14"
+    "phrase": "typical for November 15"
    }
   },
   "forecast_highs": [
    {
-    "period": "Monday",
+    "period": "Today",
     "date": "2026-11-16",
     "high_f": 57,
     "would_rank": {
@@ -265,16 +257,7 @@
   "grid": "PHI/48,75",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-16T04:00:00-05:00",
-    "is_daytime": false,
-    "temp_f": 36,
-    "temp_c": 2.22,
-    "precip_chance_pct": 0,
-    "short_forecast": "Partly Cloudy"
-   },
-   {
-    "name": "Monday",
+    "name": "Today",
     "start": "2026-11-16T06:00:00-05:00",
     "is_daytime": true,
     "temp_f": 57,
@@ -283,7 +266,7 @@
     "short_forecast": "Mostly Sunny"
    },
    {
-    "name": "Monday Night",
+    "name": "Tonight",
     "start": "2026-11-16T18:00:00-05:00",
     "is_daytime": false,
     "temp_f": 35,
@@ -389,19 +372,21 @@
     "temp_c": 18.33,
     "precip_chance_pct": 11,
     "short_forecast": "Mostly Sunny"
+   },
+   {
+    "name": "Sunday Night",
+    "start": "2026-11-22T18:00:00-05:00",
+    "is_daytime": false,
+    "temp_f": 47,
+    "temp_c": 8.33,
+    "precip_chance_pct": 6,
+    "short_forecast": "Partly Cloudy"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-16T09:07:33Z",
   "hours": [
-   {
-    "start": "2026-11-16T06:00:00-05:00",
-    "temp_f": 36,
-    "temp_c": 2.22,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Sunny"
-   },
    {
     "start": "2026-11-16T07:00:00-05:00",
     "temp_f": 38,
@@ -730,6 +715,13 @@
     "temp_c": 3.33,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear"
+   },
+   {
+    "start": "2026-11-18T06:00:00-05:00",
+    "temp_f": 37,
+    "temp_c": 2.78,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
    }
   ]
  },
