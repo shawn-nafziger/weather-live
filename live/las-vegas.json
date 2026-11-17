@@ -11,20 +11,20 @@
   "lon": -115.1634,
   "history": "Same site as the official Las Vegas record"
  },
- "as_of_utc": "2026-11-17T20:08:16Z",
+ "as_of_utc": "2026-11-17T21:08:01Z",
  "now": {
-  "time_utc": "2026-11-17T19:40:00Z",
-  "temp_c": 15,
-  "temp_f": 59.0,
+  "time_utc": "2026-11-17T20:10:00Z",
+  "temp_c": 16,
+  "temp_f": 60.8,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": -2,
-  "humidity_pct": 31.01,
-  "wind_kmh": 7.42,
-  "description": "Mostly Clear"
+  "dewpoint_c": -1,
+  "humidity_pct": 31.3,
+  "wind_kmh": 14.83,
+  "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-17",
-  "readings": 8,
+  "readings": 9,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -77,7 +77,7 @@
   },
   "forecast_highs": [
    {
-    "period": "Today",
+    "period": "This Afternoon",
     "date": "2026-11-17",
     "high_f": 63,
     "would_rank": {
@@ -236,12 +236,12 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-17T18:33:15Z",
+  "issued_utc": "2026-11-17T19:58:09Z",
   "grid": "VEF/121,94",
   "periods": [
    {
-    "name": "Today",
-    "start": "2026-11-17T11:00:00-08:00",
+    "name": "This Afternoon",
+    "start": "2026-11-17T12:00:00-08:00",
     "is_daytime": true,
     "temp_f": 63,
     "temp_c": 17.22,
@@ -368,15 +368,8 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-17T18:33:15Z",
+  "issued_utc": "2026-11-17T19:58:09Z",
   "hours": [
-   {
-    "start": "2026-11-17T12:00:00-08:00",
-    "temp_f": 61,
-    "temp_c": 16.11,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "start": "2026-11-17T13:00:00-08:00",
     "temp_f": 62,
@@ -703,6 +696,13 @@
     "start": "2026-11-19T11:00:00-08:00",
     "temp_f": 57,
     "temp_c": 13.89,
+    "precip_chance_pct": 61,
+    "short_forecast": "Rain Showers Likely"
+   },
+   {
+    "start": "2026-11-19T12:00:00-08:00",
+    "temp_f": 58,
+    "temp_c": 14.44,
     "precip_chance_pct": 61,
     "short_forecast": "Rain Showers Likely"
    }
