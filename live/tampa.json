@@ -11,20 +11,20 @@
   "lon": -82.5403,
   "history": "Same site as the official Tampa record"
  },
- "as_of_utc": "2026-11-16T23:07:57Z",
+ "as_of_utc": "2026-11-17T00:07:55Z",
  "now": {
-  "time_utc": "2026-11-16T22:55:00Z",
-  "temp_c": 21,
-  "temp_f": 69.8,
+  "time_utc": "2026-11-16T23:50:00Z",
+  "temp_c": 20,
+  "temp_f": 68.0,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 16,
-  "humidity_pct": 73.11,
-  "wind_kmh": 16.67,
-  "description": "Clear"
+  "humidity_pct": 77.77,
+  "wind_kmh": 18.5,
+  "description": "Mostly Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-16",
-  "readings": 16,
+  "readings": 17,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -83,32 +83,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-16",
-    "high_f": 76,
-    "would_rank": {
-     "value_f": 76,
-     "warm_rank": 84,
-     "cool_rank": 47,
-     "years": 137,
-     "first_year": 1890,
-     "tied_years": [
-      1905,
-      1910,
-      1919,
-      1935,
-      1941,
-      1963,
-      2009
-     ],
-     "standing": "cool",
-     "notable": false,
-     "since": 2023,
-     "record": false,
-     "phrase": "typical for November 16"
-    }
-   },
    {
     "period": "Tuesday",
     "date": "2026-11-17",
@@ -274,6 +248,38 @@
      "record": false,
      "phrase": "typical for November 22"
     }
+   },
+   {
+    "period": "Monday",
+    "date": "2026-11-23",
+    "high_f": 79,
+    "would_rank": {
+     "value_f": 79,
+     "warm_rank": 40,
+     "cool_rank": 85,
+     "years": 137,
+     "first_year": 1890,
+     "tied_years": [
+      1896,
+      1940,
+      1967,
+      1969,
+      1971,
+      1978,
+      1980,
+      1982,
+      1999,
+      2009,
+      2016,
+      2019,
+      2022
+     ],
+     "standing": "warm",
+     "notable": false,
+     "since": 2025,
+     "record": false,
+     "phrase": "typical for November 23"
+    }
    }
   ]
  },
@@ -281,15 +287,6 @@
   "issued_utc": "2026-11-16T20:57:44Z",
   "grid": "TBW/68,98",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-16T16:00:00-05:00",
-    "is_daytime": true,
-    "temp_f": 76,
-    "temp_c": 24.44,
-    "precip_chance_pct": 6,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-16T18:00:00-05:00",
@@ -406,19 +403,21 @@
     "temp_c": 17.22,
     "precip_chance_pct": 4,
     "short_forecast": "Partly Cloudy"
+   },
+   {
+    "name": "Monday",
+    "start": "2026-11-23T06:00:00-05:00",
+    "is_daytime": true,
+    "temp_f": 79,
+    "temp_c": 26.11,
+    "precip_chance_pct": 5,
+    "short_forecast": "Mostly Sunny"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-16T20:57:44Z",
   "hours": [
-   {
-    "start": "2026-11-16T18:00:00-05:00",
-    "temp_f": 68,
-    "temp_c": 20.0,
-    "precip_chance_pct": 6,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "start": "2026-11-16T19:00:00-05:00",
     "temp_f": 70,
@@ -745,6 +744,13 @@
     "start": "2026-11-18T17:00:00-05:00",
     "temp_f": 74,
     "temp_c": 23.33,
+    "precip_chance_pct": 62,
+    "short_forecast": "Showers And Thunderstorms Likely"
+   },
+   {
+    "start": "2026-11-18T18:00:00-05:00",
+    "temp_f": 73,
+    "temp_c": 22.78,
     "precip_chance_pct": 62,
     "short_forecast": "Showers And Thunderstorms Likely"
    }

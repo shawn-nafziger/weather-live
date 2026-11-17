@@ -11,20 +11,20 @@
   "lon": -80.9614,
   "history": "Same site as the official Charlotte record"
  },
- "as_of_utc": "2026-11-16T23:07:57Z",
+ "as_of_utc": "2026-11-17T00:07:55Z",
  "now": {
-  "time_utc": "2026-11-16T22:40:00Z",
-  "temp_c": 11,
-  "temp_f": 51.8,
+  "time_utc": "2026-11-16T23:50:00Z",
+  "temp_c": 9,
+  "temp_f": 48.2,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 1,
-  "humidity_pct": 50.11,
-  "wind_kmh": 0,
-  "description": "Clear"
+  "humidity_pct": 57.28,
+  "wind_kmh": 5.54,
+  "description": ""
  },
  "today_so_far": {
   "date_local": "2026-11-16",
-  "readings": 11,
+  "readings": 12,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -87,28 +87,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-16",
-    "high_f": 59,
-    "would_rank": {
-     "value_f": 59,
-     "warm_rank": 92,
-     "cool_rank": 55,
-     "years": 149,
-     "first_year": 1878,
-     "tied_years": [
-      1914,
-      1919,
-      2018
-     ],
-     "standing": "cool",
-     "notable": false,
-     "since": 2022,
-     "record": false,
-     "phrase": "typical for November 16"
-    }
-   },
    {
     "period": "Tuesday",
     "date": "2026-11-17",
@@ -249,6 +227,28 @@
      "record": false,
      "phrase": "19th warmest November 22 high (tied) of 149 since 1878, warmest since 2025"
     }
+   },
+   {
+    "period": "Monday",
+    "date": "2026-11-23",
+    "high_f": 68,
+    "would_rank": {
+     "value_f": 68,
+     "warm_rank": 26,
+     "cool_rank": 121,
+     "years": 149,
+     "first_year": 1878,
+     "tied_years": [
+      1883,
+      1894,
+      1938
+     ],
+     "standing": "warm",
+     "notable": true,
+     "since": 2025,
+     "record": false,
+     "phrase": "26th warmest November 23 high (tied) of 149 since 1878, warmest since 2025"
+    }
    }
   ]
  },
@@ -256,15 +256,6 @@
   "issued_utc": "2026-11-16T18:23:29Z",
   "grid": "GSP/115,64",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-16T14:00:00-05:00",
-    "is_daytime": true,
-    "temp_f": 59,
-    "temp_c": 15.0,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-16T18:00:00-05:00",
@@ -381,23 +372,25 @@
     "temp_c": 8.33,
     "precip_chance_pct": 4,
     "short_forecast": "Partly Cloudy"
+   },
+   {
+    "name": "Monday",
+    "start": "2026-11-23T06:00:00-05:00",
+    "is_daytime": true,
+    "temp_f": 68,
+    "temp_c": 20.0,
+    "precip_chance_pct": 1,
+    "short_forecast": "Sunny"
    }
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-16T18:23:29Z",
+  "issued_utc": "2026-11-16T23:28:07Z",
   "hours": [
    {
-    "start": "2026-11-16T18:00:00-05:00",
-    "temp_f": 50,
-    "temp_c": 10.0,
-    "precip_chance_pct": 0,
-    "short_forecast": "Clear"
-   },
-   {
     "start": "2026-11-16T19:00:00-05:00",
-    "temp_f": 48,
-    "temp_c": 8.89,
+    "temp_f": 49,
+    "temp_c": 9.44,
     "precip_chance_pct": 0,
     "short_forecast": "Clear"
    },
@@ -722,6 +715,13 @@
     "temp_c": 16.11,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
+   },
+   {
+    "start": "2026-11-18T18:00:00-05:00",
+    "temp_f": 57,
+    "temp_c": 13.89,
+    "precip_chance_pct": 0,
+    "short_forecast": "Clear"
    }
   ]
  },
