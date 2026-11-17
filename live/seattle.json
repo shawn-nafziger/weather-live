@@ -11,20 +11,20 @@
   "lon": -122.3136,
   "history": "Same station as the official Seattle record (Sea-Tac)"
  },
- "as_of_utc": "2026-11-17T14:08:11Z",
+ "as_of_utc": "2026-11-17T15:08:14Z",
  "now": {
-  "time_utc": "2026-11-17T13:55:00Z",
+  "time_utc": "2026-11-17T14:50:00Z",
   "temp_c": 6,
   "temp_f": 42.8,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 3,
-  "humidity_pct": 81.08,
-  "wind_kmh": 5.54,
+  "dewpoint_c": 4,
+  "humidity_pct": 87.0,
+  "wind_kmh": 7.42,
   "description": "Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-17",
-  "readings": 6,
+  "readings": 7,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -83,7 +83,7 @@
   },
   "forecast_highs": [
    {
-    "period": "Tuesday",
+    "period": "Today",
     "date": "2026-11-17",
     "high_f": 50,
     "would_rank": {
@@ -259,16 +259,7 @@
   "grid": "SEW/124,60",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-17T03:00:00-08:00",
-    "is_daytime": false,
-    "temp_f": 38,
-    "temp_c": 3.33,
-    "precip_chance_pct": 4,
-    "short_forecast": "Mostly Cloudy"
-   },
-   {
-    "name": "Tuesday",
+    "name": "Today",
     "start": "2026-11-17T06:00:00-08:00",
     "is_daytime": true,
     "temp_f": 50,
@@ -277,7 +268,7 @@
     "short_forecast": "Mostly Sunny"
    },
    {
-    "name": "Tuesday Night",
+    "name": "Tonight",
     "start": "2026-11-17T18:00:00-08:00",
     "is_daytime": false,
     "temp_f": 37,
@@ -383,19 +374,21 @@
     "temp_c": 10.0,
     "precip_chance_pct": 29,
     "short_forecast": "Chance Light Rain"
+   },
+   {
+    "name": "Monday Night",
+    "start": "2026-11-23T18:00:00-08:00",
+    "is_daytime": false,
+    "temp_f": 41,
+    "temp_c": 5.0,
+    "precip_chance_pct": 37,
+    "short_forecast": "Chance Light Rain"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-17T11:24:12Z",
   "hours": [
-   {
-    "start": "2026-11-17T06:00:00-08:00",
-    "temp_f": 38,
-    "temp_c": 3.33,
-    "precip_chance_pct": 4,
-    "short_forecast": "Partly Sunny"
-   },
    {
     "start": "2026-11-17T07:00:00-08:00",
     "temp_f": 40,
@@ -720,6 +713,13 @@
    },
    {
     "start": "2026-11-19T05:00:00-08:00",
+    "temp_f": 41,
+    "temp_c": 5.0,
+    "precip_chance_pct": 1,
+    "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "start": "2026-11-19T06:00:00-08:00",
     "temp_f": 41,
     "temp_c": 5.0,
     "precip_chance_pct": 1,
