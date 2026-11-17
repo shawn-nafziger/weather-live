@@ -11,29 +11,29 @@
   "lon": -112.0035,
   "history": "Same station as the official Phoenix record (Sky Harbor since 1933)"
  },
- "as_of_utc": "2026-11-17T08:07:52Z",
+ "as_of_utc": "2026-11-17T09:08:01Z",
  "now": {
-  "time_utc": "2026-11-17T07:30:00Z",
-  "temp_c": 21,
-  "temp_f": 69.8,
+  "time_utc": "2026-11-17T08:35:00Z",
+  "temp_c": 19,
+  "temp_f": 66.2,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 11,
-  "humidity_pct": 52.8,
-  "wind_kmh": 7.42,
+  "humidity_pct": 59.76,
+  "wind_kmh": 9.25,
   "description": "Mostly Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-17",
-  "readings": 2,
+  "readings": 6,
   "basis": "5-minute readings (whole \u00b0C, approximate)",
   "approximate": true,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
   "high_c": 21,
   "high_f": 69.8,
   "high_time_utc": "2026-11-17T07:25:00Z",
-  "low_c": 21,
-  "low_f": 69.8,
-  "low_time_utc": "2026-11-17T07:25:00Z"
+  "low_c": 19,
+  "low_f": 66.2,
+  "low_time_utc": "2026-11-17T08:30:00Z"
  },
  "record": {
   "series": "Phoenix area (ThreadEx, Sky Harbor since 1933)",
@@ -268,16 +268,16 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-17T06:32:50Z",
+  "issued_utc": "2026-11-17T08:37:20Z",
   "grid": "PSR/161,57",
   "periods": [
    {
     "name": "Overnight",
-    "start": "2026-11-17T00:00:00-07:00",
+    "start": "2026-11-17T01:00:00-07:00",
     "is_daytime": false,
     "temp_f": 61,
     "temp_c": 16.11,
-    "precip_chance_pct": 54,
+    "precip_chance_pct": 31,
     "short_forecast": "Chance Showers And Thunderstorms"
    },
    {
@@ -286,8 +286,8 @@
     "is_daytime": true,
     "temp_f": 73,
     "temp_c": 22.78,
-    "precip_chance_pct": 62,
-    "short_forecast": "Showers And Thunderstorms Likely"
+    "precip_chance_pct": 41,
+    "short_forecast": "Chance Showers And Thunderstorms then Mostly Sunny"
    },
    {
     "name": "Tuesday Night",
@@ -402,13 +402,6 @@
  "hourly": {
   "issued_utc": "2026-11-17T06:32:50Z",
   "hours": [
-   {
-    "start": "2026-11-17T01:00:00-07:00",
-    "temp_f": 65,
-    "temp_c": 18.33,
-    "precip_chance_pct": 1,
-    "short_forecast": "Partly Cloudy"
-   },
    {
     "start": "2026-11-17T02:00:00-07:00",
     "temp_f": 64,
@@ -735,6 +728,13 @@
     "start": "2026-11-19T00:00:00-07:00",
     "temp_f": 55,
     "temp_c": 12.78,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Clear"
+   },
+   {
+    "start": "2026-11-19T01:00:00-07:00",
+    "temp_f": 54,
+    "temp_c": 12.22,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear"
    }
