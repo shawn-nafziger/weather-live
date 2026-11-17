@@ -11,9 +11,9 @@
   "lon": -122.3136,
   "history": "Same station as the official Seattle record (Sea-Tac)"
  },
- "as_of_utc": "2026-11-17T02:07:53Z",
+ "as_of_utc": "2026-11-17T03:00:10Z",
  "now": {
-  "time_utc": "2026-11-17T01:00:00Z",
+  "time_utc": "2026-11-17T02:20:00Z",
   "temp_c": 9,
   "temp_f": 48.2,
   "precision": "nearest whole \u00b0C",
@@ -24,7 +24,7 @@
  },
  "today_so_far": {
   "date_local": "2026-11-16",
-  "readings": 14,
+  "readings": 15,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -91,28 +91,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-16",
-    "high_f": 52,
-    "would_rank": {
-     "value_f": 52,
-     "warm_rank": 24,
-     "cool_rank": 56,
-     "years": 82,
-     "first_year": 1945,
-     "tied_years": [
-      1981,
-      2010,
-      2011
-     ],
-     "standing": "warm",
-     "notable": false,
-     "since": 2025,
-     "record": false,
-     "phrase": "typical for November 16"
-    }
-   },
    {
     "period": "Tuesday",
     "date": "2026-11-17",
@@ -261,6 +239,29 @@
      "record": false,
      "phrase": "typical for November 22"
     }
+   },
+   {
+    "period": "Monday",
+    "date": "2026-11-23",
+    "high_f": 51,
+    "would_rank": {
+     "value_f": 51,
+     "warm_rank": 30,
+     "cool_rank": 49,
+     "years": 82,
+     "first_year": 1945,
+     "tied_years": [
+      1967,
+      1969,
+      2004,
+      2009
+     ],
+     "standing": "warm",
+     "notable": false,
+     "since": 2025,
+     "record": false,
+     "phrase": "typical for November 23"
+    }
    }
   ]
  },
@@ -268,15 +269,6 @@
   "issued_utc": "2026-11-16T22:55:33Z",
   "grid": "SEW/124,60",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-16T15:00:00-08:00",
-    "is_daytime": true,
-    "temp_f": 52,
-    "temp_c": 11.11,
-    "precip_chance_pct": 26,
-    "short_forecast": "Slight Chance Light Rain"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-16T18:00:00-08:00",
@@ -393,19 +385,21 @@
     "temp_c": 3.89,
     "precip_chance_pct": 34,
     "short_forecast": "Chance Light Rain"
+   },
+   {
+    "name": "Monday",
+    "start": "2026-11-23T06:00:00-08:00",
+    "is_daytime": true,
+    "temp_f": 51,
+    "temp_c": 10.56,
+    "precip_chance_pct": 40,
+    "short_forecast": "Chance Light Rain"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-16T22:55:33Z",
   "hours": [
-   {
-    "start": "2026-11-16T18:00:00-08:00",
-    "temp_f": 47,
-    "temp_c": 8.33,
-    "precip_chance_pct": 16,
-    "short_forecast": "Slight Chance Light Rain"
-   },
    {
     "start": "2026-11-16T19:00:00-08:00",
     "temp_f": 46,
@@ -730,6 +724,13 @@
    },
    {
     "start": "2026-11-18T17:00:00-08:00",
+    "temp_f": 46,
+    "temp_c": 7.78,
+    "precip_chance_pct": 12,
+    "short_forecast": "Slight Chance Light Rain"
+   },
+   {
+    "start": "2026-11-18T18:00:00-08:00",
     "temp_f": 46,
     "temp_c": 7.78,
     "precip_chance_pct": 12,
