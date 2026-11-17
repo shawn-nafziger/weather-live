@@ -11,29 +11,23 @@
   "lon": -122.6092,
   "history": "Same site as the official Portland record"
  },
- "as_of_utc": "2026-11-17T07:07:56Z",
+ "as_of_utc": "2026-11-17T08:07:52Z",
  "now": {
-  "time_utc": "2026-11-17T06:55:00Z",
+  "time_utc": "2026-11-17T07:35:00Z",
   "temp_c": 8,
   "temp_f": 46.4,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 7,
-  "humidity_pct": 93.4,
+  "dewpoint_c": 6,
+  "humidity_pct": 87.19,
   "wind_kmh": 9.25,
   "description": "Cloudy"
  },
  "today_so_far": {
-  "date_local": "2026-11-16",
-  "readings": 25,
-  "basis": "hourly reports (tenths of a degree)",
-  "approximate": false,
-  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 11.7,
-  "high_f": 53.1,
-  "high_time_utc": "2026-11-16T22:41:00Z",
-  "low_c": 7.2,
-  "low_f": 45.0,
-  "low_time_utc": "2026-11-16T12:53:00Z"
+  "date_local": "2026-11-17",
+  "readings": 0,
+  "basis": "5-minute readings (whole \u00b0C, approximate)",
+  "approximate": true,
+  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two."
  },
  "record": {
   "series": "Portland area (ThreadEx; airport)",
@@ -42,7 +36,7 @@
   "rank_today": true,
   "latest_final": {
    "date": "2026-11-15",
-   "is_yesterday": true,
+   "is_yesterday": false,
    "high_f": 56,
    "low_f": 47,
    "high_rank": {
@@ -272,12 +266,12 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-17T06:41:12Z",
+  "issued_utc": "2026-11-17T07:42:03Z",
   "grid": "PQR/116,107",
   "periods": [
    {
-    "name": "Tonight",
-    "start": "2026-11-16T23:00:00-08:00",
+    "name": "Overnight",
+    "start": "2026-11-17T00:00:00-08:00",
     "is_daytime": false,
     "temp_f": 42,
     "temp_c": 5.56,
@@ -404,15 +398,8 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-17T06:41:12Z",
+  "issued_utc": "2026-11-17T07:42:03Z",
   "hours": [
-   {
-    "start": "2026-11-16T23:00:00-08:00",
-    "temp_f": 45,
-    "temp_c": 7.22,
-    "precip_chance_pct": 6,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "start": "2026-11-17T00:00:00-08:00",
     "temp_f": 44,
@@ -737,6 +724,13 @@
    },
    {
     "start": "2026-11-18T22:00:00-08:00",
+    "temp_f": 42,
+    "temp_c": 5.56,
+    "precip_chance_pct": 5,
+    "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "start": "2026-11-18T23:00:00-08:00",
     "temp_f": 42,
     "temp_c": 5.56,
     "precip_chance_pct": 5,
