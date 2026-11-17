@@ -33,6 +33,7 @@ from scipy import stats
 
 from albers import project
 import records  # noqa: E402
+import everyday  # noqa: E402
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 import history_store as store  # noqa: E402
@@ -821,12 +822,13 @@ def index_seo(n, description, asof):
     return head_seo(url, f"Weather Almanac: {n} US Cities and Their Records", description, [page, trail])
 
 
-def write_search_files(built, out_dir, recs=()):
+def write_search_files(built, out_dir, recs=(), eds=()):
     """sitemap.xml in the Almanac folder (tallorderdigital.com/weather/almanac/sitemap.xml), listed in the main
-    site's robots.txt: the Almanac's front page, each city and each city's records page."""
+    site's robots.txt: the Almanac's front page, each city and each city's records and "Every day" pages."""
     asof = max(d["asof"] for d in built)
     rows = [(ALMANAC, asof)] + sorted([(f"{ALMANAC}{d['slug']}/", d["asof"]) for d in built]
-                                      + [(f"{ALMANAC}{r['slug']}/records/", r["asof"]) for r in recs])
+                                      + [(f"{ALMANAC}{r['slug']}/records/", r["asof"]) for r in recs]
+                                      + [(f"{ALMANAC}{e['slug']}/every-day/", e["asof"]) for e in eds])
     xml = "\n".join(['<?xml version="1.0" encoding="UTF-8"?>',
                       '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
                       *(f"  <url><loc>{u}</loc><lastmod>{m}</lastmod></url>" for u, m in rows),
@@ -887,7 +889,7 @@ def switch_html(slug):
     return f'<nav class="switch" aria-label="Choose the record">{links}</nav>'
 
 
-def render(data, has_records=False):
+def render(data, has_records=False, has_everyday=False):
     tpl = (HERE / "template.html").read_text(encoding="utf-8")
     c, y = data["city"], data["yesterday"]
     asof = date.fromisoformat(data["asof"])
@@ -909,7 +911,8 @@ def render(data, has_records=False):
         "RECORD_NAME": c["record_name"], "RECORD_KIND": c["record_kind"],
         "SLUG": data["slug"], "SWITCH": switch_html(data["slug"]), "MAIN": MAIN_SITE,
         # The city's pages as plain links, and a link from the record book to the records page (Nov 12, 2026)
-        "TABS": records.tabs_html(data["slug"], "", "").replace("{CITYNAME}", html.escape(c["name"])) if has_records else "",
+        "TABS": (records.tabs_html(data["slug"], "", "", has_everyday).replace("{CITYNAME}", html.escape(c["name"]))
+                 if has_records else ""),
         "REC_LINK": (f'<p class="more"><a href="records/">Every date\'s record high and low in {html.escape(c["name"])} →</a></p>'
                      if has_records else ""),
         "DATA": json.dumps(data, separators=(",", ":")),
@@ -927,17 +930,27 @@ def write_city(slug, out_dir, history=None, today=None):
     write_records once every place has been tried, so its "nearby" links only point at pages that exist."""
     h = load(slug, history)
     data = build(slug, history, h=h)
-    rd, why = None, None
+    rd, why, ed, why_ed = None, None, None, None
     if records.has_branch_pages(slug, CITIES):
         try:
             rd = records.build_records(data, h, CITIES, today=today)
         except records.RecordsError as e:
             why = str(e)
+        # The "Every day" page (Nov 16, 2026): same branch-page rule as records, built from the same record.
+        try:
+            ed = everyday.build_everyday(data, h, CITIES, today=today)
+        except everyday.EverydayError as e:
+            why_ed = str(e)
+    if rd is not None:
+        rd["has_everyday"] = ed is not None
     out = out_dir / "almanac" / slug
     out.mkdir(parents=True, exist_ok=True)
     (out / "data.json").write_text(json.dumps(data, separators=(",", ":")), encoding="utf-8")
-    (out / "index.html").write_text(render(data, has_records=rd is not None), encoding="utf-8")
+    (out / "index.html").write_text(render(data, has_records=rd is not None, has_everyday=rd is not None and ed is not None),
+                                    encoding="utf-8")
     data["_records_skip"] = why
+    data["_everyday_skip"] = why_ed
+    data["_everyday"] = ed
     return data, rd
 
 
@@ -979,6 +992,55 @@ def write_records(rd, out_dir, with_records, today=None):
     out = out_dir / "almanac" / rd["slug"] / "records"
     out.mkdir(parents=True, exist_ok=True)
     (out / "index.html").write_text(page, encoding="utf-8")
+
+
+def everyday_seo(ed):
+    c, slug = ed["city"], ed["slug"]
+    city_url, url = f"{ALMANAC}{slug}/", f"{ALMANAC}{slug}/every-day/"
+    place_name = f"{c['name']}, {c['state']}"
+    place = {"@type": "Place", "@id": city_url + "#place", "name": place_name,
+             "address": {"@type": "PostalAddress", "addressLocality": c["name"], "addressRegion": c["st"], "addressCountry": "US"},
+             "geo": {"@type": "GeoCoordinates", "latitude": c["lat"], "longitude": c["lon"]}}
+    dataset = {
+        "@type": "Dataset", "@id": url + "#dataset",
+        "name": f"{place_name} daily high temperature against normal, {ed['y0']} to {ed['asof'][:4]}",
+        "description": (f"Every day's high temperature in {place_name} since {ed['y0']}, with its difference from the "
+                        f"smoothed 1991-2020 normal high for the date, from {c['record_name']}. Updated daily."),
+        "url": url, "temporalCoverage": f"{ed['y0']}-01-01/{ed['asof']}",
+        "spatialCoverage": {"@id": city_url + "#place"},
+        "variableMeasured": ["Daily maximum temperature (°F)", "Difference from the 1991-2020 normal daily maximum (°F)"],
+        "isBasedOn": NOAA, "creator": ORG, "publisher": ORG, "isAccessibleForFree": True, "dateModified": ed["asof"],
+        "distribution": {"@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": url + "days.json"},
+    }
+    page = {"@type": "WebPage", "@id": url + "#webpage", "url": url, "name": ed["title"], "description": ed["description"],
+            "inLanguage": "en-US", "isPartOf": {"@id": MAIN_SITE + "#website"}, "publisher": ORG,
+            "about": {"@id": city_url + "#place"}, "mainEntity": {"@id": url + "#dataset"}, "dateModified": ed["asof"],
+            "breadcrumb": {"@id": url + "#breadcrumb"}}
+    head = head_seo(url, ed["title"], ed["description"],
+                    [page, dataset, place, crumbs(url, [(place_name, city_url), ("Every day", url)])])
+    # The showpiece's share image (tallorderdigital-site, weather/every-day-since-1900/share.png) until each place has its own.
+    return head.replace(SHARE_IMAGE, MAIN_SITE + everyday.HUB_PATH + "share.png")
+
+
+def everyday_nearby_html(slug, with_everyday, n=6):
+    """Links to the "Every day" pages of the nearest places that have one."""
+    here = CITIES[slug]
+    others = sorted((miles_between(here, CITIES[s]), s) for s in with_everyday if s != slug)[:n]
+    if not others:
+        return ""
+    items = "".join(f'<li><a href="../../{s}/every-day/">Every day in {html.escape(CITIES[s]["name"])}, {CITIES[s]["st"]}</a> · {d:,.0f} miles</li>'
+                    for d, s in others)
+    return f'<h2 class="sec">Nearby places</h2>\n  <ul class="nearby">{items}</ul>'
+
+
+def write_everyday(ed, out_dir, with_everyday):
+    page = everyday.render(ed, seo_head=everyday_seo(ed), nearby=everyday_nearby_html(ed["slug"], with_everyday),
+                           main_site=MAIN_SITE)
+    out = out_dir / "almanac" / ed["slug"] / "every-day"
+    out.mkdir(parents=True, exist_ok=True)
+    (out / "index.html").write_text(page, encoding="utf-8")
+    # The page's data on its own, which the showpiece's front page on the main site loads for its featured place.
+    (out / "days.json").write_text(everyday.payload_json(ed), encoding="utf-8")
 
 
 def index_row(d):
@@ -1046,7 +1108,7 @@ def main():
     if not a.all and not a.city:
         ap.error("name a city or use --all")
     slugs = [s for s in CITIES if store.exists(HISTORY_DIR, s)] if a.all else [a.city]
-    built, failed, recs = [], [], []
+    built, failed, recs, eds = [], [], [], []
     for slug in slugs:
         try:
             data, rd = write_city(slug, out_dir, None if a.all else a.history)
@@ -1057,6 +1119,12 @@ def main():
             why = data.pop("_records_skip", None)
             if why:
                 print(f"{CITIES[slug]['name']:<14} SKIP records page not written, a claim isn't true for this place: {why}")
+            ed = data.pop("_everyday", None)
+            if ed:
+                eds.append(ed)
+            why = data.pop("_everyday_skip", None)
+            if why:
+                print(f"{CITIES[slug]['name']:<14} SKIP every-day page not written, a claim isn't true for this place: {why}")
         except QualityError as e:
             failed.append(slug)
             print(f"{CITIES[slug]['name']:<14} REVIEW the record looks wrong, page not written: {e}")
@@ -1071,10 +1139,15 @@ def main():
         with_records |= {s for s in CITIES if store.exists(HISTORY_DIR, s) and records.has_branch_pages(s, CITIES)}
     for rd in recs:
         write_records(rd, out_dir, with_records)
+    with_everyday = {e["slug"] for e in eds}
+    everyday._PLACES[:] = eds   # every place with a page today, for each page's "see another place" picker
+    for ed in eds:
+        write_everyday(ed, out_dir, with_everyday)
     if a.all and built:
         write_index(built, out_dir)
-        write_search_files(built, out_dir, recs)
-    print(f"{len(built)} of {len(slugs)} Almanac pages written to {out_dir}, and {len(recs)} records pages.")
+        write_search_files(built, out_dir, recs, eds)
+    print(f"{len(built)} of {len(slugs)} Almanac pages written to {out_dir}, {len(recs)} records pages "
+          f"and {len(eds)} every-day pages.")
     return 1 if not built else 0
 
 
