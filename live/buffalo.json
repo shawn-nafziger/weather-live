@@ -11,20 +11,20 @@
   "lon": -78.736,
   "history": "Same site as the official Buffalo record"
  },
- "as_of_utc": "2026-11-17T22:08:01Z",
+ "as_of_utc": "2026-11-17T23:08:08Z",
  "now": {
-  "time_utc": "2026-11-17T21:50:00Z",
+  "time_utc": "2026-11-17T22:55:00Z",
   "temp_c": 9,
   "temp_f": 48.2,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 6,
   "humidity_pct": 81.49,
-  "wind_kmh": 25.92,
-  "description": "Mostly Cloudy"
+  "wind_kmh": 18.5,
+  "description": "Partly Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-17",
-  "readings": 20,
+  "readings": 21,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -88,30 +88,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-17",
-    "high_f": 53,
-    "would_rank": {
-     "value_f": 53,
-     "warm_rank": 35,
-     "cool_rank": 113,
-     "years": 152,
-     "first_year": 1873,
-     "tied_years": [
-      1938,
-      1948,
-      1952,
-      2001,
-      2004
-     ],
-     "standing": "warm",
-     "notable": false,
-     "since": 2023,
-     "record": false,
-     "phrase": "typical for November 17"
-    }
-   },
    {
     "period": "Wednesday",
     "date": "2026-11-18",
@@ -239,6 +215,34 @@
      "record": false,
      "phrase": "typical for November 23"
     }
+   },
+   {
+    "period": "Tuesday",
+    "date": "2026-11-24",
+    "high_f": 40,
+    "would_rank": {
+     "value_f": 40,
+     "warm_rank": 82,
+     "cool_rank": 64,
+     "years": 154,
+     "first_year": 1873,
+     "tied_years": [
+      1894,
+      1906,
+      1949,
+      1950,
+      1957,
+      1969,
+      1982,
+      1990,
+      2010
+     ],
+     "standing": "cool",
+     "notable": false,
+     "since": 2023,
+     "record": false,
+     "phrase": "typical for November 24"
+    }
    }
   ]
  },
@@ -246,15 +250,6 @@
   "issued_utc": "2026-11-17T20:57:27Z",
   "grid": "BUF/40,50",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-17T17:00:00-05:00",
-    "is_daytime": true,
-    "temp_f": 53,
-    "temp_c": 11.67,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Sunny"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-17T18:00:00-05:00",
@@ -371,19 +366,21 @@
     "temp_c": -0.56,
     "precip_chance_pct": 8,
     "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "name": "Tuesday",
+    "start": "2026-11-24T06:00:00-05:00",
+    "is_daytime": true,
+    "temp_f": 40,
+    "temp_c": 4.44,
+    "precip_chance_pct": 4,
+    "short_forecast": "Mostly Sunny"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-17T20:57:27Z",
   "hours": [
-   {
-    "start": "2026-11-17T17:00:00-05:00",
-    "temp_f": 49,
-    "temp_c": 9.44,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Sunny"
-   },
    {
     "start": "2026-11-17T18:00:00-05:00",
     "temp_f": 46,
@@ -710,6 +707,13 @@
     "start": "2026-11-19T16:00:00-05:00",
     "temp_f": 56,
     "temp_c": 13.33,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Sunny"
+   },
+   {
+    "start": "2026-11-19T17:00:00-05:00",
+    "temp_f": 54,
+    "temp_c": 12.22,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Sunny"
    }
