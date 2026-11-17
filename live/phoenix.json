@@ -11,20 +11,20 @@
   "lon": -112.0035,
   "history": "Same station as the official Phoenix record (Sky Harbor since 1933)"
  },
- "as_of_utc": "2026-11-17T01:08:03Z",
+ "as_of_utc": "2026-11-17T02:07:53Z",
  "now": {
-  "time_utc": "2026-11-16T23:55:00Z",
-  "temp_c": 26,
-  "temp_f": 78.8,
+  "time_utc": "2026-11-17T01:30:00Z",
+  "temp_c": 25,
+  "temp_f": 77.0,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 10,
-  "humidity_pct": 36.54,
-  "wind_kmh": 12.96,
-  "description": "Mostly Clear"
+  "humidity_pct": 38.78,
+  "wind_kmh": 0,
+  "description": "Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-16",
-  "readings": 14,
+  "readings": 15,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -86,32 +86,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-16",
-    "high_f": 81,
-    "would_rank": {
-     "value_f": 81,
-     "warm_rank": 22,
-     "cool_rank": 104,
-     "years": 132,
-     "first_year": 1895,
-     "tied_years": [
-      1908,
-      1927,
-      1979,
-      1998,
-      2012,
-      2019,
-      2021
-     ],
-     "standing": "warm",
-     "notable": true,
-     "since": 2021,
-     "record": false,
-     "phrase": "22nd warmest November 16 high (tied) of 132 since 1895, warmest since 2021"
-    }
-   },
    {
     "period": "Tuesday",
     "date": "2026-11-17",
@@ -260,6 +234,30 @@
      "record": false,
      "phrase": "typical for November 22"
     }
+   },
+   {
+    "period": "Monday",
+    "date": "2026-11-23",
+    "high_f": 72,
+    "would_rank": {
+     "value_f": 72,
+     "warm_rank": 65,
+     "cool_rank": 63,
+     "years": 132,
+     "first_year": 1895,
+     "tied_years": [
+      1908,
+      1913,
+      1962,
+      2001,
+      2019
+     ],
+     "standing": "cool",
+     "notable": false,
+     "since": 2025,
+     "record": false,
+     "phrase": "typical for November 23"
+    }
    }
   ]
  },
@@ -267,15 +265,6 @@
   "issued_utc": "2026-11-16T23:22:44Z",
   "grid": "PSR/161,57",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-16T17:00:00-07:00",
-    "is_daytime": true,
-    "temp_f": 81,
-    "temp_c": 27.22,
-    "precip_chance_pct": 1,
-    "short_forecast": "Sunny"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-16T18:00:00-07:00",
@@ -392,19 +381,21 @@
     "temp_c": 10.56,
     "precip_chance_pct": 2,
     "short_forecast": "Partly Cloudy"
+   },
+   {
+    "name": "Monday",
+    "start": "2026-11-23T06:00:00-07:00",
+    "is_daytime": true,
+    "temp_f": 72,
+    "temp_c": 22.22,
+    "precip_chance_pct": 3,
+    "short_forecast": "Sunny"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-16T23:22:44Z",
   "hours": [
-   {
-    "start": "2026-11-16T18:00:00-07:00",
-    "temp_f": 76,
-    "temp_c": 24.44,
-    "precip_chance_pct": 1,
-    "short_forecast": "Mostly Clear"
-   },
    {
     "start": "2026-11-16T19:00:00-07:00",
     "temp_f": 74,
@@ -733,6 +724,13 @@
     "temp_c": 19.44,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
+   },
+   {
+    "start": "2026-11-18T18:00:00-07:00",
+    "temp_f": 64,
+    "temp_c": 17.78,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Clear"
    }
   ]
  },

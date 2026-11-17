@@ -11,20 +11,20 @@
   "lon": -117.1831,
   "history": "Same site as the official San Diego record"
  },
- "as_of_utc": "2026-11-17T01:08:03Z",
+ "as_of_utc": "2026-11-17T02:07:53Z",
  "now": {
-  "time_utc": "2026-11-16T23:51:00Z",
-  "temp_c": 20.6,
-  "temp_f": 69.1,
-  "precision": "tenths of a degree",
-  "dewpoint_c": 16.1,
-  "humidity_pct": 75.42,
-  "wind_kmh": 5.4,
-  "description": "Mostly Cloudy"
+  "time_utc": "2026-11-17T01:30:00Z",
+  "temp_c": 18,
+  "temp_f": 64.4,
+  "precision": "nearest whole \u00b0C",
+  "dewpoint_c": 17,
+  "humidity_pct": 93.88,
+  "wind_kmh": 7.42,
+  "description": "Rain and Fog/Mist"
  },
  "today_so_far": {
   "date_local": "2026-11-16",
-  "readings": 15,
+  "readings": 18,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -86,32 +86,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-16",
-    "high_f": 71,
-    "would_rank": {
-     "value_f": 71,
-     "warm_rank": 44,
-     "cool_rank": 103,
-     "years": 153,
-     "first_year": 1874,
-     "tied_years": [
-      1878,
-      1925,
-      1946,
-      1983,
-      1992,
-      2001,
-      2012
-     ],
-     "standing": "warm",
-     "notable": false,
-     "since": 2023,
-     "record": false,
-     "phrase": "typical for November 16"
-    }
-   },
    {
     "period": "Tuesday",
     "date": "2026-11-17",
@@ -295,29 +269,50 @@
      "record": false,
      "phrase": "typical for November 22"
     }
+   },
+   {
+    "period": "Monday",
+    "date": "2026-11-23",
+    "high_f": 68,
+    "would_rank": {
+     "value_f": 68,
+     "warm_rank": 60,
+     "cool_rank": 83,
+     "years": 153,
+     "first_year": 1874,
+     "tied_years": [
+      1879,
+      1886,
+      1891,
+      1903,
+      1926,
+      1936,
+      1967,
+      1981,
+      2003,
+      2016,
+      2023
+     ],
+     "standing": "warm",
+     "notable": false,
+     "since": 2023,
+     "record": false,
+     "phrase": "typical for November 23"
+    }
    }
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-16T20:49:53Z",
+  "issued_utc": "2026-11-17T00:34:55Z",
   "grid": "SGX/56,15",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-16T13:00:00-08:00",
-    "is_daytime": true,
-    "temp_f": 71,
-    "temp_c": 21.67,
-    "precip_chance_pct": 84,
-    "short_forecast": "Showers And Thunderstorms"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-16T18:00:00-08:00",
     "is_daytime": false,
     "temp_f": 59,
     "temp_c": 15.0,
-    "precip_chance_pct": 84,
+    "precip_chance_pct": 75,
     "short_forecast": "Showers And Thunderstorms"
    },
    {
@@ -326,7 +321,7 @@
     "is_daytime": true,
     "temp_f": 67,
     "temp_c": 19.44,
-    "precip_chance_pct": 5,
+    "precip_chance_pct": 14,
     "short_forecast": "Sunny"
    },
    {
@@ -427,19 +422,21 @@
     "temp_c": 11.67,
     "precip_chance_pct": 30,
     "short_forecast": "Chance Rain Showers"
+   },
+   {
+    "name": "Monday",
+    "start": "2026-11-23T06:00:00-08:00",
+    "is_daytime": true,
+    "temp_f": 68,
+    "temp_c": 20.0,
+    "precip_chance_pct": 20,
+    "short_forecast": "Slight Chance Rain Showers"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-17T00:34:55Z",
   "hours": [
-   {
-    "start": "2026-11-16T17:00:00-08:00",
-    "temp_f": 66,
-    "temp_c": 18.89,
-    "precip_chance_pct": 75,
-    "short_forecast": "Showers And Thunderstorms"
-   },
    {
     "start": "2026-11-16T18:00:00-08:00",
     "temp_f": 66,
@@ -766,6 +763,13 @@
     "start": "2026-11-18T16:00:00-08:00",
     "temp_f": 67,
     "temp_c": 19.44,
+    "precip_chance_pct": 1,
+    "short_forecast": "Mostly Sunny"
+   },
+   {
+    "start": "2026-11-18T17:00:00-08:00",
+    "temp_f": 65,
+    "temp_c": 18.33,
     "precip_chance_pct": 1,
     "short_forecast": "Mostly Sunny"
    }
