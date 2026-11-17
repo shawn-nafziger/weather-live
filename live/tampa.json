@@ -11,20 +11,20 @@
   "lon": -82.5403,
   "history": "Same site as the official Tampa record"
  },
- "as_of_utc": "2026-11-17T11:08:09Z",
+ "as_of_utc": "2026-11-17T11:42:06Z",
  "now": {
-  "time_utc": "2026-11-17T10:50:00Z",
-  "temp_c": 19,
-  "temp_f": 66.2,
-  "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 16,
-  "humidity_pct": 82.75,
+  "time_utc": "2026-11-17T10:53:00Z",
+  "temp_c": 18.9,
+  "temp_f": 66.0,
+  "precision": "tenths of a degree",
+  "dewpoint_c": 15.6,
+  "humidity_pct": 81.17,
   "wind_kmh": 12.96,
   "description": "Mostly Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-17",
-  "readings": 4,
+  "readings": 5,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -84,7 +84,7 @@
   },
   "forecast_highs": [
    {
-    "period": "Tuesday",
+    "period": "Today",
     "date": "2026-11-17",
     "high_f": 72,
     "would_rank": {
@@ -291,16 +291,7 @@
   "grid": "TBW/68,98",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-17T02:00:00-05:00",
-    "is_daytime": false,
-    "temp_f": 64,
-    "temp_c": 17.78,
-    "precip_chance_pct": 34,
-    "short_forecast": "Scattered Rain Showers"
-   },
-   {
-    "name": "Tuesday",
+    "name": "Today",
     "start": "2026-11-17T06:00:00-05:00",
     "is_daytime": true,
     "temp_f": 72,
@@ -309,7 +300,7 @@
     "short_forecast": "Rain Showers Likely"
    },
    {
-    "name": "Tuesday Night",
+    "name": "Tonight",
     "start": "2026-11-17T18:00:00-05:00",
     "is_daytime": false,
     "temp_f": 65,
@@ -415,6 +406,15 @@
     "temp_c": 26.11,
     "precip_chance_pct": 10,
     "short_forecast": "Mostly Sunny"
+   },
+   {
+    "name": "Monday Night",
+    "start": "2026-11-23T18:00:00-05:00",
+    "is_daytime": false,
+    "temp_f": 63,
+    "temp_c": 17.22,
+    "precip_chance_pct": 10,
+    "short_forecast": "Partly Cloudy"
    }
   ]
  },
