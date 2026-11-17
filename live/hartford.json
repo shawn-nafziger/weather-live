@@ -11,9 +11,9 @@
   "lon": -72.6825,
   "history": "Same site as the official Hartford record"
  },
- "as_of_utc": "2026-11-17T11:42:06Z",
+ "as_of_utc": "2026-11-17T12:07:50Z",
  "now": {
-  "time_utc": "2026-11-17T11:15:00Z",
+  "time_utc": "2026-11-17T11:45:00Z",
   "temp_c": -2,
   "temp_f": 28.4,
   "precision": "nearest whole \u00b0C",
@@ -46,47 +46,43 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-15",
-   "is_yesterday": false,
-   "high_f": 49,
-   "low_f": 34,
+   "date": "2026-11-16",
+   "is_yesterday": true,
+   "high_f": 54,
+   "low_f": 29,
    "high_rank": {
-    "value_f": 49,
-    "warm_rank": 59,
-    "cool_rank": 59,
+    "value_f": 54,
+    "warm_rank": 39,
+    "cool_rank": 80,
     "years": 122,
     "first_year": 1905,
     "tied_years": [
-     1939,
-     1946,
-     1984,
-     1995,
-     2016
+     1949,
+     1962,
+     2004,
+     2020
     ],
     "standing": "warm",
     "notable": false,
-    "since": 2024,
+    "since": 2025,
     "record": false,
-    "phrase": "typical for November 15"
+    "phrase": "typical for November 16"
    },
    "low_rank": {
-    "value_f": 34,
-    "warm_rank": 45,
-    "cool_rank": 73,
+    "value_f": 29,
+    "warm_rank": 87,
+    "cool_rank": 34,
     "years": 122,
     "first_year": 1905,
     "tied_years": [
-     1918,
-     1948,
-     1975,
-     2000,
-     2021
+     1995,
+     2004
     ],
-    "standing": "warm",
+    "standing": "cool",
     "notable": false,
-    "since": 2021,
+    "since": 2019,
     "record": false,
-    "phrase": "typical for November 15"
+    "phrase": "typical for November 16"
    }
   },
   "forecast_highs": [
@@ -245,12 +241,12 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-17T09:50:59Z",
+  "issued_utc": "2026-11-17T11:19:42Z",
   "grid": "BOX/20,72",
   "periods": [
    {
     "name": "Today",
-    "start": "2026-11-17T06:00:00-05:00",
+    "start": "2026-11-17T07:00:00-05:00",
     "is_daytime": true,
     "temp_f": 57,
     "temp_c": 13.89,
@@ -377,19 +373,12 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-17T09:50:59Z",
+  "issued_utc": "2026-11-17T11:19:42Z",
   "hours": [
    {
-    "start": "2026-11-17T06:00:00-05:00",
+    "start": "2026-11-17T07:00:00-05:00",
     "temp_f": 31,
     "temp_c": -0.56,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
-   {
-    "start": "2026-11-17T07:00:00-05:00",
-    "temp_f": 32,
-    "temp_c": 0.0,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
    },
@@ -714,6 +703,13 @@
     "temp_c": -0.56,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear"
+   },
+   {
+    "start": "2026-11-19T06:00:00-05:00",
+    "temp_f": 30,
+    "temp_c": -1.11,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
    }
   ]
  },

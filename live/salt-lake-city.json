@@ -11,16 +11,16 @@
   "lon": -111.965,
   "history": "Same site as the official Salt Lake City record"
  },
- "as_of_utc": "2026-11-17T11:42:06Z",
+ "as_of_utc": "2026-11-17T12:07:50Z",
  "now": {
-  "time_utc": "2026-11-17T11:15:00Z",
+  "time_utc": "2026-11-17T11:45:00Z",
   "temp_c": 12,
   "temp_f": 53.6,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 2,
-  "humidity_pct": 50.39,
-  "wind_kmh": 18.5,
-  "description": "Cloudy"
+  "dewpoint_c": 1,
+  "humidity_pct": 46.9,
+  "wind_kmh": 16.67,
+  "description": "Mostly Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-17",
@@ -41,55 +41,43 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-15",
-   "is_yesterday": false,
-   "high_f": 56,
-   "low_f": 36,
+   "date": "2026-11-16",
+   "is_yesterday": true,
+   "high_f": 61,
+   "low_f": 39,
    "high_rank": {
-    "value_f": 56,
-    "warm_rank": 36,
-    "cool_rank": 108,
+    "value_f": 61,
+    "warm_rank": 12,
+    "cool_rank": 139,
     "years": 153,
     "first_year": 1874,
     "tied_years": [
-     1881,
-     1893,
-     1905,
-     1911,
-     1921,
-     1949,
-     1959,
-     1965,
-     1998,
-     2001
+     1933,
+     2007,
+     2021
     ],
     "standing": "warm",
-    "notable": false,
-    "since": 2025,
+    "notable": true,
+    "since": 2021,
     "record": false,
-    "phrase": "typical for November 15"
+    "phrase": "12th warmest November 16 high (tied) of 153 since 1874, warmest since 2021"
    },
    "low_rank": {
-    "value_f": 36,
-    "warm_rank": 26,
-    "cool_rank": 120,
+    "value_f": 39,
+    "warm_rank": 13,
+    "cool_rank": 138,
     "years": 153,
     "first_year": 1874,
     "tied_years": [
-     1878,
-     1888,
-     1911,
-     1912,
-     1920,
-     1977,
-     2003,
-     2017
+     1965,
+     1966,
+     2003
     ],
     "standing": "warm",
     "notable": true,
     "since": 2025,
     "record": false,
-    "phrase": "26th warmest November 15 low (tied) of 153 since 1874, warmest since 2025"
+    "phrase": "13th warmest November 16 low (tied) of 153 since 1874, warmest since 2025"
    }
   },
   "forecast_highs": [
@@ -268,7 +256,7 @@
   "periods": [
    {
     "name": "Overnight",
-    "start": "2026-11-17T00:00:00-07:00",
+    "start": "2026-11-17T05:00:00-07:00",
     "is_daytime": false,
     "temp_f": 41,
     "temp_c": 5.0,
@@ -397,13 +385,6 @@
  "hourly": {
   "issued_utc": "2026-11-17T06:31:26Z",
   "hours": [
-   {
-    "start": "2026-11-17T04:00:00-07:00",
-    "temp_f": 43,
-    "temp_c": 6.11,
-    "precip_chance_pct": 2,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "start": "2026-11-17T05:00:00-07:00",
     "temp_f": 43,
@@ -730,6 +711,13 @@
     "start": "2026-11-19T03:00:00-07:00",
     "temp_f": 35,
     "temp_c": 1.67,
+    "precip_chance_pct": 9,
+    "short_forecast": "Cloudy"
+   },
+   {
+    "start": "2026-11-19T04:00:00-07:00",
+    "temp_f": 34,
+    "temp_c": 1.11,
     "precip_chance_pct": 9,
     "short_forecast": "Cloudy"
    }

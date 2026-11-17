@@ -11,12 +11,12 @@
   "lon": -121.496,
   "history": "About 9 km from the official Sacramento record's site, so today and the forecast aren't ranked against it"
  },
- "as_of_utc": "2026-11-17T11:42:06Z",
+ "as_of_utc": "2026-11-17T12:07:50Z",
  "now": {
-  "time_utc": "2026-11-17T11:20:00Z",
+  "time_utc": "2026-11-17T11:45:00Z",
   "temp_c": 5,
   "temp_f": 41.0,
-  "precision": "tenths of a degree",
+  "precision": "nearest whole \u00b0C",
   "dewpoint_c": 5,
   "humidity_pct": 100,
   "wind_kmh": 0,
@@ -41,62 +41,63 @@
   "available": true,
   "rank_today": false,
   "latest_final": {
-   "date": "2026-11-15",
-   "is_yesterday": false,
-   "high_f": 63,
-   "low_f": 50,
+   "date": "2026-11-16",
+   "is_yesterday": true,
+   "high_f": 60,
+   "low_f": 43,
    "high_rank": {
-    "value_f": 63,
-    "warm_rank": 79,
-    "cool_rank": 57,
+    "value_f": 60,
+    "warm_rank": 100,
+    "cool_rank": 38,
+    "years": 150,
+    "first_year": 1877,
+    "tied_years": [
+     1879,
+     1882,
+     1902,
+     1915,
+     1925,
+     1937,
+     1953,
+     1959,
+     1963,
+     1973,
+     2003,
+     2024,
+     2025
+    ],
+    "standing": "cool",
+    "notable": false,
+    "since": 2025,
+    "record": false,
+    "phrase": "typical for November 16"
+   },
+   "low_rank": {
+    "value_f": 43,
+    "warm_rank": 67,
+    "cool_rank": 71,
     "years": 150,
     "first_year": 1877,
     "tied_years": [
      1878,
-     1889,
-     1899,
-     1906,
-     1911,
+     1887,
+     1904,
+     1907,
      1912,
-     1916,
-     1927,
-     1937,
-     1942,
-     1959,
+     1924,
+     1947,
+     1948,
+     1970,
+     1977,
+     1987,
      1990,
-     2009,
-     2015,
-     2023
-    ],
-    "standing": "cool",
-    "notable": false,
-    "since": 2024,
-    "record": false,
-    "phrase": "typical for November 15"
-   },
-   "low_rank": {
-    "value_f": 50,
-    "warm_rank": 17,
-    "cool_rank": 124,
-    "years": 150,
-    "first_year": 1877,
-    "tied_years": [
-     1881,
-     1906,
-     1937,
-     1941,
-     1954,
-     1967,
-     1972,
-     2016,
-     2017,
-     2025
+     2005
     ],
     "standing": "warm",
-    "notable": true,
+    "notable": false,
     "since": 2025,
     "record": false,
-    "phrase": "17th warmest November 15 low (tied) of 150 since 1877, warmest since 2025"
+    "phrase": "typical for November 16"
    }
   },
   "note": "Today's readings come from a different station than this record, so today and the forecast aren't ranked against it."
@@ -107,11 +108,11 @@
   "periods": [
    {
     "name": "Overnight",
-    "start": "2026-11-17T03:00:00-08:00",
+    "start": "2026-11-17T04:00:00-08:00",
     "is_daytime": false,
     "temp_f": 40,
     "temp_c": 4.44,
-    "precip_chance_pct": 1,
+    "precip_chance_pct": 0,
     "short_forecast": "Areas Of Fog"
    },
    {
@@ -236,13 +237,6 @@
  "hourly": {
   "issued_utc": "2026-11-17T09:01:14Z",
   "hours": [
-   {
-    "start": "2026-11-17T03:00:00-08:00",
-    "temp_f": 44,
-    "temp_c": 6.67,
-    "precip_chance_pct": 1,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "start": "2026-11-17T04:00:00-08:00",
     "temp_f": 42,
@@ -567,6 +561,13 @@
    },
    {
     "start": "2026-11-19T02:00:00-08:00",
+    "temp_f": 47,
+    "temp_c": 8.33,
+    "precip_chance_pct": 95,
+    "short_forecast": "Light Rain"
+   },
+   {
+    "start": "2026-11-19T03:00:00-08:00",
     "temp_f": 47,
     "temp_c": 8.33,
     "precip_chance_pct": 95,

@@ -11,15 +11,15 @@
   "lon": -104.6562,
   "history": "Same site as the official Denver record"
  },
- "as_of_utc": "2026-11-17T11:42:06Z",
+ "as_of_utc": "2026-11-17T12:07:50Z",
  "now": {
-  "time_utc": "2026-11-17T11:15:00Z",
+  "time_utc": "2026-11-17T11:45:00Z",
   "temp_c": 2,
   "temp_f": 35.6,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": -3,
-  "humidity_pct": 69.48,
-  "wind_kmh": 11.12,
+  "dewpoint_c": -2,
+  "humidity_pct": 74.82,
+  "wind_kmh": 14.83,
   "description": "Clear"
  },
  "today_so_far": {
@@ -51,43 +51,55 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-15",
-   "is_yesterday": false,
-   "high_f": 57,
-   "low_f": 37,
+   "date": "2026-11-16",
+   "is_yesterday": true,
+   "high_f": 64,
+   "low_f": 32,
    "high_rank": {
-    "value_f": 57,
-    "warm_rank": 66,
-    "cool_rank": 89,
+    "value_f": 64,
+    "warm_rank": 33,
+    "cool_rank": 118,
     "years": 155,
     "first_year": 1872,
     "tied_years": [
-     1918
+     1877,
+     1895,
+     1900,
+     1998,
+     2019
     ],
     "standing": "warm",
     "notable": false,
     "since": 2025,
     "record": false,
-    "phrase": "typical for November 15"
+    "phrase": "typical for November 16"
    },
    "low_rank": {
-    "value_f": 37,
-    "warm_rank": 17,
-    "cool_rank": 134,
+    "value_f": 32,
+    "warm_rank": 45,
+    "cool_rank": 98,
     "years": 155,
     "first_year": 1872,
     "tied_years": [
+     1881,
+     1883,
+     1885,
      1887,
-     1899,
-     1945,
-     1981,
-     1990
+     1900,
+     1905,
+     1906,
+     1922,
+     1923,
+     1939,
+     1949,
+     1986,
+     2018
     ],
     "standing": "warm",
-    "notable": true,
+    "notable": false,
     "since": 2025,
     "record": false,
-    "phrase": "17th warmest November 15 low (tied) of 155 since 1872, warmest since 2025"
+    "phrase": "typical for November 16"
    }
   },
   "forecast_highs": [
@@ -258,8 +270,8 @@
   "grid": "BOU/75,66",
   "periods": [
    {
-    "name": "Tonight",
-    "start": "2026-11-16T23:00:00-07:00",
+    "name": "Overnight",
+    "start": "2026-11-17T00:00:00-07:00",
     "is_daytime": false,
     "temp_f": 35,
     "temp_c": 1.67,
@@ -388,13 +400,6 @@
  "hourly": {
   "issued_utc": "2026-11-17T06:46:20Z",
   "hours": [
-   {
-    "start": "2026-11-17T04:00:00-07:00",
-    "temp_f": 37,
-    "temp_c": 2.78,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "start": "2026-11-17T05:00:00-07:00",
     "temp_f": 37,
@@ -721,6 +726,13 @@
     "start": "2026-11-19T03:00:00-07:00",
     "temp_f": 32,
     "temp_c": 0.0,
+    "precip_chance_pct": 0,
+    "short_forecast": "Partly Cloudy"
+   },
+   {
+    "start": "2026-11-19T04:00:00-07:00",
+    "temp_f": 31,
+    "temp_c": -0.56,
     "precip_chance_pct": 0,
     "short_forecast": "Partly Cloudy"
    }

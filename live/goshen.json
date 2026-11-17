@@ -11,16 +11,16 @@
   "lon": -85.7867,
   "history": "Provisional: Goshen Municipal Airport. The long record (GOSHEN 3SW) is a once-a-day volunteer station, so today's readings and the record come from different stations (question D2)"
  },
- "as_of_utc": "2026-11-17T11:42:06Z",
+ "as_of_utc": "2026-11-17T12:07:50Z",
  "now": {
-  "time_utc": "2026-11-17T10:53:00Z",
-  "temp_c": 1.1,
-  "temp_f": 34.0,
-  "precision": "tenths of a degree",
+  "time_utc": "2026-11-17T11:30:00Z",
+  "temp_c": 1,
+  "temp_f": 33.8,
+  "precision": "nearest whole \u00b0C",
   "dewpoint_c": 0,
-  "humidity_pct": 92.37,
-  "wind_kmh": 9.36,
-  "description": "Light Snow and Fog/Mist"
+  "humidity_pct": 93.03,
+  "wind_kmh": 9.25,
+  "description": "Fog/Mist"
  },
  "today_so_far": {
   "date_local": "2026-11-17",
@@ -51,42 +51,45 @@
   "available": true,
   "rank_today": false,
   "latest_final": {
-   "date": "2026-11-15",
-   "is_yesterday": false,
-   "high_f": 49,
-   "low_f": 31,
+   "date": "2026-11-16",
+   "is_yesterday": true,
+   "high_f": 52,
+   "low_f": 26,
    "high_rank": {
-    "value_f": 49,
-    "warm_rank": 56,
-    "cool_rank": 54,
+    "value_f": 52,
+    "warm_rank": 46,
+    "cool_rank": 63,
     "years": 111,
     "first_year": 1914,
     "tied_years": [
-     1999,
-     2002
+     1962,
+     1973,
+     2004
     ],
-    "standing": "cool",
+    "standing": "warm",
     "notable": false,
-    "since": 2022,
+    "since": 2025,
     "record": false,
-    "phrase": "typical for November 15"
+    "phrase": "typical for November 16"
    },
    "low_rank": {
-    "value_f": 31,
-    "warm_rank": 63,
-    "cool_rank": 46,
-    "years": 111,
+    "value_f": 26,
+    "warm_rank": 79,
+    "cool_rank": 27,
+    "years": 110,
     "first_year": 1914,
     "tied_years": [
+     1919,
      1929,
-     1939,
-     1951
+     1943,
+     1997,
+     2018
     ],
     "standing": "cool",
     "notable": false,
-    "since": 2022,
+    "since": 2019,
     "record": false,
-    "phrase": "typical for November 15"
+    "phrase": "typical for November 16"
    }
   },
   "note": "Today's readings come from a different station than this record, so today and the forecast aren't ranked against it."
@@ -224,26 +227,19 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-17T10:44:55Z",
+  "issued_utc": "2026-11-17T11:29:44Z",
   "hours": [
    {
-    "start": "2026-11-17T06:00:00-05:00",
-    "temp_f": 30,
-    "temp_c": -1.11,
-    "precip_chance_pct": 0,
-    "short_forecast": "Patchy Fog"
-   },
-   {
     "start": "2026-11-17T07:00:00-05:00",
-    "temp_f": 30,
-    "temp_c": -1.11,
+    "temp_f": 34,
+    "temp_c": 1.11,
     "precip_chance_pct": 0,
     "short_forecast": "Patchy Fog"
    },
    {
     "start": "2026-11-17T08:00:00-05:00",
-    "temp_f": 31,
-    "temp_c": -0.56,
+    "temp_f": 35,
+    "temp_c": 1.67,
     "precip_chance_pct": 0,
     "short_forecast": "Patchy Fog"
    },
@@ -561,6 +557,13 @@
     "temp_c": 5.0,
     "precip_chance_pct": 0,
     "short_forecast": "Partly Cloudy"
+   },
+   {
+    "start": "2026-11-19T06:00:00-05:00",
+    "temp_f": 41,
+    "temp_c": 5.0,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Sunny"
    }
   ]
  },

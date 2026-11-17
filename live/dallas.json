@@ -11,15 +11,15 @@
   "lon": -97.022,
   "history": "Same site as the official Dallas record"
  },
- "as_of_utc": "2026-11-17T11:42:06Z",
+ "as_of_utc": "2026-11-17T12:07:50Z",
  "now": {
-  "time_utc": "2026-11-17T11:15:00Z",
+  "time_utc": "2026-11-17T11:45:00Z",
   "temp_c": 6,
   "temp_f": 42.8,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 3,
-  "humidity_pct": 81.08,
-  "wind_kmh": 7.42,
+  "dewpoint_c": 2,
+  "humidity_pct": 75.52,
+  "wind_kmh": 0,
   "description": "Clear"
  },
  "today_so_far": {
@@ -51,49 +51,47 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-15",
-   "is_yesterday": false,
-   "high_f": 51,
-   "low_f": 45,
+   "date": "2026-11-16",
+   "is_yesterday": true,
+   "high_f": 62,
+   "low_f": 47,
    "high_rank": {
-    "value_f": 51,
-    "warm_rank": 117,
-    "cool_rank": 12,
+    "value_f": 62,
+    "warm_rank": 90,
+    "cool_rank": 37,
     "years": 129,
     "first_year": 1898,
     "tied_years": [
-     1940
-    ],
-    "standing": "cool",
-    "notable": true,
-    "since": 2022,
-    "record": false,
-    "phrase": "12th coolest November 15 high (tied) of 129 since 1898, coolest since 2022"
-   },
-   "low_rank": {
-    "value_f": 45,
-    "warm_rank": 68,
-    "cool_rank": 56,
-    "years": 129,
-    "first_year": 1898,
-    "tied_years": [
-     1906,
-     1922,
-     1983,
-     1995,
-     2005,
-     2006
+     1939,
+     1946,
+     1987
     ],
     "standing": "cool",
     "notable": false,
-    "since": 2024,
+    "since": 2023,
     "record": false,
-    "phrase": "typical for November 15"
+    "phrase": "typical for November 16"
+   },
+   "low_rank": {
+    "value_f": 47,
+    "warm_rank": 50,
+    "cool_rank": 78,
+    "years": 129,
+    "first_year": 1898,
+    "tied_years": [
+     1904,
+     1954
+    ],
+    "standing": "warm",
+    "notable": false,
+    "since": 2025,
+    "record": false,
+    "phrase": "typical for November 16"
    }
   },
   "forecast_highs": [
    {
-    "period": "Tuesday",
+    "period": "Today",
     "date": "2026-11-17",
     "high_f": 64,
     "would_rank": {
@@ -255,20 +253,11 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-17T06:26:17Z",
+  "issued_utc": "2026-11-17T11:06:29Z",
   "grid": "FWD/81,109",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-17T00:00:00-06:00",
-    "is_daytime": false,
-    "temp_f": 41,
-    "temp_c": 5.0,
-    "precip_chance_pct": 0,
-    "short_forecast": "Clear"
-   },
-   {
-    "name": "Tuesday",
+    "name": "Today",
     "start": "2026-11-17T06:00:00-06:00",
     "is_daytime": true,
     "temp_f": 64,
@@ -277,7 +266,7 @@
     "short_forecast": "Sunny"
    },
    {
-    "name": "Tuesday Night",
+    "name": "Tonight",
     "start": "2026-11-17T18:00:00-06:00",
     "is_daytime": false,
     "temp_f": 42,
@@ -383,19 +372,21 @@
     "temp_c": 18.89,
     "precip_chance_pct": 5,
     "short_forecast": "Mostly Sunny"
+   },
+   {
+    "name": "Monday Night",
+    "start": "2026-11-23T18:00:00-06:00",
+    "is_daytime": false,
+    "temp_f": 48,
+    "temp_c": 8.89,
+    "precip_chance_pct": 18,
+    "short_forecast": "Slight Chance Rain Showers"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-17T11:06:29Z",
   "hours": [
-   {
-    "start": "2026-11-17T05:00:00-06:00",
-    "temp_f": 42,
-    "temp_c": 5.56,
-    "precip_chance_pct": 0,
-    "short_forecast": "Clear"
-   },
    {
     "start": "2026-11-17T06:00:00-06:00",
     "temp_f": 42,
@@ -722,6 +713,13 @@
     "start": "2026-11-19T04:00:00-06:00",
     "temp_f": 50,
     "temp_c": 10.0,
+    "precip_chance_pct": 0,
+    "short_forecast": "Partly Cloudy"
+   },
+   {
+    "start": "2026-11-19T05:00:00-06:00",
+    "temp_f": 49,
+    "temp_c": 9.44,
     "precip_chance_pct": 0,
     "short_forecast": "Partly Cloudy"
    }

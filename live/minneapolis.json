@@ -11,15 +11,15 @@
   "lon": -93.2289,
   "history": "Same site as the official Minneapolis record"
  },
- "as_of_utc": "2026-11-17T11:42:06Z",
+ "as_of_utc": "2026-11-17T12:07:50Z",
  "now": {
-  "time_utc": "2026-11-17T11:15:00Z",
+  "time_utc": "2026-11-17T11:45:00Z",
   "temp_c": 8,
   "temp_f": 46.4,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 3,
   "humidity_pct": 70.7,
-  "wind_kmh": 16.67,
+  "wind_kmh": 14.83,
   "description": "Cloudy"
  },
  "today_so_far": {
@@ -46,77 +46,74 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-15",
-   "is_yesterday": false,
-   "high_f": 51,
-   "low_f": 27,
+   "date": "2026-11-16",
+   "is_yesterday": true,
+   "high_f": 57,
+   "low_f": 32,
    "high_rank": {
-    "value_f": 51,
-    "warm_rank": 30,
-    "cool_rank": 120,
+    "value_f": 57,
+    "warm_rank": 16,
+    "cool_rank": 138,
     "years": 155,
     "first_year": 1872,
     "tied_years": [
-     1904,
-     1917,
-     1948,
-     1971,
-     1999,
-     2011
+     1899,
+     1945
     ],
     "standing": "warm",
     "notable": true,
-    "since": 2025,
+    "since": 2023,
     "record": false,
-    "phrase": "30th warmest November 15 high (tied) of 155 since 1872, warmest since 2025"
+    "phrase": "16th warmest November 16 high (tied) of 155 since 1872, warmest since 2023"
    },
    "low_rank": {
-    "value_f": 27,
-    "warm_rank": 76,
-    "cool_rank": 71,
+    "value_f": 32,
+    "warm_rank": 40,
+    "cool_rank": 105,
     "years": 155,
     "first_year": 1872,
     "tied_years": [
-     1895,
-     1898,
-     1925,
-     1935,
-     1937,
-     2005,
-     2009,
-     2010,
-     2017
+     1876,
+     1878,
+     1906,
+     1912,
+     1921,
+     1922,
+     1948,
+     1962,
+     1981,
+     1998,
+     2019
     ],
-    "standing": "cool",
+    "standing": "warm",
     "notable": false,
-    "since": 2020,
+    "since": 2024,
     "record": false,
-    "phrase": "typical for November 15"
+    "phrase": "typical for November 16"
    }
   },
   "forecast_highs": [
    {
     "period": "Tuesday",
     "date": "2026-11-17",
-    "high_f": 55,
+    "high_f": 53,
     "would_rank": {
-     "value_f": 55,
-     "warm_rank": 20,
-     "cool_rank": 131,
+     "value_f": 53,
+     "warm_rank": 28,
+     "cool_rank": 124,
      "years": 155,
      "first_year": 1872,
      "tied_years": [
-      1918,
-      1934,
-      1948,
-      1994,
-      2015
+      1974,
+      1975,
+      1999,
+      2003
      ],
      "standing": "warm",
      "notable": true,
      "since": 2016,
      "record": false,
-     "phrase": "20th warmest November 17 high (tied) of 155 since 1872, warmest since 2016"
+     "phrase": "28th warmest November 17 high (tied) of 155 since 1872, warmest since 2016"
     }
    },
    {
@@ -256,7 +253,7 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-17T10:21:41Z",
+  "issued_utc": "2026-11-17T11:21:29Z",
   "grid": "MPX/110,68",
   "periods": [
    {
@@ -266,14 +263,14 @@
     "temp_f": 43,
     "temp_c": 6.11,
     "precip_chance_pct": 0,
-    "short_forecast": "Mostly Cloudy"
+    "short_forecast": "Partly Cloudy"
    },
    {
     "name": "Tuesday",
     "start": "2026-11-17T06:00:00-06:00",
     "is_daytime": true,
-    "temp_f": 55,
-    "temp_c": 12.78,
+    "temp_f": 53,
+    "temp_c": 11.67,
     "precip_chance_pct": 0,
     "short_forecast": "Partly Sunny"
    },
@@ -390,13 +387,6 @@
  "hourly": {
   "issued_utc": "2026-11-17T11:21:29Z",
   "hours": [
-   {
-    "start": "2026-11-17T05:00:00-06:00",
-    "temp_f": 43,
-    "temp_c": 6.11,
-    "precip_chance_pct": 0,
-    "short_forecast": "Partly Cloudy"
-   },
    {
     "start": "2026-11-17T06:00:00-06:00",
     "temp_f": 43,
@@ -721,6 +711,13 @@
    },
    {
     "start": "2026-11-19T04:00:00-06:00",
+    "temp_f": 47,
+    "temp_c": 8.33,
+    "precip_chance_pct": 1,
+    "short_forecast": "Clear"
+   },
+   {
+    "start": "2026-11-19T05:00:00-06:00",
     "temp_f": 47,
     "temp_c": 8.33,
     "precip_chance_pct": 1,
