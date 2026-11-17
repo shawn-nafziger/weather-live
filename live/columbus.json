@@ -11,9 +11,9 @@
   "lon": -82.8769,
   "history": "Same site as the official Columbus record"
  },
- "as_of_utc": "2026-11-17T10:08:02Z",
+ "as_of_utc": "2026-11-17T11:08:09Z",
  "now": {
-  "time_utc": "2026-11-17T09:55:00Z",
+  "time_utc": "2026-11-17T10:50:00Z",
   "temp_c": -1,
   "temp_f": 30.2,
   "precision": "nearest whole \u00b0C",
@@ -24,7 +24,7 @@
  },
  "today_so_far": {
   "date_local": "2026-11-17",
-  "readings": 3,
+  "readings": 4,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -93,7 +93,7 @@
   },
   "forecast_highs": [
    {
-    "period": "Tuesday",
+    "period": "Today",
     "date": "2026-11-17",
     "high_f": 52,
     "would_rank": {
@@ -259,16 +259,7 @@
   "grid": "ILN/89,83",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-17T04:00:00-05:00",
-    "is_daytime": false,
-    "temp_f": 31,
-    "temp_c": -0.56,
-    "precip_chance_pct": 0,
-    "short_forecast": "Partly Cloudy"
-   },
-   {
-    "name": "Tuesday",
+    "name": "Today",
     "start": "2026-11-17T06:00:00-05:00",
     "is_daytime": true,
     "temp_f": 52,
@@ -277,7 +268,7 @@
     "short_forecast": "Sunny"
    },
    {
-    "name": "Tuesday Night",
+    "name": "Tonight",
     "start": "2026-11-17T18:00:00-05:00",
     "is_daytime": false,
     "temp_f": 30,
@@ -383,19 +374,21 @@
     "temp_c": 8.33,
     "precip_chance_pct": 6,
     "short_forecast": "Mostly Sunny"
+   },
+   {
+    "name": "Monday Night",
+    "start": "2026-11-23T18:00:00-05:00",
+    "is_daytime": false,
+    "temp_f": 30,
+    "temp_c": -1.11,
+    "precip_chance_pct": 3,
+    "short_forecast": "Partly Cloudy"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-17T09:00:31Z",
   "hours": [
-   {
-    "start": "2026-11-17T05:00:00-05:00",
-    "temp_f": 31,
-    "temp_c": -0.56,
-    "precip_chance_pct": 0,
-    "short_forecast": "Partly Cloudy"
-   },
    {
     "start": "2026-11-17T06:00:00-05:00",
     "temp_f": 31,
@@ -722,6 +715,13 @@
     "start": "2026-11-19T04:00:00-05:00",
     "temp_f": 35,
     "temp_c": 1.67,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Clear"
+   },
+   {
+    "start": "2026-11-19T05:00:00-05:00",
+    "temp_f": 34,
+    "temp_c": 1.11,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear"
    }
