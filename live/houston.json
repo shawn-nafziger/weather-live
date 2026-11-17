@@ -11,33 +11,33 @@
   "lon": -95.3607,
   "history": "Same site as the official Houston record"
  },
- "as_of_utc": "2026-11-17T15:08:14Z",
+ "as_of_utc": "2026-11-17T17:08:07Z",
  "now": {
-  "time_utc": "2026-11-17T14:50:00Z",
-  "temp_c": 13,
-  "temp_f": 55.4,
+  "time_utc": "2026-11-17T16:20:00Z",
+  "temp_c": 16,
+  "temp_f": 60.8,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 4,
-  "humidity_pct": 54.36,
-  "wind_kmh": 16.67,
+  "humidity_pct": 44.79,
+  "wind_kmh": 14.83,
   "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-17",
-  "readings": 6,
+  "readings": 7,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 10,
-  "high_f": 50.0,
-  "high_time_utc": "2026-11-17T06:53:00Z",
+  "high_c": 15,
+  "high_f": 59.0,
+  "high_time_utc": "2026-11-17T15:53:00Z",
   "low_c": 7.8,
   "low_f": 46.0,
   "low_time_utc": "2026-11-17T12:53:00Z",
   "peak_between_reports": {
-   "at_least_f": 54.5,
-   "about_f": 55.4,
-   "time_utc": "2026-11-17T14:50:00Z"
+   "at_least_f": 59.9,
+   "about_f": 60.8,
+   "time_utc": "2026-11-17T16:00:00Z"
   }
  },
  "record": {
@@ -269,12 +269,12 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-17T12:20:32Z",
+  "issued_utc": "2026-11-17T14:51:24Z",
   "grid": "HGX/63,104",
   "periods": [
    {
     "name": "Today",
-    "start": "2026-11-17T07:00:00-06:00",
+    "start": "2026-11-17T11:00:00-06:00",
     "is_daytime": true,
     "temp_f": 69,
     "temp_c": 20.56,
@@ -401,22 +401,8 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-17T12:20:32Z",
+  "issued_utc": "2026-11-17T14:51:24Z",
   "hours": [
-   {
-    "start": "2026-11-17T09:00:00-06:00",
-    "temp_f": 52,
-    "temp_c": 11.11,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
-   {
-    "start": "2026-11-17T10:00:00-06:00",
-    "temp_f": 56,
-    "temp_c": 13.33,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "start": "2026-11-17T11:00:00-06:00",
     "temp_f": 59,
@@ -738,6 +724,20 @@
     "temp_c": 14.44,
     "precip_chance_pct": 0,
     "short_forecast": "Partly Sunny"
+   },
+   {
+    "start": "2026-11-19T09:00:00-06:00",
+    "temp_f": 61,
+    "temp_c": 16.11,
+    "precip_chance_pct": 0,
+    "short_forecast": "Partly Sunny"
+   },
+   {
+    "start": "2026-11-19T10:00:00-06:00",
+    "temp_f": 65,
+    "temp_c": 18.33,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Sunny"
    }
   ]
  },
