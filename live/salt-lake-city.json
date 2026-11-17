@@ -11,20 +11,20 @@
   "lon": -111.965,
   "history": "Same site as the official Salt Lake City record"
  },
- "as_of_utc": "2026-11-17T05:07:57Z",
+ "as_of_utc": "2026-11-17T06:07:52Z",
  "now": {
-  "time_utc": "2026-11-17T04:50:00Z",
-  "temp_c": 9,
-  "temp_f": 48.2,
+  "time_utc": "2026-11-17T05:40:00Z",
+  "temp_c": 12,
+  "temp_f": 53.6,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 2,
-  "humidity_pct": 61.54,
-  "wind_kmh": 9.25,
-  "description": ""
+  "dewpoint_c": 3,
+  "humidity_pct": 54.1,
+  "wind_kmh": 18.5,
+  "description": "Mostly Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-16",
-  "readings": 19,
+  "readings": 20,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -113,17 +113,20 @@
    {
     "period": "Tuesday",
     "date": "2026-11-17",
-    "high_f": 54,
+    "high_f": 53,
     "would_rank": {
-     "value_f": 54,
-     "warm_rank": 43,
-     "cool_rank": 108,
+     "value_f": 53,
+     "warm_rank": 46,
+     "cool_rank": 102,
      "years": 153,
      "first_year": 1874,
      "tied_years": [
-      1929,
-      1977,
-      2017
+      1877,
+      1905,
+      1935,
+      1942,
+      1959,
+      2006
      ],
      "standing": "warm",
      "notable": false,
@@ -285,26 +288,26 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-16T20:46:57Z",
+  "issued_utc": "2026-11-17T05:11:27Z",
   "grid": "SLC/98,176",
   "periods": [
    {
     "name": "Tonight",
-    "start": "2026-11-16T19:00:00-07:00",
+    "start": "2026-11-16T23:00:00-07:00",
     "is_daytime": false,
     "temp_f": 41,
     "temp_c": 5.0,
-    "precip_chance_pct": 18,
-    "short_forecast": "Mostly Cloudy then Slight Chance Light Rain"
+    "precip_chance_pct": 5,
+    "short_forecast": "Mostly Cloudy"
    },
    {
     "name": "Tuesday",
     "start": "2026-11-17T06:00:00-07:00",
     "is_daytime": true,
-    "temp_f": 54,
-    "temp_c": 12.22,
+    "temp_f": 53,
+    "temp_c": 11.67,
     "precip_chance_pct": 100,
-    "short_forecast": "Rain"
+    "short_forecast": "Light Rain"
    },
    {
     "name": "Tuesday Night",
@@ -419,13 +422,6 @@
  "hourly": {
   "issued_utc": "2026-11-17T04:46:45Z",
   "hours": [
-   {
-    "start": "2026-11-16T22:00:00-07:00",
-    "temp_f": 47,
-    "temp_c": 8.33,
-    "precip_chance_pct": 1,
-    "short_forecast": "Partly Cloudy"
-   },
    {
     "start": "2026-11-16T23:00:00-07:00",
     "temp_f": 46,
@@ -750,6 +746,13 @@
    },
    {
     "start": "2026-11-18T21:00:00-07:00",
+    "temp_f": 37,
+    "temp_c": 2.78,
+    "precip_chance_pct": 4,
+    "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "start": "2026-11-18T22:00:00-07:00",
     "temp_f": 37,
     "temp_c": 2.78,
     "precip_chance_pct": 4,
