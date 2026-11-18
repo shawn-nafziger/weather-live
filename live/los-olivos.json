@@ -11,26 +11,26 @@
   "lon": -120.0756,
   "history": "Provisional: Santa Ynez Airport. The long record (CACHUMA LAKE) is a different, once-a-day station"
  },
- "as_of_utc": "2026-11-18T19:08:01Z",
+ "as_of_utc": "2026-11-18T20:08:04Z",
  "now": {
-  "time_utc": "2026-11-18T18:15:00Z",
-  "temp_c": 16,
-  "temp_f": 60.8,
+  "time_utc": "2026-11-18T19:35:00Z",
+  "temp_c": 18,
+  "temp_f": 64.4,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 6,
-  "humidity_pct": 51.48,
-  "wind_kmh": 14.76,
-  "description": "Partly Cloudy"
+  "dewpoint_c": 7,
+  "humidity_pct": 48.58,
+  "wind_kmh": 20.52,
+  "description": "Mostly Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-18",
-  "readings": 23,
+  "readings": 26,
   "basis": "5-minute readings (whole \u00b0C, approximate)",
   "approximate": true,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 16,
-  "high_f": 60.8,
-  "high_time_utc": "2026-11-18T18:15:00Z",
+  "high_c": 18,
+  "high_f": 64.4,
+  "high_time_utc": "2026-11-18T19:35:00Z",
   "low_c": 2,
   "low_f": 35.6,
   "low_time_utc": "2026-11-18T12:35:00Z"
@@ -41,44 +41,38 @@
   "available": true,
   "rank_today": false,
   "latest_final": {
-   "date": "2026-11-17",
-   "is_yesterday": true,
-   "high_f": 58,
-   "low_f": 37,
+   "date": "2026-11-18",
+   "is_yesterday": false,
+   "high_f": 64,
+   "low_f": 25,
    "high_rank": {
-    "value_f": 58,
-    "warm_rank": 71,
-    "cool_rank": 4,
+    "value_f": 64,
+    "warm_rank": 58,
+    "cool_rank": 16,
     "years": 75,
     "first_year": 1952,
     "tied_years": [
-     1955
+     1975,
+     1988
     ],
     "standing": "cool",
-    "notable": true,
-    "since": 1972,
+    "notable": false,
+    "since": 2025,
     "record": false,
-    "phrase": "4th coolest November 17 high (tied) of 75 since 1952, coolest since 1972"
+    "phrase": "typical for November 18"
    },
    "low_rank": {
-    "value_f": 37,
-    "warm_rank": 59,
-    "cool_rank": 11,
+    "value_f": 25,
+    "warm_rank": 75,
+    "cool_rank": 1,
     "years": 75,
     "first_year": 1952,
-    "tied_years": [
-     1955,
-     1962,
-     1975,
-     1982,
-     2011,
-     2022
-    ],
+    "tied_years": [],
     "standing": "cool",
     "notable": true,
-    "since": 2022,
-    "record": false,
-    "phrase": "11th coldest November 17 low (tied) of 75 since 1952, coldest since 2022"
+    "since": null,
+    "record": true,
+    "phrase": "the coldest November 18 low on record (75 years since 1952)"
    }
   },
   "note": "Today's readings come from a different station than this record, so today and the forecast aren't ranked against it."
@@ -218,13 +212,6 @@
  "hourly": {
   "issued_utc": "2026-11-18T18:26:37Z",
   "hours": [
-   {
-    "start": "2026-11-18T11:00:00-08:00",
-    "temp_f": 57,
-    "temp_c": 13.89,
-    "precip_chance_pct": 3,
-    "short_forecast": "Partly Sunny"
-   },
    {
     "start": "2026-11-18T12:00:00-08:00",
     "temp_f": 60,
@@ -551,6 +538,13 @@
     "start": "2026-11-20T10:00:00-08:00",
     "temp_f": 52,
     "temp_c": 11.11,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
+   },
+   {
+    "start": "2026-11-20T11:00:00-08:00",
+    "temp_f": 55,
+    "temp_c": 12.78,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
    }

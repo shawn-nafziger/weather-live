@@ -11,33 +11,33 @@
   "lon": -98.4636,
   "history": "Same site as the official San Antonio record"
  },
- "as_of_utc": "2026-11-18T19:08:01Z",
+ "as_of_utc": "2026-11-18T20:08:04Z",
  "now": {
-  "time_utc": "2026-11-18T18:45:00Z",
-  "temp_c": 20,
-  "temp_f": 68.0,
+  "time_utc": "2026-11-18T19:50:00Z",
+  "temp_c": 21,
+  "temp_f": 69.8,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 10,
-  "humidity_pct": 52.54,
-  "wind_kmh": 0,
+  "humidity_pct": 49.4,
+  "wind_kmh": 7.42,
   "description": "Mostly Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-18",
-  "readings": 6,
+  "readings": 7,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 18.3,
-  "high_f": 64.9,
-  "high_time_utc": "2026-11-18T16:51:00Z",
+  "high_c": 20,
+  "high_f": 68.0,
+  "high_time_utc": "2026-11-18T18:51:00Z",
   "low_c": 6.7,
   "low_f": 44.1,
   "low_time_utc": "2026-11-18T10:51:00Z",
   "peak_between_reports": {
-   "at_least_f": 67.1,
-   "about_f": 68.0,
-   "time_utc": "2026-11-18T18:45:00Z"
+   "at_least_f": 68.9,
+   "about_f": 69.8,
+   "time_utc": "2026-11-18T19:20:00Z"
   }
  },
  "record": {
@@ -91,18 +91,20 @@
    {
     "period": "This Afternoon",
     "date": "2026-11-18",
-    "high_f": 71,
+    "high_f": 72,
     "would_rank": {
-     "value_f": 71,
-     "warm_rank": 76,
-     "cool_rank": 63,
+     "value_f": 72,
+     "warm_rank": 70,
+     "cool_rank": 67,
      "years": 142,
      "first_year": 1885,
      "tied_years": [
-      1922,
-      1936,
-      1956,
-      2011
+      1913,
+      1938,
+      1994,
+      2003,
+      2007,
+      2009
      ],
      "standing": "cool",
      "notable": false,
@@ -255,17 +257,17 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-18T18:42:18Z",
+  "issued_utc": "2026-11-18T19:44:21Z",
   "grid": "EWX/128,59",
   "periods": [
    {
     "name": "This Afternoon",
-    "start": "2026-11-18T12:00:00-06:00",
+    "start": "2026-11-18T13:00:00-06:00",
     "is_daytime": true,
-    "temp_f": 71,
-    "temp_c": 21.67,
+    "temp_f": 72,
+    "temp_c": 22.22,
     "precip_chance_pct": 0,
-    "short_forecast": "Mostly Sunny"
+    "short_forecast": "Sunny"
    },
    {
     "name": "Tonight",
@@ -387,40 +389,33 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-18T18:42:18Z",
+  "issued_utc": "2026-11-18T19:18:35Z",
   "hours": [
    {
-    "start": "2026-11-18T13:00:00-06:00",
-    "temp_f": 70,
-    "temp_c": 21.11,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Sunny"
-   },
-   {
     "start": "2026-11-18T14:00:00-06:00",
-    "temp_f": 70,
-    "temp_c": 21.11,
+    "temp_f": 72,
+    "temp_c": 22.22,
     "precip_chance_pct": 0,
-    "short_forecast": "Mostly Sunny"
+    "short_forecast": "Sunny"
    },
    {
     "start": "2026-11-18T15:00:00-06:00",
-    "temp_f": 71,
-    "temp_c": 21.67,
+    "temp_f": 72,
+    "temp_c": 22.22,
     "precip_chance_pct": 0,
-    "short_forecast": "Partly Sunny"
+    "short_forecast": "Sunny"
    },
    {
     "start": "2026-11-18T16:00:00-06:00",
-    "temp_f": 70,
-    "temp_c": 21.11,
+    "temp_f": 71,
+    "temp_c": 21.67,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Sunny"
    },
    {
     "start": "2026-11-18T17:00:00-06:00",
-    "temp_f": 68,
-    "temp_c": 20.0,
+    "temp_f": 69,
+    "temp_c": 20.56,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Sunny"
    },
@@ -722,6 +717,13 @@
     "start": "2026-11-20T12:00:00-06:00",
     "temp_f": 70,
     "temp_c": 21.11,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
+   },
+   {
+    "start": "2026-11-20T13:00:00-06:00",
+    "temp_f": 72,
+    "temp_c": 22.22,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
    }

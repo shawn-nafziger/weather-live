@@ -11,33 +11,33 @@
   "lon": -86.2816,
   "history": "Same site as the official Indianapolis record"
  },
- "as_of_utc": "2026-11-18T19:08:01Z",
+ "as_of_utc": "2026-11-18T20:08:04Z",
  "now": {
-  "time_utc": "2026-11-18T18:45:00Z",
-  "temp_c": 17,
-  "temp_f": 62.6,
+  "time_utc": "2026-11-18T19:50:00Z",
+  "temp_c": 18,
+  "temp_f": 64.4,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": -1,
-  "humidity_pct": 29.37,
-  "wind_kmh": 20.38,
+  "humidity_pct": 27.58,
+  "wind_kmh": 12.96,
   "description": ""
  },
  "today_so_far": {
   "date_local": "2026-11-18",
-  "readings": 8,
+  "readings": 9,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 14.4,
-  "high_f": 57.9,
-  "high_time_utc": "2026-11-18T16:54:00Z",
+  "high_c": 17.2,
+  "high_f": 63.0,
+  "high_time_utc": "2026-11-18T18:54:00Z",
   "low_c": 3.9,
   "low_f": 39.0,
   "low_time_utc": "2026-11-18T07:54:00Z",
   "peak_between_reports": {
-   "at_least_f": 61.7,
-   "about_f": 62.6,
-   "time_utc": "2026-11-18T18:20:00Z"
+   "at_least_f": 63.5,
+   "about_f": 64.4,
+   "time_utc": "2026-11-18T19:50:00Z"
   },
   "dip_between_reports": {
    "at_most_f": 38.3,
@@ -94,28 +94,47 @@
     "phrase": "typical for November 17"
    }
   },
+  "today_high_so_far": {
+   "value_f": 63,
+   "warm_rank": 22,
+   "cool_rank": 131,
+   "years": 156,
+   "first_year": 1871,
+   "tied_years": [
+    1899,
+    1900,
+    1991,
+    1994
+   ],
+   "standing": "warm",
+   "notable": true,
+   "since": 2024,
+   "record": false,
+   "phrase": "already the 22nd warmest November 18 high (tied) of 156 since 1871, warmest since 2024"
+  },
   "forecast_highs": [
    {
     "period": "This Afternoon",
     "date": "2026-11-18",
-    "high_f": 63,
+    "high_f": 64,
     "would_rank": {
-     "value_f": 63,
-     "warm_rank": 22,
-     "cool_rank": 131,
+     "value_f": 64,
+     "warm_rank": 17,
+     "cool_rank": 135,
      "years": 156,
      "first_year": 1871,
      "tied_years": [
-      1899,
-      1900,
-      1991,
-      1994
+      1904,
+      1913,
+      1921,
+      2004,
+      2024
      ],
      "standing": "warm",
      "notable": true,
      "since": 2024,
      "record": false,
-     "phrase": "22nd warmest November 18 high (tied) of 156 since 1871, warmest since 2024"
+     "phrase": "17th warmest November 18 high (tied) of 156 since 1871, warmest since 2024"
     }
    },
    {
@@ -252,15 +271,15 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-18T18:45:22Z",
+  "issued_utc": "2026-11-18T19:21:51Z",
   "grid": "IND/54,67",
   "periods": [
    {
     "name": "This Afternoon",
     "start": "2026-11-18T14:00:00-05:00",
     "is_daytime": true,
-    "temp_f": 63,
-    "temp_c": 17.22,
+    "temp_f": 64,
+    "temp_c": 17.78,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
    },
@@ -384,15 +403,8 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-18T18:45:22Z",
+  "issued_utc": "2026-11-18T19:21:51Z",
   "hours": [
-   {
-    "start": "2026-11-18T14:00:00-05:00",
-    "temp_f": 62,
-    "temp_c": 16.67,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "start": "2026-11-18T15:00:00-05:00",
     "temp_f": 62,
@@ -717,6 +729,13 @@
    },
    {
     "start": "2026-11-20T13:00:00-05:00",
+    "temp_f": 65,
+    "temp_c": 18.33,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
+   },
+   {
+    "start": "2026-11-20T14:00:00-05:00",
     "temp_f": 65,
     "temp_c": 18.33,
     "precip_chance_pct": 0,
