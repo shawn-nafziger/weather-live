@@ -11,29 +11,29 @@
   "lon": -97.6003,
   "history": "Same site as the official Oklahoma City record"
  },
- "as_of_utc": "2026-11-18T11:08:01Z",
+ "as_of_utc": "2026-11-18T12:07:49Z",
  "now": {
-  "time_utc": "2026-11-18T10:30:00Z",
-  "temp_c": 6,
-  "temp_f": 42.8,
+  "time_utc": "2026-11-18T11:05:00Z",
+  "temp_c": 4,
+  "temp_f": 39.2,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": null,
   "humidity_pct": null,
-  "wind_kmh": 12.96,
+  "wind_kmh": 11.12,
   "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-18",
-  "readings": 1,
+  "readings": 2,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
   "high_c": 5.6,
   "high_f": 42.1,
   "high_time_utc": "2026-11-18T07:52:00Z",
-  "low_c": 5.6,
-  "low_f": 42.1,
-  "low_time_utc": "2026-11-18T07:52:00Z",
+  "low_c": 5,
+  "low_f": 41.0,
+  "low_time_utc": "2026-11-18T10:52:00Z",
   "peak_between_reports": {
    "at_least_f": 43.7,
    "about_f": 44.6,
@@ -51,40 +51,42 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-16",
-   "is_yesterday": false,
-   "high_f": 52,
-   "low_f": 41,
+   "date": "2026-11-17",
+   "is_yesterday": true,
+   "high_f": 60,
+   "low_f": 34,
    "high_rank": {
-    "value_f": 52,
-    "warm_rank": 99,
-    "cool_rank": 38,
+    "value_f": 60,
+    "warm_rank": 76,
+    "cool_rank": 62,
+    "years": 137,
+    "first_year": 1890,
+    "tied_years": [],
+    "standing": "cool",
+    "notable": false,
+    "since": 2023,
+    "record": false,
+    "phrase": "typical for November 17"
+   },
+   "low_rank": {
+    "value_f": 34,
+    "warm_rank": 90,
+    "cool_rank": 42,
     "years": 137,
     "first_year": 1890,
     "tied_years": [
-     1987
+     1890,
+     1923,
+     1949,
+     1987,
+     2006,
+     2019
     ],
     "standing": "cool",
     "notable": false,
     "since": 2022,
     "record": false,
-    "phrase": "typical for November 16"
-   },
-   "low_rank": {
-    "value_f": 41,
-    "warm_rank": 50,
-    "cool_rank": 86,
-    "years": 137,
-    "first_year": 1890,
-    "tied_years": [
-     1917,
-     1990
-    ],
-    "standing": "warm",
-    "notable": false,
-    "since": 2025,
-    "record": false,
-    "phrase": "typical for November 16"
+    "phrase": "typical for November 17"
    }
   },
   "forecast_highs": [
@@ -260,7 +262,7 @@
   "periods": [
    {
     "name": "Overnight",
-    "start": "2026-11-18T00:00:00-06:00",
+    "start": "2026-11-18T01:00:00-06:00",
     "is_daytime": false,
     "temp_f": 39,
     "temp_c": 3.89,
@@ -389,13 +391,6 @@
  "hourly": {
   "issued_utc": "2026-11-18T06:26:58Z",
   "hours": [
-   {
-    "start": "2026-11-18T05:00:00-06:00",
-    "temp_f": 41,
-    "temp_c": 5.0,
-    "precip_chance_pct": 0,
-    "short_forecast": "Partly Cloudy"
-   },
    {
     "start": "2026-11-18T06:00:00-06:00",
     "temp_f": 40,
@@ -722,6 +717,13 @@
     "start": "2026-11-20T04:00:00-06:00",
     "temp_f": 51,
     "temp_c": 10.56,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Clear"
+   },
+   {
+    "start": "2026-11-20T05:00:00-06:00",
+    "temp_f": 50,
+    "temp_c": 10.0,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear"
    }

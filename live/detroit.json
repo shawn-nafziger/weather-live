@@ -11,38 +11,33 @@
   "lon": -83.3308,
   "history": "Same site as the official Detroit record"
  },
- "as_of_utc": "2026-11-18T11:08:01Z",
+ "as_of_utc": "2026-11-18T12:07:49Z",
  "now": {
-  "time_utc": "2026-11-18T09:55:00Z",
-  "temp_c": 2,
-  "temp_f": 35.6,
+  "time_utc": "2026-11-18T11:50:00Z",
+  "temp_c": 1,
+  "temp_f": 33.8,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 0,
-  "humidity_pct": 86.6,
+  "dewpoint_c": -1,
+  "humidity_pct": 86.5,
   "wind_kmh": 7.42,
   "description": "Fog/Mist"
  },
  "today_so_far": {
   "date_local": "2026-11-18",
-  "readings": 3,
+  "readings": 4,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
   "high_c": 2.8,
   "high_f": 37.0,
   "high_time_utc": "2026-11-18T06:53:00Z",
-  "low_c": 1.7,
-  "low_f": 35.1,
-  "low_time_utc": "2026-11-18T07:53:00Z",
+  "low_c": 0,
+  "low_f": 32.0,
+  "low_time_utc": "2026-11-18T10:53:00Z",
   "peak_between_reports": {
    "at_least_f": 38.3,
    "about_f": 39.2,
    "time_utc": "2026-11-18T05:00:00Z"
-  },
-  "dip_between_reports": {
-   "at_most_f": 34.7,
-   "about_f": 33.8,
-   "time_utc": "2026-11-18T08:20:00Z"
   }
  },
  "record": {
@@ -51,51 +46,50 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-16",
-   "is_yesterday": false,
-   "high_f": 49,
-   "low_f": 36,
+   "date": "2026-11-17",
+   "is_yesterday": true,
+   "high_f": 56,
+   "low_f": 31,
    "high_rank": {
-    "value_f": 49,
-    "warm_rank": 64,
-    "cool_rank": 88,
+    "value_f": 56,
+    "warm_rank": 34,
+    "cool_rank": 118,
     "years": 153,
     "first_year": 1874,
     "tied_years": [
-     1894,
-     1976
+     1986,
+     2001
     ],
     "standing": "warm",
+    "notable": false,
+    "since": 2023,
+    "record": false,
+    "phrase": "typical for November 17"
+   },
+   "low_rank": {
+    "value_f": 31,
+    "warm_rank": 90,
+    "cool_rank": 58,
+    "years": 153,
+    "first_year": 1874,
+    "tied_years": [
+     1882,
+     1901,
+     1936,
+     1944,
+     1961,
+     2023
+    ],
+    "standing": "cool",
     "notable": false,
     "since": 2025,
     "record": false,
-    "phrase": "typical for November 16"
-   },
-   "low_rank": {
-    "value_f": 36,
-    "warm_rank": 47,
-    "cool_rank": 100,
-    "years": 153,
-    "first_year": 1874,
-    "tied_years": [
-     1894,
-     1909,
-     1952,
-     1966,
-     1987,
-     1994,
-     2006
-    ],
-    "standing": "warm",
-    "notable": false,
-    "since": 2024,
-    "record": false,
-    "phrase": "typical for November 16"
+    "phrase": "typical for November 17"
    }
   },
   "forecast_highs": [
    {
-    "period": "Wednesday",
+    "period": "Today",
     "date": "2026-11-18",
     "high_f": 55,
     "would_rank": {
@@ -265,16 +259,7 @@
   "grid": "DTX/57,28",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-18T04:00:00-05:00",
-    "is_daytime": false,
-    "temp_f": 36,
-    "temp_c": 2.22,
-    "precip_chance_pct": 0,
-    "short_forecast": "Patchy Fog"
-   },
-   {
-    "name": "Wednesday",
+    "name": "Today",
     "start": "2026-11-18T06:00:00-05:00",
     "is_daytime": true,
     "temp_f": 55,
@@ -283,7 +268,7 @@
     "short_forecast": "Patchy Fog then Mostly Sunny"
    },
    {
-    "name": "Wednesday Night",
+    "name": "Tonight",
     "start": "2026-11-18T18:00:00-05:00",
     "is_daytime": false,
     "temp_f": 39,
@@ -389,19 +374,21 @@
     "temp_c": 4.44,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Sunny"
+   },
+   {
+    "name": "Tuesday Night",
+    "start": "2026-11-24T18:00:00-05:00",
+    "is_daytime": false,
+    "temp_f": 29,
+    "temp_c": -1.67,
+    "precip_chance_pct": 3,
+    "short_forecast": "Partly Cloudy"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-18T08:24:15Z",
   "hours": [
-   {
-    "start": "2026-11-18T06:00:00-05:00",
-    "temp_f": 36,
-    "temp_c": 2.22,
-    "precip_chance_pct": 0,
-    "short_forecast": "Patchy Fog"
-   },
    {
     "start": "2026-11-18T07:00:00-05:00",
     "temp_f": 36,
@@ -730,6 +717,13 @@
     "temp_c": 5.56,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear"
+   },
+   {
+    "start": "2026-11-20T06:00:00-05:00",
+    "temp_f": 41,
+    "temp_c": 5.0,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
    }
   ]
  },

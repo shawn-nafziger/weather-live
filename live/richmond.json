@@ -11,9 +11,9 @@
   "lon": -77.3233,
   "history": "Same site as the official Richmond record"
  },
- "as_of_utc": "2026-11-18T11:08:01Z",
+ "as_of_utc": "2026-11-18T12:07:49Z",
  "now": {
-  "time_utc": "2026-11-18T10:30:00Z",
+  "time_utc": "2026-11-18T11:30:00Z",
   "temp_c": 0,
   "temp_f": 32.0,
   "precision": "nearest whole \u00b0C",
@@ -24,7 +24,7 @@
  },
  "today_so_far": {
   "date_local": "2026-11-18",
-  "readings": 4,
+  "readings": 5,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -46,49 +46,54 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-16",
-   "is_yesterday": false,
-   "high_f": 57,
-   "low_f": 37,
+   "date": "2026-11-17",
+   "is_yesterday": true,
+   "high_f": 59,
+   "low_f": 34,
    "high_rank": {
-    "value_f": 57,
-    "warm_rank": 79,
+    "value_f": 59,
+    "warm_rank": 60,
+    "cool_rank": 66,
+    "years": 130,
+    "first_year": 1897,
+    "tied_years": [
+     1902,
+     1905,
+     1906,
+     1915,
+     1926
+    ],
+    "standing": "warm",
+    "notable": false,
+    "since": 2024,
+    "record": false,
+    "phrase": "typical for November 17"
+   },
+   "low_rank": {
+    "value_f": 34,
+    "warm_rank": 74,
     "cool_rank": 50,
     "years": 130,
     "first_year": 1897,
     "tied_years": [
-     1994,
-     2022
-    ],
-    "standing": "cool",
-    "notable": false,
-    "since": 2022,
-    "record": false,
-    "phrase": "typical for November 16"
-   },
-   "low_rank": {
-    "value_f": 37,
-    "warm_rank": 70,
-    "cool_rank": 56,
-    "years": 130,
-    "first_year": 1897,
-    "tied_years": [
-     1906,
+     1901,
+     1907,
+     1937,
      1949,
-     1981,
-     2004,
-     2023
+     1955,
+     1972,
+     1980
     ],
     "standing": "cool",
     "notable": false,
-    "since": 2023,
+    "since": 2025,
     "record": false,
-    "phrase": "typical for November 16"
+    "phrase": "typical for November 17"
    }
   },
   "forecast_highs": [
    {
-    "period": "Wednesday",
+    "period": "Today",
     "date": "2026-11-18",
     "high_f": 62,
     "would_rank": {
@@ -252,17 +257,8 @@
   "grid": "AKQ/50,76",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-18T01:00:00-05:00",
-    "is_daytime": false,
-    "temp_f": 31,
-    "temp_c": -0.56,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Clear"
-   },
-   {
-    "name": "Wednesday",
-    "start": "2026-11-18T06:00:00-05:00",
+    "name": "Today",
+    "start": "2026-11-18T07:00:00-05:00",
     "is_daytime": true,
     "temp_f": 62,
     "temp_c": 16.67,
@@ -270,7 +266,7 @@
     "short_forecast": "Sunny"
    },
    {
-    "name": "Wednesday Night",
+    "name": "Tonight",
     "start": "2026-11-18T18:00:00-05:00",
     "is_daytime": false,
     "temp_f": 33,
@@ -376,19 +372,21 @@
     "temp_c": 12.22,
     "precip_chance_pct": 1,
     "short_forecast": "Sunny"
+   },
+   {
+    "name": "Tuesday Night",
+    "start": "2026-11-24T18:00:00-05:00",
+    "is_daytime": false,
+    "temp_f": 33,
+    "temp_c": 0.56,
+    "precip_chance_pct": 6,
+    "short_forecast": "Mostly Clear"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-18T06:07:28Z",
   "hours": [
-   {
-    "start": "2026-11-18T06:00:00-05:00",
-    "temp_f": 32,
-    "temp_c": 0.0,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "start": "2026-11-18T07:00:00-05:00",
     "temp_f": 32,
@@ -717,6 +715,13 @@
     "temp_c": 3.89,
     "precip_chance_pct": 0,
     "short_forecast": "Partly Cloudy"
+   },
+   {
+    "start": "2026-11-20T06:00:00-05:00",
+    "temp_f": 39,
+    "temp_c": 3.89,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Sunny"
    }
   ]
  },

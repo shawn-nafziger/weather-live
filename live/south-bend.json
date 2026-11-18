@@ -11,9 +11,9 @@
   "lon": -86.3186,
   "history": "Same station as the official South Bend record (South Bend airport). Also the nearest official city record to Goshen, about 27 miles; a candidate for Goshen's hourly readings (question D2)"
  },
- "as_of_utc": "2026-11-18T11:08:01Z",
+ "as_of_utc": "2026-11-18T12:07:49Z",
  "now": {
-  "time_utc": "2026-11-18T10:30:00Z",
+  "time_utc": "2026-11-18T11:50:00Z",
   "temp_c": -1,
   "temp_f": 30.2,
   "precision": "nearest whole \u00b0C",
@@ -24,25 +24,20 @@
  },
  "today_so_far": {
   "date_local": "2026-11-18",
-  "readings": 3,
+  "readings": 4,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
   "high_c": 3.3,
   "high_f": 37.9,
   "high_time_utc": "2026-11-18T06:54:00Z",
-  "low_c": 0.6,
-  "low_f": 33.1,
-  "low_time_utc": "2026-11-18T07:54:00Z",
+  "low_c": -1.1,
+  "low_f": 30.0,
+  "low_time_utc": "2026-11-18T10:54:00Z",
   "peak_between_reports": {
    "at_least_f": 38.3,
    "about_f": 39.2,
    "time_utc": "2026-11-18T05:00:00Z"
-  },
-  "dip_between_reports": {
-   "at_most_f": 31.1,
-   "about_f": 30.2,
-   "time_utc": "2026-11-18T09:20:00Z"
   }
  },
  "record": {
@@ -51,43 +46,46 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-16",
-   "is_yesterday": false,
-   "high_f": 53,
-   "low_f": 25,
+   "date": "2026-11-17",
+   "is_yesterday": true,
+   "high_f": 55,
+   "low_f": 29,
    "high_rank": {
-    "value_f": 53,
-    "warm_rank": 39,
-    "cool_rank": 90,
+    "value_f": 55,
+    "warm_rank": 33,
+    "cool_rank": 99,
+    "years": 131,
+    "first_year": 1894,
+    "tied_years": [],
+    "standing": "warm",
+    "notable": false,
+    "since": 2024,
+    "record": false,
+    "phrase": "typical for November 17"
+   },
+   "low_rank": {
+    "value_f": 29,
+    "warm_rank": 82,
+    "cool_rank": 40,
     "years": 131,
     "first_year": 1894,
     "tied_years": [
-     1945,
-     1994,
-     2025
+     1906,
+     1912,
+     1925,
+     1940,
+     1972,
+     1973,
+     1980,
+     1991,
+     2022,
+     2023
     ],
-    "standing": "warm",
+    "standing": "cool",
     "notable": false,
     "since": 2025,
     "record": false,
-    "phrase": "typical for November 16"
-   },
-   "low_rank": {
-    "value_f": 25,
-    "warm_rank": 104,
-    "cool_rank": 25,
-    "years": 131,
-    "first_year": 1894,
-    "tied_years": [
-     1967,
-     1970,
-     2019
-    ],
-    "standing": "cool",
-    "notable": true,
-    "since": 2019,
-    "record": false,
-    "phrase": "25th coldest November 16 low (tied) of 131 since 1894, coldest since 2019"
+    "phrase": "typical for November 17"
    }
   },
   "forecast_highs": [
@@ -249,12 +247,12 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-18T10:29:58Z",
+  "issued_utc": "2026-11-18T11:44:39Z",
   "grid": "IWX/27,64",
   "periods": [
    {
     "name": "Today",
-    "start": "2026-11-18T06:00:00-05:00",
+    "start": "2026-11-18T07:00:00-05:00",
     "is_daytime": true,
     "temp_f": 59,
     "temp_c": 15.0,
@@ -381,26 +379,19 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-18T10:29:58Z",
+  "issued_utc": "2026-11-18T11:44:39Z",
   "hours": [
    {
-    "start": "2026-11-18T06:00:00-05:00",
-    "temp_f": 34,
-    "temp_c": 1.11,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
-   {
     "start": "2026-11-18T07:00:00-05:00",
-    "temp_f": 35,
-    "temp_c": 1.67,
+    "temp_f": 33,
+    "temp_c": 0.56,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
    },
    {
     "start": "2026-11-18T08:00:00-05:00",
-    "temp_f": 36,
-    "temp_c": 2.22,
+    "temp_f": 37,
+    "temp_c": 2.78,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
    },
@@ -718,6 +709,13 @@
     "temp_c": 5.0,
     "precip_chance_pct": 0,
     "short_forecast": "Clear"
+   },
+   {
+    "start": "2026-11-20T06:00:00-05:00",
+    "temp_f": 40,
+    "temp_c": 4.44,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
    }
   ]
  },
