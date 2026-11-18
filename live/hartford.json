@@ -11,14 +11,14 @@
   "lon": -72.6825,
   "history": "Same site as the official Hartford record"
  },
- "as_of_utc": "2026-11-18T10:39:18Z",
+ "as_of_utc": "2026-11-18T11:08:01Z",
  "now": {
-  "time_utc": "2026-11-18T09:55:00Z",
-  "temp_c": 4,
-  "temp_f": 39.2,
+  "time_utc": "2026-11-18T10:30:00Z",
+  "temp_c": 3,
+  "temp_f": 37.4,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 1,
-  "humidity_pct": 80.8,
+  "humidity_pct": 86.7,
   "wind_kmh": 5.54,
   "description": "Clear"
  },
@@ -87,7 +87,7 @@
   },
   "forecast_highs": [
    {
-    "period": "Wednesday",
+    "period": "Today",
     "date": "2026-11-18",
     "high_f": 62,
     "would_rank": {
@@ -259,16 +259,7 @@
   "grid": "BOX/20,72",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-18T05:00:00-05:00",
-    "is_daytime": false,
-    "temp_f": 31,
-    "temp_c": -0.56,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Clear"
-   },
-   {
-    "name": "Wednesday",
+    "name": "Today",
     "start": "2026-11-18T06:00:00-05:00",
     "is_daytime": true,
     "temp_f": 62,
@@ -277,7 +268,7 @@
     "short_forecast": "Sunny"
    },
    {
-    "name": "Wednesday Night",
+    "name": "Tonight",
     "start": "2026-11-18T18:00:00-05:00",
     "is_daytime": false,
     "temp_f": 31,
@@ -383,19 +374,21 @@
     "temp_c": 6.67,
     "precip_chance_pct": 4,
     "short_forecast": "Sunny"
+   },
+   {
+    "name": "Tuesday Night",
+    "start": "2026-11-24T18:00:00-05:00",
+    "is_daytime": false,
+    "temp_f": 25,
+    "temp_c": -3.89,
+    "precip_chance_pct": 3,
+    "short_forecast": "Mostly Clear"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-18T09:14:12Z",
   "hours": [
-   {
-    "start": "2026-11-18T05:00:00-05:00",
-    "temp_f": 33,
-    "temp_c": 0.56,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Clear"
-   },
    {
     "start": "2026-11-18T06:00:00-05:00",
     "temp_f": 32,
@@ -722,6 +715,13 @@
     "start": "2026-11-20T04:00:00-05:00",
     "temp_f": 35,
     "temp_c": 1.67,
+    "precip_chance_pct": 0,
+    "short_forecast": "Partly Cloudy"
+   },
+   {
+    "start": "2026-11-20T05:00:00-05:00",
+    "temp_f": 33,
+    "temp_c": 0.56,
     "precip_chance_pct": 0,
     "short_forecast": "Partly Cloudy"
    }
