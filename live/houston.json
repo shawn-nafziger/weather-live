@@ -11,29 +11,23 @@
   "lon": -95.3607,
   "history": "Same site as the official Houston record"
  },
- "as_of_utc": "2026-11-18T05:07:54Z",
+ "as_of_utc": "2026-11-18T06:08:01Z",
  "now": {
-  "time_utc": "2026-11-18T04:55:00Z",
-  "temp_c": 12,
-  "temp_f": 53.6,
+  "time_utc": "2026-11-18T05:20:00Z",
+  "temp_c": 13,
+  "temp_f": 55.4,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 6,
-  "humidity_pct": 66.72,
+  "dewpoint_c": 5,
+  "humidity_pct": 58.3,
   "wind_kmh": 9.25,
   "description": "Mostly Clear"
  },
  "today_so_far": {
-  "date_local": "2026-11-17",
-  "readings": 17,
-  "basis": "hourly reports (tenths of a degree)",
-  "approximate": false,
-  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 21.1,
-  "high_f": 70.0,
-  "high_time_utc": "2026-11-17T20:53:00Z",
-  "low_c": 7.8,
-  "low_f": 46.0,
-  "low_time_utc": "2026-11-17T12:53:00Z"
+  "date_local": "2026-11-18",
+  "readings": 0,
+  "basis": "5-minute readings (whole \u00b0C, approximate)",
+  "approximate": true,
+  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two."
  },
  "record": {
   "series": "Houston area (ThreadEx; Bush Intercontinental airport)",
@@ -42,7 +36,7 @@
   "rank_today": true,
   "latest_final": {
    "date": "2026-11-16",
-   "is_yesterday": true,
+   "is_yesterday": false,
    "high_f": 67,
    "low_f": 49,
    "high_rank": {
@@ -87,24 +81,18 @@
    {
     "period": "Wednesday",
     "date": "2026-11-18",
-    "high_f": 73,
+    "high_f": 74,
     "would_rank": {
-     "value_f": 73,
-     "warm_rank": 54,
-     "cool_rank": 72,
+     "value_f": 74,
+     "warm_rank": 50,
+     "cool_rank": 82,
      "years": 135,
      "first_year": 1889,
      "tied_years": [
-      1922,
-      1940,
-      1943,
-      1953,
-      1955,
-      1969,
-      1970,
-      2004,
-      2007,
-      2012
+      1904,
+      1919,
+      1965,
+      2019
      ],
      "standing": "warm",
      "notable": false,
@@ -116,18 +104,21 @@
    {
     "period": "Thursday",
     "date": "2026-11-19",
-    "high_f": 76,
+    "high_f": 77,
     "would_rank": {
-     "value_f": 76,
-     "warm_rank": 41,
-     "cool_rank": 92,
+     "value_f": 77,
+     "warm_rank": 34,
+     "cool_rank": 96,
      "years": 136,
      "first_year": 1889,
      "tied_years": [
-      1934,
-      1940,
-      1941,
-      1964
+      1898,
+      1900,
+      1931,
+      1986,
+      1992,
+      1994,
+      2001
      ],
      "standing": "warm",
      "notable": false,
@@ -139,19 +130,19 @@
    {
     "period": "Friday",
     "date": "2026-11-20",
-    "high_f": 77,
+    "high_f": 78,
     "would_rank": {
-     "value_f": 77,
-     "warm_rank": 33,
-     "cool_rank": 99,
+     "value_f": 78,
+     "warm_rank": 28,
+     "cool_rank": 104,
      "years": 136,
      "first_year": 1889,
      "tied_years": [
-      1911,
-      1913,
-      1915,
-      1920,
-      1936
+      1889,
+      1916,
+      1967,
+      1999,
+      2008
      ],
      "standing": "warm",
      "notable": false,
@@ -264,42 +255,42 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-18T01:51:19Z",
+  "issued_utc": "2026-11-18T05:56:14Z",
   "grid": "HGX/63,104",
   "periods": [
    {
-    "name": "Tonight",
-    "start": "2026-11-17T20:00:00-06:00",
+    "name": "Overnight",
+    "start": "2026-11-18T00:00:00-06:00",
     "is_daytime": false,
     "temp_f": 50,
     "temp_c": 10.0,
-    "precip_chance_pct": 4,
+    "precip_chance_pct": 0,
     "short_forecast": "Partly Cloudy"
    },
    {
     "name": "Wednesday",
     "start": "2026-11-18T06:00:00-06:00",
     "is_daytime": true,
-    "temp_f": 73,
-    "temp_c": 22.78,
-    "precip_chance_pct": 1,
+    "temp_f": 74,
+    "temp_c": 23.33,
+    "precip_chance_pct": 0,
     "short_forecast": "Mostly Sunny"
    },
    {
     "name": "Wednesday Night",
     "start": "2026-11-18T18:00:00-06:00",
     "is_daytime": false,
-    "temp_f": 55,
-    "temp_c": 12.78,
+    "temp_f": 53,
+    "temp_c": 11.67,
     "precip_chance_pct": 0,
-    "short_forecast": "Mostly Cloudy"
+    "short_forecast": "Partly Cloudy"
    },
    {
     "name": "Thursday",
     "start": "2026-11-19T06:00:00-06:00",
     "is_daytime": true,
-    "temp_f": 76,
-    "temp_c": 24.44,
+    "temp_f": 77,
+    "temp_c": 25.0,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Sunny"
    },
@@ -307,27 +298,27 @@
     "name": "Thursday Night",
     "start": "2026-11-19T18:00:00-06:00",
     "is_daytime": false,
-    "temp_f": 56,
-    "temp_c": 13.33,
+    "temp_f": 54,
+    "temp_c": 12.22,
     "precip_chance_pct": 0,
-    "short_forecast": "Mostly Clear"
+    "short_forecast": "Partly Cloudy"
    },
    {
     "name": "Friday",
     "start": "2026-11-20T06:00:00-06:00",
     "is_daytime": true,
-    "temp_f": 77,
-    "temp_c": 25.0,
-    "precip_chance_pct": 1,
+    "temp_f": 78,
+    "temp_c": 25.56,
+    "precip_chance_pct": 0,
     "short_forecast": "Sunny"
    },
    {
     "name": "Friday Night",
     "start": "2026-11-20T18:00:00-06:00",
     "is_daytime": false,
-    "temp_f": 58,
-    "temp_c": 14.44,
-    "precip_chance_pct": 1,
+    "temp_f": 56,
+    "temp_c": 13.33,
+    "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear"
    },
    {
@@ -336,7 +327,7 @@
     "is_daytime": true,
     "temp_f": 78,
     "temp_c": 25.56,
-    "precip_chance_pct": 2,
+    "precip_chance_pct": 0,
     "short_forecast": "Mostly Sunny"
    },
    {
@@ -398,13 +389,6 @@
  "hourly": {
   "issued_utc": "2026-11-18T01:51:19Z",
   "hours": [
-   {
-    "start": "2026-11-17T23:00:00-06:00",
-    "temp_f": 54,
-    "temp_c": 12.22,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Clear"
-   },
    {
     "start": "2026-11-18T00:00:00-06:00",
     "temp_f": 54,
@@ -733,6 +717,13 @@
     "temp_c": 16.67,
     "precip_chance_pct": 0,
     "short_forecast": "Partly Cloudy"
+   },
+   {
+    "start": "2026-11-19T23:00:00-06:00",
+    "temp_f": 61,
+    "temp_c": 16.11,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Clear"
    }
   ]
  },

@@ -11,29 +11,23 @@
   "lon": -90.3736,
   "history": "Same site as the official St. Louis record"
  },
- "as_of_utc": "2026-11-18T05:07:54Z",
+ "as_of_utc": "2026-11-18T06:08:01Z",
  "now": {
-  "time_utc": "2026-11-18T04:55:00Z",
-  "temp_c": 9,
-  "temp_f": 48.2,
+  "time_utc": "2026-11-18T05:55:00Z",
+  "temp_c": 4,
+  "temp_f": 39.2,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 1,
-  "humidity_pct": 57.28,
-  "wind_kmh": 12.96,
+  "humidity_pct": 80.8,
+  "wind_kmh": 0,
   "description": "Clear"
  },
  "today_so_far": {
-  "date_local": "2026-11-17",
-  "readings": 18,
-  "basis": "hourly reports (tenths of a degree)",
-  "approximate": false,
-  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 15.6,
-  "high_f": 60.1,
-  "high_time_utc": "2026-11-17T20:51:00Z",
-  "low_c": 0.6,
-  "low_f": 33.1,
-  "low_time_utc": "2026-11-17T11:51:00Z"
+  "date_local": "2026-11-18",
+  "readings": 0,
+  "basis": "5-minute readings (whole \u00b0C, approximate)",
+  "approximate": true,
+  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two."
  },
  "record": {
   "series": "St. Louis area (ThreadEx; Lambert airport)",
@@ -42,7 +36,7 @@
   "rank_today": true,
   "latest_final": {
    "date": "2026-11-16",
-   "is_yesterday": true,
+   "is_yesterday": false,
    "high_f": 57,
    "low_f": 31,
    "high_rank": {
@@ -259,7 +253,7 @@
   "periods": [
    {
     "name": "Tonight",
-    "start": "2026-11-17T21:00:00-06:00",
+    "start": "2026-11-17T22:00:00-06:00",
     "is_daytime": false,
     "temp_f": 39,
     "temp_c": 3.89,
@@ -388,13 +382,6 @@
  "hourly": {
   "issued_utc": "2026-11-18T03:31:06Z",
   "hours": [
-   {
-    "start": "2026-11-17T23:00:00-06:00",
-    "temp_f": 45,
-    "temp_c": 7.22,
-    "precip_chance_pct": 0,
-    "short_forecast": "Clear"
-   },
    {
     "start": "2026-11-18T00:00:00-06:00",
     "temp_f": 43,
@@ -723,6 +710,13 @@
     "temp_c": 11.11,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear"
+   },
+   {
+    "start": "2026-11-19T23:00:00-06:00",
+    "temp_f": 51,
+    "temp_c": 10.56,
+    "precip_chance_pct": 0,
+    "short_forecast": "Clear"
    }
   ]
  },

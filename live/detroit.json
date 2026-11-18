@@ -11,23 +11,29 @@
   "lon": -83.3308,
   "history": "Same site as the official Detroit record"
  },
- "as_of_utc": "2026-11-18T05:07:54Z",
+ "as_of_utc": "2026-11-18T06:08:01Z",
  "now": {
-  "time_utc": "2026-11-18T04:55:00Z",
-  "temp_c": 4,
-  "temp_f": 39.2,
+  "time_utc": "2026-11-18T05:20:00Z",
+  "temp_c": 3,
+  "temp_f": 37.4,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 1,
-  "humidity_pct": 80.8,
-  "wind_kmh": 5.54,
+  "humidity_pct": 86.7,
+  "wind_kmh": 0,
   "description": "Shallow Fog"
  },
  "today_so_far": {
   "date_local": "2026-11-18",
-  "readings": 0,
+  "readings": 3,
   "basis": "5-minute readings (whole \u00b0C, approximate)",
   "approximate": true,
-  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two."
+  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
+  "high_c": 4,
+  "high_f": 39.2,
+  "high_time_utc": "2026-11-18T05:00:00Z",
+  "low_c": 3,
+  "low_f": 37.4,
+  "low_time_utc": "2026-11-18T05:20:00Z"
  },
  "record": {
   "series": "Detroit area (ThreadEx; Metro airport)",
@@ -251,7 +257,7 @@
   "periods": [
    {
     "name": "Tonight",
-    "start": "2026-11-17T20:00:00-05:00",
+    "start": "2026-11-17T18:00:00-05:00",
     "is_daytime": false,
     "temp_f": 36,
     "temp_c": 2.22,
@@ -380,13 +386,6 @@
  "hourly": {
   "issued_utc": "2026-11-17T20:49:39Z",
   "hours": [
-   {
-    "start": "2026-11-18T00:00:00-05:00",
-    "temp_f": 40,
-    "temp_c": 4.44,
-    "precip_chance_pct": 0,
-    "short_forecast": "Partly Cloudy"
-   },
    {
     "start": "2026-11-18T01:00:00-05:00",
     "temp_f": 39,
@@ -713,6 +712,13 @@
     "start": "2026-11-19T23:00:00-05:00",
     "temp_f": 48,
     "temp_c": 8.89,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Clear"
+   },
+   {
+    "start": "2026-11-20T00:00:00-05:00",
+    "temp_f": 47,
+    "temp_c": 8.33,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear"
    }

@@ -11,29 +11,23 @@
   "lon": -87.9044,
   "history": "Same site as the official Milwaukee record"
  },
- "as_of_utc": "2026-11-18T05:07:54Z",
+ "as_of_utc": "2026-11-18T06:08:01Z",
  "now": {
-  "time_utc": "2026-11-18T04:55:00Z",
-  "temp_c": 7,
-  "temp_f": 44.6,
+  "time_utc": "2026-11-18T05:55:00Z",
+  "temp_c": 6,
+  "temp_f": 42.8,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 1,
-  "humidity_pct": 65.63,
-  "wind_kmh": 11.12,
+  "humidity_pct": 70.3,
+  "wind_kmh": 16.67,
   "description": "Clear"
  },
  "today_so_far": {
-  "date_local": "2026-11-17",
-  "readings": 18,
-  "basis": "hourly reports (tenths of a degree)",
-  "approximate": false,
-  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 13.9,
-  "high_f": 57.0,
-  "high_time_utc": "2026-11-17T19:52:00Z",
-  "low_c": 0.6,
-  "low_f": 33.1,
-  "low_time_utc": "2026-11-17T12:52:00Z"
+  "date_local": "2026-11-18",
+  "readings": 0,
+  "basis": "5-minute readings (whole \u00b0C, approximate)",
+  "approximate": true,
+  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two."
  },
  "record": {
   "series": "Milwaukee area (ThreadEx; airport)",
@@ -42,7 +36,7 @@
   "rank_today": true,
   "latest_final": {
    "date": "2026-11-16",
-   "is_yesterday": true,
+   "is_yesterday": false,
    "high_f": 53,
    "low_f": 28,
    "high_rank": {
@@ -80,19 +74,6 @@
     "record": false,
     "phrase": "typical for November 16"
    }
-  },
-  "today_high_so_far": {
-   "value_f": 57,
-   "warm_rank": 27,
-   "cool_rank": 130,
-   "years": 156,
-   "first_year": 1871,
-   "tied_years": [],
-   "standing": "warm",
-   "notable": true,
-   "since": 2023,
-   "record": false,
-   "phrase": "already the 27th warmest November 17 high of 156 since 1871, warmest since 2023"
   },
   "forecast_highs": [
    {
@@ -252,12 +233,12 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-18T04:21:02Z",
+  "issued_utc": "2026-11-18T05:31:24Z",
   "grid": "MKX/89,61",
   "periods": [
    {
-    "name": "Tonight",
-    "start": "2026-11-17T22:00:00-06:00",
+    "name": "Overnight",
+    "start": "2026-11-18T00:00:00-06:00",
     "is_daytime": false,
     "temp_f": 38,
     "temp_c": 3.33,
@@ -384,15 +365,8 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-18T04:21:02Z",
+  "issued_utc": "2026-11-18T04:51:02Z",
   "hours": [
-   {
-    "start": "2026-11-17T23:00:00-06:00",
-    "temp_f": 44,
-    "temp_c": 6.67,
-    "precip_chance_pct": 0,
-    "short_forecast": "Partly Cloudy"
-   },
    {
     "start": "2026-11-18T00:00:00-06:00",
     "temp_f": 43,
@@ -721,6 +695,13 @@
     "temp_c": 9.44,
     "precip_chance_pct": 0,
     "short_forecast": "Clear"
+   },
+   {
+    "start": "2026-11-19T23:00:00-06:00",
+    "temp_f": 48,
+    "temp_c": 8.89,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Clear"
    }
   ]
  },
