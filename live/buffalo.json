@@ -11,33 +11,33 @@
   "lon": -78.736,
   "history": "Same site as the official Buffalo record"
  },
- "as_of_utc": "2026-11-18T14:08:04Z",
+ "as_of_utc": "2026-11-18T15:08:02Z",
  "now": {
-  "time_utc": "2026-11-18T13:55:00Z",
-  "temp_c": 8,
-  "temp_f": 46.4,
+  "time_utc": "2026-11-18T14:40:00Z",
+  "temp_c": 10,
+  "temp_f": 50.0,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 3,
-  "humidity_pct": 70.7,
-  "wind_kmh": 14.83,
-  "description": "Cloudy"
+  "dewpoint_c": 4,
+  "humidity_pct": 66.29,
+  "wind_kmh": null,
+  "description": "Mostly Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-18",
-  "readings": 11,
+  "readings": 12,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 5.6,
-  "high_f": 42.1,
-  "high_time_utc": "2026-11-18T08:54:00Z",
+  "high_c": 7.8,
+  "high_f": 46.0,
+  "high_time_utc": "2026-11-18T13:54:00Z",
   "low_c": 4.4,
   "low_f": 39.9,
   "low_time_utc": "2026-11-18T05:54:00Z",
   "peak_between_reports": {
-   "at_least_f": 45.5,
-   "about_f": 46.4,
-   "time_utc": "2026-11-18T13:50:00Z"
+   "at_least_f": 49.1,
+   "about_f": 50.0,
+   "time_utc": "2026-11-18T14:40:00Z"
   }
  },
  "record": {
@@ -234,12 +234,12 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-18T11:57:20Z",
+  "issued_utc": "2026-11-18T14:57:31Z",
   "grid": "BUF/40,50",
   "periods": [
    {
     "name": "Today",
-    "start": "2026-11-18T07:00:00-05:00",
+    "start": "2026-11-18T10:00:00-05:00",
     "is_daytime": true,
     "temp_f": 54,
     "temp_c": 12.22,
@@ -366,15 +366,8 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-18T11:57:20Z",
+  "issued_utc": "2026-11-18T14:57:31Z",
   "hours": [
-   {
-    "start": "2026-11-18T09:00:00-05:00",
-    "temp_f": 46,
-    "temp_c": 7.78,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Sunny"
-   },
    {
     "start": "2026-11-18T10:00:00-05:00",
     "temp_f": 50,
@@ -701,6 +694,13 @@
     "start": "2026-11-20T08:00:00-05:00",
     "temp_f": 49,
     "temp_c": 9.44,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
+   },
+   {
+    "start": "2026-11-20T09:00:00-05:00",
+    "temp_f": 51,
+    "temp_c": 10.56,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
    }
