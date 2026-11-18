@@ -11,33 +11,33 @@
   "lon": -86.3186,
   "history": "Same station as the official South Bend record (South Bend airport). Also the nearest official city record to Goshen, about 27 miles; a candidate for Goshen's hourly readings (question D2)"
  },
- "as_of_utc": "2026-11-18T15:08:02Z",
+ "as_of_utc": "2026-11-18T16:07:53Z",
  "now": {
-  "time_utc": "2026-11-18T14:35:00Z",
-  "temp_c": 7,
-  "temp_f": 44.6,
+  "time_utc": "2026-11-18T15:55:00Z",
+  "temp_c": 12,
+  "temp_f": 53.6,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 2,
-  "humidity_pct": 70.5,
-  "wind_kmh": 7.42,
+  "dewpoint_c": 3,
+  "humidity_pct": 54.1,
+  "wind_kmh": null,
   "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-18",
-  "readings": 5,
+  "readings": 6,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 3.9,
-  "high_f": 39.0,
-  "high_time_utc": "2026-11-18T13:54:00Z",
+  "high_c": 8.3,
+  "high_f": 46.9,
+  "high_time_utc": "2026-11-18T14:54:00Z",
   "low_c": -1.1,
   "low_f": 30.0,
   "low_time_utc": "2026-11-18T10:54:00Z",
   "peak_between_reports": {
-   "at_least_f": 43.7,
-   "about_f": 44.6,
-   "time_utc": "2026-11-18T14:25:00Z"
+   "at_least_f": 52.7,
+   "about_f": 53.6,
+   "time_utc": "2026-11-18T15:55:00Z"
   },
   "dip_between_reports": {
    "at_most_f": 29.3,
@@ -257,7 +257,7 @@
   "periods": [
    {
     "name": "Today",
-    "start": "2026-11-18T10:00:00-05:00",
+    "start": "2026-11-18T11:00:00-05:00",
     "is_daytime": true,
     "temp_f": 59,
     "temp_c": 15.0,
@@ -386,13 +386,6 @@
  "hourly": {
   "issued_utc": "2026-11-18T14:45:37Z",
   "hours": [
-   {
-    "start": "2026-11-18T10:00:00-05:00",
-    "temp_f": 43,
-    "temp_c": 6.11,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "start": "2026-11-18T11:00:00-05:00",
     "temp_f": 48,
@@ -719,6 +712,13 @@
     "start": "2026-11-20T09:00:00-05:00",
     "temp_f": 45,
     "temp_c": 7.22,
+    "precip_chance_pct": 1,
+    "short_forecast": "Sunny"
+   },
+   {
+    "start": "2026-11-20T10:00:00-05:00",
+    "temp_f": 49,
+    "temp_c": 9.44,
     "precip_chance_pct": 1,
     "short_forecast": "Sunny"
    }
