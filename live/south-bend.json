@@ -11,15 +11,15 @@
   "lon": -86.3186,
   "history": "Same station as the official South Bend record (South Bend airport). Also the nearest official city record to Goshen, about 27 miles; a candidate for Goshen's hourly readings (question D2)"
  },
- "as_of_utc": "2026-11-18T18:07:57Z",
+ "as_of_utc": "2026-11-18T19:08:01Z",
  "now": {
-  "time_utc": "2026-11-18T17:30:00Z",
-  "temp_c": 14,
-  "temp_f": 57.2,
+  "time_utc": "2026-11-18T18:45:00Z",
+  "temp_c": 16,
+  "temp_f": 60.8,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 2,
-  "humidity_pct": 44.21,
-  "wind_kmh": null,
+  "dewpoint_c": 1,
+  "humidity_pct": 36.19,
+  "wind_kmh": 20.38,
   "description": "Clear"
  },
  "today_so_far": {
@@ -35,9 +35,9 @@
   "low_f": 30.0,
   "low_time_utc": "2026-11-18T10:54:00Z",
   "peak_between_reports": {
-   "at_least_f": 58.1,
-   "about_f": 59.0,
-   "time_utc": "2026-11-18T17:15:00Z"
+   "at_least_f": 59.9,
+   "about_f": 60.8,
+   "time_utc": "2026-11-18T18:25:00Z"
   },
   "dip_between_reports": {
    "at_most_f": 29.3,
@@ -181,45 +181,43 @@
    {
     "period": "Sunday",
     "date": "2026-11-22",
-    "high_f": 56,
+    "high_f": 59,
     "would_rank": {
-     "value_f": 56,
-     "warm_rank": 21,
-     "cool_rank": 108,
+     "value_f": 59,
+     "warm_rank": 17,
+     "cool_rank": 113,
      "years": 131,
      "first_year": 1894,
      "tied_years": [
-      1902,
-      1980,
-      2009
+      1955,
+      1979
      ],
      "standing": "warm",
      "notable": true,
      "since": 2012,
      "record": false,
-     "phrase": "21st warmest November 22 high (tied) of 131 since 1894, warmest since 2012"
+     "phrase": "17th warmest November 22 high (tied) of 131 since 1894, warmest since 2012"
     }
    },
    {
     "period": "Monday",
     "date": "2026-11-23",
-    "high_f": 43,
+    "high_f": 44,
     "would_rank": {
-     "value_f": 43,
-     "warm_rank": 66,
-     "cool_rank": 61,
+     "value_f": 44,
+     "warm_rank": 62,
+     "cool_rank": 66,
      "years": 131,
      "first_year": 1894,
      "tied_years": [
-      1910,
-      1914,
-      1946,
-      1975,
-      2021
+      1907,
+      1919,
+      1986,
+      2017
      ],
-     "standing": "cool",
+     "standing": "warm",
      "notable": false,
-     "since": 2021,
+     "since": 2025,
      "record": false,
      "phrase": "typical for November 23"
     }
@@ -252,12 +250,12 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-18T14:45:37Z",
+  "issued_utc": "2026-11-18T18:29:53Z",
   "grid": "IWX/27,64",
   "periods": [
    {
     "name": "This Afternoon",
-    "start": "2026-11-18T12:00:00-05:00",
+    "start": "2026-11-18T14:00:00-05:00",
     "is_daytime": true,
     "temp_f": 59,
     "temp_c": 15.0,
@@ -271,7 +269,7 @@
     "temp_f": 42,
     "temp_c": 5.56,
     "precip_chance_pct": 0,
-    "short_forecast": "Partly Cloudy"
+    "short_forecast": "Mostly Cloudy"
    },
    {
     "name": "Thursday",
@@ -279,17 +277,17 @@
     "is_daytime": true,
     "temp_f": 63,
     "temp_c": 17.22,
-    "precip_chance_pct": 1,
-    "short_forecast": "Sunny"
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Sunny"
    },
    {
     "name": "Thursday Night",
     "start": "2026-11-19T18:00:00-05:00",
     "is_daytime": false,
-    "temp_f": 40,
-    "temp_c": 4.44,
-    "precip_chance_pct": 1,
-    "short_forecast": "Clear"
+    "temp_f": 39,
+    "temp_c": 3.89,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Clear"
    },
    {
     "name": "Friday",
@@ -297,7 +295,7 @@
     "is_daytime": true,
     "temp_f": 65,
     "temp_c": 18.33,
-    "precip_chance_pct": 1,
+    "precip_chance_pct": 0,
     "short_forecast": "Sunny"
    },
    {
@@ -306,8 +304,8 @@
     "is_daytime": false,
     "temp_f": 44,
     "temp_c": 6.67,
-    "precip_chance_pct": 1,
-    "short_forecast": "Mostly Clear"
+    "precip_chance_pct": 0,
+    "short_forecast": "Clear"
    },
    {
     "name": "Saturday",
@@ -315,43 +313,43 @@
     "is_daytime": true,
     "temp_f": 64,
     "temp_c": 17.78,
-    "precip_chance_pct": 11,
-    "short_forecast": "Mostly Sunny"
+    "precip_chance_pct": 4,
+    "short_forecast": "Sunny"
    },
    {
     "name": "Saturday Night",
     "start": "2026-11-21T18:00:00-05:00",
     "is_daytime": false,
-    "temp_f": 47,
-    "temp_c": 8.33,
-    "precip_chance_pct": 38,
-    "short_forecast": "Chance Rain Showers"
+    "temp_f": 50,
+    "temp_c": 10.0,
+    "precip_chance_pct": 27,
+    "short_forecast": "Mostly Cloudy then Chance Rain Showers"
    },
    {
     "name": "Sunday",
     "start": "2026-11-22T06:00:00-05:00",
     "is_daytime": true,
-    "temp_f": 56,
-    "temp_c": 13.33,
-    "precip_chance_pct": 63,
+    "temp_f": 59,
+    "temp_c": 15.0,
+    "precip_chance_pct": 68,
     "short_forecast": "Rain Showers Likely"
    },
    {
     "name": "Sunday Night",
     "start": "2026-11-22T18:00:00-05:00",
     "is_daytime": false,
-    "temp_f": 34,
-    "temp_c": 1.11,
-    "precip_chance_pct": 47,
-    "short_forecast": "Chance Rain Showers then Mostly Cloudy"
+    "temp_f": 36,
+    "temp_c": 2.22,
+    "precip_chance_pct": 68,
+    "short_forecast": "Rain Showers Likely"
    },
    {
     "name": "Monday",
     "start": "2026-11-23T06:00:00-05:00",
     "is_daytime": true,
-    "temp_f": 43,
-    "temp_c": 6.11,
-    "precip_chance_pct": 4,
+    "temp_f": 44,
+    "temp_c": 6.67,
+    "precip_chance_pct": 10,
     "short_forecast": "Partly Sunny"
    },
    {
@@ -360,8 +358,8 @@
     "is_daytime": false,
     "temp_f": 26,
     "temp_c": -3.33,
-    "precip_chance_pct": 3,
-    "short_forecast": "Partly Cloudy"
+    "precip_chance_pct": 5,
+    "short_forecast": "Mostly Cloudy"
    },
    {
     "name": "Tuesday",
@@ -369,30 +367,23 @@
     "is_daytime": true,
     "temp_f": 41,
     "temp_c": 5.0,
-    "precip_chance_pct": 1,
-    "short_forecast": "Mostly Sunny"
+    "precip_chance_pct": 3,
+    "short_forecast": "Partly Sunny"
    },
    {
     "name": "Tuesday Night",
     "start": "2026-11-24T18:00:00-05:00",
     "is_daytime": false,
-    "temp_f": 26,
-    "temp_c": -3.33,
-    "precip_chance_pct": 5,
-    "short_forecast": "Partly Cloudy"
+    "temp_f": 25,
+    "temp_c": -3.89,
+    "precip_chance_pct": 3,
+    "short_forecast": "Mostly Cloudy"
    }
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-18T17:44:57Z",
+  "issued_utc": "2026-11-18T18:29:53Z",
   "hours": [
-   {
-    "start": "2026-11-18T13:00:00-05:00",
-    "temp_f": 58,
-    "temp_c": 14.44,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "start": "2026-11-18T14:00:00-05:00",
     "temp_f": 58,
@@ -719,6 +710,13 @@
     "start": "2026-11-20T12:00:00-05:00",
     "temp_f": 59,
     "temp_c": 15.0,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
+   },
+   {
+    "start": "2026-11-20T13:00:00-05:00",
+    "temp_f": 62,
+    "temp_c": 16.67,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
    }
