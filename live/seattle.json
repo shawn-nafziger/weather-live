@@ -11,7 +11,7 @@
   "lon": -122.3136,
   "history": "Same station as the official Seattle record (Sea-Tac)"
  },
- "as_of_utc": "2026-11-18T02:07:56Z",
+ "as_of_utc": "2026-11-18T02:22:43Z",
  "now": {
   "time_utc": "2026-11-18T00:53:00Z",
   "temp_c": 9,
@@ -82,32 +82,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-17",
-    "high_f": 50,
-    "would_rank": {
-     "value_f": 50,
-     "warm_rank": 40,
-     "cool_rank": 36,
-     "years": 82,
-     "first_year": 1945,
-     "tied_years": [
-      1978,
-      1981,
-      1990,
-      1999,
-      2007,
-      2010,
-      2017
-     ],
-     "standing": "cool",
-     "notable": false,
-     "since": 2024,
-     "record": false,
-     "phrase": "typical for November 17"
-    }
-   },
    {
     "period": "Wednesday",
     "date": "2026-11-18",
@@ -252,6 +226,32 @@
      "record": false,
      "phrase": "typical for November 23"
     }
+   },
+   {
+    "period": "Tuesday",
+    "date": "2026-11-24",
+    "high_f": 51,
+    "would_rank": {
+     "value_f": 51,
+     "warm_rank": 26,
+     "cool_rank": 50,
+     "years": 82,
+     "first_year": 1945,
+     "tied_years": [
+      1965,
+      1972,
+      1992,
+      1999,
+      2002,
+      2009,
+      2016
+     ],
+     "standing": "warm",
+     "notable": false,
+     "since": 2022,
+     "record": false,
+     "phrase": "typical for November 24"
+    }
    }
   ]
  },
@@ -259,15 +259,6 @@
   "issued_utc": "2026-11-17T20:55:52Z",
   "grid": "SEW/124,60",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-17T13:00:00-08:00",
-    "is_daytime": true,
-    "temp_f": 50,
-    "temp_c": 10.0,
-    "precip_chance_pct": 1,
-    "short_forecast": "Sunny"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-17T18:00:00-08:00",
@@ -384,6 +375,15 @@
     "temp_c": 5.0,
     "precip_chance_pct": 47,
     "short_forecast": "Chance Light Rain"
+   },
+   {
+    "name": "Tuesday",
+    "start": "2026-11-24T06:00:00-08:00",
+    "is_daytime": true,
+    "temp_f": 51,
+    "temp_c": 10.56,
+    "precip_chance_pct": 60,
+    "short_forecast": "Light Rain Likely"
    }
   ]
  },

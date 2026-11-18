@@ -11,16 +11,16 @@
   "lon": -115.1634,
   "history": "Same site as the official Las Vegas record"
  },
- "as_of_utc": "2026-11-18T02:07:56Z",
+ "as_of_utc": "2026-11-18T02:22:43Z",
  "now": {
-  "time_utc": "2026-11-18T01:30:00Z",
-  "temp_c": 15,
-  "temp_f": 59.0,
+  "time_utc": "2026-11-18T02:05:00Z",
+  "temp_c": 14,
+  "temp_f": 57.2,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": -8,
-  "humidity_pct": 19.7,
-  "wind_kmh": 0,
-  "description": "Mostly Clear"
+  "dewpoint_c": null,
+  "humidity_pct": null,
+  "wind_kmh": 9.25,
+  "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-17",
@@ -76,6 +76,29 @@
    }
   },
   "forecast_highs": [
+   {
+    "period": "This Afternoon",
+    "date": "2026-11-17",
+    "high_f": 63,
+    "would_rank": {
+     "value_f": 63,
+     "warm_rank": 58,
+     "cool_rank": 29,
+     "years": 90,
+     "first_year": 1937,
+     "tied_years": [
+      1947,
+      1950,
+      1993,
+      2002
+     ],
+     "standing": "cool",
+     "notable": false,
+     "since": 2024,
+     "record": false,
+     "phrase": "typical for November 17"
+    }
+   },
    {
     "period": "Wednesday",
     "date": "2026-11-18",
@@ -209,28 +232,6 @@
      "record": false,
      "phrase": "typical for November 23"
     }
-   },
-   {
-    "period": "Tuesday",
-    "date": "2026-11-24",
-    "high_f": 60,
-    "would_rank": {
-     "value_f": 60,
-     "warm_rank": 66,
-     "cool_rank": 22,
-     "years": 90,
-     "first_year": 1937,
-     "tied_years": [
-      1946,
-      1991,
-      2004
-     ],
-     "standing": "cool",
-     "notable": false,
-     "since": 2013,
-     "record": false,
-     "phrase": "typical for November 24"
-    }
    }
   ]
  },
@@ -238,6 +239,15 @@
   "issued_utc": "2026-11-17T20:57:55Z",
   "grid": "VEF/121,94",
   "periods": [
+   {
+    "name": "This Afternoon",
+    "start": "2026-11-17T13:00:00-08:00",
+    "is_daytime": true,
+    "temp_f": 63,
+    "temp_c": 17.22,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
+   },
    {
     "name": "Tonight",
     "start": "2026-11-17T18:00:00-08:00",
@@ -354,15 +364,6 @@
     "temp_c": 6.11,
     "precip_chance_pct": 1,
     "short_forecast": "Partly Cloudy"
-   },
-   {
-    "name": "Tuesday",
-    "start": "2026-11-24T06:00:00-08:00",
-    "is_daytime": true,
-    "temp_f": 60,
-    "temp_c": 15.56,
-    "precip_chance_pct": 8,
-    "short_forecast": "Mostly Sunny"
    }
   ]
  },
