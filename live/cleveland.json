@@ -11,20 +11,20 @@
   "lon": -81.8519,
   "history": "Same site as the official Cleveland record"
  },
- "as_of_utc": "2026-11-18T22:08:10Z",
+ "as_of_utc": "2026-11-18T23:08:04Z",
  "now": {
-  "time_utc": "2026-11-18T21:55:00Z",
-  "temp_c": 14,
-  "temp_f": 57.2,
+  "time_utc": "2026-11-18T22:45:00Z",
+  "temp_c": 13,
+  "temp_f": 55.4,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": null,
   "humidity_pct": null,
-  "wind_kmh": 5.54,
+  "wind_kmh": 9.25,
   "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-18",
-  "readings": 11,
+  "readings": 12,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -107,27 +107,6 @@
    "phrase": "already the 31st warmest November 18 high (tied) of 155 since 1871, warmest since 2021"
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-18",
-    "high_f": 58,
-    "would_rank": {
-     "value_f": 58,
-     "warm_rank": 34,
-     "cool_rank": 120,
-     "years": 155,
-     "first_year": 1871,
-     "tied_years": [
-      1881,
-      2024
-     ],
-     "standing": "warm",
-     "notable": false,
-     "since": 2024,
-     "record": false,
-     "phrase": "typical for November 18"
-    }
-   },
    {
     "period": "Thursday",
     "date": "2026-11-19",
@@ -265,6 +244,32 @@
      "record": false,
      "phrase": "typical for November 24"
     }
+   },
+   {
+    "period": "Wednesday",
+    "date": "2026-11-25",
+    "high_f": 41,
+    "would_rank": {
+     "value_f": 41,
+     "warm_rank": 85,
+     "cool_rank": 65,
+     "years": 156,
+     "first_year": 1871,
+     "tied_years": [
+      1879,
+      1900,
+      1920,
+      1931,
+      1953,
+      2004,
+      2007
+     ],
+     "standing": "cool",
+     "notable": false,
+     "since": 2014,
+     "record": false,
+     "phrase": "typical for November 25"
+    }
    }
   ]
  },
@@ -272,15 +277,6 @@
   "issued_utc": "2026-11-18T18:31:51Z",
   "grid": "CLE/78,60",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-18T14:00:00-05:00",
-    "is_daytime": true,
-    "temp_f": 58,
-    "temp_c": 14.44,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-18T18:00:00-05:00",
@@ -397,19 +393,21 @@
     "temp_c": -1.11,
     "precip_chance_pct": 4,
     "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "name": "Wednesday",
+    "start": "2026-11-25T06:00:00-05:00",
+    "is_daytime": true,
+    "temp_f": 41,
+    "temp_c": 5.0,
+    "precip_chance_pct": 13,
+    "short_forecast": "Mostly Cloudy"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-18T18:31:51Z",
   "hours": [
-   {
-    "start": "2026-11-18T17:00:00-05:00",
-    "temp_f": 53,
-    "temp_c": 11.67,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "start": "2026-11-18T18:00:00-05:00",
     "temp_f": 48,
@@ -736,6 +734,13 @@
     "start": "2026-11-20T16:00:00-05:00",
     "temp_f": 58,
     "temp_c": 14.44,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
+   },
+   {
+    "start": "2026-11-20T17:00:00-05:00",
+    "temp_f": 55,
+    "temp_c": 12.78,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
    }

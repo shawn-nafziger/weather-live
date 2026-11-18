@@ -11,20 +11,20 @@
   "lon": -94.7306,
   "history": "Same site as the official Kansas City record"
  },
- "as_of_utc": "2026-11-18T22:08:10Z",
+ "as_of_utc": "2026-11-18T23:08:04Z",
  "now": {
-  "time_utc": "2026-11-18T20:53:00Z",
-  "temp_c": 17.8,
-  "temp_f": 64.0,
+  "time_utc": "2026-11-18T21:53:00Z",
+  "temp_c": 17.2,
+  "temp_f": 63.0,
   "precision": "tenths of a degree",
-  "dewpoint_c": 2.8,
-  "humidity_pct": 36.71,
-  "wind_kmh": 29.52,
+  "dewpoint_c": 3.3,
+  "humidity_pct": 39.5,
+  "wind_kmh": 22.32,
   "description": "Mostly Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-18",
-  "readings": 11,
+  "readings": 12,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -105,24 +105,23 @@
    {
     "period": "This Afternoon",
     "date": "2026-11-18",
-    "high_f": 63,
+    "high_f": 64,
     "would_rank": {
-     "value_f": 63,
-     "warm_rank": 31,
-     "cool_rank": 105,
+     "value_f": 64,
+     "warm_rank": 28,
+     "cool_rank": 109,
      "years": 139,
      "first_year": 1888,
      "tied_years": [
-      1922,
-      1923,
-      2012,
-      2023
+      1920,
+      1991,
+      2024
      ],
      "standing": "warm",
-     "notable": false,
+     "notable": true,
      "since": 2025,
      "record": false,
-     "phrase": "typical for November 18"
+     "phrase": "28th warmest November 18 high (tied) of 139 since 1888, warmest since 2025"
     }
    },
    {
@@ -263,17 +262,17 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-18T18:27:15Z",
+  "issued_utc": "2026-11-18T22:06:43Z",
   "grid": "EAX/38,60",
   "periods": [
    {
     "name": "This Afternoon",
-    "start": "2026-11-18T15:00:00-06:00",
+    "start": "2026-11-18T16:00:00-06:00",
     "is_daytime": true,
-    "temp_f": 63,
-    "temp_c": 17.22,
+    "temp_f": 64,
+    "temp_c": 17.78,
     "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
+    "short_forecast": "Mostly Sunny"
    },
    {
     "name": "Tonight",
@@ -395,15 +394,8 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-18T18:27:15Z",
+  "issued_utc": "2026-11-18T22:06:43Z",
   "hours": [
-   {
-    "start": "2026-11-18T16:00:00-06:00",
-    "temp_f": 63,
-    "temp_c": 17.22,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Sunny"
-   },
    {
     "start": "2026-11-18T17:00:00-06:00",
     "temp_f": 61,
@@ -730,6 +722,13 @@
     "start": "2026-11-20T15:00:00-06:00",
     "temp_f": 69,
     "temp_c": 20.56,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
+   },
+   {
+    "start": "2026-11-20T16:00:00-06:00",
+    "temp_f": 68,
+    "temp_c": 20.0,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
    }

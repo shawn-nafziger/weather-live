@@ -11,14 +11,14 @@
   "lon": -76.1919,
   "history": "Same site as the official Norfolk record"
  },
- "as_of_utc": "2026-11-18T22:08:10Z",
+ "as_of_utc": "2026-11-18T23:08:04Z",
  "now": {
-  "time_utc": "2026-11-18T21:20:00Z",
-  "temp_c": 14,
-  "temp_f": 57.2,
+  "time_utc": "2026-11-18T22:45:00Z",
+  "temp_c": 9,
+  "temp_f": 48.2,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 1,
-  "humidity_pct": 41.16,
+  "dewpoint_c": 4,
+  "humidity_pct": 70.89,
   "wind_kmh": 0,
   "description": "Clear"
  },
@@ -87,33 +87,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-18",
-    "high_f": 59,
-    "would_rank": {
-     "value_f": 59,
-     "warm_rank": 81,
-     "cool_rank": 65,
-     "years": 153,
-     "first_year": 1874,
-     "tied_years": [
-      1877,
-      1884,
-      1915,
-      1940,
-      1943,
-      1981,
-      1982,
-      1989
-     ],
-     "standing": "cool",
-     "notable": false,
-     "since": 2025,
-     "record": false,
-     "phrase": "typical for November 18"
-    }
-   },
    {
     "period": "Thursday",
     "date": "2026-11-19",
@@ -250,6 +223,33 @@
      "record": false,
      "phrase": "typical for November 24"
     }
+   },
+   {
+    "period": "Wednesday",
+    "date": "2026-11-25",
+    "high_f": 57,
+    "would_rank": {
+     "value_f": 57,
+     "warm_rank": 66,
+     "cool_rank": 80,
+     "years": 153,
+     "first_year": 1874,
+     "tied_years": [
+      1891,
+      1909,
+      1915,
+      1925,
+      1952,
+      2006,
+      2009,
+      2015
+     ],
+     "standing": "warm",
+     "notable": false,
+     "since": 2025,
+     "record": false,
+     "phrase": "typical for November 25"
+    }
    }
   ]
  },
@@ -257,15 +257,6 @@
   "issued_utc": "2026-11-18T18:38:28Z",
   "grid": "AKQ/93,55",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-18T14:00:00-05:00",
-    "is_daytime": true,
-    "temp_f": 59,
-    "temp_c": 15.0,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-18T18:00:00-05:00",
@@ -382,19 +373,21 @@
     "temp_c": 6.11,
     "precip_chance_pct": 8,
     "short_forecast": "Partly Cloudy"
+   },
+   {
+    "name": "Wednesday",
+    "start": "2026-11-25T06:00:00-05:00",
+    "is_daytime": true,
+    "temp_f": 57,
+    "temp_c": 13.89,
+    "precip_chance_pct": 20,
+    "short_forecast": "Mostly Sunny then Slight Chance Rain Showers"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-18T18:38:28Z",
   "hours": [
-   {
-    "start": "2026-11-18T17:00:00-05:00",
-    "temp_f": 54,
-    "temp_c": 12.22,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "start": "2026-11-18T18:00:00-05:00",
     "temp_f": 52,
@@ -721,6 +714,13 @@
     "start": "2026-11-20T16:00:00-05:00",
     "temp_f": 60,
     "temp_c": 15.56,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Sunny"
+   },
+   {
+    "start": "2026-11-20T17:00:00-05:00",
+    "temp_f": 58,
+    "temp_c": 14.44,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Sunny"
    }

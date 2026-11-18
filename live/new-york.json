@@ -11,20 +11,20 @@
   "lon": -73.9667,
   "history": "Same site as the official New York record"
  },
- "as_of_utc": "2026-11-18T22:08:10Z",
+ "as_of_utc": "2026-11-18T23:08:04Z",
  "now": {
-  "time_utc": "2026-11-18T20:51:00Z",
-  "temp_c": 16.1,
-  "temp_f": 61.0,
+  "time_utc": "2026-11-18T21:51:00Z",
+  "temp_c": 15.6,
+  "temp_f": 60.1,
   "precision": "tenths of a degree",
   "dewpoint_c": -1.7,
-  "humidity_pct": 29.55,
-  "wind_kmh": 7.56,
+  "humidity_pct": 30.51,
+  "wind_kmh": 0,
   "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-18",
-  "readings": 11,
+  "readings": 12,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -99,29 +99,6 @@
    "phrase": "already the 22nd warmest November 18 high (tied) of 158 since 1869, warmest since 2024"
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-18",
-    "high_f": 64,
-    "would_rank": {
-     "value_f": 64,
-     "warm_rank": 18,
-     "cool_rank": 137,
-     "years": 158,
-     "first_year": 1869,
-     "tied_years": [
-      1886,
-      1890,
-      1948,
-      2016
-     ],
-     "standing": "warm",
-     "notable": true,
-     "since": 2024,
-     "record": false,
-     "phrase": "18th warmest November 18 high (tied) of 158 since 1869, warmest since 2024"
-    }
-   },
    {
     "period": "Thursday",
     "date": "2026-11-19",
@@ -256,6 +233,36 @@
      "record": false,
      "phrase": "typical for November 24"
     }
+   },
+   {
+    "period": "Wednesday",
+    "date": "2026-11-25",
+    "high_f": 47,
+    "would_rank": {
+     "value_f": 47,
+     "warm_rank": 78,
+     "cool_rank": 70,
+     "years": 158,
+     "first_year": 1869,
+     "tied_years": [
+      1870,
+      1871,
+      1887,
+      1889,
+      1918,
+      1927,
+      1935,
+      1967,
+      1972,
+      1982,
+      2008
+     ],
+     "standing": "cool",
+     "notable": false,
+     "since": 2023,
+     "record": false,
+     "phrase": "typical for November 25"
+    }
    }
   ]
  },
@@ -263,15 +270,6 @@
   "issued_utc": "2026-11-18T20:06:48Z",
   "grid": "OKX/34,45",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-18T15:00:00-05:00",
-    "is_daytime": true,
-    "temp_f": 64,
-    "temp_c": 17.78,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-18T18:00:00-05:00",
@@ -388,19 +386,21 @@
     "temp_c": 2.22,
     "precip_chance_pct": 2,
     "short_forecast": "Mostly Clear"
+   },
+   {
+    "name": "Wednesday",
+    "start": "2026-11-25T06:00:00-05:00",
+    "is_daytime": true,
+    "temp_f": 47,
+    "temp_c": 8.33,
+    "precip_chance_pct": 7,
+    "short_forecast": "Mostly Sunny"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-18T20:06:48Z",
   "hours": [
-   {
-    "start": "2026-11-18T17:00:00-05:00",
-    "temp_f": 59,
-    "temp_c": 15.0,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "start": "2026-11-18T18:00:00-05:00",
     "temp_f": 58,
@@ -727,6 +727,13 @@
     "start": "2026-11-20T16:00:00-05:00",
     "temp_f": 62,
     "temp_c": 16.67,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
+   },
+   {
+    "start": "2026-11-20T17:00:00-05:00",
+    "temp_f": 60,
+    "temp_c": 15.56,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
    }
