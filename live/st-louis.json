@@ -11,26 +11,26 @@
   "lon": -90.3736,
   "history": "Same site as the official St. Louis record"
  },
- "as_of_utc": "2026-11-18T20:08:04Z",
+ "as_of_utc": "2026-11-18T21:08:11Z",
  "now": {
-  "time_utc": "2026-11-18T19:50:00Z",
-  "temp_c": 18,
-  "temp_f": 64.4,
+  "time_utc": "2026-11-18T20:55:00Z",
+  "temp_c": 19,
+  "temp_f": 66.2,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 4,
-  "humidity_pct": 39.46,
-  "wind_kmh": null,
+  "humidity_pct": 37.06,
+  "wind_kmh": 18.5,
   "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-18",
-  "readings": 8,
+  "readings": 9,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 17.8,
-  "high_f": 64.0,
-  "high_time_utc": "2026-11-18T18:51:00Z",
+  "high_c": 18.3,
+  "high_f": 64.9,
+  "high_time_utc": "2026-11-18T19:51:00Z",
   "low_c": 2.2,
   "low_f": 36.0,
   "low_time_utc": "2026-11-18T10:51:00Z",
@@ -95,6 +95,22 @@
     "record": false,
     "phrase": "typical for November 17"
    }
+  },
+  "today_high_so_far": {
+   "value_f": 65,
+   "warm_rank": 29,
+   "cool_rank": 122,
+   "years": 152,
+   "first_year": 1874,
+   "tied_years": [
+    1890,
+    1899
+   ],
+   "standing": "warm",
+   "notable": true,
+   "since": 2025,
+   "record": false,
+   "phrase": "already the 29th warmest November 18 high (tied) of 152 since 1874, warmest since 2025"
   },
   "forecast_highs": [
    {
@@ -259,7 +275,7 @@
   "periods": [
    {
     "name": "This Afternoon",
-    "start": "2026-11-18T13:00:00-06:00",
+    "start": "2026-11-18T12:00:00-06:00",
     "is_daytime": true,
     "temp_f": 67,
     "temp_c": 19.44,
@@ -388,13 +404,6 @@
  "hourly": {
   "issued_utc": "2026-11-18T18:26:06Z",
   "hours": [
-   {
-    "start": "2026-11-18T14:00:00-06:00",
-    "temp_f": 66,
-    "temp_c": 18.89,
-    "precip_chance_pct": 0,
-    "short_forecast": "Partly Sunny"
-   },
    {
     "start": "2026-11-18T15:00:00-06:00",
     "temp_f": 67,
@@ -721,6 +730,13 @@
     "start": "2026-11-20T13:00:00-06:00",
     "temp_f": 71,
     "temp_c": 21.67,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
+   },
+   {
+    "start": "2026-11-20T14:00:00-06:00",
+    "temp_f": 72,
+    "temp_c": 22.22,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
    }
