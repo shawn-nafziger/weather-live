@@ -11,29 +11,23 @@
   "lon": -85.7365,
   "history": "Same site as the official Louisville record"
  },
- "as_of_utc": "2026-11-18T04:08:08Z",
+ "as_of_utc": "2026-11-18T05:07:54Z",
  "now": {
-  "time_utc": "2026-11-18T03:45:00Z",
-  "temp_c": 7,
-  "temp_f": 44.6,
+  "time_utc": "2026-11-18T04:55:00Z",
+  "temp_c": 6,
+  "temp_f": 42.8,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 2,
-  "humidity_pct": 70.5,
+  "humidity_pct": 75.52,
   "wind_kmh": 0,
   "description": "Clear"
  },
  "today_so_far": {
-  "date_local": "2026-11-17",
-  "readings": 18,
-  "basis": "hourly reports (tenths of a degree)",
-  "approximate": false,
-  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 15.6,
-  "high_f": 60.1,
-  "high_time_utc": "2026-11-17T20:56:00Z",
-  "low_c": 1.7,
-  "low_f": 35.1,
-  "low_time_utc": "2026-11-17T11:56:00Z"
+  "date_local": "2026-11-18",
+  "readings": 0,
+  "basis": "5-minute readings (whole \u00b0C, approximate)",
+  "approximate": true,
+  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two."
  },
  "record": {
   "series": "Louisville area (ThreadEx; airport)",
@@ -42,7 +36,7 @@
   "rank_today": true,
   "latest_final": {
    "date": "2026-11-16",
-   "is_yesterday": true,
+   "is_yesterday": false,
    "high_f": 56,
    "low_f": 34,
    "high_rank": {
@@ -386,13 +380,6 @@
   "issued_utc": "2026-11-18T02:01:14Z",
   "hours": [
    {
-    "start": "2026-11-17T23:00:00-05:00",
-    "temp_f": 40,
-    "temp_c": 4.44,
-    "precip_chance_pct": 0,
-    "short_forecast": "Clear"
-   },
-   {
     "start": "2026-11-18T00:00:00-05:00",
     "temp_f": 38,
     "temp_c": 3.33,
@@ -718,6 +705,13 @@
     "start": "2026-11-19T22:00:00-05:00",
     "temp_f": 47,
     "temp_c": 8.33,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Clear"
+   },
+   {
+    "start": "2026-11-19T23:00:00-05:00",
+    "temp_f": 46,
+    "temp_c": 7.78,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear"
    }

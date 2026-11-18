@@ -11,29 +11,23 @@
   "lon": -86.3186,
   "history": "Same station as the official South Bend record (South Bend airport). Also the nearest official city record to Goshen, about 27 miles; a candidate for Goshen's hourly readings (question D2)"
  },
- "as_of_utc": "2026-11-18T04:08:08Z",
+ "as_of_utc": "2026-11-18T05:07:54Z",
  "now": {
-  "time_utc": "2026-11-18T03:45:00Z",
-  "temp_c": 5,
-  "temp_f": 41.0,
+  "time_utc": "2026-11-18T04:55:00Z",
+  "temp_c": 4,
+  "temp_f": 39.2,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 1,
-  "humidity_pct": 75.35,
-  "wind_kmh": 5.54,
+  "humidity_pct": 80.8,
+  "wind_kmh": 7.42,
   "description": "Clear"
  },
  "today_so_far": {
-  "date_local": "2026-11-17",
-  "readings": 21,
-  "basis": "hourly reports (tenths of a degree)",
-  "approximate": false,
-  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 12.8,
-  "high_f": 55.0,
-  "high_time_utc": "2026-11-17T19:54:00Z",
-  "low_c": -1.1,
-  "low_f": 30.0,
-  "low_time_utc": "2026-11-17T08:54:00Z"
+  "date_local": "2026-11-18",
+  "readings": 0,
+  "basis": "5-minute readings (whole \u00b0C, approximate)",
+  "approximate": true,
+  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two."
  },
  "record": {
   "series": "South Bend area (ThreadEx, South Bend airport)",
@@ -42,7 +36,7 @@
   "rank_today": true,
   "latest_final": {
    "date": "2026-11-16",
-   "is_yesterday": true,
+   "is_yesterday": false,
    "high_f": 53,
    "low_f": 25,
    "high_rank": {
@@ -242,8 +236,8 @@
   "grid": "IWX/27,64",
   "periods": [
    {
-    "name": "Tonight",
-    "start": "2026-11-17T23:00:00-05:00",
+    "name": "Overnight",
+    "start": "2026-11-18T00:00:00-05:00",
     "is_daytime": false,
     "temp_f": 34,
     "temp_c": 1.11,
@@ -372,13 +366,6 @@
  "hourly": {
   "issued_utc": "2026-11-18T01:00:04Z",
   "hours": [
-   {
-    "start": "2026-11-17T23:00:00-05:00",
-    "temp_f": 39,
-    "temp_c": 3.89,
-    "precip_chance_pct": 0,
-    "short_forecast": "Partly Cloudy"
-   },
    {
     "start": "2026-11-18T00:00:00-05:00",
     "temp_f": 39,
@@ -707,6 +694,13 @@
     "temp_c": 9.44,
     "precip_chance_pct": 0,
     "short_forecast": "Clear"
+   },
+   {
+    "start": "2026-11-19T23:00:00-05:00",
+    "temp_f": 48,
+    "temp_c": 8.89,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Clear"
    }
   ]
  },
