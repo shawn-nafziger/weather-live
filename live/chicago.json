@@ -11,33 +11,33 @@
   "lon": -87.9044,
   "history": "Same station as the official Chicago record (ThreadEx, O'Hare since 1980)"
  },
- "as_of_utc": "2026-11-18T16:07:53Z",
+ "as_of_utc": "2026-11-18T17:08:13Z",
  "now": {
-  "time_utc": "2026-11-18T15:55:00Z",
-  "temp_c": 12,
-  "temp_f": 53.6,
+  "time_utc": "2026-11-18T16:55:00Z",
+  "temp_c": 13,
+  "temp_f": 55.4,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 1,
-  "humidity_pct": 46.9,
-  "wind_kmh": 20.38,
+  "humidity_pct": 43.93,
+  "wind_kmh": null,
   "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-18",
-  "readings": 4,
+  "readings": 5,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 9.4,
-  "high_f": 48.9,
-  "high_time_utc": "2026-11-18T14:51:00Z",
+  "high_c": 11.7,
+  "high_f": 53.1,
+  "high_time_utc": "2026-11-18T15:51:00Z",
   "low_c": 5,
   "low_f": 41.0,
   "low_time_utc": "2026-11-18T07:51:00Z",
   "peak_between_reports": {
-   "at_least_f": 52.7,
-   "about_f": 53.6,
-   "time_utc": "2026-11-18T15:40:00Z"
+   "at_least_f": 54.5,
+   "about_f": 55.4,
+   "time_utc": "2026-11-18T16:25:00Z"
   },
   "dip_between_reports": {
    "at_most_f": 38.3,
@@ -97,21 +97,25 @@
    {
     "period": "Today",
     "date": "2026-11-18",
-    "high_f": 59,
+    "high_f": 60,
     "would_rank": {
-     "value_f": 59,
-     "warm_rank": 28,
-     "cool_rank": 127,
+     "value_f": 60,
+     "warm_rank": 23,
+     "cool_rank": 128,
      "years": 155,
      "first_year": 1872,
      "tied_years": [
-      1963
+      1942,
+      1957,
+      1985,
+      1998,
+      2024
      ],
      "standing": "warm",
      "notable": true,
      "since": 2024,
      "record": false,
-     "phrase": "28th warmest November 18 high (tied) of 155 since 1872, warmest since 2024"
+     "phrase": "23rd warmest November 18 high (tied) of 155 since 1872, warmest since 2024"
     }
    },
    {
@@ -249,15 +253,15 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-18T11:26:05Z",
+  "issued_utc": "2026-11-18T16:06:05Z",
   "grid": "LOT/66,77",
   "periods": [
    {
     "name": "Today",
-    "start": "2026-11-18T06:00:00-06:00",
+    "start": "2026-11-18T10:00:00-06:00",
     "is_daytime": true,
-    "temp_f": 59,
-    "temp_c": 15.0,
+    "temp_f": 60,
+    "temp_c": 15.56,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Sunny"
    },
@@ -381,54 +385,47 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-18T15:41:06Z",
+  "issued_utc": "2026-11-18T16:41:08Z",
   "hours": [
    {
-    "start": "2026-11-18T10:00:00-06:00",
-    "temp_f": 51,
-    "temp_c": 10.56,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Sunny"
-   },
-   {
     "start": "2026-11-18T11:00:00-06:00",
-    "temp_f": 54,
-    "temp_c": 12.22,
+    "temp_f": 56,
+    "temp_c": 13.33,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Sunny"
    },
    {
     "start": "2026-11-18T12:00:00-06:00",
-    "temp_f": 57,
-    "temp_c": 13.89,
+    "temp_f": 59,
+    "temp_c": 15.0,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Sunny"
    },
    {
     "start": "2026-11-18T13:00:00-06:00",
-    "temp_f": 58,
-    "temp_c": 14.44,
+    "temp_f": 60,
+    "temp_c": 15.56,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Sunny"
    },
    {
     "start": "2026-11-18T14:00:00-06:00",
-    "temp_f": 59,
-    "temp_c": 15.0,
+    "temp_f": 60,
+    "temp_c": 15.56,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Sunny"
    },
    {
     "start": "2026-11-18T15:00:00-06:00",
-    "temp_f": 59,
-    "temp_c": 15.0,
+    "temp_f": 60,
+    "temp_c": 15.56,
     "precip_chance_pct": 0,
     "short_forecast": "Partly Sunny"
    },
    {
     "start": "2026-11-18T16:00:00-06:00",
-    "temp_f": 58,
-    "temp_c": 14.44,
+    "temp_f": 59,
+    "temp_c": 15.0,
     "precip_chance_pct": 0,
     "short_forecast": "Partly Sunny"
    },
@@ -716,6 +713,13 @@
     "start": "2026-11-20T09:00:00-06:00",
     "temp_f": 52,
     "temp_c": 11.11,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
+   },
+   {
+    "start": "2026-11-20T10:00:00-06:00",
+    "temp_f": 56,
+    "temp_c": 13.33,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
    }
