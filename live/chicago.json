@@ -11,34 +11,23 @@
   "lon": -87.9044,
   "history": "Same station as the official Chicago record (ThreadEx, O'Hare since 1980)"
  },
- "as_of_utc": "2026-11-19T05:07:50Z",
+ "as_of_utc": "2026-11-19T06:07:52Z",
  "now": {
-  "time_utc": "2026-11-19T04:45:00Z",
-  "temp_c": 12,
-  "temp_f": 53.6,
+  "time_utc": "2026-11-19T05:30:00Z",
+  "temp_c": 11,
+  "temp_f": 51.8,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 1,
-  "humidity_pct": 46.9,
-  "wind_kmh": 18.5,
+  "humidity_pct": 50.11,
+  "wind_kmh": 16.67,
   "description": "Clear"
  },
  "today_so_far": {
-  "date_local": "2026-11-18",
-  "readings": 16,
-  "basis": "hourly reports (tenths of a degree)",
-  "approximate": false,
-  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 16.1,
-  "high_f": 61.0,
-  "high_time_utc": "2026-11-18T20:51:00Z",
-  "low_c": 5,
-  "low_f": 41.0,
-  "low_time_utc": "2026-11-18T07:51:00Z",
-  "dip_between_reports": {
-   "at_most_f": 38.3,
-   "about_f": 37.4,
-   "time_utc": "2026-11-18T12:35:00Z"
-  }
+  "date_local": "2026-11-19",
+  "readings": 0,
+  "basis": "5-minute readings (whole \u00b0C, approximate)",
+  "approximate": true,
+  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two."
  },
  "record": {
   "series": "Chicago area (ThreadEx, O'Hare since 1980)",
@@ -47,7 +36,7 @@
   "rank_today": true,
   "latest_final": {
    "date": "2026-11-17",
-   "is_yesterday": true,
+   "is_yesterday": false,
    "high_f": 56,
    "low_f": 37,
    "high_rank": {
@@ -87,26 +76,6 @@
     "record": false,
     "phrase": "typical for November 17"
    }
-  },
-  "today_high_so_far": {
-   "value_f": 61,
-   "warm_rank": 17,
-   "cool_rank": 133,
-   "years": 155,
-   "first_year": 1872,
-   "tied_years": [
-    1943,
-    1948,
-    1952,
-    1976,
-    2003,
-    2004
-   ],
-   "standing": "warm",
-   "notable": true,
-   "since": 2016,
-   "record": false,
-   "phrase": "already the 17th warmest November 18 high (tied) of 155 since 1872, warmest since 2016"
   },
   "forecast_highs": [
    {
@@ -420,13 +389,6 @@
  "hourly": {
   "issued_utc": "2026-11-19T03:01:06Z",
   "hours": [
-   {
-    "start": "2026-11-18T23:00:00-06:00",
-    "temp_f": 50,
-    "temp_c": 10.0,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "start": "2026-11-19T00:00:00-06:00",
     "temp_f": 50,
@@ -753,6 +715,13 @@
     "start": "2026-11-20T22:00:00-06:00",
     "temp_f": 56,
     "temp_c": 13.33,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Clear"
+   },
+   {
+    "start": "2026-11-20T23:00:00-06:00",
+    "temp_f": 55,
+    "temp_c": 12.78,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear"
    }
