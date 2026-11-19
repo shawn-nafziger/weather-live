@@ -11,33 +11,33 @@
   "lon": -71.4277,
   "history": "Same site as the official Providence record"
  },
- "as_of_utc": "2026-11-19T16:08:05Z",
+ "as_of_utc": "2026-11-19T17:07:56Z",
  "now": {
-  "time_utc": "2026-11-19T15:15:00Z",
-  "temp_c": 15,
-  "temp_f": 59.0,
+  "time_utc": "2026-11-19T16:40:00Z",
+  "temp_c": 17,
+  "temp_f": 62.6,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": null,
   "humidity_pct": null,
-  "wind_kmh": 5.54,
+  "wind_kmh": 0,
   "description": ""
  },
  "today_so_far": {
   "date_local": "2026-11-19",
-  "readings": 8,
+  "readings": 9,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 13.9,
-  "high_f": 57.0,
-  "high_time_utc": "2026-11-19T14:51:00Z",
+  "high_c": 16.1,
+  "high_f": 61.0,
+  "high_time_utc": "2026-11-19T15:51:00Z",
   "low_c": 1.7,
   "low_f": 35.1,
   "low_time_utc": "2026-11-19T07:51:00Z",
   "peak_between_reports": {
-   "at_least_f": 58.1,
-   "about_f": 59.0,
-   "time_utc": "2026-11-19T15:15:00Z"
+   "at_least_f": 61.7,
+   "about_f": 62.6,
+   "time_utc": "2026-11-19T16:25:00Z"
   }
  },
  "record": {
@@ -82,6 +82,22 @@
     "record": false,
     "phrase": "typical for November 18"
    }
+  },
+  "today_high_so_far": {
+   "value_f": 61,
+   "warm_rank": 16,
+   "cool_rank": 106,
+   "years": 123,
+   "first_year": 1904,
+   "tied_years": [
+    1926,
+    1931
+   ],
+   "standing": "warm",
+   "notable": true,
+   "since": 2017,
+   "record": false,
+   "phrase": "already the 16th warmest November 19 high (tied) of 123 since 1904, warmest since 2017"
   },
   "forecast_highs": [
    {
@@ -240,7 +256,7 @@
   "periods": [
    {
     "name": "Today",
-    "start": "2026-11-19T10:00:00-05:00",
+    "start": "2026-11-19T11:00:00-05:00",
     "is_daytime": true,
     "temp_f": 67,
     "temp_c": 19.44,
@@ -369,13 +385,6 @@
  "hourly": {
   "issued_utc": "2026-11-19T15:11:39Z",
   "hours": [
-   {
-    "start": "2026-11-19T11:00:00-05:00",
-    "temp_f": 64,
-    "temp_c": 17.78,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "start": "2026-11-19T12:00:00-05:00",
     "temp_f": 66,
@@ -702,6 +711,13 @@
     "start": "2026-11-21T10:00:00-05:00",
     "temp_f": 53,
     "temp_c": 11.67,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
+   },
+   {
+    "start": "2026-11-21T11:00:00-05:00",
+    "temp_f": 56,
+    "temp_c": 13.33,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
    }

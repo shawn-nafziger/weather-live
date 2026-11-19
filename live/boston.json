@@ -11,33 +11,33 @@
   "lon": -71.0106,
   "history": "Same site as the official Boston record"
  },
- "as_of_utc": "2026-11-19T16:08:05Z",
+ "as_of_utc": "2026-11-19T17:07:56Z",
  "now": {
-  "time_utc": "2026-11-19T15:25:00Z",
-  "temp_c": 14,
-  "temp_f": 57.2,
+  "time_utc": "2026-11-19T16:40:00Z",
+  "temp_c": 16,
+  "temp_f": 60.8,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": null,
-  "humidity_pct": null,
+  "dewpoint_c": -1,
+  "humidity_pct": 31.3,
   "wind_kmh": 7.42,
   "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-19",
-  "readings": 8,
+  "readings": 9,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 12.8,
-  "high_f": 55.0,
-  "high_time_utc": "2026-11-19T14:54:00Z",
+  "high_c": 15,
+  "high_f": 59.0,
+  "high_time_utc": "2026-11-19T15:54:00Z",
   "low_c": 7.8,
   "low_f": 46.0,
   "low_time_utc": "2026-11-19T09:54:00Z",
   "peak_between_reports": {
-   "at_least_f": 56.3,
-   "about_f": 57.2,
-   "time_utc": "2026-11-19T15:25:00Z"
+   "at_least_f": 59.9,
+   "about_f": 60.8,
+   "time_utc": "2026-11-19T16:25:00Z"
   }
  },
  "record": {
@@ -86,6 +86,24 @@
     "record": false,
     "phrase": "19th warmest November 18 low (tied) of 155 since 1872, warmest since 2021"
    }
+  },
+  "today_high_so_far": {
+   "value_f": 59,
+   "warm_rank": 27,
+   "cool_rank": 125,
+   "years": 155,
+   "first_year": 1872,
+   "tied_years": [
+    1915,
+    1926,
+    1966,
+    1999
+   ],
+   "standing": "warm",
+   "notable": true,
+   "since": 2017,
+   "record": false,
+   "phrase": "already the 27th warmest November 19 high (tied) of 155 since 1872, warmest since 2017"
   },
   "forecast_highs": [
    {
@@ -248,12 +266,12 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-19T10:29:36Z",
+  "issued_utc": "2026-11-19T15:11:39Z",
   "grid": "BOX/73,101",
   "periods": [
    {
     "name": "Today",
-    "start": "2026-11-19T06:00:00-05:00",
+    "start": "2026-11-19T10:00:00-05:00",
     "is_daytime": true,
     "temp_f": 67,
     "temp_c": 19.44,
@@ -382,13 +400,6 @@
  "hourly": {
   "issued_utc": "2026-11-19T15:11:39Z",
   "hours": [
-   {
-    "start": "2026-11-19T11:00:00-05:00",
-    "temp_f": 61,
-    "temp_c": 16.11,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "start": "2026-11-19T12:00:00-05:00",
     "temp_f": 64,
@@ -715,6 +726,13 @@
     "start": "2026-11-21T10:00:00-05:00",
     "temp_f": 55,
     "temp_c": 12.78,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
+   },
+   {
+    "start": "2026-11-21T11:00:00-05:00",
+    "temp_f": 57,
+    "temp_c": 13.89,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
    }
