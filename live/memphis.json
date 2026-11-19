@@ -11,20 +11,20 @@
   "lon": -89.9863,
   "history": "Same site as the official Memphis record"
  },
- "as_of_utc": "2026-11-19T00:08:10Z",
+ "as_of_utc": "2026-11-19T01:08:05Z",
  "now": {
-  "time_utc": "2026-11-18T23:50:00Z",
-  "temp_c": 17,
-  "temp_f": 62.6,
+  "time_utc": "2026-11-19T00:45:00Z",
+  "temp_c": 14,
+  "temp_f": 57.2,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 2,
-  "humidity_pct": 36.48,
-  "wind_kmh": 9.25,
-  "description": ""
+  "dewpoint_c": 3,
+  "humidity_pct": 47.47,
+  "wind_kmh": 5.54,
+  "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-18",
-  "readings": 13,
+  "readings": 14,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -88,30 +88,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-18",
-    "high_f": 69,
-    "would_rank": {
-     "value_f": 69,
-     "warm_rank": 37,
-     "cool_rank": 110,
-     "years": 151,
-     "first_year": 1875,
-     "tied_years": [
-      1940,
-      1952,
-      1986,
-      1998,
-      2021
-     ],
-     "standing": "warm",
-     "notable": false,
-     "since": 2025,
-     "record": false,
-     "phrase": "typical for November 18"
-    }
-   },
    {
     "period": "Thursday",
     "date": "2026-11-19",
@@ -257,22 +233,36 @@
      "record": false,
      "phrase": "typical for November 24"
     }
+   },
+   {
+    "period": "Wednesday",
+    "date": "2026-11-25",
+    "high_f": 51,
+    "would_rank": {
+     "value_f": 51,
+     "warm_rank": 104,
+     "cool_rank": 44,
+     "years": 151,
+     "first_year": 1875,
+     "tied_years": [
+      1876,
+      1924,
+      1996,
+      2004
+     ],
+     "standing": "cool",
+     "notable": false,
+     "since": 2014,
+     "record": false,
+     "phrase": "typical for November 25"
+    }
    }
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-18T21:05:45Z",
+  "issued_utc": "2026-11-18T23:15:43Z",
   "grid": "MEG/45,63",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-18T15:00:00-06:00",
-    "is_daytime": true,
-    "temp_f": 69,
-    "temp_c": 20.56,
-    "precip_chance_pct": 0,
-    "short_forecast": "Partly Sunny"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-18T18:00:00-06:00",
@@ -389,19 +379,21 @@
     "temp_c": 2.22,
     "precip_chance_pct": 10,
     "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "name": "Wednesday",
+    "start": "2026-11-25T06:00:00-06:00",
+    "is_daytime": true,
+    "temp_f": 51,
+    "temp_c": 10.56,
+    "precip_chance_pct": 12,
+    "short_forecast": "Mostly Sunny"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-18T23:15:43Z",
   "hours": [
-   {
-    "start": "2026-11-18T18:00:00-06:00",
-    "temp_f": 60,
-    "temp_c": 15.56,
-    "precip_chance_pct": 0,
-    "short_forecast": "Partly Cloudy"
-   },
    {
     "start": "2026-11-18T19:00:00-06:00",
     "temp_f": 56,
@@ -730,6 +722,13 @@
     "temp_c": 20.0,
     "precip_chance_pct": 1,
     "short_forecast": "Mostly Sunny"
+   },
+   {
+    "start": "2026-11-20T18:00:00-06:00",
+    "temp_f": 66,
+    "temp_c": 18.89,
+    "precip_chance_pct": 3,
+    "short_forecast": "Partly Cloudy"
    }
   ]
  },
