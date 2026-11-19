@@ -11,9 +11,9 @@
   "lon": -93.2289,
   "history": "Same site as the official Minneapolis record"
  },
- "as_of_utc": "2026-11-19T12:08:12Z",
+ "as_of_utc": "2026-11-19T13:07:54Z",
  "now": {
-  "time_utc": "2026-11-19T11:20:00Z",
+  "time_utc": "2026-11-19T12:35:00Z",
   "temp_c": 9,
   "temp_f": 48.2,
   "precision": "nearest whole \u00b0C",
@@ -24,7 +24,7 @@
  },
  "today_so_far": {
   "date_local": "2026-11-19",
-  "readings": 4,
+  "readings": 5,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -99,7 +99,7 @@
   },
   "forecast_highs": [
    {
-    "period": "Thursday",
+    "period": "Today",
     "date": "2026-11-19",
     "high_f": 56,
     "would_rank": {
@@ -258,20 +258,11 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-19T11:21:35Z",
+  "issued_utc": "2026-11-19T12:21:42Z",
   "grid": "MPX/110,68",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-19T05:00:00-06:00",
-    "is_daytime": false,
-    "temp_f": 45,
-    "temp_c": 7.22,
-    "precip_chance_pct": 0,
-    "short_forecast": "Clear"
-   },
-   {
-    "name": "Thursday",
+    "name": "Today",
     "start": "2026-11-19T06:00:00-06:00",
     "is_daytime": true,
     "temp_f": 56,
@@ -280,7 +271,7 @@
     "short_forecast": "Sunny"
    },
    {
-    "name": "Thursday Night",
+    "name": "Tonight",
     "start": "2026-11-19T18:00:00-06:00",
     "is_daytime": false,
     "temp_f": 38,
@@ -386,30 +377,32 @@
     "temp_c": 2.22,
     "precip_chance_pct": 11,
     "short_forecast": "Partly Sunny"
+   },
+   {
+    "name": "Wednesday Night",
+    "start": "2026-11-25T18:00:00-06:00",
+    "is_daytime": false,
+    "temp_f": 21,
+    "temp_c": -6.11,
+    "precip_chance_pct": 3,
+    "short_forecast": "Partly Cloudy"
    }
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-19T11:21:35Z",
+  "issued_utc": "2026-11-19T12:21:42Z",
   "hours": [
    {
-    "start": "2026-11-19T06:00:00-06:00",
-    "temp_f": 47,
-    "temp_c": 8.33,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
-   {
     "start": "2026-11-19T07:00:00-06:00",
-    "temp_f": 46,
-    "temp_c": 7.78,
+    "temp_f": 45,
+    "temp_c": 7.22,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
    },
    {
     "start": "2026-11-19T08:00:00-06:00",
-    "temp_f": 47,
-    "temp_c": 8.33,
+    "temp_f": 46,
+    "temp_c": 7.78,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
    },
@@ -727,6 +720,13 @@
     "temp_c": 13.89,
     "precip_chance_pct": 18,
     "short_forecast": "Slight Chance Light Rain"
+   },
+   {
+    "start": "2026-11-21T06:00:00-06:00",
+    "temp_f": 56,
+    "temp_c": 13.33,
+    "precip_chance_pct": 63,
+    "short_forecast": "Light Rain Likely"
    }
   ]
  },
