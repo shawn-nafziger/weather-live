@@ -11,29 +11,23 @@
   "lon": -120.0756,
   "history": "Provisional: Santa Ynez Airport. The long record (CACHUMA LAKE) is a different, once-a-day station"
  },
- "as_of_utc": "2026-11-19T07:08:02Z",
+ "as_of_utc": "2026-11-19T08:07:57Z",
  "now": {
-  "time_utc": "2026-11-19T06:35:00Z",
-  "temp_c": 12,
-  "temp_f": 53.6,
+  "time_utc": "2026-11-19T07:35:00Z",
+  "temp_c": 11,
+  "temp_f": 51.8,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 12,
+  "dewpoint_c": 11,
   "humidity_pct": 100,
-  "wind_kmh": 16.56,
-  "description": "Light Rain and Fog/Mist"
+  "wind_kmh": 18.36,
+  "description": "Rain and Fog/Mist"
  },
  "today_so_far": {
-  "date_local": "2026-11-18",
-  "readings": 55,
+  "date_local": "2026-11-19",
+  "readings": 0,
   "basis": "5-minute readings (whole \u00b0C, approximate)",
   "approximate": true,
-  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 18,
-  "high_f": 64.4,
-  "high_time_utc": "2026-11-18T19:35:00Z",
-  "low_c": 2,
-  "low_f": 35.6,
-  "low_time_utc": "2026-11-18T12:35:00Z"
+  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two."
  },
  "record": {
   "series": "CACHUMA LAKE (COOP 041253)",
@@ -42,7 +36,7 @@
   "rank_today": false,
   "latest_final": {
    "date": "2026-11-18",
-   "is_yesterday": false,
+   "is_yesterday": true,
    "high_f": 64,
    "low_f": 25,
    "high_rank": {
@@ -82,8 +76,8 @@
   "grid": "LOX/93,81",
   "periods": [
    {
-    "name": "Tonight",
-    "start": "2026-11-18T23:00:00-08:00",
+    "name": "Overnight",
+    "start": "2026-11-19T00:00:00-08:00",
     "is_daytime": false,
     "temp_f": 47,
     "temp_c": 8.33,
@@ -212,13 +206,6 @@
  "hourly": {
   "issued_utc": "2026-11-19T06:26:34Z",
   "hours": [
-   {
-    "start": "2026-11-18T23:00:00-08:00",
-    "temp_f": 55,
-    "temp_c": 12.78,
-    "precip_chance_pct": 100,
-    "short_forecast": "Rain"
-   },
    {
     "start": "2026-11-19T00:00:00-08:00",
     "temp_f": 55,
@@ -545,6 +532,13 @@
     "start": "2026-11-20T22:00:00-08:00",
     "temp_f": 42,
     "temp_c": 5.56,
+    "precip_chance_pct": 0,
+    "short_forecast": "Partly Cloudy"
+   },
+   {
+    "start": "2026-11-20T23:00:00-08:00",
+    "temp_f": 40,
+    "temp_c": 4.44,
     "precip_chance_pct": 0,
     "short_forecast": "Partly Cloudy"
    }
