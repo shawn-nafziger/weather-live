@@ -11,20 +11,20 @@
   "lon": -85.7365,
   "history": "Same site as the official Louisville record"
  },
- "as_of_utc": "2026-11-19T11:07:52Z",
+ "as_of_utc": "2026-11-19T12:08:12Z",
  "now": {
-  "time_utc": "2026-11-19T10:15:00Z",
-  "temp_c": 4,
-  "temp_f": 39.2,
+  "time_utc": "2026-11-19T11:55:00Z",
+  "temp_c": 2,
+  "temp_f": 35.6,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 0,
-  "humidity_pct": 75.17,
-  "wind_kmh": 9.25,
-  "description": "Clear"
+  "humidity_pct": 86.6,
+  "wind_kmh": 0,
+  "description": ""
  },
  "today_so_far": {
   "date_local": "2026-11-19",
-  "readings": 4,
+  "readings": 5,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -38,6 +38,11 @@
    "at_least_f": 41.9,
    "about_f": 42.8,
    "time_utc": "2026-11-19T05:30:00Z"
+  },
+  "dip_between_reports": {
+   "at_most_f": 36.5,
+   "about_f": 35.6,
+   "time_utc": "2026-11-19T11:20:00Z"
   }
  },
  "record": {
@@ -46,54 +51,51 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-17",
-   "is_yesterday": false,
-   "high_f": 61,
-   "low_f": 34,
+   "date": "2026-11-18",
+   "is_yesterday": true,
+   "high_f": 66,
+   "low_f": 36,
    "high_rank": {
-    "value_f": 61,
-    "warm_rank": 51,
-    "cool_rank": 101,
+    "value_f": 66,
+    "warm_rank": 31,
+    "cool_rank": 122,
     "years": 155,
     "first_year": 1872,
     "tied_years": [
-     1948,
-     1981,
-     2007,
-     2012
+     1913,
+     1963,
+     2015
     ],
     "standing": "warm",
-    "notable": false,
+    "notable": true,
     "since": 2024,
     "record": false,
-    "phrase": "typical for November 17"
+    "phrase": "31st warmest November 18 high (tied) of 155 since 1872, warmest since 2024"
    },
    "low_rank": {
-    "value_f": 34,
-    "warm_rank": 92,
-    "cool_rank": 56,
+    "value_f": 36,
+    "warm_rank": 86,
+    "cool_rank": 64,
     "years": 155,
     "first_year": 1872,
     "tied_years": [
-     1889,
-     1905,
-     1936,
-     1940,
-     1947,
-     1949,
-     2017,
-     2025
+     1877,
+     1945,
+     1953,
+     1981,
+     1987,
+     2021
     ],
     "standing": "cool",
     "notable": false,
-    "since": 2025,
+    "since": 2022,
     "record": false,
-    "phrase": "typical for November 17"
+    "phrase": "typical for November 18"
    }
   },
   "forecast_highs": [
    {
-    "period": "Thursday",
+    "period": "Today",
     "date": "2026-11-19",
     "high_f": 68,
     "would_rank": {
@@ -256,16 +258,7 @@
   "grid": "LMK/51,74",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-19T01:00:00-05:00",
-    "is_daytime": false,
-    "temp_f": 36,
-    "temp_c": 2.22,
-    "precip_chance_pct": 0,
-    "short_forecast": "Clear"
-   },
-   {
-    "name": "Thursday",
+    "name": "Today",
     "start": "2026-11-19T06:00:00-05:00",
     "is_daytime": true,
     "temp_f": 68,
@@ -274,7 +267,7 @@
     "short_forecast": "Sunny"
    },
    {
-    "name": "Thursday Night",
+    "name": "Tonight",
     "start": "2026-11-19T18:00:00-05:00",
     "is_daytime": false,
     "temp_f": 40,
@@ -380,19 +373,21 @@
     "temp_c": 7.78,
     "precip_chance_pct": 25,
     "short_forecast": "Chance Rain And Snow Showers"
+   },
+   {
+    "name": "Wednesday Night",
+    "start": "2026-11-25T18:00:00-05:00",
+    "is_daytime": false,
+    "temp_f": 32,
+    "temp_c": 0.0,
+    "precip_chance_pct": 23,
+    "short_forecast": "Slight Chance Rain Showers"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-19T06:26:14Z",
   "hours": [
-   {
-    "start": "2026-11-19T06:00:00-05:00",
-    "temp_f": 36,
-    "temp_c": 2.22,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "start": "2026-11-19T07:00:00-05:00",
     "temp_f": 36,
@@ -721,6 +716,13 @@
     "temp_c": 5.56,
     "precip_chance_pct": 0,
     "short_forecast": "Clear"
+   },
+   {
+    "start": "2026-11-21T06:00:00-05:00",
+    "temp_f": 41,
+    "temp_c": 5.0,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
    }
   ]
  },

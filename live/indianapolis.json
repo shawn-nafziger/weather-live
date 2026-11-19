@@ -11,38 +11,33 @@
   "lon": -86.2816,
   "history": "Same site as the official Indianapolis record"
  },
- "as_of_utc": "2026-11-19T11:07:52Z",
+ "as_of_utc": "2026-11-19T12:08:12Z",
  "now": {
-  "time_utc": "2026-11-19T10:15:00Z",
-  "temp_c": 5,
-  "temp_f": 41.0,
+  "time_utc": "2026-11-19T11:55:00Z",
+  "temp_c": 4,
+  "temp_f": 39.2,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": -2,
-  "humidity_pct": 60.56,
-  "wind_kmh": 9.25,
+  "humidity_pct": 64.95,
+  "wind_kmh": 7.42,
   "description": ""
  },
  "today_so_far": {
   "date_local": "2026-11-19",
-  "readings": 4,
+  "readings": 5,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
   "high_c": 6.1,
   "high_f": 43.0,
   "high_time_utc": "2026-11-19T06:54:00Z",
-  "low_c": 5.6,
-  "low_f": 42.1,
-  "low_time_utc": "2026-11-19T09:54:00Z",
+  "low_c": 4.4,
+  "low_f": 39.9,
+  "low_time_utc": "2026-11-19T10:54:00Z",
   "peak_between_reports": {
    "at_least_f": 47.3,
    "about_f": 48.2,
    "time_utc": "2026-11-19T05:30:00Z"
-  },
-  "dip_between_reports": {
-   "at_most_f": 40.1,
-   "about_f": 39.2,
-   "time_utc": "2026-11-19T09:35:00Z"
   }
  },
  "record": {
@@ -51,52 +46,56 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-17",
-   "is_yesterday": false,
-   "high_f": 57,
-   "low_f": 32,
+   "date": "2026-11-18",
+   "is_yesterday": true,
+   "high_f": 64,
+   "low_f": 38,
    "high_rank": {
-    "value_f": 57,
-    "warm_rank": 45,
-    "cool_rank": 109,
+    "value_f": 64,
+    "warm_rank": 17,
+    "cool_rank": 135,
     "years": 156,
     "first_year": 1871,
     "tied_years": [
-     1915,
-     1936,
-     2003
+     1904,
+     1913,
+     1921,
+     2004,
+     2024
+    ],
+    "standing": "warm",
+    "notable": true,
+    "since": 2024,
+    "record": false,
+    "phrase": "17th warmest November 18 high (tied) of 156 since 1871, warmest since 2024"
+   },
+   "low_rank": {
+    "value_f": 38,
+    "warm_rank": 46,
+    "cool_rank": 102,
+    "years": 156,
+    "first_year": 1871,
+    "tied_years": [
+     1882,
+     1905,
+     1906,
+     1907,
+     1918,
+     1923,
+     1929,
+     1957,
+     1994
     ],
     "standing": "warm",
     "notable": false,
-    "since": 2024,
-    "record": false,
-    "phrase": "typical for November 17"
-   },
-   "low_rank": {
-    "value_f": 32,
-    "warm_rank": 85,
-    "cool_rank": 65,
-    "years": 156,
-    "first_year": 1871,
-    "tied_years": [
-     1887,
-     1900,
-     1911,
-     1936,
-     1980,
-     1990,
-     1995
-    ],
-    "standing": "cool",
-    "notable": false,
     "since": 2025,
     "record": false,
-    "phrase": "typical for November 17"
+    "phrase": "typical for November 18"
    }
   },
   "forecast_highs": [
    {
-    "period": "Thursday",
+    "period": "Today",
     "date": "2026-11-19",
     "high_f": 65,
     "would_rank": {
@@ -252,20 +251,11 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-19T10:15:21Z",
+  "issued_utc": "2026-11-19T11:15:19Z",
   "grid": "IND/54,67",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-19T05:00:00-05:00",
-    "is_daytime": false,
-    "temp_f": 38,
-    "temp_c": 3.33,
-    "precip_chance_pct": 0,
-    "short_forecast": "Partly Cloudy"
-   },
-   {
-    "name": "Thursday",
+    "name": "Today",
     "start": "2026-11-19T06:00:00-05:00",
     "is_daytime": true,
     "temp_f": 65,
@@ -274,7 +264,7 @@
     "short_forecast": "Mostly Sunny"
    },
    {
-    "name": "Thursday Night",
+    "name": "Tonight",
     "start": "2026-11-19T18:00:00-05:00",
     "is_daytime": false,
     "temp_f": 41,
@@ -380,19 +370,21 @@
     "temp_c": 5.0,
     "precip_chance_pct": 24,
     "short_forecast": "Slight Chance Rain And Snow"
+   },
+   {
+    "name": "Wednesday Night",
+    "start": "2026-11-25T18:00:00-05:00",
+    "is_daytime": false,
+    "temp_f": 28,
+    "temp_c": -2.22,
+    "precip_chance_pct": 24,
+    "short_forecast": "Slight Chance Rain And Snow"
    }
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-19T10:15:21Z",
+  "issued_utc": "2026-11-19T11:15:19Z",
   "hours": [
-   {
-    "start": "2026-11-19T06:00:00-05:00",
-    "temp_f": 39,
-    "temp_c": 3.89,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Sunny"
-   },
    {
     "start": "2026-11-19T07:00:00-05:00",
     "temp_f": 40,
@@ -721,6 +713,13 @@
     "temp_c": 6.11,
     "precip_chance_pct": 0,
     "short_forecast": "Clear"
+   },
+   {
+    "start": "2026-11-21T06:00:00-05:00",
+    "temp_f": 43,
+    "temp_c": 6.11,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
    }
   ]
  },

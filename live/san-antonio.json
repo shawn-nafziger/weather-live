@@ -11,16 +11,16 @@
   "lon": -98.4636,
   "history": "Same site as the official San Antonio record"
  },
- "as_of_utc": "2026-11-19T11:07:52Z",
+ "as_of_utc": "2026-11-19T12:08:12Z",
  "now": {
-  "time_utc": "2026-11-19T10:15:00Z",
+  "time_utc": "2026-11-19T11:20:00Z",
   "temp_c": 14,
   "temp_f": 57.2,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 13,
   "humidity_pct": 93.7,
-  "wind_kmh": 0,
-  "description": "Fog/Mist"
+  "wind_kmh": 7.42,
+  "description": "Fog"
  },
  "today_so_far": {
   "date_local": "2026-11-19",
@@ -41,50 +41,56 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-17",
-   "is_yesterday": false,
-   "high_f": 67,
-   "low_f": 43,
+   "date": "2026-11-18",
+   "is_yesterday": true,
+   "high_f": 71,
+   "low_f": 44,
    "high_rank": {
-    "value_f": 67,
-    "warm_rank": 97,
-    "cool_rank": 46,
-    "years": 142,
-    "first_year": 1885,
-    "tied_years": [],
-    "standing": "cool",
-    "notable": false,
-    "since": 2022,
-    "record": false,
-    "phrase": "typical for November 17"
-   },
-   "low_rank": {
-    "value_f": 43,
-    "warm_rank": 100,
-    "cool_rank": 34,
+    "value_f": 71,
+    "warm_rank": 76,
+    "cool_rank": 63,
     "years": 142,
     "first_year": 1885,
     "tied_years": [
-     1901,
-     1903,
-     1907,
-     1935,
-     1946,
-     1983,
-     1997,
-     2000,
-     2010
+     1922,
+     1936,
+     1956,
+     2011
     ],
     "standing": "cool",
     "notable": false,
-    "since": 2019,
+    "since": 2023,
     "record": false,
-    "phrase": "typical for November 17"
+    "phrase": "typical for November 18"
+   },
+   "low_rank": {
+    "value_f": 44,
+    "warm_rank": 97,
+    "cool_rank": 36,
+    "years": 142,
+    "first_year": 1885,
+    "tied_years": [
+     1893,
+     1907,
+     1946,
+     1958,
+     1962,
+     2005,
+     2006,
+     2011,
+     2012,
+     2019
+    ],
+    "standing": "cool",
+    "notable": false,
+    "since": 2020,
+    "record": false,
+    "phrase": "typical for November 18"
    }
   },
   "forecast_highs": [
    {
-    "period": "Thursday",
+    "period": "Today",
     "date": "2026-11-19",
     "high_f": 73,
     "would_rank": {
@@ -262,29 +268,20 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-19T09:44:40Z",
+  "issued_utc": "2026-11-19T11:42:20Z",
   "grid": "EWX/128,59",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-19T04:00:00-06:00",
-    "is_daytime": false,
-    "temp_f": 52,
-    "temp_c": 11.11,
-    "precip_chance_pct": 0,
-    "short_forecast": "Areas Of Fog"
-   },
-   {
-    "name": "Thursday",
+    "name": "Today",
     "start": "2026-11-19T06:00:00-06:00",
     "is_daytime": true,
     "temp_f": 73,
     "temp_c": 22.78,
     "precip_chance_pct": 0,
-    "short_forecast": "Patchy Fog then Partly Sunny"
+    "short_forecast": "Patchy Fog then Mostly Cloudy"
    },
    {
-    "name": "Thursday Night",
+    "name": "Tonight",
     "start": "2026-11-19T18:00:00-06:00",
     "is_daytime": false,
     "temp_f": 53,
@@ -390,30 +387,32 @@
     "temp_c": 14.44,
     "precip_chance_pct": 1,
     "short_forecast": "Mostly Sunny"
+   },
+   {
+    "name": "Wednesday Night",
+    "start": "2026-11-25T18:00:00-06:00",
+    "is_daytime": false,
+    "temp_f": 43,
+    "temp_c": 6.11,
+    "precip_chance_pct": 0,
+    "short_forecast": "Partly Cloudy"
    }
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-19T10:42:38Z",
+  "issued_utc": "2026-11-19T11:42:20Z",
   "hours": [
    {
-    "start": "2026-11-19T05:00:00-06:00",
-    "temp_f": 52,
-    "temp_c": 11.11,
-    "precip_chance_pct": 0,
-    "short_forecast": "Areas Of Fog"
-   },
-   {
     "start": "2026-11-19T06:00:00-06:00",
-    "temp_f": 52,
-    "temp_c": 11.11,
+    "temp_f": 54,
+    "temp_c": 12.22,
     "precip_chance_pct": 0,
     "short_forecast": "Patchy Fog"
    },
    {
     "start": "2026-11-19T07:00:00-06:00",
-    "temp_f": 53,
-    "temp_c": 11.67,
+    "temp_f": 54,
+    "temp_c": 12.22,
     "precip_chance_pct": 0,
     "short_forecast": "Patchy Fog"
    },
@@ -729,6 +728,13 @@
     "start": "2026-11-21T04:00:00-06:00",
     "temp_f": 56,
     "temp_c": 13.33,
+    "precip_chance_pct": 0,
+    "short_forecast": "Partly Cloudy"
+   },
+   {
+    "start": "2026-11-21T05:00:00-06:00",
+    "temp_f": 55,
+    "temp_c": 12.78,
     "precip_chance_pct": 0,
     "short_forecast": "Partly Cloudy"
    }
