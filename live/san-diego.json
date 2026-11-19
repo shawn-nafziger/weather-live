@@ -11,9 +11,9 @@
   "lon": -117.1831,
   "history": "Same site as the official San Diego record"
  },
- "as_of_utc": "2026-11-19T02:07:57Z",
+ "as_of_utc": "2026-11-19T03:07:59Z",
  "now": {
-  "time_utc": "2026-11-19T01:40:00Z",
+  "time_utc": "2026-11-19T02:40:00Z",
   "temp_c": 18,
   "temp_f": 64.4,
   "precision": "nearest whole \u00b0C",
@@ -24,7 +24,7 @@
  },
  "today_so_far": {
   "date_local": "2026-11-18",
-  "readings": 10,
+  "readings": 11,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -97,36 +97,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-18",
-    "high_f": 70,
-    "would_rank": {
-     "value_f": 70,
-     "warm_rank": 54,
-     "cool_rank": 89,
-     "years": 153,
-     "first_year": 1874,
-     "tied_years": [
-      1876,
-      1890,
-      1898,
-      1901,
-      1966,
-      1969,
-      1983,
-      1992,
-      2001,
-      2006,
-      2023
-     ],
-     "standing": "warm",
-     "notable": false,
-     "since": 2023,
-     "record": false,
-     "phrase": "typical for November 18"
-    }
-   },
    {
     "period": "Thursday",
     "date": "2026-11-19",
@@ -302,6 +272,33 @@
      "record": false,
      "phrase": "typical for November 24"
     }
+   },
+   {
+    "period": "Wednesday",
+    "date": "2026-11-25",
+    "high_f": 71,
+    "would_rank": {
+     "value_f": 71,
+     "warm_rank": 43,
+     "cool_rank": 103,
+     "years": 153,
+     "first_year": 1874,
+     "tied_years": [
+      1891,
+      1912,
+      1928,
+      1939,
+      1943,
+      1997,
+      1999,
+      2025
+     ],
+     "standing": "warm",
+     "notable": false,
+     "since": 2025,
+     "record": false,
+     "phrase": "typical for November 25"
+    }
    }
   ]
  },
@@ -309,15 +306,6 @@
   "issued_utc": "2026-11-18T21:04:31Z",
   "grid": "SGX/56,15",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-18T13:00:00-08:00",
-    "is_daytime": true,
-    "temp_f": 70,
-    "temp_c": 21.11,
-    "precip_chance_pct": 1,
-    "short_forecast": "Sunny"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-18T18:00:00-08:00",
@@ -434,19 +422,21 @@
     "temp_c": 12.22,
     "precip_chance_pct": 28,
     "short_forecast": "Chance Rain Showers"
+   },
+   {
+    "name": "Wednesday",
+    "start": "2026-11-25T06:00:00-08:00",
+    "is_daytime": true,
+    "temp_f": 71,
+    "temp_c": 21.67,
+    "precip_chance_pct": 28,
+    "short_forecast": "Chance Rain Showers"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-18T21:04:31Z",
   "hours": [
-   {
-    "start": "2026-11-18T18:00:00-08:00",
-    "temp_f": 65,
-    "temp_c": 18.33,
-    "precip_chance_pct": 1,
-    "short_forecast": "Partly Cloudy"
-   },
    {
     "start": "2026-11-18T19:00:00-08:00",
     "temp_f": 64,
@@ -775,6 +765,13 @@
     "temp_c": 17.78,
     "precip_chance_pct": 2,
     "short_forecast": "Sunny"
+   },
+   {
+    "start": "2026-11-20T18:00:00-08:00",
+    "temp_f": 62,
+    "temp_c": 16.67,
+    "precip_chance_pct": 2,
+    "short_forecast": "Mostly Clear"
    }
   ]
  },
