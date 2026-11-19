@@ -11,15 +11,15 @@
   "lon": -87.9044,
   "history": "Same station as the official Chicago record (ThreadEx, O'Hare since 1980)"
  },
- "as_of_utc": "2026-11-19T22:08:08Z",
+ "as_of_utc": "2026-11-19T23:08:07Z",
  "now": {
-  "time_utc": "2026-11-19T21:00:00Z",
-  "temp_c": 19,
-  "temp_f": 66.2,
+  "time_utc": "2026-11-19T22:30:00Z",
+  "temp_c": 17,
+  "temp_f": 62.6,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 6,
-  "humidity_pct": 42.6,
-  "wind_kmh": 24.08,
+  "humidity_pct": 48.31,
+  "wind_kmh": 12.96,
   "description": "Clear"
  },
  "today_so_far": {
@@ -112,39 +112,43 @@
    {
     "period": "This Afternoon",
     "date": "2026-11-19",
-    "high_f": 65,
+    "high_f": 66,
     "would_rank": {
-     "value_f": 65,
-     "warm_rank": 10,
-     "cool_rank": 145,
+     "value_f": 66,
+     "warm_rank": 8,
+     "cool_rank": 146,
      "years": 155,
      "first_year": 1872,
      "tied_years": [
-      1975
+      1904,
+      2020
      ],
      "standing": "warm",
      "notable": true,
      "since": 2020,
      "record": false,
-     "phrase": "10th warmest November 19 high (tied) of 155 since 1872, warmest since 2020"
+     "phrase": "8th warmest November 19 high (tied) of 155 since 1872, warmest since 2020"
     }
    },
    {
     "period": "Friday",
     "date": "2026-11-20",
-    "high_f": 67,
+    "high_f": 68,
     "would_rank": {
-     "value_f": 67,
-     "warm_rank": 3,
+     "value_f": 68,
+     "warm_rank": 1,
      "cool_rank": 153,
      "years": 155,
      "first_year": 1872,
-     "tied_years": [],
+     "tied_years": [
+      1913,
+      1930
+     ],
      "standing": "warm",
      "notable": true,
      "since": 1930,
-     "record": false,
-     "phrase": "3rd warmest November 20 high of 155 since 1872, warmest since 1930"
+     "record": true,
+     "phrase": "ties the record for warmest November 20 high on record (155 years since 1872)"
     }
    },
    {
@@ -272,15 +276,15 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-19T18:40:46Z",
+  "issued_utc": "2026-11-19T22:11:15Z",
   "grid": "LOT/66,77",
   "periods": [
    {
     "name": "This Afternoon",
-    "start": "2026-11-19T13:00:00-06:00",
+    "start": "2026-11-19T16:00:00-06:00",
     "is_daytime": true,
-    "temp_f": 65,
-    "temp_c": 18.33,
+    "temp_f": 66,
+    "temp_c": 18.89,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
    },
@@ -288,8 +292,8 @@
     "name": "Tonight",
     "start": "2026-11-19T18:00:00-06:00",
     "is_daytime": false,
-    "temp_f": 43,
-    "temp_c": 6.11,
+    "temp_f": 47,
+    "temp_c": 8.33,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear"
    },
@@ -297,8 +301,8 @@
     "name": "Friday",
     "start": "2026-11-20T06:00:00-06:00",
     "is_daytime": true,
-    "temp_f": 67,
-    "temp_c": 19.44,
+    "temp_f": 68,
+    "temp_c": 20.0,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Sunny"
    },
@@ -406,13 +410,6 @@
  "hourly": {
   "issued_utc": "2026-11-19T18:40:46Z",
   "hours": [
-   {
-    "start": "2026-11-19T16:00:00-06:00",
-    "temp_f": 63,
-    "temp_c": 17.22,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "start": "2026-11-19T17:00:00-06:00",
     "temp_f": 61,
@@ -739,6 +736,13 @@
     "start": "2026-11-21T15:00:00-06:00",
     "temp_f": 67,
     "temp_c": 19.44,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Sunny"
+   },
+   {
+    "start": "2026-11-21T16:00:00-06:00",
+    "temp_f": 65,
+    "temp_c": 18.33,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Sunny"
    }
