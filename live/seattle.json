@@ -11,20 +11,20 @@
   "lon": -122.3136,
   "history": "Same station as the official Seattle record (Sea-Tac)"
  },
- "as_of_utc": "2026-11-19T04:08:07Z",
+ "as_of_utc": "2026-11-19T05:07:50Z",
  "now": {
-  "time_utc": "2026-11-19T03:45:00Z",
-  "temp_c": 9,
-  "temp_f": 48.2,
+  "time_utc": "2026-11-19T04:45:00Z",
+  "temp_c": 8,
+  "temp_f": 46.4,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 1,
-  "humidity_pct": 57.28,
-  "wind_kmh": null,
+  "dewpoint_c": 3,
+  "humidity_pct": 70.7,
+  "wind_kmh": 12.96,
   "description": "Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-18",
-  "readings": 17,
+  "readings": 18,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -262,17 +262,17 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-18T18:27:07Z",
+  "issued_utc": "2026-11-19T04:06:16Z",
   "grid": "SEW/124,60",
   "periods": [
    {
     "name": "Tonight",
-    "start": "2026-11-18T18:00:00-08:00",
+    "start": "2026-11-18T20:00:00-08:00",
     "is_daytime": false,
     "temp_f": 38,
     "temp_c": 3.33,
-    "precip_chance_pct": 41,
-    "short_forecast": "Chance Light Rain"
+    "precip_chance_pct": 29,
+    "short_forecast": "Slight Chance Light Rain then Mostly Cloudy"
    },
    {
     "name": "Thursday",
@@ -281,7 +281,7 @@
     "temp_f": 49,
     "temp_c": 9.44,
     "precip_chance_pct": 29,
-    "short_forecast": "Chance Light Rain then Mostly Sunny"
+    "short_forecast": "Mostly Sunny"
    },
    {
     "name": "Thursday Night",
@@ -317,7 +317,7 @@
     "temp_f": 49,
     "temp_c": 9.44,
     "precip_chance_pct": 36,
-    "short_forecast": "Patchy Fog then Chance Light Rain"
+    "short_forecast": "Light Rain Likely"
    },
    {
     "name": "Saturday Night",
@@ -326,7 +326,7 @@
     "temp_f": 38,
     "temp_c": 3.33,
     "precip_chance_pct": 37,
-    "short_forecast": "Chance Light Rain"
+    "short_forecast": "Light Rain Likely"
    },
    {
     "name": "Sunday",
@@ -389,26 +389,19 @@
     "temp_f": 53,
     "temp_c": 11.67,
     "precip_chance_pct": 75,
-    "short_forecast": "Light Rain"
+    "short_forecast": "Chance Light Rain"
    }
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-18T18:27:07Z",
+  "issued_utc": "2026-11-19T04:06:16Z",
   "hours": [
-   {
-    "start": "2026-11-18T20:00:00-08:00",
-    "temp_f": 43,
-    "temp_c": 6.11,
-    "precip_chance_pct": 29,
-    "short_forecast": "Chance Light Rain"
-   },
    {
     "start": "2026-11-18T21:00:00-08:00",
     "temp_f": 43,
     "temp_c": 6.11,
     "precip_chance_pct": 27,
-    "short_forecast": "Chance Light Rain"
+    "short_forecast": "Cloudy"
    },
    {
     "start": "2026-11-18T22:00:00-08:00",
@@ -422,7 +415,7 @@
     "temp_f": 42,
     "temp_c": 5.56,
     "precip_chance_pct": 13,
-    "short_forecast": "Mostly Cloudy"
+    "short_forecast": "Slight Chance Light Rain"
    },
    {
     "start": "2026-11-19T00:00:00-08:00",
@@ -443,14 +436,14 @@
     "temp_f": 41,
     "temp_c": 5.0,
     "precip_chance_pct": 21,
-    "short_forecast": "Slight Chance Light Rain"
+    "short_forecast": "Mostly Cloudy"
    },
    {
     "start": "2026-11-19T03:00:00-08:00",
     "temp_f": 40,
     "temp_c": 4.44,
     "precip_chance_pct": 28,
-    "short_forecast": "Chance Light Rain"
+    "short_forecast": "Mostly Cloudy"
    },
    {
     "start": "2026-11-19T04:00:00-08:00",
@@ -478,14 +471,14 @@
     "temp_f": 39,
     "temp_c": 3.89,
     "precip_chance_pct": 29,
-    "short_forecast": "Chance Light Rain"
+    "short_forecast": "Mostly Cloudy"
    },
    {
     "start": "2026-11-19T08:00:00-08:00",
     "temp_f": 39,
     "temp_c": 3.89,
     "precip_chance_pct": 25,
-    "short_forecast": "Chance Light Rain"
+    "short_forecast": "Mostly Cloudy"
    },
    {
     "start": "2026-11-19T09:00:00-08:00",
@@ -729,6 +722,13 @@
     "start": "2026-11-20T19:00:00-08:00",
     "temp_f": 42,
     "temp_c": 5.56,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "start": "2026-11-20T20:00:00-08:00",
+    "temp_f": 41,
+    "temp_c": 5.0,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Cloudy"
    }

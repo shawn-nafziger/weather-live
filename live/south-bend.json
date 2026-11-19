@@ -11,34 +11,23 @@
   "lon": -86.3186,
   "history": "Same station as the official South Bend record (South Bend airport). Also the nearest official city record to Goshen, about 27 miles; a candidate for Goshen's hourly readings (question D2)"
  },
- "as_of_utc": "2026-11-19T04:08:07Z",
+ "as_of_utc": "2026-11-19T05:07:50Z",
  "now": {
-  "time_utc": "2026-11-19T03:55:00Z",
-  "temp_c": 8,
-  "temp_f": 46.4,
+  "time_utc": "2026-11-19T04:45:00Z",
+  "temp_c": 9,
+  "temp_f": 48.2,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": -1,
-  "humidity_pct": 53.02,
-  "wind_kmh": 11.12,
+  "humidity_pct": 49.55,
+  "wind_kmh": 14.83,
   "description": "Clear"
  },
  "today_so_far": {
-  "date_local": "2026-11-18",
-  "readings": 17,
-  "basis": "hourly reports (tenths of a degree)",
-  "approximate": false,
-  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 16.1,
-  "high_f": 61.0,
-  "high_time_utc": "2026-11-18T18:54:00Z",
-  "low_c": -1.1,
-  "low_f": 30.0,
-  "low_time_utc": "2026-11-18T10:54:00Z",
-  "dip_between_reports": {
-   "at_most_f": 29.3,
-   "about_f": 28.4,
-   "time_utc": "2026-11-18T12:20:00Z"
-  }
+  "date_local": "2026-11-19",
+  "readings": 0,
+  "basis": "5-minute readings (whole \u00b0C, approximate)",
+  "approximate": true,
+  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two."
  },
  "record": {
   "series": "South Bend area (ThreadEx, South Bend airport)",
@@ -47,7 +36,7 @@
   "rank_today": true,
   "latest_final": {
    "date": "2026-11-17",
-   "is_yesterday": true,
+   "is_yesterday": false,
    "high_f": 55,
    "low_f": 29,
    "high_rank": {
@@ -87,23 +76,6 @@
     "record": false,
     "phrase": "typical for November 17"
    }
-  },
-  "today_high_so_far": {
-   "value_f": 61,
-   "warm_rank": 21,
-   "cool_rank": 107,
-   "years": 130,
-   "first_year": 1895,
-   "tied_years": [
-    1948,
-    2003,
-    2004
-   ],
-   "standing": "warm",
-   "notable": true,
-   "since": 2016,
-   "record": false,
-   "phrase": "already the 21st warmest November 18 high (tied) of 130 since 1895, warmest since 2016"
   },
   "forecast_highs": [
    {
@@ -265,8 +237,8 @@
   "grid": "IWX/27,64",
   "periods": [
    {
-    "name": "Tonight",
-    "start": "2026-11-18T23:00:00-05:00",
+    "name": "Overnight",
+    "start": "2026-11-19T00:00:00-05:00",
     "is_daytime": false,
     "temp_f": 43,
     "temp_c": 6.11,
@@ -395,13 +367,6 @@
  "hourly": {
   "issued_utc": "2026-11-19T02:45:09Z",
   "hours": [
-   {
-    "start": "2026-11-18T23:00:00-05:00",
-    "temp_f": 47,
-    "temp_c": 8.33,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "start": "2026-11-19T00:00:00-05:00",
     "temp_f": 46,
@@ -728,6 +693,13 @@
     "start": "2026-11-20T22:00:00-05:00",
     "temp_f": 50,
     "temp_c": 10.0,
+    "precip_chance_pct": 0,
+    "short_forecast": "Clear"
+   },
+   {
+    "start": "2026-11-20T23:00:00-05:00",
+    "temp_f": 49,
+    "temp_c": 9.44,
     "precip_chance_pct": 0,
     "short_forecast": "Clear"
    }

@@ -11,29 +11,23 @@
   "lon": -81.3241,
   "history": "Same site as the official Orlando record"
  },
- "as_of_utc": "2026-11-19T04:08:07Z",
+ "as_of_utc": "2026-11-19T05:07:50Z",
  "now": {
-  "time_utc": "2026-11-19T02:53:00Z",
+  "time_utc": "2026-11-19T04:41:00Z",
   "temp_c": 21,
   "temp_f": 69.8,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 19,
   "humidity_pct": 88.35,
-  "wind_kmh": 14.76,
-  "description": ""
+  "wind_kmh": 18.36,
+  "description": "Light Rain and Fog/Mist"
  },
  "today_so_far": {
-  "date_local": "2026-11-18",
-  "readings": 25,
+  "date_local": "2026-11-19",
+  "readings": 0,
   "basis": "5-minute readings (whole \u00b0C, approximate)",
   "approximate": true,
-  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 24,
-  "high_f": 75.2,
-  "high_time_utc": "2026-11-18T16:53:00Z",
-  "low_c": 18,
-  "low_f": 64.4,
-  "low_time_utc": "2026-11-18T05:53:00Z"
+  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two."
  },
  "record": {
   "series": "Orlando area (ThreadEx; airport)",
@@ -42,7 +36,7 @@
   "rank_today": true,
   "latest_final": {
    "date": "2026-11-17",
-   "is_yesterday": true,
+   "is_yesterday": false,
    "high_f": 69,
    "low_f": 63,
    "high_rank": {
@@ -85,25 +79,27 @@
    {
     "period": "Thursday",
     "date": "2026-11-19",
-    "high_f": 76,
+    "high_f": 75,
     "would_rank": {
-     "value_f": 76,
-     "warm_rank": 87,
-     "cool_rank": 38,
+     "value_f": 75,
+     "warm_rank": 94,
+     "cool_rank": 29,
      "years": 131,
      "first_year": 1893,
      "tied_years": [
-      1896,
-      1924,
-      1926,
-      1944,
-      1995,
-      2020,
-      2022
+      1914,
+      1920,
+      1936,
+      1939,
+      1943,
+      1946,
+      1990,
+      2001,
+      2003
      ],
      "standing": "cool",
      "notable": false,
-     "since": 2022,
+     "since": 2019,
      "record": false,
      "phrase": "typical for November 19"
     }
@@ -140,21 +136,22 @@
    {
     "period": "Saturday",
     "date": "2026-11-21",
-    "high_f": 79,
+    "high_f": 78,
     "would_rank": {
-     "value_f": 79,
-     "warm_rank": 53,
-     "cool_rank": 72,
+     "value_f": 78,
+     "warm_rank": 60,
+     "cool_rank": 64,
      "years": 131,
      "first_year": 1893,
      "tied_years": [
-      1947,
-      1949,
-      1958,
-      1990,
-      1999,
-      2013,
-      2019
+      1899,
+      1908,
+      1924,
+      1943,
+      1967,
+      1986,
+      1989,
+      2022
      ],
      "standing": "warm",
      "notable": false,
@@ -220,21 +217,19 @@
    {
     "period": "Tuesday",
     "date": "2026-11-24",
-    "high_f": 79,
+    "high_f": 78,
     "would_rank": {
-     "value_f": 79,
-     "warm_rank": 56,
-     "cool_rank": 69,
+     "value_f": 78,
+     "warm_rank": 63,
+     "cool_rank": 64,
      "years": 131,
      "first_year": 1893,
      "tied_years": [
-      1895,
-      1902,
-      1903,
-      1918,
-      1920,
-      2000,
-      2005
+      1905,
+      1950,
+      1963,
+      1995,
+      1999
      ],
      "standing": "warm",
      "notable": false,
@@ -283,25 +278,25 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-18T23:55:58Z",
+  "issued_utc": "2026-11-19T04:56:04Z",
   "grid": "MLB/29,63",
   "periods": [
    {
-    "name": "Tonight",
-    "start": "2026-11-18T19:00:00-05:00",
+    "name": "Overnight",
+    "start": "2026-11-19T00:00:00-05:00",
     "is_daytime": false,
     "temp_f": 68,
     "temp_c": 20.0,
-    "precip_chance_pct": 84,
+    "precip_chance_pct": 92,
     "short_forecast": "Showers And Thunderstorms"
    },
    {
     "name": "Thursday",
     "start": "2026-11-19T06:00:00-05:00",
     "is_daytime": true,
-    "temp_f": 76,
-    "temp_c": 24.44,
-    "precip_chance_pct": 85,
+    "temp_f": 75,
+    "temp_c": 23.89,
+    "precip_chance_pct": 93,
     "short_forecast": "Showers And Thunderstorms"
    },
    {
@@ -310,8 +305,8 @@
     "is_daytime": false,
     "temp_f": 69,
     "temp_c": 20.56,
-    "precip_chance_pct": 63,
-    "short_forecast": "Chance Showers And Thunderstorms"
+    "precip_chance_pct": 71,
+    "short_forecast": "Showers And Thunderstorms Likely"
    },
    {
     "name": "Friday",
@@ -319,34 +314,34 @@
     "is_daytime": true,
     "temp_f": 76,
     "temp_c": 24.44,
-    "precip_chance_pct": 82,
+    "precip_chance_pct": 78,
     "short_forecast": "Showers And Thunderstorms"
    },
    {
     "name": "Friday Night",
     "start": "2026-11-20T18:00:00-05:00",
     "is_daytime": false,
-    "temp_f": 68,
-    "temp_c": 20.0,
-    "precip_chance_pct": 65,
-    "short_forecast": "Rain Showers Likely"
+    "temp_f": 67,
+    "temp_c": 19.44,
+    "precip_chance_pct": 52,
+    "short_forecast": "Chance Rain Showers"
    },
    {
     "name": "Saturday",
     "start": "2026-11-21T06:00:00-05:00",
     "is_daytime": true,
-    "temp_f": 79,
-    "temp_c": 26.11,
-    "precip_chance_pct": 38,
+    "temp_f": 78,
+    "temp_c": 25.56,
+    "precip_chance_pct": 49,
     "short_forecast": "Chance Rain Showers"
    },
    {
     "name": "Saturday Night",
     "start": "2026-11-21T18:00:00-05:00",
     "is_daytime": false,
-    "temp_f": 65,
-    "temp_c": 18.33,
-    "precip_chance_pct": 33,
+    "temp_f": 64,
+    "temp_c": 17.78,
+    "precip_chance_pct": 40,
     "short_forecast": "Chance Rain Showers then Partly Cloudy"
    },
    {
@@ -355,17 +350,17 @@
     "is_daytime": true,
     "temp_f": 79,
     "temp_c": 26.11,
-    "precip_chance_pct": 14,
+    "precip_chance_pct": 10,
     "short_forecast": "Mostly Sunny"
    },
    {
     "name": "Sunday Night",
     "start": "2026-11-22T18:00:00-05:00",
     "is_daytime": false,
-    "temp_f": 63,
-    "temp_c": 17.22,
-    "precip_chance_pct": 14,
-    "short_forecast": "Mostly Clear"
+    "temp_f": 62,
+    "temp_c": 16.67,
+    "precip_chance_pct": 10,
+    "short_forecast": "Partly Cloudy"
    },
    {
     "name": "Monday",
@@ -373,8 +368,8 @@
     "is_daytime": true,
     "temp_f": 78,
     "temp_c": 25.56,
-    "precip_chance_pct": 8,
-    "short_forecast": "Mostly Sunny"
+    "precip_chance_pct": 6,
+    "short_forecast": "Partly Sunny"
    },
    {
     "name": "Monday Night",
@@ -382,25 +377,25 @@
     "is_daytime": false,
     "temp_f": 63,
     "temp_c": 17.22,
-    "precip_chance_pct": 9,
-    "short_forecast": "Partly Cloudy"
+    "precip_chance_pct": 12,
+    "short_forecast": "Mostly Cloudy"
    },
    {
     "name": "Tuesday",
     "start": "2026-11-24T06:00:00-05:00",
     "is_daytime": true,
-    "temp_f": 79,
-    "temp_c": 26.11,
-    "precip_chance_pct": 15,
-    "short_forecast": "Mostly Sunny then Slight Chance Rain Showers"
+    "temp_f": 78,
+    "temp_c": 25.56,
+    "precip_chance_pct": 24,
+    "short_forecast": "Partly Sunny then Slight Chance Rain Showers"
    },
    {
     "name": "Tuesday Night",
     "start": "2026-11-24T18:00:00-05:00",
     "is_daytime": false,
-    "temp_f": 65,
-    "temp_c": 18.33,
-    "precip_chance_pct": 20,
+    "temp_f": 64,
+    "temp_c": 17.78,
+    "precip_chance_pct": 24,
     "short_forecast": "Slight Chance Rain Showers"
    },
    {
@@ -409,21 +404,14 @@
     "is_daytime": true,
     "temp_f": 78,
     "temp_c": 25.56,
-    "precip_chance_pct": 39,
+    "precip_chance_pct": 35,
     "short_forecast": "Chance Rain Showers"
    }
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-19T03:29:55Z",
+  "issued_utc": "2026-11-19T04:56:04Z",
   "hours": [
-   {
-    "start": "2026-11-18T23:00:00-05:00",
-    "temp_f": 68,
-    "temp_c": 20.0,
-    "precip_chance_pct": 73,
-    "short_forecast": "Showers And Thunderstorms Likely"
-   },
    {
     "start": "2026-11-19T00:00:00-05:00",
     "temp_f": 68,
@@ -748,6 +736,13 @@
    },
    {
     "start": "2026-11-20T22:00:00-05:00",
+    "temp_f": 70,
+    "temp_c": 21.11,
+    "precip_chance_pct": 52,
+    "short_forecast": "Chance Rain Showers"
+   },
+   {
+    "start": "2026-11-20T23:00:00-05:00",
     "temp_f": 70,
     "temp_c": 21.11,
     "precip_chance_pct": 52,

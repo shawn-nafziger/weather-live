@@ -11,29 +11,23 @@
   "lon": -85.7365,
   "history": "Same site as the official Louisville record"
  },
- "as_of_utc": "2026-11-19T04:08:07Z",
+ "as_of_utc": "2026-11-19T05:07:50Z",
  "now": {
-  "time_utc": "2026-11-19T03:55:00Z",
-  "temp_c": 7,
-  "temp_f": 44.6,
+  "time_utc": "2026-11-19T04:45:00Z",
+  "temp_c": 8,
+  "temp_f": 46.4,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 1,
-  "humidity_pct": 65.63,
-  "wind_kmh": 0,
+  "humidity_pct": 61.3,
+  "wind_kmh": 9.25,
   "description": "Clear"
  },
  "today_so_far": {
-  "date_local": "2026-11-18",
-  "readings": 17,
-  "basis": "hourly reports (tenths of a degree)",
-  "approximate": false,
-  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 18.9,
-  "high_f": 66.0,
-  "high_time_utc": "2026-11-18T19:56:00Z",
-  "low_c": 3.3,
-  "low_f": 37.9,
-  "low_time_utc": "2026-11-18T07:56:00Z"
+  "date_local": "2026-11-19",
+  "readings": 0,
+  "basis": "5-minute readings (whole \u00b0C, approximate)",
+  "approximate": true,
+  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two."
  },
  "record": {
   "series": "Louisville area (ThreadEx; airport)",
@@ -42,7 +36,7 @@
   "rank_today": true,
   "latest_final": {
    "date": "2026-11-17",
-   "is_yesterday": true,
+   "is_yesterday": false,
    "high_f": 61,
    "low_f": 34,
    "high_rank": {
@@ -85,23 +79,6 @@
     "record": false,
     "phrase": "typical for November 17"
    }
-  },
-  "today_high_so_far": {
-   "value_f": 66,
-   "warm_rank": 31,
-   "cool_rank": 122,
-   "years": 155,
-   "first_year": 1872,
-   "tied_years": [
-    1913,
-    1963,
-    2015
-   ],
-   "standing": "warm",
-   "notable": true,
-   "since": 2024,
-   "record": false,
-   "phrase": "already the 31st warmest November 18 high (tied) of 155 since 1872, warmest since 2024"
   },
   "forecast_highs": [
    {
@@ -396,13 +373,6 @@
  "hourly": {
   "issued_utc": "2026-11-19T02:51:17Z",
   "hours": [
-   {
-    "start": "2026-11-18T23:00:00-05:00",
-    "temp_f": 44,
-    "temp_c": 6.67,
-    "precip_chance_pct": 0,
-    "short_forecast": "Clear"
-   },
    {
     "start": "2026-11-19T00:00:00-05:00",
     "temp_f": 43,
@@ -731,6 +701,13 @@
     "temp_c": 10.0,
     "precip_chance_pct": 0,
     "short_forecast": "Clear"
+   },
+   {
+    "start": "2026-11-20T23:00:00-05:00",
+    "temp_f": 49,
+    "temp_c": 9.44,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Clear"
    }
   ]
  },
