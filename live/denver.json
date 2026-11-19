@@ -11,39 +11,23 @@
   "lon": -104.6562,
   "history": "Same site as the official Denver record"
  },
- "as_of_utc": "2026-11-19T06:07:52Z",
+ "as_of_utc": "2026-11-19T07:08:02Z",
  "now": {
-  "time_utc": "2026-11-19T05:30:00Z",
-  "temp_c": 2,
-  "temp_f": 35.6,
+  "time_utc": "2026-11-19T05:55:00Z",
+  "temp_c": 1,
+  "temp_f": 33.8,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": -16,
-  "humidity_pct": 25.01,
-  "wind_kmh": 16.67,
+  "humidity_pct": 26.87,
+  "wind_kmh": 12.96,
   "description": "Clear"
  },
  "today_so_far": {
-  "date_local": "2026-11-18",
-  "readings": 18,
-  "basis": "hourly reports (tenths of a degree)",
-  "approximate": false,
-  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 14.4,
-  "high_f": 57.9,
-  "high_time_utc": "2026-11-18T20:53:00Z",
-  "low_c": 3.3,
-  "low_f": 37.9,
-  "low_time_utc": "2026-11-19T02:53:00Z",
-  "peak_between_reports": {
-   "at_least_f": 58.1,
-   "about_f": 59.0,
-   "time_utc": "2026-11-18T21:20:00Z"
-  },
-  "dip_between_reports": {
-   "at_most_f": 36.5,
-   "about_f": 35.6,
-   "time_utc": "2026-11-19T04:30:00Z"
-  }
+  "date_local": "2026-11-19",
+  "readings": 0,
+  "basis": "5-minute readings (whole \u00b0C, approximate)",
+  "approximate": true,
+  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two."
  },
  "record": {
   "series": "Denver area (ThreadEx; airport)",
@@ -52,7 +36,7 @@
   "rank_today": true,
   "latest_final": {
    "date": "2026-11-17",
-   "is_yesterday": true,
+   "is_yesterday": false,
    "high_f": 62,
    "low_f": 33,
    "high_rank": {
@@ -389,13 +373,6 @@
   "issued_utc": "2026-11-18T18:46:14Z",
   "hours": [
    {
-    "start": "2026-11-18T23:00:00-07:00",
-    "temp_f": 38,
-    "temp_c": 3.33,
-    "precip_chance_pct": 0,
-    "short_forecast": "Clear"
-   },
-   {
     "start": "2026-11-19T00:00:00-07:00",
     "temp_f": 36,
     "temp_c": 2.22,
@@ -722,6 +699,13 @@
     "temp_f": 39,
     "temp_c": 3.89,
     "precip_chance_pct": 1,
+    "short_forecast": "Mostly Clear"
+   },
+   {
+    "start": "2026-11-20T23:00:00-07:00",
+    "temp_f": 37,
+    "temp_c": 2.78,
+    "precip_chance_pct": 2,
     "short_forecast": "Mostly Clear"
    }
   ]
