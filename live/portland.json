@@ -11,20 +11,20 @@
   "lon": -122.6092,
   "history": "Same site as the official Portland record"
  },
- "as_of_utc": "2026-11-19T14:07:57Z",
+ "as_of_utc": "2026-11-19T15:08:01Z",
  "now": {
-  "time_utc": "2026-11-19T13:45:00Z",
+  "time_utc": "2026-11-19T14:40:00Z",
   "temp_c": 2,
   "temp_f": 35.6,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 2,
   "humidity_pct": 100,
-  "wind_kmh": 7.42,
+  "wind_kmh": 5.54,
   "description": "Fog"
  },
  "today_so_far": {
   "date_local": "2026-11-19",
-  "readings": 6,
+  "readings": 8,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -90,7 +90,7 @@
   },
   "forecast_highs": [
    {
-    "period": "Thursday",
+    "period": "Today",
     "date": "2026-11-19",
     "high_f": 48,
     "would_rank": {
@@ -268,20 +268,11 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-19T12:41:06Z",
+  "issued_utc": "2026-11-19T13:41:09Z",
   "grid": "PQR/116,107",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-19T05:00:00-08:00",
-    "is_daytime": false,
-    "temp_f": 38,
-    "temp_c": 3.33,
-    "precip_chance_pct": 8,
-    "short_forecast": "Mostly Cloudy"
-   },
-   {
-    "name": "Thursday",
+    "name": "Today",
     "start": "2026-11-19T06:00:00-08:00",
     "is_daytime": true,
     "temp_f": 48,
@@ -290,7 +281,7 @@
     "short_forecast": "Areas Of Fog then Partly Sunny"
    },
    {
-    "name": "Thursday Night",
+    "name": "Tonight",
     "start": "2026-11-19T18:00:00-08:00",
     "is_daytime": false,
     "temp_f": 37,
@@ -396,19 +387,21 @@
     "temp_c": 11.11,
     "precip_chance_pct": 54,
     "short_forecast": "Chance Light Rain"
+   },
+   {
+    "name": "Wednesday Night",
+    "start": "2026-11-25T18:00:00-08:00",
+    "is_daytime": false,
+    "temp_f": 44,
+    "temp_c": 6.67,
+    "precip_chance_pct": 61,
+    "short_forecast": "Light Rain Likely"
    }
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-19T12:41:06Z",
+  "issued_utc": "2026-11-19T13:41:09Z",
   "hours": [
-   {
-    "start": "2026-11-19T06:00:00-08:00",
-    "temp_f": 38,
-    "temp_c": 3.33,
-    "precip_chance_pct": 9,
-    "short_forecast": "Partly Sunny"
-   },
    {
     "start": "2026-11-19T07:00:00-08:00",
     "temp_f": 38,
@@ -735,6 +728,13 @@
     "start": "2026-11-21T05:00:00-08:00",
     "temp_f": 39,
     "temp_c": 3.89,
+    "precip_chance_pct": 28,
+    "short_forecast": "Chance Light Rain"
+   },
+   {
+    "start": "2026-11-21T06:00:00-08:00",
+    "temp_f": 40,
+    "temp_c": 4.44,
     "precip_chance_pct": 28,
     "short_forecast": "Chance Light Rain"
    }
