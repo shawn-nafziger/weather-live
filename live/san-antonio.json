@@ -11,9 +11,9 @@
   "lon": -98.4636,
   "history": "Same site as the official San Antonio record"
  },
- "as_of_utc": "2026-11-20T00:42:41Z",
+ "as_of_utc": "2026-11-20T01:07:58Z",
  "now": {
-  "time_utc": "2026-11-20T00:25:00Z",
+  "time_utc": "2026-11-20T00:50:00Z",
   "temp_c": 18,
   "temp_f": 64.4,
   "precision": "nearest whole \u00b0C",
@@ -89,31 +89,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-19",
-    "high_f": 73,
-    "would_rank": {
-     "value_f": 73,
-     "warm_rank": 65,
-     "cool_rank": 72,
-     "years": 142,
-     "first_year": 1885,
-     "tied_years": [
-      1897,
-      1915,
-      1926,
-      1932,
-      1936,
-      1967
-     ],
-     "standing": "warm",
-     "notable": false,
-     "since": 2025,
-     "record": false,
-     "phrase": "typical for November 19"
-    }
-   },
    {
     "period": "Friday",
     "date": "2026-11-20",
@@ -258,22 +233,33 @@
      "record": false,
      "phrase": "14th coolest November 25 high (tied) of 142 since 1885, coolest since 2013"
     }
+   },
+   {
+    "period": "Thanksgiving Day",
+    "date": "2026-11-26",
+    "high_f": 56,
+    "would_rank": {
+     "value_f": 56,
+     "warm_rank": 125,
+     "cool_rank": 17,
+     "years": 142,
+     "first_year": 1885,
+     "tied_years": [
+      1975
+     ],
+     "standing": "cool",
+     "notable": true,
+     "since": 2013,
+     "record": false,
+     "phrase": "17th coolest November 26 high (tied) of 142 since 1885, coolest since 2013"
+    }
    }
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-19T23:44:35Z",
+  "issued_utc": "2026-11-20T00:42:20Z",
   "grid": "EWX/128,59",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-19T17:00:00-06:00",
-    "is_daytime": true,
-    "temp_f": 73,
-    "temp_c": 22.78,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Sunny"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-19T18:00:00-06:00",
@@ -390,25 +376,27 @@
     "temp_c": 5.0,
     "precip_chance_pct": 2,
     "short_forecast": "Partly Cloudy"
+   },
+   {
+    "name": "Thanksgiving Day",
+    "start": "2026-11-26T06:00:00-06:00",
+    "is_daytime": true,
+    "temp_f": 56,
+    "temp_c": 13.33,
+    "precip_chance_pct": 15,
+    "short_forecast": "Mostly Sunny then Slight Chance Rain Showers"
    }
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-20T00:18:41Z",
+  "issued_utc": "2026-11-19T23:44:35Z",
   "hours": [
    {
-    "start": "2026-11-19T18:00:00-06:00",
-    "temp_f": 67,
-    "temp_c": 19.44,
-    "precip_chance_pct": 0,
-    "short_forecast": "Partly Cloudy"
-   },
-   {
     "start": "2026-11-19T19:00:00-06:00",
-    "temp_f": 64,
-    "temp_c": 17.78,
+    "temp_f": 63,
+    "temp_c": 17.22,
     "precip_chance_pct": 0,
-    "short_forecast": "Partly Cloudy"
+    "short_forecast": "Mostly Clear"
    },
    {
     "start": "2026-11-19T20:00:00-06:00",
@@ -731,6 +719,13 @@
     "temp_c": 21.67,
     "precip_chance_pct": 4,
     "short_forecast": "Mostly Sunny"
+   },
+   {
+    "start": "2026-11-21T18:00:00-06:00",
+    "temp_f": 70,
+    "temp_c": 21.11,
+    "precip_chance_pct": 2,
+    "short_forecast": "Partly Cloudy"
    }
   ]
  },
