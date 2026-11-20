@@ -11,15 +11,15 @@
   "lon": -110.9564,
   "history": "Same site as the official Tucson record"
  },
- "as_of_utc": "2026-11-20T01:07:58Z",
+ "as_of_utc": "2026-11-20T02:08:03Z",
  "now": {
-  "time_utc": "2026-11-20T00:55:00Z",
-  "temp_c": 21,
-  "temp_f": 69.8,
+  "time_utc": "2026-11-20T01:50:00Z",
+  "temp_c": 18,
+  "temp_f": 64.4,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": -3,
-  "humidity_pct": 19.75,
-  "wind_kmh": 9.25,
+  "dewpoint_c": -1,
+  "humidity_pct": 27.58,
+  "wind_kmh": 5.54,
   "description": "Clear"
  },
  "today_so_far": {
@@ -86,30 +86,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-19",
-    "high_f": 77,
-    "would_rank": {
-     "value_f": 77,
-     "warm_rank": 38,
-     "cool_rank": 90,
-     "years": 132,
-     "first_year": 1894,
-     "tied_years": [
-      1937,
-      1950,
-      1997,
-      2002,
-      2015
-     ],
-     "standing": "warm",
-     "notable": false,
-     "since": 2021,
-     "record": false,
-     "phrase": "typical for November 19"
-    }
-   },
    {
     "period": "Friday",
     "date": "2026-11-20",
@@ -259,6 +235,31 @@
      "record": false,
      "phrase": "typical for November 25"
     }
+   },
+   {
+    "period": "Thanksgiving Day",
+    "date": "2026-11-26",
+    "high_f": 70,
+    "would_rank": {
+     "value_f": 70,
+     "warm_rank": 73,
+     "cool_rank": 54,
+     "years": 132,
+     "first_year": 1894,
+     "tied_years": [
+      1908,
+      1923,
+      1939,
+      1947,
+      1959,
+      2022
+     ],
+     "standing": "cool",
+     "notable": false,
+     "since": 2023,
+     "record": false,
+     "phrase": "typical for November 26"
+    }
    }
   ]
  },
@@ -266,15 +267,6 @@
   "issued_utc": "2026-11-19T18:32:50Z",
   "grid": "TWC/91,45",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-19T14:00:00-07:00",
-    "is_daytime": true,
-    "temp_f": 77,
-    "temp_c": 25.0,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-19T18:00:00-07:00",
@@ -391,19 +383,21 @@
     "temp_c": 8.33,
     "precip_chance_pct": 1,
     "short_forecast": "Partly Cloudy"
+   },
+   {
+    "name": "Thanksgiving Day",
+    "start": "2026-11-26T06:00:00-07:00",
+    "is_daytime": true,
+    "temp_f": 70,
+    "temp_c": 21.11,
+    "precip_chance_pct": 4,
+    "short_forecast": "Sunny"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-19T18:32:50Z",
   "hours": [
-   {
-    "start": "2026-11-19T18:00:00-07:00",
-    "temp_f": 68,
-    "temp_c": 20.0,
-    "precip_chance_pct": 0,
-    "short_forecast": "Clear"
-   },
    {
     "start": "2026-11-19T19:00:00-07:00",
     "temp_f": 64,
@@ -732,6 +726,13 @@
     "temp_c": 17.22,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Sunny"
+   },
+   {
+    "start": "2026-11-21T18:00:00-07:00",
+    "temp_f": 60,
+    "temp_c": 15.56,
+    "precip_chance_pct": 0,
+    "short_forecast": "Partly Cloudy"
    }
   ]
  },
