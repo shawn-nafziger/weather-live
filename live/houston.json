@@ -11,26 +11,26 @@
   "lon": -95.3607,
   "history": "Same site as the official Houston record"
  },
- "as_of_utc": "2026-11-20T11:08:05Z",
+ "as_of_utc": "2026-11-20T12:08:01Z",
  "now": {
-  "time_utc": "2026-11-20T10:45:00Z",
+  "time_utc": "2026-11-20T11:15:00Z",
   "temp_c": 14,
   "temp_f": 57.2,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 13,
   "humidity_pct": 93.7,
   "wind_kmh": 5.54,
-  "description": "Mostly Clear"
+  "description": "Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-20",
-  "readings": 3,
+  "readings": 4,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 14.4,
-  "high_f": 57.9,
-  "high_time_utc": "2026-11-20T06:53:00Z",
+  "high_c": 15,
+  "high_f": 59.0,
+  "high_time_utc": "2026-11-20T10:53:00Z",
   "low_c": 13.3,
   "low_f": 55.9,
   "low_time_utc": "2026-11-20T09:53:00Z"
@@ -41,47 +41,48 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-18",
-   "is_yesterday": false,
-   "high_f": 72,
-   "low_f": 50,
+   "date": "2026-11-19",
+   "is_yesterday": true,
+   "high_f": 77,
+   "low_f": 54,
    "high_rank": {
-    "value_f": 72,
-    "warm_rank": 64,
-    "cool_rank": 65,
-    "years": 135,
+    "value_f": 77,
+    "warm_rank": 34,
+    "cool_rank": 96,
+    "years": 136,
     "first_year": 1889,
     "tied_years": [
-     1890,
      1898,
-     1936,
-     1952,
-     1984,
-     1993,
-     2015
+     1900,
+     1931,
+     1986,
+     1992,
+     1994,
+     2001
     ],
     "standing": "warm",
     "notable": false,
     "since": 2025,
     "record": false,
-    "phrase": "typical for November 18"
+    "phrase": "typical for November 19"
    },
    "low_rank": {
-    "value_f": 50,
-    "warm_rank": 72,
-    "cool_rank": 62,
+    "value_f": 54,
+    "warm_rank": 44,
+    "cool_rank": 89,
     "years": 136,
     "first_year": 1889,
     "tied_years": [
-     1962,
+     1936,
+     1955,
      2001,
-     2018
+     2004
     ],
-    "standing": "cool",
+    "standing": "warm",
     "notable": false,
-    "since": 2022,
+    "since": 2025,
     "record": false,
-    "phrase": "typical for November 18"
+    "phrase": "typical for November 19"
    }
   },
   "forecast_highs": [
@@ -386,13 +387,6 @@
  "hourly": {
   "issued_utc": "2026-11-20T08:51:17Z",
   "hours": [
-   {
-    "start": "2026-11-20T05:00:00-06:00",
-    "temp_f": 57,
-    "temp_c": 13.89,
-    "precip_chance_pct": 0,
-    "short_forecast": "Patchy Fog"
-   },
    {
     "start": "2026-11-20T06:00:00-06:00",
     "temp_f": 57,
@@ -719,6 +713,13 @@
     "start": "2026-11-22T04:00:00-06:00",
     "temp_f": 63,
     "temp_c": 17.22,
+    "precip_chance_pct": 12,
+    "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "start": "2026-11-22T05:00:00-06:00",
+    "temp_f": 62,
+    "temp_c": 16.67,
     "precip_chance_pct": 12,
     "short_forecast": "Mostly Cloudy"
    }

@@ -11,29 +11,29 @@
   "lon": -87.9044,
   "history": "Same station as the official Chicago record (ThreadEx, O'Hare since 1980)"
  },
- "as_of_utc": "2026-11-20T11:08:05Z",
+ "as_of_utc": "2026-11-20T12:08:01Z",
  "now": {
-  "time_utc": "2026-11-20T10:40:00Z",
+  "time_utc": "2026-11-20T11:10:00Z",
   "temp_c": 7,
   "temp_f": 44.6,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 5,
-  "humidity_pct": 87.1,
-  "wind_kmh": 5.54,
-  "description": "Clear"
+  "dewpoint_c": 6,
+  "humidity_pct": 93.35,
+  "wind_kmh": 0,
+  "description": "Mostly Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-20",
-  "readings": 3,
+  "readings": 4,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
   "high_c": 10,
   "high_f": 50.0,
   "high_time_utc": "2026-11-20T06:51:00Z",
-  "low_c": 7.2,
-  "low_f": 45.0,
-  "low_time_utc": "2026-11-20T08:51:00Z",
+  "low_c": 6.1,
+  "low_f": 43.0,
+  "low_time_utc": "2026-11-20T10:51:00Z",
   "peak_between_reports": {
    "at_least_f": 50.9,
    "about_f": 51.8,
@@ -46,50 +46,40 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-18",
-   "is_yesterday": false,
-   "high_f": 61,
-   "low_f": 38,
+   "date": "2026-11-19",
+   "is_yesterday": true,
+   "high_f": 66,
+   "low_f": 49,
    "high_rank": {
-    "value_f": 61,
-    "warm_rank": 17,
-    "cool_rank": 133,
+    "value_f": 66,
+    "warm_rank": 8,
+    "cool_rank": 146,
     "years": 155,
     "first_year": 1872,
     "tied_years": [
-     1943,
-     1948,
-     1952,
-     1976,
-     2003,
+     1904,
+     2020
+    ],
+    "standing": "warm",
+    "notable": true,
+    "since": 2020,
+    "record": false,
+    "phrase": "8th warmest November 19 high (tied) of 155 since 1872, warmest since 2020"
+   },
+   "low_rank": {
+    "value_f": 49,
+    "warm_rank": 9,
+    "cool_rank": 146,
+    "years": 155,
+    "first_year": 1872,
+    "tied_years": [
      2004
     ],
     "standing": "warm",
     "notable": true,
-    "since": 2016,
+    "since": 2004,
     "record": false,
-    "phrase": "17th warmest November 18 high (tied) of 155 since 1872, warmest since 2016"
-   },
-   "low_rank": {
-    "value_f": 38,
-    "warm_rank": 49,
-    "cool_rank": 100,
-    "years": 155,
-    "first_year": 1872,
-    "tied_years": [
-     1883,
-     1889,
-     1917,
-     1928,
-     1929,
-     1970,
-     1978
-    ],
-    "standing": "warm",
-    "notable": false,
-    "since": 2025,
-    "record": false,
-    "phrase": "typical for November 18"
+    "phrase": "9th warmest November 19 low (tied) of 155 since 1872, warmest since 2004"
    }
   },
   "forecast_highs": [
@@ -266,17 +256,17 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-20T09:30:57Z",
+  "issued_utc": "2026-11-20T10:50:59Z",
   "grid": "LOT/66,77",
   "periods": [
    {
     "name": "Overnight",
-    "start": "2026-11-20T03:00:00-06:00",
+    "start": "2026-11-20T05:00:00-06:00",
     "is_daytime": false,
-    "temp_f": 46,
-    "temp_c": 7.78,
+    "temp_f": 45,
+    "temp_c": 7.22,
     "precip_chance_pct": 0,
-    "short_forecast": "Mostly Clear"
+    "short_forecast": "Partly Cloudy"
    },
    {
     "name": "Friday",
@@ -398,19 +388,12 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-20T09:30:57Z",
+  "issued_utc": "2026-11-20T11:35:55Z",
   "hours": [
    {
-    "start": "2026-11-20T05:00:00-06:00",
-    "temp_f": 46,
-    "temp_c": 7.78,
-    "precip_chance_pct": 0,
-    "short_forecast": "Partly Cloudy"
-   },
-   {
     "start": "2026-11-20T06:00:00-06:00",
-    "temp_f": 46,
-    "temp_c": 7.78,
+    "temp_f": 45,
+    "temp_c": 7.22,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Sunny"
    },
@@ -731,6 +714,13 @@
    },
    {
     "start": "2026-11-22T04:00:00-06:00",
+    "temp_f": 54,
+    "temp_c": 12.22,
+    "precip_chance_pct": 16,
+    "short_forecast": "Slight Chance Rain"
+   },
+   {
+    "start": "2026-11-22T05:00:00-06:00",
     "temp_f": 54,
     "temp_c": 12.22,
     "precip_chance_pct": 16,

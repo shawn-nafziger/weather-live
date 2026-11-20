@@ -11,20 +11,20 @@
   "lon": -87.9044,
   "history": "Same site as the official Milwaukee record"
  },
- "as_of_utc": "2026-11-20T11:08:05Z",
+ "as_of_utc": "2026-11-20T12:08:01Z",
  "now": {
-  "time_utc": "2026-11-20T10:40:00Z",
-  "temp_c": 4,
-  "temp_f": 39.2,
+  "time_utc": "2026-11-20T11:10:00Z",
+  "temp_c": 5,
+  "temp_f": 41.0,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 3,
-  "humidity_pct": 93.2,
-  "wind_kmh": 5.54,
+  "dewpoint_c": 4,
+  "humidity_pct": 93.25,
+  "wind_kmh": 0,
   "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-20",
-  "readings": 3,
+  "readings": 4,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -46,45 +46,40 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-18",
-   "is_yesterday": false,
-   "high_f": 60,
-   "low_f": 38,
+   "date": "2026-11-19",
+   "is_yesterday": true,
+   "high_f": 64,
+   "low_f": 46,
    "high_rank": {
-    "value_f": 60,
-    "warm_rank": 12,
-    "cool_rank": 141,
+    "value_f": 64,
+    "warm_rank": 5,
+    "cool_rank": 151,
     "years": 156,
     "first_year": 1871,
     "tied_years": [
-     1943,
-     2001,
-     2004,
-     2015
+     2020
     ],
     "standing": "warm",
     "notable": true,
-    "since": 2016,
+    "since": 2020,
     "record": false,
-    "phrase": "12th warmest November 18 high (tied) of 156 since 1871, warmest since 2016"
+    "phrase": "5th warmest November 19 high (tied) of 156 since 1871, warmest since 2020"
    },
    "low_rank": {
-    "value_f": 38,
-    "warm_rank": 36,
-    "cool_rank": 117,
+    "value_f": 46,
+    "warm_rank": 9,
+    "cool_rank": 146,
     "years": 156,
     "first_year": 1871,
     "tied_years": [
-     1882,
-     1900,
-     1923,
-     1942
+     1930,
+     1983
     ],
     "standing": "warm",
-    "notable": false,
-    "since": 2016,
+    "notable": true,
+    "since": 2024,
     "record": false,
-    "phrase": "typical for November 18"
+    "phrase": "9th warmest November 19 low (tied) of 156 since 1871, warmest since 2024"
    }
   },
   "forecast_highs": [
@@ -385,13 +380,6 @@
  "hourly": {
   "issued_utc": "2026-11-20T07:51:40Z",
   "hours": [
-   {
-    "start": "2026-11-20T05:00:00-06:00",
-    "temp_f": 43,
-    "temp_c": 6.11,
-    "precip_chance_pct": 0,
-    "short_forecast": "Partly Cloudy"
-   },
    {
     "start": "2026-11-20T06:00:00-06:00",
     "temp_f": 43,
@@ -718,6 +706,13 @@
     "start": "2026-11-22T04:00:00-06:00",
     "temp_f": 51,
     "temp_c": 10.56,
+    "precip_chance_pct": 16,
+    "short_forecast": "Slight Chance Light Rain"
+   },
+   {
+    "start": "2026-11-22T05:00:00-06:00",
+    "temp_f": 50,
+    "temp_c": 10.0,
     "precip_chance_pct": 16,
     "short_forecast": "Slight Chance Light Rain"
    }

@@ -11,20 +11,20 @@
   "lon": -82.5403,
   "history": "Same site as the official Tampa record"
  },
- "as_of_utc": "2026-11-20T11:08:05Z",
+ "as_of_utc": "2026-11-20T12:08:01Z",
  "now": {
-  "time_utc": "2026-11-20T10:40:00Z",
+  "time_utc": "2026-11-20T11:10:00Z",
   "temp_c": 21,
   "temp_f": 69.8,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 21,
   "humidity_pct": 100,
-  "wind_kmh": 9.25,
-  "description": "Light Rain and Fog/Mist"
+  "wind_kmh": 11.12,
+  "description": "Fog/Mist"
  },
  "today_so_far": {
   "date_local": "2026-11-20",
-  "readings": 9,
+  "readings": 11,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -46,56 +46,57 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-18",
-   "is_yesterday": false,
+   "date": "2026-11-19",
+   "is_yesterday": true,
    "high_f": 78,
-   "low_f": 65,
+   "low_f": 69,
    "high_rank": {
     "value_f": 78,
-    "warm_rank": 68,
-    "cool_rank": 63,
+    "warm_rank": 67,
+    "cool_rank": 58,
     "years": 137,
     "first_year": 1890,
     "tied_years": [
-     1962,
-     1977,
-     1987,
+     1917,
+     1933,
+     1935,
+     1940,
+     1943,
+     1950,
+     1969,
+     1976,
+     1989,
      1996,
-     2000,
-     2010,
-     2020
+     2004,
+     2009,
+     2010
     ],
     "standing": "cool",
     "notable": false,
     "since": 2022,
     "record": false,
-    "phrase": "typical for November 18"
+    "phrase": "typical for November 19"
    },
    "low_rank": {
-    "value_f": 65,
-    "warm_rank": 28,
-    "cool_rank": 103,
+    "value_f": 69,
+    "warm_rank": 6,
+    "cool_rank": 130,
     "years": 137,
     "first_year": 1890,
     "tied_years": [
-     1900,
-     1931,
-     1932,
-     1942,
-     1973,
-     1987,
-     2024
+     1928,
+     1988
     ],
     "standing": "warm",
-    "notable": false,
-    "since": 2024,
+    "notable": true,
+    "since": 2015,
     "record": false,
-    "phrase": "typical for November 18"
+    "phrase": "6th warmest November 19 low (tied) of 137 since 1890, warmest since 2015"
    }
   },
   "forecast_highs": [
    {
-    "period": "Friday",
+    "period": "Today",
     "date": "2026-11-20",
     "high_f": 76,
     "would_rank": {
@@ -294,16 +295,7 @@
   "grid": "TBW/68,98",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-20T04:00:00-05:00",
-    "is_daytime": false,
-    "temp_f": 69,
-    "temp_c": 20.56,
-    "precip_chance_pct": 16,
-    "short_forecast": "Isolated Rain Showers"
-   },
-   {
-    "name": "Friday",
+    "name": "Today",
     "start": "2026-11-20T06:00:00-05:00",
     "is_daytime": true,
     "temp_f": 76,
@@ -312,7 +304,7 @@
     "short_forecast": "Scattered Rain Showers"
    },
    {
-    "name": "Friday Night",
+    "name": "Tonight",
     "start": "2026-11-20T18:00:00-05:00",
     "is_daytime": false,
     "temp_f": 68,
@@ -418,19 +410,21 @@
     "temp_c": 22.22,
     "precip_chance_pct": 9,
     "short_forecast": "Mostly Sunny"
+   },
+   {
+    "name": "Thursday Night",
+    "start": "2026-11-26T18:00:00-05:00",
+    "is_daytime": false,
+    "temp_f": 56,
+    "temp_c": 13.33,
+    "precip_chance_pct": 3,
+    "short_forecast": "Mostly Cloudy"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-20T08:36:42Z",
   "hours": [
-   {
-    "start": "2026-11-20T06:00:00-05:00",
-    "temp_f": 69,
-    "temp_c": 20.56,
-    "precip_chance_pct": 6,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "start": "2026-11-20T07:00:00-05:00",
     "temp_f": 69,
@@ -759,6 +753,13 @@
     "temp_c": 18.33,
     "precip_chance_pct": 2,
     "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "start": "2026-11-22T06:00:00-05:00",
+    "temp_f": 65,
+    "temp_c": 18.33,
+    "precip_chance_pct": 2,
+    "short_forecast": "Mostly Sunny"
    }
   ]
  },

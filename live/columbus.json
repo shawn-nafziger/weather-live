@@ -11,9 +11,9 @@
   "lon": -82.8769,
   "history": "Same site as the official Columbus record"
  },
- "as_of_utc": "2026-11-20T11:08:05Z",
+ "as_of_utc": "2026-11-20T12:08:01Z",
  "now": {
-  "time_utc": "2026-11-20T10:40:00Z",
+  "time_utc": "2026-11-20T11:10:00Z",
   "temp_c": 2,
   "temp_f": 35.6,
   "precision": "nearest whole \u00b0C",
@@ -24,7 +24,7 @@
  },
  "today_so_far": {
   "date_local": "2026-11-20",
-  "readings": 3,
+  "readings": 4,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -46,53 +46,51 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-18",
-   "is_yesterday": false,
-   "high_f": 62,
-   "low_f": 30,
+   "date": "2026-11-19",
+   "is_yesterday": true,
+   "high_f": 64,
+   "low_f": 31,
    "high_rank": {
-    "value_f": 62,
-    "warm_rank": 28,
-    "cool_rank": 117,
+    "value_f": 64,
+    "warm_rank": 19,
+    "cool_rank": 128,
     "years": 149,
     "first_year": 1878,
     "tied_years": [
-     1913,
-     1939,
-     1942,
-     1963,
-     2004
+     1957,
+     1975,
+     1979
     ],
     "standing": "warm",
     "notable": true,
-    "since": 2024,
+    "since": 2020,
     "record": false,
-    "phrase": "28th warmest November 18 high (tied) of 149 since 1878, warmest since 2024"
+    "phrase": "19th warmest November 19 high (tied) of 149 since 1878, warmest since 2020"
    },
    "low_rank": {
-    "value_f": 30,
-    "warm_rank": 103,
-    "cool_rank": 41,
+    "value_f": 31,
+    "warm_rank": 86,
+    "cool_rank": 58,
     "years": 149,
     "first_year": 1878,
     "tied_years": [
      1909,
-     1912,
-     1926,
-     1940,
-     1946,
-     2025
+     1953,
+     1975,
+     2013,
+     2017,
+     2023
     ],
     "standing": "cool",
     "notable": false,
-    "since": 2025,
+    "since": 2023,
     "record": false,
-    "phrase": "typical for November 18"
+    "phrase": "typical for November 19"
    }
   },
   "forecast_highs": [
    {
-    "period": "Friday",
+    "period": "Today",
     "date": "2026-11-20",
     "high_f": 64,
     "would_rank": {
@@ -257,16 +255,7 @@
   "grid": "ILN/89,83",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-20T04:00:00-05:00",
-    "is_daytime": false,
-    "temp_f": 39,
-    "temp_c": 3.89,
-    "precip_chance_pct": 0,
-    "short_forecast": "Clear"
-   },
-   {
-    "name": "Friday",
+    "name": "Today",
     "start": "2026-11-20T06:00:00-05:00",
     "is_daytime": true,
     "temp_f": 64,
@@ -275,7 +264,7 @@
     "short_forecast": "Sunny"
    },
    {
-    "name": "Friday Night",
+    "name": "Tonight",
     "start": "2026-11-20T18:00:00-05:00",
     "is_daytime": false,
     "temp_f": 39,
@@ -381,19 +370,21 @@
     "temp_c": 5.56,
     "precip_chance_pct": 45,
     "short_forecast": "Chance Rain And Snow"
+   },
+   {
+    "name": "Thursday Night",
+    "start": "2026-11-26T18:00:00-05:00",
+    "is_daytime": false,
+    "temp_f": 31,
+    "temp_c": -0.56,
+    "precip_chance_pct": 31,
+    "short_forecast": "Chance Light Rain then Mostly Cloudy"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-20T09:00:35Z",
   "hours": [
-   {
-    "start": "2026-11-20T06:00:00-05:00",
-    "temp_f": 39,
-    "temp_c": 3.89,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "start": "2026-11-20T07:00:00-05:00",
     "temp_f": 39,
@@ -722,6 +713,13 @@
     "temp_c": 6.11,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear"
+   },
+   {
+    "start": "2026-11-22T06:00:00-05:00",
+    "temp_f": 42,
+    "temp_c": 5.56,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
    }
   ]
  },

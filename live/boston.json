@@ -11,20 +11,20 @@
   "lon": -71.0106,
   "history": "Same site as the official Boston record"
  },
- "as_of_utc": "2026-11-20T11:08:05Z",
+ "as_of_utc": "2026-11-20T12:08:01Z",
  "now": {
-  "time_utc": "2026-11-20T10:45:00Z",
+  "time_utc": "2026-11-20T11:05:00Z",
   "temp_c": 12,
   "temp_f": 53.6,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": -3,
-  "humidity_pct": 35.01,
-  "wind_kmh": 11.12,
-  "description": ""
+  "dewpoint_c": -2,
+  "humidity_pct": 37.7,
+  "wind_kmh": 12.96,
+  "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-20",
-  "readings": 3,
+  "readings": 4,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -51,50 +51,51 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-18",
-   "is_yesterday": false,
-   "high_f": 65,
+   "date": "2026-11-19",
+   "is_yesterday": true,
+   "high_f": 63,
    "low_f": 45,
    "high_rank": {
-    "value_f": 65,
-    "warm_rank": 11,
+    "value_f": 63,
+    "warm_rank": 12,
     "cool_rank": 140,
     "years": 155,
     "first_year": 1872,
     "tied_years": [
-     1892,
-     1917,
-     1918,
-     1938,
-     1941
+     1895,
+     1896,
+     1958,
+     1994
     ],
     "standing": "warm",
     "notable": true,
-    "since": 2021,
+    "since": 1994,
     "record": false,
-    "phrase": "11th warmest November 18 high (tied) of 155 since 1872, warmest since 2021"
+    "phrase": "12th warmest November 19 high (tied) of 155 since 1872, warmest since 1994"
    },
    "low_rank": {
     "value_f": 45,
-    "warm_rank": 19,
-    "cool_rank": 134,
+    "warm_rank": 14,
+    "cool_rank": 137,
     "years": 155,
     "first_year": 1872,
     "tied_years": [
-     1896,
-     1922,
-     1930
+     1931,
+     1957,
+     1991,
+     2001,
+     2024
     ],
     "standing": "warm",
     "notable": true,
-    "since": 2021,
+    "since": 2024,
     "record": false,
-    "phrase": "19th warmest November 18 low (tied) of 155 since 1872, warmest since 2021"
+    "phrase": "14th warmest November 19 low (tied) of 155 since 1872, warmest since 2024"
    }
   },
   "forecast_highs": [
    {
-    "period": "Friday",
+    "period": "Today",
     "date": "2026-11-20",
     "high_f": 67,
     "would_rank": {
@@ -252,20 +253,11 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-20T09:14:56Z",
+  "issued_utc": "2026-11-20T10:41:14Z",
   "grid": "BOX/73,101",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-20T04:00:00-05:00",
-    "is_daytime": false,
-    "temp_f": 44,
-    "temp_c": 6.67,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Cloudy"
-   },
-   {
-    "name": "Friday",
+    "name": "Today",
     "start": "2026-11-20T06:00:00-05:00",
     "is_daytime": true,
     "temp_f": 67,
@@ -274,7 +266,7 @@
     "short_forecast": "Sunny"
    },
    {
-    "name": "Friday Night",
+    "name": "Tonight",
     "start": "2026-11-20T18:00:00-05:00",
     "is_daytime": false,
     "temp_f": 47,
@@ -380,19 +372,21 @@
     "temp_c": 9.44,
     "precip_chance_pct": 64,
     "short_forecast": "Light Rain Likely"
+   },
+   {
+    "name": "Thursday Night",
+    "start": "2026-11-26T18:00:00-05:00",
+    "is_daytime": false,
+    "temp_f": 39,
+    "temp_c": 3.89,
+    "precip_chance_pct": 61,
+    "short_forecast": "Light Rain Likely"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-20T10:41:14Z",
   "hours": [
-   {
-    "start": "2026-11-20T06:00:00-05:00",
-    "temp_f": 44,
-    "temp_c": 6.67,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "start": "2026-11-20T07:00:00-05:00",
     "temp_f": 45,
@@ -719,6 +713,13 @@
     "start": "2026-11-22T05:00:00-05:00",
     "temp_f": 49,
     "temp_c": 9.44,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "start": "2026-11-22T06:00:00-05:00",
+    "temp_f": 48,
+    "temp_c": 8.89,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Cloudy"
    }
