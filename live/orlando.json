@@ -11,20 +11,20 @@
   "lon": -81.3241,
   "history": "Same site as the official Orlando record"
  },
- "as_of_utc": "2026-11-20T17:08:08Z",
+ "as_of_utc": "2026-11-20T18:08:04Z",
  "now": {
-  "time_utc": "2026-11-20T15:53:00Z",
+  "time_utc": "2026-11-20T17:23:00Z",
   "temp_c": 23,
   "temp_f": 73.4,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 22,
   "humidity_pct": 94.11,
-  "wind_kmh": 20.52,
-  "description": "Fog/Mist"
+  "wind_kmh": 12.96,
+  "description": "Light Rain"
  },
  "today_so_far": {
   "date_local": "2026-11-20",
-  "readings": 11,
+  "readings": 13,
   "basis": "5-minute readings (whole \u00b0C, approximate)",
   "approximate": true,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -80,7 +80,7 @@
   },
   "forecast_highs": [
    {
-    "period": "Today",
+    "period": "This Afternoon",
     "date": "2026-11-20",
     "high_f": 75,
     "would_rank": {
@@ -260,12 +260,12 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-20T15:29:48Z",
+  "issued_utc": "2026-11-20T17:29:49Z",
   "grid": "MLB/29,63",
   "periods": [
    {
-    "name": "Today",
-    "start": "2026-11-20T11:00:00-05:00",
+    "name": "This Afternoon",
+    "start": "2026-11-20T12:00:00-05:00",
     "is_daytime": true,
     "temp_f": 75,
     "temp_c": 23.89,
@@ -392,15 +392,8 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-20T15:29:48Z",
+  "issued_utc": "2026-11-20T17:14:52Z",
   "hours": [
-   {
-    "start": "2026-11-20T12:00:00-05:00",
-    "temp_f": 73,
-    "temp_c": 22.78,
-    "precip_chance_pct": 78,
-    "short_forecast": "Showers And Thunderstorms"
-   },
    {
     "start": "2026-11-20T13:00:00-05:00",
     "temp_f": 73,
@@ -727,6 +720,13 @@
     "start": "2026-11-22T11:00:00-05:00",
     "temp_f": 72,
     "temp_c": 22.22,
+    "precip_chance_pct": 1,
+    "short_forecast": "Mostly Sunny"
+   },
+   {
+    "start": "2026-11-22T12:00:00-05:00",
+    "temp_f": 74,
+    "temp_c": 23.33,
     "precip_chance_pct": 1,
     "short_forecast": "Mostly Sunny"
    }
