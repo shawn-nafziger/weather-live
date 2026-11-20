@@ -11,20 +11,20 @@
   "lon": -122.3136,
   "history": "Same station as the official Seattle record (Sea-Tac)"
  },
- "as_of_utc": "2026-11-20T14:08:02Z",
+ "as_of_utc": "2026-11-20T15:08:07Z",
  "now": {
-  "time_utc": "2026-11-20T13:55:00Z",
-  "temp_c": 2,
-  "temp_f": 35.6,
+  "time_utc": "2026-11-20T14:55:00Z",
+  "temp_c": 3,
+  "temp_f": 37.4,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 2,
+  "dewpoint_c": 3,
   "humidity_pct": 100,
-  "wind_kmh": 5.54,
+  "wind_kmh": 11.12,
   "description": "Fog"
  },
  "today_so_far": {
   "date_local": "2026-11-20",
-  "readings": 6,
+  "readings": 9,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -87,7 +87,7 @@
   },
   "forecast_highs": [
    {
-    "period": "Friday",
+    "period": "Today",
     "date": "2026-11-20",
     "high_f": 47,
     "would_rank": {
@@ -259,16 +259,7 @@
   "grid": "SEW/124,60",
   "periods": [
    {
-    "name": "Tonight",
-    "start": "2026-11-19T22:00:00-08:00",
-    "is_daytime": false,
-    "temp_f": 34,
-    "temp_c": 1.11,
-    "precip_chance_pct": 1,
-    "short_forecast": "Patchy Fog"
-   },
-   {
-    "name": "Friday",
+    "name": "Today",
     "start": "2026-11-20T06:00:00-08:00",
     "is_daytime": true,
     "temp_f": 47,
@@ -277,7 +268,7 @@
     "short_forecast": "Mostly Cloudy"
    },
    {
-    "name": "Friday Night",
+    "name": "Tonight",
     "start": "2026-11-20T18:00:00-08:00",
     "is_daytime": false,
     "temp_f": 34,
@@ -383,19 +374,21 @@
     "temp_c": 12.22,
     "precip_chance_pct": 61,
     "short_forecast": "Light Rain Likely"
+   },
+   {
+    "name": "Thursday Night",
+    "start": "2026-11-26T18:00:00-08:00",
+    "is_daytime": false,
+    "temp_f": 45,
+    "temp_c": 7.22,
+    "precip_chance_pct": 33,
+    "short_forecast": "Chance Light Rain then Mostly Cloudy"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-20T06:27:09Z",
   "hours": [
-   {
-    "start": "2026-11-20T06:00:00-08:00",
-    "temp_f": 34,
-    "temp_c": 1.11,
-    "precip_chance_pct": 1,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "start": "2026-11-20T07:00:00-08:00",
     "temp_f": 35,
@@ -720,6 +713,13 @@
    },
    {
     "start": "2026-11-22T05:00:00-08:00",
+    "temp_f": 40,
+    "temp_c": 4.44,
+    "precip_chance_pct": 38,
+    "short_forecast": "Chance Light Rain"
+   },
+   {
+    "start": "2026-11-22T06:00:00-08:00",
     "temp_f": 40,
     "temp_c": 4.44,
     "precip_chance_pct": 38,
