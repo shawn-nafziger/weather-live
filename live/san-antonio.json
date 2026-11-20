@@ -11,33 +11,33 @@
   "lon": -98.4636,
   "history": "Same site as the official San Antonio record"
  },
- "as_of_utc": "2026-11-20T15:08:07Z",
+ "as_of_utc": "2026-11-20T16:08:05Z",
  "now": {
-  "time_utc": "2026-11-20T14:45:00Z",
-  "temp_c": 15,
-  "temp_f": 59.0,
+  "time_utc": "2026-11-20T15:50:00Z",
+  "temp_c": 18,
+  "temp_f": 64.4,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 12,
-  "humidity_pct": 82.26,
+  "dewpoint_c": 13,
+  "humidity_pct": 72.58,
   "wind_kmh": 0,
   "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-20",
-  "readings": 6,
+  "readings": 7,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 12.2,
-  "high_f": 54.0,
-  "high_time_utc": "2026-11-20T06:51:00Z",
+  "high_c": 15.6,
+  "high_f": 60.1,
+  "high_time_utc": "2026-11-20T14:51:00Z",
   "low_c": 10.6,
   "low_f": 51.1,
   "low_time_utc": "2026-11-20T09:51:00Z",
   "peak_between_reports": {
-   "at_least_f": 58.1,
-   "about_f": 59.0,
-   "time_utc": "2026-11-20T14:45:00Z"
+   "at_least_f": 63.5,
+   "about_f": 64.4,
+   "time_utc": "2026-11-20T15:35:00Z"
   }
  },
  "record": {
@@ -96,18 +96,19 @@
    {
     "period": "Today",
     "date": "2026-11-20",
-    "high_f": 76,
+    "high_f": 73,
     "would_rank": {
-     "value_f": 76,
-     "warm_rank": 43,
-     "cool_rank": 96,
+     "value_f": 73,
+     "warm_rank": 64,
+     "cool_rank": 74,
      "years": 142,
      "first_year": 1885,
      "tied_years": [
-      1902,
-      1936,
-      1999,
-      2002
+      1891,
+      1917,
+      1943,
+      1974,
+      1986
      ],
      "standing": "warm",
      "notable": false,
@@ -259,15 +260,15 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-20T14:44:22Z",
+  "issued_utc": "2026-11-20T15:06:26Z",
   "grid": "EWX/128,59",
   "periods": [
    {
     "name": "Today",
-    "start": "2026-11-20T08:00:00-06:00",
+    "start": "2026-11-20T09:00:00-06:00",
     "is_daytime": true,
-    "temp_f": 76,
-    "temp_c": 24.44,
+    "temp_f": 73,
+    "temp_c": 22.78,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
    },
@@ -391,15 +392,8 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-20T14:18:24Z",
+  "issued_utc": "2026-11-20T15:06:26Z",
   "hours": [
-   {
-    "start": "2026-11-20T09:00:00-06:00",
-    "temp_f": 58,
-    "temp_c": 14.44,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "start": "2026-11-20T10:00:00-06:00",
     "temp_f": 62,
@@ -409,22 +403,22 @@
    },
    {
     "start": "2026-11-20T11:00:00-06:00",
-    "temp_f": 64,
-    "temp_c": 17.78,
+    "temp_f": 65,
+    "temp_c": 18.33,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
    },
    {
     "start": "2026-11-20T12:00:00-06:00",
-    "temp_f": 68,
-    "temp_c": 20.0,
+    "temp_f": 67,
+    "temp_c": 19.44,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
    },
    {
     "start": "2026-11-20T13:00:00-06:00",
-    "temp_f": 74,
-    "temp_c": 23.33,
+    "temp_f": 70,
+    "temp_c": 21.11,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
    },
@@ -726,6 +720,13 @@
     "start": "2026-11-22T08:00:00-06:00",
     "temp_f": 61,
     "temp_c": 16.11,
+    "precip_chance_pct": 8,
+    "short_forecast": "Mostly Sunny"
+   },
+   {
+    "start": "2026-11-22T09:00:00-06:00",
+    "temp_f": 63,
+    "temp_c": 17.22,
     "precip_chance_pct": 8,
     "short_forecast": "Mostly Sunny"
    }

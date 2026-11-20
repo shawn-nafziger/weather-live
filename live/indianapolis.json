@@ -11,33 +11,33 @@
   "lon": -86.2816,
   "history": "Same site as the official Indianapolis record"
  },
- "as_of_utc": "2026-11-20T15:08:07Z",
+ "as_of_utc": "2026-11-20T16:08:05Z",
  "now": {
-  "time_utc": "2026-11-20T14:45:00Z",
-  "temp_c": 11,
-  "temp_f": 51.8,
+  "time_utc": "2026-11-20T15:55:00Z",
+  "temp_c": 15,
+  "temp_f": 59.0,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 3,
-  "humidity_pct": 57.8,
-  "wind_kmh": 11.12,
-  "description": "Mostly Clear"
+  "dewpoint_c": 4,
+  "humidity_pct": 47.75,
+  "wind_kmh": 7.42,
+  "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-20",
-  "readings": 6,
+  "readings": 7,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 8.3,
-  "high_f": 46.9,
-  "high_time_utc": "2026-11-20T13:54:00Z",
+  "high_c": 11.7,
+  "high_f": 53.1,
+  "high_time_utc": "2026-11-20T14:54:00Z",
   "low_c": 6.1,
   "low_f": 43.0,
   "low_time_utc": "2026-11-20T11:54:00Z",
   "peak_between_reports": {
-   "at_least_f": 50.9,
-   "about_f": 51.8,
-   "time_utc": "2026-11-20T14:20:00Z"
+   "at_least_f": 58.1,
+   "about_f": 59.0,
+   "time_utc": "2026-11-20T15:55:00Z"
   },
   "dip_between_reports": {
    "at_most_f": 41.9,
@@ -250,12 +250,12 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-20T14:15:27Z",
+  "issued_utc": "2026-11-20T14:45:38Z",
   "grid": "IND/54,67",
   "periods": [
    {
     "name": "Today",
-    "start": "2026-11-20T09:00:00-05:00",
+    "start": "2026-11-20T10:00:00-05:00",
     "is_daytime": true,
     "temp_f": 70,
     "temp_c": 21.11,
@@ -382,15 +382,8 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-20T14:45:38Z",
+  "issued_utc": "2026-11-20T15:15:23Z",
   "hours": [
-   {
-    "start": "2026-11-20T10:00:00-05:00",
-    "temp_f": 53,
-    "temp_c": 11.67,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "start": "2026-11-20T11:00:00-05:00",
     "temp_f": 59,
@@ -717,6 +710,13 @@
     "start": "2026-11-22T09:00:00-05:00",
     "temp_f": 53,
     "temp_c": 11.67,
+    "precip_chance_pct": 16,
+    "short_forecast": "Slight Chance Rain Showers"
+   },
+   {
+    "start": "2026-11-22T10:00:00-05:00",
+    "temp_f": 57,
+    "temp_c": 13.89,
     "precip_chance_pct": 16,
     "short_forecast": "Slight Chance Rain Showers"
    }
