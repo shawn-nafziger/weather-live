@@ -11,34 +11,23 @@
   "lon": -86.6892,
   "history": "Same site as the official Nashville record"
  },
- "as_of_utc": "2026-11-20T05:07:58Z",
+ "as_of_utc": "2026-11-20T06:08:06Z",
  "now": {
-  "time_utc": "2026-11-20T04:30:00Z",
-  "temp_c": 9,
-  "temp_f": 48.2,
+  "time_utc": "2026-11-20T05:40:00Z",
+  "temp_c": 8,
+  "temp_f": 46.4,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 6,
-  "humidity_pct": 81.49,
-  "wind_kmh": 0,
+  "humidity_pct": 87.19,
+  "wind_kmh": 5.54,
   "description": "Clear"
  },
  "today_so_far": {
-  "date_local": "2026-11-19",
-  "readings": 18,
-  "basis": "hourly reports (tenths of a degree)",
-  "approximate": false,
-  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 22.8,
-  "high_f": 73.0,
-  "high_time_utc": "2026-11-19T19:53:00Z",
-  "low_c": 3.3,
-  "low_f": 37.9,
-  "low_time_utc": "2026-11-19T11:53:00Z",
-  "dip_between_reports": {
-   "at_most_f": 36.5,
-   "about_f": 35.6,
-   "time_utc": "2026-11-19T12:25:00Z"
-  }
+  "date_local": "2026-11-20",
+  "readings": 0,
+  "basis": "5-minute readings (whole \u00b0C, approximate)",
+  "approximate": true,
+  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two."
  },
  "record": {
   "series": "Nashville area (ThreadEx; airport)",
@@ -47,7 +36,7 @@
   "rank_today": true,
   "latest_final": {
    "date": "2026-11-18",
-   "is_yesterday": true,
+   "is_yesterday": false,
    "high_f": 68,
    "low_f": 32,
    "high_rank": {
@@ -93,26 +82,6 @@
     "record": false,
     "phrase": "typical for November 18"
    }
-  },
-  "today_high_so_far": {
-   "value_f": 73,
-   "warm_rank": 7,
-   "cool_rank": 141,
-   "years": 153,
-   "first_year": 1874,
-   "tied_years": [
-    1875,
-    1921,
-    1943,
-    1975,
-    1979,
-    1983
-   ],
-   "standing": "warm",
-   "notable": true,
-   "since": 2025,
-   "record": false,
-   "phrase": "already the 7th warmest November 19 high (tied) of 153 since 1874, warmest since 2025"
   },
   "forecast_highs": [
    {
@@ -417,13 +386,6 @@
  "hourly": {
   "issued_utc": "2026-11-20T00:21:32Z",
   "hours": [
-   {
-    "start": "2026-11-19T23:00:00-06:00",
-    "temp_f": 47,
-    "temp_c": 8.33,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Clear"
-   },
    {
     "start": "2026-11-20T00:00:00-06:00",
     "temp_f": 46,
@@ -752,6 +714,13 @@
     "temp_c": 11.11,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear"
+   },
+   {
+    "start": "2026-11-21T23:00:00-06:00",
+    "temp_f": 51,
+    "temp_c": 10.56,
+    "precip_chance_pct": 0,
+    "short_forecast": "Partly Cloudy"
    }
   ]
  },
