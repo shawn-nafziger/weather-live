@@ -11,20 +11,20 @@
   "lon": -97.6003,
   "history": "Same site as the official Oklahoma City record"
  },
- "as_of_utc": "2026-11-20T00:08:11Z",
+ "as_of_utc": "2026-11-20T00:42:41Z",
  "now": {
-  "time_utc": "2026-11-19T23:05:00Z",
-  "temp_c": 17,
-  "temp_f": 62.6,
-  "precision": "nearest whole \u00b0C",
+  "time_utc": "2026-11-19T23:52:00Z",
+  "temp_c": 14.4,
+  "temp_f": 57.9,
+  "precision": "tenths of a degree",
   "dewpoint_c": null,
   "humidity_pct": null,
-  "wind_kmh": 16.67,
-  "description": "Clear"
+  "wind_kmh": 14.76,
+  "description": "Mostly Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-19",
-  "readings": 15,
+  "readings": 16,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -91,27 +91,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-19",
-    "high_f": 67,
-    "would_rank": {
-     "value_f": 67,
-     "warm_rank": 40,
-     "cool_rank": 96,
-     "years": 137,
-     "first_year": 1890,
-     "tied_years": [
-      1918,
-      1974
-     ],
-     "standing": "warm",
-     "notable": false,
-     "since": 2025,
-     "record": false,
-     "phrase": "typical for November 19"
-    }
-   },
    {
     "period": "Friday",
     "date": "2026-11-20",
@@ -244,6 +223,30 @@
      "record": false,
      "phrase": "19th coolest November 25 high (tied) of 137 since 1890, coolest since 2023"
     }
+   },
+   {
+    "period": "Thanksgiving Day",
+    "date": "2026-11-26",
+    "high_f": 46,
+    "would_rank": {
+     "value_f": 46,
+     "warm_rank": 106,
+     "cool_rank": 27,
+     "years": 137,
+     "first_year": 1890,
+     "tied_years": [
+      1898,
+      1903,
+      1920,
+      1930,
+      1951
+     ],
+     "standing": "cool",
+     "notable": true,
+     "since": 2023,
+     "record": false,
+     "phrase": "27th coolest November 26 high (tied) of 137 since 1890, coolest since 2023"
+    }
    }
   ]
  },
@@ -251,15 +254,6 @@
   "issued_utc": "2026-11-19T18:27:32Z",
   "grid": "OUN/94,90",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-19T12:00:00-06:00",
-    "is_daytime": true,
-    "temp_f": 67,
-    "temp_c": 19.44,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-19T18:00:00-06:00",
@@ -376,6 +370,15 @@
     "temp_c": -1.11,
     "precip_chance_pct": 2,
     "short_forecast": "Partly Cloudy"
+   },
+   {
+    "name": "Thanksgiving Day",
+    "start": "2026-11-26T06:00:00-06:00",
+    "is_daytime": true,
+    "temp_f": 46,
+    "temp_c": 7.78,
+    "precip_chance_pct": 10,
+    "short_forecast": "Mostly Sunny"
    }
   ]
  },

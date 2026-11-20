@@ -11,15 +11,15 @@
   "lon": -93.2289,
   "history": "Same site as the official Minneapolis record"
  },
- "as_of_utc": "2026-11-20T00:08:11Z",
+ "as_of_utc": "2026-11-20T00:42:41Z",
  "now": {
-  "time_utc": "2026-11-19T23:05:00Z",
-  "temp_c": 11,
-  "temp_f": 51.8,
+  "time_utc": "2026-11-20T00:25:00Z",
+  "temp_c": 10,
+  "temp_f": 50.0,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 2,
-  "humidity_pct": 53.83,
-  "wind_kmh": 12.96,
+  "humidity_pct": 57.54,
+  "wind_kmh": 5.54,
   "description": "Clear"
  },
  "today_so_far": {
@@ -103,28 +103,6 @@
    "phrase": "already the 17th warmest November 19 high (tied) of 155 since 1872, warmest since 2024"
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-19",
-    "high_f": 57,
-    "would_rank": {
-     "value_f": 57,
-     "warm_rank": 7,
-     "cool_rank": 146,
-     "years": 155,
-     "first_year": 1872,
-     "tied_years": [
-      1899,
-      1904,
-      1982
-     ],
-     "standing": "warm",
-     "notable": true,
-     "since": 2012,
-     "record": false,
-     "phrase": "7th warmest November 19 high (tied) of 155 since 1872, warmest since 2012"
-    }
-   },
    {
     "period": "Friday",
     "date": "2026-11-20",
@@ -266,6 +244,29 @@
      "record": false,
      "phrase": "typical for November 25"
     }
+   },
+   {
+    "period": "Thanksgiving Day",
+    "date": "2026-11-26",
+    "high_f": 38,
+    "would_rank": {
+     "value_f": 38,
+     "warm_rank": 43,
+     "cool_rank": 109,
+     "years": 155,
+     "first_year": 1872,
+     "tied_years": [
+      1910,
+      1934,
+      2008,
+      2019
+     ],
+     "standing": "warm",
+     "notable": false,
+     "since": 2022,
+     "record": false,
+     "phrase": "typical for November 26"
+    }
    }
   ]
  },
@@ -273,15 +274,6 @@
   "issued_utc": "2026-11-19T23:21:36Z",
   "grid": "MPX/110,68",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-19T17:00:00-06:00",
-    "is_daytime": true,
-    "temp_f": 57,
-    "temp_c": 13.89,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-19T18:00:00-06:00",
@@ -398,6 +390,15 @@
     "temp_c": -5.56,
     "precip_chance_pct": 2,
     "short_forecast": "Partly Cloudy"
+   },
+   {
+    "name": "Thanksgiving Day",
+    "start": "2026-11-26T06:00:00-06:00",
+    "is_daytime": true,
+    "temp_f": 38,
+    "temp_c": 3.33,
+    "precip_chance_pct": 3,
+    "short_forecast": "Mostly Sunny"
    }
   ]
  },

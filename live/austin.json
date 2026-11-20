@@ -11,7 +11,7 @@
   "lon": -97.7605,
   "history": "Same site as the official Austin record"
  },
- "as_of_utc": "2026-11-20T00:08:11Z",
+ "as_of_utc": "2026-11-20T00:42:41Z",
  "now": {
   "time_utc": "2026-11-19T22:51:00Z",
   "temp_c": 20,
@@ -81,35 +81,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-19",
-    "high_f": 73,
-    "would_rank": {
-     "value_f": 73,
-     "warm_rank": 50,
-     "cool_rank": 69,
-     "years": 128,
-     "first_year": 1897,
-     "tied_years": [
-      1918,
-      1934,
-      1939,
-      1943,
-      1963,
-      1967,
-      1986,
-      1993,
-      1996,
-      2002
-     ],
-     "standing": "warm",
-     "notable": false,
-     "since": 2025,
-     "record": false,
-     "phrase": "typical for November 19"
-    }
-   },
    {
     "period": "Friday",
     "date": "2026-11-20",
@@ -253,22 +224,36 @@
      "record": false,
      "phrase": "14th coolest November 25 high (tied) of 128 since 1897, coolest since 2013"
     }
+   },
+   {
+    "period": "Thanksgiving Day",
+    "date": "2026-11-26",
+    "high_f": 56,
+    "would_rank": {
+     "value_f": 56,
+     "warm_rank": 105,
+     "cool_rank": 20,
+     "years": 128,
+     "first_year": 1897,
+     "tied_years": [
+      1902,
+      1911,
+      1956,
+      2023
+     ],
+     "standing": "cool",
+     "notable": true,
+     "since": 2023,
+     "record": false,
+     "phrase": "20th coolest November 26 high (tied) of 128 since 1897, coolest since 2023"
+    }
    }
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-19T22:42:20Z",
+  "issued_utc": "2026-11-19T23:44:35Z",
   "grid": "EWX/155,93",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-19T17:00:00-06:00",
-    "is_daytime": true,
-    "temp_f": 73,
-    "temp_c": 22.78,
-    "precip_chance_pct": 0,
-    "short_forecast": "Partly Sunny"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-19T18:00:00-06:00",
@@ -276,7 +261,7 @@
     "temp_f": 53,
     "temp_c": 11.67,
     "precip_chance_pct": 0,
-    "short_forecast": "Partly Cloudy then Patchy Fog"
+    "short_forecast": "Mostly Clear then Patchy Fog"
    },
    {
     "name": "Friday",
@@ -385,6 +370,15 @@
     "temp_c": 4.44,
     "precip_chance_pct": 1,
     "short_forecast": "Partly Cloudy"
+   },
+   {
+    "name": "Thanksgiving Day",
+    "start": "2026-11-26T06:00:00-06:00",
+    "is_daytime": true,
+    "temp_f": 56,
+    "temp_c": 13.33,
+    "precip_chance_pct": 15,
+    "short_forecast": "Mostly Sunny then Slight Chance Rain Showers"
    }
   ]
  },

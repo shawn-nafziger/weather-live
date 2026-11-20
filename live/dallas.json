@@ -11,15 +11,15 @@
   "lon": -97.022,
   "history": "Same site as the official Dallas record"
  },
- "as_of_utc": "2026-11-20T00:08:11Z",
+ "as_of_utc": "2026-11-20T00:42:41Z",
  "now": {
-  "time_utc": "2026-11-19T23:05:00Z",
-  "temp_c": 21,
-  "temp_f": 69.8,
+  "time_utc": "2026-11-20T00:25:00Z",
+  "temp_c": 18,
+  "temp_f": 64.4,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 11,
-  "humidity_pct": 52.8,
-  "wind_kmh": 5.54,
+  "humidity_pct": 63.62,
+  "wind_kmh": 7.42,
   "description": "Clear"
  },
  "today_so_far": {
@@ -90,30 +90,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-19",
-    "high_f": 73,
-    "would_rank": {
-     "value_f": 73,
-     "warm_rank": 33,
-     "cool_rank": 92,
-     "years": 129,
-     "first_year": 1898,
-     "tied_years": [
-      1904,
-      1912,
-      1923,
-      1989,
-      2003
-     ],
-     "standing": "warm",
-     "notable": false,
-     "since": 2025,
-     "record": false,
-     "phrase": "typical for November 19"
-    }
-   },
    {
     "period": "Friday",
     "date": "2026-11-20",
@@ -252,6 +228,24 @@
      "record": false,
      "phrase": "21st coolest November 25 high (tied) of 129 since 1898, coolest since 2013"
     }
+   },
+   {
+    "period": "Thanksgiving Day",
+    "date": "2026-11-26",
+    "high_f": 54,
+    "would_rank": {
+     "value_f": 54,
+     "warm_rank": 98,
+     "cool_rank": 32,
+     "years": 129,
+     "first_year": 1898,
+     "tied_years": [],
+     "standing": "cool",
+     "notable": false,
+     "since": 2023,
+     "record": false,
+     "phrase": "typical for November 26"
+    }
    }
   ]
  },
@@ -259,15 +253,6 @@
   "issued_utc": "2026-11-19T23:06:24Z",
   "grid": "FWD/81,109",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-19T17:00:00-06:00",
-    "is_daytime": true,
-    "temp_f": 73,
-    "temp_c": 22.78,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Sunny"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-19T18:00:00-06:00",
@@ -384,6 +369,15 @@
     "temp_c": 3.33,
     "precip_chance_pct": 1,
     "short_forecast": "Mostly Clear"
+   },
+   {
+    "name": "Thanksgiving Day",
+    "start": "2026-11-26T06:00:00-06:00",
+    "is_daytime": true,
+    "temp_f": 54,
+    "temp_c": 12.22,
+    "precip_chance_pct": 4,
+    "short_forecast": "Mostly Sunny"
    }
   ]
  },
