@@ -11,33 +11,33 @@
   "lon": -76.684,
   "history": "Same site as the official Baltimore record"
  },
- "as_of_utc": "2026-11-20T16:26:44Z",
+ "as_of_utc": "2026-11-20T17:08:08Z",
  "now": {
-  "time_utc": "2026-11-20T15:55:00Z",
-  "temp_c": 19,
-  "temp_f": 66.2,
+  "time_utc": "2026-11-20T16:40:00Z",
+  "temp_c": 21,
+  "temp_f": 69.8,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 1,
-  "humidity_pct": 29.95,
-  "wind_kmh": 5.54,
+  "dewpoint_c": 2,
+  "humidity_pct": 28.42,
+  "wind_kmh": 7.42,
   "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-20",
-  "readings": 6,
+  "readings": 7,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 11.1,
-  "high_f": 52.0,
-  "high_time_utc": "2026-11-20T13:54:00Z",
+  "high_c": 18.9,
+  "high_f": 66.0,
+  "high_time_utc": "2026-11-20T15:54:00Z",
   "low_c": 2.2,
   "low_f": 36.0,
   "low_time_utc": "2026-11-20T10:54:00Z",
   "peak_between_reports": {
-   "at_least_f": 65.3,
-   "about_f": 66.2,
-   "time_utc": "2026-11-20T15:55:00Z"
+   "at_least_f": 68.9,
+   "about_f": 69.8,
+   "time_utc": "2026-11-20T16:40:00Z"
   },
   "dip_between_reports": {
    "at_most_f": 34.7,
@@ -95,6 +95,25 @@
     "record": false,
     "phrase": "typical for November 19"
    }
+  },
+  "today_high_so_far": {
+   "value_f": 66,
+   "warm_rank": 16,
+   "cool_rank": 135,
+   "years": 155,
+   "first_year": 1872,
+   "tied_years": [
+    1949,
+    1950,
+    1989,
+    1998,
+    2020
+   ],
+   "standing": "warm",
+   "notable": true,
+   "since": 2020,
+   "record": false,
+   "phrase": "already the 16th warmest November 20 high (tied) of 155 since 1872, warmest since 2020"
   },
   "forecast_highs": [
    {
@@ -266,7 +285,7 @@
   "periods": [
    {
     "name": "Today",
-    "start": "2026-11-20T09:00:00-05:00",
+    "start": "2026-11-20T10:00:00-05:00",
     "is_daytime": true,
     "temp_f": 68,
     "temp_c": 20.0,
@@ -395,13 +414,6 @@
  "hourly": {
   "issued_utc": "2026-11-20T14:53:02Z",
   "hours": [
-   {
-    "start": "2026-11-20T11:00:00-05:00",
-    "temp_f": 61,
-    "temp_c": 16.11,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "start": "2026-11-20T12:00:00-05:00",
     "temp_f": 64,
@@ -728,6 +740,13 @@
     "start": "2026-11-22T10:00:00-05:00",
     "temp_f": 56,
     "temp_c": 13.33,
+    "precip_chance_pct": 63,
+    "short_forecast": "Light Rain Likely"
+   },
+   {
+    "start": "2026-11-22T11:00:00-05:00",
+    "temp_f": 58,
+    "temp_c": 14.44,
     "precip_chance_pct": 63,
     "short_forecast": "Light Rain Likely"
    }
