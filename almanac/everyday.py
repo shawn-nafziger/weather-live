@@ -217,24 +217,53 @@ def build_everyday(ov, h, cities, today=None):
                f"{w_p}% of its days were above normal. {cool_y} ran coolest: its highs averaged {vs(c_a)}, with "
                f"{c_p}% of days above.")
 
-    # ---- 4. The longest run of above-normal highs (a missing day ends a run) ----
+    # ---- 4. The longest runs above and below normal (a missing day ends a run) ----
     s = x.set_index("D")["up"].sort_index()
-    best, cur, start, best_span = 0, 0, None, None
-    prev = None
-    for d, up in s.items():
-        d = d.date()
-        if up and prev is not None and cur and (d - prev).days == 1:
-            cur += 1
-        elif up:
-            cur, start = 1, d
-        else:
-            cur = 0
-        if up and cur >= best:
-            best, best_span = cur, (start, d)
-        prev = d
-    st_a, st_b = best_span
+    s_dn = (x.set_index("D")["a"] < 0).sort_index()   # strictly below; a day exactly at normal ends both kinds of run
+
+    def longest(series):
+        best, cur, start, span, prev = 0, 0, None, None, None
+        for d, hit in series.items():
+            d = d.date()
+            if hit and prev is not None and cur and (d - prev).days == 1:
+                cur += 1
+            elif hit:
+                cur, start = 1, d
+            else:
+                cur = 0
+            if hit and cur >= best:
+                best, span = cur, (start, d)
+            prev = d
+        return best, span
+
+    best, (st_a, st_b) = longest(s)
+    cold, (cd_a, cd_b) = longest(s_dn)
     p_streak = (f"The longest run of above-normal highs lasted {best} days, from {long_date(st_a)}, to "
-                f"{long_date(st_b)}{'; it is still going' if st_b == asof else ''}.")
+                f"{long_date(st_b)}{'; it is still going' if st_b == asof else ''}. The longest run below normal lasted "
+                f"{cold} days, from {long_date(cd_a)}, to {long_date(cd_b)}{'; it is still going' if cd_b == asof else ''}.")
+
+    # ---- 4b. Month by month: the first 30 years on the chart against the last 30 complete years ----
+    first30 = (y0, y0 + 29)
+    last30 = (yr - 30, yr - 1)
+    months = []
+    if last30[0] > first30[1]:
+        x["mo"] = x["MD"].str[:2].astype(int)
+        for m in range(1, 13):
+            a_ = x[(x["mo"] == m) & x["Y"].between(*first30)]
+            b_ = x[(x["mo"] == m) & x["Y"].between(*last30)]
+            if len(a_) < 600 or len(b_) < 600:      # about 20 years of that month's days
+                months = []
+                break
+            months.append({"m": m, "n0": int(len(a_)), "p0": round(100 * a_["up"].mean()), "a0": round(float(a_["a"].mean()), 1),
+                           "n1": int(len(b_)), "p1": round(100 * b_["up"].mean()), "a1": round(float(b_["a"].mean()), 1)})
+    p_months = ""
+    if months:
+        ch = sorted(months, key=lambda r: (r["p1"] - r["p0"], -r["m"]))
+        hi_m, lo_m = ch[-1], ch[0]
+        n_up = sum(1 for r in months if r["p1"] > r["p0"])
+        p_months = (f"In {n_up} of 12 months, more days beat normal in {last30[0]}–{last30[1]} than in {first30[0]}–{first30[1]}. "
+                    f"The biggest change came in {MONTHS[hi_m['m'] - 1]}, from {hi_m['p0']}% of days to {hi_m['p1']}%"
+                    + (f"; the least in {MONTHS[lo_m['m'] - 1]}, from {lo_m['p0']}% to {lo_m['p1']}%." if lo_m is not hi_m else "."))
 
     # ---- 5. This year so far, against the same days of every other year ----
     md_end = asof.strftime("%m-%d")
@@ -270,6 +299,19 @@ def build_everyday(ov, h, cities, today=None):
         else:
             run = 0
         last = real
+    mcount = {}   # (0 = first 30 years, 1 = last 30 complete years, month) -> [days, days above normal], from the page's data
+    mstart = [idx_of(f"{m:02d}-01") for m in range(1, 13)]
+    for (y, i), v in dec.items():
+        w = 0 if first30[0] <= y <= first30[1] else 1 if last30[0] <= y <= last30[1] else None
+        if w is None:
+            continue
+        m = max(k for k in range(12) if mstart[k] <= i) + 1
+        c_ = mcount.setdefault((w, m), [0, 0])
+        c_[0] += 1
+        c_[1] += v > norm[i]
+    rc_keys = [k for k in dec if 2020 <= k[0] < yr]
+    recent = {"first": 2020, "last": yr - 1, "n": len(rc_keys),
+              "p": round(100 * sum(1 for k in rc_keys if dec[k] > norm[k[1]]) / len(rc_keys)) if rc_keys else None}
     title = f"{C} Daily Temperature History"
     if len(title + SUFFIX) > TITLE_MAX:
         title = f"{C} Daily Temperatures"
@@ -290,6 +332,11 @@ def build_everyday(ov, h, cities, today=None):
         "Longest run recounted from the page's data": streak_check == best,
         "Longest run is above normal every day": all(bool(v) for v in s[str(st_a):str(st_b)].values)
                                                   and len(s[str(st_a):str(st_b)]) == best,
+        "Longest cool run is below normal every day": all(bool(v) for v in s_dn[str(cd_a):str(cd_b)].values)
+                                                      and len(s_dn[str(cd_a):str(cd_b)]) == cold,
+        "Month shares recounted from the page's data": all(
+            round(100 * mcount[(w, r["m"])][1] / mcount[(w, r["m"])][0]) == r[key]
+            for r in months for w, key in ((0, "p0"), (1, "p1"))),
         "Warmest year is warmer than the coolest": w_a > c_a,
         "Year-so-far rank recounted": year_rank is None or year_rank["rank"] == 1 + sum(
             1 for y in ok.index if y != yr and ok.loc[y, "up"] / ok.loc[y, "n"] > ok.loc[yr, "up"] / ok.loc[yr, "n"]),
@@ -306,9 +353,12 @@ def build_everyday(ov, h, cities, today=None):
         "n": n_all, "p": p_all, "decades": decades, "early": early["label"], "late": late["label"],
         "warm": {"y": warm_y, "a": w_a, "p": w_p}, "cool": {"y": cool_y, "a": c_a, "p": c_p}, "complete_years": int(len(yrs)),
         "streak": {"n": best, "from": st_a.isoformat(), "to": st_b.isoformat()},
+        "cold": {"n": cold, "from": cd_a.isoformat(), "to": cd_b.isoformat()},
+        "months": months, "first30": first30, "last30": last30, "recent": recent,
         "year_rank": year_rank,
         "newest": {"date": ov["asof"], "hi": n_hi, "norm": round(n_norm, 1)},
-        "text": {"lede": lede, "p_dec": p_dec, "p_new": p_new, "p_years": p_years, "p_streak": p_streak, "p_year": p_year},
+        "text": {"lede": lede, "p_dec": p_dec, "p_new": p_new, "p_years": p_years, "p_streak": p_streak, "p_year": p_year,
+                 "p_months": p_months},
         "payload": {"slug": slug, "name": C, "st": city["st"], "y0": y0, "asof": ov["asof"],
                     "alpha": ALPHA, "dmin": D_MIN, "norm": norm, "rows": rows, "exc": exc},
     }
@@ -348,6 +398,102 @@ def picker_json(eds):
                       separators=(",", ":"), ensure_ascii=False).replace("</", "<\\/")
 
 
+def steps(ed, is_hub):
+    """The five-step story: (question, text HTML, what the picture shows). All five go into the HTML."""
+    c, t, name, yr, y0 = ed["city"], ed["text"], ed["city"]["name"], ed["year"], ed["y0"]
+    decs = {d["label"]: d for d in ed["decades"]}
+    early = decs[ed["early"]]
+    last_full = [d for d in ed["decades"] if not d["partial"]][-1]
+    rc = ed["recent"]
+    asof = date.fromisoformat(ed["asof"])
+    e = html.escape
+    s1 = (e(f"Each row is a year since {y0} and each square a day: red where the high beat the 1991–2020 normal for "
+            "that date, blue where it fell short, darker the closer it came. ")
+          + f'<span class="pNew">{e(t["p_new"])}</span>'
+          + e(" Hover over any square, or tap it on a phone, for that day; the column at the right is each year’s average."))
+    s2 = e(f"In the {early['label']}, {early['p']}% of days beat today’s normal high. In the {last_full['label']}, "
+           f"{last_full['p']}%" + (f"; in {rc['first']}–{rc['last']}, {rc['p']}%." if rc["p"] is not None and rc["last"] > last_full["last"] else ".")
+           + " Where the rows turn redder toward the bottom, the typical day has warmed.")
+    bands = [[early["first"], early["last"], f"{early['label']}: {early['p']}% above normal"],
+             [last_full["first"], last_full["last"], f"{last_full['label']}: {last_full['p']}%"]]
+    if rc["p"] is not None and rc["last"] > last_full["last"]:
+        bands.append([rc["first"], rc["last"], f"{rc['first']}–{rc['last']}: {rc['p']}%"])
+    w, cl = ed["warm"], ed["cool"]
+    streak_txt = t["p_streak"]
+    if is_hub:   # the front page is frozen when copied, so an unfinished run carries its date
+        streak_txt = streak_txt.replace("; it is still going", f"; it was still going on {short_date(asof)}")
+    st, cd = ed["streak"], ed["cold"]
+    out = [
+        (f"What does every day since {y0} in {name} look like?", s1, {"ring": True}),
+        (f"Has the typical day in {name} warmed?", s2, {"bands": bands, "rows": [b[:2] for b in bands]}),
+        ("Which years ran warmest and coolest?", e(t["p_years"]),
+         {"rows": [[w["y"], w["y"]], [cl["y"], cl["y"]]],
+          "labels": [[w["y"], f"{w['y']}: warmest, {f_deg(w['a'], True)}°F"], [cl["y"], f"{cl['y']}: coolest, {f_deg(cl['a'], True)}°F"]]}),
+        ("How long can a warm or cool spell last?", e(streak_txt),
+         {"rows": [[int(st["from"][:4]), int(st["to"][:4])], [int(cd["from"][:4]), int(cd["to"][:4])]],
+          "spans": [[st["from"], st["to"], f"{st['n']} days above normal"], [cd["from"], cd["to"], f"{cd['n']} days below"]]}),
+    ]
+    if is_hub:
+        out.append(("What about your city?", e(
+            f"Search for any of the Almanac’s {ed['places']} places in the box above, or pick one from the list below. "
+            "Each has its own page like this one, rebuilt every morning from its official NOAA record."), {"ring": True}))
+    elif t["p_year"]:
+        yrk = ed["year_rank"]
+        out.append((f"How does {yr} compare so far?", e(t["p_year"]),
+                    {"rows": [[yr, yr]], "labels": [[yr, f"{yr} so far: {yrk['p']}% above normal"]]}))
+    else:
+        out.append((f"How does {yr} compare so far?", e(f"It’s too early in {yr} to compare it with other years; "
+                    "come back after January. The newest square, ringed, is the latest day."), {"ring": True}))
+    return out
+
+
+def steps_html(st):
+    return "\n".join(
+        f'    <article class="step{" on" if j == 0 else ""}" id="step-{j + 1}"><p class="step-k">{j + 1} of {len(st)}</p>'
+        f'<h2>{html.escape(q)}</h2><p>{text}</p></article>' for j, (q, text, _) in enumerate(st))
+
+
+def facts_rows(ed, is_hub):
+    c, rc = ed["city"], ed["recent"]
+    early = next(d for d in ed["decades"] if d["label"] == ed["early"])
+    last_full = [d for d in ed["decades"] if not d["partial"]][-1]
+    w, cl, st, cd = ed["warm"], ed["cool"], ed["streak"], ed["cold"]
+    rows = [
+        ("Official record", f"{c['record_name']}, from {ed['record_first']}"),
+        ("Chart starts", f"{ed['y0']}" + ("" if ed["y0"] == 1900 else " (the record’s first full year)")),
+        ("Days on the chart", f"{ed['n']:,} with a high, through {short_date(date.fromisoformat(ed['asof']))}"),
+        ("Days above the 1991–2020 normal", f"{ed['p']}%"),
+        (f"In the {early['label']}", f"{early['p']}% of {early['n']:,} days"),
+        (f"In the {last_full['label']}", f"{last_full['p']}% of {last_full['n']:,} days"),
+    ]
+    if rc["p"] is not None and rc["last"] > last_full["last"]:
+        rows.append((f"In {rc['first']}–{rc['last']}", f"{rc['p']}% of {rc['n']:,} days"))
+    rows += [
+        ("Warmest complete year", f"{w['y']}: highs {f_deg(w['a'], True)}°F against normal, {w['p']}% of days above"),
+        ("Coolest complete year", f"{cl['y']}: highs {f_deg(cl['a'], True)}°F against normal, {cl['p']}% of days above"),
+        ("Longest run above normal", f"{st['n']} days, {short_date(date.fromisoformat(st['from']))} to {short_date(date.fromisoformat(st['to']))}"),
+        ("Longest run below normal", f"{cd['n']} days, {short_date(date.fromisoformat(cd['from']))} to {short_date(date.fromisoformat(cd['to']))}"),
+    ]
+    if not is_hub:
+        nw = ed["newest"]
+        rows.append(("Newest day", f"{short_date(date.fromisoformat(nw['date']))}: high {f_deg(nw['hi'])}°F, normal {f_deg(whole(nw['norm']))}°F"))
+    return "\n".join(f"<tr><th scope=\"row\">{html.escape(k)}</th><td>{html.escape(v)}</td></tr>" for k, v in rows)
+
+
+def month_section(ed):
+    if not ed["months"]:
+        return ""
+    (a0, a1), (b0, b1) = ed["first30"], ed["last30"]
+    rows = "\n".join(
+        f'<tr><td>{MONTHS[r["m"] - 1]}</td><td>{r["p0"]}%</td><td>{r["p1"]}%</td><td>{"+" if r["p1"] > r["p0"] else "−" if r["p1"] < r["p0"] else ""}{abs(r["p1"] - r["p0"])}</td>'
+        f'<td>{f_deg(r["a0"], True)}°F</td><td>{f_deg(r["a1"], True)}°F</td></tr>' for r in ed["months"])
+    return (f'  <h2 class="sec">Which months changed most?</h2>\n  <p class="prose">{html.escape(ed["text"]["p_months"])}</p>\n'
+            f'  <div class="tw"><table id="months">\n    <caption>Share of days with a high above the 1991–2020 normal, and the average '
+            f'high against normal, {a0}–{a1} and {b0}–{b1}</caption>\n'
+            f'    <thead><tr><th>Month</th><th>{a0}–{a1}</th><th>{b0}–{b1}</th><th>Change (points)</th><th>Avg {a0}–{a1}</th><th>Avg {b0}–{b1}</th></tr></thead>\n'
+            f'    <tbody>\n{rows}\n    </tbody></table></div>')
+
+
 def render(ed, *, seo_head, nearby, main_site, hub=None):
     """One page from everyday_template.html. hub: None for a city page, or a dict for the showpiece front page
     ({"places": [...every built ed...], "live_url": relative URL of the featured city's days.json})."""
@@ -358,9 +504,10 @@ def render(ed, *, seo_head, nearby, main_site, hub=None):
     is_hub = hub is not None
     almanac = "../almanac/" if is_hub else "../../"          # from the page to the Almanac's front folder
     city_url = f"{almanac}{ed['slug']}/"
+    ed["places"] = len(hub["places"]) if is_hub else len(hub_places_for(ed))
+    st = steps(ed, is_hub)
     sections = {
         "H_DECADES": f"How often has {possessive(name)} high been above normal, decade by decade?",
-        "H_YEARS": "Which years ran warmest and coolest?",
         "H_YEAR": f"How does {ed['year']} compare so far?",
     }
     fill = {
@@ -397,9 +544,6 @@ def render(ed, *, seo_head, nearby, main_site, hub=None):
         "P_DECADES": html.escape((f"Through {long_date(asof)}: " if is_hub else "") + t["p_dec"]),
         "THROUGH": f" (through {short_date(asof)})" if is_hub else "",
         "DECADE_ROWS": decade_rows_html(ed),
-        "H_YEARS": html.escape(sections["H_YEARS"]), "P_YEARS": html.escape(t["p_years"] + " " + t["p_streak"]),
-        "YEAR_SECTION": (f'<h2 class="sec">{html.escape(sections["H_YEAR"])}</h2>\n  <p class="prose">{html.escape(t["p_year"])}</p>'
-                         if t["p_year"] and not is_hub else ""),
         "CITY_LINKS": (f'<a href="{city_url}">{html.escape(name)} weather history<span>Yesterday in context, the year so far and how the climate has changed.</span></a>'
                        f'<a href="{city_url}records/">{html.escape(name)} record highs and lows<span>Every date’s record high and low and the years that set them.</span></a>'
                        + ("" if is_hub else f'<a href="{main_site}{HUB_PATH}">Every day since 1900, in your city<span>The showpiece: pick any of the Almanac’s places.</span></a>')),
@@ -410,6 +554,13 @@ def render(ed, *, seo_head, nearby, main_site, hub=None):
         "RECORD_NAME": html.escape(c["record_name"]), "CAVEAT": html.escape(c["caveat"]),
         "LIVE_URL": hub["live_url"] if is_hub else "",
         "DATA": json.dumps(ed["payload"], separators=(",", ":")).replace("</", "<\\/"),
+        "STEPS": steps_html(st),
+        "STEPS_JSON": json.dumps([{"q": q, "focus": f} for q, _, f in st], separators=(",", ":"), ensure_ascii=False).replace("</", "<\\/"),
+        "PLACE_COUNT": str(ed["places"]),
+        "H_FACTS": "Key facts", "FACTS_ROWS": facts_rows(ed, is_hub),
+        "FACTS_CAPTION": html.escape(f"{name}, {c['state']}: daily highs against the smoothed 1991–2020 normal for the date"
+                                     + (f", through {short_date(asof)}" if is_hub else "")),
+        "MONTH_SECTION": month_section(ed),
     }
     for k, v in fill.items():
         tpl = tpl.replace("{{" + k + "}}", v)
@@ -431,21 +582,11 @@ def payload_json(ed):
 
 
 # ------------------------------------------------------------------ the showpiece front page
-def recent_complete(ed):
-    """Share of days above normal from 2020 through the last complete year, recounted from the page's own data.
-    The front page quotes this rather than "the 2020s so far", which would drift after the page is copied."""
-    p = ed["payload"]
-    days = decode(p["rows"], p["exc"], p["y0"], p["norm"])
-    keys = [k for k in days if 2020 <= k[0] < ed["year"]]
-    up = sum(1 for k in keys if days[k] > p["norm"][k[1]])
-    return {"first": 2020, "last": ed["year"] - 1, "n": len(keys), "p": round(100 * up / len(keys))}
-
-
 def hub_words(ed, published):
     c, name = ed["city"], ed["city"]["name"]
     early = next(d for d in ed["decades"] if d["label"] == ed["early"])
     last_full = [d for d in ed["decades"] if not d["partial"]][-1]
-    rc = recent_complete(ed)
+    rc = ed["recent"]
     span = f"{rc['first']}–{rc['last']}"
     # Complete years only, so this text (frozen when the page is copied to the site) never goes stale.
     answer = (f"In {name}, {c['state']}, {early['p']}% of days in the {early['label']} had a high above today’s normal "

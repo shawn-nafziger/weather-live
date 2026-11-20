@@ -55,7 +55,6 @@ h1 span{background:linear-gradient(90deg,#59a5ff,#c9c3d6 48%,#ff7a3d 70%,#ffd28a
 .controls{display:none;flex-wrap:wrap;gap:10px 14px;align-items:center;margin:4px 0 12px}
 .js .controls{display:flex}
 .ctl-label{font:500 11px "JetBrains Mono",monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--ink3)}
-select{font:500 15px Inter,sans-serif;color:var(--ink);background:var(--bg2);border:1px solid var(--line);border-radius:10px;height:44px;padding:0 34px 0 12px;max-width:min(320px,86vw);appearance:none;-webkit-appearance:none;background-image:linear-gradient(45deg,transparent 50%,var(--ink3) 50%),linear-gradient(135deg,var(--ink3) 50%,transparent 50%);background-position:calc(100% - 17px) 19px,calc(100% - 12px) 19px;background-size:5px 5px;background-repeat:no-repeat}
 .seg{display:inline-flex;background:var(--bg2);border:1px solid var(--line);border-radius:10px;padding:3px;height:44px}
 .seg button{all:unset;cursor:pointer;padding:0 13px;border-radius:7px;font:500 14px Inter,sans-serif;color:var(--ink2);display:flex;align-items:center}
 .seg button[aria-pressed="true"]{background:#272b36;color:var(--ink)}
@@ -73,17 +72,18 @@ button:focus-visible,select:focus-visible,.stage:focus-visible{outline:2px solid
 #still{display:block;width:100%;height:auto}
 .nojs-note{padding:18px;color:var(--ink2);font-size:14.5px}
 .js .nojs-note{display:none}
-.readout{display:none;min-height:52px;margin:10px 0 0;padding:10px 14px;background:var(--bg2);border:1px solid var(--line);border-radius:10px;font:400 14px/1.45 Inter,sans-serif;color:var(--ink2)}
-.js .readout{display:block}
-.readout b{color:var(--ink);font-weight:600}
-.readout .chip{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:6px;vertical-align:0}
-.readout .m{font-family:"JetBrains Mono",monospace;font-size:13px}
 .legend{display:none;align-items:center;gap:12px 18px;flex-wrap:wrap;margin:12px 0 0;font:400 12.5px Inter,sans-serif;color:var(--ink3)}
 .js .legend{display:flex}
 .ramp{height:10px;width:min(360px,80vw);border-radius:5px}
 .ramp-l{display:flex;justify-content:space-between;width:min(360px,80vw);font:400 10.5px "JetBrains Mono",monospace;color:var(--ink3);margin-top:3px}
 .keys{display:grid;gap:2px}
-.keys span::before{content:"";display:inline-block;width:9px;height:9px;border-radius:2px;margin-right:6px;vertical-align:0}
+.keys .key,.keys span{all:unset;display:block;cursor:pointer;padding:2px 0;font:400 12.5px Inter,sans-serif;color:var(--ink3)}
+.keys span{cursor:default}
+.keys .key:hover{color:var(--ink)}
+.keys .key[aria-pressed="true"]{color:var(--ink);font-weight:600}
+.keys .key.faded{opacity:.4}
+.keys .key:focus-visible{outline:2px solid var(--hot);outline-offset:2px;border-radius:3px}
+.keys .key::before,.keys span::before{content:"";display:inline-block;width:9px;height:9px;border-radius:2px;margin-right:6px;vertical-align:0}
 .k-w::before{background:#d2452c}.k-c::before{background:#3a7bd0}.k-n::before{background:#2a2d35}.k-y::before{border:2px solid var(--hot);width:6px!important;height:6px!important}
 h2.sec{font:700 26px/1.2 Fraunces,Georgia,serif;margin:46px 0 10px}
 .prose{max-width:720px;color:var(--ink2)}
@@ -106,6 +106,38 @@ summary{cursor:pointer;font:600 15px Inter,sans-serif;padding:12px 0;min-height:
 .places .st{break-inside:avoid;margin:0 0 12px}
 .places h3{font:500 11px "JetBrains Mono",monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--ink3);margin:0 0 4px}
 .places ul{list-style:none;margin:0;padding:0;font-size:14.5px;line-height:1.7}
+/* steps: all five are in the HTML (read without scripts); with scripts, one at a time */
+.steps{background:var(--bg2);border:1px solid var(--line);border-radius:14px;padding:14px 18px 12px;margin:0 0 14px;max-width:780px}
+.step{margin:0 0 14px}
+.js .step{display:none;margin:0}
+.js .step.on{display:block}
+.step-k{font:500 11px "JetBrains Mono",monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--ink3);margin:0 0 4px}
+.step h2{font:700 21px/1.25 Fraunces,Georgia,serif;margin:0 0 6px}
+.step p{margin:0;color:var(--ink2);font-size:15.5px}
+.step-nav{display:none;align-items:center;gap:12px;margin:12px 0 0}
+.js .step-nav{display:flex}
+.step-nav button{all:unset;cursor:pointer;font:600 14px Inter,sans-serif;color:var(--ink);background:#272b36;border-radius:999px;padding:0 16px;height:40px;display:flex;align-items:center}
+.step-nav button:disabled{opacity:.35;cursor:default}
+.step-nav button:focus-visible{outline:2px solid var(--hot);outline-offset:2px}
+.step-nav span{font:500 12px "JetBrains Mono",monospace;color:var(--ink3)}
+/* tooltip */
+.tip{position:absolute;z-index:3;max-width:min(300px,82vw);background:rgba(17,20,27,.97);border:1px solid #3a3f4c;border-radius:10px;padding:9px 12px;font:400 13.5px/1.45 Inter,sans-serif;color:var(--ink2);box-shadow:0 10px 30px rgba(0,0,0,.5);pointer-events:none}
+.tip b{color:var(--ink);font-weight:600}
+.tip .m{font-family:"JetBrains Mono",monospace;font-size:12.5px}
+.tip small{color:var(--ink3);font-size:12px}
+.tip .chip{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:6px;vertical-align:0}
+.band{fill:rgba(255,255,255,.04);stroke:rgba(255,210,138,.75);stroke-width:1}
+.span{fill:none;stroke:#fff;stroke-width:1.5}
+/* place search */
+.picker{display:grid;gap:4px}
+.combo{position:relative}
+.combo input{font:500 15px Inter,sans-serif;color:var(--ink);background:var(--bg2);border:1px solid var(--line);border-radius:10px;height:44px;padding:0 12px;width:min(300px,86vw)}
+.combo input:focus-visible{outline:2px solid var(--hot);outline-offset:2px}
+.combo ul{position:absolute;z-index:5;left:0;top:48px;width:min(300px,86vw);margin:0;padding:4px;list-style:none;background:#151922;border:1px solid #3a3f4c;border-radius:10px;box-shadow:0 12px 30px rgba(0,0,0,.5)}
+.combo li{padding:9px 10px;border-radius:7px;cursor:pointer;font-size:14.5px;color:var(--ink2)}
+.combo li[aria-selected="true"],.combo li:hover{background:#272b36;color:var(--ink)}
+.combo li.none{cursor:default;color:var(--ink3)}
+.controls{align-items:flex-end}
 body.city .hub-only{display:none}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 @media (prefers-reduced-motion:reduce){.js .newest i{animation:none}}
@@ -271,14 +303,20 @@ html { scroll-padding-top: calc(var(--header-h) + 12px); }
   {{TABS}}
   <h1>{{H1}}</h1>
   <p class="answer">{{ANSWER}}</p>
-  <p class="newest"><i aria-hidden="true"></i><span id="pNew">{{P_NEW}}</span></p>
+  <p class="newest"><i aria-hidden="true"></i><span class="pNew" id="pNew">{{P_NEW}}</span></p>
   <p class="deck">{{DECK}}</p>
   <p class="byline">{{BYLINE}}</p>
   <!-- share-top:start --><p class="share-top"><button type="button" class="share-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="M7 8l5-5 5 5"/><path d="M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg>Share</button><span class="share-msg" role="status" hidden></span></p><!-- share-top:end -->
 
   <div class="controls">
-    <label class="ctl-label" for="place">{{PICKER_NOTE}}</label>
-    <select id="place"></select>
+    <div class="picker">
+      <label class="ctl-label" for="place">{{PICKER_NOTE}}</label>
+      <div class="combo">
+        <input id="place" type="search" autocomplete="off" spellcheck="false" placeholder="Search {{PLACE_COUNT}} places" role="combobox"
+               aria-expanded="false" aria-controls="place-list" aria-autocomplete="list">
+        <ul id="place-list" role="listbox" aria-label="Places" hidden></ul>
+      </div>
+    </div>
     <div class="seg" role="group" aria-label="Show">
       <button type="button" data-f="all" aria-pressed="true">Every day</button>
       <button type="button" data-f="warm" aria-pressed="false">Warmer only</button>
@@ -286,25 +324,40 @@ html { scroll-padding-top: calc(var(--header-h) + 12px); }
     </div>
   </div>
 
-  <div class="stage" id="stage" tabindex="0" role="img" aria-roledescription="interactive chart"
-       aria-label="Every day since {{Y0}} in {{CITY}}, one row per year and one square per day, colored by how far the day's high was from the 1991–2020 normal. Use the arrow keys to move from day to day; the readout below says each day's high and normal.">
+  <section class="steps" id="steps" aria-label="The story in five steps">
+{{STEPS}}
+    <div class="step-nav"><button type="button" id="prev" aria-label="Previous step">← Back</button><span id="stepN" aria-live="polite">1 of 5</span><button type="button" id="next" aria-label="Next step">Next →</button></div>
+  </section>
+
+  <div class="stage" id="stage" tabindex="0" role="application" aria-roledescription="interactive chart"
+       aria-label="Every day since {{Y0}} in {{CITY}}, one row per year and one square per day, colored by how far the day's high was from the 1991–2020 normal. Use the arrow keys to move from day to day.">
     {{STILL}}
-    <p class="nojs-note">The interactive chart needs JavaScript. The decade table below holds its numbers.</p>
+    <p class="nojs-note">The interactive chart needs JavaScript. The tables below hold its numbers.</p>
     <canvas id="grid" aria-hidden="true"></canvas>
     <svg id="ov" aria-hidden="true"></svg>
+    <div class="tip" id="tip" role="tooltip" hidden></div>
   </div>
-  <p class="readout" id="readout" aria-live="polite"></p>
+  <p class="sr" id="readout" aria-live="polite"></p>
   <div class="legend">
     <div>
       <div class="ramp" id="ramp"></div>
       <div class="ramp-l"><span>−20°</span><span>−10°</span><span>normal</span><span>+10°</span><span>+20°F</span></div>
     </div>
     <div class="keys">
-      <span class="k-w">Red: high above the normal for the date</span>
-      <span class="k-c">Blue: high below normal</span>
+      <button type="button" class="key k-w" data-f="warm" aria-pressed="false">Red: high above the normal for the date</button>
+      <button type="button" class="key k-c" data-f="cool" aria-pressed="false">Blue: high below normal</button>
       <span class="k-y">Ringed: the newest day</span>
     </div>
   </div>
+
+  <h2 class="sec">{{H_FACTS}}</h2>
+  <div class="tw"><table id="facts">
+    <caption>{{FACTS_CAPTION}}</caption>
+    <tbody>
+{{FACTS_ROWS}}
+    </tbody></table></div>
+
+{{MONTH_SECTION}}
 
   <h2 class="sec">{{H_DECADES}}</h2>
   <p class="prose">{{P_DECADES}}</p>
@@ -315,10 +368,6 @@ html { scroll-padding-top: calc(var(--header-h) + 12px); }
 {{DECADE_ROWS}}
     </tbody></table></div>
 
-  <h2 class="sec">{{H_YEARS}}</h2>
-  <p class="prose">{{P_YEARS}}</p>
-  {{YEAR_SECTION}}
-
   <section class="hub-only">
     <h2 class="sec">Every day since 1900, in every Almanac place</h2>
     <p class="prose">Each place below has its own page, built every morning from its official NOAA daily record. Places whose records start after 1900 begin with their first full year.</p>
@@ -327,7 +376,7 @@ html { scroll-padding-top: calc(var(--header-h) + 12px); }
 
   <h2 class="sec">How to read the chart</h2>
   <div class="prose">
-    <p>Read down the chart to move through the years and across it to move through the seasons. Each square is one day: red if its high was warmer than the normal high for that date, blue if cooler, and darker the closer it was to normal. Gaps are days with no reading (and February 29 in years that don’t have one). The thin column at the right is each year’s average.</p>
+    <p>Read down the chart to move through the years and across it to move through the seasons. Each square is one day: red if its high was warmer than the normal high for that date, blue if cooler, and darker the closer it was to normal. Gaps are days with no reading (and February 29 in years that don’t have one). The thin column at the right is each year’s average. Hover over any square or the year column, or tap it on a phone, for the details.</p>
     <p>“Normal” is fixed for every year: the 1991–2020 average high for each date, smoothed over 15 days. So the early rows aren’t compared with their own era’s normal but with today’s: where the rows turn redder toward the bottom, the typical day has warmed, and where they don’t, it hasn’t.</p>
   </div>
   <details>
@@ -378,21 +427,23 @@ html { scroll-padding-top: calc(var(--header-h) + 12px); }
 
 <script type="application/json" id="days">{{DATA}}</script>
 <script type="application/json" id="places">{{PICKER}}</script>
+<script type="application/json" id="steps-data">{{STEPS_JSON}}</script>
 <script>
 (function () {
   "use strict";
   var LIVE = "{{LIVE_URL}}", ALM = "{{ALMANAC_REL}}";
   var D = JSON.parse(document.getElementById("days").textContent);
   var PLACES = JSON.parse(document.getElementById("places").textContent);
+  var STEPS = JSON.parse(document.getElementById("steps-data").textContent);
   var stage = document.getElementById("stage"), cv = document.getElementById("grid"), ov = document.getElementById("ov");
-  var readout = document.getElementById("readout");
+  var tip = document.getElementById("tip"), readout = document.getElementById("readout");
   var MON = ["January","February","March","April","May","June","July","August","September","October","November","December"];
   var MS = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
   var DOW = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
   var MSTART = [0,31,60,91,121,152,182,213,244,274,305,335];
   var reduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
-  var filter = "all";
-  var hi, years, N, newest, yearAvg, L, sel;
+  var filter = "all", step = 0, focus = STEPS[0].focus;
+  var hi, years, newest, yearAvg, yearRank, L, sel = null, pinned = false;
 
   // ---- color: diverging, darker near normal, brighter the farther from it ----
   var STOPS = [[-25,[214,239,255]],[-16,[89,165,255]],[-8,[46,98,184]],[-2.5,[30,40,62]],[0,[38,40,48]],
@@ -408,15 +459,24 @@ html { scroll-padding-top: calc(var(--header-h) + 12px); }
     return STOPS[STOPS.length - 1][1];
   }
   var LUT = [];
-  for (var q = -250; q <= 250; q++) { var c = mix(q / 10); LUT.push("rgb(" + c.join(",") + ")"); }
+  for (var q = -250; q <= 250; q++) LUT.push("rgb(" + mix(q / 10).join(",") + ")");
   function col(a) { return LUT[Math.max(0, Math.min(500, Math.round(a * 10) + 250))]; }
   document.getElementById("ramp").style.background = "linear-gradient(90deg," +
-    [-20, -15, -10, -5, -2, 0, 2, 5, 10, 15, 20].map(function (a) { return col(a); }).join(",") + ")";
+    [-20, -15, -10, -5, -2, 0, 2, 5, 10, 15, 20].map(col).join(",") + ")";
 
+  // ---- data: one character per day (see everyday.py, whose decode() is this function's Python twin) ----
   function whole(v) { return Math.floor(v + 0.5); }
+  function idxOf(m, d) { return MSTART[m - 1] + d - 1; }
+  function cellOf(iso) { var p = iso.split("-").map(Number); return [p[0] - D.y0, idxOf(p[1], p[2])]; }
+  function dateOf(k, i) { var m = 11; while (MSTART[m] > i) m--; return { y: D.y0 + k, m: m, d: i - MSTART[m] + 1 }; }
+  function leap(y) { return (y % 4 === 0 && y % 100 !== 0) || y % 400 === 0; }
+  function deg(v) { return (v < 0 ? "−" : "") + Math.abs(v); }
+  function f1(v) { return Math.abs(v).toFixed(1); }
+  function longDate(o) { return MON[o.m] + " " + o.d + ", " + o.y; }
+  function ordinal(n) { var s = ["th","st","nd","rd"], v = n % 100; return n + (s[(v - 20) % 10] || s[v] || s[0]); }
   function decode() {
-    years = D.rows.length; N = years * 366;
-    hi = new Int16Array(N).fill(-999);
+    years = D.rows.length;
+    hi = new Int16Array(years * 366).fill(-999);
     for (var k = 0; k < years; k++) {
       var s = D.rows[k];
       for (var i = 0; i < 366; i++) {
@@ -425,47 +485,44 @@ html { scroll-padding-top: calc(var(--header-h) + 12px); }
         hi[k * 366 + i] = ch === "!" ? D.exc[(D.y0 + k) + "-" + i] : whole(D.norm[i]) + D.alpha.indexOf(ch) + D.dmin;
       }
     }
-    var p = D.asof.split("-").map(Number);
-    newest = [p[0] - D.y0, idxOf(p[1], p[2])];
+    newest = cellOf(D.asof);
     yearAvg = [];
     for (k = 0; k < years; k++) {
-      var sum = 0, n = 0;
-      for (i = 0; i < 366; i++) { var v = hi[k * 366 + i]; if (v !== -999) { sum += v - D.norm[i]; n++; } }
-      yearAvg.push(n ? [sum / n, n] : null);
+      var sum = 0, n = 0, up = 0;
+      for (i = 0; i < 366; i++) { var v = hi[k * 366 + i]; if (v !== -999) { sum += v - D.norm[i]; n++; if (v > D.norm[i]) up++; } }
+      yearAvg.push(n ? { a: sum / n, n: n, up: up, full: n >= 330 && k < years - 1 } : null);
     }
+    var full = yearAvg.filter(function (y) { return y && y.full; });
+    yearRank = function (a) { return 1 + full.filter(function (y) { return y.a > a; }).length; };
+    yearRank.of = full.length;
   }
-  function idxOf(m, d) { return MSTART[m - 1] + d - 1; }
-  function dateOf(k, i) {
-    var y = D.y0 + k, m = 11;
-    while (MSTART[m] > i) m--;
-    return { y: y, m: m, d: i - MSTART[m] + 1 };
-  }
-  function leap(y) { return (y % 4 === 0 && y % 100 !== 0) || y % 400 === 0; }
-  function fmtDeg(v) { return (v < 0 ? "−" : "") + Math.abs(v); }
-  function longDate(o) { return MON[o.m] + " " + o.d + ", " + o.y; }
 
   // ---- layout ----
   function layout() {
-    var w = stage.clientWidth;
-    var narrow = w < 640;
-    var left = narrow ? 34 : 46, right = narrow ? 14 : 30, top = 24, bottom = 10;
+    var w = stage.clientWidth, narrow = w < 640;
+    var left = narrow ? 34 : 46, right = narrow ? 16 : 30, top = 24, bottom = 10;
     var cw = (w - left - right) / 366;
     var rh = Math.max(2, Math.min(6, Math.round(cw * (narrow ? 3.2 : 1.7))));
     if (years * rh > 900) rh = Math.max(2, Math.floor(900 / years));
-    var h = top + years * rh + bottom;
-    var dpr = Math.min(3, window.devicePixelRatio || 1);
+    var h = top + years * rh + bottom, dpr = Math.min(3, window.devicePixelRatio || 1);
     cv.width = Math.round(w * dpr); cv.height = Math.round(h * dpr);
     cv.style.width = w + "px"; cv.style.height = h + "px";
     ov.setAttribute("viewBox", "0 0 " + w + " " + h); ov.setAttribute("width", w); ov.setAttribute("height", h);
-    L = { w: w, h: h, left: left, right: right, top: top, cw: cw, rh: rh, dpr: dpr, narrow: narrow };
+    L = { w: w, h: h, left: left, right: right, top: top, cw: cw, rh: rh, dpr: dpr, narrow: narrow,
+          colX: w - right + (narrow ? 4 : 8), colW: narrow ? 8 : 14 };
   }
   function keep(a) { return filter === "all" || (filter === "warm" ? a > 0 : a < 0); }
+  function inRows(k) {
+    if (!focus.rows) return true;
+    var y = D.y0 + k;
+    for (var j = 0; j < focus.rows.length; j++) if (y >= focus.rows[j][0] && y <= focus.rows[j][1]) return true;
+    return false;
+  }
   function draw(rowsShown) {
-    var g = cv.getContext("2d"), d = L.dpr;
-    g.setTransform(d, 0, 0, d, 0, 0);
+    var g = cv.getContext("2d");
+    g.setTransform(L.dpr, 0, 0, L.dpr, 0, 0);
     g.clearRect(0, 0, L.w, L.h);
-    var shown = rowsShown === undefined ? years : rowsShown;
-    var cw = L.cw, gap = cw > 2.2 ? 0.5 : 0;
+    var shown = rowsShown === undefined ? years : rowsShown, cw = L.cw, gap = cw > 2.2 ? 0.5 : 0, rgap = L.rh > 3 ? 0.5 : 0;
     for (var k = 0; k < shown; k++) {
       var y = L.top + k * L.rh;
       for (var i = 0; i < 366; i++) {
@@ -473,44 +530,70 @@ html { scroll-padding-top: calc(var(--header-h) + 12px); }
         if (v === -999) continue;
         var a = v - D.norm[i];
         g.fillStyle = keep(a) ? col(a) : "rgb(22,23,28)";
-        g.fillRect(L.left + i * cw, y, cw - gap + 0.02, L.rh - (L.rh > 3 ? 0.5 : 0));
+        g.fillRect(L.left + i * cw, y, cw - gap + 0.02, L.rh - rgap);
       }
       var ya = yearAvg[k];
       if (ya) {
-        g.fillStyle = col(ya[0] * 4);
-        g.globalAlpha = ya[1] >= 330 ? 1 : 0.45;
-        g.fillRect(L.w - L.right + (L.narrow ? 4 : 8), y, L.narrow ? 6 : 14, L.rh - (L.rh > 3 ? 0.5 : 0));
+        g.fillStyle = col(ya.a * 4);
+        g.globalAlpha = ya.full ? 1 : 0.45;
+        g.fillRect(L.colX, y, L.colW, L.rh - rgap);
         g.globalAlpha = 1;
+      }
+      if (!inRows(k)) {           // a step that focuses on some years dims the rest
+        g.fillStyle = "rgba(5,6,9,0.8)";
+        g.fillRect(L.left - 1, y, L.w - L.left, L.rh);
       }
     }
   }
-  function svgEl(t, attrs, text) {
+  function el(t, attrs, text) {
     var e = document.createElementNS("http://www.w3.org/2000/svg", t);
     for (var k in attrs) e.setAttribute(k, attrs[k]);
     if (text !== undefined) e.textContent = text;
     return e;
   }
+  function rowY(year) { return L.top + (year - D.y0) * L.rh; }
+  function label(x, y, text, anchor) {
+    ov.appendChild(el("text", { x: x, y: y, "text-anchor": anchor || "end", "class": "lbl" }, text));
+  }
   function overlay() {
     while (ov.firstChild) ov.removeChild(ov.firstChild);
-    var step = L.narrow ? 2 : 1;
+    var step2 = L.narrow ? 2 : 1;
     MS.forEach(function (m, j) {
-      if (j % step) return;
-      var x = L.left + MSTART[j] * L.cw;
-      ov.appendChild(svgEl("text", { x: x + 1, y: 15 }, L.narrow ? m.charAt(0) + m.slice(1, 3) : m));
+      if (j % step2 === 0) ov.appendChild(el("text", { x: L.left + MSTART[j] * L.cw + 1, y: 15 }, m));
     });
     var every = L.rh >= 4 ? 10 : 20;
     for (var k = 0; k < years; k++) {
       var y = D.y0 + k;
-      if (y % every === 0 || k === 0) {
-        ov.appendChild(svgEl("text", { x: L.left - 6, y: L.top + k * L.rh + L.rh / 2 + 3.5, "text-anchor": "end", "class": "yl" }, y));
-      }
+      if (y % every === 0 || k === 0)
+        ov.appendChild(el("text", { x: L.left - 6, y: rowY(y) + L.rh / 2 + 3.5, "text-anchor": "end", "class": "yl" }, y));
     }
-    if (!L.narrow) ov.appendChild(svgEl("text", { x: L.w - L.right + 15, y: 15, "text-anchor": "middle" }, "Year"));
-    var nx = L.left + newest[1] * L.cw, ny = L.top + newest[0] * L.rh;
-    var r = Math.max(5, L.rh * 1.3);
-    ov.appendChild(svgEl("rect", { "class": "ring", x: nx - r + L.cw / 2, y: ny - r + L.rh / 2, width: 2 * r, height: 2 * r, rx: 3 }));
-    var g = svgEl("g", { id: "selg" });
-    ov.appendChild(g);
+    if (!L.narrow) ov.appendChild(el("text", { x: L.colX + L.colW / 2, y: 15, "text-anchor": "middle" }, "Year"));
+    // step marks: bands, labelled years and runs of days
+    var rightX = L.w - L.right - 6;
+    (focus.bands || []).forEach(function (b) {
+      var y0 = rowY(b[0]), y1 = rowY(b[1]) + L.rh;
+      ov.appendChild(el("rect", { "class": "band", x: L.left - 2, y: y0 - 1, width: L.w - L.right - L.left + 4, height: y1 - y0 + 2, rx: 3 }));
+      label(rightX, Math.max(y0 + 13, (y0 + y1) / 2 + 4), b[2]);
+    });
+    (focus.labels || []).forEach(function (b) {
+      var y0 = rowY(b[0]);
+      ov.appendChild(el("rect", { "class": "band", x: L.left - 2, y: y0 - 1.5, width: L.w - L.right - L.left + 4, height: L.rh + 3, rx: 2 }));
+      label(rightX, y0 < L.top + 18 ? y0 + L.rh + 14 : y0 - 5, b[1]);
+    });
+    (focus.spans || []).forEach(function (sp) {
+      var a = cellOf(sp[0]), b = cellOf(sp[1]), d = "";
+      for (var k2 = a[0]; k2 <= b[0]; k2++) {
+        var i0 = k2 === a[0] ? a[1] : 0, i1 = k2 === b[0] ? b[1] : 365, x0 = L.left + i0 * L.cw, x1 = L.left + (i1 + 1) * L.cw;
+        var y0 = L.top + k2 * L.rh;
+        d += "M" + x0 + "," + (y0 - 1) + "H" + x1 + "V" + (y0 + L.rh + 1) + "H" + x0 + "Z";
+      }
+      ov.appendChild(el("path", { "class": "span", d: d }));
+      var lx = L.left + a[1] * L.cw, ly = L.top + a[0] * L.rh;
+      label(Math.min(Math.max(lx, L.left + 90), L.w - L.right - 8), ly < L.top + 18 ? ly + L.rh + 16 : ly - 6, sp[2], lx > L.w / 2 ? "end" : "start");
+    });
+    var nx = L.left + newest[1] * L.cw, ny = L.top + newest[0] * L.rh, r = Math.max(5, L.rh * 1.3);
+    ov.appendChild(el("rect", { "class": "ring", x: nx - r + L.cw / 2, y: ny - r + L.rh / 2, width: 2 * r, height: 2 * r, rx: 3 }));
+    ov.appendChild(el("g", { id: "selg" }));
     mark();
   }
   function mark() {
@@ -518,77 +601,189 @@ html { scroll-padding-top: calc(var(--header-h) + 12px); }
     if (!g) return;
     while (g.firstChild) g.removeChild(g.firstChild);
     if (!sel) return;
-    var x = L.left + sel[1] * L.cw, y = L.top + sel[0] * L.rh;
-    g.appendChild(svgEl("line", { "class": "selx", x1: L.left, x2: L.w - L.right, y1: y + L.rh / 2, y2: y + L.rh / 2 }));
-    g.appendChild(svgEl("line", { "class": "selx", x1: x + L.cw / 2, x2: x + L.cw / 2, y1: L.top, y2: L.top + years * L.rh }));
-    g.appendChild(svgEl("rect", { "class": "sel", x: x - 1.5, y: y - 1.5, width: Math.max(L.cw, 2) + 3, height: L.rh + 3, rx: 1.5 }));
-  }
-  function say(k, i) {
-    var o = dateOf(k, i);
-    if (i === 59 && !leap(o.y)) { readout.innerHTML = "<b>" + o.y + "</b> had no February 29."; return; }
-    var v = hi[k * 366 + i];
-    var dow = DOW[new Date(o.y, o.m, o.d).getDay()];
-    if (v === -999) {
-      var future = k === newest[0] && i > newest[1];
-      readout.innerHTML = "<b>" + dow + ", " + longDate(o) + "</b> · " + (future ? "not here yet" : "no reading in the record");
+    if (sel.year !== undefined) {
+      var yy = L.top + sel.year * L.rh;
+      g.appendChild(el("rect", { "class": "sel", x: L.colX - 1.5, y: yy - 1.5, width: L.colW + 3, height: L.rh + 3, rx: 1.5 }));
+      g.appendChild(el("line", { "class": "selx", x1: L.left, x2: L.colX - 3, y1: yy + L.rh / 2, y2: yy + L.rh / 2 }));
       return;
     }
-    var n = D.norm[i], a = v - n, d = v - whole(n);
+    var x = L.left + sel.i * L.cw, y = L.top + sel.k * L.rh;
+    g.appendChild(el("line", { "class": "selx", x1: L.left, x2: L.w - L.right, y1: y + L.rh / 2, y2: y + L.rh / 2 }));
+    g.appendChild(el("line", { "class": "selx", x1: x + L.cw / 2, x2: x + L.cw / 2, y1: L.top, y2: L.top + years * L.rh }));
+    g.appendChild(el("rect", { "class": "sel", x: x - 1.5, y: y - 1.5, width: Math.max(L.cw, 2) + 3, height: L.rh + 3, rx: 1.5 }));
+  }
+
+  // ---- tooltips: hover with a mouse, tap with a finger; they never change the picture ----
+  function dayText(k, i) {
+    var o = dateOf(k, i);
+    if (i === 59 && !leap(o.y)) return "<b>" + o.y + "</b> had no February 29.";
+    var v = hi[k * 366 + i], dow = DOW[new Date(o.y, o.m, o.d).getDay()];
+    var head = "<b>" + dow + ", " + longDate(o) + "</b>";
+    if (v === -999) return head + "<br>" + (k === newest[0] && i > newest[1] ? "Not here yet: a new square fills in each morning." : "No reading in the record.");
+    var n = D.norm[i], d = v - whole(n), a = v - n;
     var words = d > 0 ? d + "° above normal" : d < 0 ? (-d) + "° below normal" : "right at normal";
-    var isNew = k === newest[0] && i === newest[1];
-    readout.innerHTML = '<span class="chip" style="background:' + col(a) + '"></span><b>' + dow + ", " + longDate(o) + "</b>" +
-      (isNew ? " (the newest day)" : "") + ' · <span class="m">high ' + fmtDeg(v) + "°F · normal " + fmtDeg(whole(n)) +
-      "°F</span> · <b>" + words + "</b>";
+    var warmer = 0, count = 0;   // where this high ranks among the same date's highs on the chart
+    for (var kk = 0; kk < years; kk++) { var w = hi[kk * 366 + i]; if (w !== -999) { count++; if (w > v) warmer++; } }
+    var coolest = 0;
+    for (kk = 0; kk < years; kk++) { var w2 = hi[kk * 366 + i]; if (w2 !== -999 && w2 < v) coolest++; }
+    var md = MON[o.m] + " " + o.d, where;
+    if (warmer === 0) where = "The warmest " + md + " high of " + count + " since " + D.y0;
+    else if (coolest === 0) where = "The coolest " + md + " high of " + count + " since " + D.y0;
+    else if (coolest < warmer) where = ordinal(coolest + 1) + "-coolest " + md + " high of " + count + " since " + D.y0;
+    else where = ordinal(warmer + 1) + "-warmest " + md + " high of " + count + " since " + D.y0;
+    return head + (k === newest[0] && i === newest[1] ? " · the newest day" : "") +
+      '<br><span class="m">High ' + deg(v) + "°F · normal " + deg(whole(n)) + '°F</span><br><span class="chip" style="background:' + col(a) +
+      '"></span><b>' + words + "</b><br><small>" + where + "</small>";
   }
-  function pick(e) {
-    var r = cv.getBoundingClientRect();
-    var i = Math.floor((e.clientX - r.left - L.left) / L.cw), k = Math.floor((e.clientY - r.top - L.top) / L.rh);
-    if (i < 0 || i > 365 || k < 0 || k >= years) return;
-    sel = [k, i]; mark(); say(k, i);
+  function yearText(k) {
+    var ya = yearAvg[k], y = D.y0 + k;
+    if (!ya) return "<b>" + y + "</b><br>No readings.";
+    var t = "<b>" + y + "</b>" + (ya.full ? "" : " · " + (k === years - 1 ? "so far" : "incomplete year")) +
+      '<br>Highs averaged <b>' + f1(ya.a) + "°F " + (ya.a >= 0 ? "above" : "below") + "</b> normal<br>" +
+      Math.round(100 * ya.up / ya.n) + "% of " + ya.n + " days above normal";
+    if (ya.full) {
+      var r = yearRank(ya.a);
+      t += "<br><small>" + (r === 1 ? "The warmest" : ordinal(r) + "-warmest") + " of " + yearRank.of + " complete years</small>";
+    }
+    return t;
   }
-  stage.addEventListener("pointermove", function (e) { if (e.pointerType === "mouse") pick(e); });
-  stage.addEventListener("pointerdown", pick);
+  function place(x, y, reach) {
+    tip.hidden = false;
+    var sw = stage.clientWidth, sh = stage.clientHeight, tw = tip.offsetWidth, th = tip.offsetHeight, gap = reach || 14;
+    var left = x + gap, top = y + gap;
+    if (left + tw > sw - 8) left = x - tw - gap;
+    if (top + th > sh - 8) top = y - th - gap;
+    tip.style.left = Math.max(6, left) + "px"; tip.style.top = Math.max(6, top) + "px";
+  }
+  function hideTip() { tip.hidden = true; pinned = false; sel = null; mark(); }
+  function hit(e, finger) {
+    var r = cv.getBoundingClientRect(), x = e.clientX - r.left, y = e.clientY - r.top;
+    var k = Math.floor((y - L.top) / L.rh);
+    if (finger && k >= years && y < L.top + years * L.rh + 12) k = years - 1;   // fingers get a little reach past the edge
+    if (finger && k < 0 && y > L.top - 12) k = 0;
+    if (k < 0 || k >= years) return null;
+    if (x >= L.colX - (finger ? 5 : 2) && x <= L.colX + L.colW + (finger ? 12 : 4)) return { year: k, x: x, y: y };
+    var i = Math.floor((x - L.left) / L.cw);
+    if (i < 0 || i > 365) return null;
+    return { k: k, i: i, x: x, y: y };
+  }
+  function read(h, finger) {
+    sel = h; mark();
+    tip.innerHTML = h.year !== undefined ? yearText(h.year) : dayText(h.k, h.i);
+    readout.textContent = tip.textContent;
+    place(h.x, h.y, finger ? 22 : 14);
+  }
+  var down = null;
+  cv.addEventListener("pointermove", function (e) {
+    if (e.pointerType !== "mouse") return;
+    var h = hit(e, false);
+    if (h) read(h, false); else hideTip();
+  });
+  cv.addEventListener("pointerleave", function (e) { if (e.pointerType === "mouse") hideTip(); });
+  cv.addEventListener("pointerdown", function (e) { down = { x: e.clientX, y: e.clientY, t: Date.now(), type: e.pointerType }; });
+  cv.addEventListener("pointerup", function (e) {
+    if (!down || e.pointerType === "mouse") { down = null; return; }
+    var moved = Math.abs(e.clientX - down.x) + Math.abs(e.clientY - down.y);
+    if (moved < 10 && Date.now() - down.t < 600) {      // a tap, not a scroll
+      var h = hit(e, true);
+      if (h) { read(h, true); pinned = true; } else hideTip();
+    }
+    down = null;
+  });
+  document.addEventListener("pointerdown", function (e) { if (pinned && !stage.contains(e.target)) hideTip(); });
   stage.addEventListener("keydown", function (e) {
     var mv = { ArrowLeft: [0, -1], ArrowRight: [0, 1], ArrowUp: [-1, 0], ArrowDown: [1, 0], PageUp: [-10, 0], PageDown: [10, 0] }[e.key];
+    if (e.key === "Escape") { hideTip(); return; }
     if (!mv && e.key !== "Home" && e.key !== "End") return;
     e.preventDefault();
-    sel = sel || newest.slice();
-    if (e.key === "End") sel = newest.slice();
-    else if (e.key === "Home") sel = [0, 0];
-    else { sel = [Math.max(0, Math.min(years - 1, sel[0] + mv[0])), Math.max(0, Math.min(365, sel[1] + mv[1]))]; }
-    mark(); say(sel[0], sel[1]);
+    var c = sel && sel.k !== undefined ? [sel.k, sel.i] : newest.slice();
+    if (e.key === "End") c = newest.slice();
+    else if (e.key === "Home") c = [0, 0];
+    else c = [Math.max(0, Math.min(years - 1, c[0] + mv[0])), Math.max(0, Math.min(365, c[1] + mv[1]))];
+    read({ k: c[0], i: c[1], x: L.left + c[1] * L.cw + L.cw / 2, y: L.top + c[0] * L.rh + L.rh / 2 }, false);
   });
-  stage.addEventListener("focus", function () { if (!sel) { sel = newest.slice(); mark(); say(sel[0], sel[1]); } });
+  stage.addEventListener("blur", function () { if (!pinned) hideTip(); });
 
-  Array.prototype.forEach.call(document.querySelectorAll(".seg button"), function (b) {
-    b.addEventListener("click", function () {
-      filter = b.getAttribute("data-f");
-      Array.prototype.forEach.call(document.querySelectorAll(".seg button"), function (x) { x.setAttribute("aria-pressed", x === b ? "true" : "false"); });
-      draw();
+  // ---- filters: the buttons and the legend keys set the same thing ----
+  function setFilter(f) {
+    filter = f;
+    Array.prototype.forEach.call(document.querySelectorAll(".seg button"), function (b) { b.setAttribute("aria-pressed", b.getAttribute("data-f") === f ? "true" : "false"); });
+    Array.prototype.forEach.call(document.querySelectorAll(".keys .key"), function (b) {
+      var on = b.getAttribute("data-f") === f;
+      b.setAttribute("aria-pressed", on ? "true" : "false");
+      b.classList.toggle("faded", f !== "all" && !on);
     });
+    hideTip(); draw();
+  }
+  Array.prototype.forEach.call(document.querySelectorAll(".seg button"), function (b) {
+    b.addEventListener("click", function () { setFilter(b.getAttribute("data-f")); });
+  });
+  Array.prototype.forEach.call(document.querySelectorAll(".keys .key"), function (b) {
+    b.addEventListener("click", function () { var f = b.getAttribute("data-f"); setFilter(filter === f ? "all" : f); });
   });
 
-  // ---- place picker: each place has its own page, so choosing one opens it ----
-  var selEl = document.getElementById("place");
-  PLACES.forEach(function (p) {
-    var o = document.createElement("option");
-    o.value = p[0]; o.textContent = p[1] + ", " + p[2];
-    if (p[0] === D.slug) o.selected = true;
-    selEl.appendChild(o);
+  // ---- the story, five steps; each changes the picture ----
+  var cards = document.querySelectorAll(".step"), stepN = document.getElementById("stepN");
+  function setStep(n) {
+    step = Math.max(0, Math.min(cards.length - 1, n));
+    Array.prototype.forEach.call(cards, function (c, j) { c.classList.toggle("on", j === step); });
+    stepN.textContent = (step + 1) + " of " + cards.length;
+    document.getElementById("prev").disabled = step === 0;
+    document.getElementById("next").disabled = step === cards.length - 1;
+    focus = STEPS[step].focus;
+    hideTip(); draw(); overlay();
+  }
+  document.getElementById("prev").addEventListener("click", function () { setStep(step - 1); });
+  document.getElementById("next").addEventListener("click", function () { setStep(step + 1); });
+
+  // ---- place search: accent-insensitive; every place has its own page, so choosing one opens it ----
+  var input = document.getElementById("place"), list = document.getElementById("place-list"), active = -1, shownPlaces = [];
+  function norm(s) { return s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase(); }
+  PLACES.forEach(function (p) { p.key = norm(p[1] + " " + p[2]); p.name = norm(p[1]); });
+  var here = PLACES.filter(function (p) { return p[0] === D.slug; })[0];
+  if (here) input.value = here[1] + ", " + here[2];
+  function go(p) { location.href = LIVE ? ALM + p[0] + "/every-day/" : "../../" + p[0] + "/every-day/"; }
+  function renderList() {
+    var q = norm(input.value.trim());
+    if (here && input.value === here[1] + ", " + here[2]) q = "";
+    shownPlaces = !q ? [] : PLACES.filter(function (p) { return p.name.indexOf(q) === 0; })
+      .concat(PLACES.filter(function (p) { return p.name.indexOf(q) !== 0 && p.key.indexOf(q) !== -1; })).slice(0, 8);
+    list.innerHTML = "";
+    shownPlaces.forEach(function (p, j) {
+      var li = document.createElement("li");
+      li.id = "opt-" + j; li.setAttribute("role", "option"); li.textContent = p[1] + ", " + p[2];
+      li.setAttribute("aria-selected", j === active ? "true" : "false");
+      li.addEventListener("pointerdown", function (e) { e.preventDefault(); go(p); });
+      list.appendChild(li);
+    });
+    if (q && !shownPlaces.length) { var none = document.createElement("li"); none.className = "none"; none.textContent = "No Almanac place matches"; list.appendChild(none); }
+    list.hidden = !q;
+    input.setAttribute("aria-expanded", q ? "true" : "false");
+    input.setAttribute("aria-activedescendant", active >= 0 ? "opt-" + active : "");
+  }
+  input.addEventListener("focus", function () { input.select(); });
+  input.addEventListener("input", function () { active = -1; renderList(); });
+  input.addEventListener("keydown", function (e) {
+    if (e.key === "ArrowDown" || e.key === "ArrowUp") {
+      e.preventDefault();
+      if (!shownPlaces.length) return;
+      active = (active + (e.key === "ArrowDown" ? 1 : -1) + shownPlaces.length) % shownPlaces.length; renderList();
+    } else if (e.key === "Enter") {
+      e.preventDefault();
+      var p = shownPlaces[Math.max(0, active)];
+      if (p) go(p);
+    } else if (e.key === "Escape") { list.hidden = true; input.setAttribute("aria-expanded", "false"); }
   });
-  selEl.addEventListener("change", function () {
-    location.href = (LIVE ? ALM + selEl.value + "/every-day/" : "../../" + selEl.value + "/every-day/");
-  });
+  input.addEventListener("blur", function () { setTimeout(function () { list.hidden = true; input.setAttribute("aria-expanded", "false"); }, 120); });
 
   function newestSentence() {
     var o = dateOf(newest[0], newest[1]), v = hi[newest[0] * 366 + newest[1]], n = whole(D.norm[newest[1]]), d = v - n;
     var gap = d ? Math.abs(d) + "° " + (d > 0 ? "above" : "below") : "right at";
-    return "The newest square is " + longDate(o) + ": a high of " + fmtDeg(v) + "°F, " + gap + " the normal of " + fmtDeg(n) + "°F for the date.";
+    return "The newest square is " + longDate(o) + ": a high of " + deg(v) + "°F, " + gap + " the normal of " + deg(n) + "°F for the date.";
   }
   function start(animate) {
-    decode(); layout(); overlay();
-    if (!animate || reduce) { draw(); }
-    else {
+    decode(); layout(); setStep(step);
+    if (animate && !reduce) {
       var t0 = null, dur = 1400;
       (function frame(t) {
         if (t0 === null) t0 = t;
@@ -597,21 +792,19 @@ html { scroll-padding-top: calc(var(--header-h) + 12px); }
         if (f < 1) requestAnimationFrame(frame);
       })(performance.now());
     }
-    stage.classList.add("live");
-    if (!sel) { readout.textContent = "Hover or tap any square to read that day. With the chart selected, the arrow keys move day by day."; }
   }
   start(true);
   var rt;
-  window.addEventListener("resize", function () { clearTimeout(rt); rt = setTimeout(function () { layout(); overlay(); draw(); }, 120); });
+  window.addEventListener("resize", function () { clearTimeout(rt); rt = setTimeout(function () { hideTip(); layout(); overlay(); draw(); }, 120); });
 
   // ---- the showpiece front page loads the featured place's newest data from the Almanac each visit ----
   if (LIVE && window.fetch) {
     fetch(LIVE, { cache: "no-cache" }).then(function (r) { return r.ok ? r.json() : null; }).then(function (x) {
       if (!x || !x.asof || x.asof <= D.asof || x.slug !== D.slug) return;
-      D = x; sel = null; decode(); layout(); overlay(); draw();
-      document.getElementById("pNew").textContent = newestSentence();
+      D = x; decode(); layout(); setStep(step);
+      Array.prototype.forEach.call(document.querySelectorAll(".pNew"), function (s) { s.textContent = newestSentence(); });
       var t = document.getElementById("asofT");
-      if (t) { var o = dateOf(newest[0], newest[1]); t.setAttribute("datetime", D.asof); t.textContent = MS[o.m] + ". " + o.d + ", " + o.y; t.textContent = t.textContent.replace("May.", "May"); }
+      if (t) { var o = dateOf(newest[0], newest[1]); t.setAttribute("datetime", D.asof); t.textContent = (MS[o.m] + ". " + o.d + ", " + o.y).replace("May.", "May"); }
     }).catch(function () {});
   }
 })();

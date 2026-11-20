@@ -4,7 +4,7 @@ history/ files.
     python -m unittest tests.test_almanac_everyday
 """
 import html, json, re, shutil, sys, tempfile, unittest
-from datetime import date
+from datetime import date, timedelta
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[1]
@@ -79,12 +79,22 @@ class Test(unittest.TestCase):
         a.HISTORY_DIR = REAL_HISTORY
         page = ev.render(self.ed, seo_head=a.everyday_seo(self.ed), nearby="", main_site=a.MAIN_SITE)
         text = visible_text(page)
-        for k in ("lede", "p_dec", "p_new", "p_years", "p_streak", "p_year"):
+        for k in ("p_dec", "p_new", "p_years", "p_streak", "p_year", "p_months"):
             if self.ed["text"][k]:
                 self.assertIn(self.ed["text"][k], text, k)
         for d in self.ed["decades"]:
             self.assertIn(d["label"], text)
         self.assertEqual(page.count("<h1>"), 1)
+        # The five-step story is all in the HTML, each step a question, with the picture each one draws.
+        self.assertEqual(page.count('<article class="step'), 5)
+        steps = json.loads(re.search(r'<script type="application/json" id="steps-data">(.*?)</script>', page, re.S).group(1))
+        self.assertEqual(len(steps), 5)
+        self.assertTrue(all(st["q"].endswith("?") for st in steps))
+        self.assertEqual(steps[2]["focus"]["rows"], [[self.ed["warm"]["y"]] * 2, [self.ed["cool"]["y"]] * 2])
+        for k in ("Key facts", "Which months changed most?", "Longest run below normal"):
+            self.assertIn(k, text)
+        self.assertEqual(len(re.findall(r"<tr><td>(January|February|March|April|May|June|July|August|September|October|November|December)</td>",
+                                        page)), 12)
         self.assertIn('<link rel="canonical" href="https://tallorderdigital.com/weather/almanac/chicago/every-day/">', page)
         self.assertIn('"@type":"Dataset"', page)
         self.assertNotIn("noindex", page)
@@ -138,6 +148,35 @@ class Test(unittest.TestCase):
         kept = carry_over.carry_over(new, prev, cities)
         self.assertIn("south-bend/every-day", kept)
         self.assertEqual((new / "south-bend" / "every-day" / "index.html").read_text(), "old")
+
+    def test_month_table_and_cool_run_recounted(self):
+        p = self.ed["payload"]
+        days = ev.decode(p["rows"], p["exc"], p["y0"], p["norm"])
+        (a0, a1), (b0, b1) = self.ed["first30"], self.ed["last30"]
+        for r in self.ed["months"]:
+            for lo, hi_, key in ((a0, a1, "p0"), (b0, b1, "p1")):
+                ks = [k for k in days if lo <= k[0] <= hi_ and int(ev.md_of(k[1])[:2]) == r["m"]]
+                self.assertEqual(round(100 * sum(days[k] > p["norm"][k[1]] for k in ks) / len(ks)), r[key])
+        # the cool run: every day in it strictly below normal, and the days on either side not
+        c = self.ed["cold"]
+        d0, d1 = date.fromisoformat(c["from"]), date.fromisoformat(c["to"])
+        run = [(d.year, ev.idx_of(f"{d:%m-%d}")) for d in (d0 + timedelta(days=j) for j in range((d1 - d0).days + 1))]
+        self.assertEqual(len(run), c["n"])
+        self.assertTrue(all(days[k] < p["norm"][k[1]] for k in run))
+        for edge in (d0 - timedelta(days=1), d1 + timedelta(days=1)):
+            k = (edge.year, ev.idx_of(f"{edge:%m-%d}"))
+            self.assertFalse(k in days and days[k] < p["norm"][k[1]])
+
+    def test_extreme_places(self):
+        # late records, Alaska, Hawaii, a place whose record starts after 1900: each builds and checks out
+        for slug in ("fairbanks", "honolulu", "seattle", "key-west"):
+            if slug not in a.CITIES or not store.exists(REAL_HISTORY, slug):
+                continue
+            h = a.load(slug)
+            ed = ev.build_everyday(a.build(slug, h=h), h, a.CITIES)
+            self.assertGreaterEqual(ed["y0"], 1900)
+            self.assertEqual(len(ed["months"]), 12)
+            self.assertIn(f"Since {ed['y0']}", ed["text"]["lede"])
 
 
 if __name__ == "__main__":
