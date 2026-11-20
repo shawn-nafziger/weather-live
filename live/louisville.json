@@ -11,20 +11,20 @@
   "lon": -85.7365,
   "history": "Same site as the official Louisville record"
  },
- "as_of_utc": "2026-11-20T10:08:08Z",
+ "as_of_utc": "2026-11-20T11:08:05Z",
  "now": {
-  "time_utc": "2026-11-20T09:55:00Z",
-  "temp_c": 7,
-  "temp_f": 44.6,
+  "time_utc": "2026-11-20T10:40:00Z",
+  "temp_c": 6,
+  "temp_f": 42.8,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 4,
-  "humidity_pct": 81.22,
-  "wind_kmh": 5.54,
+  "humidity_pct": 87.0,
+  "wind_kmh": 0,
   "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-20",
-  "readings": 2,
+  "readings": 3,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -38,6 +38,11 @@
    "at_least_f": 47.3,
    "about_f": 48.2,
    "time_utc": "2026-11-20T05:00:00Z"
+  },
+  "dip_between_reports": {
+   "at_most_f": 43.7,
+   "about_f": 42.8,
+   "time_utc": "2026-11-20T10:00:00Z"
   }
  },
  "record": {
@@ -90,7 +95,7 @@
   },
   "forecast_highs": [
    {
-    "period": "Friday",
+    "period": "Today",
     "date": "2026-11-20",
     "high_f": 69,
     "would_rank": {
@@ -261,16 +266,7 @@
   "grid": "LMK/51,74",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-20T01:00:00-05:00",
-    "is_daytime": false,
-    "temp_f": 41,
-    "temp_c": 5.0,
-    "precip_chance_pct": 0,
-    "short_forecast": "Clear"
-   },
-   {
-    "name": "Friday",
+    "name": "Today",
     "start": "2026-11-20T06:00:00-05:00",
     "is_daytime": true,
     "temp_f": 69,
@@ -279,7 +275,7 @@
     "short_forecast": "Sunny"
    },
    {
-    "name": "Friday Night",
+    "name": "Tonight",
     "start": "2026-11-20T18:00:00-05:00",
     "is_daytime": false,
     "temp_f": 40,
@@ -385,19 +381,21 @@
     "temp_c": 8.33,
     "precip_chance_pct": 15,
     "short_forecast": "Slight Chance Rain And Snow Showers then Partly Sunny"
+   },
+   {
+    "name": "Thursday Night",
+    "start": "2026-11-26T18:00:00-05:00",
+    "is_daytime": false,
+    "temp_f": 31,
+    "temp_c": -0.56,
+    "precip_chance_pct": 14,
+    "short_forecast": "Partly Cloudy"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-20T06:26:04Z",
   "hours": [
-   {
-    "start": "2026-11-20T05:00:00-05:00",
-    "temp_f": 41,
-    "temp_c": 5.0,
-    "precip_chance_pct": 0,
-    "short_forecast": "Clear"
-   },
    {
     "start": "2026-11-20T06:00:00-05:00",
     "temp_f": 41,
@@ -724,6 +722,13 @@
     "start": "2026-11-22T04:00:00-05:00",
     "temp_f": 46,
     "temp_c": 7.78,
+    "precip_chance_pct": 0,
+    "short_forecast": "Partly Cloudy"
+   },
+   {
+    "start": "2026-11-22T05:00:00-05:00",
+    "temp_f": 45,
+    "temp_c": 7.22,
     "precip_chance_pct": 0,
     "short_forecast": "Partly Cloudy"
    }

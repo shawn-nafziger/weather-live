@@ -11,20 +11,20 @@
   "lon": -77.0342,
   "history": "Same site as the official Washington record"
  },
- "as_of_utc": "2026-11-20T10:08:08Z",
+ "as_of_utc": "2026-11-20T11:08:05Z",
  "now": {
-  "time_utc": "2026-11-20T09:55:00Z",
-  "temp_c": 6,
-  "temp_f": 42.8,
+  "time_utc": "2026-11-20T10:45:00Z",
+  "temp_c": 5,
+  "temp_f": 41.0,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 2,
-  "humidity_pct": 75.52,
+  "humidity_pct": 80.94,
   "wind_kmh": 0,
-  "description": "Clear"
+  "description": ""
  },
  "today_so_far": {
   "date_local": "2026-11-20",
-  "readings": 2,
+  "readings": 3,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -100,7 +100,7 @@
   },
   "forecast_highs": [
    {
-    "period": "Friday",
+    "period": "Today",
     "date": "2026-11-20",
     "high_f": 69,
     "would_rank": {
@@ -270,16 +270,7 @@
   "grid": "LWX/97,69",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-20T04:00:00-05:00",
-    "is_daytime": false,
-    "temp_f": 38,
-    "temp_c": 3.33,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Clear"
-   },
-   {
-    "name": "Friday",
+    "name": "Today",
     "start": "2026-11-20T06:00:00-05:00",
     "is_daytime": true,
     "temp_f": 69,
@@ -288,7 +279,7 @@
     "short_forecast": "Sunny"
    },
    {
-    "name": "Friday Night",
+    "name": "Tonight",
     "start": "2026-11-20T18:00:00-05:00",
     "is_daytime": false,
     "temp_f": 42,
@@ -394,19 +385,21 @@
     "temp_c": 11.67,
     "precip_chance_pct": 62,
     "short_forecast": "Light Rain Likely"
+   },
+   {
+    "name": "Thursday Night",
+    "start": "2026-11-26T18:00:00-05:00",
+    "is_daytime": false,
+    "temp_f": 40,
+    "temp_c": 4.44,
+    "precip_chance_pct": 36,
+    "short_forecast": "Chance Light Rain"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-20T08:52:44Z",
   "hours": [
-   {
-    "start": "2026-11-20T05:00:00-05:00",
-    "temp_f": 40,
-    "temp_c": 4.44,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Clear"
-   },
    {
     "start": "2026-11-20T06:00:00-05:00",
     "temp_f": 38,
@@ -731,6 +724,13 @@
    },
    {
     "start": "2026-11-22T04:00:00-05:00",
+    "temp_f": 52,
+    "temp_c": 11.11,
+    "precip_chance_pct": 36,
+    "short_forecast": "Chance Light Rain"
+   },
+   {
+    "start": "2026-11-22T05:00:00-05:00",
     "temp_f": 52,
     "temp_c": 11.11,
     "precip_chance_pct": 36,
