@@ -11,20 +11,20 @@
   "lon": -122.6092,
   "history": "Same site as the official Portland record"
  },
- "as_of_utc": "2026-11-20T12:08:01Z",
+ "as_of_utc": "2026-11-20T13:07:55Z",
  "now": {
-  "time_utc": "2026-11-20T11:15:00Z",
-  "temp_c": 5,
-  "temp_f": 41.0,
+  "time_utc": "2026-11-20T12:40:00Z",
+  "temp_c": 6,
+  "temp_f": 42.8,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 3,
-  "humidity_pct": 86.9,
+  "humidity_pct": 81.08,
   "wind_kmh": 0,
   "description": "Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-20",
-  "readings": 3,
+  "readings": 5,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -34,6 +34,11 @@
   "low_c": 5,
   "low_f": 41.0,
   "low_time_utc": "2026-11-20T08:53:00Z",
+  "peak_between_reports": {
+   "at_least_f": 41.9,
+   "about_f": 42.8,
+   "time_utc": "2026-11-20T12:05:00Z"
+  },
   "dip_between_reports": {
    "at_most_f": 40.1,
    "about_f": 39.2,
@@ -256,7 +261,7 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-20T11:41:02Z",
+  "issued_utc": "2026-11-20T12:41:10Z",
   "grid": "PQR/116,107",
   "periods": [
    {
@@ -388,15 +393,8 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-20T10:41:06Z",
+  "issued_utc": "2026-11-20T12:41:10Z",
   "hours": [
-   {
-    "start": "2026-11-20T04:00:00-08:00",
-    "temp_f": 36,
-    "temp_c": 2.22,
-    "precip_chance_pct": 1,
-    "short_forecast": "Areas Of Fog"
-   },
    {
     "start": "2026-11-20T05:00:00-08:00",
     "temp_f": 36,
@@ -725,6 +723,13 @@
     "temp_c": 5.56,
     "precip_chance_pct": 54,
     "short_forecast": "Chance Light Rain"
+   },
+   {
+    "start": "2026-11-22T04:00:00-08:00",
+    "temp_f": 42,
+    "temp_c": 5.56,
+    "precip_chance_pct": 17,
+    "short_forecast": "Slight Chance Light Rain"
    }
   ]
  },
