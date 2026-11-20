@@ -11,9 +11,9 @@
   "lon": -78.7819,
   "history": "Same site as the official Raleigh record"
  },
- "as_of_utc": "2026-11-19T23:08:07Z",
+ "as_of_utc": "2026-11-20T00:08:11Z",
  "now": {
-  "time_utc": "2026-11-19T22:30:00Z",
+  "time_utc": "2026-11-19T23:00:00Z",
   "temp_c": 13,
   "temp_f": 55.4,
   "precision": "nearest whole \u00b0C",
@@ -24,7 +24,7 @@
  },
  "today_so_far": {
   "date_local": "2026-11-19",
-  "readings": 13,
+  "readings": 14,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -80,30 +80,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-19",
-    "high_f": 68,
-    "would_rank": {
-     "value_f": 68,
-     "warm_rank": 40,
-     "cool_rank": 96,
-     "years": 140,
-     "first_year": 1887,
-     "tied_years": [
-      1915,
-      1922,
-      1945,
-      1983,
-      1992
-     ],
-     "standing": "warm",
-     "notable": false,
-     "since": 2025,
-     "record": false,
-     "phrase": "typical for November 19"
-    }
-   },
    {
     "period": "Friday",
     "date": "2026-11-20",
@@ -234,25 +210,36 @@
      "record": false,
      "phrase": "typical for November 25"
     }
+   },
+   {
+    "period": "Thanksgiving Day",
+    "date": "2026-11-26",
+    "high_f": 55,
+    "would_rank": {
+     "value_f": 55,
+     "warm_rank": 87,
+     "cool_rank": 52,
+     "years": 139,
+     "first_year": 1887,
+     "tied_years": [
+      1920
+     ],
+     "standing": "cool",
+     "notable": false,
+     "since": 2023,
+     "record": false,
+     "phrase": "typical for November 26"
+    }
    }
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-19T18:22:37Z",
+  "issued_utc": "2026-11-19T22:39:03Z",
   "grid": "RAH/69,62",
   "periods": [
    {
-    "name": "This Afternoon",
-    "start": "2026-11-19T14:00:00-05:00",
-    "is_daytime": true,
-    "temp_f": 68,
-    "temp_c": 20.0,
-    "precip_chance_pct": 0,
-    "short_forecast": "Partly Sunny"
-   },
-   {
     "name": "Tonight",
-    "start": "2026-11-19T18:00:00-05:00",
+    "start": "2026-11-19T19:00:00-05:00",
     "is_daytime": false,
     "temp_f": 38,
     "temp_c": 3.33,
@@ -366,19 +353,21 @@
     "temp_c": 3.89,
     "precip_chance_pct": 55,
     "short_forecast": "Rain Showers Likely"
+   },
+   {
+    "name": "Thanksgiving Day",
+    "start": "2026-11-26T06:00:00-05:00",
+    "is_daytime": true,
+    "temp_f": 55,
+    "temp_c": 12.78,
+    "precip_chance_pct": 51,
+    "short_forecast": "Chance Rain Showers"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-19T22:39:03Z",
   "hours": [
-   {
-    "start": "2026-11-19T18:00:00-05:00",
-    "temp_f": 57,
-    "temp_c": 13.89,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "start": "2026-11-19T19:00:00-05:00",
     "temp_f": 53,
@@ -707,6 +696,13 @@
     "temp_c": 16.67,
     "precip_chance_pct": 6,
     "short_forecast": "Partly Sunny"
+   },
+   {
+    "start": "2026-11-21T18:00:00-05:00",
+    "temp_f": 59,
+    "temp_c": 15.0,
+    "precip_chance_pct": 6,
+    "short_forecast": "Mostly Cloudy"
    }
   ]
  },

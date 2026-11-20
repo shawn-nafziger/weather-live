@@ -11,20 +11,20 @@
   "lon": -85.7365,
   "history": "Same site as the official Louisville record"
  },
- "as_of_utc": "2026-11-19T23:08:07Z",
+ "as_of_utc": "2026-11-20T00:08:11Z",
  "now": {
-  "time_utc": "2026-11-19T22:30:00Z",
-  "temp_c": 18,
-  "temp_f": 64.4,
+  "time_utc": "2026-11-19T23:05:00Z",
+  "temp_c": 16,
+  "temp_f": 60.8,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 3,
-  "humidity_pct": 36.77,
-  "wind_kmh": 5.54,
+  "humidity_pct": 41.74,
+  "wind_kmh": 0,
   "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-19",
-  "readings": 15,
+  "readings": 16,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -101,26 +101,6 @@
    "phrase": "already the 17th warmest November 19 high (tied) of 155 since 1872, warmest since 2024"
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-19",
-    "high_f": 70,
-    "would_rank": {
-     "value_f": 70,
-     "warm_rank": 16,
-     "cool_rank": 139,
-     "years": 155,
-     "first_year": 1872,
-     "tied_years": [
-      1941
-     ],
-     "standing": "warm",
-     "notable": true,
-     "since": 2024,
-     "record": false,
-     "phrase": "16th warmest November 19 high (tied) of 155 since 1872, warmest since 2024"
-    }
-   },
    {
     "period": "Friday",
     "date": "2026-11-20",
@@ -264,6 +244,36 @@
      "record": false,
      "phrase": "typical for November 25"
     }
+   },
+   {
+    "period": "Thanksgiving Day",
+    "date": "2026-11-26",
+    "high_f": 46,
+    "would_rank": {
+     "value_f": 46,
+     "warm_rank": 107,
+     "cool_rank": 38,
+     "years": 155,
+     "first_year": 1872,
+     "tied_years": [
+      1874,
+      1882,
+      1901,
+      1912,
+      1918,
+      1932,
+      1951,
+      1971,
+      1978,
+      2000,
+      2014
+     ],
+     "standing": "cool",
+     "notable": false,
+     "since": 2021,
+     "record": false,
+     "phrase": "typical for November 26"
+    }
    }
   ]
  },
@@ -271,15 +281,6 @@
   "issued_utc": "2026-11-19T21:04:05Z",
   "grid": "LMK/51,74",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-19T16:00:00-05:00",
-    "is_daytime": true,
-    "temp_f": 70,
-    "temp_c": 21.11,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-19T18:00:00-05:00",
@@ -396,19 +397,21 @@
     "temp_c": -0.56,
     "precip_chance_pct": 28,
     "short_forecast": "Chance Rain Showers then Slight Chance Rain And Snow Showers"
+   },
+   {
+    "name": "Thanksgiving Day",
+    "start": "2026-11-26T06:00:00-05:00",
+    "is_daytime": true,
+    "temp_f": 46,
+    "temp_c": 7.78,
+    "precip_chance_pct": 15,
+    "short_forecast": "Slight Chance Rain And Snow Showers then Partly Sunny"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-19T21:04:05Z",
   "hours": [
-   {
-    "start": "2026-11-19T18:00:00-05:00",
-    "temp_f": 61,
-    "temp_c": 16.11,
-    "precip_chance_pct": 0,
-    "short_forecast": "Clear"
-   },
    {
     "start": "2026-11-19T19:00:00-05:00",
     "temp_f": 56,
@@ -737,6 +740,13 @@
     "temp_c": 19.44,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
+   },
+   {
+    "start": "2026-11-21T18:00:00-05:00",
+    "temp_f": 64,
+    "temp_c": 17.78,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Clear"
    }
   ]
  },
