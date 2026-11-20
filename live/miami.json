@@ -11,15 +11,15 @@
   "lon": -80.3164,
   "history": "Same station as the official Miami record"
  },
- "as_of_utc": "2026-11-20T08:07:53Z",
+ "as_of_utc": "2026-11-20T09:08:04Z",
  "now": {
-  "time_utc": "2026-11-20T07:55:00Z",
-  "temp_c": 23,
-  "temp_f": 73.4,
+  "time_utc": "2026-11-20T08:50:00Z",
+  "temp_c": 22,
+  "temp_f": 71.6,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 22,
-  "humidity_pct": 94.11,
-  "wind_kmh": 11.12,
+  "humidity_pct": 100,
+  "wind_kmh": 9.25,
   "description": "Mostly Cloudy"
  },
  "today_so_far": {
@@ -33,7 +33,12 @@
   "high_time_utc": "2026-11-20T05:20:00Z",
   "low_c": 22.8,
   "low_f": 73.0,
-  "low_time_utc": "2026-11-20T06:30:00Z"
+  "low_time_utc": "2026-11-20T06:30:00Z",
+  "dip_between_reports": {
+   "at_most_f": 72.5,
+   "about_f": 71.6,
+   "time_utc": "2026-11-20T08:45:00Z"
+  }
  },
  "record": {
   "series": "Miami area (ThreadEx)",
@@ -305,7 +310,7 @@
   "periods": [
    {
     "name": "Overnight",
-    "start": "2026-11-20T02:00:00-05:00",
+    "start": "2026-11-20T03:00:00-05:00",
     "is_daytime": false,
     "temp_f": 72,
     "temp_c": 22.22,
@@ -432,15 +437,8 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-20T07:46:55Z",
+  "issued_utc": "2026-11-20T08:36:43Z",
   "hours": [
-   {
-    "start": "2026-11-20T03:00:00-05:00",
-    "temp_f": 72,
-    "temp_c": 22.22,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "start": "2026-11-20T04:00:00-05:00",
     "temp_f": 72,
@@ -765,6 +763,13 @@
    },
    {
     "start": "2026-11-22T02:00:00-05:00",
+    "temp_f": 72,
+    "temp_c": 22.22,
+    "precip_chance_pct": 4,
+    "short_forecast": "Mostly Clear"
+   },
+   {
+    "start": "2026-11-22T03:00:00-05:00",
     "temp_f": 72,
     "temp_c": 22.22,
     "precip_chance_pct": 4,
