@@ -11,15 +11,15 @@
   "lon": -71.4277,
   "history": "Same site as the official Providence record"
  },
- "as_of_utc": "2026-11-20T22:48:21Z",
+ "as_of_utc": "2026-11-20T23:07:52Z",
  "now": {
-  "time_utc": "2026-11-20T22:35:00Z",
-  "temp_c": 15,
-  "temp_f": 59.0,
+  "time_utc": "2026-11-20T22:55:00Z",
+  "temp_c": 14,
+  "temp_f": 57.2,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 3,
-  "humidity_pct": 44.5,
-  "wind_kmh": 9.25,
+  "humidity_pct": 47.47,
+  "wind_kmh": 7.42,
   "description": "Clear"
  },
  "today_so_far": {
@@ -99,24 +99,6 @@
    "phrase": "already the 8th warmest November 20 high (tied) of 123 since 1904, warmest since 2009"
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-20",
-    "high_f": 66,
-    "would_rank": {
-     "value_f": 66,
-     "warm_rank": 11,
-     "cool_rank": 113,
-     "years": 123,
-     "first_year": 1904,
-     "tied_years": [],
-     "standing": "warm",
-     "notable": true,
-     "since": 2009,
-     "record": false,
-     "phrase": "11th warmest November 20 high of 123 since 1904, warmest since 2009"
-    }
-   },
    {
     "period": "Saturday",
     "date": "2026-11-21",
@@ -248,6 +230,29 @@
      "record": false,
      "phrase": "typical for November 26"
     }
+   },
+   {
+    "period": "Friday",
+    "date": "2026-11-27",
+    "high_f": 50,
+    "would_rank": {
+     "value_f": 50,
+     "warm_rank": 55,
+     "cool_rank": 65,
+     "years": 123,
+     "first_year": 1904,
+     "tied_years": [
+      1924,
+      1962,
+      1967,
+      2004
+     ],
+     "standing": "warm",
+     "notable": false,
+     "since": 2025,
+     "record": false,
+     "phrase": "typical for November 27"
+    }
    }
   ]
  },
@@ -255,15 +260,6 @@
   "issued_utc": "2026-11-20T21:14:45Z",
   "grid": "BOX/64,70",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-20T17:00:00-05:00",
-    "is_daytime": true,
-    "temp_f": 66,
-    "temp_c": 18.89,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-20T18:00:00-05:00",
@@ -380,19 +376,21 @@
     "temp_c": 3.89,
     "precip_chance_pct": 64,
     "short_forecast": "Light Rain Likely"
+   },
+   {
+    "name": "Friday",
+    "start": "2026-11-27T06:00:00-05:00",
+    "is_daytime": true,
+    "temp_f": 50,
+    "temp_c": 10.0,
+    "precip_chance_pct": 50,
+    "short_forecast": "Chance Light Rain"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-20T21:14:45Z",
   "hours": [
-   {
-    "start": "2026-11-20T17:00:00-05:00",
-    "temp_f": 59,
-    "temp_c": 15.0,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "start": "2026-11-20T18:00:00-05:00",
     "temp_f": 56,
@@ -720,6 +718,13 @@
     "temp_f": 60,
     "temp_c": 15.56,
     "precip_chance_pct": 42,
+    "short_forecast": "Chance Light Rain"
+   },
+   {
+    "start": "2026-11-22T17:00:00-05:00",
+    "temp_f": 58,
+    "temp_c": 14.44,
+    "precip_chance_pct": 48,
     "short_forecast": "Chance Light Rain"
    }
   ]
