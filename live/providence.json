@@ -11,29 +11,34 @@
   "lon": -71.4277,
   "history": "Same site as the official Providence record"
  },
- "as_of_utc": "2026-11-20T09:08:04Z",
+ "as_of_utc": "2026-11-20T10:08:08Z",
  "now": {
-  "time_utc": "2026-11-20T08:50:00Z",
+  "time_utc": "2026-11-20T09:55:00Z",
   "temp_c": 2,
   "temp_f": 35.6,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 1,
-  "humidity_pct": 93.09,
+  "dewpoint_c": 0,
+  "humidity_pct": 86.6,
   "wind_kmh": 0,
   "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-20",
-  "readings": 18,
-  "basis": "5-minute readings (whole \u00b0C, approximate)",
-  "approximate": true,
+  "readings": 1,
+  "basis": "hourly reports (tenths of a degree)",
+  "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 4,
-  "high_f": 39.2,
-  "high_time_utc": "2026-11-20T05:15:00Z",
-  "low_c": 2,
-  "low_f": 35.6,
-  "low_time_utc": "2026-11-20T06:25:00Z"
+  "high_c": 2.2,
+  "high_f": 36.0,
+  "high_time_utc": "2026-11-20T08:51:00Z",
+  "low_c": 2.2,
+  "low_f": 36.0,
+  "low_time_utc": "2026-11-20T08:51:00Z",
+  "peak_between_reports": {
+   "at_least_f": 38.3,
+   "about_f": 39.2,
+   "time_utc": "2026-11-20T05:15:00Z"
+  }
  },
  "record": {
   "series": "Providence area (ThreadEx; T. F. Green airport)",
@@ -234,12 +239,12 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-20T07:56:23Z",
+  "issued_utc": "2026-11-20T09:14:56Z",
   "grid": "BOX/64,70",
   "periods": [
    {
     "name": "Overnight",
-    "start": "2026-11-20T03:00:00-05:00",
+    "start": "2026-11-20T04:00:00-05:00",
     "is_daytime": false,
     "temp_f": 36,
     "temp_c": 2.22,
@@ -366,15 +371,8 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-20T07:56:23Z",
+  "issued_utc": "2026-11-20T09:14:56Z",
   "hours": [
-   {
-    "start": "2026-11-20T04:00:00-05:00",
-    "temp_f": 37,
-    "temp_c": 2.78,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "start": "2026-11-20T05:00:00-05:00",
     "temp_f": 36,
@@ -699,6 +697,13 @@
    },
    {
     "start": "2026-11-22T03:00:00-05:00",
+    "temp_f": 44,
+    "temp_c": 6.67,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "start": "2026-11-22T04:00:00-05:00",
     "temp_f": 44,
     "temp_c": 6.67,
     "precip_chance_pct": 0,
