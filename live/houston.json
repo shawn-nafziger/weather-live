@@ -11,33 +11,33 @@
   "lon": -95.3607,
   "history": "Same site as the official Houston record"
  },
- "as_of_utc": "2026-11-20T18:08:04Z",
+ "as_of_utc": "2026-11-20T19:07:58Z",
  "now": {
-  "time_utc": "2026-11-20T17:15:00Z",
-  "temp_c": 24,
-  "temp_f": 75.2,
+  "time_utc": "2026-11-20T18:55:00Z",
+  "temp_c": 23,
+  "temp_f": 73.4,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 14,
-  "humidity_pct": 53.58,
+  "humidity_pct": 56.91,
   "wind_kmh": 14.83,
-  "description": "Partly Cloudy"
+  "description": "Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-20",
-  "readings": 9,
+  "readings": 10,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 22.8,
-  "high_f": 73.0,
-  "high_time_utc": "2026-11-20T16:53:00Z",
+  "high_c": 24.4,
+  "high_f": 75.9,
+  "high_time_utc": "2026-11-20T17:53:00Z",
   "low_c": 13.3,
   "low_f": 55.9,
   "low_time_utc": "2026-11-20T09:53:00Z",
   "peak_between_reports": {
-   "at_least_f": 74.3,
-   "about_f": 75.2,
-   "time_utc": "2026-11-20T17:15:00Z"
+   "at_least_f": 76.1,
+   "about_f": 77.0,
+   "time_utc": "2026-11-20T17:55:00Z"
   }
  },
  "record": {
@@ -92,7 +92,7 @@
   },
   "forecast_highs": [
    {
-    "period": "Today",
+    "period": "This Afternoon",
     "date": "2026-11-20",
     "high_f": 75,
     "would_rank": {
@@ -195,21 +195,22 @@
    {
     "period": "Tuesday",
     "date": "2026-11-24",
-    "high_f": 65,
+    "high_f": 67,
     "would_rank": {
-     "value_f": 65,
-     "warm_rank": 91,
-     "cool_rank": 42,
+     "value_f": 67,
+     "warm_rank": 84,
+     "cool_rank": 48,
      "years": 135,
      "first_year": 1889,
      "tied_years": [
-      1947,
-      1975,
-      1992
+      1969,
+      1976,
+      1999,
+      2015
      ],
      "standing": "cool",
      "notable": false,
-     "since": 2013,
+     "since": 2015,
      "record": false,
      "phrase": "typical for November 24"
     }
@@ -261,12 +262,12 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-20T17:01:28Z",
+  "issued_utc": "2026-11-20T18:21:20Z",
   "grid": "HGX/63,104",
   "periods": [
    {
-    "name": "Today",
-    "start": "2026-11-20T11:00:00-06:00",
+    "name": "This Afternoon",
+    "start": "2026-11-20T13:00:00-06:00",
     "is_daytime": true,
     "temp_f": 75,
     "temp_c": 23.89,
@@ -331,28 +332,28 @@
     "name": "Monday Night",
     "start": "2026-11-23T18:00:00-06:00",
     "is_daytime": false,
-    "temp_f": 48,
-    "temp_c": 8.89,
+    "temp_f": 50,
+    "temp_c": 10.0,
     "precip_chance_pct": 3,
-    "short_forecast": "Mostly Clear"
+    "short_forecast": "Partly Cloudy"
    },
    {
     "name": "Tuesday",
     "start": "2026-11-24T06:00:00-06:00",
     "is_daytime": true,
-    "temp_f": 65,
-    "temp_c": 18.33,
-    "precip_chance_pct": 7,
+    "temp_f": 67,
+    "temp_c": 19.44,
+    "precip_chance_pct": 10,
     "short_forecast": "Mostly Sunny"
    },
    {
     "name": "Tuesday Night",
     "start": "2026-11-24T18:00:00-06:00",
     "is_daytime": false,
-    "temp_f": 44,
-    "temp_c": 6.67,
-    "precip_chance_pct": 15,
-    "short_forecast": "Slight Chance Rain Showers then Partly Cloudy"
+    "temp_f": 45,
+    "temp_c": 7.22,
+    "precip_chance_pct": 4,
+    "short_forecast": "Partly Cloudy"
    },
    {
     "name": "Wednesday",
@@ -378,16 +379,16 @@
     "is_daytime": true,
     "temp_f": 62,
     "temp_c": 16.67,
-    "precip_chance_pct": 1,
+    "precip_chance_pct": 0,
     "short_forecast": "Sunny"
    },
    {
     "name": "Thursday Night",
     "start": "2026-11-26T18:00:00-06:00",
     "is_daytime": false,
-    "temp_f": 43,
-    "temp_c": 6.11,
-    "precip_chance_pct": 7,
+    "temp_f": 44,
+    "temp_c": 6.67,
+    "precip_chance_pct": 2,
     "short_forecast": "Partly Cloudy"
    }
   ]
@@ -395,13 +396,6 @@
  "hourly": {
   "issued_utc": "2026-11-20T17:01:28Z",
   "hours": [
-   {
-    "start": "2026-11-20T12:00:00-06:00",
-    "temp_f": 73,
-    "temp_c": 22.78,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "start": "2026-11-20T13:00:00-06:00",
     "temp_f": 73,
@@ -729,6 +723,13 @@
     "temp_f": 75,
     "temp_c": 23.89,
     "precip_chance_pct": 15,
+    "short_forecast": "Slight Chance Rain Showers"
+   },
+   {
+    "start": "2026-11-22T12:00:00-06:00",
+    "temp_f": 77,
+    "temp_c": 25.0,
+    "precip_chance_pct": 17,
     "short_forecast": "Slight Chance Rain Showers"
    }
   ]
