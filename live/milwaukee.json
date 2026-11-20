@@ -11,34 +11,29 @@
   "lon": -87.9044,
   "history": "Same site as the official Milwaukee record"
  },
- "as_of_utc": "2026-11-20T20:08:03Z",
+ "as_of_utc": "2026-11-20T21:07:59Z",
  "now": {
-  "time_utc": "2026-11-20T19:30:00Z",
+  "time_utc": "2026-11-20T20:30:00Z",
   "temp_c": 19,
   "temp_f": 66.2,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 7,
-  "humidity_pct": 45.63,
+  "dewpoint_c": 8,
+  "humidity_pct": 48.86,
   "wind_kmh": null,
   "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-20",
-  "readings": 11,
+  "readings": 12,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 18.3,
-  "high_f": 64.9,
-  "high_time_utc": "2026-11-20T17:52:00Z",
+  "high_c": 19.4,
+  "high_f": 66.9,
+  "high_time_utc": "2026-11-20T19:52:00Z",
   "low_c": 4.4,
   "low_f": 39.9,
-  "low_time_utc": "2026-11-20T08:52:00Z",
-  "peak_between_reports": {
-   "at_least_f": 65.3,
-   "about_f": 66.2,
-   "time_utc": "2026-11-20T18:30:00Z"
-  }
+  "low_time_utc": "2026-11-20T08:52:00Z"
  },
  "record": {
   "series": "Milwaukee area (ThreadEx; airport)",
@@ -83,17 +78,17 @@
    }
   },
   "today_high_so_far": {
-   "value_f": 65,
-   "warm_rank": 2,
-   "cool_rank": 155,
+   "value_f": 67,
+   "warm_rank": 1,
+   "cool_rank": 156,
    "years": 156,
    "first_year": 1871,
    "tied_years": [],
    "standing": "warm",
    "notable": true,
-   "since": 1897,
-   "record": false,
-   "phrase": "already the 2nd warmest November 20 high of 156 since 1871, warmest since 1897"
+   "since": null,
+   "record": true,
+   "phrase": "already the warmest November 20 high on record (156 years since 1871)"
   },
   "forecast_highs": [
    {
@@ -256,12 +251,12 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-20T19:36:33Z",
+  "issued_utc": "2026-11-20T20:26:32Z",
   "grid": "MKX/89,61",
   "periods": [
    {
     "name": "This Afternoon",
-    "start": "2026-11-20T13:00:00-06:00",
+    "start": "2026-11-20T14:00:00-06:00",
     "is_daytime": true,
     "temp_f": 65,
     "temp_c": 18.33,
@@ -388,15 +383,8 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-20T19:36:33Z",
+  "issued_utc": "2026-11-20T20:26:32Z",
   "hours": [
-   {
-    "start": "2026-11-20T14:00:00-06:00",
-    "temp_f": 64,
-    "temp_c": 17.78,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "start": "2026-11-20T15:00:00-06:00",
     "temp_f": 62,
@@ -723,6 +711,13 @@
     "start": "2026-11-22T13:00:00-06:00",
     "temp_f": 53,
     "temp_c": 11.67,
+    "precip_chance_pct": 62,
+    "short_forecast": "Rain Showers Likely"
+   },
+   {
+    "start": "2026-11-22T14:00:00-06:00",
+    "temp_f": 52,
+    "temp_c": 11.11,
     "precip_chance_pct": 62,
     "short_forecast": "Rain Showers Likely"
    }

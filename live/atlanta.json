@@ -11,34 +11,29 @@
   "lon": -84.4269,
   "history": "Same site as the official Atlanta record"
  },
- "as_of_utc": "2026-11-20T20:08:03Z",
+ "as_of_utc": "2026-11-20T21:07:59Z",
  "now": {
-  "time_utc": "2026-11-20T19:25:00Z",
-  "temp_c": 21,
-  "temp_f": 69.8,
+  "time_utc": "2026-11-20T20:30:00Z",
+  "temp_c": 20,
+  "temp_f": 68.0,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 8,
-  "humidity_pct": 43.17,
+  "humidity_pct": 45.91,
   "wind_kmh": 22.21,
-  "description": "Mostly Cloudy"
+  "description": "Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-20",
-  "readings": 11,
+  "readings": 12,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 20,
-  "high_f": 68.0,
-  "high_time_utc": "2026-11-20T17:52:00Z",
+  "high_c": 20.6,
+  "high_f": 69.1,
+  "high_time_utc": "2026-11-20T19:52:00Z",
   "low_c": 12.2,
   "low_f": 54.0,
-  "low_time_utc": "2026-11-20T10:52:00Z",
-  "peak_between_reports": {
-   "at_least_f": 68.9,
-   "about_f": 69.8,
-   "time_utc": "2026-11-20T18:30:00Z"
-  }
+  "low_time_utc": "2026-11-20T10:52:00Z"
  },
  "record": {
   "series": "Atlanta area (ThreadEx; airport)",
@@ -90,6 +85,28 @@
     "record": false,
     "phrase": "22nd warmest November 19 low (tied) of 149 since 1878, warmest since 2025"
    }
+  },
+  "today_high_so_far": {
+   "value_f": 69,
+   "warm_rank": 27,
+   "cool_rank": 115,
+   "years": 149,
+   "first_year": 1878,
+   "tied_years": [
+    1897,
+    1906,
+    1950,
+    1998,
+    2003,
+    2010,
+    2011,
+    2012
+   ],
+   "standing": "warm",
+   "notable": true,
+   "since": 2025,
+   "record": false,
+   "phrase": "already the 27th warmest November 20 high (tied) of 149 since 1878, warmest since 2025"
   },
   "forecast_highs": [
    {
@@ -394,13 +411,6 @@
  "hourly": {
   "issued_utc": "2026-11-20T19:26:45Z",
   "hours": [
-   {
-    "start": "2026-11-20T15:00:00-05:00",
-    "temp_f": 70,
-    "temp_c": 21.11,
-    "precip_chance_pct": 1,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "start": "2026-11-20T16:00:00-05:00",
     "temp_f": 69,
@@ -729,6 +739,13 @@
     "temp_c": 20.0,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Sunny"
+   },
+   {
+    "start": "2026-11-22T15:00:00-05:00",
+    "temp_f": 69,
+    "temp_c": 20.56,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
    }
   ]
  },
