@@ -12,7 +12,7 @@ site/almanac is today's build; prev is the last published build (the almanac-bui
 - If today's build has far fewer pages than the last one (under 90%), something is wrong with the run, not the
   weather: this stops with an error, nothing is handed over, and the site keeps yesterday's Almanac.
 - A place no longer in config/almanac_cities.json is not carried over (its page is retired on purpose).
-- Branch pages under each place (records/, Nov 12, 2026) follow the same rules on their own: a records page that
+- Branch pages under each place (records/, Nov 12, 2026; every-day/, Nov 16, 2026) follow the same rules on their own: a records page that
   fails today's checks keeps its last good version even when the place's overview built, and the 90% guard counts
   each kind of page separately.
 """
@@ -26,7 +26,7 @@ sys.path.insert(0, str(HERE))
 from build import CITIES  # noqa: E402
 
 MIN_SHARE = 0.9
-SUBPAGES = ("records",)       # branch pages under each place: <place>/<sub>/index.html
+SUBPAGES = ("records", "every-day")   # branch pages under each place: <place>/<sub>/index.html
 
 
 def places(d):

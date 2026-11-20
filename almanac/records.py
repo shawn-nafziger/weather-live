@@ -390,9 +390,12 @@ def today_strip_html(rd, today):
             f'<a href="#m-{MONTHS[today.month - 1].lower()}">All of {MONTHS[today.month - 1]} ↓</a></p>')
 
 
-def tabs_html(slug, current, depth):
-    """The city's pages as plain links. depth: '' on the overview, '../' on a branch page."""
+def tabs_html(slug, current, depth, everyday=False):
+    """The city's pages as plain links. depth: '' on the overview, '../' on a branch page. everyday: the place has
+    an "Every day" page today (everyday.py, Nov 16, 2026)."""
     pages = [("", "Overview", "Yesterday and trends"), ("records/", "Records", "Highs and lows by date")]
+    if everyday:
+        pages.append(("every-day/", "Every day", "A square for every day"))
     links = []
     for path, name, sub in pages:
         href = (depth + path) or "./"
@@ -411,7 +414,7 @@ def render_records(rd, seo_head, nearby, main_site, today=None):
         "TITLE": html.escape(rd["title"]), "DESCRIPTION": html.escape(rd["description"], quote=True),
         "HEAD_SEO": seo_head, "MAIN": main_site,
         "CITY": html.escape(c["name"]), "STATE": html.escape(c["state"]), "ST": c["st"],
-        "TABS": tabs_html(rd["slug"], "records/", "../").replace("{CITYNAME}", html.escape(c["name"])),
+        "TABS": tabs_html(rd["slug"], "records/", "../", rd.get("has_everyday", False)).replace("{CITYNAME}", html.escape(c["name"])),
         "DEK": t["dek"], "ASOF_WORDS": f"{asof:%B} {asof.day}, {asof.year}",
         "T_YEAR": html.escape(t["t_year"]), "P_YEAR": t["p_year"], "P_TODAY": t["p_today"],
         "TODAY_STRIP": today_strip_html(rd, today),
