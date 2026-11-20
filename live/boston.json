@@ -11,34 +11,23 @@
   "lon": -71.0106,
   "history": "Same site as the official Boston record"
  },
- "as_of_utc": "2026-11-20T04:07:52Z",
+ "as_of_utc": "2026-11-20T05:07:58Z",
  "now": {
-  "time_utc": "2026-11-20T03:05:00Z",
-  "temp_c": 12,
-  "temp_f": 53.6,
+  "time_utc": "2026-11-20T04:35:00Z",
+  "temp_c": 11,
+  "temp_f": 51.8,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": -1,
-  "humidity_pct": 40.57,
-  "wind_kmh": 22.21,
+  "dewpoint_c": 0,
+  "humidity_pct": 46.62,
+  "wind_kmh": 11.12,
   "description": "Clear"
  },
  "today_so_far": {
-  "date_local": "2026-11-19",
-  "readings": 16,
-  "basis": "hourly reports (tenths of a degree)",
-  "approximate": false,
-  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 16.1,
-  "high_f": 61.0,
-  "high_time_utc": "2026-11-19T16:54:00Z",
-  "low_c": 7.8,
-  "low_f": 46.0,
-  "low_time_utc": "2026-11-19T09:54:00Z",
-  "peak_between_reports": {
-   "at_least_f": 61.7,
-   "about_f": 62.6,
-   "time_utc": "2026-11-19T17:10:00Z"
-  }
+  "date_local": "2026-11-20",
+  "readings": 0,
+  "basis": "5-minute readings (whole \u00b0C, approximate)",
+  "approximate": true,
+  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two."
  },
  "record": {
   "series": "Boston area (ThreadEx; Logan airport)",
@@ -47,7 +36,7 @@
   "rank_today": true,
   "latest_final": {
    "date": "2026-11-18",
-   "is_yesterday": true,
+   "is_yesterday": false,
    "high_f": 65,
    "low_f": 45,
    "high_rank": {
@@ -86,22 +75,6 @@
     "record": false,
     "phrase": "19th warmest November 18 low (tied) of 155 since 1872, warmest since 2021"
    }
-  },
-  "today_high_so_far": {
-   "value_f": 61,
-   "warm_rank": 19,
-   "cool_rank": 135,
-   "years": 155,
-   "first_year": 1872,
-   "tied_years": [
-    1971,
-    2004
-   ],
-   "standing": "warm",
-   "notable": true,
-   "since": 2004,
-   "record": false,
-   "phrase": "already the 19th warmest November 19 high (tied) of 155 since 1872, warmest since 2004"
   },
   "forecast_highs": [
    {
@@ -405,13 +378,6 @@
  "hourly": {
   "issued_utc": "2026-11-20T03:12:23Z",
   "hours": [
-   {
-    "start": "2026-11-19T23:00:00-05:00",
-    "temp_f": 50,
-    "temp_c": 10.0,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Clear"
-   },
    {
     "start": "2026-11-20T00:00:00-05:00",
     "temp_f": 49,
@@ -738,6 +704,13 @@
     "start": "2026-11-21T22:00:00-05:00",
     "temp_f": 48,
     "temp_c": 8.89,
+    "precip_chance_pct": 0,
+    "short_forecast": "Partly Cloudy"
+   },
+   {
+    "start": "2026-11-21T23:00:00-05:00",
+    "temp_f": 47,
+    "temp_c": 8.33,
     "precip_chance_pct": 0,
     "short_forecast": "Partly Cloudy"
    }
