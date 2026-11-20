@@ -11,20 +11,20 @@
   "lon": -82.5403,
   "history": "Same site as the official Tampa record"
  },
- "as_of_utc": "2026-11-20T07:07:54Z",
+ "as_of_utc": "2026-11-20T07:50:28Z",
  "now": {
-  "time_utc": "2026-11-20T06:55:00Z",
+  "time_utc": "2026-11-20T07:40:00Z",
   "temp_c": 21,
   "temp_f": 69.8,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 20,
   "humidity_pct": 94.02,
-  "wind_kmh": 11.12,
-  "description": "Cloudy"
+  "wind_kmh": 12.96,
+  "description": "Fog/Mist"
  },
  "today_so_far": {
   "date_local": "2026-11-20",
-  "readings": 2,
+  "readings": 5,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -150,27 +150,32 @@
    {
     "period": "Sunday",
     "date": "2026-11-22",
-    "high_f": 77,
+    "high_f": 78,
     "would_rank": {
-     "value_f": 77,
-     "warm_rank": 69,
-     "cool_rank": 60,
+     "value_f": 78,
+     "warm_rank": 55,
+     "cool_rank": 69,
      "years": 137,
      "first_year": 1890,
      "tied_years": [
-      1890,
-      1898,
-      1916,
-      1921,
-      1927,
-      1945,
-      2007,
-      2016,
-      2023
+      1893,
+      1897,
+      1908,
+      1913,
+      1918,
+      1920,
+      1922,
+      1923,
+      1989,
+      1996,
+      1999,
+      2019,
+      2021,
+      2022
      ],
-     "standing": "cool",
+     "standing": "warm",
      "notable": false,
-     "since": 2024,
+     "since": 2025,
      "record": false,
      "phrase": "typical for November 22"
     }
@@ -259,22 +264,25 @@
    {
     "period": "Thanksgiving Day",
     "date": "2026-11-26",
-    "high_f": 70,
+    "high_f": 72,
     "would_rank": {
-     "value_f": 70,
-     "warm_rank": 103,
-     "cool_rank": 31,
+     "value_f": 72,
+     "warm_rank": 95,
+     "cool_rank": 36,
      "years": 137,
      "first_year": 1890,
      "tied_years": [
-      1924,
-      1955,
-      2008,
-      2009
+      1891,
+      1892,
+      1916,
+      1941,
+      1942,
+      1996,
+      2014
      ],
      "standing": "cool",
      "notable": false,
-     "since": 2009,
+     "since": 2014,
      "record": false,
      "phrase": "typical for November 26"
     }
@@ -282,17 +290,17 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-20T00:17:16Z",
+  "issued_utc": "2026-11-20T07:01:32Z",
   "grid": "TBW/68,98",
   "periods": [
    {
-    "name": "Tonight",
-    "start": "2026-11-19T20:00:00-05:00",
+    "name": "Overnight",
+    "start": "2026-11-20T02:00:00-05:00",
     "is_daytime": false,
     "temp_f": 69,
     "temp_c": 20.56,
-    "precip_chance_pct": 43,
-    "short_forecast": "Chance Rain Showers"
+    "precip_chance_pct": 23,
+    "short_forecast": "Isolated Rain Showers"
    },
    {
     "name": "Friday",
@@ -300,17 +308,17 @@
     "is_daytime": true,
     "temp_f": 76,
     "temp_c": 24.44,
-    "precip_chance_pct": 52,
+    "precip_chance_pct": 31,
     "short_forecast": "Scattered Rain Showers"
    },
    {
     "name": "Friday Night",
     "start": "2026-11-20T18:00:00-05:00",
     "is_daytime": false,
-    "temp_f": 67,
-    "temp_c": 19.44,
-    "precip_chance_pct": 28,
-    "short_forecast": "Scattered Rain Showers then Mostly Cloudy"
+    "temp_f": 68,
+    "temp_c": 20.0,
+    "precip_chance_pct": 32,
+    "short_forecast": "Scattered Rain Showers"
    },
    {
     "name": "Saturday",
@@ -318,39 +326,21 @@
     "is_daytime": true,
     "temp_f": 77,
     "temp_c": 25.0,
-    "precip_chance_pct": 24,
+    "precip_chance_pct": 23,
     "short_forecast": "Isolated Rain Showers"
    },
    {
     "name": "Saturday Night",
     "start": "2026-11-21T18:00:00-05:00",
     "is_daytime": false,
-    "temp_f": 64,
-    "temp_c": 17.78,
-    "precip_chance_pct": 24,
-    "short_forecast": "Isolated Rain Showers then Partly Cloudy"
-   },
-   {
-    "name": "Sunday",
-    "start": "2026-11-22T06:00:00-05:00",
-    "is_daytime": true,
-    "temp_f": 77,
-    "temp_c": 25.0,
-    "precip_chance_pct": 6,
-    "short_forecast": "Mostly Sunny"
-   },
-   {
-    "name": "Sunday Night",
-    "start": "2026-11-22T18:00:00-05:00",
-    "is_daytime": false,
-    "temp_f": 63,
-    "temp_c": 17.22,
+    "temp_f": 65,
+    "temp_c": 18.33,
     "precip_chance_pct": 6,
     "short_forecast": "Partly Cloudy"
    },
    {
-    "name": "Monday",
-    "start": "2026-11-23T06:00:00-05:00",
+    "name": "Sunday",
+    "start": "2026-11-22T06:00:00-05:00",
     "is_daytime": true,
     "temp_f": 78,
     "temp_c": 25.56,
@@ -358,11 +348,29 @@
     "short_forecast": "Mostly Sunny"
    },
    {
-    "name": "Monday Night",
-    "start": "2026-11-23T18:00:00-05:00",
+    "name": "Sunday Night",
+    "start": "2026-11-22T18:00:00-05:00",
     "is_daytime": false,
     "temp_f": 64,
     "temp_c": 17.78,
+    "precip_chance_pct": 5,
+    "short_forecast": "Mostly Clear"
+   },
+   {
+    "name": "Monday",
+    "start": "2026-11-23T06:00:00-05:00",
+    "is_daytime": true,
+    "temp_f": 78,
+    "temp_c": 25.56,
+    "precip_chance_pct": 6,
+    "short_forecast": "Mostly Sunny"
+   },
+   {
+    "name": "Monday Night",
+    "start": "2026-11-23T18:00:00-05:00",
+    "is_daytime": false,
+    "temp_f": 65,
+    "temp_c": 18.33,
     "precip_chance_pct": 16,
     "short_forecast": "Mostly Cloudy then Isolated Rain Showers"
    },
@@ -406,15 +414,15 @@
     "name": "Thanksgiving Day",
     "start": "2026-11-26T06:00:00-05:00",
     "is_daytime": true,
-    "temp_f": 70,
-    "temp_c": 21.11,
-    "precip_chance_pct": 10,
+    "temp_f": 72,
+    "temp_c": 22.22,
+    "precip_chance_pct": 9,
     "short_forecast": "Mostly Sunny"
    }
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-20T06:21:39Z",
+  "issued_utc": "2026-11-20T07:01:32Z",
   "hours": [
    {
     "start": "2026-11-20T02:00:00-05:00",
