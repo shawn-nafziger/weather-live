@@ -11,20 +11,20 @@
   "lon": -122.6092,
   "history": "Same site as the official Portland record"
  },
- "as_of_utc": "2026-11-20T02:08:03Z",
+ "as_of_utc": "2026-11-20T03:08:20Z",
  "now": {
-  "time_utc": "2026-11-20T01:50:00Z",
+  "time_utc": "2026-11-20T02:45:00Z",
   "temp_c": 4,
   "temp_f": 39.2,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 3,
   "humidity_pct": 93.2,
-  "wind_kmh": 0,
-  "description": "Mostly Clear"
+  "wind_kmh": 5.54,
+  "description": "Mostly Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-19",
-  "readings": 23,
+  "readings": 24,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -84,34 +84,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-19",
-    "high_f": 48,
-    "would_rank": {
-     "value_f": 48,
-     "warm_rank": 53,
-     "cool_rank": 26,
-     "years": 87,
-     "first_year": 1940,
-     "tied_years": [
-      1942,
-      1950,
-      1960,
-      1973,
-      1976,
-      1988,
-      2010,
-      2015,
-      2024
-     ],
-     "standing": "cool",
-     "notable": false,
-     "since": 2024,
-     "record": false,
-     "phrase": "typical for November 19"
-    }
-   },
    {
     "period": "Friday",
     "date": "2026-11-20",
@@ -256,22 +228,40 @@
      "record": false,
      "phrase": "typical for November 25"
     }
+   },
+   {
+    "period": "Thanksgiving Day",
+    "date": "2026-11-26",
+    "high_f": 53,
+    "would_rank": {
+     "value_f": 53,
+     "warm_rank": 20,
+     "cool_rank": 60,
+     "years": 87,
+     "first_year": 1940,
+     "tied_years": [
+      1943,
+      1954,
+      1969,
+      1975,
+      1986,
+      1995,
+      1998,
+      2011
+     ],
+     "standing": "warm",
+     "notable": false,
+     "since": 2021,
+     "record": false,
+     "phrase": "typical for November 26"
+    }
    }
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-20T00:41:04Z",
+  "issued_utc": "2026-11-20T01:41:21Z",
   "grid": "PQR/116,107",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-19T17:00:00-08:00",
-    "is_daytime": true,
-    "temp_f": 48,
-    "temp_c": 8.89,
-    "precip_chance_pct": 3,
-    "short_forecast": "Mostly Sunny"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-19T18:00:00-08:00",
@@ -388,19 +378,21 @@
     "temp_c": 7.22,
     "precip_chance_pct": 65,
     "short_forecast": "Light Rain Likely"
+   },
+   {
+    "name": "Thanksgiving Day",
+    "start": "2026-11-26T06:00:00-08:00",
+    "is_daytime": true,
+    "temp_f": 53,
+    "temp_c": 11.67,
+    "precip_chance_pct": 60,
+    "short_forecast": "Light Rain Likely"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-20T01:41:21Z",
   "hours": [
-   {
-    "start": "2026-11-19T18:00:00-08:00",
-    "temp_f": 44,
-    "temp_c": 6.67,
-    "precip_chance_pct": 3,
-    "short_forecast": "Mostly Clear"
-   },
    {
     "start": "2026-11-19T19:00:00-08:00",
     "temp_f": 42,
@@ -727,6 +719,13 @@
     "start": "2026-11-21T17:00:00-08:00",
     "temp_f": 44,
     "temp_c": 6.67,
+    "precip_chance_pct": 84,
+    "short_forecast": "Light Rain"
+   },
+   {
+    "start": "2026-11-21T18:00:00-08:00",
+    "temp_f": 43,
+    "temp_c": 6.11,
     "precip_chance_pct": 84,
     "short_forecast": "Light Rain"
    }

@@ -11,20 +11,20 @@
   "lon": -121.9242,
   "history": "Same site as the official San Jose record"
  },
- "as_of_utc": "2026-11-20T02:08:03Z",
+ "as_of_utc": "2026-11-20T03:08:20Z",
  "now": {
-  "time_utc": "2026-11-20T01:50:00Z",
-  "temp_c": 12,
-  "temp_f": 53.6,
+  "time_utc": "2026-11-20T02:45:00Z",
+  "temp_c": 11,
+  "temp_f": 51.8,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 9,
-  "humidity_pct": 81.88,
+  "humidity_pct": 87.48,
   "wind_kmh": 7.42,
-  "description": "Rain"
+  "description": "Light Rain"
  },
  "today_so_far": {
   "date_local": "2026-11-19",
-  "readings": 17,
+  "readings": 18,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -78,27 +78,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-19",
-    "high_f": 59,
-    "would_rank": {
-     "value_f": 59,
-     "warm_rank": 114,
-     "cool_rank": 12,
-     "years": 127,
-     "first_year": 1893,
-     "tied_years": [
-      1931,
-      1975
-     ],
-     "standing": "cool",
-     "notable": true,
-     "since": 2010,
-     "record": false,
-     "phrase": "12th coolest November 19 high (tied) of 127 since 1893, coolest since 2010"
-    }
-   },
    {
     "period": "Friday",
     "date": "2026-11-20",
@@ -260,6 +239,28 @@
      "record": false,
      "phrase": "typical for November 25"
     }
+   },
+   {
+    "period": "Thanksgiving Day",
+    "date": "2026-11-26",
+    "high_f": 64,
+    "would_rank": {
+     "value_f": 64,
+     "warm_rank": 50,
+     "cool_rank": 74,
+     "years": 126,
+     "first_year": 1893,
+     "tied_years": [
+      1927,
+      1942,
+      1955
+     ],
+     "standing": "warm",
+     "notable": false,
+     "since": 2023,
+     "record": false,
+     "phrase": "typical for November 26"
+    }
    }
   ]
  },
@@ -268,17 +269,8 @@
   "grid": "MTR/98,83",
   "periods": [
    {
-    "name": "This Afternoon",
-    "start": "2026-11-19T16:00:00-08:00",
-    "is_daytime": true,
-    "temp_f": 59,
-    "temp_c": 15.0,
-    "precip_chance_pct": 18,
-    "short_forecast": "Slight Chance Light Rain"
-   },
-   {
     "name": "Tonight",
-    "start": "2026-11-19T18:00:00-08:00",
+    "start": "2026-11-19T19:00:00-08:00",
     "is_daytime": false,
     "temp_f": 43,
     "temp_c": 6.11,
@@ -392,19 +384,21 @@
     "temp_c": 7.78,
     "precip_chance_pct": 24,
     "short_forecast": "Slight Chance Light Rain then Partly Cloudy"
+   },
+   {
+    "name": "Thanksgiving Day",
+    "start": "2026-11-26T06:00:00-08:00",
+    "is_daytime": true,
+    "temp_f": 64,
+    "temp_c": 17.78,
+    "precip_chance_pct": 7,
+    "short_forecast": "Mostly Sunny"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-19T23:41:53Z",
   "hours": [
-   {
-    "start": "2026-11-19T18:00:00-08:00",
-    "temp_f": 52,
-    "temp_c": 11.11,
-    "precip_chance_pct": 9,
-    "short_forecast": "Partly Cloudy"
-   },
    {
     "start": "2026-11-19T19:00:00-08:00",
     "temp_f": 50,
@@ -731,6 +725,13 @@
     "start": "2026-11-21T17:00:00-08:00",
     "temp_f": 55,
     "temp_c": 12.78,
+    "precip_chance_pct": 61,
+    "short_forecast": "Light Rain Likely"
+   },
+   {
+    "start": "2026-11-21T18:00:00-08:00",
+    "temp_f": 54,
+    "temp_c": 12.22,
     "precip_chance_pct": 61,
     "short_forecast": "Light Rain Likely"
    }
