@@ -11,20 +11,20 @@
   "lon": -86.2816,
   "history": "Same site as the official Indianapolis record"
  },
- "as_of_utc": "2026-11-21T14:07:52Z",
+ "as_of_utc": "2026-11-21T15:08:01Z",
  "now": {
-  "time_utc": "2026-11-21T13:30:00Z",
-  "temp_c": 7,
-  "temp_f": 44.6,
+  "time_utc": "2026-11-21T14:55:00Z",
+  "temp_c": 11,
+  "temp_f": 51.8,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 3,
-  "humidity_pct": 75.69,
-  "wind_kmh": 5.54,
+  "dewpoint_c": 4,
+  "humidity_pct": 62.02,
+  "wind_kmh": 9.25,
   "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-21",
-  "readings": 6,
+  "readings": 7,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -34,6 +34,11 @@
   "low_c": 6.7,
   "low_f": 44.1,
   "low_time_utc": "2026-11-21T09:54:00Z",
+  "peak_between_reports": {
+   "at_least_f": 50.9,
+   "about_f": 51.8,
+   "time_utc": "2026-11-21T14:55:00Z"
+  },
   "dip_between_reports": {
    "at_most_f": 43.7,
    "about_f": 42.8,
@@ -234,7 +239,7 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-21T13:45:29Z",
+  "issued_utc": "2026-11-21T14:15:24Z",
   "grid": "IND/54,67",
   "periods": [
    {
@@ -366,26 +371,19 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-21T13:15:21Z",
+  "issued_utc": "2026-11-21T14:06:41Z",
   "hours": [
    {
-    "start": "2026-11-21T09:00:00-05:00",
-    "temp_f": 45,
-    "temp_c": 7.22,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
-   {
     "start": "2026-11-21T10:00:00-05:00",
-    "temp_f": 50,
-    "temp_c": 10.0,
+    "temp_f": 54,
+    "temp_c": 12.22,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
    },
    {
     "start": "2026-11-21T11:00:00-05:00",
-    "temp_f": 56,
-    "temp_c": 13.33,
+    "temp_f": 58,
+    "temp_c": 14.44,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
    },
@@ -701,6 +699,13 @@
     "start": "2026-11-23T08:00:00-05:00",
     "temp_f": 39,
     "temp_c": 3.89,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
+   },
+   {
+    "start": "2026-11-23T09:00:00-05:00",
+    "temp_f": 40,
+    "temp_c": 4.44,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
    }

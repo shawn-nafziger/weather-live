@@ -11,26 +11,26 @@
   "lon": -81.6937,
   "history": "Same site as the official Jacksonville record"
  },
- "as_of_utc": "2026-11-21T14:07:52Z",
+ "as_of_utc": "2026-11-21T15:08:01Z",
  "now": {
-  "time_utc": "2026-11-21T13:30:00Z",
-  "temp_c": 21,
-  "temp_f": 69.8,
+  "time_utc": "2026-11-21T14:55:00Z",
+  "temp_c": 22,
+  "temp_f": 71.6,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 20,
-  "humidity_pct": 94.02,
+  "dewpoint_c": 21,
+  "humidity_pct": 94.06,
   "wind_kmh": 9.25,
-  "description": "Mostly Cloudy"
+  "description": "Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-21",
-  "readings": 12,
+  "readings": 14,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 20.6,
-  "high_f": 69.1,
-  "high_time_utc": "2026-11-21T11:15:00Z",
+  "high_c": 22.2,
+  "high_f": 72.0,
+  "high_time_utc": "2026-11-21T14:25:00Z",
   "low_c": 17.8,
   "low_f": 64.0,
   "low_time_utc": "2026-11-21T05:32:00Z"
@@ -274,16 +274,16 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-21T12:36:12Z",
+  "issued_utc": "2026-11-21T14:36:34Z",
   "grid": "JAX/64,72",
   "periods": [
    {
     "name": "Today",
-    "start": "2026-11-21T09:00:00-05:00",
+    "start": "2026-11-21T10:00:00-05:00",
     "is_daytime": true,
     "temp_f": 74,
     "temp_c": 23.33,
-    "precip_chance_pct": 38,
+    "precip_chance_pct": 45,
     "short_forecast": "Chance Rain Showers"
    },
    {
@@ -292,8 +292,8 @@
     "is_daytime": false,
     "temp_f": 60,
     "temp_c": 15.56,
-    "precip_chance_pct": 27,
-    "short_forecast": "Chance Rain Showers then Patchy Fog"
+    "precip_chance_pct": 32,
+    "short_forecast": "Chance Showers And Thunderstorms then Patchy Fog"
    },
    {
     "name": "Sunday",
@@ -408,13 +408,6 @@
  "hourly": {
   "issued_utc": "2026-11-21T12:36:12Z",
   "hours": [
-   {
-    "start": "2026-11-21T09:00:00-05:00",
-    "temp_f": 66,
-    "temp_c": 18.89,
-    "precip_chance_pct": 20,
-    "short_forecast": "Slight Chance Rain Showers"
-   },
    {
     "start": "2026-11-21T10:00:00-05:00",
     "temp_f": 68,
@@ -741,6 +734,13 @@
     "start": "2026-11-23T08:00:00-05:00",
     "temp_f": 59,
     "temp_c": 15.0,
+    "precip_chance_pct": 0,
+    "short_forecast": "Partly Sunny"
+   },
+   {
+    "start": "2026-11-23T09:00:00-05:00",
+    "temp_f": 62,
+    "temp_c": 16.67,
     "precip_chance_pct": 0,
     "short_forecast": "Partly Sunny"
    }
