@@ -1,7 +1,7 @@
 """
 "Every day" pages: one per place, at weather/almanac/<place>/every-day/ (Nov 16, 2026).
 
-The showpiece "Every day since 1900 in your city": one row per year since 1900 (or the record's first full year),
+The showpiece "How warm was every day since 1900 in your city?": one row per year since 1900 (or the record's first full year),
 one square per day, each colored by how far that day's high was from the 1991-2020 normal high for the date. The
 newest day fills in each morning, because build.py rebuilds every page in the daily run.
 
@@ -200,7 +200,7 @@ def build_everyday(ov, h, cities, today=None):
     diff = n_hi - whole(n_norm)
     side = "above" if diff > 0 else "below" if diff < 0 else "right at"
     gap = f"{abs(diff)}° {side}" if diff else "right at"
-    p_new = (f"The newest square is {long_date(asof)}: a high of {f_deg(n_hi)}°F, {gap} the normal of "
+    p_new = (f"The latest day on the chart, {long_date(asof)}, had a high of {f_deg(n_hi)}°F, {gap} the normal of "
              f"{f_deg(whole(n_norm))}°F for the date.")
 
     # ---- 3. Warmest and coolest complete years ----
@@ -443,7 +443,7 @@ def steps(ed, is_hub):
                     {"rows": [[yr, yr]], "labels": [[yr, f"{yr} so far: {yrk['p']}% above normal"]]}))
     else:
         out.append((f"How does {yr} compare so far?", e(f"It’s too early in {yr} to compare it with other years; "
-                    "come back after January. The newest square, ringed, is the latest day."), {"ring": True}))
+                    "come back after January. The outlined square is the latest day."), {"ring": True}))
     return out
 
 
@@ -476,7 +476,7 @@ def facts_rows(ed, is_hub):
     ]
     if not is_hub:
         nw = ed["newest"]
-        rows.append(("Newest day", f"{short_date(date.fromisoformat(nw['date']))}: high {f_deg(nw['hi'])}°F, normal {f_deg(whole(nw['norm']))}°F"))
+        rows.append(("Latest day", f"{short_date(date.fromisoformat(nw['date']))}: high {f_deg(nw['hi'])}°F, normal {f_deg(whole(nw['norm']))}°F"))
     return "\n".join(f"<tr><th scope=\"row\">{html.escape(k)}</th><td>{html.escape(v)}</td></tr>" for k, v in rows)
 
 
@@ -519,14 +519,15 @@ def render(ed, *, seo_head, nearby, main_site, hub=None):
                    f'<a href="{main_site}">Home</a> › <a href="{main_site}weather/">Weather</a> › '
                    f'<a href="../../">Almanac</a> › <a href="../">{html.escape(name)}</a> › Every day'),
         "TABS": "" if is_hub else tabs_html(ed["slug"], name),
-        "H1": ("Every day since 1900, <span>in your city</span>" if is_hub else
-               f"Every day since {ed['y0']} <span>in {html.escape(name)}</span>"),
+        "H1": ("How warm was every day since 1900 <span>in your city?</span>" if is_hub else
+               f"How warm was every day since {ed['y0']} <span>in {html.escape(name)}?</span>"),
         "ANSWER": html.escape(hub["answer"] if is_hub else t["lede"]),
         "DECK": html.escape(hub["deck"] if is_hub else
                             "Each row is a year and each square a day, colored by how far the day’s high was from "
                             "the normal for that date: red warmer, blue cooler, dark close to normal. Hover or tap any "
                             "square to read it. A new square fills in every morning."),
         "P_NEW": html.escape(t["p_new"]),
+        "LATEST": f'<time class="latestT" datetime="{ed["asof"]}">{short_date(asof)}</time>',
         "BYLINE": (f'By Shawn Nafziger · Published <time datetime="{hub["published"]}">{hub["published_words"]}</time> · '
                    f'Featured: {html.escape(name)}, data through <time id="asofT" datetime="{ed["asof"]}">{short_date(asof)}</time>'
                    if is_hub else
@@ -546,7 +547,7 @@ def render(ed, *, seo_head, nearby, main_site, hub=None):
         "DECADE_ROWS": decade_rows_html(ed),
         "CITY_LINKS": (f'<a href="{city_url}">{html.escape(name)} weather history<span>Yesterday in context, the year so far and how the climate has changed.</span></a>'
                        f'<a href="{city_url}records/">{html.escape(name)} record highs and lows<span>Every date’s record high and low and the years that set them.</span></a>'
-                       + ("" if is_hub else f'<a href="{main_site}{HUB_PATH}">Every day since 1900, in your city<span>The showpiece: pick any of the Almanac’s places.</span></a>')),
+                       + ("" if is_hub else f'<a href="{main_site}{HUB_PATH}">How warm was every day since 1900 in your city?<span>The showpiece: pick any of the Almanac’s places.</span></a>')),
         "NEARBY": nearby,
         "PLACES": places_html(hub["places"], almanac) if is_hub else "",
         "PICKER": picker_json(hub["places"]) if is_hub else picker_json(hub_places_for(ed)),
@@ -591,7 +592,7 @@ def hub_words(ed, published):
     # Complete years only, so this text (frozen when the page is copied to the site) never goes stale.
     answer = (f"In {name}, {c['state']}, {early['p']}% of days in the {early['label']} had a high above today’s normal "
               f"for the date. In the {last_full['label']} it was {last_full['p']}%, and in {span}, {rc['p']}%. Every square "
-              f"below is one day since {ed['y0']}, colored by how far its high was from normal; the newest fills in each morning.")
+              f"below is one day since {ed['y0']}, colored by how far its high was from normal, and a new day is added each morning.")
     description = (f"Every day since 1900 in 300+ US cities, colored by the high against normal. In {name}, "
                    f"{early['p']}% of days in the {early['label']} beat today’s normal; in {span}, {rc['p']}%.")
     deck = ("Pick from more than 300 places in the Weather Almanac. Each row is a year and each square a day: red warmer "
@@ -636,12 +637,12 @@ def main():
     head = "\n".join([
         f'<link rel="canonical" href="{url}">', '<meta property="og:type" content="article">',
         '<meta property="og:site_name" content="Tall Order Digital">',
-        '<meta property="og:title" content="Every day since 1900, in your city">',
+        '<meta property="og:title" content="How warm was every day since 1900 in your city?">',
         f'<meta property="og:description" content="{a_(words["description"])}">', f'<meta property="og:url" content="{url}">',
         f'<meta property="og:image" content="{share}">', '<meta property="og:image:width" content="1200">',
         '<meta property="og:image:height" content="630">', f'<meta property="og:image:alt" content="{a_(still_alt)}">',
         '<meta name="twitter:card" content="summary_large_image">',
-        '<meta name="twitter:title" content="Every day since 1900, in your city">',
+        '<meta name="twitter:title" content="How warm was every day since 1900 in your city?">',
         f'<meta name="twitter:description" content="{a_(words["description"])}">', f'<meta name="twitter:image" content="{share}">',
         f'<meta name="twitter:image:alt" content="{a_(still_alt)}">'])
     page = render(ed, seo_head=head, nearby="", main_site="../../", hub=hub)
