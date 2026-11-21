@@ -11,33 +11,33 @@
   "lon": -78.736,
   "history": "Same site as the official Buffalo record"
  },
- "as_of_utc": "2026-11-21T16:07:59Z",
+ "as_of_utc": "2026-11-21T17:08:03Z",
  "now": {
-  "time_utc": "2026-11-21T15:50:00Z",
-  "temp_c": 16,
-  "temp_f": 60.8,
+  "time_utc": "2026-11-21T16:25:00Z",
+  "temp_c": 18,
+  "temp_f": 64.4,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 3,
-  "humidity_pct": 41.74,
-  "wind_kmh": 11.12,
+  "humidity_pct": 36.77,
+  "wind_kmh": 12.96,
   "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-21",
-  "readings": 8,
+  "readings": 9,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 8.3,
-  "high_f": 46.9,
-  "high_time_utc": "2026-11-21T13:54:00Z",
+  "high_c": 16.7,
+  "high_f": 62.1,
+  "high_time_utc": "2026-11-21T15:54:00Z",
   "low_c": 3.9,
   "low_f": 39.0,
   "low_time_utc": "2026-11-21T07:54:00Z",
   "peak_between_reports": {
-   "at_least_f": 59.9,
-   "about_f": 60.8,
-   "time_utc": "2026-11-21T15:45:00Z"
+   "at_least_f": 63.5,
+   "about_f": 64.4,
+   "time_utc": "2026-11-21T16:25:00Z"
   }
  },
  "record": {
@@ -86,9 +86,25 @@
     "phrase": "21st warmest November 20 low (tied) of 154 since 1873, warmest since 2020"
    }
   },
+  "today_high_so_far": {
+   "value_f": 62,
+   "warm_rank": 8,
+   "cool_rank": 144,
+   "years": 153,
+   "first_year": 1873,
+   "tied_years": [
+    1898,
+    1953
+   ],
+   "standing": "warm",
+   "notable": true,
+   "since": 1953,
+   "record": false,
+   "phrase": "already the 8th warmest November 21 high (tied) of 153 since 1873, warmest since 1953"
+  },
   "forecast_highs": [
    {
-    "period": "Today",
+    "period": "This Afternoon",
     "date": "2026-11-21",
     "high_f": 65,
     "would_rank": {
@@ -250,8 +266,8 @@
   "grid": "BUF/40,50",
   "periods": [
    {
-    "name": "Today",
-    "start": "2026-11-21T10:00:00-05:00",
+    "name": "This Afternoon",
+    "start": "2026-11-21T12:00:00-05:00",
     "is_daytime": true,
     "temp_f": 65,
     "temp_c": 18.33,
@@ -380,13 +396,6 @@
  "hourly": {
   "issued_utc": "2026-11-21T14:57:40Z",
   "hours": [
-   {
-    "start": "2026-11-21T11:00:00-05:00",
-    "temp_f": 58,
-    "temp_c": 14.44,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "start": "2026-11-21T12:00:00-05:00",
     "temp_f": 62,
@@ -715,6 +724,13 @@
     "temp_c": 8.33,
     "precip_chance_pct": 7,
     "short_forecast": "Partly Sunny"
+   },
+   {
+    "start": "2026-11-23T11:00:00-05:00",
+    "temp_f": 47,
+    "temp_c": 8.33,
+    "precip_chance_pct": 7,
+    "short_forecast": "Mostly Sunny"
    }
   ]
  },

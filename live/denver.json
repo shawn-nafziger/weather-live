@@ -11,34 +11,29 @@
   "lon": -104.6562,
   "history": "Same site as the official Denver record"
  },
- "as_of_utc": "2026-11-21T16:07:59Z",
+ "as_of_utc": "2026-11-21T17:08:03Z",
  "now": {
-  "time_utc": "2026-11-21T15:45:00Z",
-  "temp_c": 4,
-  "temp_f": 39.2,
+  "time_utc": "2026-11-21T16:25:00Z",
+  "temp_c": 3,
+  "temp_f": 37.4,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": -8,
-  "humidity_pct": 41.26,
-  "wind_kmh": 11.12,
-  "description": "Mostly Cloudy"
+  "dewpoint_c": -3,
+  "humidity_pct": 64.71,
+  "wind_kmh": null,
+  "description": "Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-21",
-  "readings": 7,
+  "readings": 10,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 3.3,
-  "high_f": 37.9,
-  "high_time_utc": "2026-11-21T08:53:00Z",
+  "high_c": 3.9,
+  "high_f": 39.0,
+  "high_time_utc": "2026-11-21T15:45:00Z",
   "low_c": 1.7,
   "low_f": 35.1,
-  "low_time_utc": "2026-11-21T10:53:00Z",
-  "peak_between_reports": {
-   "at_least_f": 38.3,
-   "about_f": 39.2,
-   "time_utc": "2026-11-21T15:45:00Z"
-  }
+  "low_time_utc": "2026-11-21T10:53:00Z"
  },
  "record": {
   "series": "Denver area (ThreadEx; airport)",
@@ -385,13 +380,6 @@
   "issued_utc": "2026-11-21T14:25:42Z",
   "hours": [
    {
-    "start": "2026-11-21T09:00:00-07:00",
-    "temp_f": 40,
-    "temp_c": 4.44,
-    "precip_chance_pct": 31,
-    "short_forecast": "Chance Snow Showers"
-   },
-   {
     "start": "2026-11-21T10:00:00-07:00",
     "temp_f": 39,
     "temp_c": 3.89,
@@ -717,6 +705,13 @@
     "start": "2026-11-23T08:00:00-07:00",
     "temp_f": 30,
     "temp_c": -1.11,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "start": "2026-11-23T09:00:00-07:00",
+    "temp_f": 32,
+    "temp_c": 0.0,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Cloudy"
    }
