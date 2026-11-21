@@ -76,10 +76,15 @@ jobs:
           cache: pip
           cache-dependency-path: almanac/requirements.txt
 
-      - run: pip install -r almanac/requirements.txt
+      - run: pip install -r requirements.txt -r almanac/requirements.txt
+
+      # The 7-day forecast strip on each place's page (Nov 21, 2026): every place's NWS forecast, fetched into a
+      # work folder that is never committed. A place whose forecast can't be fetched just has no strip today.
+      - name: Fetch the 7-day forecasts
+        run: python scripts/forecast_pull.py --out forecasts_tmp
 
       - name: Build the Almanac pages
-        run: python almanac/build.py --all --out site
+        run: python almanac/build.py --all --out site --forecasts forecasts_tmp
 
       - name: Keep last good pages for places that didn't pass today
         run: |
