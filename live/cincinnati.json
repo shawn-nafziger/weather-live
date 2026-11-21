@@ -11,34 +11,23 @@
   "lon": -84.6723,
   "history": "Same site as the official Cincinnati record"
  },
- "as_of_utc": "2026-11-21T04:07:56Z",
+ "as_of_utc": "2026-11-21T05:08:03Z",
  "now": {
-  "time_utc": "2026-11-21T03:55:00Z",
-  "temp_c": 11,
-  "temp_f": 51.8,
+  "time_utc": "2026-11-21T04:50:00Z",
+  "temp_c": 10,
+  "temp_f": 50.0,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 3,
-  "humidity_pct": 57.8,
-  "wind_kmh": 7.42,
+  "humidity_pct": 61.78,
+  "wind_kmh": 5.54,
   "description": "Clear"
  },
  "today_so_far": {
-  "date_local": "2026-11-20",
-  "readings": 13,
-  "basis": "hourly reports (tenths of a degree)",
-  "approximate": false,
-  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 19.4,
-  "high_f": 66.9,
-  "high_time_utc": "2026-11-20T18:52:00Z",
-  "low_c": 6.1,
-  "low_f": 43.0,
-  "low_time_utc": "2026-11-20T08:52:00Z",
-  "peak_between_reports": {
-   "at_least_f": 67.1,
-   "about_f": 68.0,
-   "time_utc": "2026-11-20T20:25:00Z"
-  }
+  "date_local": "2026-11-21",
+  "readings": 0,
+  "basis": "5-minute readings (whole \u00b0C, approximate)",
+  "approximate": true,
+  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two."
  },
  "record": {
   "series": "Cincinnati area (ThreadEx; airport (in Kentucky))",
@@ -47,7 +36,7 @@
   "rank_today": true,
   "latest_final": {
    "date": "2026-11-19",
-   "is_yesterday": true,
+   "is_yesterday": false,
    "high_f": 67,
    "low_f": 35,
    "high_rank": {
@@ -86,23 +75,6 @@
     "record": false,
     "phrase": "typical for November 19"
    }
-  },
-  "today_high_so_far": {
-   "value_f": 67,
-   "warm_rank": 13,
-   "cool_rank": 140,
-   "years": 155,
-   "first_year": 1872,
-   "tied_years": [
-    1897,
-    1989,
-    1991
-   ],
-   "standing": "warm",
-   "notable": true,
-   "since": 2007,
-   "record": false,
-   "phrase": "already the 13th warmest November 20 high (tied) of 155 since 1872, warmest since 2007"
   },
   "forecast_highs": [
    {
@@ -278,7 +250,7 @@
   "periods": [
    {
     "name": "Tonight",
-    "start": "2026-11-20T23:00:00-05:00",
+    "start": "2026-11-20T19:00:00-05:00",
     "is_daytime": false,
     "temp_f": 40,
     "temp_c": 4.44,
@@ -407,13 +379,6 @@
  "hourly": {
   "issued_utc": "2026-11-20T21:00:30Z",
   "hours": [
-   {
-    "start": "2026-11-20T23:00:00-05:00",
-    "temp_f": 48,
-    "temp_c": 8.89,
-    "precip_chance_pct": 0,
-    "short_forecast": "Clear"
-   },
    {
     "start": "2026-11-21T00:00:00-05:00",
     "temp_f": 46,
@@ -740,6 +705,13 @@
     "start": "2026-11-22T22:00:00-05:00",
     "temp_f": 55,
     "temp_c": 12.78,
+    "precip_chance_pct": 45,
+    "short_forecast": "Chance Light Rain"
+   },
+   {
+    "start": "2026-11-22T23:00:00-05:00",
+    "temp_f": 54,
+    "temp_c": 12.22,
     "precip_chance_pct": 45,
     "short_forecast": "Chance Light Rain"
    }
