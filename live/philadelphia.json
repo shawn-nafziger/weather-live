@@ -11,7 +11,7 @@
   "lon": -75.2268,
   "history": "Same site as the official Philadelphia record"
  },
- "as_of_utc": "2026-11-21T23:08:01Z",
+ "as_of_utc": "2026-11-21T23:28:54Z",
  "now": {
   "time_utc": "2026-11-21T22:55:00Z",
   "temp_c": 13,
@@ -24,7 +24,7 @@
  },
  "today_so_far": {
   "date_local": "2026-11-21",
-  "readings": 12,
+  "readings": 13,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -107,27 +107,6 @@
    "phrase": "already the 11th warmest November 21 high (tied) of 153 since 1874, warmest since 2020"
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-21",
-    "high_f": 65,
-    "would_rank": {
-     "value_f": 65,
-     "warm_rank": 16,
-     "cool_rank": 136,
-     "years": 153,
-     "first_year": 1874,
-     "tied_years": [
-      1992,
-      2007
-     ],
-     "standing": "warm",
-     "notable": true,
-     "since": 2020,
-     "record": false,
-     "phrase": "16th warmest November 21 high (tied) of 153 since 1874, warmest since 2020"
-    }
-   },
    {
     "period": "Sunday",
     "date": "2026-11-22",
@@ -269,6 +248,31 @@
      "record": false,
      "phrase": "typical for November 27"
     }
+   },
+   {
+    "period": "Saturday",
+    "date": "2026-11-28",
+    "high_f": 54,
+    "would_rank": {
+     "value_f": 54,
+     "warm_rank": 51,
+     "cool_rank": 97,
+     "years": 153,
+     "first_year": 1874,
+     "tied_years": [
+      1877,
+      1891,
+      1965,
+      2000,
+      2019,
+      2024
+     ],
+     "standing": "warm",
+     "notable": false,
+     "since": 2024,
+     "record": false,
+     "phrase": "typical for November 28"
+    }
    }
   ]
  },
@@ -276,15 +280,6 @@
   "issued_utc": "2026-11-21T21:07:56Z",
   "grid": "PHI/48,75",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-21T16:00:00-05:00",
-    "is_daytime": true,
-    "temp_f": 65,
-    "temp_c": 18.33,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-21T18:00:00-05:00",
@@ -400,6 +395,15 @@
     "temp_f": 39,
     "temp_c": 3.89,
     "precip_chance_pct": 15,
+    "short_forecast": "Slight Chance Light Rain"
+   },
+   {
+    "name": "Saturday",
+    "start": "2026-11-28T06:00:00-05:00",
+    "is_daytime": true,
+    "temp_f": 54,
+    "temp_c": 12.22,
+    "precip_chance_pct": 18,
     "short_forecast": "Slight Chance Light Rain"
    }
   ]
