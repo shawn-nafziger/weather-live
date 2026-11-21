@@ -11,29 +11,23 @@
   "lon": -87.9044,
   "history": "Same station as the official Chicago record (ThreadEx, O'Hare since 1980)"
  },
- "as_of_utc": "2026-11-21T05:08:03Z",
+ "as_of_utc": "2026-11-21T06:08:04Z",
  "now": {
-  "time_utc": "2026-11-21T04:50:00Z",
+  "time_utc": "2026-11-21T05:40:00Z",
   "temp_c": 14,
   "temp_f": 57.2,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 7,
-  "humidity_pct": 62.72,
-  "wind_kmh": 18.5,
-  "description": ""
+  "dewpoint_c": 6,
+  "humidity_pct": 58.55,
+  "wind_kmh": 14.83,
+  "description": "Clear"
  },
  "today_so_far": {
-  "date_local": "2026-11-20",
-  "readings": 14,
-  "basis": "hourly reports (tenths of a degree)",
-  "approximate": false,
-  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 20,
-  "high_f": 68.0,
-  "high_time_utc": "2026-11-20T19:51:00Z",
-  "low_c": 6.1,
-  "low_f": 43.0,
-  "low_time_utc": "2026-11-20T10:51:00Z"
+  "date_local": "2026-11-21",
+  "readings": 0,
+  "basis": "5-minute readings (whole \u00b0C, approximate)",
+  "approximate": true,
+  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two."
  },
  "record": {
   "series": "Chicago area (ThreadEx, O'Hare since 1980)",
@@ -42,7 +36,7 @@
   "rank_today": true,
   "latest_final": {
    "date": "2026-11-19",
-   "is_yesterday": true,
+   "is_yesterday": false,
    "high_f": 66,
    "low_f": 49,
    "high_rank": {
@@ -76,22 +70,6 @@
     "record": false,
     "phrase": "9th warmest November 19 low (tied) of 155 since 1872, warmest since 2004"
    }
-  },
-  "today_high_so_far": {
-   "value_f": 68,
-   "warm_rank": 1,
-   "cool_rank": 153,
-   "years": 155,
-   "first_year": 1872,
-   "tied_years": [
-    1913,
-    1930
-   ],
-   "standing": "warm",
-   "notable": true,
-   "since": 1930,
-   "record": true,
-   "phrase": "already ties the record for warmest November 20 high on record (155 years since 1872)"
   },
   "forecast_highs": [
    {
@@ -406,13 +384,6 @@
  "hourly": {
   "issued_utc": "2026-11-21T03:25:57Z",
   "hours": [
-   {
-    "start": "2026-11-20T23:00:00-06:00",
-    "temp_f": 57,
-    "temp_c": 13.89,
-    "precip_chance_pct": 0,
-    "short_forecast": "Partly Cloudy"
-   },
    {
     "start": "2026-11-21T00:00:00-06:00",
     "temp_f": 56,
@@ -739,6 +710,13 @@
     "start": "2026-11-22T22:00:00-06:00",
     "temp_f": 42,
     "temp_c": 5.56,
+    "precip_chance_pct": 7,
+    "short_forecast": "Mostly Clear"
+   },
+   {
+    "start": "2026-11-22T23:00:00-06:00",
+    "temp_f": 40,
+    "temp_c": 4.44,
     "precip_chance_pct": 7,
     "short_forecast": "Mostly Clear"
    }

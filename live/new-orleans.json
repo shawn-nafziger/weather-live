@@ -11,29 +11,23 @@
   "lon": -90.2508,
   "history": "Same site as the official New Orleans record"
  },
- "as_of_utc": "2026-11-21T05:08:03Z",
+ "as_of_utc": "2026-11-21T06:08:04Z",
  "now": {
-  "time_utc": "2026-11-21T04:50:00Z",
+  "time_utc": "2026-11-21T05:40:00Z",
   "temp_c": 19,
   "temp_f": 66.2,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 16,
   "humidity_pct": 82.75,
-  "wind_kmh": 5.54,
-  "description": "Mostly Cloudy"
+  "wind_kmh": 7.42,
+  "description": "Clear"
  },
  "today_so_far": {
-  "date_local": "2026-11-20",
-  "readings": 19,
-  "basis": "hourly reports (tenths of a degree)",
-  "approximate": false,
-  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 22.2,
-  "high_f": 72.0,
-  "high_time_utc": "2026-11-20T19:53:00Z",
-  "low_c": 16.7,
-  "low_f": 62.1,
-  "low_time_utc": "2026-11-20T09:53:00Z"
+  "date_local": "2026-11-21",
+  "readings": 0,
+  "basis": "5-minute readings (whole \u00b0C, approximate)",
+  "approximate": true,
+  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two."
  },
  "record": {
   "series": "New Orleans area (ThreadEx; airport)",
@@ -42,7 +36,7 @@
   "rank_today": true,
   "latest_final": {
    "date": "2026-11-19",
-   "is_yesterday": true,
+   "is_yesterday": false,
    "high_f": 71,
    "low_f": 62,
    "high_rank": {
@@ -371,13 +365,6 @@
   "issued_utc": "2026-11-21T04:11:16Z",
   "hours": [
    {
-    "start": "2026-11-20T23:00:00-06:00",
-    "temp_f": 65,
-    "temp_c": 18.33,
-    "precip_chance_pct": 0,
-    "short_forecast": "Partly Cloudy"
-   },
-   {
     "start": "2026-11-21T00:00:00-06:00",
     "temp_f": 64,
     "temp_c": 17.78,
@@ -705,6 +692,13 @@
     "temp_c": 18.33,
     "precip_chance_pct": 3,
     "short_forecast": "Partly Cloudy"
+   },
+   {
+    "start": "2026-11-22T23:00:00-06:00",
+    "temp_f": 64,
+    "temp_c": 17.78,
+    "precip_chance_pct": 3,
+    "short_forecast": "Mostly Cloudy"
    }
   ]
  },
