@@ -11,20 +11,20 @@
   "lon": -98.4636,
   "history": "Same site as the official San Antonio record"
  },
- "as_of_utc": "2026-11-21T12:07:58Z",
+ "as_of_utc": "2026-11-21T13:08:04Z",
  "now": {
-  "time_utc": "2026-11-21T11:40:00Z",
-  "temp_c": 13,
-  "temp_f": 55.4,
+  "time_utc": "2026-11-21T12:45:00Z",
+  "temp_c": 14,
+  "temp_f": 57.2,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 13,
-  "humidity_pct": 100,
-  "wind_kmh": 0,
+  "humidity_pct": 93.7,
+  "wind_kmh": 5.54,
   "description": "Fog/Mist"
  },
  "today_so_far": {
   "date_local": "2026-11-21",
-  "readings": 7,
+  "readings": 10,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -90,7 +90,7 @@
   },
   "forecast_highs": [
    {
-    "period": "Saturday",
+    "period": "Today",
     "date": "2026-11-21",
     "high_f": 74,
     "would_rank": {
@@ -253,20 +253,11 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-21T10:46:22Z",
+  "issued_utc": "2026-11-21T11:42:22Z",
   "grid": "EWX/128,59",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-21T05:00:00-06:00",
-    "is_daytime": false,
-    "temp_f": 55,
-    "temp_c": 12.78,
-    "precip_chance_pct": 0,
-    "short_forecast": "Areas Of Fog"
-   },
-   {
-    "name": "Saturday",
+    "name": "Today",
     "start": "2026-11-21T06:00:00-06:00",
     "is_daytime": true,
     "temp_f": 74,
@@ -275,7 +266,7 @@
     "short_forecast": "Areas Of Fog then Partly Sunny"
    },
    {
-    "name": "Saturday Night",
+    "name": "Tonight",
     "start": "2026-11-21T18:00:00-06:00",
     "is_daytime": false,
     "temp_f": 61,
@@ -381,19 +372,21 @@
     "temp_c": 16.67,
     "precip_chance_pct": 14,
     "short_forecast": "Mostly Sunny"
+   },
+   {
+    "name": "Friday Night",
+    "start": "2026-11-27T18:00:00-06:00",
+    "is_daytime": false,
+    "temp_f": 44,
+    "temp_c": 6.67,
+    "precip_chance_pct": 12,
+    "short_forecast": "Partly Cloudy"
    }
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-21T11:14:24Z",
+  "issued_utc": "2026-11-21T12:18:25Z",
   "hours": [
-   {
-    "start": "2026-11-21T06:00:00-06:00",
-    "temp_f": 56,
-    "temp_c": 13.33,
-    "precip_chance_pct": 1,
-    "short_forecast": "Areas Of Fog"
-   },
    {
     "start": "2026-11-21T07:00:00-06:00",
     "temp_f": 56,
@@ -722,6 +715,13 @@
     "temp_c": 9.44,
     "precip_chance_pct": 19,
     "short_forecast": "Slight Chance Rain Showers"
+   },
+   {
+    "start": "2026-11-23T06:00:00-06:00",
+    "temp_f": 48,
+    "temp_c": 8.89,
+    "precip_chance_pct": 1,
+    "short_forecast": "Sunny"
    }
   ]
  },

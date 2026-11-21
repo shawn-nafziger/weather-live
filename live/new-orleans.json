@@ -11,20 +11,20 @@
   "lon": -90.2508,
   "history": "Same site as the official New Orleans record"
  },
- "as_of_utc": "2026-11-21T12:07:58Z",
+ "as_of_utc": "2026-11-21T13:08:04Z",
  "now": {
-  "time_utc": "2026-11-21T11:40:00Z",
-  "temp_c": 18,
-  "temp_f": 64.4,
+  "time_utc": "2026-11-21T12:45:00Z",
+  "temp_c": 17,
+  "temp_f": 62.6,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 16,
-  "humidity_pct": 88.1,
-  "wind_kmh": 5.54,
+  "humidity_pct": 93.84,
+  "wind_kmh": 7.42,
   "description": "Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-21",
-  "readings": 3,
+  "readings": 4,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -89,7 +89,7 @@
   },
   "forecast_highs": [
    {
-    "period": "Saturday",
+    "period": "Today",
     "date": "2026-11-21",
     "high_f": 74,
     "would_rank": {
@@ -246,16 +246,7 @@
   "grid": "LIX/61,90",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-21T05:00:00-06:00",
-    "is_daytime": false,
-    "temp_f": 62,
-    "temp_c": 16.67,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Clear"
-   },
-   {
-    "name": "Saturday",
+    "name": "Today",
     "start": "2026-11-21T06:00:00-06:00",
     "is_daytime": true,
     "temp_f": 74,
@@ -264,7 +255,7 @@
     "short_forecast": "Sunny"
    },
    {
-    "name": "Saturday Night",
+    "name": "Tonight",
     "start": "2026-11-21T18:00:00-06:00",
     "is_daytime": false,
     "temp_f": 58,
@@ -370,19 +361,21 @@
     "temp_c": 17.22,
     "precip_chance_pct": 7,
     "short_forecast": "Mostly Sunny"
+   },
+   {
+    "name": "Friday Night",
+    "start": "2026-11-27T18:00:00-06:00",
+    "is_daytime": false,
+    "temp_f": 50,
+    "temp_c": 10.0,
+    "precip_chance_pct": 14,
+    "short_forecast": "Partly Cloudy"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-21T10:55:45Z",
   "hours": [
-   {
-    "start": "2026-11-21T06:00:00-06:00",
-    "temp_f": 64,
-    "temp_c": 17.78,
-    "precip_chance_pct": 1,
-    "short_forecast": "Sunny"
-   },
    {
     "start": "2026-11-21T07:00:00-06:00",
     "temp_f": 62,
@@ -711,6 +704,13 @@
     "temp_c": 17.22,
     "precip_chance_pct": 3,
     "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "start": "2026-11-23T06:00:00-06:00",
+    "temp_f": 64,
+    "temp_c": 17.78,
+    "precip_chance_pct": 17,
+    "short_forecast": "Slight Chance Rain Showers"
    }
   ]
  },
