@@ -11,16 +11,16 @@
   "lon": -121.496,
   "history": "About 9 km from the official Sacramento record's site, so today and the forecast aren't ranked against it"
  },
- "as_of_utc": "2026-11-21T11:42:14Z",
+ "as_of_utc": "2026-11-21T12:07:58Z",
  "now": {
-  "time_utc": "2026-11-21T11:20:00Z",
+  "time_utc": "2026-11-21T11:40:00Z",
   "temp_c": 4,
   "temp_f": 39.2,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 4,
   "humidity_pct": 100,
   "wind_kmh": 0,
-  "description": "Fog/Mist"
+  "description": "Fog"
  },
  "today_so_far": {
   "date_local": "2026-11-21",
@@ -46,58 +46,63 @@
   "available": true,
   "rank_today": false,
   "latest_final": {
-   "date": "2026-11-19",
-   "is_yesterday": false,
-   "high_f": 57,
-   "low_f": 45,
+   "date": "2026-11-20",
+   "is_yesterday": true,
+   "high_f": 55,
+   "low_f": 42,
    "high_rank": {
-    "value_f": 57,
-    "warm_rank": 121,
-    "cool_rank": 28,
+    "value_f": 55,
+    "warm_rank": 127,
+    "cool_rank": 17,
     "years": 150,
     "first_year": 1877,
     "tied_years": [
-     1882,
-     2024
+     1896,
+     1934,
+     1946,
+     1968,
+     1983,
+     1994,
+     2009
     ],
     "standing": "cool",
     "notable": true,
-    "since": 2024,
+    "since": 2010,
     "record": false,
-    "phrase": "28th coolest November 19 high (tied) of 150 since 1877, coolest since 2024"
+    "phrase": "17th coolest November 20 high (tied) of 150 since 1877, coolest since 2010"
    },
    "low_rank": {
-    "value_f": 45,
-    "warm_rank": 53,
-    "cool_rank": 90,
+    "value_f": 42,
+    "warm_rank": 72,
+    "cool_rank": 71,
     "years": 150,
     "first_year": 1877,
     "tied_years": [
-     1887,
-     1897,
-     1901,
-     1912,
-     1913,
-     1923,
-     1945,
-     2008
+     1906,
+     1911,
+     1916,
+     1918,
+     1938,
+     1957,
+     2002,
+     2021
     ],
-    "standing": "warm",
+    "standing": "cool",
     "notable": false,
-    "since": 2025,
+    "since": 2023,
     "record": false,
-    "phrase": "typical for November 19"
+    "phrase": "typical for November 20"
    }
   },
   "note": "Today's readings come from a different station than this record, so today and the forecast aren't ranked against it."
  },
  "forecast": {
-  "issued_utc": "2026-11-21T09:00:57Z",
+  "issued_utc": "2026-11-21T11:06:29Z",
   "grid": "STO/40,65",
   "periods": [
    {
     "name": "Overnight",
-    "start": "2026-11-21T01:00:00-08:00",
+    "start": "2026-11-21T04:00:00-08:00",
     "is_daytime": false,
     "temp_f": 37,
     "temp_c": 2.78,
@@ -224,15 +229,8 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-21T09:00:57Z",
+  "issued_utc": "2026-11-21T11:06:29Z",
   "hours": [
-   {
-    "start": "2026-11-21T03:00:00-08:00",
-    "temp_f": 39,
-    "temp_c": 3.89,
-    "precip_chance_pct": 0,
-    "short_forecast": "Partly Cloudy"
-   },
    {
     "start": "2026-11-21T04:00:00-08:00",
     "temp_f": 39,
@@ -557,6 +555,13 @@
    },
    {
     "start": "2026-11-23T02:00:00-08:00",
+    "temp_f": 42,
+    "temp_c": 5.56,
+    "precip_chance_pct": 2,
+    "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "start": "2026-11-23T03:00:00-08:00",
     "temp_f": 42,
     "temp_c": 5.56,
     "precip_chance_pct": 2,

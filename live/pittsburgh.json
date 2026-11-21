@@ -11,14 +11,14 @@
   "lon": -80.2145,
   "history": "Same site as the official Pittsburgh record"
  },
- "as_of_utc": "2026-11-21T11:42:14Z",
+ "as_of_utc": "2026-11-21T12:07:58Z",
  "now": {
-  "time_utc": "2026-11-21T11:20:00Z",
-  "temp_c": 2,
-  "temp_f": 35.6,
+  "time_utc": "2026-11-21T11:40:00Z",
+  "temp_c": 1,
+  "temp_f": 33.8,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 0,
-  "humidity_pct": 86.6,
+  "dewpoint_c": -1,
+  "humidity_pct": 86.5,
   "wind_kmh": 0,
   "description": "Clear"
  },
@@ -46,46 +46,42 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-19",
-   "is_yesterday": false,
-   "high_f": 65,
-   "low_f": 29,
+   "date": "2026-11-20",
+   "is_yesterday": true,
+   "high_f": 66,
+   "low_f": 35,
    "high_rank": {
-    "value_f": 65,
-    "warm_rank": 15,
-    "cool_rank": 136,
+    "value_f": 66,
+    "warm_rank": 10,
+    "cool_rank": 141,
     "years": 152,
     "first_year": 1875,
     "tied_years": [
-     1896,
-     1953
+     1979,
+     1985
     ],
     "standing": "warm",
     "notable": true,
-    "since": 2001,
+    "since": 1991,
     "record": false,
-    "phrase": "15th warmest November 19 high (tied) of 152 since 1875, warmest since 2001"
+    "phrase": "10th warmest November 20 high (tied) of 152 since 1875, warmest since 1991"
    },
    "low_rank": {
-    "value_f": 29,
-    "warm_rank": 115,
-    "cool_rank": 32,
+    "value_f": 35,
+    "warm_rank": 64,
+    "cool_rank": 87,
     "years": 153,
     "first_year": 1874,
     "tied_years": [
-     1893,
-     1911,
-     1923,
-     1932,
-     1986,
-     2012,
-     2013
+     1901,
+     1917,
+     1975
     ],
-    "standing": "cool",
+    "standing": "warm",
     "notable": false,
-    "since": 2022,
+    "since": 2024,
     "record": false,
-    "phrase": "typical for November 19"
+    "phrase": "typical for November 20"
    }
   },
   "forecast_highs": [
@@ -388,13 +384,6 @@
  "hourly": {
   "issued_utc": "2026-11-21T06:21:23Z",
   "hours": [
-   {
-    "start": "2026-11-21T06:00:00-05:00",
-    "temp_f": 37,
-    "temp_c": 2.78,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Sunny"
-   },
    {
     "start": "2026-11-21T07:00:00-05:00",
     "temp_f": 36,
@@ -721,6 +710,13 @@
     "start": "2026-11-23T05:00:00-05:00",
     "temp_f": 48,
     "temp_c": 8.89,
+    "precip_chance_pct": 30,
+    "short_forecast": "Chance Light Rain"
+   },
+   {
+    "start": "2026-11-23T06:00:00-05:00",
+    "temp_f": 47,
+    "temp_c": 8.33,
     "precip_chance_pct": 30,
     "short_forecast": "Chance Light Rain"
    }

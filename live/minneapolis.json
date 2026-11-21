@@ -11,15 +11,15 @@
   "lon": -93.2289,
   "history": "Same site as the official Minneapolis record"
  },
- "as_of_utc": "2026-11-21T11:42:14Z",
+ "as_of_utc": "2026-11-21T12:07:58Z",
  "now": {
-  "time_utc": "2026-11-21T11:20:00Z",
+  "time_utc": "2026-11-21T11:35:00Z",
   "temp_c": 16,
   "temp_f": 60.8,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 11,
   "humidity_pct": 72.22,
-  "wind_kmh": 14.83,
+  "wind_kmh": 20.38,
   "description": "Cloudy"
  },
  "today_so_far": {
@@ -41,42 +41,39 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-19",
-   "is_yesterday": false,
-   "high_f": 55,
-   "low_f": 43,
+   "date": "2026-11-20",
+   "is_yesterday": true,
+   "high_f": 65,
+   "low_f": 40,
    "high_rank": {
-    "value_f": 55,
-    "warm_rank": 13,
-    "cool_rank": 139,
+    "value_f": 65,
+    "warm_rank": 1,
+    "cool_rank": 155,
     "years": 155,
     "first_year": 1872,
-    "tied_years": [
-     1878,
-     1897,
-     2023,
-     2024
-    ],
+    "tied_years": [],
     "standing": "warm",
     "notable": true,
-    "since": 2024,
-    "record": false,
-    "phrase": "13th warmest November 19 high (tied) of 155 since 1872, warmest since 2024"
+    "since": null,
+    "record": true,
+    "phrase": "the warmest November 20 high on record (155 years since 1872)"
    },
    "low_rank": {
-    "value_f": 43,
-    "warm_rank": 3,
-    "cool_rank": 152,
+    "value_f": 40,
+    "warm_rank": 6,
+    "cool_rank": 147,
     "years": 155,
     "first_year": 1872,
     "tied_years": [
-     1931
+     1897,
+     1899,
+     2023
     ],
     "standing": "warm",
     "notable": true,
-    "since": 1982,
+    "since": 2023,
     "record": false,
-    "phrase": "3rd warmest November 19 low (tied) of 155 since 1872, warmest since 1982"
+    "phrase": "6th warmest November 20 low (tied) of 155 since 1872, warmest since 2023"
    }
   },
   "today_high_so_far": {
@@ -404,13 +401,6 @@
   "issued_utc": "2026-11-21T10:06:56Z",
   "hours": [
    {
-    "start": "2026-11-21T05:00:00-06:00",
-    "temp_f": 60,
-    "temp_c": 15.56,
-    "precip_chance_pct": 29,
-    "short_forecast": "Chance Light Rain"
-   },
-   {
     "start": "2026-11-21T06:00:00-06:00",
     "temp_f": 60,
     "temp_c": 15.56,
@@ -736,6 +726,13 @@
     "start": "2026-11-23T04:00:00-06:00",
     "temp_f": 26,
     "temp_c": -3.33,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Clear"
+   },
+   {
+    "start": "2026-11-23T05:00:00-06:00",
+    "temp_f": 25,
+    "temp_c": -3.89,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear"
    }

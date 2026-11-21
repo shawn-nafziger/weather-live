@@ -11,14 +11,14 @@
   "lon": -86.2816,
   "history": "Same site as the official Indianapolis record"
  },
- "as_of_utc": "2026-11-21T11:42:14Z",
+ "as_of_utc": "2026-11-21T12:07:58Z",
  "now": {
-  "time_utc": "2026-11-21T11:20:00Z",
-  "temp_c": 7,
-  "temp_f": 44.6,
+  "time_utc": "2026-11-21T11:35:00Z",
+  "temp_c": 6,
+  "temp_f": 42.8,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 3,
-  "humidity_pct": 75.69,
+  "humidity_pct": 81.08,
   "wind_kmh": 5.54,
   "description": "Clear"
  },
@@ -46,45 +46,38 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-19",
-   "is_yesterday": false,
-   "high_f": 68,
-   "low_f": 39,
+   "date": "2026-11-20",
+   "is_yesterday": true,
+   "high_f": 69,
+   "low_f": 41,
    "high_rank": {
-    "value_f": 68,
-    "warm_rank": 8,
-    "cool_rank": 146,
+    "value_f": 69,
+    "warm_rank": 5,
+    "cool_rank": 152,
     "years": 156,
     "first_year": 1871,
-    "tied_years": [
-     1983,
-     1991,
-     2024
-    ],
+    "tied_years": [],
     "standing": "warm",
     "notable": true,
-    "since": 2024,
+    "since": 1942,
     "record": false,
-    "phrase": "8th warmest November 19 high (tied) of 156 since 1871, warmest since 2024"
+    "phrase": "5th warmest November 20 high of 156 since 1871, warmest since 1942"
    },
    "low_rank": {
-    "value_f": 39,
-    "warm_rank": 43,
-    "cool_rank": 109,
+    "value_f": 41,
+    "warm_rank": 33,
+    "cool_rank": 122,
     "years": 156,
     "first_year": 1871,
     "tied_years": [
-     1912,
-     1935,
-     1940,
-     1952,
-     2002
+     1878,
+     1899
     ],
     "standing": "warm",
     "notable": false,
     "since": 2025,
     "record": false,
-    "phrase": "typical for November 19"
+    "phrase": "typical for November 20"
    }
   },
   "forecast_highs": [
@@ -241,7 +234,7 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-21T11:15:20Z",
+  "issued_utc": "2026-11-21T10:45:24Z",
   "grid": "IND/54,67",
   "periods": [
    {
@@ -375,13 +368,6 @@
  "hourly": {
   "issued_utc": "2026-11-21T10:45:24Z",
   "hours": [
-   {
-    "start": "2026-11-21T06:00:00-05:00",
-    "temp_f": 40,
-    "temp_c": 4.44,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "start": "2026-11-21T07:00:00-05:00",
     "temp_f": 40,
@@ -710,6 +696,13 @@
     "temp_c": 3.89,
     "precip_chance_pct": 2,
     "short_forecast": "Mostly Clear"
+   },
+   {
+    "start": "2026-11-23T06:00:00-05:00",
+    "temp_f": 38,
+    "temp_c": 3.33,
+    "precip_chance_pct": 2,
+    "short_forecast": "Sunny"
    }
   ]
  },

@@ -11,20 +11,20 @@
   "lon": -81.6937,
   "history": "Same site as the official Jacksonville record"
  },
- "as_of_utc": "2026-11-21T11:42:14Z",
+ "as_of_utc": "2026-11-21T12:07:58Z",
  "now": {
-  "time_utc": "2026-11-21T11:20:00Z",
-  "temp_c": 21,
-  "temp_f": 69.8,
-  "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 19,
-  "humidity_pct": 88.35,
-  "wind_kmh": 20.38,
-  "description": "Mostly Cloudy"
+  "time_utc": "2026-11-21T11:39:00Z",
+  "temp_c": 20,
+  "temp_f": 68.0,
+  "precision": "tenths of a degree",
+  "dewpoint_c": 19.4,
+  "humidity_pct": 96.35,
+  "wind_kmh": 14.76,
+  "description": "Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-21",
-  "readings": 9,
+  "readings": 10,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -41,44 +41,48 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-19",
-   "is_yesterday": false,
-   "high_f": 70,
+   "date": "2026-11-20",
+   "is_yesterday": true,
+   "high_f": 68,
    "low_f": 63,
    "high_rank": {
-    "value_f": 70,
-    "warm_rank": 102,
-    "cool_rank": 50,
+    "value_f": 68,
+    "warm_rank": 97,
+    "cool_rank": 53,
     "years": 156,
     "first_year": 1871,
     "tied_years": [
-     1911,
-     1912,
-     1943,
-     1947,
-     1956
+     1884,
+     1890,
+     1898,
+     1918,
+     1924,
+     1978,
+     2008
     ],
     "standing": "cool",
     "notable": false,
     "since": 2022,
     "record": false,
-    "phrase": "typical for November 19"
+    "phrase": "typical for November 20"
    },
    "low_rank": {
     "value_f": 63,
-    "warm_rank": 21,
-    "cool_rank": 134,
+    "warm_rank": 15,
+    "cool_rank": 138,
     "years": 156,
     "first_year": 1871,
     "tied_years": [
-     1883,
-     1984
+     1896,
+     1922,
+     1934,
+     1948
     ],
     "standing": "warm",
     "notable": true,
-    "since": 2015,
+    "since": 2024,
     "record": false,
-    "phrase": "21st warmest November 19 low (tied) of 156 since 1871, warmest since 2015"
+    "phrase": "15th warmest November 20 low (tied) of 156 since 1871, warmest since 2024"
    }
   },
   "forecast_highs": [
@@ -405,13 +409,6 @@
   "issued_utc": "2026-11-21T10:56:11Z",
   "hours": [
    {
-    "start": "2026-11-21T06:00:00-05:00",
-    "temp_f": 65,
-    "temp_c": 18.33,
-    "precip_chance_pct": 23,
-    "short_forecast": "Slight Chance Rain Showers"
-   },
-   {
     "start": "2026-11-21T07:00:00-05:00",
     "temp_f": 64,
     "temp_c": 17.78,
@@ -737,6 +734,13 @@
     "start": "2026-11-23T05:00:00-05:00",
     "temp_f": 58,
     "temp_c": 14.44,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "start": "2026-11-23T06:00:00-05:00",
+    "temp_f": 57,
+    "temp_c": 13.89,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Cloudy"
    }

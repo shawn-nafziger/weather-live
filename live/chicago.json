@@ -11,15 +11,15 @@
   "lon": -87.9044,
   "history": "Same station as the official Chicago record (ThreadEx, O'Hare since 1980)"
  },
- "as_of_utc": "2026-11-21T11:42:14Z",
+ "as_of_utc": "2026-11-21T12:07:58Z",
  "now": {
-  "time_utc": "2026-11-21T11:20:00Z",
-  "temp_c": 12,
-  "temp_f": 53.6,
+  "time_utc": "2026-11-21T11:35:00Z",
+  "temp_c": 11,
+  "temp_f": 51.8,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 5,
-  "humidity_pct": 62.25,
-  "wind_kmh": 18.5,
+  "dewpoint_c": 4,
+  "humidity_pct": 62.02,
+  "wind_kmh": 16.67,
   "description": "Clear"
  },
  "today_so_far": {
@@ -38,6 +38,11 @@
    "at_least_f": 56.3,
    "about_f": 57.2,
    "time_utc": "2026-11-21T06:00:00Z"
+  },
+  "dip_between_reports": {
+   "at_most_f": 52.7,
+   "about_f": 51.8,
+   "time_utc": "2026-11-21T11:35:00Z"
   }
  },
  "record": {
@@ -46,40 +51,48 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-19",
-   "is_yesterday": false,
-   "high_f": 66,
-   "low_f": 49,
+   "date": "2026-11-20",
+   "is_yesterday": true,
+   "high_f": 68,
+   "low_f": 43,
    "high_rank": {
-    "value_f": 66,
-    "warm_rank": 8,
-    "cool_rank": 146,
+    "value_f": 68,
+    "warm_rank": 1,
+    "cool_rank": 153,
     "years": 155,
     "first_year": 1872,
     "tied_years": [
+     1913,
+     1930
+    ],
+    "standing": "warm",
+    "notable": true,
+    "since": 1930,
+    "record": true,
+    "phrase": "ties the record for warmest November 20 high on record (155 years since 1872)"
+   },
+   "low_rank": {
+    "value_f": 43,
+    "warm_rank": 12,
+    "cool_rank": 135,
+    "years": 155,
+    "first_year": 1872,
+    "tied_years": [
+     1900,
      1904,
+     1912,
+     1942,
+     1953,
+     1956,
+     1973,
+     2004,
      2020
     ],
     "standing": "warm",
     "notable": true,
     "since": 2020,
     "record": false,
-    "phrase": "8th warmest November 19 high (tied) of 155 since 1872, warmest since 2020"
-   },
-   "low_rank": {
-    "value_f": 49,
-    "warm_rank": 9,
-    "cool_rank": 146,
-    "years": 155,
-    "first_year": 1872,
-    "tied_years": [
-     2004
-    ],
-    "standing": "warm",
-    "notable": true,
-    "since": 2004,
-    "record": false,
-    "phrase": "9th warmest November 19 low (tied) of 155 since 1872, warmest since 2004"
+    "phrase": "12th warmest November 20 low (tied) of 155 since 1872, warmest since 2020"
    }
   },
   "today_high_so_far": {
@@ -407,13 +420,6 @@
   "issued_utc": "2026-11-21T09:51:00Z",
   "hours": [
    {
-    "start": "2026-11-21T05:00:00-06:00",
-    "temp_f": 52,
-    "temp_c": 11.11,
-    "precip_chance_pct": 0,
-    "short_forecast": "Clear"
-   },
-   {
     "start": "2026-11-21T06:00:00-06:00",
     "temp_f": 52,
     "temp_c": 11.11,
@@ -739,6 +745,13 @@
     "start": "2026-11-23T04:00:00-06:00",
     "temp_f": 33,
     "temp_c": 0.56,
+    "precip_chance_pct": 0,
+    "short_forecast": "Clear"
+   },
+   {
+    "start": "2026-11-23T05:00:00-06:00",
+    "temp_f": 32,
+    "temp_c": 0.0,
     "precip_chance_pct": 0,
     "short_forecast": "Clear"
    }

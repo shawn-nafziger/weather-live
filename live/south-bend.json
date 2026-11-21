@@ -11,15 +11,15 @@
   "lon": -86.3186,
   "history": "Same station as the official South Bend record (South Bend airport). Also the nearest official city record to Goshen, about 27 miles; a candidate for Goshen's hourly readings (question D2)"
  },
- "as_of_utc": "2026-11-21T11:42:14Z",
+ "as_of_utc": "2026-11-21T12:07:58Z",
  "now": {
-  "time_utc": "2026-11-21T11:20:00Z",
+  "time_utc": "2026-11-21T11:35:00Z",
   "temp_c": 9,
   "temp_f": 48.2,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 4,
   "humidity_pct": 70.89,
-  "wind_kmh": 9.25,
+  "wind_kmh": 5.54,
   "description": "Clear"
  },
  "today_so_far": {
@@ -41,42 +41,44 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-19",
-   "is_yesterday": false,
-   "high_f": 65,
-   "low_f": 43,
+   "date": "2026-11-20",
+   "is_yesterday": true,
+   "high_f": 68,
+   "low_f": 37,
    "high_rank": {
-    "value_f": 65,
-    "warm_rank": 9,
-    "cool_rank": 120,
+    "value_f": 68,
+    "warm_rank": 2,
+    "cool_rank": 128,
     "years": 130,
     "first_year": 1894,
     "tied_years": [
-     1934,
-     1983
+     1942
     ],
     "standing": "warm",
     "notable": true,
-    "since": 2020,
+    "since": 1942,
     "record": false,
-    "phrase": "9th warmest November 19 high (tied) of 130 since 1894, warmest since 2020"
+    "phrase": "2nd warmest November 20 high (tied) of 130 since 1894, warmest since 1942"
    },
    "low_rank": {
-    "value_f": 43,
-    "warm_rank": 17,
-    "cool_rank": 112,
+    "value_f": 37,
+    "warm_rank": 38,
+    "cool_rank": 88,
     "years": 131,
     "first_year": 1894,
     "tied_years": [
-     1981,
-     1999,
-     2020
+     1902,
+     1917,
+     1946,
+     1956,
+     1979,
+     1991
     ],
     "standing": "warm",
-    "notable": true,
-    "since": 2024,
+    "notable": false,
+    "since": 2025,
     "record": false,
-    "phrase": "17th warmest November 19 low (tied) of 131 since 1894, warmest since 2024"
+    "phrase": "typical for November 20"
    }
   },
   "forecast_highs": [
@@ -247,12 +249,12 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-21T10:44:54Z",
+  "issued_utc": "2026-11-21T11:14:40Z",
   "grid": "IWX/27,64",
   "periods": [
    {
     "name": "Today",
-    "start": "2026-11-21T06:00:00-05:00",
+    "start": "2026-11-21T07:00:00-05:00",
     "is_daytime": true,
     "temp_f": 66,
     "temp_c": 18.89,
@@ -379,15 +381,8 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-21T10:44:54Z",
+  "issued_utc": "2026-11-21T11:14:40Z",
   "hours": [
-   {
-    "start": "2026-11-21T06:00:00-05:00",
-    "temp_f": 47,
-    "temp_c": 8.33,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "start": "2026-11-21T07:00:00-05:00",
     "temp_f": 46,
@@ -716,6 +711,13 @@
     "temp_c": 2.22,
     "precip_chance_pct": 0,
     "short_forecast": "Partly Cloudy"
+   },
+   {
+    "start": "2026-11-23T06:00:00-05:00",
+    "temp_f": 35,
+    "temp_c": 1.67,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Sunny"
    }
   ]
  },
