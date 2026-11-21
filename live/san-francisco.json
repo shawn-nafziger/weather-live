@@ -11,20 +11,20 @@
   "lon": -122.3656,
   "history": "About 18 km from the official San Francisco record's site, so today and the forecast aren't ranked against it"
  },
- "as_of_utc": "2026-11-21T02:08:09Z",
+ "as_of_utc": "2026-11-21T03:08:05Z",
  "now": {
-  "time_utc": "2026-11-21T01:45:00Z",
+  "time_utc": "2026-11-21T02:20:00Z",
   "temp_c": 13,
   "temp_f": 55.4,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 6,
   "humidity_pct": 62.48,
   "wind_kmh": null,
-  "description": "Mostly Clear"
+  "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-20",
-  "readings": 17,
+  "readings": 18,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -94,15 +94,6 @@
   "issued_utc": "2026-11-20T22:59:51Z",
   "grid": "MTR/85,98",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-20T15:00:00-08:00",
-    "is_daytime": true,
-    "temp_f": 58,
-    "temp_c": 14.44,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-20T18:00:00-08:00",
@@ -219,19 +210,21 @@
     "temp_c": 12.22,
     "precip_chance_pct": 3,
     "short_forecast": "Patchy Fog then Partly Cloudy"
+   },
+   {
+    "name": "Friday",
+    "start": "2026-11-27T06:00:00-08:00",
+    "is_daytime": true,
+    "temp_f": 63,
+    "temp_c": 17.22,
+    "precip_chance_pct": 30,
+    "short_forecast": "Partly Sunny then Chance Light Rain"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-20T22:59:51Z",
   "hours": [
-   {
-    "start": "2026-11-20T18:00:00-08:00",
-    "temp_f": 51,
-    "temp_c": 10.56,
-    "precip_chance_pct": 0,
-    "short_forecast": "Clear"
-   },
    {
     "start": "2026-11-20T19:00:00-08:00",
     "temp_f": 50,
@@ -558,6 +551,13 @@
     "start": "2026-11-22T17:00:00-08:00",
     "temp_f": 53,
     "temp_c": 11.67,
+    "precip_chance_pct": 31,
+    "short_forecast": "Chance Light Rain"
+   },
+   {
+    "start": "2026-11-22T18:00:00-08:00",
+    "temp_f": 52,
+    "temp_c": 11.11,
     "precip_chance_pct": 31,
     "short_forecast": "Chance Light Rain"
    }

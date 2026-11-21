@@ -11,20 +11,20 @@
   "lon": -115.1634,
   "history": "Same site as the official Las Vegas record"
  },
- "as_of_utc": "2026-11-21T02:08:09Z",
+ "as_of_utc": "2026-11-21T03:08:05Z",
  "now": {
-  "time_utc": "2026-11-21T01:45:00Z",
+  "time_utc": "2026-11-21T02:40:00Z",
   "temp_c": 13,
   "temp_f": 55.4,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": -3,
-  "humidity_pct": 32.79,
-  "wind_kmh": 7.42,
-  "description": "Partly Cloudy"
+  "dewpoint_c": 2,
+  "humidity_pct": 47.19,
+  "wind_kmh": 5.54,
+  "description": "Light Rain"
  },
  "today_so_far": {
   "date_local": "2026-11-20",
-  "readings": 11,
+  "readings": 12,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -88,26 +88,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-20",
-    "high_f": 58,
-    "would_rank": {
-     "value_f": 58,
-     "warm_rank": 75,
-     "cool_rank": 15,
-     "years": 90,
-     "first_year": 1937,
-     "tied_years": [
-      1988
-     ],
-     "standing": "cool",
-     "notable": true,
-     "since": 1994,
-     "record": false,
-     "phrase": "15th coolest November 20 high (tied) of 90 since 1937, coolest since 1994"
-    }
-   },
    {
     "period": "Saturday",
     "date": "2026-11-21",
@@ -246,6 +226,28 @@
      "record": false,
      "phrase": "typical for November 26"
     }
+   },
+   {
+    "period": "Friday",
+    "date": "2026-11-27",
+    "high_f": 65,
+    "would_rank": {
+     "value_f": 65,
+     "warm_rank": 25,
+     "cool_rank": 63,
+     "years": 90,
+     "first_year": 1937,
+     "tied_years": [
+      1956,
+      1998,
+      2014
+     ],
+     "standing": "warm",
+     "notable": false,
+     "since": 2025,
+     "record": false,
+     "phrase": "typical for November 27"
+    }
    }
   ]
  },
@@ -253,15 +255,6 @@
   "issued_utc": "2026-11-20T20:53:50Z",
   "grid": "VEF/121,94",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-20T13:00:00-08:00",
-    "is_daytime": true,
-    "temp_f": 58,
-    "temp_c": 14.44,
-    "precip_chance_pct": 4,
-    "short_forecast": "Sunny"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-20T18:00:00-08:00",
@@ -378,19 +371,21 @@
     "temp_c": 8.33,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear"
+   },
+   {
+    "name": "Friday",
+    "start": "2026-11-27T06:00:00-08:00",
+    "is_daytime": true,
+    "temp_f": 65,
+    "temp_c": 18.33,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Sunny"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-20T20:53:50Z",
   "hours": [
-   {
-    "start": "2026-11-20T18:00:00-08:00",
-    "temp_f": 52,
-    "temp_c": 11.11,
-    "precip_chance_pct": 2,
-    "short_forecast": "Partly Cloudy"
-   },
    {
     "start": "2026-11-20T19:00:00-08:00",
     "temp_f": 51,
@@ -717,6 +712,13 @@
     "start": "2026-11-22T17:00:00-08:00",
     "temp_f": 54,
     "temp_c": 12.22,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "start": "2026-11-22T18:00:00-08:00",
+    "temp_f": 53,
+    "temp_c": 11.67,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Cloudy"
    }

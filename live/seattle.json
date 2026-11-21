@@ -11,20 +11,20 @@
   "lon": -122.3136,
   "history": "Same station as the official Seattle record (Sea-Tac)"
  },
- "as_of_utc": "2026-11-21T02:08:09Z",
+ "as_of_utc": "2026-11-21T03:08:05Z",
  "now": {
-  "time_utc": "2026-11-21T01:45:00Z",
+  "time_utc": "2026-11-21T02:20:00Z",
   "temp_c": 5,
   "temp_f": 41.0,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 3,
   "humidity_pct": 86.9,
-  "wind_kmh": 0,
-  "description": "Mostly Cloudy"
+  "wind_kmh": 5.54,
+  "description": "Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-20",
-  "readings": 24,
+  "readings": 25,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -86,31 +86,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-20",
-    "high_f": 47,
-    "would_rank": {
-     "value_f": 47,
-     "warm_rank": 52,
-     "cool_rank": 24,
-     "years": 81,
-     "first_year": 1945,
-     "tied_years": [
-      1945,
-      1969,
-      1970,
-      1973,
-      1994,
-      2015
-     ],
-     "standing": "cool",
-     "notable": false,
-     "since": 2015,
-     "record": false,
-     "phrase": "typical for November 20"
-    }
-   },
    {
     "period": "Saturday",
     "date": "2026-11-21",
@@ -251,6 +226,27 @@
      "record": false,
      "phrase": "7th warmest November 26 high (tied) of 82 since 1945, warmest since 2018"
     }
+   },
+   {
+    "period": "Friday",
+    "date": "2026-11-27",
+    "high_f": 55,
+    "would_rank": {
+     "value_f": 55,
+     "warm_rank": 8,
+     "cool_rank": 73,
+     "years": 82,
+     "first_year": 1945,
+     "tied_years": [
+      1961,
+      1996
+     ],
+     "standing": "warm",
+     "notable": true,
+     "since": 2021,
+     "record": false,
+     "phrase": "8th warmest November 27 high (tied) of 82 since 1945, warmest since 2021"
+    }
    }
   ]
  },
@@ -258,15 +254,6 @@
   "issued_utc": "2026-11-20T23:13:55Z",
   "grid": "SEW/124,60",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-20T15:00:00-08:00",
-    "is_daytime": true,
-    "temp_f": 47,
-    "temp_c": 8.33,
-    "precip_chance_pct": 0,
-    "short_forecast": "Partly Sunny"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-20T18:00:00-08:00",
@@ -383,19 +370,21 @@
     "temp_c": 7.78,
     "precip_chance_pct": 57,
     "short_forecast": "Light Rain Likely"
+   },
+   {
+    "name": "Friday",
+    "start": "2026-11-27T06:00:00-08:00",
+    "is_daytime": true,
+    "temp_f": 55,
+    "temp_c": 12.78,
+    "precip_chance_pct": 66,
+    "short_forecast": "Light Rain Likely"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-20T23:13:55Z",
   "hours": [
-   {
-    "start": "2026-11-20T18:00:00-08:00",
-    "temp_f": 42,
-    "temp_c": 5.56,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "start": "2026-11-20T19:00:00-08:00",
     "temp_f": 41,
@@ -724,6 +713,13 @@
     "temp_c": 7.22,
     "precip_chance_pct": 4,
     "short_forecast": "Mostly Sunny"
+   },
+   {
+    "start": "2026-11-22T18:00:00-08:00",
+    "temp_f": 44,
+    "temp_c": 6.67,
+    "precip_chance_pct": 4,
+    "short_forecast": "Partly Cloudy"
    }
   ]
  },
