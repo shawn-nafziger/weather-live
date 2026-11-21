@@ -11,9 +11,9 @@
   "lon": -78.7819,
   "history": "Same site as the official Raleigh record"
  },
- "as_of_utc": "2026-11-21T22:08:00Z",
+ "as_of_utc": "2026-11-21T23:08:01Z",
  "now": {
-  "time_utc": "2026-11-21T21:50:00Z",
+  "time_utc": "2026-11-21T22:55:00Z",
   "temp_c": 17,
   "temp_f": 62.6,
   "precision": "nearest whole \u00b0C",
@@ -24,7 +24,7 @@
  },
  "today_so_far": {
   "date_local": "2026-11-21",
-  "readings": 11,
+  "readings": 12,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -96,24 +96,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-21",
-    "high_f": 66,
-    "would_rank": {
-     "value_f": 66,
-     "warm_rank": 42,
-     "cool_rank": 98,
-     "years": 139,
-     "first_year": 1887,
-     "tied_years": [],
-     "standing": "warm",
-     "notable": false,
-     "since": 2023,
-     "record": false,
-     "phrase": "typical for November 21"
-    }
-   },
    {
     "period": "Sunday",
     "date": "2026-11-22",
@@ -261,6 +243,31 @@
      "record": false,
      "phrase": "typical for November 27"
     }
+   },
+   {
+    "period": "Saturday",
+    "date": "2026-11-28",
+    "high_f": 59,
+    "would_rank": {
+     "value_f": 59,
+     "warm_rank": 65,
+     "cool_rank": 70,
+     "years": 140,
+     "first_year": 1887,
+     "tied_years": [
+      1893,
+      1917,
+      1966,
+      1975,
+      2016,
+      2019
+     ],
+     "standing": "warm",
+     "notable": false,
+     "since": 2024,
+     "record": false,
+     "phrase": "typical for November 28"
+    }
    }
   ]
  },
@@ -268,15 +275,6 @@
   "issued_utc": "2026-11-21T18:12:48Z",
   "grid": "RAH/69,62",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-21T14:00:00-05:00",
-    "is_daytime": true,
-    "temp_f": 66,
-    "temp_c": 18.89,
-    "precip_chance_pct": 5,
-    "short_forecast": "Cloudy"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-21T18:00:00-05:00",
@@ -393,19 +391,21 @@
     "temp_c": 2.78,
     "precip_chance_pct": 12,
     "short_forecast": "Partly Cloudy"
+   },
+   {
+    "name": "Saturday",
+    "start": "2026-11-28T06:00:00-05:00",
+    "is_daytime": true,
+    "temp_f": 59,
+    "temp_c": 15.0,
+    "precip_chance_pct": 23,
+    "short_forecast": "Slight Chance Rain Showers"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-21T18:12:48Z",
   "hours": [
-   {
-    "start": "2026-11-21T17:00:00-05:00",
-    "temp_f": 62,
-    "temp_c": 16.67,
-    "precip_chance_pct": 5,
-    "short_forecast": "Cloudy"
-   },
    {
     "start": "2026-11-21T18:00:00-05:00",
     "temp_f": 60,
@@ -732,6 +732,13 @@
     "start": "2026-11-23T16:00:00-05:00",
     "temp_f": 71,
     "temp_c": 21.67,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Sunny"
+   },
+   {
+    "start": "2026-11-23T17:00:00-05:00",
+    "temp_f": 68,
+    "temp_c": 20.0,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Sunny"
    }

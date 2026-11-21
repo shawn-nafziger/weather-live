@@ -11,20 +11,20 @@
   "lon": -76.1919,
   "history": "Same site as the official Norfolk record"
  },
- "as_of_utc": "2026-11-21T22:08:00Z",
+ "as_of_utc": "2026-11-21T23:08:01Z",
  "now": {
-  "time_utc": "2026-11-21T21:50:00Z",
+  "time_utc": "2026-11-21T22:55:00Z",
   "temp_c": 16,
   "temp_f": 60.8,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 13,
-  "humidity_pct": 82.39,
-  "wind_kmh": 14.83,
+  "dewpoint_c": 14,
+  "humidity_pct": 87.93,
+  "wind_kmh": 16.67,
   "description": "Partly Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-21",
-  "readings": 25,
+  "readings": 26,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -88,29 +88,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-21",
-    "high_f": 66,
-    "would_rank": {
-     "value_f": 66,
-     "warm_rank": 35,
-     "cool_rank": 115,
-     "years": 153,
-     "first_year": 1874,
-     "tied_years": [
-      1902,
-      1955,
-      1997,
-      2017
-     ],
-     "standing": "warm",
-     "notable": false,
-     "since": 2020,
-     "record": false,
-     "phrase": "typical for November 21"
-    }
-   },
    {
     "period": "Sunday",
     "date": "2026-11-22",
@@ -252,6 +229,27 @@
      "record": false,
      "phrase": "typical for November 27"
     }
+   },
+   {
+    "period": "Saturday",
+    "date": "2026-11-28",
+    "high_f": 59,
+    "would_rank": {
+     "value_f": 59,
+     "warm_rank": 70,
+     "cool_rank": 82,
+     "years": 153,
+     "first_year": 1874,
+     "tied_years": [
+      1909,
+      1945
+     ],
+     "standing": "warm",
+     "notable": false,
+     "since": 2024,
+     "record": false,
+     "phrase": "typical for November 28"
+    }
    }
   ]
  },
@@ -259,15 +257,6 @@
   "issued_utc": "2026-11-21T20:25:18Z",
   "grid": "AKQ/93,55",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-21T16:00:00-05:00",
-    "is_daytime": true,
-    "temp_f": 66,
-    "temp_c": 18.89,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-21T18:00:00-05:00",
@@ -384,19 +373,21 @@
     "temp_c": 6.11,
     "precip_chance_pct": 14,
     "short_forecast": "Partly Cloudy"
+   },
+   {
+    "name": "Saturday",
+    "start": "2026-11-28T06:00:00-05:00",
+    "is_daytime": true,
+    "temp_f": 59,
+    "temp_c": 15.0,
+    "precip_chance_pct": 22,
+    "short_forecast": "Slight Chance Rain Showers"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-21T20:25:18Z",
   "hours": [
-   {
-    "start": "2026-11-21T17:00:00-05:00",
-    "temp_f": 62,
-    "temp_c": 16.67,
-    "precip_chance_pct": 0,
-    "short_forecast": "Cloudy"
-   },
    {
     "start": "2026-11-21T18:00:00-05:00",
     "temp_f": 61,
@@ -723,6 +714,13 @@
     "start": "2026-11-23T16:00:00-05:00",
     "temp_f": 66,
     "temp_c": 18.89,
+    "precip_chance_pct": 1,
+    "short_forecast": "Mostly Sunny"
+   },
+   {
+    "start": "2026-11-23T17:00:00-05:00",
+    "temp_f": 64,
+    "temp_c": 17.78,
     "precip_chance_pct": 1,
     "short_forecast": "Mostly Sunny"
    }
