@@ -11,26 +11,26 @@
   "lon": -76.1919,
   "history": "Same site as the official Norfolk record"
  },
- "as_of_utc": "2026-11-21T11:08:04Z",
+ "as_of_utc": "2026-11-21T11:42:14Z",
  "now": {
-  "time_utc": "2026-11-21T10:40:00Z",
-  "temp_c": 8,
-  "temp_f": 46.4,
+  "time_utc": "2026-11-21T11:10:00Z",
+  "temp_c": 9,
+  "temp_f": 48.2,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 8,
+  "dewpoint_c": 9,
   "humidity_pct": 100,
-  "wind_kmh": 5.54,
+  "wind_kmh": 7.42,
   "description": "Fog/Mist"
  },
  "today_so_far": {
   "date_local": "2026-11-21",
-  "readings": 17,
+  "readings": 18,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 7.8,
-  "high_f": 46.0,
-  "high_time_utc": "2026-11-21T05:51:00Z",
+  "high_c": 8.9,
+  "high_f": 48.0,
+  "high_time_utc": "2026-11-21T10:51:00Z",
   "low_c": 4.4,
   "low_f": 39.9,
   "low_time_utc": "2026-11-21T06:39:00Z"
@@ -83,7 +83,7 @@
   },
   "forecast_highs": [
    {
-    "period": "Saturday",
+    "period": "Today",
     "date": "2026-11-21",
     "high_f": 66,
     "would_rank": {
@@ -244,20 +244,11 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-21T08:39:07Z",
+  "issued_utc": "2026-11-21T10:17:35Z",
   "grid": "AKQ/93,55",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-21T05:00:00-05:00",
-    "is_daytime": false,
-    "temp_f": 47,
-    "temp_c": 8.33,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Cloudy"
-   },
-   {
-    "name": "Saturday",
+    "name": "Today",
     "start": "2026-11-21T06:00:00-05:00",
     "is_daytime": true,
     "temp_f": 66,
@@ -266,7 +257,7 @@
     "short_forecast": "Mostly Cloudy"
    },
    {
-    "name": "Saturday Night",
+    "name": "Tonight",
     "start": "2026-11-21T18:00:00-05:00",
     "is_daytime": false,
     "temp_f": 58,
@@ -372,11 +363,20 @@
     "temp_c": 12.22,
     "precip_chance_pct": 16,
     "short_forecast": "Slight Chance Rain Showers then Mostly Sunny"
+   },
+   {
+    "name": "Friday Night",
+    "start": "2026-11-27T18:00:00-05:00",
+    "is_daytime": false,
+    "temp_f": 39,
+    "temp_c": 3.89,
+    "precip_chance_pct": 5,
+    "short_forecast": "Partly Cloudy"
    }
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-21T08:39:07Z",
+  "issued_utc": "2026-11-21T10:17:35Z",
   "hours": [
    {
     "start": "2026-11-21T06:00:00-05:00",
