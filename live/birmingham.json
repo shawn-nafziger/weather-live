@@ -11,7 +11,7 @@
   "lon": -86.745,
   "history": "Same site as the official Birmingham record"
  },
- "as_of_utc": "2026-11-21T00:08:03Z",
+ "as_of_utc": "2026-11-21T01:07:55Z",
  "now": {
   "time_utc": "2026-11-20T23:50:00Z",
   "temp_c": 19,
@@ -97,29 +97,6 @@
    "phrase": "already the 9th warmest November 20 high (tied) of 132 since 1895, warmest since 2025"
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-20",
-    "high_f": 74,
-    "would_rank": {
-     "value_f": 74,
-     "warm_rank": 11,
-     "cool_rank": 118,
-     "years": 132,
-     "first_year": 1895,
-     "tied_years": [
-      1899,
-      1906,
-      1963,
-      2007
-     ],
-     "standing": "warm",
-     "notable": true,
-     "since": 2025,
-     "record": false,
-     "phrase": "11th warmest November 20 high (tied) of 132 since 1895, warmest since 2025"
-    }
-   },
    {
     "period": "Saturday",
     "date": "2026-11-21",
@@ -256,6 +233,30 @@
      "record": false,
      "phrase": "26th coolest November 26 high (tied) of 132 since 1895, coolest since 2023"
     }
+   },
+   {
+    "period": "Friday",
+    "date": "2026-11-27",
+    "high_f": 57,
+    "would_rank": {
+     "value_f": 57,
+     "warm_rank": 92,
+     "cool_rank": 36,
+     "years": 132,
+     "first_year": 1895,
+     "tied_years": [
+      1895,
+      1911,
+      1971,
+      2009,
+      2010
+     ],
+     "standing": "cool",
+     "notable": false,
+     "since": 2025,
+     "record": false,
+     "phrase": "typical for November 27"
+    }
    }
   ]
  },
@@ -264,17 +265,8 @@
   "grid": "BMX/61,87",
   "periods": [
    {
-    "name": "This Afternoon",
-    "start": "2026-11-20T17:00:00-06:00",
-    "is_daytime": true,
-    "temp_f": 74,
-    "temp_c": 23.33,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Cloudy"
-   },
-   {
     "name": "Tonight",
-    "start": "2026-11-20T18:00:00-06:00",
+    "start": "2026-11-20T19:00:00-06:00",
     "is_daytime": false,
     "temp_f": 53,
     "temp_c": 11.67,
@@ -388,19 +380,21 @@
     "temp_c": -0.56,
     "precip_chance_pct": 0,
     "short_forecast": "Partly Cloudy"
+   },
+   {
+    "name": "Friday",
+    "start": "2026-11-27T06:00:00-06:00",
+    "is_daytime": true,
+    "temp_f": 57,
+    "temp_c": 13.89,
+    "precip_chance_pct": 1,
+    "short_forecast": "Mostly Sunny"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-20T23:45:53Z",
   "hours": [
-   {
-    "start": "2026-11-20T18:00:00-06:00",
-    "temp_f": 65,
-    "temp_c": 18.33,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "start": "2026-11-20T19:00:00-06:00",
     "temp_f": 61,
@@ -729,6 +723,13 @@
     "temp_c": 20.0,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
+   },
+   {
+    "start": "2026-11-22T18:00:00-06:00",
+    "temp_f": 65,
+    "temp_c": 18.33,
+    "precip_chance_pct": 4,
+    "short_forecast": "Mostly Clear"
    }
   ]
  },

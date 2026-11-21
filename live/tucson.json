@@ -11,14 +11,14 @@
   "lon": -110.9564,
   "history": "Same site as the official Tucson record"
  },
- "as_of_utc": "2026-11-21T00:08:03Z",
+ "as_of_utc": "2026-11-21T01:07:55Z",
  "now": {
-  "time_utc": "2026-11-20T23:50:00Z",
-  "temp_c": 20,
-  "temp_f": 68.0,
+  "time_utc": "2026-11-21T00:15:00Z",
+  "temp_c": 19,
+  "temp_f": 66.2,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 4,
-  "humidity_pct": 34.83,
+  "dewpoint_c": 5,
+  "humidity_pct": 39.75,
   "wind_kmh": 16.67,
   "description": "Clear"
  },
@@ -88,31 +88,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-20",
-    "high_f": 74,
-    "would_rank": {
-     "value_f": 74,
-     "warm_rank": 61,
-     "cool_rank": 66,
-     "years": 132,
-     "first_year": 1894,
-     "tied_years": [
-      1905,
-      1960,
-      1965,
-      1970,
-      2005,
-      2014
-     ],
-     "standing": "warm",
-     "notable": false,
-     "since": 2024,
-     "record": false,
-     "phrase": "typical for November 20"
-    }
-   },
    {
     "period": "Saturday",
     "date": "2026-11-21",
@@ -258,6 +233,31 @@
      "record": false,
      "phrase": "typical for November 26"
     }
+   },
+   {
+    "period": "Friday",
+    "date": "2026-11-27",
+    "high_f": 74,
+    "would_rank": {
+     "value_f": 74,
+     "warm_rank": 37,
+     "cool_rank": 90,
+     "years": 132,
+     "first_year": 1894,
+     "tied_years": [
+      1897,
+      1906,
+      1912,
+      1920,
+      2021,
+      2024
+     ],
+     "standing": "warm",
+     "notable": false,
+     "since": 2025,
+     "record": false,
+     "phrase": "typical for November 27"
+    }
    }
   ]
  },
@@ -265,15 +265,6 @@
   "issued_utc": "2026-11-20T23:17:55Z",
   "grid": "TWC/91,45",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-20T16:00:00-07:00",
-    "is_daytime": true,
-    "temp_f": 74,
-    "temp_c": 23.33,
-    "precip_chance_pct": 1,
-    "short_forecast": "Sunny"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-20T18:00:00-07:00",
@@ -390,19 +381,21 @@
     "temp_c": 7.78,
     "precip_chance_pct": 3,
     "short_forecast": "Mostly Clear"
+   },
+   {
+    "name": "Friday",
+    "start": "2026-11-27T06:00:00-07:00",
+    "is_daytime": true,
+    "temp_f": 74,
+    "temp_c": 23.33,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-20T23:17:55Z",
   "hours": [
-   {
-    "start": "2026-11-20T17:00:00-07:00",
-    "temp_f": 70,
-    "temp_c": 21.11,
-    "precip_chance_pct": 1,
-    "short_forecast": "Sunny"
-   },
    {
     "start": "2026-11-20T18:00:00-07:00",
     "temp_f": 65,
@@ -729,6 +722,13 @@
     "start": "2026-11-22T16:00:00-07:00",
     "temp_f": 70,
     "temp_c": 21.11,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
+   },
+   {
+    "start": "2026-11-22T17:00:00-07:00",
+    "temp_f": 68,
+    "temp_c": 20.0,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
    }

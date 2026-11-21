@@ -11,7 +11,7 @@
   "lon": -87.9044,
   "history": "Same station as the official Chicago record (ThreadEx, O'Hare since 1980)"
  },
- "as_of_utc": "2026-11-21T00:08:03Z",
+ "as_of_utc": "2026-11-21T01:07:55Z",
  "now": {
   "time_utc": "2026-11-20T23:50:00Z",
   "temp_c": 17,
@@ -94,27 +94,6 @@
    "phrase": "already ties the record for warmest November 20 high on record (155 years since 1872)"
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-20",
-    "high_f": 68,
-    "would_rank": {
-     "value_f": 68,
-     "warm_rank": 1,
-     "cool_rank": 153,
-     "years": 155,
-     "first_year": 1872,
-     "tied_years": [
-      1913,
-      1930
-     ],
-     "standing": "warm",
-     "notable": true,
-     "since": 1930,
-     "record": true,
-     "phrase": "ties the record for warmest November 20 high on record (155 years since 1872)"
-    }
-   },
    {
     "period": "Saturday",
     "date": "2026-11-21",
@@ -261,6 +240,34 @@
      "record": false,
      "phrase": "typical for November 26"
     }
+   },
+   {
+    "period": "Friday",
+    "date": "2026-11-27",
+    "high_f": 46,
+    "would_rank": {
+     "value_f": 46,
+     "warm_rank": 39,
+     "cool_rank": 108,
+     "years": 155,
+     "first_year": 1872,
+     "tied_years": [
+      1874,
+      1881,
+      1908,
+      1913,
+      1918,
+      1939,
+      1954,
+      1970,
+      2011
+     ],
+     "standing": "warm",
+     "notable": false,
+     "since": 2022,
+     "record": false,
+     "phrase": "typical for November 27"
+    }
    }
   ]
  },
@@ -268,15 +275,6 @@
   "issued_utc": "2026-11-20T21:20:59Z",
   "grid": "LOT/66,77",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-20T15:00:00-06:00",
-    "is_daytime": true,
-    "temp_f": 68,
-    "temp_c": 20.0,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-20T18:00:00-06:00",
@@ -393,19 +391,21 @@
     "temp_c": -0.56,
     "precip_chance_pct": 16,
     "short_forecast": "Slight Chance Rain then Partly Cloudy"
+   },
+   {
+    "name": "Friday",
+    "start": "2026-11-27T06:00:00-06:00",
+    "is_daytime": true,
+    "temp_f": 46,
+    "temp_c": 7.78,
+    "precip_chance_pct": 8,
+    "short_forecast": "Mostly Sunny"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-20T21:20:59Z",
   "hours": [
-   {
-    "start": "2026-11-20T18:00:00-06:00",
-    "temp_f": 61,
-    "temp_c": 16.11,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Clear"
-   },
    {
     "start": "2026-11-20T19:00:00-06:00",
     "temp_f": 59,
@@ -734,6 +734,13 @@
     "temp_c": 9.44,
     "precip_chance_pct": 14,
     "short_forecast": "Partly Sunny"
+   },
+   {
+    "start": "2026-11-22T18:00:00-06:00",
+    "temp_f": 48,
+    "temp_c": 8.89,
+    "precip_chance_pct": 7,
+    "short_forecast": "Partly Cloudy"
    }
   ]
  },
