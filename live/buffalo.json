@@ -11,14 +11,14 @@
   "lon": -78.736,
   "history": "Same site as the official Buffalo record"
  },
- "as_of_utc": "2026-11-21T23:28:54Z",
+ "as_of_utc": "2026-11-22T00:07:57Z",
  "now": {
-  "time_utc": "2026-11-21T22:55:00Z",
-  "temp_c": 14,
-  "temp_f": 57.2,
+  "time_utc": "2026-11-21T23:45:00Z",
+  "temp_c": 12,
+  "temp_f": 53.6,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 2,
-  "humidity_pct": 44.21,
+  "humidity_pct": 50.39,
   "wind_kmh": 5.54,
   "description": "Clear"
  },
@@ -97,26 +97,6 @@
    "phrase": "already the 3rd warmest November 21 high (tied) of 153 since 1873, warmest since 1946"
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-21",
-    "high_f": 67,
-    "would_rank": {
-     "value_f": 67,
-     "warm_rank": 3,
-     "cool_rank": 150,
-     "years": 153,
-     "first_year": 1873,
-     "tied_years": [
-      1946
-     ],
-     "standing": "warm",
-     "notable": true,
-     "since": 1946,
-     "record": false,
-     "phrase": "3rd warmest November 21 high (tied) of 153 since 1873, warmest since 1946"
-    }
-   },
    {
     "period": "Sunday",
     "date": "2026-11-22",
@@ -249,6 +229,31 @@
      "record": false,
      "phrase": "typical for November 27"
     }
+   },
+   {
+    "period": "Saturday",
+    "date": "2026-11-28",
+    "high_f": 46,
+    "would_rank": {
+     "value_f": 46,
+     "warm_rank": 42,
+     "cool_rank": 105,
+     "years": 152,
+     "first_year": 1873,
+     "tied_years": [
+      1895,
+      1896,
+      1913,
+      1955,
+      1970,
+      1997
+     ],
+     "standing": "warm",
+     "notable": false,
+     "since": 2017,
+     "record": false,
+     "phrase": "typical for November 28"
+    }
    }
   ]
  },
@@ -257,17 +262,8 @@
   "grid": "BUF/40,50",
   "periods": [
    {
-    "name": "This Afternoon",
-    "start": "2026-11-21T16:00:00-05:00",
-    "is_daytime": true,
-    "temp_f": 67,
-    "temp_c": 19.44,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
-   {
     "name": "Tonight",
-    "start": "2026-11-21T18:00:00-05:00",
+    "start": "2026-11-21T19:00:00-05:00",
     "is_daytime": false,
     "temp_f": 46,
     "temp_c": 7.78,
@@ -381,19 +377,21 @@
     "temp_c": 1.67,
     "precip_chance_pct": 29,
     "short_forecast": "Chance Rain Showers then Slight Chance Rain And Snow Showers"
+   },
+   {
+    "name": "Saturday",
+    "start": "2026-11-28T06:00:00-05:00",
+    "is_daytime": true,
+    "temp_f": 46,
+    "temp_c": 7.78,
+    "precip_chance_pct": 23,
+    "short_forecast": "Slight Chance Rain And Snow Showers"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-21T20:57:37Z",
   "hours": [
-   {
-    "start": "2026-11-21T18:00:00-05:00",
-    "temp_f": 54,
-    "temp_c": 12.22,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Clear"
-   },
    {
     "start": "2026-11-21T19:00:00-05:00",
     "temp_f": 50,
@@ -722,6 +720,13 @@
     "temp_c": 6.67,
     "precip_chance_pct": 1,
     "short_forecast": "Partly Sunny"
+   },
+   {
+    "start": "2026-11-23T18:00:00-05:00",
+    "temp_f": 42,
+    "temp_c": 5.56,
+    "precip_chance_pct": 1,
+    "short_forecast": "Mostly Cloudy"
    }
   ]
  },

@@ -11,9 +11,9 @@
   "lon": -80.3164,
   "history": "Same station as the official Miami record"
  },
- "as_of_utc": "2026-11-21T23:28:54Z",
+ "as_of_utc": "2026-11-22T00:07:57Z",
  "now": {
-  "time_utc": "2026-11-21T22:55:00Z",
+  "time_utc": "2026-11-21T23:45:00Z",
   "temp_c": 26,
   "temp_f": 78.8,
   "precision": "nearest whole \u00b0C",
@@ -96,33 +96,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-21",
-    "high_f": 84,
-    "would_rank": {
-     "value_f": 84,
-     "warm_rank": 8,
-     "cool_rank": 116,
-     "years": 131,
-     "first_year": 1895,
-     "tied_years": [
-      1953,
-      1956,
-      1988,
-      1994,
-      1998,
-      2005,
-      2009,
-      2011
-     ],
-     "standing": "warm",
-     "notable": true,
-     "since": 2023,
-     "record": false,
-     "phrase": "8th warmest November 21 high (tied) of 131 since 1895, warmest since 2023"
-    }
-   },
    {
     "period": "Sunday",
     "date": "2026-11-22",
@@ -306,22 +279,45 @@
      "record": false,
      "phrase": "typical for November 27"
     }
+   },
+   {
+    "period": "Saturday",
+    "date": "2026-11-28",
+    "high_f": 79,
+    "would_rank": {
+     "value_f": 79,
+     "warm_rank": 69,
+     "cool_rank": 50,
+     "years": 131,
+     "first_year": 1895,
+     "tied_years": [
+      1897,
+      1906,
+      1908,
+      1913,
+      1919,
+      1923,
+      1941,
+      1954,
+      1971,
+      1984,
+      1999,
+      2008,
+      2021
+     ],
+     "standing": "cool",
+     "notable": false,
+     "since": 2025,
+     "record": false,
+     "phrase": "typical for November 28"
+    }
    }
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-21T19:46:50Z",
+  "issued_utc": "2026-11-21T23:31:47Z",
   "grid": "MFL/105,51",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-21T15:00:00-05:00",
-    "is_daytime": true,
-    "temp_f": 84,
-    "temp_c": 28.89,
-    "precip_chance_pct": 21,
-    "short_forecast": "Slight Chance Showers And Thunderstorms"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-21T18:00:00-05:00",
@@ -438,19 +434,21 @@
     "temp_c": 21.11,
     "precip_chance_pct": 39,
     "short_forecast": "Chance Rain Showers"
+   },
+   {
+    "name": "Saturday",
+    "start": "2026-11-28T06:00:00-05:00",
+    "is_daytime": true,
+    "temp_f": 79,
+    "temp_c": 26.11,
+    "precip_chance_pct": 37,
+    "short_forecast": "Chance Rain Showers"
    }
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-21T19:46:50Z",
+  "issued_utc": "2026-11-21T23:31:47Z",
   "hours": [
-   {
-    "start": "2026-11-21T18:00:00-05:00",
-    "temp_f": 79,
-    "temp_c": 26.11,
-    "precip_chance_pct": 5,
-    "short_forecast": "Partly Cloudy"
-   },
    {
     "start": "2026-11-21T19:00:00-05:00",
     "temp_f": 77,
@@ -777,6 +775,13 @@
     "start": "2026-11-23T17:00:00-05:00",
     "temp_f": 79,
     "temp_c": 26.11,
+    "precip_chance_pct": 4,
+    "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "start": "2026-11-23T18:00:00-05:00",
+    "temp_f": 77,
+    "temp_c": 25.0,
     "precip_chance_pct": 4,
     "short_forecast": "Mostly Cloudy"
    }
