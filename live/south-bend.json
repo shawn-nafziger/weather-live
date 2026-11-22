@@ -11,20 +11,20 @@
   "lon": -86.3186,
   "history": "Same station as the official South Bend record (South Bend airport). Also the nearest official city record to Goshen, about 27 miles; a candidate for Goshen's hourly readings (question D2)"
  },
- "as_of_utc": "2026-11-22T12:07:54Z",
+ "as_of_utc": "2026-11-22T13:07:58Z",
  "now": {
-  "time_utc": "2026-11-22T11:35:00Z",
-  "temp_c": 10,
-  "temp_f": 50.0,
+  "time_utc": "2026-11-22T12:55:00Z",
+  "temp_c": 13,
+  "temp_f": 55.4,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 2,
-  "humidity_pct": 57.54,
-  "wind_kmh": 9.25,
-  "description": "Partly Cloudy"
+  "dewpoint_c": 5,
+  "humidity_pct": 58.3,
+  "wind_kmh": 14.83,
+  "description": "Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-22",
-  "readings": 6,
+  "readings": 7,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -35,9 +35,9 @@
   "low_f": 44.1,
   "low_time_utc": "2026-11-22T06:54:00Z",
   "peak_between_reports": {
-   "at_least_f": 52.7,
-   "about_f": 53.6,
-   "time_utc": "2026-11-22T05:35:00Z"
+   "at_least_f": 54.5,
+   "about_f": 55.4,
+   "time_utc": "2026-11-22T12:50:00Z"
   },
   "dip_between_reports": {
    "at_most_f": 43.7,
@@ -386,35 +386,28 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-22T08:15:31Z",
+  "issued_utc": "2026-11-22T11:14:56Z",
   "hours": [
-   {
-    "start": "2026-11-22T07:00:00-05:00",
-    "temp_f": 48,
-    "temp_c": 8.89,
-    "precip_chance_pct": 2,
-    "short_forecast": "Mostly Sunny"
-   },
    {
     "start": "2026-11-22T08:00:00-05:00",
     "temp_f": 49,
     "temp_c": 9.44,
     "precip_chance_pct": 3,
-    "short_forecast": "Mostly Sunny"
+    "short_forecast": "Partly Sunny"
    },
    {
     "start": "2026-11-22T09:00:00-05:00",
     "temp_f": 53,
     "temp_c": 11.67,
     "precip_chance_pct": 3,
-    "short_forecast": "Mostly Sunny"
+    "short_forecast": "Partly Sunny"
    },
    {
     "start": "2026-11-22T10:00:00-05:00",
     "temp_f": 58,
     "temp_c": 14.44,
     "precip_chance_pct": 12,
-    "short_forecast": "Mostly Sunny"
+    "short_forecast": "Partly Sunny"
    },
    {
     "start": "2026-11-22T11:00:00-05:00",
@@ -434,21 +427,21 @@
     "start": "2026-11-22T13:00:00-05:00",
     "temp_f": 64,
     "temp_c": 17.78,
-    "precip_chance_pct": 67,
+    "precip_chance_pct": 58,
     "short_forecast": "Rain Showers Likely"
    },
    {
     "start": "2026-11-22T14:00:00-05:00",
     "temp_f": 62,
     "temp_c": 16.67,
-    "precip_chance_pct": 84,
-    "short_forecast": "Rain Showers"
+    "precip_chance_pct": 67,
+    "short_forecast": "Rain Showers Likely"
    },
    {
     "start": "2026-11-22T15:00:00-05:00",
     "temp_f": 59,
     "temp_c": 15.0,
-    "precip_chance_pct": 100,
+    "precip_chance_pct": 90,
     "short_forecast": "Rain Showers"
    },
    {
@@ -462,28 +455,28 @@
     "start": "2026-11-22T17:00:00-05:00",
     "temp_f": 53,
     "temp_c": 11.67,
-    "precip_chance_pct": 73,
+    "precip_chance_pct": 59,
     "short_forecast": "Rain Showers Likely"
    },
    {
     "start": "2026-11-22T18:00:00-05:00",
     "temp_f": 50,
     "temp_c": 10.0,
-    "precip_chance_pct": 35,
+    "precip_chance_pct": 32,
     "short_forecast": "Chance Rain Showers"
    },
    {
     "start": "2026-11-22T19:00:00-05:00",
     "temp_f": 48,
     "temp_c": 8.89,
-    "precip_chance_pct": 7,
+    "precip_chance_pct": 5,
     "short_forecast": "Mostly Cloudy"
    },
    {
     "start": "2026-11-22T20:00:00-05:00",
     "temp_f": 46,
     "temp_c": 7.78,
-    "precip_chance_pct": 4,
+    "precip_chance_pct": 3,
     "short_forecast": "Mostly Cloudy"
    },
    {
@@ -722,6 +715,13 @@
     "temp_f": 27,
     "temp_c": -2.78,
     "precip_chance_pct": 2,
+    "short_forecast": "Partly Sunny"
+   },
+   {
+    "start": "2026-11-24T07:00:00-05:00",
+    "temp_f": 27,
+    "temp_c": -2.78,
+    "precip_chance_pct": 0,
     "short_forecast": "Partly Sunny"
    }
   ]
