@@ -11,20 +11,20 @@
   "lon": -104.6562,
   "history": "Same site as the official Denver record"
  },
- "as_of_utc": "2026-11-22T11:08:04Z",
+ "as_of_utc": "2026-11-22T11:55:55Z",
  "now": {
-  "time_utc": "2026-11-22T10:30:00Z",
+  "time_utc": "2026-11-22T11:35:00Z",
   "temp_c": -8,
   "temp_f": 17.6,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": -11,
   "humidity_pct": 79.01,
-  "wind_kmh": 16.67,
+  "wind_kmh": 7.42,
   "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-22",
-  "readings": 3,
+  "readings": 4,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -35,9 +35,9 @@
   "low_f": 19.0,
   "low_time_utc": "2026-11-22T09:53:00Z",
   "dip_between_reports": {
-   "at_most_f": 18.5,
-   "about_f": 17.6,
-   "time_utc": "2026-11-22T10:00:00Z"
+   "at_most_f": 16.7,
+   "about_f": 15.8,
+   "time_utc": "2026-11-22T10:35:00Z"
   }
  },
  "record": {
@@ -46,48 +46,42 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-20",
-   "is_yesterday": false,
-   "high_f": 65,
-   "low_f": 34,
+   "date": "2026-11-21",
+   "is_yesterday": true,
+   "high_f": 46,
+   "low_f": 23,
    "high_rank": {
-    "value_f": 65,
-    "warm_rank": 21,
-    "cool_rank": 128,
+    "value_f": 46,
+    "warm_rank": 98,
+    "cool_rank": 54,
     "years": 155,
     "first_year": 1872,
     "tied_years": [
-     1895,
-     1933,
-     1958,
-     1962,
-     1967,
-     1969,
-     1989
+     1920,
+     1941,
+     1996,
+     2025
     ],
-    "standing": "warm",
-    "notable": true,
-    "since": 2017,
-    "record": false,
-    "phrase": "21st warmest November 20 high (tied) of 155 since 1872, warmest since 2017"
-   },
-   "low_rank": {
-    "value_f": 34,
-    "warm_rank": 28,
-    "cool_rank": 124,
-    "years": 155,
-    "first_year": 1872,
-    "tied_years": [
-     1875,
-     1878,
-     1934,
-     1962
-    ],
-    "standing": "warm",
-    "notable": true,
+    "standing": "cool",
+    "notable": false,
     "since": 2025,
     "record": false,
-    "phrase": "28th warmest November 20 low (tied) of 155 since 1872, warmest since 2025"
+    "phrase": "typical for November 21"
+   },
+   "low_rank": {
+    "value_f": 23,
+    "warm_rank": 102,
+    "cool_rank": 53,
+    "years": 155,
+    "first_year": 1872,
+    "tied_years": [
+     1983
+    ],
+    "standing": "cool",
+    "notable": false,
+    "since": 2022,
+    "record": false,
+    "phrase": "typical for November 21"
    }
   },
   "forecast_highs": [

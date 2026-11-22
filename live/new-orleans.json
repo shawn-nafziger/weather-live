@@ -11,20 +11,20 @@
   "lon": -90.2508,
   "history": "Same site as the official New Orleans record"
  },
- "as_of_utc": "2026-11-22T11:08:04Z",
+ "as_of_utc": "2026-11-22T11:55:55Z",
  "now": {
-  "time_utc": "2026-11-22T10:50:00Z",
+  "time_utc": "2026-11-22T11:35:00Z",
   "temp_c": 16,
   "temp_f": 60.8,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 14,
-  "humidity_pct": 87.93,
+  "dewpoint_c": 16,
+  "humidity_pct": 100,
   "wind_kmh": 0,
-  "description": "Partly Cloudy"
+  "description": "Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-22",
-  "readings": 4,
+  "readings": 5,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -46,45 +46,42 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-20",
-   "is_yesterday": false,
-   "high_f": 72,
-   "low_f": 62,
+   "date": "2026-11-21",
+   "is_yesterday": true,
+   "high_f": 74,
+   "low_f": 59,
    "high_rank": {
-    "value_f": 72,
-    "warm_rank": 37,
-    "cool_rank": 41,
+    "value_f": 74,
+    "warm_rank": 28,
+    "cool_rank": 53,
     "years": 81,
     "first_year": 1946,
     "tied_years": [
-     1967,
-     1997,
-     2015,
-     2024
+     1948
     ],
     "standing": "warm",
     "notable": false,
     "since": 2025,
     "record": false,
-    "phrase": "typical for November 20"
+    "phrase": "typical for November 21"
    },
    "low_rank": {
-    "value_f": 62,
-    "warm_rank": 9,
-    "cool_rank": 69,
+    "value_f": 59,
+    "warm_rank": 15,
+    "cool_rank": 63,
     "years": 81,
     "first_year": 1946,
     "tied_years": [
-     1965,
      1992,
-     1995,
-     2020
+     2009,
+     2020,
+     2021
     ],
     "standing": "warm",
     "notable": true,
     "since": 2025,
     "record": false,
-    "phrase": "9th warmest November 20 low (tied) of 81 since 1946, warmest since 2025"
+    "phrase": "15th warmest November 21 low (tied) of 81 since 1946, warmest since 2025"
    }
   },
   "forecast_highs": [
@@ -245,12 +242,12 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-22T07:42:05Z",
+  "issued_utc": "2026-11-22T10:41:30Z",
   "grid": "LIX/61,90",
   "periods": [
    {
     "name": "Overnight",
-    "start": "2026-11-22T01:00:00-06:00",
+    "start": "2026-11-22T05:00:00-06:00",
     "is_daytime": false,
     "temp_f": 58,
     "temp_c": 14.44,
@@ -273,7 +270,7 @@
     "temp_f": 63,
     "temp_c": 17.22,
     "precip_chance_pct": 10,
-    "short_forecast": "Mostly Cloudy"
+    "short_forecast": "Mostly Cloudy then Areas Of Fog"
    },
    {
     "name": "Monday",
@@ -282,7 +279,7 @@
     "temp_f": 72,
     "temp_c": 22.22,
     "precip_chance_pct": 44,
-    "short_forecast": "Chance Rain Showers"
+    "short_forecast": "Widespread Fog"
    },
    {
     "name": "Monday Night",
@@ -377,7 +374,7 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-22T07:42:05Z",
+  "issued_utc": "2026-11-22T10:41:30Z",
   "hours": [
    {
     "start": "2026-11-22T05:00:00-06:00",
@@ -405,7 +402,7 @@
     "temp_f": 64,
     "temp_c": 17.78,
     "precip_chance_pct": 1,
-    "short_forecast": "Mostly Sunny"
+    "short_forecast": "Areas Of Fog"
    },
    {
     "start": "2026-11-22T09:00:00-06:00",
@@ -419,7 +416,7 @@
     "temp_f": 70,
     "temp_c": 21.11,
     "precip_chance_pct": 1,
-    "short_forecast": "Mostly Sunny"
+    "short_forecast": "Sunny"
    },
    {
     "start": "2026-11-22T11:00:00-06:00",
@@ -468,7 +465,7 @@
     "temp_f": 73,
     "temp_c": 22.78,
     "precip_chance_pct": 1,
-    "short_forecast": "Mostly Cloudy"
+    "short_forecast": "Mostly Sunny"
    },
    {
     "start": "2026-11-22T18:00:00-06:00",
@@ -482,28 +479,28 @@
     "temp_f": 68,
     "temp_c": 20.0,
     "precip_chance_pct": 2,
-    "short_forecast": "Mostly Cloudy"
+    "short_forecast": "Mostly Clear"
    },
    {
     "start": "2026-11-22T20:00:00-06:00",
     "temp_f": 67,
     "temp_c": 19.44,
     "precip_chance_pct": 1,
-    "short_forecast": "Mostly Cloudy"
+    "short_forecast": "Partly Cloudy"
    },
    {
     "start": "2026-11-22T21:00:00-06:00",
     "temp_f": 66,
     "temp_c": 18.89,
     "precip_chance_pct": 2,
-    "short_forecast": "Mostly Cloudy"
+    "short_forecast": "Partly Cloudy"
    },
    {
     "start": "2026-11-22T22:00:00-06:00",
     "temp_f": 66,
     "temp_c": 18.89,
     "precip_chance_pct": 4,
-    "short_forecast": "Mostly Cloudy"
+    "short_forecast": "Partly Cloudy"
    },
    {
     "start": "2026-11-22T23:00:00-06:00",
@@ -538,49 +535,49 @@
     "temp_f": 65,
     "temp_c": 18.33,
     "precip_chance_pct": 3,
-    "short_forecast": "Mostly Cloudy"
+    "short_forecast": "Patchy Fog"
    },
    {
     "start": "2026-11-23T04:00:00-06:00",
     "temp_f": 65,
     "temp_c": 18.33,
     "precip_chance_pct": 10,
-    "short_forecast": "Mostly Cloudy"
+    "short_forecast": "Patchy Fog"
    },
    {
     "start": "2026-11-23T05:00:00-06:00",
     "temp_f": 65,
     "temp_c": 18.33,
     "precip_chance_pct": 7,
-    "short_forecast": "Cloudy"
+    "short_forecast": "Areas Of Fog"
    },
    {
     "start": "2026-11-23T06:00:00-06:00",
     "temp_f": 64,
     "temp_c": 17.78,
     "precip_chance_pct": 12,
-    "short_forecast": "Mostly Cloudy"
+    "short_forecast": "Areas Of Fog"
    },
    {
     "start": "2026-11-23T07:00:00-06:00",
     "temp_f": 65,
     "temp_c": 18.33,
     "precip_chance_pct": 16,
-    "short_forecast": "Slight Chance Rain Showers"
+    "short_forecast": "Widespread Fog"
    },
    {
     "start": "2026-11-23T08:00:00-06:00",
     "temp_f": 66,
     "temp_c": 18.89,
     "precip_chance_pct": 19,
-    "short_forecast": "Slight Chance Rain Showers"
+    "short_forecast": "Patchy Fog"
    },
    {
     "start": "2026-11-23T09:00:00-06:00",
     "temp_f": 68,
     "temp_c": 20.0,
     "precip_chance_pct": 19,
-    "short_forecast": "Slight Chance Rain Showers"
+    "short_forecast": "Patchy Fog"
    },
    {
     "start": "2026-11-23T10:00:00-06:00",

@@ -11,20 +11,20 @@
   "lon": -86.3186,
   "history": "Same station as the official South Bend record (South Bend airport). Also the nearest official city record to Goshen, about 27 miles; a candidate for Goshen's hourly readings (question D2)"
  },
- "as_of_utc": "2026-11-22T11:08:04Z",
+ "as_of_utc": "2026-11-22T11:55:55Z",
  "now": {
-  "time_utc": "2026-11-22T10:50:00Z",
-  "temp_c": 9,
-  "temp_f": 48.2,
+  "time_utc": "2026-11-22T11:35:00Z",
+  "temp_c": 10,
+  "temp_f": 50.0,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 2,
-  "humidity_pct": 61.54,
-  "wind_kmh": 0,
-  "description": "Clear"
+  "humidity_pct": 57.54,
+  "wind_kmh": 9.25,
+  "description": "Partly Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-22",
-  "readings": 5,
+  "readings": 6,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -51,49 +51,44 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-20",
-   "is_yesterday": false,
-   "high_f": 68,
-   "low_f": 37,
+   "date": "2026-11-21",
+   "is_yesterday": true,
+   "high_f": 69,
+   "low_f": 44,
    "high_rank": {
-    "value_f": 68,
+    "value_f": 69,
     "warm_rank": 2,
-    "cool_rank": 128,
+    "cool_rank": 129,
+    "years": 130,
+    "first_year": 1894,
+    "tied_years": [],
+    "standing": "warm",
+    "notable": true,
+    "since": 1913,
+    "record": false,
+    "phrase": "2nd warmest November 21 high of 130 since 1894, warmest since 1913"
+   },
+   "low_rank": {
+    "value_f": 44,
+    "warm_rank": 9,
+    "cool_rank": 119,
     "years": 130,
     "first_year": 1894,
     "tied_years": [
-     1942
+     1909,
+     1920,
+     1992
     ],
     "standing": "warm",
     "notable": true,
-    "since": 1942,
+    "since": 1992,
     "record": false,
-    "phrase": "2nd warmest November 20 high (tied) of 130 since 1894, warmest since 1942"
-   },
-   "low_rank": {
-    "value_f": 37,
-    "warm_rank": 38,
-    "cool_rank": 88,
-    "years": 131,
-    "first_year": 1894,
-    "tied_years": [
-     1902,
-     1917,
-     1946,
-     1956,
-     1979,
-     1991
-    ],
-    "standing": "warm",
-    "notable": false,
-    "since": 2025,
-    "record": false,
-    "phrase": "typical for November 20"
+    "phrase": "9th warmest November 21 low (tied) of 130 since 1894, warmest since 1992"
    }
   },
   "forecast_highs": [
    {
-    "period": "Sunday",
+    "period": "Today",
     "date": "2026-11-22",
     "high_f": 64,
     "would_rank": {
@@ -259,34 +254,25 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-22T08:15:31Z",
+  "issued_utc": "2026-11-22T11:14:56Z",
   "grid": "IWX/27,64",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-22T04:00:00-05:00",
-    "is_daytime": false,
-    "temp_f": 47,
-    "temp_c": 8.33,
-    "precip_chance_pct": 1,
-    "short_forecast": "Partly Cloudy"
-   },
-   {
-    "name": "Sunday",
+    "name": "Today",
     "start": "2026-11-22T06:00:00-05:00",
     "is_daytime": true,
     "temp_f": 64,
     "temp_c": 17.78,
-    "precip_chance_pct": 100,
+    "precip_chance_pct": 90,
     "short_forecast": "Rain Showers"
    },
    {
-    "name": "Sunday Night",
+    "name": "Tonight",
     "start": "2026-11-22T18:00:00-05:00",
     "is_daytime": false,
     "temp_f": 34,
     "temp_c": 1.11,
-    "precip_chance_pct": 35,
+    "precip_chance_pct": 32,
     "short_forecast": "Chance Rain Showers then Mostly Cloudy"
    },
    {
@@ -387,6 +373,15 @@
     "temp_c": 6.67,
     "precip_chance_pct": 15,
     "short_forecast": "Partly Sunny then Slight Chance Rain Showers"
+   },
+   {
+    "name": "Saturday Night",
+    "start": "2026-11-28T18:00:00-05:00",
+    "is_daytime": false,
+    "temp_f": 31,
+    "temp_c": -0.56,
+    "precip_chance_pct": 15,
+    "short_forecast": "Slight Chance Rain Showers then Mostly Cloudy"
    }
   ]
  },

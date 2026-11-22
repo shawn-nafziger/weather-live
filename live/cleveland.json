@@ -11,33 +11,38 @@
   "lon": -81.8519,
   "history": "Same site as the official Cleveland record"
  },
- "as_of_utc": "2026-11-22T11:08:04Z",
+ "as_of_utc": "2026-11-22T11:55:55Z",
  "now": {
-  "time_utc": "2026-11-22T10:50:00Z",
-  "temp_c": 8,
-  "temp_f": 46.4,
+  "time_utc": "2026-11-22T11:35:00Z",
+  "temp_c": 7,
+  "temp_f": 44.6,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 1,
-  "humidity_pct": 61.3,
-  "wind_kmh": 11.12,
+  "humidity_pct": 65.63,
+  "wind_kmh": 12.96,
   "description": ""
  },
  "today_so_far": {
   "date_local": "2026-11-22",
-  "readings": 4,
+  "readings": 5,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
   "high_c": 9.4,
   "high_f": 48.9,
   "high_time_utc": "2026-11-22T06:51:00Z",
-  "low_c": 8.3,
-  "low_f": 46.9,
-  "low_time_utc": "2026-11-22T07:51:00Z",
+  "low_c": 7.8,
+  "low_f": 46.0,
+  "low_time_utc": "2026-11-22T10:51:00Z",
   "peak_between_reports": {
    "at_least_f": 50.9,
    "about_f": 51.8,
    "time_utc": "2026-11-22T06:05:00Z"
+  },
+  "dip_between_reports": {
+   "at_most_f": 45.5,
+   "about_f": 44.6,
+   "time_utc": "2026-11-22T11:00:00Z"
   }
  },
  "record": {
@@ -46,39 +51,47 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-20",
-   "is_yesterday": false,
-   "high_f": 66,
-   "low_f": 43,
+   "date": "2026-11-21",
+   "is_yesterday": true,
+   "high_f": 68,
+   "low_f": 33,
    "high_rank": {
-    "value_f": 66,
-    "warm_rank": 8,
-    "cool_rank": 148,
-    "years": 155,
-    "first_year": 1871,
-    "tied_years": [],
-    "standing": "warm",
-    "notable": true,
-    "since": 1991,
-    "record": false,
-    "phrase": "8th warmest November 20 high of 155 since 1871, warmest since 1991"
-   },
-   "low_rank": {
-    "value_f": 43,
-    "warm_rank": 18,
-    "cool_rank": 136,
+    "value_f": 68,
+    "warm_rank": 5,
+    "cool_rank": 151,
     "years": 156,
     "first_year": 1871,
     "tied_years": [
-     1912,
-     2002,
-     2011
+     1913
     ],
     "standing": "warm",
     "notable": true,
-    "since": 2020,
+    "since": 1934,
     "record": false,
-    "phrase": "18th warmest November 20 low (tied) of 156 since 1871, warmest since 2020"
+    "phrase": "5th warmest November 21 high (tied) of 156 since 1871, warmest since 1934"
+   },
+   "low_rank": {
+    "value_f": 33,
+    "warm_rank": 74,
+    "cool_rank": 74,
+    "years": 156,
+    "first_year": 1871,
+    "tied_years": [
+     1886,
+     1908,
+     1911,
+     1919,
+     1957,
+     1965,
+     1970,
+     2012,
+     2015
+    ],
+    "standing": "warm",
+    "notable": false,
+    "since": 2025,
+    "record": false,
+    "phrase": "typical for November 21"
    }
   },
   "forecast_highs": [

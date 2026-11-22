@@ -11,9 +11,9 @@
   "lon": -122.3136,
   "history": "Same station as the official Seattle record (Sea-Tac)"
  },
- "as_of_utc": "2026-11-22T11:08:04Z",
+ "as_of_utc": "2026-11-22T11:55:55Z",
  "now": {
-  "time_utc": "2026-11-22T10:50:00Z",
+  "time_utc": "2026-11-22T11:15:00Z",
   "temp_c": 7,
   "temp_f": 44.6,
   "precision": "nearest whole \u00b0C",
@@ -24,7 +24,7 @@
  },
  "today_so_far": {
   "date_local": "2026-11-22",
-  "readings": 2,
+  "readings": 3,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -41,40 +41,54 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-20",
-   "is_yesterday": false,
-   "high_f": 43,
+   "date": "2026-11-21",
+   "is_yesterday": true,
+   "high_f": 46,
    "low_f": 33,
    "high_rank": {
-    "value_f": 43,
-    "warm_rank": 70,
-    "cool_rank": 12,
-    "years": 81,
-    "first_year": 1945,
-    "tied_years": [],
-    "standing": "cool",
-    "notable": true,
-    "since": 2011,
-    "record": false,
-    "phrase": "12th coolest November 20 high of 81 since 1945, coolest since 2011"
-   },
-   "low_rank": {
-    "value_f": 33,
-    "warm_rank": 62,
-    "cool_rank": 17,
+    "value_f": 46,
+    "warm_rank": 56,
+    "cool_rank": 20,
     "years": 82,
     "first_year": 1945,
     "tied_years": [
-     1994,
-     2003,
-     2010,
-     2015
+     1951,
+     1952,
+     1967,
+     1973,
+     2007,
+     2013,
+     2021
     ],
     "standing": "cool",
     "notable": false,
-    "since": 2022,
+    "since": 2021,
     "record": false,
-    "phrase": "typical for November 20"
+    "phrase": "typical for November 21"
+   },
+   "low_rank": {
+    "value_f": 33,
+    "warm_rank": 57,
+    "cool_rank": 16,
+    "years": 82,
+    "first_year": 1945,
+    "tied_years": [
+     1951,
+     1960,
+     1963,
+     1982,
+     1993,
+     1996,
+     2000,
+     2007,
+     2011,
+     2015
+    ],
+    "standing": "cool",
+    "notable": true,
+    "since": 2015,
+    "record": false,
+    "phrase": "16th coldest November 21 low (tied) of 82 since 1945, coldest since 2015"
    }
   },
   "forecast_highs": [

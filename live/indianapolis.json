@@ -11,20 +11,20 @@
   "lon": -86.2816,
   "history": "Same site as the official Indianapolis record"
  },
- "as_of_utc": "2026-11-22T11:08:04Z",
+ "as_of_utc": "2026-11-22T11:55:55Z",
  "now": {
-  "time_utc": "2026-11-22T10:50:00Z",
-  "temp_c": 11,
-  "temp_f": 51.8,
+  "time_utc": "2026-11-22T11:35:00Z",
+  "temp_c": 10,
+  "temp_f": 50.0,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": -1,
-  "humidity_pct": 43.34,
+  "dewpoint_c": 0,
+  "humidity_pct": 49.83,
   "wind_kmh": 7.42,
   "description": "Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-22",
-  "readings": 5,
+  "readings": 6,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -41,43 +41,46 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-20",
-   "is_yesterday": false,
-   "high_f": 69,
-   "low_f": 41,
+   "date": "2026-11-21",
+   "is_yesterday": true,
+   "high_f": 71,
+   "low_f": 43,
    "high_rank": {
-    "value_f": 69,
-    "warm_rank": 5,
-    "cool_rank": 152,
+    "value_f": 71,
+    "warm_rank": 3,
+    "cool_rank": 154,
     "years": 156,
     "first_year": 1871,
     "tied_years": [],
     "standing": "warm",
     "notable": true,
-    "since": 1942,
+    "since": 1990,
     "record": false,
-    "phrase": "5th warmest November 20 high of 156 since 1871, warmest since 1942"
+    "phrase": "3rd warmest November 21 high of 156 since 1871, warmest since 1990"
    },
    "low_rank": {
-    "value_f": 41,
-    "warm_rank": 33,
-    "cool_rank": 122,
+    "value_f": 43,
+    "warm_rank": 27,
+    "cool_rank": 125,
     "years": 156,
     "first_year": 1871,
     "tied_years": [
-     1878,
-     1899
+     1923,
+     1962,
+     2004,
+     2013,
+     2020
     ],
     "standing": "warm",
-    "notable": false,
+    "notable": true,
     "since": 2025,
     "record": false,
-    "phrase": "typical for November 20"
+    "phrase": "27th warmest November 21 low (tied) of 156 since 1871, warmest since 2025"
    }
   },
   "forecast_highs": [
    {
-    "period": "Sunday",
+    "period": "Today",
     "date": "2026-11-22",
     "high_f": 67,
     "would_rank": {
@@ -229,20 +232,11 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-22T10:15:21Z",
+  "issued_utc": "2026-11-22T10:45:28Z",
   "grid": "IND/54,67",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-22T05:00:00-05:00",
-    "is_daytime": false,
-    "temp_f": 44,
-    "temp_c": 6.67,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Clear"
-   },
-   {
-    "name": "Sunday",
+    "name": "Today",
     "start": "2026-11-22T06:00:00-05:00",
     "is_daytime": true,
     "temp_f": 67,
@@ -251,7 +245,7 @@
     "short_forecast": "Partly Sunny then Rain Showers"
    },
    {
-    "name": "Sunday Night",
+    "name": "Tonight",
     "start": "2026-11-22T18:00:00-05:00",
     "is_daytime": false,
     "temp_f": 34,
@@ -357,11 +351,20 @@
     "temp_c": 8.89,
     "precip_chance_pct": 11,
     "short_forecast": "Partly Sunny"
+   },
+   {
+    "name": "Saturday Night",
+    "start": "2026-11-28T18:00:00-05:00",
+    "is_daytime": false,
+    "temp_f": 33,
+    "temp_c": 0.56,
+    "precip_chance_pct": 11,
+    "short_forecast": "Partly Cloudy"
    }
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-22T10:15:21Z",
+  "issued_utc": "2026-11-22T11:45:23Z",
   "hours": [
    {
     "start": "2026-11-22T06:00:00-05:00",

@@ -11,20 +11,20 @@
   "lon": -75.2268,
   "history": "Same site as the official Philadelphia record"
  },
- "as_of_utc": "2026-11-22T11:08:04Z",
+ "as_of_utc": "2026-11-22T11:55:55Z",
  "now": {
-  "time_utc": "2026-11-22T10:35:00Z",
+  "time_utc": "2026-11-22T11:40:00Z",
   "temp_c": 12,
   "temp_f": 53.6,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 11,
   "humidity_pct": 93.6,
-  "wind_kmh": 7.42,
+  "wind_kmh": 14.83,
   "description": "Fog/Mist"
  },
  "today_so_far": {
   "date_local": "2026-11-22",
-  "readings": 9,
+  "readings": 11,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -41,50 +41,52 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-20",
-   "is_yesterday": false,
-   "high_f": 70,
-   "low_f": 41,
+   "date": "2026-11-21",
+   "is_yesterday": true,
+   "high_f": 66,
+   "low_f": 42,
    "high_rank": {
-    "value_f": 70,
-    "warm_rank": 8,
-    "cool_rank": 145,
+    "value_f": 66,
+    "warm_rank": 11,
+    "cool_rank": 138,
     "years": 153,
     "first_year": 1874,
     "tied_years": [
-     1953
+     1902,
+     1975,
+     1982,
+     1994,
+     2020
     ],
     "standing": "warm",
     "notable": true,
-    "since": 1991,
+    "since": 2020,
     "record": false,
-    "phrase": "8th warmest November 20 high (tied) of 153 since 1874, warmest since 1991"
+    "phrase": "11th warmest November 21 high (tied) of 153 since 1874, warmest since 2020"
    },
    "low_rank": {
-    "value_f": 41,
-    "warm_rank": 43,
-    "cool_rank": 104,
+    "value_f": 42,
+    "warm_rank": 30,
+    "cool_rank": 119,
     "years": 153,
     "first_year": 1874,
     "tied_years": [
-     1898,
-     1908,
-     1941,
-     1950,
-     1970,
-     1989,
-     1994
+     1876,
+     1904,
+     1917,
+     1994,
+     2024
     ],
     "standing": "warm",
-    "notable": false,
-    "since": 2024,
+    "notable": true,
+    "since": 2025,
     "record": false,
-    "phrase": "typical for November 20"
+    "phrase": "30th warmest November 21 low (tied) of 153 since 1874, warmest since 2025"
    }
   },
   "forecast_highs": [
    {
-    "period": "Sunday",
+    "period": "Today",
     "date": "2026-11-22",
     "high_f": 66,
     "would_rank": {
@@ -252,16 +254,7 @@
   "grid": "PHI/48,75",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-22T05:00:00-05:00",
-    "is_daytime": false,
-    "temp_f": 50,
-    "temp_c": 10.0,
-    "precip_chance_pct": 1,
-    "short_forecast": "Cloudy"
-   },
-   {
-    "name": "Sunday",
+    "name": "Today",
     "start": "2026-11-22T06:00:00-05:00",
     "is_daytime": true,
     "temp_f": 66,
@@ -270,7 +263,7 @@
     "short_forecast": "Mostly Cloudy then Chance Light Rain"
    },
    {
-    "name": "Sunday Night",
+    "name": "Tonight",
     "start": "2026-11-22T18:00:00-05:00",
     "is_daytime": false,
     "temp_f": 54,
@@ -376,6 +369,15 @@
     "temp_c": 12.22,
     "precip_chance_pct": 15,
     "short_forecast": "Mostly Sunny then Slight Chance Light Rain"
+   },
+   {
+    "name": "Saturday Night",
+    "start": "2026-11-28T18:00:00-05:00",
+    "is_daytime": false,
+    "temp_f": 39,
+    "temp_c": 3.89,
+    "precip_chance_pct": 21,
+    "short_forecast": "Slight Chance Light Rain"
    }
   ]
  },
