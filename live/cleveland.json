@@ -11,33 +11,33 @@
   "lon": -81.8519,
   "history": "Same site as the official Cleveland record"
  },
- "as_of_utc": "2026-11-22T15:08:04Z",
+ "as_of_utc": "2026-11-22T16:07:56Z",
  "now": {
-  "time_utc": "2026-11-22T14:55:00Z",
-  "temp_c": 14,
-  "temp_f": 57.2,
+  "time_utc": "2026-11-22T15:20:00Z",
+  "temp_c": 15,
+  "temp_f": 59.0,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 4,
-  "humidity_pct": 50.94,
-  "wind_kmh": 20.38,
+  "humidity_pct": 47.75,
+  "wind_kmh": null,
   "description": ""
  },
  "today_so_far": {
   "date_local": "2026-11-22",
-  "readings": 7,
+  "readings": 8,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 10,
-  "high_f": 50.0,
-  "high_time_utc": "2026-11-22T13:51:00Z",
+  "high_c": 14.4,
+  "high_f": 57.9,
+  "high_time_utc": "2026-11-22T14:51:00Z",
   "low_c": 6.7,
   "low_f": 44.1,
   "low_time_utc": "2026-11-22T11:51:00Z",
   "peak_between_reports": {
-   "at_least_f": 56.3,
-   "about_f": 57.2,
-   "time_utc": "2026-11-22T14:40:00Z"
+   "at_least_f": 58.1,
+   "about_f": 59.0,
+   "time_utc": "2026-11-22T15:20:00Z"
   }
  },
  "record": {
@@ -88,6 +88,23 @@
     "record": false,
     "phrase": "typical for November 21"
    }
+  },
+  "today_high_so_far": {
+   "value_f": 58,
+   "warm_rank": 23,
+   "cool_rank": 131,
+   "years": 156,
+   "first_year": 1871,
+   "tied_years": [
+    1891,
+    1894,
+    1990
+   ],
+   "standing": "warm",
+   "notable": true,
+   "since": 2012,
+   "record": false,
+   "phrase": "already the 23rd warmest November 22 high (tied) of 156 since 1871, warmest since 2012"
   },
   "forecast_highs": [
    {
@@ -389,13 +406,6 @@
  "hourly": {
   "issued_utc": "2026-11-22T07:46:54Z",
   "hours": [
-   {
-    "start": "2026-11-22T10:00:00-05:00",
-    "temp_f": 55,
-    "temp_c": 12.78,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "start": "2026-11-22T11:00:00-05:00",
     "temp_f": 59,
@@ -722,6 +732,13 @@
     "start": "2026-11-24T09:00:00-05:00",
     "temp_f": 37,
     "temp_c": 2.78,
+    "precip_chance_pct": 1,
+    "short_forecast": "Partly Sunny"
+   },
+   {
+    "start": "2026-11-24T10:00:00-05:00",
+    "temp_f": 40,
+    "temp_c": 4.44,
     "precip_chance_pct": 1,
     "short_forecast": "Partly Sunny"
    }
