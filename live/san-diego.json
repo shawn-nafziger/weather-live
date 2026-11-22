@@ -11,29 +11,23 @@
   "lon": -117.1831,
   "history": "Same site as the official San Diego record"
  },
- "as_of_utc": "2026-11-22T07:07:55Z",
+ "as_of_utc": "2026-11-22T08:08:01Z",
  "now": {
-  "time_utc": "2026-11-22T06:40:00Z",
+  "time_utc": "2026-11-22T07:35:00Z",
   "temp_c": 13,
   "temp_f": 55.4,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 5,
-  "humidity_pct": 58.3,
-  "wind_kmh": 5.54,
+  "dewpoint_c": 3,
+  "humidity_pct": 50.66,
+  "wind_kmh": 0,
   "description": "Clear"
  },
  "today_so_far": {
-  "date_local": "2026-11-21",
-  "readings": 17,
-  "basis": "hourly reports (tenths of a degree)",
-  "approximate": false,
-  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 20.6,
-  "high_f": 69.1,
-  "high_time_utc": "2026-11-21T21:51:00Z",
-  "low_c": 11.1,
-  "low_f": 52.0,
-  "low_time_utc": "2026-11-21T12:51:00Z"
+  "date_local": "2026-11-22",
+  "readings": 0,
+  "basis": "5-minute readings (whole \u00b0C, approximate)",
+  "approximate": true,
+  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two."
  },
  "record": {
   "series": "San Diego area (ThreadEx; Lindbergh Field)",
@@ -42,7 +36,7 @@
   "rank_today": true,
   "latest_final": {
    "date": "2026-11-20",
-   "is_yesterday": true,
+   "is_yesterday": false,
    "high_f": 68,
    "low_f": 56,
    "high_rank": {
@@ -405,13 +399,6 @@
   "issued_utc": "2026-11-21T23:04:35Z",
   "hours": [
    {
-    "start": "2026-11-21T23:00:00-08:00",
-    "temp_f": 55,
-    "temp_c": 12.78,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Clear"
-   },
-   {
     "start": "2026-11-22T00:00:00-08:00",
     "temp_f": 54,
     "temp_c": 12.22,
@@ -737,6 +724,13 @@
     "start": "2026-11-23T22:00:00-08:00",
     "temp_f": 58,
     "temp_c": 14.44,
+    "precip_chance_pct": 0,
+    "short_forecast": "Partly Cloudy"
+   },
+   {
+    "start": "2026-11-23T23:00:00-08:00",
+    "temp_f": 57,
+    "temp_c": 13.89,
     "precip_chance_pct": 0,
     "short_forecast": "Partly Cloudy"
    }

@@ -11,34 +11,23 @@
   "lon": -121.9242,
   "history": "Same site as the official San Jose record"
  },
- "as_of_utc": "2026-11-22T07:07:55Z",
+ "as_of_utc": "2026-11-22T08:08:01Z",
  "now": {
-  "time_utc": "2026-11-22T06:40:00Z",
+  "time_utc": "2026-11-22T07:40:00Z",
   "temp_c": 12,
   "temp_f": 53.6,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 10,
-  "humidity_pct": 87.57,
+  "dewpoint_c": 9,
+  "humidity_pct": 81.88,
   "wind_kmh": 14.83,
   "description": "Cloudy"
  },
  "today_so_far": {
-  "date_local": "2026-11-21",
-  "readings": 17,
-  "basis": "hourly reports (tenths of a degree)",
-  "approximate": false,
-  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 15,
-  "high_f": 59.0,
-  "high_time_utc": "2026-11-21T22:53:00Z",
-  "low_c": 5,
-  "low_f": 41.0,
-  "low_time_utc": "2026-11-21T12:53:00Z",
-  "dip_between_reports": {
-   "at_most_f": 40.1,
-   "about_f": 39.2,
-   "time_utc": "2026-11-21T14:15:00Z"
-  }
+  "date_local": "2026-11-22",
+  "readings": 0,
+  "basis": "5-minute readings (whole \u00b0C, approximate)",
+  "approximate": true,
+  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two."
  },
  "record": {
   "series": "San Jose area (ThreadEx; airport)",
@@ -47,7 +36,7 @@
   "rank_today": true,
   "latest_final": {
    "date": "2026-11-20",
-   "is_yesterday": true,
+   "is_yesterday": false,
    "high_f": 60,
    "low_f": 45,
    "high_rank": {
@@ -293,12 +282,12 @@
   "grid": "MTR/98,83",
   "periods": [
    {
-    "name": "Tonight",
-    "start": "2026-11-21T23:00:00-08:00",
+    "name": "Overnight",
+    "start": "2026-11-22T00:00:00-08:00",
     "is_daytime": false,
     "temp_f": 47,
     "temp_c": 8.33,
-    "precip_chance_pct": 51,
+    "precip_chance_pct": 46,
     "short_forecast": "Chance Light Rain"
    },
    {
@@ -423,13 +412,6 @@
  "hourly": {
   "issued_utc": "2026-11-22T06:27:05Z",
   "hours": [
-   {
-    "start": "2026-11-21T23:00:00-08:00",
-    "temp_f": 50,
-    "temp_c": 10.0,
-    "precip_chance_pct": 51,
-    "short_forecast": "Chance Light Rain"
-   },
    {
     "start": "2026-11-22T00:00:00-08:00",
     "temp_f": 49,
@@ -756,6 +738,13 @@
     "start": "2026-11-23T22:00:00-08:00",
     "temp_f": 48,
     "temp_c": 8.89,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "start": "2026-11-23T23:00:00-08:00",
+    "temp_f": 47,
+    "temp_c": 8.33,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Cloudy"
    }
