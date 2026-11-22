@@ -11,26 +11,26 @@
   "lon": -122.3136,
   "history": "Same station as the official Seattle record (Sea-Tac)"
  },
- "as_of_utc": "2026-11-22T18:08:05Z",
+ "as_of_utc": "2026-11-22T19:07:59Z",
  "now": {
-  "time_utc": "2026-11-22T17:35:00Z",
-  "temp_c": 7,
-  "temp_f": 44.6,
+  "time_utc": "2026-11-22T18:45:00Z",
+  "temp_c": 8,
+  "temp_f": 46.4,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 2,
-  "humidity_pct": 70.5,
-  "wind_kmh": 7.42,
+  "dewpoint_c": 3,
+  "humidity_pct": 70.7,
+  "wind_kmh": 9.25,
   "description": "Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-22",
-  "readings": 8,
+  "readings": 9,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 7.2,
-  "high_f": 45.0,
-  "high_time_utc": "2026-11-22T08:53:00Z",
+  "high_c": 7.8,
+  "high_f": 46.0,
+  "high_time_utc": "2026-11-22T17:53:00Z",
   "low_c": 6.1,
   "low_f": 43.0,
   "low_time_utc": "2026-11-22T14:53:00Z"
@@ -255,17 +255,17 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-22T09:21:01Z",
+  "issued_utc": "2026-11-22T18:26:36Z",
   "grid": "SEW/124,60",
   "periods": [
    {
     "name": "Today",
-    "start": "2026-11-22T06:00:00-08:00",
+    "start": "2026-11-22T10:00:00-08:00",
     "is_daytime": true,
     "temp_f": 49,
     "temp_c": 9.44,
-    "precip_chance_pct": 40,
-    "short_forecast": "Chance Light Rain then Mostly Cloudy"
+    "precip_chance_pct": 22,
+    "short_forecast": "Slight Chance Light Rain then Mostly Cloudy"
    },
    {
     "name": "Tonight",
@@ -387,15 +387,8 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-22T09:21:01Z",
+  "issued_utc": "2026-11-22T18:26:36Z",
   "hours": [
-   {
-    "start": "2026-11-22T10:00:00-08:00",
-    "temp_f": 43,
-    "temp_c": 6.11,
-    "precip_chance_pct": 22,
-    "short_forecast": "Slight Chance Light Rain"
-   },
    {
     "start": "2026-11-22T11:00:00-08:00",
     "temp_f": 45,
@@ -723,6 +716,13 @@
     "temp_f": 46,
     "temp_c": 7.78,
     "precip_chance_pct": 72,
+    "short_forecast": "Light Rain Likely"
+   },
+   {
+    "start": "2026-11-24T10:00:00-08:00",
+    "temp_f": 47,
+    "temp_c": 8.33,
+    "precip_chance_pct": 66,
     "short_forecast": "Light Rain Likely"
    }
   ]
