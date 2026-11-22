@@ -11,20 +11,20 @@
   "lon": -78.7819,
   "history": "Same site as the official Raleigh record"
  },
- "as_of_utc": "2026-11-22T22:07:52Z",
+ "as_of_utc": "2026-11-22T23:07:48Z",
  "now": {
-  "time_utc": "2026-11-22T21:40:00Z",
+  "time_utc": "2026-11-22T22:20:00Z",
   "temp_c": 16,
   "temp_f": 60.8,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 15,
   "humidity_pct": 93.79,
   "wind_kmh": 9.25,
-  "description": "Light Rain and Fog/Mist"
+  "description": "Rain and Fog/Mist"
  },
  "today_so_far": {
   "date_local": "2026-11-22",
-  "readings": 19,
+  "readings": 20,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -77,30 +77,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-22",
-    "high_f": 63,
-    "would_rank": {
-     "value_f": 63,
-     "warm_rank": 57,
-     "cool_rank": 79,
-     "years": 140,
-     "first_year": 1887,
-     "tied_years": [
-      1925,
-      1935,
-      1959,
-      1978,
-      2004
-     ],
-     "standing": "warm",
-     "notable": false,
-     "since": 2025,
-     "record": false,
-     "phrase": "typical for November 22"
-    }
-   },
    {
     "period": "Monday",
     "date": "2026-11-23",
@@ -240,30 +216,42 @@
      "record": false,
      "phrase": "typical for November 28"
     }
+   },
+   {
+    "period": "Sunday",
+    "date": "2026-11-29",
+    "high_f": 62,
+    "would_rank": {
+     "value_f": 62,
+     "warm_rank": 43,
+     "cool_rank": 96,
+     "years": 140,
+     "first_year": 1887,
+     "tied_years": [
+      1904,
+      1939
+     ],
+     "standing": "warm",
+     "notable": false,
+     "since": 2022,
+     "record": false,
+     "phrase": "typical for November 29"
+    }
    }
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-22T18:18:56Z",
+  "issued_utc": "2026-11-22T22:33:21Z",
   "grid": "RAH/69,62",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-22T15:00:00-05:00",
-    "is_daytime": true,
-    "temp_f": 63,
-    "temp_c": 17.22,
-    "precip_chance_pct": 69,
-    "short_forecast": "Rain Likely"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-22T18:00:00-05:00",
     "is_daytime": false,
     "temp_f": 54,
     "temp_c": 12.22,
-    "precip_chance_pct": 55,
-    "short_forecast": "Rain Likely then Patchy Fog"
+    "precip_chance_pct": 46,
+    "short_forecast": "Chance Light Rain"
    },
    {
     "name": "Monday",
@@ -372,19 +360,21 @@
     "temp_c": 1.67,
     "precip_chance_pct": 15,
     "short_forecast": "Slight Chance Rain Showers"
+   },
+   {
+    "name": "Sunday",
+    "start": "2026-11-29T06:00:00-05:00",
+    "is_daytime": true,
+    "temp_f": 62,
+    "temp_c": 16.67,
+    "precip_chance_pct": 6,
+    "short_forecast": "Mostly Sunny"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-22T18:18:56Z",
   "hours": [
-   {
-    "start": "2026-11-22T17:00:00-05:00",
-    "temp_f": 60,
-    "temp_c": 15.56,
-    "precip_chance_pct": 60,
-    "short_forecast": "Rain Likely"
-   },
    {
     "start": "2026-11-22T18:00:00-05:00",
     "temp_f": 59,
@@ -711,6 +701,13 @@
     "start": "2026-11-24T16:00:00-05:00",
     "temp_f": 53,
     "temp_c": 11.67,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
+   },
+   {
+    "start": "2026-11-24T17:00:00-05:00",
+    "temp_f": 51,
+    "temp_c": 10.56,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
    }
