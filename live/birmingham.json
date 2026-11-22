@@ -11,29 +11,23 @@
   "lon": -86.745,
   "history": "Same site as the official Birmingham record"
  },
- "as_of_utc": "2026-11-22T05:07:52Z",
+ "as_of_utc": "2026-11-22T06:07:51Z",
  "now": {
-  "time_utc": "2026-11-22T04:35:00Z",
-  "temp_c": 15,
-  "temp_f": 59.0,
+  "time_utc": "2026-11-22T05:55:00Z",
+  "temp_c": 16,
+  "temp_f": 60.8,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 11,
-  "humidity_pct": 77.0,
-  "wind_kmh": 5.54,
-  "description": "Mostly Cloudy"
+  "dewpoint_c": 12,
+  "humidity_pct": 77.16,
+  "wind_kmh": 9.25,
+  "description": "Cloudy"
  },
  "today_so_far": {
-  "date_local": "2026-11-21",
-  "readings": 16,
-  "basis": "hourly reports (tenths of a degree)",
-  "approximate": false,
-  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 22.8,
-  "high_f": 73.0,
-  "high_time_utc": "2026-11-21T18:53:00Z",
-  "low_c": 13.9,
-  "low_f": 57.0,
-  "low_time_utc": "2026-11-22T00:53:00Z"
+  "date_local": "2026-11-22",
+  "readings": 0,
+  "basis": "5-minute readings (whole \u00b0C, approximate)",
+  "approximate": true,
+  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two."
  },
  "record": {
   "series": "Birmingham area (ThreadEx; airport)",
@@ -42,7 +36,7 @@
   "rank_today": true,
   "latest_final": {
    "date": "2026-11-20",
-   "is_yesterday": true,
+   "is_yesterday": false,
    "high_f": 75,
    "low_f": 56,
    "high_rank": {
@@ -77,21 +71,6 @@
     "record": false,
     "phrase": "17th warmest November 20 low (tied) of 131 since 1896, warmest since 2011"
    }
-  },
-  "today_high_so_far": {
-   "value_f": 73,
-   "warm_rank": 20,
-   "cool_rank": 112,
-   "years": 132,
-   "first_year": 1895,
-   "tied_years": [
-    1953
-   ],
-   "standing": "warm",
-   "notable": true,
-   "since": 2020,
-   "record": false,
-   "phrase": "already the 20th warmest November 21 high (tied) of 132 since 1895, warmest since 2020"
   },
   "forecast_highs": [
    {
@@ -268,17 +247,17 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-22T04:06:19Z",
+  "issued_utc": "2026-11-22T05:06:05Z",
   "grid": "BMX/61,87",
   "periods": [
    {
-    "name": "Tonight",
-    "start": "2026-11-21T23:00:00-06:00",
+    "name": "Overnight",
+    "start": "2026-11-22T00:00:00-06:00",
     "is_daytime": false,
     "temp_f": 54,
     "temp_c": 12.22,
     "precip_chance_pct": 9,
-    "short_forecast": "Mostly Cloudy then Patchy Drizzle"
+    "short_forecast": "Patchy Drizzle"
    },
    {
     "name": "Sunday",
@@ -400,15 +379,8 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-22T04:06:19Z",
+  "issued_utc": "2026-11-22T05:06:05Z",
   "hours": [
-   {
-    "start": "2026-11-21T23:00:00-06:00",
-    "temp_f": 57,
-    "temp_c": 13.89,
-    "precip_chance_pct": 5,
-    "short_forecast": "Partly Cloudy"
-   },
    {
     "start": "2026-11-22T00:00:00-06:00",
     "temp_f": 55,
@@ -735,6 +707,13 @@
     "start": "2026-11-23T22:00:00-06:00",
     "temp_f": 49,
     "temp_c": 9.44,
+    "precip_chance_pct": 7,
+    "short_forecast": "Partly Cloudy"
+   },
+   {
+    "start": "2026-11-23T23:00:00-06:00",
+    "temp_f": 48,
+    "temp_c": 8.89,
     "precip_chance_pct": 7,
     "short_forecast": "Partly Cloudy"
    }
