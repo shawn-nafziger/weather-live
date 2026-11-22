@@ -11,34 +11,29 @@
   "lon": -82.5403,
   "history": "Same site as the official Tampa record"
  },
- "as_of_utc": "2026-11-22T17:07:59Z",
+ "as_of_utc": "2026-11-22T18:08:05Z",
  "now": {
-  "time_utc": "2026-11-22T16:20:00Z",
+  "time_utc": "2026-11-22T17:35:00Z",
   "temp_c": 23,
   "temp_f": 73.4,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 19,
   "humidity_pct": 78.21,
-  "wind_kmh": 14.83,
+  "wind_kmh": 16.67,
   "description": "Mostly Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-22",
-  "readings": 21,
+  "readings": 22,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 22.2,
-  "high_f": 72.0,
-  "high_time_utc": "2026-11-22T12:15:00Z",
+  "high_c": 23.3,
+  "high_f": 73.9,
+  "high_time_utc": "2026-11-22T16:53:00Z",
   "low_c": 19.4,
   "low_f": 66.9,
-  "low_time_utc": "2026-11-22T05:27:00Z",
-  "peak_between_reports": {
-   "at_least_f": 72.5,
-   "about_f": 73.4,
-   "time_utc": "2026-11-22T16:20:00Z"
-  }
+  "low_time_utc": "2026-11-22T05:27:00Z"
  },
  "record": {
   "series": "Tampa area (ThreadEx; airport)",
@@ -266,12 +261,12 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-22T14:27:03Z",
+  "issued_utc": "2026-11-22T16:36:20Z",
   "grid": "TBW/68,98",
   "periods": [
    {
     "name": "Today",
-    "start": "2026-11-22T10:00:00-05:00",
+    "start": "2026-11-22T11:00:00-05:00",
     "is_daytime": true,
     "temp_f": 76,
     "temp_c": 24.44,
@@ -284,7 +279,7 @@
     "is_daytime": false,
     "temp_f": 64,
     "temp_c": 17.78,
-    "precip_chance_pct": 1,
+    "precip_chance_pct": 0,
     "short_forecast": "Mostly Cloudy"
    },
    {
@@ -302,8 +297,8 @@
     "is_daytime": false,
     "temp_f": 64,
     "temp_c": 17.78,
-    "precip_chance_pct": 1,
-    "short_forecast": "Cloudy"
+    "precip_chance_pct": 4,
+    "short_forecast": "Mostly Cloudy"
    },
    {
     "name": "Tuesday",
@@ -320,8 +315,8 @@
     "is_daytime": false,
     "temp_f": 66,
     "temp_c": 18.89,
-    "precip_chance_pct": 23,
-    "short_forecast": "Mostly Cloudy then Isolated Rain Showers"
+    "precip_chance_pct": 34,
+    "short_forecast": "Mostly Cloudy then Chance Rain Showers"
    },
    {
     "name": "Wednesday",
@@ -329,8 +324,8 @@
     "is_daytime": true,
     "temp_f": 75,
     "temp_c": 23.89,
-    "precip_chance_pct": 29,
-    "short_forecast": "Scattered Rain Showers then Isolated Showers And Thunderstorms"
+    "precip_chance_pct": 34,
+    "short_forecast": "Chance Rain Showers"
    },
    {
     "name": "Wednesday Night",
@@ -339,7 +334,7 @@
     "temp_f": 63,
     "temp_c": 17.22,
     "precip_chance_pct": 23,
-    "short_forecast": "Isolated Showers And Thunderstorms"
+    "short_forecast": "Slight Chance Rain Showers"
    },
    {
     "name": "Thanksgiving Day",
@@ -347,7 +342,7 @@
     "is_daytime": true,
     "temp_f": 72,
     "temp_c": 22.22,
-    "precip_chance_pct": 4,
+    "precip_chance_pct": 6,
     "short_forecast": "Mostly Sunny"
    },
    {
@@ -356,8 +351,8 @@
     "is_daytime": false,
     "temp_f": 58,
     "temp_c": 14.44,
-    "precip_chance_pct": 1,
-    "short_forecast": "Partly Cloudy"
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Cloudy"
    },
    {
     "name": "Friday",
@@ -365,8 +360,8 @@
     "is_daytime": true,
     "temp_f": 70,
     "temp_c": 21.11,
-    "precip_chance_pct": 7,
-    "short_forecast": "Mostly Cloudy"
+    "precip_chance_pct": 5,
+    "short_forecast": "Partly Sunny"
    },
    {
     "name": "Friday Night",
@@ -374,8 +369,8 @@
     "is_daytime": false,
     "temp_f": 59,
     "temp_c": 15.0,
-    "precip_chance_pct": 17,
-    "short_forecast": "Isolated Rain Showers"
+    "precip_chance_pct": 13,
+    "short_forecast": "Cloudy"
    },
    {
     "name": "Saturday",
@@ -383,8 +378,8 @@
     "is_daytime": true,
     "temp_f": 71,
     "temp_c": 21.67,
-    "precip_chance_pct": 27,
-    "short_forecast": "Scattered Rain Showers"
+    "precip_chance_pct": 20,
+    "short_forecast": "Slight Chance Rain Showers"
    },
    {
     "name": "Saturday Night",
@@ -392,21 +387,14 @@
     "is_daytime": false,
     "temp_f": 59,
     "temp_c": 15.0,
-    "precip_chance_pct": 24,
-    "short_forecast": "Isolated Rain Showers"
+    "precip_chance_pct": 20,
+    "short_forecast": "Slight Chance Rain Showers"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-22T16:36:20Z",
   "hours": [
-   {
-    "start": "2026-11-22T12:00:00-05:00",
-    "temp_f": 75,
-    "temp_c": 23.89,
-    "precip_chance_pct": 1,
-    "short_forecast": "Mostly Sunny"
-   },
    {
     "start": "2026-11-22T13:00:00-05:00",
     "temp_f": 75,
@@ -733,6 +721,13 @@
     "start": "2026-11-24T11:00:00-05:00",
     "temp_f": 72,
     "temp_c": 22.22,
+    "precip_chance_pct": 1,
+    "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "start": "2026-11-24T12:00:00-05:00",
+    "temp_f": 74,
+    "temp_c": 23.33,
     "precip_chance_pct": 1,
     "short_forecast": "Mostly Cloudy"
    }
