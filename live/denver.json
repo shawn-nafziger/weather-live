@@ -11,20 +11,20 @@
   "lon": -104.6562,
   "history": "Same site as the official Denver record"
  },
- "as_of_utc": "2026-11-22T13:07:58Z",
+ "as_of_utc": "2026-11-22T14:07:56Z",
  "now": {
-  "time_utc": "2026-11-22T12:50:00Z",
-  "temp_c": -7,
-  "temp_f": 19.4,
-  "precision": "nearest whole \u00b0C",
+  "time_utc": "2026-11-22T12:53:00Z",
+  "temp_c": -7.2,
+  "temp_f": 19.0,
+  "precision": "tenths of a degree",
   "dewpoint_c": -10,
-  "humidity_pct": 79.17,
-  "wind_kmh": 11.12,
+  "humidity_pct": 80.39,
+  "wind_kmh": 11.16,
   "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-22",
-  "readings": 5,
+  "readings": 6,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -86,7 +86,7 @@
   },
   "forecast_highs": [
    {
-    "period": "Sunday",
+    "period": "Today",
     "date": "2026-11-22",
     "high_f": 47,
     "would_rank": {
@@ -243,16 +243,7 @@
   "grid": "BOU/75,66",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-22T00:00:00-07:00",
-    "is_daytime": false,
-    "temp_f": 22,
-    "temp_c": -5.56,
-    "precip_chance_pct": 0,
-    "short_forecast": "Patchy Freezing Fog"
-   },
-   {
-    "name": "Sunday",
+    "name": "Today",
     "start": "2026-11-22T06:00:00-07:00",
     "is_daytime": true,
     "temp_f": 47,
@@ -261,7 +252,7 @@
     "short_forecast": "Patchy Freezing Fog then Mostly Sunny"
    },
    {
-    "name": "Sunday Night",
+    "name": "Tonight",
     "start": "2026-11-22T18:00:00-07:00",
     "is_daytime": false,
     "temp_f": 23,
@@ -367,19 +358,21 @@
     "temp_c": 16.11,
     "precip_chance_pct": 3,
     "short_forecast": "Mostly Sunny"
+   },
+   {
+    "name": "Saturday Night",
+    "start": "2026-11-28T18:00:00-07:00",
+    "is_daytime": false,
+    "temp_f": 36,
+    "temp_c": 2.22,
+    "precip_chance_pct": 4,
+    "short_forecast": "Partly Cloudy"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-22T06:46:10Z",
   "hours": [
-   {
-    "start": "2026-11-22T06:00:00-07:00",
-    "temp_f": 24,
-    "temp_c": -4.44,
-    "precip_chance_pct": 0,
-    "short_forecast": "Patchy Freezing Fog"
-   },
    {
     "start": "2026-11-22T07:00:00-07:00",
     "temp_f": 23,
@@ -708,6 +701,13 @@
     "temp_c": -4.44,
     "precip_chance_pct": 3,
     "short_forecast": "Partly Cloudy"
+   },
+   {
+    "start": "2026-11-24T06:00:00-07:00",
+    "temp_f": 24,
+    "temp_c": -4.44,
+    "precip_chance_pct": 3,
+    "short_forecast": "Mostly Sunny"
    }
   ]
  },
