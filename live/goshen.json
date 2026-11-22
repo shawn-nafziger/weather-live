@@ -11,20 +11,20 @@
   "lon": -85.7867,
   "history": "Provisional: Goshen Municipal Airport. The long record (GOSHEN 3SW) is a once-a-day volunteer station, so today's readings and the record come from different stations (question D2)"
  },
- "as_of_utc": "2026-11-22T00:07:57Z",
+ "as_of_utc": "2026-11-22T01:07:59Z",
  "now": {
-  "time_utc": "2026-11-21T22:53:00Z",
-  "temp_c": 13.9,
-  "temp_f": 57.0,
-  "precision": "tenths of a degree",
-  "dewpoint_c": 0.6,
-  "humidity_pct": 40.25,
-  "wind_kmh": 5.4,
-  "description": ""
+  "time_utc": "2026-11-22T00:30:00Z",
+  "temp_c": 12,
+  "temp_f": 53.6,
+  "precision": "nearest whole \u00b0C",
+  "dewpoint_c": 1,
+  "humidity_pct": 46.9,
+  "wind_kmh": 7.42,
+  "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-21",
-  "readings": 14,
+  "readings": 15,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -87,12 +87,12 @@
   "note": "Today's readings come from a different station than this record, so today and the forecast aren't ranked against it."
  },
  "forecast": {
-  "issued_utc": "2026-11-21T22:30:04Z",
+  "issued_utc": "2026-11-22T01:00:04Z",
   "grid": "IWX/45,57",
   "periods": [
    {
     "name": "Tonight",
-    "start": "2026-11-21T19:00:00-05:00",
+    "start": "2026-11-21T20:00:00-05:00",
     "is_daytime": false,
     "temp_f": 45,
     "temp_c": 7.22,
@@ -219,15 +219,8 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-21T22:30:04Z",
+  "issued_utc": "2026-11-22T01:00:04Z",
   "hours": [
-   {
-    "start": "2026-11-21T19:00:00-05:00",
-    "temp_f": 54,
-    "temp_c": 12.22,
-    "precip_chance_pct": 0,
-    "short_forecast": "Clear"
-   },
    {
     "start": "2026-11-21T20:00:00-05:00",
     "temp_f": 52,
@@ -555,6 +548,13 @@
     "temp_f": 40,
     "temp_c": 4.44,
     "precip_chance_pct": 0,
+    "short_forecast": "Partly Cloudy"
+   },
+   {
+    "start": "2026-11-23T19:00:00-05:00",
+    "temp_f": 38,
+    "temp_c": 3.33,
+    "precip_chance_pct": 1,
     "short_forecast": "Partly Cloudy"
    }
   ]

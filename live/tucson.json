@@ -11,20 +11,20 @@
   "lon": -110.9564,
   "history": "Same site as the official Tucson record"
  },
- "as_of_utc": "2026-11-22T00:07:57Z",
+ "as_of_utc": "2026-11-22T01:07:59Z",
  "now": {
-  "time_utc": "2026-11-21T23:45:00Z",
-  "temp_c": 16,
-  "temp_f": 60.8,
+  "time_utc": "2026-11-22T00:50:00Z",
+  "temp_c": 14,
+  "temp_f": 57.2,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": null,
-  "humidity_pct": null,
-  "wind_kmh": 11.12,
+  "dewpoint_c": -7,
+  "humidity_pct": 22.7,
+  "wind_kmh": 9.25,
   "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-21",
-  "readings": 16,
+  "readings": 17,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -90,26 +90,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-21",
-    "high_f": 65,
-    "would_rank": {
-     "value_f": 65,
-     "warm_rank": 106,
-     "cool_rank": 26,
-     "years": 132,
-     "first_year": 1894,
-     "tied_years": [
-      1975
-     ],
-     "standing": "cool",
-     "notable": true,
-     "since": 2025,
-     "record": false,
-     "phrase": "26th coolest November 21 high (tied) of 132 since 1894, coolest since 2025"
-    }
-   },
    {
     "period": "Sunday",
     "date": "2026-11-22",
@@ -256,6 +236,31 @@
      "record": false,
      "phrase": "typical for November 27"
     }
+   },
+   {
+    "period": "Saturday",
+    "date": "2026-11-28",
+    "high_f": 78,
+    "would_rank": {
+     "value_f": 78,
+     "warm_rank": 20,
+     "cool_rank": 106,
+     "years": 131,
+     "first_year": 1894,
+     "tied_years": [
+      1927,
+      1953,
+      1954,
+      1970,
+      1986,
+      2018
+     ],
+     "standing": "warm",
+     "notable": true,
+     "since": 2021,
+     "record": false,
+     "phrase": "20th warmest November 28 high (tied) of 131 since 1894, warmest since 2021"
+    }
    }
   ]
  },
@@ -263,15 +268,6 @@
   "issued_utc": "2026-11-21T20:18:08Z",
   "grid": "TWC/91,45",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-21T16:00:00-07:00",
-    "is_daytime": true,
-    "temp_f": 65,
-    "temp_c": 18.33,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-21T18:00:00-07:00",
@@ -388,19 +384,21 @@
     "temp_c": 9.44,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear"
+   },
+   {
+    "name": "Saturday",
+    "start": "2026-11-28T06:00:00-07:00",
+    "is_daytime": true,
+    "temp_f": 78,
+    "temp_c": 25.56,
+    "precip_chance_pct": 3,
+    "short_forecast": "Sunny"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-21T20:18:08Z",
   "hours": [
-   {
-    "start": "2026-11-21T17:00:00-07:00",
-    "temp_f": 61,
-    "temp_c": 16.11,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Sunny"
-   },
    {
     "start": "2026-11-21T18:00:00-07:00",
     "temp_f": 56,
@@ -727,6 +725,13 @@
     "start": "2026-11-23T16:00:00-07:00",
     "temp_f": 65,
     "temp_c": 18.33,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
+   },
+   {
+    "start": "2026-11-23T17:00:00-07:00",
+    "temp_f": 63,
+    "temp_c": 17.22,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
    }

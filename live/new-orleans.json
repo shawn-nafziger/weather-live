@@ -11,20 +11,20 @@
   "lon": -90.2508,
   "history": "Same site as the official New Orleans record"
  },
- "as_of_utc": "2026-11-22T00:07:57Z",
+ "as_of_utc": "2026-11-22T01:07:59Z",
  "now": {
-  "time_utc": "2026-11-21T23:45:00Z",
-  "temp_c": 21,
-  "temp_f": 69.8,
+  "time_utc": "2026-11-22T00:45:00Z",
+  "temp_c": 19,
+  "temp_f": 66.2,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 15,
-  "humidity_pct": 68.58,
-  "wind_kmh": 5.54,
+  "humidity_pct": 77.62,
+  "wind_kmh": 0,
   "description": "Mostly Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-21",
-  "readings": 12,
+  "readings": 13,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -83,26 +83,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-21",
-    "high_f": 74,
-    "would_rank": {
-     "value_f": 74,
-     "warm_rank": 28,
-     "cool_rank": 53,
-     "years": 81,
-     "first_year": 1946,
-     "tied_years": [
-      1948
-     ],
-     "standing": "warm",
-     "notable": false,
-     "since": 2025,
-     "record": false,
-     "phrase": "typical for November 21"
-    }
-   },
    {
     "period": "Sunday",
     "date": "2026-11-22",
@@ -231,6 +211,30 @@
      "record": false,
      "phrase": "16th coolest November 27 high (tied) of 81 since 1946, coolest since 2023"
     }
+   },
+   {
+    "period": "Saturday",
+    "date": "2026-11-28",
+    "high_f": 63,
+    "would_rank": {
+     "value_f": 63,
+     "warm_rank": 50,
+     "cool_rank": 27,
+     "years": 81,
+     "first_year": 1946,
+     "tied_years": [
+      1961,
+      1965,
+      1973,
+      1974,
+      2004
+     ],
+     "standing": "cool",
+     "notable": false,
+     "since": 2025,
+     "record": false,
+     "phrase": "typical for November 28"
+    }
    }
   ]
  },
@@ -238,15 +242,6 @@
   "issued_utc": "2026-11-21T19:32:30Z",
   "grid": "LIX/61,90",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-21T14:00:00-06:00",
-    "is_daytime": true,
-    "temp_f": 74,
-    "temp_c": 23.33,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-21T18:00:00-06:00",
@@ -363,19 +358,21 @@
     "temp_c": 8.89,
     "precip_chance_pct": 17,
     "short_forecast": "Slight Chance Rain Showers"
+   },
+   {
+    "name": "Saturday",
+    "start": "2026-11-28T06:00:00-06:00",
+    "is_daytime": true,
+    "temp_f": 63,
+    "temp_c": 17.22,
+    "precip_chance_pct": 6,
+    "short_forecast": "Mostly Sunny"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-21T19:32:30Z",
   "hours": [
-   {
-    "start": "2026-11-21T18:00:00-06:00",
-    "temp_f": 68,
-    "temp_c": 20.0,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Clear"
-   },
    {
     "start": "2026-11-21T19:00:00-06:00",
     "temp_f": 66,
@@ -704,6 +701,13 @@
     "temp_c": 20.0,
     "precip_chance_pct": 36,
     "short_forecast": "Chance Rain Showers"
+   },
+   {
+    "start": "2026-11-23T18:00:00-06:00",
+    "temp_f": 67,
+    "temp_c": 19.44,
+    "precip_chance_pct": 21,
+    "short_forecast": "Slight Chance Rain Showers"
    }
   ]
  },
