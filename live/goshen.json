@@ -11,29 +11,23 @@
   "lon": -85.7867,
   "history": "Provisional: Goshen Municipal Airport. The long record (GOSHEN 3SW) is a once-a-day volunteer station, so today's readings and the record come from different stations (question D2)"
  },
- "as_of_utc": "2026-11-23T04:07:58Z",
+ "as_of_utc": "2026-11-23T05:07:47Z",
  "now": {
-  "time_utc": "2026-11-23T03:35:00Z",
+  "time_utc": "2026-11-23T04:45:00Z",
   "temp_c": 7,
   "temp_f": 44.6,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 2,
-  "humidity_pct": 70.5,
-  "wind_kmh": 25.92,
+  "dewpoint_c": 1,
+  "humidity_pct": 65.63,
+  "wind_kmh": 24.08,
   "description": "Cloudy"
  },
  "today_so_far": {
-  "date_local": "2026-11-22",
-  "readings": 29,
-  "basis": "hourly reports (tenths of a degree)",
-  "approximate": false,
-  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 17.8,
-  "high_f": 64.0,
-  "high_time_utc": "2026-11-22T17:53:00Z",
-  "low_c": 7.2,
-  "low_f": 45.0,
-  "low_time_utc": "2026-11-23T02:53:00Z"
+  "date_local": "2026-11-23",
+  "readings": 0,
+  "basis": "5-minute readings (whole \u00b0C, approximate)",
+  "approximate": true,
+  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two."
  },
  "record": {
   "series": "GOSHEN 3SW (COOP 123418)",
@@ -82,17 +76,17 @@
   "note": "Today's readings come from a different station than this record, so today and the forecast aren't ranked against it."
  },
  "forecast": {
-  "issued_utc": "2026-11-23T03:00:47Z",
+  "issued_utc": "2026-11-23T04:44:42Z",
   "grid": "IWX/45,57",
   "periods": [
    {
-    "name": "Tonight",
-    "start": "2026-11-22T22:00:00-05:00",
+    "name": "Overnight",
+    "start": "2026-11-23T00:00:00-05:00",
     "is_daytime": false,
     "temp_f": 34,
     "temp_c": 1.11,
     "precip_chance_pct": 0,
-    "short_forecast": "Mostly Cloudy"
+    "short_forecast": "Partly Cloudy"
    },
    {
     "name": "Monday",
@@ -214,15 +208,8 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-23T03:00:47Z",
+  "issued_utc": "2026-11-23T04:44:42Z",
   "hours": [
-   {
-    "start": "2026-11-22T23:00:00-05:00",
-    "temp_f": 44,
-    "temp_c": 6.67,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "start": "2026-11-23T00:00:00-05:00",
     "temp_f": 43,
@@ -326,35 +313,35 @@
     "temp_f": 43,
     "temp_c": 6.11,
     "precip_chance_pct": 0,
-    "short_forecast": "Mostly Sunny"
+    "short_forecast": "Partly Sunny"
    },
    {
     "start": "2026-11-23T15:00:00-05:00",
     "temp_f": 44,
     "temp_c": 6.67,
     "precip_chance_pct": 0,
-    "short_forecast": "Mostly Sunny"
+    "short_forecast": "Partly Sunny"
    },
    {
     "start": "2026-11-23T16:00:00-05:00",
     "temp_f": 42,
     "temp_c": 5.56,
     "precip_chance_pct": 0,
-    "short_forecast": "Mostly Sunny"
+    "short_forecast": "Partly Sunny"
    },
    {
     "start": "2026-11-23T17:00:00-05:00",
     "temp_f": 42,
     "temp_c": 5.56,
     "precip_chance_pct": 0,
-    "short_forecast": "Mostly Sunny"
+    "short_forecast": "Partly Sunny"
    },
    {
     "start": "2026-11-23T18:00:00-05:00",
     "temp_f": 41,
     "temp_c": 5.0,
     "precip_chance_pct": 0,
-    "short_forecast": "Mostly Cloudy"
+    "short_forecast": "Partly Cloudy"
    },
    {
     "start": "2026-11-23T19:00:00-05:00",
@@ -368,28 +355,28 @@
     "temp_f": 37,
     "temp_c": 2.78,
     "precip_chance_pct": 0,
-    "short_forecast": "Mostly Cloudy"
+    "short_forecast": "Partly Cloudy"
    },
    {
     "start": "2026-11-23T21:00:00-05:00",
     "temp_f": 36,
     "temp_c": 2.22,
     "precip_chance_pct": 0,
-    "short_forecast": "Mostly Cloudy"
+    "short_forecast": "Partly Cloudy"
    },
    {
     "start": "2026-11-23T22:00:00-05:00",
     "temp_f": 35,
     "temp_c": 1.67,
     "precip_chance_pct": 0,
-    "short_forecast": "Mostly Cloudy"
+    "short_forecast": "Partly Cloudy"
    },
    {
     "start": "2026-11-23T23:00:00-05:00",
     "temp_f": 34,
     "temp_c": 1.11,
     "precip_chance_pct": 0,
-    "short_forecast": "Partly Cloudy"
+    "short_forecast": "Mostly Cloudy"
    },
    {
     "start": "2026-11-24T00:00:00-05:00",
@@ -549,6 +536,13 @@
     "start": "2026-11-24T22:00:00-05:00",
     "temp_f": 29,
     "temp_c": -1.67,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "start": "2026-11-24T23:00:00-05:00",
+    "temp_f": 28,
+    "temp_c": -2.22,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Cloudy"
    }

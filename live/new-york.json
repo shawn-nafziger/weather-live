@@ -11,29 +11,23 @@
   "lon": -73.9667,
   "history": "Same site as the official New York record"
  },
- "as_of_utc": "2026-11-23T04:07:58Z",
+ "as_of_utc": "2026-11-23T05:07:47Z",
  "now": {
-  "time_utc": "2026-11-23T02:51:00Z",
-  "temp_c": 15.6,
-  "temp_f": 60.1,
+  "time_utc": "2026-11-23T03:51:00Z",
+  "temp_c": 15,
+  "temp_f": 59.0,
   "precision": "tenths of a degree",
-  "dewpoint_c": 13.9,
-  "humidity_pct": 89.62,
-  "wind_kmh": 5.4,
-  "description": "Cloudy"
+  "dewpoint_c": 13.3,
+  "humidity_pct": 89.58,
+  "wind_kmh": 0,
+  "description": ""
  },
  "today_so_far": {
-  "date_local": "2026-11-22",
-  "readings": 36,
-  "basis": "hourly reports (tenths of a degree)",
-  "approximate": false,
-  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 16.1,
-  "high_f": 61.0,
-  "high_time_utc": "2026-11-23T01:51:00Z",
-  "low_c": 12.2,
-  "low_f": 54.0,
-  "low_time_utc": "2026-11-22T05:27:00Z"
+  "date_local": "2026-11-23",
+  "readings": 0,
+  "basis": "5-minute readings (whole \u00b0C, approximate)",
+  "approximate": true,
+  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two."
  },
  "record": {
   "series": "New York area (ThreadEx; Central Park)",
@@ -42,7 +36,7 @@
   "rank_today": true,
   "latest_final": {
    "date": "2026-11-21",
-   "is_yesterday": true,
+   "is_yesterday": false,
    "high_f": 65,
    "low_f": 49,
    "high_rank": {
@@ -77,23 +71,6 @@
     "record": false,
     "phrase": "11th warmest November 21 low (tied) of 158 since 1869, warmest since 2020"
    }
-  },
-  "today_high_so_far": {
-   "value_f": 61,
-   "warm_rank": 18,
-   "cool_rank": 138,
-   "years": 158,
-   "first_year": 1869,
-   "tied_years": [
-    1909,
-    1934,
-    1994
-   ],
-   "standing": "warm",
-   "notable": true,
-   "since": 2010,
-   "record": false,
-   "phrase": "already the 18th warmest November 22 high (tied) of 158 since 1869, warmest since 2010"
   },
   "forecast_highs": [
    {
@@ -401,13 +378,6 @@
  "hourly": {
   "issued_utc": "2026-11-23T03:17:25Z",
   "hours": [
-   {
-    "start": "2026-11-22T23:00:00-05:00",
-    "temp_f": 57,
-    "temp_c": 13.89,
-    "precip_chance_pct": 12,
-    "short_forecast": "Cloudy"
-   },
    {
     "start": "2026-11-23T00:00:00-05:00",
     "temp_f": 57,
@@ -736,6 +706,13 @@
     "temp_c": 4.44,
     "precip_chance_pct": 0,
     "short_forecast": "Clear"
+   },
+   {
+    "start": "2026-11-24T23:00:00-05:00",
+    "temp_f": 39,
+    "temp_c": 3.89,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Clear"
    }
   ]
  },

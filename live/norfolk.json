@@ -11,29 +11,23 @@
   "lon": -76.1919,
   "history": "Same site as the official Norfolk record"
  },
- "as_of_utc": "2026-11-23T04:07:58Z",
+ "as_of_utc": "2026-11-23T05:07:47Z",
  "now": {
-  "time_utc": "2026-11-23T03:35:00Z",
+  "time_utc": "2026-11-23T04:45:00Z",
   "temp_c": 16,
   "temp_f": 60.8,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 16,
   "humidity_pct": 100,
-  "wind_kmh": 9.25,
-  "description": "Light Rain"
+  "wind_kmh": 5.54,
+  "description": "Cloudy"
  },
  "today_so_far": {
-  "date_local": "2026-11-22",
-  "readings": 33,
-  "basis": "hourly reports (tenths of a degree)",
-  "approximate": false,
-  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 18.9,
-  "high_f": 66.0,
-  "high_time_utc": "2026-11-22T16:51:00Z",
-  "low_c": 15.6,
-  "low_f": 60.1,
-  "low_time_utc": "2026-11-22T07:51:00Z"
+  "date_local": "2026-11-23",
+  "readings": 0,
+  "basis": "5-minute readings (whole \u00b0C, approximate)",
+  "approximate": true,
+  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two."
  },
  "record": {
   "series": "Norfolk area (ThreadEx; airport)",
@@ -42,7 +36,7 @@
   "rank_today": true,
   "latest_final": {
    "date": "2026-11-21",
-   "is_yesterday": true,
+   "is_yesterday": false,
    "high_f": 65,
    "low_f": 40,
    "high_rank": {
@@ -257,11 +251,11 @@
   "periods": [
    {
     "name": "Tonight",
-    "start": "2026-11-22T22:00:00-05:00",
+    "start": "2026-11-22T19:00:00-05:00",
     "is_daytime": false,
     "temp_f": 56,
     "temp_c": 13.33,
-    "precip_chance_pct": 66,
+    "precip_chance_pct": 72,
     "short_forecast": "Light Rain Likely"
    },
    {
@@ -386,13 +380,6 @@
  "hourly": {
   "issued_utc": "2026-11-22T23:21:46Z",
   "hours": [
-   {
-    "start": "2026-11-22T23:00:00-05:00",
-    "temp_f": 59,
-    "temp_c": 15.0,
-    "precip_chance_pct": 61,
-    "short_forecast": "Light Rain Likely"
-   },
    {
     "start": "2026-11-23T00:00:00-05:00",
     "temp_f": 59,
@@ -717,6 +704,13 @@
    },
    {
     "start": "2026-11-24T22:00:00-05:00",
+    "temp_f": 45,
+    "temp_c": 7.22,
+    "precip_chance_pct": 0,
+    "short_forecast": "Partly Cloudy"
+   },
+   {
+    "start": "2026-11-24T23:00:00-05:00",
     "temp_f": 45,
     "temp_c": 7.22,
     "precip_chance_pct": 0,
