@@ -11,20 +11,20 @@
   "lon": -82.5403,
   "history": "Same site as the official Tampa record"
  },
- "as_of_utc": "2026-11-23T11:08:05Z",
+ "as_of_utc": "2026-11-23T12:08:10Z",
  "now": {
-  "time_utc": "2026-11-23T10:55:00Z",
-  "temp_c": 19,
-  "temp_f": 66.2,
+  "time_utc": "2026-11-23T11:40:00Z",
+  "temp_c": 18,
+  "temp_f": 64.4,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 16,
-  "humidity_pct": 82.75,
-  "wind_kmh": 5.54,
+  "humidity_pct": 88.1,
+  "wind_kmh": 11.12,
   "description": "Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-23",
-  "readings": 2,
+  "readings": 3,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -51,53 +51,60 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-21",
-   "is_yesterday": false,
-   "high_f": 76,
-   "low_f": 66,
+   "date": "2026-11-22",
+   "is_yesterday": true,
+   "high_f": 78,
+   "low_f": 67,
    "high_rank": {
-    "value_f": 76,
-    "warm_rank": 79,
-    "cool_rank": 53,
+    "value_f": 78,
+    "warm_rank": 55,
+    "cool_rank": 69,
     "years": 137,
     "first_year": 1890,
     "tied_years": [
-     1890,
-     1898,
-     1947,
-     1983,
-     2001,
-     2003
+     1893,
+     1897,
+     1908,
+     1913,
+     1918,
+     1920,
+     1922,
+     1923,
+     1989,
+     1996,
+     1999,
+     2019,
+     2021,
+     2022
     ],
-    "standing": "cool",
+    "standing": "warm",
     "notable": false,
-    "since": 2024,
+    "since": 2025,
     "record": false,
-    "phrase": "typical for November 21"
+    "phrase": "typical for November 22"
    },
    "low_rank": {
-    "value_f": 66,
-    "warm_rank": 17,
-    "cool_rank": 116,
+    "value_f": 67,
+    "warm_rank": 15,
+    "cool_rank": 119,
     "years": 137,
     "first_year": 1890,
     "tied_years": [
-     1921,
-     1946,
+     1947,
      1953,
      1991,
-     2020
+     2023
     ],
     "standing": "warm",
     "notable": true,
     "since": 2023,
     "record": false,
-    "phrase": "17th warmest November 21 low (tied) of 137 since 1890, warmest since 2023"
+    "phrase": "15th warmest November 22 low (tied) of 137 since 1890, warmest since 2023"
    }
   },
   "forecast_highs": [
    {
-    "period": "Monday",
+    "period": "Today",
     "date": "2026-11-23",
     "high_f": 74,
     "would_rank": {
@@ -261,16 +268,7 @@
   "grid": "TBW/68,98",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-23T02:00:00-05:00",
-    "is_daytime": false,
-    "temp_f": 63,
-    "temp_c": 17.22,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Cloudy"
-   },
-   {
-    "name": "Monday",
+    "name": "Today",
     "start": "2026-11-23T06:00:00-05:00",
     "is_daytime": true,
     "temp_f": 74,
@@ -279,7 +277,7 @@
     "short_forecast": "Mostly Cloudy"
    },
    {
-    "name": "Monday Night",
+    "name": "Tonight",
     "start": "2026-11-23T18:00:00-05:00",
     "is_daytime": false,
     "temp_f": 63,
@@ -385,19 +383,21 @@
     "temp_c": 21.11,
     "precip_chance_pct": 21,
     "short_forecast": "Isolated Rain Showers"
+   },
+   {
+    "name": "Sunday Night",
+    "start": "2026-11-29T18:00:00-05:00",
+    "is_daytime": false,
+    "temp_f": 59,
+    "temp_c": 15.0,
+    "precip_chance_pct": 24,
+    "short_forecast": "Isolated Rain Showers"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-23T06:57:05Z",
   "hours": [
-   {
-    "start": "2026-11-23T06:00:00-05:00",
-    "temp_f": 63,
-    "temp_c": 17.22,
-    "precip_chance_pct": 0,
-    "short_forecast": "Partly Sunny"
-   },
    {
     "start": "2026-11-23T07:00:00-05:00",
     "temp_f": 63,
@@ -722,6 +722,13 @@
    },
    {
     "start": "2026-11-25T05:00:00-05:00",
+    "temp_f": 66,
+    "temp_c": 18.89,
+    "precip_chance_pct": 38,
+    "short_forecast": "Scattered Rain Showers"
+   },
+   {
+    "start": "2026-11-25T06:00:00-05:00",
     "temp_f": 66,
     "temp_c": 18.89,
     "precip_chance_pct": 38,

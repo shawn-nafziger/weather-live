@@ -11,20 +11,20 @@
   "lon": -80.3164,
   "history": "Same station as the official Miami record"
  },
- "as_of_utc": "2026-11-23T11:08:05Z",
+ "as_of_utc": "2026-11-23T12:08:10Z",
  "now": {
-  "time_utc": "2026-11-23T09:53:00Z",
-  "temp_c": 20.6,
-  "temp_f": 69.1,
-  "precision": "tenths of a degree",
-  "dewpoint_c": 19.4,
-  "humidity_pct": 92.84,
-  "wind_kmh": 7.56,
-  "description": "Clear"
+  "time_utc": "2026-11-23T11:45:00Z",
+  "temp_c": 20,
+  "temp_f": 68.0,
+  "precision": "nearest whole \u00b0C",
+  "dewpoint_c": 18,
+  "humidity_pct": 88.27,
+  "wind_kmh": 9.25,
+  "description": "Mostly Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-23",
-  "readings": 4,
+  "readings": 5,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -38,6 +38,11 @@
    "at_least_f": 72.5,
    "about_f": 73.4,
    "time_utc": "2026-11-23T05:00:00Z"
+  },
+  "dip_between_reports": {
+   "at_most_f": 68.9,
+   "about_f": 68.0,
+   "time_utc": "2026-11-23T11:45:00Z"
   }
  },
  "record": {
@@ -46,55 +51,60 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-21",
-   "is_yesterday": false,
-   "high_f": 82,
-   "low_f": 69,
+   "date": "2026-11-22",
+   "is_yesterday": true,
+   "high_f": 85,
+   "low_f": 72,
    "high_rank": {
-    "value_f": 82,
-    "warm_rank": 32,
-    "cool_rank": 90,
+    "value_f": 85,
+    "warm_rank": 3,
+    "cool_rank": 120,
     "years": 131,
     "first_year": 1895,
     "tied_years": [
-     1909,
-     1942,
-     1962,
+     1904,
+     1947,
+     1948,
      1965,
-     1970,
-     1978,
-     1996,
-     2004,
-     2007,
-     2020
+     1988,
+     1991,
+     2015,
+     2017,
+     2022
     ],
     "standing": "warm",
-    "notable": false,
-    "since": 2025,
-    "record": false,
-    "phrase": "typical for November 21"
-   },
-   "low_rank": {
-    "value_f": 69,
-    "warm_rank": 44,
-    "cool_rank": 80,
-    "years": 131,
-    "first_year": 1895,
-    "tied_years": [
-     1896,
-     1911,
-     1923,
-     1924,
-     1959,
-     1982,
-     1984,
-     2015
-    ],
-    "standing": "warm",
-    "notable": false,
+    "notable": true,
     "since": 2023,
     "record": false,
-    "phrase": "typical for November 21"
+    "phrase": "3rd warmest November 22 high (tied) of 131 since 1895, warmest since 2023"
+   },
+   "low_rank": {
+    "value_f": 72,
+    "warm_rank": 18,
+    "cool_rank": 100,
+    "years": 131,
+    "first_year": 1895,
+    "tied_years": [
+     1933,
+     1947,
+     1953,
+     1957,
+     1960,
+     1963,
+     1973,
+     1977,
+     1978,
+     1994,
+     2010,
+     2011,
+     2020,
+     2022
+    ],
+    "standing": "warm",
+    "notable": true,
+    "since": 2022,
+    "record": false,
+    "phrase": "18th warmest November 22 low (tied) of 131 since 1895, warmest since 2022"
    }
   },
   "forecast_highs": [
@@ -443,13 +453,6 @@
   "issued_utc": "2026-11-23T08:02:27Z",
   "hours": [
    {
-    "start": "2026-11-23T06:00:00-05:00",
-    "temp_f": 68,
-    "temp_c": 20.0,
-    "precip_chance_pct": 0,
-    "short_forecast": "Partly Sunny"
-   },
-   {
     "start": "2026-11-23T07:00:00-05:00",
     "temp_f": 68,
     "temp_c": 20.0,
@@ -773,6 +776,13 @@
    },
    {
     "start": "2026-11-25T05:00:00-05:00",
+    "temp_f": 73,
+    "temp_c": 22.78,
+    "precip_chance_pct": 60,
+    "short_forecast": "Showers And Thunderstorms Likely"
+   },
+   {
+    "start": "2026-11-25T06:00:00-05:00",
     "temp_f": 73,
     "temp_c": 22.78,
     "precip_chance_pct": 60,

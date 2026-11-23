@@ -11,9 +11,9 @@
   "lon": -122.3656,
   "history": "About 18 km from the official San Francisco record's site, so today and the forecast aren't ranked against it"
  },
- "as_of_utc": "2026-11-23T11:08:05Z",
+ "as_of_utc": "2026-11-23T12:08:10Z",
  "now": {
-  "time_utc": "2026-11-23T10:55:00Z",
+  "time_utc": "2026-11-23T11:45:00Z",
   "temp_c": 7,
   "temp_f": 44.6,
   "precision": "nearest whole \u00b0C",
@@ -24,25 +24,20 @@
  },
  "today_so_far": {
   "date_local": "2026-11-23",
-  "readings": 1,
+  "readings": 2,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
   "high_c": 7.8,
   "high_f": 46.0,
   "high_time_utc": "2026-11-23T08:56:00Z",
-  "low_c": 7.8,
-  "low_f": 46.0,
-  "low_time_utc": "2026-11-23T08:56:00Z",
+  "low_c": 7.2,
+  "low_f": 45.0,
+  "low_time_utc": "2026-11-23T10:56:00Z",
   "peak_between_reports": {
    "at_least_f": 47.3,
    "about_f": 48.2,
    "time_utc": "2026-11-23T08:30:00Z"
-  },
-  "dip_between_reports": {
-   "at_most_f": 45.5,
-   "about_f": 44.6,
-   "time_utc": "2026-11-23T09:00:00Z"
   }
  },
  "record": {
@@ -51,48 +46,42 @@
   "available": true,
   "rank_today": false,
   "latest_final": {
-   "date": "2026-11-21",
-   "is_yesterday": false,
-   "high_f": 58,
-   "low_f": 43,
+   "date": "2026-11-22",
+   "is_yesterday": true,
+   "high_f": 55,
+   "low_f": 49,
    "high_rank": {
-    "value_f": 58,
-    "warm_rank": 58,
-    "cool_rank": 20,
+    "value_f": 55,
+    "warm_rank": 74,
+    "cool_rank": 7,
     "years": 82,
     "first_year": 1945,
     "tied_years": [
-     1949,
-     1978,
-     1988,
-     1990,
-     1997
+     1951,
+     1982
     ],
     "standing": "cool",
-    "notable": false,
-    "since": 2011,
+    "notable": true,
+    "since": 1985,
     "record": false,
-    "phrase": "typical for November 21"
+    "phrase": "7th coolest November 22 high (tied) of 82 since 1945, coolest since 1985"
    },
    "low_rank": {
-    "value_f": 43,
-    "warm_rank": 58,
-    "cool_rank": 19,
+    "value_f": 49,
+    "warm_rank": 22,
+    "cool_rank": 58,
     "years": 82,
     "first_year": 1945,
     "tied_years": [
-     1963,
-     1965,
-     1969,
-     1973,
-     1980,
-     2003
+     1968,
+     2000,
+     2002
     ],
-    "standing": "cool",
+    "standing": "warm",
     "notable": false,
-    "since": 2022,
+    "since": 2024,
     "record": false,
-    "phrase": "typical for November 21"
+    "phrase": "typical for November 22"
    }
   },
   "note": "Today's readings come from a different station than this record, so today and the forecast aren't ranked against it."
@@ -232,13 +221,6 @@
  "hourly": {
   "issued_utc": "2026-11-23T09:31:34Z",
   "hours": [
-   {
-    "start": "2026-11-23T03:00:00-08:00",
-    "temp_f": 46,
-    "temp_c": 7.78,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "start": "2026-11-23T04:00:00-08:00",
     "temp_f": 45,
@@ -563,6 +545,13 @@
    },
    {
     "start": "2026-11-25T02:00:00-08:00",
+    "temp_f": 55,
+    "temp_c": 12.78,
+    "precip_chance_pct": 97,
+    "short_forecast": "Light Rain"
+   },
+   {
+    "start": "2026-11-25T03:00:00-08:00",
     "temp_f": 55,
     "temp_c": 12.78,
     "precip_chance_pct": 97,

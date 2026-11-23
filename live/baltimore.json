@@ -11,26 +11,26 @@
   "lon": -76.684,
   "history": "Same site as the official Baltimore record"
  },
- "as_of_utc": "2026-11-23T11:08:05Z",
+ "as_of_utc": "2026-11-23T12:08:10Z",
  "now": {
-  "time_utc": "2026-11-23T09:54:00Z",
-  "temp_c": 12.8,
-  "temp_f": 55.0,
-  "precision": "tenths of a degree",
-  "dewpoint_c": 11.7,
-  "humidity_pct": 93.03,
-  "wind_kmh": 5.4,
-  "description": "Fog/Mist"
+  "time_utc": "2026-11-23T11:45:00Z",
+  "temp_c": 13,
+  "temp_f": 55.4,
+  "precision": "nearest whole \u00b0C",
+  "dewpoint_c": 12,
+  "humidity_pct": 93.65,
+  "wind_kmh": 7.42,
+  "description": "Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-23",
-  "readings": 4,
+  "readings": 5,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 12.8,
-  "high_f": 55.0,
-  "high_time_utc": "2026-11-23T05:54:00Z",
+  "high_c": 13.3,
+  "high_f": 55.9,
+  "high_time_utc": "2026-11-23T10:54:00Z",
   "low_c": 12.2,
   "low_f": 54.0,
   "low_time_utc": "2026-11-23T06:54:00Z",
@@ -46,50 +46,51 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-21",
-   "is_yesterday": false,
-   "high_f": 64,
-   "low_f": 37,
+   "date": "2026-11-22",
+   "is_yesterday": true,
+   "high_f": 65,
+   "low_f": 53,
    "high_rank": {
-    "value_f": 64,
-    "warm_rank": 18,
-    "cool_rank": 133,
+    "value_f": 65,
+    "warm_rank": 13,
+    "cool_rank": 136,
     "years": 155,
     "first_year": 1872,
     "tied_years": [
-     1933,
+     1902,
+     1923,
+     1953,
      1960,
-     1975,
-     1994,
-     2004
+     1979,
+     1992,
+     2010
     ],
     "standing": "warm",
     "notable": true,
-    "since": 2020,
+    "since": 2010,
     "record": false,
-    "phrase": "18th warmest November 21 high (tied) of 155 since 1872, warmest since 2020"
+    "phrase": "13th warmest November 22 high (tied) of 155 since 1872, warmest since 2010"
    },
    "low_rank": {
-    "value_f": 37,
-    "warm_rank": 66,
-    "cool_rank": 87,
+    "value_f": 53,
+    "warm_rank": 8,
+    "cool_rank": 146,
     "years": 155,
     "first_year": 1872,
     "tied_years": [
-     1899,
-     1954,
-     1958
+     1940,
+     1999
     ],
     "standing": "warm",
-    "notable": false,
-    "since": 2025,
+    "notable": true,
+    "since": 1999,
     "record": false,
-    "phrase": "typical for November 21"
+    "phrase": "8th warmest November 22 low (tied) of 155 since 1872, warmest since 1999"
    }
   },
   "forecast_highs": [
    {
-    "period": "Monday",
+    "period": "Today",
     "date": "2026-11-23",
     "high_f": 68,
     "would_rank": {
@@ -266,29 +267,20 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-23T08:53:00Z",
+  "issued_utc": "2026-11-23T11:53:02Z",
   "grid": "LWX/107,85",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-23T04:00:00-05:00",
-    "is_daytime": false,
-    "temp_f": 51,
-    "temp_c": 10.56,
-    "precip_chance_pct": 4,
-    "short_forecast": "Mostly Cloudy"
-   },
-   {
-    "name": "Monday",
-    "start": "2026-11-23T06:00:00-05:00",
+    "name": "Today",
+    "start": "2026-11-23T07:00:00-05:00",
     "is_daytime": true,
     "temp_f": 68,
     "temp_c": 20.0,
     "precip_chance_pct": 8,
-    "short_forecast": "Mostly Sunny"
+    "short_forecast": "Patchy Fog then Mostly Sunny"
    },
    {
-    "name": "Monday Night",
+    "name": "Tonight",
     "start": "2026-11-23T18:00:00-05:00",
     "is_daytime": false,
     "temp_f": 35,
@@ -394,19 +386,21 @@
     "temp_c": 15.0,
     "precip_chance_pct": 4,
     "short_forecast": "Mostly Sunny"
+   },
+   {
+    "name": "Sunday Night",
+    "start": "2026-11-29T18:00:00-05:00",
+    "is_daytime": false,
+    "temp_f": 36,
+    "temp_c": 2.22,
+    "precip_chance_pct": 9,
+    "short_forecast": "Partly Cloudy"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-23T08:53:00Z",
   "hours": [
-   {
-    "start": "2026-11-23T06:00:00-05:00",
-    "temp_f": 52,
-    "temp_c": 11.11,
-    "precip_chance_pct": 5,
-    "short_forecast": "Partly Sunny"
-   },
    {
     "start": "2026-11-23T07:00:00-05:00",
     "temp_f": 51,
@@ -735,6 +729,13 @@
     "temp_c": -1.11,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear"
+   },
+   {
+    "start": "2026-11-25T06:00:00-05:00",
+    "temp_f": 30,
+    "temp_c": -1.11,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
    }
   ]
  },

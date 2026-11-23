@@ -11,20 +11,20 @@
   "lon": -112.0035,
   "history": "Same station as the official Phoenix record (Sky Harbor since 1933)"
  },
- "as_of_utc": "2026-11-23T11:08:05Z",
+ "as_of_utc": "2026-11-23T12:08:10Z",
  "now": {
-  "time_utc": "2026-11-23T10:55:00Z",
-  "temp_c": 12,
-  "temp_f": 53.6,
+  "time_utc": "2026-11-23T11:45:00Z",
+  "temp_c": 11,
+  "temp_f": 51.8,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 4,
-  "humidity_pct": 58.05,
-  "wind_kmh": 9.25,
-  "description": "Clear"
+  "humidity_pct": 62.02,
+  "wind_kmh": 7.42,
+  "description": "Mostly Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-23",
-  "readings": 3,
+  "readings": 4,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -38,6 +38,11 @@
    "at_least_f": 56.3,
    "about_f": 57.2,
    "time_utc": "2026-11-23T07:15:00Z"
+  },
+  "dip_between_reports": {
+   "at_most_f": 52.7,
+   "about_f": 51.8,
+   "time_utc": "2026-11-23T11:45:00Z"
   }
  },
  "record": {
@@ -46,45 +51,49 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-21",
-   "is_yesterday": false,
-   "high_f": 69,
-   "low_f": 50,
+   "date": "2026-11-22",
+   "is_yesterday": true,
+   "high_f": 73,
+   "low_f": 49,
    "high_rank": {
-    "value_f": 69,
-    "warm_rank": 96,
-    "cool_rank": 34,
+    "value_f": 73,
+    "warm_rank": 67,
+    "cool_rank": 61,
     "years": 132,
     "first_year": 1895,
     "tied_years": [
-     1957,
-     2004,
+     1923,
+     1960,
+     1966,
+     2000,
      2011
     ],
     "standing": "cool",
     "notable": false,
     "since": 2025,
     "record": false,
-    "phrase": "typical for November 21"
+    "phrase": "typical for November 22"
    },
    "low_rank": {
-    "value_f": 50,
-    "warm_rank": 47,
-    "cool_rank": 81,
+    "value_f": 49,
+    "warm_rank": 48,
+    "cool_rank": 78,
     "years": 132,
     "first_year": 1895,
     "tied_years": [
-     1923,
-     1949,
-     1968,
-     2009,
-     2015
+     1897,
+     1914,
+     1987,
+     1991,
+     1997,
+     1998,
+     1999
     ],
     "standing": "warm",
     "notable": false,
     "since": 2025,
     "record": false,
-    "phrase": "typical for November 21"
+    "phrase": "typical for November 22"
    }
   },
   "forecast_highs": [
@@ -262,17 +271,17 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-23T06:32:37Z",
+  "issued_utc": "2026-11-23T10:36:29Z",
   "grid": "PSR/161,57",
   "periods": [
    {
     "name": "Overnight",
-    "start": "2026-11-23T00:00:00-07:00",
+    "start": "2026-11-23T04:00:00-07:00",
     "is_daytime": false,
     "temp_f": 48,
     "temp_c": 8.89,
     "precip_chance_pct": 0,
-    "short_forecast": "Partly Cloudy"
+    "short_forecast": "Mostly Cloudy"
    },
    {
     "name": "Monday",
@@ -394,15 +403,8 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-23T06:32:37Z",
+  "issued_utc": "2026-11-23T10:36:29Z",
   "hours": [
-   {
-    "start": "2026-11-23T04:00:00-07:00",
-    "temp_f": 49,
-    "temp_c": 9.44,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "start": "2026-11-23T05:00:00-07:00",
     "temp_f": 49,
@@ -731,6 +733,13 @@
     "temp_c": 12.22,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear"
+   },
+   {
+    "start": "2026-11-25T04:00:00-07:00",
+    "temp_f": 53,
+    "temp_c": 11.67,
+    "precip_chance_pct": 0,
+    "short_forecast": "Partly Cloudy"
    }
   ]
  },

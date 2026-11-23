@@ -11,20 +11,20 @@
   "lon": -75.2268,
   "history": "Same site as the official Philadelphia record"
  },
- "as_of_utc": "2026-11-23T11:08:05Z",
+ "as_of_utc": "2026-11-23T12:08:10Z",
  "now": {
-  "time_utc": "2026-11-23T10:39:00Z",
-  "temp_c": 14.4,
-  "temp_f": 57.9,
-  "precision": "tenths of a degree",
-  "dewpoint_c": 13.3,
-  "humidity_pct": 93.11,
-  "wind_kmh": 11.16,
-  "description": "Cloudy"
+  "time_utc": "2026-11-23T11:45:00Z",
+  "temp_c": 14,
+  "temp_f": 57.2,
+  "precision": "nearest whole \u00b0C",
+  "dewpoint_c": 13,
+  "humidity_pct": 93.7,
+  "wind_kmh": 11.12,
+  "description": "Fog/Mist"
  },
  "today_so_far": {
   "date_local": "2026-11-23",
-  "readings": 6,
+  "readings": 7,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -41,47 +41,37 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-21",
-   "is_yesterday": false,
-   "high_f": 66,
-   "low_f": 42,
+   "date": "2026-11-22",
+   "is_yesterday": true,
+   "high_f": 67,
+   "low_f": 52,
    "high_rank": {
-    "value_f": 66,
-    "warm_rank": 11,
-    "cool_rank": 138,
+    "value_f": 67,
+    "warm_rank": 9,
+    "cool_rank": 145,
     "years": 153,
     "first_year": 1874,
-    "tied_years": [
-     1902,
-     1975,
-     1982,
-     1994,
-     2020
-    ],
+    "tied_years": [],
     "standing": "warm",
     "notable": true,
-    "since": 2020,
+    "since": 2007,
     "record": false,
-    "phrase": "11th warmest November 21 high (tied) of 153 since 1874, warmest since 2020"
+    "phrase": "9th warmest November 22 high of 153 since 1874, warmest since 2007"
    },
    "low_rank": {
-    "value_f": 42,
-    "warm_rank": 30,
-    "cool_rank": 119,
+    "value_f": 52,
+    "warm_rank": 9,
+    "cool_rank": 144,
     "years": 153,
     "first_year": 1874,
     "tied_years": [
-     1876,
-     1904,
-     1917,
-     1994,
-     2024
+     1934
     ],
     "standing": "warm",
     "notable": true,
-    "since": 2025,
+    "since": 1999,
     "record": false,
-    "phrase": "30th warmest November 21 low (tied) of 153 since 1874, warmest since 2025"
+    "phrase": "9th warmest November 22 low (tied) of 153 since 1874, warmest since 1999"
    }
   },
   "today_high_so_far": {
@@ -103,7 +93,7 @@
   },
   "forecast_highs": [
    {
-    "period": "Monday",
+    "period": "Today",
     "date": "2026-11-23",
     "high_f": 69,
     "would_rank": {
@@ -269,16 +259,7 @@
   "grid": "PHI/48,75",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-23T04:00:00-05:00",
-    "is_daytime": false,
-    "temp_f": 54,
-    "temp_c": 12.22,
-    "precip_chance_pct": 2,
-    "short_forecast": "Patchy Fog"
-   },
-   {
-    "name": "Monday",
+    "name": "Today",
     "start": "2026-11-23T06:00:00-05:00",
     "is_daytime": true,
     "temp_f": 69,
@@ -287,7 +268,7 @@
     "short_forecast": "Patchy Fog then Mostly Sunny"
    },
    {
-    "name": "Monday Night",
+    "name": "Tonight",
     "start": "2026-11-23T18:00:00-05:00",
     "is_daytime": false,
     "temp_f": 40,
@@ -393,19 +374,21 @@
     "temp_c": 13.89,
     "precip_chance_pct": 4,
     "short_forecast": "Mostly Sunny"
+   },
+   {
+    "name": "Sunday Night",
+    "start": "2026-11-29T18:00:00-05:00",
+    "is_daytime": false,
+    "temp_f": 40,
+    "temp_c": 4.44,
+    "precip_chance_pct": 12,
+    "short_forecast": "Partly Cloudy"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-23T09:07:43Z",
   "hours": [
-   {
-    "start": "2026-11-23T06:00:00-05:00",
-    "temp_f": 56,
-    "temp_c": 13.33,
-    "precip_chance_pct": 2,
-    "short_forecast": "Patchy Fog"
-   },
    {
     "start": "2026-11-23T07:00:00-05:00",
     "temp_f": 55,
@@ -734,6 +717,13 @@
     "temp_c": 0.0,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear"
+   },
+   {
+    "start": "2026-11-25T06:00:00-05:00",
+    "temp_f": 31,
+    "temp_c": -0.56,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
    }
   ]
  },

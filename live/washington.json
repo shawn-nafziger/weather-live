@@ -11,20 +11,20 @@
   "lon": -77.0342,
   "history": "Same site as the official Washington record"
  },
- "as_of_utc": "2026-11-23T11:08:05Z",
+ "as_of_utc": "2026-11-23T12:08:10Z",
  "now": {
-  "time_utc": "2026-11-23T09:52:00Z",
-  "temp_c": 12.2,
-  "temp_f": 54.0,
-  "precision": "tenths of a degree",
-  "dewpoint_c": 11.7,
-  "humidity_pct": 96.76,
-  "wind_kmh": 9.36,
+  "time_utc": "2026-11-23T11:45:00Z",
+  "temp_c": 13,
+  "temp_f": 55.4,
+  "precision": "nearest whole \u00b0C",
+  "dewpoint_c": 12,
+  "humidity_pct": 93.65,
+  "wind_kmh": 12.96,
   "description": "Fog/Mist"
  },
  "today_so_far": {
   "date_local": "2026-11-23",
-  "readings": 6,
+  "readings": 7,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -41,46 +41,46 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-21",
-   "is_yesterday": false,
-   "high_f": 67,
-   "low_f": 43,
+   "date": "2026-11-22",
+   "is_yesterday": true,
+   "high_f": 65,
+   "low_f": 52,
    "high_rank": {
-    "value_f": 67,
-    "warm_rank": 14,
-    "cool_rank": 140,
+    "value_f": 65,
+    "warm_rank": 22,
+    "cool_rank": 133,
     "years": 155,
     "first_year": 1872,
     "tied_years": [
-     1897,
-     1975
+     1906
     ],
     "standing": "warm",
     "notable": true,
     "since": 2007,
     "record": false,
-    "phrase": "14th warmest November 21 high (tied) of 155 since 1872, warmest since 2007"
+    "phrase": "22nd warmest November 22 high (tied) of 155 since 1872, warmest since 2007"
    },
    "low_rank": {
-    "value_f": 43,
-    "warm_rank": 42,
-    "cool_rank": 112,
+    "value_f": 52,
+    "warm_rank": 8,
+    "cool_rank": 145,
     "years": 155,
     "first_year": 1872,
     "tied_years": [
-     1954,
-     2009
+     1909,
+     1982,
+     2004
     ],
     "standing": "warm",
-    "notable": false,
-    "since": 2025,
+    "notable": true,
+    "since": 2004,
     "record": false,
-    "phrase": "typical for November 21"
+    "phrase": "8th warmest November 22 low (tied) of 155 since 1872, warmest since 2004"
    }
   },
   "forecast_highs": [
    {
-    "period": "Monday",
+    "period": "Today",
     "date": "2026-11-23",
     "high_f": 68,
     "would_rank": {
@@ -256,16 +256,7 @@
   "grid": "LWX/97,69",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-23T04:00:00-05:00",
-    "is_daytime": false,
-    "temp_f": 53,
-    "temp_c": 11.67,
-    "precip_chance_pct": 4,
-    "short_forecast": "Mostly Cloudy"
-   },
-   {
-    "name": "Monday",
+    "name": "Today",
     "start": "2026-11-23T06:00:00-05:00",
     "is_daytime": true,
     "temp_f": 68,
@@ -274,7 +265,7 @@
     "short_forecast": "Patchy Fog then Mostly Sunny"
    },
    {
-    "name": "Monday Night",
+    "name": "Tonight",
     "start": "2026-11-23T18:00:00-05:00",
     "is_daytime": false,
     "temp_f": 39,
@@ -380,19 +371,21 @@
     "temp_c": 15.56,
     "precip_chance_pct": 4,
     "short_forecast": "Mostly Sunny"
+   },
+   {
+    "name": "Sunday Night",
+    "start": "2026-11-29T18:00:00-05:00",
+    "is_daytime": false,
+    "temp_f": 41,
+    "temp_c": 5.0,
+    "precip_chance_pct": 9,
+    "short_forecast": "Partly Cloudy"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-23T08:53:00Z",
   "hours": [
-   {
-    "start": "2026-11-23T06:00:00-05:00",
-    "temp_f": 53,
-    "temp_c": 11.67,
-    "precip_chance_pct": 5,
-    "short_forecast": "Partly Sunny"
-   },
    {
     "start": "2026-11-23T07:00:00-05:00",
     "temp_f": 53,
@@ -721,6 +714,13 @@
     "temp_c": 0.56,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear"
+   },
+   {
+    "start": "2026-11-25T06:00:00-05:00",
+    "temp_f": 33,
+    "temp_c": 0.56,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
    }
   ]
  },

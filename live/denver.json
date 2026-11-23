@@ -11,20 +11,20 @@
   "lon": -104.6562,
   "history": "Same site as the official Denver record"
  },
- "as_of_utc": "2026-11-23T11:08:05Z",
+ "as_of_utc": "2026-11-23T12:08:10Z",
  "now": {
-  "time_utc": "2026-11-23T10:55:00Z",
-  "temp_c": -2,
-  "temp_f": 28.4,
+  "time_utc": "2026-11-23T11:45:00Z",
+  "temp_c": -3,
+  "temp_f": 26.6,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": -6,
-  "humidity_pct": 74.09,
-  "wind_kmh": 0,
+  "humidity_pct": 79.78,
+  "wind_kmh": 9.25,
   "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-23",
-  "readings": 3,
+  "readings": 4,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -41,42 +41,44 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-21",
-   "is_yesterday": false,
-   "high_f": 46,
-   "low_f": 23,
+   "date": "2026-11-22",
+   "is_yesterday": true,
+   "high_f": 45,
+   "low_f": 14,
    "high_rank": {
-    "value_f": 46,
-    "warm_rank": 98,
-    "cool_rank": 54,
+    "value_f": 45,
+    "warm_rank": 104,
+    "cool_rank": 48,
     "years": 155,
     "first_year": 1872,
     "tied_years": [
-     1920,
-     1941,
-     1996,
-     2025
+     1881,
+     1902,
+     1971,
+     1997
     ],
     "standing": "cool",
     "notable": false,
-    "since": 2025,
+    "since": 2019,
     "record": false,
-    "phrase": "typical for November 21"
+    "phrase": "typical for November 22"
    },
    "low_rank": {
-    "value_f": 23,
-    "warm_rank": 102,
-    "cool_rank": 53,
+    "value_f": 14,
+    "warm_rank": 132,
+    "cool_rank": 21,
     "years": 155,
     "first_year": 1872,
     "tied_years": [
-     1983
+     1876,
+     1893,
+     1970
     ],
     "standing": "cool",
-    "notable": false,
-    "since": 2022,
+    "notable": true,
+    "since": 2007,
     "record": false,
-    "phrase": "typical for November 21"
+    "phrase": "21st coldest November 22 low (tied) of 155 since 1872, coldest since 2007"
    }
   },
   "forecast_highs": [
@@ -380,13 +382,6 @@
  "hourly": {
   "issued_utc": "2026-11-23T06:46:15Z",
   "hours": [
-   {
-    "start": "2026-11-23T04:00:00-07:00",
-    "temp_f": 25,
-    "temp_c": -3.89,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "start": "2026-11-23T05:00:00-07:00",
     "temp_f": 28,
@@ -713,6 +708,13 @@
     "start": "2026-11-25T03:00:00-07:00",
     "temp_f": 30,
     "temp_c": -1.11,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Clear"
+   },
+   {
+    "start": "2026-11-25T04:00:00-07:00",
+    "temp_f": 29,
+    "temp_c": -1.67,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear"
    }

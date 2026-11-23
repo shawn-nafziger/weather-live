@@ -11,7 +11,7 @@
   "lon": -90.3736,
   "history": "Same site as the official St. Louis record"
  },
- "as_of_utc": "2026-11-23T11:08:05Z",
+ "as_of_utc": "2026-11-23T12:08:10Z",
  "now": {
   "time_utc": "2026-11-23T10:55:00Z",
   "temp_c": 1,
@@ -24,7 +24,7 @@
  },
  "today_so_far": {
   "date_local": "2026-11-23",
-  "readings": 3,
+  "readings": 4,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -46,50 +46,50 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-21",
-   "is_yesterday": false,
-   "high_f": 73,
-   "low_f": 43,
+   "date": "2026-11-22",
+   "is_yesterday": true,
+   "high_f": 63,
+   "low_f": 38,
    "high_rank": {
-    "value_f": 73,
-    "warm_rank": 3,
-    "cool_rank": 151,
-    "years": 153,
-    "first_year": 1874,
-    "tied_years": [],
-    "standing": "warm",
-    "notable": true,
-    "since": 1990,
-    "record": false,
-    "phrase": "3rd warmest November 21 high of 153 since 1874, warmest since 1990"
-   },
-   "low_rank": {
-    "value_f": 43,
-    "warm_rank": 30,
-    "cool_rank": 115,
+    "value_f": 63,
+    "warm_rank": 22,
+    "cool_rank": 129,
     "years": 153,
     "first_year": 1874,
     "tied_years": [
-     1877,
-     1907,
-     1920,
-     1942,
-     1947,
-     1965,
-     2009,
-     2019,
-     2020
+     1951,
+     2001,
+     2018
     ],
     "standing": "warm",
     "notable": true,
+    "since": 2018,
+    "record": false,
+    "phrase": "22nd warmest November 22 high (tied) of 153 since 1874, warmest since 2018"
+   },
+   "low_rank": {
+    "value_f": 38,
+    "warm_rank": 50,
+    "cool_rank": 98,
+    "years": 152,
+    "first_year": 1874,
+    "tied_years": [
+     1882,
+     1889,
+     1890,
+     1912,
+     1920
+    ],
+    "standing": "warm",
+    "notable": false,
     "since": 2025,
     "record": false,
-    "phrase": "30th warmest November 21 low (tied) of 153 since 1874, warmest since 2025"
+    "phrase": "typical for November 22"
    }
   },
   "forecast_highs": [
    {
-    "period": "Monday",
+    "period": "Today",
     "date": "2026-11-23",
     "high_f": 46,
     "would_rank": {
@@ -258,20 +258,11 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-23T08:46:18Z",
+  "issued_utc": "2026-11-23T11:21:13Z",
   "grid": "LSX/89,80",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-23T03:00:00-06:00",
-    "is_daytime": false,
-    "temp_f": 32,
-    "temp_c": 0.0,
-    "precip_chance_pct": 0,
-    "short_forecast": "Clear"
-   },
-   {
-    "name": "Monday",
+    "name": "Today",
     "start": "2026-11-23T06:00:00-06:00",
     "is_daytime": true,
     "temp_f": 46,
@@ -280,7 +271,7 @@
     "short_forecast": "Sunny"
    },
    {
-    "name": "Monday Night",
+    "name": "Tonight",
     "start": "2026-11-23T18:00:00-06:00",
     "is_daytime": false,
     "temp_f": 26,
@@ -386,19 +377,21 @@
     "temp_c": 13.33,
     "precip_chance_pct": 4,
     "short_forecast": "Mostly Sunny"
+   },
+   {
+    "name": "Sunday Night",
+    "start": "2026-11-29T18:00:00-06:00",
+    "is_daytime": false,
+    "temp_f": 41,
+    "temp_c": 5.0,
+    "precip_chance_pct": 5,
+    "short_forecast": "Partly Cloudy"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-23T08:46:18Z",
   "hours": [
-   {
-    "start": "2026-11-23T05:00:00-06:00",
-    "temp_f": 34,
-    "temp_c": 1.11,
-    "precip_chance_pct": 0,
-    "short_forecast": "Clear"
-   },
    {
     "start": "2026-11-23T06:00:00-06:00",
     "temp_f": 33,
@@ -725,6 +718,13 @@
     "start": "2026-11-25T04:00:00-06:00",
     "temp_f": 30,
     "temp_c": -1.11,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "start": "2026-11-25T05:00:00-06:00",
+    "temp_f": 29,
+    "temp_c": -1.67,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Cloudy"
    }

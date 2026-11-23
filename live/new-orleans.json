@@ -11,7 +11,7 @@
   "lon": -90.2508,
   "history": "Same site as the official New Orleans record"
  },
- "as_of_utc": "2026-11-23T11:08:05Z",
+ "as_of_utc": "2026-11-23T12:08:10Z",
  "now": {
   "time_utc": "2026-11-23T10:55:00Z",
   "temp_c": 17,
@@ -24,7 +24,7 @@
  },
  "today_so_far": {
   "date_local": "2026-11-23",
-  "readings": 5,
+  "readings": 6,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -41,47 +41,50 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-21",
-   "is_yesterday": false,
-   "high_f": 74,
+   "date": "2026-11-22",
+   "is_yesterday": true,
+   "high_f": 78,
    "low_f": 59,
    "high_rank": {
-    "value_f": 74,
-    "warm_rank": 28,
-    "cool_rank": 53,
+    "value_f": 78,
+    "warm_rank": 16,
+    "cool_rank": 60,
     "years": 81,
     "first_year": 1946,
     "tied_years": [
-     1948
-    ],
-    "standing": "warm",
-    "notable": false,
-    "since": 2025,
-    "record": false,
-    "phrase": "typical for November 21"
-   },
-   "low_rank": {
-    "value_f": 59,
-    "warm_rank": 15,
-    "cool_rank": 63,
-    "years": 81,
-    "first_year": 1946,
-    "tied_years": [
-     1992,
-     2009,
-     2020,
-     2021
+     1960,
+     1963,
+     1970,
+     1986,
+     2004,
+     2020
     ],
     "standing": "warm",
     "notable": true,
     "since": 2025,
     "record": false,
-    "phrase": "15th warmest November 21 low (tied) of 81 since 1946, warmest since 2025"
+    "phrase": "16th warmest November 22 high (tied) of 81 since 1946, warmest since 2025"
+   },
+   "low_rank": {
+    "value_f": 59,
+    "warm_rank": 14,
+    "cool_rank": 66,
+    "years": 81,
+    "first_year": 1946,
+    "tied_years": [
+     1947,
+     1973
+    ],
+    "standing": "warm",
+    "notable": true,
+    "since": 2025,
+    "record": false,
+    "phrase": "14th warmest November 22 low (tied) of 81 since 1946, warmest since 2025"
    }
   },
   "forecast_highs": [
    {
-    "period": "Monday",
+    "period": "Today",
     "date": "2026-11-23",
     "high_f": 72,
     "would_rank": {
@@ -242,16 +245,7 @@
   "grid": "LIX/61,90",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-23T04:00:00-06:00",
-    "is_daytime": false,
-    "temp_f": 63,
-    "temp_c": 17.22,
-    "precip_chance_pct": 6,
-    "short_forecast": "Areas Of Fog"
-   },
-   {
-    "name": "Monday",
+    "name": "Today",
     "start": "2026-11-23T06:00:00-06:00",
     "is_daytime": true,
     "temp_f": 72,
@@ -260,7 +254,7 @@
     "short_forecast": "Patchy Fog then Slight Chance Showers And Thunderstorms"
    },
    {
-    "name": "Monday Night",
+    "name": "Tonight",
     "start": "2026-11-23T18:00:00-06:00",
     "is_daytime": false,
     "temp_f": 57,
@@ -366,19 +360,21 @@
     "temp_c": 21.67,
     "precip_chance_pct": 9,
     "short_forecast": "Mostly Sunny"
+   },
+   {
+    "name": "Sunday Night",
+    "start": "2026-11-29T18:00:00-06:00",
+    "is_daytime": false,
+    "temp_f": 61,
+    "temp_c": 16.11,
+    "precip_chance_pct": 5,
+    "short_forecast": "Partly Cloudy"
    }
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-23T09:46:54Z",
+  "issued_utc": "2026-11-23T10:42:10Z",
   "hours": [
-   {
-    "start": "2026-11-23T05:00:00-06:00",
-    "temp_f": 64,
-    "temp_c": 17.78,
-    "precip_chance_pct": 3,
-    "short_forecast": "Areas Of Fog"
-   },
    {
     "start": "2026-11-23T06:00:00-06:00",
     "temp_f": 63,
@@ -703,6 +699,13 @@
    },
    {
     "start": "2026-11-25T04:00:00-06:00",
+    "temp_f": 53,
+    "temp_c": 11.67,
+    "precip_chance_pct": 68,
+    "short_forecast": "Showers And Thunderstorms Likely"
+   },
+   {
+    "start": "2026-11-25T05:00:00-06:00",
     "temp_f": 53,
     "temp_c": 11.67,
     "precip_chance_pct": 68,

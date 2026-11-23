@@ -11,20 +11,20 @@
   "lon": -110.9564,
   "history": "Same site as the official Tucson record"
  },
- "as_of_utc": "2026-11-23T11:08:05Z",
+ "as_of_utc": "2026-11-23T12:08:10Z",
  "now": {
-  "time_utc": "2026-11-23T10:55:00Z",
-  "temp_c": 8,
-  "temp_f": 46.4,
+  "time_utc": "2026-11-23T11:45:00Z",
+  "temp_c": 6,
+  "temp_f": 42.8,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 3,
-  "humidity_pct": 70.7,
+  "dewpoint_c": 2,
+  "humidity_pct": 75.52,
   "wind_kmh": 5.54,
   "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-23",
-  "readings": 3,
+  "readings": 4,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -38,6 +38,11 @@
    "at_least_f": 50.9,
    "about_f": 51.8,
    "time_utc": "2026-11-23T07:20:00Z"
+  },
+  "dip_between_reports": {
+   "at_most_f": 43.7,
+   "about_f": 42.8,
+   "time_utc": "2026-11-23T11:45:00Z"
   }
  },
  "record": {
@@ -46,44 +51,50 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-21",
-   "is_yesterday": false,
-   "high_f": 63,
-   "low_f": 44,
+   "date": "2026-11-22",
+   "is_yesterday": true,
+   "high_f": 73,
+   "low_f": 43,
    "high_rank": {
-    "value_f": 63,
-    "warm_rank": 108,
-    "cool_rank": 23,
+    "value_f": 73,
+    "warm_rank": 62,
+    "cool_rank": 65,
     "years": 132,
     "first_year": 1894,
     "tied_years": [
-     1941,
-     1961
-    ],
-    "standing": "cool",
-    "notable": true,
-    "since": 2025,
-    "record": false,
-    "phrase": "23rd coolest November 21 high (tied) of 132 since 1894, coolest since 2025"
-   },
-   "low_rank": {
-    "value_f": 44,
-    "warm_rank": 53,
-    "cool_rank": 75,
-    "years": 132,
-    "first_year": 1894,
-    "tied_years": [
-     1950,
-     1970,
+     1895,
+     1922,
      1982,
-     1999,
-     2018
+     1986,
+     1988,
+     1991
     ],
     "standing": "warm",
     "notable": false,
-    "since": 2023,
+    "since": 2024,
     "record": false,
-    "phrase": "typical for November 21"
+    "phrase": "typical for November 22"
+   },
+   "low_rank": {
+    "value_f": 43,
+    "warm_rank": 63,
+    "cool_rank": 63,
+    "years": 132,
+    "first_year": 1894,
+    "tied_years": [
+     1913,
+     1914,
+     1960,
+     1980,
+     1997,
+     2004,
+     2010
+    ],
+    "standing": "warm",
+    "notable": false,
+    "since": 2025,
+    "record": false,
+    "phrase": "typical for November 22"
    }
   },
   "forecast_highs": [
@@ -386,13 +397,6 @@
  "hourly": {
   "issued_utc": "2026-11-23T06:32:44Z",
   "hours": [
-   {
-    "start": "2026-11-23T04:00:00-07:00",
-    "temp_f": 43,
-    "temp_c": 6.11,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Clear"
-   },
    {
     "start": "2026-11-23T05:00:00-07:00",
     "temp_f": 42,
@@ -719,6 +723,13 @@
     "start": "2026-11-25T03:00:00-07:00",
     "temp_f": 47,
     "temp_c": 8.33,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Clear"
+   },
+   {
+    "start": "2026-11-25T04:00:00-07:00",
+    "temp_f": 46,
+    "temp_c": 7.78,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear"
    }
