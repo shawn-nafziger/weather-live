@@ -11,20 +11,20 @@
   "lon": -77.0342,
   "history": "Same site as the official Washington record"
  },
- "as_of_utc": "2026-11-22T23:07:48Z",
+ "as_of_utc": "2026-11-23T00:08:02Z",
  "now": {
-  "time_utc": "2026-11-22T22:20:00Z",
-  "temp_c": 17,
-  "temp_f": 62.6,
+  "time_utc": "2026-11-22T23:30:00Z",
+  "temp_c": 16,
+  "temp_f": 60.8,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 14,
-  "humidity_pct": 82.51,
-  "wind_kmh": 9.25,
-  "description": "Light Rain"
+  "humidity_pct": 87.93,
+  "wind_kmh": 12.96,
+  "description": "Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-22",
-  "readings": 15,
+  "readings": 16,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -102,26 +102,6 @@
    "phrase": "already the 23rd warmest November 22 high (tied) of 155 since 1872, warmest since 2007"
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-22",
-    "high_f": 65,
-    "would_rank": {
-     "value_f": 65,
-     "warm_rank": 22,
-     "cool_rank": 133,
-     "years": 155,
-     "first_year": 1872,
-     "tied_years": [
-      1906
-     ],
-     "standing": "warm",
-     "notable": true,
-     "since": 2007,
-     "record": false,
-     "phrase": "22nd warmest November 22 high (tied) of 155 since 1872, warmest since 2007"
-    }
-   },
    {
     "period": "Monday",
     "date": "2026-11-23",
@@ -263,6 +243,29 @@
      "record": false,
      "phrase": "typical for November 28"
     }
+   },
+   {
+    "period": "Sunday",
+    "date": "2026-11-29",
+    "high_f": 59,
+    "would_rank": {
+     "value_f": 59,
+     "warm_rank": 29,
+     "cool_rank": 123,
+     "years": 155,
+     "first_year": 1872,
+     "tied_years": [
+      1909,
+      1918,
+      1986,
+      2015
+     ],
+     "standing": "warm",
+     "notable": true,
+     "since": 2017,
+     "record": false,
+     "phrase": "29th warmest November 29 high (tied) of 155 since 1872, warmest since 2017"
+    }
    }
   ]
  },
@@ -270,15 +273,6 @@
   "issued_utc": "2026-11-22T20:52:58Z",
   "grid": "LWX/97,69",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-22T16:00:00-05:00",
-    "is_daytime": true,
-    "temp_f": 65,
-    "temp_c": 18.33,
-    "precip_chance_pct": 56,
-    "short_forecast": "Light Rain Likely"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-22T18:00:00-05:00",
@@ -395,19 +389,21 @@
     "temp_c": 3.89,
     "precip_chance_pct": 15,
     "short_forecast": "Partly Cloudy then Slight Chance Light Rain"
+   },
+   {
+    "name": "Sunday",
+    "start": "2026-11-29T06:00:00-05:00",
+    "is_daytime": true,
+    "temp_f": 59,
+    "temp_c": 15.0,
+    "precip_chance_pct": 15,
+    "short_forecast": "Slight Chance Light Rain"
    }
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-22T20:52:58Z",
+  "issued_utc": "2026-11-22T23:53:00Z",
   "hours": [
-   {
-    "start": "2026-11-22T18:00:00-05:00",
-    "temp_f": 63,
-    "temp_c": 17.22,
-    "precip_chance_pct": 55,
-    "short_forecast": "Light Rain Likely"
-   },
    {
     "start": "2026-11-22T19:00:00-05:00",
     "temp_f": 61,
@@ -736,6 +732,13 @@
     "temp_c": 9.44,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
+   },
+   {
+    "start": "2026-11-24T18:00:00-05:00",
+    "temp_f": 47,
+    "temp_c": 8.33,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Clear"
    }
   ]
  },

@@ -11,20 +11,20 @@
   "lon": -71.4277,
   "history": "Same site as the official Providence record"
  },
- "as_of_utc": "2026-11-22T23:07:48Z",
+ "as_of_utc": "2026-11-23T00:08:02Z",
  "now": {
-  "time_utc": "2026-11-22T22:20:00Z",
+  "time_utc": "2026-11-22T23:30:00Z",
   "temp_c": 14,
   "temp_f": 57.2,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 12,
-  "humidity_pct": 87.75,
-  "wind_kmh": 5.54,
+  "dewpoint_c": 13,
+  "humidity_pct": 93.7,
+  "wind_kmh": 7.42,
   "description": "Light Rain"
  },
  "today_so_far": {
   "date_local": "2026-11-22",
-  "readings": 23,
+  "readings": 24,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -102,26 +102,6 @@
    "phrase": "already the 14th warmest November 22 high (tied) of 123 since 1904, warmest since 2007"
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-22",
-    "high_f": 61,
-    "would_rank": {
-     "value_f": 61,
-     "warm_rank": 14,
-     "cool_rank": 109,
-     "years": 123,
-     "first_year": 1904,
-     "tied_years": [
-      1956
-     ],
-     "standing": "warm",
-     "notable": true,
-     "since": 2007,
-     "record": false,
-     "phrase": "14th warmest November 22 high (tied) of 123 since 1904, warmest since 2007"
-    }
-   },
    {
     "period": "Monday",
     "date": "2026-11-23",
@@ -260,6 +240,26 @@
      "record": false,
      "phrase": "typical for November 28"
     }
+   },
+   {
+    "period": "Sunday",
+    "date": "2026-11-29",
+    "high_f": 54,
+    "would_rank": {
+     "value_f": 54,
+     "warm_rank": 34,
+     "cool_rank": 89,
+     "years": 123,
+     "first_year": 1904,
+     "tied_years": [
+      1915
+     ],
+     "standing": "warm",
+     "notable": false,
+     "since": 2020,
+     "record": false,
+     "phrase": "typical for November 29"
+    }
    }
   ]
  },
@@ -267,15 +267,6 @@
   "issued_utc": "2026-11-22T21:15:05Z",
   "grid": "BOX/64,70",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-22T17:00:00-05:00",
-    "is_daytime": true,
-    "temp_f": 61,
-    "temp_c": 16.11,
-    "precip_chance_pct": 100,
-    "short_forecast": "Light Rain"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-22T18:00:00-05:00",
@@ -392,19 +383,21 @@
     "temp_c": 2.22,
     "precip_chance_pct": 7,
     "short_forecast": "Partly Cloudy"
+   },
+   {
+    "name": "Sunday",
+    "start": "2026-11-29T06:00:00-05:00",
+    "is_daytime": true,
+    "temp_f": 54,
+    "temp_c": 12.22,
+    "precip_chance_pct": 19,
+    "short_forecast": "Slight Chance Light Rain"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-22T21:15:05Z",
   "hours": [
-   {
-    "start": "2026-11-22T18:00:00-05:00",
-    "temp_f": 56,
-    "temp_c": 13.33,
-    "precip_chance_pct": 73,
-    "short_forecast": "Heavy Rain"
-   },
    {
     "start": "2026-11-22T19:00:00-05:00",
     "temp_f": 55,
@@ -733,6 +726,13 @@
     "temp_c": 5.56,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
+   },
+   {
+    "start": "2026-11-24T18:00:00-05:00",
+    "temp_f": 39,
+    "temp_c": 3.89,
+    "precip_chance_pct": 0,
+    "short_forecast": "Clear"
    }
   ]
  },

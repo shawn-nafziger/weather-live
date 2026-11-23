@@ -11,20 +11,20 @@
   "lon": -94.7306,
   "history": "Same site as the official Kansas City record"
  },
- "as_of_utc": "2026-11-22T23:07:48Z",
+ "as_of_utc": "2026-11-23T00:08:02Z",
  "now": {
-  "time_utc": "2026-11-22T21:53:00Z",
-  "temp_c": 7.8,
-  "temp_f": 46.0,
+  "time_utc": "2026-11-22T22:53:00Z",
+  "temp_c": 6.1,
+  "temp_f": 43.0,
   "precision": "tenths of a degree",
-  "dewpoint_c": -1.7,
-  "humidity_pct": 51.06,
-  "wind_kmh": 25.92,
+  "dewpoint_c": -2.8,
+  "humidity_pct": 52.89,
+  "wind_kmh": 18.36,
   "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-22",
-  "readings": 13,
+  "readings": 14,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -77,30 +77,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-22",
-    "high_f": 49,
-    "would_rank": {
-     "value_f": 49,
-     "warm_rank": 72,
-     "cool_rank": 61,
-     "years": 137,
-     "first_year": 1888,
-     "tied_years": [
-      1911,
-      1944,
-      2002,
-      2004,
-      2008
-     ],
-     "standing": "cool",
-     "notable": false,
-     "since": 2024,
-     "record": false,
-     "phrase": "typical for November 22"
-    }
-   },
    {
     "period": "Monday",
     "date": "2026-11-23",
@@ -239,22 +215,34 @@
      "record": false,
      "phrase": "typical for November 28"
     }
+   },
+   {
+    "period": "Sunday",
+    "date": "2026-11-29",
+    "high_f": 57,
+    "would_rank": {
+     "value_f": 57,
+     "warm_rank": 28,
+     "cool_rank": 110,
+     "years": 139,
+     "first_year": 1888,
+     "tied_years": [
+      1908,
+      2003
+     ],
+     "standing": "warm",
+     "notable": true,
+     "since": 2022,
+     "record": false,
+     "phrase": "28th warmest November 29 high (tied) of 139 since 1888, warmest since 2022"
+    }
    }
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-22T18:26:58Z",
+  "issued_utc": "2026-11-22T23:16:38Z",
   "grid": "EAX/38,60",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-22T13:00:00-06:00",
-    "is_daytime": true,
-    "temp_f": 49,
-    "temp_c": 9.44,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-22T18:00:00-06:00",
@@ -371,19 +359,21 @@
     "temp_c": -0.56,
     "precip_chance_pct": 3,
     "short_forecast": "Mostly Clear"
+   },
+   {
+    "name": "Sunday",
+    "start": "2026-11-29T06:00:00-06:00",
+    "is_daytime": true,
+    "temp_f": 57,
+    "temp_c": 13.89,
+    "precip_chance_pct": 5,
+    "short_forecast": "Mostly Sunny"
    }
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-22T18:26:58Z",
+  "issued_utc": "2026-11-22T23:16:38Z",
   "hours": [
-   {
-    "start": "2026-11-22T17:00:00-06:00",
-    "temp_f": 45,
-    "temp_c": 7.22,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "start": "2026-11-22T18:00:00-06:00",
     "temp_f": 42,
@@ -710,6 +700,13 @@
     "start": "2026-11-24T16:00:00-06:00",
     "temp_f": 38,
     "temp_c": 3.33,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "start": "2026-11-24T17:00:00-06:00",
+    "temp_f": 37,
+    "temp_c": 2.78,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Cloudy"
    }
