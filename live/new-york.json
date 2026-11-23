@@ -11,26 +11,26 @@
   "lon": -73.9667,
   "history": "Same site as the official New York record"
  },
- "as_of_utc": "2026-11-23T16:08:02Z",
+ "as_of_utc": "2026-11-23T17:07:55Z",
  "now": {
-  "time_utc": "2026-11-23T10:51:00Z",
-  "temp_c": 15,
-  "temp_f": 59.0,
+  "time_utc": "2026-11-23T15:51:00Z",
+  "temp_c": 18.3,
+  "temp_f": 64.9,
   "precision": "tenths of a degree",
-  "dewpoint_c": 12.2,
-  "humidity_pct": 83.35,
-  "wind_kmh": 5.4,
-  "description": "Mostly Cloudy"
+  "dewpoint_c": 11.7,
+  "humidity_pct": 65.4,
+  "wind_kmh": null,
+  "description": ""
  },
  "today_so_far": {
   "date_local": "2026-11-23",
-  "readings": 7,
+  "readings": 8,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 15,
-  "high_f": 59.0,
-  "high_time_utc": "2026-11-23T05:51:00Z",
+  "high_c": 18.3,
+  "high_f": 64.9,
+  "high_time_utc": "2026-11-23T15:51:00Z",
   "low_c": 15,
   "low_f": 59.0,
   "low_time_utc": "2026-11-23T05:51:00Z"
@@ -79,19 +79,20 @@
    }
   },
   "today_high_so_far": {
-   "value_f": 59,
-   "warm_rank": 24,
-   "cool_rank": 134,
+   "value_f": 65,
+   "warm_rank": 7,
+   "cool_rank": 150,
    "years": 158,
    "first_year": 1869,
    "tied_years": [
-    1993
+    1963,
+    1982
    ],
    "standing": "warm",
    "notable": true,
-   "since": 2020,
+   "since": 1992,
    "record": false,
-   "phrase": "already the 24th warmest November 23 high (tied) of 158 since 1869, warmest since 2020"
+   "phrase": "already the 7th warmest November 23 high (tied) of 158 since 1869, warmest since 1992"
   },
   "forecast_highs": [
    {
@@ -397,13 +398,6 @@
  "hourly": {
   "issued_utc": "2026-11-23T06:19:46Z",
   "hours": [
-   {
-    "start": "2026-11-23T11:00:00-05:00",
-    "temp_f": 64,
-    "temp_c": 17.78,
-    "precip_chance_pct": 2,
-    "short_forecast": "Sunny"
-   },
    {
     "start": "2026-11-23T12:00:00-05:00",
     "temp_f": 66,
@@ -730,6 +724,13 @@
     "start": "2026-11-25T10:00:00-05:00",
     "temp_f": 42,
     "temp_c": 5.56,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
+   },
+   {
+    "start": "2026-11-25T11:00:00-05:00",
+    "temp_f": 44,
+    "temp_c": 6.67,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
    }
