@@ -11,16 +11,16 @@
   "lon": -111.965,
   "history": "Same site as the official Salt Lake City record"
  },
- "as_of_utc": "2026-11-23T12:08:10Z",
+ "as_of_utc": "2026-11-23T13:08:01Z",
  "now": {
-  "time_utc": "2026-11-23T11:45:00Z",
+  "time_utc": "2026-11-23T12:40:00Z",
   "temp_c": 2,
   "temp_f": 35.6,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": -1,
   "humidity_pct": 80.52,
   "wind_kmh": 0,
-  "description": "Partly Cloudy"
+  "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-23",
@@ -94,7 +94,7 @@
   },
   "forecast_highs": [
    {
-    "period": "Monday",
+    "period": "Today",
     "date": "2026-11-23",
     "high_f": 47,
     "would_rank": {
@@ -276,16 +276,7 @@
   "grid": "SLC/98,176",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-23T00:00:00-07:00",
-    "is_daytime": false,
-    "temp_f": 32,
-    "temp_c": 0.0,
-    "precip_chance_pct": 2,
-    "short_forecast": "Cloudy"
-   },
-   {
-    "name": "Monday",
+    "name": "Today",
     "start": "2026-11-23T06:00:00-07:00",
     "is_daytime": true,
     "temp_f": 47,
@@ -294,7 +285,7 @@
     "short_forecast": "Mostly Sunny"
    },
    {
-    "name": "Monday Night",
+    "name": "Tonight",
     "start": "2026-11-23T18:00:00-07:00",
     "is_daytime": false,
     "temp_f": 28,
@@ -400,19 +391,21 @@
     "temp_c": 11.11,
     "precip_chance_pct": 44,
     "short_forecast": "Chance Light Rain"
+   },
+   {
+    "name": "Sunday Night",
+    "start": "2026-11-29T18:00:00-07:00",
+    "is_daytime": false,
+    "temp_f": 37,
+    "temp_c": 2.78,
+    "precip_chance_pct": 63,
+    "short_forecast": "Light Rain Likely"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-23T06:31:24Z",
   "hours": [
-   {
-    "start": "2026-11-23T05:00:00-07:00",
-    "temp_f": 34,
-    "temp_c": 1.11,
-    "precip_chance_pct": 1,
-    "short_forecast": "Cloudy"
-   },
    {
     "start": "2026-11-23T06:00:00-07:00",
     "temp_f": 33,
@@ -737,6 +730,13 @@
    },
    {
     "start": "2026-11-25T04:00:00-07:00",
+    "temp_f": 32,
+    "temp_c": 0.0,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "start": "2026-11-25T05:00:00-07:00",
     "temp_f": 32,
     "temp_c": 0.0,
     "precip_chance_pct": 0,

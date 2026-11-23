@@ -11,20 +11,20 @@
   "lon": -122.6092,
   "history": "Same site as the official Portland record"
  },
- "as_of_utc": "2026-11-23T12:08:10Z",
+ "as_of_utc": "2026-11-23T13:08:01Z",
  "now": {
-  "time_utc": "2026-11-23T11:45:00Z",
+  "time_utc": "2026-11-23T12:40:00Z",
   "temp_c": 7,
   "temp_f": 44.6,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 1,
   "humidity_pct": 65.63,
-  "wind_kmh": 25.92,
-  "description": "Mostly Clear"
+  "wind_kmh": null,
+  "description": "Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-23",
-  "readings": 2,
+  "readings": 3,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -254,12 +254,12 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-23T11:41:18Z",
+  "issued_utc": "2026-11-23T12:41:10Z",
   "grid": "PQR/116,107",
   "periods": [
    {
     "name": "Overnight",
-    "start": "2026-11-23T04:00:00-08:00",
+    "start": "2026-11-23T05:00:00-08:00",
     "is_daytime": false,
     "temp_f": 41,
     "temp_c": 5.0,
@@ -386,15 +386,8 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-23T10:41:40Z",
+  "issued_utc": "2026-11-23T11:41:18Z",
   "hours": [
-   {
-    "start": "2026-11-23T04:00:00-08:00",
-    "temp_f": 42,
-    "temp_c": 5.56,
-    "precip_chance_pct": 6,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "start": "2026-11-23T05:00:00-08:00",
     "temp_f": 42,
@@ -722,6 +715,13 @@
     "temp_f": 47,
     "temp_c": 8.33,
     "precip_chance_pct": 61,
+    "short_forecast": "Light Rain Likely"
+   },
+   {
+    "start": "2026-11-25T04:00:00-08:00",
+    "temp_f": 47,
+    "temp_c": 8.33,
+    "precip_chance_pct": 71,
     "short_forecast": "Light Rain Likely"
    }
   ]
