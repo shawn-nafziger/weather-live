@@ -11,34 +11,29 @@
   "lon": -87.9044,
   "history": "Same station as the official Chicago record (ThreadEx, O'Hare since 1980)"
  },
- "as_of_utc": "2026-11-23T08:07:16Z",
+ "as_of_utc": "2026-11-23T09:08:01Z",
  "now": {
-  "time_utc": "2026-11-23T07:45:00Z",
+  "time_utc": "2026-11-23T08:50:00Z",
   "temp_c": 1,
   "temp_f": 33.8,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": -4,
   "humidity_pct": 69.27,
-  "wind_kmh": 11.12,
+  "wind_kmh": 14.83,
   "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-23",
-  "readings": 1,
+  "readings": 2,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
   "high_c": 1.7,
   "high_f": 35.1,
   "high_time_utc": "2026-11-23T06:51:00Z",
-  "low_c": 1.7,
-  "low_f": 35.1,
-  "low_time_utc": "2026-11-23T06:51:00Z",
-  "dip_between_reports": {
-   "at_most_f": 34.7,
-   "about_f": 33.8,
-   "time_utc": "2026-11-23T07:25:00Z"
-  }
+  "low_c": 1.1,
+  "low_f": 34.0,
+  "low_time_utc": "2026-11-23T07:51:00Z"
  },
  "record": {
   "series": "Chicago area (ThreadEx, O'Hare since 1980)",
@@ -254,12 +249,12 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-23T06:21:04Z",
+  "issued_utc": "2026-11-23T07:51:04Z",
   "grid": "LOT/66,77",
   "periods": [
    {
     "name": "Overnight",
-    "start": "2026-11-23T01:00:00-06:00",
+    "start": "2026-11-23T02:00:00-06:00",
     "is_daytime": false,
     "temp_f": 31,
     "temp_c": -0.56,
@@ -388,13 +383,6 @@
  "hourly": {
   "issued_utc": "2026-11-23T07:51:04Z",
   "hours": [
-   {
-    "start": "2026-11-23T02:00:00-06:00",
-    "temp_f": 34,
-    "temp_c": 1.11,
-    "precip_chance_pct": 0,
-    "short_forecast": "Clear"
-   },
    {
     "start": "2026-11-23T03:00:00-06:00",
     "temp_f": 33,
@@ -721,6 +709,13 @@
     "start": "2026-11-25T01:00:00-06:00",
     "temp_f": 35,
     "temp_c": 1.67,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "start": "2026-11-25T02:00:00-06:00",
+    "temp_f": 34,
+    "temp_c": 1.11,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Cloudy"
    }
