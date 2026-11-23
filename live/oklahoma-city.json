@@ -11,15 +11,15 @@
   "lon": -97.6003,
   "history": "Same site as the official Oklahoma City record"
  },
- "as_of_utc": "2026-11-23T00:08:02Z",
+ "as_of_utc": "2026-11-23T00:27:32Z",
  "now": {
-  "time_utc": "2026-11-22T23:30:00Z",
-  "temp_c": 9,
-  "temp_f": 48.2,
+  "time_utc": "2026-11-23T00:00:00Z",
+  "temp_c": 8,
+  "temp_f": 46.4,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": null,
   "humidity_pct": null,
-  "wind_kmh": null,
+  "wind_kmh": 25.92,
   "description": "Clear"
  },
  "today_so_far": {
@@ -78,30 +78,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-22",
-    "high_f": 54,
-    "would_rank": {
-     "value_f": 54,
-     "warm_rank": 83,
-     "cool_rank": 50,
-     "years": 137,
-     "first_year": 1890,
-     "tied_years": [
-      1899,
-      1907,
-      1921,
-      1978,
-      1996
-     ],
-     "standing": "cool",
-     "notable": false,
-     "since": 2025,
-     "record": false,
-     "phrase": "typical for November 22"
-    }
-   },
    {
     "period": "Monday",
     "date": "2026-11-23",
@@ -234,6 +210,26 @@
      "record": false,
      "phrase": "typical for November 28"
     }
+   },
+   {
+    "period": "Sunday",
+    "date": "2026-11-29",
+    "high_f": 62,
+    "would_rank": {
+     "value_f": 62,
+     "warm_rank": 37,
+     "cool_rank": 100,
+     "years": 137,
+     "first_year": 1890,
+     "tied_years": [
+      1904
+     ],
+     "standing": "warm",
+     "notable": false,
+     "since": 2023,
+     "record": false,
+     "phrase": "typical for November 29"
+    }
    }
   ]
  },
@@ -241,15 +237,6 @@
   "issued_utc": "2026-11-22T20:26:24Z",
   "grid": "OUN/94,90",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-22T15:00:00-06:00",
-    "is_daytime": true,
-    "temp_f": 54,
-    "temp_c": 12.22,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Sunny"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-22T18:00:00-06:00",
@@ -366,6 +353,15 @@
     "temp_c": 3.89,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear"
+   },
+   {
+    "name": "Sunday",
+    "start": "2026-11-29T06:00:00-06:00",
+    "is_daytime": true,
+    "temp_f": 62,
+    "temp_c": 16.67,
+    "precip_chance_pct": 1,
+    "short_forecast": "Sunny"
    }
   ]
  },
