@@ -11,15 +11,15 @@
   "lon": -87.9044,
   "history": "Same station as the official Chicago record (ThreadEx, O'Hare since 1980)"
  },
- "as_of_utc": "2026-11-23T00:27:32Z",
+ "as_of_utc": "2026-11-23T01:07:58Z",
  "now": {
-  "time_utc": "2026-11-23T00:00:00Z",
+  "time_utc": "2026-11-23T00:50:00Z",
   "temp_c": 6,
   "temp_f": 42.8,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 2,
   "humidity_pct": 75.52,
-  "wind_kmh": 11.12,
+  "wind_kmh": 9.25,
   "description": "Clear"
  },
  "today_so_far": {
@@ -95,27 +95,6 @@
    "phrase": "already the 13th warmest November 22 high (tied) of 155 since 1872, warmest since 2012"
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-22",
-    "high_f": 57,
-    "would_rank": {
-     "value_f": 57,
-     "warm_rank": 20,
-     "cool_rank": 134,
-     "years": 155,
-     "first_year": 1872,
-     "tied_years": [
-      2001,
-      2009
-     ],
-     "standing": "warm",
-     "notable": true,
-     "since": 2012,
-     "record": false,
-     "phrase": "20th warmest November 22 high (tied) of 155 since 1872, warmest since 2012"
-    }
-   },
    {
     "period": "Monday",
     "date": "2026-11-23",
@@ -267,6 +246,24 @@
      "record": false,
      "phrase": "28th warmest November 28 high (tied) of 155 since 1872, warmest since 2020"
     }
+   },
+   {
+    "period": "Sunday",
+    "date": "2026-11-29",
+    "high_f": 50,
+    "would_rank": {
+     "value_f": 50,
+     "warm_rank": 23,
+     "cool_rank": 133,
+     "years": 155,
+     "first_year": 1872,
+     "tied_years": [],
+     "standing": "warm",
+     "notable": true,
+     "since": 2022,
+     "record": false,
+     "phrase": "23rd warmest November 29 high of 155 since 1872, warmest since 2022"
+    }
    }
   ]
  },
@@ -274,15 +271,6 @@
   "issued_utc": "2026-11-22T22:06:00Z",
   "grid": "LOT/66,77",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-22T16:00:00-06:00",
-    "is_daytime": true,
-    "temp_f": 57,
-    "temp_c": 13.89,
-    "precip_chance_pct": 2,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-22T18:00:00-06:00",
@@ -399,19 +387,21 @@
     "temp_c": -0.56,
     "precip_chance_pct": 5,
     "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "name": "Sunday",
+    "start": "2026-11-29T06:00:00-06:00",
+    "is_daytime": true,
+    "temp_f": 50,
+    "temp_c": 10.0,
+    "precip_chance_pct": 7,
+    "short_forecast": "Mostly Sunny"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-22T22:06:00Z",
   "hours": [
-   {
-    "start": "2026-11-22T18:00:00-06:00",
-    "temp_f": 45,
-    "temp_c": 7.22,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "start": "2026-11-22T19:00:00-06:00",
     "temp_f": 44,
@@ -740,6 +730,13 @@
     "temp_c": 3.33,
     "precip_chance_pct": 0,
     "short_forecast": "Partly Sunny"
+   },
+   {
+    "start": "2026-11-24T18:00:00-06:00",
+    "temp_f": 35,
+    "temp_c": 1.67,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Cloudy"
    }
   ]
  },
