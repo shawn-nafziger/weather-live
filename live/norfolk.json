@@ -11,29 +11,29 @@
   "lon": -76.1919,
   "history": "Same site as the official Norfolk record"
  },
- "as_of_utc": "2026-11-23T06:07:46Z",
+ "as_of_utc": "2026-11-23T07:07:48Z",
  "now": {
-  "time_utc": "2026-11-23T05:45:00Z",
+  "time_utc": "2026-11-23T06:50:00Z",
   "temp_c": 16,
   "temp_f": 60.8,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 16,
   "humidity_pct": 100,
   "wind_kmh": 0,
-  "description": "Cloudy"
+  "description": "Fog/Mist"
  },
  "today_so_far": {
   "date_local": "2026-11-23",
-  "readings": 5,
-  "basis": "5-minute readings (whole \u00b0C, approximate)",
-  "approximate": true,
+  "readings": 2,
+  "basis": "hourly reports (tenths of a degree)",
+  "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 16,
-  "high_f": 60.8,
-  "high_time_utc": "2026-11-23T05:00:00Z",
-  "low_c": 16,
-  "low_f": 60.8,
-  "low_time_utc": "2026-11-23T05:00:00Z"
+  "high_c": 16.1,
+  "high_f": 61.0,
+  "high_time_utc": "2026-11-23T05:51:00Z",
+  "low_c": 16.1,
+  "low_f": 61.0,
+  "low_time_utc": "2026-11-23T05:51:00Z"
  },
  "record": {
   "series": "Norfolk area (ThreadEx; airport)",
@@ -138,20 +138,16 @@
    {
     "period": "Wednesday",
     "date": "2026-11-25",
-    "high_f": 61,
+    "high_f": 62,
     "would_rank": {
-     "value_f": 61,
-     "warm_rank": 45,
-     "cool_rank": 103,
+     "value_f": 62,
+     "warm_rank": 43,
+     "cool_rank": 109,
      "years": 153,
      "first_year": 1874,
      "tied_years": [
-      1910,
-      1950,
-      1967,
-      1976,
-      1988,
-      2019
+      2000,
+      2018
      ],
      "standing": "warm",
      "notable": false,
@@ -163,19 +159,24 @@
    {
     "period": "Thanksgiving Day",
     "date": "2026-11-26",
-    "high_f": 65,
+    "high_f": 70,
     "would_rank": {
-     "value_f": 65,
-     "warm_rank": 47,
-     "cool_rank": 107,
+     "value_f": 70,
+     "warm_rank": 20,
+     "cool_rank": 130,
      "years": 153,
      "first_year": 1874,
-     "tied_years": [],
+     "tied_years": [
+      1900,
+      1942,
+      1952,
+      1973
+     ],
      "standing": "warm",
-     "notable": false,
+     "notable": true,
      "since": 2025,
      "record": false,
-     "phrase": "typical for November 26"
+     "phrase": "20th warmest November 26 high (tied) of 153 since 1874, warmest since 2025"
     }
    },
    {
@@ -208,17 +209,16 @@
    {
     "period": "Saturday",
     "date": "2026-11-28",
-    "high_f": 57,
+    "high_f": 58,
     "would_rank": {
-     "value_f": 57,
-     "warm_rank": 74,
-     "cool_rank": 77,
+     "value_f": 58,
+     "warm_rank": 72,
+     "cool_rank": 80,
      "years": 153,
      "first_year": 1874,
      "tied_years": [
-      1881,
-      1939,
-      1999
+      1877,
+      1913
      ],
      "standing": "warm",
      "notable": false,
@@ -230,17 +230,17 @@
    {
     "period": "Sunday",
     "date": "2026-11-29",
-    "high_f": 59,
+    "high_f": 61,
     "would_rank": {
-     "value_f": 59,
-     "warm_rank": 53,
-     "cool_rank": 98,
+     "value_f": 61,
+     "warm_rank": 43,
+     "cool_rank": 108,
      "years": 153,
      "first_year": 1874,
      "tied_years": [
-      1899,
-      1947,
-      1997
+      1874,
+      1881,
+      1911
      ],
      "standing": "warm",
      "notable": false,
@@ -252,17 +252,17 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-22T23:21:46Z",
+  "issued_utc": "2026-11-23T06:33:53Z",
   "grid": "AKQ/93,55",
   "periods": [
    {
     "name": "Overnight",
-    "start": "2026-11-23T00:00:00-05:00",
+    "start": "2026-11-23T02:00:00-05:00",
     "is_daytime": false,
     "temp_f": 56,
     "temp_c": 13.33,
-    "precip_chance_pct": 49,
-    "short_forecast": "Chance Light Rain"
+    "precip_chance_pct": 17,
+    "short_forecast": "Slight Chance Light Rain"
    },
    {
     "name": "Monday",
@@ -270,17 +270,17 @@
     "is_daytime": true,
     "temp_f": 69,
     "temp_c": 20.56,
-    "precip_chance_pct": 17,
-    "short_forecast": "Mostly Cloudy then Slight Chance Rain Showers"
+    "precip_chance_pct": 10,
+    "short_forecast": "Mostly Cloudy"
    },
    {
     "name": "Monday Night",
     "start": "2026-11-23T18:00:00-05:00",
     "is_daytime": false,
-    "temp_f": 45,
-    "temp_c": 7.22,
-    "precip_chance_pct": 31,
-    "short_forecast": "Chance Rain Showers"
+    "temp_f": 44,
+    "temp_c": 6.67,
+    "precip_chance_pct": 34,
+    "short_forecast": "Chance Light Rain"
    },
    {
     "name": "Tuesday",
@@ -288,7 +288,7 @@
     "is_daytime": true,
     "temp_f": 53,
     "temp_c": 11.67,
-    "precip_chance_pct": 3,
+    "precip_chance_pct": 1,
     "short_forecast": "Mostly Sunny"
    },
    {
@@ -304,10 +304,10 @@
     "name": "Wednesday",
     "start": "2026-11-25T06:00:00-05:00",
     "is_daytime": true,
-    "temp_f": 61,
-    "temp_c": 16.11,
-    "precip_chance_pct": 34,
-    "short_forecast": "Mostly Cloudy then Chance Rain Showers"
+    "temp_f": 62,
+    "temp_c": 16.67,
+    "precip_chance_pct": 18,
+    "short_forecast": "Mostly Cloudy then Slight Chance Light Rain"
    },
    {
     "name": "Wednesday Night",
@@ -315,26 +315,26 @@
     "is_daytime": false,
     "temp_f": 54,
     "temp_c": 12.22,
-    "precip_chance_pct": 91,
-    "short_forecast": "Rain Showers"
+    "precip_chance_pct": 96,
+    "short_forecast": "Rain"
    },
    {
     "name": "Thanksgiving Day",
     "start": "2026-11-26T06:00:00-05:00",
     "is_daytime": true,
-    "temp_f": 65,
-    "temp_c": 18.33,
-    "precip_chance_pct": 91,
+    "temp_f": 70,
+    "temp_c": 21.11,
+    "precip_chance_pct": 96,
     "short_forecast": "Showers And Thunderstorms"
    },
    {
     "name": "Thursday Night",
     "start": "2026-11-26T18:00:00-05:00",
     "is_daytime": false,
-    "temp_f": 44,
-    "temp_c": 6.67,
-    "precip_chance_pct": 42,
-    "short_forecast": "Chance Rain Showers"
+    "temp_f": 47,
+    "temp_c": 8.33,
+    "precip_chance_pct": 65,
+    "short_forecast": "Showers And Thunderstorms Likely"
    },
    {
     "name": "Friday",
@@ -342,57 +342,50 @@
     "is_daytime": true,
     "temp_f": 58,
     "temp_c": 14.44,
-    "precip_chance_pct": 22,
-    "short_forecast": "Slight Chance Rain Showers then Mostly Sunny"
+    "precip_chance_pct": 8,
+    "short_forecast": "Mostly Sunny"
    },
    {
     "name": "Friday Night",
     "start": "2026-11-27T18:00:00-05:00",
     "is_daytime": false,
-    "temp_f": 40,
-    "temp_c": 4.44,
+    "temp_f": 39,
+    "temp_c": 3.89,
     "precip_chance_pct": 1,
-    "short_forecast": "Partly Cloudy"
+    "short_forecast": "Mostly Clear"
    },
    {
     "name": "Saturday",
     "start": "2026-11-28T06:00:00-05:00",
     "is_daytime": true,
-    "temp_f": 57,
-    "temp_c": 13.89,
-    "precip_chance_pct": 6,
+    "temp_f": 58,
+    "temp_c": 14.44,
+    "precip_chance_pct": 0,
     "short_forecast": "Mostly Sunny"
    },
    {
     "name": "Saturday Night",
     "start": "2026-11-28T18:00:00-05:00",
     "is_daytime": false,
-    "temp_f": 41,
-    "temp_c": 5.0,
-    "precip_chance_pct": 19,
-    "short_forecast": "Slight Chance Rain Showers"
+    "temp_f": 40,
+    "temp_c": 4.44,
+    "precip_chance_pct": 5,
+    "short_forecast": "Partly Cloudy"
    },
    {
     "name": "Sunday",
     "start": "2026-11-29T06:00:00-05:00",
     "is_daytime": true,
-    "temp_f": 59,
-    "temp_c": 15.0,
-    "precip_chance_pct": 17,
-    "short_forecast": "Slight Chance Rain Showers then Mostly Sunny"
+    "temp_f": 61,
+    "temp_c": 16.11,
+    "precip_chance_pct": 5,
+    "short_forecast": "Sunny"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-22T23:21:46Z",
   "hours": [
-   {
-    "start": "2026-11-23T01:00:00-05:00",
-    "temp_f": 59,
-    "temp_c": 15.0,
-    "precip_chance_pct": 37,
-    "short_forecast": "Chance Light Rain"
-   },
    {
     "start": "2026-11-23T02:00:00-05:00",
     "temp_f": 59,
@@ -717,6 +710,13 @@
    },
    {
     "start": "2026-11-25T00:00:00-05:00",
+    "temp_f": 45,
+    "temp_c": 7.22,
+    "precip_chance_pct": 0,
+    "short_forecast": "Partly Cloudy"
+   },
+   {
+    "start": "2026-11-25T01:00:00-05:00",
     "temp_f": 45,
     "temp_c": 7.22,
     "precip_chance_pct": 0,
