@@ -11,15 +11,15 @@
   "lon": -87.9044,
   "history": "Same station as the official Chicago record (ThreadEx, O'Hare since 1980)"
  },
- "as_of_utc": "2026-11-24T15:22:55Z",
+ "as_of_utc": "2026-11-24T16:07:54Z",
  "now": {
-  "time_utc": "2026-11-24T14:40:00Z",
-  "temp_c": 0,
-  "temp_f": 32.0,
+  "time_utc": "2026-11-24T15:55:00Z",
+  "temp_c": 2,
+  "temp_f": 35.6,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": -8,
-  "humidity_pct": 54.89,
-  "wind_kmh": 11.12,
+  "dewpoint_c": -5,
+  "humidity_pct": 59.81,
+  "wind_kmh": 14.83,
   "description": "Clear"
  },
  "today_so_far": {
@@ -35,9 +35,9 @@
   "low_f": 26.1,
   "low_time_utc": "2026-11-24T09:51:00Z",
   "peak_between_reports": {
-   "at_least_f": 31.1,
-   "about_f": 32.0,
-   "time_utc": "2026-11-24T14:40:00Z"
+   "at_least_f": 34.7,
+   "about_f": 35.6,
+   "time_utc": "2026-11-24T15:35:00Z"
   },
   "dip_between_reports": {
    "at_most_f": 25.7,
@@ -273,17 +273,17 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-24T11:01:04Z",
+  "issued_utc": "2026-11-24T14:55:58Z",
   "grid": "LOT/66,77",
   "periods": [
    {
     "name": "Today",
-    "start": "2026-11-24T06:00:00-06:00",
+    "start": "2026-11-24T09:00:00-06:00",
     "is_daytime": true,
     "temp_f": 41,
     "temp_c": 5.0,
-    "precip_chance_pct": 11,
-    "short_forecast": "Isolated Snow Showers then Mostly Sunny"
+    "precip_chance_pct": 13,
+    "short_forecast": "Slight Chance Snow Showers then Partly Sunny"
    },
    {
     "name": "Tonight",
@@ -405,33 +405,26 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-24T11:01:04Z",
+  "issued_utc": "2026-11-24T14:55:58Z",
   "hours": [
-   {
-    "start": "2026-11-24T09:00:00-06:00",
-    "temp_f": 33,
-    "temp_c": 0.56,
-    "precip_chance_pct": 11,
-    "short_forecast": "Isolated Snow Showers"
-   },
    {
     "start": "2026-11-24T10:00:00-06:00",
     "temp_f": 35,
     "temp_c": 1.67,
-    "precip_chance_pct": 11,
-    "short_forecast": "Isolated Snow Showers"
+    "precip_chance_pct": 13,
+    "short_forecast": "Slight Chance Snow Showers"
    },
    {
     "start": "2026-11-24T11:00:00-06:00",
-    "temp_f": 38,
-    "temp_c": 3.33,
-    "precip_chance_pct": 11,
-    "short_forecast": "Isolated Snow Showers"
+    "temp_f": 40,
+    "temp_c": 4.44,
+    "precip_chance_pct": 13,
+    "short_forecast": "Slight Chance Snow Showers"
    },
    {
     "start": "2026-11-24T12:00:00-06:00",
-    "temp_f": 39,
-    "temp_c": 3.89,
+    "temp_f": 40,
+    "temp_c": 4.44,
     "precip_chance_pct": 1,
     "short_forecast": "Partly Sunny"
    },
@@ -465,8 +458,8 @@
    },
    {
     "start": "2026-11-24T17:00:00-06:00",
-    "temp_f": 38,
-    "temp_c": 3.33,
+    "temp_f": 39,
+    "temp_c": 3.89,
     "precip_chance_pct": 0,
     "short_forecast": "Partly Sunny"
    },
@@ -740,6 +733,13 @@
     "start": "2026-11-26T08:00:00-06:00",
     "temp_f": 41,
     "temp_c": 5.0,
+    "precip_chance_pct": 49,
+    "short_forecast": "Chance Rain"
+   },
+   {
+    "start": "2026-11-26T09:00:00-06:00",
+    "temp_f": 42,
+    "temp_c": 5.56,
     "precip_chance_pct": 49,
     "short_forecast": "Chance Rain"
    }
