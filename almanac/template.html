@@ -80,8 +80,8 @@ strong { font-weight: 600; color: var(--ink); }
 .fc-temps { display: flex; align-items: baseline; gap: 8px; }
 .fc-hi { font: 600 30px/1 var(--font-display); color: var(--ink); }
 .fc-lo { font: 500 18px/1 var(--font-display); color: var(--ink-3); }
-.fc-sky { font-size: 13px; line-height: 1.35; color: var(--ink-2); display: flex; align-items: flex-start; gap: 6px; }
-.fc-icon { width: 22px; height: 22px; flex: none; margin-top: -2px; color: var(--ink-2); }
+.fc-sky { font-size: 13px; line-height: 1.35; color: var(--ink-2); display: flex; flex-direction: column; gap: 4px; overflow-wrap: anywhere; hyphens: auto; }
+.fc-icon { width: 26px; height: 26px; flex: none; color: var(--ink-2); }
 .fc-pop { font: 400 12px/1.3 var(--font-data); color: var(--ink-3); }
 .fc-note { font-size: 12.5px; line-height: 1.35; color: var(--ink); border-top: 1px solid var(--rule); padding-top: 6px; margin-top: 2px !important; }
 .fc-note-rec .fc-note::before { content: ""; display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--amber); margin-right: 6px; vertical-align: 0; }
@@ -94,6 +94,8 @@ strong { font-weight: 600; color: var(--ink); }
   .fc-when { grid-row: 1 / span 2; }
   .fc-temps { grid-row: 1 / span 2; }
   .fc-sky, .fc-pop, .fc-note, .fc-later-tag { grid-column: 3; }
+  .fc-sky { flex-direction: row; align-items: flex-start; gap: 6px; }
+  .fc-icon { width: 22px; height: 22px; margin-top: -2px; }
   .fc-hi { font-size: 24px; }
 }
 .switch { display: grid; grid-template-columns: 1fr 1fr; border: 1px solid var(--rule); border-radius: 8px; overflow: hidden; background: var(--surface); }
