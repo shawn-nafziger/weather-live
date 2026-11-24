@@ -11,9 +11,9 @@
   "lon": -81.6937,
   "history": "Same site as the official Jacksonville record"
  },
- "as_of_utc": "2026-11-24T06:08:06Z",
+ "as_of_utc": "2026-11-24T07:08:06Z",
  "now": {
-  "time_utc": "2026-11-24T05:20:00Z",
+  "time_utc": "2026-11-24T06:35:00Z",
   "temp_c": 17,
   "temp_f": 62.6,
   "precision": "nearest whole \u00b0C",
@@ -24,7 +24,7 @@
  },
  "today_so_far": {
   "date_local": "2026-11-24",
-  "readings": 1,
+  "readings": 2,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -260,16 +260,16 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-24T05:51:01Z",
+  "issued_utc": "2026-11-24T06:20:59Z",
   "grid": "JAX/64,72",
   "periods": [
    {
     "name": "Overnight",
-    "start": "2026-11-24T01:00:00-05:00",
+    "start": "2026-11-24T02:00:00-05:00",
     "is_daytime": false,
     "temp_f": 57,
     "temp_c": 13.89,
-    "precip_chance_pct": 4,
+    "precip_chance_pct": 3,
     "short_forecast": "Patchy Drizzle"
    },
    {
@@ -339,8 +339,8 @@
     "name": "Friday Night",
     "start": "2026-11-27T18:00:00-05:00",
     "is_daytime": false,
-    "temp_f": 41,
-    "temp_c": 5.0,
+    "temp_f": 43,
+    "temp_c": 6.11,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Cloudy"
    },
@@ -357,8 +357,8 @@
     "name": "Saturday Night",
     "start": "2026-11-28T18:00:00-05:00",
     "is_daytime": false,
-    "temp_f": 43,
-    "temp_c": 6.11,
+    "temp_f": 47,
+    "temp_c": 8.33,
     "precip_chance_pct": 4,
     "short_forecast": "Mostly Cloudy"
    },
@@ -368,16 +368,16 @@
     "is_daytime": true,
     "temp_f": 66,
     "temp_c": 18.89,
-    "precip_chance_pct": 11,
-    "short_forecast": "Mostly Cloudy"
+    "precip_chance_pct": 15,
+    "short_forecast": "Mostly Cloudy then Slight Chance Rain Showers"
    },
    {
     "name": "Sunday Night",
     "start": "2026-11-29T18:00:00-05:00",
     "is_daytime": false,
-    "temp_f": 50,
-    "temp_c": 10.0,
-    "precip_chance_pct": 33,
+    "temp_f": 53,
+    "temp_c": 11.67,
+    "precip_chance_pct": 32,
     "short_forecast": "Chance Rain Showers"
    },
    {
@@ -386,21 +386,14 @@
     "is_daytime": true,
     "temp_f": 70,
     "temp_c": 21.11,
-    "precip_chance_pct": 27,
+    "precip_chance_pct": 26,
     "short_forecast": "Chance Rain Showers"
    }
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-24T05:51:01Z",
+  "issued_utc": "2026-11-24T06:20:59Z",
   "hours": [
-   {
-    "start": "2026-11-24T01:00:00-05:00",
-    "temp_f": 60,
-    "temp_c": 15.56,
-    "precip_chance_pct": 4,
-    "short_forecast": "Patchy Drizzle"
-   },
    {
     "start": "2026-11-24T02:00:00-05:00",
     "temp_f": 59,
@@ -729,6 +722,13 @@
     "temp_c": 15.0,
     "precip_chance_pct": 54,
     "short_forecast": "Chance Rain Showers"
+   },
+   {
+    "start": "2026-11-26T01:00:00-05:00",
+    "temp_f": 59,
+    "temp_c": 15.0,
+    "precip_chance_pct": 63,
+    "short_forecast": "Rain Showers Likely"
    }
   ]
  },
