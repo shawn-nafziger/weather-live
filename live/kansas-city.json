@@ -11,23 +11,29 @@
   "lon": -94.7306,
   "history": "Same site as the official Kansas City record"
  },
- "as_of_utc": "2026-11-24T07:08:06Z",
+ "as_of_utc": "2026-11-24T08:08:06Z",
  "now": {
-  "time_utc": "2026-11-24T05:53:00Z",
+  "time_utc": "2026-11-24T06:53:00Z",
   "temp_c": -2.2,
   "temp_f": 28.0,
   "precision": "tenths of a degree",
-  "dewpoint_c": -5,
-  "humidity_pct": 81.12,
-  "wind_kmh": 12.96,
-  "description": ""
+  "dewpoint_c": -5.6,
+  "humidity_pct": 77.52,
+  "wind_kmh": 14.76,
+  "description": "Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-24",
-  "readings": 0,
-  "basis": "5-minute readings (whole \u00b0C, approximate)",
-  "approximate": true,
-  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two."
+  "readings": 1,
+  "basis": "hourly reports (tenths of a degree)",
+  "approximate": false,
+  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
+  "high_c": -2.2,
+  "high_f": 28.0,
+  "high_time_utc": "2026-11-24T06:53:00Z",
+  "low_c": -2.2,
+  "low_f": 28.0,
+  "low_time_utc": "2026-11-24T06:53:00Z"
  },
  "record": {
   "series": "Kansas City area (ThreadEx; airport)",
@@ -381,13 +387,6 @@
   "issued_utc": "2026-11-24T06:26:12Z",
   "hours": [
    {
-    "start": "2026-11-24T01:00:00-06:00",
-    "temp_f": 29,
-    "temp_c": -1.67,
-    "precip_chance_pct": 0,
-    "short_forecast": "Cloudy"
-   },
-   {
     "start": "2026-11-24T02:00:00-06:00",
     "temp_f": 28,
     "temp_c": -2.22,
@@ -713,6 +712,13 @@
     "start": "2026-11-26T00:00:00-06:00",
     "temp_f": 29,
     "temp_c": -1.67,
+    "precip_chance_pct": 1,
+    "short_forecast": "Mostly Clear"
+   },
+   {
+    "start": "2026-11-26T01:00:00-06:00",
+    "temp_f": 28,
+    "temp_c": -2.22,
     "precip_chance_pct": 1,
     "short_forecast": "Mostly Clear"
    }

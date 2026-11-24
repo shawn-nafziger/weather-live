@@ -11,29 +11,29 @@
   "lon": -97.6003,
   "history": "Same site as the official Oklahoma City record"
  },
- "as_of_utc": "2026-11-24T07:08:06Z",
+ "as_of_utc": "2026-11-24T08:08:06Z",
  "now": {
-  "time_utc": "2026-11-24T06:35:00Z",
+  "time_utc": "2026-11-24T07:45:00Z",
   "temp_c": 2,
   "temp_f": 35.6,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": null,
   "humidity_pct": null,
-  "wind_kmh": 20.38,
+  "wind_kmh": 18.5,
   "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-24",
   "readings": 1,
-  "basis": "5-minute readings (whole \u00b0C, approximate)",
-  "approximate": true,
+  "basis": "hourly reports (tenths of a degree)",
+  "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 2,
-  "high_f": 35.6,
-  "high_time_utc": "2026-11-24T06:35:00Z",
-  "low_c": 2,
-  "low_f": 35.6,
-  "low_time_utc": "2026-11-24T06:35:00Z"
+  "high_c": 2.2,
+  "high_f": 36.0,
+  "high_time_utc": "2026-11-24T06:52:00Z",
+  "low_c": 2.2,
+  "low_f": 36.0,
+  "low_time_utc": "2026-11-24T06:52:00Z"
  },
  "record": {
   "series": "Oklahoma City area (ThreadEx; airport)",
@@ -383,13 +383,6 @@
   "issued_utc": "2026-11-24T06:26:51Z",
   "hours": [
    {
-    "start": "2026-11-24T01:00:00-06:00",
-    "temp_f": 35,
-    "temp_c": 1.67,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Cloudy"
-   },
-   {
     "start": "2026-11-24T02:00:00-06:00",
     "temp_f": 35,
     "temp_c": 1.67,
@@ -715,6 +708,13 @@
     "start": "2026-11-26T00:00:00-06:00",
     "temp_f": 32,
     "temp_c": 0.0,
+    "precip_chance_pct": 0,
+    "short_forecast": "Clear"
+   },
+   {
+    "start": "2026-11-26T01:00:00-06:00",
+    "temp_f": 31,
+    "temp_c": -0.56,
     "precip_chance_pct": 0,
     "short_forecast": "Clear"
    }
