@@ -11,29 +11,29 @@
   "lon": -122.6092,
   "history": "Same site as the official Portland record"
  },
- "as_of_utc": "2026-11-24T09:08:03Z",
+ "as_of_utc": "2026-11-24T10:07:59Z",
  "now": {
-  "time_utc": "2026-11-24T08:50:00Z",
+  "time_utc": "2026-11-24T09:45:00Z",
   "temp_c": 8,
   "temp_f": 46.4,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 3,
   "humidity_pct": 70.7,
-  "wind_kmh": 24.08,
-  "description": "Light Rain"
+  "wind_kmh": 27.79,
+  "description": "Mostly Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-24",
-  "readings": 2,
-  "basis": "5-minute readings (whole \u00b0C, approximate)",
-  "approximate": true,
+  "readings": 1,
+  "basis": "hourly reports (tenths of a degree)",
+  "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 8,
-  "high_f": 46.4,
-  "high_time_utc": "2026-11-24T08:45:00Z",
-  "low_c": 8,
-  "low_f": 46.4,
-  "low_time_utc": "2026-11-24T08:45:00Z"
+  "high_c": 7.8,
+  "high_f": 46.0,
+  "high_time_utc": "2026-11-24T08:53:00Z",
+  "low_c": 7.8,
+  "low_f": 46.0,
+  "low_time_utc": "2026-11-24T08:53:00Z"
  },
  "record": {
   "series": "Portland area (ThreadEx; airport)",
@@ -251,17 +251,17 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-24T08:41:13Z",
+  "issued_utc": "2026-11-24T09:41:18Z",
   "grid": "PQR/116,107",
   "periods": [
    {
     "name": "Overnight",
-    "start": "2026-11-24T00:00:00-08:00",
+    "start": "2026-11-24T02:00:00-08:00",
     "is_daytime": false,
     "temp_f": 44,
     "temp_c": 6.67,
-    "precip_chance_pct": 28,
-    "short_forecast": "Chance Light Rain"
+    "precip_chance_pct": 15,
+    "short_forecast": "Slight Chance Light Rain"
    },
    {
     "name": "Tuesday",
@@ -383,15 +383,8 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-24T08:41:13Z",
+  "issued_utc": "2026-11-24T09:01:30Z",
   "hours": [
-   {
-    "start": "2026-11-24T01:00:00-08:00",
-    "temp_f": 44,
-    "temp_c": 6.67,
-    "precip_chance_pct": 12,
-    "short_forecast": "Cloudy"
-   },
    {
     "start": "2026-11-24T02:00:00-08:00",
     "temp_f": 44,
@@ -716,6 +709,13 @@
    },
    {
     "start": "2026-11-26T00:00:00-08:00",
+    "temp_f": 53,
+    "temp_c": 11.67,
+    "precip_chance_pct": 82,
+    "short_forecast": "Light Rain"
+   },
+   {
+    "start": "2026-11-26T01:00:00-08:00",
     "temp_f": 53,
     "temp_c": 11.67,
     "precip_chance_pct": 82,
