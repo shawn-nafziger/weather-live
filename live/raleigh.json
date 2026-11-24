@@ -11,7 +11,7 @@
   "lon": -78.7819,
   "history": "Same site as the official Raleigh record"
  },
- "as_of_utc": "2026-11-24T04:51:38Z",
+ "as_of_utc": "2026-11-24T05:08:02Z",
  "now": {
   "time_utc": "2026-11-24T03:55:00Z",
   "temp_c": 15,
@@ -23,17 +23,11 @@
   "description": "Mostly Cloudy"
  },
  "today_so_far": {
-  "date_local": "2026-11-23",
-  "readings": 20,
-  "basis": "hourly reports (tenths of a degree)",
-  "approximate": false,
-  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 21.1,
-  "high_f": 70.0,
-  "high_time_utc": "2026-11-23T18:51:00Z",
-  "low_c": 14.4,
-  "low_f": 57.9,
-  "low_time_utc": "2026-11-23T05:51:00Z"
+  "date_local": "2026-11-24",
+  "readings": 0,
+  "basis": "5-minute readings (whole \u00b0C, approximate)",
+  "approximate": true,
+  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two."
  },
  "record": {
   "series": "Raleigh area (ThreadEx; Raleigh-Durham airport)",
@@ -42,7 +36,7 @@
   "rank_today": true,
   "latest_final": {
    "date": "2026-11-22",
-   "is_yesterday": true,
+   "is_yesterday": false,
    "high_f": 60,
    "low_f": 56,
    "high_rank": {
@@ -77,25 +71,6 @@
     "record": false,
     "phrase": "4th warmest November 22 low (tied) of 140 since 1887, warmest since 2011"
    }
-  },
-  "today_high_so_far": {
-   "value_f": 70,
-   "warm_rank": 20,
-   "cool_rank": 116,
-   "years": 140,
-   "first_year": 1887,
-   "tied_years": [
-    1894,
-    1934,
-    1955,
-    1968,
-    1983
-   ],
-   "standing": "warm",
-   "notable": true,
-   "since": 2011,
-   "record": false,
-   "phrase": "already the 20th warmest November 23 high (tied) of 140 since 1887, warmest since 2011"
   },
   "forecast_highs": [
    {
@@ -398,13 +373,6 @@
  "hourly": {
   "issued_utc": "2026-11-24T02:15:57Z",
   "hours": [
-   {
-    "start": "2026-11-23T23:00:00-05:00",
-    "temp_f": 58,
-    "temp_c": 14.44,
-    "precip_chance_pct": 10,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "start": "2026-11-24T00:00:00-05:00",
     "temp_f": 58,
@@ -729,6 +697,13 @@
    },
    {
     "start": "2026-11-25T22:00:00-05:00",
+    "temp_f": 51,
+    "temp_c": 10.56,
+    "precip_chance_pct": 75,
+    "short_forecast": "Rain Showers"
+   },
+   {
+    "start": "2026-11-25T23:00:00-05:00",
     "temp_f": 51,
     "temp_c": 10.56,
     "precip_chance_pct": 75,

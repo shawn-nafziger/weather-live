@@ -11,7 +11,7 @@
   "lon": -80.2145,
   "history": "Same site as the official Pittsburgh record"
  },
- "as_of_utc": "2026-11-24T04:51:38Z",
+ "as_of_utc": "2026-11-24T05:08:02Z",
  "now": {
   "time_utc": "2026-11-24T03:55:00Z",
   "temp_c": 2,
@@ -23,17 +23,11 @@
   "description": "Clear"
  },
  "today_so_far": {
-  "date_local": "2026-11-23",
-  "readings": 18,
-  "basis": "hourly reports (tenths of a degree)",
-  "approximate": false,
-  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 12.8,
-  "high_f": 55.0,
-  "high_time_utc": "2026-11-23T05:51:00Z",
-  "low_c": 1.1,
-  "low_f": 34.0,
-  "low_time_utc": "2026-11-24T02:51:00Z"
+  "date_local": "2026-11-24",
+  "readings": 0,
+  "basis": "5-minute readings (whole \u00b0C, approximate)",
+  "approximate": true,
+  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two."
  },
  "record": {
   "series": "Pittsburgh area (ThreadEx; airport)",
@@ -42,7 +36,7 @@
   "rank_today": true,
   "latest_final": {
    "date": "2026-11-22",
-   "is_yesterday": true,
+   "is_yesterday": false,
    "high_f": 66,
    "low_f": 38,
    "high_rank": {
@@ -390,13 +384,6 @@
   "issued_utc": "2026-11-23T21:56:12Z",
   "hours": [
    {
-    "start": "2026-11-23T23:00:00-05:00",
-    "temp_f": 35,
-    "temp_c": 1.67,
-    "precip_chance_pct": 2,
-    "short_forecast": "Partly Cloudy"
-   },
-   {
     "start": "2026-11-24T00:00:00-05:00",
     "temp_f": 35,
     "temp_c": 1.67,
@@ -720,6 +707,13 @@
    },
    {
     "start": "2026-11-25T22:00:00-05:00",
+    "temp_f": 40,
+    "temp_c": 4.44,
+    "precip_chance_pct": 3,
+    "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "start": "2026-11-25T23:00:00-05:00",
     "temp_f": 40,
     "temp_c": 4.44,
     "precip_chance_pct": 3,

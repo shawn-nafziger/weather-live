@@ -11,7 +11,7 @@
   "lon": -78.736,
   "history": "Same site as the official Buffalo record"
  },
- "as_of_utc": "2026-11-24T04:51:38Z",
+ "as_of_utc": "2026-11-24T05:08:02Z",
  "now": {
   "time_utc": "2026-11-24T03:55:00Z",
   "temp_c": 2,
@@ -23,22 +23,11 @@
   "description": "Mostly Cloudy"
  },
  "today_so_far": {
-  "date_local": "2026-11-23",
-  "readings": 22,
-  "basis": "hourly reports (tenths of a degree)",
-  "approximate": false,
-  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 13.3,
-  "high_f": 55.9,
-  "high_time_utc": "2026-11-23T05:54:00Z",
-  "low_c": 2.2,
-  "low_f": 36.0,
-  "low_time_utc": "2026-11-24T02:54:00Z",
-  "peak_between_reports": {
-   "at_least_f": 56.3,
-   "about_f": 57.2,
-   "time_utc": "2026-11-23T06:00:00Z"
-  }
+  "date_local": "2026-11-24",
+  "readings": 0,
+  "basis": "5-minute readings (whole \u00b0C, approximate)",
+  "approximate": true,
+  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two."
  },
  "record": {
   "series": "Buffalo area (ThreadEx; airport)",
@@ -47,7 +36,7 @@
   "rank_today": true,
   "latest_final": {
    "date": "2026-11-22",
-   "is_yesterday": true,
+   "is_yesterday": false,
    "high_f": 65,
    "low_f": 40,
    "high_rank": {
@@ -83,22 +72,6 @@
     "record": false,
     "phrase": "22nd warmest November 22 low (tied) of 153 since 1873, warmest since 2010"
    }
-  },
-  "today_high_so_far": {
-   "value_f": 56,
-   "warm_rank": 19,
-   "cool_rank": 133,
-   "years": 153,
-   "first_year": 1873,
-   "tied_years": [
-    1894,
-    1982
-   ],
-   "standing": "warm",
-   "notable": true,
-   "since": 2010,
-   "record": false,
-   "phrase": "already the 19th warmest November 23 high (tied) of 153 since 1873, warmest since 2010"
   },
   "forecast_highs": [
    {
@@ -403,13 +376,6 @@
  "hourly": {
   "issued_utc": "2026-11-24T02:57:40Z",
   "hours": [
-   {
-    "start": "2026-11-23T23:00:00-05:00",
-    "temp_f": 36,
-    "temp_c": 2.22,
-    "precip_chance_pct": 5,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "start": "2026-11-24T00:00:00-05:00",
     "temp_f": 35,
@@ -736,6 +702,13 @@
     "start": "2026-11-25T22:00:00-05:00",
     "temp_f": 32,
     "temp_c": 0.0,
+    "precip_chance_pct": 0,
+    "short_forecast": "Partly Cloudy"
+   },
+   {
+    "start": "2026-11-25T23:00:00-05:00",
+    "temp_f": 31,
+    "temp_c": -0.56,
     "precip_chance_pct": 0,
     "short_forecast": "Partly Cloudy"
    }

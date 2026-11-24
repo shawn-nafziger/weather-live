@@ -11,7 +11,7 @@
   "lon": -76.684,
   "history": "Same site as the official Baltimore record"
  },
- "as_of_utc": "2026-11-24T04:51:38Z",
+ "as_of_utc": "2026-11-24T05:08:02Z",
  "now": {
   "time_utc": "2026-11-24T03:55:00Z",
   "temp_c": 12,
@@ -23,17 +23,11 @@
   "description": "Cloudy"
  },
  "today_so_far": {
-  "date_local": "2026-11-23",
-  "readings": 13,
-  "basis": "hourly reports (tenths of a degree)",
-  "approximate": false,
-  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 21.7,
-  "high_f": 71.1,
-  "high_time_utc": "2026-11-23T16:54:00Z",
-  "low_c": 12.2,
-  "low_f": 54.0,
-  "low_time_utc": "2026-11-23T06:54:00Z"
+  "date_local": "2026-11-24",
+  "readings": 0,
+  "basis": "5-minute readings (whole \u00b0C, approximate)",
+  "approximate": true,
+  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two."
  },
  "record": {
   "series": "Baltimore area (ThreadEx; BWI airport)",
@@ -42,7 +36,7 @@
   "rank_today": true,
   "latest_final": {
    "date": "2026-11-22",
-   "is_yesterday": true,
+   "is_yesterday": false,
    "high_f": 65,
    "low_f": 53,
    "high_rank": {
@@ -82,19 +76,6 @@
     "record": false,
     "phrase": "8th warmest November 22 low (tied) of 155 since 1872, warmest since 1999"
    }
-  },
-  "today_high_so_far": {
-   "value_f": 71,
-   "warm_rank": 4,
-   "cool_rank": 152,
-   "years": 155,
-   "first_year": 1872,
-   "tied_years": [],
-   "standing": "warm",
-   "notable": true,
-   "since": 1979,
-   "record": false,
-   "phrase": "already the 4th warmest November 23 high of 155 since 1872, warmest since 1979"
   },
   "forecast_highs": [
    {
@@ -408,13 +389,6 @@
  "hourly": {
   "issued_utc": "2026-11-24T02:52:51Z",
   "hours": [
-   {
-    "start": "2026-11-23T23:00:00-05:00",
-    "temp_f": 48,
-    "temp_c": 8.89,
-    "precip_chance_pct": 32,
-    "short_forecast": "Scattered Rain Showers"
-   },
    {
     "start": "2026-11-24T00:00:00-05:00",
     "temp_f": 47,
@@ -741,6 +715,13 @@
     "start": "2026-11-25T22:00:00-05:00",
     "temp_f": 44,
     "temp_c": 6.67,
+    "precip_chance_pct": 3,
+    "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "start": "2026-11-25T23:00:00-05:00",
+    "temp_f": 43,
+    "temp_c": 6.11,
     "precip_chance_pct": 3,
     "short_forecast": "Mostly Cloudy"
    }

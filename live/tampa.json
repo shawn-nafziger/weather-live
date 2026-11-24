@@ -11,7 +11,7 @@
   "lon": -82.5403,
   "history": "Same site as the official Tampa record"
  },
- "as_of_utc": "2026-11-24T04:51:38Z",
+ "as_of_utc": "2026-11-24T05:08:02Z",
  "now": {
   "time_utc": "2026-11-24T03:55:00Z",
   "temp_c": 17,
@@ -23,27 +23,11 @@
   "description": "Cloudy"
  },
  "today_so_far": {
-  "date_local": "2026-11-23",
-  "readings": 9,
-  "basis": "hourly reports (tenths of a degree)",
-  "approximate": false,
-  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 18.9,
-  "high_f": 66.0,
-  "high_time_utc": "2026-11-23T06:53:00Z",
-  "low_c": 17.8,
-  "low_f": 64.0,
-  "low_time_utc": "2026-11-23T22:53:00Z",
-  "peak_between_reports": {
-   "at_least_f": 68.9,
-   "about_f": 69.8,
-   "time_utc": "2026-11-23T05:00:00Z"
-  },
-  "dip_between_reports": {
-   "at_most_f": 63.5,
-   "about_f": 62.6,
-   "time_utc": "2026-11-23T08:25:00Z"
-  }
+  "date_local": "2026-11-24",
+  "readings": 0,
+  "basis": "5-minute readings (whole \u00b0C, approximate)",
+  "approximate": true,
+  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two."
  },
  "record": {
   "series": "Tampa area (ThreadEx; airport)",
@@ -52,7 +36,7 @@
   "rank_today": true,
   "latest_final": {
    "date": "2026-11-22",
-   "is_yesterday": true,
+   "is_yesterday": false,
    "high_f": 78,
    "low_f": 67,
    "high_rank": {
@@ -270,12 +254,12 @@
   "periods": [
    {
     "name": "Tonight",
-    "start": "2026-11-23T21:00:00-05:00",
+    "start": "2026-11-23T18:00:00-05:00",
     "is_daytime": false,
     "temp_f": 62,
     "temp_c": 16.67,
     "precip_chance_pct": 27,
-    "short_forecast": "Chance Showers And Thunderstorms then Mostly Cloudy"
+    "short_forecast": "Slight Chance Showers And Thunderstorms then Mostly Cloudy"
    },
    {
     "name": "Tuesday",
@@ -399,13 +383,6 @@
  "hourly": {
   "issued_utc": "2026-11-23T22:06:59Z",
   "hours": [
-   {
-    "start": "2026-11-23T23:00:00-05:00",
-    "temp_f": 65,
-    "temp_c": 18.33,
-    "precip_chance_pct": 11,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "start": "2026-11-24T00:00:00-05:00",
     "temp_f": 64,
@@ -730,6 +707,13 @@
    },
    {
     "start": "2026-11-25T22:00:00-05:00",
+    "temp_f": 68,
+    "temp_c": 20.0,
+    "precip_chance_pct": 50,
+    "short_forecast": "Chance Showers And Thunderstorms"
+   },
+   {
+    "start": "2026-11-25T23:00:00-05:00",
     "temp_f": 68,
     "temp_c": 20.0,
     "precip_chance_pct": 50,
