@@ -11,20 +11,20 @@
   "lon": -80.9614,
   "history": "Same site as the official Charlotte record"
  },
- "as_of_utc": "2026-11-23T23:08:06Z",
+ "as_of_utc": "2026-11-24T00:08:06Z",
  "now": {
-  "time_utc": "2026-11-23T22:40:00Z",
-  "temp_c": 19,
-  "temp_f": 66.2,
+  "time_utc": "2026-11-23T23:20:00Z",
+  "temp_c": 18,
+  "temp_f": 64.4,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 15,
-  "humidity_pct": 77.62,
-  "wind_kmh": 9.25,
-  "description": "Mostly Clear"
+  "humidity_pct": 82.63,
+  "wind_kmh": 5.54,
+  "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-23",
-  "readings": 18,
+  "readings": 19,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -110,29 +110,6 @@
    "phrase": "already the 17th warmest November 23 high (tied) of 149 since 1878, warmest since 2025"
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-23",
-    "high_f": 73,
-    "would_rank": {
-     "value_f": 73,
-     "warm_rank": 8,
-     "cool_rank": 138,
-     "years": 149,
-     "first_year": 1878,
-     "tied_years": [
-      1927,
-      1990,
-      2010,
-      2025
-     ],
-     "standing": "warm",
-     "notable": true,
-     "since": 2025,
-     "record": false,
-     "phrase": "8th warmest November 23 high (tied) of 149 since 1878, warmest since 2025"
-    }
-   },
    {
     "period": "Tuesday",
     "date": "2026-11-24",
@@ -284,25 +261,42 @@
      "record": false,
      "phrase": "27th warmest November 29 high (tied) of 149 since 1878, warmest since 2022"
     }
+   },
+   {
+    "period": "Monday",
+    "date": "2026-11-30",
+    "high_f": 64,
+    "would_rank": {
+     "value_f": 64,
+     "warm_rank": 23,
+     "cool_rank": 120,
+     "years": 149,
+     "first_year": 1878,
+     "tied_years": [
+      1930,
+      1949,
+      1975,
+      2002,
+      2012,
+      2018,
+      2020
+     ],
+     "standing": "warm",
+     "notable": true,
+     "since": 2020,
+     "record": false,
+     "phrase": "23rd warmest November 30 high (tied) of 149 since 1878, warmest since 2020"
+    }
    }
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-23T18:23:27Z",
+  "issued_utc": "2026-11-23T23:43:30Z",
   "grid": "GSP/115,64",
   "periods": [
    {
-    "name": "This Afternoon",
-    "start": "2026-11-23T14:00:00-05:00",
-    "is_daytime": true,
-    "temp_f": 73,
-    "temp_c": 22.78,
-    "precip_chance_pct": 6,
-    "short_forecast": "Mostly Cloudy"
-   },
-   {
     "name": "Tonight",
-    "start": "2026-11-23T18:00:00-05:00",
+    "start": "2026-11-23T19:00:00-05:00",
     "is_daytime": false,
     "temp_f": 45,
     "temp_c": 7.22,
@@ -416,19 +410,21 @@
     "temp_c": 3.89,
     "precip_chance_pct": 11,
     "short_forecast": "Mostly Clear"
+   },
+   {
+    "name": "Monday",
+    "start": "2026-11-30T06:00:00-05:00",
+    "is_daytime": true,
+    "temp_f": 64,
+    "temp_c": 17.78,
+    "precip_chance_pct": 11,
+    "short_forecast": "Sunny"
    }
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-23T18:23:27Z",
+  "issued_utc": "2026-11-23T23:43:30Z",
   "hours": [
-   {
-    "start": "2026-11-23T18:00:00-05:00",
-    "temp_f": 63,
-    "temp_c": 17.22,
-    "precip_chance_pct": 9,
-    "short_forecast": "Partly Cloudy"
-   },
    {
     "start": "2026-11-23T19:00:00-05:00",
     "temp_f": 60,
@@ -757,6 +753,13 @@
     "temp_c": 10.56,
     "precip_chance_pct": 52,
     "short_forecast": "Chance Light Rain"
+   },
+   {
+    "start": "2026-11-25T18:00:00-05:00",
+    "temp_f": 50,
+    "temp_c": 10.0,
+    "precip_chance_pct": 57,
+    "short_forecast": "Light Rain Likely"
    }
   ]
  },

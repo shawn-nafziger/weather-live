@@ -11,20 +11,20 @@
   "lon": -75.2268,
   "history": "Same site as the official Philadelphia record"
  },
- "as_of_utc": "2026-11-23T23:08:06Z",
+ "as_of_utc": "2026-11-24T00:08:06Z",
  "now": {
-  "time_utc": "2026-11-23T22:40:00Z",
+  "time_utc": "2026-11-23T23:20:00Z",
   "temp_c": 17,
   "temp_f": 62.6,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 9,
   "humidity_pct": 59.28,
-  "wind_kmh": 14.83,
-  "description": "Cloudy"
+  "wind_kmh": 18.5,
+  "description": "Light Rain"
  },
  "today_so_far": {
   "date_local": "2026-11-23",
-  "readings": 17,
+  "readings": 18,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -88,28 +88,6 @@
    "phrase": "already the 6th warmest November 23 high of 153 since 1874, warmest since 1992"
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-23",
-    "high_f": 70,
-    "would_rank": {
-     "value_f": 70,
-     "warm_rank": 3,
-     "cool_rank": 148,
-     "years": 153,
-     "first_year": 1874,
-     "tied_years": [
-      1934,
-      1979,
-      1992
-     ],
-     "standing": "warm",
-     "notable": true,
-     "since": 1992,
-     "record": false,
-     "phrase": "3rd warmest November 23 high (tied) of 153 since 1874, warmest since 1992"
-    }
-   },
    {
     "period": "Tuesday",
     "date": "2026-11-24",
@@ -255,6 +233,28 @@
      "record": false,
      "phrase": "26th warmest November 29 high (tied) of 153 since 1874, warmest since 2017"
     }
+   },
+   {
+    "period": "Monday",
+    "date": "2026-11-30",
+    "high_f": 58,
+    "would_rank": {
+     "value_f": 58,
+     "warm_rank": 21,
+     "cool_rank": 130,
+     "years": 153,
+     "first_year": 1874,
+     "tied_years": [
+      1899,
+      1970,
+      1982
+     ],
+     "standing": "warm",
+     "notable": true,
+     "since": 2020,
+     "record": false,
+     "phrase": "21st warmest November 30 high (tied) of 153 since 1874, warmest since 2020"
+    }
    }
   ]
  },
@@ -262,15 +262,6 @@
   "issued_utc": "2026-11-23T21:07:56Z",
   "grid": "PHI/48,75",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-23T16:00:00-05:00",
-    "is_daytime": true,
-    "temp_f": 70,
-    "temp_c": 21.11,
-    "precip_chance_pct": 3,
-    "short_forecast": "Partly Sunny"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-23T18:00:00-05:00",
@@ -387,19 +378,21 @@
     "temp_c": 5.0,
     "precip_chance_pct": 10,
     "short_forecast": "Partly Cloudy"
+   },
+   {
+    "name": "Monday",
+    "start": "2026-11-30T06:00:00-05:00",
+    "is_daytime": true,
+    "temp_f": 58,
+    "temp_c": 14.44,
+    "precip_chance_pct": 12,
+    "short_forecast": "Mostly Sunny"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-23T21:07:56Z",
   "hours": [
-   {
-    "start": "2026-11-23T18:00:00-05:00",
-    "temp_f": 61,
-    "temp_c": 16.11,
-    "precip_chance_pct": 2,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "start": "2026-11-23T19:00:00-05:00",
     "temp_f": 59,
@@ -728,6 +721,13 @@
     "temp_c": 9.44,
     "precip_chance_pct": 0,
     "short_forecast": "Partly Sunny"
+   },
+   {
+    "start": "2026-11-25T18:00:00-05:00",
+    "temp_f": 46,
+    "temp_c": 7.78,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Cloudy"
    }
   ]
  },

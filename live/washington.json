@@ -11,20 +11,20 @@
   "lon": -77.0342,
   "history": "Same site as the official Washington record"
  },
- "as_of_utc": "2026-11-23T23:08:06Z",
+ "as_of_utc": "2026-11-24T00:08:06Z",
  "now": {
-  "time_utc": "2026-11-23T22:40:00Z",
-  "temp_c": 17,
-  "temp_f": 62.6,
+  "time_utc": "2026-11-23T23:20:00Z",
+  "temp_c": 16,
+  "temp_f": 60.8,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 9,
-  "humidity_pct": 59.28,
-  "wind_kmh": 22.21,
+  "dewpoint_c": 8,
+  "humidity_pct": 59.04,
+  "wind_kmh": null,
   "description": "Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-23",
-  "readings": 13,
+  "readings": 14,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -101,26 +101,6 @@
    "phrase": "already the 5th warmest November 23 high (tied) of 155 since 1872, warmest since 1992"
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-23",
-    "high_f": 72,
-    "would_rank": {
-     "value_f": 72,
-     "warm_rank": 4,
-     "cool_rank": 151,
-     "years": 155,
-     "first_year": 1872,
-     "tied_years": [
-      1931
-     ],
-     "standing": "warm",
-     "notable": true,
-     "since": 1979,
-     "record": false,
-     "phrase": "4th warmest November 23 high (tied) of 155 since 1872, warmest since 1979"
-    }
-   },
    {
     "period": "Tuesday",
     "date": "2026-11-24",
@@ -269,30 +249,42 @@
      "record": false,
      "phrase": "24th warmest November 29 high (tied) of 155 since 1872, warmest since 2017"
     }
+   },
+   {
+    "period": "Monday",
+    "date": "2026-11-30",
+    "high_f": 61,
+    "would_rank": {
+     "value_f": 61,
+     "warm_rank": 20,
+     "cool_rank": 134,
+     "years": 155,
+     "first_year": 1872,
+     "tied_years": [
+      1899,
+      1962
+     ],
+     "standing": "warm",
+     "notable": true,
+     "since": 2020,
+     "record": false,
+     "phrase": "20th warmest November 30 high (tied) of 155 since 1872, warmest since 2020"
+    }
    }
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-23T20:53:00Z",
+  "issued_utc": "2026-11-23T23:29:50Z",
   "grid": "LWX/97,69",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-23T15:00:00-05:00",
-    "is_daytime": true,
-    "temp_f": 72,
-    "temp_c": 22.22,
-    "precip_chance_pct": 16,
-    "short_forecast": "Isolated Rain Showers"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-23T18:00:00-05:00",
     "is_daytime": false,
     "temp_f": 40,
     "temp_c": 4.44,
-    "precip_chance_pct": 19,
-    "short_forecast": "Isolated Rain Showers then Partly Cloudy"
+    "precip_chance_pct": 20,
+    "short_forecast": "Slight Chance Rain Showers then Partly Cloudy"
    },
    {
     "name": "Tuesday",
@@ -401,31 +393,33 @@
     "temp_c": 5.56,
     "precip_chance_pct": 11,
     "short_forecast": "Mostly Clear"
+   },
+   {
+    "name": "Monday",
+    "start": "2026-11-30T06:00:00-05:00",
+    "is_daytime": true,
+    "temp_f": 61,
+    "temp_c": 16.11,
+    "precip_chance_pct": 11,
+    "short_forecast": "Mostly Sunny"
    }
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-23T20:53:00Z",
+  "issued_utc": "2026-11-23T23:29:50Z",
   "hours": [
-   {
-    "start": "2026-11-23T18:00:00-05:00",
-    "temp_f": 61,
-    "temp_c": 16.11,
-    "precip_chance_pct": 16,
-    "short_forecast": "Isolated Rain Showers"
-   },
    {
     "start": "2026-11-23T19:00:00-05:00",
     "temp_f": 60,
     "temp_c": 15.56,
     "precip_chance_pct": 19,
-    "short_forecast": "Isolated Rain Showers"
+    "short_forecast": "Slight Chance Rain Showers"
    },
    {
     "start": "2026-11-23T20:00:00-05:00",
     "temp_f": 58,
     "temp_c": 14.44,
-    "precip_chance_pct": 7,
+    "precip_chance_pct": 13,
     "short_forecast": "Mostly Cloudy"
    },
    {
@@ -740,6 +734,13 @@
     "start": "2026-11-25T17:00:00-05:00",
     "temp_f": 53,
     "temp_c": 11.67,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "start": "2026-11-25T18:00:00-05:00",
+    "temp_f": 52,
+    "temp_c": 11.11,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Cloudy"
    }

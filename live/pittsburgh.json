@@ -11,34 +11,29 @@
   "lon": -80.2145,
   "history": "Same site as the official Pittsburgh record"
  },
- "as_of_utc": "2026-11-23T23:08:06Z",
+ "as_of_utc": "2026-11-24T00:08:06Z",
  "now": {
-  "time_utc": "2026-11-23T22:40:00Z",
-  "temp_c": 7,
-  "temp_f": 44.6,
+  "time_utc": "2026-11-23T23:20:00Z",
+  "temp_c": 6,
+  "temp_f": 42.8,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": -2,
-  "humidity_pct": 52.75,
-  "wind_kmh": 24.08,
-  "description": "Clear"
+  "dewpoint_c": -3,
+  "humidity_pct": 52.47,
+  "wind_kmh": null,
+  "description": "Mostly Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-23",
-  "readings": 16,
+  "readings": 17,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
   "high_c": 12.8,
   "high_f": 55.0,
   "high_time_utc": "2026-11-23T05:51:00Z",
-  "low_c": 7.8,
-  "low_f": 46.0,
-  "low_time_utc": "2026-11-23T15:36:00Z",
-  "dip_between_reports": {
-   "at_most_f": 45.5,
-   "about_f": 44.6,
-   "time_utc": "2026-11-23T22:35:00Z"
-  }
+  "low_c": 6.1,
+  "low_f": 43.0,
+  "low_time_utc": "2026-11-23T22:51:00Z"
  },
  "record": {
   "series": "Pittsburgh area (ThreadEx; airport)",
@@ -91,26 +86,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-23",
-    "high_f": 51,
-    "would_rank": {
-     "value_f": 51,
-     "warm_rank": 65,
-     "cool_rank": 87,
-     "years": 152,
-     "first_year": 1875,
-     "tied_years": [
-      1930
-     ],
-     "standing": "warm",
-     "notable": false,
-     "since": 2025,
-     "record": false,
-     "phrase": "typical for November 23"
-    }
-   },
    {
     "period": "Tuesday",
     "date": "2026-11-24",
@@ -254,6 +229,28 @@
      "record": false,
      "phrase": "typical for November 29"
     }
+   },
+   {
+    "period": "Monday",
+    "date": "2026-11-30",
+    "high_f": 50,
+    "would_rank": {
+     "value_f": 50,
+     "warm_rank": 39,
+     "cool_rank": 110,
+     "years": 151,
+     "first_year": 1875,
+     "tied_years": [
+      1883,
+      1931,
+      2004
+     ],
+     "standing": "warm",
+     "notable": false,
+     "since": 2023,
+     "record": false,
+     "phrase": "typical for November 30"
+    }
    }
   ]
  },
@@ -261,15 +258,6 @@
   "issued_utc": "2026-11-23T21:56:12Z",
   "grid": "PBZ/70,67",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-23T17:00:00-05:00",
-    "is_daytime": true,
-    "temp_f": 51,
-    "temp_c": 10.56,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-23T18:00:00-05:00",
@@ -386,19 +374,21 @@
     "temp_c": 2.22,
     "precip_chance_pct": 23,
     "short_forecast": "Slight Chance Light Rain"
+   },
+   {
+    "name": "Monday",
+    "start": "2026-11-30T06:00:00-05:00",
+    "is_daytime": true,
+    "temp_f": 50,
+    "temp_c": 10.0,
+    "precip_chance_pct": 23,
+    "short_forecast": "Slight Chance Light Rain"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-23T21:56:12Z",
   "hours": [
-   {
-    "start": "2026-11-23T18:00:00-05:00",
-    "temp_f": 44,
-    "temp_c": 6.67,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Clear"
-   },
    {
     "start": "2026-11-23T19:00:00-05:00",
     "temp_f": 42,
@@ -727,6 +717,13 @@
     "temp_c": 7.78,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Sunny"
+   },
+   {
+    "start": "2026-11-25T18:00:00-05:00",
+    "temp_f": 44,
+    "temp_c": 6.67,
+    "precip_chance_pct": 0,
+    "short_forecast": "Partly Cloudy"
    }
   ]
  },

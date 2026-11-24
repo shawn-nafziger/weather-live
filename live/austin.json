@@ -11,20 +11,20 @@
   "lon": -97.7605,
   "history": "Same site as the official Austin record"
  },
- "as_of_utc": "2026-11-23T23:08:06Z",
+ "as_of_utc": "2026-11-24T00:08:06Z",
  "now": {
-  "time_utc": "2026-11-23T21:51:00Z",
-  "temp_c": 15,
-  "temp_f": 59.0,
+  "time_utc": "2026-11-23T22:51:00Z",
+  "temp_c": 13.9,
+  "temp_f": 57.0,
   "precision": "tenths of a degree",
   "dewpoint_c": 6.1,
-  "humidity_pct": 55.27,
+  "humidity_pct": 59.34,
   "wind_kmh": 9.36,
-  "description": "Clear"
+  "description": ""
  },
  "today_so_far": {
   "date_local": "2026-11-23",
-  "readings": 12,
+  "readings": 13,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -86,28 +86,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-23",
-    "high_f": 61,
-    "would_rank": {
-     "value_f": 61,
-     "warm_rank": 98,
-     "cool_rank": 29,
-     "years": 129,
-     "first_year": 1897,
-     "tied_years": [
-      1912,
-      1930,
-      1960
-     ],
-     "standing": "cool",
-     "notable": false,
-     "since": 2023,
-     "record": false,
-     "phrase": "typical for November 23"
-    }
-   },
    {
     "period": "Tuesday",
     "date": "2026-11-24",
@@ -258,22 +236,40 @@
      "record": false,
      "phrase": "26th warmest November 29 high (tied) of 128 since 1897, warmest since 2025"
     }
+   },
+   {
+    "period": "Monday",
+    "date": "2026-11-30",
+    "high_f": 72,
+    "would_rank": {
+     "value_f": 72,
+     "warm_rank": 35,
+     "cool_rank": 85,
+     "years": 127,
+     "first_year": 1897,
+     "tied_years": [
+      1903,
+      1925,
+      1927,
+      1940,
+      1966,
+      1973,
+      1986,
+      2005
+     ],
+     "standing": "warm",
+     "notable": false,
+     "since": 2023,
+     "record": false,
+     "phrase": "typical for November 30"
+    }
    }
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-23T22:46:19Z",
+  "issued_utc": "2026-11-23T23:42:19Z",
   "grid": "EWX/155,93",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-23T17:00:00-06:00",
-    "is_daytime": true,
-    "temp_f": 61,
-    "temp_c": 16.11,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-23T18:00:00-06:00",
@@ -390,19 +386,21 @@
     "temp_c": 10.56,
     "precip_chance_pct": 1,
     "short_forecast": "Mostly Clear"
+   },
+   {
+    "name": "Monday",
+    "start": "2026-11-30T06:00:00-06:00",
+    "is_daytime": true,
+    "temp_f": 72,
+    "temp_c": 22.22,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Sunny"
    }
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-23T22:42:19Z",
+  "issued_utc": "2026-11-23T23:42:19Z",
   "hours": [
-   {
-    "start": "2026-11-23T17:00:00-06:00",
-    "temp_f": 58,
-    "temp_c": 14.44,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "start": "2026-11-23T18:00:00-06:00",
     "temp_f": 55,
@@ -415,19 +413,19 @@
     "temp_f": 53,
     "temp_c": 11.67,
     "precip_chance_pct": 0,
-    "short_forecast": "Mostly Clear"
+    "short_forecast": "Clear"
    },
    {
     "start": "2026-11-23T20:00:00-06:00",
-    "temp_f": 52,
-    "temp_c": 11.11,
+    "temp_f": 51,
+    "temp_c": 10.56,
     "precip_chance_pct": 0,
-    "short_forecast": "Mostly Clear"
+    "short_forecast": "Clear"
    },
    {
     "start": "2026-11-23T21:00:00-06:00",
-    "temp_f": 51,
-    "temp_c": 10.56,
+    "temp_f": 50,
+    "temp_c": 10.0,
     "precip_chance_pct": 0,
     "short_forecast": "Clear"
    },
@@ -729,6 +727,13 @@
     "start": "2026-11-25T16:00:00-06:00",
     "temp_f": 55,
     "temp_c": 12.78,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
+   },
+   {
+    "start": "2026-11-25T17:00:00-06:00",
+    "temp_f": 53,
+    "temp_c": 11.67,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
    }

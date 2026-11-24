@@ -11,20 +11,20 @@
   "lon": -84.6723,
   "history": "Same site as the official Cincinnati record"
  },
- "as_of_utc": "2026-11-23T23:08:06Z",
+ "as_of_utc": "2026-11-24T00:08:06Z",
  "now": {
-  "time_utc": "2026-11-23T22:05:00Z",
-  "temp_c": 7,
-  "temp_f": 44.6,
+  "time_utc": "2026-11-23T23:20:00Z",
+  "temp_c": 5,
+  "temp_f": 41.0,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": -2,
-  "humidity_pct": 52.75,
-  "wind_kmh": 18.5,
+  "humidity_pct": 60.56,
+  "wind_kmh": 16.67,
   "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-23",
-  "readings": 13,
+  "readings": 14,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -80,36 +80,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-23",
-    "high_f": 50,
-    "would_rank": {
-     "value_f": 50,
-     "warm_rank": 69,
-     "cool_rank": 76,
-     "years": 155,
-     "first_year": 1872,
-     "tied_years": [
-      1873,
-      1894,
-      1915,
-      1942,
-      1949,
-      1952,
-      1964,
-      1984,
-      1985,
-      2011,
-      2020
-     ],
-     "standing": "warm",
-     "notable": false,
-     "since": 2025,
-     "record": false,
-     "phrase": "typical for November 23"
-    }
-   },
    {
     "period": "Tuesday",
     "date": "2026-11-24",
@@ -249,6 +219,29 @@
      "record": false,
      "phrase": "31st warmest November 29 high (tied) of 155 since 1872, warmest since 2022"
     }
+   },
+   {
+    "period": "Monday",
+    "date": "2026-11-30",
+    "high_f": 54,
+    "would_rank": {
+     "value_f": 54,
+     "warm_rank": 36,
+     "cool_rank": 116,
+     "years": 155,
+     "first_year": 1872,
+     "tied_years": [
+      1921,
+      1996,
+      2003,
+      2021
+     ],
+     "standing": "warm",
+     "notable": false,
+     "since": 2023,
+     "record": false,
+     "phrase": "typical for November 30"
+    }
    }
   ]
  },
@@ -256,15 +249,6 @@
   "issued_utc": "2026-11-23T22:35:52Z",
   "grid": "ILN/30,35",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-23T17:00:00-05:00",
-    "is_daytime": true,
-    "temp_f": 50,
-    "temp_c": 10.0,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-23T18:00:00-05:00",
@@ -381,19 +365,21 @@
     "temp_c": 2.78,
     "precip_chance_pct": 17,
     "short_forecast": "Slight Chance Light Rain"
+   },
+   {
+    "name": "Monday",
+    "start": "2026-11-30T06:00:00-05:00",
+    "is_daytime": true,
+    "temp_f": 54,
+    "temp_c": 12.22,
+    "precip_chance_pct": 13,
+    "short_forecast": "Mostly Sunny"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-23T22:35:52Z",
   "hours": [
-   {
-    "start": "2026-11-23T18:00:00-05:00",
-    "temp_f": 44,
-    "temp_c": 6.67,
-    "precip_chance_pct": 0,
-    "short_forecast": "Clear"
-   },
    {
     "start": "2026-11-23T19:00:00-05:00",
     "temp_f": 42,
@@ -720,6 +706,13 @@
     "start": "2026-11-25T17:00:00-05:00",
     "temp_f": 49,
     "temp_c": 9.44,
+    "precip_chance_pct": 18,
+    "short_forecast": "Slight Chance Light Rain"
+   },
+   {
+    "start": "2026-11-25T18:00:00-05:00",
+    "temp_f": 48,
+    "temp_c": 8.89,
     "precip_chance_pct": 18,
     "short_forecast": "Slight Chance Light Rain"
    }
