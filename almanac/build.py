@@ -34,6 +34,7 @@ from scipy import stats
 from albers import project
 import records  # noqa: E402
 import everyday  # noqa: E402
+import forecast  # noqa: E402
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 import history_store as store  # noqa: E402
@@ -889,7 +890,7 @@ def switch_html(slug):
     return f'<nav class="switch" aria-label="Choose the record">{links}</nav>'
 
 
-def render(data, has_records=False, has_everyday=False):
+def render(data, has_records=False, has_everyday=False, forecast_html=""):
     tpl = (HERE / "template.html").read_text(encoding="utf-8")
     c, y = data["city"], data["yesterday"]
     asof = date.fromisoformat(data["asof"])
@@ -915,6 +916,7 @@ def render(data, has_records=False, has_everyday=False):
                  if has_records else ""),
         "REC_LINK": (f'<p class="more"><a href="records/">Every date\'s record high and low in {html.escape(c["name"])} →</a></p>'
                      if has_records else ""),
+        "FORECAST": forecast_html,   # the 7-day forecast strip (Nov 21, 2026); "" when there's no forecast
         "DATA": json.dumps(data, separators=(",", ":")),
     }
     for k, v in fill.items():
@@ -925,7 +927,7 @@ def render(data, has_records=False, has_everyday=False):
     return tpl
 
 
-def write_city(slug, out_dir, history=None, today=None):
+def write_city(slug, out_dir, history=None, today=None, forecasts=None):
     """Writes the overview page. Returns (overview data, records data or None). The records page is written by
     write_records once every place has been tried, so its "nearby" links only point at pages that exist."""
     h = load(slug, history)
@@ -946,8 +948,10 @@ def write_city(slug, out_dir, history=None, today=None):
     out = out_dir / "almanac" / slug
     out.mkdir(parents=True, exist_ok=True)
     (out / "data.json").write_text(json.dumps(data, separators=(",", ":")), encoding="utf-8")
-    (out / "index.html").write_text(render(data, has_records=rd is not None, has_everyday=rd is not None and ed is not None),
-                                    encoding="utf-8")
+    fc_html = forecast.strip_html(forecast.load(forecasts, slug), h, same_date_rank, city_name=data["city"]["name"])
+    data["_forecast"] = bool(fc_html)
+    (out / "index.html").write_text(render(data, has_records=rd is not None, has_everyday=rd is not None and ed is not None,
+                                           forecast_html=fc_html), encoding="utf-8")
     data["_records_skip"] = why
     data["_everyday_skip"] = why_ed
     data["_everyday"] = ed
@@ -1103,15 +1107,18 @@ def main():
     ap.add_argument("--all", action="store_true", help="every city that has a history file, plus the index")
     ap.add_argument("--history", help="a different history CSV for a single city (testing)")
     ap.add_argument("--out", default=str(SITE_DIR), help="output folder (default: site/)")
+    ap.add_argument("--forecasts", help="folder of NWS forecasts from scripts/forecast_pull.py (none: no forecast strip)")
     a = ap.parse_args()
     out_dir = Path(a.out)
     if not a.all and not a.city:
         ap.error("name a city or use --all")
     slugs = [s for s in CITIES if store.exists(HISTORY_DIR, s)] if a.all else [a.city]
     built, failed, recs, eds = [], [], [], []
+    n_fc = 0
     for slug in slugs:
         try:
-            data, rd = write_city(slug, out_dir, None if a.all else a.history)
+            data, rd = write_city(slug, out_dir, None if a.all else a.history, forecasts=a.forecasts)
+            n_fc += data.pop("_forecast")
             built.append(data)
             if rd:
                 recs.append(rd)
@@ -1147,7 +1154,7 @@ def main():
         write_index(built, out_dir)
         write_search_files(built, out_dir, recs, eds)
     print(f"{len(built)} of {len(slugs)} Almanac pages written to {out_dir}, {len(recs)} records pages "
-          f"and {len(eds)} every-day pages.")
+          f"and {len(eds)} every-day pages; {n_fc} with a 7-day forecast.")
     return 1 if not built else 0
 
 

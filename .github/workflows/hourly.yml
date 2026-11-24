@@ -11,6 +11,7 @@ on:
 
 permissions:
   contents: write
+  actions: write       # to start the evening Almanac rebuild (below)
 
 # Never let two runs write at the same time.
 concurrency:
@@ -49,3 +50,17 @@ jobs:
             sleep 10
           done
           echo "Push failed three times." && exit 1
+
+      # One evening Almanac rebuild (Nov 21, 2026), so the 7-day forecast strip picks up the NWS afternoon update
+      # the same evening instead of the next morning. The daily runs are all in the morning (Eastern). Started
+      # from here because this job already runs every hour; only the first run after 23:00 UTC starts it.
+      - name: Start the evening Almanac rebuild
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          [ "$(date -u +%H)" = "23" ] || exit 0
+          since=$(date -u -d '-3 hours' +%Y-%m-%dT%H:%M:%SZ)
+          n=$(gh api "repos/${GITHUB_REPOSITORY}/actions/workflows/daily.yml/runs?created=%3E%3D${since}" --jq '.total_count')
+          if [ "$n" != "0" ]; then echo "Already started."; exit 0; fi
+          gh workflow run daily.yml --ref main -R "$GITHUB_REPOSITORY"

@@ -29,6 +29,15 @@ MIN_SHARE = 0.9
 SUBPAGES = ("records", "every-day")   # branch pages under each place: <place>/<sub>/index.html
 
 
+FORECAST = re.compile(r'<section class="forecast".*?</section>', re.S)
+
+
+def _drop_forecast(page):
+    """A carried-over page keeps its numbers (dated) but not its forecast, which would be out of date (Nov 21, 2026)."""
+    if page.exists():
+        page.write_text(FORECAST.sub("", page.read_text(encoding="utf-8")), encoding="utf-8")
+
+
 def places(d):
     return {p.parent.name for p in d.glob("*/index.html")} if d.is_dir() else set()
 
@@ -60,6 +69,7 @@ def carry_over(new, prev, cities=None):
     urls = []
     for slug in kept:
         shutil.copytree(prev / slug, new / slug)
+        _drop_forecast(new / slug / "index.html")
         urls.append(f"{slug}/")
         urls += [f"{slug}/{sub}/" for sub in SUBPAGES if (prev / slug / sub / "index.html").exists()]
     for sub in SUBPAGES:
