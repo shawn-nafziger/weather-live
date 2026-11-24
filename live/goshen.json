@@ -11,20 +11,20 @@
   "lon": -85.7867,
   "history": "Provisional: Goshen Municipal Airport. The long record (GOSHEN 3SW) is a once-a-day volunteer station, so today's readings and the record come from different stations (question D2)"
  },
- "as_of_utc": "2026-11-24T16:07:54Z",
+ "as_of_utc": "2026-11-24T17:08:05Z",
  "now": {
-  "time_utc": "2026-11-24T15:55:00Z",
-  "temp_c": 1,
-  "temp_f": 33.8,
+  "time_utc": "2026-11-24T16:55:00Z",
+  "temp_c": 2,
+  "temp_f": 35.6,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": -4,
-  "humidity_pct": 69.27,
-  "wind_kmh": 7.42,
+  "dewpoint_c": -6,
+  "humidity_pct": 55.43,
+  "wind_kmh": 16.67,
   "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-24",
-  "readings": 10,
+  "readings": 11,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -94,12 +94,12 @@
   "note": "Today's readings come from a different station than this record, so today and the forecast aren't ranked against it."
  },
  "forecast": {
-  "issued_utc": "2026-11-24T15:44:50Z",
+  "issued_utc": "2026-11-24T16:29:53Z",
   "grid": "IWX/45,57",
   "periods": [
    {
-    "name": "Today",
-    "start": "2026-11-24T11:00:00-05:00",
+    "name": "This Afternoon",
+    "start": "2026-11-24T12:00:00-05:00",
     "is_daytime": true,
     "temp_f": 39,
     "temp_c": 3.89,
@@ -122,7 +122,7 @@
     "temp_f": 46,
     "temp_c": 7.78,
     "precip_chance_pct": 2,
-    "short_forecast": "Partly Sunny"
+    "short_forecast": "Mostly Cloudy"
    },
    {
     "name": "Wednesday Night",
@@ -226,15 +226,8 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-24T15:44:50Z",
+  "issued_utc": "2026-11-24T16:29:53Z",
   "hours": [
-   {
-    "start": "2026-11-24T11:00:00-05:00",
-    "temp_f": 35,
-    "temp_c": 1.67,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Sunny"
-   },
    {
     "start": "2026-11-24T12:00:00-05:00",
     "temp_f": 37,
@@ -366,14 +359,14 @@
     "temp_f": 28,
     "temp_c": -2.22,
     "precip_chance_pct": 0,
-    "short_forecast": "Partly Sunny"
+    "short_forecast": "Mostly Cloudy"
    },
    {
     "start": "2026-11-25T07:00:00-05:00",
     "temp_f": 28,
     "temp_c": -2.22,
     "precip_chance_pct": 0,
-    "short_forecast": "Partly Sunny"
+    "short_forecast": "Mostly Cloudy"
    },
    {
     "start": "2026-11-25T08:00:00-05:00",
@@ -401,14 +394,14 @@
     "temp_f": 41,
     "temp_c": 5.0,
     "precip_chance_pct": 2,
-    "short_forecast": "Partly Sunny"
+    "short_forecast": "Mostly Cloudy"
    },
    {
     "start": "2026-11-25T12:00:00-05:00",
     "temp_f": 43,
     "temp_c": 6.11,
     "precip_chance_pct": 2,
-    "short_forecast": "Mostly Sunny"
+    "short_forecast": "Mostly Cloudy"
    },
    {
     "start": "2026-11-25T13:00:00-05:00",
@@ -561,6 +554,13 @@
     "start": "2026-11-26T10:00:00-05:00",
     "temp_f": 42,
     "temp_c": 5.56,
+    "precip_chance_pct": 85,
+    "short_forecast": "Light Rain"
+   },
+   {
+    "start": "2026-11-26T11:00:00-05:00",
+    "temp_f": 44,
+    "temp_c": 6.67,
     "precip_chance_pct": 85,
     "short_forecast": "Light Rain"
    }

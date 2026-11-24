@@ -11,33 +11,33 @@
   "lon": -90.3736,
   "history": "Same site as the official St. Louis record"
  },
- "as_of_utc": "2026-11-24T16:07:54Z",
+ "as_of_utc": "2026-11-24T17:08:05Z",
  "now": {
-  "time_utc": "2026-11-24T15:40:00Z",
-  "temp_c": 1,
-  "temp_f": 33.8,
+  "time_utc": "2026-11-24T16:55:00Z",
+  "temp_c": 2,
+  "temp_f": 35.6,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": -3,
-  "humidity_pct": 74.64,
+  "humidity_pct": 69.48,
   "wind_kmh": 7.42,
   "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-24",
-  "readings": 7,
+  "readings": 8,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": -1.1,
-  "high_f": 30.0,
-  "high_time_utc": "2026-11-24T06:51:00Z",
+  "high_c": 1.1,
+  "high_f": 34.0,
+  "high_time_utc": "2026-11-24T15:51:00Z",
   "low_c": -2.8,
   "low_f": 27.0,
   "low_time_utc": "2026-11-24T10:51:00Z",
   "peak_between_reports": {
-   "at_least_f": 32.9,
-   "about_f": 33.8,
-   "time_utc": "2026-11-24T15:35:00Z"
+   "at_least_f": 34.7,
+   "about_f": 35.6,
+   "time_utc": "2026-11-24T16:55:00Z"
   }
  },
  "record": {
@@ -95,24 +95,25 @@
    {
     "period": "Today",
     "date": "2026-11-24",
-    "high_f": 43,
+    "high_f": 41,
     "would_rank": {
-     "value_f": 43,
-     "warm_rank": 107,
-     "cool_rank": 43,
+     "value_f": 41,
+     "warm_rank": 119,
+     "cool_rank": 30,
      "years": 153,
      "first_year": 1874,
      "tied_years": [
-      1884,
-      1944,
-      1955,
-      1981
+      1887,
+      1924,
+      1933,
+      1947,
+      1975
      ],
      "standing": "cool",
-     "notable": false,
+     "notable": true,
      "since": 2013,
      "record": false,
-     "phrase": "typical for November 24"
+     "phrase": "30th coolest November 24 high (tied) of 153 since 1874, coolest since 2013"
     }
    },
    {
@@ -254,17 +255,17 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-24T11:26:18Z",
+  "issued_utc": "2026-11-24T16:56:22Z",
   "grid": "LSX/89,80",
   "periods": [
    {
     "name": "Today",
-    "start": "2026-11-24T06:00:00-06:00",
+    "start": "2026-11-24T11:00:00-06:00",
     "is_daytime": true,
-    "temp_f": 43,
-    "temp_c": 6.11,
+    "temp_f": 41,
+    "temp_c": 5.0,
     "precip_chance_pct": 0,
-    "short_forecast": "Mostly Cloudy"
+    "short_forecast": "Mostly Sunny"
    },
    {
     "name": "Tonight",
@@ -388,13 +389,6 @@
  "hourly": {
   "issued_utc": "2026-11-24T11:26:18Z",
   "hours": [
-   {
-    "start": "2026-11-24T10:00:00-06:00",
-    "temp_f": 39,
-    "temp_c": 3.89,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "start": "2026-11-24T11:00:00-06:00",
     "temp_f": 41,
@@ -721,6 +715,13 @@
     "start": "2026-11-26T09:00:00-06:00",
     "temp_f": 38,
     "temp_c": 3.33,
+    "precip_chance_pct": 77,
+    "short_forecast": "Rain And Snow"
+   },
+   {
+    "start": "2026-11-26T10:00:00-06:00",
+    "temp_f": 39,
+    "temp_c": 3.89,
     "precip_chance_pct": 77,
     "short_forecast": "Rain And Snow"
    }
