@@ -11,9 +11,9 @@
   "lon": -90.3736,
   "history": "Same site as the official St. Louis record"
  },
- "as_of_utc": "2026-11-24T20:08:12Z",
+ "as_of_utc": "2026-11-24T21:08:11Z",
  "now": {
-  "time_utc": "2026-11-24T19:55:00Z",
+  "time_utc": "2026-11-24T20:25:00Z",
   "temp_c": 5,
   "temp_f": 41.0,
   "precision": "nearest whole \u00b0C",
@@ -33,7 +33,12 @@
   "high_time_utc": "2026-11-24T18:51:00Z",
   "low_c": -2.8,
   "low_f": 27.0,
-  "low_time_utc": "2026-11-24T10:51:00Z"
+  "low_time_utc": "2026-11-24T10:51:00Z",
+  "peak_between_reports": {
+   "at_least_f": 41.9,
+   "about_f": 42.8,
+   "time_utc": "2026-11-24T20:15:00Z"
+  }
  },
  "record": {
   "series": "St. Louis area (ThreadEx; Lambert airport)",
@@ -255,12 +260,12 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-24T18:55:52Z",
+  "issued_utc": "2026-11-24T20:25:56Z",
   "grid": "LSX/89,80",
   "periods": [
    {
     "name": "This Afternoon",
-    "start": "2026-11-24T13:00:00-06:00",
+    "start": "2026-11-24T14:00:00-06:00",
     "is_daytime": true,
     "temp_f": 41,
     "temp_c": 5.0,
@@ -387,35 +392,28 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-24T18:55:52Z",
+  "issued_utc": "2026-11-24T20:25:56Z",
   "hours": [
    {
-    "start": "2026-11-24T14:00:00-06:00",
+    "start": "2026-11-24T15:00:00-06:00",
     "temp_f": 41,
     "temp_c": 5.0,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Sunny"
    },
    {
-    "start": "2026-11-24T15:00:00-06:00",
-    "temp_f": 41,
-    "temp_c": 5.0,
-    "precip_chance_pct": 0,
-    "short_forecast": "Partly Sunny"
-   },
-   {
     "start": "2026-11-24T16:00:00-06:00",
     "temp_f": 41,
     "temp_c": 5.0,
     "precip_chance_pct": 0,
-    "short_forecast": "Partly Sunny"
+    "short_forecast": "Mostly Sunny"
    },
    {
     "start": "2026-11-24T17:00:00-06:00",
     "temp_f": 39,
     "temp_c": 3.89,
     "precip_chance_pct": 0,
-    "short_forecast": "Mostly Cloudy"
+    "short_forecast": "Partly Sunny"
    },
    {
     "start": "2026-11-24T18:00:00-06:00",
@@ -720,6 +718,13 @@
    },
    {
     "start": "2026-11-26T13:00:00-06:00",
+    "temp_f": 35,
+    "temp_c": 1.67,
+    "precip_chance_pct": 95,
+    "short_forecast": "Rain And Snow"
+   },
+   {
+    "start": "2026-11-26T14:00:00-06:00",
     "temp_f": 35,
     "temp_c": 1.67,
     "precip_chance_pct": 95,
