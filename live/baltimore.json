@@ -11,9 +11,9 @@
   "lon": -76.684,
   "history": "Same site as the official Baltimore record"
  },
- "as_of_utc": "2026-11-24T12:08:10Z",
+ "as_of_utc": "2026-11-24T13:08:11Z",
  "now": {
-  "time_utc": "2026-11-24T10:55:00Z",
+  "time_utc": "2026-11-24T12:40:00Z",
   "temp_c": 4,
   "temp_f": 39.2,
   "precision": "nearest whole \u00b0C",
@@ -24,16 +24,16 @@
  },
  "today_so_far": {
   "date_local": "2026-11-24",
-  "readings": 5,
+  "readings": 6,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
   "high_c": 9.4,
   "high_f": 48.9,
   "high_time_utc": "2026-11-24T05:54:00Z",
-  "low_c": 3.9,
-  "low_f": 39.0,
-  "low_time_utc": "2026-11-24T10:54:00Z",
+  "low_c": 2.2,
+  "low_f": 36.0,
+  "low_time_utc": "2026-11-24T11:54:00Z",
   "peak_between_reports": {
    "at_least_f": 50.9,
    "about_f": 51.8,
@@ -248,16 +248,16 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-24T08:52:50Z",
+  "issued_utc": "2026-11-24T11:52:47Z",
   "grid": "LWX/107,85",
   "periods": [
    {
     "name": "Today",
-    "start": "2026-11-24T06:00:00-05:00",
+    "start": "2026-11-24T07:00:00-05:00",
     "is_daytime": true,
     "temp_f": 52,
     "temp_c": 11.11,
-    "precip_chance_pct": 1,
+    "precip_chance_pct": 0,
     "short_forecast": "Sunny"
    },
    {
@@ -382,13 +382,6 @@
  "hourly": {
   "issued_utc": "2026-11-24T11:52:47Z",
   "hours": [
-   {
-    "start": "2026-11-24T07:00:00-05:00",
-    "temp_f": 36,
-    "temp_c": 2.22,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "start": "2026-11-24T08:00:00-05:00",
     "temp_f": 37,
@@ -717,6 +710,13 @@
     "temp_c": 7.22,
     "precip_chance_pct": 67,
     "short_forecast": "Light Rain Likely"
+   },
+   {
+    "start": "2026-11-26T07:00:00-05:00",
+    "temp_f": 46,
+    "temp_c": 7.78,
+    "precip_chance_pct": 97,
+    "short_forecast": "Rain"
    }
   ]
  },
