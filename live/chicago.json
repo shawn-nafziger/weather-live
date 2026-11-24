@@ -11,20 +11,20 @@
   "lon": -87.9044,
   "history": "Same station as the official Chicago record (ThreadEx, O'Hare since 1980)"
  },
- "as_of_utc": "2026-11-24T11:08:03Z",
+ "as_of_utc": "2026-11-24T12:08:10Z",
  "now": {
-  "time_utc": "2026-11-24T10:50:00Z",
+  "time_utc": "2026-11-24T11:55:00Z",
   "temp_c": -3,
   "temp_f": 26.6,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": -8,
   "humidity_pct": 68.41,
-  "wind_kmh": 11.12,
-  "description": "Mostly Clear"
+  "wind_kmh": 12.96,
+  "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-24",
-  "readings": 3,
+  "readings": 4,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -46,43 +46,52 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-22",
-   "is_yesterday": false,
-   "high_f": 59,
-   "low_f": 36,
+   "date": "2026-11-23",
+   "is_yesterday": true,
+   "high_f": 43,
+   "low_f": 28,
    "high_rank": {
-    "value_f": 59,
-    "warm_rank": 13,
-    "cool_rank": 140,
+    "value_f": 43,
+    "warm_rank": 78,
+    "cool_rank": 71,
     "years": 155,
     "first_year": 1872,
     "tied_years": [
-     1968,
-     1983,
-     1998
+     1899,
+     1923,
+     1939,
+     1940,
+     1986,
+     2021,
+     2024
     ],
-    "standing": "warm",
-    "notable": true,
-    "since": 2012,
-    "record": false,
-    "phrase": "13th warmest November 22 high (tied) of 155 since 1872, warmest since 2012"
-   },
-   "low_rank": {
-    "value_f": 36,
-    "warm_rank": 37,
-    "cool_rank": 116,
-    "years": 155,
-    "first_year": 1872,
-    "tied_years": [
-     1878,
-     1924,
-     1933
-    ],
-    "standing": "warm",
+    "standing": "cool",
     "notable": false,
     "since": 2024,
     "record": false,
-    "phrase": "typical for November 22"
+    "phrase": "typical for November 23"
+   },
+   "low_rank": {
+    "value_f": 28,
+    "warm_rank": 87,
+    "cool_rank": 61,
+    "years": 155,
+    "first_year": 1872,
+    "tied_years": [
+     1887,
+     1903,
+     1906,
+     1909,
+     1943,
+     1944,
+     1994,
+     2012
+    ],
+    "standing": "cool",
+    "notable": false,
+    "since": 2021,
+    "record": false,
+    "phrase": "typical for November 23"
    }
   },
   "forecast_highs": [
@@ -259,17 +268,17 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-24T08:16:42Z",
+  "issued_utc": "2026-11-24T11:01:04Z",
   "grid": "LOT/66,77",
   "periods": [
    {
     "name": "Overnight",
-    "start": "2026-11-24T02:00:00-06:00",
+    "start": "2026-11-24T05:00:00-06:00",
     "is_daytime": false,
     "temp_f": 24,
     "temp_c": -4.44,
-    "precip_chance_pct": 2,
-    "short_forecast": "Mostly Clear"
+    "precip_chance_pct": 0,
+    "short_forecast": "Partly Cloudy"
    },
    {
     "name": "Tuesday",
@@ -277,8 +286,8 @@
     "is_daytime": true,
     "temp_f": 41,
     "temp_c": 5.0,
-    "precip_chance_pct": 12,
-    "short_forecast": "Partly Sunny"
+    "precip_chance_pct": 11,
+    "short_forecast": "Isolated Snow Showers then Mostly Sunny"
    },
    {
     "name": "Tuesday Night",
@@ -391,56 +400,49 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-24T08:16:42Z",
+  "issued_utc": "2026-11-24T11:01:04Z",
   "hours": [
    {
-    "start": "2026-11-24T05:00:00-06:00",
+    "start": "2026-11-24T06:00:00-06:00",
     "temp_f": 25,
     "temp_c": -3.89,
-    "precip_chance_pct": 2,
-    "short_forecast": "Mostly Clear"
-   },
-   {
-    "start": "2026-11-24T06:00:00-06:00",
-    "temp_f": 26,
-    "temp_c": -3.33,
-    "precip_chance_pct": 7,
-    "short_forecast": "Mostly Sunny"
+    "precip_chance_pct": 8,
+    "short_forecast": "Sunny"
    },
    {
     "start": "2026-11-24T07:00:00-06:00",
-    "temp_f": 27,
-    "temp_c": -2.78,
-    "precip_chance_pct": 11,
-    "short_forecast": "Mostly Sunny"
+    "temp_f": 25,
+    "temp_c": -3.89,
+    "precip_chance_pct": 8,
+    "short_forecast": "Sunny"
    },
    {
     "start": "2026-11-24T08:00:00-06:00",
-    "temp_f": 29,
-    "temp_c": -1.67,
-    "precip_chance_pct": 12,
-    "short_forecast": "Mostly Sunny"
+    "temp_f": 27,
+    "temp_c": -2.78,
+    "precip_chance_pct": 8,
+    "short_forecast": "Sunny"
    },
    {
     "start": "2026-11-24T09:00:00-06:00",
     "temp_f": 33,
     "temp_c": 0.56,
-    "precip_chance_pct": 12,
-    "short_forecast": "Mostly Sunny"
+    "precip_chance_pct": 11,
+    "short_forecast": "Isolated Snow Showers"
    },
    {
     "start": "2026-11-24T10:00:00-06:00",
     "temp_f": 35,
     "temp_c": 1.67,
-    "precip_chance_pct": 9,
-    "short_forecast": "Mostly Sunny"
+    "precip_chance_pct": 11,
+    "short_forecast": "Isolated Snow Showers"
    },
    {
     "start": "2026-11-24T11:00:00-06:00",
     "temp_f": 38,
     "temp_c": 3.33,
-    "precip_chance_pct": 4,
-    "short_forecast": "Partly Sunny"
+    "precip_chance_pct": 11,
+    "short_forecast": "Isolated Snow Showers"
    },
    {
     "start": "2026-11-24T12:00:00-06:00",
@@ -724,6 +726,13 @@
    },
    {
     "start": "2026-11-26T04:00:00-06:00",
+    "temp_f": 40,
+    "temp_c": 4.44,
+    "precip_chance_pct": 40,
+    "short_forecast": "Chance Rain"
+   },
+   {
+    "start": "2026-11-26T05:00:00-06:00",
     "temp_f": 40,
     "temp_c": 4.44,
     "precip_chance_pct": 40,
