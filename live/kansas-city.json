@@ -11,29 +11,23 @@
   "lon": -94.7306,
   "history": "Same site as the official Kansas City record"
  },
- "as_of_utc": "2026-11-24T05:08:02Z",
+ "as_of_utc": "2026-11-24T06:08:06Z",
  "now": {
-  "time_utc": "2026-11-24T03:53:00Z",
-  "temp_c": -1.1,
-  "temp_f": 30.0,
-  "precision": "nearest whole \u00b0C",
-  "dewpoint_c": -4.4,
-  "humidity_pct": 78.28,
-  "wind_kmh": 18.36,
-  "description": ""
+  "time_utc": "2026-11-24T04:53:00Z",
+  "temp_c": -1.7,
+  "temp_f": 28.9,
+  "precision": "tenths of a degree",
+  "dewpoint_c": -5,
+  "humidity_pct": 78.19,
+  "wind_kmh": 14.76,
+  "description": "Cloudy"
  },
  "today_so_far": {
-  "date_local": "2026-11-23",
-  "readings": 10,
-  "basis": "hourly reports (tenths of a degree)",
-  "approximate": false,
-  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 5.6,
-  "high_f": 42.1,
-  "high_time_utc": "2026-11-23T19:53:00Z",
-  "low_c": -2.2,
-  "low_f": 28.0,
-  "low_time_utc": "2026-11-23T11:53:00Z"
+  "date_local": "2026-11-24",
+  "readings": 0,
+  "basis": "5-minute readings (whole \u00b0C, approximate)",
+  "approximate": true,
+  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two."
  },
  "record": {
   "series": "Kansas City area (ThreadEx; airport)",
@@ -42,7 +36,7 @@
   "rank_today": true,
   "latest_final": {
    "date": "2026-11-22",
-   "is_yesterday": true,
+   "is_yesterday": false,
    "high_f": 49,
    "low_f": 32,
    "high_rank": {
@@ -251,8 +245,8 @@
   "grid": "EAX/38,60",
   "periods": [
    {
-    "name": "Tonight",
-    "start": "2026-11-23T22:00:00-06:00",
+    "name": "Overnight",
+    "start": "2026-11-24T00:00:00-06:00",
     "is_daytime": false,
     "temp_f": 24,
     "temp_c": -4.44,
@@ -379,15 +373,8 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-23T23:26:44Z",
+  "issued_utc": "2026-11-24T04:21:32Z",
   "hours": [
-   {
-    "start": "2026-11-23T23:00:00-06:00",
-    "temp_f": 31,
-    "temp_c": -0.56,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "start": "2026-11-24T00:00:00-06:00",
     "temp_f": 30,
@@ -442,7 +429,7 @@
     "temp_f": 27,
     "temp_c": -2.78,
     "precip_chance_pct": 0,
-    "short_forecast": "Cloudy"
+    "short_forecast": "Mostly Cloudy"
    },
    {
     "start": "2026-11-24T08:00:00-06:00",
@@ -463,7 +450,7 @@
     "temp_f": 33,
     "temp_c": 0.56,
     "precip_chance_pct": 0,
-    "short_forecast": "Mostly Cloudy"
+    "short_forecast": "Cloudy"
    },
    {
     "start": "2026-11-24T11:00:00-06:00",
@@ -484,7 +471,7 @@
     "temp_f": 38,
     "temp_c": 3.33,
     "precip_chance_pct": 0,
-    "short_forecast": "Cloudy"
+    "short_forecast": "Mostly Cloudy"
    },
    {
     "start": "2026-11-24T14:00:00-06:00",
@@ -498,7 +485,7 @@
     "temp_f": 39,
     "temp_c": 3.89,
     "precip_chance_pct": 0,
-    "short_forecast": "Cloudy"
+    "short_forecast": "Mostly Cloudy"
    },
    {
     "start": "2026-11-24T16:00:00-06:00",
@@ -519,7 +506,7 @@
     "temp_f": 34,
     "temp_c": 1.11,
     "precip_chance_pct": 0,
-    "short_forecast": "Mostly Cloudy"
+    "short_forecast": "Cloudy"
    },
    {
     "start": "2026-11-24T19:00:00-06:00",
@@ -589,7 +576,7 @@
     "temp_f": 27,
     "temp_c": -2.78,
     "precip_chance_pct": 0,
-    "short_forecast": "Mostly Cloudy"
+    "short_forecast": "Partly Cloudy"
    },
    {
     "start": "2026-11-25T05:00:00-06:00",
@@ -603,28 +590,28 @@
     "temp_f": 27,
     "temp_c": -2.78,
     "precip_chance_pct": 0,
-    "short_forecast": "Mostly Sunny"
+    "short_forecast": "Partly Sunny"
    },
    {
     "start": "2026-11-25T07:00:00-06:00",
     "temp_f": 26,
     "temp_c": -3.33,
     "precip_chance_pct": 0,
-    "short_forecast": "Mostly Sunny"
+    "short_forecast": "Partly Sunny"
    },
    {
     "start": "2026-11-25T08:00:00-06:00",
     "temp_f": 28,
     "temp_c": -2.22,
     "precip_chance_pct": 0,
-    "short_forecast": "Mostly Sunny"
+    "short_forecast": "Partly Sunny"
    },
    {
     "start": "2026-11-25T09:00:00-06:00",
     "temp_f": 32,
     "temp_c": 0.0,
     "precip_chance_pct": 0,
-    "short_forecast": "Mostly Sunny"
+    "short_forecast": "Mostly Cloudy"
    },
    {
     "start": "2026-11-25T10:00:00-06:00",
@@ -712,6 +699,13 @@
    },
    {
     "start": "2026-11-25T22:00:00-06:00",
+    "temp_f": 30,
+    "temp_c": -1.11,
+    "precip_chance_pct": 0,
+    "short_forecast": "Partly Cloudy"
+   },
+   {
+    "start": "2026-11-25T23:00:00-06:00",
     "temp_f": 30,
     "temp_c": -1.11,
     "precip_chance_pct": 0,
