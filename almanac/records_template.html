@@ -214,11 +214,12 @@ html { scroll-padding-top: calc(var(--header-h) + 12px); }
   .site-nav .nav-about { margin-left: 8px; }
   .site-nav .nav-about::before { left: -11px; height: 14px; margin-top: -7px; }
 }
-/* Narrowest phones (360px and under): tighter menu so everything fits on one row with the divider. */
+/* Narrowest phones (360px and under): tighter menu so everything fits on one row with the divider
+   (Nov 23, 2026: tightened again after "Stories / Weather / NBA" ran 18px off a 320px screen). */
 @media (max-width: 360px) {
-  .site-bar .site-nav { gap: 8px; letter-spacing: .04em; }
-  .site-bar .site-nav .nav-about { margin-left: 6px; }
-  .site-bar .site-nav .nav-about::before { left: -8px; }
+  .site-bar .site-nav { gap: 6px; letter-spacing: 0; }
+  .site-bar .site-nav .nav-about { margin-left: 4px; }
+  .site-bar .site-nav .nav-about::before { left: -6px; }
 }
 /* Animated logo intro: hide the static logo until assets/site-header.js takes over (home: the hero; elsewhere: the header logo). */
 .tod-intro .hero-logo .mark rect, .tod-intro .hero-logo .wm,
