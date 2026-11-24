@@ -21,7 +21,7 @@
 :root {
   --bg: #f3f4ef; --surface: #ffffff; --ink: #201914; --ink-2: #4a403a; --ink-3: #6e645d;
   --rule: #dddad3; --ghost: #cdc9c1; --navy: #0a3746; --amber: #b36000; --edge: #e3b88a;
-  --land: #e8e6e0; --land-line: #f3f4ef;
+  --land: #dddad3; --land-line: #ffffff;
   --logo-2: #0a3746; --logo-3: #366f80; --logo-4: #62a8bb; --logo-ink: #201914; --logo-sub: #4a403a;
   --font-display: "Barlow Semi Condensed", "Arial Narrow", "Roboto Condensed", sans-serif;
   --font-body: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
@@ -30,13 +30,13 @@
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     --bg: #03222c; --surface: #0a3746; --ink: #f3f4ef; --ink-2: #dddad3; --ink-3: #9fb1b8; --rule: #1e3a44;
-    --ghost: #3a5762; --navy: #7fc4d6; --amber: #f99a2b; --edge: #8f6230; --land: #0c3341; --land-line: #03222c;
+    --ghost: #3a5762; --navy: #7fc4d6; --amber: #f99a2b; --edge: #8f6230; --land: #03222c; --land-line: #1e3a44;
     --logo-2: #7fc4d6; --logo-3: #4f8d9e; --logo-4: #2e6272; --logo-ink: #f3f4ef; --logo-sub: #dddad3; color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
   --bg: #03222c; --surface: #0a3746; --ink: #f3f4ef; --ink-2: #dddad3; --ink-3: #9fb1b8; --rule: #1e3a44;
-  --ghost: #3a5762; --navy: #7fc4d6; --amber: #f99a2b; --edge: #8f6230; --land: #0c3341; --land-line: #03222c;
+  --ghost: #3a5762; --navy: #7fc4d6; --amber: #f99a2b; --edge: #8f6230; --land: #03222c; --land-line: #1e3a44;
   --logo-2: #7fc4d6; --logo-3: #4f8d9e; --logo-4: #2e6272; --logo-ink: #f3f4ef; --logo-sub: #dddad3; color-scheme: dark;
 }
 * { box-sizing: border-box; }
@@ -80,14 +80,14 @@ h1 { font: 700 clamp(48px, 10vw, 92px)/.95 var(--font-display); text-transform: 
 .k-navy { --k: var(--navy); } .k-navy b { color: var(--navy); }
 .map { position: relative; }
 .map svg { display: block; width: 100%; height: auto; }
-.map .land path { fill: var(--land); stroke: var(--land-line); stroke-width: 1; }
+.map .land path { fill: var(--land); stroke: var(--land-line); stroke-width: 1.2; }
 .map .dot { cursor: pointer; }
-.map .dot circle.mark { stroke: var(--surface); stroke-width: 1.5; }
+.map .dot circle.mark { stroke: var(--bg); stroke-width: 1.2; }
 /* Light mode (Nov 9, 2026): a thin dark rim so pale dots (gray, light orange) stand out on the pale land. */
 :root:not([data-theme="dark"]) .map .dot circle.mark { stroke: rgb(32 25 20 / .45); stroke-width: 1; }
-@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .map .dot circle.mark { stroke: var(--surface); stroke-width: 1.5; } }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .map .dot circle.mark { stroke: var(--bg); stroke-width: 1.2; } }
 .map .dot:focus { outline: none; }
-.map .dot:focus circle.mark, .map .dot:hover circle.mark { stroke: var(--ink); stroke-width: 2; }
+.map .dot:focus circle.mark, .map .dot.hot circle.mark { stroke: var(--ink); stroke-width: 2; }
 .map text { font-family: var(--font-data); font-size: 12px; fill: var(--ink-2); pointer-events: none; paint-order: stroke; stroke: var(--surface); stroke-width: 3px; stroke-linejoin: round; }
 .tip { position: absolute; pointer-events: none; background: var(--ink); color: var(--bg); font: 400 13px/1.45 var(--font-body); padding: 8px 10px;
   border-radius: 6px; max-width: 260px; opacity: 0; transition: opacity .12s; z-index: 3; }
@@ -418,7 +418,7 @@ const tipText = p => `<b>${esc(p.name)}, ${p.st}</b><br>${p.lows} record lows si
 const svg = document.querySelector("#map svg"), tip = $("tip");
 function drawMap() {
   const scale = svg.getBoundingClientRect().width / 975 || 1;
-  const r = 6.5 / Math.min(1, Math.max(scale, .4));          // ~6.5px on screen at any width
+  const r = 5.5 / Math.min(1, Math.max(scale, .4));          // ~5.5px on screen at any width (smaller: 328 dots overlap less)
   const hit = Math.max(r * 2.2, 22 / scale);                   // a tap target bigger than the dot
   const order = P.slice().sort((a, b) => ({ noise: 0, navy: 1, edge: 2, sig: 3 }[dotClass(a)] - { noise: 0, navy: 1, edge: 2, sig: 3 }[dotClass(b)]));
   $("dots").innerHTML = order.map(p => `<a class="dot" href="${p.slug}/" data-s="${p.slug}" aria-label="${esc(p.name)}, ${p.st}: ${p.lows} record lows since 2000, about ${p.lows_exp} by chance">` +
@@ -447,8 +447,22 @@ function showTip(el, cx, cy) {
   tip.style.left = Math.min(Math.max(0, cx - box.left - tw / 2), box.width - tw) + "px";
   tip.style.top = (cy - box.top - th - 14 < 0 ? cy - box.top + 18 : cy - box.top - th - 14) + "px";
 }
-svg.addEventListener("pointermove", e => { const a = e.target.closest(".dot"); a ? showTip(a, e.clientX, e.clientY) : tip.classList.remove("on"); });
-svg.addEventListener("pointerleave", () => tip.classList.remove("on"));
+// Hover and tap pick the nearest dot (Nov 24, 2026). The big invisible tap circles overlap, so pointing at one place
+// could show its neighbor (Shawn saw "Colorado Springs" on two dots: Pueblo sits under its tap circle).
+function nearestDot(e) {
+  const b = svg.getBoundingClientRect(), k = 975 / b.width, x = (e.clientX - b.left) * k, y = (e.clientY - b.top) * k;
+  let best = null, bd = Infinity;
+  for (const p of P) { const d = Math.hypot(p.x - x, p.y - y); if (d < bd) { bd = d; best = p; } }
+  return best && bd <= 22 * k ? svg.querySelector(`.dot[data-s="${best.slug}"]`) : null;   // within ~22px on screen
+}
+let hot = null;
+function setHot(a) { if (hot !== a) { hot?.classList.remove("hot"); a?.classList.add("hot"); a?.parentNode.appendChild(a); hot = a; } }
+svg.addEventListener("pointermove", e => { const a = nearestDot(e); setHot(a); a ? showTip(a, e.clientX, e.clientY) : tip.classList.remove("on"); });
+svg.addEventListener("click", e => {
+  const a = nearestDot(e), hit = e.target.closest(".dot");
+  if (a && a !== hit) { e.preventDefault(); location.href = a.getAttribute("href"); }
+});
+svg.addEventListener("pointerleave", () => { setHot(null); tip.classList.remove("on"); });
 svg.addEventListener("focusin", e => { const a = e.target.closest(".dot"); if (!a) return; const b = a.querySelector(".mark").getBoundingClientRect(); showTip(a, b.left + b.width / 2, b.top); });
 svg.addEventListener("focusout", () => tip.classList.remove("on"));
 
