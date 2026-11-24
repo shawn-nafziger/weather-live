@@ -11,29 +11,29 @@
   "lon": -76.684,
   "history": "Same site as the official Baltimore record"
  },
- "as_of_utc": "2026-11-24T10:07:59Z",
+ "as_of_utc": "2026-11-24T11:08:03Z",
  "now": {
-  "time_utc": "2026-11-24T09:35:00Z",
-  "temp_c": 5,
-  "temp_f": 41.0,
+  "time_utc": "2026-11-24T10:55:00Z",
+  "temp_c": 4,
+  "temp_f": 39.2,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": -3,
-  "humidity_pct": 56.24,
-  "wind_kmh": 11.12,
+  "humidity_pct": 60.31,
+  "wind_kmh": 9.25,
   "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-24",
-  "readings": 3,
+  "readings": 4,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
   "high_c": 9.4,
   "high_f": 48.9,
   "high_time_utc": "2026-11-24T05:54:00Z",
-  "low_c": 5,
-  "low_f": 41.0,
-  "low_time_utc": "2026-11-24T08:54:00Z",
+  "low_c": 4.4,
+  "low_f": 39.9,
+  "low_time_utc": "2026-11-24T09:54:00Z",
   "peak_between_reports": {
    "at_least_f": 50.9,
    "about_f": 51.8,
@@ -90,7 +90,7 @@
   },
   "forecast_highs": [
    {
-    "period": "Tuesday",
+    "period": "Today",
     "date": "2026-11-24",
     "high_f": 52,
     "would_rank": {
@@ -263,16 +263,7 @@
   "grid": "LWX/107,85",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-24T04:00:00-05:00",
-    "is_daytime": false,
-    "temp_f": 36,
-    "temp_c": 2.22,
-    "precip_chance_pct": 1,
-    "short_forecast": "Clear"
-   },
-   {
-    "name": "Tuesday",
+    "name": "Today",
     "start": "2026-11-24T06:00:00-05:00",
     "is_daytime": true,
     "temp_f": 52,
@@ -281,7 +272,7 @@
     "short_forecast": "Sunny"
    },
    {
-    "name": "Tuesday Night",
+    "name": "Tonight",
     "start": "2026-11-24T18:00:00-05:00",
     "is_daytime": false,
     "temp_f": 27,
@@ -387,19 +378,21 @@
     "temp_c": 15.0,
     "precip_chance_pct": 22,
     "short_forecast": "Slight Chance Light Rain"
+   },
+   {
+    "name": "Monday Night",
+    "start": "2026-11-30T18:00:00-05:00",
+    "is_daytime": false,
+    "temp_f": 33,
+    "temp_c": 0.56,
+    "precip_chance_pct": 9,
+    "short_forecast": "Partly Cloudy"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-24T08:52:50Z",
   "hours": [
-   {
-    "start": "2026-11-24T05:00:00-05:00",
-    "temp_f": 37,
-    "temp_c": 2.78,
-    "precip_chance_pct": 1,
-    "short_forecast": "Clear"
-   },
    {
     "start": "2026-11-24T06:00:00-05:00",
     "temp_f": 37,
@@ -724,6 +717,13 @@
    },
    {
     "start": "2026-11-26T04:00:00-05:00",
+    "temp_f": 45,
+    "temp_c": 7.22,
+    "precip_chance_pct": 67,
+    "short_forecast": "Light Rain Likely"
+   },
+   {
+    "start": "2026-11-26T05:00:00-05:00",
     "temp_f": 45,
     "temp_c": 7.22,
     "precip_chance_pct": 67,

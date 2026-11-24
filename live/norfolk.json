@@ -11,20 +11,20 @@
   "lon": -76.1919,
   "history": "Same site as the official Norfolk record"
  },
- "as_of_utc": "2026-11-24T10:07:59Z",
+ "as_of_utc": "2026-11-24T11:08:03Z",
  "now": {
-  "time_utc": "2026-11-24T09:35:00Z",
+  "time_utc": "2026-11-24T10:55:00Z",
   "temp_c": 11,
   "temp_f": 51.8,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 6,
-  "humidity_pct": 71.28,
-  "wind_kmh": 29.63,
+  "dewpoint_c": 3,
+  "humidity_pct": 57.8,
+  "wind_kmh": null,
   "description": "Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-24",
-  "readings": 5,
+  "readings": 6,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -82,7 +82,7 @@
   },
   "forecast_highs": [
    {
-    "period": "Tuesday",
+    "period": "Today",
     "date": "2026-11-24",
     "high_f": 53,
     "would_rank": {
@@ -245,16 +245,7 @@
   "grid": "AKQ/93,55",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-24T03:00:00-05:00",
-    "is_daytime": false,
-    "temp_f": 47,
-    "temp_c": 8.33,
-    "precip_chance_pct": 46,
-    "short_forecast": "Chance Light Rain"
-   },
-   {
-    "name": "Tuesday",
+    "name": "Today",
     "start": "2026-11-24T06:00:00-05:00",
     "is_daytime": true,
     "temp_f": 53,
@@ -263,7 +254,7 @@
     "short_forecast": "Chance Light Rain then Partly Sunny"
    },
    {
-    "name": "Tuesday Night",
+    "name": "Tonight",
     "start": "2026-11-24T18:00:00-05:00",
     "is_daytime": false,
     "temp_f": 45,
@@ -369,19 +360,21 @@
     "temp_c": 16.67,
     "precip_chance_pct": 18,
     "short_forecast": "Slight Chance Rain Showers"
+   },
+   {
+    "name": "Monday Night",
+    "start": "2026-11-30T18:00:00-05:00",
+    "is_daytime": false,
+    "temp_f": 42,
+    "temp_c": 5.56,
+    "precip_chance_pct": 9,
+    "short_forecast": "Mostly Clear"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-24T07:34:16Z",
   "hours": [
-   {
-    "start": "2026-11-24T05:00:00-05:00",
-    "temp_f": 51,
-    "temp_c": 10.56,
-    "precip_chance_pct": 32,
-    "short_forecast": "Chance Light Rain"
-   },
    {
     "start": "2026-11-24T06:00:00-05:00",
     "temp_f": 49,
@@ -708,6 +701,13 @@
     "start": "2026-11-26T04:00:00-05:00",
     "temp_f": 59,
     "temp_c": 15.0,
+    "precip_chance_pct": 98,
+    "short_forecast": "Rain Showers"
+   },
+   {
+    "start": "2026-11-26T05:00:00-05:00",
+    "temp_f": 60,
+    "temp_c": 15.56,
     "precip_chance_pct": 98,
     "short_forecast": "Rain Showers"
    }
