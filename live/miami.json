@@ -11,15 +11,15 @@
   "lon": -80.3164,
   "history": "Same station as the official Miami record"
  },
- "as_of_utc": "2026-11-24T17:08:05Z",
+ "as_of_utc": "2026-11-24T18:08:06Z",
  "now": {
-  "time_utc": "2026-11-24T16:55:00Z",
+  "time_utc": "2026-11-24T17:45:00Z",
   "temp_c": 24,
   "temp_f": 75.2,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 21,
   "humidity_pct": 83.34,
-  "wind_kmh": 11.12,
+  "wind_kmh": 0,
   "description": "Mostly Cloudy"
  },
  "today_so_far": {
@@ -102,7 +102,7 @@
   },
   "forecast_highs": [
    {
-    "period": "Today",
+    "period": "This Afternoon",
     "date": "2026-11-24",
     "high_f": 81,
     "would_rank": {
@@ -322,17 +322,17 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-24T09:31:46Z",
+  "issued_utc": "2026-11-24T17:02:31Z",
   "grid": "MFL/105,51",
   "periods": [
    {
-    "name": "Today",
-    "start": "2026-11-24T06:00:00-05:00",
+    "name": "This Afternoon",
+    "start": "2026-11-24T12:00:00-05:00",
     "is_daytime": true,
     "temp_f": 81,
     "temp_c": 27.22,
     "precip_chance_pct": 8,
-    "short_forecast": "Mostly Cloudy"
+    "short_forecast": "Cloudy"
    },
    {
     "name": "Tonight",
@@ -454,15 +454,8 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-24T09:31:46Z",
+  "issued_utc": "2026-11-24T17:02:31Z",
   "hours": [
-   {
-    "start": "2026-11-24T12:00:00-05:00",
-    "temp_f": 77,
-    "temp_c": 25.0,
-    "precip_chance_pct": 6,
-    "short_forecast": "Cloudy"
-   },
    {
     "start": "2026-11-24T13:00:00-05:00",
     "temp_f": 79,
@@ -789,6 +782,13 @@
     "start": "2026-11-26T11:00:00-05:00",
     "temp_f": 77,
     "temp_c": 25.0,
+    "precip_chance_pct": 8,
+    "short_forecast": "Mostly Sunny"
+   },
+   {
+    "start": "2026-11-26T12:00:00-05:00",
+    "temp_f": 79,
+    "temp_c": 26.11,
     "precip_chance_pct": 8,
     "short_forecast": "Mostly Sunny"
    }
