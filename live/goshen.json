@@ -11,16 +11,16 @@
   "lon": -85.7867,
   "history": "Provisional: Goshen Municipal Airport. The long record (GOSHEN 3SW) is a once-a-day volunteer station, so today's readings and the record come from different stations (question D2)"
  },
- "as_of_utc": "2026-11-24T13:08:11Z",
+ "as_of_utc": "2026-11-24T14:08:05Z",
  "now": {
-  "time_utc": "2026-11-24T12:40:00Z",
+  "time_utc": "2026-11-24T13:45:00Z",
   "temp_c": -1,
   "temp_f": 30.2,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": -4,
   "humidity_pct": 80.08,
   "wind_kmh": 9.25,
-  "description": "Cloudy"
+  "description": "Mostly Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-24",
@@ -38,6 +38,11 @@
    "at_least_f": 34.7,
    "about_f": 35.6,
    "time_utc": "2026-11-24T05:00:00Z"
+  },
+  "dip_between_reports": {
+   "at_most_f": 30.9,
+   "about_f": 30.0,
+   "time_utc": "2026-11-24T12:53:00Z"
   }
  },
  "record": {
@@ -94,11 +99,11 @@
   "periods": [
    {
     "name": "Today",
-    "start": "2026-11-24T07:00:00-05:00",
+    "start": "2026-11-24T09:00:00-05:00",
     "is_daytime": true,
     "temp_f": 39,
     "temp_c": 3.89,
-    "precip_chance_pct": 1,
+    "precip_chance_pct": 0,
     "short_forecast": "Mostly Sunny"
    },
    {
@@ -223,13 +228,6 @@
  "hourly": {
   "issued_utc": "2026-11-24T11:59:44Z",
   "hours": [
-   {
-    "start": "2026-11-24T08:00:00-05:00",
-    "temp_f": 30,
-    "temp_c": -1.11,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Sunny"
-   },
    {
     "start": "2026-11-24T09:00:00-05:00",
     "temp_f": 28,
@@ -556,6 +554,13 @@
     "start": "2026-11-26T07:00:00-05:00",
     "temp_f": 35,
     "temp_c": 1.67,
+    "precip_chance_pct": 70,
+    "short_forecast": "Light Rain Likely"
+   },
+   {
+    "start": "2026-11-26T08:00:00-05:00",
+    "temp_f": 37,
+    "temp_c": 2.78,
     "precip_chance_pct": 70,
     "short_forecast": "Light Rain Likely"
    }
