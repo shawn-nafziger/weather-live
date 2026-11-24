@@ -11,9 +11,9 @@
   "lon": -89.9863,
   "history": "Same site as the official Memphis record"
  },
- "as_of_utc": "2026-11-24T00:08:06Z",
+ "as_of_utc": "2026-11-24T01:08:01Z",
  "now": {
-  "time_utc": "2026-11-23T23:20:00Z",
+  "time_utc": "2026-11-24T00:15:00Z",
   "temp_c": 8,
   "temp_f": 46.4,
   "precision": "nearest whole \u00b0C",
@@ -78,31 +78,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-23",
-    "high_f": 54,
-    "would_rank": {
-     "value_f": 54,
-     "warm_rank": 101,
-     "cool_rank": 46,
-     "years": 152,
-     "first_year": 1875,
-     "tied_years": [
-      1876,
-      1877,
-      1916,
-      1991,
-      1992,
-      2000
-     ],
-     "standing": "cool",
-     "notable": false,
-     "since": 2019,
-     "record": false,
-     "phrase": "typical for November 23"
-    }
-   },
    {
     "period": "Tuesday",
     "date": "2026-11-24",
@@ -237,25 +212,36 @@
      "record": false,
      "phrase": "23rd warmest November 29 high (tied) of 151 since 1875, warmest since 2022"
     }
+   },
+   {
+    "period": "Monday",
+    "date": "2026-11-30",
+    "high_f": 65,
+    "would_rank": {
+     "value_f": 65,
+     "warm_rank": 28,
+     "cool_rank": 123,
+     "years": 151,
+     "first_year": 1875,
+     "tied_years": [
+      1998
+     ],
+     "standing": "warm",
+     "notable": true,
+     "since": 2021,
+     "record": false,
+     "phrase": "28th warmest November 30 high (tied) of 151 since 1875, warmest since 2021"
+    }
    }
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-23T21:06:00Z",
+  "issued_utc": "2026-11-23T23:15:52Z",
   "grid": "MEG/45,63",
   "periods": [
    {
-    "name": "This Afternoon",
-    "start": "2026-11-23T15:00:00-06:00",
-    "is_daytime": true,
-    "temp_f": 54,
-    "temp_c": 12.22,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
-   {
     "name": "Tonight",
-    "start": "2026-11-23T18:00:00-06:00",
+    "start": "2026-11-23T19:00:00-06:00",
     "is_daytime": false,
     "temp_f": 34,
     "temp_c": 1.11,
@@ -369,19 +355,21 @@
     "temp_c": 5.0,
     "precip_chance_pct": 13,
     "short_forecast": "Partly Cloudy"
+   },
+   {
+    "name": "Monday",
+    "start": "2026-11-30T06:00:00-06:00",
+    "is_daytime": true,
+    "temp_f": 65,
+    "temp_c": 18.33,
+    "precip_chance_pct": 5,
+    "short_forecast": "Sunny"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-23T23:15:52Z",
   "hours": [
-   {
-    "start": "2026-11-23T18:00:00-06:00",
-    "temp_f": 49,
-    "temp_c": 9.44,
-    "precip_chance_pct": 0,
-    "short_forecast": "Clear"
-   },
    {
     "start": "2026-11-23T19:00:00-06:00",
     "temp_f": 44,
@@ -710,6 +698,13 @@
     "temp_c": 7.78,
     "precip_chance_pct": 76,
     "short_forecast": "Light Rain"
+   },
+   {
+    "start": "2026-11-25T18:00:00-06:00",
+    "temp_f": 45,
+    "temp_c": 7.22,
+    "precip_chance_pct": 37,
+    "short_forecast": "Chance Light Rain"
    }
   ]
  },

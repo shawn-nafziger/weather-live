@@ -11,14 +11,14 @@
   "lon": -112.0035,
   "history": "Same station as the official Phoenix record (Sky Harbor since 1933)"
  },
- "as_of_utc": "2026-11-24T00:08:06Z",
+ "as_of_utc": "2026-11-24T01:08:01Z",
  "now": {
-  "time_utc": "2026-11-23T23:20:00Z",
-  "temp_c": 19,
-  "temp_f": 66.2,
+  "time_utc": "2026-11-24T00:20:00Z",
+  "temp_c": 18,
+  "temp_f": 64.4,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": -2,
-  "humidity_pct": 24.07,
+  "dewpoint_c": -1,
+  "humidity_pct": 27.58,
   "wind_kmh": 14.83,
   "description": "Mostly Clear"
  },
@@ -97,27 +97,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-23",
-    "high_f": 68,
-    "would_rank": {
-     "value_f": 68,
-     "warm_rank": 94,
-     "cool_rank": 37,
-     "years": 132,
-     "first_year": 1895,
-     "tied_years": [
-      1934,
-      1964
-     ],
-     "standing": "cool",
-     "notable": false,
-     "since": 2025,
-     "record": false,
-     "phrase": "typical for November 23"
-    }
-   },
    {
     "period": "Tuesday",
     "date": "2026-11-24",
@@ -260,6 +239,36 @@
      "record": false,
      "phrase": "15th warmest November 29 high (tied) of 132 since 1895, warmest since 2021"
     }
+   },
+   {
+    "period": "Monday",
+    "date": "2026-11-30",
+    "high_f": 76,
+    "would_rank": {
+     "value_f": 76,
+     "warm_rank": 30,
+     "cool_rank": 92,
+     "years": 132,
+     "first_year": 1895,
+     "tied_years": [
+      1897,
+      1907,
+      1925,
+      1940,
+      1960,
+      1980,
+      1995,
+      2000,
+      2011,
+      2012,
+      2017
+     ],
+     "standing": "warm",
+     "notable": false,
+     "since": 2024,
+     "record": false,
+     "phrase": "typical for November 30"
+    }
    }
   ]
  },
@@ -267,15 +276,6 @@
   "issued_utc": "2026-11-23T22:47:50Z",
   "grid": "PSR/161,57",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-23T15:00:00-07:00",
-    "is_daytime": true,
-    "temp_f": 68,
-    "temp_c": 20.0,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-23T18:00:00-07:00",
@@ -392,19 +392,21 @@
     "temp_c": 12.22,
     "precip_chance_pct": 10,
     "short_forecast": "Partly Cloudy"
+   },
+   {
+    "name": "Monday",
+    "start": "2026-11-30T06:00:00-07:00",
+    "is_daytime": true,
+    "temp_f": 76,
+    "temp_c": 24.44,
+    "precip_chance_pct": 18,
+    "short_forecast": "Mostly Sunny then Slight Chance Rain Showers"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-23T22:47:50Z",
   "hours": [
-   {
-    "start": "2026-11-23T17:00:00-07:00",
-    "temp_f": 67,
-    "temp_c": 19.44,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "start": "2026-11-23T18:00:00-07:00",
     "temp_f": 63,
@@ -731,6 +733,13 @@
     "start": "2026-11-25T16:00:00-07:00",
     "temp_f": 75,
     "temp_c": 23.89,
+    "precip_chance_pct": 0,
+    "short_forecast": "Partly Sunny"
+   },
+   {
+    "start": "2026-11-25T17:00:00-07:00",
+    "temp_f": 73,
+    "temp_c": 22.78,
     "precip_chance_pct": 0,
     "short_forecast": "Partly Sunny"
    }

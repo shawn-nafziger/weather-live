@@ -11,15 +11,15 @@
   "lon": -97.6003,
   "history": "Same site as the official Oklahoma City record"
  },
- "as_of_utc": "2026-11-24T00:08:06Z",
+ "as_of_utc": "2026-11-24T01:08:01Z",
  "now": {
-  "time_utc": "2026-11-23T23:20:00Z",
-  "temp_c": 8,
-  "temp_f": 46.4,
+  "time_utc": "2026-11-24T00:15:00Z",
+  "temp_c": 7,
+  "temp_f": 44.6,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": null,
   "humidity_pct": null,
-  "wind_kmh": 22.21,
+  "wind_kmh": 14.83,
   "description": "Clear"
  },
  "today_so_far": {
@@ -86,28 +86,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-23",
-    "high_f": 48,
-    "would_rank": {
-     "value_f": 48,
-     "warm_rank": 111,
-     "cool_rank": 24,
-     "years": 137,
-     "first_year": 1890,
-     "tied_years": [
-      1906,
-      1994,
-      2003
-     ],
-     "standing": "cool",
-     "notable": true,
-     "since": 2013,
-     "record": false,
-     "phrase": "24th coolest November 23 high (tied) of 137 since 1890, coolest since 2013"
-    }
-   },
    {
     "period": "Tuesday",
     "date": "2026-11-24",
@@ -241,6 +219,27 @@
      "record": false,
      "phrase": "typical for November 29"
     }
+   },
+   {
+    "period": "Monday",
+    "date": "2026-11-30",
+    "high_f": 61,
+    "would_rank": {
+     "value_f": 61,
+     "warm_rank": 44,
+     "cool_rank": 92,
+     "years": 137,
+     "first_year": 1890,
+     "tied_years": [
+      1909,
+      1945
+     ],
+     "standing": "warm",
+     "notable": false,
+     "since": 2021,
+     "record": false,
+     "phrase": "typical for November 30"
+    }
    }
   ]
  },
@@ -248,15 +247,6 @@
   "issued_utc": "2026-11-23T18:26:15Z",
   "grid": "OUN/94,90",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-23T12:00:00-06:00",
-    "is_daytime": true,
-    "temp_f": 48,
-    "temp_c": 8.89,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-23T18:00:00-06:00",
@@ -373,19 +363,21 @@
     "temp_c": 3.89,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear"
+   },
+   {
+    "name": "Monday",
+    "start": "2026-11-30T06:00:00-06:00",
+    "is_daytime": true,
+    "temp_f": 61,
+    "temp_c": 16.11,
+    "precip_chance_pct": 1,
+    "short_forecast": "Mostly Sunny"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-23T18:26:15Z",
   "hours": [
-   {
-    "start": "2026-11-23T18:00:00-06:00",
-    "temp_f": 43,
-    "temp_c": 6.11,
-    "precip_chance_pct": 0,
-    "short_forecast": "Partly Cloudy"
-   },
    {
     "start": "2026-11-23T19:00:00-06:00",
     "temp_f": 41,
@@ -714,6 +706,13 @@
     "temp_c": 6.67,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
+   },
+   {
+    "start": "2026-11-25T18:00:00-06:00",
+    "temp_f": 41,
+    "temp_c": 5.0,
+    "precip_chance_pct": 0,
+    "short_forecast": "Clear"
    }
   ]
  },
