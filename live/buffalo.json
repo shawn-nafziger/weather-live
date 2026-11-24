@@ -11,20 +11,20 @@
   "lon": -78.736,
   "history": "Same site as the official Buffalo record"
  },
- "as_of_utc": "2026-11-24T21:08:11Z",
+ "as_of_utc": "2026-11-24T22:07:53Z",
  "now": {
-  "time_utc": "2026-11-24T19:54:00Z",
-  "temp_c": 2.2,
-  "temp_f": 36.0,
-  "precision": "tenths of a degree",
-  "dewpoint_c": -6.7,
-  "humidity_pct": 51.8,
-  "wind_kmh": 11.16,
-  "description": "Mostly Clear"
+  "time_utc": "2026-11-24T21:30:00Z",
+  "temp_c": 1,
+  "temp_f": 33.8,
+  "precision": "nearest whole \u00b0C",
+  "dewpoint_c": -6,
+  "humidity_pct": 59.55,
+  "wind_kmh": 9.25,
+  "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-24",
-  "readings": 13,
+  "readings": 14,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -263,17 +263,17 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-24T19:55:40Z",
+  "issued_utc": "2026-11-24T20:57:34Z",
   "grid": "BUF/40,50",
   "periods": [
    {
     "name": "This Afternoon",
-    "start": "2026-11-24T15:00:00-05:00",
+    "start": "2026-11-24T16:00:00-05:00",
     "is_daytime": true,
     "temp_f": 38,
     "temp_c": 3.33,
     "precip_chance_pct": 0,
-    "short_forecast": "Mostly Sunny"
+    "short_forecast": "Sunny"
    },
    {
     "name": "Tonight",
@@ -395,15 +395,8 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-24T19:55:40Z",
+  "issued_utc": "2026-11-24T20:57:34Z",
   "hours": [
-   {
-    "start": "2026-11-24T16:00:00-05:00",
-    "temp_f": 38,
-    "temp_c": 3.33,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "start": "2026-11-24T17:00:00-05:00",
     "temp_f": 37,
@@ -732,6 +725,13 @@
     "temp_c": 5.0,
     "precip_chance_pct": 72,
     "short_forecast": "Light Rain Likely"
+   },
+   {
+    "start": "2026-11-26T16:00:00-05:00",
+    "temp_f": 40,
+    "temp_c": 4.44,
+    "precip_chance_pct": 79,
+    "short_forecast": "Light Rain"
    }
   ]
  },
