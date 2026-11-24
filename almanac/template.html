@@ -356,7 +356,7 @@ html { scroll-padding-top: calc(var(--header-h) + 12px); }
     <p class="kicker"><a class="up" href="../">Almanac</a> · {{CITY}}, {{STATE}} · Record since {{FIRST_YEAR}}</p>
     <h1>{{CITY}} Almanac</h1>
     <p class="dek" id="lede">{{LEDE}}</p>
-    <p class="byline"><span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L19 7"/></svg>Final</span><span>Official values through {{ASOF_WORDS}}</span></p>
+    <p class="byline"><span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L19 7"/></svg>Final</span><span>Official values through {{ASOF_WORDS}}</span><span>{{PUBLISHED}}</span></p>
   <!-- share-top:start --><p class="share-top"><button type="button" class="share-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="M7 8l5-5 5 5"/><path d="M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg>Share</button><button type="button" class="save-btn" data-save="page" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 3.5h11a1 1 0 0 1 1 1v16l-6.5-4.6-6.5 4.6v-16a1 1 0 0 1 1-1z"/></svg><span class="save-t">Save</span></button><span class="share-msg" role="status" hidden></span><span class="save-msg" role="status" hidden></span></p><!-- share-top:end -->
   </header>
 
@@ -514,6 +514,7 @@ html { scroll-padding-top: calc(var(--header-h) + 12px); }
   <section class="method">
     <h3>How this was measured</h3>
     <ul id="method"></ul>
+    <p class="more"><a href="../how-it-works/">How the Almanac works: ranks, trends, complete years, records against chance and the forecast →</a></p>
   </section>
   <!-- share:start -->
   <div class="share-row">
@@ -916,16 +917,7 @@ function drawSnow() {
 }
 table("tb-snow", ["Winter", "Inches"], P.snow.slice().reverse().map(p => [`${p.s}–${String(p.s + 1).slice(2)}`, p.v.toFixed(1)]));
 
-/* ---------- method ---------- */
-$("method").innerHTML = [
-  `<strong>The record:</strong> ${esc(D.city.record_name)}, ${esc(D.city.record_kind)}. Daily values from NOAA through RCC-ACIS, ${D.first_year} to ${longDate(D.asof)}, in whole °F as recorded. Updated twice a day as stations post and correct values.`,
-  `<strong>Ranks:</strong> years strictly warmer + 1, so ties share a rank, out of every year with a value for that date. Only days in the warmest or coolest fifth get a rank; the rest read "typical".`,
-  `<strong>Complete years:</strong> a month counts when no more than 9 days are missing; a year counts when all 12 months do. Yearly averages are the average of the 12 monthly means, so a gap in one season doesn't tilt the year.`,
-  `<strong>Trends:</strong> a straight line through every complete year, with a 95% range. Orange (signal) only when that range clears zero.`,
-  `<strong>Unadjusted readings.</strong> ${esc(D.city.caveat)}`,
-  ...(D.text.show_snow ? [`<strong>Snowfall</strong> is shown without a trend: snow is measured less consistently than rain over a century of records, so a long-run comparison wouldn't be reliable.`] : []),
-  `<strong>Dry spells:</strong> days in a row with less than 0.01 inch; a trace counts as dry, and a missing day ends the spell.`,
-].map(t => `<li>${t}</li>`).join("");
+/* ---------- method: written into the HTML by prerender.py (Nov 24, 2026) ---------- */
 
 /* ---------- draw, and redraw on resize or theme change ---------- */
 function drawAll() {

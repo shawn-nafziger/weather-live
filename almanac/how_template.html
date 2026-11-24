@@ -1,0 +1,735 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{{TITLE}} · Tall Order Digital</title>
+<meta name="description" content="{{DESCRIPTION}}">
+{{HEAD_SEO}}
+<link rel="icon" href="{{MAIN}}favicon.ico" sizes="48x48">
+<link rel="icon" href="{{MAIN}}assets/brand/tod-app-icon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<script>try{var t=localStorage.getItem("tod-theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
+<script>try{if(!sessionStorage.getItem("tod-intro")&&!matchMedia("(prefers-reduced-motion: reduce)").matches){document.documentElement.classList.add("tod-intro");setTimeout(function(){if(!window.todIntroStarted)document.documentElement.classList.remove("tod-intro")},2000)}}catch(e){}</script>
+<style>
+/* Tokens: the site's shared set (tallorderdigital-site/assets/site.css), plus the
+   playbook's data roles: --amber signal, --edge at the edge, --ghost noise,
+   --navy comparison, --funnel bands (Sky, translucent). */
+:root {
+  --bg: #f3f4ef; --surface: #ffffff; --ink: #201914; --ink-2: #4a403a; --ink-3: #6e645d;
+  --rule: #dddad3; --ghost: #cdc9c1; --navy: #0a3746; --amber: #b36000; --edge: #e3b88a;
+  --funnel: rgba(127, 196, 214, .3); --recband: rgba(74, 64, 58, .09);
+  --logo-2: #0a3746; --logo-3: #366f80; --logo-4: #62a8bb; --logo-ink: #201914; --logo-sub: #4a403a;
+  --chip-final: #d2f4e0;
+  --font-display: "Barlow Semi Condensed", "Arial Narrow", "Roboto Condensed", sans-serif;
+  --font-body: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  --font-data: "IBM Plex Mono", ui-monospace, "Cascadia Mono", Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #03222c; --surface: #0a3746; --ink: #f3f4ef; --ink-2: #dddad3; --ink-3: #9fb1b8; --rule: #1e3a44;
+    --ghost: #3a5762; --navy: #7fc4d6; --amber: #f99a2b; --edge: #8f6230; --funnel: rgba(127, 196, 214, .25);
+    --recband: rgba(243, 244, 239, .07);
+    --logo-2: #7fc4d6; --logo-3: #4f8d9e; --logo-4: #2e6272; --logo-ink: #f3f4ef; --logo-sub: #dddad3;
+    --chip-final: rgba(210, 244, 224, .15); color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #03222c; --surface: #0a3746; --ink: #f3f4ef; --ink-2: #dddad3; --ink-3: #9fb1b8; --rule: #1e3a44;
+  --ghost: #3a5762; --navy: #7fc4d6; --amber: #f99a2b; --edge: #8f6230; --funnel: rgba(127, 196, 214, .25);
+  --recband: rgba(243, 244, 239, .07);
+  --logo-2: #7fc4d6; --logo-3: #4f8d9e; --logo-4: #2e6272; --logo-ink: #f3f4ef; --logo-sub: #dddad3;
+  --chip-final: rgba(210, 244, 224, .15); color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 400 17px/1.6 var(--font-body);
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+main { max-width: 860px; margin: 0 auto; padding-block: 44px 72px; display: grid; gap: 64px; }
+.col { max-width: 680px; }
+h1, h2 { font-family: var(--font-display); font-weight: 700; text-wrap: balance; margin: 0; line-height: .95; text-transform: uppercase; }
+h1 { font-size: clamp(46px, 9.5vw, 88px); }
+h2 { font-size: clamp(26px, 4.6vw, 38px); }
+h3 { font: 600 16px/1.35 var(--font-body); margin: 0; }
+.kicker { font: 500 12px/1.2 var(--font-data); letter-spacing: .14em; text-transform: uppercase; color: var(--ink-3); margin: 0 0 14px; }
+.dek { font-size: 21px; line-height: 1.45; color: var(--ink-2); margin: 20px 0 0; max-width: 34em; }
+.byline { font: 400 13px/1.5 var(--font-data); color: var(--ink-3); margin: 22px 0 0; display: flex; flex-wrap: wrap; gap: 6px 12px; align-items: center; }
+.chip { display: inline-flex; align-items: center; gap: 6px; font: 500 11px/1 var(--font-data); letter-spacing: .1em; text-transform: uppercase;
+  color: var(--ink); background: var(--chip-final); padding: 6px 9px; border-radius: 999px; }
+.chip svg { width: 12px; height: 12px; }
+p { margin: 0; }
+section { display: grid; gap: 20px; }
+.sec-num { font: 500 12px/1 var(--font-data); letter-spacing: .14em; text-transform: uppercase; color: var(--ink-3); border-top: 2px solid var(--ink); padding-top: 12px; }
+.prose { display: grid; gap: 14px; max-width: 680px; }
+strong { font-weight: 600; color: var(--ink); }
+.sig { color: var(--amber); font-weight: 600; }
+
+.kicker .up { color: inherit; text-decoration-color: var(--amber); text-underline-offset: 3px; }
+.switch { display: grid; grid-template-columns: 1fr 1fr; border: 1px solid var(--rule); border-radius: 8px; overflow: hidden; background: var(--surface); }
+.switch a { display: grid; gap: 2px; padding: 12px 16px; min-height: 44px; text-decoration: none; color: var(--ink-2); }
+.switch a + a { border-left: 1px solid var(--rule); }
+.switch a b { font: 600 15px/1.3 var(--font-body); color: var(--ink); }
+.switch a span { font: 400 12px/1.3 var(--font-data); color: var(--ink-3); }
+.switch a[aria-current="page"] { background: var(--bg); box-shadow: inset 0 -3px 0 var(--amber); }
+.switch a:not([aria-current]):hover b { color: var(--amber); }
+.switch a:focus-visible { outline: 2px solid var(--amber); outline-offset: -2px; }
+@media (max-width: 480px) { .switch { grid-template-columns: 1fr; } .switch a + a { border-left: 0; border-top: 1px solid var(--rule); } }
+.toc { display: flex; flex-wrap: wrap; gap: 8px; }
+.toc a { font: 500 12px/1 var(--font-data); letter-spacing: .08em; text-transform: uppercase; color: var(--ink-2); text-decoration: none;
+  border: 1px solid var(--rule); border-radius: 999px; padding: 12px 14px; min-height: 44px; display: inline-flex; align-items: center; }
+.toc a:hover { color: var(--amber); border-color: var(--amber); }
+
+.stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-top: 2px solid var(--ink); border-bottom: 1px solid var(--rule); }
+.stat { padding: 16px 16px 16px 0; display: grid; gap: 6px; align-content: start; }
+.stat + .stat { padding-left: 16px; border-left: 1px solid var(--rule); }
+.stat .lab { font: 500 11px/1.2 var(--font-data); letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); }
+.stat b { font: 700 clamp(34px, 5.4vw, 48px)/.95 var(--font-display); font-variant-numeric: tabular-nums; }
+.stat b.sig { color: var(--amber); }
+.stat span { font-size: 14px; line-height: 1.4; color: var(--ink-2); }
+@media (max-width: 640px) { .stats { grid-template-columns: 1fr 1fr; } .stat:nth-child(3) { padding-left: 0; border-left: 0; } .stat:nth-child(n+3) { border-top: 1px solid var(--rule); } }
+
+.figure { background: var(--surface); border: 1px solid var(--rule); border-radius: 6px; padding: 20px 20px 14px; display: grid; gap: 12px; min-width: 0; }
+.fig-title { font: 600 15px/1.35 var(--font-body); margin: 0; }
+.fig-sub { font-size: 13px; color: var(--ink-3); margin: 2px 0 0; }
+.keys { display: grid; gap: 3px; font-size: 13px; line-height: 1.45; color: var(--ink-2); }
+.keys span::before { content: ""; display: inline-block; width: 12px; height: 12px; border-radius: 2px; margin-right: 8px; vertical-align: -2px; background: var(--k); }
+.keys span.dot::before { border-radius: 50%; }
+.keys span.line::before { height: 3px; vertical-align: 3px; }
+.keys span.bar::before { height: 6px; vertical-align: 1px; border-radius: 3px; opacity: .55; }
+.keys b { font-weight: 600; }
+.k-sig { --k: var(--amber); } .k-sig b { color: var(--amber); }
+.k-edge { --k: var(--edge); }
+.k-noise { --k: var(--ghost); }
+.k-navy { --k: var(--navy); } .k-navy b { color: var(--navy); }
+.k-band { --k: var(--funnel); }
+.k-rec { --k: var(--recband); }
+.k-ink { --k: var(--ink-2); }
+.chart { position: relative; width: 100%; min-width: 0; }
+.chart svg { display: block; width: 100%; height: auto; overflow: visible; }
+.chart text { font-family: var(--font-data); font-size: 11px; fill: var(--ink-3); }
+.chart .lbl { fill: var(--ink-2); font-size: 12px; }
+.chart .lbl-strong { fill: var(--ink); font-weight: 500; font-size: 12px; }
+.chart .grid { stroke: var(--rule); stroke-width: 1; }
+.chart .zero { stroke: var(--ink-3); stroke-width: 1; }
+.chart [data-tip] { cursor: default; }
+.two { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+@media (max-width: 640px) { .two { grid-template-columns: 1fr; } }
+.source { font: 400 12px/1.4 var(--font-data); color: var(--ink-3); }
+.tip { position: absolute; pointer-events: none; background: var(--ink); color: var(--bg); font: 400 12px/1.45 var(--font-body); padding: 8px 10px;
+  border-radius: 6px; max-width: 240px; opacity: 0; transition: opacity .12s; z-index: 3; white-space: nowrap; }
+.tip b { font-weight: 600; }
+.tip.on { opacity: 1; }
+.callout { border-left: 3px solid var(--amber); padding: 4px 0 4px 16px; font-size: 19px; line-height: 1.45; max-width: 640px; }
+details { border-top: 1px solid var(--rule); padding-top: 10px; }
+summary { cursor: pointer; font: 500 13px/1.4 var(--font-data); color: var(--ink-2); min-height: 32px; display: flex; align-items: center; }
+summary:focus-visible, .toc a:focus-visible, a:focus-visible, .theme-toggle:focus-visible { outline: 2px solid var(--amber); outline-offset: 2px; border-radius: 4px; }
+.tablewrap { overflow: auto; margin-top: 10px; max-height: 360px; }
+table { border-collapse: collapse; font: 400 13px/1.4 var(--font-data); font-variant-numeric: tabular-nums; width: 100%; }
+th, td { text-align: right; padding: 4px 10px; border-bottom: 1px solid var(--rule); white-space: nowrap; }
+th:first-child, td:first-child { text-align: left; }
+th { color: var(--ink-3); font-weight: 500; position: sticky; top: 0; background: var(--surface); }
+.book { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+@media (max-width: 560px) { .book { grid-template-columns: 1fr; } }
+.book table td:last-child { font-weight: 500; color: var(--ink); }
+.book h3 { margin-bottom: 6px; }
+.howto { font-size: 15px; color: var(--ink-2); max-width: 680px; }
+.howto summary { font-size: 13px; }
+.howto ul { margin: 10px 0 0; padding-left: 20px; display: grid; gap: 6px; }
+.method { display: grid; gap: 12px; font-size: 15px; color: var(--ink-2); max-width: 680px; }
+.method h3 { font: 600 13px/1.3 var(--font-data); letter-spacing: .12em; text-transform: uppercase; color: var(--ink-3); }
+.method ul { margin: 0; padding-left: 20px; display: grid; gap: 6px; }
+.method a, .prose a { color: inherit; text-decoration-color: var(--amber); text-underline-offset: 3px; }
+@media (prefers-reduced-motion: reduce) { .tip { transition: none; } }
+
+/* Site chrome: shared with the rest of tallorderdigital.com */
+.site-bar, .site-foot { max-width: 860px; margin: 0 auto; }
+.site-bar { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 18px 0 14px; border-bottom: 1px solid var(--rule); }
+.site-bar a { color: inherit; text-decoration: none; }
+.site-bar a:hover { color: var(--amber); }
+.site-nav a[aria-current="page"] { color: var(--ink); box-shadow: inset 0 -2px 0 var(--amber); padding-bottom: 4px; }
+.site-nav { display: flex; gap: 18px; align-items: center; font: 500 12px/1 var(--font-data); letter-spacing: .12em; text-transform: uppercase; color: var(--ink-2); }
+@media (max-width: 420px) { .site-bar { flex-wrap: wrap; gap: 4px 8px; } .site-nav { gap: 12px; letter-spacing: .08em; margin-left: auto; } }
+.brand { display: inline-flex; align-items: center; gap: 10px; color: var(--ink); }
+.brand .mark { width: 42px; height: 42px; flex: none; }
+.mark .m-o { fill: #f99a2b; } .mark .m-2 { fill: var(--logo-2); } .mark .m-3 { fill: var(--logo-3); } .mark .m-4 { fill: var(--logo-4); }
+.wm { display: grid; line-height: 1; font-family: var(--font-display); text-transform: uppercase; }
+.wm-1 { color: var(--logo-ink); font-weight: 700; font-size: 23px; letter-spacing: .01em; white-space: nowrap; }
+.wm-2 { font-weight: 600; font-size: 8.4px; letter-spacing: .52em; color: var(--logo-sub); margin: 3px 0 0 2px; }
+.theme-toggle { display: inline-grid; place-items: center; width: 44px; height: 44px; margin: -12px -12px -12px -6px; padding: 0; border: 0; border-radius: 50%;
+  background: transparent; color: var(--ink-2); cursor: pointer; }
+.theme-toggle:hover { color: var(--amber); }
+.theme-toggle svg { width: 20px; height: 20px; }
+.theme-toggle .i-sun { display: none; }
+.theme-toggle[data-showing="dark"] .i-sun { display: block; }
+.theme-toggle[data-showing="dark"] .i-moon { display: none; }
+.site-foot { border-top: 1px solid var(--rule); padding: 20px 0 40px; display: grid; gap: 6px; font: 400 12px/1.5 var(--font-data); color: var(--ink-3); }
+.site-foot a { color: var(--ink-2); }
+/* site-header:start */
+/* Site header (sitewide, Nov 2, 2026): pinned to the top while you scroll.
+   On phones (680px and narrower) it slides away while you scroll down and comes back as soon as you scroll up
+   (assets/site-header.js). Menu (Nov 16, 2026): Data stories ("Stories" on narrow phones), Weather, NBA, each with a
+   faint underline; then About, Subscribe (outlined; an envelope icon on phones), the search icon and the light/dark
+   button. The menu itself is written by tools/apply-header.py.
+   Master copy: tallorderdigital-site/assets/site-header.css. Self-contained pages (stories, dashboards)
+   carry an inline copy written by tools/apply-header.py; edit this file, then re-run that tool. */
+:root { --header-h: 76px; }
+html { scroll-padding-top: calc(var(--header-h) + 12px); }
+.site-bar { position: sticky; top: 0; z-index: 40; background: var(--bg);
+  box-shadow: 0 0 0 100vmax var(--bg); clip-path: inset(0 -100vmax); transition: transform .2s ease; }
+.site-bar.is-away { transform: translateY(-100%); }
+@media (prefers-reduced-motion: reduce) { .site-bar { transition: none; } }
+.nav-search { display: inline-grid; place-items: center; width: 44px; height: 44px; margin: -12px -10px -12px -6px;
+  border-radius: 50%; color: var(--ink-2); }
+.nav-search svg { width: 20px; height: 20px; }
+.site-bar .nav-search:hover { color: var(--amber); }
+.site-nav .nav-search[aria-current="page"] { color: var(--ink); box-shadow: none; padding-bottom: 0; }
+.site-bar .nav-search:focus-visible { outline: 2px solid var(--amber); outline-offset: -4px; }
+/* Subscribe (Nov 4, 2026): the one outlined menu item, so the weekly email is easy to find. Ink, never orange
+   (orange is reserved for data meaning). Text on wider screens, an envelope icon on phones. */
+.site-nav .nav-sub { display: inline-flex; align-items: center; gap: 6px; padding: 7px 11px; margin: -8px 0;
+  border: 1px solid var(--ink-3); border-radius: 999px; color: var(--ink); }
+.nav-sub svg { display: none; width: 20px; height: 20px; }
+.site-bar .nav-sub:hover { color: var(--amber); border-color: var(--amber); }
+.site-nav .nav-sub[aria-current="page"] { box-shadow: none; padding-bottom: 7px; border-color: var(--ink); }
+.site-bar .nav-sub:focus-visible { outline: 2px solid var(--amber); outline-offset: 2px; }
+@media (max-width: 680px) {
+  .site-nav .nav-sub { width: 44px; height: 44px; padding: 0; margin: -12px -6px; justify-content: center; border: 0; color: var(--ink-2); }
+  .nav-sub .t { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .nav-sub svg { display: block; }
+  .site-nav .nav-sub[aria-current="page"] { color: var(--ink); padding-bottom: 0; }
+}
+/* The three topics (Nov 16, 2026): a faint underline under each, so "Data stories", "Weather" and "NBA" read as three
+   items rather than one run of words. The current section keeps its orange underline (aria-current rule in site.css). */
+.site-nav .nav-topic { padding-bottom: 4px; box-shadow: inset 0 -1px 0 color-mix(in srgb, var(--ink-3) 35%, transparent); }
+.site-bar .site-nav .nav-topic:hover { box-shadow: inset 0 -1px 0 var(--amber); }
+.site-bar .site-nav .nav-topic[aria-current="page"] { box-shadow: inset 0 -2px 0 var(--amber); }
+/* "Data stories" shortens to "Stories" where the menu would otherwise not fit on one line (its aria-label keeps the full name). */
+@media (max-width: 480px) { .nav-long { display: none; } }
+/* Thin divider before About (Nov 9, 2026): topics on the left, then About, Subscribe and the tools. */
+.site-nav .nav-about { position: relative; margin-left: 14px; }
+.site-nav .nav-about::before { content: ""; position: absolute; left: -17px; top: 50%; width: 1px; height: 16px; margin-top: -8px;
+  background: var(--ink-3); opacity: .55; pointer-events: none; }
+@media (max-width: 680px) {
+  .site-nav .nav-about { margin-left: 8px; }
+  .site-nav .nav-about::before { left: -11px; height: 14px; margin-top: -7px; }
+}
+/* Narrowest phones (360px and under): tighter menu so everything fits on one row with the divider
+   (Nov 23, 2026: tightened again after "Stories / Weather / NBA" ran 18px off a 320px screen). */
+@media (max-width: 360px) {
+  .site-bar .site-nav { gap: 6px; letter-spacing: 0; }
+  .site-bar .site-nav .nav-about { margin-left: 4px; }
+  .site-bar .site-nav .nav-about::before { left: -6px; }
+}
+/* Animated logo intro: hide the static logo until assets/site-header.js takes over (home: the hero; elsewhere: the header logo). */
+.tod-intro .hero-logo .mark rect, .tod-intro .hero-logo .wm,
+.tod-intro body:not(:has(.hero-logo)) .site-bar .brand .mark rect,
+.tod-intro body:not(:has(.hero-logo)) .site-bar .brand .wm { opacity: 0; }
+/* site-header:end */
+/* Records page (Nov 12, 2026): tabs, tiles, month tables. Record high wears the signal color and record low the
+   comparison color, in the intro, the strip and the chart (Shawn's call, Nov 10: hot = orange, cold = blue). */
+.tabs { display: flex; flex-wrap: wrap; border: 1px solid var(--rule); border-radius: 8px; overflow: hidden; background: var(--surface); }
+.tabs a { flex: 1 1 110px; display: grid; gap: 2px; padding: 12px 16px; min-height: 44px; text-decoration: none; color: var(--ink-2); border-right: 1px solid var(--rule); }
+.tabs a:last-child { border-right: 0; }
+.tabs a b { font: 600 15px/1.3 var(--font-body); color: var(--ink); }
+.tabs a span { font: 400 12px/1.3 var(--font-data); color: var(--ink-3); }
+.tabs a[aria-current="page"] { background: var(--bg); box-shadow: inset 0 -3px 0 var(--amber); }
+.tabs a:not([aria-current]):hover b { color: var(--amber); }
+.tabs a:focus-visible { outline: 2px solid var(--amber); outline-offset: -2px; }
+.dek strong.t-hi, .t-hi { color: var(--amber); }
+.dek strong.t-lo, .t-lo { color: var(--navy); }
+.tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; }
+.tile { background: var(--surface); border: 1px solid var(--rule); border-radius: 8px; padding: 16px 18px; display: grid; gap: 6px; align-content: start; }
+.tile .lab { font: 500 11px/1.3 var(--font-data); letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); }
+.tile .big { font: 700 46px/1 var(--font-display); font-variant-numeric: tabular-nums; }
+.tile .when { font: 400 13px/1.4 var(--font-data); color: var(--ink-2); }
+.strip { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 20px; background: var(--surface); border: 1px solid var(--rule); border-radius: 8px; padding: 12px 16px; font-size: 15px; color: var(--ink-2); }
+.strip b { font: 600 17px/1 var(--font-data); }
+.strip .lab { font: 500 11px/1.3 var(--font-data); letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); }
+.strip a { margin-left: auto; font-size: 14px; color: var(--ink); text-decoration-color: var(--amber); text-underline-offset: 3px; }
+.tbl { overflow-x: auto; border: 1px solid var(--rule); border-radius: 8px; background: var(--surface); }
+.tbl table { min-width: 560px; font: 400 14px/1.4 var(--font-body); }
+.tbl caption { text-align: left; padding: 12px 14px 4px; font: 600 15px/1.35 var(--font-body); }
+.tbl th, .tbl td { padding: 7px 14px; border-top: 1px solid var(--rule); border-bottom: 0; text-align: left; vertical-align: top; white-space: normal; }
+.tbl thead th { font: 500 11px/1.3 var(--font-data); letter-spacing: .08em; text-transform: uppercase; color: var(--ink-3); border-top: 0; position: static; }
+.tbl tbody th { font-weight: 600; white-space: nowrap; color: var(--ink); }
+.tbl .num { font: 500 15px/1.4 var(--font-data); white-space: nowrap; color: var(--ink); }
+.tbl .yr { font: 400 13px/1.4 var(--font-data); color: var(--ink-2); }
+.tbl tr.today > * { background: var(--bg); }
+.tbl tr.today > th { box-shadow: inset 3px 0 0 var(--amber); }
+.months { display: flex; flex-wrap: wrap; gap: 8px; }
+.months a { font: 500 12px/1 var(--font-data); letter-spacing: .08em; text-transform: uppercase; color: var(--ink-2); text-decoration: none;
+  border: 1px solid var(--rule); border-radius: 999px; padding: 0 12px; min-height: 44px; display: inline-flex; align-items: center; background: var(--surface); }
+.months a[aria-current] { border-color: var(--ink); color: var(--ink); }
+.months a:hover { color: var(--amber); border-color: var(--amber); }
+.mlist { display: grid; gap: 8px; }
+details.month { border: 1px solid var(--rule); border-radius: 8px; background: var(--surface); padding: 0; }
+details.month summary { padding: 12px 16px; min-height: 44px; font: 600 15px/1.3 var(--font-body); color: var(--ink); display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+details.month summary span { font: 400 12px/1.3 var(--font-data); color: var(--ink-3); }
+details.month .tbl { border: 0; border-top: 1px solid var(--rule); border-radius: 0 0 8px 8px; }
+.cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; }
+.cols ul { margin: 0; padding-left: 20px; display: grid; gap: 6px; }
+/* grid children may shrink below their content (the wide tables scroll inside their own box) */
+main > *, section > *, .mlist > *, details.month > * { min-width: 0; }
+.tbl { max-width: 100%; }
+/* subscribe:start */
+/* Weekly-email signup (Buttondown). Same markup on the home page, subscribe/ and, later, the end of each story.
+   White card, ink button (orange is reserved for data meaning; the button turns Burnt/Orange on hover only). */
+.subscribe { background: var(--surface); border: 1px solid var(--rule); border-radius: 10px; padding: 24px; display: grid; gap: 12px; max-width: 640px; }
+.subscribe .kicker { margin: 0; }
+.subscribe h2 { font-size: clamp(26px, 4vw, 32px); }
+.subscribe .sub-dek { color: var(--ink-2); max-width: 34em; }
+.sub-form { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 4px; }
+.sub-form input[type="email"] { flex: 1 1 220px; min-width: 0; min-height: 44px; padding: 10px 12px; font: 400 16px/1.2 var(--font-body);
+  color: var(--ink); background: var(--bg); border: 1px solid var(--ghost); border-radius: 6px; }
+.sub-form input[type="email"]::placeholder { color: var(--ink-3); }
+.sub-form button { min-height: 44px; padding: 10px 20px; font: 600 15px/1 var(--font-body); color: var(--bg); background: var(--ink);
+  border: 0; border-radius: 6px; cursor: pointer; }
+.sub-form button:hover { background: var(--amber); }
+.sub-form input:focus-visible, .sub-form button:focus-visible { outline: 2px solid var(--amber); outline-offset: 2px; }
+.subscribe .sub-note { font: 400 12px/1.5 var(--font-data); color: var(--ink-3); }
+.subscribe .sub-note a { color: var(--ink-2); }
+.subscribe .sub-done { font-weight: 600; }
+.subscribe .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.subscribe.sub-end { margin-top: 8px; width: 100%; }
+.subscribe, .subscribe * { box-sizing: border-box; }
+/* subscribe:end */
+/* share:start */
+/* Share row at the end of each story, just above the subscribe card. Outlined ink button, so it ranks below
+   Subscribe (filled ink); orange only on hover and focus, as with the other buttons. */
+/* Story pages space <main>'s children 40-56px apart; the negative bottom margin keeps the row close to the card. */
+.share-row { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; max-width: 640px; margin: 0 0 -28px; }
+.share-row.share-solo { margin: 0; }
+/* Stories whose sections carry their own side margins (the travel stories: sections with the class wrap and a 760px
+   column inside) leave the main element full width, so the tool wraps the share row and card in this matching column. */
+.story-end { box-sizing: border-box; max-width: 792px; margin: 0 auto; padding: 8px max(16px, env(safe-area-inset-right, 0px)) 40px max(16px, env(safe-area-inset-left, 0px)); }
+.story-end .share-row { margin: 0 0 20px; } /* pages with no subscribe card below (the weird stat of the day) */
+.share-row .share-ask { margin: 0; color: var(--ink-2); }
+.share-btn { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 10px 18px; font: 600 15px/1 var(--font-body);
+  color: var(--ink); background: transparent; border: 1.5px solid var(--ink); border-radius: 6px; cursor: pointer; }
+.share-btn svg { width: 18px; height: 18px; flex: none; }
+.share-btn:hover { border-color: var(--amber); color: var(--amber); }
+.share-btn:focus-visible { outline: 2px solid var(--amber); outline-offset: 2px; }
+.share-row .share-msg { flex-basis: 100%; margin: 0; font: 400 13px/1.5 var(--font-data); color: var(--ink-2); overflow-wrap: anywhere; }
+/* Small Share button under a story's intro: reads like the byline it sits under (mono, secondary ink, underlined),
+   with a share icon and a 32px-tall hit area. */
+.share-top { margin: 8px 0 0; }
+.intro .share-top { margin-top: -6px; } /* travel intros lay out in grids with a 14px gap of their own */
+.share-top .share-btn { min-height: 32px; padding: 4px 0; gap: 6px; border: 0; border-radius: 0; font: 400 13px/1.4 var(--font-data);
+  color: var(--ink-3); text-decoration: underline; text-underline-offset: 3px; }
+.share-top .share-btn svg { width: 15px; height: 15px; }
+.share-top .share-btn:hover { color: var(--ink); }
+.share-top .share-msg:not([hidden]) { display: block; margin-top: 2px; font: 400 12px/1.5 var(--font-data); color: var(--ink-2); overflow-wrap: anywhere; }
+/* share:end */
+</style>
+<style>
+/* How the Almanac works (Nov 24, 2026) */
+.toc-how ul { columns: 2 240px; gap: 24px; margin: 0; padding-left: 18px; }
+.prose ul { margin: 0; padding-left: 20px; display: grid; gap: 8px; }
+.prose h2 { font-size: clamp(24px, 4vw, 32px); }
+</style>
+</head>
+<body>
+<header class="site-bar">
+  <a class="brand" href="{{MAIN}}" aria-label="Tall Order Digital, home"><svg class="mark" viewBox="0 0 100 100" aria-hidden="true"><rect x="6" y="6" width="18" height="88" rx="3" class="m-o"/><rect x="30" y="50" width="18" height="44" rx="3" class="m-2"/><rect x="54" y="60" width="18" height="34" rx="3" class="m-3"/><rect x="78" y="70" width="18" height="24" rx="3" class="m-4"/></svg><span class="wm"><span class="wm-1">Tall Order</span><span class="wm-2">Digital</span></span></a>
+  <nav class="site-nav" aria-label="Site"><a class="nav-topic" href="{{MAIN}}stories/" aria-label="Data stories"><span class="nav-long">Data </span>stories</a><a class="nav-topic" href="{{MAIN}}weather/" aria-current="page">Weather</a><a class="nav-topic" href="{{MAIN}}nba/">NBA</a><a class="nav-about" href="{{MAIN}}about/">About</a><a class="nav-sub" href="{{MAIN}}subscribe/"><span class="t">Subscribe</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5.5" width="18" height="13" rx="2"/><path d="m3.5 7 8.5 6.5L20.5 7"/></svg></a><a class="nav-search" href="{{MAIN}}search/" aria-label="Search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/></svg></a><button type="button" class="theme-toggle" aria-label="Switch theme"><svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg><svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.3 5.3l1.4 1.4M17.3 17.3l1.4 1.4M5.3 18.7l1.4-1.4M17.3 6.7l1.4-1.4"/></svg></button></nav>
+</header>
+
+
+<main>
+  <header class="col">
+    <p class="kicker"><a class="up" href="../">Almanac</a> · Methods</p>
+    <h1>How the Almanac works</h1>
+    <p class="dek">Where the numbers come from, how each one is checked, and what the words and colors on every city page mean.</p>
+    <p class="byline"><span>{{PUBLISHED}}</span><span>Data through {{ASOF_WORDS}}</span></p>
+  </header>
+
+  <nav class="method toc-how" aria-label="On this page">
+    <ul>
+      <li><a href="#records">The records</a></li>
+      <li><a href="#ranks">Ranks and "typical"</a></li>
+      <li><a href="#complete-years">Complete years</a></li>
+      <li><a href="#trends">Trends, and signal or noise</a></li>
+      <li><a href="#three-ways">Every change is checked three ways</a></li>
+      <li><a href="#records-vs-chance">Records against chance</a></li>
+      <li><a href="#map">The map's colors</a></li>
+      <li><a href="#normals">Normals</a></li>
+      <li><a href="#rain-snow">Rain, snow and dry spells</a></li>
+      <li><a href="#forecast">The 7-day forecast</a></li>
+      <li><a href="#unadjusted">Unadjusted readings and station moves</a></li>
+      <li><a href="#which-places">Which places are included</a></li>
+    </ul>
+  </nav>
+
+  <section class="prose" id="records">
+    <h2>The records</h2>
+    <p>Each city page uses one official long-term record: the daily high, low, precipitation and snowfall that NOAA keeps for the city, read through RCC-ACIS (NOAA's Regional Climate Centers' data service). Most are "ThreadEx" city records, which join the city's observing sites over the years into one series, usually ending at the main airport. Temperatures are whole degrees Fahrenheit, exactly as recorded.</p>
+    <p>The Almanac covers {{N_PLACES}} official records. Each page is rebuilt every day; the last 21 days are re-read each time, because stations post and correct values for a while after the day ends. A day's values are final the morning after.</p>
+  </section>
+
+  <section class="prose" id="ranks">
+    <h2>Ranks and "typical"</h2>
+    <p>A day's rank counts the years that were strictly warmer, plus one, so tied years share a rank: if two years were warmer and one tied, the day is "3rd warmest (tied)". Every rank says how many years it's out of, because 3rd of 40 and 3rd of 150 are very different.</p>
+    <p>Only days in the warmest or coolest fifth of their date's history get a rank. Everything in between reads "typical for" the date, because a middle rank ("71st warmest") says nothing useful.</p>
+  </section>
+
+  <section class="prose" id="complete-years">
+    <h2>Complete years</h2>
+    <p>A month counts when no more than 9 of its days are missing. A year counts when all 12 months do. A year's average is the average of its 12 monthly means, so a gap in one season can't tilt the year warmer or cooler. Yearly and decade figures use complete years only.</p>
+  </section>
+
+  <section class="prose" id="trends">
+    <h2>Trends, and signal or noise</h2>
+    <p>A trend is a straight line through every complete year. "Per decade" is how much it rises or falls every 10 years. Each trend comes with a 95% range: how far the true trend could plausibly be from the line, given how much years bounce around.</p>
+    <ul>
+      <li><strong>Signal</strong> (orange): the whole 95% range is above zero, or below it. The change is real, not luck.</li>
+      <li><strong>At the edge</strong> (light orange): the range is at least 80% of the way to clearing zero.</li>
+      <li><strong>Noise</strong> (gray): the range doesn't come close to clearing zero, so there's no clear change.</li>
+    </ul>
+    <p>Orange always means a real signal on these pages; nothing else is orange.</p>
+  </section>
+
+  <section class="prose" id="three-ways">
+    <h2>Every change is checked three ways</h2>
+    <p>Before a page says a place has warmed or cooled, the build checks the claim three ways: the trend across the full record, the last 30 complete years against the first 30, and the trend over the last 40 years. When the full record and the last 40 years disagree, the headline names the period instead of picking one ("Chicago's nights have warmed since 1986. Its days warmed over the long run.").</p>
+    <p>A page whose claims fail a check isn't published that day; the last page that passed stays up. A place needs at least 60 complete years for the first-versus-last check, so a few short or gappy records have no page yet.</p>
+  </section>
+
+  <section class="prose" id="records-vs-chance">
+    <h2>Records against chance</h2>
+    <p>If a place's climate weren't changing, every year would have the same chance of holding each date's record. The pages count the daily records set since 2000 that still stand and compare that with what equal chances would give.</p>
+    <p>To tell whether a gap is real, the build picks the same number of years at random from the place's own record, 20,000 times, keeping whole years together so a cold snap that set several records counts as one event. If fewer than 2.5% of those picks do as well as the real years since 2000, the gap is a signal; under 6% is at the edge. "Far fewer" needs half or less of the expected count and a signal.</p>
+  </section>
+
+  <section class="prose" id="map">
+    <h2>The map's colors</h2>
+    <ul>
+      <li><strong>Orange:</strong> half or fewer of the record lows chance would give, and the gap is real.</li>
+      <li><strong>Light orange:</strong> fewer than chance, but not that far.</li>
+      <li><strong>Gray:</strong> about what chance would give.</li>
+      <li><strong>Teal:</strong> more record lows than chance. Only a handful of places; check a city's station history before reading much into it.</li>
+    </ul>
+  </section>
+
+  <section class="prose" id="normals">
+    <h2>Normals</h2>
+    <p>"Normal" is the 1991–2020 average for the date, from the same record, smoothed over 15 days so one odd year doesn't make a bump in the calendar. The normal range on the year-so-far chart runs from the average low to the average high.</p>
+  </section>
+
+  <section class="prose" id="rain-snow">
+    <h2>Rain, snow and dry spells</h2>
+    <p>Precipitation is rain plus melted snow, in inches; yearly totals use complete years only. A dry spell is a run of days with less than 0.01 inch: a trace counts as dry, and a missing day ends the spell. Each page shows spells that are long for that place, the shortest of 14, 30, 60 or 90 days that leaves no more than about one and a half spells a year.</p>
+    <p>Snowfall is shown without a trend: over a century, snow has been measured less consistently than rain (different boards, times and rules), so a long-run comparison wouldn't be reliable. Places that average under an inch a winter, or have fewer than 30 complete winters, don't show the snowfall chart.</p>
+  </section>
+
+  <section class="prose" id="forecast">
+    <h2>The 7-day forecast</h2>
+    <p>The top of each city page shows the National Weather Service forecast for the official record's own location: each day's forecast high, the low that night, the chance of precipitation and the Weather Service's words. It's fetched every time the pages are rebuilt, several times a day, and the page says when it was issued; a forecast more than 36 hours old is never shown.</p>
+    <p>When a forecast would stand out in the place's own record, a note says where it would land ("Would be the 2nd warmest Nov 21 high in 134 years"), using the same ranks as everywhere else. A night's low is ranked against the next date, because the official low of a day is usually set near dawn. Days 6 and 7 are marked less certain: forecasts lose accuracy quickly after a few days.</p>
+  </section>
+
+  <section class="prose" id="unadjusted">
+    <h2>Unadjusted readings and station moves</h2>
+    <p>These are the official records as kept, without adjustments. A record that joins several sites can shift when the station moves (most often from a downtown rooftop to a cooler, more open airport), when instruments change, or when the city grows around the station (which mostly warms nights). NOAA's adjusted climate datasets correct for these; the Almanac doesn't, so treat any single number as approximate.</p>
+    <p>A common fingerprint of a city-to-airport move is a record where nights cooled over the long run but have warmed since 1986. Pages that show it name the period in their headline, and the last 40 years are the clearer guide there.</p>
+  </section>
+
+  <section class="prose" id="which-places">
+    <h2>Which places are included</h2>
+    <p>Every official long-term city record that NOAA's data service reports and that is still updated: {{N_PLACES}} records, of which {{N_PAGES}} have pages today. A few places also have a volunteer-station record (Goshen, Indiana, for example) with a switch to the nearest official city. Places whose record is too short or too gappy for the checks above wait for more data rather than publish a claim that can't be checked.</p>
+    <p>Data: NOAA official daily records via <a href="https://www.rcc-acis.org/">RCC-ACIS</a> (public domain); forecasts from the <a href="https://www.weather.gov/">National Weather Service</a>. <a href="../">Find your city in the Almanac →</a></p>
+  </section>
+
+  <!-- share:start -->
+  <div class="share-row">
+    <p class="share-ask">Know someone who'd like this?</p>
+    <button type="button" class="share-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="M7 8l5-5 5 5"/><path d="M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg>Share this page</button>
+    <p class="share-msg" role="status" hidden></p>
+  </div>
+  <!-- share:end -->
+  <!-- subscribe:start -->
+  <section class="subscribe sub-end" id="subscribe" aria-labelledby="sub-h">
+    <p class="kicker">The weekly email</p>
+    <h2 id="sub-h">Get each new story by email</h2>
+    <p class="sub-dek">One email a week with the newest stories and what they found. Unsubscribe anytime.</p>
+    <form class="sub-form" action="https://buttondown.com/api/emails/embed-subscribe/tallorderdigital" method="post" target="_blank">
+      <label for="sub-email" class="sr-only">Email address</label>
+      <input id="sub-email" type="email" name="email" required autocomplete="email" placeholder="you@example.com">
+      <input type="hidden" name="embed" value="1">
+      <input type="hidden" name="metadata__signup-page" value="">
+      <button type="submit">Subscribe</button>
+    </form>
+    <p class="sub-done" role="status" hidden>Almost done: check your inbox for a confirmation email.</p>
+    <p class="sub-note">Sent with Buttondown. Your address is used only for this email (<a href="{{MAIN}}about/#privacy">privacy</a>).</p>
+  </section>
+  <!-- subscribe:end -->
+</main>
+
+<footer class="site-foot">
+  <span>Data: NOAA official daily records via <a href="https://www.rcc-acis.org/">RCC-ACIS</a> (public domain). Analysis and design: Shawn Nafziger, Tall Order Digital.</span>
+  <span>No cookies. Visits are counted anonymously (<a href="{{MAIN}}about/#privacy">privacy</a>).</span>
+  <span>© 2026 Tall Order Digital LLC. Charts and text may be shared with credit and a link.</span>
+  <p class="sub-foot"><a href="{{MAIN}}subscribe/">Get the weekly email</a></p>
+</footer>
+
+<script>
+/* theme toggle (same behavior as assets/theme.js) */
+(function () {
+  const root = document.documentElement;
+  const cur = () => root.dataset.theme || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+  const sync = () => document.querySelectorAll(".theme-toggle").forEach(b => { const n = cur() === "dark" ? "light" : "dark"; b.setAttribute("aria-label", "Switch to " + n + " mode"); b.dataset.showing = cur(); });
+  document.addEventListener("click", e => { const b = e.target.closest(".theme-toggle"); if (!b) return; const n = cur() === "dark" ? "light" : "dark"; root.dataset.theme = n; try { localStorage.setItem("tod-theme", n); } catch (err) {} sync(); });
+  sync();
+})();
+</script>
+<script>
+/* site-header:start */
+/* Site header (sitewide, Nov 2, 2026): keeps --header-h current (for anchor links) and, on phones,
+   slides the pinned header away while the reader scrolls down and brings it back on any scroll up.
+   Master copy: tallorderdigital-site/assets/site-header.js; self-contained pages carry an inline copy
+   written by tools/apply-header.py. */
+(function () {
+  var bar = document.querySelector(".site-bar");
+  if (!bar) return;
+  var root = document.documentElement;
+  var phone = window.matchMedia ? window.matchMedia("(max-width: 680px)") : { matches: false };
+  var last = window.scrollY, away = false;
+  function measure() { root.style.setProperty("--header-h", bar.offsetHeight + "px"); }
+  function set(v) { if (v !== away) { away = v; bar.classList.toggle("is-away", v); } }
+  window.addEventListener("scroll", function () {
+    var y = window.scrollY, d = y - last;
+    if (!phone.matches || y < bar.offsetHeight) { set(false); last = y; return; }
+    if (Math.abs(d) < 8) return;
+    set(d > 0);
+    last = y;
+  }, { passive: true });
+  // Keyboard users tabbing into the header always see it.
+  bar.addEventListener("focusin", function () { set(false); });
+  window.addEventListener("resize", measure);
+  if (phone.addEventListener) phone.addEventListener("change", function () { set(false); measure(); });
+  measure();
+})();
+
+/* Animated logo intro (Nov 9, 2026): sixteen mixed-up dots in the logo's colors swirl about two turns and stretch
+   into the four bars as they land (7 + 4 + 3 + 2 dots for the 88 / 44 / 34 / 24 bars); the orange bar settles with a
+   small bounce, then the wordmark wipes in. About 3.6 s. Plays once per visit, on whichever page the reader lands on
+   (sessionStorage "tod-intro"): the home page's hero logo, or the header logo anywhere else. Never with reduce motion.
+   The one-line script in <head> (written by tools/apply-header.py) adds class "tod-intro" to <html> so the static
+   logo doesn't flash first, and removes it after 2 s if this never runs. Colors come from the m-o / m-2 / m-3 / m-4
+   classes, so it follows light/dark mode. Decision: docs/brand-decisions.md, Animated logo. */
+(function () {
+  var root = document.documentElement;
+  if (!root.classList.contains("tod-intro")) return;
+  // The home page plays it on the big hero logo; every other page on the header logo.
+  var hero = document.querySelector(".hero-logo") || document.querySelector(".site-bar .brand");
+  var svg = hero && hero.querySelector(".mark");
+  if (!svg) { root.classList.remove("tod-intro"); return; }
+  window.todIntroStarted = true;
+  try { sessionStorage.setItem("tod-intro", "1"); } catch (e) {}
+
+  var NS = "http://www.w3.org/2000/svg";
+  var T = 3.6, SW = 1.75;
+  var BAR_X = [6, 30, 54, 78], BAR_W = 18, BASE = 94;
+  var BAR_H = [88, 44, 34, 24], COUNTS = [7, 4, 3, 2];
+  var CLS = ["m-o", "m-2", "m-3", "m-4"];
+  var C = { x: 51, y: 52 }, R0 = 6, R1 = 5.4;
+  var MIX = [0, 1, 0, 2, 3, 0, 2, 0, 0, 2, 0, 1, 1, 0, 3, 1];
+
+  function clamp(v) { return Math.max(0, Math.min(1, v)); }
+  function lerp(a, b, t) { return a + (b - a) * t; }
+  function ioc(t) { return t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2; }
+  function outBack(t) { var c1 = 1.70158, c3 = c1 + 1; return 1 + c3 * Math.pow(t - 1, 3) + c1 * Math.pow(t - 1, 2); }
+  function ang(p) { return Math.atan2(p.y - C.y, p.x - C.x); }
+
+  var grid = [], slots = [], dots = [];
+  for (var r = 0; r < 4; r++) for (var c = 0; c < 4; c++)
+    grid.push({ x: 15 + c * 24, y: 16 + r * 24, row: r, col: c, bar: MIX[r * 4 + c] });
+  BAR_H.forEach(function (h, b) {
+    var n = COUNTS[b], s = h / n;
+    for (var j = 0; j < n; j++) slots.push({ bar: b, s: s, x: BAR_X[b] + BAR_W / 2, y: BASE - s * (j + .5) });
+  });
+  [0, 1, 2, 3].forEach(function (b) {
+    var byAng = function (p, q) { return ang(p) - ang(q); };
+    var gs = grid.filter(function (g) { return g.bar === b; }).sort(byAng);
+    var ss = slots.filter(function (s) { return s.bar === b; }).sort(byAng);
+    gs.forEach(function (g, k) {
+      var s = ss[k], a0 = ang(g), d = ang(s) - a0;
+      while (d < 2.4 * Math.PI) d += 2 * Math.PI;
+      while (d >= 4.4 * Math.PI) d -= 2 * Math.PI;
+      dots.push({ g: g, s: s, a0: a0, d: d, pop: (g.row + g.col) * .045,
+                  r0: Math.hypot(g.x - C.x, g.y - C.y), r1: Math.hypot(s.x - C.x, s.y - C.y) });
+    });
+  });
+  dots.slice().sort(function (p, q) { return p.a0 - q.a0; }).forEach(function (d, k) { d.swirl = .85 + k * .012; });
+  var barEnd = [0, 1, 2, 3].map(function (b) {
+    return Math.max.apply(null, dots.filter(function (d) { return d.s.bar === b; }).map(function (d) { return d.swirl + SW; }));
+  });
+
+  var bars = CLS.map(function (cl) { return svg.querySelector("." + cl); });
+  var layer = document.createElementNS(NS, "g");
+  svg.appendChild(layer);
+  dots.forEach(function (d) {
+    d.el = document.createElementNS(NS, "rect");
+    d.el.setAttribute("class", CLS[d.s.bar]);
+    layer.appendChild(d.el);
+  });
+  var w1 = hero.querySelector(".wm-1"), w2 = hero.querySelector(".wm-2");
+
+  function render(t) {
+    dots.forEach(function (d) {
+      var a = clamp((t - d.pop) / .35);
+      var e = ioc(clamp((t - d.swirl) / SW));
+      var th = d.a0 + d.d * e;
+      var rad = lerp(d.r0, d.r1, e) * (1 - .45 * Math.sin(Math.PI * e));
+      var cx = C.x + rad * Math.cos(th), cy = C.y + rad * Math.sin(th);
+      var m = ioc(clamp((e - .62) / .38));
+      var rr = lerp(R0, R1, e) * (a < 1 ? outBack(a) : 1);
+      var w = Math.max(0, lerp(2 * rr, BAR_W, m)), h = Math.max(0, lerp(2 * rr, d.s.s + .6, m));
+      d.el.setAttribute("x", cx - w / 2); d.el.setAttribute("y", cy - h / 2);
+      d.el.setAttribute("width", w); d.el.setAttribute("height", h);
+      d.el.setAttribute("rx", Math.max(0, lerp(rr, 0, m)));
+      d.el.style.opacity = t >= barEnd[d.s.bar] ? 0 : clamp(a * 1.4);
+    });
+    bars.forEach(function (bar, b) {
+      if (!bar) return;
+      var h = BAR_H[b];
+      if (b === 0) { var p = clamp((t - 2.8) / .35); h *= 1 + .05 * Math.sin(Math.PI * p) * (1 - p * .3); }
+      bar.setAttribute("y", BASE - h); bar.setAttribute("height", h);
+      bar.style.opacity = t >= barEnd[b] ? 1 : 0;
+    });
+    var p1 = ioc(clamp((t - 2.72) / .55)), p2 = ioc(clamp((t - 2.97) / .6));
+    if (w1) { w1.style.opacity = p1; w1.style.transform = "translateX(" + (1 - p1) * -.25 + "em)"; w1.style.clipPath = "inset(-10% " + (1 - p1) * 100 + "% -10% 0)"; }
+    if (w2) { w2.style.opacity = p2; w2.style.letterSpacing = lerp(.95, .52, p2) + "em"; }
+  }
+
+  function finish() {
+    layer.remove();
+    bars.forEach(function (bar, b) { if (bar) { bar.style.opacity = ""; bar.setAttribute("y", BASE - BAR_H[b]); bar.setAttribute("height", BAR_H[b]); } });
+    [w1, w2].forEach(function (el) { if (el) el.removeAttribute("style"); });
+    root.classList.remove("tod-intro");
+  }
+
+  render(0);
+  root.classList.remove("tod-intro"); // inline styles from render() now control visibility
+  var start = null;
+  function frame(now) {
+    if (start === null) start = now;
+    var t = Math.min(T, (now - start) / 1000);
+    render(t);
+    if (t < T) requestAnimationFrame(frame); else finish();
+  }
+  requestAnimationFrame(frame);
+})();
+/* site-header:end */
+</script>
+<script>
+/* subscribe:start */
+/* Weekly-email signup: the form posts to Buttondown in a new tab (Buttondown shows its own
+   "check your inbox" page and may ask for a captcha). This script tags each signup with the page
+   it came from, counts it in GoatCounter as subscribe/<page>, and tells the reader what happens next. */
+(function () {
+  var parts = location.pathname.split("/").filter(Boolean);
+  var page = parts.length ? parts[parts.length - 1].replace(/\.html$/, "") : "home";
+  document.querySelectorAll("form.sub-form").forEach(function (form) {
+    var src = form.querySelector('input[name="metadata__signup-page"]');
+    if (src) src.value = page;
+    form.addEventListener("submit", function () {
+      var gc = window.goatcounter;
+      if (gc && gc.count) gc.count({ path: "subscribe/" + page, title: "subscribe/" + page, event: true });
+      var box = form.closest(".subscribe"), done = box && box.querySelector(".sub-done");
+      if (done) setTimeout(function () { done.hidden = false; form.reset(); }, 300);
+    });
+  });
+})();
+/* subscribe:end */
+</script>
+<script>
+/* share:start */
+/* Share button at the end of each story. Phones (and browsers with a share menu) open the device's share sheet;
+   others copy the link. The shared link is the page address plus ?ref=share, so visits from shares show up in
+   GoatCounter as their own referrer. A row marked data-keep-hash also keeps the address's #part (the weird stat of the
+   day uses it, so a share links to the night the reader is looking at). A finished share counts in GoatCounter as share/<page> (cancelling the share
+   sheet doesn't count). Uses the page's own address, not its canonical link, so a page whose canonical points to
+   another site still shares this one.
+   The small Share button under a story's intro (.share-top, added Nov 8, 2026) works the same way; the GoatCounter
+   title says which one was used: share/<page> (top, menu), (end, copy) and so on. */
+(function () {
+  var parts = location.pathname.split("/").filter(Boolean);
+  var page = parts.length ? parts[parts.length - 1].replace(/\.html$/, "") : "home";
+  var base = location.origin + location.pathname + "?ref=share";
+  var og = document.querySelector('meta[property="og:title"]');
+  var title = og ? og.getAttribute("content") : document.title;
+  document.querySelectorAll(".share-row, .share-top").forEach(function (row) {
+    var where = row.classList.contains("share-top") ? "top" : "end";
+    function count(how) {
+      var gc = window.goatcounter;
+      if (gc && gc.count) gc.count({ path: "share/" + page, title: "share/" + page + " (" + where + ", " + how + ")", event: true });
+    }
+    var btn = row.querySelector(".share-btn"), msg = row.querySelector(".share-msg"), url = base;
+    function say(text) { if (msg) { msg.textContent = text; msg.hidden = false; } }
+    function copy() {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(url).then(function () { say("Link copied. Paste it anywhere to share."); count("copy"); },
+          function () { say("Copy this link: " + url); });
+      } else {
+        say("Copy this link: " + url);
+      }
+    }
+    btn.addEventListener("click", function () {
+      url = base + (row.hasAttribute("data-keep-hash") ? location.hash : "");
+      if (navigator.share) {
+        navigator.share({ title: title, url: url }).then(function () { count("menu"); }, function (err) {
+          if (!err || err.name !== "AbortError") copy();
+        });
+      } else {
+        copy();
+      }
+    });
+  });
+})();
+/* share:end */
+</script>
+<!-- Analytics (both cookie-free): GoatCounter counts visits and reader actions; Cloudflare Web Analytics measures page speed. Same block on every page. -->
+<script data-goatcounter="https://tallorderdigital.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "5d3a617ba3ea4ca68113ec25a9a48b1b"}'></script>
+<script>
+(function () {
+  // Reader actions sent to GoatCounter as events, at most once per page view each:
+  //   glossary/<page>/<term>  a glossary pop-up was opened
+  //   read-to-end/<page>      the reader scrolled down to the footer
+  var parts = location.pathname.split("/").filter(Boolean);
+  var page = parts.length ? parts[parts.length - 1].replace(/\.html$/, "") : "home";
+  var sent = {};
+  function send(path, tries) {
+    if (sent[path] && tries === undefined) return;
+    sent[path] = true;
+    var gc = window.goatcounter;
+    if (gc && gc.count) { gc.count({ path: path, title: path, event: true }); return; }
+    if ((tries || 0) < 20) setTimeout(function () { send(path, (tries || 0) + 1); }, 500);
+  }
+  // A glossary pop-up counts once it has stayed open for 0.6 s (tap, click, keyboard or hover), so passing the mouse over a term doesn't count.
+  if ("MutationObserver" in window) {
+    new MutationObserver(function (ms) {
+      ms.forEach(function (m) {
+        var t = m.target;
+        if (t.getAttribute("aria-expanded") !== "true" || !t.getAttribute("data-term")) return;
+        setTimeout(function () {
+          if (t.getAttribute("aria-expanded") === "true") send("glossary/" + page + "/" + t.getAttribute("data-term"));
+        }, 600);
+      });
+    }).observe(document.body, { subtree: true, attributes: true, attributeFilter: ["aria-expanded"] });
+  }
+  window.addEventListener("load", function () {
+    var foot = document.querySelector("footer");
+    // Only long pages (stories): on short pages the footer is visible without scrolling.
+    if (!foot || !("IntersectionObserver" in window) ||
+        document.documentElement.scrollHeight < 2 * window.innerHeight) return;
+    var io = new IntersectionObserver(function (es) {
+      if (es.some(function (x) { return x.isIntersecting; })) { send("read-to-end/" + page); io.disconnect(); }
+    });
+    io.observe(foot);
+  });
+})();
+</script>
+</body>
+</html>

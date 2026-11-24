@@ -415,7 +415,7 @@ def render_records(rd, seo_head, nearby, main_site, today=None):
         "HEAD_SEO": seo_head, "MAIN": main_site,
         "CITY": html.escape(c["name"]), "STATE": html.escape(c["state"]), "ST": c["st"],
         "TABS": tabs_html(rd["slug"], "records/", "../", rd.get("has_everyday", False)).replace("{CITYNAME}", html.escape(c["name"])),
-        "DEK": t["dek"], "ASOF_WORDS": f"{asof:%B} {asof.day}, {asof.year}",
+        "DEK": t["dek"], "PUBLISHED": rd.get("published_html", ""), "ASOF_WORDS": f"{asof:%B} {asof.day}, {asof.year}",
         "T_YEAR": html.escape(t["t_year"]), "P_YEAR": t["p_year"], "P_TODAY": t["p_today"],
         "TODAY_STRIP": today_strip_html(rd, today),
         "T_ALL": html.escape(t["t_all"]), "P_ALL": t["p_all"], "TILES": tiles_html(rd),
