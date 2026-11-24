@@ -38,7 +38,7 @@ class Test(unittest.TestCase):
         for row in forecast.days(fc):
             d = row["date"]
             md = d.strftime("%m-%d")
-            hi_vals = {int(y): int(v) for y, v, m in zip(h["Y"], h["Hi"], h["MD"]) if m == md and v == v}
+            hi_vals = {int(y): int(v) for y, v, m in zip(h["Y"], h["Hi"], h["MD"]) if m == md and v == v and int(y) != d.year}
             if row["high"] is not None and hi_vals:
                 warmer = sum(1 for v in hi_vals.values() if v > row["high"])
                 note = forecast.notable_line(row, {md: hi_vals}, {}, a.same_date_rank, d.year)
