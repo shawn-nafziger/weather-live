@@ -531,6 +531,7 @@ def render(ed, *, seo_head, nearby, main_site, hub=None):
         "BYLINE": (f'By Shawn Nafziger · Published <time datetime="{hub["published"]}">{hub["published_words"]}</time> · '
                    f'Featured: {html.escape(name)}, data through <time id="asofT" datetime="{ed["asof"]}">{short_date(asof)}</time>'
                    if is_hub else
+                   (ed.get("published_html", "") + " · " if ed.get("published_html") else "") +
                    f'Data through <time datetime="{ed["asof"]}">{short_date(asof)}</time> · NOAA official daily record · '
                    'Updated every morning'),
         "PICKER_NOTE": ("Featured: " + html.escape(f"{name}, {c['st']}") + ". Pick another place to open its own page."

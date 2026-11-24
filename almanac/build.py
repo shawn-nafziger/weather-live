@@ -35,6 +35,7 @@ from albers import project
 import records  # noqa: E402
 import everyday  # noqa: E402
 import forecast  # noqa: E402
+import prerender  # noqa: E402
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 import history_store as store  # noqa: E402
@@ -46,6 +47,19 @@ SITE_DIR = REPO / "site"
 MAIN_SITE = "https://tallorderdigital.com/"
 # The Almanac's public address: a folder on the main site, so links and mentions build one domain (Nov 10, 2026).
 ALMANAC = MAIN_SITE + "weather/almanac/"
+# First day each page was published (Nov 24, 2026): shown as "Published <date>" and written as datePublished.
+PUBLISHED = json.loads((REPO / "config" / "almanac_published.json").read_text(encoding="utf-8"))
+
+
+def published(kind, slug=None):
+    """ISO date a page was first published: kind is "overview" (per place), "records", "every-day" or "how-it-works"."""
+    v = PUBLISHED[kind]
+    return v[slug] if isinstance(v, dict) else v
+
+
+def published_html(iso):
+    d = date.fromisoformat(iso)
+    return f'Published <time datetime="{iso}">{d:%b} {d.day}, {d.year}</time>'
 # The main site's share image until the Almanac has its own (Nov 9, 2026).
 SHARE_IMAGE = MAIN_SITE + "assets/share-home.png"
 
@@ -809,7 +823,8 @@ def city_seo(data, description):
     title = f"{c['name']} Weather History"
     page = {"@type": "WebPage", "@id": url + "#webpage", "url": url, "name": title, "description": description,
             "inLanguage": "en-US", "isPartOf": {"@id": MAIN_SITE + "#website"}, "publisher": ORG,
-            "about": {"@id": url + "#place"}, "mainEntity": {"@id": url + "#dataset"}, "dateModified": asof,
+            "about": {"@id": url + "#place"}, "mainEntity": {"@id": url + "#dataset"},
+            "datePublished": published("overview", slug), "dateModified": asof,
             "breadcrumb": {"@id": url + "#breadcrumb"}}
     return head_seo(url, title, description, [page, dataset, place, crumbs(url, [(place_name, url)])])
 
@@ -827,7 +842,7 @@ def write_search_files(built, out_dir, recs=(), eds=()):
     """sitemap.xml in the Almanac folder (tallorderdigital.com/weather/almanac/sitemap.xml), listed in the main
     site's robots.txt: the Almanac's front page, each city and each city's records and "Every day" pages."""
     asof = max(d["asof"] for d in built)
-    rows = [(ALMANAC, asof)] + sorted([(f"{ALMANAC}{d['slug']}/", d["asof"]) for d in built]
+    rows = [(ALMANAC, asof), (ALMANAC + HOW_PATH, published("how-it-works"))] + sorted([(f"{ALMANAC}{d['slug']}/", d["asof"]) for d in built]
                                       + [(f"{ALMANAC}{r['slug']}/records/", r["asof"]) for r in recs]
                                       + [(f"{ALMANAC}{e['slug']}/every-day/", e["asof"]) for e in eds])
     xml = "\n".join(['<?xml version="1.0" encoding="UTF-8"?>',
@@ -836,6 +851,36 @@ def write_search_files(built, out_dir, recs=(), eds=()):
                       "</urlset>", ""])
     (out_dir / "almanac").mkdir(parents=True, exist_ok=True)
     (out_dir / "almanac" / "sitemap.xml").write_text(xml, encoding="utf-8")
+
+
+HOW_PATH = "how-it-works/"
+
+
+def write_how(built, out_dir):
+    """The shared "How the Almanac works" page (Nov 24, 2026): the long method explanations, once, instead of on
+    every city page (seo-standards §6: thousands of near-identical paragraphs drag a site down). City pages keep
+    the record's name and caveat and link here."""
+    url = ALMANAC + HOW_PATH
+    asof = date.fromisoformat(max(d["asof"] for d in built))
+    title = "How the Weather Almanac Works"
+    description = (f"How Tall Order Digital's Weather Almanac ranks each day, finds real trends and checks every claim "
+                   f"across {len(CITIES)} official NOAA city records: sources, methods and what the colors mean.")
+    page = {"@type": "WebPage", "@id": url + "#webpage", "url": url, "name": title, "description": description,
+            "inLanguage": "en-US", "isPartOf": {"@id": MAIN_SITE + "#website"}, "publisher": ORG,
+            "datePublished": published("how-it-works"), "dateModified": published("how-it-works"),
+            "breadcrumb": {"@id": url + "#breadcrumb"}}
+    fill = {"TITLE": title, "DESCRIPTION": html.escape(description, quote=True),
+            "HEAD_SEO": head_seo(url, title, description, [page, crumbs(url, [("How it works", url)])]),
+            "MAIN": MAIN_SITE, "PUBLISHED": published_html(published("how-it-works")),
+            "ASOF_WORDS": f"{asof:%B} {asof.day}, {asof.year}", "N_PLACES": str(len(CITIES)), "N_PAGES": str(len(built))}
+    tpl = (HERE / "how_template.html").read_text(encoding="utf-8")
+    for k, v in fill.items():
+        tpl = tpl.replace("{{" + k + "}}", v)
+    if "{{" in tpl:
+        raise RuntimeError("Unfilled placeholder in how_template.html")
+    out = out_dir / "almanac" / HOW_PATH
+    out.mkdir(parents=True, exist_ok=True)
+    (out / "index.html").write_text(tpl, encoding="utf-8")
 
 
 def miles_between(a, b):
@@ -919,12 +964,14 @@ def render(data, has_records=False, has_everyday=False, forecast_html=""):
         "FORECAST": forecast_html,   # the 7-day forecast strip (Nov 21, 2026); "" when there's no forecast
         "DATA": json.dumps(data, separators=(",", ":")),
     }
+    fill["PUBLISHED"] = published_html(published("overview", data["slug"]))
     for k, v in fill.items():
         tpl = tpl.replace("{{" + k + "}}", v)
     left = [p for p in tpl.split("{{")[1:] if "}}" in p[:40]]
     if left:
         raise RuntimeError(f"Unfilled placeholders: {[p.split('}}')[0] for p in left]}")
-    return tpl
+    # Script-drawn text, tables and lists written into the HTML too, for readers and crawlers without scripts
+    return prerender.fill(tpl, json.loads(fill["DATA"]))
 
 
 def write_city(slug, out_dir, history=None, today=None, forecasts=None):
@@ -977,7 +1024,8 @@ def records_seo(rd):
     }
     page = {"@type": "WebPage", "@id": url + "#webpage", "url": url, "name": rd["title"], "description": rd["description"],
             "inLanguage": "en-US", "isPartOf": {"@id": MAIN_SITE + "#website"}, "publisher": ORG,
-            "about": {"@id": city_url + "#place"}, "mainEntity": {"@id": url + "#dataset"}, "dateModified": rd["asof"],
+            "about": {"@id": city_url + "#place"}, "mainEntity": {"@id": url + "#dataset"},
+            "datePublished": published("records"), "dateModified": rd["asof"],
             "breadcrumb": {"@id": url + "#breadcrumb"}}
     return head_seo(url, rd["title"], rd["description"],
                     [page, dataset, place, crumbs(url, [(place_name, city_url), ("Records", url)])])
@@ -992,6 +1040,7 @@ def records_nearby_html(slug, with_records, n=6):
 
 
 def write_records(rd, out_dir, with_records, today=None):
+    rd["published_html"] = published_html(published("records"))
     page = records.render_records(rd, records_seo(rd), records_nearby_html(rd["slug"], with_records), MAIN_SITE, today=today)
     out = out_dir / "almanac" / rd["slug"] / "records"
     out.mkdir(parents=True, exist_ok=True)
@@ -1018,7 +1067,8 @@ def everyday_seo(ed):
     }
     page = {"@type": "WebPage", "@id": url + "#webpage", "url": url, "name": ed["title"], "description": ed["description"],
             "inLanguage": "en-US", "isPartOf": {"@id": MAIN_SITE + "#website"}, "publisher": ORG,
-            "about": {"@id": city_url + "#place"}, "mainEntity": {"@id": url + "#dataset"}, "dateModified": ed["asof"],
+            "about": {"@id": city_url + "#place"}, "mainEntity": {"@id": url + "#dataset"},
+            "datePublished": published("every-day"), "dateModified": ed["asof"],
             "breadcrumb": {"@id": url + "#breadcrumb"}}
     head = head_seo(url, ed["title"], ed["description"],
                     [page, dataset, place, crumbs(url, [(place_name, city_url), ("Every day", url)])])
@@ -1038,6 +1088,7 @@ def everyday_nearby_html(slug, with_everyday, n=6):
 
 
 def write_everyday(ed, out_dir, with_everyday):
+    ed["published_html"] = published_html(published("every-day"))
     page = everyday.render(ed, seo_head=everyday_seo(ed), nearby=everyday_nearby_html(ed["slug"], with_everyday),
                            main_site=MAIN_SITE)
     out = out_dir / "almanac" / ed["slug"] / "every-day"
@@ -1152,6 +1203,7 @@ def main():
         write_everyday(ed, out_dir, with_everyday)
     if a.all and built:
         write_index(built, out_dir)
+        write_how(built, out_dir)
         write_search_files(built, out_dir, recs, eds)
     print(f"{len(built)} of {len(slugs)} Almanac pages written to {out_dir}, {len(recs)} records pages "
           f"and {len(eds)} every-day pages; {n_fc} with a 7-day forecast.")
