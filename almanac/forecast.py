@@ -153,18 +153,73 @@ def notable_line(row, hi_by_md, lo_by_md, rank_fn, year):
     word = {("high", "warm"): "warmest", ("high", "cool"): "coolest",
             ("low", "warm"): "warmest", ("low", "cool"): "coldest"}[(kind, r["standing"])]
     date_words = f"{SHORT_MONTHS[when.month - 1]} {when.day}"
-    lead = "High" if kind == "high" else "Low that night"
+    # Wording (Shawn, Nov 24: not "high of 134"): "Would be the 2nd warmest Nov 21 high in 134 years". The count is
+    # every year with a value for that date, this one included, as everywhere on the Almanac.
+    lead = "Would" if kind == "high" else "Low that night would"
     if r["record"]:
         rec = max(vals.values()) if r["standing"] == "warm" else min(vals.values())
         rec_years = sorted(y for y, v in vals.items() if v == rec)
         what = "record high" if (kind, r["standing"]) == ("high", "warm") else \
                "record low" if (kind, r["standing"]) == ("low", "cool") else f"record {word} {kind}"
-        verb = "would tie" if r["tied"] else "would beat"
+        verb = "tie" if r["tied"] else "beat"
         return {"kind": kind, "record": True,
-                "text": f"{lead} {verb} the {date_words} {what} ({rec}°F, {rec_years[-1]})"}
-    tie = " (tied)" if r["tied"] else ""
+                "text": f"{lead} {verb} the {date_words} {what} ({_deg(rec)}, {rec_years[-1]})"}
+    verb = "tie for" if r["tied"] else "be"
     return {"kind": kind, "record": False,
-            "text": f"{lead} would be the {_ordinal(r['rank'])} {word}{tie} {date_words} {kind} of {r['years']}"}
+            "text": f"{lead} {verb} the {_ordinal(r['rank'])} {word} {date_words} {kind} in {r['years']} years"}
+
+
+def _deg(v):
+    return f"{'−' if v < 0 else ''}{abs(v)}°F"
+
+
+# ------------------------------------------------------------------ weather icons (Nov 24, 2026)
+# Small line drawings in the text color, picked from the NWS's few words ("Chance Rain Showers", "Mostly Sunny").
+# Drawn here (no icon library or font): 24×24 strokes. Decorative: the words beside them carry the meaning.
+_SUN = '<circle cx="12" cy="12" r="4"/><path d="M12 2.5v2.5M12 19v2.5M2.5 12H5M19 12h2.5M5.3 5.3l1.8 1.8M16.9 16.9l1.8 1.8M5.3 18.7l1.8-1.8M16.9 7.1l1.8-1.8"/>'
+_MOON = '<path d="M19 14.5A7.5 7.5 0 0 1 9.5 5a7.5 7.5 0 1 0 9.5 9.5z"/>'
+_CLOUD = '<path d="M7 18h10a4 4 0 0 0 .6-7.95A5.5 5.5 0 0 0 7 9.5 4.25 4.25 0 0 0 7 18z"/>'
+_CLOUD_HI = '<path d="M7 15h10a4 4 0 0 0 .6-7.95A5.5 5.5 0 0 0 7 6.5 4.25 4.25 0 0 0 7 15z"/>'
+_PARTLY = ('<circle cx="8.5" cy="8.5" r="3"/><path d="M8.5 2.5v1.5M2.5 8.5H4M4.3 4.3l1 1M12.7 4.3l-1 1"/>'
+           '<path d="M9 19h8.5a3.5 3.5 0 0 0 .5-6.96A4.75 4.75 0 0 0 9 11.5a3.75 3.75 0 0 0 0 7.5z"/>')
+_PARTLY_NIGHT = ('<path d="M11.5 8.2A4.5 4.5 0 0 1 6 3a4.5 4.5 0 1 0 5.5 5.2z"/>'
+                 '<path d="M9 19h8.5a3.5 3.5 0 0 0 .5-6.96A4.75 4.75 0 0 0 9 11.5a3.75 3.75 0 0 0 0 7.5z"/>')
+ICONS = {
+    "sun": _SUN, "moon": _MOON, "partly": _PARTLY, "partly-night": _PARTLY_NIGHT, "cloud": _CLOUD,
+    "rain": _CLOUD_HI + '<path d="M8 18l-1 3M12 18l-1 3M16 18l-1 3"/>',
+    "storm": _CLOUD_HI + '<path d="M12.5 16l-2 3.5h3l-2 3.5"/>',
+    "snow": _CLOUD_HI + '<path d="M8 19v.01M12 18v.01M16 19v.01M10 21.5v.01M14 21.5v.01" stroke-width="2.4"/>',
+    "mix": _CLOUD_HI + '<path d="M8 18l-1 3M16 18l-1 3"/><path d="M12 19.5v.01" stroke-width="2.4"/>',
+    "fog": '<path d="M4 9h16M3 13h18M5 17h14"/>',
+    "wind": '<path d="M3 9h11a3 3 0 1 0-3-3M3 14h15a3 3 0 1 1-3 3M3 19h7"/>',
+}
+
+
+def icon_name(words, night=False):
+    w = (words or "").lower()
+    for keys, name in ((("thunder", "t-storm", "tstorm"), "storm"),
+                       (("snow", "flurr", "blizzard"), "snow"),
+                       (("sleet", "freezing", "ice", "wintry", "mix"), "mix"),
+                       (("rain", "shower", "drizzle"), "rain"),
+                       (("fog", "haze", "smoke", "dust", "mist"), "fog"),
+                       (("mostly cloudy", "overcast"), "cloud"),
+                       (("partly", "mostly sunny", "mostly clear"), "partly"),
+                       (("cloudy",), "cloud"),
+                       (("sunny", "clear", "fair", "hot", "cold"), "sun"),
+                       (("wind", "breezy", "blustery"), "wind")):
+        if any(k in w for k in keys):
+            if night and name in ("sun", "partly"):
+                return "moon" if name == "sun" else "partly-night"
+            return name
+    return None
+
+
+def icon(words, night=False):
+    name = icon_name(words, night)
+    if not name:
+        return ""
+    return (f'<svg class="fc-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" '
+            f'stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">{ICONS[name]}</svg>')
 
 
 def strip_html(fc, h, rank_fn, now=None, city_name=""):
@@ -192,8 +247,8 @@ def strip_html(fc, h, rank_fn, now=None, city_name=""):
     for i, row in enumerate(rows, start=1):
         d = row["date"]
         note = notable_line(row, hi_by_md, lo_by_md, rank_fn, d.year)
-        hi = f'{row["high"]}°' if row["high"] is not None else "—"
-        lo = f'{row["low"]}°' if row["low"] is not None else "—"
+        hi = f'{"−" if row["high"] < 0 else ""}{abs(row["high"])}°' if row["high"] is not None else "—"
+        lo = f'{"−" if row["low"] < 0 else ""}{abs(row["low"])}°' if row["low"] is not None else "—"
         label = {"Today": "Today", "This Afternoon": "Today", "Tonight": "Tonight"}.get(row["label"], d.strftime("%a"))
         precip = f'{row["precip"]}%' if row["precip"] else "0%"
         cls = "fc-day" + (" fc-later" if i >= LESS_CERTAIN_FROM_DAY else "") + (" fc-note-rec" if note and note["record"] else "")
@@ -202,7 +257,7 @@ def strip_html(fc, h, rank_fn, now=None, city_name=""):
             f'<p class="fc-when"><b>{html.escape(label)}</b> <span>{SHORT_MONTHS[d.month - 1]} {d.day}</span></p>'
             f'<p class="fc-temps"><span class="fc-hi" aria-label="Forecast high {hi}">{hi}</span>'
             f'<span class="fc-lo" aria-label="Low that night {lo}">{lo}</span></p>'
-            f'<p class="fc-sky">{html.escape(row["short"] or "")}</p>'
+            f'<p class="fc-sky">{icon(row["short"], night=row["high"] is None)}<span>{html.escape(row["short"] or "")}</span></p>'
             f'<p class="fc-pop">Precip. {precip}</p>'
             + (f'<p class="fc-note">{html.escape(note["text"])}</p>' if note else "")
             + ('<p class="fc-later-tag">Less certain</p>' if i >= LESS_CERTAIN_FROM_DAY else "")

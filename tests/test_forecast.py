@@ -44,7 +44,7 @@ class Test(unittest.TestCase):
                 note = forecast.notable_line(row, {md: hi_vals}, {}, a.same_date_rank, d.year)
                 if note and "warmest" in note["text"] and note["kind"] == "high":
                     self.assertIn(f"{forecast._ordinal(warmer + 1)} warmest", note["text"])
-                    self.assertIn(f"of {len(hi_vals) + 1}", note["text"])
+                    self.assertIn(f"Nov {d.day} high in {len(hi_vals) + 1} years", note["text"])
 
     def test_record_wording(self):
         h = a.load("eau-claire")
@@ -87,6 +87,20 @@ class Test(unittest.TestCase):
         finally:
             forecast.MAX_AGE_HOURS = keep
             shutil.rmtree(tmp)
+
+
+class TestIcons(unittest.TestCase):
+    def test_nws_words_pick_the_right_icon(self):
+        cases = {"Sunny": "sun", "Mostly Sunny": "partly", "Partly Cloudy": "partly", "Mostly Cloudy": "cloud",
+                 "Cloudy": "cloud", "Chance Rain Showers": "rain", "Slight Chance Drizzle": "rain",
+                 "Chance Showers And Thunderstorms": "storm", "Light Snow Likely": "snow",
+                 "Rain And Snow": "snow", "Freezing Rain": "mix", "Patchy Fog": "fog", "Breezy": "wind",
+                 "Areas Of Smoke": "fog", "Something New": None}
+        for words, want in cases.items():
+            self.assertEqual(forecast.icon_name(words), want, words)
+        self.assertEqual(forecast.icon_name("Mostly Clear", night=True), "partly-night")
+        self.assertEqual(forecast.icon_name("Clear", night=True), "moon")
+        self.assertEqual(forecast.icon("Something New"), "")
 
 
 class FakeSession:
