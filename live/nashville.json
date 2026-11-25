@@ -11,7 +11,7 @@
   "lon": -86.6892,
   "history": "Same site as the official Nashville record"
  },
- "as_of_utc": "2026-11-25T00:04:45Z",
+ "as_of_utc": "2026-11-25T00:08:03Z",
  "now": {
   "time_utc": "2026-11-24T23:45:00Z",
   "temp_c": 9,
@@ -86,30 +86,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-24",
-    "high_f": 54,
-    "would_rank": {
-     "value_f": 54,
-     "warm_rank": 85,
-     "cool_rank": 64,
-     "years": 153,
-     "first_year": 1874,
-     "tied_years": [
-      1879,
-      1901,
-      1933,
-      1939,
-      1947
-     ],
-     "standing": "cool",
-     "notable": false,
-     "since": 2013,
-     "record": false,
-     "phrase": "typical for November 24"
-    }
-   },
    {
     "period": "Wednesday",
     "date": "2026-11-25",
@@ -243,30 +219,46 @@
      "record": false,
      "phrase": "typical for November 30"
     }
+   },
+   {
+    "period": "Tuesday",
+    "date": "2026-12-01",
+    "high_f": 59,
+    "would_rank": {
+     "value_f": 59,
+     "warm_rank": 51,
+     "cool_rank": 98,
+     "years": 154,
+     "first_year": 1873,
+     "tied_years": [
+      1892,
+      1908,
+      1916,
+      1953,
+      1957,
+      1959
+     ],
+     "standing": "warm",
+     "notable": false,
+     "since": 2023,
+     "record": false,
+     "phrase": "typical for December 1"
+    }
    }
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-24T18:31:17Z",
+  "issued_utc": "2026-11-24T23:31:28Z",
   "grid": "OHX/54,55",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-24T13:00:00-06:00",
-    "is_daytime": true,
-    "temp_f": 54,
-    "temp_c": 12.22,
-    "precip_chance_pct": 0,
-    "short_forecast": "Partly Sunny"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-24T18:00:00-06:00",
     "is_daytime": false,
-    "temp_f": 40,
-    "temp_c": 4.44,
-    "precip_chance_pct": 22,
-    "short_forecast": "Mostly Cloudy then Slight Chance Rain Showers"
+    "temp_f": 38,
+    "temp_c": 3.33,
+    "precip_chance_pct": 25,
+    "short_forecast": "Mostly Cloudy then Chance Light Rain"
    },
    {
     "name": "Wednesday",
@@ -274,17 +266,17 @@
     "is_daytime": true,
     "temp_f": 55,
     "temp_c": 12.78,
-    "precip_chance_pct": 69,
-    "short_forecast": "Rain Showers Likely"
+    "precip_chance_pct": 62,
+    "short_forecast": "Light Rain Likely"
    },
    {
     "name": "Wednesday Night",
     "start": "2026-11-25T18:00:00-06:00",
     "is_daytime": false,
-    "temp_f": 38,
-    "temp_c": 3.33,
+    "temp_f": 36,
+    "temp_c": 2.22,
     "precip_chance_pct": 100,
-    "short_forecast": "Rain Showers"
+    "short_forecast": "Rain"
    },
    {
     "name": "Thanksgiving Day",
@@ -375,6 +367,15 @@
     "temp_c": 1.67,
     "precip_chance_pct": 5,
     "short_forecast": "Partly Cloudy"
+   },
+   {
+    "name": "Tuesday",
+    "start": "2026-12-01T06:00:00-06:00",
+    "is_daytime": true,
+    "temp_f": 59,
+    "temp_c": 15.0,
+    "precip_chance_pct": 15,
+    "short_forecast": "Slight Chance Rain Showers"
    }
   ]
  },
