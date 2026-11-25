@@ -11,7 +11,7 @@
   "lon": -111.965,
   "history": "Same site as the official Salt Lake City record"
  },
- "as_of_utc": "2026-11-25T01:08:07Z",
+ "as_of_utc": "2026-11-25T02:08:08Z",
  "now": {
   "time_utc": "2026-11-25T00:45:00Z",
   "temp_c": 6,
@@ -92,35 +92,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-24",
-    "high_f": 48,
-    "would_rank": {
-     "value_f": 48,
-     "warm_rank": 66,
-     "cool_rank": 78,
-     "years": 153,
-     "first_year": 1874,
-     "tied_years": [
-      1891,
-      1901,
-      1902,
-      1905,
-      1921,
-      1957,
-      1958,
-      1989,
-      2005,
-      2019
-     ],
-     "standing": "warm",
-     "notable": false,
-     "since": 2025,
-     "record": false,
-     "phrase": "typical for November 24"
-    }
-   },
    {
     "period": "Wednesday",
     "date": "2026-11-25",
@@ -269,6 +240,29 @@
      "record": false,
      "phrase": "typical for November 30"
     }
+   },
+   {
+    "period": "Tuesday",
+    "date": "2026-12-01",
+    "high_f": 53,
+    "would_rank": {
+     "value_f": 53,
+     "warm_rank": 22,
+     "cool_rank": 127,
+     "years": 152,
+     "first_year": 1874,
+     "tied_years": [
+      1893,
+      1940,
+      1941,
+      2005
+     ],
+     "standing": "warm",
+     "notable": true,
+     "since": 2021,
+     "record": false,
+     "phrase": "22nd warmest December 1 high (tied) of 152 since 1874, warmest since 2021"
+    }
    }
   ]
  },
@@ -276,15 +270,6 @@
   "issued_utc": "2026-11-24T18:31:26Z",
   "grid": "SLC/98,176",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-24T12:00:00-07:00",
-    "is_daytime": true,
-    "temp_f": 48,
-    "temp_c": 8.89,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Sunny"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-24T18:00:00-07:00",
@@ -401,19 +386,21 @@
     "temp_c": 3.89,
     "precip_chance_pct": 23,
     "short_forecast": "Slight Chance Light Rain"
+   },
+   {
+    "name": "Tuesday",
+    "start": "2026-12-01T06:00:00-07:00",
+    "is_daytime": true,
+    "temp_f": 53,
+    "temp_c": 11.67,
+    "precip_chance_pct": 61,
+    "short_forecast": "Light Rain Likely"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-24T18:31:26Z",
   "hours": [
-   {
-    "start": "2026-11-24T18:00:00-07:00",
-    "temp_f": 42,
-    "temp_c": 5.56,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "start": "2026-11-24T19:00:00-07:00",
     "temp_f": 38,
@@ -742,6 +729,13 @@
     "temp_c": 7.22,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Sunny"
+   },
+   {
+    "start": "2026-11-26T18:00:00-07:00",
+    "temp_f": 43,
+    "temp_c": 6.11,
+    "precip_chance_pct": 0,
+    "short_forecast": "Partly Cloudy"
    }
   ]
  },

@@ -11,7 +11,7 @@
   "lon": -121.9242,
   "history": "Same site as the official San Jose record"
  },
- "as_of_utc": "2026-11-25T01:08:07Z",
+ "as_of_utc": "2026-11-25T02:08:08Z",
  "now": {
   "time_utc": "2026-11-25T00:45:00Z",
   "temp_c": 17,
@@ -94,36 +94,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-24",
-    "high_f": 64,
-    "would_rank": {
-     "value_f": 64,
-     "warm_rank": 55,
-     "cool_rank": 62,
-     "years": 127,
-     "first_year": 1893,
-     "tied_years": [
-      1893,
-      1907,
-      1943,
-      1945,
-      1952,
-      1969,
-      1990,
-      1991,
-      2007,
-      2018,
-      2023
-     ],
-     "standing": "warm",
-     "notable": false,
-     "since": 2024,
-     "record": false,
-     "phrase": "typical for November 24"
-    }
-   },
    {
     "period": "Wednesday",
     "date": "2026-11-25",
@@ -283,6 +253,34 @@
      "record": false,
      "phrase": "typical for November 30"
     }
+   },
+   {
+    "period": "Tuesday",
+    "date": "2026-12-01",
+    "high_f": 61,
+    "would_rank": {
+     "value_f": 61,
+     "warm_rank": 62,
+     "cool_rank": 57,
+     "years": 127,
+     "first_year": 1893,
+     "tied_years": [
+      1914,
+      1938,
+      1971,
+      1975,
+      1979,
+      1980,
+      1991,
+      1993,
+      1994
+     ],
+     "standing": "cool",
+     "notable": false,
+     "since": 2025,
+     "record": false,
+     "phrase": "typical for December 1"
+    }
    }
   ]
  },
@@ -290,15 +288,6 @@
   "issued_utc": "2026-11-24T22:15:54Z",
   "grid": "MTR/98,83",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-24T15:00:00-08:00",
-    "is_daytime": true,
-    "temp_f": 64,
-    "temp_c": 17.78,
-    "precip_chance_pct": 7,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-24T18:00:00-08:00",
@@ -415,19 +404,21 @@
     "temp_c": 10.56,
     "precip_chance_pct": 73,
     "short_forecast": "Light Rain Likely"
+   },
+   {
+    "name": "Tuesday",
+    "start": "2026-12-01T06:00:00-08:00",
+    "is_daytime": true,
+    "temp_f": 61,
+    "temp_c": 16.11,
+    "precip_chance_pct": 83,
+    "short_forecast": "Light Rain"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-24T22:15:54Z",
   "hours": [
-   {
-    "start": "2026-11-24T17:00:00-08:00",
-    "temp_f": 61,
-    "temp_c": 16.11,
-    "precip_chance_pct": 7,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "start": "2026-11-24T18:00:00-08:00",
     "temp_f": 59,
@@ -754,6 +745,13 @@
     "start": "2026-11-26T16:00:00-08:00",
     "temp_f": 64,
     "temp_c": 17.78,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Sunny"
+   },
+   {
+    "start": "2026-11-26T17:00:00-08:00",
+    "temp_f": 62,
+    "temp_c": 16.67,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Sunny"
    }
