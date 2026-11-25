@@ -11,29 +11,34 @@
   "lon": -98.4636,
   "history": "Same site as the official San Antonio record"
  },
- "as_of_utc": "2026-11-25T07:07:55Z",
+ "as_of_utc": "2026-11-25T08:07:54Z",
  "now": {
-  "time_utc": "2026-11-25T06:45:00Z",
+  "time_utc": "2026-11-25T07:20:00Z",
   "temp_c": 4,
   "temp_f": 39.2,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 2,
   "humidity_pct": 86.8,
-  "wind_kmh": 9.25,
+  "wind_kmh": 11.12,
   "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-25",
-  "readings": 7,
-  "basis": "5-minute readings (whole \u00b0C, approximate)",
-  "approximate": true,
+  "readings": 1,
+  "basis": "hourly reports (tenths of a degree)",
+  "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 5,
-  "high_f": 41.0,
-  "high_time_utc": "2026-11-25T06:00:00Z",
-  "low_c": 4,
-  "low_f": 39.2,
-  "low_time_utc": "2026-11-25T06:20:00Z"
+  "high_c": 4.4,
+  "high_f": 39.9,
+  "high_time_utc": "2026-11-25T06:51:00Z",
+  "low_c": 4.4,
+  "low_f": 39.9,
+  "low_time_utc": "2026-11-25T06:51:00Z",
+  "peak_between_reports": {
+   "at_least_f": 40.1,
+   "about_f": 41.0,
+   "time_utc": "2026-11-25T06:00:00Z"
+  }
  },
  "record": {
   "series": "San Antonio area (ThreadEx; airport)",
@@ -259,12 +264,12 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-25T06:24:21Z",
+  "issued_utc": "2026-11-25T07:46:20Z",
   "grid": "EWX/128,59",
   "periods": [
    {
     "name": "Overnight",
-    "start": "2026-11-25T00:00:00-06:00",
+    "start": "2026-11-25T01:00:00-06:00",
     "is_daytime": false,
     "temp_f": 36,
     "temp_c": 2.22,
@@ -391,15 +396,8 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-25T06:24:21Z",
+  "issued_utc": "2026-11-25T07:18:19Z",
   "hours": [
-   {
-    "start": "2026-11-25T01:00:00-06:00",
-    "temp_f": 41,
-    "temp_c": 5.0,
-    "precip_chance_pct": 0,
-    "short_forecast": "Clear"
-   },
    {
     "start": "2026-11-25T02:00:00-06:00",
     "temp_f": 40,
@@ -726,6 +724,13 @@
     "start": "2026-11-27T00:00:00-06:00",
     "temp_f": 43,
     "temp_c": 6.11,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "start": "2026-11-27T01:00:00-06:00",
+    "temp_f": 42,
+    "temp_c": 5.56,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Cloudy"
    }
