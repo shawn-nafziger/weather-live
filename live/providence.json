@@ -11,33 +11,33 @@
   "lon": -71.4277,
   "history": "Same site as the official Providence record"
  },
- "as_of_utc": "2026-11-25T03:07:55Z",
+ "as_of_utc": "2026-11-25T04:07:56Z",
  "now": {
-  "time_utc": "2026-11-25T02:40:00Z",
-  "temp_c": 2,
-  "temp_f": 35.6,
+  "time_utc": "2026-11-25T03:30:00Z",
+  "temp_c": 1,
+  "temp_f": 33.8,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": -9,
-  "humidity_pct": 43.97,
-  "wind_kmh": 7.42,
+  "humidity_pct": 47.24,
+  "wind_kmh": 11.12,
   "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-24",
-  "readings": 17,
+  "readings": 18,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
   "high_c": 8.9,
   "high_f": 48.0,
   "high_time_utc": "2026-11-24T05:51:00Z",
-  "low_c": 2.8,
-  "low_f": 37.0,
-  "low_time_utc": "2026-11-25T01:51:00Z",
+  "low_c": 1.7,
+  "low_f": 35.1,
+  "low_time_utc": "2026-11-25T02:51:00Z",
   "dip_between_reports": {
-   "at_most_f": 36.5,
-   "about_f": 35.6,
-   "time_utc": "2026-11-25T02:35:00Z"
+   "at_most_f": 34.7,
+   "about_f": 33.8,
+   "time_utc": "2026-11-25T03:30:00Z"
   }
  },
  "record": {
@@ -239,12 +239,12 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-24T21:19:05Z",
+  "issued_utc": "2026-11-25T03:11:25Z",
   "grid": "BOX/64,70",
   "periods": [
    {
     "name": "Tonight",
-    "start": "2026-11-24T18:00:00-05:00",
+    "start": "2026-11-24T23:00:00-05:00",
     "is_daytime": false,
     "temp_f": 25,
     "temp_c": -3.89,
@@ -371,15 +371,8 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-24T21:19:05Z",
+  "issued_utc": "2026-11-25T03:11:25Z",
   "hours": [
-   {
-    "start": "2026-11-24T22:00:00-05:00",
-    "temp_f": 32,
-    "temp_c": 0.0,
-    "precip_chance_pct": 0,
-    "short_forecast": "Clear"
-   },
    {
     "start": "2026-11-24T23:00:00-05:00",
     "temp_f": 31,
@@ -644,7 +637,7 @@
     "temp_f": 46,
     "temp_c": 7.78,
     "precip_chance_pct": 13,
-    "short_forecast": "Mostly Cloudy"
+    "short_forecast": "Cloudy"
    },
    {
     "start": "2026-11-26T13:00:00-05:00",
@@ -707,6 +700,13 @@
     "temp_f": 48,
     "temp_c": 8.89,
     "precip_chance_pct": 93,
+    "short_forecast": "Rain"
+   },
+   {
+    "start": "2026-11-26T22:00:00-05:00",
+    "temp_f": 49,
+    "temp_c": 9.44,
+    "precip_chance_pct": 100,
     "short_forecast": "Rain"
    }
   ]
