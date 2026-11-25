@@ -11,26 +11,26 @@
   "lon": -122.3136,
   "history": "Same station as the official Seattle record (Sea-Tac)"
  },
- "as_of_utc": "2026-11-25T12:08:01Z",
+ "as_of_utc": "2026-11-25T13:08:11Z",
  "now": {
-  "time_utc": "2026-11-25T11:55:00Z",
+  "time_utc": "2026-11-25T12:00:00Z",
   "temp_c": 14,
   "temp_f": 57.2,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 4,
   "humidity_pct": 50.94,
-  "wind_kmh": null,
-  "description": "Cloudy"
+  "wind_kmh": 33.34,
+  "description": "Cloudy and Windy"
  },
  "today_so_far": {
   "date_local": "2026-11-25",
-  "readings": 3,
+  "readings": 4,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 13.9,
-  "high_f": 57.0,
-  "high_time_utc": "2026-11-25T10:53:00Z",
+  "high_c": 14.4,
+  "high_f": 57.9,
+  "high_time_utc": "2026-11-25T11:53:00Z",
   "low_c": 12.8,
   "low_f": 55.0,
   "low_time_utc": "2026-11-25T08:53:00Z"
@@ -77,20 +77,17 @@
    }
   },
   "today_high_so_far": {
-   "value_f": 57,
+   "value_f": 58,
    "warm_rank": 3,
-   "cool_rank": 78,
+   "cool_rank": 80,
    "years": 82,
    "first_year": 1945,
-   "tied_years": [
-    1950,
-    2014
-   ],
+   "tied_years": [],
    "standing": "warm",
    "notable": true,
-   "since": 2014,
+   "since": 1977,
    "record": false,
-   "phrase": "already the 3rd warmest November 25 high (tied) of 82 since 1945, warmest since 2014"
+   "phrase": "already the 3rd warmest November 25 high of 82 since 1945, warmest since 1977"
   },
   "forecast_highs": [
    {
@@ -398,13 +395,6 @@
  "hourly": {
   "issued_utc": "2026-11-25T06:27:13Z",
   "hours": [
-   {
-    "start": "2026-11-25T04:00:00-08:00",
-    "temp_f": 52,
-    "temp_c": 11.11,
-    "precip_chance_pct": 45,
-    "short_forecast": "Chance Light Rain"
-   },
    {
     "start": "2026-11-25T05:00:00-08:00",
     "temp_f": 51,
@@ -733,6 +723,13 @@
     "temp_c": 8.89,
     "precip_chance_pct": 63,
     "short_forecast": "Light Rain Likely"
+   },
+   {
+    "start": "2026-11-27T04:00:00-08:00",
+    "temp_f": 48,
+    "temp_c": 8.89,
+    "precip_chance_pct": 78,
+    "short_forecast": "Light Rain"
    }
   ]
  },

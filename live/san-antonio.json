@@ -11,7 +11,7 @@
   "lon": -98.4636,
   "history": "Same site as the official San Antonio record"
  },
- "as_of_utc": "2026-11-25T12:08:01Z",
+ "as_of_utc": "2026-11-25T13:08:11Z",
  "now": {
   "time_utc": "2026-11-25T11:55:00Z",
   "temp_c": 2,
@@ -24,25 +24,20 @@
  },
  "today_so_far": {
   "date_local": "2026-11-25",
-  "readings": 3,
+  "readings": 4,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
   "high_c": 4.4,
   "high_f": 39.9,
   "high_time_utc": "2026-11-25T06:51:00Z",
-  "low_c": 3.9,
-  "low_f": 39.0,
-  "low_time_utc": "2026-11-25T08:51:00Z",
+  "low_c": 2.2,
+  "low_f": 36.0,
+  "low_time_utc": "2026-11-25T11:51:00Z",
   "peak_between_reports": {
    "at_least_f": 40.1,
    "about_f": 41.0,
    "time_utc": "2026-11-25T06:00:00Z"
-  },
-  "dip_between_reports": {
-   "at_most_f": 36.5,
-   "about_f": 35.6,
-   "time_utc": "2026-11-25T11:45:00Z"
   }
  },
  "record": {
@@ -92,7 +87,7 @@
   },
   "forecast_highs": [
    {
-    "period": "Wednesday",
+    "period": "Today",
     "date": "2026-11-25",
     "high_f": 58,
     "would_rank": {
@@ -265,21 +260,12 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-25T11:18:35Z",
+  "issued_utc": "2026-11-25T12:42:18Z",
   "grid": "EWX/128,59",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-25T05:00:00-06:00",
-    "is_daytime": false,
-    "temp_f": 36,
-    "temp_c": 2.22,
-    "precip_chance_pct": 0,
-    "short_forecast": "Clear"
-   },
-   {
-    "name": "Wednesday",
-    "start": "2026-11-25T06:00:00-06:00",
+    "name": "Today",
+    "start": "2026-11-25T07:00:00-06:00",
     "is_daytime": true,
     "temp_f": 58,
     "temp_c": 14.44,
@@ -287,7 +273,7 @@
     "short_forecast": "Sunny"
    },
    {
-    "name": "Wednesday Night",
+    "name": "Tonight",
     "start": "2026-11-25T18:00:00-06:00",
     "is_daytime": false,
     "temp_f": 34,
@@ -393,19 +379,21 @@
     "temp_c": 22.22,
     "precip_chance_pct": 1,
     "short_forecast": "Mostly Sunny"
+   },
+   {
+    "name": "Tuesday Night",
+    "start": "2026-12-01T18:00:00-06:00",
+    "is_daytime": false,
+    "temp_f": 53,
+    "temp_c": 11.67,
+    "precip_chance_pct": 1,
+    "short_forecast": "Partly Cloudy"
    }
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-25T11:46:17Z",
+  "issued_utc": "2026-11-25T12:42:18Z",
   "hours": [
-   {
-    "start": "2026-11-25T06:00:00-06:00",
-    "temp_f": 37,
-    "temp_c": 2.78,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "start": "2026-11-25T07:00:00-06:00",
     "temp_f": 37,
@@ -734,6 +722,13 @@
     "temp_c": 3.33,
     "precip_chance_pct": 0,
     "short_forecast": "Partly Cloudy"
+   },
+   {
+    "start": "2026-11-27T06:00:00-06:00",
+    "temp_f": 38,
+    "temp_c": 3.33,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Sunny"
    }
   ]
  },
