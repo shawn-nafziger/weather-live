@@ -11,9 +11,9 @@
   "lon": -78.7819,
   "history": "Same site as the official Raleigh record"
  },
- "as_of_utc": "2026-11-25T22:08:06Z",
+ "as_of_utc": "2026-11-25T23:08:00Z",
  "now": {
-  "time_utc": "2026-11-25T21:45:00Z",
+  "time_utc": "2026-11-25T22:30:00Z",
   "temp_c": 8,
   "temp_f": 46.4,
   "precision": "nearest whole \u00b0C",
@@ -24,7 +24,7 @@
  },
  "today_so_far": {
   "date_local": "2026-11-25",
-  "readings": 13,
+  "readings": 15,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -86,30 +86,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-25",
-    "high_f": 48,
-    "would_rank": {
-     "value_f": 48,
-     "warm_rank": 116,
-     "cool_rank": 20,
-     "years": 140,
-     "first_year": 1887,
-     "tied_years": [
-      1888,
-      1899,
-      1911,
-      1934,
-      1971
-     ],
-     "standing": "cool",
-     "notable": true,
-     "since": 2013,
-     "record": false,
-     "phrase": "20th coolest November 25 high (tied) of 140 since 1887, coolest since 2013"
-    }
-   },
    {
     "period": "Thanksgiving Day",
     "date": "2026-11-26",
@@ -236,6 +212,29 @@
      "record": false,
      "phrase": "typical for December 1"
     }
+   },
+   {
+    "period": "Wednesday",
+    "date": "2026-12-02",
+    "high_f": 59,
+    "would_rank": {
+     "value_f": 59,
+     "warm_rank": 51,
+     "cool_rank": 86,
+     "years": 140,
+     "first_year": 1887,
+     "tied_years": [
+      1909,
+      1914,
+      1917,
+      1965
+     ],
+     "standing": "warm",
+     "notable": false,
+     "since": 2023,
+     "record": false,
+     "phrase": "typical for December 2"
+    }
    }
   ]
  },
@@ -243,15 +242,6 @@
   "issued_utc": "2026-11-25T18:59:08Z",
   "grid": "RAH/69,62",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-25T14:00:00-05:00",
-    "is_daytime": true,
-    "temp_f": 48,
-    "temp_c": 8.89,
-    "precip_chance_pct": 96,
-    "short_forecast": "Rain"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-25T18:00:00-05:00",
@@ -368,19 +358,21 @@
     "temp_c": 1.11,
     "precip_chance_pct": 16,
     "short_forecast": "Mostly Cloudy then Slight Chance Rain Showers"
+   },
+   {
+    "name": "Wednesday",
+    "start": "2026-12-02T06:00:00-05:00",
+    "is_daytime": true,
+    "temp_f": 59,
+    "temp_c": 15.0,
+    "precip_chance_pct": 16,
+    "short_forecast": "Slight Chance Rain Showers then Partly Sunny"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-25T18:59:08Z",
   "hours": [
-   {
-    "start": "2026-11-25T17:00:00-05:00",
-    "temp_f": 47,
-    "temp_c": 8.33,
-    "precip_chance_pct": 96,
-    "short_forecast": "Rain"
-   },
    {
     "start": "2026-11-25T18:00:00-05:00",
     "temp_f": 48,
@@ -709,6 +701,13 @@
     "temp_c": 11.67,
     "precip_chance_pct": 0,
     "short_forecast": "Partly Sunny"
+   },
+   {
+    "start": "2026-11-27T17:00:00-05:00",
+    "temp_f": 51,
+    "temp_c": 10.56,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Sunny"
    }
   ]
  },
