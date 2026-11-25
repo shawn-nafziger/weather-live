@@ -11,29 +11,23 @@
   "lon": -80.3164,
   "history": "Same station as the official Miami record"
  },
- "as_of_utc": "2026-11-25T04:07:56Z",
+ "as_of_utc": "2026-11-25T05:08:04Z",
  "now": {
-  "time_utc": "2026-11-25T03:40:00Z",
-  "temp_c": 22.8,
-  "temp_f": 73.0,
-  "precision": "tenths of a degree",
-  "dewpoint_c": 21.1,
-  "humidity_pct": 90.15,
+  "time_utc": "2026-11-25T04:55:00Z",
+  "temp_c": 23,
+  "temp_f": 73.4,
+  "precision": "nearest whole \u00b0C",
+  "dewpoint_c": 22,
+  "humidity_pct": 94.11,
   "wind_kmh": 12.96,
   "description": "Light Rain and Fog/Mist"
  },
  "today_so_far": {
-  "date_local": "2026-11-24",
-  "readings": 19,
-  "basis": "hourly reports (tenths of a degree)",
-  "approximate": false,
-  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 26.1,
-  "high_f": 79.0,
-  "high_time_utc": "2026-11-24T19:53:00Z",
-  "low_c": 20,
-  "low_f": 68.0,
-  "low_time_utc": "2026-11-24T06:53:00Z"
+  "date_local": "2026-11-25",
+  "readings": 0,
+  "basis": "5-minute readings (whole \u00b0C, approximate)",
+  "approximate": true,
+  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two."
  },
  "record": {
   "series": "Miami area (ThreadEx)",
@@ -42,7 +36,7 @@
   "rank_today": true,
   "latest_final": {
    "date": "2026-11-23",
-   "is_yesterday": true,
+   "is_yesterday": false,
    "high_f": 77,
    "low_f": 68,
    "high_rank": {
@@ -423,15 +417,8 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-25T03:32:17Z",
+  "issued_utc": "2026-11-25T04:31:57Z",
   "hours": [
-   {
-    "start": "2026-11-24T23:00:00-05:00",
-    "temp_f": 75,
-    "temp_c": 23.89,
-    "precip_chance_pct": 22,
-    "short_forecast": "Slight Chance Rain Showers"
-   },
    {
     "start": "2026-11-25T00:00:00-05:00",
     "temp_f": 74,
@@ -760,6 +747,13 @@
     "temp_c": 20.56,
     "precip_chance_pct": 2,
     "short_forecast": "Mostly Clear"
+   },
+   {
+    "start": "2026-11-26T23:00:00-05:00",
+    "temp_f": 68,
+    "temp_c": 20.0,
+    "precip_chance_pct": 2,
+    "short_forecast": "Partly Cloudy"
    }
   ]
  },

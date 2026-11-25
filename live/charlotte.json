@@ -11,9 +11,9 @@
   "lon": -80.9614,
   "history": "Same site as the official Charlotte record"
  },
- "as_of_utc": "2026-11-25T04:07:56Z",
+ "as_of_utc": "2026-11-25T05:08:04Z",
  "now": {
-  "time_utc": "2026-11-25T03:30:00Z",
+  "time_utc": "2026-11-25T04:55:00Z",
   "temp_c": 8,
   "temp_f": 46.4,
   "precision": "nearest whole \u00b0C",
@@ -23,27 +23,11 @@
   "description": "Cloudy"
  },
  "today_so_far": {
-  "date_local": "2026-11-24",
-  "readings": 19,
-  "basis": "hourly reports (tenths of a degree)",
-  "approximate": false,
-  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 15,
-  "high_f": 59.0,
-  "high_time_utc": "2026-11-24T05:52:00Z",
-  "low_c": 8.9,
-  "low_f": 48.0,
-  "low_time_utc": "2026-11-25T01:52:00Z",
-  "peak_between_reports": {
-   "at_least_f": 59.9,
-   "about_f": 60.8,
-   "time_utc": "2026-11-24T05:05:00Z"
-  },
-  "dip_between_reports": {
-   "at_most_f": 47.3,
-   "about_f": 46.4,
-   "time_utc": "2026-11-25T03:25:00Z"
-  }
+  "date_local": "2026-11-25",
+  "readings": 0,
+  "basis": "5-minute readings (whole \u00b0C, approximate)",
+  "approximate": true,
+  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two."
  },
  "record": {
   "series": "Charlotte area (ThreadEx; airport)",
@@ -52,7 +36,7 @@
   "rank_today": true,
   "latest_final": {
    "date": "2026-11-23",
-   "is_yesterday": true,
+   "is_yesterday": false,
    "high_f": 72,
    "low_f": 57,
    "high_rank": {
@@ -253,7 +237,7 @@
   "periods": [
    {
     "name": "Tonight",
-    "start": "2026-11-24T18:00:00-05:00",
+    "start": "2026-11-24T19:00:00-05:00",
     "is_daytime": false,
     "temp_f": 36,
     "temp_c": 2.22,
@@ -382,13 +366,6 @@
  "hourly": {
   "issued_utc": "2026-11-24T22:53:36Z",
   "hours": [
-   {
-    "start": "2026-11-24T23:00:00-05:00",
-    "temp_f": 43,
-    "temp_c": 6.11,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "start": "2026-11-25T00:00:00-05:00",
     "temp_f": 42,
@@ -715,6 +692,13 @@
     "start": "2026-11-26T22:00:00-05:00",
     "temp_f": 49,
     "temp_c": 9.44,
+    "precip_chance_pct": 2,
+    "short_forecast": "Partly Cloudy"
+   },
+   {
+    "start": "2026-11-26T23:00:00-05:00",
+    "temp_f": 47,
+    "temp_c": 8.33,
     "precip_chance_pct": 2,
     "short_forecast": "Partly Cloudy"
    }
