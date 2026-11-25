@@ -11,9 +11,9 @@
   "lon": -77.0342,
   "history": "Same site as the official Washington record"
  },
- "as_of_utc": "2026-11-25T11:08:00Z",
+ "as_of_utc": "2026-11-25T12:08:01Z",
  "now": {
-  "time_utc": "2026-11-25T10:30:00Z",
+  "time_utc": "2026-11-25T11:55:00Z",
   "temp_c": 3,
   "temp_f": 37.4,
   "precision": "nearest whole \u00b0C",
@@ -41,42 +41,62 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-23",
-   "is_yesterday": false,
-   "high_f": 71,
-   "low_f": 51,
+   "date": "2026-11-24",
+   "is_yesterday": true,
+   "high_f": 53,
+   "low_f": 40,
    "high_rank": {
-    "value_f": 71,
-    "warm_rank": 5,
-    "cool_rank": 151,
-    "years": 155,
-    "first_year": 1872,
-    "tied_years": [],
-    "standing": "warm",
-    "notable": true,
-    "since": 1979,
-    "record": false,
-    "phrase": "5th warmest November 23 high of 155 since 1872, warmest since 1979"
-   },
-   "low_rank": {
-    "value_f": 51,
-    "warm_rank": 8,
-    "cool_rank": 147,
+    "value_f": 53,
+    "warm_rank": 71,
+    "cool_rank": 73,
     "years": 155,
     "first_year": 1872,
     "tied_years": [
-     1927
+     1879,
+     1906,
+     1926,
+     1953,
+     1962,
+     1965,
+     1975,
+     1984,
+     1996,
+     2008,
+     2009,
+     2017
     ],
     "standing": "warm",
-    "notable": true,
-    "since": 2010,
+    "notable": false,
+    "since": 2025,
     "record": false,
-    "phrase": "8th warmest November 23 low (tied) of 155 since 1872, warmest since 2010"
+    "phrase": "typical for November 24"
+   },
+   "low_rank": {
+    "value_f": 40,
+    "warm_rank": 45,
+    "cool_rank": 103,
+    "years": 155,
+    "first_year": 1872,
+    "tied_years": [
+     1873,
+     1936,
+     1954,
+     1957,
+     1986,
+     2003,
+     2006,
+     2019
+    ],
+    "standing": "warm",
+    "notable": false,
+    "since": 2025,
+    "record": false,
+    "phrase": "typical for November 24"
    }
   },
   "forecast_highs": [
    {
-    "period": "Wednesday",
+    "period": "Today",
     "date": "2026-11-25",
     "high_f": 54,
     "would_rank": {
@@ -252,16 +272,7 @@
   "grid": "LWX/97,69",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-25T04:00:00-05:00",
-    "is_daytime": false,
-    "temp_f": 35,
-    "temp_c": 1.67,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Clear"
-   },
-   {
-    "name": "Wednesday",
+    "name": "Today",
     "start": "2026-11-25T06:00:00-05:00",
     "is_daytime": true,
     "temp_f": 54,
@@ -270,7 +281,7 @@
     "short_forecast": "Mostly Cloudy"
    },
    {
-    "name": "Wednesday Night",
+    "name": "Tonight",
     "start": "2026-11-25T18:00:00-05:00",
     "is_daytime": false,
     "temp_f": 46,
@@ -376,19 +387,21 @@
     "temp_c": 13.89,
     "precip_chance_pct": 4,
     "short_forecast": "Mostly Sunny"
+   },
+   {
+    "name": "Tuesday Night",
+    "start": "2026-12-01T18:00:00-05:00",
+    "is_daytime": false,
+    "temp_f": 39,
+    "temp_c": 3.89,
+    "precip_chance_pct": 12,
+    "short_forecast": "Partly Cloudy"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-25T08:52:54Z",
   "hours": [
-   {
-    "start": "2026-11-25T06:00:00-05:00",
-    "temp_f": 36,
-    "temp_c": 2.22,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Sunny"
-   },
    {
     "start": "2026-11-25T07:00:00-05:00",
     "temp_f": 36,
@@ -715,6 +728,13 @@
     "start": "2026-11-27T05:00:00-05:00",
     "temp_f": 51,
     "temp_c": 10.56,
+    "precip_chance_pct": 27,
+    "short_forecast": "Chance Light Rain"
+   },
+   {
+    "start": "2026-11-27T06:00:00-05:00",
+    "temp_f": 50,
+    "temp_c": 10.0,
     "precip_chance_pct": 27,
     "short_forecast": "Chance Light Rain"
    }

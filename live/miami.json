@@ -11,20 +11,20 @@
   "lon": -80.3164,
   "history": "Same station as the official Miami record"
  },
- "as_of_utc": "2026-11-25T11:08:00Z",
+ "as_of_utc": "2026-11-25T12:08:01Z",
  "now": {
-  "time_utc": "2026-11-25T10:30:00Z",
+  "time_utc": "2026-11-25T11:55:00Z",
   "temp_c": 22,
   "temp_f": 71.6,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 21,
   "humidity_pct": 94.06,
-  "wind_kmh": 9.25,
-  "description": "Rain"
+  "wind_kmh": 7.42,
+  "description": "Light Rain"
  },
  "today_so_far": {
   "date_local": "2026-11-25",
-  "readings": 5,
+  "readings": 7,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -41,63 +41,61 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-23",
-   "is_yesterday": false,
-   "high_f": 77,
+   "date": "2026-11-24",
+   "is_yesterday": true,
+   "high_f": 79,
    "low_f": 68,
    "high_rank": {
-    "value_f": 77,
-    "warm_rank": 94,
-    "cool_rank": 26,
+    "value_f": 79,
+    "warm_rank": 68,
+    "cool_rank": 52,
     "years": 131,
     "first_year": 1895,
     "tied_years": [
      1897,
-     1904,
-     1911,
+     1898,
      1912,
-     1922,
-     1966,
-     1968,
-     1974,
-     1987,
+     1931,
+     1933,
+     1936,
+     1949,
+     1965,
+     1989,
      1996,
      2000,
-     2008
+     2007
     ],
     "standing": "cool",
-    "notable": true,
+    "notable": false,
     "since": 2024,
     "record": false,
-    "phrase": "26th coolest November 23 high (tied) of 131 since 1895, coolest since 2024"
+    "phrase": "typical for November 24"
    },
    "low_rank": {
     "value_f": 68,
-    "warm_rank": 53,
-    "cool_rank": 70,
+    "warm_rank": 45,
+    "cool_rank": 80,
     "years": 131,
     "first_year": 1895,
     "tied_years": [
-     1902,
-     1913,
-     1927,
-     1933,
-     1934,
-     1951,
-     1989,
+     1941,
+     1950,
+     1957,
      1999,
-     2018
+     2019,
+     2020,
+     2025
     ],
     "standing": "warm",
     "notable": false,
-    "since": 2023,
+    "since": 2025,
     "record": false,
-    "phrase": "typical for November 23"
+    "phrase": "typical for November 24"
    }
   },
   "forecast_highs": [
    {
-    "period": "Wednesday",
+    "period": "Today",
     "date": "2026-11-25",
     "high_f": 76,
     "would_rank": {
@@ -281,16 +279,7 @@
   "grid": "MFL/105,51",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-25T05:00:00-05:00",
-    "is_daytime": false,
-    "temp_f": 72,
-    "temp_c": 22.22,
-    "precip_chance_pct": 93,
-    "short_forecast": "Showers And Thunderstorms"
-   },
-   {
-    "name": "Wednesday",
+    "name": "Today",
     "start": "2026-11-25T06:00:00-05:00",
     "is_daytime": true,
     "temp_f": 76,
@@ -299,7 +288,7 @@
     "short_forecast": "Showers And Thunderstorms"
    },
    {
-    "name": "Wednesday Night",
+    "name": "Tonight",
     "start": "2026-11-25T18:00:00-05:00",
     "is_daytime": false,
     "temp_f": 70,
@@ -405,19 +394,21 @@
     "temp_c": 27.78,
     "precip_chance_pct": 53,
     "short_forecast": "Chance Showers And Thunderstorms"
+   },
+   {
+    "name": "Tuesday Night",
+    "start": "2026-12-01T18:00:00-05:00",
+    "is_daytime": false,
+    "temp_f": 72,
+    "temp_c": 22.22,
+    "precip_chance_pct": 53,
+    "short_forecast": "Chance Showers And Thunderstorms"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-25T10:02:07Z",
   "hours": [
-   {
-    "start": "2026-11-25T06:00:00-05:00",
-    "temp_f": 72,
-    "temp_c": 22.22,
-    "precip_chance_pct": 93,
-    "short_forecast": "Showers And Thunderstorms"
-   },
    {
     "start": "2026-11-25T07:00:00-05:00",
     "temp_f": 72,
@@ -746,6 +737,13 @@
     "temp_c": 17.22,
     "precip_chance_pct": 0,
     "short_forecast": "Partly Cloudy"
+   },
+   {
+    "start": "2026-11-27T06:00:00-05:00",
+    "temp_f": 63,
+    "temp_c": 17.22,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Sunny"
    }
   ]
  },

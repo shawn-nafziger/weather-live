@@ -11,15 +11,15 @@
   "lon": -97.022,
   "history": "Same site as the official Dallas record"
  },
- "as_of_utc": "2026-11-25T11:08:00Z",
+ "as_of_utc": "2026-11-25T12:08:01Z",
  "now": {
-  "time_utc": "2026-11-25T10:30:00Z",
+  "time_utc": "2026-11-25T11:55:00Z",
   "temp_c": 2,
   "temp_f": 35.6,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": -1,
   "humidity_pct": 80.52,
-  "wind_kmh": 16.67,
+  "wind_kmh": 14.83,
   "description": "Clear"
  },
  "today_so_far": {
@@ -46,43 +46,49 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-23",
-   "is_yesterday": false,
-   "high_f": 57,
-   "low_f": 40,
+   "date": "2026-11-24",
+   "is_yesterday": true,
+   "high_f": 47,
+   "low_f": 41,
    "high_rank": {
-    "value_f": 57,
-    "warm_rank": 99,
-    "cool_rank": 28,
+    "value_f": 47,
+    "warm_rank": 118,
+    "cool_rank": 10,
     "years": 129,
     "first_year": 1898,
     "tied_years": [
-     1913,
-     1975,
-     2019
+     1906,
+     2007
     ],
     "standing": "cool",
-    "notable": false,
-    "since": 2019,
+    "notable": true,
+    "since": 2013,
     "record": false,
-    "phrase": "typical for November 23"
+    "phrase": "10th coolest November 24 high (tied) of 129 since 1898, coolest since 2013"
    },
    "low_rank": {
-    "value_f": 40,
-    "warm_rank": 79,
-    "cool_rank": 48,
+    "value_f": 41,
+    "warm_rank": 73,
+    "cool_rank": 47,
     "years": 129,
     "first_year": 1898,
     "tied_years": [
-     1915,
-     2002,
-     2023
+     1900,
+     1933,
+     1934,
+     1942,
+     1959,
+     1974,
+     1986,
+     1999,
+     2005,
+     2014
     ],
     "standing": "cool",
     "notable": false,
     "since": 2023,
     "record": false,
-    "phrase": "typical for November 23"
+    "phrase": "typical for November 24"
    }
   },
   "forecast_highs": [
@@ -243,17 +249,17 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-25T06:26:20Z",
+  "issued_utc": "2026-11-25T11:06:26Z",
   "grid": "FWD/81,109",
   "periods": [
    {
     "name": "Overnight",
-    "start": "2026-11-25T00:00:00-06:00",
+    "start": "2026-11-25T05:00:00-06:00",
     "is_daytime": false,
     "temp_f": 33,
     "temp_c": 0.56,
     "precip_chance_pct": 0,
-    "short_forecast": "Mostly Clear"
+    "short_forecast": "Clear"
    },
    {
     "name": "Wednesday",
@@ -375,15 +381,8 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-25T06:26:20Z",
+  "issued_utc": "2026-11-25T11:06:26Z",
   "hours": [
-   {
-    "start": "2026-11-25T05:00:00-06:00",
-    "temp_f": 35,
-    "temp_c": 1.67,
-    "precip_chance_pct": 0,
-    "short_forecast": "Clear"
-   },
    {
     "start": "2026-11-25T06:00:00-06:00",
     "temp_f": 34,
@@ -710,6 +709,13 @@
     "start": "2026-11-27T04:00:00-06:00",
     "temp_f": 37,
     "temp_c": 2.78,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Clear"
+   },
+   {
+    "start": "2026-11-27T05:00:00-06:00",
+    "temp_f": 36,
+    "temp_c": 2.22,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear"
    }

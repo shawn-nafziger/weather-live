@@ -11,15 +11,15 @@
   "lon": -85.7365,
   "history": "Same site as the official Louisville record"
  },
- "as_of_utc": "2026-11-25T11:08:00Z",
+ "as_of_utc": "2026-11-25T12:08:01Z",
  "now": {
-  "time_utc": "2026-11-25T10:30:00Z",
-  "temp_c": 3,
-  "temp_f": 37.4,
+  "time_utc": "2026-11-25T11:45:00Z",
+  "temp_c": 2,
+  "temp_f": 35.6,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": -2,
-  "humidity_pct": 69.69,
-  "wind_kmh": 14.83,
+  "dewpoint_c": -1,
+  "humidity_pct": 80.52,
+  "wind_kmh": 9.25,
   "description": "Light Rain"
  },
  "today_so_far": {
@@ -41,52 +41,56 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-23",
-   "is_yesterday": false,
-   "high_f": 53,
-   "low_f": 37,
+   "date": "2026-11-24",
+   "is_yesterday": true,
+   "high_f": 47,
+   "low_f": 31,
    "high_rank": {
-    "value_f": 53,
-    "warm_rank": 73,
-    "cool_rank": 77,
+    "value_f": 47,
+    "warm_rank": 96,
+    "cool_rank": 55,
     "years": 155,
     "first_year": 1872,
     "tied_years": [
-     1915,
-     1950,
-     1953,
-     1960,
-     1985,
-     2005
+     1891,
+     1933,
+     1934,
+     1981,
+     2010
     ],
-    "standing": "warm",
+    "standing": "cool",
     "notable": false,
-    "since": 2025,
+    "since": 2013,
     "record": false,
-    "phrase": "typical for November 23"
+    "phrase": "typical for November 24"
    },
    "low_rank": {
-    "value_f": 37,
-    "warm_rank": 58,
-    "cool_rank": 94,
+    "value_f": 31,
+    "warm_rank": 87,
+    "cool_rank": 60,
     "years": 155,
     "first_year": 1872,
     "tied_years": [
-     1882,
-     1910,
-     1920,
-     1933
+     1891,
+     1894,
+     1907,
+     1914,
+     1924,
+     1936,
+     2006,
+     2017,
+     2021
     ],
-    "standing": "warm",
+    "standing": "cool",
     "notable": false,
-    "since": 2025,
+    "since": 2021,
     "record": false,
-    "phrase": "typical for November 23"
+    "phrase": "typical for November 24"
    }
   },
   "forecast_highs": [
    {
-    "period": "Wednesday",
+    "period": "Today",
     "date": "2026-11-25",
     "high_f": 52,
     "would_rank": {
@@ -261,21 +265,12 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-25T06:26:07Z",
+  "issued_utc": "2026-11-25T11:06:10Z",
   "grid": "LMK/51,74",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-25T01:00:00-05:00",
-    "is_daytime": false,
-    "temp_f": 36,
-    "temp_c": 2.22,
-    "precip_chance_pct": 21,
-    "short_forecast": "Slight Chance Rain Showers"
-   },
-   {
-    "name": "Wednesday",
-    "start": "2026-11-25T06:00:00-05:00",
+    "name": "Today",
+    "start": "2026-11-25T07:00:00-05:00",
     "is_daytime": true,
     "temp_f": 52,
     "temp_c": 11.11,
@@ -283,7 +278,7 @@
     "short_forecast": "Chance Rain Showers then Mostly Cloudy"
    },
    {
-    "name": "Wednesday Night",
+    "name": "Tonight",
     "start": "2026-11-25T18:00:00-05:00",
     "is_daytime": false,
     "temp_f": 42,
@@ -389,19 +384,21 @@
     "temp_c": 12.78,
     "precip_chance_pct": 10,
     "short_forecast": "Partly Sunny"
+   },
+   {
+    "name": "Tuesday Night",
+    "start": "2026-12-01T18:00:00-05:00",
+    "is_daytime": false,
+    "temp_f": 35,
+    "temp_c": 1.67,
+    "precip_chance_pct": 11,
+    "short_forecast": "Mostly Cloudy"
    }
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-25T06:26:07Z",
+  "issued_utc": "2026-11-25T11:06:10Z",
   "hours": [
-   {
-    "start": "2026-11-25T06:00:00-05:00",
-    "temp_f": 37,
-    "temp_c": 2.78,
-    "precip_chance_pct": 32,
-    "short_forecast": "Chance Rain Showers"
-   },
    {
     "start": "2026-11-25T07:00:00-05:00",
     "temp_f": 37,
@@ -726,6 +723,13 @@
    },
    {
     "start": "2026-11-27T05:00:00-05:00",
+    "temp_f": 37,
+    "temp_c": 2.78,
+    "precip_chance_pct": 98,
+    "short_forecast": "Rain Showers"
+   },
+   {
+    "start": "2026-11-27T06:00:00-05:00",
     "temp_f": 37,
     "temp_c": 2.78,
     "precip_chance_pct": 98,

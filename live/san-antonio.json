@@ -11,14 +11,14 @@
   "lon": -98.4636,
   "history": "Same site as the official San Antonio record"
  },
- "as_of_utc": "2026-11-25T11:08:00Z",
+ "as_of_utc": "2026-11-25T12:08:01Z",
  "now": {
-  "time_utc": "2026-11-25T10:30:00Z",
-  "temp_c": 3,
-  "temp_f": 37.4,
+  "time_utc": "2026-11-25T11:55:00Z",
+  "temp_c": 2,
+  "temp_f": 35.6,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 1,
-  "humidity_pct": 86.7,
+  "humidity_pct": 93.09,
   "wind_kmh": 11.12,
   "description": "Clear"
  },
@@ -40,9 +40,9 @@
    "time_utc": "2026-11-25T06:00:00Z"
   },
   "dip_between_reports": {
-   "at_most_f": 38.3,
-   "about_f": 37.4,
-   "time_utc": "2026-11-25T08:30:00Z"
+   "at_most_f": 36.5,
+   "about_f": 35.6,
+   "time_utc": "2026-11-25T11:45:00Z"
   }
  },
  "record": {
@@ -51,47 +51,43 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-23",
-   "is_yesterday": false,
-   "high_f": 64,
-   "low_f": 47,
+   "date": "2026-11-24",
+   "is_yesterday": true,
+   "high_f": 54,
+   "low_f": 41,
    "high_rank": {
-    "value_f": 64,
-    "warm_rank": 100,
-    "cool_rank": 35,
+    "value_f": 54,
+    "warm_rank": 128,
+    "cool_rank": 15,
+    "years": 142,
+    "first_year": 1885,
+    "tied_years": [],
+    "standing": "cool",
+    "notable": true,
+    "since": 2013,
+    "record": false,
+    "phrase": "15th coolest November 24 high of 142 since 1885, coolest since 2013"
+   },
+   "low_rank": {
+    "value_f": 41,
+    "warm_rank": 103,
+    "cool_rank": 33,
     "years": 142,
     "first_year": 1885,
     "tied_years": [
-     1885,
-     1911,
-     1945,
-     1963,
-     1979,
-     1983,
-     1986,
-     1994
+     1936,
+     1943,
+     1947,
+     1961,
+     1980,
+     2007,
+     2017
     ],
     "standing": "cool",
     "notable": false,
     "since": 2023,
     "record": false,
-    "phrase": "typical for November 23"
-   },
-   "low_rank": {
-    "value_f": 47,
-    "warm_rank": 77,
-    "cool_rank": 64,
-    "years": 142,
-    "first_year": 1885,
-    "tied_years": [
-     1912,
-     1956
-    ],
-    "standing": "cool",
-    "notable": false,
-    "since": 2024,
-    "record": false,
-    "phrase": "typical for November 23"
+    "phrase": "typical for November 24"
    }
   },
   "forecast_highs": [
@@ -269,12 +265,12 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-25T10:32:18Z",
+  "issued_utc": "2026-11-25T11:18:35Z",
   "grid": "EWX/128,59",
   "periods": [
    {
     "name": "Overnight",
-    "start": "2026-11-25T04:00:00-06:00",
+    "start": "2026-11-25T05:00:00-06:00",
     "is_daytime": false,
     "temp_f": 36,
     "temp_c": 2.22,
@@ -401,15 +397,8 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-25T09:46:31Z",
+  "issued_utc": "2026-11-25T11:46:17Z",
   "hours": [
-   {
-    "start": "2026-11-25T05:00:00-06:00",
-    "temp_f": 38,
-    "temp_c": 3.33,
-    "precip_chance_pct": 0,
-    "short_forecast": "Clear"
-   },
    {
     "start": "2026-11-25T06:00:00-06:00",
     "temp_f": 37,
@@ -426,8 +415,8 @@
    },
    {
     "start": "2026-11-25T08:00:00-06:00",
-    "temp_f": 38,
-    "temp_c": 3.33,
+    "temp_f": 39,
+    "temp_c": 3.89,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
    },
@@ -736,6 +725,13 @@
     "start": "2026-11-27T04:00:00-06:00",
     "temp_f": 39,
     "temp_c": 3.89,
+    "precip_chance_pct": 0,
+    "short_forecast": "Partly Cloudy"
+   },
+   {
+    "start": "2026-11-27T05:00:00-06:00",
+    "temp_f": 38,
+    "temp_c": 3.33,
     "precip_chance_pct": 0,
     "short_forecast": "Partly Cloudy"
    }

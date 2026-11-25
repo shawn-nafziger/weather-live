@@ -11,9 +11,9 @@
   "lon": -86.2816,
   "history": "Same site as the official Indianapolis record"
  },
- "as_of_utc": "2026-11-25T11:08:00Z",
+ "as_of_utc": "2026-11-25T12:08:01Z",
  "now": {
-  "time_utc": "2026-11-25T10:30:00Z",
+  "time_utc": "2026-11-25T11:45:00Z",
   "temp_c": -2,
   "temp_f": 28.4,
   "precision": "nearest whole \u00b0C",
@@ -41,56 +41,58 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-23",
-   "is_yesterday": false,
-   "high_f": 45,
-   "low_f": 29,
+   "date": "2026-11-24",
+   "is_yesterday": true,
+   "high_f": 41,
+   "low_f": 26,
    "high_rank": {
-    "value_f": 45,
-    "warm_rank": 87,
-    "cool_rank": 62,
+    "value_f": 41,
+    "warm_rank": 97,
+    "cool_rank": 54,
     "years": 156,
     "first_year": 1871,
     "tied_years": [
-     1901,
-     1923,
-     1926,
+     1876,
+     1933,
      1940,
-     1994,
-     2008,
-     2015,
-     2017
+     1944,
+     1947,
+     1978
     ],
     "standing": "cool",
     "notable": false,
-    "since": 2024,
+    "since": 2023,
     "record": false,
-    "phrase": "typical for November 23"
+    "phrase": "typical for November 24"
    },
    "low_rank": {
-    "value_f": 29,
-    "warm_rank": 87,
-    "cool_rank": 64,
+    "value_f": 26,
+    "warm_rank": 98,
+    "cool_rank": 49,
     "years": 156,
     "first_year": 1871,
     "tied_years": [
-     1872,
-     1886,
-     1949,
-     1955,
-     1988,
-     1996
+     1909,
+     1930,
+     1936,
+     1937,
+     1951,
+     1964,
+     1976,
+     1983,
+     1994,
+     2007
     ],
     "standing": "cool",
     "notable": false,
-    "since": 2021,
+    "since": 2013,
     "record": false,
-    "phrase": "typical for November 23"
+    "phrase": "typical for November 24"
    }
   },
   "forecast_highs": [
    {
-    "period": "Wednesday",
+    "period": "Today",
     "date": "2026-11-25",
     "high_f": 46,
     "would_rank": {
@@ -251,20 +253,11 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-25T10:46:27Z",
+  "issued_utc": "2026-11-25T11:45:21Z",
   "grid": "IND/54,67",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-25T05:00:00-05:00",
-    "is_daytime": false,
-    "temp_f": 27,
-    "temp_c": -2.78,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Cloudy"
-   },
-   {
-    "name": "Wednesday",
+    "name": "Today",
     "start": "2026-11-25T06:00:00-05:00",
     "is_daytime": true,
     "temp_f": 46,
@@ -273,7 +266,7 @@
     "short_forecast": "Mostly Cloudy"
    },
    {
-    "name": "Wednesday Night",
+    "name": "Tonight",
     "start": "2026-11-25T18:00:00-05:00",
     "is_daytime": false,
     "temp_f": 38,
@@ -379,19 +372,21 @@
     "temp_c": 10.0,
     "precip_chance_pct": 8,
     "short_forecast": "Partly Sunny"
+   },
+   {
+    "name": "Tuesday Night",
+    "start": "2026-12-01T18:00:00-05:00",
+    "is_daytime": false,
+    "temp_f": 33,
+    "temp_c": 0.56,
+    "precip_chance_pct": 10,
+    "short_forecast": "Mostly Cloudy"
    }
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-25T10:46:27Z",
+  "issued_utc": "2026-11-25T11:45:21Z",
   "hours": [
-   {
-    "start": "2026-11-25T06:00:00-05:00",
-    "temp_f": 29,
-    "temp_c": -1.67,
-    "precip_chance_pct": 1,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "start": "2026-11-25T07:00:00-05:00",
     "temp_f": 28,
@@ -718,6 +713,13 @@
     "start": "2026-11-27T05:00:00-05:00",
     "temp_f": 37,
     "temp_c": 2.78,
+    "precip_chance_pct": 92,
+    "short_forecast": "Rain And Snow"
+   },
+   {
+    "start": "2026-11-27T06:00:00-05:00",
+    "temp_f": 36,
+    "temp_c": 2.22,
     "precip_chance_pct": 92,
     "short_forecast": "Rain And Snow"
    }

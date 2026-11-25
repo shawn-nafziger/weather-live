@@ -11,16 +11,16 @@
   "lon": -71.4277,
   "history": "Same site as the official Providence record"
  },
- "as_of_utc": "2026-11-25T11:08:00Z",
+ "as_of_utc": "2026-11-25T12:08:01Z",
  "now": {
-  "time_utc": "2026-11-25T10:30:00Z",
-  "temp_c": -1,
-  "temp_f": 30.2,
+  "time_utc": "2026-11-25T11:55:00Z",
+  "temp_c": -2,
+  "temp_f": 28.4,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": -8,
-  "humidity_pct": 59.03,
-  "wind_kmh": 12.96,
-  "description": "Clear"
+  "humidity_pct": 63.53,
+  "wind_kmh": 11.12,
+  "description": "Mostly Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-25",
@@ -38,6 +38,11 @@
    "at_least_f": 32.9,
    "about_f": 33.8,
    "time_utc": "2026-11-25T05:15:00Z"
+  },
+  "dip_between_reports": {
+   "at_most_f": 29.3,
+   "about_f": 28.4,
+   "time_utc": "2026-11-25T11:55:00Z"
   }
  },
  "record": {
@@ -46,40 +51,58 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-23",
-   "is_yesterday": false,
-   "high_f": 70,
-   "low_f": 48,
+   "date": "2026-11-24",
+   "is_yesterday": true,
+   "high_f": 49,
+   "low_f": 32,
    "high_rank": {
-    "value_f": 70,
-    "warm_rank": 3,
-    "cool_rank": 121,
+    "value_f": 49,
+    "warm_rank": 49,
+    "cool_rank": 66,
     "years": 123,
     "first_year": 1904,
-    "tied_years": [],
+    "tied_years": [
+     1950,
+     1957,
+     1969,
+     1984,
+     1991,
+     2002,
+     2009,
+     2011,
+     2012
+    ],
     "standing": "warm",
-    "notable": true,
-    "since": 1979,
+    "notable": false,
+    "since": 2025,
     "record": false,
-    "phrase": "3rd warmest November 23 high of 123 since 1904, warmest since 1979"
+    "phrase": "typical for November 24"
    },
    "low_rank": {
-    "value_f": 48,
-    "warm_rank": 9,
-    "cool_rank": 115,
+    "value_f": 32,
+    "warm_rank": 61,
+    "cool_rank": 56,
     "years": 123,
     "first_year": 1904,
-    "tied_years": [],
-    "standing": "warm",
-    "notable": true,
-    "since": 1999,
+    "tied_years": [
+     1906,
+     1909,
+     1968,
+     1975,
+     2003,
+     2012,
+     2016
+    ],
+    "standing": "cool",
+    "notable": false,
+    "since": 2025,
     "record": false,
-    "phrase": "9th warmest November 23 low of 123 since 1904, warmest since 1999"
+    "phrase": "typical for November 24"
    }
   },
   "forecast_highs": [
    {
-    "period": "Wednesday",
+    "period": "Today",
     "date": "2026-11-25",
     "high_f": 46,
     "would_rank": {
@@ -241,16 +264,7 @@
   "grid": "BOX/64,70",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-25T04:00:00-05:00",
-    "is_daytime": false,
-    "temp_f": 25,
-    "temp_c": -3.89,
-    "precip_chance_pct": 0,
-    "short_forecast": "Clear"
-   },
-   {
-    "name": "Wednesday",
+    "name": "Today",
     "start": "2026-11-25T06:00:00-05:00",
     "is_daytime": true,
     "temp_f": 46,
@@ -259,7 +273,7 @@
     "short_forecast": "Mostly Sunny"
    },
    {
-    "name": "Wednesday Night",
+    "name": "Tonight",
     "start": "2026-11-25T18:00:00-05:00",
     "is_daytime": false,
     "temp_f": 31,
@@ -365,19 +379,21 @@
     "temp_c": 11.11,
     "precip_chance_pct": 3,
     "short_forecast": "Sunny"
+   },
+   {
+    "name": "Tuesday Night",
+    "start": "2026-12-01T18:00:00-05:00",
+    "is_daytime": false,
+    "temp_f": 32,
+    "temp_c": 0.0,
+    "precip_chance_pct": 10,
+    "short_forecast": "Partly Cloudy"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-25T09:14:21Z",
   "hours": [
-   {
-    "start": "2026-11-25T06:00:00-05:00",
-    "temp_f": 27,
-    "temp_c": -2.78,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "start": "2026-11-25T07:00:00-05:00",
     "temp_f": 28,
@@ -705,6 +721,13 @@
     "temp_f": 54,
     "temp_c": 12.22,
     "precip_chance_pct": 63,
+    "short_forecast": "Light Rain Likely"
+   },
+   {
+    "start": "2026-11-27T06:00:00-05:00",
+    "temp_f": 53,
+    "temp_c": 11.67,
+    "precip_chance_pct": 60,
     "short_forecast": "Light Rain Likely"
    }
   ]

@@ -11,14 +11,14 @@
   "lon": -112.0035,
   "history": "Same station as the official Phoenix record (Sky Harbor since 1933)"
  },
- "as_of_utc": "2026-11-25T11:08:00Z",
+ "as_of_utc": "2026-11-25T12:08:01Z",
  "now": {
-  "time_utc": "2026-11-25T10:30:00Z",
-  "temp_c": 12,
-  "temp_f": 53.6,
+  "time_utc": "2026-11-25T11:55:00Z",
+  "temp_c": 11,
+  "temp_f": 51.8,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 3,
-  "humidity_pct": 54.1,
+  "dewpoint_c": 4,
+  "humidity_pct": 62.02,
   "wind_kmh": 7.42,
   "description": "Clear"
  },
@@ -38,6 +38,11 @@
    "at_least_f": 63.5,
    "about_f": 64.4,
    "time_utc": "2026-11-25T07:00:00Z"
+  },
+  "dip_between_reports": {
+   "at_most_f": 52.7,
+   "about_f": 51.8,
+   "time_utc": "2026-11-25T11:55:00Z"
   }
  },
  "record": {
@@ -46,48 +51,53 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-23",
-   "is_yesterday": false,
-   "high_f": 70,
-   "low_f": 50,
+   "date": "2026-11-24",
+   "is_yesterday": true,
+   "high_f": 74,
+   "low_f": 48,
    "high_rank": {
-    "value_f": 70,
-    "warm_rank": 80,
-    "cool_rank": 46,
+    "value_f": 74,
+    "warm_rank": 50,
+    "cool_rank": 74,
     "years": 132,
     "first_year": 1895,
     "tied_years": [
      1900,
-     1918,
-     1936,
+     1923,
+     1935,
+     1957,
      1959,
-     1963,
-     1971,
-     2018
+     1960,
+     1985,
+     1994,
+     1996
     ],
-    "standing": "cool",
+    "standing": "warm",
     "notable": false,
-    "since": 2025,
+    "since": 2024,
     "record": false,
-    "phrase": "typical for November 23"
+    "phrase": "typical for November 24"
    },
    "low_rank": {
-    "value_f": 50,
-    "warm_rank": 39,
-    "cool_rank": 90,
+    "value_f": 48,
+    "warm_rank": 50,
+    "cool_rank": 76,
     "years": 132,
     "first_year": 1895,
     "tied_years": [
      1897,
-     1950,
-     1951,
-     1990
+     1900,
+     1926,
+     1932,
+     1986,
+     2009,
+     2018
     ],
     "standing": "warm",
     "notable": false,
     "since": 2025,
     "record": false,
-    "phrase": "typical for November 23"
+    "phrase": "typical for November 24"
    }
   },
   "forecast_highs": [
@@ -414,13 +424,6 @@
   "issued_utc": "2026-11-25T06:52:37Z",
   "hours": [
    {
-    "start": "2026-11-25T04:00:00-07:00",
-    "temp_f": 53,
-    "temp_c": 11.67,
-    "precip_chance_pct": 0,
-    "short_forecast": "Clear"
-   },
-   {
     "start": "2026-11-25T05:00:00-07:00",
     "temp_f": 53,
     "temp_c": 11.67,
@@ -746,6 +749,13 @@
     "start": "2026-11-27T03:00:00-07:00",
     "temp_f": 54,
     "temp_c": 12.22,
+    "precip_chance_pct": 0,
+    "short_forecast": "Clear"
+   },
+   {
+    "start": "2026-11-27T04:00:00-07:00",
+    "temp_f": 53,
+    "temp_c": 11.67,
     "precip_chance_pct": 0,
     "short_forecast": "Clear"
    }
