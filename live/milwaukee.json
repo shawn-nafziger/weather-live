@@ -11,23 +11,29 @@
   "lon": -87.9044,
   "history": "Same site as the official Milwaukee record"
  },
- "as_of_utc": "2026-11-25T06:08:08Z",
+ "as_of_utc": "2026-11-25T07:07:55Z",
  "now": {
-  "time_utc": "2026-11-25T05:20:00Z",
+  "time_utc": "2026-11-25T06:40:00Z",
   "temp_c": -1,
   "temp_f": 30.2,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": -7,
   "humidity_pct": 63.77,
-  "wind_kmh": 7.42,
-  "description": ""
+  "wind_kmh": 9.25,
+  "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-25",
-  "readings": 0,
+  "readings": 5,
   "basis": "5-minute readings (whole \u00b0C, approximate)",
   "approximate": true,
-  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two."
+  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
+  "high_c": -1,
+  "high_f": 30.2,
+  "high_time_utc": "2026-11-25T06:20:00Z",
+  "low_c": -2,
+  "low_f": 28.4,
+  "low_time_utc": "2026-11-25T06:00:00Z"
  },
  "record": {
   "series": "Milwaukee area (ThreadEx; airport)",
@@ -253,12 +259,12 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-25T04:31:02Z",
+  "issued_utc": "2026-11-25T05:31:35Z",
   "grid": "MKX/89,61",
   "periods": [
    {
-    "name": "Tonight",
-    "start": "2026-11-24T23:00:00-06:00",
+    "name": "Overnight",
+    "start": "2026-11-25T00:00:00-06:00",
     "is_daytime": false,
     "temp_f": 33,
     "temp_c": 0.56,
@@ -385,15 +391,8 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-25T04:31:02Z",
+  "issued_utc": "2026-11-25T05:31:35Z",
   "hours": [
-   {
-    "start": "2026-11-25T00:00:00-06:00",
-    "temp_f": 33,
-    "temp_c": 0.56,
-    "precip_chance_pct": 0,
-    "short_forecast": "Cloudy"
-   },
    {
     "start": "2026-11-25T01:00:00-06:00",
     "temp_f": 33,
@@ -721,6 +720,13 @@
     "temp_f": 43,
     "temp_c": 6.11,
     "precip_chance_pct": 51,
+    "short_forecast": "Chance Light Rain"
+   },
+   {
+    "start": "2026-11-27T00:00:00-06:00",
+    "temp_f": 42,
+    "temp_c": 5.56,
+    "precip_chance_pct": 50,
     "short_forecast": "Chance Light Rain"
    }
   ]
