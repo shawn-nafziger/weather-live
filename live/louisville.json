@@ -11,20 +11,20 @@
   "lon": -85.7365,
   "history": "Same site as the official Louisville record"
  },
- "as_of_utc": "2026-11-24T23:07:53Z",
+ "as_of_utc": "2026-11-25T00:04:45Z",
  "now": {
-  "time_utc": "2026-11-24T21:56:00Z",
-  "temp_c": 7.2,
-  "temp_f": 45.0,
-  "precision": "tenths of a degree",
-  "dewpoint_c": -5.6,
-  "humidity_pct": 39.74,
-  "wind_kmh": 16.56,
-  "description": "Mostly Cloudy"
+  "time_utc": "2026-11-24T23:45:00Z",
+  "temp_c": 5,
+  "temp_f": 41.0,
+  "precision": "nearest whole \u00b0C",
+  "dewpoint_c": -5,
+  "humidity_pct": 48.41,
+  "wind_kmh": 14.83,
+  "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-24",
-  "readings": 13,
+  "readings": 14,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -85,29 +85,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-24",
-    "high_f": 48,
-    "would_rank": {
-     "value_f": 48,
-     "warm_rank": 92,
-     "cool_rank": 60,
-     "years": 155,
-     "first_year": 1872,
-     "tied_years": [
-      1897,
-      1907,
-      1980,
-      1983
-     ],
-     "standing": "cool",
-     "notable": false,
-     "since": 2013,
-     "record": false,
-     "phrase": "typical for November 24"
-    }
-   },
    {
     "period": "Wednesday",
     "date": "2026-11-25",
@@ -252,6 +229,32 @@
      "record": false,
      "phrase": "typical for November 30"
     }
+   },
+   {
+    "period": "Tuesday",
+    "date": "2026-12-01",
+    "high_f": 56,
+    "would_rank": {
+     "value_f": 56,
+     "warm_rank": 40,
+     "cool_rank": 109,
+     "years": 155,
+     "first_year": 1872,
+     "tied_years": [
+      1890,
+      1894,
+      1900,
+      1938,
+      1961,
+      1989,
+      2013
+     ],
+     "standing": "warm",
+     "notable": false,
+     "since": 2023,
+     "record": false,
+     "phrase": "typical for December 1"
+    }
    }
   ]
  },
@@ -259,15 +262,6 @@
   "issued_utc": "2026-11-24T18:26:11Z",
   "grid": "LMK/51,74",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-24T14:00:00-05:00",
-    "is_daytime": true,
-    "temp_f": 48,
-    "temp_c": 8.89,
-    "precip_chance_pct": 0,
-    "short_forecast": "Partly Sunny"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-24T18:00:00-05:00",
@@ -384,19 +378,21 @@
     "temp_c": 1.11,
     "precip_chance_pct": 4,
     "short_forecast": "Partly Cloudy"
+   },
+   {
+    "name": "Tuesday",
+    "start": "2026-12-01T06:00:00-05:00",
+    "is_daytime": true,
+    "temp_f": 56,
+    "temp_c": 13.33,
+    "precip_chance_pct": 18,
+    "short_forecast": "Slight Chance Rain Showers"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-24T18:26:11Z",
   "hours": [
-   {
-    "start": "2026-11-24T18:00:00-05:00",
-    "temp_f": 46,
-    "temp_c": 7.78,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "start": "2026-11-24T19:00:00-05:00",
     "temp_f": 42,
@@ -723,6 +719,13 @@
     "start": "2026-11-26T17:00:00-05:00",
     "temp_f": 47,
     "temp_c": 8.33,
+    "precip_chance_pct": 97,
+    "short_forecast": "Rain Showers"
+   },
+   {
+    "start": "2026-11-26T18:00:00-05:00",
+    "temp_f": 46,
+    "temp_c": 7.78,
     "precip_chance_pct": 97,
     "short_forecast": "Rain Showers"
    }

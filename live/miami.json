@@ -11,20 +11,20 @@
   "lon": -80.3164,
   "history": "Same station as the official Miami record"
  },
- "as_of_utc": "2026-11-24T23:07:53Z",
+ "as_of_utc": "2026-11-25T00:04:45Z",
  "now": {
-  "time_utc": "2026-11-24T21:53:00Z",
-  "temp_c": 25.6,
-  "temp_f": 78.1,
-  "precision": "tenths of a degree",
-  "dewpoint_c": 18.9,
-  "humidity_pct": 66.51,
-  "wind_kmh": 9.36,
-  "description": "Cloudy"
+  "time_utc": "2026-11-24T23:45:00Z",
+  "temp_c": 25,
+  "temp_f": 77.0,
+  "precision": "nearest whole \u00b0C",
+  "dewpoint_c": 19,
+  "humidity_pct": 69.36,
+  "wind_kmh": 7.42,
+  "description": "Partly Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-24",
-  "readings": 13,
+  "readings": 14,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -96,45 +96,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-24",
-    "high_f": 81,
-    "would_rank": {
-     "value_f": 81,
-     "warm_rank": 43,
-     "cool_rank": 69,
-     "years": 131,
-     "first_year": 1895,
-     "tied_years": [
-      1895,
-      1902,
-      1905,
-      1906,
-      1926,
-      1929,
-      1942,
-      1950,
-      1958,
-      1963,
-      1967,
-      1971,
-      1973,
-      1979,
-      1981,
-      1982,
-      1995,
-      1998,
-      2003,
-      2011
-     ],
-     "standing": "warm",
-     "notable": false,
-     "since": 2025,
-     "record": false,
-     "phrase": "typical for November 24"
-    }
-   },
    {
     "period": "Wednesday",
     "date": "2026-11-25",
@@ -302,6 +263,30 @@
      "record": false,
      "phrase": "typical for November 30"
     }
+   },
+   {
+    "period": "Tuesday",
+    "date": "2026-12-01",
+    "high_f": 82,
+    "would_rank": {
+     "value_f": 82,
+     "warm_rank": 29,
+     "cool_rank": 99,
+     "years": 132,
+     "first_year": 1895,
+     "tied_years": [
+      1908,
+      1918,
+      1984,
+      1998,
+      2014
+     ],
+     "standing": "warm",
+     "notable": false,
+     "since": 2025,
+     "record": false,
+     "phrase": "typical for December 1"
+    }
    }
   ]
  },
@@ -309,15 +294,6 @@
   "issued_utc": "2026-11-24T20:47:11Z",
   "grid": "MFL/105,51",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-24T16:00:00-05:00",
-    "is_daytime": true,
-    "temp_f": 81,
-    "temp_c": 27.22,
-    "precip_chance_pct": 8,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-24T18:00:00-05:00",
@@ -434,19 +410,21 @@
     "temp_c": 22.22,
     "precip_chance_pct": 33,
     "short_forecast": "Chance Showers And Thunderstorms"
+   },
+   {
+    "name": "Tuesday",
+    "start": "2026-12-01T06:00:00-05:00",
+    "is_daytime": true,
+    "temp_f": 82,
+    "temp_c": 27.78,
+    "precip_chance_pct": 43,
+    "short_forecast": "Chance Rain Showers"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-24T20:47:11Z",
   "hours": [
-   {
-    "start": "2026-11-24T18:00:00-05:00",
-    "temp_f": 78,
-    "temp_c": 25.56,
-    "precip_chance_pct": 8,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "start": "2026-11-24T19:00:00-05:00",
     "temp_f": 77,
@@ -775,6 +753,13 @@
     "temp_c": 25.0,
     "precip_chance_pct": 2,
     "short_forecast": "Sunny"
+   },
+   {
+    "start": "2026-11-26T18:00:00-05:00",
+    "temp_f": 74,
+    "temp_c": 23.33,
+    "precip_chance_pct": 2,
+    "short_forecast": "Mostly Clear"
    }
   ]
  },

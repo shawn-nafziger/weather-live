@@ -11,20 +11,20 @@
   "lon": -81.6937,
   "history": "Same site as the official Jacksonville record"
  },
- "as_of_utc": "2026-11-24T23:07:53Z",
+ "as_of_utc": "2026-11-25T00:04:45Z",
  "now": {
-  "time_utc": "2026-11-24T21:56:00Z",
-  "temp_c": 17.8,
-  "temp_f": 64.0,
-  "precision": "tenths of a degree",
-  "dewpoint_c": 15.6,
-  "humidity_pct": 86.96,
-  "wind_kmh": 22.32,
-  "description": "Light Rain"
+  "time_utc": "2026-11-24T23:45:00Z",
+  "temp_c": 17,
+  "temp_f": 62.6,
+  "precision": "nearest whole \u00b0C",
+  "dewpoint_c": 14,
+  "humidity_pct": 82.51,
+  "wind_kmh": 18.5,
+  "description": "Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-24",
-  "readings": 14,
+  "readings": 15,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -87,29 +87,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-24",
-    "high_f": 70,
-    "would_rank": {
-     "value_f": 70,
-     "warm_rank": 80,
-     "cool_rank": 73,
-     "years": 156,
-     "first_year": 1871,
-     "tied_years": [
-      1907,
-      1942,
-      1946,
-      2017
-     ],
-     "standing": "cool",
-     "notable": false,
-     "since": 2023,
-     "record": false,
-     "phrase": "typical for November 24"
-    }
-   },
    {
     "period": "Wednesday",
     "date": "2026-11-25",
@@ -245,6 +222,33 @@
      "record": false,
      "phrase": "typical for November 30"
     }
+   },
+   {
+    "period": "Tuesday",
+    "date": "2026-12-01",
+    "high_f": 71,
+    "would_rank": {
+     "value_f": 71,
+     "warm_rank": 49,
+     "cool_rank": 100,
+     "years": 156,
+     "first_year": 1871,
+     "tied_years": [
+      1897,
+      1946,
+      1967,
+      1995,
+      1996,
+      2010,
+      2012,
+      2013
+     ],
+     "standing": "warm",
+     "notable": false,
+     "since": 2023,
+     "record": false,
+     "phrase": "typical for December 1"
+    }
    }
   ]
  },
@@ -252,15 +256,6 @@
   "issued_utc": "2026-11-24T18:21:25Z",
   "grid": "JAX/64,72",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-24T17:00:00-05:00",
-    "is_daytime": true,
-    "temp_f": 70,
-    "temp_c": 21.11,
-    "precip_chance_pct": 21,
-    "short_forecast": "Slight Chance Rain Showers"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-24T18:00:00-05:00",
@@ -377,19 +372,21 @@
     "temp_c": 11.11,
     "precip_chance_pct": 22,
     "short_forecast": "Slight Chance Rain Showers then Mostly Cloudy"
+   },
+   {
+    "name": "Tuesday",
+    "start": "2026-12-01T06:00:00-05:00",
+    "is_daytime": true,
+    "temp_f": 71,
+    "temp_c": 21.67,
+    "precip_chance_pct": 13,
+    "short_forecast": "Partly Sunny"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-24T18:21:25Z",
   "hours": [
-   {
-    "start": "2026-11-24T18:00:00-05:00",
-    "temp_f": 64,
-    "temp_c": 17.78,
-    "precip_chance_pct": 16,
-    "short_forecast": "Slight Chance Rain Showers"
-   },
    {
     "start": "2026-11-24T19:00:00-05:00",
     "temp_f": 63,
@@ -718,6 +715,13 @@
     "temp_c": 16.67,
     "precip_chance_pct": 1,
     "short_forecast": "Partly Sunny"
+   },
+   {
+    "start": "2026-11-26T18:00:00-05:00",
+    "temp_f": 61,
+    "temp_c": 16.11,
+    "precip_chance_pct": 1,
+    "short_forecast": "Mostly Cloudy"
    }
   ]
  },
