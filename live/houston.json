@@ -11,33 +11,38 @@
   "lon": -95.3607,
   "history": "Same site as the official Houston record"
  },
- "as_of_utc": "2026-11-25T00:08:03Z",
+ "as_of_utc": "2026-11-25T01:08:07Z",
  "now": {
-  "time_utc": "2026-11-24T23:45:00Z",
-  "temp_c": 11,
-  "temp_f": 51.8,
+  "time_utc": "2026-11-25T00:45:00Z",
+  "temp_c": 9,
+  "temp_f": 48.2,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 6,
-  "humidity_pct": 71.28,
-  "wind_kmh": 24.08,
-  "description": "Light Rain"
+  "dewpoint_c": 4,
+  "humidity_pct": 70.89,
+  "wind_kmh": null,
+  "description": "Partly Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-24",
-  "readings": 16,
+  "readings": 17,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
   "high_c": 15,
   "high_f": 59.0,
   "high_time_utc": "2026-11-24T18:53:00Z",
-  "low_c": 10.6,
-  "low_f": 51.1,
-  "low_time_utc": "2026-11-24T15:53:00Z",
+  "low_c": 10,
+  "low_f": 50.0,
+  "low_time_utc": "2026-11-24T23:53:00Z",
   "peak_between_reports": {
    "at_least_f": 59.9,
    "about_f": 60.8,
    "time_utc": "2026-11-24T19:10:00Z"
+  },
+  "dip_between_reports": {
+   "at_most_f": 49.1,
+   "about_f": 48.2,
+   "time_utc": "2026-11-25T00:30:00Z"
   }
  },
  "record": {
@@ -86,24 +91,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-24",
-    "high_f": 58,
-    "would_rank": {
-     "value_f": 58,
-     "warm_rank": 115,
-     "cool_rank": 21,
-     "years": 135,
-     "first_year": 1889,
-     "tied_years": [],
-     "standing": "cool",
-     "notable": true,
-     "since": 2013,
-     "record": false,
-     "phrase": "21st coolest November 24 high of 135 since 1889, coolest since 2013"
-    }
-   },
    {
     "period": "Wednesday",
     "date": "2026-11-25",
@@ -238,22 +225,38 @@
      "record": false,
      "phrase": "typical for November 30"
     }
+   },
+   {
+    "period": "Tuesday",
+    "date": "2026-12-01",
+    "high_f": 75,
+    "would_rank": {
+     "value_f": 75,
+     "warm_rank": 22,
+     "cool_rank": 107,
+     "years": 134,
+     "first_year": 1891,
+     "tied_years": [
+      1913,
+      1917,
+      1939,
+      1956,
+      1973,
+      2003
+     ],
+     "standing": "warm",
+     "notable": true,
+     "since": 2021,
+     "record": false,
+     "phrase": "22nd warmest December 1 high (tied) of 134 since 1891, warmest since 2021"
+    }
    }
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-24T18:56:15Z",
+  "issued_utc": "2026-11-25T00:20:21Z",
   "grid": "HGX/63,104",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-24T13:00:00-06:00",
-    "is_daytime": true,
-    "temp_f": 58,
-    "temp_c": 14.44,
-    "precip_chance_pct": 20,
-    "short_forecast": "Slight Chance Rain Showers"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-24T18:00:00-06:00",
@@ -370,19 +373,21 @@
     "temp_c": 11.11,
     "precip_chance_pct": 1,
     "short_forecast": "Partly Cloudy"
+   },
+   {
+    "name": "Tuesday",
+    "start": "2026-12-01T06:00:00-06:00",
+    "is_daytime": true,
+    "temp_f": 75,
+    "temp_c": 23.89,
+    "precip_chance_pct": 4,
+    "short_forecast": "Sunny"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-24T18:56:15Z",
   "hours": [
-   {
-    "start": "2026-11-24T18:00:00-06:00",
-    "temp_f": 51,
-    "temp_c": 10.56,
-    "precip_chance_pct": 21,
-    "short_forecast": "Slight Chance Rain Showers"
-   },
    {
     "start": "2026-11-24T19:00:00-06:00",
     "temp_f": 49,
@@ -711,6 +716,13 @@
     "temp_c": 12.78,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
+   },
+   {
+    "start": "2026-11-26T18:00:00-06:00",
+    "temp_f": 52,
+    "temp_c": 11.11,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Clear"
    }
   ]
  },
