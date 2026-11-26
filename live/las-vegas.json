@@ -11,20 +11,20 @@
   "lon": -115.1634,
   "history": "Same site as the official Las Vegas record"
  },
- "as_of_utc": "2026-11-26T02:08:00Z",
+ "as_of_utc": "2026-11-26T03:07:53Z",
  "now": {
-  "time_utc": "2026-11-26T01:40:00Z",
+  "time_utc": "2026-11-26T02:30:00Z",
   "temp_c": 14,
   "temp_f": 57.2,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": -2,
   "humidity_pct": 33.08,
-  "wind_kmh": 5.54,
+  "wind_kmh": 0,
   "description": ""
  },
  "today_so_far": {
   "date_local": "2026-11-25",
-  "readings": 13,
+  "readings": 14,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -82,31 +82,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "Today",
-    "date": "2026-11-25",
-    "high_f": 62,
-    "would_rank": {
-     "value_f": 62,
-     "warm_rank": 48,
-     "cool_rank": 37,
-     "years": 90,
-     "first_year": 1937,
-     "tied_years": [
-      1971,
-      1982,
-      2006,
-      2013,
-      2021,
-      2022
-     ],
-     "standing": "cool",
-     "notable": false,
-     "since": 2024,
-     "record": false,
-     "phrase": "typical for November 25"
-    }
-   },
    {
     "period": "Thanksgiving Day",
     "date": "2026-11-26",
@@ -239,6 +214,30 @@
      "record": false,
      "phrase": "typical for December 1"
     }
+   },
+   {
+    "period": "Wednesday",
+    "date": "2026-12-02",
+    "high_f": 63,
+    "would_rank": {
+     "value_f": 63,
+     "warm_rank": 31,
+     "cool_rank": 55,
+     "years": 90,
+     "first_year": 1937,
+     "tied_years": [
+      1956,
+      1960,
+      1983,
+      1986,
+      2013
+     ],
+     "standing": "warm",
+     "notable": false,
+     "since": 2024,
+     "record": false,
+     "phrase": "typical for December 2"
+    }
    }
   ]
  },
@@ -246,15 +245,6 @@
   "issued_utc": "2026-11-25T18:28:12Z",
   "grid": "VEF/121,94",
   "periods": [
-   {
-    "name": "Today",
-    "start": "2026-11-25T10:00:00-08:00",
-    "is_daytime": true,
-    "temp_f": 62,
-    "temp_c": 16.67,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-25T18:00:00-08:00",
@@ -371,19 +361,21 @@
     "temp_c": 10.56,
     "precip_chance_pct": 66,
     "short_forecast": "Rain Showers Likely"
+   },
+   {
+    "name": "Wednesday",
+    "start": "2026-12-02T06:00:00-08:00",
+    "is_daytime": true,
+    "temp_f": 63,
+    "temp_c": 17.22,
+    "precip_chance_pct": 34,
+    "short_forecast": "Chance Rain Showers"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-25T18:28:12Z",
   "hours": [
-   {
-    "start": "2026-11-25T18:00:00-08:00",
-    "temp_f": 58,
-    "temp_c": 14.44,
-    "precip_chance_pct": 0,
-    "short_forecast": "Partly Cloudy"
-   },
    {
     "start": "2026-11-25T19:00:00-08:00",
     "temp_f": 55,
@@ -712,6 +704,13 @@
     "temp_c": 17.78,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Sunny"
+   },
+   {
+    "start": "2026-11-27T18:00:00-08:00",
+    "temp_f": 61,
+    "temp_c": 16.11,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Cloudy"
    }
   ]
  },
