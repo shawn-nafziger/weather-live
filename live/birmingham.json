@@ -11,33 +11,33 @@
   "lon": -86.745,
   "history": "Same site as the official Birmingham record"
  },
- "as_of_utc": "2026-11-26T12:08:00Z",
+ "as_of_utc": "2026-11-26T13:07:55Z",
  "now": {
-  "time_utc": "2026-11-26T11:40:00Z",
-  "temp_c": 7,
-  "temp_f": 44.6,
+  "time_utc": "2026-11-26T12:40:00Z",
+  "temp_c": 6,
+  "temp_f": 42.8,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 6,
-  "humidity_pct": 93.35,
-  "wind_kmh": 16.67,
-  "description": "Light Rain and Fog/Mist"
+  "dewpoint_c": 5,
+  "humidity_pct": 93.3,
+  "wind_kmh": 18.5,
+  "description": "Light Rain"
  },
  "today_so_far": {
   "date_local": "2026-11-26",
-  "readings": 5,
+  "readings": 6,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
   "high_c": 8.9,
   "high_f": 48.0,
   "high_time_utc": "2026-11-26T08:19:00Z",
-  "low_c": 8.3,
-  "low_f": 46.9,
-  "low_time_utc": "2026-11-26T07:17:00Z",
+  "low_c": 6.7,
+  "low_f": 44.1,
+  "low_time_utc": "2026-11-26T11:53:00Z",
   "dip_between_reports": {
-   "at_most_f": 45.5,
-   "about_f": 44.6,
-   "time_utc": "2026-11-26T10:40:00Z"
+   "at_most_f": 43.7,
+   "about_f": 42.8,
+   "time_utc": "2026-11-26T12:40:00Z"
   }
  },
  "record": {
@@ -267,17 +267,8 @@
   "grid": "BMX/61,87",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-26T05:00:00-06:00",
-    "is_daytime": false,
-    "temp_f": 40,
-    "temp_c": 4.44,
-    "precip_chance_pct": 54,
-    "short_forecast": "Chance Light Rain"
-   },
-   {
     "name": "Thanksgiving Day",
-    "start": "2026-11-26T06:00:00-06:00",
+    "start": "2026-11-26T07:00:00-06:00",
     "is_daytime": true,
     "temp_f": 49,
     "temp_c": 9.44,
@@ -285,7 +276,7 @@
     "short_forecast": "Light Rain Likely"
    },
    {
-    "name": "Thursday Night",
+    "name": "Tonight",
     "start": "2026-11-26T18:00:00-06:00",
     "is_daytime": false,
     "temp_f": 33,
@@ -391,19 +382,21 @@
     "temp_c": 18.33,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
+   },
+   {
+    "name": "Wednesday Night",
+    "start": "2026-12-02T18:00:00-06:00",
+    "is_daytime": false,
+    "temp_f": 48,
+    "temp_c": 8.89,
+    "precip_chance_pct": 0,
+    "short_forecast": "Partly Cloudy"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-26T11:06:12Z",
   "hours": [
-   {
-    "start": "2026-11-26T06:00:00-06:00",
-    "temp_f": 43,
-    "temp_c": 6.11,
-    "precip_chance_pct": 62,
-    "short_forecast": "Light Rain Likely"
-   },
    {
     "start": "2026-11-26T07:00:00-06:00",
     "temp_f": 45,
@@ -732,6 +725,13 @@
     "temp_c": 0.0,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear"
+   },
+   {
+    "start": "2026-11-28T06:00:00-06:00",
+    "temp_f": 31,
+    "temp_c": -0.56,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
    }
   ]
  },
