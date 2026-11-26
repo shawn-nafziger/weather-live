@@ -11,29 +11,23 @@
   "lon": -89.9863,
   "history": "Same site as the official Memphis record"
  },
- "as_of_utc": "2026-11-26T05:07:57Z",
+ "as_of_utc": "2026-11-26T06:08:06Z",
  "now": {
-  "time_utc": "2026-11-26T04:55:00Z",
+  "time_utc": "2026-11-26T05:50:00Z",
   "temp_c": 2,
   "temp_f": 35.6,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 1,
   "humidity_pct": 93.09,
-  "wind_kmh": 22.21,
+  "wind_kmh": 18.5,
   "description": "Light Rain"
  },
  "today_so_far": {
-  "date_local": "2026-11-25",
-  "readings": 20,
-  "basis": "hourly reports (tenths of a degree)",
-  "approximate": false,
-  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 6.7,
-  "high_f": 44.1,
-  "high_time_utc": "2026-11-25T06:54:00Z",
-  "low_c": 2.2,
-  "low_f": 36.0,
-  "low_time_utc": "2026-11-26T03:54:00Z"
+  "date_local": "2026-11-26",
+  "readings": 0,
+  "basis": "5-minute readings (whole \u00b0C, approximate)",
+  "approximate": true,
+  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two."
  },
  "record": {
   "series": "Memphis area (ThreadEx; airport)",
@@ -42,7 +36,7 @@
   "rank_today": true,
   "latest_final": {
    "date": "2026-11-24",
-   "is_yesterday": true,
+   "is_yesterday": false,
    "high_f": 53,
    "low_f": 35,
    "high_rank": {
@@ -249,16 +243,16 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-26T04:16:53Z",
+  "issued_utc": "2026-11-26T05:15:41Z",
   "grid": "MEG/45,63",
   "periods": [
    {
-    "name": "Tonight",
-    "start": "2026-11-25T23:00:00-06:00",
+    "name": "Overnight",
+    "start": "2026-11-26T00:00:00-06:00",
     "is_daytime": false,
     "temp_f": 33,
     "temp_c": 0.56,
-    "precip_chance_pct": 43,
+    "precip_chance_pct": 39,
     "short_forecast": "Chance Light Rain"
    },
    {
@@ -383,13 +377,6 @@
  "hourly": {
   "issued_utc": "2026-11-26T04:16:53Z",
   "hours": [
-   {
-    "start": "2026-11-25T23:00:00-06:00",
-    "temp_f": 37,
-    "temp_c": 2.78,
-    "precip_chance_pct": 43,
-    "short_forecast": "Chance Light Rain"
-   },
    {
     "start": "2026-11-26T00:00:00-06:00",
     "temp_f": 36,
@@ -718,6 +705,13 @@
     "temp_c": 3.89,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear"
+   },
+   {
+    "start": "2026-11-27T23:00:00-06:00",
+    "temp_f": 39,
+    "temp_c": 3.89,
+    "precip_chance_pct": 0,
+    "short_forecast": "Clear"
    }
   ]
  },

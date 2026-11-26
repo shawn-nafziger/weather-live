@@ -11,29 +11,23 @@
   "lon": -94.7306,
   "history": "Same site as the official Kansas City record"
  },
- "as_of_utc": "2026-11-26T05:07:57Z",
+ "as_of_utc": "2026-11-26T06:08:06Z",
  "now": {
-  "time_utc": "2026-11-26T03:53:00Z",
+  "time_utc": "2026-11-26T04:53:00Z",
   "temp_c": -2.2,
   "temp_f": 28.0,
   "precision": "tenths of a degree",
   "dewpoint_c": -5,
   "humidity_pct": 81.12,
-  "wind_kmh": 12.96,
+  "wind_kmh": 14.76,
   "description": ""
  },
  "today_so_far": {
-  "date_local": "2026-11-25",
-  "readings": 18,
-  "basis": "hourly reports (tenths of a degree)",
-  "approximate": false,
-  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 4.4,
-  "high_f": 39.9,
-  "high_time_utc": "2026-11-25T18:34:00Z",
-  "low_c": -3.9,
-  "low_f": 25.0,
-  "low_time_utc": "2026-11-25T11:53:00Z"
+  "date_local": "2026-11-26",
+  "readings": 0,
+  "basis": "5-minute readings (whole \u00b0C, approximate)",
+  "approximate": true,
+  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two."
  },
  "record": {
   "series": "Kansas City area (ThreadEx; airport)",
@@ -42,7 +36,7 @@
   "rank_today": true,
   "latest_final": {
    "date": "2026-11-24",
-   "is_yesterday": true,
+   "is_yesterday": false,
    "high_f": 37,
    "low_f": 22,
    "high_rank": {
@@ -253,7 +247,7 @@
   "periods": [
    {
     "name": "Tonight",
-    "start": "2026-11-25T22:00:00-06:00",
+    "start": "2026-11-25T23:00:00-06:00",
     "is_daytime": false,
     "temp_f": 26,
     "temp_c": -3.33,
@@ -382,13 +376,6 @@
  "hourly": {
   "issued_utc": "2026-11-26T04:16:41Z",
   "hours": [
-   {
-    "start": "2026-11-25T23:00:00-06:00",
-    "temp_f": 27,
-    "temp_c": -2.78,
-    "precip_chance_pct": 0,
-    "short_forecast": "Partly Cloudy"
-   },
    {
     "start": "2026-11-26T00:00:00-06:00",
     "temp_f": 27,
@@ -715,6 +702,13 @@
     "start": "2026-11-27T22:00:00-06:00",
     "temp_f": 39,
     "temp_c": 3.89,
+    "precip_chance_pct": 0,
+    "short_forecast": "Partly Cloudy"
+   },
+   {
+    "start": "2026-11-27T23:00:00-06:00",
+    "temp_f": 38,
+    "temp_c": 3.33,
     "precip_chance_pct": 0,
     "short_forecast": "Partly Cloudy"
    }
