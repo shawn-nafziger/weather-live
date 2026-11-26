@@ -11,16 +11,16 @@
   "lon": -78.736,
   "history": "Same site as the official Buffalo record"
  },
- "as_of_utc": "2026-11-26T19:08:05Z",
+ "as_of_utc": "2026-11-26T19:52:54Z",
  "now": {
-  "time_utc": "2026-11-26T18:45:00Z",
+  "time_utc": "2026-11-26T19:40:00Z",
   "temp_c": 3,
   "temp_f": 37.4,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": -5,
-  "humidity_pct": 55.7,
+  "dewpoint_c": -6,
+  "humidity_pct": 51.63,
   "wind_kmh": null,
-  "description": "Clear"
+  "description": "Partly Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-26",
@@ -192,15 +192,23 @@
    {
     "period": "Monday",
     "date": "2026-11-30",
-    "high_f": 46,
+    "high_f": 45,
     "would_rank": {
-     "value_f": 46,
-     "warm_rank": 33,
-     "cool_rank": 120,
+     "value_f": 45,
+     "warm_rank": 34,
+     "cool_rank": 111,
      "years": 153,
      "first_year": 1873,
      "tied_years": [
-      1984
+      1930,
+      1939,
+      1949,
+      1970,
+      1973,
+      2004,
+      2011,
+      2015,
+      2020
      ],
      "standing": "warm",
      "notable": false,
@@ -212,17 +220,21 @@
    {
     "period": "Tuesday",
     "date": "2026-12-01",
-    "high_f": 45,
+    "high_f": 44,
     "would_rank": {
-     "value_f": 45,
-     "warm_rank": 40,
-     "cool_rank": 110,
+     "value_f": 44,
+     "warm_rank": 43,
+     "cool_rank": 103,
      "years": 152,
      "first_year": 1873,
      "tied_years": [
-      1916,
-      1920,
-      1923
+      1878,
+      1879,
+      1895,
+      1902,
+      1943,
+      1981,
+      2021
      ],
      "standing": "warm",
      "notable": false,
@@ -259,17 +271,17 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-26T17:57:44Z",
+  "issued_utc": "2026-11-26T18:22:29Z",
   "grid": "BUF/40,50",
   "periods": [
    {
     "name": "Thanksgiving Day",
-    "start": "2026-11-26T13:00:00-05:00",
+    "start": "2026-11-26T14:00:00-05:00",
     "is_daytime": true,
     "temp_f": 41,
     "temp_c": 5.0,
     "precip_chance_pct": 94,
-    "short_forecast": "Slight Chance Light Snow"
+    "short_forecast": "Rain"
    },
    {
     "name": "Tonight",
@@ -331,43 +343,43 @@
     "is_daytime": false,
     "temp_f": 40,
     "temp_c": 4.44,
-    "precip_chance_pct": 96,
+    "precip_chance_pct": 95,
     "short_forecast": "Rain Showers"
    },
    {
     "name": "Monday",
     "start": "2026-11-30T06:00:00-05:00",
     "is_daytime": true,
-    "temp_f": 46,
-    "temp_c": 7.78,
-    "precip_chance_pct": 96,
+    "temp_f": 45,
+    "temp_c": 7.22,
+    "precip_chance_pct": 95,
     "short_forecast": "Rain Showers"
    },
    {
     "name": "Monday Night",
     "start": "2026-11-30T18:00:00-05:00",
     "is_daytime": false,
-    "temp_f": 34,
-    "temp_c": 1.11,
-    "precip_chance_pct": 9,
+    "temp_f": 33,
+    "temp_c": 0.56,
+    "precip_chance_pct": 13,
     "short_forecast": "Mostly Cloudy"
    },
    {
     "name": "Tuesday",
     "start": "2026-12-01T06:00:00-05:00",
     "is_daytime": true,
-    "temp_f": 45,
-    "temp_c": 7.22,
-    "precip_chance_pct": 4,
+    "temp_f": 44,
+    "temp_c": 6.67,
+    "precip_chance_pct": 1,
     "short_forecast": "Partly Sunny"
    },
    {
     "name": "Tuesday Night",
     "start": "2026-12-01T18:00:00-05:00",
     "is_daytime": false,
-    "temp_f": 36,
-    "temp_c": 2.22,
-    "precip_chance_pct": 5,
+    "temp_f": 35,
+    "temp_c": 1.67,
+    "precip_chance_pct": 6,
     "short_forecast": "Mostly Cloudy"
    },
    {
@@ -376,16 +388,16 @@
     "is_daytime": true,
     "temp_f": 49,
     "temp_c": 9.44,
-    "precip_chance_pct": 5,
-    "short_forecast": "Mostly Cloudy"
+    "precip_chance_pct": 6,
+    "short_forecast": "Partly Sunny"
    },
    {
     "name": "Wednesday Night",
     "start": "2026-12-02T18:00:00-05:00",
     "is_daytime": false,
-    "temp_f": 39,
-    "temp_c": 3.89,
-    "precip_chance_pct": 6,
+    "temp_f": 40,
+    "temp_c": 4.44,
+    "precip_chance_pct": 4,
     "short_forecast": "Mostly Cloudy"
    }
   ]
