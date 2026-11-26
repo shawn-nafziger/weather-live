@@ -11,20 +11,20 @@
   "lon": -76.1919,
   "history": "Same site as the official Norfolk record"
  },
- "as_of_utc": "2026-11-26T22:07:57Z",
+ "as_of_utc": "2026-11-26T23:07:53Z",
  "now": {
-  "time_utc": "2026-11-26T21:50:00Z",
-  "temp_c": 19,
-  "temp_f": 66.2,
+  "time_utc": "2026-11-26T22:20:00Z",
+  "temp_c": 20,
+  "temp_f": 68.0,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 18,
-  "humidity_pct": 93.93,
+  "humidity_pct": 88.27,
   "wind_kmh": null,
-  "description": "Heavy Rain and Fog"
+  "description": "Light Rain"
  },
  "today_so_far": {
   "date_local": "2026-11-26",
-  "readings": 37,
+  "readings": 41,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -100,28 +100,6 @@
    "phrase": "already the 15th warmest November 26 high (tied) of 153 since 1874, warmest since 2025"
   },
   "forecast_highs": [
-   {
-    "period": "Thanksgiving Day",
-    "date": "2026-11-26",
-    "high_f": 72,
-    "would_rank": {
-     "value_f": 72,
-     "warm_rank": 12,
-     "cool_rank": 139,
-     "years": 153,
-     "first_year": 1874,
-     "tied_years": [
-      1895,
-      1897,
-      2025
-     ],
-     "standing": "warm",
-     "notable": true,
-     "since": 2025,
-     "record": false,
-     "phrase": "12th warmest November 26 high (tied) of 153 since 1874, warmest since 2025"
-    }
-   },
    {
     "period": "Friday",
     "date": "2026-11-27",
@@ -271,6 +249,30 @@
      "record": false,
      "phrase": "typical for December 2"
     }
+   },
+   {
+    "period": "Thursday",
+    "date": "2026-12-03",
+    "high_f": 64,
+    "would_rank": {
+     "value_f": 64,
+     "warm_rank": 26,
+     "cool_rank": 123,
+     "years": 153,
+     "first_year": 1874,
+     "tied_years": [
+      1890,
+      1912,
+      1933,
+      2015,
+      2022
+     ],
+     "standing": "warm",
+     "notable": true,
+     "since": 2023,
+     "record": false,
+     "phrase": "26th warmest December 3 high (tied) of 153 since 1874, warmest since 2023"
+    }
    }
   ]
  },
@@ -278,15 +280,6 @@
   "issued_utc": "2026-11-26T20:28:27Z",
   "grid": "AKQ/93,55",
   "periods": [
-   {
-    "name": "Thanksgiving Day",
-    "start": "2026-11-26T16:00:00-05:00",
-    "is_daytime": true,
-    "temp_f": 72,
-    "temp_c": 22.22,
-    "precip_chance_pct": 17,
-    "short_forecast": "Slight Chance Rain Showers"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-26T18:00:00-05:00",
@@ -403,19 +396,21 @@
     "temp_c": 6.11,
     "precip_chance_pct": 4,
     "short_forecast": "Partly Cloudy"
+   },
+   {
+    "name": "Thursday",
+    "start": "2026-12-03T06:00:00-05:00",
+    "is_daytime": true,
+    "temp_f": 64,
+    "temp_c": 17.78,
+    "precip_chance_pct": 4,
+    "short_forecast": "Mostly Sunny"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-26T20:28:27Z",
   "hours": [
-   {
-    "start": "2026-11-26T17:00:00-05:00",
-    "temp_f": 68,
-    "temp_c": 20.0,
-    "precip_chance_pct": 8,
-    "short_forecast": "Partly Sunny"
-   },
    {
     "start": "2026-11-26T18:00:00-05:00",
     "temp_f": 67,
@@ -742,6 +737,13 @@
     "start": "2026-11-28T16:00:00-05:00",
     "temp_f": 58,
     "temp_c": 14.44,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
+   },
+   {
+    "start": "2026-11-28T17:00:00-05:00",
+    "temp_f": 57,
+    "temp_c": 13.89,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
    }
