@@ -11,9 +11,9 @@
   "lon": -121.9242,
   "history": "Same site as the official San Jose record"
  },
- "as_of_utc": "2026-11-26T14:08:08Z",
+ "as_of_utc": "2026-11-26T15:08:04Z",
  "now": {
-  "time_utc": "2026-11-26T13:55:00Z",
+  "time_utc": "2026-11-26T14:50:00Z",
   "temp_c": 9,
   "temp_f": 48.2,
   "precision": "nearest whole \u00b0C",
@@ -24,7 +24,7 @@
  },
  "today_so_far": {
   "date_local": "2026-11-26",
-  "readings": 3,
+  "readings": 4,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -285,15 +285,6 @@
   "grid": "MTR/98,83",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-26T03:00:00-08:00",
-    "is_daytime": false,
-    "temp_f": 48,
-    "temp_c": 8.89,
-    "precip_chance_pct": 0,
-    "short_forecast": "Areas Of Fog"
-   },
-   {
     "name": "Thanksgiving Day",
     "start": "2026-11-26T06:00:00-08:00",
     "is_daytime": true,
@@ -303,7 +294,7 @@
     "short_forecast": "Areas Of Fog then Partly Sunny"
    },
    {
-    "name": "Thursday Night",
+    "name": "Tonight",
     "start": "2026-11-26T18:00:00-08:00",
     "is_daytime": false,
     "temp_f": 46,
@@ -409,19 +400,21 @@
     "temp_c": 16.67,
     "precip_chance_pct": 24,
     "short_forecast": "Slight Chance Light Rain"
+   },
+   {
+    "name": "Wednesday Night",
+    "start": "2026-12-02T18:00:00-08:00",
+    "is_daytime": false,
+    "temp_f": 46,
+    "temp_c": 7.78,
+    "precip_chance_pct": 19,
+    "short_forecast": "Mostly Cloudy then Slight Chance Light Rain"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-26T10:26:20Z",
   "hours": [
-   {
-    "start": "2026-11-26T06:00:00-08:00",
-    "temp_f": 48,
-    "temp_c": 8.89,
-    "precip_chance_pct": 0,
-    "short_forecast": "Areas Of Fog"
-   },
    {
     "start": "2026-11-26T07:00:00-08:00",
     "temp_f": 48,
@@ -748,6 +741,13 @@
     "start": "2026-11-28T05:00:00-08:00",
     "temp_f": 53,
     "temp_c": 11.67,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "start": "2026-11-28T06:00:00-08:00",
+    "temp_f": 52,
+    "temp_c": 11.11,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Cloudy"
    }

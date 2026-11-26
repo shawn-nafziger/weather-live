@@ -11,20 +11,20 @@
   "lon": -86.2816,
   "history": "Same site as the official Indianapolis record"
  },
- "as_of_utc": "2026-11-26T14:08:08Z",
+ "as_of_utc": "2026-11-26T15:08:04Z",
  "now": {
-  "time_utc": "2026-11-26T13:55:00Z",
+  "time_utc": "2026-11-26T14:50:00Z",
   "temp_c": 3,
   "temp_f": 37.4,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 2,
   "humidity_pct": 93.14,
   "wind_kmh": null,
-  "description": "Light Rain and Fog/Mist"
+  "description": "Light Rain"
  },
  "today_so_far": {
   "date_local": "2026-11-26",
-  "readings": 4,
+  "readings": 5,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -88,21 +88,27 @@
    {
     "period": "Thanksgiving Day",
     "date": "2026-11-26",
-    "high_f": 43,
+    "high_f": 41,
     "would_rank": {
-     "value_f": 43,
-     "warm_rank": 89,
-     "cool_rank": 65,
+     "value_f": 41,
+     "warm_rank": 99,
+     "cool_rank": 49,
      "years": 156,
      "first_year": 1871,
      "tied_years": [
-      1872,
-      1919,
-      2024
+      1873,
+      1874,
+      1878,
+      1885,
+      1893,
+      1939,
+      1946,
+      1992,
+      2007
      ],
      "standing": "cool",
      "notable": false,
-     "since": 2024,
+     "since": 2023,
      "record": false,
      "phrase": "typical for November 26"
     }
@@ -253,15 +259,15 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-26T12:45:22Z",
+  "issued_utc": "2026-11-26T14:56:55Z",
   "grid": "IND/54,67",
   "periods": [
    {
     "name": "Thanksgiving Day",
-    "start": "2026-11-26T08:00:00-05:00",
+    "start": "2026-11-26T10:00:00-05:00",
     "is_daytime": true,
-    "temp_f": 43,
-    "temp_c": 6.11,
+    "temp_f": 41,
+    "temp_c": 5.0,
     "precip_chance_pct": 100,
     "short_forecast": "Light Rain"
    },
@@ -385,15 +391,8 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-26T12:45:22Z",
+  "issued_utc": "2026-11-26T13:45:33Z",
   "hours": [
-   {
-    "start": "2026-11-26T09:00:00-05:00",
-    "temp_f": 39,
-    "temp_c": 3.89,
-    "precip_chance_pct": 99,
-    "short_forecast": "Light Rain"
-   },
    {
     "start": "2026-11-26T10:00:00-05:00",
     "temp_f": 40,
@@ -722,6 +721,13 @@
     "temp_c": 0.0,
     "precip_chance_pct": 0,
     "short_forecast": "Partly Sunny"
+   },
+   {
+    "start": "2026-11-28T09:00:00-05:00",
+    "temp_f": 35,
+    "temp_c": 1.67,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Sunny"
    }
   ]
  },
