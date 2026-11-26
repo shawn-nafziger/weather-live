@@ -11,20 +11,20 @@
   "lon": -87.9044,
   "history": "Same station as the official Chicago record (ThreadEx, O'Hare since 1980)"
  },
- "as_of_utc": "2026-11-26T00:08:10Z",
+ "as_of_utc": "2026-11-26T01:08:01Z",
  "now": {
-  "time_utc": "2026-11-25T23:35:00Z",
+  "time_utc": "2026-11-26T00:25:00Z",
   "temp_c": 5,
   "temp_f": 41.0,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": -1,
   "humidity_pct": 65.17,
   "wind_kmh": null,
-  "description": "Mostly Cloudy"
+  "description": "Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-25",
-  "readings": 13,
+  "readings": 14,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -92,29 +92,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-25",
-    "high_f": 41,
-    "would_rank": {
-     "value_f": 41,
-     "warm_rank": 88,
-     "cool_rank": 64,
-     "years": 155,
-     "first_year": 1872,
-     "tied_years": [
-      1885,
-      1887,
-      1894,
-      1957
-     ],
-     "standing": "cool",
-     "notable": false,
-     "since": 2023,
-     "record": false,
-     "phrase": "typical for November 25"
-    }
-   },
    {
     "period": "Thanksgiving Day",
     "date": "2026-11-26",
@@ -251,6 +228,26 @@
      "record": false,
      "phrase": "27th warmest December 1 high (tied) of 155 since 1872, warmest since 2021"
     }
+   },
+   {
+    "period": "Wednesday",
+    "date": "2026-12-02",
+    "high_f": 51,
+    "would_rank": {
+     "value_f": 51,
+     "warm_rank": 26,
+     "cool_rank": 129,
+     "years": 155,
+     "first_year": 1872,
+     "tied_years": [
+      1972
+     ],
+     "standing": "warm",
+     "notable": true,
+     "since": 2022,
+     "record": false,
+     "phrase": "26th warmest December 2 high (tied) of 155 since 1872, warmest since 2022"
+    }
    }
   ]
  },
@@ -258,15 +255,6 @@
   "issued_utc": "2026-11-25T21:35:59Z",
   "grid": "LOT/66,77",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-25T15:00:00-06:00",
-    "is_daytime": true,
-    "temp_f": 41,
-    "temp_c": 5.0,
-    "precip_chance_pct": 7,
-    "short_forecast": "Cloudy"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-25T18:00:00-06:00",
@@ -383,19 +371,21 @@
     "temp_c": 0.0,
     "precip_chance_pct": 5,
     "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "name": "Wednesday",
+    "start": "2026-12-02T06:00:00-06:00",
+    "is_daytime": true,
+    "temp_f": 51,
+    "temp_c": 10.56,
+    "precip_chance_pct": 1,
+    "short_forecast": "Partly Sunny"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-25T21:35:59Z",
   "hours": [
-   {
-    "start": "2026-11-25T18:00:00-06:00",
-    "temp_f": 40,
-    "temp_c": 4.44,
-    "precip_chance_pct": 1,
-    "short_forecast": "Cloudy"
-   },
    {
     "start": "2026-11-25T19:00:00-06:00",
     "temp_f": 40,
@@ -724,6 +714,13 @@
     "temp_c": 7.78,
     "precip_chance_pct": 3,
     "short_forecast": "Mostly Sunny"
+   },
+   {
+    "start": "2026-11-27T18:00:00-06:00",
+    "temp_f": 44,
+    "temp_c": 6.67,
+    "precip_chance_pct": 0,
+    "short_forecast": "Partly Cloudy"
    }
   ]
  },
