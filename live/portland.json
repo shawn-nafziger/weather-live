@@ -11,34 +11,29 @@
   "lon": -122.6092,
   "history": "Same site as the official Portland record"
  },
- "as_of_utc": "2026-11-26T17:07:59Z",
+ "as_of_utc": "2026-11-26T18:08:03Z",
  "now": {
-  "time_utc": "2026-11-26T16:35:00Z",
-  "temp_c": 12,
-  "temp_f": 53.6,
+  "time_utc": "2026-11-26T17:35:00Z",
+  "temp_c": 13,
+  "temp_f": 55.4,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 10,
-  "humidity_pct": 87.57,
-  "wind_kmh": 12.96,
-  "description": "Clear"
+  "dewpoint_c": 11,
+  "humidity_pct": 87.66,
+  "wind_kmh": 22.21,
+  "description": "Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-26",
-  "readings": 7,
+  "readings": 9,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 11.1,
-  "high_f": 52.0,
-  "high_time_utc": "2026-11-26T08:53:00Z",
+  "high_c": 12.8,
+  "high_f": 55.0,
+  "high_time_utc": "2026-11-26T17:22:00Z",
   "low_c": 10,
   "low_f": 50.0,
   "low_time_utc": "2026-11-26T09:53:00Z",
-  "peak_between_reports": {
-   "at_least_f": 54.5,
-   "about_f": 55.4,
-   "time_utc": "2026-11-26T12:10:00Z"
-  },
   "dip_between_reports": {
    "at_most_f": 49.1,
    "about_f": 48.2,
@@ -87,6 +82,23 @@
     "record": false,
     "phrase": "11th warmest November 25 low (tied) of 87 since 1940, warmest since 2016"
    }
+  },
+  "today_high_so_far": {
+   "value_f": 55,
+   "warm_rank": 11,
+   "cool_rank": 74,
+   "years": 87,
+   "first_year": 1940,
+   "tied_years": [
+    1959,
+    1963,
+    2017
+   ],
+   "standing": "warm",
+   "notable": true,
+   "since": 2017,
+   "record": false,
+   "phrase": "already the 11th warmest November 26 high (tied) of 87 since 1940, warmest since 2017"
   },
   "forecast_highs": [
    {
@@ -269,17 +281,17 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-26T15:41:11Z",
+  "issued_utc": "2026-11-26T17:41:09Z",
   "grid": "PQR/116,107",
   "periods": [
    {
     "name": "Thanksgiving Day",
-    "start": "2026-11-26T08:00:00-08:00",
+    "start": "2026-11-26T09:00:00-08:00",
     "is_daytime": true,
     "temp_f": 56,
     "temp_c": 13.33,
     "precip_chance_pct": 84,
-    "short_forecast": "Rain"
+    "short_forecast": "Light Rain"
    },
    {
     "name": "Tonight",
@@ -403,13 +415,6 @@
  "hourly": {
   "issued_utc": "2026-11-26T16:41:16Z",
   "hours": [
-   {
-    "start": "2026-11-26T09:00:00-08:00",
-    "temp_f": 53,
-    "temp_c": 11.67,
-    "precip_chance_pct": 57,
-    "short_forecast": "Light Rain Likely"
-   },
    {
     "start": "2026-11-26T10:00:00-08:00",
     "temp_f": 54,
@@ -734,6 +739,13 @@
    },
    {
     "start": "2026-11-28T08:00:00-08:00",
+    "temp_f": 45,
+    "temp_c": 7.22,
+    "precip_chance_pct": 15,
+    "short_forecast": "Slight Chance Light Rain"
+   },
+   {
+    "start": "2026-11-28T09:00:00-08:00",
     "temp_f": 45,
     "temp_c": 7.22,
     "precip_chance_pct": 15,
