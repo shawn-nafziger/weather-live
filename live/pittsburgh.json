@@ -11,20 +11,20 @@
   "lon": -80.2145,
   "history": "Same site as the official Pittsburgh record"
  },
- "as_of_utc": "2026-11-26T03:07:53Z",
+ "as_of_utc": "2026-11-26T04:07:54Z",
  "now": {
-  "time_utc": "2026-11-26T02:35:00Z",
+  "time_utc": "2026-11-26T03:55:00Z",
   "temp_c": 4,
   "temp_f": 39.2,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": -1,
   "humidity_pct": 69.89,
-  "wind_kmh": 14.83,
-  "description": "Mostly Cloudy"
+  "wind_kmh": 16.67,
+  "description": "Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-25",
-  "readings": 17,
+  "readings": 18,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -260,17 +260,17 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-26T00:41:23Z",
+  "issued_utc": "2026-11-26T04:01:17Z",
   "grid": "PBZ/70,67",
   "periods": [
    {
     "name": "Tonight",
-    "start": "2026-11-25T20:00:00-05:00",
+    "start": "2026-11-25T23:00:00-05:00",
     "is_daytime": false,
     "temp_f": 36,
     "temp_c": 2.22,
-    "precip_chance_pct": 68,
-    "short_forecast": "Cloudy then Rain Likely"
+    "precip_chance_pct": 52,
+    "short_forecast": "Cloudy then Chance Light Rain"
    },
    {
     "name": "Thanksgiving Day",
@@ -278,17 +278,17 @@
     "is_daytime": true,
     "temp_f": 46,
     "temp_c": 7.78,
-    "precip_chance_pct": 100,
-    "short_forecast": "Heavy Rain"
+    "precip_chance_pct": 99,
+    "short_forecast": "Rain"
    },
    {
     "name": "Thursday Night",
     "start": "2026-11-26T18:00:00-05:00",
     "is_daytime": false,
-    "temp_f": 37,
-    "temp_c": 2.78,
-    "precip_chance_pct": 99,
-    "short_forecast": "Rain"
+    "temp_f": 38,
+    "temp_c": 3.33,
+    "precip_chance_pct": 100,
+    "short_forecast": "Light Rain"
    },
    {
     "name": "Friday",
@@ -296,17 +296,17 @@
     "is_daytime": true,
     "temp_f": 44,
     "temp_c": 6.67,
-    "precip_chance_pct": 97,
-    "short_forecast": "Rain"
+    "precip_chance_pct": 94,
+    "short_forecast": "Light Rain"
    },
    {
     "name": "Friday Night",
     "start": "2026-11-27T18:00:00-05:00",
     "is_daytime": false,
-    "temp_f": 34,
-    "temp_c": 1.11,
-    "precip_chance_pct": 97,
-    "short_forecast": "Light Rain"
+    "temp_f": 35,
+    "temp_c": 1.67,
+    "precip_chance_pct": 73,
+    "short_forecast": "Light Rain Likely"
    },
    {
     "name": "Saturday",
@@ -314,7 +314,7 @@
     "is_daytime": true,
     "temp_f": 46,
     "temp_c": 7.78,
-    "precip_chance_pct": 25,
+    "precip_chance_pct": 40,
     "short_forecast": "Chance Light Rain then Partly Sunny"
    },
    {
@@ -394,13 +394,6 @@
  "hourly": {
   "issued_utc": "2026-11-26T00:41:23Z",
   "hours": [
-   {
-    "start": "2026-11-25T22:00:00-05:00",
-    "temp_f": 42,
-    "temp_c": 5.56,
-    "precip_chance_pct": 1,
-    "short_forecast": "Cloudy"
-   },
    {
     "start": "2026-11-25T23:00:00-05:00",
     "temp_f": 40,
@@ -727,6 +720,13 @@
     "start": "2026-11-27T21:00:00-05:00",
     "temp_f": 41,
     "temp_c": 5.0,
+    "precip_chance_pct": 69,
+    "short_forecast": "Light Rain Likely"
+   },
+   {
+    "start": "2026-11-27T22:00:00-05:00",
+    "temp_f": 40,
+    "temp_c": 4.44,
     "precip_chance_pct": 69,
     "short_forecast": "Light Rain Likely"
    }
