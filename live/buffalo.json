@@ -11,29 +11,29 @@
   "lon": -78.736,
   "history": "Same site as the official Buffalo record"
  },
- "as_of_utc": "2026-11-26T07:07:56Z",
+ "as_of_utc": "2026-11-26T08:07:53Z",
  "now": {
-  "time_utc": "2026-11-26T06:55:00Z",
+  "time_utc": "2026-11-26T07:45:00Z",
   "temp_c": 0,
   "temp_f": 32.0,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": -5,
-  "humidity_pct": 69.06,
-  "wind_kmh": 18.5,
+  "dewpoint_c": -6,
+  "humidity_pct": 64.01,
+  "wind_kmh": 16.67,
   "description": ""
  },
  "today_so_far": {
   "date_local": "2026-11-26",
-  "readings": 1,
+  "readings": 2,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
   "high_c": 0.6,
   "high_f": 33.1,
   "high_time_utc": "2026-11-26T05:54:00Z",
-  "low_c": 0.6,
-  "low_f": 33.1,
-  "low_time_utc": "2026-11-26T05:54:00Z",
+  "low_c": 0,
+  "low_f": 32.0,
+  "low_time_utc": "2026-11-26T06:54:00Z",
   "dip_between_reports": {
    "at_most_f": 31.1,
    "about_f": 30.2,
@@ -246,12 +246,12 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-26T05:57:32Z",
+  "issued_utc": "2026-11-26T06:22:22Z",
   "grid": "BUF/40,50",
   "periods": [
    {
     "name": "Overnight",
-    "start": "2026-11-26T01:00:00-05:00",
+    "start": "2026-11-26T02:00:00-05:00",
     "is_daytime": false,
     "temp_f": 31,
     "temp_c": -0.56,
@@ -327,7 +327,7 @@
     "is_daytime": false,
     "temp_f": 40,
     "temp_c": 4.44,
-    "precip_chance_pct": 94,
+    "precip_chance_pct": 93,
     "short_forecast": "Rain Showers"
    },
    {
@@ -373,20 +373,13 @@
     "temp_f": 49,
     "temp_c": 9.44,
     "precip_chance_pct": 5,
-    "short_forecast": "Partly Sunny"
+    "short_forecast": "Mostly Cloudy"
    }
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-26T05:57:32Z",
+  "issued_utc": "2026-11-26T06:22:22Z",
   "hours": [
-   {
-    "start": "2026-11-26T02:00:00-05:00",
-    "temp_f": 32,
-    "temp_c": 0.0,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "start": "2026-11-26T03:00:00-05:00",
     "temp_f": 31,
@@ -713,6 +706,13 @@
     "start": "2026-11-28T01:00:00-05:00",
     "temp_f": 39,
     "temp_c": 3.89,
+    "precip_chance_pct": 57,
+    "short_forecast": "Rain Showers Likely"
+   },
+   {
+    "start": "2026-11-28T02:00:00-05:00",
+    "temp_f": 38,
+    "temp_c": 3.33,
     "precip_chance_pct": 57,
     "short_forecast": "Rain Showers Likely"
    }
