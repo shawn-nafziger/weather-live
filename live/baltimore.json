@@ -11,16 +11,16 @@
   "lon": -76.684,
   "history": "Same site as the official Baltimore record"
  },
- "as_of_utc": "2026-11-26T11:07:55Z",
+ "as_of_utc": "2026-11-26T12:08:00Z",
  "now": {
-  "time_utc": "2026-11-26T10:40:00Z",
+  "time_utc": "2026-11-26T11:45:00Z",
   "temp_c": 8,
   "temp_f": 46.4,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 7,
   "humidity_pct": 93.4,
   "wind_kmh": null,
-  "description": "Light Rain"
+  "description": "Light Rain and Fog/Mist"
  },
  "today_so_far": {
   "date_local": "2026-11-26",
@@ -41,51 +41,58 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-24",
-   "is_yesterday": false,
-   "high_f": 51,
-   "low_f": 36,
+   "date": "2026-11-25",
+   "is_yesterday": true,
+   "high_f": 47,
+   "low_f": 34,
    "high_rank": {
-    "value_f": 51,
-    "warm_rank": 86,
-    "cool_rank": 66,
-    "years": 154,
-    "first_year": 1872,
-    "tied_years": [
-     1906,
-     1920,
-     1948
-    ],
-    "standing": "cool",
-    "notable": false,
-    "since": 2021,
-    "record": false,
-    "phrase": "typical for November 24"
-   },
-   "low_rank": {
-    "value_f": 36,
-    "warm_rank": 62,
-    "cool_rank": 83,
+    "value_f": 47,
+    "warm_rank": 94,
+    "cool_rank": 54,
     "years": 155,
     "first_year": 1872,
     "tied_years": [
-     1874,
-     1882,
-     1894,
-     1907,
-     1915,
-     1932,
-     1941,
-     1951,
-     1953,
-     2006,
-     2012
+     1873,
+     1924,
+     1928,
+     1944,
+     1945,
+     1954,
+     1975,
+     1989
+    ],
+    "standing": "cool",
+    "notable": false,
+    "since": 2023,
+    "record": false,
+    "phrase": "typical for November 25"
+   },
+   "low_rank": {
+    "value_f": 34,
+    "warm_rank": 68,
+    "cool_rank": 75,
+    "years": 155,
+    "first_year": 1872,
+    "tied_years": [
+     1885,
+     1886,
+     1899,
+     1911,
+     1926,
+     1934,
+     1935,
+     1939,
+     1949,
+     1974,
+     1978,
+     1983,
+     2019
     ],
     "standing": "warm",
     "notable": false,
-    "since": 2024,
+    "since": 2025,
     "record": false,
-    "phrase": "typical for November 24"
+    "phrase": "typical for November 25"
    }
   },
   "forecast_highs": [
@@ -262,15 +269,6 @@
   "grid": "LWX/107,85",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-26T04:00:00-05:00",
-    "is_daytime": false,
-    "temp_f": 45,
-    "temp_c": 7.22,
-    "precip_chance_pct": 96,
-    "short_forecast": "Light Rain"
-   },
-   {
     "name": "Thanksgiving Day",
     "start": "2026-11-26T06:00:00-05:00",
     "is_daytime": true,
@@ -280,7 +278,7 @@
     "short_forecast": "Rain"
    },
    {
-    "name": "Thursday Night",
+    "name": "Tonight",
     "start": "2026-11-26T18:00:00-05:00",
     "is_daytime": false,
     "temp_f": 46,
@@ -386,19 +384,21 @@
     "temp_c": 13.33,
     "precip_chance_pct": 9,
     "short_forecast": "Partly Sunny"
+   },
+   {
+    "name": "Wednesday Night",
+    "start": "2026-12-02T18:00:00-05:00",
+    "is_daytime": false,
+    "temp_f": 35,
+    "temp_c": 1.67,
+    "precip_chance_pct": 8,
+    "short_forecast": "Partly Cloudy"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-26T08:52:41Z",
   "hours": [
-   {
-    "start": "2026-11-26T06:00:00-05:00",
-    "temp_f": 47,
-    "temp_c": 8.33,
-    "precip_chance_pct": 97,
-    "short_forecast": "Light Rain"
-   },
    {
     "start": "2026-11-26T07:00:00-05:00",
     "temp_f": 47,
@@ -727,6 +727,13 @@
     "temp_c": 3.89,
     "precip_chance_pct": 0,
     "short_forecast": "Partly Cloudy"
+   },
+   {
+    "start": "2026-11-28T06:00:00-05:00",
+    "temp_f": 40,
+    "temp_c": 4.44,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Sunny"
    }
   ]
  },

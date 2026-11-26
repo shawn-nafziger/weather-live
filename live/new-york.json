@@ -11,7 +11,7 @@
   "lon": -73.9667,
   "history": "Same site as the official New York record"
  },
- "as_of_utc": "2026-11-26T11:07:55Z",
+ "as_of_utc": "2026-11-26T12:08:00Z",
  "now": {
   "time_utc": "2026-11-26T09:51:00Z",
   "temp_c": 6.1,
@@ -41,50 +41,52 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-24",
-   "is_yesterday": false,
-   "high_f": 51,
-   "low_f": 39,
+   "date": "2026-11-25",
+   "is_yesterday": true,
+   "high_f": 45,
+   "low_f": 35,
    "high_rank": {
-    "value_f": 51,
-    "warm_rank": 61,
-    "cool_rank": 91,
+    "value_f": 45,
+    "warm_rank": 95,
+    "cool_rank": 60,
     "years": 158,
     "first_year": 1869,
     "tied_years": [
-     1872,
-     1924,
-     1932,
-     1955,
-     1984,
-     1990,
-     2023
+     1886,
+     1899,
+     1907,
+     1978
     ],
-    "standing": "warm",
+    "standing": "cool",
     "notable": false,
-    "since": 2025,
+    "since": 2023,
     "record": false,
-    "phrase": "typical for November 24"
+    "phrase": "typical for November 25"
    },
    "low_rank": {
-    "value_f": 39,
-    "warm_rank": 57,
-    "cool_rank": 96,
+    "value_f": 35,
+    "warm_rank": 80,
+    "cool_rank": 68,
     "years": 158,
     "first_year": 1869,
     "tied_years": [
+     1879,
+     1886,
      1894,
-     1906,
-     1907,
-     1911,
-     1913,
-     1940
+     1897,
+     1899,
+     1912,
+     1937,
+     1959,
+     1963,
+     1983,
+     2004
     ],
-    "standing": "warm",
+    "standing": "cool",
     "notable": false,
-    "since": 2025,
+    "since": 2023,
     "record": false,
-    "phrase": "typical for November 24"
+    "phrase": "typical for November 25"
    }
   },
   "forecast_highs": [
@@ -261,15 +263,6 @@
   "grid": "OKX/34,45",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-26T05:00:00-05:00",
-    "is_daytime": false,
-    "temp_f": 43,
-    "temp_c": 6.11,
-    "precip_chance_pct": 1,
-    "short_forecast": "Cloudy"
-   },
-   {
     "name": "Thanksgiving Day",
     "start": "2026-11-26T06:00:00-05:00",
     "is_daytime": true,
@@ -279,7 +272,7 @@
     "short_forecast": "Heavy Rain"
    },
    {
-    "name": "Thursday Night",
+    "name": "Tonight",
     "start": "2026-11-26T18:00:00-05:00",
     "is_daytime": false,
     "temp_f": 53,
@@ -385,19 +378,21 @@
     "temp_c": 11.67,
     "precip_chance_pct": 9,
     "short_forecast": "Partly Sunny"
+   },
+   {
+    "name": "Wednesday Night",
+    "start": "2026-12-02T18:00:00-05:00",
+    "is_daytime": false,
+    "temp_f": 42,
+    "temp_c": 5.56,
+    "precip_chance_pct": 9,
+    "short_forecast": "Mostly Cloudy"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-26T09:37:47Z",
   "hours": [
-   {
-    "start": "2026-11-26T06:00:00-05:00",
-    "temp_f": 43,
-    "temp_c": 6.11,
-    "precip_chance_pct": 1,
-    "short_forecast": "Cloudy"
-   },
    {
     "start": "2026-11-26T07:00:00-05:00",
     "temp_f": 45,
@@ -726,6 +721,13 @@
     "temp_c": 8.33,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "start": "2026-11-28T06:00:00-05:00",
+    "temp_f": 47,
+    "temp_c": 8.33,
+    "precip_chance_pct": 0,
+    "short_forecast": "Partly Sunny"
    }
   ]
  },

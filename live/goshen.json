@@ -11,14 +11,14 @@
   "lon": -85.7867,
   "history": "Provisional: Goshen Municipal Airport. The long record (GOSHEN 3SW) is a once-a-day volunteer station, so today's readings and the record come from different stations (question D2)"
  },
- "as_of_utc": "2026-11-26T11:07:55Z",
+ "as_of_utc": "2026-11-26T12:08:00Z",
  "now": {
-  "time_utc": "2026-11-26T10:45:00Z",
+  "time_utc": "2026-11-26T11:55:00Z",
   "temp_c": 2,
   "temp_f": 35.6,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": -1,
-  "humidity_pct": 80.52,
+  "dewpoint_c": 0,
+  "humidity_pct": 86.6,
   "wind_kmh": 20.38,
   "description": "Cloudy"
  },
@@ -46,45 +46,45 @@
   "available": true,
   "rank_today": false,
   "latest_final": {
-   "date": "2026-11-24",
-   "is_yesterday": false,
-   "high_f": 38,
-   "low_f": 28,
+   "date": "2026-11-25",
+   "is_yesterday": true,
+   "high_f": 44,
+   "low_f": 23,
    "high_rank": {
-    "value_f": 38,
-    "warm_rank": 81,
-    "cool_rank": 26,
-    "years": 109,
-    "first_year": 1914,
-    "tied_years": [
-     1934,
-     1995,
-     2010
-    ],
-    "standing": "cool",
-    "notable": false,
-    "since": 2013,
-    "record": false,
-    "phrase": "typical for November 24"
-   },
-   "low_rank": {
-    "value_f": 28,
+    "value_f": 44,
     "warm_rank": 50,
     "cool_rank": 57,
     "years": 111,
     "first_year": 1914,
     "tied_years": [
-     1967,
+     1979,
      1987,
-     1988,
-     2017,
-     2025
+     1993,
+     1995,
+     1999
     ],
     "standing": "warm",
     "notable": false,
     "since": 2025,
     "record": false,
-    "phrase": "typical for November 24"
+    "phrase": "typical for November 25"
+   },
+   "low_rank": {
+    "value_f": 23,
+    "warm_rank": 81,
+    "cool_rank": 27,
+    "years": 110,
+    "first_year": 1914,
+    "tied_years": [
+     1949,
+     1957,
+     2003
+    ],
+    "standing": "cool",
+    "notable": false,
+    "since": 2023,
+    "record": false,
+    "phrase": "typical for November 25"
    }
   },
   "note": "Today's readings come from a different station than this record, so today and the forecast aren't ranked against it."
@@ -95,7 +95,7 @@
   "periods": [
    {
     "name": "Thanksgiving Day",
-    "start": "2026-11-26T06:00:00-05:00",
+    "start": "2026-11-26T07:00:00-05:00",
     "is_daytime": true,
     "temp_f": 45,
     "temp_c": 7.22,
@@ -224,13 +224,6 @@
  "hourly": {
   "issued_utc": "2026-11-26T10:59:55Z",
   "hours": [
-   {
-    "start": "2026-11-26T06:00:00-05:00",
-    "temp_f": 34,
-    "temp_c": 1.11,
-    "precip_chance_pct": 2,
-    "short_forecast": "Cloudy"
-   },
    {
     "start": "2026-11-26T07:00:00-05:00",
     "temp_f": 35,
@@ -559,6 +552,13 @@
     "temp_c": -1.11,
     "precip_chance_pct": 2,
     "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "start": "2026-11-28T06:00:00-05:00",
+    "temp_f": 29,
+    "temp_c": -1.67,
+    "precip_chance_pct": 2,
+    "short_forecast": "Partly Sunny"
    }
   ]
  },

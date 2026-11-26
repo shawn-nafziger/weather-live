@@ -11,20 +11,20 @@
   "lon": -84.6723,
   "history": "Same site as the official Cincinnati record"
  },
- "as_of_utc": "2026-11-26T11:07:55Z",
+ "as_of_utc": "2026-11-26T12:08:00Z",
  "now": {
-  "time_utc": "2026-11-26T10:45:00Z",
+  "time_utc": "2026-11-26T11:55:00Z",
   "temp_c": 5,
   "temp_f": 41.0,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 3,
-  "humidity_pct": 86.9,
+  "dewpoint_c": 4,
+  "humidity_pct": 93.25,
   "wind_kmh": null,
   "description": "Rain and Fog/Mist"
  },
  "today_so_far": {
   "date_local": "2026-11-26",
-  "readings": 2,
+  "readings": 4,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -46,54 +46,48 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-24",
-   "is_yesterday": false,
-   "high_f": 43,
-   "low_f": 30,
+   "date": "2026-11-25",
+   "is_yesterday": true,
+   "high_f": 50,
+   "low_f": 31,
    "high_rank": {
-    "value_f": 43,
-    "warm_rank": 99,
-    "cool_rank": 46,
+    "value_f": 50,
+    "warm_rank": 73,
+    "cool_rank": 79,
     "years": 155,
     "first_year": 1872,
     "tied_years": [
-     1891,
-     1897,
-     1901,
-     1933,
-     1939,
-     1942,
-     1945,
-     1967,
-     1981,
-     1986,
-     2023
+     1889,
+     1902,
+     1921,
+     2000
+    ],
+    "standing": "warm",
+    "notable": false,
+    "since": 2025,
+    "record": false,
+    "phrase": "typical for November 25"
+   },
+   "low_rank": {
+    "value_f": 31,
+    "warm_rank": 76,
+    "cool_rank": 73,
+    "years": 155,
+    "first_year": 1872,
+    "tied_years": [
+     1885,
+     1894,
+     1926,
+     1931,
+     1944,
+     1968,
+     2014
     ],
     "standing": "cool",
     "notable": false,
     "since": 2023,
     "record": false,
-    "phrase": "typical for November 24"
-   },
-   "low_rank": {
-    "value_f": 30,
-    "warm_rank": 77,
-    "cool_rank": 73,
-    "years": 155,
-    "first_year": 1872,
-    "tied_years": [
-     1888,
-     1915,
-     1930,
-     1944,
-     1947,
-     2010
-    ],
-    "standing": "cool",
-    "notable": false,
-    "since": 2021,
-    "record": false,
-    "phrase": "typical for November 24"
+    "phrase": "typical for November 25"
    }
   },
   "forecast_highs": [
@@ -258,15 +252,6 @@
   "grid": "ILN/30,35",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-26T04:00:00-05:00",
-    "is_daytime": false,
-    "temp_f": 40,
-    "temp_c": 4.44,
-    "precip_chance_pct": 85,
-    "short_forecast": "Light Rain"
-   },
-   {
     "name": "Thanksgiving Day",
     "start": "2026-11-26T06:00:00-05:00",
     "is_daytime": true,
@@ -276,7 +261,7 @@
     "short_forecast": "Rain"
    },
    {
-    "name": "Thursday Night",
+    "name": "Tonight",
     "start": "2026-11-26T18:00:00-05:00",
     "is_daytime": false,
     "temp_f": 37,
@@ -382,19 +367,21 @@
     "temp_c": 13.89,
     "precip_chance_pct": 2,
     "short_forecast": "Mostly Sunny"
+   },
+   {
+    "name": "Wednesday Night",
+    "start": "2026-12-02T18:00:00-05:00",
+    "is_daytime": false,
+    "temp_f": 42,
+    "temp_c": 5.56,
+    "precip_chance_pct": 3,
+    "short_forecast": "Partly Cloudy"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-26T09:00:37Z",
   "hours": [
-   {
-    "start": "2026-11-26T06:00:00-05:00",
-    "temp_f": 41,
-    "temp_c": 5.0,
-    "precip_chance_pct": 92,
-    "short_forecast": "Light Rain"
-   },
    {
     "start": "2026-11-26T07:00:00-05:00",
     "temp_f": 42,
@@ -723,6 +710,13 @@
     "temp_c": 1.67,
     "precip_chance_pct": 1,
     "short_forecast": "Partly Cloudy"
+   },
+   {
+    "start": "2026-11-28T06:00:00-05:00",
+    "temp_f": 34,
+    "temp_c": 1.11,
+    "precip_chance_pct": 1,
+    "short_forecast": "Mostly Sunny"
    }
   ]
  },

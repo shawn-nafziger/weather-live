@@ -11,15 +11,15 @@
   "lon": -122.3136,
   "history": "Same station as the official Seattle record (Sea-Tac)"
  },
- "as_of_utc": "2026-11-26T11:07:55Z",
+ "as_of_utc": "2026-11-26T12:08:00Z",
  "now": {
-  "time_utc": "2026-11-26T10:40:00Z",
+  "time_utc": "2026-11-26T11:55:00Z",
   "temp_c": 10,
   "temp_f": 50.0,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 8,
-  "humidity_pct": 87.38,
-  "wind_kmh": 11.12,
+  "dewpoint_c": 9,
+  "humidity_pct": 93.5,
+  "wind_kmh": null,
   "description": "Rain and Fog/Mist"
  },
  "today_so_far": {
@@ -51,10 +51,10 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-24",
-   "is_yesterday": false,
+   "date": "2026-11-25",
+   "is_yesterday": true,
    "high_f": 60,
-   "low_f": 44,
+   "low_f": 49,
    "high_rank": {
     "value_f": 60,
     "warm_rank": 1,
@@ -66,24 +66,23 @@
     "notable": true,
     "since": null,
     "record": true,
-    "phrase": "the warmest November 24 high on record (82 years since 1945)"
+    "phrase": "the warmest November 25 high on record (82 years since 1945)"
    },
    "low_rank": {
-    "value_f": 44,
-    "warm_rank": 12,
-    "cool_rank": 68,
+    "value_f": 49,
+    "warm_rank": 1,
+    "cool_rank": 80,
     "years": 82,
     "first_year": 1945,
     "tied_years": [
-     1991,
-     1999,
-     2019
+     1954,
+     2014
     ],
     "standing": "warm",
     "notable": true,
-    "since": 2019,
-    "record": false,
-    "phrase": "12th warmest November 24 low (tied) of 82 since 1945, warmest since 2019"
+    "since": 2014,
+    "record": true,
+    "phrase": "ties the record for warmest November 25 low on record (82 years since 1945)"
    }
   },
   "forecast_highs": [
@@ -399,13 +398,6 @@
  "hourly": {
   "issued_utc": "2026-11-26T06:26:32Z",
   "hours": [
-   {
-    "start": "2026-11-26T03:00:00-08:00",
-    "temp_f": 52,
-    "temp_c": 11.11,
-    "precip_chance_pct": 100,
-    "short_forecast": "Rain"
-   },
    {
     "start": "2026-11-26T04:00:00-08:00",
     "temp_f": 52,
@@ -730,6 +722,13 @@
    },
    {
     "start": "2026-11-28T02:00:00-08:00",
+    "temp_f": 43,
+    "temp_c": 6.11,
+    "precip_chance_pct": 7,
+    "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "start": "2026-11-28T03:00:00-08:00",
     "temp_f": 43,
     "temp_c": 6.11,
     "precip_chance_pct": 7,

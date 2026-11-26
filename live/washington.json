@@ -11,16 +11,16 @@
   "lon": -77.0342,
   "history": "Same site as the official Washington record"
  },
- "as_of_utc": "2026-11-26T11:07:55Z",
+ "as_of_utc": "2026-11-26T12:08:00Z",
  "now": {
-  "time_utc": "2026-11-26T10:40:00Z",
+  "time_utc": "2026-11-26T11:45:00Z",
   "temp_c": 9,
   "temp_f": 48.2,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 7,
   "humidity_pct": 87.29,
   "wind_kmh": null,
-  "description": "Light Rain and Fog/Mist"
+  "description": "Light Rain"
  },
  "today_so_far": {
   "date_local": "2026-11-26",
@@ -41,57 +41,49 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-24",
-   "is_yesterday": false,
-   "high_f": 53,
-   "low_f": 40,
+   "date": "2026-11-25",
+   "is_yesterday": true,
+   "high_f": 48,
+   "low_f": 36,
    "high_rank": {
-    "value_f": 53,
-    "warm_rank": 71,
-    "cool_rank": 73,
+    "value_f": 48,
+    "warm_rank": 93,
+    "cool_rank": 60,
     "years": 155,
     "first_year": 1872,
     "tied_years": [
-     1879,
-     1906,
-     1926,
-     1953,
-     1962,
-     1965,
-     1975,
-     1984,
-     1996,
-     2008,
-     2009,
-     2017
+     1901,
+     1929,
+     2008
     ],
-    "standing": "warm",
+    "standing": "cool",
     "notable": false,
-    "since": 2025,
+    "since": 2023,
     "record": false,
-    "phrase": "typical for November 24"
+    "phrase": "typical for November 25"
    },
    "low_rank": {
-    "value_f": 40,
-    "warm_rank": 45,
-    "cool_rank": 103,
+    "value_f": 36,
+    "warm_rank": 63,
+    "cool_rank": 84,
     "years": 155,
     "first_year": 1872,
     "tied_years": [
-     1873,
-     1936,
-     1954,
-     1957,
-     1986,
-     2003,
-     2006,
-     2019
+     1894,
+     1913,
+     1926,
+     1940,
+     1943,
+     1947,
+     1958,
+     1993,
+     2002
     ],
     "standing": "warm",
     "notable": false,
     "since": 2025,
     "record": false,
-    "phrase": "typical for November 24"
+    "phrase": "typical for November 25"
    }
   },
   "forecast_highs": [
@@ -272,15 +264,6 @@
   "grid": "LWX/97,69",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-26T04:00:00-05:00",
-    "is_daytime": false,
-    "temp_f": 46,
-    "temp_c": 7.78,
-    "precip_chance_pct": 97,
-    "short_forecast": "Rain"
-   },
-   {
     "name": "Thanksgiving Day",
     "start": "2026-11-26T06:00:00-05:00",
     "is_daytime": true,
@@ -290,7 +273,7 @@
     "short_forecast": "Rain"
    },
    {
-    "name": "Thursday Night",
+    "name": "Tonight",
     "start": "2026-11-26T18:00:00-05:00",
     "is_daytime": false,
     "temp_f": 49,
@@ -396,19 +379,21 @@
     "temp_c": 14.44,
     "precip_chance_pct": 9,
     "short_forecast": "Mostly Sunny"
+   },
+   {
+    "name": "Wednesday Night",
+    "start": "2026-12-02T18:00:00-05:00",
+    "is_daytime": false,
+    "temp_f": 40,
+    "temp_c": 4.44,
+    "precip_chance_pct": 7,
+    "short_forecast": "Partly Cloudy"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-26T08:52:41Z",
   "hours": [
-   {
-    "start": "2026-11-26T06:00:00-05:00",
-    "temp_f": 47,
-    "temp_c": 8.33,
-    "precip_chance_pct": 98,
-    "short_forecast": "Rain"
-   },
    {
     "start": "2026-11-26T07:00:00-05:00",
     "temp_f": 47,
@@ -737,6 +722,13 @@
     "temp_c": 6.11,
     "precip_chance_pct": 0,
     "short_forecast": "Partly Cloudy"
+   },
+   {
+    "start": "2026-11-28T06:00:00-05:00",
+    "temp_f": 43,
+    "temp_c": 6.11,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Sunny"
    }
   ]
  },
