@@ -11,33 +11,33 @@
   "lon": -112.0035,
   "history": "Same station as the official Phoenix record (Sky Harbor since 1933)"
  },
- "as_of_utc": "2026-11-26T21:08:08Z",
+ "as_of_utc": "2026-11-26T22:07:57Z",
  "now": {
-  "time_utc": "2026-11-26T20:45:00Z",
-  "temp_c": 24,
-  "temp_f": 75.2,
+  "time_utc": "2026-11-26T21:50:00Z",
+  "temp_c": 26,
+  "temp_f": 78.8,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": -1,
-  "humidity_pct": 19.07,
-  "wind_kmh": 16.67,
+  "dewpoint_c": -2,
+  "humidity_pct": 15.73,
+  "wind_kmh": 14.83,
   "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-26",
-  "readings": 8,
+  "readings": 9,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 24.4,
-  "high_f": 75.9,
-  "high_time_utc": "2026-11-26T19:51:00Z",
+  "high_c": 25,
+  "high_f": 77.0,
+  "high_time_utc": "2026-11-26T20:51:00Z",
   "low_c": 12.2,
   "low_f": 54.0,
   "low_time_utc": "2026-11-26T11:51:00Z",
   "peak_between_reports": {
-   "at_least_f": 76.1,
-   "about_f": 77.0,
-   "time_utc": "2026-11-26T20:25:00Z"
+   "at_least_f": 77.9,
+   "about_f": 78.8,
+   "time_utc": "2026-11-26T21:45:00Z"
   },
   "dip_between_reports": {
    "at_most_f": 52.7,
@@ -95,6 +95,27 @@
     "record": false,
     "phrase": "21st warmest November 25 low (tied) of 132 since 1895, warmest since 2025"
    }
+  },
+  "today_high_so_far": {
+   "value_f": 77,
+   "warm_rank": 20,
+   "cool_rank": 106,
+   "years": 132,
+   "first_year": 1895,
+   "tied_years": [
+    1932,
+    1942,
+    1945,
+    1954,
+    1960,
+    1991,
+    2021
+   ],
+   "standing": "warm",
+   "notable": true,
+   "since": 2024,
+   "record": false,
+   "phrase": "already the 20th warmest November 26 high (tied) of 132 since 1895, warmest since 2024"
   },
   "forecast_highs": [
    {
@@ -416,13 +437,6 @@
  "hourly": {
   "issued_utc": "2026-11-26T18:32:39Z",
   "hours": [
-   {
-    "start": "2026-11-26T14:00:00-07:00",
-    "temp_f": 77,
-    "temp_c": 25.0,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "start": "2026-11-26T15:00:00-07:00",
     "temp_f": 79,
@@ -749,6 +763,13 @@
     "start": "2026-11-28T13:00:00-07:00",
     "temp_f": 74,
     "temp_c": 23.33,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Sunny"
+   },
+   {
+    "start": "2026-11-28T14:00:00-07:00",
+    "temp_f": 76,
+    "temp_c": 24.44,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Sunny"
    }
