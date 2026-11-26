@@ -11,20 +11,20 @@
   "lon": -90.2508,
   "history": "Same site as the official New Orleans record"
  },
- "as_of_utc": "2026-11-25T23:08:00Z",
+ "as_of_utc": "2026-11-26T00:08:10Z",
  "now": {
-  "time_utc": "2026-11-25T22:30:00Z",
+  "time_utc": "2026-11-25T23:35:00Z",
   "temp_c": 12,
   "temp_f": 53.6,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 7,
   "humidity_pct": 71.47,
-  "wind_kmh": 18.5,
+  "wind_kmh": 25.92,
   "description": "Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-25",
-  "readings": 15,
+  "readings": 16,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -236,17 +236,17 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-25T19:42:24Z",
+  "issued_utc": "2026-11-25T22:36:29Z",
   "grid": "LIX/61,90",
   "periods": [
    {
     "name": "This Afternoon",
-    "start": "2026-11-25T14:00:00-06:00",
+    "start": "2026-11-25T16:00:00-06:00",
     "is_daytime": true,
     "temp_f": 55,
     "temp_c": 12.78,
-    "precip_chance_pct": 1,
-    "short_forecast": "Mostly Cloudy"
+    "precip_chance_pct": 9,
+    "short_forecast": "Slight Chance Drizzle"
    },
    {
     "name": "Tonight",
@@ -254,8 +254,8 @@
     "is_daytime": false,
     "temp_f": 44,
     "temp_c": 6.67,
-    "precip_chance_pct": 0,
-    "short_forecast": "Partly Cloudy"
+    "precip_chance_pct": 8,
+    "short_forecast": "Slight Chance Drizzle then Partly Cloudy"
    },
    {
     "name": "Thanksgiving Day",
@@ -370,13 +370,6 @@
  "hourly": {
   "issued_utc": "2026-11-25T22:36:29Z",
   "hours": [
-   {
-    "start": "2026-11-25T17:00:00-06:00",
-    "temp_f": 52,
-    "temp_c": 11.11,
-    "precip_chance_pct": 9,
-    "short_forecast": "Slight Chance Drizzle"
-   },
    {
     "start": "2026-11-25T18:00:00-06:00",
     "temp_f": 52,
@@ -703,6 +696,13 @@
     "start": "2026-11-27T16:00:00-06:00",
     "temp_f": 55,
     "temp_c": 12.78,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "start": "2026-11-27T17:00:00-06:00",
+    "temp_f": 53,
+    "temp_c": 11.67,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Cloudy"
    }

@@ -11,20 +11,20 @@
   "lon": -80.3164,
   "history": "Same station as the official Miami record"
  },
- "as_of_utc": "2026-11-25T23:08:00Z",
+ "as_of_utc": "2026-11-26T00:08:10Z",
  "now": {
-  "time_utc": "2026-11-25T22:30:00Z",
-  "temp_c": 22,
-  "temp_f": 71.6,
+  "time_utc": "2026-11-25T23:30:00Z",
+  "temp_c": 23,
+  "temp_f": 73.4,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 22,
-  "humidity_pct": 100,
-  "wind_kmh": 12.96,
+  "humidity_pct": 94.11,
+  "wind_kmh": 16.67,
   "description": "Light Rain"
  },
  "today_so_far": {
   "date_local": "2026-11-25",
-  "readings": 21,
+  "readings": 22,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -94,31 +94,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-25",
-    "high_f": 77,
-    "would_rank": {
-     "value_f": 77,
-     "warm_rank": 93,
-     "cool_rank": 33,
-     "years": 131,
-     "first_year": 1895,
-     "tied_years": [
-      1904,
-      1919,
-      1944,
-      2012,
-      2019,
-      2021
-     ],
-     "standing": "cool",
-     "notable": false,
-     "since": 2021,
-     "record": false,
-     "phrase": "typical for November 25"
-    }
-   },
    {
     "period": "Thanksgiving Day",
     "date": "2026-11-26",
@@ -288,6 +263,31 @@
      "record": false,
      "phrase": "18th warmest December 1 high (tied) of 132 since 1895, warmest since 2025"
     }
+   },
+   {
+    "period": "Wednesday",
+    "date": "2026-12-02",
+    "high_f": 83,
+    "would_rank": {
+     "value_f": 83,
+     "warm_rank": 17,
+     "cool_rank": 110,
+     "years": 132,
+     "first_year": 1895,
+     "tied_years": [
+      1968,
+      1983,
+      1991,
+      2007,
+      2015,
+      2016
+     ],
+     "standing": "warm",
+     "notable": true,
+     "since": 2025,
+     "record": false,
+     "phrase": "17th warmest December 2 high (tied) of 132 since 1895, warmest since 2025"
+    }
    }
   ]
  },
@@ -295,15 +295,6 @@
   "issued_utc": "2026-11-25T21:16:50Z",
   "grid": "MFL/105,51",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-25T16:00:00-05:00",
-    "is_daytime": true,
-    "temp_f": 77,
-    "temp_c": 25.0,
-    "precip_chance_pct": 67,
-    "short_forecast": "Showers And Thunderstorms Likely"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-25T18:00:00-05:00",
@@ -420,19 +411,21 @@
     "temp_c": 22.22,
     "precip_chance_pct": 53,
     "short_forecast": "Chance Showers And Thunderstorms"
+   },
+   {
+    "name": "Wednesday",
+    "start": "2026-12-02T06:00:00-05:00",
+    "is_daytime": true,
+    "temp_f": 83,
+    "temp_c": 28.33,
+    "precip_chance_pct": 19,
+    "short_forecast": "Slight Chance Rain Showers"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-25T21:16:50Z",
   "hours": [
-   {
-    "start": "2026-11-25T18:00:00-05:00",
-    "temp_f": 75,
-    "temp_c": 23.89,
-    "precip_chance_pct": 26,
-    "short_forecast": "Chance Showers And Thunderstorms"
-   },
    {
     "start": "2026-11-25T19:00:00-05:00",
     "temp_f": 75,
@@ -761,6 +754,13 @@
     "temp_c": 22.22,
     "precip_chance_pct": 0,
     "short_forecast": "Partly Sunny"
+   },
+   {
+    "start": "2026-11-27T18:00:00-05:00",
+    "temp_f": 70,
+    "temp_c": 21.11,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Cloudy"
    }
   ]
  },

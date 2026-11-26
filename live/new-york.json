@@ -11,20 +11,20 @@
   "lon": -73.9667,
   "history": "Same site as the official New York record"
  },
- "as_of_utc": "2026-11-25T23:08:00Z",
+ "as_of_utc": "2026-11-26T00:08:10Z",
  "now": {
-  "time_utc": "2026-11-25T21:51:00Z",
+  "time_utc": "2026-11-25T22:51:00Z",
   "temp_c": 6.1,
   "temp_f": 43.0,
   "precision": "tenths of a degree",
-  "dewpoint_c": 0.6,
-  "humidity_pct": 67.83,
-  "wind_kmh": 12.96,
-  "description": "Mostly Clear"
+  "dewpoint_c": 0,
+  "humidity_pct": 64.95,
+  "wind_kmh": 11.16,
+  "description": "Partly Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-25",
-  "readings": 12,
+  "readings": 13,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -88,36 +88,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-25",
-    "high_f": 47,
-    "would_rank": {
-     "value_f": 47,
-     "warm_rank": 78,
-     "cool_rank": 70,
-     "years": 158,
-     "first_year": 1869,
-     "tied_years": [
-      1870,
-      1871,
-      1887,
-      1889,
-      1918,
-      1927,
-      1935,
-      1967,
-      1972,
-      1982,
-      2008
-     ],
-     "standing": "cool",
-     "notable": false,
-     "since": 2023,
-     "record": false,
-     "phrase": "typical for November 25"
-    }
-   },
    {
     "period": "Thanksgiving Day",
     "date": "2026-11-26",
@@ -256,6 +226,29 @@
      "record": false,
      "phrase": "32nd warmest December 1 high (tied) of 158 since 1869, warmest since 2020"
     }
+   },
+   {
+    "period": "Wednesday",
+    "date": "2026-12-02",
+    "high_f": 53,
+    "would_rank": {
+     "value_f": 53,
+     "warm_rank": 31,
+     "cool_rank": 124,
+     "years": 158,
+     "first_year": 1869,
+     "tied_years": [
+      1941,
+      1947,
+      1986,
+      2001
+     ],
+     "standing": "warm",
+     "notable": true,
+     "since": 2023,
+     "record": false,
+     "phrase": "31st warmest December 2 high (tied) of 158 since 1869, warmest since 2023"
+    }
    }
   ]
  },
@@ -263,15 +256,6 @@
   "issued_utc": "2026-11-25T18:51:47Z",
   "grid": "OKX/34,45",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-25T14:00:00-05:00",
-    "is_daytime": true,
-    "temp_f": 47,
-    "temp_c": 8.33,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-25T18:00:00-05:00",
@@ -388,19 +372,21 @@
     "temp_c": 3.33,
     "precip_chance_pct": 4,
     "short_forecast": "Partly Cloudy"
+   },
+   {
+    "name": "Wednesday",
+    "start": "2026-12-02T06:00:00-05:00",
+    "is_daytime": true,
+    "temp_f": 53,
+    "temp_c": 11.67,
+    "precip_chance_pct": 12,
+    "short_forecast": "Partly Sunny"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-25T18:51:47Z",
   "hours": [
-   {
-    "start": "2026-11-25T18:00:00-05:00",
-    "temp_f": 47,
-    "temp_c": 8.33,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "start": "2026-11-25T19:00:00-05:00",
     "temp_f": 46,
@@ -725,6 +711,13 @@
    },
    {
     "start": "2026-11-27T17:00:00-05:00",
+    "temp_f": 52,
+    "temp_c": 11.11,
+    "precip_chance_pct": 45,
+    "short_forecast": "Chance Rain Showers"
+   },
+   {
+    "start": "2026-11-27T18:00:00-05:00",
     "temp_f": 52,
     "temp_c": 11.11,
     "precip_chance_pct": 45,
