@@ -11,20 +11,20 @@
   "lon": -111.965,
   "history": "Same site as the official Salt Lake City record"
  },
- "as_of_utc": "2026-11-26T01:08:01Z",
+ "as_of_utc": "2026-11-26T01:58:31Z",
  "now": {
-  "time_utc": "2026-11-25T23:54:00Z",
-  "temp_c": 6.7,
-  "temp_f": 44.1,
-  "precision": "tenths of a degree",
-  "dewpoint_c": 1.1,
-  "humidity_pct": 67.47,
-  "wind_kmh": 11.16,
-  "description": "Mostly Cloudy"
+  "time_utc": "2026-11-26T01:40:00Z",
+  "temp_c": 5,
+  "temp_f": 41.0,
+  "precision": "nearest whole \u00b0C",
+  "dewpoint_c": 1,
+  "humidity_pct": 75.35,
+  "wind_kmh": 9.25,
+  "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-25",
-  "readings": 11,
+  "readings": 12,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -95,35 +95,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-25",
-    "high_f": 47,
-    "would_rank": {
-     "value_f": 47,
-     "warm_rank": 66,
-     "cool_rank": 78,
-     "years": 153,
-     "first_year": 1874,
-     "tied_years": [
-      1875,
-      1887,
-      1912,
-      1916,
-      1955,
-      1957,
-      1983,
-      1986,
-      2007,
-      2022
-     ],
-     "standing": "warm",
-     "notable": false,
-     "since": 2022,
-     "record": false,
-     "phrase": "typical for November 25"
-    }
-   },
    {
     "period": "Thanksgiving Day",
     "date": "2026-11-26",
@@ -255,6 +226,28 @@
      "record": false,
      "phrase": "21st warmest December 1 high (tied) of 152 since 1874, warmest since 2021"
     }
+   },
+   {
+    "period": "Wednesday",
+    "date": "2026-12-02",
+    "high_f": 49,
+    "would_rank": {
+     "value_f": 49,
+     "warm_rank": 40,
+     "cool_rank": 110,
+     "years": 152,
+     "first_year": 1874,
+     "tied_years": [
+      1879,
+      1961,
+      2001
+     ],
+     "standing": "warm",
+     "notable": false,
+     "since": 2022,
+     "record": false,
+     "phrase": "typical for December 2"
+    }
    }
   ]
  },
@@ -262,15 +255,6 @@
   "issued_utc": "2026-11-25T18:31:26Z",
   "grid": "SLC/98,176",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-25T16:00:00-07:00",
-    "is_daytime": true,
-    "temp_f": 47,
-    "temp_c": 8.33,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-25T18:00:00-07:00",
@@ -386,6 +370,15 @@
     "temp_f": 41,
     "temp_c": 5.0,
     "precip_chance_pct": 66,
+    "short_forecast": "Light Rain Likely"
+   },
+   {
+    "name": "Wednesday",
+    "start": "2026-12-02T06:00:00-07:00",
+    "is_daytime": true,
+    "temp_f": 49,
+    "temp_c": 9.44,
+    "precip_chance_pct": 69,
     "short_forecast": "Light Rain Likely"
    }
   ]

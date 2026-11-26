@@ -11,20 +11,20 @@
   "lon": -110.9564,
   "history": "Same site as the official Tucson record"
  },
- "as_of_utc": "2026-11-26T01:08:01Z",
+ "as_of_utc": "2026-11-26T01:58:31Z",
  "now": {
-  "time_utc": "2026-11-25T23:53:00Z",
-  "temp_c": 22.2,
-  "temp_f": 72.0,
-  "precision": "tenths of a degree",
-  "dewpoint_c": 0,
-  "humidity_pct": 22.87,
-  "wind_kmh": 9.36,
+  "time_utc": "2026-11-26T01:40:00Z",
+  "temp_c": 18,
+  "temp_f": 64.4,
+  "precision": "nearest whole \u00b0C",
+  "dewpoint_c": 2,
+  "humidity_pct": 34.25,
+  "wind_kmh": 5.54,
   "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-25",
-  "readings": 14,
+  "readings": 15,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -86,28 +86,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-25",
-    "high_f": 74,
-    "would_rank": {
-     "value_f": 74,
-     "warm_rank": 46,
-     "cool_rank": 84,
-     "years": 132,
-     "first_year": 1894,
-     "tied_years": [
-      1937,
-      1956,
-      1962
-     ],
-     "standing": "warm",
-     "notable": false,
-     "since": 2024,
-     "record": false,
-     "phrase": "typical for November 25"
-    }
-   },
    {
     "period": "Thanksgiving Day",
     "date": "2026-11-26",
@@ -255,6 +233,34 @@
      "record": false,
      "phrase": "22nd warmest December 1 high (tied) of 133 since 1894, warmest since 2024"
     }
+   },
+   {
+    "period": "Wednesday",
+    "date": "2026-12-02",
+    "high_f": 70,
+    "would_rank": {
+     "value_f": 70,
+     "warm_rank": 60,
+     "cool_rank": 65,
+     "years": 133,
+     "first_year": 1894,
+     "tied_years": [
+      1925,
+      1928,
+      1951,
+      1964,
+      1969,
+      1979,
+      1985,
+      1990,
+      2003
+     ],
+     "standing": "warm",
+     "notable": false,
+     "since": 2024,
+     "record": false,
+     "phrase": "typical for December 2"
+    }
    }
   ]
  },
@@ -262,15 +268,6 @@
   "issued_utc": "2026-11-25T18:32:38Z",
   "grid": "TWC/91,45",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-25T16:00:00-07:00",
-    "is_daytime": true,
-    "temp_f": 74,
-    "temp_c": 23.33,
-    "precip_chance_pct": 0,
-    "short_forecast": "Partly Sunny"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-25T18:00:00-07:00",
@@ -385,6 +382,15 @@
     "is_daytime": false,
     "temp_f": 53,
     "temp_c": 11.67,
+    "precip_chance_pct": 46,
+    "short_forecast": "Chance Rain Showers"
+   },
+   {
+    "name": "Wednesday",
+    "start": "2026-12-02T06:00:00-07:00",
+    "is_daytime": true,
+    "temp_f": 70,
+    "temp_c": 21.11,
     "precip_chance_pct": 46,
     "short_forecast": "Chance Rain Showers"
    }
