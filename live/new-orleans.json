@@ -11,14 +11,14 @@
   "lon": -90.2508,
   "history": "Same site as the official New Orleans record"
  },
- "as_of_utc": "2026-11-27T11:28:33Z",
+ "as_of_utc": "2026-11-27T12:08:02Z",
  "now": {
-  "time_utc": "2026-11-27T11:05:00Z",
-  "temp_c": 5,
-  "temp_f": 41.0,
+  "time_utc": "2026-11-27T11:55:00Z",
+  "temp_c": 6,
+  "temp_f": 42.8,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": -1,
-  "humidity_pct": 65.17,
+  "humidity_pct": 60.81,
   "wind_kmh": 14.83,
   "description": "Clear"
  },
@@ -41,41 +41,40 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-25",
-   "is_yesterday": false,
-   "high_f": 55,
-   "low_f": 47,
+   "date": "2026-11-26",
+   "is_yesterday": true,
+   "high_f": 58,
+   "low_f": 39,
    "high_rank": {
-    "value_f": 55,
-    "warm_rank": 79,
-    "cool_rank": 3,
-    "years": 81,
-    "first_year": 1946,
-    "tied_years": [],
-    "standing": "cool",
-    "notable": true,
-    "since": 1971,
-    "record": false,
-    "phrase": "3rd coolest November 25 high of 81 since 1946, coolest since 1971"
-   },
-   "low_rank": {
-    "value_f": 47,
-    "warm_rank": 40,
-    "cool_rank": 37,
+    "value_f": 58,
+    "warm_rank": 71,
+    "cool_rank": 10,
     "years": 81,
     "first_year": 1946,
     "tied_years": [
-     1960,
-     1966,
-     1982,
-     1990,
-     2014
+     1974
     ],
     "standing": "cool",
-    "notable": false,
-    "since": 2019,
+    "notable": true,
+    "since": 2013,
     "record": false,
-    "phrase": "typical for November 25"
+    "phrase": "10th coolest November 26 high (tied) of 81 since 1946, coolest since 2013"
+   },
+   "low_rank": {
+    "value_f": 39,
+    "warm_rank": 71,
+    "cool_rank": 9,
+    "years": 81,
+    "first_year": 1946,
+    "tied_years": [
+     1949,
+     1968
+    ],
+    "standing": "cool",
+    "notable": true,
+    "since": 2014,
+    "record": false,
+    "phrase": "9th coldest November 26 low (tied) of 81 since 1946, coldest since 2014"
    }
   },
   "forecast_highs": [
@@ -371,13 +370,6 @@
  "hourly": {
   "issued_utc": "2026-11-27T07:41:50Z",
   "hours": [
-   {
-    "start": "2026-11-27T05:00:00-06:00",
-    "temp_f": 41,
-    "temp_c": 5.0,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "start": "2026-11-27T06:00:00-06:00",
     "temp_f": 41,
@@ -702,6 +694,13 @@
    },
    {
     "start": "2026-11-29T04:00:00-06:00",
+    "temp_f": 63,
+    "temp_c": 17.22,
+    "precip_chance_pct": 10,
+    "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "start": "2026-11-29T05:00:00-06:00",
     "temp_f": 63,
     "temp_c": 17.22,
     "precip_chance_pct": 10,

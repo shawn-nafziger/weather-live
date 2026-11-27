@@ -11,15 +11,15 @@
   "lon": -77.3233,
   "history": "Same site as the official Richmond record"
  },
- "as_of_utc": "2026-11-27T11:28:33Z",
+ "as_of_utc": "2026-11-27T12:08:02Z",
  "now": {
-  "time_utc": "2026-11-27T11:05:00Z",
+  "time_utc": "2026-11-27T11:50:00Z",
   "temp_c": 9,
   "temp_f": 48.2,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 3,
   "humidity_pct": 66.07,
-  "wind_kmh": 20.38,
+  "wind_kmh": null,
   "description": "Cloudy"
  },
  "today_so_far": {
@@ -41,52 +41,45 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-25",
-   "is_yesterday": false,
-   "high_f": 51,
-   "low_f": 34,
+   "date": "2026-11-26",
+   "is_yesterday": true,
+   "high_f": 63,
+   "low_f": 48,
    "high_rank": {
-    "value_f": 51,
-    "warm_rank": 82,
-    "cool_rank": 43,
+    "value_f": 63,
+    "warm_rank": 41,
+    "cool_rank": 85,
     "years": 130,
     "first_year": 1897,
     "tied_years": [
-     1912,
-     1954,
-     1982,
-     1989,
-     1993,
-     2008
-    ],
-    "standing": "cool",
-    "notable": false,
-    "since": 2023,
-    "record": false,
-    "phrase": "typical for November 25"
-   },
-   "low_rank": {
-    "value_f": 34,
-    "warm_rank": 54,
-    "cool_rank": 68,
-    "years": 130,
-    "first_year": 1897,
-    "tied_years": [
-     1906,
-     1913,
-     1929,
-     1932,
-     1936,
-     1949,
-     1971,
-     2011,
-     2018
+     1915,
+     1923,
+     1965,
+     1983,
+     2012
     ],
     "standing": "warm",
     "notable": false,
     "since": 2025,
     "record": false,
-    "phrase": "typical for November 25"
+    "phrase": "typical for November 26"
+   },
+   "low_rank": {
+    "value_f": 48,
+    "warm_rank": 10,
+    "cool_rank": 118,
+    "years": 130,
+    "first_year": 1897,
+    "tied_years": [
+     1908,
+     1998,
+     2010
+    ],
+    "standing": "warm",
+    "notable": true,
+    "since": 2025,
+    "record": false,
+    "phrase": "10th warmest November 26 low (tied) of 130 since 1897, warmest since 2025"
    }
   },
   "forecast_highs": [
@@ -248,7 +241,7 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-27T09:43:13Z",
+  "issued_utc": "2026-11-27T11:27:29Z",
   "grid": "AKQ/50,76",
   "periods": [
    {
@@ -380,15 +373,8 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-27T09:43:13Z",
+  "issued_utc": "2026-11-27T11:27:29Z",
   "hours": [
-   {
-    "start": "2026-11-27T06:00:00-05:00",
-    "temp_f": 43,
-    "temp_c": 6.11,
-    "precip_chance_pct": 5,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "start": "2026-11-27T07:00:00-05:00",
     "temp_f": 43,
@@ -436,7 +422,7 @@
     "temp_f": 51,
     "temp_c": 10.56,
     "precip_chance_pct": 4,
-    "short_forecast": "Mostly Cloudy"
+    "short_forecast": "Cloudy"
    },
    {
     "start": "2026-11-27T14:00:00-05:00",
@@ -450,14 +436,14 @@
     "temp_f": 54,
     "temp_c": 12.22,
     "precip_chance_pct": 2,
-    "short_forecast": "Mostly Cloudy"
+    "short_forecast": "Partly Sunny"
    },
    {
     "start": "2026-11-27T16:00:00-05:00",
     "temp_f": 52,
     "temp_c": 11.11,
     "precip_chance_pct": 2,
-    "short_forecast": "Mostly Cloudy"
+    "short_forecast": "Partly Sunny"
    },
    {
     "start": "2026-11-27T17:00:00-05:00",
@@ -471,7 +457,7 @@
     "temp_f": 49,
     "temp_c": 9.44,
     "precip_chance_pct": 2,
-    "short_forecast": "Mostly Cloudy"
+    "short_forecast": "Partly Cloudy"
    },
    {
     "start": "2026-11-27T19:00:00-05:00",
@@ -513,21 +499,21 @@
     "temp_f": 45,
     "temp_c": 7.22,
     "precip_chance_pct": 3,
-    "short_forecast": "Mostly Clear"
+    "short_forecast": "Partly Cloudy"
    },
    {
     "start": "2026-11-28T01:00:00-05:00",
     "temp_f": 44,
     "temp_c": 6.67,
     "precip_chance_pct": 3,
-    "short_forecast": "Mostly Clear"
+    "short_forecast": "Partly Cloudy"
    },
    {
     "start": "2026-11-28T02:00:00-05:00",
     "temp_f": 44,
     "temp_c": 6.67,
     "precip_chance_pct": 3,
-    "short_forecast": "Mostly Clear"
+    "short_forecast": "Partly Cloudy"
    },
    {
     "start": "2026-11-28T03:00:00-05:00",
@@ -555,7 +541,7 @@
     "temp_f": 42,
     "temp_c": 5.56,
     "precip_chance_pct": 3,
-    "short_forecast": "Sunny"
+    "short_forecast": "Mostly Sunny"
    },
    {
     "start": "2026-11-28T07:00:00-05:00",
@@ -717,6 +703,13 @@
     "temp_c": 3.89,
     "precip_chance_pct": 0,
     "short_forecast": "Partly Cloudy"
+   },
+   {
+    "start": "2026-11-29T06:00:00-05:00",
+    "temp_f": 39,
+    "temp_c": 3.89,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Sunny"
    }
   ]
  },

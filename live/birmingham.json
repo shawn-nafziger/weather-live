@@ -11,15 +11,15 @@
   "lon": -86.745,
   "history": "Same site as the official Birmingham record"
  },
- "as_of_utc": "2026-11-27T11:28:33Z",
+ "as_of_utc": "2026-11-27T12:08:02Z",
  "now": {
-  "time_utc": "2026-11-27T10:53:00Z",
-  "temp_c": 4.4,
-  "temp_f": 39.9,
-  "precision": "tenths of a degree",
-  "dewpoint_c": 1.7,
-  "humidity_pct": 82.61,
-  "wind_kmh": null,
+  "time_utc": "2026-11-27T11:50:00Z",
+  "temp_c": 4,
+  "temp_f": 39.2,
+  "precision": "nearest whole \u00b0C",
+  "dewpoint_c": 1,
+  "humidity_pct": 80.8,
+  "wind_kmh": 16.67,
   "description": "Cloudy"
  },
  "today_so_far": {
@@ -41,45 +41,40 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-25",
-   "is_yesterday": false,
-   "high_f": 56,
-   "low_f": 47,
+   "date": "2026-11-26",
+   "is_yesterday": true,
+   "high_f": 48,
+   "low_f": 37,
    "high_rank": {
-    "value_f": 56,
-    "warm_rank": 94,
-    "cool_rank": 35,
+    "value_f": 48,
+    "warm_rank": 123,
+    "cool_rank": 8,
     "years": 132,
     "first_year": 1895,
     "tied_years": [
-     1949,
-     1983,
-     2003,
-     2005
+     1950,
+     1972
     ],
     "standing": "cool",
-    "notable": false,
+    "notable": true,
     "since": 2013,
     "record": false,
-    "phrase": "typical for November 25"
+    "phrase": "8th coolest November 26 high (tied) of 132 since 1895, coolest since 2013"
    },
    "low_rank": {
-    "value_f": 47,
-    "warm_rank": 36,
-    "cool_rank": 92,
+    "value_f": 37,
+    "warm_rank": 80,
+    "cool_rank": 51,
     "years": 131,
     "first_year": 1896,
     "tied_years": [
-     1906,
-     1963,
-     1979,
-     2021
+     2013
     ],
-    "standing": "warm",
+    "standing": "cool",
     "notable": false,
-    "since": 2025,
+    "since": 2021,
     "record": false,
-    "phrase": "typical for November 25"
+    "phrase": "typical for November 26"
    }
   },
   "forecast_highs": [
@@ -248,7 +243,7 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-27T06:26:13Z",
+  "issued_utc": "2026-11-27T11:06:24Z",
   "grid": "BMX/61,87",
   "periods": [
    {
@@ -382,13 +377,6 @@
  "hourly": {
   "issued_utc": "2026-11-27T11:06:24Z",
   "hours": [
-   {
-    "start": "2026-11-27T05:00:00-06:00",
-    "temp_f": 36,
-    "temp_c": 2.22,
-    "precip_chance_pct": 1,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "start": "2026-11-27T06:00:00-06:00",
     "temp_f": 36,
@@ -713,6 +701,13 @@
    },
    {
     "start": "2026-11-29T04:00:00-06:00",
+    "temp_f": 45,
+    "temp_c": 7.22,
+    "precip_chance_pct": 1,
+    "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "start": "2026-11-29T05:00:00-06:00",
     "temp_f": 45,
     "temp_c": 7.22,
     "precip_chance_pct": 1,

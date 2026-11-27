@@ -11,16 +11,16 @@
   "lon": -85.7867,
   "history": "Provisional: Goshen Municipal Airport. The long record (GOSHEN 3SW) is a once-a-day volunteer station, so today's readings and the record come from different stations (question D2)"
  },
- "as_of_utc": "2026-11-27T11:28:33Z",
+ "as_of_utc": "2026-11-27T12:08:02Z",
  "now": {
-  "time_utc": "2026-11-27T10:53:00Z",
-  "temp_c": 2.2,
-  "temp_f": 36.0,
-  "precision": "tenths of a degree",
-  "dewpoint_c": 1.7,
-  "humidity_pct": 96.49,
-  "wind_kmh": 16.56,
-  "description": "Unknown Precipitation and Fog/Mist"
+  "time_utc": "2026-11-27T11:50:00Z",
+  "temp_c": 2,
+  "temp_f": 35.6,
+  "precision": "nearest whole \u00b0C",
+  "dewpoint_c": 1,
+  "humidity_pct": 93.09,
+  "wind_kmh": 14.83,
+  "description": "Light Rain"
  },
  "today_so_far": {
   "date_local": "2026-11-27",
@@ -41,56 +41,60 @@
   "available": true,
   "rank_today": false,
   "latest_final": {
-   "date": "2026-11-25",
-   "is_yesterday": false,
-   "high_f": 44,
-   "low_f": 23,
+   "date": "2026-11-26",
+   "is_yesterday": true,
+   "high_f": 38,
+   "low_f": 31,
    "high_rank": {
-    "value_f": 44,
-    "warm_rank": 50,
-    "cool_rank": 57,
-    "years": 111,
-    "first_year": 1914,
-    "tied_years": [
-     1979,
-     1987,
-     1993,
-     1995,
-     1999
-    ],
-    "standing": "warm",
-    "notable": false,
-    "since": 2025,
-    "record": false,
-    "phrase": "typical for November 25"
-   },
-   "low_rank": {
-    "value_f": 23,
-    "warm_rank": 81,
-    "cool_rank": 27,
+    "value_f": 38,
+    "warm_rank": 74,
+    "cool_rank": 33,
     "years": 110,
     "first_year": 1914,
     "tied_years": [
-     1949,
-     1957,
-     2003
+     1925,
+     1945,
+     1954,
+     1971
     ],
     "standing": "cool",
     "notable": false,
     "since": 2023,
     "record": false,
-    "phrase": "typical for November 25"
+    "phrase": "typical for November 26"
+   },
+   "low_rank": {
+    "value_f": 31,
+    "warm_rank": 39,
+    "cool_rank": 63,
+    "years": 109,
+    "first_year": 1916,
+    "tied_years": [
+     1926,
+     1934,
+     1935,
+     1941,
+     1946,
+     1972,
+     1982,
+     2007
+    ],
+    "standing": "warm",
+    "notable": false,
+    "since": 2020,
+    "record": false,
+    "phrase": "typical for November 26"
    }
   },
   "note": "Today's readings come from a different station than this record, so today and the forecast aren't ranked against it."
  },
  "forecast": {
-  "issued_utc": "2026-11-27T10:29:46Z",
+  "issued_utc": "2026-11-27T12:00:07Z",
   "grid": "IWX/45,57",
   "periods": [
    {
     "name": "Today",
-    "start": "2026-11-27T06:00:00-05:00",
+    "start": "2026-11-27T07:00:00-05:00",
     "is_daytime": true,
     "temp_f": 43,
     "temp_c": 6.11,
@@ -217,15 +221,8 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-27T10:29:46Z",
+  "issued_utc": "2026-11-27T12:00:07Z",
   "hours": [
-   {
-    "start": "2026-11-27T06:00:00-05:00",
-    "temp_f": 36,
-    "temp_c": 2.22,
-    "precip_chance_pct": 81,
-    "short_forecast": "Rain And Snow"
-   },
    {
     "start": "2026-11-27T07:00:00-05:00",
     "temp_f": 35,
@@ -552,6 +549,13 @@
     "start": "2026-11-29T05:00:00-05:00",
     "temp_f": 36,
     "temp_c": 2.22,
+    "precip_chance_pct": 66,
+    "short_forecast": "Light Rain Likely"
+   },
+   {
+    "start": "2026-11-29T06:00:00-05:00",
+    "temp_f": 37,
+    "temp_c": 2.78,
     "precip_chance_pct": 66,
     "short_forecast": "Light Rain Likely"
    }

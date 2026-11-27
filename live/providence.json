@@ -11,20 +11,20 @@
   "lon": -71.4277,
   "history": "Same site as the official Providence record"
  },
- "as_of_utc": "2026-11-27T11:28:33Z",
+ "as_of_utc": "2026-11-27T12:08:02Z",
  "now": {
-  "time_utc": "2026-11-27T11:05:00Z",
+  "time_utc": "2026-11-27T11:50:00Z",
   "temp_c": 10,
   "temp_f": 50.0,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 9,
   "humidity_pct": 93.5,
-  "wind_kmh": 7.42,
-  "description": "Light Drizzle"
+  "wind_kmh": 5.54,
+  "description": "Patchy Fog"
  },
  "today_so_far": {
   "date_local": "2026-11-27",
-  "readings": 15,
+  "readings": 16,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -41,47 +41,43 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-25",
-   "is_yesterday": false,
-   "high_f": 46,
-   "low_f": 29,
+   "date": "2026-11-26",
+   "is_yesterday": true,
+   "high_f": 51,
+   "low_f": 37,
    "high_rank": {
-    "value_f": 46,
-    "warm_rank": 61,
-    "cool_rank": 60,
+    "value_f": 51,
+    "warm_rank": 48,
+    "cool_rank": 71,
     "years": 123,
     "first_year": 1904,
     "tied_years": [
-     1918,
-     1945,
-     1947
+     1929,
+     1948,
+     1953,
+     1969,
+     1983
     ],
-    "standing": "cool",
-    "notable": false,
-    "since": 2023,
-    "record": false,
-    "phrase": "typical for November 25"
-   },
-   "low_rank": {
-    "value_f": 29,
-    "warm_rank": 78,
-    "cool_rank": 39,
-    "years": 123,
-    "first_year": 1904,
-    "tied_years": [
-     1904,
-     1964,
-     1982,
-     1986,
-     1990,
-     2020,
-     2025
-    ],
-    "standing": "cool",
+    "standing": "warm",
     "notable": false,
     "since": 2025,
     "record": false,
-    "phrase": "typical for November 25"
+    "phrase": "typical for November 26"
+   },
+   "low_rank": {
+    "value_f": 37,
+    "warm_rank": 27,
+    "cool_rank": 96,
+    "years": 123,
+    "first_year": 1904,
+    "tied_years": [
+     2016
+    ],
+    "standing": "warm",
+    "notable": false,
+    "since": 2025,
+    "record": false,
+    "phrase": "typical for November 26"
    }
   },
   "forecast_highs": [
@@ -371,13 +367,6 @@
  "hourly": {
   "issued_utc": "2026-11-27T09:13:47Z",
   "hours": [
-   {
-    "start": "2026-11-27T06:00:00-05:00",
-    "temp_f": 53,
-    "temp_c": 11.67,
-    "precip_chance_pct": 10,
-    "short_forecast": "Patchy Fog"
-   },
    {
     "start": "2026-11-27T07:00:00-05:00",
     "temp_f": 53,
@@ -706,6 +695,13 @@
     "temp_c": 3.89,
     "precip_chance_pct": 0,
     "short_forecast": "Clear"
+   },
+   {
+    "start": "2026-11-29T06:00:00-05:00",
+    "temp_f": 39,
+    "temp_c": 3.89,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
    }
   ]
  },

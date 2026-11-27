@@ -11,20 +11,20 @@
   "lon": -71.0106,
   "history": "Same site as the official Boston record"
  },
- "as_of_utc": "2026-11-27T11:28:33Z",
+ "as_of_utc": "2026-11-27T12:08:02Z",
  "now": {
-  "time_utc": "2026-11-27T10:54:00Z",
+  "time_utc": "2026-11-27T11:50:00Z",
   "temp_c": 10,
   "temp_f": 50.0,
-  "precision": "tenths of a degree",
-  "dewpoint_c": 9.4,
-  "humidity_pct": 96.06,
-  "wind_kmh": 14.76,
+  "precision": "nearest whole \u00b0C",
+  "dewpoint_c": 9,
+  "humidity_pct": 93.5,
+  "wind_kmh": 14.83,
   "description": "Fog/Mist"
  },
  "today_so_far": {
   "date_local": "2026-11-27",
-  "readings": 14,
+  "readings": 15,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -41,59 +41,53 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-25",
-   "is_yesterday": false,
-   "high_f": 44,
-   "low_f": 31,
+   "date": "2026-11-26",
+   "is_yesterday": true,
+   "high_f": 49,
+   "low_f": 36,
    "high_rank": {
-    "value_f": 44,
-    "warm_rank": 84,
-    "cool_rank": 64,
-    "years": 155,
-    "first_year": 1872,
-    "tied_years": [
-     1887,
-     1928,
-     1935,
-     1945,
-     1956,
-     1989,
-     1991,
-     2015
-    ],
-    "standing": "cool",
-    "notable": false,
-    "since": 2023,
-    "record": false,
-    "phrase": "typical for November 25"
-   },
-   "low_rank": {
-    "value_f": 31,
-    "warm_rank": 92,
-    "cool_rank": 54,
+    "value_f": 49,
+    "warm_rank": 58,
+    "cool_rank": 95,
     "years": 154,
     "first_year": 1872,
     "tied_years": [
-     1955,
-     1957,
-     1962,
-     1965,
-     1982,
-     1985,
-     2007,
-     2010,
-     2012
+     1919,
+     2000
     ],
-    "standing": "cool",
+    "standing": "warm",
     "notable": false,
-    "since": 2023,
+    "since": 2025,
     "record": false,
-    "phrase": "typical for November 25"
+    "phrase": "typical for November 26"
+   },
+   "low_rank": {
+    "value_f": 36,
+    "warm_rank": 49,
+    "cool_rank": 98,
+    "years": 155,
+    "first_year": 1872,
+    "tied_years": [
+     1919,
+     1937,
+     1947,
+     1958,
+     1967,
+     1969,
+     1973,
+     1975,
+     2006
+    ],
+    "standing": "warm",
+    "notable": false,
+    "since": 2025,
+    "record": false,
+    "phrase": "typical for November 26"
    }
   },
   "forecast_highs": [
    {
-    "period": "Friday",
+    "period": "Today",
     "date": "2026-11-27",
     "high_f": 61,
     "would_rank": {
@@ -254,16 +248,7 @@
   "grid": "BOX/73,101",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-27T04:00:00-05:00",
-    "is_daytime": false,
-    "temp_f": 46,
-    "temp_c": 7.78,
-    "precip_chance_pct": 21,
-    "short_forecast": "Patchy Fog"
-   },
-   {
-    "name": "Friday",
+    "name": "Today",
     "start": "2026-11-27T06:00:00-05:00",
     "is_daytime": true,
     "temp_f": 61,
@@ -272,7 +257,7 @@
     "short_forecast": "Chance Light Rain"
    },
    {
-    "name": "Friday Night",
+    "name": "Tonight",
     "start": "2026-11-27T18:00:00-05:00",
     "is_daytime": false,
     "temp_f": 45,
@@ -378,19 +363,21 @@
     "temp_c": 12.78,
     "precip_chance_pct": 8,
     "short_forecast": "Mostly Sunny"
+   },
+   {
+    "name": "Thursday Night",
+    "start": "2026-12-03T18:00:00-05:00",
+    "is_daytime": false,
+    "temp_f": 47,
+    "temp_c": 8.33,
+    "precip_chance_pct": 11,
+    "short_forecast": "Partly Cloudy"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-27T09:13:47Z",
   "hours": [
-   {
-    "start": "2026-11-27T06:00:00-05:00",
-    "temp_f": 53,
-    "temp_c": 11.67,
-    "precip_chance_pct": 10,
-    "short_forecast": "Patchy Fog"
-   },
    {
     "start": "2026-11-27T07:00:00-05:00",
     "temp_f": 53,
@@ -719,6 +706,13 @@
     "temp_c": 7.22,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear"
+   },
+   {
+    "start": "2026-11-29T06:00:00-05:00",
+    "temp_f": 44,
+    "temp_c": 6.67,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
    }
   ]
  },

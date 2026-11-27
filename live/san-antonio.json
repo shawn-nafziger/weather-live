@@ -11,15 +11,15 @@
   "lon": -98.4636,
   "history": "Same site as the official San Antonio record"
  },
- "as_of_utc": "2026-11-27T11:28:33Z",
+ "as_of_utc": "2026-11-27T12:08:02Z",
  "now": {
-  "time_utc": "2026-11-27T11:05:00Z",
+  "time_utc": "2026-11-27T11:55:00Z",
   "temp_c": 5,
   "temp_f": 41.0,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 2,
   "humidity_pct": 80.94,
-  "wind_kmh": 5.54,
+  "wind_kmh": 0,
   "description": "Clear"
  },
  "today_so_far": {
@@ -46,40 +46,43 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-25",
-   "is_yesterday": false,
-   "high_f": 61,
-   "low_f": 35,
+   "date": "2026-11-26",
+   "is_yesterday": true,
+   "high_f": 63,
+   "low_f": 34,
    "high_rank": {
-    "value_f": 61,
-    "warm_rank": 114,
-    "cool_rank": 27,
+    "value_f": 63,
+    "warm_rank": 97,
+    "cool_rank": 41,
     "years": 142,
     "first_year": 1885,
     "tied_years": [
-     1930,
-     1992
+     1900,
+     1911,
+     1958,
+     1986,
+     2018
     ],
     "standing": "cool",
-    "notable": true,
-    "since": 2023,
+    "notable": false,
+    "since": 2024,
     "record": false,
-    "phrase": "27th coolest November 25 high (tied) of 142 since 1885, coolest since 2023"
+    "phrase": "typical for November 26"
    },
    "low_rank": {
-    "value_f": 35,
-    "warm_rank": 126,
-    "cool_rank": 16,
+    "value_f": 34,
+    "warm_rank": 130,
+    "cool_rank": 12,
     "years": 142,
     "first_year": 1885,
     "tied_years": [
-     1964
+     1950
     ],
     "standing": "cool",
     "notable": true,
     "since": 2007,
     "record": false,
-    "phrase": "16th coldest November 25 low (tied) of 142 since 1885, coldest since 2007"
+    "phrase": "12th coldest November 26 low (tied) of 142 since 1885, coldest since 2007"
    }
   },
   "forecast_highs": [
@@ -258,12 +261,12 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-27T10:32:35Z",
+  "issued_utc": "2026-11-27T11:18:36Z",
   "grid": "EWX/128,59",
   "periods": [
    {
     "name": "Overnight",
-    "start": "2026-11-27T04:00:00-06:00",
+    "start": "2026-11-27T05:00:00-06:00",
     "is_daytime": false,
     "temp_f": 39,
     "temp_c": 3.89,
@@ -392,13 +395,6 @@
  "hourly": {
   "issued_utc": "2026-11-27T10:42:34Z",
   "hours": [
-   {
-    "start": "2026-11-27T05:00:00-06:00",
-    "temp_f": 39,
-    "temp_c": 3.89,
-    "precip_chance_pct": 0,
-    "short_forecast": "Partly Cloudy"
-   },
    {
     "start": "2026-11-27T06:00:00-06:00",
     "temp_f": 39,
@@ -723,6 +719,13 @@
    },
    {
     "start": "2026-11-29T04:00:00-06:00",
+    "temp_f": 54,
+    "temp_c": 12.22,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Clear"
+   },
+   {
+    "start": "2026-11-29T05:00:00-06:00",
     "temp_f": 54,
     "temp_c": 12.22,
     "precip_chance_pct": 0,

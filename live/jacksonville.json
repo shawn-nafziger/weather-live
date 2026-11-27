@@ -11,16 +11,16 @@
   "lon": -81.6937,
   "history": "Same site as the official Jacksonville record"
  },
- "as_of_utc": "2026-11-27T11:28:33Z",
+ "as_of_utc": "2026-11-27T12:08:02Z",
  "now": {
-  "time_utc": "2026-11-27T10:56:00Z",
-  "temp_c": 4.4,
-  "temp_f": 39.9,
-  "precision": "tenths of a degree",
-  "dewpoint_c": 3.3,
-  "humidity_pct": 92.56,
-  "wind_kmh": 7.56,
-  "description": "Clear"
+  "time_utc": "2026-11-27T11:50:00Z",
+  "temp_c": 4,
+  "temp_f": 39.2,
+  "precision": "nearest whole \u00b0C",
+  "dewpoint_c": 3,
+  "humidity_pct": 93.2,
+  "wind_kmh": 7.42,
+  "description": ""
  },
  "today_so_far": {
   "date_local": "2026-11-27",
@@ -46,45 +46,46 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-25",
-   "is_yesterday": false,
+   "date": "2026-11-26",
+   "is_yesterday": true,
    "high_f": 62,
-   "low_f": 52,
+   "low_f": 48,
    "high_rank": {
     "value_f": 62,
-    "warm_rank": 128,
-    "cool_rank": 28,
+    "warm_rank": 131,
+    "cool_rank": 23,
     "years": 156,
     "first_year": 1871,
     "tied_years": [
-     1939
+     1916,
+     1924,
+     2004
     ],
     "standing": "cool",
     "notable": true,
-    "since": 2009,
+    "since": 2004,
     "record": false,
-    "phrase": "28th coolest November 25 high (tied) of 156 since 1871, coolest since 2009"
+    "phrase": "23rd coolest November 26 high (tied) of 156 since 1871, coolest since 2004"
    },
    "low_rank": {
-    "value_f": 52,
-    "warm_rank": 60,
-    "cool_rank": 90,
+    "value_f": 48,
+    "warm_rank": 81,
+    "cool_rank": 70,
     "years": 156,
     "first_year": 1871,
     "tied_years": [
-     1873,
-     1889,
-     1947,
-     1962,
-     1965,
+     1904,
+     1909,
+     1923,
+     1961,
      1996,
-     2015
+     2000
     ],
-    "standing": "warm",
+    "standing": "cool",
     "notable": false,
-    "since": 2025,
+    "since": 2024,
     "record": false,
-    "phrase": "typical for November 25"
+    "phrase": "typical for November 26"
    }
   },
   "forecast_highs": [
@@ -391,13 +392,6 @@
  "hourly": {
   "issued_utc": "2026-11-27T06:21:25Z",
   "hours": [
-   {
-    "start": "2026-11-27T06:00:00-05:00",
-    "temp_f": 42,
-    "temp_c": 5.56,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "start": "2026-11-27T07:00:00-05:00",
     "temp_f": 41,
@@ -722,6 +716,13 @@
    },
    {
     "start": "2026-11-29T05:00:00-05:00",
+    "temp_f": 49,
+    "temp_c": 9.44,
+    "precip_chance_pct": 3,
+    "short_forecast": "Cloudy"
+   },
+   {
+    "start": "2026-11-29T06:00:00-05:00",
     "temp_f": 49,
     "temp_c": 9.44,
     "precip_chance_pct": 3,

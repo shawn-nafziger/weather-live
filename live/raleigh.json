@@ -11,16 +11,16 @@
   "lon": -78.7819,
   "history": "Same site as the official Raleigh record"
  },
- "as_of_utc": "2026-11-27T11:28:33Z",
+ "as_of_utc": "2026-11-27T12:08:02Z",
  "now": {
-  "time_utc": "2026-11-27T11:05:00Z",
+  "time_utc": "2026-11-27T11:50:00Z",
   "temp_c": 7,
   "temp_f": 44.6,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 1,
   "humidity_pct": 65.63,
   "wind_kmh": null,
-  "description": "Mostly Cloudy"
+  "description": "Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-27",
@@ -41,44 +41,44 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-25",
-   "is_yesterday": false,
-   "high_f": 50,
-   "low_f": 39,
+   "date": "2026-11-26",
+   "is_yesterday": true,
+   "high_f": 59,
+   "low_f": 50,
    "high_rank": {
-    "value_f": 50,
-    "warm_rank": 107,
-    "cool_rank": 28,
-    "years": 140,
+    "value_f": 59,
+    "warm_rank": 69,
+    "cool_rank": 65,
+    "years": 139,
     "first_year": 1887,
     "tied_years": [
-     1894,
-     1912,
-     1982,
-     1991,
+     1927,
+     1951,
+     1976,
+     1981,
      1997,
-     2023
+     2003
     ],
     "standing": "cool",
-    "notable": true,
+    "notable": false,
     "since": 2023,
     "record": false,
-    "phrase": "28th coolest November 25 high (tied) of 140 since 1887, coolest since 2023"
+    "phrase": "typical for November 26"
    },
    "low_rank": {
-    "value_f": 39,
-    "warm_rank": 42,
-    "cool_rank": 98,
-    "years": 140,
+    "value_f": 50,
+    "warm_rank": 16,
+    "cool_rank": 122,
+    "years": 138,
     "first_year": 1887,
     "tied_years": [
-     1967
+     2010
     ],
     "standing": "warm",
-    "notable": false,
+    "notable": true,
     "since": 2025,
     "record": false,
-    "phrase": "typical for November 25"
+    "phrase": "16th warmest November 26 low (tied) of 138 since 1887, warmest since 2025"
    }
   },
   "forecast_highs": [
@@ -251,7 +251,7 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-27T09:37:21Z",
+  "issued_utc": "2026-11-27T11:39:44Z",
   "grid": "RAH/69,62",
   "periods": [
    {
@@ -385,13 +385,6 @@
  "hourly": {
   "issued_utc": "2026-11-27T09:37:21Z",
   "hours": [
-   {
-    "start": "2026-11-27T06:00:00-05:00",
-    "temp_f": 41,
-    "temp_c": 5.0,
-    "precip_chance_pct": 2,
-    "short_forecast": "Cloudy"
-   },
    {
     "start": "2026-11-27T07:00:00-05:00",
     "temp_f": 41,
@@ -720,6 +713,13 @@
     "temp_c": 3.89,
     "precip_chance_pct": 0,
     "short_forecast": "Partly Cloudy"
+   },
+   {
+    "start": "2026-11-29T06:00:00-05:00",
+    "temp_f": 39,
+    "temp_c": 3.89,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Sunny"
    }
   ]
  },
