@@ -11,20 +11,20 @@
   "lon": -94.7306,
   "history": "Same site as the official Kansas City record"
  },
- "as_of_utc": "2026-11-27T00:07:52Z",
+ "as_of_utc": "2026-11-27T01:07:54Z",
  "now": {
-  "time_utc": "2026-11-26T21:53:00Z",
-  "temp_c": 3.9,
-  "temp_f": 39.0,
+  "time_utc": "2026-11-26T23:53:00Z",
+  "temp_c": 2.2,
+  "temp_f": 36.0,
   "precision": "tenths of a degree",
-  "dewpoint_c": -3.3,
-  "humidity_pct": 59.39,
-  "wind_kmh": 20.52,
+  "dewpoint_c": -4.4,
+  "humidity_pct": 61.69,
+  "wind_kmh": 14.76,
   "description": "Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-26",
-  "readings": 12,
+  "readings": 13,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -83,33 +83,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "Thanksgiving Day",
-    "date": "2026-11-26",
-    "high_f": 42,
-    "would_rank": {
-     "value_f": 42,
-     "warm_rank": 93,
-     "cool_rank": 39,
-     "years": 139,
-     "first_year": 1888,
-     "tied_years": [
-      1892,
-      1897,
-      1899,
-      1918,
-      1947,
-      2009,
-      2012,
-      2025
-     ],
-     "standing": "cool",
-     "notable": false,
-     "since": 2025,
-     "record": false,
-     "phrase": "typical for November 26"
-    }
-   },
    {
     "period": "Friday",
     "date": "2026-11-27",
@@ -242,6 +215,26 @@
      "record": false,
      "phrase": "26th warmest December 2 high (tied) of 137 since 1888, warmest since 2022"
     }
+   },
+   {
+    "period": "Thursday",
+    "date": "2026-12-03",
+    "high_f": 53,
+    "would_rank": {
+     "value_f": 53,
+     "warm_rank": 42,
+     "cool_rank": 97,
+     "years": 139,
+     "first_year": 1888,
+     "tied_years": [
+      2011
+     ],
+     "standing": "warm",
+     "notable": false,
+     "since": 2021,
+     "record": false,
+     "phrase": "typical for December 3"
+    }
    }
   ]
  },
@@ -250,17 +243,8 @@
   "grid": "EAX/38,60",
   "periods": [
    {
-    "name": "Thanksgiving Day",
-    "start": "2026-11-26T16:00:00-06:00",
-    "is_daytime": true,
-    "temp_f": 42,
-    "temp_c": 5.56,
-    "precip_chance_pct": 1,
-    "short_forecast": "Mostly Cloudy"
-   },
-   {
     "name": "Tonight",
-    "start": "2026-11-26T18:00:00-06:00",
+    "start": "2026-11-26T19:00:00-06:00",
     "is_daytime": false,
     "temp_f": 27,
     "temp_c": -2.78,
@@ -374,19 +358,21 @@
     "temp_c": 7.22,
     "precip_chance_pct": 16,
     "short_forecast": "Partly Cloudy then Slight Chance Light Rain"
+   },
+   {
+    "name": "Thursday",
+    "start": "2026-12-03T06:00:00-06:00",
+    "is_daytime": true,
+    "temp_f": 53,
+    "temp_c": 11.67,
+    "precip_chance_pct": 21,
+    "short_forecast": "Slight Chance Light Rain"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-26T22:31:47Z",
   "hours": [
-   {
-    "start": "2026-11-26T18:00:00-06:00",
-    "temp_f": 36,
-    "temp_c": 2.22,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "start": "2026-11-26T19:00:00-06:00",
     "temp_f": 35,
@@ -715,6 +701,13 @@
     "temp_c": 11.11,
     "precip_chance_pct": 2,
     "short_forecast": "Cloudy"
+   },
+   {
+    "start": "2026-11-28T18:00:00-06:00",
+    "temp_f": 50,
+    "temp_c": 10.0,
+    "precip_chance_pct": 53,
+    "short_forecast": "Chance Light Rain"
    }
   ]
  },

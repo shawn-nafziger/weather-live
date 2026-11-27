@@ -11,20 +11,20 @@
   "lon": -98.4636,
   "history": "Same site as the official San Antonio record"
  },
- "as_of_utc": "2026-11-27T00:07:52Z",
+ "as_of_utc": "2026-11-27T01:07:54Z",
  "now": {
-  "time_utc": "2026-11-26T23:55:00Z",
-  "temp_c": 14,
-  "temp_f": 57.2,
+  "time_utc": "2026-11-27T00:30:00Z",
+  "temp_c": 12,
+  "temp_f": 53.6,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": null,
-  "humidity_pct": null,
+  "dewpoint_c": 0,
+  "humidity_pct": 43.64,
   "wind_kmh": 0,
   "description": ""
  },
  "today_so_far": {
   "date_local": "2026-11-26",
-  "readings": 10,
+  "readings": 11,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -83,30 +83,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "Thanksgiving Day",
-    "date": "2026-11-26",
-    "high_f": 63,
-    "would_rank": {
-     "value_f": 63,
-     "warm_rank": 97,
-     "cool_rank": 41,
-     "years": 142,
-     "first_year": 1885,
-     "tied_years": [
-      1900,
-      1911,
-      1958,
-      1986,
-      2018
-     ],
-     "standing": "cool",
-     "notable": false,
-     "since": 2024,
-     "record": false,
-     "phrase": "typical for November 26"
-    }
-   },
    {
     "period": "Friday",
     "date": "2026-11-27",
@@ -251,22 +227,41 @@
      "record": false,
      "phrase": "typical for December 2"
     }
+   },
+   {
+    "period": "Thursday",
+    "date": "2026-12-03",
+    "high_f": 76,
+    "would_rank": {
+     "value_f": 76,
+     "warm_rank": 26,
+     "cool_rank": 108,
+     "years": 142,
+     "first_year": 1885,
+     "tied_years": [
+      1886,
+      1925,
+      1939,
+      1956,
+      1958,
+      1961,
+      1964,
+      1983,
+      2010
+     ],
+     "standing": "warm",
+     "notable": true,
+     "since": 2021,
+     "record": false,
+     "phrase": "26th warmest December 3 high (tied) of 142 since 1885, warmest since 2021"
+    }
    }
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-26T23:44:34Z",
+  "issued_utc": "2026-11-27T00:42:20Z",
   "grid": "EWX/128,59",
   "periods": [
-   {
-    "name": "Thanksgiving Day",
-    "start": "2026-11-26T17:00:00-06:00",
-    "is_daytime": true,
-    "temp_f": 63,
-    "temp_c": 17.22,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Sunny"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-26T18:00:00-06:00",
@@ -383,23 +378,25 @@
     "temp_c": 17.22,
     "precip_chance_pct": 12,
     "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "name": "Thursday",
+    "start": "2026-12-03T06:00:00-06:00",
+    "is_daytime": true,
+    "temp_f": 76,
+    "temp_c": 24.44,
+    "precip_chance_pct": 16,
+    "short_forecast": "Slight Chance Rain Showers"
    }
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-26T23:18:20Z",
+  "issued_utc": "2026-11-27T00:42:20Z",
   "hours": [
    {
-    "start": "2026-11-26T18:00:00-06:00",
-    "temp_f": 60,
-    "temp_c": 15.56,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Cloudy"
-   },
-   {
     "start": "2026-11-26T19:00:00-06:00",
-    "temp_f": 57,
-    "temp_c": 13.89,
+    "temp_f": 56,
+    "temp_c": 13.33,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Cloudy"
    },
@@ -419,8 +416,8 @@
    },
    {
     "start": "2026-11-26T22:00:00-06:00",
-    "temp_f": 47,
-    "temp_c": 8.33,
+    "temp_f": 48,
+    "temp_c": 8.89,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Cloudy"
    },
@@ -724,6 +721,13 @@
     "temp_c": 21.11,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
+   },
+   {
+    "start": "2026-11-28T18:00:00-06:00",
+    "temp_f": 68,
+    "temp_c": 20.0,
+    "precip_chance_pct": 0,
+    "short_forecast": "Clear"
    }
   ]
  },

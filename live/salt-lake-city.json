@@ -11,7 +11,7 @@
   "lon": -111.965,
   "history": "Same site as the official Salt Lake City record"
  },
- "as_of_utc": "2026-11-27T00:07:52Z",
+ "as_of_utc": "2026-11-27T01:07:54Z",
  "now": {
   "time_utc": "2026-11-26T23:55:00Z",
   "temp_c": 7,
@@ -24,7 +24,7 @@
  },
  "today_so_far": {
   "date_local": "2026-11-26",
-  "readings": 10,
+  "readings": 11,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -104,29 +104,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "Thanksgiving Day",
-    "date": "2026-11-26",
-    "high_f": 49,
-    "would_rank": {
-     "value_f": 49,
-     "warm_rank": 51,
-     "cool_rank": 99,
-     "years": 153,
-     "first_year": 1874,
-     "tied_years": [
-      1936,
-      1945,
-      1974,
-      2012
-     ],
-     "standing": "warm",
-     "notable": false,
-     "since": 2025,
-     "record": false,
-     "phrase": "typical for November 26"
-    }
-   },
    {
     "period": "Friday",
     "date": "2026-11-27",
@@ -261,6 +238,29 @@
      "record": false,
      "phrase": "typical for December 2"
     }
+   },
+   {
+    "period": "Thursday",
+    "date": "2026-12-03",
+    "high_f": 49,
+    "would_rank": {
+     "value_f": 49,
+     "warm_rank": 39,
+     "cool_rank": 110,
+     "years": 152,
+     "first_year": 1874,
+     "tied_years": [
+      1901,
+      1961,
+      1965,
+      1981
+     ],
+     "standing": "warm",
+     "notable": false,
+     "since": 2024,
+     "record": false,
+     "phrase": "typical for December 3"
+    }
    }
   ]
  },
@@ -268,15 +268,6 @@
   "issued_utc": "2026-11-26T18:31:26Z",
   "grid": "SLC/98,176",
   "periods": [
-   {
-    "name": "Thanksgiving Day",
-    "start": "2026-11-26T12:00:00-07:00",
-    "is_daytime": true,
-    "temp_f": 49,
-    "temp_c": 9.44,
-    "precip_chance_pct": 0,
-    "short_forecast": "Partly Sunny"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-26T18:00:00-07:00",
@@ -393,19 +384,21 @@
     "temp_c": 2.78,
     "precip_chance_pct": 32,
     "short_forecast": "Chance Light Rain"
+   },
+   {
+    "name": "Thursday",
+    "start": "2026-12-03T06:00:00-07:00",
+    "is_daytime": true,
+    "temp_f": 49,
+    "temp_c": 9.44,
+    "precip_chance_pct": 51,
+    "short_forecast": "Chance Light Rain"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-26T18:31:26Z",
   "hours": [
-   {
-    "start": "2026-11-26T17:00:00-07:00",
-    "temp_f": 45,
-    "temp_c": 7.22,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Sunny"
-   },
    {
     "start": "2026-11-26T18:00:00-07:00",
     "temp_f": 43,
@@ -734,6 +727,13 @@
     "temp_c": 8.89,
     "precip_chance_pct": 25,
     "short_forecast": "Chance Light Rain"
+   },
+   {
+    "start": "2026-11-28T17:00:00-07:00",
+    "temp_f": 47,
+    "temp_c": 8.33,
+    "precip_chance_pct": 1,
+    "short_forecast": "Mostly Sunny"
    }
   ]
  },
