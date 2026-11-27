@@ -11,20 +11,20 @@
   "lon": -86.3186,
   "history": "Same station as the official South Bend record (South Bend airport). Also the nearest official city record to Goshen, about 27 miles; a candidate for Goshen's hourly readings (question D2)"
  },
- "as_of_utc": "2026-11-27T11:08:07Z",
+ "as_of_utc": "2026-11-27T11:28:33Z",
  "now": {
-  "time_utc": "2026-11-27T10:45:00Z",
-  "temp_c": 2,
-  "temp_f": 35.6,
-  "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 1,
-  "humidity_pct": 93.09,
-  "wind_kmh": 18.5,
+  "time_utc": "2026-11-27T10:54:00Z",
+  "temp_c": 1.7,
+  "temp_f": 35.1,
+  "precision": "tenths of a degree",
+  "dewpoint_c": 1.1,
+  "humidity_pct": 95.79,
+  "wind_kmh": 22.32,
   "description": "Light Freezing Rain and Fog/Mist"
  },
  "today_so_far": {
   "date_local": "2026-11-27",
-  "readings": 7,
+  "readings": 9,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -83,7 +83,7 @@
   },
   "forecast_highs": [
    {
-    "period": "Friday",
+    "period": "Today",
     "date": "2026-11-27",
     "high_f": 45,
     "would_rank": {
@@ -243,20 +243,11 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-27T10:15:07Z",
+  "issued_utc": "2026-11-27T10:29:46Z",
   "grid": "IWX/27,64",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-27T05:00:00-05:00",
-    "is_daytime": false,
-    "temp_f": 34,
-    "temp_c": 1.11,
-    "precip_chance_pct": 86,
-    "short_forecast": "Rain And Snow"
-   },
-   {
-    "name": "Friday",
+    "name": "Today",
     "start": "2026-11-27T06:00:00-05:00",
     "is_daytime": true,
     "temp_f": 45,
@@ -265,7 +256,7 @@
     "short_forecast": "Light Rain"
    },
    {
-    "name": "Friday Night",
+    "name": "Tonight",
     "start": "2026-11-27T18:00:00-05:00",
     "is_daytime": false,
     "temp_f": 30,
@@ -371,6 +362,15 @@
     "temp_c": 13.89,
     "precip_chance_pct": 33,
     "short_forecast": "Chance Light Rain"
+   },
+   {
+    "name": "Thursday Night",
+    "start": "2026-12-03T18:00:00-05:00",
+    "is_daytime": false,
+    "temp_f": 42,
+    "temp_c": 5.56,
+    "precip_chance_pct": 58,
+    "short_forecast": "Light Rain Likely"
    }
   ]
  },

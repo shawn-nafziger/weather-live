@@ -11,20 +11,20 @@
   "lon": -81.8519,
   "history": "Same site as the official Cleveland record"
  },
- "as_of_utc": "2026-11-27T11:08:07Z",
+ "as_of_utc": "2026-11-27T11:28:33Z",
  "now": {
-  "time_utc": "2026-11-27T10:45:00Z",
-  "temp_c": 4,
-  "temp_f": 39.2,
-  "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 4,
+  "time_utc": "2026-11-27T10:51:00Z",
+  "temp_c": 4.4,
+  "temp_f": 39.9,
+  "precision": "tenths of a degree",
+  "dewpoint_c": 4.4,
   "humidity_pct": 100,
-  "wind_kmh": 11.12,
-  "description": "Light Rain and Fog/Mist"
+  "wind_kmh": 9.36,
+  "description": "Light Rain"
  },
  "today_so_far": {
   "date_local": "2026-11-27",
-  "readings": 5,
+  "readings": 6,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -85,7 +85,7 @@
   },
   "forecast_highs": [
    {
-    "period": "Friday",
+    "period": "Today",
     "date": "2026-11-27",
     "high_f": 42,
     "would_rank": {
@@ -259,16 +259,7 @@
   "grid": "CLE/78,60",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-27T03:00:00-05:00",
-    "is_daytime": false,
-    "temp_f": 40,
-    "temp_c": 4.44,
-    "precip_chance_pct": 99,
-    "short_forecast": "Light Rain"
-   },
-   {
-    "name": "Friday",
+    "name": "Today",
     "start": "2026-11-27T06:00:00-05:00",
     "is_daytime": true,
     "temp_f": 42,
@@ -277,7 +268,7 @@
     "short_forecast": "Light Rain"
    },
    {
-    "name": "Friday Night",
+    "name": "Tonight",
     "start": "2026-11-27T18:00:00-05:00",
     "is_daytime": false,
     "temp_f": 34,
@@ -383,6 +374,15 @@
     "temp_c": 14.44,
     "precip_chance_pct": 20,
     "short_forecast": "Mostly Cloudy then Slight Chance Light Rain"
+   },
+   {
+    "name": "Thursday Night",
+    "start": "2026-12-03T18:00:00-05:00",
+    "is_daytime": false,
+    "temp_f": 44,
+    "temp_c": 6.67,
+    "precip_chance_pct": 38,
+    "short_forecast": "Chance Light Rain"
    }
   ]
  },

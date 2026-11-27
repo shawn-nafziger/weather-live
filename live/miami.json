@@ -11,29 +11,29 @@
   "lon": -80.3164,
   "history": "Same station as the official Miami record"
  },
- "as_of_utc": "2026-11-27T11:08:07Z",
+ "as_of_utc": "2026-11-27T11:28:33Z",
  "now": {
-  "time_utc": "2026-11-27T10:50:00Z",
-  "temp_c": 17,
-  "temp_f": 62.6,
+  "time_utc": "2026-11-27T11:05:00Z",
+  "temp_c": 16,
+  "temp_f": 60.8,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 16,
-  "humidity_pct": 93.84,
+  "humidity_pct": 100,
   "wind_kmh": 0,
   "description": "Mostly Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-27",
-  "readings": 3,
+  "readings": 4,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
   "high_c": 18.3,
   "high_f": 64.9,
   "high_time_utc": "2026-11-27T07:53:00Z",
-  "low_c": 17.2,
-  "low_f": 63.0,
-  "low_time_utc": "2026-11-27T09:53:00Z",
+  "low_c": 16.1,
+  "low_f": 61.0,
+  "low_time_utc": "2026-11-27T10:53:00Z",
   "peak_between_reports": {
    "at_least_f": 65.3,
    "about_f": 66.2,
@@ -96,7 +96,7 @@
   },
   "forecast_highs": [
    {
-    "period": "Friday",
+    "period": "Today",
     "date": "2026-11-27",
     "high_f": 74,
     "would_rank": {
@@ -289,16 +289,7 @@
   "grid": "MFL/105,51",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-27T03:00:00-05:00",
-    "is_daytime": false,
-    "temp_f": 61,
-    "temp_c": 16.11,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Clear"
-   },
-   {
-    "name": "Friday",
+    "name": "Today",
     "start": "2026-11-27T06:00:00-05:00",
     "is_daytime": true,
     "temp_f": 74,
@@ -307,7 +298,7 @@
     "short_forecast": "Partly Sunny"
    },
    {
-    "name": "Friday Night",
+    "name": "Tonight",
     "start": "2026-11-27T18:00:00-05:00",
     "is_daytime": false,
     "temp_f": 61,
@@ -413,6 +404,15 @@
     "temp_c": 28.89,
     "precip_chance_pct": 10,
     "short_forecast": "Mostly Sunny"
+   },
+   {
+    "name": "Thursday Night",
+    "start": "2026-12-03T18:00:00-05:00",
+    "is_daytime": false,
+    "temp_f": 75,
+    "temp_c": 23.89,
+    "precip_chance_pct": 13,
+    "short_forecast": "Partly Cloudy"
    }
   ]
  },
