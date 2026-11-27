@@ -11,20 +11,20 @@
   "lon": -82.5403,
   "history": "Same site as the official Tampa record"
  },
- "as_of_utc": "2026-11-27T22:07:50Z",
+ "as_of_utc": "2026-11-27T23:07:57Z",
  "now": {
-  "time_utc": "2026-11-27T21:30:00Z",
-  "temp_c": 19,
-  "temp_f": 66.2,
+  "time_utc": "2026-11-27T22:50:00Z",
+  "temp_c": 18,
+  "temp_f": 64.4,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 11,
-  "humidity_pct": 59.76,
-  "wind_kmh": 9.25,
+  "dewpoint_c": 12,
+  "humidity_pct": 67.97,
+  "wind_kmh": 12.96,
   "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-27",
-  "readings": 11,
+  "readings": 12,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -88,27 +88,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-27",
-    "high_f": 67,
-    "would_rank": {
-     "value_f": 67,
-     "warm_rank": 120,
-     "cool_rank": 16,
-     "years": 137,
-     "first_year": 1890,
-     "tied_years": [
-      1904,
-      1947
-     ],
-     "standing": "cool",
-     "notable": true,
-     "since": 2018,
-     "record": false,
-     "phrase": "16th coolest November 27 high (tied) of 137 since 1890, coolest since 2018"
-    }
-   },
    {
     "period": "Saturday",
     "date": "2026-11-28",
@@ -255,6 +234,33 @@
      "record": false,
      "phrase": "25th warmest December 3 high (tied) of 137 since 1890, warmest since 2023"
     }
+   },
+   {
+    "period": "Friday",
+    "date": "2026-12-04",
+    "high_f": 81,
+    "would_rank": {
+     "value_f": 81,
+     "warm_rank": 12,
+     "cool_rank": 118,
+     "years": 137,
+     "first_year": 1890,
+     "tied_years": [
+      1897,
+      1912,
+      1931,
+      1984,
+      2003,
+      2017,
+      2023,
+      2025
+     ],
+     "standing": "warm",
+     "notable": true,
+     "since": 2025,
+     "record": false,
+     "phrase": "12th warmest December 4 high (tied) of 137 since 1890, warmest since 2025"
+    }
    }
   ]
  },
@@ -262,15 +268,6 @@
   "issued_utc": "2026-11-27T18:57:29Z",
   "grid": "TBW/68,98",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-27T14:00:00-05:00",
-    "is_daytime": true,
-    "temp_f": 67,
-    "temp_c": 19.44,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-27T18:00:00-05:00",
@@ -387,19 +384,21 @@
     "temp_c": 20.56,
     "precip_chance_pct": 3,
     "short_forecast": "Partly Cloudy"
+   },
+   {
+    "name": "Friday",
+    "start": "2026-12-04T06:00:00-05:00",
+    "is_daytime": true,
+    "temp_f": 81,
+    "temp_c": 27.22,
+    "precip_chance_pct": 15,
+    "short_forecast": "Mostly Sunny then Isolated Rain Showers"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-27T18:57:29Z",
   "hours": [
-   {
-    "start": "2026-11-27T17:00:00-05:00",
-    "temp_f": 66,
-    "temp_c": 18.89,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "start": "2026-11-27T18:00:00-05:00",
     "temp_f": 64,
@@ -728,6 +727,13 @@
     "temp_c": 21.11,
     "precip_chance_pct": 1,
     "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "start": "2026-11-29T17:00:00-05:00",
+    "temp_f": 70,
+    "temp_c": 21.11,
+    "precip_chance_pct": 1,
+    "short_forecast": "Cloudy"
    }
   ]
  },
