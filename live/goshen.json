@@ -11,29 +11,23 @@
   "lon": -85.7867,
   "history": "Provisional: Goshen Municipal Airport. The long record (GOSHEN 3SW) is a once-a-day volunteer station, so today's readings and the record come from different stations (question D2)"
  },
- "as_of_utc": "2026-11-27T04:07:55Z",
+ "as_of_utc": "2026-11-27T05:07:54Z",
  "now": {
-  "time_utc": "2026-11-27T02:53:00Z",
-  "temp_c": 2.8,
-  "temp_f": 37.0,
-  "precision": "tenths of a degree",
-  "dewpoint_c": 1.7,
-  "humidity_pct": 92.47,
-  "wind_kmh": 25.92,
-  "description": ""
+  "time_utc": "2026-11-27T04:40:00Z",
+  "temp_c": 3,
+  "temp_f": 37.4,
+  "precision": "nearest whole \u00b0C",
+  "dewpoint_c": 2,
+  "humidity_pct": 93.14,
+  "wind_kmh": 24.08,
+  "description": "Light Rain"
  },
  "today_so_far": {
-  "date_local": "2026-11-26",
-  "readings": 19,
-  "basis": "hourly reports (tenths of a degree)",
-  "approximate": false,
-  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 4.4,
-  "high_f": 39.9,
-  "high_time_utc": "2026-11-26T23:53:00Z",
-  "low_c": 0,
-  "low_f": 32.0,
-  "low_time_utc": "2026-11-26T07:53:00Z"
+  "date_local": "2026-11-27",
+  "readings": 0,
+  "basis": "5-minute readings (whole \u00b0C, approximate)",
+  "approximate": true,
+  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two."
  },
  "record": {
   "series": "GOSHEN 3SW (COOP 123418)",
@@ -42,7 +36,7 @@
   "rank_today": false,
   "latest_final": {
    "date": "2026-11-25",
-   "is_yesterday": true,
+   "is_yesterday": false,
    "high_f": 44,
    "low_f": 23,
    "high_rank": {
@@ -89,13 +83,13 @@
   "grid": "IWX/45,57",
   "periods": [
    {
-    "name": "Tonight",
-    "start": "2026-11-26T23:00:00-05:00",
+    "name": "Overnight",
+    "start": "2026-11-27T00:00:00-05:00",
     "is_daytime": false,
     "temp_f": 34,
     "temp_c": 1.11,
     "precip_chance_pct": 91,
-    "short_forecast": "Light Rain"
+    "short_forecast": "Rain And Snow"
    },
    {
     "name": "Friday",
@@ -219,13 +213,6 @@
  "hourly": {
   "issued_utc": "2026-11-27T03:15:22Z",
   "hours": [
-   {
-    "start": "2026-11-26T23:00:00-05:00",
-    "temp_f": 37,
-    "temp_c": 2.78,
-    "precip_chance_pct": 88,
-    "short_forecast": "Light Rain"
-   },
    {
     "start": "2026-11-27T00:00:00-05:00",
     "temp_f": 36,
@@ -554,6 +541,13 @@
     "temp_c": 3.89,
     "precip_chance_pct": 1,
     "short_forecast": "Partly Cloudy"
+   },
+   {
+    "start": "2026-11-28T23:00:00-05:00",
+    "temp_f": 39,
+    "temp_c": 3.89,
+    "precip_chance_pct": 1,
+    "short_forecast": "Mostly Cloudy"
    }
   ]
  },

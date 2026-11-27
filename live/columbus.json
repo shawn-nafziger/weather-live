@@ -11,29 +11,23 @@
   "lon": -82.8769,
   "history": "Same site as the official Columbus record"
  },
- "as_of_utc": "2026-11-27T04:07:55Z",
+ "as_of_utc": "2026-11-27T05:07:54Z",
  "now": {
-  "time_utc": "2026-11-27T02:51:00Z",
-  "temp_c": 6.1,
-  "temp_f": 43.0,
-  "precision": "tenths of a degree",
-  "dewpoint_c": 5.6,
-  "humidity_pct": 96.6,
-  "wind_kmh": 7.56,
-  "description": ""
+  "time_utc": "2026-11-27T04:40:00Z",
+  "temp_c": 6,
+  "temp_f": 42.8,
+  "precision": "nearest whole \u00b0C",
+  "dewpoint_c": 6,
+  "humidity_pct": 100,
+  "wind_kmh": 0,
+  "description": "Light Rain and Fog/Mist"
  },
  "today_so_far": {
-  "date_local": "2026-11-26",
-  "readings": 21,
-  "basis": "hourly reports (tenths of a degree)",
-  "approximate": false,
-  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 6.7,
-  "high_f": 44.1,
-  "high_time_utc": "2026-11-26T07:51:00Z",
-  "low_c": 6.1,
-  "low_f": 43.0,
-  "low_time_utc": "2026-11-26T06:51:00Z"
+  "date_local": "2026-11-27",
+  "readings": 0,
+  "basis": "5-minute readings (whole \u00b0C, approximate)",
+  "approximate": true,
+  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two."
  },
  "record": {
   "series": "Columbus area (ThreadEx; airport)",
@@ -42,7 +36,7 @@
   "rank_today": true,
   "latest_final": {
    "date": "2026-11-25",
-   "is_yesterday": true,
+   "is_yesterday": false,
    "high_f": 48,
    "low_f": 29,
    "high_rank": {
@@ -385,13 +379,6 @@
   "issued_utc": "2026-11-26T23:11:08Z",
   "hours": [
    {
-    "start": "2026-11-26T23:00:00-05:00",
-    "temp_f": 44,
-    "temp_c": 6.67,
-    "precip_chance_pct": 94,
-    "short_forecast": "Light Rain"
-   },
-   {
     "start": "2026-11-27T00:00:00-05:00",
     "temp_f": 44,
     "temp_c": 6.67,
@@ -719,6 +706,13 @@
     "temp_c": 3.33,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear"
+   },
+   {
+    "start": "2026-11-28T23:00:00-05:00",
+    "temp_f": 37,
+    "temp_c": 2.78,
+    "precip_chance_pct": 0,
+    "short_forecast": "Partly Cloudy"
    }
   ]
  },
