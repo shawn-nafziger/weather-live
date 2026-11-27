@@ -11,20 +11,20 @@
   "lon": -81.6937,
   "history": "Same site as the official Jacksonville record"
  },
- "as_of_utc": "2026-11-27T09:08:03Z",
+ "as_of_utc": "2026-11-27T10:08:02Z",
  "now": {
-  "time_utc": "2026-11-27T08:40:00Z",
-  "temp_c": 6,
-  "temp_f": 42.8,
+  "time_utc": "2026-11-27T09:50:00Z",
+  "temp_c": 5,
+  "temp_f": 41.0,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 5,
-  "humidity_pct": 93.3,
-  "wind_kmh": 11.12,
+  "dewpoint_c": 4,
+  "humidity_pct": 93.25,
+  "wind_kmh": 7.42,
   "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-27",
-  "readings": 1,
+  "readings": 2,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -38,6 +38,11 @@
    "at_least_f": 45.5,
    "about_f": 46.4,
    "time_utc": "2026-11-27T05:20:00Z"
+  },
+  "dip_between_reports": {
+   "at_most_f": 41.9,
+   "about_f": 41.0,
+   "time_utc": "2026-11-27T09:45:00Z"
   }
  },
  "record": {
@@ -392,13 +397,6 @@
   "issued_utc": "2026-11-27T06:21:25Z",
   "hours": [
    {
-    "start": "2026-11-27T04:00:00-05:00",
-    "temp_f": 43,
-    "temp_c": 6.11,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Clear"
-   },
-   {
     "start": "2026-11-27T05:00:00-05:00",
     "temp_f": 42,
     "temp_c": 5.56,
@@ -724,6 +722,13 @@
     "start": "2026-11-29T03:00:00-05:00",
     "temp_f": 48,
     "temp_c": 8.89,
+    "precip_chance_pct": 3,
+    "short_forecast": "Cloudy"
+   },
+   {
+    "start": "2026-11-29T04:00:00-05:00",
+    "temp_f": 49,
+    "temp_c": 9.44,
     "precip_chance_pct": 3,
     "short_forecast": "Cloudy"
    }
