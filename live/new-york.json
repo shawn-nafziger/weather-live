@@ -11,20 +11,20 @@
   "lon": -73.9667,
   "history": "Same site as the official New York record"
  },
- "as_of_utc": "2026-11-27T21:07:49Z",
+ "as_of_utc": "2026-11-27T22:07:50Z",
  "now": {
-  "time_utc": "2026-11-27T20:28:00Z",
+  "time_utc": "2026-11-27T21:39:00Z",
   "temp_c": 8.9,
   "temp_f": 48.0,
   "precision": "tenths of a degree",
-  "dewpoint_c": 7.2,
-  "humidity_pct": 89.09,
-  "wind_kmh": 7.56,
-  "description": "Light Rain"
+  "dewpoint_c": 6.1,
+  "humidity_pct": 82.61,
+  "wind_kmh": null,
+  "description": "Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-27",
-  "readings": 30,
+  "readings": 34,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -265,17 +265,17 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-27T19:12:21Z",
+  "issued_utc": "2026-11-27T20:45:39Z",
   "grid": "OKX/34,45",
   "periods": [
    {
     "name": "This Afternoon",
-    "start": "2026-11-27T14:00:00-05:00",
+    "start": "2026-11-27T16:00:00-05:00",
     "is_daytime": true,
     "temp_f": 55,
     "temp_c": 12.78,
-    "precip_chance_pct": 63,
-    "short_forecast": "Rain Showers Likely"
+    "precip_chance_pct": 72,
+    "short_forecast": "Chance Rain Showers"
    },
    {
     "name": "Tonight",
@@ -283,8 +283,8 @@
     "is_daytime": false,
     "temp_f": 44,
     "temp_c": 6.67,
-    "precip_chance_pct": 19,
-    "short_forecast": "Slight Chance Rain Showers then Mostly Cloudy"
+    "precip_chance_pct": 5,
+    "short_forecast": "Chance Rain Showers then Mostly Cloudy"
    },
    {
     "name": "Saturday",
@@ -399,13 +399,6 @@
  "hourly": {
   "issued_utc": "2026-11-27T20:45:39Z",
   "hours": [
-   {
-    "start": "2026-11-27T16:00:00-05:00",
-    "temp_f": 52,
-    "temp_c": 11.11,
-    "precip_chance_pct": 72,
-    "short_forecast": "Chance Rain Showers"
-   },
    {
     "start": "2026-11-27T17:00:00-05:00",
     "temp_f": 51,
@@ -730,6 +723,13 @@
    },
    {
     "start": "2026-11-29T15:00:00-05:00",
+    "temp_f": 52,
+    "temp_c": 11.11,
+    "precip_chance_pct": 0,
+    "short_forecast": "Partly Sunny"
+   },
+   {
+    "start": "2026-11-29T16:00:00-05:00",
     "temp_f": 52,
     "temp_c": 11.11,
     "precip_chance_pct": 0,
