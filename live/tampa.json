@@ -11,15 +11,15 @@
   "lon": -82.5403,
   "history": "Same site as the official Tampa record"
  },
- "as_of_utc": "2026-11-27T18:07:52Z",
+ "as_of_utc": "2026-11-27T19:08:01Z",
  "now": {
-  "time_utc": "2026-11-27T17:30:00Z",
-  "temp_c": 19,
-  "temp_f": 66.2,
+  "time_utc": "2026-11-27T18:55:00Z",
+  "temp_c": 21,
+  "temp_f": 69.8,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 11,
-  "humidity_pct": 59.76,
-  "wind_kmh": 0,
+  "dewpoint_c": 12,
+  "humidity_pct": 56.41,
+  "wind_kmh": 14.83,
   "description": "Clear"
  },
  "today_so_far": {
@@ -35,9 +35,9 @@
   "low_f": 57.0,
   "low_time_utc": "2026-11-27T12:53:00Z",
   "peak_between_reports": {
-   "at_least_f": 65.3,
-   "about_f": 66.2,
-   "time_utc": "2026-11-27T17:25:00Z"
+   "at_least_f": 68.9,
+   "about_f": 69.8,
+   "time_utc": "2026-11-27T18:55:00Z"
   }
  },
  "record": {
@@ -89,7 +89,7 @@
   },
   "forecast_highs": [
    {
-    "period": "Today",
+    "period": "This Afternoon",
     "date": "2026-11-27",
     "high_f": 67,
     "would_rank": {
@@ -259,17 +259,17 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-27T16:06:45Z",
+  "issued_utc": "2026-11-27T18:21:40Z",
   "grid": "TBW/68,98",
   "periods": [
    {
-    "name": "Today",
-    "start": "2026-11-27T11:00:00-05:00",
+    "name": "This Afternoon",
+    "start": "2026-11-27T13:00:00-05:00",
     "is_daytime": true,
     "temp_f": 67,
     "temp_c": 19.44,
     "precip_chance_pct": 0,
-    "short_forecast": "Partly Sunny"
+    "short_forecast": "Mostly Cloudy"
    },
    {
     "name": "Tonight",
@@ -331,8 +331,8 @@
     "is_daytime": false,
     "temp_f": 64,
     "temp_c": 17.78,
-    "precip_chance_pct": 55,
-    "short_forecast": "Chance Rain Showers"
+    "precip_chance_pct": 52,
+    "short_forecast": "Scattered Rain Showers"
    },
    {
     "name": "Tuesday",
@@ -340,7 +340,7 @@
     "is_daytime": true,
     "temp_f": 73,
     "temp_c": 22.78,
-    "precip_chance_pct": 55,
+    "precip_chance_pct": 52,
     "short_forecast": "Scattered Showers And Thunderstorms"
    },
    {
@@ -349,7 +349,7 @@
     "is_daytime": false,
     "temp_f": 65,
     "temp_c": 18.33,
-    "precip_chance_pct": 30,
+    "precip_chance_pct": 29,
     "short_forecast": "Scattered Rain Showers then Mostly Cloudy"
    },
    {
@@ -365,8 +365,8 @@
     "name": "Wednesday Night",
     "start": "2026-12-02T18:00:00-05:00",
     "is_daytime": false,
-    "temp_f": 67,
-    "temp_c": 19.44,
+    "temp_f": 66,
+    "temp_c": 18.89,
     "precip_chance_pct": 2,
     "short_forecast": "Partly Cloudy"
    },
@@ -383,23 +383,16 @@
     "name": "Thursday Night",
     "start": "2026-12-03T18:00:00-05:00",
     "is_daytime": false,
-    "temp_f": 70,
-    "temp_c": 21.11,
+    "temp_f": 69,
+    "temp_c": 20.56,
     "precip_chance_pct": 3,
     "short_forecast": "Partly Cloudy"
    }
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-27T16:06:45Z",
+  "issued_utc": "2026-11-27T18:21:40Z",
   "hours": [
-   {
-    "start": "2026-11-27T13:00:00-05:00",
-    "temp_f": 67,
-    "temp_c": 19.44,
-    "precip_chance_pct": 0,
-    "short_forecast": "Partly Sunny"
-   },
    {
     "start": "2026-11-27T14:00:00-05:00",
     "temp_f": 67,
@@ -726,6 +719,13 @@
     "start": "2026-11-29T12:00:00-05:00",
     "temp_f": 68,
     "temp_c": 20.0,
+    "precip_chance_pct": 1,
+    "short_forecast": "Cloudy"
+   },
+   {
+    "start": "2026-11-29T13:00:00-05:00",
+    "temp_f": 69,
+    "temp_c": 20.56,
     "precip_chance_pct": 1,
     "short_forecast": "Cloudy"
    }
