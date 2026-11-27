@@ -11,15 +11,15 @@
   "lon": -84.4269,
   "history": "Same site as the official Atlanta record"
  },
- "as_of_utc": "2026-11-26T23:07:53Z",
+ "as_of_utc": "2026-11-27T00:07:52Z",
  "now": {
-  "time_utc": "2026-11-26T22:45:00Z",
-  "temp_c": 5,
-  "temp_f": 41.0,
+  "time_utc": "2026-11-26T23:35:00Z",
+  "temp_c": 4,
+  "temp_f": 39.2,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 2,
-  "humidity_pct": 80.94,
-  "wind_kmh": 25.92,
+  "humidity_pct": 86.8,
+  "wind_kmh": null,
   "description": "Cloudy"
  },
  "today_so_far": {
@@ -40,9 +40,9 @@
    "time_utc": "2026-11-26T16:10:00Z"
   },
   "dip_between_reports": {
-   "at_most_f": 41.9,
-   "about_f": 41.0,
-   "time_utc": "2026-11-26T22:20:00Z"
+   "at_most_f": 40.1,
+   "about_f": 39.2,
+   "time_utc": "2026-11-26T23:35:00Z"
   }
  },
  "record": {
@@ -97,28 +97,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "Thanksgiving Day",
-    "date": "2026-11-26",
-    "high_f": 53,
-    "would_rank": {
-     "value_f": 53,
-     "warm_rank": 103,
-     "cool_rank": 44,
-     "years": 149,
-     "first_year": 1878,
-     "tied_years": [
-      1916,
-      1971,
-      1974
-     ],
-     "standing": "cool",
-     "notable": false,
-     "since": 2023,
-     "record": false,
-     "phrase": "typical for November 26"
-    }
-   },
    {
     "period": "Friday",
     "date": "2026-11-27",
@@ -267,6 +245,32 @@
      "record": false,
      "phrase": "typical for December 2"
     }
+   },
+   {
+    "period": "Thursday",
+    "date": "2026-12-03",
+    "high_f": 65,
+    "would_rank": {
+     "value_f": 65,
+     "warm_rank": 28,
+     "cool_rank": 115,
+     "years": 149,
+     "first_year": 1878,
+     "tied_years": [
+      1890,
+      1909,
+      1933,
+      1941,
+      1973,
+      1977,
+      2022
+     ],
+     "standing": "warm",
+     "notable": true,
+     "since": 2023,
+     "record": false,
+     "phrase": "28th warmest December 3 high (tied) of 149 since 1878, warmest since 2023"
+    }
    }
   ]
  },
@@ -274,15 +278,6 @@
   "issued_utc": "2026-11-26T18:26:16Z",
   "grid": "FFC/50,82",
   "periods": [
-   {
-    "name": "Thanksgiving Day",
-    "start": "2026-11-26T13:00:00-05:00",
-    "is_daytime": true,
-    "temp_f": 53,
-    "temp_c": 11.67,
-    "precip_chance_pct": 30,
-    "short_forecast": "Chance Rain Showers"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-26T18:00:00-05:00",
@@ -399,19 +394,21 @@
     "temp_c": 8.33,
     "precip_chance_pct": 0,
     "short_forecast": "Partly Cloudy"
+   },
+   {
+    "name": "Thursday",
+    "start": "2026-12-03T06:00:00-05:00",
+    "is_daytime": true,
+    "temp_f": 65,
+    "temp_c": 18.33,
+    "precip_chance_pct": 4,
+    "short_forecast": "Partly Sunny"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-26T18:26:16Z",
   "hours": [
-   {
-    "start": "2026-11-26T18:00:00-05:00",
-    "temp_f": 40,
-    "temp_c": 4.44,
-    "precip_chance_pct": 0,
-    "short_forecast": "Cloudy"
-   },
    {
     "start": "2026-11-26T19:00:00-05:00",
     "temp_f": 39,
@@ -740,6 +737,13 @@
     "temp_c": 13.89,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
+   },
+   {
+    "start": "2026-11-28T18:00:00-05:00",
+    "temp_f": 54,
+    "temp_c": 12.22,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Clear"
    }
   ]
  },

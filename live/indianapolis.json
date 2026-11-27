@@ -11,14 +11,14 @@
   "lon": -86.2816,
   "history": "Same site as the official Indianapolis record"
  },
- "as_of_utc": "2026-11-26T23:07:53Z",
+ "as_of_utc": "2026-11-27T00:07:52Z",
  "now": {
-  "time_utc": "2026-11-26T22:45:00Z",
+  "time_utc": "2026-11-26T23:35:00Z",
   "temp_c": 4,
   "temp_f": 39.2,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 3,
-  "humidity_pct": 93.2,
+  "dewpoint_c": 2,
+  "humidity_pct": 86.8,
   "wind_kmh": null,
   "description": "Light Rain and Fog/Mist"
  },
@@ -85,28 +85,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "Thanksgiving Day",
-    "date": "2026-11-26",
-    "high_f": 43,
-    "would_rank": {
-     "value_f": 43,
-     "warm_rank": 89,
-     "cool_rank": 65,
-     "years": 156,
-     "first_year": 1871,
-     "tied_years": [
-      1872,
-      1919,
-      2024
-     ],
-     "standing": "cool",
-     "notable": false,
-     "since": 2024,
-     "record": false,
-     "phrase": "typical for November 26"
-    }
-   },
    {
     "period": "Friday",
     "date": "2026-11-27",
@@ -242,22 +220,38 @@
      "record": false,
      "phrase": "typical for December 2"
     }
+   },
+   {
+    "period": "Thursday",
+    "date": "2026-12-03",
+    "high_f": 58,
+    "would_rank": {
+     "value_f": 58,
+     "warm_rank": 19,
+     "cool_rank": 132,
+     "years": 156,
+     "first_year": 1871,
+     "tied_years": [
+      1926,
+      1947,
+      1948,
+      1951,
+      1999,
+      2017
+     ],
+     "standing": "warm",
+     "notable": true,
+     "since": 2017,
+     "record": false,
+     "phrase": "19th warmest December 3 high (tied) of 156 since 1871, warmest since 2017"
+    }
    }
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-26T21:45:22Z",
+  "issued_utc": "2026-11-26T23:01:19Z",
   "grid": "IND/54,67",
   "periods": [
-   {
-    "name": "Thanksgiving Day",
-    "start": "2026-11-26T17:00:00-05:00",
-    "is_daytime": true,
-    "temp_f": 43,
-    "temp_c": 6.11,
-    "precip_chance_pct": 100,
-    "short_forecast": "Light Rain"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-26T18:00:00-05:00",
@@ -374,19 +368,21 @@
     "temp_c": 6.11,
     "precip_chance_pct": 3,
     "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "name": "Thursday",
+    "start": "2026-12-03T06:00:00-05:00",
+    "is_daytime": true,
+    "temp_f": 58,
+    "temp_c": 14.44,
+    "precip_chance_pct": 25,
+    "short_forecast": "Partly Sunny then Chance Light Rain"
    }
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-26T22:15:23Z",
+  "issued_utc": "2026-11-26T23:01:19Z",
   "hours": [
-   {
-    "start": "2026-11-26T18:00:00-05:00",
-    "temp_f": 41,
-    "temp_c": 5.0,
-    "precip_chance_pct": 100,
-    "short_forecast": "Light Rain"
-   },
    {
     "start": "2026-11-26T19:00:00-05:00",
     "temp_f": 40,
@@ -715,6 +711,13 @@
     "temp_c": 8.33,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Sunny"
+   },
+   {
+    "start": "2026-11-28T18:00:00-05:00",
+    "temp_f": 45,
+    "temp_c": 7.22,
+    "precip_chance_pct": 0,
+    "short_forecast": "Partly Cloudy"
    }
   ]
  },

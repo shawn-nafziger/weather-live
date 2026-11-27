@@ -11,9 +11,9 @@
   "lon": -87.9044,
   "history": "Same station as the official Chicago record (ThreadEx, O'Hare since 1980)"
  },
- "as_of_utc": "2026-11-26T23:07:53Z",
+ "as_of_utc": "2026-11-27T00:07:52Z",
  "now": {
-  "time_utc": "2026-11-26T22:45:00Z",
+  "time_utc": "2026-11-26T23:35:00Z",
   "temp_c": 7,
   "temp_f": 44.6,
   "precision": "nearest whole \u00b0C",
@@ -96,30 +96,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "Thanksgiving Day",
-    "date": "2026-11-26",
-    "high_f": 46,
-    "would_rank": {
-     "value_f": 46,
-     "warm_rank": 59,
-     "cool_rank": 92,
-     "years": 155,
-     "first_year": 1872,
-     "tied_years": [
-      1923,
-      1969,
-      1979,
-      2005,
-      2020
-     ],
-     "standing": "warm",
-     "notable": false,
-     "since": 2022,
-     "record": false,
-     "phrase": "typical for November 26"
-    }
-   },
    {
     "period": "Friday",
     "date": "2026-11-27",
@@ -257,6 +233,27 @@
      "record": false,
      "phrase": "22nd warmest December 2 high (tied) of 155 since 1872, warmest since 2022"
     }
+   },
+   {
+    "period": "Thursday",
+    "date": "2026-12-03",
+    "high_f": 54,
+    "would_rank": {
+     "value_f": 54,
+     "warm_rank": 23,
+     "cool_rank": 131,
+     "years": 155,
+     "first_year": 1872,
+     "tied_years": [
+      1988,
+      1994
+     ],
+     "standing": "warm",
+     "notable": true,
+     "since": 2017,
+     "record": false,
+     "phrase": "23rd warmest December 3 high (tied) of 155 since 1872, warmest since 2017"
+    }
    }
   ]
  },
@@ -264,15 +261,6 @@
   "issued_utc": "2026-11-26T21:31:02Z",
   "grid": "LOT/66,77",
   "periods": [
-   {
-    "name": "Thanksgiving Day",
-    "start": "2026-11-26T15:00:00-06:00",
-    "is_daytime": true,
-    "temp_f": 46,
-    "temp_c": 7.78,
-    "precip_chance_pct": 58,
-    "short_forecast": "Rain Likely"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-26T18:00:00-06:00",
@@ -389,19 +377,21 @@
     "temp_c": 6.67,
     "precip_chance_pct": 5,
     "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "name": "Thursday",
+    "start": "2026-12-03T06:00:00-06:00",
+    "is_daytime": true,
+    "temp_f": 54,
+    "temp_c": 12.22,
+    "precip_chance_pct": 30,
+    "short_forecast": "Chance Rain"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-26T21:31:02Z",
   "hours": [
-   {
-    "start": "2026-11-26T17:00:00-06:00",
-    "temp_f": 44,
-    "temp_c": 6.67,
-    "precip_chance_pct": 58,
-    "short_forecast": "Rain Likely"
-   },
    {
     "start": "2026-11-26T18:00:00-06:00",
     "temp_f": 43,
@@ -730,6 +720,13 @@
     "temp_c": 10.0,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
+   },
+   {
+    "start": "2026-11-28T17:00:00-06:00",
+    "temp_f": 48,
+    "temp_c": 8.89,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Sunny"
    }
   ]
  },
