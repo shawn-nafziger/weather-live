@@ -11,20 +11,20 @@
   "lon": -121.9242,
   "history": "Same site as the official San Jose record"
  },
- "as_of_utc": "2026-11-28T01:08:00Z",
+ "as_of_utc": "2026-11-28T02:07:57Z",
  "now": {
-  "time_utc": "2026-11-28T00:45:00Z",
-  "temp_c": 17,
-  "temp_f": 62.6,
+  "time_utc": "2026-11-28T01:50:00Z",
+  "temp_c": 16,
+  "temp_f": 60.8,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 10,
-  "humidity_pct": 63.4,
-  "wind_kmh": 11.12,
+  "dewpoint_c": 11,
+  "humidity_pct": 72.22,
+  "wind_kmh": 7.42,
   "description": "Partly Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-27",
-  "readings": 12,
+  "readings": 13,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -105,31 +105,6 @@
    "phrase": "already the 23rd warmest November 27 high (tied) of 127 since 1893, warmest since 2023"
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-27",
-    "high_f": 68,
-    "would_rank": {
-     "value_f": 68,
-     "warm_rank": 17,
-     "cool_rank": 105,
-     "years": 127,
-     "first_year": 1893,
-     "tied_years": [
-      1901,
-      1943,
-      1947,
-      1949,
-      1955,
-      2023
-     ],
-     "standing": "warm",
-     "notable": true,
-     "since": 2023,
-     "record": false,
-     "phrase": "17th warmest November 27 high (tied) of 127 since 1893, warmest since 2023"
-    }
-   },
    {
     "period": "Saturday",
     "date": "2026-11-28",
@@ -295,6 +270,33 @@
      "record": false,
      "phrase": "typical for December 3"
     }
+   },
+   {
+    "period": "Friday",
+    "date": "2026-12-04",
+    "high_f": 60,
+    "would_rank": {
+     "value_f": 60,
+     "warm_rank": 65,
+     "cool_rank": 54,
+     "years": 126,
+     "first_year": 1893,
+     "tied_years": [
+      1916,
+      1935,
+      1964,
+      1967,
+      1978,
+      1999,
+      2005,
+      2008
+     ],
+     "standing": "cool",
+     "notable": false,
+     "since": 2025,
+     "record": false,
+     "phrase": "typical for December 4"
+    }
    }
   ]
  },
@@ -302,15 +304,6 @@
   "issued_utc": "2026-11-27T20:31:49Z",
   "grid": "MTR/98,83",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-27T12:00:00-08:00",
-    "is_daytime": true,
-    "temp_f": 68,
-    "temp_c": 20.0,
-    "precip_chance_pct": 0,
-    "short_forecast": "Partly Sunny"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-27T18:00:00-08:00",
@@ -427,19 +420,21 @@
     "temp_c": 6.11,
     "precip_chance_pct": 21,
     "short_forecast": "Slight Chance Light Rain"
+   },
+   {
+    "name": "Friday",
+    "start": "2026-12-04T06:00:00-08:00",
+    "is_daytime": true,
+    "temp_f": 60,
+    "temp_c": 15.56,
+    "precip_chance_pct": 17,
+    "short_forecast": "Slight Chance Light Rain"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-27T20:31:49Z",
   "hours": [
-   {
-    "start": "2026-11-27T17:00:00-08:00",
-    "temp_f": 64,
-    "temp_c": 17.78,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "start": "2026-11-27T18:00:00-08:00",
     "temp_f": 61,
@@ -764,6 +759,13 @@
    },
    {
     "start": "2026-11-29T16:00:00-08:00",
+    "temp_f": 64,
+    "temp_c": 17.78,
+    "precip_chance_pct": 99,
+    "short_forecast": "Light Rain"
+   },
+   {
+    "start": "2026-11-29T17:00:00-08:00",
     "temp_f": 64,
     "temp_c": 17.78,
     "precip_chance_pct": 99,
