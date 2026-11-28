@@ -11,15 +11,15 @@
   "lon": -75.2268,
   "history": "Same site as the official Philadelphia record"
  },
- "as_of_utc": "2026-11-28T18:51:23Z",
+ "as_of_utc": "2026-11-28T19:08:05Z",
  "now": {
-  "time_utc": "2026-11-28T18:35:00Z",
+  "time_utc": "2026-11-28T18:45:00Z",
   "temp_c": 11,
   "temp_f": 51.8,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 2,
   "humidity_pct": 53.83,
-  "wind_kmh": 25.92,
+  "wind_kmh": null,
   "description": "Mostly Cloudy"
  },
  "today_so_far": {
@@ -187,22 +187,21 @@
    {
     "period": "Wednesday",
     "date": "2026-12-02",
-    "high_f": 51,
+    "high_f": 52,
     "would_rank": {
-     "value_f": 51,
-     "warm_rank": 51,
-     "cool_rank": 95,
+     "value_f": 52,
+     "warm_rank": 44,
+     "cool_rank": 103,
      "years": 153,
      "first_year": 1874,
      "tied_years": [
-      1900,
-      1923,
-      1928,
-      1965,
-      1972,
-      1984,
-      2013,
-      2016
+      1889,
+      1934,
+      1957,
+      1959,
+      1961,
+      1989,
+      2017
      ],
      "standing": "warm",
      "notable": false,
@@ -214,25 +213,25 @@
    {
     "period": "Thursday",
     "date": "2026-12-03",
-    "high_f": 57,
+    "high_f": 58,
     "would_rank": {
-     "value_f": 57,
-     "warm_rank": 21,
-     "cool_rank": 128,
+     "value_f": 58,
+     "warm_rank": 16,
+     "cool_rank": 133,
      "years": 153,
      "first_year": 1874,
      "tied_years": [
-      1879,
-      1955,
-      1988,
-      1999,
-      2018
+      1899,
+      1913,
+      1973,
+      1990,
+      2001
      ],
      "standing": "warm",
      "notable": true,
      "since": 2022,
      "record": false,
-     "phrase": "21st warmest December 3 high (tied) of 153 since 1874, warmest since 2022"
+     "phrase": "16th warmest December 3 high (tied) of 153 since 1874, warmest since 2022"
     }
    },
    {
@@ -259,17 +258,17 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-28T17:33:36Z",
+  "issued_utc": "2026-11-28T18:23:31Z",
   "grid": "PHI/48,75",
   "periods": [
    {
     "name": "This Afternoon",
-    "start": "2026-11-28T12:00:00-05:00",
+    "start": "2026-11-28T13:00:00-05:00",
     "is_daytime": true,
     "temp_f": 54,
     "temp_c": 12.22,
-    "precip_chance_pct": 2,
-    "short_forecast": "Mostly Sunny"
+    "precip_chance_pct": 1,
+    "short_forecast": "Partly Sunny"
    },
    {
     "name": "Tonight",
@@ -329,8 +328,8 @@
     "name": "Tuesday Night",
     "start": "2026-12-01T18:00:00-05:00",
     "is_daytime": false,
-    "temp_f": 33,
-    "temp_c": 0.56,
+    "temp_f": 32,
+    "temp_c": 0.0,
     "precip_chance_pct": 0,
     "short_forecast": "Partly Cloudy"
    },
@@ -338,10 +337,10 @@
     "name": "Wednesday",
     "start": "2026-12-02T06:00:00-05:00",
     "is_daytime": true,
-    "temp_f": 51,
-    "temp_c": 10.56,
+    "temp_f": 52,
+    "temp_c": 11.11,
     "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
+    "short_forecast": "Mostly Sunny"
    },
    {
     "name": "Wednesday Night",
@@ -350,14 +349,14 @@
     "temp_f": 36,
     "temp_c": 2.22,
     "precip_chance_pct": 0,
-    "short_forecast": "Partly Cloudy"
+    "short_forecast": "Mostly Clear"
    },
    {
     "name": "Thursday",
     "start": "2026-12-03T06:00:00-05:00",
     "is_daytime": true,
-    "temp_f": 57,
-    "temp_c": 13.89,
+    "temp_f": 58,
+    "temp_c": 14.44,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Sunny"
    },
@@ -376,7 +375,7 @@
     "is_daytime": true,
     "temp_f": 62,
     "temp_c": 16.67,
-    "precip_chance_pct": 37,
+    "precip_chance_pct": 36,
     "short_forecast": "Partly Sunny then Chance Light Rain"
    },
    {
@@ -385,21 +384,14 @@
     "is_daytime": false,
     "temp_f": 52,
     "temp_c": 11.11,
-    "precip_chance_pct": 75,
-    "short_forecast": "Light Rain"
+    "precip_chance_pct": 74,
+    "short_forecast": "Light Rain Likely"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-28T18:23:31Z",
   "hours": [
-   {
-    "start": "2026-11-28T13:00:00-05:00",
-    "temp_f": 52,
-    "temp_c": 11.11,
-    "precip_chance_pct": 1,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "start": "2026-11-28T14:00:00-05:00",
     "temp_f": 53,
@@ -728,6 +720,13 @@
     "temp_c": 15.0,
     "precip_chance_pct": 59,
     "short_forecast": "Light Rain Likely"
+   },
+   {
+    "start": "2026-11-30T13:00:00-05:00",
+    "temp_f": 58,
+    "temp_c": 14.44,
+    "precip_chance_pct": 1,
+    "short_forecast": "Partly Sunny"
    }
   ]
  },
