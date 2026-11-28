@@ -11,16 +11,16 @@
   "lon": -86.745,
   "history": "Same site as the official Birmingham record"
  },
- "as_of_utc": "2026-11-27T23:07:57Z",
+ "as_of_utc": "2026-11-28T00:07:48Z",
  "now": {
-  "time_utc": "2026-11-27T22:50:00Z",
-  "temp_c": 11,
-  "temp_f": 51.8,
+  "time_utc": "2026-11-27T23:40:00Z",
+  "temp_c": 9,
+  "temp_f": 48.2,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 0,
-  "humidity_pct": 46.62,
-  "wind_kmh": 16.67,
-  "description": ""
+  "humidity_pct": 53.29,
+  "wind_kmh": 7.42,
+  "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-27",
@@ -78,27 +78,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-27",
-    "high_f": 52,
-    "would_rank": {
-     "value_f": 52,
-     "warm_rank": 104,
-     "cool_rank": 27,
-     "years": 132,
-     "first_year": 1895,
-     "tied_years": [
-      1920,
-      1986
-     ],
-     "standing": "cool",
-     "notable": false,
-     "since": 2023,
-     "record": false,
-     "phrase": "typical for November 27"
-    }
-   },
    {
     "period": "Saturday",
     "date": "2026-11-28",
@@ -237,22 +216,35 @@
      "record": false,
      "phrase": "17th warmest December 3 high (tied) of 132 since 1895, warmest since 2022"
     }
+   },
+   {
+    "period": "Friday",
+    "date": "2026-12-04",
+    "high_f": 70,
+    "would_rank": {
+     "value_f": 70,
+     "warm_rank": 20,
+     "cool_rank": 110,
+     "years": 132,
+     "first_year": 1895,
+     "tied_years": [
+      1928,
+      1962,
+      1999
+     ],
+     "standing": "warm",
+     "notable": true,
+     "since": 2014,
+     "record": false,
+     "phrase": "20th warmest December 4 high (tied) of 132 since 1895, warmest since 2014"
+    }
    }
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-27T18:25:59Z",
+  "issued_utc": "2026-11-27T23:06:11Z",
   "grid": "BMX/61,87",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-27T17:00:00-06:00",
-    "is_daytime": true,
-    "temp_f": 52,
-    "temp_c": 11.11,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-27T18:00:00-06:00",
@@ -369,19 +361,21 @@
     "temp_c": 14.44,
     "precip_chance_pct": 50,
     "short_forecast": "Slight Chance Light Rain then Chance Showers And Thunderstorms"
+   },
+   {
+    "name": "Friday",
+    "start": "2026-12-04T06:00:00-06:00",
+    "is_daytime": true,
+    "temp_f": 70,
+    "temp_c": 21.11,
+    "precip_chance_pct": 67,
+    "short_forecast": "Showers And Thunderstorms Likely then Chance Light Rain"
    }
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-27T18:25:59Z",
+  "issued_utc": "2026-11-27T23:06:11Z",
   "hours": [
-   {
-    "start": "2026-11-27T17:00:00-06:00",
-    "temp_f": 47,
-    "temp_c": 8.33,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
    {
     "start": "2026-11-27T18:00:00-06:00",
     "temp_f": 44,
@@ -708,6 +702,13 @@
     "start": "2026-11-29T16:00:00-06:00",
     "temp_f": 60,
     "temp_c": 15.56,
+    "precip_chance_pct": 100,
+    "short_forecast": "Showers And Thunderstorms"
+   },
+   {
+    "start": "2026-11-29T17:00:00-06:00",
+    "temp_f": 57,
+    "temp_c": 13.89,
     "precip_chance_pct": 100,
     "short_forecast": "Showers And Thunderstorms"
    }

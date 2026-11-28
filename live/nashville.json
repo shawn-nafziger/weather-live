@@ -11,16 +11,16 @@
   "lon": -86.6892,
   "history": "Same site as the official Nashville record"
  },
- "as_of_utc": "2026-11-27T23:07:57Z",
+ "as_of_utc": "2026-11-28T00:07:48Z",
  "now": {
-  "time_utc": "2026-11-27T22:50:00Z",
-  "temp_c": 6,
-  "temp_f": 42.8,
+  "time_utc": "2026-11-27T23:40:00Z",
+  "temp_c": 5,
+  "temp_f": 41.0,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 2,
-  "humidity_pct": 75.52,
-  "wind_kmh": 5.54,
-  "description": "Partly Cloudy"
+  "humidity_pct": 80.94,
+  "wind_kmh": 9.25,
+  "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-27",
@@ -84,29 +84,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-27",
-    "high_f": 46,
-    "would_rank": {
-     "value_f": 46,
-     "warm_rank": 115,
-     "cool_rank": 35,
-     "years": 153,
-     "first_year": 1874,
-     "tied_years": [
-      1883,
-      1920,
-      1922,
-      1926
-     ],
-     "standing": "cool",
-     "notable": false,
-     "since": 2018,
-     "record": false,
-     "phrase": "typical for November 27"
-    }
-   },
    {
     "period": "Saturday",
     "date": "2026-11-28",
@@ -245,6 +222,26 @@
      "record": false,
      "phrase": "9th warmest December 3 high (tied) of 154 since 1873, warmest since 2021"
     }
+   },
+   {
+    "period": "Friday",
+    "date": "2026-12-04",
+    "high_f": 71,
+    "would_rank": {
+     "value_f": 71,
+     "warm_rank": 7,
+     "cool_rank": 147,
+     "years": 154,
+     "first_year": 1873,
+     "tied_years": [
+      1956
+     ],
+     "standing": "warm",
+     "notable": true,
+     "since": 2013,
+     "record": false,
+     "phrase": "7th warmest December 4 high (tied) of 154 since 1873, warmest since 2013"
+    }
    }
   ]
  },
@@ -252,15 +249,6 @@
   "issued_utc": "2026-11-27T21:06:13Z",
   "grid": "OHX/54,55",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-27T16:00:00-06:00",
-    "is_daytime": true,
-    "temp_f": 46,
-    "temp_c": 7.78,
-    "precip_chance_pct": 2,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-27T18:00:00-06:00",
@@ -377,19 +365,21 @@
     "temp_c": 11.11,
     "precip_chance_pct": 67,
     "short_forecast": "Showers And Thunderstorms Likely"
+   },
+   {
+    "name": "Friday",
+    "start": "2026-12-04T06:00:00-06:00",
+    "is_daytime": true,
+    "temp_f": 71,
+    "temp_c": 21.67,
+    "precip_chance_pct": 56,
+    "short_forecast": "Rain Showers Likely"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-27T21:06:13Z",
   "hours": [
-   {
-    "start": "2026-11-27T17:00:00-06:00",
-    "temp_f": 45,
-    "temp_c": 7.22,
-    "precip_chance_pct": 2,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "start": "2026-11-27T18:00:00-06:00",
     "temp_f": 43,
@@ -716,6 +706,13 @@
     "start": "2026-11-29T16:00:00-06:00",
     "temp_f": 55,
     "temp_c": 12.78,
+    "precip_chance_pct": 99,
+    "short_forecast": "Rain Showers"
+   },
+   {
+    "start": "2026-11-29T17:00:00-06:00",
+    "temp_f": 52,
+    "temp_c": 11.11,
     "precip_chance_pct": 99,
     "short_forecast": "Rain Showers"
    }

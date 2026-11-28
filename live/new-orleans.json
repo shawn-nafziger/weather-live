@@ -11,16 +11,16 @@
   "lon": -90.2508,
   "history": "Same site as the official New Orleans record"
  },
- "as_of_utc": "2026-11-27T23:07:57Z",
+ "as_of_utc": "2026-11-28T00:07:48Z",
  "now": {
-  "time_utc": "2026-11-27T22:50:00Z",
-  "temp_c": 11,
-  "temp_f": 51.8,
+  "time_utc": "2026-11-27T23:40:00Z",
+  "temp_c": 10,
+  "temp_f": 50.0,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 2,
-  "humidity_pct": 53.83,
+  "humidity_pct": 57.54,
   "wind_kmh": 7.42,
-  "description": ""
+  "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-27",
@@ -78,27 +78,6 @@
    }
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-27",
-    "high_f": 56,
-    "would_rank": {
-     "value_f": 56,
-     "warm_rank": 72,
-     "cool_rank": 8,
-     "years": 81,
-     "first_year": 1946,
-     "tied_years": [
-      2002,
-      2018
-     ],
-     "standing": "cool",
-     "notable": true,
-     "since": 2018,
-     "record": false,
-     "phrase": "8th coolest November 27 high (tied) of 81 since 1946, coolest since 2018"
-    }
-   },
    {
     "period": "Saturday",
     "date": "2026-11-28",
@@ -229,6 +208,26 @@
      "record": false,
      "phrase": "typical for December 3"
     }
+   },
+   {
+    "period": "Friday",
+    "date": "2026-12-04",
+    "high_f": 76,
+    "would_rank": {
+     "value_f": 76,
+     "warm_rank": 18,
+     "cool_rank": 63,
+     "years": 81,
+     "first_year": 1946,
+     "tied_years": [
+      2001
+     ],
+     "standing": "warm",
+     "notable": false,
+     "since": 2021,
+     "record": false,
+     "phrase": "typical for December 4"
+    }
    }
   ]
  },
@@ -236,15 +235,6 @@
   "issued_utc": "2026-11-27T19:37:24Z",
   "grid": "LIX/61,90",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-27T14:00:00-06:00",
-    "is_daytime": true,
-    "temp_f": 56,
-    "temp_c": 13.33,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-27T18:00:00-06:00",
@@ -361,19 +351,21 @@
     "temp_c": 18.89,
     "precip_chance_pct": 58,
     "short_forecast": "Showers And Thunderstorms Likely"
+   },
+   {
+    "name": "Friday",
+    "start": "2026-12-04T06:00:00-06:00",
+    "is_daytime": true,
+    "temp_f": 76,
+    "temp_c": 24.44,
+    "precip_chance_pct": 31,
+    "short_forecast": "Chance Rain Showers then Slight Chance Showers And Thunderstorms"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-27T19:37:24Z",
   "hours": [
-   {
-    "start": "2026-11-27T17:00:00-06:00",
-    "temp_f": 53,
-    "temp_c": 11.67,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "start": "2026-11-27T18:00:00-06:00",
     "temp_f": 52,
@@ -700,6 +692,13 @@
     "start": "2026-11-29T16:00:00-06:00",
     "temp_f": 69,
     "temp_c": 20.56,
+    "precip_chance_pct": 37,
+    "short_forecast": "Chance Rain Showers"
+   },
+   {
+    "start": "2026-11-29T17:00:00-06:00",
+    "temp_f": 66,
+    "temp_c": 18.89,
     "precip_chance_pct": 37,
     "short_forecast": "Chance Rain Showers"
    }

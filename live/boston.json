@@ -11,20 +11,20 @@
   "lon": -71.0106,
   "history": "Same site as the official Boston record"
  },
- "as_of_utc": "2026-11-27T23:07:57Z",
+ "as_of_utc": "2026-11-28T00:07:48Z",
  "now": {
-  "time_utc": "2026-11-27T22:45:00Z",
-  "temp_c": 11,
-  "temp_f": 51.8,
-  "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 8,
-  "humidity_pct": 81.75,
-  "wind_kmh": null,
+  "time_utc": "2026-11-27T23:43:00Z",
+  "temp_c": 10,
+  "temp_f": 50.0,
+  "precision": "tenths of a degree",
+  "dewpoint_c": 8.9,
+  "humidity_pct": 92.88,
+  "wind_kmh": 14.76,
   "description": "Light Rain"
  },
  "today_so_far": {
   "date_local": "2026-11-27",
-  "readings": 27,
+  "readings": 30,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -104,26 +104,6 @@
    "phrase": "already the 22nd warmest November 27 high (tied) of 155 since 1872, warmest since 2015"
   },
   "forecast_highs": [
-   {
-    "period": "This Afternoon",
-    "date": "2026-11-27",
-    "high_f": 56,
-    "would_rank": {
-     "value_f": 56,
-     "warm_rank": 31,
-     "cool_rank": 124,
-     "years": 155,
-     "first_year": 1872,
-     "tied_years": [
-      1923
-     ],
-     "standing": "warm",
-     "notable": true,
-     "since": 2025,
-     "record": false,
-     "phrase": "31st warmest November 27 high (tied) of 155 since 1872, warmest since 2025"
-    }
-   },
    {
     "period": "Saturday",
     "date": "2026-11-28",
@@ -269,6 +249,26 @@
      "record": false,
      "phrase": "22nd warmest December 3 high (tied) of 154 since 1872, warmest since 2022"
     }
+   },
+   {
+    "period": "Friday",
+    "date": "2026-12-04",
+    "high_f": 56,
+    "would_rank": {
+     "value_f": 56,
+     "warm_rank": 16,
+     "cool_rank": 139,
+     "years": 155,
+     "first_year": 1872,
+     "tied_years": [
+      1890
+     ],
+     "standing": "warm",
+     "notable": true,
+     "since": 2020,
+     "record": false,
+     "phrase": "16th warmest December 4 high (tied) of 155 since 1872, warmest since 2020"
+    }
    }
   ]
  },
@@ -276,15 +276,6 @@
   "issued_utc": "2026-11-27T21:51:56Z",
   "grid": "BOX/73,101",
   "periods": [
-   {
-    "name": "This Afternoon",
-    "start": "2026-11-27T17:00:00-05:00",
-    "is_daytime": true,
-    "temp_f": 56,
-    "temp_c": 13.33,
-    "precip_chance_pct": 75,
-    "short_forecast": "Light Rain"
-   },
    {
     "name": "Tonight",
     "start": "2026-11-27T18:00:00-05:00",
@@ -401,19 +392,21 @@
     "temp_c": 7.78,
     "precip_chance_pct": 9,
     "short_forecast": "Partly Cloudy"
+   },
+   {
+    "name": "Friday",
+    "start": "2026-12-04T06:00:00-05:00",
+    "is_daytime": true,
+    "temp_f": 56,
+    "temp_c": 13.33,
+    "precip_chance_pct": 41,
+    "short_forecast": "Mostly Sunny then Chance Light Rain"
    }
   ]
  },
  "hourly": {
   "issued_utc": "2026-11-27T21:51:56Z",
   "hours": [
-   {
-    "start": "2026-11-27T18:00:00-05:00",
-    "temp_f": 51,
-    "temp_c": 10.56,
-    "precip_chance_pct": 100,
-    "short_forecast": "Light Rain"
-   },
    {
     "start": "2026-11-27T19:00:00-05:00",
     "temp_f": 50,
@@ -742,6 +735,13 @@
     "temp_c": 11.11,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Sunny"
+   },
+   {
+    "start": "2026-11-29T18:00:00-05:00",
+    "temp_f": 51,
+    "temp_c": 10.56,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Cloudy"
    }
   ]
  },

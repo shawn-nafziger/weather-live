@@ -11,20 +11,20 @@
   "lon": -122.3136,
   "history": "Same station as the official Seattle record (Sea-Tac)"
  },
- "as_of_utc": "2026-11-27T23:07:57Z",
+ "as_of_utc": "2026-11-28T00:07:48Z",
  "now": {
-  "time_utc": "2026-11-27T22:50:00Z",
+  "time_utc": "2026-11-27T23:45:00Z",
   "temp_c": 9,
   "temp_f": 48.2,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 8,
   "humidity_pct": 93.45,
-  "wind_kmh": 9.25,
+  "wind_kmh": 7.42,
   "description": "Light Rain"
  },
  "today_so_far": {
   "date_local": "2026-11-27",
-  "readings": 18,
+  "readings": 19,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -78,7 +78,7 @@
   },
   "forecast_highs": [
    {
-    "period": "Today",
+    "period": "This Afternoon",
     "date": "2026-11-27",
     "high_f": 49,
     "would_rank": {
@@ -258,17 +258,17 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-27T18:26:57Z",
+  "issued_utc": "2026-11-27T23:05:58Z",
   "grid": "SEW/124,60",
   "periods": [
    {
-    "name": "Today",
-    "start": "2026-11-27T11:00:00-08:00",
+    "name": "This Afternoon",
+    "start": "2026-11-27T15:00:00-08:00",
     "is_daytime": true,
     "temp_f": 49,
     "temp_c": 9.44,
-    "precip_chance_pct": 94,
-    "short_forecast": "Light Rain"
+    "precip_chance_pct": 69,
+    "short_forecast": "Light Rain Likely"
    },
    {
     "name": "Tonight",
@@ -277,7 +277,7 @@
     "temp_f": 40,
     "temp_c": 4.44,
     "precip_chance_pct": 17,
-    "short_forecast": "Slight Chance Light Rain then Mostly Cloudy"
+    "short_forecast": "Slight Chance Light Rain then Patchy Fog"
    },
    {
     "name": "Saturday",
@@ -390,15 +390,8 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-27T18:26:57Z",
+  "issued_utc": "2026-11-27T23:05:58Z",
   "hours": [
-   {
-    "start": "2026-11-27T15:00:00-08:00",
-    "temp_f": 48,
-    "temp_c": 8.89,
-    "precip_chance_pct": 69,
-    "short_forecast": "Light Rain Likely"
-   },
    {
     "start": "2026-11-27T16:00:00-08:00",
     "temp_f": 47,
@@ -453,14 +446,14 @@
     "temp_f": 44,
     "temp_c": 6.67,
     "precip_chance_pct": 1,
-    "short_forecast": "Mostly Cloudy"
+    "short_forecast": "Patchy Fog"
    },
    {
     "start": "2026-11-28T00:00:00-08:00",
     "temp_f": 44,
     "temp_c": 6.67,
     "precip_chance_pct": 0,
-    "short_forecast": "Mostly Cloudy"
+    "short_forecast": "Patchy Fog"
    },
    {
     "start": "2026-11-28T01:00:00-08:00",
@@ -474,7 +467,7 @@
     "temp_f": 44,
     "temp_c": 6.67,
     "precip_chance_pct": 0,
-    "short_forecast": "Partly Cloudy"
+    "short_forecast": "Patchy Fog"
    },
    {
     "start": "2026-11-28T03:00:00-08:00",
@@ -723,6 +716,13 @@
    },
    {
     "start": "2026-11-29T14:00:00-08:00",
+    "temp_f": 49,
+    "temp_c": 9.44,
+    "precip_chance_pct": 51,
+    "short_forecast": "Chance Light Rain"
+   },
+   {
+    "start": "2026-11-29T15:00:00-08:00",
     "temp_f": 49,
     "temp_c": 9.44,
     "precip_chance_pct": 51,
