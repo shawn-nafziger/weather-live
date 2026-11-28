@@ -11,20 +11,20 @@
   "lon": -121.496,
   "history": "About 9 km from the official Sacramento record's site, so today and the forecast aren't ranked against it"
  },
- "as_of_utc": "2026-11-28T11:07:55Z",
+ "as_of_utc": "2026-11-28T12:08:00Z",
  "now": {
-  "time_utc": "2026-11-28T10:23:00Z",
+  "time_utc": "2026-11-28T11:50:00Z",
   "temp_c": 10,
   "temp_f": 50.0,
-  "precision": "tenths of a degree",
-  "dewpoint_c": 9.4,
-  "humidity_pct": 96.06,
+  "precision": "nearest whole \u00b0C",
+  "dewpoint_c": 10,
+  "humidity_pct": 100,
   "wind_kmh": 0,
-  "description": ""
+  "description": "Fog"
  },
  "today_so_far": {
   "date_local": "2026-11-28",
-  "readings": 11,
+  "readings": 12,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -41,52 +41,59 @@
   "available": true,
   "rank_today": false,
   "latest_final": {
-   "date": "2026-11-26",
-   "is_yesterday": false,
-   "high_f": 64,
-   "low_f": 43,
+   "date": "2026-11-27",
+   "is_yesterday": true,
+   "high_f": 58,
+   "low_f": 44,
    "high_rank": {
-    "value_f": 64,
-    "warm_rank": 30,
-    "cool_rank": 112,
-    "years": 149,
+    "value_f": 58,
+    "warm_rank": 78,
+    "cool_rank": 57,
+    "years": 150,
     "first_year": 1877,
     "tied_years": [
-     1888,
-     1904,
-     1932,
-     1935,
-     1941,
-     1956,
-     2012,
-     2020
+     1887,
+     1889,
+     1898,
+     1913,
+     1917,
+     1971,
+     1974,
+     1976,
+     1983,
+     1997,
+     2001,
+     2003,
+     2004,
+     2006,
+     2015,
+     2018
     ],
-    "standing": "warm",
-    "notable": true,
-    "since": 2022,
+    "standing": "cool",
+    "notable": false,
+    "since": 2025,
     "record": false,
-    "phrase": "30th warmest November 26 high (tied) of 149 since 1877, warmest since 2022"
+    "phrase": "typical for November 27"
    },
    "low_rank": {
-    "value_f": 43,
-    "warm_rank": 35,
-    "cool_rank": 108,
-    "years": 149,
+    "value_f": 44,
+    "warm_rank": 36,
+    "cool_rank": 109,
+    "years": 150,
     "first_year": 1877,
     "tied_years": [
      1877,
-     1924,
-     1934,
+     1889,
+     1916,
+     1925,
      1937,
-     1944,
-     2020,
-     2024
+     1971
     ],
     "standing": "warm",
     "notable": false,
-    "since": 2024,
+    "since": 2025,
     "record": false,
-    "phrase": "typical for November 26"
+    "phrase": "typical for November 27"
    }
   },
   "note": "Today's readings come from a different station than this record, so today and the forecast aren't ranked against it."
@@ -97,7 +104,7 @@
   "periods": [
    {
     "name": "Overnight",
-    "start": "2026-11-28T02:00:00-08:00",
+    "start": "2026-11-28T01:00:00-08:00",
     "is_daytime": false,
     "temp_f": 45,
     "temp_c": 7.22,
@@ -226,13 +233,6 @@
  "hourly": {
   "issued_utc": "2026-11-28T09:01:04Z",
   "hours": [
-   {
-    "start": "2026-11-28T03:00:00-08:00",
-    "temp_f": 47,
-    "temp_c": 8.33,
-    "precip_chance_pct": 1,
-    "short_forecast": "Areas Of Fog"
-   },
    {
     "start": "2026-11-28T04:00:00-08:00",
     "temp_f": 47,
@@ -557,6 +557,13 @@
    },
    {
     "start": "2026-11-30T02:00:00-08:00",
+    "temp_f": 54,
+    "temp_c": 12.22,
+    "precip_chance_pct": 71,
+    "short_forecast": "Light Rain Likely"
+   },
+   {
+    "start": "2026-11-30T03:00:00-08:00",
     "temp_f": 54,
     "temp_c": 12.22,
     "precip_chance_pct": 71,

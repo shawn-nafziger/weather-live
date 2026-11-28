@@ -11,29 +11,29 @@
   "lon": -98.4636,
   "history": "Same site as the official San Antonio record"
  },
- "as_of_utc": "2026-11-28T11:07:55Z",
+ "as_of_utc": "2026-11-28T12:08:00Z",
  "now": {
-  "time_utc": "2026-11-28T09:51:00Z",
-  "temp_c": 6.1,
-  "temp_f": 43.0,
-  "precision": "tenths of a degree",
-  "dewpoint_c": 3.9,
-  "humidity_pct": 85.8,
-  "wind_kmh": 9.36,
-  "description": ""
+  "time_utc": "2026-11-28T11:55:00Z",
+  "temp_c": 6,
+  "temp_f": 42.8,
+  "precision": "nearest whole \u00b0C",
+  "dewpoint_c": 4,
+  "humidity_pct": 87.0,
+  "wind_kmh": 0,
+  "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-28",
-  "readings": 3,
+  "readings": 4,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
   "high_c": 8.9,
   "high_f": 48.0,
   "high_time_utc": "2026-11-28T07:51:00Z",
-  "low_c": 6.1,
-  "low_f": 43.0,
-  "low_time_utc": "2026-11-28T09:51:00Z",
+  "low_c": 5.6,
+  "low_f": 42.1,
+  "low_time_utc": "2026-11-28T10:51:00Z",
   "peak_between_reports": {
    "at_least_f": 49.1,
    "about_f": 50.0,
@@ -51,43 +51,50 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-26",
-   "is_yesterday": false,
-   "high_f": 63,
-   "low_f": 34,
+   "date": "2026-11-27",
+   "is_yesterday": true,
+   "high_f": 67,
+   "low_f": 39,
    "high_rank": {
-    "value_f": 63,
-    "warm_rank": 97,
-    "cool_rank": 41,
+    "value_f": 67,
+    "warm_rank": 74,
+    "cool_rank": 63,
     "years": 142,
     "first_year": 1885,
     "tied_years": [
-     1900,
-     1911,
-     1958,
-     1986,
-     2018
+     1924,
+     1966,
+     1967,
+     1975,
+     2001,
+     2009
     ],
     "standing": "cool",
     "notable": false,
-    "since": 2024,
+    "since": 2025,
     "record": false,
-    "phrase": "typical for November 26"
+    "phrase": "typical for November 27"
    },
    "low_rank": {
-    "value_f": 34,
-    "warm_rank": 130,
-    "cool_rank": 12,
+    "value_f": 39,
+    "warm_rank": 100,
+    "cool_rank": 36,
     "years": 142,
     "first_year": 1885,
     "tied_years": [
-     1950
+     1889,
+     1890,
+     1896,
+     1900,
+     1987,
+     1988,
+     2001
     ],
     "standing": "cool",
-    "notable": true,
-    "since": 2007,
+    "notable": false,
+    "since": 2018,
     "record": false,
-    "phrase": "12th coldest November 26 low (tied) of 142 since 1885, coldest since 2007"
+    "phrase": "typical for November 27"
    }
   },
   "forecast_highs": [
@@ -268,17 +275,17 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-28T10:32:34Z",
+  "issued_utc": "2026-11-28T11:18:37Z",
   "grid": "EWX/128,59",
   "periods": [
    {
     "name": "Overnight",
-    "start": "2026-11-28T04:00:00-06:00",
+    "start": "2026-11-28T05:00:00-06:00",
     "is_daytime": false,
-    "temp_f": 43,
-    "temp_c": 6.11,
+    "temp_f": 41,
+    "temp_c": 5.0,
     "precip_chance_pct": 0,
-    "short_forecast": "Clear"
+    "short_forecast": "Mostly Clear"
    },
    {
     "name": "Saturday",
@@ -400,40 +407,33 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-28T10:42:20Z",
+  "issued_utc": "2026-11-28T11:42:20Z",
   "hours": [
    {
-    "start": "2026-11-28T05:00:00-06:00",
-    "temp_f": 43,
-    "temp_c": 6.11,
-    "precip_chance_pct": 0,
-    "short_forecast": "Clear"
-   },
-   {
     "start": "2026-11-28T06:00:00-06:00",
-    "temp_f": 43,
-    "temp_c": 6.11,
+    "temp_f": 41,
+    "temp_c": 5.0,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
    },
    {
     "start": "2026-11-28T07:00:00-06:00",
+    "temp_f": 42,
+    "temp_c": 5.56,
+    "precip_chance_pct": 0,
+    "short_forecast": "Sunny"
+   },
+   {
+    "start": "2026-11-28T08:00:00-06:00",
     "temp_f": 44,
     "temp_c": 6.67,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
    },
    {
-    "start": "2026-11-28T08:00:00-06:00",
-    "temp_f": 47,
-    "temp_c": 8.33,
-    "precip_chance_pct": 0,
-    "short_forecast": "Sunny"
-   },
-   {
     "start": "2026-11-28T09:00:00-06:00",
-    "temp_f": 51,
-    "temp_c": 10.56,
+    "temp_f": 49,
+    "temp_c": 9.44,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
    },
@@ -735,6 +735,13 @@
     "start": "2026-11-30T04:00:00-06:00",
     "temp_f": 38,
     "temp_c": 3.33,
+    "precip_chance_pct": 0,
+    "short_forecast": "Mostly Clear"
+   },
+   {
+    "start": "2026-11-30T05:00:00-06:00",
+    "temp_f": 37,
+    "temp_c": 2.78,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Clear"
    }

@@ -11,20 +11,20 @@
   "lon": -86.3186,
   "history": "Same station as the official South Bend record (South Bend airport). Also the nearest official city record to Goshen, about 27 miles; a candidate for Goshen's hourly readings (question D2)"
  },
- "as_of_utc": "2026-11-28T11:07:55Z",
+ "as_of_utc": "2026-11-28T12:08:00Z",
  "now": {
-  "time_utc": "2026-11-28T09:54:00Z",
-  "temp_c": 0.6,
-  "temp_f": 33.1,
-  "precision": "tenths of a degree",
-  "dewpoint_c": -1.7,
-  "humidity_pct": 84.57,
-  "wind_kmh": 12.96,
-  "description": ""
+  "time_utc": "2026-11-28T11:50:00Z",
+  "temp_c": 1,
+  "temp_f": 33.8,
+  "precision": "nearest whole \u00b0C",
+  "dewpoint_c": -1,
+  "humidity_pct": 86.5,
+  "wind_kmh": 11.12,
+  "description": "Mostly Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-28",
-  "readings": 4,
+  "readings": 5,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -51,51 +51,43 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-26",
-   "is_yesterday": false,
-   "high_f": 40,
-   "low_f": 32,
+   "date": "2026-11-27",
+   "is_yesterday": true,
+   "high_f": 43,
+   "low_f": 33,
    "high_rank": {
-    "value_f": 40,
-    "warm_rank": 80,
-    "cool_rank": 46,
+    "value_f": 43,
+    "warm_rank": 57,
+    "cool_rank": 72,
     "years": 130,
     "first_year": 1894,
     "tied_years": [
-     1901,
-     1928,
-     1943,
-     1955,
-     1971
-    ],
-    "standing": "cool",
-    "notable": false,
-    "since": 2023,
-    "record": false,
-    "phrase": "typical for November 26"
-   },
-   "low_rank": {
-    "value_f": 32,
-    "warm_rank": 48,
-    "cool_rank": 75,
-    "years": 131,
-    "first_year": 1894,
-    "tied_years": [
-     1894,
-     1904,
-     1907,
-     1943,
-     1964,
-     1992,
-     1997,
-     2022,
-     2025
+     1910,
+     1929
     ],
     "standing": "warm",
     "notable": false,
-    "since": 2025,
+    "since": 2024,
     "record": false,
-    "phrase": "typical for November 26"
+    "phrase": "typical for November 27"
+   },
+   "low_rank": {
+    "value_f": 33,
+    "warm_rank": 39,
+    "cool_rank": 89,
+    "years": 131,
+    "first_year": 1894,
+    "tied_years": [
+     1908,
+     1988,
+     1991,
+     2020
+    ],
+    "standing": "warm",
+    "notable": false,
+    "since": 2024,
+    "record": false,
+    "phrase": "typical for November 27"
    }
   },
   "forecast_highs": [
@@ -255,7 +247,7 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-28T10:30:01Z",
+  "issued_utc": "2026-11-28T11:29:37Z",
   "grid": "IWX/27,64",
   "periods": [
    {
@@ -387,19 +379,12 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-28T10:30:01Z",
+  "issued_utc": "2026-11-28T11:29:37Z",
   "hours": [
    {
-    "start": "2026-11-28T06:00:00-05:00",
-    "temp_f": 33,
-    "temp_c": 0.56,
-    "precip_chance_pct": 0,
-    "short_forecast": "Cloudy"
-   },
-   {
     "start": "2026-11-28T07:00:00-05:00",
-    "temp_f": 33,
-    "temp_c": 0.56,
+    "temp_f": 34,
+    "temp_c": 1.11,
     "precip_chance_pct": 5,
     "short_forecast": "Cloudy"
    },
@@ -426,8 +411,8 @@
    },
    {
     "start": "2026-11-28T11:00:00-05:00",
-    "temp_f": 41,
-    "temp_c": 5.0,
+    "temp_f": 42,
+    "temp_c": 5.56,
     "precip_chance_pct": 4,
     "short_forecast": "Mostly Cloudy"
    },
@@ -723,6 +708,13 @@
     "temp_f": 33,
     "temp_c": 0.56,
     "precip_chance_pct": 4,
+    "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "start": "2026-11-30T06:00:00-05:00",
+    "temp_f": 32,
+    "temp_c": 0.0,
+    "precip_chance_pct": 6,
     "short_forecast": "Mostly Cloudy"
    }
   ]

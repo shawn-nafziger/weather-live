@@ -11,20 +11,20 @@
   "lon": -77.0342,
   "history": "Same site as the official Washington record"
  },
- "as_of_utc": "2026-11-28T11:07:55Z",
+ "as_of_utc": "2026-11-28T12:08:00Z",
  "now": {
-  "time_utc": "2026-11-28T09:52:00Z",
-  "temp_c": 7.8,
-  "temp_f": 46.0,
-  "precision": "tenths of a degree",
-  "dewpoint_c": 0.6,
-  "humidity_pct": 60.37,
-  "wind_kmh": 12.96,
-  "description": ""
+  "time_utc": "2026-11-28T11:55:00Z",
+  "temp_c": 8,
+  "temp_f": 46.4,
+  "precision": "nearest whole \u00b0C",
+  "dewpoint_c": 1,
+  "humidity_pct": 61.3,
+  "wind_kmh": 14.83,
+  "description": "Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-28",
-  "readings": 4,
+  "readings": 5,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -41,44 +41,43 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-26",
-   "is_yesterday": false,
-   "high_f": 57,
-   "low_f": 46,
+   "date": "2026-11-27",
+   "is_yesterday": true,
+   "high_f": 55,
+   "low_f": 47,
    "high_rank": {
-    "value_f": 57,
-    "warm_rank": 55,
-    "cool_rank": 98,
+    "value_f": 55,
+    "warm_rank": 66,
+    "cool_rank": 85,
     "years": 155,
     "first_year": 1872,
     "tied_years": [
-     1927,
+     1935,
+     1939,
+     1957,
      1968,
-     1997
+     1992
     ],
     "standing": "warm",
     "notable": false,
-    "since": 2025,
+    "since": 2024,
     "record": false,
-    "phrase": "typical for November 26"
+    "phrase": "typical for November 27"
    },
    "low_rank": {
-    "value_f": 46,
-    "warm_rank": 17,
-    "cool_rank": 135,
+    "value_f": 47,
+    "warm_rank": 14,
+    "cool_rank": 141,
     "years": 155,
     "first_year": 1872,
     "tied_years": [
-     1883,
-     1887,
-     1964,
-     2000
+     2007
     ],
     "standing": "warm",
     "notable": true,
-    "since": 2025,
+    "since": 2020,
     "record": false,
-    "phrase": "17th warmest November 26 low (tied) of 155 since 1872, warmest since 2025"
+    "phrase": "14th warmest November 27 low (tied) of 155 since 1872, warmest since 2020"
    }
   },
   "forecast_highs": [
@@ -383,13 +382,6 @@
  "hourly": {
   "issued_utc": "2026-11-28T08:52:52Z",
   "hours": [
-   {
-    "start": "2026-11-28T06:00:00-05:00",
-    "temp_f": 42,
-    "temp_c": 5.56,
-    "precip_chance_pct": 2,
-    "short_forecast": "Cloudy"
-   },
    {
     "start": "2026-11-28T07:00:00-05:00",
     "temp_f": 42,
@@ -714,6 +706,13 @@
    },
    {
     "start": "2026-11-30T05:00:00-05:00",
+    "temp_f": 50,
+    "temp_c": 10.0,
+    "precip_chance_pct": 100,
+    "short_forecast": "Light Rain"
+   },
+   {
+    "start": "2026-11-30T06:00:00-05:00",
     "temp_f": 50,
     "temp_c": 10.0,
     "precip_chance_pct": 100,

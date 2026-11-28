@@ -11,20 +11,20 @@
   "lon": -86.2816,
   "history": "Same site as the official Indianapolis record"
  },
- "as_of_utc": "2026-11-28T11:07:55Z",
+ "as_of_utc": "2026-11-28T12:08:00Z",
  "now": {
-  "time_utc": "2026-11-28T09:54:00Z",
-  "temp_c": 1.1,
-  "temp_f": 34.0,
-  "precision": "tenths of a degree",
+  "time_utc": "2026-11-28T11:50:00Z",
+  "temp_c": 1,
+  "temp_f": 33.8,
+  "precision": "nearest whole \u00b0C",
   "dewpoint_c": 0,
-  "humidity_pct": 92.37,
-  "wind_kmh": 14.76,
-  "description": ""
+  "humidity_pct": 93.03,
+  "wind_kmh": 11.12,
+  "description": "Mostly Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-28",
-  "readings": 5,
+  "readings": 6,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -46,50 +46,55 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-26",
-   "is_yesterday": false,
-   "high_f": 43,
-   "low_f": 37,
+   "date": "2026-11-27",
+   "is_yesterday": true,
+   "high_f": 40,
+   "low_f": 36,
    "high_rank": {
-    "value_f": 43,
-    "warm_rank": 89,
-    "cool_rank": 65,
+    "value_f": 40,
+    "warm_rank": 94,
+    "cool_rank": 56,
     "years": 156,
     "first_year": 1871,
     "tied_years": [
-     1872,
-     1919,
-     2024
+     1878,
+     1899,
+     1906,
+     1974,
+     1982,
+     2010,
+     2012
     ],
     "standing": "cool",
     "notable": false,
-    "since": 2024,
+    "since": 2025,
     "record": false,
-    "phrase": "typical for November 26"
+    "phrase": "typical for November 27"
    },
    "low_rank": {
-    "value_f": 37,
-    "warm_rank": 37,
-    "cool_rank": 115,
+    "value_f": 36,
+    "warm_rank": 40,
+    "cool_rank": 111,
     "years": 156,
     "first_year": 1871,
     "tied_years": [
-     1935,
-     1948,
-     1973,
-     2001,
-     2007
+     1893,
+     1911,
+     1957,
+     1986,
+     2019,
+     2024
     ],
     "standing": "warm",
     "notable": false,
-    "since": 2020,
+    "since": 2024,
     "record": false,
-    "phrase": "typical for November 26"
+    "phrase": "typical for November 27"
    }
   },
   "forecast_highs": [
    {
-    "period": "Saturday",
+    "period": "Today",
     "date": "2026-11-28",
     "high_f": 49,
     "would_rank": {
@@ -254,20 +259,11 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-28T10:45:19Z",
+  "issued_utc": "2026-11-28T11:31:08Z",
   "grid": "IND/54,67",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-28T05:00:00-05:00",
-    "is_daytime": false,
-    "temp_f": 32,
-    "temp_c": 0.0,
-    "precip_chance_pct": 2,
-    "short_forecast": "Mostly Cloudy"
-   },
-   {
-    "name": "Saturday",
+    "name": "Today",
     "start": "2026-11-28T06:00:00-05:00",
     "is_daytime": true,
     "temp_f": 49,
@@ -276,7 +272,7 @@
     "short_forecast": "Mostly Sunny"
    },
    {
-    "name": "Saturday Night",
+    "name": "Tonight",
     "start": "2026-11-28T18:00:00-05:00",
     "is_daytime": false,
     "temp_f": 37,
@@ -382,19 +378,21 @@
     "temp_c": 16.11,
     "precip_chance_pct": 66,
     "short_forecast": "Light Rain Likely"
+   },
+   {
+    "name": "Friday Night",
+    "start": "2026-12-04T18:00:00-05:00",
+    "is_daytime": false,
+    "temp_f": 43,
+    "temp_c": 6.11,
+    "precip_chance_pct": 51,
+    "short_forecast": "Chance Light Rain"
    }
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-28T10:45:19Z",
+  "issued_utc": "2026-11-28T11:31:08Z",
   "hours": [
-   {
-    "start": "2026-11-28T06:00:00-05:00",
-    "temp_f": 34,
-    "temp_c": 1.11,
-    "precip_chance_pct": 6,
-    "short_forecast": "Mostly Cloudy"
-   },
    {
     "start": "2026-11-28T07:00:00-05:00",
     "temp_f": 34,
@@ -723,6 +721,13 @@
     "temp_c": -1.11,
     "precip_chance_pct": 2,
     "short_forecast": "Mostly Clear"
+   },
+   {
+    "start": "2026-11-30T06:00:00-05:00",
+    "temp_f": 29,
+    "temp_c": -1.67,
+    "precip_chance_pct": 2,
+    "short_forecast": "Sunny"
    }
   ]
  },

@@ -11,20 +11,20 @@
   "lon": -73.9667,
   "history": "Same site as the official New York record"
  },
- "as_of_utc": "2026-11-28T11:07:55Z",
+ "as_of_utc": "2026-11-28T12:08:00Z",
  "now": {
-  "time_utc": "2026-11-28T09:51:00Z",
-  "temp_c": 6.1,
-  "temp_f": 43.0,
+  "time_utc": "2026-11-28T10:51:00Z",
+  "temp_c": 6.7,
+  "temp_f": 44.1,
   "precision": "tenths of a degree",
   "dewpoint_c": 0.6,
-  "humidity_pct": 67.83,
-  "wind_kmh": 14.76,
-  "description": ""
+  "humidity_pct": 65.09,
+  "wind_kmh": null,
+  "description": "Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-28",
-  "readings": 4,
+  "readings": 5,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -41,54 +41,53 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-26",
-   "is_yesterday": false,
-   "high_f": 52,
-   "low_f": 42,
+   "date": "2026-11-27",
+   "is_yesterday": true,
+   "high_f": 57,
+   "low_f": 45,
    "high_rank": {
-    "value_f": 52,
-    "warm_rank": 59,
-    "cool_rank": 92,
+    "value_f": 57,
+    "warm_rank": 32,
+    "cool_rank": 120,
     "years": 158,
     "first_year": 1869,
     "tied_years": [
-     1913,
-     1927,
-     1929,
-     1932,
-     1941,
-     1969,
-     1982,
-     2000
+     1878,
+     1906,
+     1975,
+     1986,
+     1992,
+     1995,
+     2001
     ],
     "standing": "warm",
-    "notable": false,
-    "since": 2025,
+    "notable": true,
+    "since": 2022,
     "record": false,
-    "phrase": "typical for November 26"
+    "phrase": "32nd warmest November 27 high (tied) of 158 since 1869, warmest since 2022"
    },
    "low_rank": {
-    "value_f": 42,
-    "warm_rank": 36,
-    "cool_rank": 119,
+    "value_f": 45,
+    "warm_rank": 22,
+    "cool_rank": 133,
     "years": 158,
     "first_year": 1869,
     "tied_years": [
-     1883,
-     1900,
-     1986,
-     2022
+     1887,
+     1973,
+     1983,
+     1992
     ],
     "standing": "warm",
-    "notable": false,
-    "since": 2025,
+    "notable": true,
+    "since": 2022,
     "record": false,
-    "phrase": "typical for November 26"
+    "phrase": "22nd warmest November 27 low (tied) of 158 since 1869, warmest since 2022"
    }
   },
   "forecast_highs": [
    {
-    "period": "Saturday",
+    "period": "Today",
     "date": "2026-11-28",
     "high_f": 51,
     "would_rank": {
@@ -253,16 +252,7 @@
   "grid": "OKX/34,45",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-28T02:00:00-05:00",
-    "is_daytime": false,
-    "temp_f": 43,
-    "temp_c": 6.11,
-    "precip_chance_pct": 1,
-    "short_forecast": "Partly Cloudy"
-   },
-   {
-    "name": "Saturday",
+    "name": "Today",
     "start": "2026-11-28T06:00:00-05:00",
     "is_daytime": true,
     "temp_f": 51,
@@ -271,7 +261,7 @@
     "short_forecast": "Partly Sunny"
    },
    {
-    "name": "Saturday Night",
+    "name": "Tonight",
     "start": "2026-11-28T18:00:00-05:00",
     "is_daytime": false,
     "temp_f": 40,
@@ -377,19 +367,21 @@
     "temp_c": 16.11,
     "precip_chance_pct": 28,
     "short_forecast": "Partly Sunny then Chance Light Rain"
+   },
+   {
+    "name": "Friday Night",
+    "start": "2026-12-04T18:00:00-05:00",
+    "is_daytime": false,
+    "temp_f": 50,
+    "temp_c": 10.0,
+    "precip_chance_pct": 66,
+    "short_forecast": "Light Rain Likely"
    }
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-28T06:30:49Z",
+  "issued_utc": "2026-11-28T11:44:54Z",
   "hours": [
-   {
-    "start": "2026-11-28T06:00:00-05:00",
-    "temp_f": 43,
-    "temp_c": 6.11,
-    "precip_chance_pct": 1,
-    "short_forecast": "Partly Sunny"
-   },
    {
     "start": "2026-11-28T07:00:00-05:00",
     "temp_f": 44,
@@ -714,6 +706,13 @@
    },
    {
     "start": "2026-11-30T05:00:00-05:00",
+    "temp_f": 54,
+    "temp_c": 12.22,
+    "precip_chance_pct": 97,
+    "short_forecast": "Rain"
+   },
+   {
+    "start": "2026-11-30T06:00:00-05:00",
     "temp_f": 54,
     "temp_c": 12.22,
     "precip_chance_pct": 97,

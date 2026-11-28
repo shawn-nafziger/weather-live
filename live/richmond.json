@@ -11,20 +11,20 @@
   "lon": -77.3233,
   "history": "Same site as the official Richmond record"
  },
- "as_of_utc": "2026-11-28T11:07:55Z",
+ "as_of_utc": "2026-11-28T12:08:00Z",
  "now": {
-  "time_utc": "2026-11-28T09:54:00Z",
-  "temp_c": 6.7,
-  "temp_f": 44.1,
-  "precision": "tenths of a degree",
-  "dewpoint_c": 1.7,
-  "humidity_pct": 70.44,
-  "wind_kmh": 22.32,
-  "description": ""
+  "time_utc": "2026-11-28T11:55:00Z",
+  "temp_c": 7,
+  "temp_f": 44.6,
+  "precision": "nearest whole \u00b0C",
+  "dewpoint_c": 2,
+  "humidity_pct": 70.5,
+  "wind_kmh": 22.21,
+  "description": "Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-28",
-  "readings": 5,
+  "readings": 6,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -34,6 +34,11 @@
   "low_c": 6.7,
   "low_f": 44.1,
   "low_time_utc": "2026-11-28T06:54:00Z",
+  "peak_between_reports": {
+   "at_least_f": 45.5,
+   "about_f": 46.4,
+   "time_utc": "2026-11-28T11:40:00Z"
+  },
   "dip_between_reports": {
    "at_most_f": 43.7,
    "about_f": 42.8,
@@ -46,50 +51,51 @@
   "available": true,
   "rank_today": true,
   "latest_final": {
-   "date": "2026-11-26",
-   "is_yesterday": false,
-   "high_f": 63,
-   "low_f": 48,
+   "date": "2026-11-27",
+   "is_yesterday": true,
+   "high_f": 53,
+   "low_f": 44,
    "high_rank": {
-    "value_f": 63,
-    "warm_rank": 41,
-    "cool_rank": 85,
+    "value_f": 53,
+    "warm_rank": 82,
+    "cool_rank": 45,
     "years": 130,
     "first_year": 1897,
     "tied_years": [
-     1915,
-     1923,
-     1965,
-     1983,
-     2012
+     1940,
+     1982,
+     2009,
+     2016
     ],
-    "standing": "warm",
+    "standing": "cool",
     "notable": false,
-    "since": 2025,
+    "since": 2021,
     "record": false,
-    "phrase": "typical for November 26"
+    "phrase": "typical for November 27"
    },
    "low_rank": {
-    "value_f": 48,
-    "warm_rank": 10,
-    "cool_rank": 118,
+    "value_f": 44,
+    "warm_rank": 23,
+    "cool_rank": 103,
     "years": 130,
     "first_year": 1897,
     "tied_years": [
-     1908,
-     1998,
-     2010
+     1948,
+     1960,
+     1965,
+     1992,
+     2022
     ],
     "standing": "warm",
     "notable": true,
-    "since": 2025,
+    "since": 2022,
     "record": false,
-    "phrase": "10th warmest November 26 low (tied) of 130 since 1897, warmest since 2025"
+    "phrase": "23rd warmest November 27 low (tied) of 130 since 1897, warmest since 2022"
    }
   },
   "forecast_highs": [
    {
-    "period": "Saturday",
+    "period": "Today",
     "date": "2026-11-28",
     "high_f": 59,
     "would_rank": {
@@ -259,16 +265,7 @@
   "grid": "AKQ/50,76",
   "periods": [
    {
-    "name": "Overnight",
-    "start": "2026-11-28T05:00:00-05:00",
-    "is_daytime": false,
-    "temp_f": 40,
-    "temp_c": 4.44,
-    "precip_chance_pct": 1,
-    "short_forecast": "Mostly Cloudy"
-   },
-   {
-    "name": "Saturday",
+    "name": "Today",
     "start": "2026-11-28T06:00:00-05:00",
     "is_daytime": true,
     "temp_f": 59,
@@ -277,7 +274,7 @@
     "short_forecast": "Sunny"
    },
    {
-    "name": "Saturday Night",
+    "name": "Tonight",
     "start": "2026-11-28T18:00:00-05:00",
     "is_daytime": false,
     "temp_f": 37,
@@ -383,19 +380,21 @@
     "temp_c": 19.44,
     "precip_chance_pct": 30,
     "short_forecast": "Partly Sunny then Chance Rain Showers"
+   },
+   {
+    "name": "Friday Night",
+    "start": "2026-12-04T18:00:00-05:00",
+    "is_daytime": false,
+    "temp_f": 53,
+    "temp_c": 11.67,
+    "precip_chance_pct": 68,
+    "short_forecast": "Rain Showers Likely"
    }
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-28T08:26:02Z",
+  "issued_utc": "2026-11-28T10:22:25Z",
   "hours": [
-   {
-    "start": "2026-11-28T06:00:00-05:00",
-    "temp_f": 40,
-    "temp_c": 4.44,
-    "precip_chance_pct": 0,
-    "short_forecast": "Mostly Sunny"
-   },
    {
     "start": "2026-11-28T07:00:00-05:00",
     "temp_f": 42,
@@ -722,6 +721,13 @@
     "start": "2026-11-30T05:00:00-05:00",
     "temp_f": 55,
     "temp_c": 12.78,
+    "precip_chance_pct": 93,
+    "short_forecast": "Rain Showers"
+   },
+   {
+    "start": "2026-11-30T06:00:00-05:00",
+    "temp_f": 54,
+    "temp_c": 12.22,
     "precip_chance_pct": 93,
     "short_forecast": "Rain Showers"
    }
