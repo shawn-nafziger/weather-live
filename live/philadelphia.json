@@ -11,20 +11,20 @@
   "lon": -75.2268,
   "history": "Same site as the official Philadelphia record"
  },
- "as_of_utc": "2026-11-28T00:07:48Z",
+ "as_of_utc": "2026-11-28T01:08:00Z",
  "now": {
-  "time_utc": "2026-11-27T23:40:00Z",
-  "temp_c": 9,
-  "temp_f": 48.2,
+  "time_utc": "2026-11-28T00:45:00Z",
+  "temp_c": 8,
+  "temp_f": 46.4,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 2,
-  "humidity_pct": 61.54,
+  "humidity_pct": 65.85,
   "wind_kmh": null,
   "description": "Mostly Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-27",
-  "readings": 22,
+  "readings": 23,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
@@ -38,6 +38,11 @@
    "at_least_f": 58.1,
    "about_f": 59.0,
    "time_utc": "2026-11-27T06:30:00Z"
+  },
+  "dip_between_reports": {
+   "at_most_f": 47.3,
+   "about_f": 46.4,
+   "time_utc": "2026-11-28T00:45:00Z"
   }
  },
  "record": {
@@ -382,13 +387,6 @@
   "issued_utc": "2026-11-27T21:08:04Z",
   "hours": [
    {
-    "start": "2026-11-27T19:00:00-05:00",
-    "temp_f": 46,
-    "temp_c": 7.78,
-    "precip_chance_pct": 1,
-    "short_forecast": "Mostly Cloudy"
-   },
-   {
     "start": "2026-11-27T20:00:00-05:00",
     "temp_f": 46,
     "temp_c": 7.78,
@@ -716,6 +714,13 @@
     "temp_c": 11.67,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Cloudy"
+   },
+   {
+    "start": "2026-11-29T19:00:00-05:00",
+    "temp_f": 52,
+    "temp_c": 11.11,
+    "precip_chance_pct": 75,
+    "short_forecast": "Light Rain"
    }
   ]
  },
