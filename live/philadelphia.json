@@ -11,34 +11,23 @@
   "lon": -75.2268,
   "history": "Same site as the official Philadelphia record"
  },
- "as_of_utc": "2026-11-28T04:07:56Z",
+ "as_of_utc": "2026-11-28T05:08:00Z",
  "now": {
-  "time_utc": "2026-11-28T03:55:00Z",
+  "time_utc": "2026-11-28T04:55:00Z",
   "temp_c": 8,
   "temp_f": 46.4,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 2,
   "humidity_pct": 65.85,
-  "wind_kmh": 24.08,
-  "description": "Cloudy"
+  "wind_kmh": 25.92,
+  "description": "Clear"
  },
  "today_so_far": {
-  "date_local": "2026-11-27",
-  "readings": 25,
-  "basis": "hourly reports (tenths of a degree)",
-  "approximate": false,
-  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 14.4,
-  "high_f": 57.9,
-  "high_time_utc": "2026-11-27T06:54:00Z",
-  "low_c": 8.3,
-  "low_f": 46.9,
-  "low_time_utc": "2026-11-28T00:54:00Z",
-  "peak_between_reports": {
-   "at_least_f": 58.1,
-   "about_f": 59.0,
-   "time_utc": "2026-11-27T06:30:00Z"
-  }
+  "date_local": "2026-11-28",
+  "readings": 0,
+  "basis": "5-minute readings (whole \u00b0C, approximate)",
+  "approximate": true,
+  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two."
  },
  "record": {
   "series": "Philadelphia area (ThreadEx; airport)",
@@ -47,7 +36,7 @@
   "rank_today": true,
   "latest_final": {
    "date": "2026-11-26",
-   "is_yesterday": true,
+   "is_yesterday": false,
    "high_f": 57,
    "low_f": 45,
    "high_rank": {
@@ -382,13 +371,6 @@
   "issued_utc": "2026-11-27T21:08:04Z",
   "hours": [
    {
-    "start": "2026-11-27T23:00:00-05:00",
-    "temp_f": 45,
-    "temp_c": 7.22,
-    "precip_chance_pct": 1,
-    "short_forecast": "Mostly Cloudy"
-   },
-   {
     "start": "2026-11-28T00:00:00-05:00",
     "temp_f": 45,
     "temp_c": 7.22,
@@ -712,6 +694,13 @@
    },
    {
     "start": "2026-11-29T22:00:00-05:00",
+    "temp_f": 53,
+    "temp_c": 11.67,
+    "precip_chance_pct": 75,
+    "short_forecast": "Light Rain"
+   },
+   {
+    "start": "2026-11-29T23:00:00-05:00",
     "temp_f": 53,
     "temp_c": 11.67,
     "precip_chance_pct": 75,

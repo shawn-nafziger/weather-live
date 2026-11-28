@@ -11,9 +11,9 @@
   "lon": -76.1919,
   "history": "Same site as the official Norfolk record"
  },
- "as_of_utc": "2026-11-28T04:07:56Z",
+ "as_of_utc": "2026-11-28T05:08:00Z",
  "now": {
-  "time_utc": "2026-11-28T03:55:00Z",
+  "time_utc": "2026-11-28T04:55:00Z",
   "temp_c": 8,
   "temp_f": 46.4,
   "precision": "nearest whole \u00b0C",
@@ -23,17 +23,11 @@
   "description": "Clear"
  },
  "today_so_far": {
-  "date_local": "2026-11-27",
-  "readings": 22,
-  "basis": "hourly reports (tenths of a degree)",
-  "approximate": false,
-  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 13.3,
-  "high_f": 55.9,
-  "high_time_utc": "2026-11-27T05:07:00Z",
-  "low_c": 8.3,
-  "low_f": 46.9,
-  "low_time_utc": "2026-11-28T02:51:00Z"
+  "date_local": "2026-11-28",
+  "readings": 0,
+  "basis": "5-minute readings (whole \u00b0C, approximate)",
+  "approximate": true,
+  "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two."
  },
  "record": {
   "series": "Norfolk area (ThreadEx; airport)",
@@ -42,7 +36,7 @@
   "rank_today": true,
   "latest_final": {
    "date": "2026-11-26",
-   "is_yesterday": true,
+   "is_yesterday": false,
    "high_f": 71,
    "low_f": 56,
    "high_rank": {
@@ -247,7 +241,7 @@
   "periods": [
    {
     "name": "Tonight",
-    "start": "2026-11-27T18:00:00-05:00",
+    "start": "2026-11-27T19:00:00-05:00",
     "is_daytime": false,
     "temp_f": 39,
     "temp_c": 3.89,
@@ -376,13 +370,6 @@
  "hourly": {
   "issued_utc": "2026-11-27T21:35:20Z",
   "hours": [
-   {
-    "start": "2026-11-27T23:00:00-05:00",
-    "temp_f": 44,
-    "temp_c": 6.67,
-    "precip_chance_pct": 1,
-    "short_forecast": "Partly Cloudy"
-   },
    {
     "start": "2026-11-28T00:00:00-05:00",
     "temp_f": 44,
@@ -709,6 +696,13 @@
     "start": "2026-11-29T22:00:00-05:00",
     "temp_f": 56,
     "temp_c": 13.33,
+    "precip_chance_pct": 57,
+    "short_forecast": "Rain Showers Likely"
+   },
+   {
+    "start": "2026-11-29T23:00:00-05:00",
+    "temp_f": 57,
+    "temp_c": 13.89,
     "precip_chance_pct": 57,
     "short_forecast": "Rain Showers Likely"
    }
