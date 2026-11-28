@@ -11,15 +11,15 @@
   "lon": -81.8519,
   "history": "Same site as the official Cleveland record"
  },
- "as_of_utc": "2026-11-28T18:07:54Z",
+ "as_of_utc": "2026-11-28T18:51:23Z",
  "now": {
-  "time_utc": "2026-11-28T17:30:00Z",
-  "temp_c": 6,
-  "temp_f": 42.8,
+  "time_utc": "2026-11-28T18:35:00Z",
+  "temp_c": 7,
+  "temp_f": 44.6,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 1,
-  "humidity_pct": 70.3,
-  "wind_kmh": 16.67,
+  "dewpoint_c": -1,
+  "humidity_pct": 56.77,
+  "wind_kmh": null,
   "description": "Cloudy"
  },
  "today_so_far": {
@@ -35,9 +35,9 @@
   "low_f": 36.0,
   "low_time_utc": "2026-11-28T10:51:00Z",
   "peak_between_reports": {
-   "at_least_f": 41.9,
-   "about_f": 42.8,
-   "time_utc": "2026-11-28T16:30:00Z"
+   "at_least_f": 43.7,
+   "about_f": 44.6,
+   "time_utc": "2026-11-28T18:00:00Z"
   }
  },
  "record": {
@@ -91,7 +91,7 @@
   },
   "forecast_highs": [
    {
-    "period": "Today",
+    "period": "This Afternoon",
     "date": "2026-11-28",
     "high_f": 43,
     "would_rank": {
@@ -119,22 +119,22 @@
    {
     "period": "Sunday",
     "date": "2026-11-29",
-    "high_f": 49,
+    "high_f": 51,
     "would_rank": {
-     "value_f": 49,
-     "warm_rank": 35,
-     "cool_rank": 120,
+     "value_f": 51,
+     "warm_rank": 31,
+     "cool_rank": 124,
      "years": 156,
      "first_year": 1871,
      "tied_years": [
-      1920,
-      1949
+      2011,
+      2014
      ],
      "standing": "warm",
-     "notable": false,
+     "notable": true,
      "since": 2022,
      "record": false,
-     "phrase": "typical for November 29"
+     "phrase": "31st warmest November 29 high (tied) of 156 since 1871, warmest since 2022"
     }
    },
    {
@@ -168,18 +168,21 @@
    {
     "period": "Tuesday",
     "date": "2026-12-01",
-    "high_f": 42,
+    "high_f": 43,
     "would_rank": {
-     "value_f": 42,
-     "warm_rank": 60,
-     "cool_rank": 91,
+     "value_f": 43,
+     "warm_rank": 53,
+     "cool_rank": 95,
      "years": 154,
      "first_year": 1871,
      "tied_years": [
-      1906,
-      1933,
-      1968,
-      1991
+      1894,
+      1902,
+      1920,
+      1923,
+      1994,
+      2011,
+      2016
      ],
      "standing": "warm",
      "notable": false,
@@ -254,44 +257,44 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-28T08:01:14Z",
+  "issued_utc": "2026-11-28T17:16:40Z",
   "grid": "CLE/78,60",
   "periods": [
    {
-    "name": "Today",
-    "start": "2026-11-28T06:00:00-05:00",
+    "name": "This Afternoon",
+    "start": "2026-11-28T12:00:00-05:00",
     "is_daytime": true,
     "temp_f": 43,
     "temp_c": 6.11,
-    "precip_chance_pct": 6,
-    "short_forecast": "Mostly Cloudy"
+    "precip_chance_pct": 4,
+    "short_forecast": "Partly Sunny"
    },
    {
     "name": "Tonight",
     "start": "2026-11-28T18:00:00-05:00",
     "is_daytime": false,
-    "temp_f": 32,
-    "temp_c": 0.0,
-    "precip_chance_pct": 4,
+    "temp_f": 34,
+    "temp_c": 1.11,
+    "precip_chance_pct": 1,
     "short_forecast": "Mostly Clear"
    },
    {
     "name": "Sunday",
     "start": "2026-11-29T06:00:00-05:00",
     "is_daytime": true,
-    "temp_f": 49,
-    "temp_c": 9.44,
-    "precip_chance_pct": 68,
-    "short_forecast": "Mostly Cloudy then Rain Likely"
+    "temp_f": 51,
+    "temp_c": 10.56,
+    "precip_chance_pct": 96,
+    "short_forecast": "Cloudy then Light Rain"
    },
    {
     "name": "Sunday Night",
     "start": "2026-11-29T18:00:00-05:00",
     "is_daytime": false,
-    "temp_f": 35,
-    "temp_c": 1.67,
+    "temp_f": 37,
+    "temp_c": 2.78,
     "precip_chance_pct": 100,
-    "short_forecast": "Rain"
+    "short_forecast": "Light Rain"
    },
    {
     "name": "Monday",
@@ -299,15 +302,15 @@
     "is_daytime": true,
     "temp_f": 40,
     "temp_c": 4.44,
-    "precip_chance_pct": 95,
-    "short_forecast": "Light Rain"
+    "precip_chance_pct": 48,
+    "short_forecast": "Slight Chance Rain And Snow Showers"
    },
    {
     "name": "Monday Night",
     "start": "2026-11-30T18:00:00-05:00",
     "is_daytime": false,
-    "temp_f": 26,
-    "temp_c": -3.33,
+    "temp_f": 28,
+    "temp_c": -2.22,
     "precip_chance_pct": 4,
     "short_forecast": "Mostly Cloudy"
    },
@@ -315,8 +318,8 @@
     "name": "Tuesday",
     "start": "2026-12-01T06:00:00-05:00",
     "is_daytime": true,
-    "temp_f": 42,
-    "temp_c": 5.56,
+    "temp_f": 43,
+    "temp_c": 6.11,
     "precip_chance_pct": 0,
     "short_forecast": "Partly Sunny"
    },

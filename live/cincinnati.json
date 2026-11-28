@@ -11,15 +11,15 @@
   "lon": -84.6723,
   "history": "Same site as the official Cincinnati record"
  },
- "as_of_utc": "2026-11-28T18:07:54Z",
+ "as_of_utc": "2026-11-28T18:51:23Z",
  "now": {
-  "time_utc": "2026-11-28T17:30:00Z",
-  "temp_c": 8,
-  "temp_f": 46.4,
+  "time_utc": "2026-11-28T18:35:00Z",
+  "temp_c": 10,
+  "temp_f": 50.0,
   "precision": "nearest whole \u00b0C",
-  "dewpoint_c": 1,
-  "humidity_pct": 61.3,
-  "wind_kmh": 16.67,
+  "dewpoint_c": 0,
+  "humidity_pct": 49.83,
+  "wind_kmh": 14.83,
   "description": "Clear"
  },
  "today_so_far": {
@@ -35,9 +35,9 @@
   "low_f": 34.0,
   "low_time_utc": "2026-11-28T10:52:00Z",
   "peak_between_reports": {
-   "at_least_f": 45.5,
-   "about_f": 46.4,
-   "time_utc": "2026-11-28T16:50:00Z"
+   "at_least_f": 49.1,
+   "about_f": 50.0,
+   "time_utc": "2026-11-28T18:35:00Z"
   }
  },
  "record": {
@@ -92,7 +92,7 @@
   },
   "forecast_highs": [
    {
-    "period": "Today",
+    "period": "This Afternoon",
     "date": "2026-11-28",
     "high_f": 50,
     "would_rank": {
@@ -191,44 +191,47 @@
    {
     "period": "Wednesday",
     "date": "2026-12-02",
-    "high_f": 56,
+    "high_f": 57,
     "would_rank": {
-     "value_f": 56,
-     "warm_rank": 29,
-     "cool_rank": 121,
+     "value_f": 57,
+     "warm_rank": 26,
+     "cool_rank": 127,
      "years": 155,
      "first_year": 1872,
      "tied_years": [
-      1892,
-      1900,
-      1901,
-      1953,
-      1980,
-      2007
+      1879,
+      1995,
+      1999
      ],
      "standing": "warm",
      "notable": true,
      "since": 2022,
      "record": false,
-     "phrase": "29th warmest December 2 high (tied) of 155 since 1872, warmest since 2022"
+     "phrase": "26th warmest December 2 high (tied) of 155 since 1872, warmest since 2022"
     }
    },
    {
     "period": "Thursday",
     "date": "2026-12-03",
-    "high_f": 61,
+    "high_f": 62,
     "would_rank": {
-     "value_f": 61,
-     "warm_rank": 15,
+     "value_f": 62,
+     "warm_rank": 10,
      "cool_rank": 141,
      "years": 155,
      "first_year": 1872,
-     "tied_years": [],
+     "tied_years": [
+      1916,
+      1926,
+      1933,
+      1973,
+      1990
+     ],
      "standing": "warm",
      "notable": true,
      "since": 2012,
      "record": false,
-     "phrase": "15th warmest December 3 high of 155 since 1872, warmest since 2012"
+     "phrase": "10th warmest December 3 high (tied) of 155 since 1872, warmest since 2012"
     }
    },
    {
@@ -258,12 +261,12 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-28T16:06:55Z",
+  "issued_utc": "2026-11-28T18:10:45Z",
   "grid": "ILN/30,35",
   "periods": [
    {
-    "name": "Today",
-    "start": "2026-11-28T11:00:00-05:00",
+    "name": "This Afternoon",
+    "start": "2026-11-28T13:00:00-05:00",
     "is_daytime": true,
     "temp_f": 50,
     "temp_c": 10.0,
@@ -328,17 +331,17 @@
     "name": "Tuesday Night",
     "start": "2026-12-01T18:00:00-05:00",
     "is_daytime": false,
-    "temp_f": 32,
-    "temp_c": 0.0,
+    "temp_f": 34,
+    "temp_c": 1.11,
     "precip_chance_pct": 0,
-    "short_forecast": "Partly Cloudy"
+    "short_forecast": "Mostly Clear"
    },
    {
     "name": "Wednesday",
     "start": "2026-12-02T06:00:00-05:00",
     "is_daytime": true,
-    "temp_f": 56,
-    "temp_c": 13.33,
+    "temp_f": 57,
+    "temp_c": 13.89,
     "precip_chance_pct": 0,
     "short_forecast": "Mostly Sunny"
    },
@@ -346,8 +349,8 @@
     "name": "Wednesday Night",
     "start": "2026-12-02T18:00:00-05:00",
     "is_daytime": false,
-    "temp_f": 42,
-    "temp_c": 5.56,
+    "temp_f": 41,
+    "temp_c": 5.0,
     "precip_chance_pct": 0,
     "short_forecast": "Partly Cloudy"
    },
@@ -355,19 +358,19 @@
     "name": "Thursday",
     "start": "2026-12-03T06:00:00-05:00",
     "is_daytime": true,
-    "temp_f": 61,
-    "temp_c": 16.11,
-    "precip_chance_pct": 8,
+    "temp_f": 62,
+    "temp_c": 16.67,
+    "precip_chance_pct": 3,
     "short_forecast": "Partly Sunny"
    },
    {
     "name": "Thursday Night",
     "start": "2026-12-03T18:00:00-05:00",
     "is_daytime": false,
-    "temp_f": 46,
-    "temp_c": 7.78,
-    "precip_chance_pct": 56,
-    "short_forecast": "Light Rain Likely"
+    "temp_f": 47,
+    "temp_c": 8.33,
+    "precip_chance_pct": 40,
+    "short_forecast": "Chance Light Rain"
    },
    {
     "name": "Friday",
@@ -375,17 +378,17 @@
     "is_daytime": true,
     "temp_f": 63,
     "temp_c": 17.22,
-    "precip_chance_pct": 72,
-    "short_forecast": "Light Rain Likely"
+    "precip_chance_pct": 80,
+    "short_forecast": "Light Rain"
    },
    {
     "name": "Friday Night",
     "start": "2026-12-04T18:00:00-05:00",
     "is_daytime": false,
-    "temp_f": 46,
-    "temp_c": 7.78,
-    "precip_chance_pct": 50,
-    "short_forecast": "Chance Light Rain"
+    "temp_f": 45,
+    "temp_c": 7.22,
+    "precip_chance_pct": 57,
+    "short_forecast": "Light Rain Likely"
    }
   ]
  },

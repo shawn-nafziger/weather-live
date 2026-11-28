@@ -11,16 +11,16 @@
   "lon": -87.9044,
   "history": "Same site as the official Milwaukee record"
  },
- "as_of_utc": "2026-11-28T18:07:54Z",
+ "as_of_utc": "2026-11-28T18:51:23Z",
  "now": {
-  "time_utc": "2026-11-28T17:30:00Z",
-  "temp_c": 9,
-  "temp_f": 48.2,
+  "time_utc": "2026-11-28T18:35:00Z",
+  "temp_c": 11,
+  "temp_f": 51.8,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 3,
-  "humidity_pct": 66.07,
-  "wind_kmh": 20.38,
-  "description": "Mostly Clear"
+  "humidity_pct": 57.8,
+  "wind_kmh": 16.67,
+  "description": "Clear"
  },
  "today_so_far": {
   "date_local": "2026-11-28",
@@ -35,9 +35,9 @@
   "low_f": 37.0,
   "low_time_utc": "2026-11-28T06:52:00Z",
   "peak_between_reports": {
-   "at_least_f": 49.1,
-   "about_f": 50.0,
-   "time_utc": "2026-11-28T17:25:00Z"
+   "at_least_f": 50.9,
+   "about_f": 51.8,
+   "time_utc": "2026-11-28T18:00:00Z"
   },
   "dip_between_reports": {
    "at_most_f": 36.5,
@@ -159,27 +159,22 @@
    {
     "period": "Monday",
     "date": "2026-11-30",
-    "high_f": 38,
+    "high_f": 37,
     "would_rank": {
-     "value_f": 38,
-     "warm_rank": 69,
-     "cool_rank": 79,
+     "value_f": 37,
+     "warm_rank": 78,
+     "cool_rank": 75,
      "years": 156,
      "first_year": 1871,
      "tied_years": [
-      1931,
-      1938,
-      1961,
-      1966,
-      1967,
-      1985,
-      1994,
-      1999,
-      2004
+      1917,
+      1977,
+      1981,
+      2018
      ],
-     "standing": "warm",
+     "standing": "cool",
      "notable": false,
-     "since": 2023,
+     "since": 2025,
      "record": false,
      "phrase": "typical for November 30"
     }
@@ -187,19 +182,28 @@
    {
     "period": "Tuesday",
     "date": "2026-12-01",
-    "high_f": 45,
+    "high_f": 43,
     "would_rank": {
-     "value_f": 45,
-     "warm_rank": 26,
-     "cool_rank": 131,
+     "value_f": 43,
+     "warm_rank": 35,
+     "cool_rank": 114,
      "years": 156,
      "first_year": 1871,
-     "tied_years": [],
+     "tied_years": [
+      1879,
+      1920,
+      1957,
+      1985,
+      1995,
+      1999,
+      2015,
+      2016
+     ],
      "standing": "warm",
-     "notable": true,
-     "since": 2021,
+     "notable": false,
+     "since": 2023,
      "record": false,
-     "phrase": "26th warmest December 1 high of 156 since 1871, warmest since 2021"
+     "phrase": "typical for December 1"
     }
    },
    {
@@ -259,7 +263,7 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-28T16:41:36Z",
+  "issued_utc": "2026-11-28T17:46:37Z",
   "grid": "MKX/89,61",
   "periods": [
    {
@@ -293,8 +297,8 @@
     "name": "Sunday Night",
     "start": "2026-11-29T18:00:00-06:00",
     "is_daytime": false,
-    "temp_f": 26,
-    "temp_c": -3.33,
+    "temp_f": 25,
+    "temp_c": -3.89,
     "precip_chance_pct": 6,
     "short_forecast": "Partly Cloudy"
    },
@@ -302,8 +306,8 @@
     "name": "Monday",
     "start": "2026-11-30T06:00:00-06:00",
     "is_daytime": true,
-    "temp_f": 38,
-    "temp_c": 3.33,
+    "temp_f": 37,
+    "temp_c": 2.78,
     "precip_chance_pct": 0,
     "short_forecast": "Sunny"
    },
@@ -311,8 +315,8 @@
     "name": "Monday Night",
     "start": "2026-11-30T18:00:00-06:00",
     "is_daytime": false,
-    "temp_f": 27,
-    "temp_c": -2.78,
+    "temp_f": 26,
+    "temp_c": -3.33,
     "precip_chance_pct": 0,
     "short_forecast": "Partly Cloudy"
    },
@@ -320,8 +324,8 @@
     "name": "Tuesday",
     "start": "2026-12-01T06:00:00-06:00",
     "is_daytime": true,
-    "temp_f": 45,
-    "temp_c": 7.22,
+    "temp_f": 43,
+    "temp_c": 6.11,
     "precip_chance_pct": 0,
     "short_forecast": "Partly Sunny"
    },
