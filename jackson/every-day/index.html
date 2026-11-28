@@ -1,0 +1,1411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<script>try{var t=localStorage.getItem("tod-theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
+<script>try{if(!sessionStorage.getItem("tod-intro")&&!matchMedia("(prefers-reduced-motion: reduce)").matches){document.documentElement.classList.add("tod-intro");setTimeout(function(){if(!window.todIntroStarted)document.documentElement.classList.remove("tod-intro")},2000)}}catch(e){}</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jackson Daily Temperature History · Tall Order Digital</title>
+<meta name="description" content="Every day since 1900 in Jackson, MS, colored by the day&#x27;s high against normal. 63% of days since 2020 were above it, against 55% in the 1900s.">
+<link rel="canonical" href="https://tallorderdigital.com/weather/almanac/jackson/every-day/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Tall Order Digital">
+<meta property="og:title" content="Jackson Daily Temperature History">
+<meta property="og:description" content="Every day since 1900 in Jackson, MS, colored by the day&#x27;s high against normal. 63% of days since 2020 were above it, against 55% in the 1900s.">
+<meta property="og:url" content="https://tallorderdigital.com/weather/almanac/jackson/every-day/">
+<meta property="og:image" content="https://tallorderdigital.com/weather/every-day-since-1900/share.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://tallorderdigital.com/weather/almanac/jackson/every-day/#webpage","url":"https://tallorderdigital.com/weather/almanac/jackson/every-day/","name":"Jackson Daily Temperature History","description":"Every day since 1900 in Jackson, MS, colored by the day's high against normal. 63% of days since 2020 were above it, against 55% in the 1900s.","inLanguage":"en-US","isPartOf":{"@id":"https://tallorderdigital.com/#website"},"publisher":{"@id":"https://tallorderdigital.com/#organization"},"about":{"@id":"https://tallorderdigital.com/weather/almanac/jackson/#place"},"mainEntity":{"@id":"https://tallorderdigital.com/weather/almanac/jackson/every-day/#dataset"},"dateModified":"2026-11-27","breadcrumb":{"@id":"https://tallorderdigital.com/weather/almanac/jackson/every-day/#breadcrumb"}},{"@type":"Dataset","@id":"https://tallorderdigital.com/weather/almanac/jackson/every-day/#dataset","name":"Jackson, Mississippi daily high temperature against normal, 1900 to 2026","description":"Every day's high temperature in Jackson, Mississippi since 1900, with its difference from the smoothed 1991-2020 normal high for the date, from Jackson area (ThreadEx; Jackson-Medgar Wiley Evers International Airport). Updated daily.","url":"https://tallorderdigital.com/weather/almanac/jackson/every-day/","temporalCoverage":"1900-01-01/2026-11-27","spatialCoverage":{"@id":"https://tallorderdigital.com/weather/almanac/jackson/#place"},"variableMeasured":["Daily maximum temperature (°F)","Difference from the 1991-2020 normal daily maximum (°F)"],"isBasedOn":{"@type":"Organization","name":"NOAA Regional Climate Centers (RCC-ACIS)","url":"https://www.rcc-acis.org/"},"creator":{"@id":"https://tallorderdigital.com/#organization"},"publisher":{"@id":"https://tallorderdigital.com/#organization"},"isAccessibleForFree":true,"dateModified":"2026-11-27","distribution":{"@type":"DataDownload","encodingFormat":"application/json","contentUrl":"https://tallorderdigital.com/weather/almanac/jackson/every-day/days.json"}},{"@type":"Place","@id":"https://tallorderdigital.com/weather/almanac/jackson/#place","name":"Jackson, Mississippi","address":{"@type":"PostalAddress","addressLocality":"Jackson","addressRegion":"MS","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":32.3112,"longitude":-90.0759}},{"@type":"BreadcrumbList","@id":"https://tallorderdigital.com/weather/almanac/jackson/every-day/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tallorderdigital.com/"},{"@type":"ListItem","position":2,"name":"Weather","item":"https://tallorderdigital.com/weather/"},{"@type":"ListItem","position":3,"name":"Weather Almanac","item":"https://tallorderdigital.com/weather/almanac/"},{"@type":"ListItem","position":4,"name":"Jackson, Mississippi","item":"https://tallorderdigital.com/weather/almanac/jackson/"},{"@type":"ListItem","position":5,"name":"Every day","item":"https://tallorderdigital.com/weather/almanac/jackson/every-day/"}]}]}</script>
+<link rel="icon" href="https://tallorderdigital.com/favicon.ico" sizes="48x48">
+<link rel="icon" href="https://tallorderdigital.com/assets/brand/tod-app-icon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#07080c">
+<script>document.documentElement.classList.add('js')</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* "Every day since 1900": a showpiece (Nov 16, 2026). Its own look outside the playbook (brand-decisions.md →
+   Showpieces), dark-only like the first one: the shared header, share row, subscribe card and footer use the
+   site's dark palette whatever the reader's theme, and the light/dark button is hidden on this page.
+   Built by weather-live/almanac/everyday.py; don't hand-edit a built copy. */
+:root{
+  --ink-2:#DDDAD3;--ink-3:#9FB1B8;--rule:#232833;--surface:#11141b;--amber:#F99A2B;--ghost:#3A5762;--navy:#7FC4D6;--funnel:rgba(127,196,214,.28);
+  --logo-2:#7FC4D6;--logo-3:#4F8D9E;--logo-4:#2E6272;--logo-ink:#F3F4EF;--logo-sub:#DDDAD3;
+  --font-body:Inter,system-ui,sans-serif;--font-data:"JetBrains Mono",monospace;--font-display:"Barlow Semi Condensed",sans-serif;
+  --bg:#07080c;--bg2:#11141b;--line:#232833;--ink:#f2efe9;--ink2:#c3c0ba;--ink3:#8d8f97;
+  --warm:#ff7a3d;--cool:#59a5ff;--hot:#ffd28a;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:radial-gradient(1100px 520px at 18% -8%,#2a1410 0%,transparent 58%),radial-gradient(900px 500px at 92% 4%,#0e1d33 0%,transparent 60%),var(--bg);color:var(--ink);font:400 16.5px/1.6 Inter,system-ui,sans-serif;min-height:100vh}
+a{color:#ffb38a}
+.wrap{max-width:1180px;margin:0 auto;padding:0 22px}
+.crumbs{font:400 13px Inter,sans-serif;color:var(--ink3);margin:22px 0 14px}
+.crumbs a{color:var(--ink2);text-decoration:none}.crumbs a:hover{text-decoration:underline}
+.theme-toggle{display:none!important}
+h1{font:700 clamp(36px,5.6vw,66px)/1.02 Fraunces,Georgia,serif;letter-spacing:-.02em;margin:18px 0 18px;max-width:1100px}
+h1 span{display:inline-block;background:linear-gradient(90deg,#59a5ff,#c9c3d6 48%,#ff7a3d 70%,#ffd28a);-webkit-background-clip:text;background-clip:text;color:transparent}
+.answer{font-size:clamp(17px,2vw,19.5px);color:var(--ink);max-width:780px;margin:0 0 12px}
+.newest{display:flex;gap:10px;align-items:baseline;max-width:780px;margin:0 0 14px;color:var(--ink2);font-size:15.5px}
+.newest i{flex:none;width:9px;height:9px;border-radius:2px;background:var(--hot);box-shadow:0 0 0 0 rgba(255,210,138,.6);transform:translateY(-1px)}
+.js .newest i{animation:pulse 2.2s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(255,210,138,.55)}70%{box-shadow:0 0 0 8px rgba(255,210,138,0)}100%{box-shadow:0 0 0 0 rgba(255,210,138,0)}}
+.deck{color:var(--ink2);max-width:720px;margin:0 0 18px}
+.byline{font:400 13px "JetBrains Mono",monospace;color:var(--ink3);margin:0 0 18px}
+.tabs{display:flex;flex-wrap:wrap;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--bg2);max-width:640px}
+.tabs a{flex:1 1 110px;display:grid;gap:2px;padding:10px 14px;min-height:44px;text-decoration:none;color:var(--ink2);border-right:1px solid var(--line)}
+.tabs a:last-child{border-right:0}
+.tabs a b{font:600 14.5px/1.3 Inter,sans-serif;color:var(--ink)}
+.tabs a span{font:400 11.5px/1.3 "JetBrains Mono",monospace;color:var(--ink3)}
+.tabs a[aria-current="page"]{background:var(--bg);box-shadow:inset 0 -3px 0 var(--warm)}
+.tabs a:not([aria-current]):hover b{color:var(--warm)}
+.tabs a:focus-visible{outline:2px solid var(--hot);outline-offset:-2px}
+.controls{display:none;flex-wrap:wrap;gap:10px 14px;align-items:center;margin:4px 0 12px}
+.js .controls{display:flex}
+.ctl-label{font:500 11px "JetBrains Mono",monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--ink3)}
+.seg{display:inline-flex;background:var(--bg2);border:1px solid var(--line);border-radius:10px;padding:3px;height:44px}
+.seg button{all:unset;cursor:pointer;padding:0 13px;border-radius:7px;font:500 14px Inter,sans-serif;color:var(--ink2);display:flex;align-items:center}
+.seg button[aria-pressed="true"]{background:#272b36;color:var(--ink)}
+button:focus-visible,select:focus-visible,.stage:focus-visible{outline:2px solid var(--hot);outline-offset:2px}
+.stage{position:relative;border-radius:14px;background:#050609;border:1px solid var(--line);box-shadow:0 30px 80px rgba(0,0,0,.5);padding:0;overflow:hidden;touch-action:pan-y}
+.stage canvas{display:block}
+.stage svg{position:absolute;inset:0;pointer-events:none;overflow:visible}
+.stage text{font-family:"JetBrains Mono",monospace;font-size:10.5px;fill:var(--ink3)}
+.stage .yl{fill:var(--ink2)}
+.stage .lbl{font-family:Inter,sans-serif;font-size:12px;fill:var(--ink);paint-order:stroke;stroke:rgba(5,6,9,.9);stroke-width:4px;stroke-linejoin:round}
+.sel{fill:none;stroke:#fff;stroke-width:1.5}
+.selx{stroke:rgba(255,255,255,.22);stroke-width:1}
+.ring{fill:none;stroke:var(--hot);stroke-width:2}
+.js #still{display:none}
+#still{display:block;width:100%;height:auto}
+.nojs-note{padding:18px;color:var(--ink2);font-size:14.5px}
+.js .nojs-note{display:none}
+.legend{display:none;align-items:center;gap:12px 18px;flex-wrap:wrap;margin:12px 0 0;font:400 12.5px Inter,sans-serif;color:var(--ink3)}
+.js .legend{display:flex}
+.ramp{height:10px;width:min(360px,80vw);border-radius:5px}
+.ramp-l{display:flex;justify-content:space-between;width:min(360px,80vw);font:400 10.5px "JetBrains Mono",monospace;color:var(--ink3);margin-top:3px}
+.keys{display:grid;gap:2px}
+.keys .key,.keys span{all:unset;display:block;cursor:pointer;padding:2px 0;font:400 12.5px Inter,sans-serif;color:var(--ink3)}
+.keys span{cursor:default}
+.keys .key:hover{color:var(--ink)}
+.keys .key[aria-pressed="true"]{color:var(--ink);font-weight:600}
+.keys .key.faded{opacity:.4}
+.keys .key:focus-visible{outline:2px solid var(--hot);outline-offset:2px;border-radius:3px}
+.keys .key::before,.keys span::before{content:"";display:inline-block;width:9px;height:9px;border-radius:2px;margin-right:6px;vertical-align:0}
+.k-w::before{background:#d2452c}.k-c::before{background:#3a7bd0}.k-n::before{background:#2a2d35}.k-y::before{border:2px solid var(--hot);width:6px!important;height:6px!important}
+h2.sec{font:700 26px/1.2 Fraunces,Georgia,serif;margin:46px 0 10px}
+.prose{max-width:720px;color:var(--ink2)}
+.prose b{color:var(--ink)}
+table{border-collapse:collapse;width:100%;max-width:720px;font-size:14px;margin:6px 0 10px}
+th,td{padding:7px 10px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap}
+th{font:500 11px "JetBrains Mono",monospace;letter-spacing:.06em;text-transform:uppercase;color:var(--ink3)}
+th:first-child,td:first-child{text-align:left}
+td{font-family:"JetBrains Mono",monospace;font-size:13px;color:var(--ink2)}
+caption{caption-side:top;text-align:left;font-size:14px;color:var(--ink2);padding:0 0 8px}
+.tw{overflow-x:auto}
+td .bar{display:inline-block;height:8px;border-radius:2px;background:#d2452c;vertical-align:0;margin-right:6px}
+details{border-top:1px solid var(--line);padding:6px 0;margin-top:26px}
+summary{cursor:pointer;font:600 15px Inter,sans-serif;padding:12px 0;min-height:44px}
+.related{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin:12px 0}
+.related a{display:block;background:var(--bg2);border:1px solid var(--line);border-radius:12px;padding:14px 16px;text-decoration:none;color:var(--ink)}
+.related a span{display:block;font-size:13.5px;color:var(--ink2);margin-top:4px}
+.nearby{list-style:none;padding:0;margin:8px 0;display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:6px 18px;font-size:14.5px;color:var(--ink3)}
+.places{columns:4 150px;column-gap:20px;margin:10px 0}
+.places .st{break-inside:avoid;margin:0 0 12px}
+.places h3{font:500 11px "JetBrains Mono",monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--ink3);margin:0 0 4px}
+.places ul{list-style:none;margin:0;padding:0;font-size:14.5px;line-height:1.7}
+/* steps: all five are in the HTML (read without scripts); with scripts, one at a time */
+.steps{background:var(--bg2);border:1px solid var(--line);border-radius:14px;padding:14px 18px 12px;margin:0 0 14px;max-width:780px}
+.step{margin:0 0 14px}
+.js .step{display:none;margin:0}
+.js .step.on{display:block}
+.step-k{font:500 11px "JetBrains Mono",monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--ink3);margin:0 0 4px}
+.step h2{font:700 21px/1.25 Fraunces,Georgia,serif;margin:0 0 6px}
+.step p{margin:0;color:var(--ink2);font-size:15.5px}
+.step-nav{display:none;align-items:center;gap:12px;margin:12px 0 0}
+.js .step-nav{display:flex}
+.step-nav button{all:unset;cursor:pointer;font:600 14px Inter,sans-serif;color:var(--ink);background:#272b36;border-radius:999px;padding:0 16px;height:40px;display:flex;align-items:center}
+.step-nav button:disabled{opacity:.35;cursor:default}
+.step-nav button:focus-visible{outline:2px solid var(--hot);outline-offset:2px}
+.step-nav span{font:500 12px "JetBrains Mono",monospace;color:var(--ink3)}
+/* tooltip */
+.tip{position:absolute;z-index:3;max-width:min(300px,82vw);background:rgba(17,20,27,.97);border:1px solid #3a3f4c;border-radius:10px;padding:9px 12px;font:400 13.5px/1.45 Inter,sans-serif;color:var(--ink2);box-shadow:0 10px 30px rgba(0,0,0,.5);pointer-events:none}
+.tip b{color:var(--ink);font-weight:600}
+.tip .m{font-family:"JetBrains Mono",monospace;font-size:12.5px}
+.tip small{color:var(--ink3);font-size:12px}
+.tip .chip{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:6px;vertical-align:0}
+.band{fill:rgba(255,255,255,.04);stroke:rgba(255,210,138,.75);stroke-width:1}
+.span{fill:none;stroke:#fff;stroke-width:1.5}
+/* place search */
+.picker{display:grid;gap:4px}
+.combo{position:relative}
+.combo input{font:500 15px Inter,sans-serif;color:var(--ink);background:var(--bg2);border:1px solid var(--line);border-radius:10px;height:44px;padding:0 12px;width:min(300px,86vw)}
+.combo input:focus-visible{outline:2px solid var(--hot);outline-offset:2px}
+.combo ul{position:absolute;z-index:5;left:0;top:48px;width:min(300px,86vw);margin:0;padding:4px;list-style:none;background:#151922;border:1px solid #3a3f4c;border-radius:10px;box-shadow:0 12px 30px rgba(0,0,0,.5)}
+.combo li{padding:9px 10px;border-radius:7px;cursor:pointer;font-size:14.5px;color:var(--ink2)}
+.combo li[aria-selected="true"],.combo li:hover{background:#272b36;color:var(--ink)}
+.combo li.none{cursor:default;color:var(--ink3)}
+.controls{align-items:flex-end}
+body.city .hub-only{display:none}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+@media (prefers-reduced-motion:reduce){.js .newest i{animation:none}}
+
+/* Site chrome: shared with the rest of tallorderdigital.com (dark tokens above) */
+.site-bar, .site-foot { max-width: 860px; margin: 0 auto; }
+.site-bar { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 18px 0 14px; border-bottom: 1px solid var(--rule); }
+.site-bar a { color: inherit; text-decoration: none; }
+.site-bar a:hover { color: var(--amber); }
+.site-bar a:focus-visible, .site-foot a:focus-visible { outline: 2px solid var(--amber); outline-offset: 3px; border-radius: 2px; }
+.site-nav { display: flex; gap: 18px; font: 500 12px/1 var(--font-data); letter-spacing: .12em; text-transform: uppercase; color: var(--ink-2); }
+@media (max-width: 420px) { .site-bar { flex-wrap: wrap; gap: 4px 8px; } .site-nav { gap: 12px; letter-spacing: .08em; margin-left: auto; } }
+.brand { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; color: var(--ink); }
+.brand .mark { width: 42px; height: 42px; flex: none; }
+.mark .m-o { fill: #f99a2b; }
+.mark .m-2 { fill: var(--logo-2); }
+.mark .m-3 { fill: var(--logo-3); }
+.mark .m-4 { fill: var(--logo-4); }
+.wm { display: grid; line-height: 1; font-family: var(--font-display); text-transform: uppercase; }
+.wm-1 { color: var(--logo-ink); font-weight: 700; font-size: 23px; letter-spacing: .01em; white-space: nowrap; }
+.wm-2 { font-weight: 600; font-size: 8.4px; letter-spacing: .52em; color: var(--logo-sub); margin: 3px 0 0 2px; }
+.site-foot { border-top: 1px solid var(--rule); padding: 20px 0 40px; display: grid; gap: 6px; font: 400 12px/1.5 var(--font-data); color: var(--ink-3); }
+.site-foot a { color: var(--ink-2); }
+.site-bar, .site-foot { max-width: 1136px; padding-left: 22px; padding-right: 22px; box-sizing: content-box; }
+@media (max-width: 1180px) { .site-bar, .site-foot { margin-left: 0; margin-right: 0; max-width: none; } }
+.site-foot { margin-top: 50px; text-align: center; }
+.site-foot p { margin: 0; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.subscribe .kicker { font: 500 12px/1.2 var(--font-data); letter-spacing: .14em; text-transform: uppercase; color: var(--ink-3); margin: 0; }
+.subscribe h2 { font: 700 clamp(26px, 4vw, 32px)/.95 var(--font-display); text-transform: uppercase; margin: 0; }
+main .share-row { margin: 44px 0 20px; }
+main .subscribe.sub-end { margin-top: 0; }
+/* site-header:start */
+/* Site header (sitewide, Nov 2, 2026): pinned to the top while you scroll.
+   On phones (680px and narrower) it slides away while you scroll down and comes back as soon as you scroll up
+   (assets/site-header.js). Menu (Nov 16, 2026): Data stories ("Stories" on narrow phones), Weather, NBA, each with a
+   faint underline; then About, Subscribe (outlined; an envelope icon on phones), the search icon and the light/dark
+   button. The menu itself is written by tools/apply-header.py.
+   Master copy: tallorderdigital-site/assets/site-header.css. Self-contained pages (stories, dashboards)
+   carry an inline copy written by tools/apply-header.py; edit this file, then re-run that tool. */
+:root { --header-h: 76px; }
+html { scroll-padding-top: calc(var(--header-h) + 12px); }
+.site-bar { position: sticky; top: 0; z-index: 40; background: var(--bg);
+  box-shadow: 0 0 0 100vmax var(--bg); clip-path: inset(0 -100vmax); transition: transform .2s ease; }
+.site-bar.is-away { transform: translateY(-100%); }
+@media (prefers-reduced-motion: reduce) { .site-bar { transition: none; } }
+.nav-search { display: inline-grid; place-items: center; width: 44px; height: 44px; margin: -12px -10px -12px -6px;
+  border-radius: 50%; color: var(--ink-2); }
+.nav-search svg { width: 20px; height: 20px; }
+.site-bar .nav-search:hover { color: var(--amber); }
+.site-nav .nav-search[aria-current="page"] { color: var(--ink); box-shadow: none; padding-bottom: 0; }
+.site-bar .nav-search:focus-visible { outline: 2px solid var(--amber); outline-offset: -4px; }
+/* Subscribe (Nov 4, 2026): the one outlined menu item, so the weekly email is easy to find. Ink, never orange
+   (orange is reserved for data meaning). Text on wider screens, an envelope icon on phones. */
+.site-nav .nav-sub { display: inline-flex; align-items: center; gap: 6px; padding: 7px 11px; margin: -8px 0;
+  border: 1px solid var(--ink-3); border-radius: 999px; color: var(--ink); }
+.nav-sub svg { display: none; width: 20px; height: 20px; }
+.site-bar .nav-sub:hover { color: var(--amber); border-color: var(--amber); }
+.site-nav .nav-sub[aria-current="page"] { box-shadow: none; padding-bottom: 7px; border-color: var(--ink); }
+.site-bar .nav-sub:focus-visible { outline: 2px solid var(--amber); outline-offset: 2px; }
+@media (max-width: 680px) {
+  .site-nav .nav-sub { width: 44px; height: 44px; padding: 0; margin: -12px -6px; justify-content: center; border: 0; color: var(--ink-2); }
+  .nav-sub .t { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .nav-sub svg { display: block; }
+  .site-nav .nav-sub[aria-current="page"] { color: var(--ink); padding-bottom: 0; }
+}
+/* The three topics (Nov 16, 2026): a faint underline under each, so "Data stories", "Weather" and "NBA" read as three
+   items rather than one run of words. The current section keeps its orange underline (aria-current rule in site.css). */
+.site-nav .nav-topic { padding-bottom: 4px; box-shadow: inset 0 -1px 0 color-mix(in srgb, var(--ink-3) 35%, transparent); }
+.site-bar .site-nav .nav-topic:hover { box-shadow: inset 0 -1px 0 var(--amber); }
+.site-bar .site-nav .nav-topic[aria-current="page"] { box-shadow: inset 0 -2px 0 var(--amber); }
+/* "Data stories" shortens to "Stories" where the menu would otherwise not fit on one line (its aria-label keeps the full name). */
+@media (max-width: 480px) { .nav-long { display: none; } }
+/* Thin divider before About (Nov 9, 2026): topics on the left, then About, Subscribe and the tools. */
+.site-nav .nav-about { position: relative; margin-left: 14px; }
+.site-nav .nav-about::before { content: ""; position: absolute; left: -17px; top: 50%; width: 1px; height: 16px; margin-top: -8px;
+  background: var(--ink-3); opacity: .55; pointer-events: none; }
+@media (max-width: 680px) {
+  .site-nav .nav-about { margin-left: 8px; }
+  .site-nav .nav-about::before { left: -11px; height: 14px; margin-top: -7px; }
+}
+/* Narrowest phones (360px and under): tighter menu so everything fits on one row with the divider
+   (Nov 23, 2026: tightened again after "Stories / Weather / NBA" ran 18px off a 320px screen). */
+@media (max-width: 360px) {
+  .site-bar .site-nav { gap: 6px; letter-spacing: 0; }
+  .site-bar .site-nav .nav-about { margin-left: 4px; }
+  .site-bar .site-nav .nav-about::before { left: -6px; }
+}
+/* Animated logo intro: hide the static logo until assets/site-header.js takes over (home: the hero; elsewhere: the header logo). */
+.tod-intro .hero-logo .mark rect, .tod-intro .hero-logo .wm,
+.tod-intro body:not(:has(.hero-logo)) .site-bar .brand .mark rect,
+.tod-intro body:not(:has(.hero-logo)) .site-bar .brand .wm { opacity: 0; }
+/* site-header:end */
+/* theme-toggle:start */
+/* Light/dark button. Master copy: tallorderdigital-site/assets/site.css (.theme-toggle). */
+.theme-toggle { display: inline-grid; place-items: center; width: 44px; height: 44px; margin: -12px -12px -12px -6px; padding: 0;
+  border: 0; border-radius: 50%; background: transparent; color: var(--ink-2); cursor: pointer; }
+.theme-toggle:hover { color: var(--amber); }
+.theme-toggle:focus-visible { outline: 2px solid var(--amber); outline-offset: -4px; }
+.theme-toggle svg { width: 20px; height: 20px; }
+.theme-toggle .i-sun { display: none; }
+.theme-toggle[data-showing="dark"] .i-sun { display: block; }
+.theme-toggle[data-showing="dark"] .i-moon { display: none; }
+/* theme-toggle:end */
+/* subscribe:start */
+/* Weekly-email signup (Buttondown). Same markup on the home page, subscribe/ and, later, the end of each story.
+   White card, ink button (orange is reserved for data meaning; the button turns Burnt/Orange on hover only). */
+.subscribe { background: var(--surface); border: 1px solid var(--rule); border-radius: 10px; padding: 24px; display: grid; gap: 12px; max-width: 640px; }
+.subscribe .kicker { margin: 0; }
+.subscribe h2 { font-size: clamp(26px, 4vw, 32px); }
+.subscribe .sub-dek { color: var(--ink-2); max-width: 34em; }
+.sub-form { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 4px; }
+.sub-form input[type="email"] { flex: 1 1 220px; min-width: 0; min-height: 44px; padding: 10px 12px; font: 400 16px/1.2 var(--font-body);
+  color: var(--ink); background: var(--bg); border: 1px solid var(--ghost); border-radius: 6px; }
+.sub-form input[type="email"]::placeholder { color: var(--ink-3); }
+.sub-form button { min-height: 44px; padding: 10px 20px; font: 600 15px/1 var(--font-body); color: var(--bg); background: var(--ink);
+  border: 0; border-radius: 6px; cursor: pointer; }
+.sub-form button:hover { background: var(--amber); }
+.sub-form input:focus-visible, .sub-form button:focus-visible { outline: 2px solid var(--amber); outline-offset: 2px; }
+.subscribe .sub-note { font: 400 12px/1.5 var(--font-data); color: var(--ink-3); }
+.subscribe .sub-note a { color: var(--ink-2); }
+.subscribe .sub-done { font-weight: 600; }
+.subscribe .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.subscribe.sub-end { margin-top: 8px; width: 100%; }
+.subscribe, .subscribe * { box-sizing: border-box; }
+/* subscribe:end */
+/* share:start */
+/* Share row at the end of each story, just above the subscribe card. Outlined ink button, so it ranks below
+   Subscribe (filled ink); orange only on hover and focus, as with the other buttons. */
+/* Story pages space <main>'s children 40-56px apart; the negative bottom margin keeps the row close to the card. */
+.share-row { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; max-width: 640px; margin: 0 0 -28px; }
+.share-row.share-solo { margin: 0; }
+/* Stories whose sections carry their own side margins (the travel stories: sections with the class wrap and a 760px
+   column inside) leave the main element full width, so the tool wraps the share row and card in this matching column. */
+.story-end { box-sizing: border-box; max-width: 792px; margin: 0 auto; padding: 8px max(16px, env(safe-area-inset-right, 0px)) 40px max(16px, env(safe-area-inset-left, 0px)); }
+.story-end .share-row { margin: 0 0 20px; } /* pages with no subscribe card below (the weird stat of the day) */
+.share-row .share-ask { margin: 0; color: var(--ink-2); }
+.share-btn { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 10px 18px; font: 600 15px/1 var(--font-body);
+  color: var(--ink); background: transparent; border: 1.5px solid var(--ink); border-radius: 6px; cursor: pointer; }
+.share-btn svg { width: 18px; height: 18px; flex: none; }
+.share-btn:hover { border-color: var(--amber); color: var(--amber); }
+.share-btn:focus-visible { outline: 2px solid var(--amber); outline-offset: 2px; }
+.share-row .share-msg { flex-basis: 100%; margin: 0; font: 400 13px/1.5 var(--font-data); color: var(--ink-2); overflow-wrap: anywhere; }
+/* Small Share button under a story's intro: reads like the byline it sits under (mono, secondary ink, underlined),
+   with a share icon and a 32px-tall hit area. */
+.share-top { margin: 8px 0 0; }
+.intro .share-top { margin-top: -6px; } /* travel intros lay out in grids with a 14px gap of their own */
+.share-top .share-btn { min-height: 32px; padding: 4px 0; gap: 6px; border: 0; border-radius: 0; font: 400 13px/1.4 var(--font-data);
+  color: var(--ink-3); text-decoration: underline; text-underline-offset: 3px; }
+.share-top .share-btn svg { width: 15px; height: 15px; }
+.share-top .share-btn:hover { color: var(--ink); }
+.share-top .share-msg:not([hidden]) { display: block; margin-top: 2px; font: 400 12px/1.5 var(--font-data); color: var(--ink-2); overflow-wrap: anywhere; }
+/* share:end */
+/* saved:start */
+/* Save buttons (Nov 24, 2026; script assets/saved.js). Under the intro, "Save" sits beside "Share" and reads the same way
+   (mono, secondary ink, underlined). At the end, "Save this story" is an outlined button beside "Share this story".
+   Under each chart's title, a small "Save chart" line like the "How to read" links. The bookmark icon fills in once saved.
+   Ink, never orange, except on hover and focus as with the other buttons. */
+.save-btn { display: inline-flex; align-items: center; gap: 6px; min-height: 32px; padding: 4px 0; border: 0; border-radius: 0;
+  background: transparent; cursor: pointer; font: 400 13px/1.4 var(--font-data); color: var(--ink-3);
+  text-decoration: underline; text-underline-offset: 3px; }
+.save-btn svg { width: 15px; height: 15px; flex: none; fill: none; stroke: currentColor; stroke-width: 2; stroke-linejoin: round; }
+.save-btn[aria-pressed="true"] svg { fill: currentColor; }
+.save-btn[aria-pressed="true"] { color: var(--ink-2); }
+.save-btn:hover { color: var(--ink); }
+.save-btn:focus-visible { outline: 2px solid var(--amber); outline-offset: 2px; }
+.share-top .save-btn { margin-left: 20px; }
+.share-row .save-btn { gap: 8px; min-height: 44px; padding: 10px 18px; font: 600 15px/1 var(--font-body); color: var(--ink);
+  text-decoration: none; border: 1.5px solid var(--ink); border-radius: 6px; }
+.share-row .save-btn svg { width: 18px; height: 18px; }
+.share-row .save-btn:hover { border-color: var(--amber); color: var(--amber); }
+.save-chart { margin: 2px 0 0; font: 400 13px/1.4 var(--font-data); }
+.save-chart .save-btn { min-height: 28px; padding: 2px 0; font-size: 12px; }
+.save-chart .save-btn svg { width: 13px; height: 13px; }
+.save-msg:not([hidden]) { display: block; margin: 2px 0 0; font: 400 12px/1.5 var(--font-data); color: var(--ink-2); overflow-wrap: anywhere; }
+.share-row .save-msg { flex-basis: 100%; margin: 0; font-size: 13px; }
+.save-msg a { color: var(--ink); text-underline-offset: 3px; }
+/* saved:end */
+</style>
+</head>
+<body class="city">
+<header class="site-bar">
+  <a class="brand" href="https://tallorderdigital.com/" aria-label="Tall Order Digital, home"><svg class="mark" viewBox="0 0 100 100" aria-hidden="true"><rect x="6" y="6" width="18" height="88" rx="3" class="m-o"/><rect x="30" y="50" width="18" height="44" rx="3" class="m-2"/><rect x="54" y="60" width="18" height="34" rx="3" class="m-3"/><rect x="78" y="70" width="18" height="24" rx="3" class="m-4"/></svg><span class="wm"><span class="wm-1">Tall Order</span><span class="wm-2">Digital</span></span></a>
+  <nav class="site-nav" aria-label="Site"><a class="nav-topic" href="https://tallorderdigital.com/stories/" aria-label="Data stories"><span class="nav-long">Data </span>stories</a><a class="nav-topic" href="https://tallorderdigital.com/weather/" aria-current="page">Weather</a><a class="nav-topic" href="https://tallorderdigital.com/nba/">NBA</a><a class="nav-about" href="https://tallorderdigital.com/about/">About</a><a class="nav-sub" href="https://tallorderdigital.com/subscribe/"><span class="t">Subscribe</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5.5" width="18" height="13" rx="2"/><path d="m3.5 7 8.5 6.5L20.5 7"/></svg></a><a class="nav-search" href="https://tallorderdigital.com/search/" aria-label="Search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/></svg></a><button type="button" class="theme-toggle" aria-label="Switch theme"><svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg><svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.3 5.3l1.4 1.4M17.3 17.3l1.4 1.4M5.3 18.7l1.4-1.4M17.3 6.7l1.4-1.4"/></svg></button></nav>
+</header>
+
+<main class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="https://tallorderdigital.com/">Home</a> › <a href="https://tallorderdigital.com/weather/">Weather</a> › <a href="../../">Almanac</a> › <a href="../">Jackson</a> › Every day</nav>
+  <nav class="tabs" aria-label="Jackson Almanac pages"><a href="../"><b>Overview</b><span>Yesterday and trends</span></a><a href="../records/"><b>Records</b><span>Highs and lows by date</span></a><a href="./" aria-current="page"><b>Every day</b><span>A square for every day</span></a></nav>
+  <h1>How warm was every day since 1900 <span>in Jackson?</span></h1>
+  <p class="answer">Since 1900, Jackson’s daily high has been above the 1991–2020 normal for the date on 56% of 46,138 days. That share was 55% in the 1900s and is 63% in the 2020s so far.</p>
+  <p class="newest"><i aria-hidden="true"></i><span class="pNew" id="pNew">The latest day on the chart, November 27, 2026, had a high of 60°F, 5° below the normal of 65°F for the date.</span></p>
+  <p class="deck">Each row is a year and each square a day, colored by how far the day’s high was from the normal for that date: red warmer, blue cooler, dark close to normal. Hover or tap any square to read it. A new square fills in every morning.</p>
+  <p class="byline">Data through <time datetime="2026-11-27">Nov. 27, 2026</time> · NOAA official daily record · Updated every morning</p>
+  <!-- share-top:start --><p class="share-top"><button type="button" class="share-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="M7 8l5-5 5 5"/><path d="M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg>Share</button><button type="button" class="save-btn" data-save="page" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 3.5h11a1 1 0 0 1 1 1v16l-6.5-4.6-6.5 4.6v-16a1 1 0 0 1 1-1z"/></svg><span class="save-t">Save</span></button><span class="share-msg" role="status" hidden></span><span class="save-msg" role="status" hidden></span></p><!-- share-top:end -->
+
+  <div class="controls">
+    <div class="picker">
+      <label class="ctl-label" for="place">See another place:</label>
+      <div class="combo">
+        <input id="place" type="search" autocomplete="off" spellcheck="false" placeholder="Search 322 places" role="combobox"
+               aria-expanded="false" aria-controls="place-list" aria-autocomplete="list">
+        <ul id="place-list" role="listbox" aria-label="Places" hidden></ul>
+      </div>
+    </div>
+    <div class="seg" role="group" aria-label="Show">
+      <button type="button" data-f="all" aria-pressed="true">Every day</button>
+      <button type="button" data-f="warm" aria-pressed="false">Warmer only</button>
+      <button type="button" data-f="cool" aria-pressed="false">Cooler only</button>
+    </div>
+  </div>
+
+  <section class="steps" id="steps" aria-label="The story in five steps">
+    <article class="step on" id="step-1"><p class="step-k">1 of 5</p><h2>What does every day since 1900 in Jackson look like?</h2><p>Each row is a year since 1900 and each square a day: red where the high beat the 1991–2020 normal for that date, blue where it fell short, darker the closer it came. <span class="pNew">The latest day on the chart, November 27, 2026, had a high of 60°F, 5° below the normal of 65°F for the date.</span> Hover over any square, or tap it on a phone, for that day; the column at the right is each year’s average.</p></article>
+    <article class="step" id="step-2"><p class="step-k">2 of 5</p><h2>Has the typical day in Jackson warmed?</h2><p>In the 1900s, 55% of days beat today’s normal high. In the 2010s, 59%; in 2020–2025, 62%. Where the rows turn redder toward the bottom, the typical day has warmed.</p></article>
+    <article class="step" id="step-3"><p class="step-k">3 of 5</p><h2>Which years ran warmest and coolest?</h2><p>Of 125 complete years since 1900, 1927 ran warmest: its highs averaged 3.9°F above normal, and 71% of its days were above normal. 1958 ran coolest: its highs averaged 3.4°F below normal, with 39% of days above.</p></article>
+    <article class="step" id="step-4"><p class="step-k">4 of 5</p><h2>How long can a warm or cool spell last?</h2><p>The longest run of above-normal highs lasted 43 days, from August 30, 2019, to October 11, 2019. The longest run below normal lasted 50 days, from July 8, 1994, to August 26, 1994.</p></article>
+    <article class="step" id="step-5"><p class="step-k">5 of 5</p><h2>How does 2026 compare so far?</h2><p>So far in 2026, through November 27, 70% of days have had a high above normal, the 5th-highest share for that stretch of the year in 125 years since 1900.</p></article>
+    <div class="step-nav"><button type="button" id="prev" aria-label="Previous step">← Back</button><span id="stepN" aria-live="polite">1 of 5</span><button type="button" id="next" aria-label="Next step">Next →</button></div>
+  </section>
+
+  <div class="stage" id="stage" tabindex="0" role="application" aria-roledescription="interactive chart"
+       aria-label="Every day since 1900 in Jackson, one row per year and one square per day, colored by how far the day's high was from the 1991–2020 normal. Use the arrow keys to move from day to day.">
+    
+    <p class="nojs-note">The interactive chart needs JavaScript. The tables below hold its numbers.</p>
+    <canvas id="grid" aria-hidden="true"></canvas>
+    <svg id="ov" aria-hidden="true"></svg>
+    <div class="tip" id="tip" role="tooltip" hidden></div>
+  </div>
+  <p class="sr" id="readout" aria-live="polite"></p>
+  <div class="legend">
+    <div>
+      <div class="ramp" id="ramp"></div>
+      <div class="ramp-l"><span>−20°</span><span>−10°</span><span>normal</span><span>+10°</span><span>+20°F</span></div>
+    </div>
+    <div class="keys">
+      <button type="button" class="key k-w" data-f="warm" aria-pressed="false">Red: high above the normal for the date</button>
+      <button type="button" class="key k-c" data-f="cool" aria-pressed="false">Blue: high below normal</button>
+      <span class="k-y">Outlined: the latest day, <time class="latestT" datetime="2026-11-27">Nov. 27, 2026</time></span>
+    </div>
+  </div>
+
+  <h2 class="sec">Key facts</h2>
+  <div class="tw"><table id="facts">
+    <caption>Jackson, Mississippi: daily highs against the smoothed 1991–2020 normal for the date</caption>
+    <tbody>
+<tr><th scope="row">Official record</th><td>Jackson area (ThreadEx; Jackson-Medgar Wiley Evers International Airport), from 1896</td></tr>
+<tr><th scope="row">Chart starts</th><td>1900</td></tr>
+<tr><th scope="row">Days on the chart</th><td>46,138 with a high, through Nov. 27, 2026</td></tr>
+<tr><th scope="row">Days above the 1991–2020 normal</th><td>56%</td></tr>
+<tr><th scope="row">In the 1900s</th><td>55% of 3,526 days</td></tr>
+<tr><th scope="row">In the 2010s</th><td>59% of 3,652 days</td></tr>
+<tr><th scope="row">In 2020–2025</th><td>62% of 2,192 days</td></tr>
+<tr><th scope="row">Warmest complete year</th><td>1927: highs +3.9°F against normal, 71% of days above</td></tr>
+<tr><th scope="row">Coolest complete year</th><td>1958: highs −3.4°F against normal, 39% of days above</td></tr>
+<tr><th scope="row">Longest run above normal</th><td>43 days, Aug. 30, 2019 to Oct. 11, 2019</td></tr>
+<tr><th scope="row">Longest run below normal</th><td>50 days, Jul. 8, 1994 to Aug. 26, 1994</td></tr>
+<tr><th scope="row">Latest day</th><td>Nov. 27, 2026: high 60°F, normal 65°F</td></tr>
+    </tbody></table></div>
+
+  <h2 class="sec">Which months changed most?</h2>
+  <p class="prose">In 3 of 12 months, more days beat normal in 1996–2025 than in 1900–1929. The biggest change came in February, from 49% of days to 54%; the least in September, from 69% to 56%.</p>
+  <div class="tw"><table id="months">
+    <caption>Share of days with a high above the 1991–2020 normal, and the average high against normal, 1900–1929 and 1996–2025</caption>
+    <thead><tr><th>Month</th><th>1900–1929</th><th>1996–2025</th><th>Change (points)</th><th>Avg 1900–1929</th><th>Avg 1996–2025</th></tr></thead>
+    <tbody>
+<tr><td>January</td><td>59%</td><td>52%</td><td>−7</td><td>+2.0°F</td><td>+0.2°F</td></tr>
+<tr><td>February</td><td>49%</td><td>54%</td><td>+5</td><td>−0.7°F</td><td>+0.4°F</td></tr>
+<tr><td>March</td><td>56%</td><td>56%</td><td>0</td><td>+0.8°F</td><td>+0.6°F</td></tr>
+<tr><td>April</td><td>57%</td><td>59%</td><td>+2</td><td>+0.3°F</td><td>+0.2°F</td></tr>
+<tr><td>May</td><td>55%</td><td>59%</td><td>+4</td><td>−0.1°F</td><td>+0.2°F</td></tr>
+<tr><td>June</td><td>61%</td><td>58%</td><td>−3</td><td>+0.8°F</td><td>+0.3°F</td></tr>
+<tr><td>July</td><td>54%</td><td>54%</td><td>0</td><td>+0.1°F</td><td>+0.3°F</td></tr>
+<tr><td>August</td><td>60%</td><td>57%</td><td>−3</td><td>+0.7°F</td><td>+0.5°F</td></tr>
+<tr><td>September</td><td>69%</td><td>56%</td><td>−13</td><td>+2.1°F</td><td>+0.3°F</td></tr>
+<tr><td>October</td><td>63%</td><td>59%</td><td>−4</td><td>+1.9°F</td><td>+1.0°F</td></tr>
+<tr><td>November</td><td>63%</td><td>57%</td><td>−6</td><td>+2.6°F</td><td>+0.8°F</td></tr>
+<tr><td>December</td><td>54%</td><td>53%</td><td>−1</td><td>+0.3°F</td><td>+1.0°F</td></tr>
+    </tbody></table></div>
+
+  <h2 class="sec">How often has Jackson’s high been above normal, decade by decade?</h2>
+  <p class="prose">The 2020s so far have the highest share of above-normal days of any decade, 63%, and the 1960s and the 1970s the lowest, 50%. Across the whole record, highs averaged 0.3°F above today’s normal.</p>
+  <div class="tw"><table id="decades">
+    <caption>Days in Jackson, MS, with a high above the smoothed 1991–2020 normal for the date, by decade</caption>
+    <thead><tr><th>Decade</th><th>Days with a high</th><th>Above normal</th><th>Average vs normal</th></tr></thead>
+    <tbody>
+<tr><td>1900s</td><td>3,526</td><td>55%</td><td>+0.1°F</td></tr>
+<tr><td>1910s</td><td>3,646</td><td>59%</td><td>+1.0°F</td></tr>
+<tr><td>1920s</td><td>3,588</td><td>62%</td><td>+1.6°F</td></tr>
+<tr><td>1930s</td><td>3,641</td><td>59%</td><td>+0.8°F</td></tr>
+<tr><td>1940s</td><td>3,650</td><td>58%</td><td>+0.3°F</td></tr>
+<tr><td>1950s</td><td>3,651</td><td>55%</td><td>+0.2°F</td></tr>
+<tr><td>1960s</td><td>3,653</td><td>50%</td><td>−1.1°F</td></tr>
+<tr><td>1970s</td><td>3,652</td><td>50%</td><td>−0.6°F</td></tr>
+<tr><td>1980s</td><td>3,653</td><td>53%</td><td>−0.3°F</td></tr>
+<tr><td>1990s</td><td>3,652</td><td>52%</td><td>−0.3°F</td></tr>
+<tr><td>2000s</td><td>3,653</td><td>51%</td><td>−0.3°F</td></tr>
+<tr><td>2010s</td><td>3,652</td><td>59%</td><td>+0.8°F</td></tr>
+<tr><td>2020s so far</td><td>2,521</td><td>63%</td><td>+2.1°F</td></tr>
+    </tbody></table></div>
+
+  <section class="hub-only">
+    <h2 class="sec">Every day since 1900, in every Almanac place</h2>
+    <p class="prose">Each place below has its own page, built every morning from its official NOAA daily record. Places whose records start after 1900 begin with their first full year.</p>
+    <div class="places"></div>
+  </section>
+
+  <h2 class="sec">How to read the chart</h2>
+  <div class="prose">
+    <p>Read down the chart to move through the years and across it to move through the seasons. Each square is one day: red if its high was warmer than the normal high for that date, blue if cooler, and darker the closer it was to normal. Gaps are days with no reading (and February 29 in years that don’t have one). The thin column at the right is each year’s average. Hover over any square or the year column, or tap it on a phone, for the details.</p>
+    <p>“Normal” is fixed for every year: the 1991–2020 average high for each date, smoothed over 15 days. So the early rows aren’t compared with their own era’s normal but with today’s: where the rows turn redder toward the bottom, the typical day has warmed, and where they don’t, it hasn’t.</p>
+  </div>
+  <details>
+    <summary>Where the numbers come from</summary>
+    <div class="prose">
+      <p>Daily highs come from Jackson area (ThreadEx; Jackson-Medgar Wiley Evers International Airport), NOAA’s official record, via the Regional Climate Centers’ ACIS service, in whole degrees Fahrenheit. The normal for each date is the 1991–2020 average of that date’s highs in the same record, smoothed with a 15-day window. A day counts as above normal if its high is warmer than that normal, even by a fraction of a degree.</p>
+      <p>This is the official city record as kept, without adjustments. It joins several observing sites over the years, and a move, a new instrument or the city growing around a station can shift readings (city growth mostly warms nights); NOAA&#x27;s adjusted climate datasets correct for these. Treat any single number as approximate.</p>
+    </div>
+  </details>
+
+  <h2 class="sec">Related</h2>
+  <div class="related">
+    <a href="../../jackson/">Jackson weather history<span>Yesterday in context, the year so far and how the climate has changed.</span></a><a href="../../jackson/records/">Jackson record highs and lows<span>Every date’s record high and low and the years that set them.</span></a><a href="https://tallorderdigital.com/weather/every-day-since-1900/">How warm was every day since 1900 in your city?<span>The showpiece: pick any of the Almanac’s places.</span></a>
+    <a href="../../">Weather Almanac<span>Official daily records, normals and yesterday’s weather for hundreds of US places.</span></a>
+  </div>
+  <h2 class="sec">Nearby places</h2>
+  <ul class="nearby"><li><a href="../../meridian/every-day/">Every day in Meridian, MS</a> · 77 miles</li><li><a href="../../greenwood/every-day/">Every day in Greenwood, MS</a> · 82 miles</li><li><a href="../../hattiesburg/every-day/">Every day in Hattiesburg, MS</a> · 87 miles</li><li><a href="../../greenville/every-day/">Every day in Greenville, MS</a> · 97 miles</li><li><a href="../../monroe/every-day/">Every day in Monroe, LA</a> · 115 miles</li><li><a href="../../baton-rouge/every-day/">Every day in Baton Rouge, LA</a> · 138 miles</li></ul>
+  <!-- share:start -->
+  <div class="share-row">
+    <p class="share-ask">Know someone who'd like this?</p>
+    <button type="button" class="share-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="M7 8l5-5 5 5"/><path d="M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg>Share this page</button>
+    <button type="button" class="save-btn" data-save="page" data-off="Save this page" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 3.5h11a1 1 0 0 1 1 1v16l-6.5-4.6-6.5 4.6v-16a1 1 0 0 1 1-1z"/></svg><span class="save-t">Save this page</span></button>
+    <p class="share-msg" role="status" hidden></p>
+    <p class="save-msg" role="status" hidden></p>
+  </div>
+  <!-- share:end -->
+  <!-- subscribe:start -->
+  <section class="subscribe sub-end" id="subscribe" aria-labelledby="sub-h">
+    <p class="kicker">The weekly email</p>
+    <h2 id="sub-h">Get each new story by email</h2>
+    <p class="sub-dek">One email a week with the newest stories and what they found. Unsubscribe anytime.</p>
+    <form class="sub-form" action="https://buttondown.com/api/emails/embed-subscribe/tallorderdigital" method="post" target="_blank">
+      <label for="sub-email" class="sr-only">Email address</label>
+      <input id="sub-email" type="email" name="email" required autocomplete="email" placeholder="you@example.com">
+      <input type="hidden" name="embed" value="1">
+      <input type="hidden" name="metadata__signup-page" value="">
+      <button type="submit">Subscribe</button>
+    </form>
+    <p class="sub-done" role="status" hidden>Almost done: check your inbox for a confirmation email.</p>
+    <p class="sub-note">Sent with Buttondown. Your address is used only for this email (<a href="https://tallorderdigital.com/about/#privacy">privacy</a>).</p>
+  </section>
+  <!-- subscribe:end -->
+</main>
+
+<footer class="site-foot">
+  <p>Data: NOAA official daily records via <a href="https://www.rcc-acis.org/">RCC-ACIS</a> (public domain). Analysis and design: Shawn Nafziger, Tall Order Digital.</p>
+  <p class="sub-foot"><a href="https://tallorderdigital.com/subscribe/">Get the weekly email</a></p>
+  <p>© 2026 Tall Order Digital LLC. Charts and text may be shared with credit and a link.</p>
+  <p>No cookies. Visits are counted anonymously (<a href="https://tallorderdigital.com/about/#privacy">privacy</a>).</p>
+</footer>
+
+<script type="application/json" id="days">{"slug":"jackson","name":"Jackson","st":"MS","y0":1900,"asof":"2026-11-27","alpha":"#$%&'()*+,-./0123456789:;=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[]^_`abcdefghijklmnopqrstuvwxyz{|}~","dmin":-44,"norm":[57.2,57.4,57.6,57.5,57.5,57.4,57.2,57.0,57.0,57.0,57.1,56.9,57.0,57.1,57.3,57.5,57.5,57.5,57.6,57.6,57.8,57.9,58.0,58.3,58.6,58.8,58.9,58.9,58.8,58.8,59.0,59.2,59.3,59.2,59.3,59.2,59.2,59.5,59.8,60.0,60.1,60.5,60.9,61.6,62.1,62.5,62.9,63.2,63.5,63.7,64.0,64.6,64.8,64.9,64.8,64.9,65.2,65.5,65.5,65.5,65.6,65.7,65.9,66.0,66.3,66.6,66.9,67.1,67.3,67.7,68.4,69.0,69.2,69.2,69.4,69.7,70.1,70.4,70.8,71.1,71.5,71.9,72.1,72.2,72.4,72.6,72.8,73.0,73.2,73.4,73.5,73.6,73.8,74.2,74.5,74.6,74.9,75.1,75.3,75.5,75.5,75.6,75.9,76.3,76.6,76.9,77.0,77.2,77.1,77.1,77.2,77.5,77.7,78.1,78.4,78.6,78.7,78.8,79.0,79.2,79.5,80.0,80.3,80.7,81.0,81.4,81.6,81.8,82.1,82.3,82.5,82.8,83.2,83.5,83.7,83.8,84.0,84.2,84.4,84.7,85.0,85.2,85.4,85.6,85.8,86.0,86.4,86.7,86.9,87.1,87.3,87.5,87.6,87.9,88.1,88.3,88.5,88.8,89.0,89.3,89.5,89.7,89.8,90.0,90.2,90.4,90.4,90.5,90.5,90.6,90.6,90.7,90.8,90.8,90.8,90.9,91.0,91.1,91.1,91.1,91.2,91.4,91.5,91.6,91.8,91.9,92.0,92.0,91.9,92.0,92.0,92.0,92.0,92.0,92.2,92.4,92.4,92.3,92.3,92.2,92.2,92.2,92.3,92.4,92.5,92.4,92.4,92.5,92.4,92.5,92.5,92.4,92.5,92.6,92.6,92.7,92.7,92.7,92.6,92.5,92.6,92.6,92.6,92.6,92.5,92.4,92.4,92.4,92.3,92.3,92.2,92.2,92.2,92.2,92.2,92.1,92.0,91.9,91.7,91.6,91.4,91.3,91.1,91.0,90.8,90.7,90.6,90.4,90.2,90.0,89.9,89.7,89.6,89.5,89.4,89.2,89.1,88.9,88.7,88.5,88.1,87.7,87.4,87.1,86.8,86.3,86.1,85.8,85.4,85.0,84.6,84.4,84.0,83.6,83.1,82.8,82.5,82.2,81.9,81.6,81.5,81.2,80.8,80.3,80.0,79.6,79.2,79.0,78.8,78.5,78.2,77.8,77.5,77.0,76.6,76.2,75.8,75.7,75.4,74.9,74.5,74.0,73.5,73.0,72.6,72.0,71.7,71.4,71.2,70.7,70.1,69.6,69.1,68.6,68.4,68.0,67.8,67.5,67.3,67.2,67.1,66.8,66.5,66.0,65.9,65.7,65.7,65.6,65.4,65.3,65.2,65.0,64.6,64.0,63.4,63.0,62.8,62.4,62.1,61.9,61.6,61.1,60.7,60.6,60.2,59.9,59.6,59.5,59.7,60.0,59.8,59.5,59.0,58.9,58.9,58.8,58.8,58.7,58.6,58.5,58.3,58.0,57.9,57.7,57.4,57.2],"rows":["BA>FCKPTMVS  BJPL]KBKZ]_^R@JH:26? PFIFEBH>ENTRV0%.JIJMP?FHA @BROOVYEJVZY_`NBCHGUOD                        HDC@>=>BBEEFDGHD?A  QYTTSMSRWVVTOOONJSIKLRRSTIIKMDKJILPSWTLFJMOTEINJKIMPPOLORQSTKQSSRNLNGILNSRMQNNMQRHIEHINJMQWUQNQPRTTSRRROMSTSTVRRTTSSRLRTVUVWXTTTVUWJQU^TTRSTTSZXY[[XYV[TROOPWLGKGHJMNINGOWR]^YTYYYZZKUPY]Y^SUKHHRSU]UVVabaa_8MMVMPWXNISUSTULWWUYYZ[]QMV^MQX[UQCL","OI@NOVT[`a]RJU[^XKLXX[_^[P[TYYLFPWPOL@FRDFDCGRNVV[M@F@4=>OI SRZ__C9IOQDOTPPAGSNPBGPQYLKUNYKDAF@RSNLQIRJ?EOW_K3FIINQTSSQLRZYSSSZRQNMMPLLWYUTO GNRTA>DHGNMLMPQH>ORQTUUQPTXYSRWVVRVSXXXRRWUQSQRRTSWW]ZZVTNKOVTSHGDNRPQSRTTWUMMPRSRPTQNIGNPNEEMNSROOJQSTTOKSRRSRSTUNHKKL A@KKRWUTSMDRQYZNVMTRGIUUNGFMRSRSWXZZZ]]Z][[[__QGLRVY]][OPHHFPOLMMEFTURSUUYZM A?BNZ OV^b  :3;@0BN[[]V[NHIY","[^OA>@IY`WURBNTHSVNQCHTRa_7I^VCC?8=HNDAB?JOTS DJMN :JTHKRVW UTXZGJM_^]Y]TH]UK?JOTQKRYMNVRH  SROZVOHNXYYEFPUNSW^]Y]]WYOXU[]_M ][UVYZ^^WRWZXZV[]^VX[XPHBUVQUVYY]YXUY_^]^[Y]]^YNNSXWYWYZ]]][^V]^[WXVWZWS[]ZXNRTUPQNORQQLIKPWYWSTTVWUY]^[[^[[YYXXW]ZEOTVSHPSSVWWJNU?BFPVULLXWYNRVYLOUJPXQK:KRTV?TUUINSXXXVYXRX^^RNPOSa^UTPTZ^]]__`de^ONMGVZY[V  ?FEGH_?6;EDIZYPR]XIHMSOJCBLG?;DABM","TNIACOGOULD@AGQNKNVQUXILUVWVV VVRUNKMBGMIJOIPUW6;@HEJRBIMJW  IQUV[]W]QRLONUV[YXT?IC@HLLOEMSVZWEJPU_[VZXT H@LQWQNFJUOFOSUEBPRMPIAGDICKJHHPQSRSTSSST@NLTPF:G8HMQSRKIEADDDLPPJSRPOPPJIMPSRPRLPUROPPOLJLOQQROQVVMPLKOOQQQPPPMHPNRQNJIPQNPONEMOPQQQRRSSLGCJLPQRRRRPQMTTTR@CHJMPRRRTQRTTYWXXUVYJIJLPTRUKMCIRRVGBHINQOTU[WWWWJHNVYVYa]_b  :9>CSPC ?REB@;KE>@MJFHUS LDMQVVLQWWaK NUNUZ","YX =IQJUS[QSGO[ZSWTZ] DMO597C@IKVPcYaabN;AJTWJIMV JABWU_ab`a_bTGNMIRYUU`_KRTOO  ]^Z^] =DJVZXHGGKGPJBHVLJVV98IVXURXUL?IKKOFSTRUQKUGJNROHJJGCJOQSWTSUSUPKLTSRRUVSROPNNNOQUVWTTSRPTSQSMMNSSRONLKQQKPKNQNNNPROQMAIMMHKNQMNMPPJN:GIJIIPFORRQNOPQRRRLLLNONNMNNKJPRTTQRRRIPTUVUUTOTSXWX[[ZYSWXSSTVXRPRUPORSVHPOGLMOKMOQRUEDKOUSVXGB?JINUX[]WORTVRKFSQOP]_ =IOVODKHHEBN>LHTXY`X`b  BIY","`RFLGIDGJ__Q 96ALWJZYDDK 7:GN8GD 259788FFGG /2AE:7=AQUVMPUP [V]Y]_T]NE@LMQRUVLTHRTVRWWWWNRYZYMMBFVYXWIKKSJADKRUVMUSTRXVM SRUZTXNOVWWYVL LNTUQTKILKNUVUSPLPSUTTXSTUUUWNOQTRSOMMKJONMKQQPQPINEKOEEIJQSQSKDPPNMHHILQPQTQHJKMQSRLKMNLLOPONQNPRSSTULOJJQQNNKIJQRRTQROOPOORSSMOOUVTWQIINOSIOQQQFDHBEHPQQUTR ?BINMFJIIEMFINOYKMPBCHHJSWZZ[YFQQWZ[^^^_ MI?>DDOKP=JGDA7=?LIMS]FDLORUPP@","I[MHLUSO @E?IWaW]``fa  DIJNRUUMTFLT369EIMNYWT CSYZZYYY`WXDK SYRLTSJKRPXUWT 99E;:HPPVYVVK  8MOSTRNSPTYZZPIIIKSRTSUOVUSWPVYUXSURH HAFKNLLQRRVSSTOG>LNODGQQPMMQQRRSSSNOIJPQRUNUUUUUSMJQRTTRNLOQULQRLPMQRJMJNONOQNMMKNFNNPRRPOQPRTUTSTSRSUVTTWUYWVQ?JORTTSQRPOPPRRSPQTUUPTRKNMOOPLAIQ@HFLIICILI;@FF=LOKQJOSWVNLQTFJR?DNTOX]]``bXJDORYcTd^ HOR^`O YP` d^[YMW_WJT^`c[  >NQG@=AKU_Z[V","[de dcfcdQdehhf`eed NSUZT==EQNbYb  9=FFXUR_[QMU][NOZSZS ZTW TRW[]M`T^WZ`_ JTZ``caa`bba_]_ DAJROOWYPJIQMC?MT9R?B9AEMQPPWUL;OLDRRLGIMHNRMGGQRRPPSLNPIH@?GI?DLOKQQRSRCQQQKNQPOOOPRSTQPNQJSIMLPRSSURPFINNQQPQRTUVUSSTTGNPRPKNQRTUTSTRSNONPQFONLPPNPQSSSVPRKLPQSRNBEINOOLQPSSLFOUMIMRMPUWUXIPP GKPF?BIKIIQLTNTVYUREGGTSNOUUOX]XN ;?EILB?QPUFMQPTKBGQHVS?@ITTZ GNPIBICAGLXPLNV^___XU","bPX]HAORUQABF@SCDLTYRZJAS_P`HRYB9DSQNVSIEQMXY MLN =JGSHPJFUTZ]`c`]`bZ>ELW]]_ce^QHBGOWXZ[YY[ZSCOY^^]^]YQ]TRUSZZSXTZQVYKQRAJQRVNI=DIOQRQHOHMMQRUUUTUUTVUQUVTTRSSQTLHNQRJFJORRSSUSTONRQSNPPLNPRPMNNORSTUWUUTSLPSQLKHKLGJGJHHNQRRGKNQRSTSTVQPPINNLMNQNKNPQPSOQUTPLKQWWVOLJIOTPRRQSTHGLLFOLNSQEAIQKTSTSJV[ZUQTFOSIDINZVIIRJTYbVbUE:=GPV]]V]VZ_dZYaaZTIMXR]SISK[UX`bcchTGGKVXRT^bTUR","S]Z^WO@EU[bEDU[UPDVVdafgeX__X;6:OV^ZZSQXKUW]_G3JRM^cb[FALKS Q^SIO_[]YDCEEB8BFNMRQGSPLOOOJJ@                                  STWVSCFQRTTSLLJCKNPNTLHLSRFBFKOMRTVRQRPPLPQUOOEGPORQSQQURRPTTURPSRORRSVUTQRPPQROLNQTTVLGMMMORRLKLMNQPSTVX^TPTTLPSTUYYTWVVVXWVVWX[YZRVTKSYVGOWKFIGAFSRTRRH[[[YILJBbWSW[ZT[Y`RDNUWWLY]aY`b_`abT`_]^[`_MDR[aaMR]Z`][`S[ccTMR:>PUPEYOKNF16>CAIGITH;FT","_c_]ZD>KKRX`aUJU_VUKFO[X[aZOVUV`MOGRLKSLD?IDTZ[S6HSVTLANLOH _S`gcbSb]QJSZLBLRPV[W^bba_]b[[YTXYXPRUMWVMXZZVOMKCCPSG==IPRWSWWWJOTSMMSUNF?NSONKBNIDHIOQRU  OTTPIOQSPIFHLJMORSNNGNOHOPOOMNIIIJLMMMQQQPPPQQOIJLMQQLNORQSUGNNRNQOOSSMMOQQPSUSTSRTSPMOQVUVXQVTVVUUWWQTTSWPPNRWYZ^^SYZYVZY]YWZYJDGMW]UXZXX[YYYFKTUZ[N=;JQVEENEAQUYVRW^`QC;>ISV]_]]^aMMC>AMRY?JIXWOKBJJUHTSIIMHKQ]a`aKE","UT59LUZdU_eeeffWcSJaf]JHP^`ifahhbb^`dd]SIBKachdacZF==GHP`ST DIV]a_d`hejbVHSFRROTZVINHWMQOJXN]VYV`YSDJORZYQLQVRTSVO?KBOVWPOFIJGLOQSRSWVXTVXVTMNRVVYV[^]]ZZ[_YWX[WX[ZXTUZZWUOMIKMFPRRQPRSTTPLBENQRQOLLJJLFLPNKMNHGJKOKNOEOQRQQSUUNAJNLRQQRPQDNNPOSQIJMQQMRUWWWVWXY[ZWXXZYYVWTSYY[Z]]_^_a_`_KAQVXRZYNNOSXXBLNSUSNVVOJ?:QUbNEKZbY:Q[[aR[]QSTIITEE6EQVYFNSY`T^WTMIPLLSHUNJHCWaLJLWV","EEBCIFARFMKJ7I>GYWHLQV_X^`ZXSMIQI[IBBJVXBKWJHNOLQ[^SAGZYTFNJGRPTM@CJBBCBFMFMT_YV_UQGBOLHLPHYQLSUNKKLU[RW]QJNJOKQRMVTWYYSMWUOWRNTUWSSGHJFFFKOSUVUXY[UVSOTUSKKPMIIG@ILJPRSRM>GKKPMFJHMKKMOPRPNPNBNNPRTPQRKJQQPOQTRMOOUNOPPHHNNMLKOPPQRRTRRTTMSTPQORTTVUUUWXVVWWUUTTOXRTQOVUJNTQUKSMJIQTVXYZ^Z]]WIBETVTPXTZFHCPSYZZbQ>JSSSQY[a][SWNOPMZ]_VXMOM=COSQRZZVT IEAE IPWV_QRUCEFJQQMRJOY","Z^V_cbd CWc^QW`_^a`aXV_]UILSUXSMEICQF:CRPSC9FOX`ZQRSIWCQVWY MDNWOEASILTHWWL:JPRYOS]][[AEMWY]X[MISVWTKFB;EOSY[ZWWRRI?IMFNRWUSSUPJRUURPTTSGTVVTQF@CJPLNSUVTXVXUSPTA9CGNQSRUWZVQSSSTUQVUTQLQUSUTTTPMIPRRTUVVRRRFMPOSSKORROOQUUSKGMRQRQRQPRTTRROMPTUWXZXTWXUTQQTPPPRCHIQFMSKBJLOQGKNFONQSSTPVYZZLHSUVURHF=KPF5STGK;ADHLYWU[ZMBJUY]^]^Z`a`acdW]_^YT[_`XR]ZSFHQTXTOJTXKO]KKLMCBJGGEG","PSLG@IU^gYKGRYag[]ceVYQ_R_db`YRY^aWW[NAFLPSL9FOYTTGSYS83C@B FDUJ@KCEUWP:GSWXWNT45?IPPLQZ[`TWRXJNXXO7EHEIHTZ[QNNTPWWWWWNSNLPTS[YQHLUVUHFDNJPMNSRTVXUUSTYTXY]TSUUXYZWXUWXQOPTWUVWWY[YZ]]VXWQQQTTQTSSQTKRSQQQVRKNTTXURTSMGGNRSGELORRQPKORPRTPRRRTRPNQUVTURQTTUVWVVXQQQMQKTWURNCGEGJ@;EGCNNJQTUXQVME=DPTMVTSUSOG?IOOQVXVY_a]SJTRQJMVK8DL7SZRQPMJMPOTTPJDGFFGD@C>97?AILSOCCXVBMFZLH","UUNUN[OMTKFHQ_[ZJ@KJQVP7=GLIUUWPHQWWKPJRYY][YQIOPPKMQNFKJCB CBLHKM;6CHHKMMI;EJA=;9>ERN=GKN>@6>INRUWTRNSPQUUZ[WNTWTTVTVY^TYXTORQHHOFF?PXXTSRVUVUUTXXPINPFFLRTXUSOLTURTQJOTSTTUWMPJPQRPOOKJFFMPORRSSQSTTTWVQJJIRTUXWWVUUURKOSQSUSLOTTQJOMLKONQRRPHKMHDHLQPRVYLQXZ^YUWUUXYYKLOTWZ_^QJRWWMBHHDAJNOQKU[`ZQUWRTZZYXZZ[[Z]TZ_^_baa^TI`AOUKJWTLVY^USLHM==JM^OJK][TGLL_^[OEKQYa]UTWTCOT","e^V_d`UCTchhI=HF:4JXbXY]SZY`bb[P5>NYaT]XS`bU=IU_SKU]OWLIMDRDKOALW[VLMRLS][SDVXUZ_`TZSJ=LYYZVMAGSKFA?GPWVWYMSWUYOSXQKFEGKPQNLKRTUVXWY^YVVHKBGQNGOTVWWXTRQTQLKOOGKNRSSJNFKLORQTUQNOQQQSSNRPONDDCNPPOPRRORPNFNQPPPNRMQRSRRMKPPQLFQSTRNPRUUVQQRMJKOQLOPRTVTPSTUUPULLNMEBLNKOUVVWWWVXBDINOTNVR[^JPT^[[SRMUKCKTUSKSUZ^^][__^]]YYP]acS;JQMSZZSPHEOOV[QWWYbd_aXCLIFHB@RNHLeSEGXSd^XUSU","abceaU]`f]MNL::7;@IT`]MLLSQWggd^6DW@LDGFXMATKEOU_bbbYWX`cb] HM?6@JNPUX``]QNZSHEMZ]]SV^UMTYZYJNMELO>@NOKHEPSXXWKINTXWSUVYUHTSOCA@AHIBJHDHNRRRPSS?MTVRIQPUXUQVTTTUPQVXXLFANTSUUWWYWTRRVWVVJRRRTUNTTQYUTHMQOLJQRNSSUUWWVTIMQPPSUUMOORSXWHNQTSVRMONOPPLQPPQRRRVXXNGKLEJQKMOQOHPPFJNLRKNLVZ]MV8AOUCLKKQVZ=HDN@IOQRV]:HPDIVUVYYY[XSBGLXZXKN[RB6NUYOQZ]aZVHNP7@8520>BFQPU[[XYb_?EEB9>","EG@MWDAQHMC-=WBGD8D557FT^ZcY=DGEAJJWSabUQbbcb]U?KaH=?LciSef _ebaddR`f[Vbc]VFPPJP]]]QQWYXTHNTaa[WOOM>@:FLIT[HPTIFPTXUVYTKKNLOTTPVYYVVRPPPSTVUUVWXXXVVSVWWXZPVUUVWQRUXRTVYZZVVVSRVUXTUUUMNPRUWVZUVHSRTSTSUKRPRTVXQRMQSQOPSUSRTUVWKNRVV[XVOCHPQQSOFQQSQSTQTGGHILNPUSUYUPOS;BIKRRT@LMTWWWZ[ZZUERLPPMLGROSUPPIPNTQNFOLGNRWYWT^JPMRSTSSONSZQ>9EG?KNBJKOTV^]`b_cZe`NOSYUGVSYS 69>FIY^","^C/64IODKMCI]`QHHV]T]NPZGTTQRZ[UNOKETQQ>JTZSLHGIRR][WOPJCOR JNYZK7SOPKKSXVZYVLSWVUQWQEGKQTNBMGFTUVUVILXXVPGEKPQSWY[MDOVIHRTTKNUTRLBHJJJOQUQOCCJPAPLGHMOLDNPJPSSUSORPFMRUWSPNNQPNKIKPRMKNOPQSPLPQQTRTTPORTSQNPTNJNOSRRSTUORUWSNNKNSTRPSNQNMPPHMOQRROMFJNHNLNTTTXSTRSTWWXUUVKNOMUTUY_^ZPNVSWYYYJUY^YEPVVZLQY`_`a[[^TIWUS^Z[TPSN7GQSUXNVZW[bV^TQWLXUAU_`[SbASXY75>VWOOGCYW==PJZb^"," AB8>FabUBCFGKMQ]`cefU^ ?BFDIIO]KZSMVU[]PPCQA>6MHY[VYNF@68A1+2HRE7(*6LLUTJTQXEYQ:NNSQRYWVKORINM;MJSHHRGAIP][[TUXXSDQA?OIUXUWWUODLNPSKCFLDBPMSUWJKTRQQRNRQOGLIKLOPSSSUUXURJLEJOPPQROOOQQPTPFNNPPLNRSRHNNIBPPLOSSOKOLOQROONTMKGKMMNJQMLNOMQPRHILRLOQSUSPLROQRSTVWVVWXXRVXUREUSVUY[QQEMPQRMPTTYZWXWTYYXYZZ[[TW^ HMPOKLMTT]a`bVD;632:HQVYZPRSOT;JHMKSPTUB ADVVZ]WOTPKMKZN :GQ B:Zb","b`P`eXa_V SC EGBbUYW]a`dd[  V[V                             ^`VXY_`_USTXZb`[`a^b^^ZYZZ_  SFGJVRVZVVM?6OFWQR BJOPLVRTMKOLLNN??IMQNNRTRRUJHNKQRSSTXYYTUXYYVVTQQRQPNNOOQTTSTVTPPTLRPPUSTQSTSSWYYTPOOSSWWSTSTMNMOPMJPQUSPXRUVVVUURTQRUTTSTUXWYYWVVVOPOOQSTWWWTTPUVZY]^]]^[W[]^``^[VZZFRRILLRSCOWWFHGWUQZ`NPX^`b^^_QMIONVY]^]YOIHLYfb Yb P`cdfcbXJWVT`e PVUJGTOZdcYWT VbaacW P X ZT","BQ[cOINQNX IKXb]^cd ??@:>=9;BLPMWRFUA E]dhh   8LV`ba_ZOFM@L L8/2;LRGDTKKSZ^NTVSTHMOUWRBOYMYGGRUXX^]V^VQYYTOVMIIQTOSSXVIDIGRNLWVWVVUUWURNPHTPPNSSSRUSOBLEFPOLPOMILLOOUXWUWUQOORTSTTIQORPPLGHNQOPPRPSPOLQKLNQRPROOQRQTUPRJPPRQKMLKMFLQSRRRSVSFPRSLMPQTVSUVVWVTTRIMTSUGKQPSPTTVZVUVVXXWMXUXTSWXPPQUVWQKRSVURTS]XV_YWZ_ac[WRXSX__N] MX[^NNNOWKMUKT^cegeXXefWQPJRdTTLMLEMZYSccUQQ[[","SSLTX^`cYXbYcbSTW_PW_KFEOYaUWd^bdWK.;IMJLI[aTC8C5LNY[HGTMON WRXYRONEM^cQSWMFD>.ERFJCC8:A@  FNTTQOXLRQOJTMMNQEIQLQYRRRWQTLTLMLHGMQN>KQPFPKJMJLQSSSQKHJOORTPOOPQSSSPKNMJNNFOPNNQTPKQNQOLGIKNONMNMPMPQRMLMK?JHMNORSNLONNTLOPPOLINNJKOQQQRSRPLPKLIPNNHKNQPRSTSNLLKQSRRPRQMSUTRLLTU[[YZX[YVQMRRQSRSXXZZWVQPMKJBHPQVXWTHBDJGI@LNPZVXZXXPPTW]^ZTZ[PCNCRRQOKFMZaa[ZWWRBCTPXVWWUFV^^ehf","c_]A@=3OWWUTVSQNEOU]4:IJROHS[^ ^__YDCHJUMXT[[bW[VC ;CUUF=ANOVOXYTKTNJ=;=97BHEGB@AGQMPR[YUYS=GGKPRWYTO>KXQ[]VJOWRNSXVPSRTMJORVWSMFAICHOFFJNQUUMHSPBLTTSGFGIKNRQSVSSTUWWUUUUVLQPQRRSTTUQHEHIJLPSTQTRTSWXVUVWY[Z^XOTTSUUVWXYYSPUVWXPQRVXQUWYWY[[VV[^^VWYSJPTPXXUOUWUPQRXTY_^TJRMHMGCBNROYYYZY[UVXXZ[VWRWRRLILQQUU]_^X]][^^_YU][`c^VRWQLWWQa]DKLOF[TLNXWec^UEN]a_`igf^86BCE:?GA@LK","JOLRW^`[WSOVGQMPPJCBPRX]^YS>OIY_V@T__aa[^SHVZ[QOSY]Z_[SUTJN HBJTM^bab`a[aYD@V_OQQWTY]]TJIKNRZ[SKQVXTKTZZZ_`_]_]__``[[XRJDGKTTLPRWTNLMQQVUSLIPTVTSNEJNQUTQTUSSQTSELQPPRTPOQQQWXTSQOSWWVTSTUVUTRNIQTVMISPPKPLJMRWUSNCOK@GKLNQTRQQVWXVVWWVZ]XSPKNVX]VLVTVW]`bb_^YTLTYX]_`cbc`aZVVTXWZYQX]S[[[K@PXWMNXSIE@HVNUPKII544=AFKJQ^NIQSWY^RNKHIINGBRZ]OIUYVS_UIJJSVV^a[WUF?KO]S@>MRUP3=AJ","XNOTTSKDFBQJIPWXTSYU]F6>H  TWT VPTYRX_^XLKT^bZUN^PRYXTUXTNQ W]ODGLNMPJ9EB9DMWSVWURRXU>;D@NHMRMPXWPONLUMFJ@HUSJOROYVGIROMQRSOKROIPRQMLFLJJLMLGMONRSVVVUSPOSSPGIRRRSTSRRRRQSMNQQKOPOJLNQTVVRQQMORONMKGILOPSSSSRROLLNPPPOKKONUSLSRRROMNLQRRSUUUOEFORRSSRRSVVSUXVOQXUWVUWUUROSVXXKS[[]^][_YLJTXVSTXZTTY`_YLXQJFLVYXRLIEJHEPQJI>CJWUTQK>IOHDK]]]W[USY[[]^VW^aZ]`a[:HORV`aV[]PJNWFRW","QXa^ae`^THGLOK;FV]cbegd^[XGTccWbehegd[[]WRSQ`afcZ7IR]cc`SOD ;:BLS]XVCQMTNQYZ]a`^SAKIPTSTTTY^[^]ZMYYYZ]Z[VOYYZYXS=FIKPTXWPMWSRXWY[[YVDBLKFRUTSKPSTSUUUWTTVVXWTOJMMLSUVPKJLSVOPHKPRUPTUUSPNMPTTQPTVTVWTTSVSTSSLIMPQSRSMRUSURSSSMRRNUSSTRMKGHLOPPLIE@AKRQTVUOTVVUXYXXW_^]UJIHIOUTUQX^ZZUV^XUPVVWTIKOOMGJY[_a_`b_`aa]b_QWYUW``b_U_[]R;@@NY[_^_`b]b^R=JMPY^TCK[e_`[PME8=@CJKNOWRb`X"," /-:LUSSXZd]baged^WLBGV[PQHFQYUVP[YZbZYVNXWTNHHF>FMQRYJ:@EOTQLOVIFJ[ZWU]a[_D9FEEKSXTX`]]`[IUYVQPMLE@7IOWQ9CQSRZWRFPTVGDNRTYXUJIHIRVTQSMGRUTRMKELKOOSVQUVSPHLGGOPLLPSRFOMQQURSQOSJIMQRSTUUWUTQQQPTTPRRMPPRQSSMQQNKHOOOQRPNQSUVUUTUVTSWUTQRUXVVWXXSIJOLJGHIJPTTTTVWSVWTHLSQPNGSLKUVV[YX^X[^`__^^^ZTXURTSVSIOVXYVJ=GXNNELTKMPJQVXYaaYWLBMLKSQDFU[XLSVaZ>KGEJJQZWQSREHFHHNQRUU`YUZ","X@HXUKLMY]JHVY]Yb]b]ed`e]KJJKVSFAGIPLIXU;=IHNHIMU[X6;KQ_]IL JMSVK[XTQLOKNPOKGKTXTSbha_]YZ]]WTZ[^]^]WYTPLGHHPSWSVPPMSLHUVRUPFNRWSWKTUURTSOQLFEFJNQPNSORUVXTOLKORNINSRQOOPPPQSSQQSMMGMQTQQNMNQRTRQQRTTSQLIQLPNOLJJLOJNMNSTTQSOTSSSSONJKPSRSUSPQSRRTQQTQPNRUTURRRPTOORPOLKLKLGCOPTPXULHINILSQUUTVWWUVXXYXPJGFJKJIK[WUQTOJKRQ]XYYXBADB  OLJGA=ESWS:BC9ITW_^b_Zadf`]^Y5733?HSZ^XQ]a","_[YKYZ_dhb^b`^XHE9=MI@6DHTUWECQSOXYS[^]a]X^[RQGTXZZ^Zc``ZQX YH>JVUQMRQRSSURNNPKQMIPR=@::BHMOPZTRQ^WVZYYXUUXRVPWXVWPNOVVRUXWWXXSXYWRPWNNSHNRENQTQFHMQRNGGLNNRPNIGFKLOPOPNQTYYWXYYZ[VW[WPNRUXVVWPV]_^TQOUWWVUVWTKUYY_]ZTWXVUWYSSUQVXYNVTUQNNKJPNRTWPBHTTUTUUVXXUVWURGKEEJQRPNTWPGNOPPRPSPMOTWWWSRVYWREMOJQNIORTLFGACMOHQKOOKJTNOYW^aee^YIPIIAKSQRLTQONILQYURSSXN>CGKPOIJLGGECLIK","LSXRLKQQBNLINHNQLGFLS]]^^_Za^[[XYX]]``[UEOXTOMMVLUQTYYRJPLM NKCERPNCAJTUQZUFIQSND;SSMKLDB@;CURPBHRSRNNXYSV[]ZVXL>IHQNIKPQNTSJOLHPKLJBHJPRQMHBJQFJPRSWTSDHMQTSRPKNSQROUUQQVVUUTUUVTTZ[WXRUKKSPQRPSSRKCKNQPROQNCKNJLMPPPNNOPPPOPNEDGIFBKPPGJKJKKMKPLNQNQQUURSTPOKQSSTSVXWWWX[][VIJNNU WUQVRWX]ZZYXUNLKOSVZTZ__]LQJ@ELU[WRYXX`^a`cadXZXU^`]aHTODX[DAKLOLLKLXgecSOF]W_a[afYQW^^abS","FMLQXOGJIRR`ehhgeRSZ`aZJEOUbc KR_f]O`adef_[RScbVLGGSGMOSZZ`baYYNF9A:*3836>OOPPT^X>DNUWSNQICQSTSVVVDKJDHTOKSTKUZ[WWVTOBLILLLPQSQQROJMLORPLEJ@=IHHMNLNLHLONMOPQTRTTKKLMHNOQSURRQTSNPSSTSQGMKNOOPRPRTTUUVURQRRTQQRRTTSSRTTTPMOQSOOPQRUTTSNLKNLMLLRQSUTOGKQTRNEGNLMKNKPRVTCIOPKGLLMDGIKKEO89ELOU7DOMCBPXTSHRVSVHKOSURBHQLRSSIIS=>KNT;43CQSRVGKGBDLSTWZRUXNEPTH??;83*15A UY[_JGMSaH","DOW^V`_RQWTEKRTYccabb]aWVXKCLKRTaOKCFT32B4FN]KFSN]JRKW][IIA KOFFNC:LYAMT_aHU[_O?EPPPIIRWWUOTNJOJFPRLTJFLE7:OOJJQMNOLIISTXMKLKQTTVRTTUTTSSQSUTVUTPTPNQRNOKJOSRRTSRNPRIFHKNTXYYXNQSQSQPUSPUQGPRUTEOQRNQ?KLNMNGKJFGIILPQQOPMNKNOPONMGOINKMLPPPPOQSSTMLOPPQRRNRRQQSTTTVVXVYQOVXXYZZYWWWOQRRLNBFNRURXNTUPWXZVHPDNQW[ZXTUWTB?@DMEVXIXIJVSW`_UMNVPV]`^___daSOUKZcadbbcdaTM]]_cURAETU^","`MYRRRLCGRLUUTZ]W]OVZ]YQQX_^C5:HY^^UMUTIB9KNX[QTPDDDGANY35E DTRHT[^Q@3EJSGMWYL=PUUVJOI8BKOUVX[[ZSMDRWZ@GNPTOXNDJQVTJUTAEAPTSTLMOSRPPQRPSBMOQTMWTRHGCIMTYUWVVOPOQQTSOPQSKMRPSSSRRRRSTSTLRQTQNMMNSUSTUUUVTSSUVZSURSOGFOOQSUTUVVQQSURPPTTUUUWTPTRRTMMONMMJAEIEHQSUWVRP=FOUTSXSTPWWUVCGNONHMMUGLLRUSRUUVWY]`^[RVYEO][JTWSOSY_a^IGPOMSYZ]TYJGOSVURQ ILLGENIEM;7ESLV^NONMXTY][VIOYd`"," ORLTR`Z[dUYdU]b^bdhR(81ATFOKLRSVXKZY[VXLCKTY[G?HNSZ[LWT22F KWWU`XMGDX[CRXXTBPY^Z][_^W`IQQNY[UXWPH>C?K9BMJHRTJLDLRTVVSVNIVUTTRDIPSSWWUSTPKSUOLNNCEMMPQRTRTKMKQRPKLTRRQMOQKMQNHHLNQRTMQNLNQQQTTPOQSRPQUUPPSQPRSRSMOQRUSMRRUWX[]YVPOQQSSRQLRQQMNNPPNKNSQTNJKOUOAGNQQSSSIGQTUWVSULCJNQKVNREFLSTWY[TZ[WZVY]^NKTVVV[^_][^^WQQIZXYP9;>>=ELMFD;ALMMHHN HCCGQURRSSAMTTGFONO86MMDF=DNDE","FGRQWb[LKY]b[X[edb??LSRISN4@=9:GH[X99:KJAENWSFEFA8BBNW_`^NSWYPXTQQWX[][HQU`ZMOURXVV__[VPVYTXL=IUIC4=MNT]ZZOFKSWRADLRUUGUVVTONRUPTUQUUSNPSLMMPQPOPPJICMKLMPSNRTSTTUQSVWWXWUX_WYJKQRSVVTSJJLNORSTSURUOPQRQPQNLFPRRTISNH=KLPPVSTRTTTSRVUWXWXVUNSSTUWTNQORSUVOSTRRUSUVRRRWYXYXXTU[YYRPNMSVS[OVNPFQSVSVRPZZZ[ER`JE@DRX__V9ESZUKILPPWQNQUWXQOOCFIENLHDDAEU^OTPNKEB@KU]RGQQT][Y^[Z`bW","T]TMO^^fb[KNcheXfaQfehFcGLQOR[ZTEPMSa`hcAIRRR]XDQSTRNUSK@:  EPOUIUSLIQWWYW2;JTRQJMYXR 5:78CJSHWDCNFCDJGQRT ^XYWOUWOIKJMXR JQMKNOQQSTQLHJSUUUWUSRTVUTWVWXUTQQQKPRQRIRTTTRLHPQUUPTVVTONPJPSRPPOOQPRSSTQSTUTDDGLPPOPONRSUXVURPTUSWRRUQSRRRPKQOMIILMPLINHORQSPQTOSOLLKONGMQUWUTWJGFMPPNLWPYXKMIGKQCAEHGKILN88BULIPZ``^XKOQTU[[RMIUVWA@F4539BIOLSKMPPGLGD5>85:?G][]ZRPSNPOK]STWWY^^","KNRPQOFCJFRRJUQ^Xb^bggd^C>?LWXVPSZ`]b^a_ca[bb``^XI;9EFCEVYT P^`b_ZNL[VSXZ^[[TYTZ]YVX]]YWZXU >DLSKOK:EJQTRSMUMSJQKQTTSTVYXWUUSTVOJGIMPEOLSLUUUSSSHMORSTTTSNMMRTPMOOQPNQSTPHNLLNPMQQNJINPRSVVTSSTSSRQUTQQMKFMLLKKMQPOPJMMMNNPMOINPROPHQRRRSTTVWXXYUUWTRRRSUSUUVTRTSTKKHQIEGMRSVXYUSU]YWVX]UQS[PTWZXUUPUHMPDCRVURQUYZ]ZUWZ[AIU]^`[W[a]NTUYRBAD>BQVWWUYRSSOHZb[KDLSLLQOPT^KGIH>FGI","W^_eZYcdcb^LROQKQOSZYVQPMPJTYMSYZ[IR[XZeaGOR_VOLY^]V:GMJLPT NJFJ]^YOZ]^_YPVQCLNSUY^XTWWUTERTZTIS?4ISRMGKNRVJ=9LGLRNQSRTMNQPIMQOHQLPTTMHMSODINSQSSOJLPNMKKOPRPSULRPMRTPMLPNPRRTTVUSQTTMSSSSUTUSQGNUUZ]U[WUXUXSRVUUPKOQSRMPUTRSTUSROQPOURKQRSRRQRSRRRTSTVYOWZXWWY[ZYNQTTOORSUSQQ]SZOAHPQXXZXY^NMMIFMPUY^[^`ZO^^LIE>RRA=CNMYZ]I@OUTUTSULEOJQEBBIMJVPOTV_b`^Ya[UQR]``UOXLQFBGAGCHP","C;B?:IB=FNVTZGDKR?)5;53.+,0?H:?LBJJMMJWS>SWQF=EEA;:8BED=NW]^[_NKLSLBNXRaH=KRTWKQULPG;LPPRPX]]_NJOKIITE2?PQSTI;DJONHERVNOKFGNKXSUVVJLRRNKRYUQSXXNENDMNGJRORWSSRRTQPOHCGHFJPSUOWTRHPUUGOFOH@@DNNLKLGLPOSSOTPQVWVUTVXSQMOOLKLIJDGJQOPUVTVSHFHKOQTTSTQSRTVTUSRURWU@@FMPQUUSFRTVMHAAILOQRUVTSHJLPUUYW=CJRXWRWTW[X]XW[WQSWYOKKJNSTF>62DTVW[W[STRR>FRQOHKTQWOUX[[dUKWIJTJLTUSNQWPHQU[","^ZWQDISSVLUX^W_ZOAETT]cRU^KAJWYNJCLTEC;HPSV[GKSLLO;BAB9?H=9 FRWOH??8MPHD>BGJ;6J>FNNICJDJALLVVUUJSNRSWYYWSPRQVYK?RKBNOLOPOVXTNJKTYUJJJNPRSUUUUUVYTZTSNOFLSOQRRTOVSTPDROO>JOPOOPTTUYUSTUVRRDIQTTUURNMPTRRXTUSSQSUQSRQSSQDIQQOOPRSRNPQRPRTOMORTSTUVWRRSOMQSQSTTTPQRJNLOOTWRQSVPRKVY]YZNSXZYZ[YNQUZZZTTLZ^^a_ZWWQ=MLSHRTLM?H:>JEFQTV^Y][VHM>>HOSYZ]UWNWZHMQJPANFGPSX`_]ZWZQUVKHFQU","`?>77;:6;4MU]ZQW[_NSPYa[^[QGTYGCJTWZYMFKG=LMRWVKE;ELPND:84B C7HCBOPIMSPVY_^]SLRIEMTUPTIFOO>EOOTWTQSL=NPPTUQTVZOPTVTQUVS]PYWSMVRGJNRSIOUGMTSTCIMJMOSRUXWWWYWTUJQQLJNTTINOSOTXHQOTSUUWXQLPMJFJIQSSSTVVUTNSTVXNOSRMRRRTUTOKLPRQPHKIMPRSSQPPDPPNLNNMQRSROPPSSRMRRTUTTTOBRTUCCHQPRH>AIHQRRUPJNSRTTRVUWWZZWQTVIJO?GLYYQNZMTW]Z__RFQVUV]^ca^_PAPZNHMPRZN[HYC;;;MRSOW]MT[[PM`SYf]^T?BS","_`aGEDHBIPTLQY^fhM@CUeigc65=OW`OVb`SRY^__GSG7D@QWWWJXZSMHFD GB+>JD5ERUX]MW[^QZZ>@AGJDOEQVUVYZNUV[XUV]YXSAFGJBIEKRTOTUXZ^^PZ[ZYVTUWUNRWXQVWZXWOPRTLRQXWPRSTSWVVZZTTTUSWVVTVVXYWUWVTTTMMMLQRTWUSRTPJJMRSUVVRUVYXURNKQTUSVTUUTUWUWQUVXZ^VPQTUXWXY[^`RWYMKTRPTOOLISSRTTKE:ADCMNHKIMPTOURRLJMMOQWWTJMM;DPVXY[XO>8BLTWW[MLPXWKADFJPTRSDGTZ]]THJRQPBELPZWR[cZaaeLVJ>37?ISV[VB;D@GD EN","IGCTVNC>>KTG9=ESNTTP`__^Td^VN[XUSSZYY_ZQVQ;=DGHZHCIX]ZZ^`Y]HHQV_Z[ CNNJOZ`^NVRU9JDNPXXNOBFMQG>EAKRPQWX>MGYIRSPPQXKNNONOOMQMTICDFLKSWXUWVWXVUKPONRSRRUSTRTRRSUSKUSTPPQSWWVYWUZWWWTYYXTUTOUONLSTUWYSXWWZZ]YWNSTSURYTTWMSTQSQSWUMMNNIQRRTTQPTTRTSPQOOPNOTVWWRMIPFHHLNRTWVUWZYZXUSRSVUWZ[YXXSNJDG7GPSTUTVUUSWV[]OQZ_[YZ]UUZ][TSWWZ^UHIAB@JCUHMREB?GBBHHLGALSH=?FBQNZMMVX=JYc TCJ]b","IHJJSUVTIRY]W`NFFPKFNLOV^QUTEHCD=L[JNJKZ`RRPbbcX=@OWHMS[`Y@ KaTYc_JJOUVEJ[_a`^_QJTN]OYZ][XMPZ]S>EOPTVWXYXVKMMSXXPVRVKOJDIMP@DHNOJRPDQSRSF9EMRNHNRTTSRTVTQMNLRRSTRSOSNEQPOLINQQSSRRRSSUPLKOMJOQSQHDLOPMOSSORTTURMNHHQORQTSPPOJLPQSRRRMPRRMLLIGMNPRTTVSTPSDNPSUTORFEHGQTTRWWXWUWY[QX[OMTFNOO?EMPSSEGPVUWUJIKANTVXXYZ]OGRYZ[VSY[`PLS]]TTWEBLXZUQKLRSG5DSRWZC@FS?A9FB>9L[PQOTOGGNL","FSR^]f`bNIVKGFD>GMMQDAKKXWBNN^ONXVcaXUUTDOUXDNRVOOJPWWQUYIM XVZYZTXLNJOPLV[]XNAIRPXTSPHOY`][YWWXZS][ZVAMRUGIPVYXXMNIOTURPUYWOPSPIQPJE@PGONPFOKLNOJKIMNQLMJ>DHMPPORQQSWSQQQRSMKOQNIKOQQLOFHGGCOQRRRPROQQRQQMLQLNOQLKJMMMOLMNQSTTMORTTUTSMLLQTLMGJKJFGMQPSUTSUTSULMPJJBMLOQJKTRQRXTIIPSTWVUVWVKBLOSLVW[QRZYYLV[XT^Z^[`YV]U]_UMKJQSNLLJRMMRX^SAM^bTFNVX[Y[`_]XUU^aTD?BOY[_X]cc_?9",">G=0>NFFKIFIXejXEEKTIPVZ^Xbcd^JOHWLBTE;8=?NSXWa]ZHACI>;>=@B >7AP[O96FFOOHJB?KC@IRRKYJHUCNMPDPWYY]JUVXLKFJOKDMUJCPTUREOKTPVPOVRJGJILOSNVTRROQJANQGGJQPQENQONRUSTUTPUXRHKNQROLPS@HPRQQRSUNMRROMLJNQUWUVLJRLMNEHTWSWVWXTWYYXXYYUVUOQSMRQRTMSRURTSTTTTXZZVY]]]XTVUYVVZLOYTGSNKEKPSSMNKLTTTSVUOTUYXXZYXZ[ZSZ]VYSSURV]MIGIUPULLRKKFLOUNKGFGMGINNLSMRLRW[`U[`PHJ@:FNJFKTXXTWW>DP[_X_^","^HTRVSX``PW]D=MT297KFQD25?9255;A@OS_ESD5AI`XDQW[][N;2BGV]]`YQ[HFAEMUMOB6ISX^V^```YQWU[J?MNUIOSTYZ][PQY^M?KTY]YYYXWWVRYQNSXYXOQHJOTVSULNVTVQOTSXYVUSHLNSROPTUURUUTTVWXYWUTSVXVTTSUVWXRORUVXZVUXUTSQSTOUPTVUVUVWSVNQSSQMQRQIOLLGANPVTSHLORSSVUSSRVVXUUUTN>KSTTM?LLAGQQRTTSSWMMK;F9?PUPLHNOIMRQKNTSUVJ>HQRTSMQQWWZY]STT[XNSTTHOKKPRO[YIQLCCMWSRPBKRTOVWRQPLIV`^`e[NPOQ`VUa^:KUVBI","OVb^FPX_fmcOXcccH`EILSde`_aL8.5;IRSKTSWRLS^ec]PNLORRUXVSFL@ EHNVXXKQSFJQREALUNESMIQUY[HPRYTJFCECQXWQGP@ORDDNLL?IFTZZUPMQRRTZ][XXXUELPTVTUVVUUSVTROPVIMREUTTTQSUSTJLKPKLKNQTRPPVJQSPQTSQOGPPSRUUTVTPMKGKPTUQPHJNQNQQTQKMQOORQRRRTQTSRPRQQOHFLNRSSRTSPPRNEIKTRJNQRNPSTSRVOOQMHRSNREENFGJRSVVZXYUKPHQTWZ[[RWQ@MRROLCBR@KGKQUY]]YKWQRFGV^LCN[MW]aaTVPXPRXYILZfcF;CJKXY]bUDNRVTX]a[","]`edLCHU]`VafSeX]eVAQ`dhdf [gfeWVKS`bbdVKWbXIGGTVISWOLV[MUZ P>5?IFYGIRZ]RICBOXLGOFT[[XQSIBIETXS@?HRSTJM?>ENCDKHOSWRIRXVGPKJUVYWXVVVSOBLNSVXTNRTYXUWTQTJQRNFCFELMRMRUWWWUXUSJPORTSTUSOMQTPRQIMNQPPJNFJQPQPQSRPQNINELJNOMMKFNMOLLOQSSTRSQHIILPRPSTULLHLJSTJH>FDOPQKKMMTTVTTOHMMPEPJLNTQGISRLHOURSZ[[SIVOOWPRW[[[]`_]ZH9ESW[W9>ENW^VMQ_ULRX:6DIHM^_]RFP=5EGAJJMFGJM>GJLUZXZ[:9@?N","M]YXZ]?GPUO[aZUU]abaJQYMCO[_@15*'7HNNBHFPX[^_OIW^_ZPSRY]aa_ _aaU[`__X`WD0>GUUJ8AESUFLOJPFFPTH?ORIIHDOD?GSRAHOU[MHJXWPZXTWZYUTOIFPSRILQSTWYZYVWRJLSTRPXX[_WXLMTSVRSNMQPHJQQMMRTVWTWWWQKFKPNRTTUSTTTSQQSSUVYYVNUTUWNNTRPQTVUSTRTTTVXYZXZVUYYRSTXYXY][]]]Z[WVUTYNZVDEMNMKTSMPRVNRRNNVXZZY[[FBAGJNSTWZXXOY[ZVLP]ZTQ`]839ERH:AMSZQ][`U77?HTYZ[aRDEPOZ^WZ_gecECKURX8>JML^MLX[aYFU_ch","ihOWHFNX`EOVaaeecccZZ`JTYg[JCN]VU[QOMPZ]aW_c^RDERZRQDEFG@NS_@OYDCINQTTEVQPADIM[^[P:GLQLHTONWORH>GSXWDSPBCCFLQSNSUKQ>JNUXZ]ZY[`_]ZXK@JNTSSVOCFRRSPKNQK@KORRTWTWWWTUUUW[YWVZZSUWWWWZ][[XYWUSUYWSKQQVVWKOSRVUXXWX[X[XSXUQWZSRPPTPUUSXVWY]XUXWRQRNRPRSTYVDFIPNQTQNRLMMRTVOQQKOMPQRUXXV[SLWY?99;HJQVVIKPQNJDENQUYYGBMTW]RKJSQYUMFKSY_Y[XFADIQXXBB:66J@WQKVV_XQOMC:BMR]XOLTIPLIKMNMO","TMHRV_acGALTY_^UTR]]RZTMU_]UV[XQ[]^ZRMUY]_HJBIQCLIX;>=>DMXT U`cTPUWNMCPS]WUOWaOWSWSNEOJLVZVWITMRSR^ZOYMBKNAPT>?IRRRMIJROTWYQBCJNRVVTTOIDRIHPSUUVYXW[ZXXWWTUUTW[ZYYYZ]XYUVX]Y[XXXTQIJUWUSSTVUUSUOMNKOMEQRQNIKPRTSPQRUTSTTRSTTVMPRTYTPTSVMOLDCNOOFNPUTWUUKJKSQSQVVRVXX][PVPIPMOQY``Z[YWXRLGNPUYYZ[YY]]WZ[]YSXPAFDJHRY^QKA?EFMQTWXWY^]UWWQNNKISJCMUTSUYVRTSNBGF@HG@=HLZM8@HQSNNPN","U^SYOQ[`^SD8J[_S@T[dZ7=W]]VPNKQXWXWUV>GbcVJY``]QUURUZVM]]^@ HS;8@CLQVZbaR=?BLSWMEXW^TTDPYVBCT^]]Z^OXOYQX[RFMSSXYZRYYYXW[XZYB;EMMJ>9;C:DIONJNAFOQQNQGSU[URSMFLPSTVUVXURRSWSQRTTXWVWYX[Z]WSPSWUSRSVZXYUZUXNTSSUZTQNMLQTTQWUUUPZUSZ[]^[]ZYWVSRTWWWY[[[POUY^[YUVWRKNYXWMNWZXGJOWVY[YWZY]Y__[HIY[]VRXCBNSHINTWVYZRDD=AJ:B6@KUYVWSZ]VPISWGKTDKLKTR]JUUJQZ^?KSQMUT@JMSMECHVXWS[]ZZWKN","`UY]`YOQNNFQCLONWH=HHI>LJRGICLSYRMPLIIOV[3:HPXUGQUP86ILXZ[^ ]a^`aSCOV^ba[``R^OO]T9KVZ,2:AKQGGUT_[FK=EVYTNWZ][WWT[UUTQPZYVUZZXYWXXZXXQRSNSTSSPPQQPWVVSJIJNSSRPKKOH?CEJOKILOOQPPQQQRQPQPPRROOPQRRTSNJBIMNMPQIIJNOPQPNNMEEIONOOMMPPJLLNMNPRRSTQRQLNPPJLMNNPMMSUTPSMROJQRSXZYWSRUYWXXUVWQWZZIIQWUWKKKQEHLRUYZKNUVXEGPXY?HKUH@FHXbcbcYBLMMU[ZCCKNA8@FY`TMMVT;:BCLVFAOTLBBWcfaVWXWJI","S]VU]`LIIH=:IQZCEH=GPIC;BNV`aXLR`QJCPQVHFGOX[X_bZ]KMSV[VP_GPQRXY^baDOS]BLCB:LN;>;HQPMVWSLLTTTXVIPFIN@>LTTSHCGGIKCMJPPUWWRRQLOSNUPNTSUUUPHPVVVUUTTROPNPPMGCEKLQSUSUNC=JIJLLMNOPPPPPSROOPQRSTRROLNPROQRSSTSPOLMQSRRQRSQNNQSRSUTVUTSPRTVUUTNFGNQSPHHOQRNNPQOOJLKILPSUUSTRQPTVMLORWUVLRRPPOTLLRUUOSRTSVWUONHUUWKJSSUQTZ[YVROC>NUXY]VCFQY^U?P>O:BOBJRW^Z_`gbUIVaXL[XbTXXXUTIGS]YIYc","UDP`P^P]h^KPSPD5=CLQXbLFJHNfdQf[Lahdbdgg_PWP[aING@?OSPVWP>F RUFNTD>:HUULW[KPTRLGFIRKD4DAMTJO[YSCOSQBKMH3AJKNYXXYWVWWVVUXRRLIC@FLPMMSVTSUWVTOSWWOSSMJILQRNMIOJLOPPRQQQRSRRQPNPOKJJOJOPONNNRQLQSSRNRSSSSRQQKLNHKMMOOPLNNPPOJKNNPPPPQRSRQHNLNOMLORSUSPFORDRRQNAFONPJNLHHBGSSSDJL@::;=EGJJIKIMOLJJNNQOQFCJIJPD>49AJLTXYQNCEQOCBCGPTZc^ZENDB9AGUSUUCNRNJVZUF?W=CVV]W][[VUX[^RPTNPWY","?DIJJE=9OU[PORKKOEFONJA:IRLGKUaGJ=RX[>@92;1:E80+7=BOQPMMSSP JLNOLK[NDNML;AGJF2?BEOFA:6?FKKFORWZVU@K?EEJQCAMTSRROOZ]NMTSIERUTRI@DLOPLOTTRQNEAFPRSQTSSQNQRQTTUQTRQPQQUTTPEENOPIEIOQHGIMMNOQNNPNKIJOMNOQQQQQQQHHKMOPOQRPPPONPPPPLONPPPMPGMPOPKGEJHJMOOQRSRPQSPQQPH@HLRSMLPLJLRRVVKHMQBCFEJPPSVRKNRPOPRTNTSUPTNJHDHG@FINCSIMXXPXY[VYaaULTXXYY[K=;BNPPT[QBBMD;EK=4:LSTZKPWSP@RLFFFL","@HS@5EVOAHR]_`X8BNWa`:JRX_LEZQEE?HARLYR``HSadHQ]O7=CS]JOPRQ HSJTTDJROWZDQMNCJMMPLDPVUYG@LRTTQVNUVXXF?F==CFOPNXUEBHOQRRSRUXWUVURVVURRKNGGGPSJQTUPRPSQTOONPJLKDILGLOOLQKOQQOKJNPOOQQRRRRRNKOOKPNPNNNOOPOOQNOQMNLLLOOOQNQMPQQQQNKLNPMJPPRQROOPPRPLPPQSQNPNPOOQQNKEGA=>GNQPPQRSRSTVXWSVXWZVQPVRYXWVCGHHHNOGJRHMYHHGJQPVZV^49ELTRXUO:K=AQUWZZPU^A;:HMHGIFBJYVKTMOORU[LFLOROQJX`KNIK","HQDDBB@QT^dbcbSMLC;@D;5COX_[M=?CGXYJJQX][E938@?M:CD@GNK;?@O?462:3:8AJFE=?:DG8@DA?SHRANHUXPWXSFIIZWPFDQRTSUWOJRXSXXXUPOSTPFFPNHMBELHH:FKLQSTUTRTTUSMQTRUUSIRSUVTSTRQPNNPTHKQSTUTTNRSSTVRSSRSOOQTUVXXSRTNQTUVXTUUUUSRTRRONLRPRRRNCHIKOPQNENN?LPONNIPNQRPRSSSTSLLCIKGGBMPRTSTSPRCIBMPTVTUNIMKQQPSVRSTPUO?CLRVWJPQKJFPVMTXLCQR;DNT^^SINPSYXPPSY^^GC@JS]^YRDCQJ?;9>DKOTW79HTO[OUSHJ","CBEORQKIHSXVPRJMW_RG=DWM342/>IQUTFBPEC=KQX_`Z[`UaQZUMZNJXRM IRY[[ZaODLOVYQ[RJSRNKNNHOXTSIFH@OGHT?GKECNBGQQDJMUUTUUUUNOSJRMGLSVUVS?BIOPUQKTSSRRROJQB?HNRRRQRSRPQRRNOPPPM759>?CJMKFFJLNOOMKMPNLGJI>HKMNCJPPPNPMNPOQMNNIMPPNPMKMMNPOONLNNNMMEJJLKMKOPSOPQOSSOPQNNKKK=ABHDHNQTTUVRUSUTQD@FLMMSTVWWVIFNUULELOSUWKPUVW[]^UDEHIFLLU]RRXMAEHJLUKPXXUC?KW[`_RILB`ObX>BG^VQLDNQD;GSO?CSM","?MWVWBJIC$'5DTJHNCBD[aG]`eMIV^X`_]ZR?KZaNXaeVZLN[QU^Z`W_`c= 3;FM9@CHRDOLF>AEIQTOPEPULKOUUWHD>BI?CERSVVHDQBB:NUWUSUSMPRTYWNLLQRSTTTTTWXSSVXVWXVSQSUTUXRHMLPNLOLQIOPNNKLMPSRNMPQQPNPNRIOMPPQRSSSUSTVWSRTSSUVUUTUSMNPQUVVMCQRSUUVTQUUPRQVWUSRRSQLNQTPTTSTTURNMQVUTVXSONPRSLMPQQTFKJOQMLNSXXZSUZZYZ][XLTZ]ROM?CHOSRPHJI=ADMKGCUZLMVW[NCDCJMSUSQJRJXX[Z^LESKCHF(9KSUQ[[aVJMAGEEKLMT","VUVPHIJV[fYG/8BIMNM;ARN,?L1?KQLba@JU_L?O[E6GI?CK?ELB9JGL@MU JQ[_VHNSSWY[bJO[aa`KDGRUSOSX[^]]YYOI?LUTXXONNTXWXVOWYK;IMRVVNFNPTUSUWTTVWTUWVSSUNSOFOTUTNROPSQRTUVXZXWWXZ[[TDLQHBJNQMJHLOOPPRURPPEKIPRLOPPSTRSQTJMHLQOPPGPSSSTVSRTRSRSBEJORPHRSTUVVWWPLOQTTTSSQQSSVTSKBDBHRTXUKHNM?DHFMRVZZVVWZWY[_]WWXXY[Z][URYXUFPWHFLOUYVSGWRI@DLW[][TX[ILQQRJBMJHIMOLWNHJY>;467DBB=53,7K[NJKD4","CWYNSRMWTHDD39A8KV^VYOY[JUUHHQSQPSRPPGINVGMKKOFJC?D8:EL@EAGGLRWYIRY_]HSRTXLPSUJZ;ENSX?MLI:PWVSXNWXGDNSOMPTWWTYYVVZUOKWUNORXTRUSUWVVULMLPSUWX]YXOVZ^YSIIDCKMNPPRRUUWWSTUQSSTUUVUTQPMORLPMBORRSSHMNJHLOPOOPPRSPRRQQMMLMPKQVNPQMPOPKKLPLGLNPRLMNOMPSUTSUTUWUNMRRSUJIMRPKPQTTUVQPVUMBGSPOKAADJIEKNPDGOVWFIPWQQSTXRWVUYXWZZZSSUX[_`acba`Y?;:DBKZZWU>GT`T>?ELRTTSKMOWZ6BGLXbcdW@S]da","bdPRZXcdcCKRVLP99HOX`]YJ]WJS[O@L:CMNJR_dPbN=CK@CPVTTAQJ4OQR UH5;>A7EKH@>GRWXUC44?LP[T29TXCISVWZVVWZZUYWUUTKTVUPVYZ[WMCJJOSTTUUTUWVUTWTUVSUVURPFOTUULLMPRSSTUTMMQSJMLRMNJKKJMNONNOQNPPRTTTSPQQRRNUTOOPOSWVUUSPROQMOLLLKKNNNMQONMMLJOQQOOPPONNKNPQQORRPMNPQRRQQGOQTSSQQRRRSVGFCENMEHCILGJDIRUUSKUVUVWSJPL?OBFLPQMPTVWVSIQZYQLXRYZX^PNRY`VUXbdXOJEFTLQXTGRX`Z_TJOKGDGNUZ[^IHOR_bd","b^LLQSXFPYWUPBBLDC:;?9>A:9GM@0HV6?CMP`^ZVVOOUFGFFPOQDA5EJBH OVWN>=AFNRVTNMQWWUWZ]XK=AJMC6OZTPWDEKSULLST[AJRVJRWFSURJRVTRTS>MOPJPSSCMOJISRRPFLLRRLIKNPRNGHKNNPQNRQMKRLMPPKJKLLGLNOQRQPOOKMOPPSSWXVVVVYWQUVMPRPOSRSSTFNOLHJLLLNOMJMONQRPONNOOKGFILHJMLOOPOOPQPPHJMMPHBFOLDELQPRRONORBFNSKGNWVSRSKWKIH89ELTVQNJORSRU=-:KTXZ][ZNLRQUX]_UU^PVZ^ZPFJRWD9KO^deXA8;:GRQJPTXX[N:BESWA@N","KOFJSYUEBGDQFOIJT87Ka`^fb`BMV]`bY?LXK7?HUSGQU[PA7KQBIG97GIJ QW]_aXBOSZcaaaXKNCOPLQWYVIRX[YTWWXZZYX_ZYRZ[MYXXMOWVXVMOTEFRUUIJGISIQOQWWVVIHMQRNB;GKPRQRPGM@HGIKMNPONOOQRQPQSUTQPRSRSQPRQOJNONCILLOONIDEGJKCDKMJMNMOMHNNMLOOMNQQRFFGKNMELOHKMNILGB?JKMHCE>A@=DJJLLJJMMMOPOQRPLNQSM:>HORSUUTTHFNGNWXVJ9GGOWVWVJOKMVKCCGH>@AJKRVYXZZOQTTQR^^NZ]`L9UXZYETVZ][WRNWa[HK]^^deH?KRD97=FC","@MXC9F:@FB=B98FHQY]Y_WO?JYXW`^`]NRUVPB@NQCC@789HDHR>84ALMI?5EIAFJSSXS^UN?JOUUWZ]O/3CMRTWVVSOPVOCKNQFMSUOVLUUXYXNPUJPSVTNPQRQLNKQOQMPQUTTPGGJDIRTRSKIKOQRROSTURSTSUVSSSVRQQPMNLRSQIIPSUSSJLNNNKMPSQMPRQQQQRQMMNPOSRMQQTTRSSNMSRQNMNLRQQSQORRQRMMKLKKLNMJLPLNONIKJMPIQMINQSTRRTJORTUVVWGKKDNWGPWYZXWXONOWWSLDPVGN]][[R@FIBF?E8;KRYYUEAIOWVORVXWIELMLIRSK@HOSXP@9DUWTRM^BCLXZMRLK","ABB7CRQ^V=ECSV[XVYSLVZcGJH`Z^bWX[PPKcX]HKWMKAB69EHHNENMMRVN @H=GD=IR;==ADD?BHKWUNPHOCAKST>JXUZXQCVVVTRONSUORHAEORMHOTVKJMRUPOVSNMJMJSRLKMLQPTVWXSMRSSSSTSJIHLQSUTTTTVVIKNRTQXZYYZYY[]ZXYWZYRVXZWSQVVURMHKPQOIRHJOMNNNNPLLNOPSTRQQSQQTQGQRSNGJLNNRNOLMNNPPSRPMFGLNOPSVWTKHHOQQTUVUQ?VXYWNNSWWZYP5>OIQ[TRQIGXVSJSRFGJFGJTZ]YYbTT=FSZX>KRT[]XPGFFKVPUH?IHAMTJPXZ_LR^PEOHTOMJR[`B?","FK@LD?799BM@HQUTSK976@LWbbcb]EOLW3JRVWSJMZEQYY9NYKIMSJEFCSS X[YRKNDMWXH?;EGJPUWD6?LUWAIOIKV[DMPHRUWQDERTMQQXZOVWZXORTVZ[]T>CKTTUUTTVTRTSIORSTVWVXVUVTTMSIKKLGILOOLPTSSUSTUUXUSRGNSROSRTYZTNOSGTQLQPRQMORTS?CMOJORRRSSORQQRRQOOFJJMPQRPQOQMQJKLLLKPPQQQPRTTUTSUQSURSRTUWVUVRRSVFKMRTUXQTOMVCGUOQMDELAJGKRMRUYPMKQTUEE>HQVZSNNCPD;BKT[SRWD3HY]]bcab]YWMOV^_]FKMLOS]]bebbIRDP[VJF","QX]]>?58BRb_bbZNVL:DU`Y`_W@R^dK?@ScLWW56HWI7MU^^^^W_HKU^YRK ZM9BQV?GQLUVT]SSNPC?FWAEA7ORKHQODNNB8FQQSWUTMQWXU[YRKXMROVXF@MQDLSRQSPPPD>GJNQOPJONOMORPHGJNPSRTSSOQRRSTUVQQPROQOPQRSSJPPONPOONPPQQRSTUVUTPRQLKMLLNKMLII@HKMLNLNMLLPLMNONNOPQONMPPPQNPOOLQRQNRRQPQRSPRP?LPKALSRTUUUVVVWWXXTTQQLFMSSUPXXSUNTXXIUW[`][Y`aQOTWEOKMTW][[Z`_TRQCBEFINNNLE?@@DTMUca]f[d`]QPXf[XW^aed^`dR","aR]]7DPYZd[bjJ:=P]h[]`fiQW^WD@EDNLAOSLHQTPNKULMVECN]S^`bUT_`bVERHPXSLX][ZX]RPWWYSRYPDL][HBHFSWKPS^OOUXY]]^TQWXYTNVOIJQKRRULLMPQHPIJIDOOMRPSRUUXWUTUSRQQIJOSTSVYXTSQRTSPFNROTPLNRNRUSJRQRRJEGKNOORRLPPTORSPRSRSTPPOJHLNOQRQSTPRPTPPQPQRSUVWTQQTLRNPQRQRRSOQSVTTSVXXYVWWXXYUUUVTTTUDFMQVTULNQXWWY]RY][FLQSTGAAHGK[__TQQT]QMSQEWUE:=ADI:>:=?@FVPBENS__]UKad^EeGHFAASYSP@DIHIPSZ`O","GIYSGG?=877=FS[a]aY[`WPQNHUI@KV_PNY`_^T4@GRSJ@:4HOJGINQSTIL UY[[UZ^W^]X_`][VCSQNELQGLBJQIKVMSL=EH@MA=EPQTKIHSUUUTSSSNEIPONSGKNJHPS[VIHGHJJNTRTTTOSTPIMPQORSRPMNOPQOQRQQQPSTRRQRRTTSTUTRSUTQNNQQSPPTTTULRSRTRRRPPQQOQOIJJKMPQRQRUPQQPLIJNPRKNOPNPSLPQHHMNIHMPQPMKLOIKNCHOQRRRURLUPPRSSUUUUUUUTUTNMGKNOQSVVVVVUICNHQYYXKHGXQDKPZ]^MQW[_T`cd]d^MQXZZcYJMA:HCM^[SN=?RWB>PTWURPXe^[","?CB:BSN[bh`FSXe^ceZ[ZaYMOW`]][bacYNV^K8HNNX^]MJLRNTZCKB5DMW Y^^`aaa`^^]U@QQIMU]TAEP9ACQU`W^ZW[PBHNJENVLKSELHOSUTKNFKQSRSRPSURJJMOSODNSRQUUTSSJGNQRJGMRRMIHLPMNOMOHKLNMKJIIOQQPEBDDGJLLMOQPNFNLNQSRTQONQMPRRTNINDMNOPLMLLJLNIKPRQPNKMOONONMLMONMLKLOMLL=>DC=DILMJMCJKKJOQNHDJ=BIRGLLDEJLNOJIPRRRTIEOULKJPPRRVVWVZZZ][XIO@GPZPJPHDAKP]SW[[]FLMLOG9CGLRNSD@LULSXNJDUQTU]Vc[J_Udde","XTPGOUVeb_PG:KSSO^`ALQQOWXfdfbcg[KNXD?PKJ`TOWYaQYENZ]X@SWLK XC=9KP`EGX[cL>GIKSNXXZ[SOSWVQ;CPT;EKNJGOHGFDAISTXNLPPRXWYXUMKQOIOONINKOQRQPLKMRQTUUTTTURQOJLKLQRMPLLLMILPOKOQRQNNNMOOONOONOOOQRQQIPOLKMMNOONRQSRNPNOOMMLLEKIGLLEKGHKOPPQONNPQOPPPPPPQPPQRRQSPJIOQRRPEGJFIMRJL;CFDDGINQIECMCGGRTVYZZYWGJGJPRQXZLDQZ]PUZZ^VWRT][T`RBCQSUVZRA@7DBJBQ^]CKXZaWHFKLZ^adaDC5BNBDIGHBP[NLP","]^B9BUS4ASPU`MOOAHSCRS]ZVRDMT_ROV[`bV@P^_V^^]ZbbZ^_UAOWWZ]]^___bUFLJENWWHDJLHSQ^MPTFOYNSVMGMUVSKRTULQUXQVZWXXYXOVZQNBNQL?JMILSTFHMJNSKFFLJFILOKPMIFC@MQIGMIMFJKMNPPQRSQEMNHGGIOPQNQOROJNODFJLMNPOQPPPOKKLOPPQTTRSOQRPSHHLNOPHILNOQMSRRROPQRRSUSMNPPNLOLMNMILNEGNNMMNRPQOMMQTTVOKBHPUWUTC=4EMQQSSSGCIK=GOTNK@A?@GCHLPI=POBSWP:987?JQEGF@DNVUZ?.@JIMQSJGBLQPLFJLSY]WU8>LOMJVSPZ>",":79GH@CJP4>FKKI9733HREFBIQTO8>8CPEPHIGHTXRSTZC@VXSNUYVYd`CJ QPRQECLROMZQY]_RX]TOLEMKQUSWS]LTYXPBMVVWWVWYVVYWTUIGRNLHIOSTSPLTSUTUWQKQSSTRVSSUUQSTQSQRVXYXUWZXWXJLSVVVPJPLMQQRTUTTRTTVVWTTUTUUNVLJKPOSTQSONNMRPRPHNHOMPPNMJOOPRQQOOQRSQPIKLNOOQPOOPOQRRTSNLBPOJNPQQKDLOOMOORRSSVURRVXMDFJNMJGB@>BGNDHQSMRQSKNOSPVXTVONHONWZRBMOJRX]SPJ[WFPMO=UO_QHQ_a]@BUQ;HSURU[XYaT=GRYOAB=DIP","M?EP]a`U478984BML4513@JPN:@??4;;9AKB9:=BEOXK:CJN9:G2AHSUFLM BEB4ESJI3GQFXWZ@GUVTQUWQ;2DOUZ[ZZYXYV[ZUQJ@OSVRVVHFGQOTGGKQQSNFBAOJHIPPRPJLOJIRNTUSPRRTVRROOQKLMOLLPINMSNKOQRRMPRSTUVTVWWVRSTVWTSTUVRRSPNPRSSRNLPQPPKJQQPPQSQOLONDLLOQMNRSTUVSUUVTSSPGILHLNRUURURRTSNOKSVVWYYTTQSPFHPPQSVPRFFGLQUWVCKLDORVZZXQZYPRVZZ[Z[Y^YHJPZ]^^][^XLQTXW_[Y_PDHFS^eELYhb7>FMQFJUKXagTNRLLSHOMW`","]1:FISS4=BDIR4FMYSYW=FL;;=@;>88:NHC>?=K9FRVU``Q31GBOWRQ=BMV SSSHDOQEZECTSKIEZX^XVSHB@NUXXZT]NJHIRWLFLYQNPVXZVSLKHIMORIEBMQSTHANUUUVVIDLRRRTRSSPHDAIKMOBKTRKMMQPTUQFJMNLMQRSTHQSSFHNPRRRTSUVQKLKI>LJGNOOMKFKNHKJKKLMOPMKKONPSRMNJCINMNNPRRQKLJILNOQRTPJLQRPRKKNOLDGDICIGDDJJKNMORRTVLQGHPUVV>NVKGNQTVXXZNEIMSVWOZPJKKLOPJSWFFJEFMTTU]]ZS:GFT]O8>F@ELVLTMS^^ZXIMP6FOSWS[OOVVKGCC","NTK;ERVDK[`LOQ]YST]WTTCWRNBK@Z79>GG@FEAB3=BIVXP8HRc[bb^M>T[P=/EIPUZ_TZJOKHPSQGBTEPOLH?EMHKJUIPILRSRNSDD@?GQMKOTVZVSOLAIPMIMMNQSIJHSVUNLIJNTELKMNRUSSSQPRRRRVUTWTJMSPTTUTTROIQTRFSUWUSWXYUVWXYWYXX[[^^_XZWQLKMPRPMORWVSSQRUVXWVVTVXUWVWWYXYURVVTNLSVWYWWXWUX]]^X^[]`]HUSX[][YUPNPRHOPIRFINTYYRLNRUWSNKENSVUELOJ8BKRSUSQX][[[XVW_LGP8>CHCFGE?=DPWZUMV[^``WFJUWMWNJZJ9?EUW:BFLSLY","SNUFDKGLSB>:NTNG>IO?DENX[]RV_OLW:BE7KHHOR=:DHHRWQ^_ZSSY_`bb MMNPPGKKKNPNQTVLVPDLIFDKOTVWQ[^WYX]KMQQYXXYYZVZYZZZUURSTVYVYVQOPRLHFOMDFNSJGBUUMAKPNQQKKTUUPQPOPHSQSSVORTSTSNQUUTUVQSQORQRAGKOJMPQSTPQRTTTRTUURVWXUTTSRQRQRTSTUNMLQRSVVXZRRKJMHPRSSQQQUOOKGOLOQGLLQRMOHHD@DHLPTSUSVWWYYOKWZWE;GRRMRIVWWLDLPTA@DCHNTWSTTZYZRRWNMQQVUWW[[bCFQYVZbWTSdWM]NKN_[QH@BDDJQN88?W`S>OTUaLQS","O^bRUe]CM:3995NG?]hgbb`KYBRU^dZGKL=I9FYVAMI?OYaXOSUU[c[LA9@ NVXZK@>NSWY^]adbadbbQGNPTA8FPRVZYQM[>HWE@KRWWUZPOULCAHLRNMNNMLNSSURHMQRRSRPSUUTTSUVORRSVUWWSNUWVNUVYUTTQNSTELOOMNIPQQMKKIPORRRRQRROPQQOLOPPPQPSSONNLQIOPLAJPPPGIJOOMKONRJJNQPQOQSSTTUTRRTTMKPQPPPILNRSTSTSMCADJILELUUTWVVWYPIVZQJACKOKJORGIIIILNRUVYYYVIACKQVYZ[S@GDRITUYZ]_FJVWP[Sbe`UPRTVLHJ8FQRHIVRXZXae``dRELM","EG?NNVW[WUYDY_KHPA@;=BBNNNG@VQWREEC=@@NNOKGKPSJUTYZTKOYDDE> TZbZY``OH8:EPXVJKPVH5A6=JDHAKINQCLOKKHACLVUUFAFNG8FMHHFKRRRSSTTJHQSKHLPOTSSGELQONKKMIKPOPRM>HPTLMGGIKPMPPOOKJHHLBHNKMLMPMQQPQRKLKPOOQSRRRMPPQSTQSTUQRQRRPKCLONPNOPRPNKOQQLPPSTSTVWIPTVUQSQPRRIROTVQGOLOQTTKR:CHJMNMOPRRTUWQPSSSQPGDKTUYXYZYNAHGKPUTWUXZ[RJNIUX>7GHbWGQZ`NWW[BKNYAFKG]cQZUJQYU]FCEH?JP:;R=1()6MM33B","OMJSU^S_VI?OKE=9@>489EIKBNTHVMGVYPON>KQT[aXUZ]ZZ]SGIPXRQTC59GPKXJ;GPCJMLW``^^^V:KVVNKRUKAHJKKYFENJIIOMQVL@BGSMZVNFUUTVVTLBWPPXW[CKPRRUWPLOPOEROOPUTSQ?@ELLNNRPSUTTSUVVUMRSSTRTTRPNIMJNPORQNSTRSSTVFKQRLNMORRLPQPNLKJJIGILIOMIMJMOJHMNNNONQPNLMOPPLRSTROHJMLLMTSUWVKJKJNPQKTUVKPHD@DHNORSQJRQVSUOVZQXNWIQQUYY[Y]_`[HPPPKLSXYDDJRZKN[GC>CHRZYTENXUUO8=;ESW]^_ceadbcb_`[QcXa]cfhc","Y?78EKRMOYB9>KEE@RW73EEOU@FCNWW3*.?F@?FRWH?JE?LUYPX[Z[QHNDM MT[aMP^]Z`^PYHMKNMRJICRRQXK^]^FLFXWPNNGENLKQLPPUXUWVSWSSOWWWWOLJOSSSODLTUUSMVLHMSNPHKPSQTSUWYXX[YXRRVSPFIMRTU?FLORTTUTRMJMJLOMFLLPUUUSTRSMORQQRLGNPOMMOQRSHKMONGORRRQPPCJPQRMJQQQJJKOOQSQDLOQSRRQQROMHFLOPQRSRPHPECIQE>DJRCEIPNWXVYWMJXUWYVLXNURHNNDGEBGGJRKPZ_[b_X_T_abRCNYY[dcQLZV;CNKJN][c`E?6BKLDAEDUTL2FFHMV_","FVTXDILA@KRYK]`W[_S`cOOUJG7P]T_`c_X_VSTH?.;AUO]aacdP?PQMbO? AWUJUKXX__]RLRTTYZM@3AOVWSVTYZXWZZ[X[^XHKOJSPLFKTONEDLTTSTTTVVLLQTTVVZXKRUUQRPDHFIOPTNKELRRJOQROQRRRQOPNPPRPQPQSTVUUUTPOMOQMQQSTRRQROQRRRPGSTUVMQTSRTVXZYVJPNRQSNRTMNRQTRTPRRQNRTUYSGEGIKQNQSJOOQRTLMNQSTTUUPTVVYYZ]]YY[]]YHMOKPPKFFJGLOMNOREMMKLPQUWTVTTPP]bXVKJ9;KS^[QTMK_RXKBCSPOGJKJOQ`WGAGFFGTQJJOKGHCNMICOLC","LIHHOUZNZFDRPINLLRD?>AIRK;NXaXUYS`RTGQXGSZ__^QF;8@BA@HENLOS KMSSVUCCVB9DKRRVQVRVZ^WQQSTYR49KF6:CJINQTSXTKIJRZ`_aUSKOV_TW[ZRQTTPQRTMOSQOQQPSTUWVTNSSSSSSRRSULNRQSQPQJIQMPNMKPQSSNONNPPSLMONSRIPOSUURJKSSURTONRTTUUVXXUUUUKRPSSSLJOPOOQPRQSVUUVTTPONJHOPSUSROSTRMPPUUOPQENQNKLPQQWOMPTAGMLIKPSMCKNMQWUYQCKSMMLIJSY]_]`[WTWZRLAKKW_ZPOKKIS]]`XMGHJKMXQQZSVXW[WVfKAEGY[HTYbb^YJGKP","PC>G?;814;NTHEPS]^aOAHOMFCJTY^YZ_TO=66HLVF?SVGNTFFJNYYHPWT[YVX_GILWNJLXVF:?GN:@RXXTZMWU[ZFPXPW]^OORTT6JSVTOSTGQXTQQSRLMPIPTRKOSRTUTUMSWWWWQSVOQNJMLPSSTVUVMMNPTWPJMQRTWVWSPUWTSUXY^]_YXZUOJENOTNUUUXYTNSQROPOUPDPSQRTTSTSRPQRMNSQUWVRTWOSAOQPSSTTMKQLKHJIFEJMJQRSTPITUUUWWVUSQTTWRLJJIBEGF=FQGHINSVUE>FQOMRHUONKBOTX^OLYZ_XS]SX`ULZZQIKPV]ZGEPMKLTQLSYWDB@DRQK@GMW]^^[aT^b^JOa","QSdQ[gfRBN^gFQFLTPOKJTW_a`Q[`X`cfY7742>>FSWaegWF@FYK=0=BRSH =EMXU0/BKV_`^b^Y_]QZL8@JTT[^OXILTXTINIR6:>HNKIRVWPPUZXXX[ZXVRNLJELIJTNFHKCFPEOIUURSQUVVRRUTTUPMPGKNJMORPRLFFLPMNRQNQRRNJMNHGHIMLMPNRRRFOMJPPMKJMLJQSRQQTRONRRRRJCGJLMNNOOKPQTUTVSSTVWVRUVUSROSTWUQRSTLFIILOOODAC9IBA>BKUUPUUHIJPTVTTWTQ;4=NPUSTUUVXXJMKGNYWTaO[^[X^^?CJSYVW@KX^cTCIMOBL[VPCDSW=DNL66:=C?&'4CT]]U]Z","KKOYIHFM_[dKMU][]Tb]PWZSPRV]QW]`ggKOQYR`NWb`eYXHCJSNTETIUYX IBNRWX]Wac_Z]YSALVBCOTVUM?JQUTWSOEOWFDLTKDFNCNVSLQVXTZWVUMNZYZVSTFKPKSHKHSPVWORRUMGGPRUIJLNBPTOPQTTTUUPSTSUUSVWYXTMPQQSTTUQUTOOQUXPTUPKGJIHOQSORNKQQSSTVUOPRTQNJHJLOTRSUTXWYWYYWUWYYXXYVUWY^ZWXWTTPNPNVUUVVWVPCDIQUXVVUXXOUXY]Z8AINUXZTIKUUBAKEHOTRWYZ[`[QJOFFKW[]^^^NQ[__ZUZX`bWIPXVWDJOEMTXV]`]b]a^Ubc_:6>CMcfg=","LLGCV[VDMSRDKPWQUJITACLDMRJKSRKQZ]aXUNFT[SYUT@EVUUCHTLTFFNS P`HJ]_RLNMTLS@HHLKSYW_ZZ`^^PP@GRUUTVVYYWSRTWTQSXSTGG=KSONRMJPWSNOOGNIMMUUUXRUXKSPIOGTLMRPTRQTTVVULLKMKKOPQQRRRQSQPQJLMJPRUVWSPOKLORRRSTTRRRRQSTVQROJPQOSOQVSRTTSRRQPPMHMRRNSQQQOQIQDPTRPPPMQTRQSRQTTUVVUYXADLTPIFKGNPPSSVWHDCINSTYWSIGPUVPXZXVYUWVWUWN>76?IM3@GKNSX^[[bcUEQGFIOTZ[_caAENR]WUU[ZZQLRUPJRbc_LNWMKJON","RNOSOZ[UUMNJ[CJ?H?@MQROPWOHKNPXZUZQGRLIITZTZTbY[^RVZSWYSBPTX_`S_SWa__K=MFUTRWMOGFGALNQMTPIHGBEQNODRXTX]Z[YXURXQMWYYJFCFJRUUOSRCFKPQTUVUWUUUWUSTUTMKKFFFJKIMLPSSQQTONLOQTSRUNIGMRUMNPPEORQQQRUTSSTUTOOONLQRPROPQORJNPLNOOQQLQSRTNPMLGGILKCKLMRMGJFHKNNNJNQRRSRSLLSPNONPVRSNGE?GIMKIKKKNOOMHLRINVUSMIJIQTWVX][NUVQYNQZJ88DLRMNTJPNTSY[Q^TILO@94BLOKPS@;>EFROOQUXIENZZTUVHKCKWWb[","IT]_NMGIHOOVOEIQUPOSWYdYKLVWQNVXSWXRGTZ^V[LLQUL@7?[`KJHPEBF HOJJKOQ[aYD:2=DBCJMHSMNTM@NX^SL@?F@>JNH>TXXXTCFNQVNAHOSUMQTRMRLLRYXXVUOJMGKRSURJGGMNLDBQMSUNIPSSSUVWUTUUUUYWTSRLGJOHOSMQRSOQSPPQRSPLAFMIONPQQSQRPQSSTSSRSRRINMIFMNOOQRTQTSUUVSNPTSRTUUTRVQTOOPORQOMRQT@:INSUVYWXWRBNOLRTHPRUSUM=CM?JFSUTWUEDJHORIJD41?EINR9:GENRTW`PYOCMCINTXT?AKTVVVWUMLPVRYIKPEDHGMOIC;@BHU[[:BM","FHC>I[V@IMLEEL=IN2=CFNSXY[VN?E??EMYZWWbZ;8DCMFRXXYUWRKCS@FR KAIU[ZZWO@KMORWJRRYWMTXULQU=DK?KQFMQCDOSWWKQSWJRUWYTWTTUWZYWKDGCHNOLJNMQTTPOSLNJIMOQQNOGMRNNQRRRNPSSSQMLKQRTPPPKNNJGNNPOFQMNOQQPQMJLFGMKMMNJNIMGNPNJFFGJIHILJEHJMLNMNPPJKMOOLFJMOMNPQRTRPFKMOFNNNORSQPKPIKJLKNCJELQVWUVJNQORRRFC>=EEIIIQUXQSTULDGMOIPGSZYWQVR[JGLW]YIHOVZUOFFHV]LKJOQPPRQW`XV?ELEHQQNNTLIHGGPXWPLQ","P@F:AYGTX_abXOELS]OKRICLLUSYHCKXb[IGLC=A[J=CM_Z?PKUSUWKSWVL ;B;EVZU;DMSWWIJNNVYXYa`U[ZQMGKFGQRIJRUTXZIQKPSUWTYXTLFCIMLKSPNBARQQTOSSNHUUVUUOCINQSTSTSQKMKENQRQPQTTSOCHILLLMNIJNPKPLOMNDHLLKGKORQSRUUPQQSTRRQQPQTTUWOOMPRLEKMNNPNQSRQSUVVWWSORRQTSVXXXXUSFPQRSOFLUVUSVQUWRT@GCIKNQRTUUEFRHGJNSSSSGKRQRTHKPULOSXMD>GPWI?;QVFNSUFOCLFNTVSMQREOT]GBOUY]T_QIM?8HW]_`XXVQA==:@LAI?HUW","VS>KNN2=QURJ]`aa`]7IIUZQMUCJP`566((?GU]X^RGR[M;KRR]]acXab_U;>OSYX^:,5>ENVY[YVS>6AMSTH5ANKNEENQQ;;GPDJOSTTBLNMYYWUGNRSSVLCNORTVTSUTSKIKQSSTVTUUXWYXWUUIKOONOJPONHDLLQMKPQRRNPRRQOOQQQQSQRWPQTTSRKOPMLKNPPPQQSOLIJKJOOHIIHLPLNMMJHGKLMONPOQPOPSQNNJCE@>JJMNPQQOOPQJLMSKKKELOSQSTHCGIILPKEBMMJKGLPQPTWJHRWNKNMW]ZWWUXCBOSYWIED@DRVTKPNKW^IT[Q9BJR^KJTGT]UQX_]cT[[P>95?OX_WFN[`[bY","`abe_KA>=M696@T>5?O]UaYdNXWP;LYa`a`LDL?:?G=B;KRUW[`^IHGE[MZ `[O`bJSYWYXPPOBHPXHJVWRVWMU]XWLOSUKMTJHJPFB=@INDJNTSLFG?BFAHSOTHFKLQQKIKNJPONRQMO@HNKOSRMJL?FGJKIILMJEKMNNNNELNOOQQOHLQQKOPQSSKNMOPORQOPQQQOPPOTTRURTTRONJKMPQNGDENOPQMQRQSQQLGIIKOORSSSRRTJOOPRLMKMPQSTVVXXVWPM?ONRQVQNPTUWUYWUXYYGHHGDIQTELVXN5;HQORLGJMA>AEEK?C?;:?DIQPKIORUXYSLHOODB?>JVU>@=8FPRX[[ZWJSLCBFAOJ","PZ^__VXIIU[SUSPMOVFOMOBILFKRPRTLINKIEIKV`LONQJKLPOPSCMVXMMQ IFDQQWMM84;5ENVTXXM8>HSRXYX[[]RTUWEHRWYIGMQNSRQC@FKBGHMNORLEGNRJNROUTVKRUVOSUUWVVQUQQSUTWGPWYWWTO>FNSRSRSTTPUSSUTUTUUPRTUTWMOOTTUTUVPLGLLPOQSSPPPSOOQRQSUUNOPROOLQRPKKNJLPRRSQQTSVWXYYTROTUXVTVVOMC@QQPRUQSPUZUVWYUPWZ]]QXVWFKHNRTTUXYXYRJPHIMSVWX[[__SOMACGKZWMLESNORTYRMUTY[[Z^Y`][^ccd`TOLGOENNQKP^[b[667BNKKHQ","RR65AKW`U@S]bUNW_YacfbPS`c`^Y[RQW]Y_cfe[fgFFKSZONCO9BMLY]TQ ZYFOWTHORNFAH8CQUUTKKPTHHCJRFCDTU]W[ZYY[^XQRQICCGQWWXY[SWUVLIOQQOXOMTWSBNLOTUTONQTRRMQKKNKJNRSTVUTSUQSRNOKKLIJMNNPLSEIQQNNQRPQQTPPPOKGJBNNPPPONPRURSSRSUSTVSSSTWVUOSSURNTVW]WUVVQUUMWUWUSNOSWTSPNPRTTPQNMRVRFGLORSWSEGLQTRHPIJNTURUXVUUI?HKUGCKSWWUWLMDHLSUWYVZ[VX]SQPTYOUXYPCISVQIOW[XTHOSXKSXMPJOSFHKBGNPESQIU__","[daRHQUW___`YMY^a^cLIWUBC:9;=CDNIVMELTVZ``U[S_^]bNLTY[^^aOUY^X`HS]`[_^GDLQNTQQHLRW[VXOKXIIPOVGBMQSFFLPDBJKROSYQKPEFKNHLQRQQMRSSTRTPVVOKMLUVRJMRTTVXUOQQRTUWQCFJPQRSTOQQOKOOOPLQQPPONJLOPQSSSVUWRTTVWYZZUYZUTNNSTUSSLJOOMQTTTUTYRPRTVY[[WY[VUWYZW[^a`^[[_UM?CMTROPSLHLNRVSPUUGCKNOQSTUVVJ;48CKQSRSSQOPRSXXWYXX[[[[[XYRMUU[O=GODBHH?2AF?ILJGLPRKJHA:EIGKMTZ[8H8L`5H6AA9DHBJEB@4=","69=ITUVHBGEAFSTDFH@>AHJQGPP_W]RMCKTO[]_cAEPVbe`BFUU[MUZZURF IJOKFGMTGLMRRETH@FD;GRTQ@>>8CBJITVWZZWYZYYZQULN?DKQTRTDJORTWSORSTPQQNPQSPNRUTSTSSMELOINLONQJHQSRPEHPJKLOQQNNQROLJJKMNOKIMPLPNLOSRRRSSRIJMONQRSTOORPDONLMLNMNPOKNNNLMJJNORPHGNPRONOOQIKIKDDFOOQONJKOQOPJLPOPMQSQFBDHLHILPNOSAELNLPSLNRACHLRUXUYNKACINRYY[WVTVWTUVWWWXX[[ZJLT_YX^X_YKRV^__abXLRJ[UTVc]POLU]UGAJOWNEA",";A=FIF=M[^UTTWOU]HVLTZheLS`^a`iMLJM@==QVLGNPMVORUXVYFIUWA3A ?U29MRYYVHFIOUaW`[^VI8ISWMFV]WNSWJAFLTJOSUQSRSXYYXXWKOWL?WZTXYZRMVWYYVQXWHJPSSABFHILOQQRQJJOSUVUSSRUOPRSUMLEKQRQPKJNMKFFNQNNNOPRTRQSQPILLOQRRRQNNIMNPQQPLLQQOJNOQMMMILNLPOPPPQKPRLPNQNPLNNPSXTMNQUWVVPXQOTTSSLNCBAOQSRVUNVQVIEKNKSIGCFINREHKOKKKKRQNGC@A@PGKQYbVJIOOBHPURSDJQV@ACLRDSVP9@GFMC?FDKS[[]]PSVXLBGNS]_W","EFCQVNJY[OB=HIMN>GO[]H57@KIPSEES^[JH@>>KCQUV^WM7LRWMOOI:=9A ECEIONSTQMWYNISQLRXZDJPWVGXY:=HRQWSPQNG1EMTXWWUTVPSPPQKRCOTVUUXTXVVUYZXKMGKQSIKOPFKKMNHHKPRRNRNGKKMOPQNBMKLLIMNOLOPQPNILOBJMOMJJPNMMMPPNPPTQNNQOKLMNQORQHQNQPIOLMMMKIJQRQRSRRPQQSTQORQOLNPNNHIFLNMOOINIJOORQFKPOQTTKCGIEIQRJHOLLKPOKLNJIRWXZY^UG@OVYYY[^Z_XEQQU_^OMZO^WNZW[^>ESVCFOTOYMC>HUWGHFCEQSGPLKSZPDGSZ[WNW","`aeeXADGGDNTW^QXMOABKPUQ_`EEMHQVRJOUDA>NGAAAC?GHKSZOSFFE>HMO]Q[ZYVWNPJSOSOOQWZ]_KEORXWXYMOCINPNJUWUWYI;=HPSSUTQSVYXFOMPPIIDCLRUUTVRRCQKIMNPPQRQQRQPPNQRHIOJLLLOPQPQQRJNOMQSLOLFEEDHMNEENMOPLPLLNOQRTURIMLMOQPRSHCKNQRPOOQOHKLJMJDBDHIJOPKHMNNPOQQLEKMNKLOPMLNPRQOLLOTROLMPKSTRQOPPTUSVQVMFCFSKLFIQUXZ[V[XXX[[[X[Z^RTCJRXTSSTGBQOVUMVLTV]WEKSKUZFIOOW[]V]SHXL>EPNPGL][43:KNU[_Y","_b`_a[[JUccd^LJF@FH[aV>LY]HGJFBDECMTVRRQGRRQ[_PJJQW`ZX@IKEI CCIRTQNEEHLZ]JG7?HNCLTHSZYJLRSYKGQQUNGJTRTMKHQTTPSTVTFCCFJUUJFHEGJLOPLTUYSQMIPSSTPRTVKMPOKI?HMRRSHQQQPEOQRTSHJKNPRQRSLPRQUQRQTPLQPRHLROOJLPQQRRQSVVSSMMPLPMMOPNMNPMQSSTVRSSSUYSTUUSRUHPQOQOOPMMNOOQQRTTOMXXZYVQQNXUVGOWVUWWV@HKOQQUTTSUZZWTLP@ADGHLQTHPWY]`aa`TUZX`aA@GGIGIWXORWV[JPKbXAHIE=EMTRNJBELIBDJQMFTa[V`]","bgZcRATbd^R]VONXUTZVTZPTPMW[]TTZVWHMYJSFJB=FR[^P?4:HYIUDFPY _[OQYYXZ[]cc_KOLQ@;CC8>ADEOGOWSY]YORZ]RKRTSWWXYZ^^YQSVVSGKNIPQUTSMEHQRRGIPLDFJPTSPTWUTRTUUUUVPPRPORUSVUWMSVPTQPSSSTOPPMOSVVQQONKOPPLPRSTUXXXTRTTKOLKOMQSNRRSUVSRVXDPNRUYWVUUWXOONRTNTTQMOQPMNQRSORRMILPTRHMHKVVLJMRPJTZ[[^]IPSTSSEIQTNX[LCODEK@FMJRSUXAFKRJMT]]QHOQU>JPDAFOQWXXW_^^>DD>JRJ:GT_]YWZ_a`_W[URLJELUa]Y","HMM]Z_]NROX`edZ=:EHIMJBJJRHDCHC@?FNKX[H@EOYY779IDPY^^ZZR][[ WQLCNTUWZ[]^]ZRJKTVXTY[][[VZ[[SPXYLD>6@>?UOUR@LRMRPRSSURLLSVXWSTNVYPRWVUVWVQGIFIPQTQORRPQKJMRQRPRUUWWUXXWUOPRTSRTUTQRQQSTUSPPKKAEPMMPRLDEJLNQNNLMNNNOOORQQSSSRRSUUZYZ[_ZWVVTTWYYVKTSRRORPKLPSPSQRSTJGLIKQOPQPMRSVSSSUSRUTVUZYYUWNMRTYWY]QVXXB67EIMNRYXRPUXJDMTXYY]_HLXMZ[_PA?QQKRPTXcORYM_cddcfZNWAJM[U[XEFPRIVKT[","H;>OZacdW`RWQPMDIK@?IIED8DIUXGIJVYeg^PUY][X=ORR[IPWKJFOYT?NWV^[CNRE>PRJUU]`T_]SLRSFBNSXWUXWOSYSAQWWU]XID9DLPKOSVWYWTJLGJQRSPKLOTSWRKLJFMCHOSTSSNRXTQIORTRSTUSUUTSQQRQNRSSMNNQQSVRQOPINMNPOQQRTPQRSQOQTRQTVYXRTOUYWWQPHUIRPQQLLFE@KOMIIMMLOOI?EINRQQQDDGMFGNQOQSRPNCEIINFLNQMNQPRSPKNLQSSSFPSSLOVVRJKHMOQGKMTF@FOQRSVVVZOPGQIMOSDBRAKU>IQUMITOKHBFXO?FHS[N=JEVVDQaa`L8VcSdgJSXM","S]__LNRW`bDPJNA=JVG>G[aSBSbXHLUYKO?L]^`_YZYPNOIO`KHPCHQY`^T =@CRW^_^_^NF:BLGSXXQTRSWLSSHFOMOVJRT??RQWKLTDJLPKRKNXXWVUQQUSSUIORIUUTSLOSQSPBFGNJJEKKPQKKORSPNEGLOOQRRSSSSTTUVWWXYWVXYZTWWWVVQEMPRTVQPHRRMKKNLMKORIOHNNKNLOPMNPPPROMOQRQOQPKNKGFKMNOQHJIKLOPNPRRSOKIQONOMNLOTMSPOSPIJPKMFBUNYXDBCKON>;?EKNTGDMLFM[XIMOUUQTUVTUTNRUXVCAOOMFKRNGLJXPAHF>?CG^[@@JQWRFFKIFUWWSCLKCLKK","GC@6;D?13:GFISTLHV_]bX^VOPTYL;FCNIFGB>LF=;7=F;@BIMSKHC?BIHK A7AHLNQUMY[MCOKFCLQRAGSQOIQEIPUWXTXZYWENQSVWWVWXPJNQUPXRNHKTRPVWWXVXKEOUVUSPLRRQTTVUXTSSSQQSQPPKNSSUTRTUWWSSTRVVUSRUVUVWRLIPONONQTTOQPQUWWONPRUUVRLQPLQTVY]ZWTQRTTTUVQPWTLKOQSVSPONQNJNOPQRLNSTSUVYTRUVVY[Y[YYXY[LINORQRGGIOUY[]VWSOTUXVVRWZZ[^^XOISTYLJHBGJTWYZ[WILKOGKS^_]`bFKMYOIPUWA>FAFOZG9DZZBKJR`VGP@>CKW[_","_FMWTP[J9:A5?ALJTRGNBGQSIHQX_PSW63;CREDF2?NUXZW_Y_^`VbaK_b` PWYQM@HLVFPWVPGQ[][^]^[QW]H>MEDRU[XFPV]]]ZQSTPINU[[IXXWWVVJQRUX=HGNQTWVUWR?C9DKRUVXTVXPPXWWWZ^]]]Y[TQUUWXYVXWXXWKFJRSUTRTWWXYWISUWXZXXWTRROMTUKRNQMMSMOSRVWWWTUUTTWRTQSOTSUVVWXXUVXVXVYZWRGD>DEHIMNQTPBGOMINQTLMQQPSTKIFIORQRSRQJROSUXXP;CKONNVUVAHIPQSICPTYZPGOR[aV]FJY][]MRXVI9FHOSZ^X=8FGIETN]`WLRW[WNGIIKNNVaa","[KEXX^b[][MGFVY_ZHTe^b^]bYTORXa]^R[QOUPJGA@CIYRTGDMWZdVMRWT_bcHPUV[[ISWX]]a^[_WZPOXSXX[XYUY[[UURPUTRUHMVWXODNRRBNCMUWUVUWXUWXZXWRLNJGFNPQTUTTUPSTTXXXWXQFMSSQMOPGKSFONOMNPQPPSWWXUYYYWTUWXVQUQLHHIGOLRRTNRKOORQQOSVWVUOQRPSQQNMNPRRRTMJILJMNNLNPMHFNOPRUVVSFILMOMOONEHEJNSSNRQSTKH>INRSB=AHPUUUSPOTOLSVWUVWL@DBISS]^N>EKLTX[QEGLMOPQSXXLENPOHPVZ__[PZ^Z`YFISU[XZXb]JTQZR;DMCIP","S@FKFLPVW]]fcB>9HOSWPHZYaK`^d`PIZWPUZYOSTPIENOAMSJGOOJTOHLD >4CUSBISXYEKFOYYX_OKD>SB;7CMRPMQU@9HQQW[XNLSJWXZW>HKPSGIPSMRPFGAC9BJPQJKFKQPOOSSUTLRNMQPPQPRRLNRQNILMPQSRMQPPKKPQMQNRQSRRNJKNNHKOQRRFPLMNMRNOPPPPHOLENPTQSSRUSTVVURQQMKKKHEJNMQPPLNLNRTTUUUVWWUVWVVWWNTWXRWRHJPIQRRREPSRSXVHHLNSTVVUUNCJKILMKQDMKSVVQRMKMVWGJLSWBCLPY]VKSWQG?:;7AJQSZ`ceA6>>BMGJQ>QUWZbeUBDHNLESFD","UO@PW26FVYZZSWITISS[MGC:PVK27GT[Z>W>9ELS@57GPIWZZ`cMSSQICBL ]^90L>MSUWQJKOQQ3NVPVVHJBERSHOWVW[MFCFAKSRVXJ9EGMRURQTVQYWXUDGKQVUQTTHQUWSFBIPPQSSSTNSRPEKJKNNQPOSTRPEINMOPOPPPRPOOIMJIPOPPRNJLPPPHOMPQPJFHECJNMMPORRPLIHCJNPRTRSPRHOKKNPSOQSTRUUQPRSSJKSQOTQRLSTRUP@MRPTRSSUNNNQQLOUVWWOEMOUXVYYWZIKQTRKPSOIPWZXVRPMAIQXSNFQNX^:49BJ99KQUUTODRCKY``HX_`WESUJNMXYZONHFNRUWGMTVSHGI","GQ_RETF9?ETSA>COTZ][WLBNYMZYcOR[AEHIQY_[MWGEYHS7?8IRG802>>R KGZa9=NPHVKWSQW_^YUUFHLRXTFAVVYV]_JFUU]ZNTTRMTPSKSKMTLORYFBJSOQSSTSUUTWPIPSTSSFQSIIQQNPKRRPLLLLNPRRTNQSMQQRQRQQQSTVTSQLNQMOMMKCNQQQSRRSSTTUVWWVTTVXVVVXYSTWWYVVVXZZRTTTWRPTJORTTQMMMTSUUVOTWZXVWTRPJFMOSUUZVNUUVXWQQQRQ>;>SX[ZVGRYZ]bUMMOVX[YWLKNVVTLNQRW[_MLES[TPRP[`OUTTAJNV]]_[_QKHMSXWX]_eeeY^XOJOPX]eifkhdNPO","FHMFJTL[UDHQVYZOJEMTZI;MXRIP[`_bcRFKNPIIK^XGTPZPY]]XPRFKHPVXXPUPXX[[YSPPX^cYUTH@FOUOKWLNUSZLHRTWRULQVNIJHCGSRLVSSSUTVPYUMQKKMJJPQKURUPQGIFDNRQNPSSSNNVXSORQLPRUSSUQSUKTUUQOQORRTVVXMSRTUTTRTVVSQQSRTPSQSUVWVSQSPIGNPNRTUVRSPOONKHIMONPQMNOQQSSOQQUSTTORTRQSSRUQSTVWSLTVYYXXZ]WRTLOPTUZYZZTUXVWYYW[[^]YKNVUZYZ__aa``_]UWXOSUQRPV[_``LLRXTUSLRZ^ZPSGIMOID@JYVXJDVf`?GTU[eehab]PV","[YaOH;7=R^dgedecgcZd`WS^aOFOR]ccWLQNcbfL`dgW_MSRXcdUZ`aNUNb aORUR]YW]VFG>:?GVX_]`Z^[V[[][PW[TT[WILRUSSWYVVWTVXXYV>OTSKZZOLTN>GMUUTSNOCQSTTVWSREFCJRSNIMLJNGMIIJIKMPLMOQQNOMJFOLMHMOOGROMOPQRQNQROQLRQQQQTUTSOJGQRPMMNLHMPPLLBHGPOPQSNQQRRRQQNHKIBEKBLMOPQGFFKKH:GOPRSTUSUVVTSUXWSSTLUSUWVZZUUU[[^KPRTWYPNLITW?FSSN]`[]a`JNQTWRTXX]`KHPMLRUVWZ^`XW^_`CG:IO[PSNDNTWc`bh_MCI?@HH?","49=?GPMMOVZN8CP:2?LZbZPPSTPOTGV]FIQPXVQPYT=Y_dZ^OdeefZdVU[` TOTU]PEIRZNDFHPK_P^JGMUWWVOZNKQWW^ELPBEJLPTWL6DUSEIOGAIPBKSPQTVURJSUXVUTVWYZWQUVUUTUSSNQRQUSTTRPHPTUQPJQQQORPONNLJRRSUTUTVTQNPRRPMLPTTPUSSLOSSRQMMOPSQOQIKOOJPOQQMMQPPRTRSNLPMKKNQRRRTNONNPQCOOOLDMPSUUVWWXUVTRSUIKFLPUVVXXTWXUWKNQYX>DKVGCJINE@MZYYYSGSDUUMDD>IC70?ONRHGGMLVQABMX]c_PFCJHAAELMRRHMWUPIFUYP][XSKYb","UJMMT]^eOLRSFCFMPUWAKTWIKRSVEESVYV_`fhEKV[VQVVTUHFVEXcLLR_Y MGK4=AIW^WLPX^IEMNJPOPTTVHPSST>BIQARQXXU[YMQEMSQQ@IRSPUNOSUVXWVRILRUSIFSLLNSUUVKUUVUSUVRTTQSUVXWINPMLPHKLNQQOOQRRRTLMMTJPQRSQSVUUVWYTPI@LQPRQPMOHILNQONNOQOOPPTRPQPSSWNSTUORQQNQPLIRQPRQRSTUWVYZXSVX[VVXZZXSTTVXZYYZ][_a`T[ZQQXZYFDKFFDIPZLJNOHQBCNUNAHJLTXQ=JRU3;?GJOMZUXTRKQYXP^]QCMVUTMU_[JKOU]`@HKNJHN^]^_]aOQ","P]SPX]TX__aSX]eXT^ICAEOMOINSJLHN_`^`GJR__YbLESOS[I@?JINRDBIUVXZPRKMTV[]^W[XZ]]^]GRTYY`_^SSLPPRJVUVYUGPW>CCMQKOLTPRSLMNOLKRSTTRLK?CIIOROROTNJNQWSTTLOLOPNPRQQUPOMSPLNPRSLNORRRJQJLHPQQPOMPNOMKGQSSUTTSRRSTTTSRMMKJKOPQKLPPMMQTUTTSKJRTOQNKJMQPGRJKSRRSRRVSUSTTTUVTRPISJINCJEFDMPKIMNHIOLQVQNMMXQSUGLSUY[Z]JHQWUJENPGRUTY[]ZY[YY_TQSUV][ZNYYVTLI@HNKHMHJU[`YVWDAAFOTNW[WSARXW]`b","^DNXTQJ@D@:INXMJTURQVPRZd[QIRUXAHSXIDDT^aS62.,.414FSOY^Zb`d U=LVOLOWX[]^^[[__J?INRKUZW`ROWOCEMRUWWX]SRZOCMGEKLQ@HESORTXVIRNWTINLSPJHBIKMOJFMOPRRRSQTMIEMPNOILBQRPFQTWWVOPOKRRJOSPPQRRSPJMNPOKPOLHKPQQJJPKGOPQRTTSRSTTSFJKLKNOPQQPQRPOQSQMQTTTTQORNBNUOOQSMPPLKLQLFDHQSQQUHHIMQROOPSRUURRTWXYWXXY[IKKQVYWYXZTOG?FSQMEC?JNWUVPVCTV[^NLVYNNTOGKJOY[_```ZANXf_NYb]caeHDLQWbcegfihk","m^AIXSF]aMNS[XM>LU`O;AMUJGOHGYYXYW4ELMQX][SGUW^bAMUXeVb;=:N U[^a_bW>>PW6IPMJWYLWUQHOLQZX[WJIRUWV[GBIVNTWNUMPCHSVVWWUKMRTUVWUYVPRVXSYZQQVTTVVVXUJPGMKLORTSPMNPPRQNGORRSTUVVPVVXXWXWIQNMMLOQQPQSUOQSTNRTROQSRPLRSPRRQNPSHLMOPQRKJNOQSSVNDJNKC>@HLLPQPQPPPJKLPLMMMIJLNOPTUVX[PVXPLLGMOPOQRTVONSSXSUWTK;AJVVWYPLORSJSRY]YPbac[XXJ:I>C?G=CEPWWOSUU^[M]cSYdff__ZU[[NPJIADFP,5?HN^`Z[","efe^VYdWPYf`GLUZdf[OLLLMPJOZVRG>AKSY^[fWTEPY]^[BLS^acg^caaa e[YW^abbaQYPGELVL@5CO[_^^]WQKVXYQ]]_PCBGNQNBRLIOTWXPNEHMPQPLKJPNPOQUTSLSUUYYVQSTRKPPHQQNPPQQOSVWSPQURRRMHRPQTNPQONPSSQRUXWUSQTQQORLMOQPRRRTUVRUPMSUUXXVXVVYYZ[XUOYXY[^^RNT[][[[[_^^VRTTRTWWXVUYRRPWWMKSUTSVWXYYSXXXTY[XWWXRQHKSVFHUKEFLQT]]aa[][__^PBAJTXY_`c^OIOMOLTXVUaNHCMRMDKOQ_VYTULQ[bKMTSYZLOSMRR[^UTOSGKOY","MLMNLIRQPP^^NI80@NE9DTWWXVXFR`UV`RTUWZY`^]ONUYVIFNX]XYY_`d[EET]]TYYPOMQVY_VNLDHSRKLMOQHNSWTWZKOQQUPLINQYVVXQQYHDHNSVVVVLTYRPWQUTYYQOFJORSJTTVSTSTVUWWRKLPRQPNRRTUOMMPUWTOGNPTTVSXTMSRUSVUSSRQSORTUUSVVURKOMOLJKJNNRSTSQRSUUVNPPQUWWWWXXQOPSRQTVWYTQHQUVRIBJJQHFEJLJNORTUVWVUMNNQPVTTVSWWWQTUVWZPPDHLPTXY[]]^^^]_ZU]__a_]YY^^ZUTTW]`]OQJPX^MWXCIPPFKMCOT[ZMNPY`abaPSFMSXWT`^Y^X","PSSLaD?BD?IMQOVUR_B93?HGNNMOVb]Xacgcigh[LYUEPcOEME3=DARX_VY XPTTILZYISZ[``YKRYYENVXR^V[WY^QX`a``JAMOVQMVWOSW[ZYUTSRPZ]YXURVMIMJLSH@MIQUWVRSUTTVVUTMMNOJMLOPSTSTPLSRPKROMNNOSTTUSUPSRSRQQPQSUTPONSSTRTVRNRSSVVROOTUWWTPMMPOQRSNQSUVUUUWWWUOQRSQLNEAMOPNOSRIJKPRTVVVTTWYYXXYZPQPRVXUYVSVVTXWUTTTXWY^^[ORMRUWLPQNFHLLJMUVY][L;IX[]^`_`b^[bO^]MKIJKC=FE?LUEKVP]ZJCQVdP`X[cf`ebh[EV","_aXU]agfd_PNVMHZIANQQNNA=2@IOG BVQNHbS^`^^[^]RJP[d_WD?LX[[] _`bbbffS]`dJTY^ ?NUZ[_US^[YMWZY^X[XIKRRSTWWXWWXYVIPPSWWUUYXQD:HLOONEAKPKOPNSQSUUNLQMNDPOLQSUWSMMNMOMPRSRSSDEOIKFMNNDMPQQRSSRRRPQOQSSSPMKNQSTTUVSPSSUWVVUTUHMQTOOPRSRUVXWZY[XYZXUHSWMSSSUUVWUUYYTUUQVVYXWVY[ZZYUOSTVWZZ[ZYOUVY[XR[^aa^SIMNRUXXUUTUXZZVUZWTWYMOUZ^UGGFPTYZ^^^NGCAK                                  "],"exc":{}}</script>
+<script type="application/json" id="places">[["aberdeen","Aberdeen","SD"],["abilene","Abilene","TX"],["akron","Akron","OH"],["alamosa","Alamosa","CO"],["albany","Albany","GA"],["albany-ny","Albany","NY"],["albuquerque","Albuquerque","NM"],["allentown","Allentown","PA"],["alpena","Alpena","MI"],["amarillo","Amarillo","TX"],["anchorage","Anchorage","AK"],["asheville","Asheville","NC"],["astoria","Astoria","OR"],["athens","Athens","GA"],["atlanta","Atlanta","GA"],["atlantic-city","Atlantic City","NJ"],["augusta","Augusta","GA"],["austin","Austin","TX"],["baker-city","Baker City","OR"],["bakersfield","Bakersfield","CA"],["baltimore","Baltimore","MD"],["bangor","Bangor","ME"],["baton-rouge","Baton Rouge","LA"],["battle-creek","Battle Creek","MI"],["beaumont-port-arthur","Beaumont-Port Arthur","TX"],["beckley","Beckley","WV"],["bethel","Bethel","AK"],["bettles","Bettles","AK"],["billings","Billings","MT"],["binghamton","Binghamton","NY"],["birmingham","Birmingham","AL"],["bishop","Bishop","CA"],["bismarck","Bismarck","ND"],["bluefield","Bluefield","WV"],["boise","Boise","ID"],["boston","Boston","MA"],["brainerd","Brainerd","MN"],["bridgeport","Bridgeport","CT"],["bristol-johnson-city","Bristol-Johnson City","TN"],["brownsville","Brownsville","TX"],["buffalo","Buffalo","NY"],["burbank","Burbank","CA"],["burley","Burley","ID"],["burlington","Burlington","IA"],["burlington-vt","Burlington","VT"],["burns","Burns","OR"],["carbondale","Carbondale","IL"],["caribou","Caribou","ME"],["casper","Casper","WY"],["cedar-rapids","Cedar Rapids","IA"],["charleston","Charleston","SC"],["charleston-wv","Charleston","WV"],["charlotte","Charlotte","NC"],["charlottesville","Charlottesville","VA"],["chattanooga","Chattanooga","TN"],["cheyenne","Cheyenne","WY"],["chicago","Chicago","IL"],["childress","Childress","TX"],["cincinnati","Cincinnati","OH"],["clarksburg","Clarksburg","WV"],["cleveland","Cleveland","OH"],["cold-bay","Cold Bay","AK"],["college-station","College Station","TX"],["colorado-springs","Colorado Springs","CO"],["columbia","Columbia","MO"],["columbus-ga","Columbus","GA"],["columbus","Columbus","OH"],["concord","Concord","NH"],["corpus-christi","Corpus Christi","TX"],["crescent-city","Crescent City","CA"],["dallas","Dallas","TX"],["danville","Danville","VA"],["dayton","Dayton","OH"],["daytona-beach","Daytona Beach","FL"],["del-rio","Del Rio","TX"],["delta-junction","Delta Junction","AK"],["denver","Denver","CO"],["des-moines","Des Moines","IA"],["detroit","Detroit","MI"],["dodge-city","Dodge City","KS"],["dubuque","Dubuque","IA"],["duluth","Duluth","MN"],["eau-claire","Eau Claire","WI"],["el-centro","El Centro","CA"],["el-paso","El Paso","TX"],["elizabeth-city","Elizabeth City","NC"],["elkins","Elkins","WV"],["elko","Elko","NV"],["ely","Ely","NV"],["erie","Erie","PA"],["eugene","Eugene","OR"],["eureka","Eureka","CA"],["evansville","Evansville","IN"],["fairbanks","Fairbanks","AK"],["fargo","Fargo","ND"],["fayetteville","Fayetteville","NC"],["flagstaff","Flagstaff","AZ"],["flint","Flint","MI"],["fort-lauderdale","Fort Lauderdale","FL"],["fort-myers","Fort Myers","FL"],["fort-pierce","Fort Pierce","FL"],["fort-smith","Fort Smith","AR"],["fort-wayne","Fort Wayne","IN"],["fresno","Fresno","CA"],["gainesville","Gainesville","FL"],["galveston","Galveston","TX"],["glasgow","Glasgow","MT"],["glens-falls","Glens Falls","NY"],["goodland","Goodland","KS"],["goshen","Goshen","IN"],["grand-forks","Grand Forks","ND"],["grand-island","Grand Island","NE"],["grand-junction","Grand Junction","CO"],["grand-rapids","Grand Rapids","MI"],["great-falls","Great Falls","MT"],["green-bay","Green Bay","WI"],["greensboro","Greensboro","NC"],["greenville","Greenville","MS"],["greenville-spartanburg","Greenville-Spartanburg","SC"],["greenwood","Greenwood","MS"],["gulfport","Gulfport","MS"],["gulkana","Gulkana","AK"],["hagerstown","Hagerstown","MD"],["harrisburg","Harrisburg","PA"],["harrison","Harrison","AR"],["hartford","Hartford","CT"],["hattiesburg","Hattiesburg","MS"],["havre","Havre","MT"],["helena","Helena","MT"],["hibbing","Hibbing","MN"],["hillsboro","Hillsboro","OR"],["hilo","Hilo","HI"],["homer","Homer","AK"],["honolulu","Honolulu","HI"],["houston","Houston","TX"],["huntington","Huntington","WV"],["huntsville","Huntsville","AL"],["huron","Huron","SD"],["indianapolis","Indianapolis","IN"],["international-falls","International Falls","MN"],["islip","Islip","NY"],["jackson","Jackson","MS"],["jacksonville","Jacksonville","FL"],["jonesboro","Jonesboro","AR"],["juneau","Juneau","AK"],["kahului","Kahului","HI"],["kalamazoo","Kalamazoo","MI"],["kalispell","Kalispell","MT"],["kansas-city","Kansas City","MO"],["key-west","Key West","FL"],["king-salmon","King Salmon","AK"],["kingman","Kingman","AZ"],["knoxville","Knoxville","TN"],["kodiak","Kodiak","AK"],["kotzebue","Kotzebue","AK"],["la-crosse","La Crosse","WI"],["lake-charles","Lake Charles","LA"],["lakeland","Lakeland","FL"],["lancaster","Lancaster","CA"],["lander","Lander","WY"],["lansing","Lansing","MI"],["laredo","Laredo","TX"],["las-vegas","Las Vegas","NV"],["lawton","Lawton","OK"],["leesburg","Leesburg","FL"],["lewiston","Lewiston","ID"],["lexington","Lexington","KY"],["lihue","Lihue","HI"],["lincoln","Lincoln","NE"],["little-rock","Little Rock","AR"],["long-beach","Long Beach","CA"],["longview","Longview","TX"],["los-angeles","Los Angeles","CA"],["los-olivos","Los Olivos","CA"],["louisville","Louisville","KY"],["lubbock","Lubbock","TX"],["lumberton","Lumberton","NC"],["lynchburg","Lynchburg","VA"],["macon","Macon","GA"],["madison","Madison","WI"],["mansfield","Mansfield","OH"],["marquette","Marquette","MI"],["martinsburg","Martinsburg","WV"],["mcallen","McAllen","TX"],["mccall","McCall","ID"],["mccook","McCook","NE"],["mcgrath","McGrath","AK"],["medford","Medford","OR"],["melbourne","Melbourne","FL"],["memphis","Memphis","TN"],["merced","Merced","CA"],["meridian","Meridian","MS"],["miami","Miami","FL"],["midland-odessa","Midland-Odessa","TX"],["milwaukee","Milwaukee","WI"],["minneapolis","Minneapolis","MN"],["missoula","Missoula","MT"],["mobile","Mobile","AL"],["mobridge","Mobridge","SD"],["moline","Moline","IL"],["monroe","Monroe","LA"],["montgomery","Montgomery","AL"],["morgantown","Morgantown","WV"],["muscle-shoals","Muscle Shoals","AL"],["muskegon","Muskegon","MI"],["nashville","Nashville","TN"],["needles","Needles","CA"],["new-bern","New Bern","NC"],["new-orleans","New Orleans","LA"],["new-york","New York","NY"],["newark","Newark","NJ"],["nome","Nome","AK"],["norfolk-ne","Norfolk","NE"],["norfolk","Norfolk","VA"],["north-platte","North Platte","NE"],["oklahoma-city","Oklahoma City","OK"],["olympia","Olympia","WA"],["omaha","Omaha","NE"],["ontario","Ontario","OR"],["orlando","Orlando","FL"],["paducah","Paducah","KY"],["palm-springs","Palm Springs","CA"],["palmdale","Palmdale","CA"],["parkersburg","Parkersburg","WV"],["pendleton","Pendleton","OR"],["pensacola","Pensacola","FL"],["peoria","Peoria","IL"],["philadelphia","Philadelphia","PA"],["phoenix","Phoenix","AZ"],["pine-bluff","Pine Bluff","AR"],["pittsburgh","Pittsburgh","PA"],["plattsburgh","Plattsburgh","NY"],["pocatello","Pocatello","ID"],["portland-me","Portland","ME"],["portland","Portland","OR"],["poughkeepsie","Poughkeepsie","NY"],["providence","Providence","RI"],["pueblo","Pueblo","CO"],["pullman","Pullman","WA"],["punta-gorda","Punta Gorda","FL"],["quincy","Quincy","IL"],["raleigh","Raleigh","NC"],["rapid-city","Rapid City","SD"],["reading","Reading","PA"],["redding","Redding","CA"],["reno","Reno","NV"],["rhinelander","Rhinelander","WI"],["richmond","Richmond","VA"],["riverside","Riverside","CA"],["roanoke","Roanoke","VA"],["rochester","Rochester","MN"],["rochester-ny","Rochester","NY"],["rockford","Rockford","IL"],["roswell","Roswell","NM"],["sacramento","Sacramento","CA"],["saginaw","Saginaw","MI"],["salem","Salem","OR"],["salina","Salina","KS"],["salisbury","Salisbury","MD"],["salt-lake-city","Salt Lake City","UT"],["san-angelo","San Angelo","TX"],["san-antonio","San Antonio","TX"],["san-diego","San Diego","CA"],["san-francisco","San Francisco","CA"],["san-jose","San Jose","CA"],["sanford","Sanford","FL"],["santa-maria","Santa Maria","CA"],["saranac-lake","Saranac Lake","NY"],["sarasota-bradenton","Sarasota-Bradenton","FL"],["savannah","Savannah","GA"],["scottsbluff","Scottsbluff","NE"],["seattle","Seattle","WA"],["sheridan","Sheridan","WY"],["sioux-city","Sioux City","IA"],["sioux-falls","Sioux Falls","SD"],["south-bend","South Bend","IN"],["spokane","Spokane","WA"],["springfield","Springfield","IL"],["springfield-mo","Springfield","MO"],["st-cloud","St. Cloud","MN"],["st-louis","St. Louis","MO"],["st-paul-island","St. Paul Island","AK"],["stillwater","Stillwater","OK"],["stockton","Stockton","CA"],["syracuse","Syracuse","NY"],["talkeetna","Talkeetna","AK"],["tallahassee","Tallahassee","FL"],["tampa","Tampa","FL"],["toledo","Toledo","OH"],["topeka","Topeka","KS"],["trenton","Trenton","NJ"],["tri-cities","Tri-Cities","WA"],["tucson","Tucson","AZ"],["tulsa","Tulsa","OK"],["tupelo","Tupelo","MS"],["tyler","Tyler","TX"],["ukiah","Ukiah","CA"],["utqiagvik-barrow","Utqiagvik (Barrow)","AK"],["valentine","Valentine","NE"],["vero-beach","Vero Beach","FL"],["victoria","Victoria","TX"],["waco","Waco","TX"],["washington","Washington","DC"],["waterloo","Waterloo","IA"],["wausau","Wausau","WI"],["westfield","Westfield","MA"],["wheeling","Wheeling","WV"],["wichita","Wichita","KS"],["wichita-falls","Wichita Falls","TX"],["wilkes-barre-scranton","Wilkes-Barre/Scranton","PA"],["williamsport","Williamsport","PA"],["wilmington","Wilmington","DE"],["wilmington-nc","Wilmington","NC"],["wilmington-oh","Wilmington","OH"],["winnemucca","Winnemucca","NV"],["winslow","Winslow","AZ"],["worcester","Worcester","MA"],["yakima","Yakima","WA"],["yakutat","Yakutat","AK"],["youngstown","Youngstown","OH"],["yuma","Yuma","AZ"],["zanesville","Zanesville","OH"]]</script>
+<script type="application/json" id="steps-data">[{"q":"What does every day since 1900 in Jackson look like?","focus":{"ring":true}},{"q":"Has the typical day in Jackson warmed?","focus":{"bands":[[1900,1909,"1900s: 55% above normal"],[2010,2019,"2010s: 59%"],[2020,2025,"2020–2025: 62%"]],"rows":[[1900,1909],[2010,2019],[2020,2025]]}},{"q":"Which years ran warmest and coolest?","focus":{"rows":[[1927,1927],[1958,1958]],"labels":[[1927,"1927: warmest, +3.9°F"],[1958,"1958: coolest, −3.4°F"]]}},{"q":"How long can a warm or cool spell last?","focus":{"rows":[[2019,2019],[1994,1994]],"spans":[["2019-08-30","2019-10-11","43 days above normal"],["1994-07-08","1994-08-26","50 days below"]]}},{"q":"How does 2026 compare so far?","focus":{"rows":[[2026,2026]],"labels":[[2026,"2026 so far: 70% above normal"]]}}]</script>
+<script>
+(function () {
+  "use strict";
+  var LIVE = "", ALM = "../../";
+  var D = JSON.parse(document.getElementById("days").textContent);
+  var PLACES = JSON.parse(document.getElementById("places").textContent);
+  var STEPS = JSON.parse(document.getElementById("steps-data").textContent);
+  var stage = document.getElementById("stage"), cv = document.getElementById("grid"), ov = document.getElementById("ov");
+  var tip = document.getElementById("tip"), readout = document.getElementById("readout");
+  var MON = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+  var MS = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+  var DOW = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
+  var MSTART = [0,31,60,91,121,152,182,213,244,274,305,335];
+  var reduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var filter = "all", step = 0, focus = STEPS[0].focus;
+  var hi, years, newest, yearAvg, yearRank, L, sel = null, pinned = false;
+
+  // ---- color: diverging, darker near normal, brighter the farther from it ----
+  var STOPS = [[-25,[214,239,255]],[-16,[89,165,255]],[-8,[46,98,184]],[-2.5,[30,40,62]],[0,[38,40,48]],
+               [2.5,[62,36,32]],[8,[184,52,40]],[16,[255,122,61]],[25,[255,227,163]]];
+  function mix(a) {
+    a = Math.max(-25, Math.min(25, a));
+    for (var k = 1; k < STOPS.length; k++) {
+      if (a <= STOPS[k][0]) {
+        var s0 = STOPS[k - 1], s1 = STOPS[k], t = (a - s0[0]) / (s1[0] - s0[0]);
+        return [0, 1, 2].map(function (j) { return Math.round(s0[1][j] + t * (s1[1][j] - s0[1][j])); });
+      }
+    }
+    return STOPS[STOPS.length - 1][1];
+  }
+  var LUT = [];
+  for (var q = -250; q <= 250; q++) LUT.push("rgb(" + mix(q / 10).join(",") + ")");
+  function col(a) { return LUT[Math.max(0, Math.min(500, Math.round(a * 10) + 250))]; }
+  document.getElementById("ramp").style.background = "linear-gradient(90deg," +
+    [-20, -15, -10, -5, -2, 0, 2, 5, 10, 15, 20].map(col).join(",") + ")";
+
+  // ---- data: one character per day (see everyday.py, whose decode() is this function's Python twin) ----
+  function whole(v) { return Math.floor(v + 0.5); }
+  function idxOf(m, d) { return MSTART[m - 1] + d - 1; }
+  function cellOf(iso) { var p = iso.split("-").map(Number); return [p[0] - D.y0, idxOf(p[1], p[2])]; }
+  function dateOf(k, i) { var m = 11; while (MSTART[m] > i) m--; return { y: D.y0 + k, m: m, d: i - MSTART[m] + 1 }; }
+  function leap(y) { return (y % 4 === 0 && y % 100 !== 0) || y % 400 === 0; }
+  function deg(v) { return (v < 0 ? "−" : "") + Math.abs(v); }
+  function f1(v) { return Math.abs(v).toFixed(1); }
+  function longDate(o) { return MON[o.m] + " " + o.d + ", " + o.y; }
+  function ordinal(n) { var s = ["th","st","nd","rd"], v = n % 100; return n + (s[(v - 20) % 10] || s[v] || s[0]); }
+  function decode() {
+    years = D.rows.length;
+    hi = new Int16Array(years * 366).fill(-999);
+    for (var k = 0; k < years; k++) {
+      var s = D.rows[k];
+      for (var i = 0; i < 366; i++) {
+        var ch = s.charAt(i);
+        if (ch === " ") continue;
+        hi[k * 366 + i] = ch === "!" ? D.exc[(D.y0 + k) + "-" + i] : whole(D.norm[i]) + D.alpha.indexOf(ch) + D.dmin;
+      }
+    }
+    newest = cellOf(D.asof);
+    yearAvg = [];
+    for (k = 0; k < years; k++) {
+      var sum = 0, n = 0, up = 0;
+      for (i = 0; i < 366; i++) { var v = hi[k * 366 + i]; if (v !== -999) { sum += v - D.norm[i]; n++; if (v > D.norm[i]) up++; } }
+      yearAvg.push(n ? { a: sum / n, n: n, up: up, full: n >= 330 && k < years - 1 } : null);
+    }
+    var full = yearAvg.filter(function (y) { return y && y.full; });
+    yearRank = function (a) { return 1 + full.filter(function (y) { return y.a > a; }).length; };
+    yearRank.of = full.length;
+  }
+
+  // ---- layout ----
+  function layout() {
+    var w = stage.clientWidth, narrow = w < 640;
+    var left = narrow ? 34 : 46, right = narrow ? 16 : 30, top = 24, bottom = 10;
+    var cw = (w - left - right) / 366;
+    var rh = Math.max(2, Math.min(6, Math.round(cw * (narrow ? 3.2 : 1.7))));
+    if (years * rh > 900) rh = Math.max(2, Math.floor(900 / years));
+    var h = top + years * rh + bottom, dpr = Math.min(3, window.devicePixelRatio || 1);
+    cv.width = Math.round(w * dpr); cv.height = Math.round(h * dpr);
+    cv.style.width = w + "px"; cv.style.height = h + "px";
+    ov.setAttribute("viewBox", "0 0 " + w + " " + h); ov.setAttribute("width", w); ov.setAttribute("height", h);
+    L = { w: w, h: h, left: left, right: right, top: top, cw: cw, rh: rh, dpr: dpr, narrow: narrow,
+          colX: w - right + (narrow ? 4 : 8), colW: narrow ? 8 : 14 };
+  }
+  function keep(a) { return filter === "all" || (filter === "warm" ? a > 0 : a < 0); }
+  function inRows(k) {
+    if (!focus.rows) return true;
+    var y = D.y0 + k;
+    for (var j = 0; j < focus.rows.length; j++) if (y >= focus.rows[j][0] && y <= focus.rows[j][1]) return true;
+    return false;
+  }
+  function draw(rowsShown) {
+    var g = cv.getContext("2d");
+    g.setTransform(L.dpr, 0, 0, L.dpr, 0, 0);
+    g.clearRect(0, 0, L.w, L.h);
+    var shown = rowsShown === undefined ? years : rowsShown, cw = L.cw, gap = cw > 2.2 ? 0.5 : 0, rgap = L.rh > 3 ? 0.5 : 0;
+    for (var k = 0; k < shown; k++) {
+      var y = L.top + k * L.rh;
+      for (var i = 0; i < 366; i++) {
+        var v = hi[k * 366 + i];
+        if (v === -999) continue;
+        var a = v - D.norm[i];
+        g.fillStyle = keep(a) ? col(a) : "rgb(22,23,28)";
+        g.fillRect(L.left + i * cw, y, cw - gap + 0.02, L.rh - rgap);
+      }
+      var ya = yearAvg[k];
+      if (ya) {
+        g.fillStyle = col(ya.a * 4);
+        g.globalAlpha = ya.full ? 1 : 0.45;
+        g.fillRect(L.colX, y, L.colW, L.rh - rgap);
+        g.globalAlpha = 1;
+      }
+      if (!inRows(k)) {           // a step that focuses on some years dims the rest
+        g.fillStyle = "rgba(5,6,9,0.8)";
+        g.fillRect(L.left - 1, y, L.w - L.left, L.rh);
+      }
+    }
+  }
+  function el(t, attrs, text) {
+    var e = document.createElementNS("http://www.w3.org/2000/svg", t);
+    for (var k in attrs) e.setAttribute(k, attrs[k]);
+    if (text !== undefined) e.textContent = text;
+    return e;
+  }
+  function rowY(year) { return L.top + (year - D.y0) * L.rh; }
+  function label(x, y, text, anchor) {
+    ov.appendChild(el("text", { x: x, y: y, "text-anchor": anchor || "end", "class": "lbl" }, text));
+  }
+  function overlay() {
+    while (ov.firstChild) ov.removeChild(ov.firstChild);
+    var step2 = L.narrow ? 2 : 1;
+    MS.forEach(function (m, j) {
+      if (j % step2 === 0) ov.appendChild(el("text", { x: L.left + MSTART[j] * L.cw + 1, y: 15 }, m));
+    });
+    var every = L.rh >= 4 ? 10 : 20;
+    for (var k = 0; k < years; k++) {
+      var y = D.y0 + k;
+      if (y % every === 0 || k === 0)
+        ov.appendChild(el("text", { x: L.left - 6, y: rowY(y) + L.rh / 2 + 3.5, "text-anchor": "end", "class": "yl" }, y));
+    }
+    if (!L.narrow) ov.appendChild(el("text", { x: L.colX + L.colW / 2, y: 15, "text-anchor": "middle" }, "Year"));
+    // step marks: bands, labelled years and runs of days
+    var rightX = L.w - L.right - 6;
+    (focus.bands || []).forEach(function (b) {
+      var y0 = rowY(b[0]), y1 = rowY(b[1]) + L.rh;
+      ov.appendChild(el("rect", { "class": "band", x: L.left - 2, y: y0 - 1, width: L.w - L.right - L.left + 4, height: y1 - y0 + 2, rx: 3 }));
+      label(rightX, Math.max(y0 + 13, (y0 + y1) / 2 + 4), b[2]);
+    });
+    (focus.labels || []).forEach(function (b) {
+      var y0 = rowY(b[0]);
+      ov.appendChild(el("rect", { "class": "band", x: L.left - 2, y: y0 - 1.5, width: L.w - L.right - L.left + 4, height: L.rh + 3, rx: 2 }));
+      label(rightX, y0 < L.top + 18 ? y0 + L.rh + 14 : y0 - 5, b[1]);
+    });
+    (focus.spans || []).forEach(function (sp) {
+      var a = cellOf(sp[0]), b = cellOf(sp[1]), d = "";
+      for (var k2 = a[0]; k2 <= b[0]; k2++) {
+        var i0 = k2 === a[0] ? a[1] : 0, i1 = k2 === b[0] ? b[1] : 365, x0 = L.left + i0 * L.cw, x1 = L.left + (i1 + 1) * L.cw;
+        var y0 = L.top + k2 * L.rh;
+        d += "M" + x0 + "," + (y0 - 1) + "H" + x1 + "V" + (y0 + L.rh + 1) + "H" + x0 + "Z";
+      }
+      ov.appendChild(el("path", { "class": "span", d: d }));
+      var lx = L.left + a[1] * L.cw, ly = L.top + a[0] * L.rh;
+      label(Math.min(Math.max(lx, L.left + 90), L.w - L.right - 8), ly < L.top + 18 ? ly + L.rh + 16 : ly - 6, sp[2], lx > L.w / 2 ? "end" : "start");
+    });
+    var nx = L.left + newest[1] * L.cw, ny = L.top + newest[0] * L.rh, r = Math.max(5, L.rh * 1.3);
+    ov.appendChild(el("rect", { "class": "ring", x: nx - r + L.cw / 2, y: ny - r + L.rh / 2, width: 2 * r, height: 2 * r, rx: 3 }));
+    ov.appendChild(el("g", { id: "selg" }));
+    mark();
+  }
+  function mark() {
+    var g = document.getElementById("selg");
+    if (!g) return;
+    while (g.firstChild) g.removeChild(g.firstChild);
+    if (!sel) return;
+    if (sel.year !== undefined) {
+      var yy = L.top + sel.year * L.rh;
+      g.appendChild(el("rect", { "class": "sel", x: L.colX - 1.5, y: yy - 1.5, width: L.colW + 3, height: L.rh + 3, rx: 1.5 }));
+      g.appendChild(el("line", { "class": "selx", x1: L.left, x2: L.colX - 3, y1: yy + L.rh / 2, y2: yy + L.rh / 2 }));
+      return;
+    }
+    var x = L.left + sel.i * L.cw, y = L.top + sel.k * L.rh;
+    g.appendChild(el("line", { "class": "selx", x1: L.left, x2: L.w - L.right, y1: y + L.rh / 2, y2: y + L.rh / 2 }));
+    g.appendChild(el("line", { "class": "selx", x1: x + L.cw / 2, x2: x + L.cw / 2, y1: L.top, y2: L.top + years * L.rh }));
+    g.appendChild(el("rect", { "class": "sel", x: x - 1.5, y: y - 1.5, width: Math.max(L.cw, 2) + 3, height: L.rh + 3, rx: 1.5 }));
+  }
+
+  // ---- tooltips: hover with a mouse, tap with a finger; they never change the picture ----
+  function dayText(k, i) {
+    var o = dateOf(k, i);
+    if (i === 59 && !leap(o.y)) return "<b>" + o.y + "</b> had no February 29.";
+    var v = hi[k * 366 + i], dow = DOW[new Date(o.y, o.m, o.d).getDay()];
+    var head = "<b>" + dow + ", " + longDate(o) + "</b>";
+    if (v === -999) return head + "<br>" + (k === newest[0] && i > newest[1] ? "Not here yet: a new square fills in each morning." : "No reading in the record.");
+    var n = D.norm[i], d = v - whole(n), a = v - n;
+    var words = d > 0 ? d + "° above normal" : d < 0 ? (-d) + "° below normal" : "right at normal";
+    var warmer = 0, count = 0;   // where this high ranks among the same date's highs on the chart
+    for (var kk = 0; kk < years; kk++) { var w = hi[kk * 366 + i]; if (w !== -999) { count++; if (w > v) warmer++; } }
+    var coolest = 0;
+    for (kk = 0; kk < years; kk++) { var w2 = hi[kk * 366 + i]; if (w2 !== -999 && w2 < v) coolest++; }
+    var md = MON[o.m] + " " + o.d, where;
+    if (warmer === 0) where = "The warmest " + md + " high of " + count + " since " + D.y0;
+    else if (coolest === 0) where = "The coolest " + md + " high of " + count + " since " + D.y0;
+    else if (coolest < warmer) where = ordinal(coolest + 1) + "-coolest " + md + " high of " + count + " since " + D.y0;
+    else where = ordinal(warmer + 1) + "-warmest " + md + " high of " + count + " since " + D.y0;
+    return head + (k === newest[0] && i === newest[1] ? " · the latest day on the chart" : "") +
+      '<br><span class="m">High ' + deg(v) + "°F · normal " + deg(whole(n)) + '°F</span><br><span class="chip" style="background:' + col(a) +
+      '"></span><b>' + words + "</b><br><small>" + where + "</small>";
+  }
+  function yearText(k) {
+    var ya = yearAvg[k], y = D.y0 + k;
+    if (!ya) return "<b>" + y + "</b><br>No readings.";
+    var t = "<b>" + y + "</b>" + (ya.full ? "" : " · " + (k === years - 1 ? "so far" : "incomplete year")) +
+      '<br>Highs averaged <b>' + f1(ya.a) + "°F " + (ya.a >= 0 ? "above" : "below") + "</b> normal<br>" +
+      Math.round(100 * ya.up / ya.n) + "% of " + ya.n + " days above normal";
+    if (ya.full) {
+      var r = yearRank(ya.a);
+      t += "<br><small>" + (r === 1 ? "The warmest" : ordinal(r) + "-warmest") + " of " + yearRank.of + " complete years</small>";
+    }
+    return t;
+  }
+  function place(x, y, reach) {
+    tip.hidden = false;
+    var sw = stage.clientWidth, sh = stage.clientHeight, tw = tip.offsetWidth, th = tip.offsetHeight, gap = reach || 14;
+    var left = x + gap, top = y + gap;
+    if (left + tw > sw - 8) left = x - tw - gap;
+    if (top + th > sh - 8) top = y - th - gap;
+    tip.style.left = Math.max(6, left) + "px"; tip.style.top = Math.max(6, top) + "px";
+  }
+  function hideTip() { tip.hidden = true; pinned = false; sel = null; mark(); }
+  function hit(e, finger) {
+    var r = cv.getBoundingClientRect(), x = e.clientX - r.left, y = e.clientY - r.top;
+    var k = Math.floor((y - L.top) / L.rh);
+    if (finger && k >= years && y < L.top + years * L.rh + 12) k = years - 1;   // fingers get a little reach past the edge
+    if (finger && k < 0 && y > L.top - 12) k = 0;
+    if (k < 0 || k >= years) return null;
+    if (x >= L.colX - (finger ? 5 : 2) && x <= L.colX + L.colW + (finger ? 12 : 4)) return { year: k, x: x, y: y };
+    var i = Math.floor((x - L.left) / L.cw);
+    if (i < 0 || i > 365) return null;
+    return { k: k, i: i, x: x, y: y };
+  }
+  function read(h, finger) {
+    sel = h; mark();
+    tip.innerHTML = h.year !== undefined ? yearText(h.year) : dayText(h.k, h.i);
+    readout.textContent = tip.textContent;
+    place(h.x, h.y, finger ? 22 : 14);
+  }
+  var down = null;
+  cv.addEventListener("pointermove", function (e) {
+    if (e.pointerType !== "mouse") return;
+    var h = hit(e, false);
+    if (h) read(h, false); else hideTip();
+  });
+  cv.addEventListener("pointerleave", function (e) { if (e.pointerType === "mouse") hideTip(); });
+  cv.addEventListener("pointerdown", function (e) { down = { x: e.clientX, y: e.clientY, t: Date.now(), type: e.pointerType }; });
+  cv.addEventListener("pointerup", function (e) {
+    if (!down || e.pointerType === "mouse") { down = null; return; }
+    var moved = Math.abs(e.clientX - down.x) + Math.abs(e.clientY - down.y);
+    if (moved < 10 && Date.now() - down.t < 600) {      // a tap, not a scroll
+      var h = hit(e, true);
+      if (h) { read(h, true); pinned = true; } else hideTip();
+    }
+    down = null;
+  });
+  document.addEventListener("pointerdown", function (e) { if (pinned && !stage.contains(e.target)) hideTip(); });
+  stage.addEventListener("keydown", function (e) {
+    var mv = { ArrowLeft: [0, -1], ArrowRight: [0, 1], ArrowUp: [-1, 0], ArrowDown: [1, 0], PageUp: [-10, 0], PageDown: [10, 0] }[e.key];
+    if (e.key === "Escape") { hideTip(); return; }
+    if (!mv && e.key !== "Home" && e.key !== "End") return;
+    e.preventDefault();
+    var c = sel && sel.k !== undefined ? [sel.k, sel.i] : newest.slice();
+    if (e.key === "End") c = newest.slice();
+    else if (e.key === "Home") c = [0, 0];
+    else c = [Math.max(0, Math.min(years - 1, c[0] + mv[0])), Math.max(0, Math.min(365, c[1] + mv[1]))];
+    read({ k: c[0], i: c[1], x: L.left + c[1] * L.cw + L.cw / 2, y: L.top + c[0] * L.rh + L.rh / 2 }, false);
+  });
+  stage.addEventListener("blur", function () { if (!pinned) hideTip(); });
+
+  // ---- filters: the buttons and the legend keys set the same thing ----
+  function setFilter(f) {
+    filter = f;
+    Array.prototype.forEach.call(document.querySelectorAll(".seg button"), function (b) { b.setAttribute("aria-pressed", b.getAttribute("data-f") === f ? "true" : "false"); });
+    Array.prototype.forEach.call(document.querySelectorAll(".keys .key"), function (b) {
+      var on = b.getAttribute("data-f") === f;
+      b.setAttribute("aria-pressed", on ? "true" : "false");
+      b.classList.toggle("faded", f !== "all" && !on);
+    });
+    hideTip(); draw();
+  }
+  Array.prototype.forEach.call(document.querySelectorAll(".seg button"), function (b) {
+    b.addEventListener("click", function () { setFilter(b.getAttribute("data-f")); });
+  });
+  Array.prototype.forEach.call(document.querySelectorAll(".keys .key"), function (b) {
+    b.addEventListener("click", function () { var f = b.getAttribute("data-f"); setFilter(filter === f ? "all" : f); });
+  });
+
+  // ---- the story, five steps; each changes the picture ----
+  var cards = document.querySelectorAll(".step"), stepN = document.getElementById("stepN");
+  function setStep(n) {
+    step = Math.max(0, Math.min(cards.length - 1, n));
+    Array.prototype.forEach.call(cards, function (c, j) { c.classList.toggle("on", j === step); });
+    stepN.textContent = (step + 1) + " of " + cards.length;
+    document.getElementById("prev").disabled = step === 0;
+    document.getElementById("next").disabled = step === cards.length - 1;
+    focus = STEPS[step].focus;
+    hideTip(); draw(); overlay();
+  }
+  document.getElementById("prev").addEventListener("click", function () { setStep(step - 1); });
+  document.getElementById("next").addEventListener("click", function () { setStep(step + 1); });
+
+  // ---- place search: accent-insensitive; every place has its own page, so choosing one opens it ----
+  var input = document.getElementById("place"), list = document.getElementById("place-list"), active = -1, shownPlaces = [];
+  function norm(s) { return s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase(); }
+  PLACES.forEach(function (p) { p.key = norm(p[1] + " " + p[2]); p.name = norm(p[1]); });
+  var here = PLACES.filter(function (p) { return p[0] === D.slug; })[0];
+  if (here) input.value = here[1] + ", " + here[2];
+  function go(p) { location.href = LIVE ? ALM + p[0] + "/every-day/" : "../../" + p[0] + "/every-day/"; }
+  function renderList() {
+    var q = norm(input.value.trim());
+    if (here && input.value === here[1] + ", " + here[2]) q = "";
+    shownPlaces = !q ? [] : PLACES.filter(function (p) { return p.name.indexOf(q) === 0; })
+      .concat(PLACES.filter(function (p) { return p.name.indexOf(q) !== 0 && p.key.indexOf(q) !== -1; })).slice(0, 8);
+    list.innerHTML = "";
+    shownPlaces.forEach(function (p, j) {
+      var li = document.createElement("li");
+      li.id = "opt-" + j; li.setAttribute("role", "option"); li.textContent = p[1] + ", " + p[2];
+      li.setAttribute("aria-selected", j === active ? "true" : "false");
+      li.addEventListener("pointerdown", function (e) { e.preventDefault(); go(p); });
+      list.appendChild(li);
+    });
+    if (q && !shownPlaces.length) { var none = document.createElement("li"); none.className = "none"; none.textContent = "No Almanac place matches"; list.appendChild(none); }
+    list.hidden = !q;
+    input.setAttribute("aria-expanded", q ? "true" : "false");
+    input.setAttribute("aria-activedescendant", active >= 0 ? "opt-" + active : "");
+  }
+  input.addEventListener("focus", function () { input.select(); });
+  input.addEventListener("input", function () { active = -1; renderList(); });
+  input.addEventListener("keydown", function (e) {
+    if (e.key === "ArrowDown" || e.key === "ArrowUp") {
+      e.preventDefault();
+      if (!shownPlaces.length) return;
+      active = (active + (e.key === "ArrowDown" ? 1 : -1) + shownPlaces.length) % shownPlaces.length; renderList();
+    } else if (e.key === "Enter") {
+      e.preventDefault();
+      var p = shownPlaces[Math.max(0, active)];
+      if (p) go(p);
+    } else if (e.key === "Escape") { list.hidden = true; input.setAttribute("aria-expanded", "false"); }
+  });
+  input.addEventListener("blur", function () { setTimeout(function () { list.hidden = true; input.setAttribute("aria-expanded", "false"); }, 120); });
+
+  function newestSentence() {
+    var o = dateOf(newest[0], newest[1]), v = hi[newest[0] * 366 + newest[1]], n = whole(D.norm[newest[1]]), d = v - n;
+    var gap = d ? Math.abs(d) + "° " + (d > 0 ? "above" : "below") : "right at";
+    return "The latest day on the chart, " + longDate(o) + ", had a high of " + deg(v) + "°F, " + gap + " the normal of " + deg(n) + "°F for the date.";
+  }
+  function start(animate) {
+    decode(); layout(); setStep(step);
+    if (animate && !reduce) {
+      var t0 = null, dur = 1400;
+      (function frame(t) {
+        if (t0 === null) t0 = t;
+        var f = Math.min(1, (t - t0) / dur);
+        draw(Math.ceil(years * (1 - Math.pow(1 - f, 2))));
+        if (f < 1) requestAnimationFrame(frame);
+      })(performance.now());
+    }
+  }
+  start(true);
+  var rt;
+  window.addEventListener("resize", function () { clearTimeout(rt); rt = setTimeout(function () { hideTip(); layout(); overlay(); draw(); }, 120); });
+
+  // ---- the showpiece front page loads the featured place's newest data from the Almanac each visit ----
+  if (LIVE && window.fetch) {
+    fetch(LIVE, { cache: "no-cache" }).then(function (r) { return r.ok ? r.json() : null; }).then(function (x) {
+      if (!x || !x.asof || x.asof <= D.asof || x.slug !== D.slug) return;
+      D = x; decode(); layout(); setStep(step);
+      Array.prototype.forEach.call(document.querySelectorAll(".pNew"), function (s) { s.textContent = newestSentence(); });
+      Array.prototype.forEach.call(document.querySelectorAll(".latestT"), function (s) {
+        var o2 = dateOf(newest[0], newest[1]); s.setAttribute("datetime", D.asof); s.textContent = (MS[o2.m] + ". " + o2.d + ", " + o2.y).replace("May.", "May");
+      });
+      var t = document.getElementById("asofT");
+      if (t) { var o = dateOf(newest[0], newest[1]); t.setAttribute("datetime", D.asof); t.textContent = (MS[o.m] + ". " + o.d + ", " + o.y).replace("May.", "May"); }
+    }).catch(function () {});
+  }
+})();
+</script>
+<script>
+/* theme-toggle:start */
+/* Tall Order Digital: light/dark toggle.
+   - First visit follows the reader's system setting.
+   - Clicking a .theme-toggle button switches theme and remembers it (localStorage "tod-theme").
+   - Each page also carries a one-line script in <head> that applies the saved choice
+     before anything draws, so there's no flash of the wrong theme:
+       <script>try{var t=localStorage.getItem("tod-theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}<\/script>
+   - The CSS reads :root[data-theme="light" | "dark"]; story charts already redraw when data-theme changes. */
+(function () {
+  var root = document.documentElement;
+  var media = window.matchMedia ? window.matchMedia("(prefers-color-scheme: dark)") : null;
+
+  function current() {
+    var t = root.dataset.theme;
+    if (t === "light" || t === "dark") return t;
+    return media && media.matches ? "dark" : "light";
+  }
+
+  function sync() {
+    var theme = current();
+    var next = theme === "dark" ? "light" : "dark";
+    document.querySelectorAll(".theme-toggle").forEach(function (btn) {
+      btn.setAttribute("aria-label", "Switch to " + next + " mode");
+      btn.setAttribute("title", "Switch to " + next + " mode");
+      btn.dataset.showing = theme;
+    });
+  }
+
+  document.addEventListener("click", function (e) {
+    var btn = e.target.closest && e.target.closest(".theme-toggle");
+    if (!btn) return;
+    var next = current() === "dark" ? "light" : "dark";
+    root.dataset.theme = next;
+    try { localStorage.setItem("tod-theme", next); } catch (err) {}
+    sync();
+    if (window.goatcounter && window.goatcounter.count) {
+      try { window.goatcounter.count({ path: "theme/" + next, event: true }); } catch (err) {}
+    }
+  });
+
+  if (media) {
+    var onChange = function () { if (!root.dataset.theme) sync(); };
+    if (media.addEventListener) media.addEventListener("change", onChange);
+    else if (media.addListener) media.addListener(onChange);
+  }
+
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", sync);
+  else sync();
+})();
+/* theme-toggle:end */
+</script>
+<script>
+/* site-header:start */
+/* Site header (sitewide, Nov 2, 2026): keeps --header-h current (for anchor links) and, on phones,
+   slides the pinned header away while the reader scrolls down and brings it back on any scroll up.
+   Master copy: tallorderdigital-site/assets/site-header.js; self-contained pages carry an inline copy
+   written by tools/apply-header.py. */
+(function () {
+  var bar = document.querySelector(".site-bar");
+  if (!bar) return;
+  var root = document.documentElement;
+  var phone = window.matchMedia ? window.matchMedia("(max-width: 680px)") : { matches: false };
+  var last = window.scrollY, away = false;
+  function measure() { root.style.setProperty("--header-h", bar.offsetHeight + "px"); }
+  function set(v) { if (v !== away) { away = v; bar.classList.toggle("is-away", v); } }
+  window.addEventListener("scroll", function () {
+    var y = window.scrollY, d = y - last;
+    if (!phone.matches || y < bar.offsetHeight) { set(false); last = y; return; }
+    if (Math.abs(d) < 8) return;
+    set(d > 0);
+    last = y;
+  }, { passive: true });
+  // Keyboard users tabbing into the header always see it.
+  bar.addEventListener("focusin", function () { set(false); });
+  window.addEventListener("resize", measure);
+  if (phone.addEventListener) phone.addEventListener("change", function () { set(false); measure(); });
+  measure();
+})();
+
+/* Animated logo intro (Nov 9, 2026): sixteen mixed-up dots in the logo's colors swirl about two turns and stretch
+   into the four bars as they land (7 + 4 + 3 + 2 dots for the 88 / 44 / 34 / 24 bars); the orange bar settles with a
+   small bounce, then the wordmark wipes in. About 3.6 s. Plays once per visit, on whichever page the reader lands on
+   (sessionStorage "tod-intro"): the home page's hero logo, or the header logo anywhere else. Never with reduce motion.
+   The one-line script in <head> (written by tools/apply-header.py) adds class "tod-intro" to <html> so the static
+   logo doesn't flash first, and removes it after 2 s if this never runs. Colors come from the m-o / m-2 / m-3 / m-4
+   classes, so it follows light/dark mode. Decision: docs/brand-decisions.md, Animated logo. */
+(function () {
+  var root = document.documentElement;
+  if (!root.classList.contains("tod-intro")) return;
+  // The home page plays it on the big hero logo; every other page on the header logo.
+  var hero = document.querySelector(".hero-logo") || document.querySelector(".site-bar .brand");
+  var svg = hero && hero.querySelector(".mark");
+  if (!svg) { root.classList.remove("tod-intro"); return; }
+  window.todIntroStarted = true;
+  try { sessionStorage.setItem("tod-intro", "1"); } catch (e) {}
+
+  var NS = "http://www.w3.org/2000/svg";
+  var T = 3.6, SW = 1.75;
+  var BAR_X = [6, 30, 54, 78], BAR_W = 18, BASE = 94;
+  var BAR_H = [88, 44, 34, 24], COUNTS = [7, 4, 3, 2];
+  var CLS = ["m-o", "m-2", "m-3", "m-4"];
+  var C = { x: 51, y: 52 }, R0 = 6, R1 = 5.4;
+  var MIX = [0, 1, 0, 2, 3, 0, 2, 0, 0, 2, 0, 1, 1, 0, 3, 1];
+
+  function clamp(v) { return Math.max(0, Math.min(1, v)); }
+  function lerp(a, b, t) { return a + (b - a) * t; }
+  function ioc(t) { return t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2; }
+  function outBack(t) { var c1 = 1.70158, c3 = c1 + 1; return 1 + c3 * Math.pow(t - 1, 3) + c1 * Math.pow(t - 1, 2); }
+  function ang(p) { return Math.atan2(p.y - C.y, p.x - C.x); }
+
+  var grid = [], slots = [], dots = [];
+  for (var r = 0; r < 4; r++) for (var c = 0; c < 4; c++)
+    grid.push({ x: 15 + c * 24, y: 16 + r * 24, row: r, col: c, bar: MIX[r * 4 + c] });
+  BAR_H.forEach(function (h, b) {
+    var n = COUNTS[b], s = h / n;
+    for (var j = 0; j < n; j++) slots.push({ bar: b, s: s, x: BAR_X[b] + BAR_W / 2, y: BASE - s * (j + .5) });
+  });
+  [0, 1, 2, 3].forEach(function (b) {
+    var byAng = function (p, q) { return ang(p) - ang(q); };
+    var gs = grid.filter(function (g) { return g.bar === b; }).sort(byAng);
+    var ss = slots.filter(function (s) { return s.bar === b; }).sort(byAng);
+    gs.forEach(function (g, k) {
+      var s = ss[k], a0 = ang(g), d = ang(s) - a0;
+      while (d < 2.4 * Math.PI) d += 2 * Math.PI;
+      while (d >= 4.4 * Math.PI) d -= 2 * Math.PI;
+      dots.push({ g: g, s: s, a0: a0, d: d, pop: (g.row + g.col) * .045,
+                  r0: Math.hypot(g.x - C.x, g.y - C.y), r1: Math.hypot(s.x - C.x, s.y - C.y) });
+    });
+  });
+  dots.slice().sort(function (p, q) { return p.a0 - q.a0; }).forEach(function (d, k) { d.swirl = .85 + k * .012; });
+  var barEnd = [0, 1, 2, 3].map(function (b) {
+    return Math.max.apply(null, dots.filter(function (d) { return d.s.bar === b; }).map(function (d) { return d.swirl + SW; }));
+  });
+
+  var bars = CLS.map(function (cl) { return svg.querySelector("." + cl); });
+  var layer = document.createElementNS(NS, "g");
+  svg.appendChild(layer);
+  dots.forEach(function (d) {
+    d.el = document.createElementNS(NS, "rect");
+    d.el.setAttribute("class", CLS[d.s.bar]);
+    layer.appendChild(d.el);
+  });
+  var w1 = hero.querySelector(".wm-1"), w2 = hero.querySelector(".wm-2");
+
+  function render(t) {
+    dots.forEach(function (d) {
+      var a = clamp((t - d.pop) / .35);
+      var e = ioc(clamp((t - d.swirl) / SW));
+      var th = d.a0 + d.d * e;
+      var rad = lerp(d.r0, d.r1, e) * (1 - .45 * Math.sin(Math.PI * e));
+      var cx = C.x + rad * Math.cos(th), cy = C.y + rad * Math.sin(th);
+      var m = ioc(clamp((e - .62) / .38));
+      var rr = lerp(R0, R1, e) * (a < 1 ? outBack(a) : 1);
+      var w = Math.max(0, lerp(2 * rr, BAR_W, m)), h = Math.max(0, lerp(2 * rr, d.s.s + .6, m));
+      d.el.setAttribute("x", cx - w / 2); d.el.setAttribute("y", cy - h / 2);
+      d.el.setAttribute("width", w); d.el.setAttribute("height", h);
+      d.el.setAttribute("rx", Math.max(0, lerp(rr, 0, m)));
+      d.el.style.opacity = t >= barEnd[d.s.bar] ? 0 : clamp(a * 1.4);
+    });
+    bars.forEach(function (bar, b) {
+      if (!bar) return;
+      var h = BAR_H[b];
+      if (b === 0) { var p = clamp((t - 2.8) / .35); h *= 1 + .05 * Math.sin(Math.PI * p) * (1 - p * .3); }
+      bar.setAttribute("y", BASE - h); bar.setAttribute("height", h);
+      bar.style.opacity = t >= barEnd[b] ? 1 : 0;
+    });
+    var p1 = ioc(clamp((t - 2.72) / .55)), p2 = ioc(clamp((t - 2.97) / .6));
+    if (w1) { w1.style.opacity = p1; w1.style.transform = "translateX(" + (1 - p1) * -.25 + "em)"; w1.style.clipPath = "inset(-10% " + (1 - p1) * 100 + "% -10% 0)"; }
+    if (w2) { w2.style.opacity = p2; w2.style.letterSpacing = lerp(.95, .52, p2) + "em"; }
+  }
+
+  function finish() {
+    layer.remove();
+    bars.forEach(function (bar, b) { if (bar) { bar.style.opacity = ""; bar.setAttribute("y", BASE - BAR_H[b]); bar.setAttribute("height", BAR_H[b]); } });
+    [w1, w2].forEach(function (el) { if (el) el.removeAttribute("style"); });
+    root.classList.remove("tod-intro");
+  }
+
+  render(0);
+  root.classList.remove("tod-intro"); // inline styles from render() now control visibility
+  var start = null;
+  function frame(now) {
+    if (start === null) start = now;
+    var t = Math.min(T, (now - start) / 1000);
+    render(t);
+    if (t < T) requestAnimationFrame(frame); else finish();
+  }
+  requestAnimationFrame(frame);
+})();
+/* site-header:end */
+</script>
+<script>
+/* subscribe:start */
+/* Weekly-email signup: the form posts to Buttondown in a new tab (Buttondown shows its own
+   "check your inbox" page and may ask for a captcha). This script tags each signup with the page
+   it came from, counts it in GoatCounter as subscribe/<page>, and tells the reader what happens next. */
+(function () {
+  var parts = location.pathname.split("/").filter(Boolean);
+  var page = parts.length ? parts[parts.length - 1].replace(/\.html$/, "") : "home";
+  document.querySelectorAll("form.sub-form").forEach(function (form) {
+    var src = form.querySelector('input[name="metadata__signup-page"]');
+    if (src) src.value = page;
+    form.addEventListener("submit", function () {
+      var gc = window.goatcounter;
+      if (gc && gc.count) gc.count({ path: "subscribe/" + page, title: "subscribe/" + page, event: true });
+      var box = form.closest(".subscribe"), done = box && box.querySelector(".sub-done");
+      if (done) setTimeout(function () { done.hidden = false; form.reset(); }, 300);
+    });
+  });
+})();
+/* subscribe:end */
+</script>
+<script>
+/* share:start */
+/* Share button at the end of each story. Phones (and browsers with a share menu) open the device's share sheet;
+   others copy the link. The shared link is the page address plus ?ref=share, so visits from shares show up in
+   GoatCounter as their own referrer. A row marked data-keep-hash also keeps the address's #part (the weird stat of the
+   day uses it, so a share links to the night the reader is looking at). A finished share counts in GoatCounter as share/<page> (cancelling the share
+   sheet doesn't count). Uses the page's own address, not its canonical link, so a page whose canonical points to
+   another site still shares this one.
+   The small Share button under a story's intro (.share-top, added Nov 8, 2026) works the same way; the GoatCounter
+   title says which one was used: share/<page> (top, menu), (end, copy) and so on. */
+(function () {
+  var parts = location.pathname.split("/").filter(Boolean);
+  var page = parts.length ? parts[parts.length - 1].replace(/\.html$/, "") : "home";
+  var base = location.origin + location.pathname + "?ref=share";
+  var og = document.querySelector('meta[property="og:title"]');
+  var title = og ? og.getAttribute("content") : document.title;
+  document.querySelectorAll(".share-row, .share-top").forEach(function (row) {
+    var where = row.classList.contains("share-top") ? "top" : "end";
+    function count(how) {
+      var gc = window.goatcounter;
+      if (gc && gc.count) gc.count({ path: "share/" + page, title: "share/" + page + " (" + where + ", " + how + ")", event: true });
+    }
+    var btn = row.querySelector(".share-btn"), msg = row.querySelector(".share-msg"), url = base;
+    function say(text) { if (msg) { msg.textContent = text; msg.hidden = false; } }
+    function copy() {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(url).then(function () { say("Link copied. Paste it anywhere to share."); count("copy"); },
+          function () { say("Copy this link: " + url); });
+      } else {
+        say("Copy this link: " + url);
+      }
+    }
+    btn.addEventListener("click", function () {
+      url = base + (row.hasAttribute("data-keep-hash") ? location.hash : "");
+      if (navigator.share) {
+        navigator.share({ title: title, url: url }).then(function () { count("menu"); }, function (err) {
+          if (!err || err.name !== "AbortError") copy();
+        });
+      } else {
+        copy();
+      }
+    });
+  });
+})();
+/* share:end */
+</script>
+<script>
+/* saved:start */
+/* Saved stories and charts (Nov 24, 2026). A reader can save a whole page (the Save button next to Share under the
+   intro, and "Save this story" next to Share at the end) or one chart (a small "Save chart" button under each chart's
+   title, added by this script). The list lives only in the reader's browser (localStorage "tod-saved"): no login, no
+   server, nothing sent anywhere. It's shown on saved/, which can also turn the list into a link to open on another
+   device. A save counts in GoatCounter as save/<page> or save/<page>/<chart> (title says top, end or chart); the
+   reader isn't identified.
+   Charts are found by markup, so new stories get the button with no setup: each <figure>, class="figure",
+   <section class="chart"> or element marked data-save-chart inside <main> that has a title (data-save-title,
+   aria-labelledby, .fig-title, figcaption, h2 or h3 inside it, or else the heading of the block just before it, as in
+   the interactive "prose, then figure" pages). A chart with no id gets one from its title ("chart-" + slug), so links to it stay stable while
+   the title does. data-no-save on an element leaves it out.
+   Master copy: tallorderdigital-site/assets/saved.js. Site pages link it; story pages carry an inline copy written by
+   tools/apply-subscribe.py (with the Save buttons themselves). Styles: "saved:start" / "saved:end" in assets/site.css. */
+(function () {
+  var KEY = "tod-saved", MAX = 300;
+  var NS = "http://www.w3.org/2000/svg";
+
+  // The site root: the logo links home ("../../", or the main site's address on Almanac pages).
+  var brand = document.querySelector(".site-bar .brand");
+  var root;
+  try { root = new URL(brand ? brand.getAttribute("href") : "/", location.href); } catch (e) { root = new URL("/", location.href); }
+  // This page's path from the site root, e.g. "nba/role-call-minutes-usage/".
+  function rel(u) {
+    var p = u.pathname.replace(/index\.html$/, "");
+    if (u.origin === root.origin && p.indexOf(root.pathname) === 0) return p.slice(root.pathname.length);
+    return p.replace(/^\//, "");
+  }
+  var here = rel(location);
+  var pageName = (here.split("/").filter(Boolean).pop() || "home");
+
+  function read() {
+    try {
+      var v = JSON.parse(localStorage.getItem(KEY) || "[]");
+      return Array.isArray(v) ? v.filter(function (x) { return x && typeof x.k === "string" && typeof x.p === "string"; }) : [];
+    } catch (e) { return []; }
+  }
+  function write(list) {
+    try { localStorage.setItem(KEY, JSON.stringify(list.slice(0, MAX))); return true; } catch (e) { return false; }
+  }
+  function keyOf(p, c) { return p + (c ? "#" + c : ""); }
+  function has(k) { return read().some(function (x) { return x.k === k; }); }
+  function add(item) {
+    var list = read().filter(function (x) { return x.k !== item.k; });
+    list.unshift(item);
+    return write(list);
+  }
+  function remove(k) { return write(read().filter(function (x) { return x.k !== k; })); }
+  function count(path, title) {
+    var gc = window.goatcounter;
+    if (gc && gc.count) gc.count({ path: path, title: title || path, event: true });
+  }
+
+  var clean = function (s) { return (s || "").replace(/\s+/g, " ").trim(); };
+  function slug(s) {
+    return clean(s).toLowerCase().replace(/['’]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "").slice(0, 48).replace(/-+$/, "") || "chart";
+  }
+  function metaOf(doc, sel) { var m = doc.querySelector(sel); return m ? clean(m.getAttribute("content")) : ""; }
+  // A page's title, picture and summary (from its link-preview tags).
+  function pageInfo(doc) {
+    var h1 = doc.querySelector("main h1, h1");
+    var t = metaOf(doc, 'meta[property="og:title"]').replace(/\s*·\s*Tall Order Digital$/, "") ||
+            (h1 ? clean(h1.textContent) : "") || clean(doc.title).replace(/\s*·\s*Tall Order Digital$/, "");
+    return { t: t, img: metaOf(doc, 'meta[property="og:image"]'), d: metaOf(doc, 'meta[name="description"]') };
+  }
+
+  // The charts on a page (this one, or one fetched for an imported list), in page order.
+  function findCharts(doc) {
+    var main = doc.querySelector("main") || doc.body;
+    if (!main) return [];
+    var out = [], ids = {};
+    main.querySelectorAll("figure, .figure, section.chart, [data-save-chart]").forEach(function (el) {
+      if (el.closest("[data-no-save], .subscribe, .share-row")) return;
+      for (var i = 0; i < out.length; i++) if (out[i].el.contains(el)) return; // a chart inside a chart counts once
+      var titleEl = null, title = el.getAttribute("data-save-title") || "";
+      var lab = el.getAttribute("aria-labelledby");
+      if (!title && lab && doc.getElementById(lab.split(" ")[0])) titleEl = doc.getElementById(lab.split(" ")[0]);
+      if (!title && !titleEl) titleEl = el.querySelector(".fig-title, figcaption, h2, h3");
+      if (!title && titleEl) title = titleEl.textContent;
+      if (!title) {
+        // No title of its own: the heading just before it ("<div class=prose><h2>…<\/h2><p>…<\/p><\/div>", then the figure).
+        var prev = el.previousElementSibling;
+        var h = prev && (prev.matches("h2, h3") ? prev : prev.querySelector("h2, h3"));
+        if (h && !prev.matches("figure, .figure, section.chart")) title = h.textContent;
+      }
+      title = clean(title);
+      if (!title) return;
+      var id = el.id || "chart-" + slug(title);
+      if (ids[id]) { var n = 2; while (ids[id + "-" + n]) n++; id = id + "-" + n; }
+      ids[id] = true;
+      var sub = el.querySelector(".fig-sub, .sub");
+      out.push({ el: el, id: id, title: title, titleEl: titleEl, sub: sub ? clean(sub.textContent).slice(0, 220) : "" });
+    });
+    return out;
+  }
+
+  function icon() {
+    var s = document.createElementNS(NS, "svg");
+    s.setAttribute("viewBox", "0 0 24 24"); s.setAttribute("aria-hidden", "true");
+    var p = document.createElementNS(NS, "path");
+    p.setAttribute("d", "M6.5 3.5h11a1 1 0 0 1 1 1v16l-6.5-4.6-6.5 4.6v-16a1 1 0 0 1 1-1z");
+    s.appendChild(p);
+    return s;
+  }
+  // "Saved. See your list" with a link to saved/.
+  function say(msg, text, link) {
+    if (!msg) return;
+    msg.textContent = text;
+    if (link) {
+      msg.appendChild(document.createTextNode(" "));
+      var a = document.createElement("a");
+      a.href = new URL("saved/", root).href;
+      a.textContent = "See your saved list";
+      msg.appendChild(a);
+    }
+    msg.hidden = false;
+  }
+
+  // Every Save button on the page, so they all show the same state (the top and end buttons save the same page).
+  var buttons = [];
+  function label(b, on) {
+    b.setAttribute("aria-pressed", on ? "true" : "false");
+    var t = b.querySelector(".save-t");
+    if (t) t.textContent = on ? (b.getAttribute("data-on") || "Saved") : (b.getAttribute("data-off") || "Save");
+  }
+  function refresh() { buttons.forEach(function (b) { label(b.el, has(b.k)); }); }
+
+  function wire(btn, msg, makeItem, where) {
+    if (!btn.querySelector("svg")) btn.insertBefore(icon(), btn.firstChild);
+    var item = makeItem();
+    buttons.push({ el: btn, k: item.k });
+    label(btn, has(item.k));
+    btn.addEventListener("click", function () {
+      if (has(item.k)) {
+        remove(item.k);
+        say(msg, "Removed from your saved list.");
+      } else {
+        var it = makeItem();
+        it.at = Date.now();
+        if (add(it)) {
+          say(msg, it.c ? "Chart saved on this device." : "Saved on this device.", true);
+          count("save/" + pageName + (it.c ? "/" + it.c : ""), "save/" + pageName + (it.c ? "/" + it.c : "") + " (" + where + ")");
+        } else {
+          say(msg, "This browser isn't letting the site save anything (private browsing can do that).");
+        }
+      }
+      refresh();
+    });
+  }
+
+  function init() {
+    var info = pageInfo(document);
+    function pageItem() { return { k: keyOf(here, ""), p: here, c: "", t: info.t, s: "", d: info.d, img: info.img }; }
+
+    // 1. Whole-page buttons, written into the page by tools/apply-subscribe.py.
+    document.querySelectorAll("button.save-btn[data-save='page']").forEach(function (b) {
+      var box = b.closest(".share-top, .share-row");
+      wire(b, box && box.querySelector(".save-msg"), pageItem, b.closest(".share-top") ? "top" : "end");
+    });
+
+    // 2. A "Save chart" button under each chart's title. Only on pages that carry the page buttons (stories), so
+    //    site pages that load this file just for saved/ or the home link don't sprout chart buttons.
+    if (document.querySelector("button.save-btn[data-save='page']")) {
+      var hadHash = location.hash && !document.getElementById(decodeURIComponent(location.hash.slice(1)));
+      findCharts(document).forEach(function (ch) {
+        if (!ch.el.id) ch.el.id = ch.id;
+        var line = document.createElement("p");
+        line.className = "save-chart";
+        var b = document.createElement("button");
+        b.type = "button";
+        b.className = "save-btn";
+        b.setAttribute("data-off", "Save chart");
+        b.setAttribute("aria-label", "Save chart: " + ch.title);
+        var t = document.createElement("span");
+        t.className = "save-t";
+        b.appendChild(t);
+        var msg = document.createElement("span");
+        msg.className = "save-msg"; msg.setAttribute("role", "status"); msg.hidden = true;
+        line.appendChild(b); line.appendChild(msg);
+        // Right under the title and the lines that belong to it (subtitle, "How to read" link), or at the top of the chart.
+        var after = ch.titleEl && ch.el.contains(ch.titleEl) ? ch.titleEl : null;
+        if (after) {
+          var n = after.nextElementSibling;
+          while (n && n.matches(".fig-sub, .sub, .chart-howto, .fig-dek")) { after = n; n = n.nextElementSibling; }
+          after.parentNode.insertBefore(line, after.nextSibling);
+        } else {
+          ch.el.insertBefore(line, ch.el.firstChild);
+        }
+        wire(b, msg, function () {
+          return { k: keyOf(here, ch.id), p: here, c: ch.id, t: ch.title, s: info.t, d: ch.sub, img: info.img };
+        }, "chart");
+      });
+      // A link to a chart whose id was just given out: go to it now that it exists.
+      if (hadHash) {
+        var target = document.getElementById(decodeURIComponent(location.hash.slice(1)));
+        if (target) target.scrollIntoView();
+      }
+    }
+
+    // 3. Saving in another tab updates these buttons too.
+    window.addEventListener("storage", function (e) { if (e.key === KEY) refresh(); });
+  }
+
+  window.todSaved = { read: read, write: write, add: add, remove: remove, has: has, keyOf: keyOf, rel: rel, root: root,
+                      findCharts: findCharts, pageInfo: pageInfo, count: count };
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init); else init();
+})();
+/* saved:end */
+</script>
+<!-- Analytics (both cookie-free): GoatCounter counts visits and reader actions; Cloudflare Web Analytics measures page speed. Same block on every page. -->
+<script data-goatcounter="https://tallorderdigital.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "5d3a617ba3ea4ca68113ec25a9a48b1b"}'></script>
+<script>
+(function () {
+  // Reader actions sent to GoatCounter as events, at most once per page view each:
+  //   glossary/<page>/<term>  a glossary pop-up was opened
+  //   read-to-end/<page>      the reader scrolled down to the footer
+  var parts = location.pathname.split("/").filter(Boolean);
+  var page = parts.length ? parts[parts.length - 1].replace(/\.html$/, "") : "home";
+  var sent = {};
+  function send(path, tries) {
+    if (sent[path] && tries === undefined) return;
+    sent[path] = true;
+    var gc = window.goatcounter;
+    if (gc && gc.count) { gc.count({ path: path, title: path, event: true }); return; }
+    if ((tries || 0) < 20) setTimeout(function () { send(path, (tries || 0) + 1); }, 500);
+  }
+  // A glossary pop-up counts once it has stayed open for 0.6 s (tap, click, keyboard or hover), so passing the mouse over a term doesn't count.
+  if ("MutationObserver" in window) {
+    new MutationObserver(function (ms) {
+      ms.forEach(function (m) {
+        var t = m.target;
+        if (t.getAttribute("aria-expanded") !== "true" || !t.getAttribute("data-term")) return;
+        setTimeout(function () {
+          if (t.getAttribute("aria-expanded") === "true") send("glossary/" + page + "/" + t.getAttribute("data-term"));
+        }, 600);
+      });
+    }).observe(document.body, { subtree: true, attributes: true, attributeFilter: ["aria-expanded"] });
+  }
+  window.addEventListener("load", function () {
+    var foot = document.querySelector("footer");
+    // Only long pages (stories): on short pages the footer is visible without scrolling.
+    if (!foot || !("IntersectionObserver" in window) ||
+        document.documentElement.scrollHeight < 2 * window.innerHeight) return;
+    var io = new IntersectionObserver(function (es) {
+      if (es.some(function (x) { return x.isIntersecting; })) { send("read-to-end/" + page); io.disconnect(); }
+    });
+    io.observe(foot);
+  });
+})();
+</script>
+</body>
+</html>
