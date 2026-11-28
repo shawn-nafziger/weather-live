@@ -11,34 +11,29 @@
   "lon": -71.0106,
   "history": "Same site as the official Boston record"
  },
- "as_of_utc": "2026-11-28T15:08:01Z",
+ "as_of_utc": "2026-11-28T16:08:01Z",
  "now": {
-  "time_utc": "2026-11-28T14:30:00Z",
+  "time_utc": "2026-11-28T15:45:00Z",
   "temp_c": 9,
   "temp_f": 48.2,
   "precision": "nearest whole \u00b0C",
   "dewpoint_c": 2,
   "humidity_pct": 61.54,
-  "wind_kmh": 20.38,
-  "description": "Clear"
+  "wind_kmh": 22.21,
+  "description": "Mostly Cloudy"
  },
  "today_so_far": {
   "date_local": "2026-11-28",
-  "readings": 8,
+  "readings": 9,
   "basis": "hourly reports (tenths of a degree)",
   "approximate": false,
   "note": "So far today. The official high and low, posted the next morning, come from continuous readings and can differ by a degree or two.",
-  "high_c": 8.3,
-  "high_f": 46.9,
-  "high_time_utc": "2026-11-28T05:54:00Z",
+  "high_c": 9.4,
+  "high_f": 48.9,
+  "high_time_utc": "2026-11-28T14:54:00Z",
   "low_c": 6.7,
   "low_f": 44.1,
-  "low_time_utc": "2026-11-28T09:54:00Z",
-  "peak_between_reports": {
-   "at_least_f": 47.3,
-   "about_f": 48.2,
-   "time_utc": "2026-11-28T05:00:00Z"
-  }
+  "low_time_utc": "2026-11-28T09:54:00Z"
  },
  "record": {
   "series": "Boston area (ThreadEx; Logan airport)",
@@ -249,17 +244,17 @@
   ]
  },
  "forecast": {
-  "issued_utc": "2026-11-28T13:16:09Z",
+  "issued_utc": "2026-11-28T15:12:06Z",
   "grid": "BOX/73,101",
   "periods": [
    {
     "name": "Today",
-    "start": "2026-11-28T08:00:00-05:00",
+    "start": "2026-11-28T10:00:00-05:00",
     "is_daytime": true,
     "temp_f": 51,
     "temp_c": 10.56,
     "precip_chance_pct": 3,
-    "short_forecast": "Mostly Sunny"
+    "short_forecast": "Partly Sunny"
    },
    {
     "name": "Tonight",
@@ -381,15 +376,8 @@
   ]
  },
  "hourly": {
-  "issued_utc": "2026-11-28T13:16:09Z",
+  "issued_utc": "2026-11-28T15:12:06Z",
   "hours": [
-   {
-    "start": "2026-11-28T10:00:00-05:00",
-    "temp_f": 45,
-    "temp_c": 7.22,
-    "precip_chance_pct": 1,
-    "short_forecast": "Sunny"
-   },
    {
     "start": "2026-11-28T11:00:00-05:00",
     "temp_f": 47,
@@ -717,6 +705,13 @@
     "temp_f": 56,
     "temp_c": 13.33,
     "precip_chance_pct": 93,
+    "short_forecast": "Light Rain"
+   },
+   {
+    "start": "2026-11-30T10:00:00-05:00",
+    "temp_f": 57,
+    "temp_c": 13.89,
+    "precip_chance_pct": 99,
     "short_forecast": "Light Rain"
    }
   ]
